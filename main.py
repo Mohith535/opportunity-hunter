@@ -42,18 +42,29 @@ def _gather(source_names):
 
 
 def _notify(new_items, test):
-    """Send one summary desktop + phone notification for notifiable items."""
-    notifiable = [it for it in new_items if policy.decide(it).notify]
-    if not notifiable:
-        return
-    top = max(notifiable, key=policy.effective_score)
-    title = f"🎯 {len(notifiable)} new opportunities"
-    message = f"Top: [{policy.effective_score(top)}/10] {top.title}"
+    """Send one digest desktop + phone notification summarizing the run.
 
-    send_desktop("Opportunity Hunter", f"{len(notifiable)} new opportunities found")
+    The body lists a per-source breakdown (so you can see which sources fired)
+    plus the top few items by score.
+    """
+    if not new_items:
+        return
+    from collections import Counter
+
+    counts = Counter(it.source for it in new_items)
+    src_line = " | ".join(f"{src}: {n}" for src, n in counts.most_common())
+    top = sorted(new_items, key=policy.effective_score, reverse=True)[:3]
+    top_lines = "\n".join(
+        f"[{policy.effective_score(it)}] {it.source}: {it.title[:55]}" for it in top
+    )
+
+    title = f"🎯 {len(new_items)} new opportunities"
+    message = f"{src_line}\n\n{top_lines}"
+
+    send_desktop("Opportunity Hunter", f"{len(new_items)} new — {src_line}")
     if not test:  # --test suppresses the phone push
-        # urgent push if anything is CRITICAL
-        prio = "urgent" if any(policy.decide(i).level == "CRITICAL" for i in notifiable) else "high"
+        levels = {policy.decide(it).level for it in new_items}
+        prio = "urgent" if "CRITICAL" in levels else "high" if "HIGH" in levels else "default"
         send_phone(title, message, priority=prio)
 
 

@@ -6,13 +6,14 @@ here by name. main.py iterates the registry; `--sources a,b` filters it; adding 
 new source later is "write the module + add one line here".
 """
 
-from . import research
+from . import github, news, research
 
 # name -> fetch callable
 REGISTRY = {
     "arxiv": research.fetch,
-    # added later: "github", "hackernews", "reddit", "devpost", "mlh",
-    #              "unstop", "devfolio", "clist"
+    "github": github.fetch,
+    "hackernews": news.fetch_hackernews,
+    # added later: "reddit", "devpost", "mlh", "unstop", "devfolio", "clist"
 }
 
 
