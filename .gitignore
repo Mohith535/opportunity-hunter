@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Secrets — never commit
+.env
+
+# Logs (regenerated each run; not worth versioning)
+logs/*.log
+
+# TaskFlow's own local data/log (not part of this project)
+.taskflow/
+
+# NOTE: data/*.json is intentionally NOT ignored — the cloud workflow commits
+# seen_items.json / history.json back so dedup survives across daily runs.

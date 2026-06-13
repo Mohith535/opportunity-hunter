@@ -1,0 +1,10 @@
+# Opportunity Hunter — Phase 1 dependencies
+feedparser>=6.0.0      # ArXiv + Devpost RSS/Atom parsing
+requests>=2.31.0       # ntfy.sh, GitHub, HN, Reddit, clist.by, Unstop
+rich>=13.0.0           # daily brief terminal output
+plyer>=2.1.0           # desktop notifications
+python-dotenv>=1.0.0   # load secrets from .env (optional, gracefully skipped if missing)
+beautifulsoup4>=4.12.0 # MLH scrape (added when we build hackathons.py)
+
+# Phase 2 (not used yet — uncomment when we add LLM scoring)
+# anthropic>=0.40.0

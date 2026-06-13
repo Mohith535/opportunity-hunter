@@ -1,0 +1,59 @@
+name: Opportunity Hunter (daily)
+
+# Runs in the cloud, laptop-independent.
+#  - Schedule: every day at 08:00 IST (02:30 UTC).
+#  - Manual:   "Run workflow" button (workflow_dispatch) — use this to prove it works.
+#
+# Cloud mode differs from local:
+#  * OH_PHONE=true     -> ntfy push to your phone (the cloud deliverable)
+#  * OH_DESKTOP=false  -> no GUI on a headless runner
+#  * OH_TASKFLOW=false -> TaskFlow is local-only (~/.taskflow); can't run here
+# Dedup/history state is committed back to the repo so repeats aren't re-notified.
+
+on:
+  schedule:
+    - cron: "30 2 * * *"   # 08:00 Asia/Kolkata
+  workflow_dispatch: {}
+
+permissions:
+  contents: write          # needed to commit seen_items.json / history.json back
+
+concurrency:
+  group: opportunity-hunter
+  cancel-in-progress: false
+
+jobs:
+  hunt:
+    runs-on: ubuntu-latest
+    env:
+      NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      OH_PHONE: "true"
+      OH_DESKTOP: "false"
+      OH_TASKFLOW: "false"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run the hunt
+        run: python main.py --now
+
+      - name: Persist dedup + history
+        run: |
+          git config user.name "opportunity-hunter[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "No state changes to commit."
+          else
+            git commit -m "chore: update hunt state [skip ci]"
+            git push
+          fi
