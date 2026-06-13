@@ -15,7 +15,8 @@ REGISTRY = {
     "hackernews": news.fetch_hackernews,
     "devpost": hackathons.fetch_devpost,
     "reddit": news.fetch_reddit,
-    # added later: "devfolio", "clist", "mlh", "unstop"
+    "devfolio": hackathons.fetch_devfolio,
+    # added later: "clist", "mlh", "unstop"
 }
 
 
