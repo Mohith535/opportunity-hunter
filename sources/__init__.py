@@ -14,7 +14,8 @@ REGISTRY = {
     "github": github.fetch,
     "hackernews": news.fetch_hackernews,
     "devpost": hackathons.fetch_devpost,
-    # added later: "reddit", "devfolio", "clist", "mlh", "unstop"
+    "reddit": news.fetch_reddit,
+    # added later: "devfolio", "clist", "mlh", "unstop"
 }
 
 

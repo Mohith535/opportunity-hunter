@@ -402,6 +402,39 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-13",
+      "items": [
+        {
+          "title": "Amazon CEO's Talks with U.S. Officials Triggered Crackdown on Anthropic Models",
+          "url": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48519092",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Splunk Agentic Ops Hackathon",
+          "url": "https://splunk.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 18 - Jun 15, 2026 | prize $ 20,000 | themes: Machine Learning/AI, Cybersecurity, Enterprise",
+          "deadline": "2026-06-15",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29204",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": ""
+        }
+      ]
     }
   ]
 }
