@@ -435,6 +435,85 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-13",
+      "items": [
+        {
+          "title": "Splunk Agentic Ops Hackathon",
+          "url": "https://splunk.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 18 - Jun 15, 2026 | prize $ 20,000 | themes: Machine Learning/AI, Cybersecurity, Enterprise",
+          "deadline": "2026-06-15",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29204",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Unprofessional Coauthor Behavior with Hallucinated References [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u4m3lz/unprofessional_coauthor_behavior_with/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u4m3lz",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "PaddleOCR (v3/v4/v5/v6) implemented in C++ with ncnn [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u4hy2x/paddleocr_v3v4v5v6_implemented_in_c_with_ncnn_p/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u4hy2x",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Anomaly Detection vs Classification for Visually Similar Cancer vs Mimics? [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u4obgy/anomaly_detection_vs_classification_for_visually/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u4obgy",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Derivative-Free Neural Network Optimization: MNIST Case [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u4fc16/derivativefree_neural_network_optimization_mnist/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u4fc16",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        }
+      ]
     }
   ]
 }

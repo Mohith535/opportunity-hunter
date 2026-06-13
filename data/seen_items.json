@@ -142,7 +142,7 @@
       "title": "Splunk Agentic Ops Hackathon",
       "first_seen": "2026-06-13",
       "last_seen": "2026-06-13",
-      "times_seen": 2
+      "times_seen": 3
     },
     "599a1779bbd1": {
       "title": "Slack Agent Builder Challenge",
@@ -164,6 +164,30 @@
     },
     "9333db354093": {
       "title": "Amazon CEO's Talks with U.S. Officials Triggered Crackdown on Anthropic Models",
+      "first_seen": "2026-06-13",
+      "last_seen": "2026-06-13",
+      "times_seen": 1
+    },
+    "a7d3ac63111b": {
+      "title": "Unprofessional Coauthor Behavior with Hallucinated References [D]",
+      "first_seen": "2026-06-13",
+      "last_seen": "2026-06-13",
+      "times_seen": 1
+    },
+    "fd0fd8f13b47": {
+      "title": "PaddleOCR (v3/v4/v5/v6) implemented in C++ with ncnn [P]",
+      "first_seen": "2026-06-13",
+      "last_seen": "2026-06-13",
+      "times_seen": 1
+    },
+    "444456cd7716": {
+      "title": "Anomaly Detection vs Classification for Visually Similar Cancer vs Mimics? [P]",
+      "first_seen": "2026-06-13",
+      "last_seen": "2026-06-13",
+      "times_seen": 1
+    },
+    "7c9c2ffa9785": {
+      "title": "Derivative-Free Neural Network Optimization: MNIST Case [R]",
       "first_seen": "2026-06-13",
       "last_seen": "2026-06-13",
       "times_seen": 1
