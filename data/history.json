@@ -271,6 +271,137 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-13",
+      "items": [
+        {
+          "title": "Build with Gemini XPRIZE",
+          "url": "https://xprize.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 19 - Aug 17, 2026 | prize $ 2,000,000 | themes: Machine Learning/AI, Education, Productivity",
+          "deadline": "2026-08-17",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29541",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "H0: Hack the Zero Stack with Vercel v0 and AWS Databases",
+          "url": "https://h01.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 27 - Jun 29, 2026 | prize $ 80,000 | themes: Databases, Open Ended, Web",
+          "deadline": "2026-06-29",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29812",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "FIND EVIL!",
+          "url": "https://findevil.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Apr 15 - Jun 15, 2026 | prize $ 22,000 | themes: Cybersecurity, Machine Learning/AI, Beginner Friendly",
+          "deadline": "2026-06-15",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29127",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "UiPath AgentHack",
+          "url": "https://uipath-agenthack.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 15 - Jun 29, 2026 | prize $ 50,000 | themes: Enterprise, Machine Learning/AI, Robotic Process Automation",
+          "deadline": "2026-06-29",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29624",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Global AI Hackathon Series with Qwen Cloud",
+          "url": "https://qwencloud-hackathon.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 26 - Jul 09, 2026 | prize $ 45,000 | themes: Machine Learning/AI, Design, Productivity",
+          "deadline": "2026-07-09",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29966",
+          "score": 9,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Splunk Agentic Ops Hackathon",
+          "url": "https://splunk.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 18 - Jun 15, 2026 | prize $ 20,000 | themes: Machine Learning/AI, Cybersecurity, Enterprise",
+          "deadline": "2026-06-15",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29204",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Slack Agent Builder Challenge",
+          "url": "https://slackhack.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 20 - Jul 13, 2026 | prize $ 42,000 | themes: Beginner Friendly, Enterprise, Low/No Code",
+          "deadline": "2026-07-13",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29843",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Mind the Product presents World Product Day: Everyone Ships Now",
+          "url": "https://mindtheproduct.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 20 - Jun 20, 2026 | prize $ 10,000 | themes: Beginner Friendly, Machine Learning/AI, Low/No Code",
+          "deadline": "2026-06-20",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29767",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "DSH Hacks V1",
+          "url": "https://dsh-hacks-v1.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 20 - Jun 15, 2026 | prize $ 34,771 | themes: Beginner Friendly, Social Good, Machine Learning/AI",
+          "deadline": "2026-06-15",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "28263",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": ""
+        }
+      ]
     }
   ]
 }
