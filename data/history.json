@@ -771,6 +771,127 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-14",
+      "items": [
+        {
+          "title": "ATOM00blue/machine-learning-library — ★130",
+          "url": "https://github.com/ATOM00blue/machine-learning-library",
+          "source": "github",
+          "description": "A hand-curated, topic-organized library of the best ML education — 923 docs (391 arXiv papers, 474 Stanford/MIT/Karpathy/fast.ai lectures, 58 explainer articles), normalized to Markdown with full provenance. Open it in Obsidian or point your agent at it. A clean ML corpus for learning, RAG & fine-tuning. (topics: arxiv, corpus, dataset, deep learning, education, llm, machine learning, nlp, study resources, transformers)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "ATOM00blue/machine-learning-library",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Python 3.14 garbage collection rigamarole",
+          "url": "https://theconsensus.dev/p/2026/06/06/python-3-14-garbage-collection-rigamarole.html",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48503009",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Pyodide 314.0: Python packages can now publish WebAssembly wheels to PyPI",
+          "url": "https://blog.pyodide.org/posts/314-release/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48462759",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Codex for open source",
+          "url": "https://openai.com/form/codex-for-oss/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48497195",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Splunk Agentic Ops Hackathon",
+          "url": "https://splunk.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 18 - Jun 15, 2026 | prize $ 20,000 | themes: Machine Learning/AI, Cybersecurity, Enterprise",
+          "deadline": "2026-06-15",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29204",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "I’m building a free bilingual machine-learning notebook course — looking for feedback on structure and coverage [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u4zbld/im_building_a_free_bilingual_machinelearning/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u4zbld",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "The Verifier Tax: Horizon-Dependent Safety–Success Tradeoffs in Tool-Using LLM Agents [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u58mkq/the_verifier_tax_horizondependent_safetysuccess/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u58mkq",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Confused, where to start [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u5cimu/confused_where_to_start_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u5cimu",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        }
+      ]
     }
   ]
 }

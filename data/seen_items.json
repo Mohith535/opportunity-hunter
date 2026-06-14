@@ -141,8 +141,8 @@
     "a27f7f1206ca": {
       "title": "Splunk Agentic Ops Hackathon",
       "first_seen": "2026-06-13",
-      "last_seen": "2026-06-13",
-      "times_seen": 4
+      "last_seen": "2026-06-14",
+      "times_seen": 5
     },
     "599a1779bbd1": {
       "title": "Slack Agent Builder Challenge",
@@ -292,6 +292,48 @@
       "title": "Hack On Hills 8.0",
       "first_seen": "2026-06-13",
       "last_seen": "2026-06-13",
+      "times_seen": 1
+    },
+    "833ffde98c42": {
+      "title": "ATOM00blue/machine-learning-library — ★130",
+      "first_seen": "2026-06-14",
+      "last_seen": "2026-06-14",
+      "times_seen": 1
+    },
+    "6abdf248dd08": {
+      "title": "Python 3.14 garbage collection rigamarole",
+      "first_seen": "2026-06-14",
+      "last_seen": "2026-06-14",
+      "times_seen": 1
+    },
+    "8d1f3e327b8f": {
+      "title": "Pyodide 314.0: Python packages can now publish WebAssembly wheels to PyPI",
+      "first_seen": "2026-06-14",
+      "last_seen": "2026-06-14",
+      "times_seen": 1
+    },
+    "396a4d0b2080": {
+      "title": "Codex for open source",
+      "first_seen": "2026-06-14",
+      "last_seen": "2026-06-14",
+      "times_seen": 1
+    },
+    "866eb393f1d4": {
+      "title": "I’m building a free bilingual machine-learning notebook course — looking for feedback on structure and coverage [R]",
+      "first_seen": "2026-06-14",
+      "last_seen": "2026-06-14",
+      "times_seen": 1
+    },
+    "bdcbec87816e": {
+      "title": "The Verifier Tax: Horizon-Dependent Safety–Success Tradeoffs in Tool-Using LLM Agents [R]",
+      "first_seen": "2026-06-14",
+      "last_seen": "2026-06-14",
+      "times_seen": 1
+    },
+    "afc6adfb8a24": {
+      "title": "Confused, where to start [D]",
+      "first_seen": "2026-06-14",
+      "last_seen": "2026-06-14",
       "times_seen": 1
     }
   }
