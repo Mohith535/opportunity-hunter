@@ -123,6 +123,10 @@ Phone alerts use **[ntfy.sh](https://ntfy.sh)** — free, no account:
 1. Install the **ntfy** app (Android / iOS).
 2. Subscribe to your private topic (the value of `NTFY_TOPIC` in your `.env`) — done.
 
+## Contributing
+
+Adding a new source takes one file + one registry line. PRs welcome.
+
 ---
 
 *Built file-by-file, tested at each step, and proven running autonomously in the cloud.*
