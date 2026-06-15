@@ -103,6 +103,13 @@ REQUEST_TIMEOUT = 10  # seconds, applied to every outbound request
 USER_AGENT = "OpportunityHunter/1.0 (personal bot)"
 
 
+# ─── SOURCE CREDENTIALS ──────────────────────────────────────────────
+# clist.by competitive-programming contests API (free key, required).
+# Register at https://clist.by, then find your key at https://clist.by/api/v4/doc/
+CLIST_USERNAME = os.environ.get("CLIST_USERNAME", "")
+CLIST_API_KEY = os.environ.get("CLIST_API_KEY", "")
+
+
 # ─── PHASE 2 (not used yet) ──────────────────────────────────────────
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 

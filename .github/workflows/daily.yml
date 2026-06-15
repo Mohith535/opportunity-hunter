@@ -27,6 +27,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      CLIST_USERNAME: ${{ secrets.CLIST_USERNAME }}
+      CLIST_API_KEY: ${{ secrets.CLIST_API_KEY }}
       OH_PHONE: "true"
       OH_DESKTOP: "false"
       OH_TASKFLOW: "false"
