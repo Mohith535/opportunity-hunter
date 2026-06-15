@@ -141,8 +141,8 @@
     "a27f7f1206ca": {
       "title": "Splunk Agentic Ops Hackathon",
       "first_seen": "2026-06-13",
-      "last_seen": "2026-06-14",
-      "times_seen": 5
+      "last_seen": "2026-06-15",
+      "times_seen": 6
     },
     "599a1779bbd1": {
       "title": "Slack Agent Builder Challenge",
@@ -334,6 +334,108 @@
       "title": "Confused, where to start [D]",
       "first_seen": "2026-06-14",
       "last_seen": "2026-06-14",
+      "times_seen": 1
+    },
+    "4b858fb08307": {
+      "title": "ClinHallu: A Benchmark for Diagnosing Stage-Wise Hallucinations in Medical MLLM Reasoning",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "b93536d54897": {
+      "title": "Persona-Pruner: Sculpting Lightweight Models for Role-Playing",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "c17f3034dd79": {
+      "title": "AdaSR: Adaptive Streaming Reasoning with Hierarchical Relative Policy Optimization",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "4d49a9550e67": {
+      "title": "CORA: Analyzing and bridging thinking-answer gap in Multimodal RLVR via Consistency-Oriented Reasoning Alignment",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "af6daca6fbff": {
+      "title": "CottonLeafVision: An Explainable and Robust Deep Learning Framework for Cotton Leaf Disease Classification",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "32e0ddcd4eb9": {
+      "title": "buynao/aipath — ★226",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "8f9d52926d44": {
+      "title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "36703497a72d": {
+      "title": "USAII® Global AI Hackathon 2026",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "3e4c19d42c7d": {
+      "title": "How does the ML community view evolutionary algorithm research? Career implications of an EA PhD? [D]",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "986969abbb32": {
+      "title": "Quant firms at ICML 2026 [D]",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "343c09aa32bf": {
+      "title": "I built an open-source Knowledge Graph pipeline with hybrid retrieval to improve LLM multi-hop reasoning [P]",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "714a1cfa664f": {
+      "title": "PhD study: UX Designers & AI/ML Practitioners to test a \"Trust in LLM-based Chatbots\" Design Method (~25 min, anonymous) [R]",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "b9f4266b93f6": {
+      "title": "ICML Poster [D]",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "2c3450fb3bd5": {
+      "title": "Worth going to ICML during ACL? [D]",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "517f2fd93f25": {
+      "title": "Why do frontier AI labs send so many people to conferences? [D]",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "561e0ad61921": {
+      "title": "I’d Like to Try for a Google PhD Internship [R]",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "times_seen": 1
+    },
+    "db3f36649aac": {
+      "title": "Girlathon 4.0",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
       "times_seen": 1
     }
   }
