@@ -57,8 +57,8 @@ def _deadline_phrase(item) -> str:
     return item.deadline.strftime("%d %b")
 
 
-def _clip(text: str, n: int = 46) -> str:
-    text = text.strip()
+def _clip(text: str, n: int = 24) -> str:
+    text = " ".join(text.split())  # collapse whitespace
     return text if len(text) <= n else text[: n - 1].rstrip() + "…"
 
 
@@ -76,15 +76,19 @@ def _format_digest(new_items) -> str:
         b.sort(key=lambda it: (it.deadline or _date.max, -policy.effective_score(it)))
 
     def line(it):
+        # Deadline-first so the urgent bit is always visible; title clipped to
+        # the remaining width so each item stays on a single phone line.
         dl = _deadline_phrase(it)
-        tail = f"  ·  ⏳ {dl}" if dl else f"  ·  {it.source}"
-        return f"• {_clip(it.title)}{tail}"
+        if dl:
+            chip = f"⌛{dl}"
+            return f"{chip}  {_clip(it.title, max(28 - len(chip) - 2, 12))}"
+        return f"• {_clip(it.title, 26)}"
 
     parts, shown = [], 0
     sections = [
-        ("CRITICAL", "🔥 TOP PRIORITY", 4),
-        ("HIGH", "⚡ HIGH PRIORITY", 4),
-        ("MEDIUM", "📌 WORTH A LOOK", 3),
+        ("CRITICAL", "🔥 TOP PRIORITY", 3),
+        ("HIGH", "⚡ HIGH PRIORITY", 3),
+        ("MEDIUM", "📌 WORTH A LOOK", 2),
     ]
     for key, header, cap in sections:
         bucket = buckets[key]
@@ -102,9 +106,9 @@ def _format_digest(new_items) -> str:
     rest = len(new_items) - shown
     if rest > 0:
         src = Counter(it.source for it in new_items)
-        breakdown = " · ".join(f"{s} {n}" for s, n in src.most_common(4))
+        top3 = " · ".join(s for s, _ in src.most_common(3))
         parts.append(f"📚 +{rest} more to explore")
-        parts.append(breakdown)
+        parts.append(f"via {top3}")
 
     return "\n".join(parts).strip()
 
