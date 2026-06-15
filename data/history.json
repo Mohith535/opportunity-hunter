@@ -1402,6 +1402,333 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-15",
+      "items": [
+        {
+          "title": "Anthropic flies staff to D.C. to clean up White House fight",
+          "url": "https://www.axios.com/2026/06/14/anthropic-white-house-mythos-fable",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48538737",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Splunk Agentic Ops Hackathon",
+          "url": "https://splunk.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 18 - Jun 15, 2026 | prize $ 20,000 | themes: Machine Learning/AI, Cybersecurity, Enterprise",
+          "deadline": "2026-06-15",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29204",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Global Hack Week: Hacking for Good",
+          "url": "https://events.mlh.io/events/14302-global-hack-week-hacking-for-good",
+          "source": "mlh",
+          "description": "hackathon | MLH event | Global Hack Week: Hacking for Good",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "mlh-14302",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Global Hack Week: Season Launch",
+          "url": "https://events.mlh.io/events/14284-global-hack-week-season-launch",
+          "source": "mlh",
+          "description": "hackathon | MLH event | Global Hack Week: Season Launch",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "mlh-14284",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Global Hack Week: Agents",
+          "url": "https://events.mlh.io/events/14312-global-hack-week-agents",
+          "source": "mlh",
+          "description": "hackathon | MLH event | Global Hack Week: Agents",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "mlh-14312",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "WEHack 2027",
+          "url": "https://events.mlh.io/events/14391-wehack-2027",
+          "source": "mlh",
+          "description": "hackathon | MLH event | WEHack 2027",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "mlh-14391",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Midnight Hackathon",
+          "url": "https://events.mlh.io/events/14061-midnight-hackathon-may-2026",
+          "source": "mlh",
+          "description": "hackathon | MLH event | Midnight Hackathon",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "mlh-14061",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Global Hack Week: GenAI",
+          "url": "https://events.mlh.io/events/13816-global-hack-week-genai",
+          "source": "mlh",
+          "description": "hackathon | MLH event | Global Hack Week: GenAI",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "mlh-13816",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "No Python. No Excuses. Build AI Agents with Mastra",
+          "url": "https://unstop.com/hackathons/no-python-no-excuses-build-ai-agents-with-mastra-hidevs-1699311",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1699311",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Hack[AI]thon 2.0",
+          "url": "https://unstop.com/hackathons/hackaithon-20-sphere-hive-kvg-college-of-engineering-sullia-1699309",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1699309",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "TraceBash CTF (Capture The Flag)",
+          "url": "https://unstop.com/hackathons/tracebash-ctf-capture-the-flag-team-tracebash-1695806",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1695806",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Codesprint2026",
+          "url": "https://unstop.com/hackathons/codesprint2026-technocrats-institute-of-technology-and-main-1699053",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1699053",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "INDIA.RUNS 2026 –National Innovation Challenge",
+          "url": "https://unstop.com/hackathons/indiaruns-2026-national-innovation-challenge-veloris-1699008",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1699008",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Agent{a}thon by Nerds Room",
+          "url": "https://unstop.com/hackathons/agentathon-by-nerds-room-agentathon-by-nerds-room-vishveshwarya-group-of-institutions-vgi-greater-noida-uttar-1699047",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1699047",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "InnovateX",
+          "url": "https://unstop.com/hackathons/innovatex-project-grid-1698998",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1698998",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Forge 2 - 1st Edition",
+          "url": "https://unstop.com/hackathons/forge-2-1st-edition-nmg-technologies-1698930",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1698930",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Build.IT '26",
+          "url": "https://unstop.com/hackathons/buildit-26-bal-bharati-public-school-pitampura-1698904",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1698904",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Mission Y4 Prakasam Police Hackathon 2026",
+          "url": "https://unstop.com/hackathons/mission-y4-prakasam-police-hackathon-2026-sraventix-technologies-llp-1697006",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1697006",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Null Origin - 24 Hour CTF Challenge",
+          "url": "https://unstop.com/hackathons/null-origin-24-hour-ctf-challenge-cyber-hx-1698744",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1698744",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Agentic Arena : Build the Future with AI Agents",
+          "url": "https://unstop.com/hackathons/agentic-arena-build-the-future-with-ai-agents-techverse-solutions-1698423",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1698423",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "OSDHack 2026",
+          "url": "https://unstop.com/hackathons/osdhack-2026-open-source-developers-communityosdc-1693803",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1693803",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Statify 2.0 - GenAI Bootcamp",
+          "url": "https://unstop.com/hackathons/statify-20-the-data-science-bootcamp-indian-institute-of-technology-bhubaneswar-1698293",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1698293",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Build With Bharat",
+          "url": "https://unstop.com/hackathons/build-with-bharat-codeverse-1696915",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1696915",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        }
+      ]
     }
   ]
 }
