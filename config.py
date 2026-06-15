@@ -62,7 +62,8 @@ KNOWN_COMPANIES = [
 
 # ─── NOTIFICATION SETTINGS ───────────────────────────────────────────
 # Topic is read from the environment so the secret stays out of source control.
-NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "mohith-hunt-x7k2p9")
+# The default is a non-functional placeholder — set your own private topic in .env.
+NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "opportunity-hunter-set-your-own-topic")
 NTFY_URL = f"https://ntfy.sh/{NTFY_TOPIC}"
 # Cloud runs set OH_DESKTOP=false (headless) and keep OH_PHONE=true.
 DESKTOP_NOTIFICATIONS = _env_bool("OH_DESKTOP", True)
