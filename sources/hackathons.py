@@ -12,6 +12,7 @@ makes items genuinely dump-worthy (TaskFlow path).
 
 import re
 from datetime import date, datetime
+from urllib.parse import unquote
 
 import requests
 
@@ -153,6 +154,89 @@ def fetch_devfolio() -> list[Opportunity]:
                 tags=["hackathon"],
                 raw={"is_online": online, "country": h.get("country"),
                      "starts_at": h.get("starts_at")},
+            )
+        )
+    return items
+
+
+# ─── MLH (Major League Hacking) ──────────────────────────────────────
+# MLH's old `div.event-wrapper` markup is gone (modern JS site). Events now link
+# out to events.mlh.io/events/{id}-{slug}, with a clean title in the link's
+# utm_content. We scrape those links resiliently; if MLH changes again, this
+# yields 0 (via safe_fetch) without breaking the run. No structured date is
+# exposed on the listing, so deadline stays None.
+MLH_SEASON_URL = "https://mlh.io/seasons/{year}/events"
+MLH_MAX = 15
+_MLH_LINK_RE = re.compile(r'href="(https://events\.mlh\.io/events/(\d+)-[^"?]+)[^"]*"')
+
+
+def fetch_mlh() -> list[Opportunity]:
+    # Cover the season rollover by checking the current and next season pages.
+    years = sorted({date.today().year, date.today().year + 1})
+    found: dict[str, tuple[str, str]] = {}
+    for y in years:
+        try:
+            html = requests.get(
+                MLH_SEASON_URL.format(year=y), headers=_HEADERS,
+                timeout=config.REQUEST_TIMEOUT,
+            ).text
+        except requests.RequestException:
+            continue
+        for m in _MLH_LINK_RE.finditer(html):
+            url, eid = m.group(1), m.group(2)
+            if eid in found:
+                continue
+            cm = re.search(r"utm_content=([^&\"]+)", m.group(0))
+            title = unquote(cm.group(1).replace("+", " ")) if cm else f"MLH event {eid}"
+            found[eid] = (_strip(title), url)
+
+    items: list[Opportunity] = []
+    for eid, (title, url) in list(found.items())[:MLH_MAX]:
+        items.append(
+            Opportunity(
+                title=title,
+                url=url,
+                source="mlh",
+                description=f"hackathon | MLH event | {title}",
+                native_id=f"mlh-{eid}",
+                tags=["hackathon"],
+            )
+        )
+    return items
+
+
+# ─── UNSTOP (India-focused opportunities) ────────────────────────────
+UNSTOP_API = (
+    "https://unstop.com/api/public/opportunity/search-result"
+    "?opportunity=hackathons&page=1&per_page=15&oppstatus=open"
+)
+
+
+def fetch_unstop() -> list[Opportunity]:
+    resp = requests.get(
+        UNSTOP_API, headers={**_HEADERS, "Accept": "application/json"},
+        timeout=config.REQUEST_TIMEOUT,
+    )
+    resp.raise_for_status()
+    data = resp.json().get("data", {})
+    listings = data.get("data") if isinstance(data, dict) else data
+
+    items: list[Opportunity] = []
+    for o in listings or []:
+        seo = o.get("seo_url") or ""
+        url = seo if seo.startswith("http") else f"https://unstop.com/{o.get('public_url', '')}"
+        region = o.get("region", "")
+        tags = o.get("tags") or []
+        tag_text = ", ".join(t.get("name", "") for t in tags if isinstance(t, dict) and t.get("name"))
+        items.append(
+            Opportunity(
+                title=_strip(o.get("title")),
+                url=url,
+                source="unstop",
+                description=f"hackathon | {region} | India | tags: {tag_text}",
+                native_id=str(o.get("id", "")),
+                tags=["hackathon"],
+                raw={"status": o.get("status"), "region": region},
             )
         )
     return items
