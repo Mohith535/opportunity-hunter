@@ -22,23 +22,29 @@ def _ascii_header(text: str) -> str:
     return text.encode("ascii", "ignore").decode("ascii").strip() or "Opportunity Hunter"
 
 
-def send_phone(title: str, message: str, priority: str = "default", tags: str = "rocket") -> bool:
+def send_phone(title: str, message: str, priority: str = "default",
+               tags: str = "rocket", click: str = "") -> bool:
     """Send a push to the ntfy topic.
 
     priority: urgent | high | default | low | min
+    tags:     comma-separated ntfy tags; emoji tags render before the title.
+    click:    URL opened when the notification is tapped.
     Returns True on success, False on any failure (logged, never raised).
     """
     if not config.PHONE_NOTIFICATIONS:
         return False
     try:
+        headers = {
+            "Title": _ascii_header(title),
+            "Priority": priority,
+            "Tags": tags,
+        }
+        if click:
+            headers["Click"] = click
         resp = requests.post(
             config.NTFY_URL,
             data=message.encode("utf-8"),
-            headers={
-                "Title": _ascii_header(title),
-                "Priority": priority,
-                "Tags": tags,
-            },
+            headers=headers,
             timeout=config.REQUEST_TIMEOUT,
         )
         resp.raise_for_status()

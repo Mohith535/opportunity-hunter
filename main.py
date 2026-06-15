@@ -41,31 +41,99 @@ def _gather(source_names):
     return items, ok, len(sources)
 
 
-def _notify(new_items, test):
-    """Send one digest desktop + phone notification summarizing the run.
+def _deadline_phrase(item) -> str:
+    """Short, human deadline countdown for the phone digest."""
+    if not item.deadline:
+        return ""
+    days = (item.deadline - date.today()).days
+    if days < 0:
+        return "closed"
+    if days == 0:
+        return "today"
+    if days == 1:
+        return "tomorrow"
+    if days <= 7:
+        return f"{days}d left"
+    return item.deadline.strftime("%d %b")
 
-    The body lists a per-source breakdown (so you can see which sources fired)
-    plus the top few items by score.
-    """
+
+def _clip(text: str, n: int = 46) -> str:
+    text = text.strip()
+    return text if len(text) <= n else text[: n - 1].rstrip() + "…"
+
+
+def _format_digest(new_items) -> str:
+    """Build a clean, priority-grouped message body for the phone."""
+    from collections import Counter
+    from datetime import date as _date
+
+    buckets = {"CRITICAL": [], "HIGH": [], "MEDIUM": [], "OTHER": []}
+    for it in new_items:
+        lvl = policy.classify(policy.effective_score(it))
+        buckets["OTHER" if lvl == "LOW" else lvl].append(it)
+    # Within a tier, surface the soonest deadlines first, then highest score.
+    for b in buckets.values():
+        b.sort(key=lambda it: (it.deadline or _date.max, -policy.effective_score(it)))
+
+    def line(it):
+        dl = _deadline_phrase(it)
+        tail = f"  ·  ⏳ {dl}" if dl else f"  ·  {it.source}"
+        return f"• {_clip(it.title)}{tail}"
+
+    parts, shown = [], 0
+    sections = [
+        ("CRITICAL", "🔥 TOP PRIORITY", 4),
+        ("HIGH", "⚡ HIGH PRIORITY", 4),
+        ("MEDIUM", "📌 WORTH A LOOK", 3),
+    ]
+    for key, header, cap in sections:
+        bucket = buckets[key]
+        if not bucket:
+            continue
+        parts.append(f"{header} ({len(bucket)})")
+        for it in bucket[:cap]:
+            parts.append(line(it))
+            shown += 1
+        if len(bucket) > cap:
+            parts.append(f"  …+{len(bucket) - cap} more")
+        parts.append("")  # blank line between sections
+
+    # Everything else (papers, repos, contests, discussions) as a one-line tail.
+    rest = len(new_items) - shown
+    if rest > 0:
+        src = Counter(it.source for it in new_items)
+        breakdown = " · ".join(f"{s} {n}" for s, n in src.most_common(4))
+        parts.append(f"📚 +{rest} more to explore")
+        parts.append(breakdown)
+
+    return "\n".join(parts).strip()
+
+
+def _notify(new_items, test):
+    """Send one clean, urgency-grouped digest to desktop + phone."""
     if not new_items:
         return
+
+    levels = {policy.decide(it).level for it in new_items}
+    body = _format_digest(new_items)
+    title = f"{len(new_items)} new opportunities"
+
+    # Emoji + urgency conveyed via ntfy tags (the Title header must stay ASCII).
+    if "CRITICAL" in levels:
+        prio, tags = "urgent", "fire"
+    elif "HIGH" in levels:
+        prio, tags = "high", "zap"
+    else:
+        prio, tags = "default", "dart"
+
+    # Tapping the notification opens the most urgent item.
+    top = max(new_items, key=policy.effective_score)
+
     from collections import Counter
-
-    counts = Counter(it.source for it in new_items)
-    src_line = " | ".join(f"{src}: {n}" for src, n in counts.most_common())
-    top = sorted(new_items, key=policy.effective_score, reverse=True)[:3]
-    top_lines = "\n".join(
-        f"[{policy.effective_score(it)}] {it.source}: {it.title[:55]}" for it in top
-    )
-
-    title = f"🎯 {len(new_items)} new opportunities"
-    message = f"{src_line}\n\n{top_lines}"
-
+    src_line = " · ".join(f"{s} {n}" for s, n in Counter(it.source for it in new_items).most_common())
     send_desktop("Opportunity Hunter", f"{len(new_items)} new — {src_line}")
     if not test:  # --test suppresses the phone push
-        levels = {policy.decide(it).level for it in new_items}
-        prio = "urgent" if "CRITICAL" in levels else "high" if "HIGH" in levels else "default"
-        send_phone(title, message, priority=prio)
+        send_phone(title, body, priority=prio, tags=tags, click=top.url)
 
 
 def run(source_names=None, test=False):
