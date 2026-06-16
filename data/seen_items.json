@@ -659,6 +659,144 @@
       "first_seen": "2026-06-15",
       "last_seen": "2026-06-15",
       "times_seen": 1
+    },
+    "2263b121e93b": {
+      "title": "Context-Aware RL for Agentic and Multimodal LLMs",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "582c10c978c4": {
+      "title": "Benchmarking LLM Agents on Meta-Analysis Articles from Nature Portfolio",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "7453b6b27bbe": {
+      "title": "Your Privacy My Cloak: Backdoor Attacks on Differentially Private Federated Learning",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "ae22a611eb00": {
+      "title": "KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "804b973fd9c3": {
+      "title": "DEEPRUBRIC: Evidence-Tree Rubric Supervision for Efficient Reinforcement Learning of Deep Research Agents",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "78dd975b449d": {
+      "title": "omnigent-ai/omnigent — ★2,124",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "03a76235f1ad": {
+      "title": "GitLab Transcend Hackathon",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "25589dba1810": {
+      "title": "NextGenHacks",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "587748369093": {
+      "title": "AI language models have favorite names, and we mapped them [R]",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "1f5a091a563c": {
+      "title": "Open weights are not enough: we need open training frameworks for research and better algorithms [P]",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "54235ed97354": {
+      "title": "quicktok: a faster tokenizer (exact and byte-identical with tiktoken) [P]",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "4555d38cb9f3": {
+      "title": "NeurIPS Competition decision notification [D]",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "5851a291d368": {
+      "title": "Embedded/edge ML folks: what actually eats the most time ,getting data, or cleaning/labeling it (time series sensor data, not computer vision/audio)? [D]",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "5d9b65276835": {
+      "title": "Cleo: trying to fit full analyst behavior in a 2B model [P]",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "0c6bdf9c2825": {
+      "title": "PrintGuard 2.0 — ShuffleNetV2 + few-shot prototypical network, TFLite via LiteRT, ≈5 MB, runs unmodified in the browser (Pyodide) and on CPython [P]",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "982fdc8e47f5": {
+      "title": "Concept-Vector: A design framework for human-interpretable word embeddings [P]",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "60cace3cd688": {
+      "title": "Recent CS graduate looking for GPU compute collaborators for LLM/VLM research [D]",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "6bb333061de3": {
+      "title": "How the brains learn [R]",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "70e360906220": {
+      "title": "AI Hackathon.",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "3e25fcb2b3b5": {
+      "title": "Ignisys",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "44ac3b7f6841": {
+      "title": "Innovex 2026",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "875307cd51df": {
+      "title": "Open Source Competition",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
+    },
+    "471bb89c2d58": {
+      "title": "Code Crackdown",
+      "first_seen": "2026-06-16",
+      "last_seen": "2026-06-16",
+      "times_seen": 1
     }
   }
 }
