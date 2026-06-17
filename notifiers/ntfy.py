@@ -23,12 +23,15 @@ def _ascii_header(text: str) -> str:
 
 
 def send_phone(title: str, message: str, priority: str = "default",
-               tags: str = "rocket", click: str = "") -> bool:
+               tags: str = "rocket", click: str = "", actions: str = "",
+               markdown: bool = False) -> bool:
     """Send a push to the ntfy topic.
 
     priority: urgent | high | default | low | min
     tags:     comma-separated ntfy tags; emoji tags render before the title.
     click:    URL opened when the notification is tapped.
+    actions:  ntfy 'Actions' header (e.g. tap-to-open 'view' buttons).
+    markdown: render the message body as Markdown (bold, bullets, links).
     Returns True on success, False on any failure (logged, never raised).
     """
     if not config.PHONE_NOTIFICATIONS:
@@ -41,6 +44,10 @@ def send_phone(title: str, message: str, priority: str = "default",
         }
         if click:
             headers["Click"] = click
+        if actions:
+            headers["Actions"] = actions
+        if markdown:
+            headers["Markdown"] = "yes"
         resp = requests.post(
             config.NTFY_URL,
             data=message.encode("utf-8"),

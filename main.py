@@ -42,7 +42,7 @@ def _gather(source_names):
 
 
 def _deadline_phrase(item) -> str:
-    """Short, human deadline countdown for the phone digest."""
+    """Human deadline countdown, e.g. 'today', 'tomorrow', '5 days left', '12 Jul'."""
     if not item.deadline:
         return ""
     days = (item.deadline - date.today()).days
@@ -52,8 +52,8 @@ def _deadline_phrase(item) -> str:
         return "today"
     if days == 1:
         return "tomorrow"
-    if days <= 7:
-        return f"{days}d left"
+    if days <= 14:
+        return f"{days} days left"
     return item.deadline.strftime("%d %b")
 
 
@@ -62,59 +62,70 @@ def _clip(text: str, n: int = 24) -> str:
     return text if len(text) <= n else text[: n - 1].rstrip() + "…"
 
 
+def _md_link(it) -> str:
+    """A Markdown bullet with a clickable link + deadline, safe for ntfy markdown."""
+    text = _clip(it.title.replace("[", "(").replace("]", ")"), 46)
+    url = it.url.replace("(", "%28").replace(")", "%29")
+    dl = _deadline_phrase(it)
+    suffix = f" — {dl}" if dl else ""
+    return f"- [{text}]({url}){suffix}"
+
+
 def _format_digest(new_items) -> str:
-    """Build a clean, priority-grouped message body for the phone."""
-    from collections import Counter
+    """Markdown digest: bold headers, bulleted clickable links, soonest-first.
+
+    Three tiers matching the notification's intent — CRITICAL (9-10),
+    HIGH (7-8), and Learning (everything below, e.g. papers/repos/minor items).
+    """
     from datetime import date as _date
 
-    buckets = {"CRITICAL": [], "HIGH": [], "MEDIUM": [], "OTHER": []}
+    buckets = {"CRITICAL": [], "HIGH": [], "LEARNING": []}
     for it in new_items:
         lvl = policy.classify(policy.effective_score(it))
-        buckets["OTHER" if lvl == "LOW" else lvl].append(it)
-    # Within a tier, surface the soonest deadlines first, then highest score.
+        key = lvl if lvl in ("CRITICAL", "HIGH") else "LEARNING"
+        buckets[key].append(it)
     for b in buckets.values():
         b.sort(key=lambda it: (it.deadline or _date.max, -policy.effective_score(it)))
 
-    def line(it):
-        # Deadline-first so the urgent bit is always visible; title clipped to
-        # the remaining width so each item stays on a single phone line.
-        dl = _deadline_phrase(it)
-        if dl:
-            chip = f"⌛{dl}"
-            return f"{chip}  {_clip(it.title, max(28 - len(chip) - 2, 12))}"
-        return f"• {_clip(it.title, 26)}"
-
-    parts, shown = [], 0
+    parts = [f"🌅 **{len(new_items)} new opportunities**", ""]
     sections = [
-        ("CRITICAL", "🔥 TOP PRIORITY", 3),
-        ("HIGH", "⚡ HIGH PRIORITY", 3),
-        ("MEDIUM", "📌 WORTH A LOOK", 2),
+        ("CRITICAL", "🔥 **CRITICAL**", 5),
+        ("HIGH", "⚡ **HIGH**", 5),
+        ("LEARNING", "📚 **Learning**", 6),
     ]
     for key, header, cap in sections:
         bucket = buckets[key]
         if not bucket:
             continue
-        parts.append(f"{header} ({len(bucket)})")
-        for it in bucket[:cap]:
-            parts.append(line(it))
-            shown += 1
+        parts.append(header)
+        parts.extend(_md_link(it) for it in bucket[:cap])
         if len(bucket) > cap:
-            parts.append(f"  …+{len(bucket) - cap} more")
+            parts.append(f"_…and {len(bucket) - cap} more_")
         parts.append("")  # blank line between sections
-
-    # Everything else (papers, repos, contests, discussions) as a one-line tail.
-    rest = len(new_items) - shown
-    if rest > 0:
-        src = Counter(it.source for it in new_items)
-        top3 = " · ".join(s for s, _ in src.most_common(3))
-        parts.append(f"📚 +{rest} more to explore")
-        parts.append(f"via {top3}")
 
     return "\n".join(parts).strip()
 
 
+def _actions_header(new_items) -> str:
+    """ntfy 'Actions' header: a tap-to-open 'view' button for the top 3 items.
+
+    Must be ASCII (HTTP headers are latin-1) and free of the ',' / ';' that
+    delimit the short action format, so labels are sanitized.
+    """
+    actions = []
+    for it in sorted(new_items, key=policy.effective_score, reverse=True)[:3]:
+        if not it.url:
+            continue
+        label = it.title.encode("ascii", "ignore").decode()
+        for ch in (",", ";", '"', "'"):
+            label = label.replace(ch, " ")
+        label = " ".join(label.split())[:22] or it.source
+        actions.append(f"view, {label}, {it.url}, clear=true")
+    return "; ".join(actions)
+
+
 def _notify(new_items, test):
-    """Send one clean, urgency-grouped digest to desktop + phone."""
+    """Send one Markdown digest (clickable links + action buttons) to phone + desktop."""
     if not new_items:
         return
 
@@ -122,7 +133,7 @@ def _notify(new_items, test):
     body = _format_digest(new_items)
     title = f"{len(new_items)} new opportunities"
 
-    # Emoji + urgency conveyed via ntfy tags (the Title header must stay ASCII).
+    # Keep existing priority logic; emoji conveyed via ntfy tags.
     if "CRITICAL" in levels:
         prio, tags = "urgent", "fire"
     elif "HIGH" in levels:
@@ -130,14 +141,15 @@ def _notify(new_items, test):
     else:
         prio, tags = "default", "dart"
 
-    # Tapping the notification opens the most urgent item.
-    top = max(new_items, key=policy.effective_score)
+    top = max(new_items, key=policy.effective_score)   # tapping body opens this
+    actions = _actions_header(new_items)               # top-3 buttons
 
     from collections import Counter
     src_line = " · ".join(f"{s} {n}" for s, n in Counter(it.source for it in new_items).most_common())
     send_desktop("Opportunity Hunter", f"{len(new_items)} new — {src_line}")
     if not test:  # --test suppresses the phone push
-        send_phone(title, body, priority=prio, tags=tags, click=top.url)
+        send_phone(title, body, priority=prio, tags=tags,
+                   click=top.url, actions=actions, markdown=True)
 
 
 def run(source_names=None, test=False):
