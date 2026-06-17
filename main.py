@@ -13,6 +13,7 @@ CLI:
 """
 
 import argparse
+import textwrap
 import time
 from datetime import date, datetime
 
@@ -57,63 +58,67 @@ def _deadline_phrase(item) -> str:
     return item.deadline.strftime("%d %b")
 
 
-def _clip(text: str, n: int = 24) -> str:
-    text = " ".join(text.split())  # collapse whitespace
-    return text if len(text) <= n else text[: n - 1].rstrip() + "…"
+def _md_link(it, no_deadline: str = "rolling") -> str:
+    """A Markdown bullet: clickable link + a deadline suffix on every item.
 
-
-def _md_link(it) -> str:
-    """A Markdown bullet with a clickable link + deadline, safe for ntfy markdown."""
-    text = _clip(it.title.replace("[", "(").replace("]", ")"), 46)
-    url = it.url.replace("(", "%28").replace(")", "%29")
-    dl = _deadline_phrase(it)
-    suffix = f" — {dl}" if dl else ""
-    return f"- [{text}]({url}){suffix}"
-
-
-def _format_digest(new_items) -> str:
-    """Markdown digest: bold headers, bulleted clickable links, soonest-first.
-
-    Three tiers matching the notification's intent — CRITICAL (9-10),
-    HIGH (7-8), and Learning (everything below, e.g. papers/repos/minor items).
+    Titles are shortened at a word boundary (textwrap.shorten), never mid-word.
+    Items without a parsed deadline get the `no_deadline` fallback so every line
+    has a consistent suffix.
     """
+    text = textwrap.shorten(it.title, width=44, placeholder="…")
+    text = text.replace("[", "(").replace("]", ")")        # keep link text valid
+    url = it.url.replace("(", "%28").replace(")", "%29")
+    suffix = _deadline_phrase(it) or no_deadline
+    return f"- [{text}]({url}) — {suffix}"
+
+
+def _by_deadline(items):
     from datetime import date as _date
+    return sorted(items, key=lambda it: (it.deadline or _date.max,
+                                          -policy.effective_score(it)))
 
-    buckets = {"CRITICAL": [], "HIGH": [], "LEARNING": []}
-    for it in new_items:
-        lvl = policy.classify(policy.effective_score(it))
-        key = lvl if lvl in ("CRITICAL", "HIGH") else "LEARNING"
-        buckets[key].append(it)
-    for b in buckets.values():
-        b.sort(key=lambda it: (it.deadline or _date.max, -policy.effective_score(it)))
 
-    parts = [f"🌅 **{len(new_items)} new opportunities**", ""]
-    sections = [
-        ("CRITICAL", "🔥 **CRITICAL**", 5),
-        ("HIGH", "⚡ **HIGH**", 5),
-        ("LEARNING", "📚 **Learning**", 6),
-    ]
-    for key, header, cap in sections:
-        bucket = buckets[key]
-        if not bucket:
-            continue
-        parts.append(header)
-        parts.extend(_md_link(it) for it in bucket[:cap])
-        if len(bucket) > cap:
-            parts.append(f"_…and {len(bucket) - cap} more_")
-        parts.append("")  # blank line between sections
+def _format_main(critical, high, cap=6) -> str:
+    """Main-push body: CRITICAL + HIGH only, max `cap` combined, soonest first.
 
+    The cap is allocated across both tiers by soonest deadline, then the chosen
+    items are shown under their tier headers (blank lines between blocks so
+    CommonMark renders them spaced out)."""
+    pool = _by_deadline(critical + high)
+    selected = pool[:cap]
+    crit = [i for i in selected if policy.classify(policy.effective_score(i)) == "CRITICAL"]
+    hi = [i for i in selected if policy.classify(policy.effective_score(i)) == "HIGH"]
+
+    parts = []
+    if crit:
+        parts += ["🔥 **CRITICAL**", "", *[_md_link(i) for i in crit], ""]
+    if hi:
+        parts += ["⚡ **HIGH**", "", *[_md_link(i) for i in hi], ""]
+
+    remaining = len(pool) - len(selected)
+    if remaining > 0:
+        parts.append(f"_+{remaining} more — check TaskFlow_")
     return "\n".join(parts).strip()
 
 
-def _actions_header(new_items) -> str:
+def _format_learning(items, cap=3) -> str:
+    """Low-priority body: top `cap` medium/low items + a single count line."""
+    ordered = _by_deadline(items)
+    parts = [_md_link(i, no_deadline=i.source) for i in ordered[:cap]]
+    rest = len(ordered) - cap
+    if rest > 0:
+        parts += ["", f"_+{rest} more research/contest items today_"]
+    return "\n".join(parts).strip()
+
+
+def _actions_header(items) -> str:
     """ntfy 'Actions' header: a tap-to-open 'view' button for the top 3 items.
 
     Must be ASCII (HTTP headers are latin-1) and free of the ',' / ';' that
     delimit the short action format, so labels are sanitized.
     """
     actions = []
-    for it in sorted(new_items, key=policy.effective_score, reverse=True)[:3]:
+    for it in sorted(items, key=policy.effective_score, reverse=True)[:3]:
         if not it.url:
             continue
         label = it.title.encode("ascii", "ignore").decode()
@@ -125,31 +130,47 @@ def _actions_header(new_items) -> str:
 
 
 def _notify(new_items, test):
-    """Send one Markdown digest (clickable links + action buttons) to phone + desktop."""
+    """Send a focused main push (CRITICAL+HIGH) plus a separate low-priority
+    learning push (medium/low), to phone + desktop."""
     if not new_items:
         return
-
-    levels = {policy.decide(it).level for it in new_items}
-    body = _format_digest(new_items)
-    title = f"{len(new_items)} new opportunities"
-
-    # Keep existing priority logic; emoji conveyed via ntfy tags.
-    if "CRITICAL" in levels:
-        prio, tags = "urgent", "fire"
-    elif "HIGH" in levels:
-        prio, tags = "high", "zap"
-    else:
-        prio, tags = "default", "dart"
-
-    top = max(new_items, key=policy.effective_score)   # tapping body opens this
-    actions = _actions_header(new_items)               # top-3 buttons
-
     from collections import Counter
+
+    def _lvl(it):
+        return policy.classify(policy.effective_score(it))
+
+    crit = [i for i in new_items if _lvl(i) == "CRITICAL"]
+    high = [i for i in new_items if _lvl(i) == "HIGH"]
+    medium = [i for i in new_items if _lvl(i) == "MEDIUM"]
+    learning = [i for i in new_items if _lvl(i) in ("MEDIUM", "LOW")]
+
+    # Title = short, useful stat line (NOT repeated in the body).
+    stat = []
+    if crit:
+        stat.append(f"{len(crit)} Critical")
+    if high:
+        stat.append(f"{len(high)} High")
+    if medium:
+        stat.append(f"{len(medium)} worth a look")
+    stat_line = " · ".join(stat) or f"{len(new_items)} new opportunities"
+
     src_line = " · ".join(f"{s} {n}" for s, n in Counter(it.source for it in new_items).most_common())
     send_desktop("Opportunity Hunter", f"{len(new_items)} new — {src_line}")
-    if not test:  # --test suppresses the phone push
-        send_phone(title, body, priority=prio, tags=tags,
-                   click=top.url, actions=actions, markdown=True)
+    if test:  # --test suppresses phone pushes
+        return
+
+    # 1) MAIN push — CRITICAL + HIGH only, with top-3 action buttons.
+    if crit or high:
+        prio, tags = ("urgent", "fire") if crit else ("high", "zap")
+        top = max(crit + high, key=policy.effective_score)
+        send_phone(stat_line, _format_main(crit, high),
+                   priority=prio, tags=tags, click=top.url,
+                   actions=_actions_header(crit + high), markdown=True)
+
+    # 2) LEARNING push — medium/low, low priority, separate notification.
+    if learning:
+        send_phone(f"{len(learning)} more to explore", _format_learning(learning),
+                   priority="low", tags="books", markdown=True)
 
 
 def run(source_names=None, test=False):
