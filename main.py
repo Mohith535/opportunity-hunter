@@ -58,18 +58,34 @@ def _deadline_phrase(item) -> str:
     return item.deadline.strftime("%d %b")
 
 
+# Category emoji per source — tells you the TYPE of opportunity at a glance,
+# independent of the score tier (the closest thing to colour a push allows).
+_CATEGORY_EMOJI = {
+    "devpost": "🏆", "devfolio": "🏆", "mlh": "🏆",   # 🏆 Hackathon
+    "unstop": "💼",                                    # 💼 Student program / fellowship
+    "clist": "💻",                                     # 💻 Coding contest
+    "arxiv": "📄",                                     # 📄 Research paper
+    "github": "🔧",                                    # 🔧 Trending repo
+    "reddit": "💬", "hackernews": "💬",                # 💬 Discussion
+}
+
+
+def _cat_emoji(source: str) -> str:
+    return _CATEGORY_EMOJI.get(source, "📌")
+
+
 def _md_link(it, no_deadline: str = "rolling") -> str:
-    """A Markdown bullet: clickable link + a deadline suffix on every item.
+    """A Markdown line: category emoji + clickable link + deadline suffix.
 
     Titles are shortened at a word boundary (textwrap.shorten), never mid-word.
     Items without a parsed deadline get the `no_deadline` fallback so every line
     has a consistent suffix.
     """
-    text = textwrap.shorten(it.title, width=44, placeholder="…")
+    text = textwrap.shorten(it.title, width=42, placeholder="…")
     text = text.replace("[", "(").replace("]", ")")        # keep link text valid
     url = it.url.replace("(", "%28").replace(")", "%29")
     suffix = _deadline_phrase(it) or no_deadline
-    return f"- [{text}]({url}) — {suffix}"
+    return f"{_cat_emoji(it.source)} [{text}]({url}) — {suffix}"
 
 
 def _by_deadline(items):
@@ -89,26 +105,29 @@ def _format_main(critical, high, cap=6) -> str:
     crit = [i for i in selected if policy.classify(policy.effective_score(i)) == "CRITICAL"]
     hi = [i for i in selected if policy.classify(policy.effective_score(i)) == "HIGH"]
 
-    parts = []
+    # Items within a tier are joined with hard breaks ("  \n") so each stays on
+    # its own line; tiers are separated by a blank line for CommonMark spacing.
+    blocks = []
     if crit:
-        parts += ["🔥 **CRITICAL**", "", *[_md_link(i) for i in crit], ""]
+        blocks.append("🔥 **CRITICAL**\n\n" + "  \n".join(_md_link(i) for i in crit))
     if hi:
-        parts += ["⚡ **HIGH**", "", *[_md_link(i) for i in hi], ""]
+        blocks.append("⚡ **HIGH**\n\n" + "  \n".join(_md_link(i) for i in hi))
+    body = "\n\n".join(blocks)
 
     remaining = len(pool) - len(selected)
     if remaining > 0:
-        parts.append(f"_+{remaining} more — check TaskFlow_")
-    return "\n".join(parts).strip()
+        body += f"\n\n_+{remaining} more — check TaskFlow_"
+    return body.strip()
 
 
 def _format_learning(items, cap=3) -> str:
     """Low-priority body: top `cap` medium/low items + a single count line."""
     ordered = _by_deadline(items)
-    parts = [_md_link(i, no_deadline=i.source) for i in ordered[:cap]]
+    body = "  \n".join(_md_link(i, no_deadline=i.source) for i in ordered[:cap])
     rest = len(ordered) - cap
     if rest > 0:
-        parts += ["", f"_+{rest} more research/contest items today_"]
-    return "\n".join(parts).strip()
+        body += f"\n\n_+{rest} more research/contest items today_"
+    return body.strip()
 
 
 def _actions_header(items) -> str:
