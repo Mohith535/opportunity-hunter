@@ -110,6 +110,10 @@ USER_AGENT = "OpportunityHunter/1.0 (personal bot)"
 CLIST_USERNAME = os.environ.get("CLIST_USERNAME", "")
 CLIST_API_KEY = os.environ.get("CLIST_API_KEY", "")
 
+# GitHub API token — optional locally, auto-provided in GitHub Actions.
+# Lifts the Search API rate limit (avoids 403s from shared runner IPs).
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
+
 
 # ─── PHASE 2 (not used yet) ──────────────────────────────────────────
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")

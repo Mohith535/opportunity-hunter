@@ -19,6 +19,11 @@ HEADERS = {
     "Accept": "application/vnd.github.v3+json",
     "User-Agent": config.USER_AGENT,
 }
+# Authenticate when a token is available (GITHUB_TOKEN). Unauthenticated search
+# is 60 req/hr per IP — which 403s from shared datacenter IPs like GitHub
+# Actions runners; a token raises it to ~30 req/min, far above our few calls.
+if config.GITHUB_TOKEN:
+    HEADERS["Authorization"] = f"Bearer {config.GITHUB_TOKEN}"
 # One query per topic — GitHub search rejects (422) an `OR` combined with the
 # `created:` qualifier, so we keep each topic separate and dedup in fetch().
 QUERIES = [

@@ -29,6 +29,8 @@ jobs:
       NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
       CLIST_USERNAME: ${{ secrets.CLIST_USERNAME }}
       CLIST_API_KEY: ${{ secrets.CLIST_API_KEY }}
+      # Auto-provided by Actions (no manual secret needed); lifts GitHub API rate limit.
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       OH_PHONE: "true"
       OH_DESKTOP: "false"
       OH_TASKFLOW: "false"
