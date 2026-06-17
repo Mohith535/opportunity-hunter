@@ -2343,6 +2343,26 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-17",
+      "items": [
+        {
+          "title": "Next-Latent Prediction Transformers [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u84mio/nextlatent_prediction_transformers_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u84mio",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        }
+      ]
     }
   ]
 }
