@@ -2294,6 +2294,55 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-17",
+      "items": [
+        {
+          "title": "What is Speculative Decoding? (trending on paperswithco.de) [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u83kzt/what_is_speculative_decoding_trending_on/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u83kzt",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Ignisys 1.O",
+          "url": "https://ignisys-ignitia.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | New Town, India | themes: No Restrictions",
+          "deadline": "2026-08-01",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "35b518b72ab94de39a59dbfd2531960f",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "estie Programming Contest 2026 (AtCoder Heuristic Contest 068) (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/ahc068",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-07-18T06:00:00",
+          "deadline": "2026-07-18",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68338472",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        }
+      ]
     }
   ]
 }
