@@ -2363,6 +2363,400 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-18",
+      "items": [
+        {
+          "title": "Learning User Simulators with Turing Rewards",
+          "url": "https://arxiv.org/abs/2606.19336v1",
+          "source": "arxiv",
+          "description": "Learning to simulate human users in interactive settings could advance the training of agent assistants, evaluation of personalization systems, research in the social sciences, and more. Existing approaches generally do so by training a large language model (LLM) to match a single ground truth response, either by maximizing the log probability or by using a similarity reward. We instead propose {Turing-RL}: a Turing-Test-based reinforcement learning approach for training user simulator models. {Turing-RL} uses a discriminative Turing reward with an LLM judge to score how indistinguishable a generated response is from the real user's given the user's history, and the user simulator LLM learns to produce responses indistinguishable from what the user could have said with such rewards. Across two different domains--conversational chat and Reddit forum discussion--we find that {Turing-RL} consistently outperforms baseline methods on both LLM and human evaluation metrics. Our study suggests that optimizing for indistinguishability, rather than response matching, is effective for learning user simulators.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.19336",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Freeing the Law with LOCUS: A Local Ordinance Corpus for the United States",
+          "url": "https://arxiv.org/abs/2606.19334v1",
+          "source": "arxiv",
+          "description": "Progress in legal AI increasingly depends on access to authoritative legal text at scale. Yet one of the most consequential layers of American law remains largely absent from existing machine-readable corpora: local ordinances. Local codes govern zoning, housing, business licensing, public health, noise, animal control, and many other domains of everyday regulation, but they are fragmented across vendor platforms designed for human browsing rather than bulk research access. We introduce LOCUS - the Local Ordinance Corpus for the United States - a comprehensive corpus and county-harmonized access layer for U.S. municipal and county ordinance codes. The raw corpus, available for release to researchers, represents nearly all publicly available municipal and county ordinance codes. The resulting raw corpus contains codes from 9,239 cities and counties. A smaller county-harmonized LOCUS access layer provides coverage for the largest 2,309 of 3,144 U.S. counties, accounting for a majority of the population. We use OCR to handle the myriad of document formats that have kept the law from being a public resource. We release the corpus with coverage metadata to support reproducibility, downstream legal AI research, and the incremental expansion of machine-readable access to local law. We train a collection of ModernBERT-based classifiers and scorers to facilitate analyzing U.S. local law among several dimensions, such as opacity and paternalism, that have not previously been studied at this scale. LOCUS-v1 and its derivative models are available at: https://huggingface.co/datasets/LocalLaws/LOCUS-v1",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.19334",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "The Chandra-Gaia Catalog of Counterparts: Resolving ambiguous Gaia matches to X-ray sources in the Chandra Source Catalog using Machine Learning",
+          "url": "https://arxiv.org/abs/2606.19329v1",
+          "source": "arxiv",
+          "description": "We present a framework to cross-match sources from the Chandra Source Catalog (CSC v2.1) with optical sources from Gaia Data Release 3. Unlike purely spatial approaches, we use source properties such as magnitudes, colors, and distances to identify true counterparts, detect chance coincidences, and resolve ambiguities when multiple plausible candidates exist. We define a training set of high-confidence matches using NWAY, a Bayesian cross-matching framework that accounts for positional errors and source densities. We train a gradient-boosted classifier (LightGBM) on a variety of features from both catalogs. Of the ~$254$k unique X-ray sources, we find counterparts for ~$113$k sources, of which plausible multiple counterparts are found for ~$7$k. We find no counterparts for ~$20$k sources for which separation-based cross-matching does find a match, and attribute half of these to chance coincidences. We validate the pipeline on the Chandra Orion Ultradeep Project (COUP), where the machine-learning matches reproduce 95% of NWAY cross-matches without using any positional information. We release a catalog of the ~$113$k Chandra-Gaia counterparts, together with ~$7$k alternative matches and ~$20$k ambiguous NWAY associations, supporting future population studies of sources detectable by both Chandra and Gaia. We discuss limitations and provide a generalization of the framework that is applicable in other cross-matching scenarios.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.19329",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Explaining Attention with Program Synthesis",
+          "url": "https://arxiv.org/abs/2606.19317v1",
+          "source": "arxiv",
+          "description": "A longstanding goal of research on interpretable deep learning is to replace opaque neural computations with human-meaningful symbolic descriptions. In this paper, we propose an approach for approximating the behavior of components of deep networks with executable programs. We focus on attention heads in transformer language models. For a given head, we first compute its associated attention matrices on a collection of randomly selected training examples. Next, we prompt a pre-trained language model with a summary of these matrices, and instruct it to generate a set of Python programs that can reproduce the associated attention patterns given only text from the input sentence. Finally, we re-rank programs according to how well our final set of programs predict behavior on held-out inputs. We demonstrate that a set of fewer than 1,000 such generated programs can reproduce the attention patterns of heads in GPT-2, TinyLlama-1.1B, and Llama-3B, achieving an average Intersection-over-Union similarity above 75% on TinyStories. Moreover, the best-fit programs can replace neural attention heads without substantially affecting model behavior: replacing 25% of attention heads with programmatic surrogates across the three models incurs only a 16% average perplexity increase, while maintaining performance on a variety of downstream question answering benchmarks. This work contributes a scalable pipeline for reverse-engineering attention heads in transformer models using human-readable, executable code, advancing a path toward symbolic transparency in neural models.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.19317",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Diffusion-Proof: Recipe for Formal Theorem Proving Beyond Auto-Regressive Generation",
+          "url": "https://arxiv.org/abs/2606.19315v1",
+          "source": "arxiv",
+          "description": "Enhancing the formal math reasoning capabilities of Large Language Models (LLMs) has become a key focus in both mathematical and computer science communities in recent years. While significant progress has been made in using state-of-the-art Auto-Regressive (AR) LLMs for formal theorem proving, these models suffer from inherent limitations. Their next-token prediction generation methods may yield suboptimal performance due to the challenges of long-range coherence and the compounding of errors over long sequences. Recent advancements in diffusion LLMs (dLLMs), which generate text through iterative denoising of a multi-token block, offer a promising alternative. However, the application of dLLMs to formal mathematics, where maintaining long-range coherence is critical, remains largely understudied. To address the challenges above, we propose **Diffusion-Proof**, to the best of our knowledge, the first framework to train and apply dLLMs for formal theorem proving. Our frameworks contain training and inference methods for two models. The first one is *dLLM-Prover-7B*, which performs whole-proof writing with long-range coherent tactic usage. The second one is *dLLM-Corrector-7B*, which is a novel large block diffusion-based correction model. It leverages the in-filling capabilities of dLLMs to perform local proof correction using bi-directional information. Extensive experiments demonstrate that **Diffusion-Proof** relatively significantly outperforms the AR LLM baseline trained under the same dataset. **Diffusion-Proof** achieves an absolute improvement of **1.61%** on ProofNet-Test and **6.14%** on MiniF2F-Test benchmarks compare to the baseline. Notably, **Diffusion-Proof** successfully resolves one IMO problem that more advanced thinking model DeepSeek-Prover-V2-7B could not solve, showcasing the unique advantage of dLLMs in formal theorem proving.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.19315",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Somnusochi/VLM-AutoYOLO — ★125",
+          "url": "https://github.com/Somnusochi/VLM-AutoYOLO",
+          "source": "github",
+          "description": "AI Auto Annotation & YOLO Training Pipeline, End-to-end object detection auto-labeling and YOLO training platform. VLM-powered annotation with NVIDIA LocateAnything-3B, manual refinement, one-click YOLO training, video keyframe extraction, and model validation. Supports image and video. (topics: auto labeling, computer vision, data annotation, deep learning, fastapi, locate anything, machine learning, nvidia, object detection, pytorch, react, ultralytics, video annotation, vlm, yolo, yolo training)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "Somnusochi/VLM-AutoYOLO",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Goekdeniz-Guelmez/MLX-LoRA-Studio — ★99",
+          "url": "https://github.com/Goekdeniz-Guelmez/MLX-LoRA-Studio",
+          "source": "github",
+          "description": "A native Mac App for LLM fine-tuning on Apple Silicon — fully on-device, fully open source. (topics: deep learning, llm training, llms, machine learning, mlx, mlx lm, mlx lm lora, nlp, preference learning, reinforcement learning, rl, rlhf, sft)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "Goekdeniz-Guelmez/MLX-LoRA-Studio",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Lore – Open source version control system designed for scalability",
+          "url": "https://lore.org/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48571081",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Multivariate Probability Models in Machine Learning [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u8xxyh/multivariate_probability_models_in_machine/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u8xxyh",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "ACL 2026 first author with weak GPA. How should I approach PhD applications? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u8bp65/acl_2026_first_author_with_weak_gpa_how_should_i/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u8bp65",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "What does provisional paper acceptance mean in ECCV? Is that the default message everyone gets? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u8xghq/what_does_provisional_paper_acceptance_mean_in/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u8xghq",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Is foundational AI research still something that can be done without access to HPC? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u8jyat/is_foundational_ai_research_still_something_that/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u8jyat",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Contrastive targeted SFT as a mechinterp method - has anyone mapped causal dependency interactions this way? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u8if6l/contrastive_targeted_sft_as_a_mechinterp_method/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u8if6l",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "No CVPRW report [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u8jtgd/no_cvprw_report_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u8jtgd",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "How do you analyze the relative \"strength\" of probes? [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u8lo60/how_do_you_analyze_the_relative_strength_of/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u8lo60",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Should I accept job offer or do my master's? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u8mz1x/should_i_accept_job_offer_or_do_my_masters_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u8mz1x",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "FutureForge Hackathon 2026",
+          "url": "https://futureforge-hackathon.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | Mumbai, India | themes: Blockchain, FinTech, HealthTech",
+          "deadline": "2026-07-19",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "bb54d442577e484b9166313a22c6e24d",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "CodeStorm 2026: FutureForge",
+          "url": "https://codestorm-futureforge.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | online | themes: Design, AI/ML, Future Mobility",
+          "deadline": "2026-07-31",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "69bc320cd0ff44f4bf84e9facd534485",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Weekend Dev Challenge 55: .NET projects (codechef.com)",
+          "url": "https://www.codechef.com/DEVWEEKEND55",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-06-19T18:30:00",
+          "deadline": "2026-06-19",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68341783",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "AI Product Challenge 2026",
+          "url": "https://unstop.com/hackathons/ai-product-challenge-2026-dyndox-1700798",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1700798",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "AI Builders Hackathon 2026",
+          "url": "https://unstop.com/hackathons/ai-builders-hackathon-2026-dyndox-1700796",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1700796",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "AVANZARE V19.0 – 24-Hour National Level Hackathon",
+          "url": "https://unstop.com/hackathons/avanzare-v190-24-hour-national-level-hackathon-kongu-engineering-college-1690425",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1690425",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "ROBOVANTA '26 Hackathon – Code & Build for ₹80,000 Prize Pool",
+          "url": "https://unstop.com/hackathons/robovanta-26-hackathon-code-build-for-rs80000-prize-pool-pixor-robotics-club-1700757",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1700757",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Google Gemini Music Night: Live AI Band Face-off",
+          "url": "https://unstop.com/events/google-gemini-music-night-live-ai-band-face-off-google-student-ambassador-1700357",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1700357",
+          "score": 9,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "SRCAS Hackathon 3.0 - What's the next big idea?",
+          "url": "https://unstop.com/hackathons/srcas-hackathon-30-whats-the-next-big-idea-sri-ramakrishna-college-of-arts-science-srcas-1700643",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1700643",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Full Stack Hackathon",
+          "url": "https://unstop.com/hackathons/full-stack-hackathon-deenbandhu-chhotu-ram-university-of-science-and-technology-dcrust-murthal-haryana-1700622",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1700622",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Anakin Blitz",
+          "url": "https://unstop.com/hackathons/anakin-blitz-anakin-skywalker-pvt-ltd-1700632",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1700632",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        }
+      ]
     }
   ]
 }
