@@ -2757,6 +2757,258 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-19",
+      "items": [
+        {
+          "title": "How Transparent is DiffusionGemma?",
+          "url": "https://arxiv.org/abs/2606.20560v1",
+          "source": "arxiv",
+          "description": "LLM reasoning transparency is a critical affordance for understanding model decisions, mitigating misuse and misalignment, and debugging surprising model behaviors. However, DiffusionGemma performs a larger fraction of its computation in a continuous latent space; does this make its reasoning less transparent? We study this question by decomposing transparency into two components: variable transparency, whether we understand intermediate snapshots of a model's computational state; and algorithmic transparency, whether we can use these snapshots to reconstruct the process by which the model arrived at its outputs. Naively, DiffusionGemma has poor variable transparency: its opaque serial depth, the amount of serial computation that occurs in between interpretable model states, seems at first 28.6X higher than the corresponding autoregressive Gemma 4 model. However, we show that we can map the information flowing between denoising steps through an interpretable token bottleneck with no decrease in downstream performance. Treating these intermediate states as interpretable reduces the opaque serial depth to just 1.1X that of Gemma 4. Algorithmic transparency is harder for diffusion models than for autoregressive models because all token predictions in the canvas can change at every denoising step, giving the model the power to implement complicated distributed algorithms during the denoising process. To begin bridging this gap, we conduct a suite of interpretability case studies, uncovering initial evidence of novel diffusion-specific phenomena such as non-chronological reasoning, token and sequence smearing, and intermediate-context reasoning. Finally, we test monitorability, a key application of transparency that measures whether model outputs are useful for downstream tasks. We find that DiffusionGemma is similarly monitorable to Gemma 4.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.20560",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Optimal Deterministic Multicalibration and Omniprediction",
+          "url": "https://arxiv.org/abs/2606.20557v1",
+          "source": "arxiv",
+          "description": "A model is multicalibrated on a collection of group weights $G$ if it is calibrated -- i.e. unbiased even conditional on its prediction -- not just overall, but also after reweighting contexts by each $g \\in G$. It is a useful property for many downstream applications and is a basic desideratum of trustworthy machine learning. Before this work, all predictors known to attain the minimax-optimal $\\widetilde O(\\varepsilon^{-3})$ sample complexity rate for $\\varepsilon$-multicalibration were randomized, while deterministic predictors were known only with substantially worse sample complexity. Whether randomization is necessary for optimal sample complexity in multicalibration was explicitly asked by [CLNR26] and implicitly in several prior works. We resolve this open problem by giving a minimax-optimal multicalibration algorithm that outputs a deterministic predictor. We then generalize the algorithm to produce optimal deterministic predictors that satisfy outcome indistinguishability (OI) with respect to finite or finitely covered collections of tests. As an application, this also gives deterministic omnipredictors and panpredictors with optimal sample complexity, resolving open problems posed by [OKK25] and [BHHLZ25].",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.20557",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Execution-State Capsules: Graph-Bound Execution-State Checkpoint and Restore for Low-Latency, Small-Batch, On-Device Physical-AI Serving",
+          "url": "https://arxiv.org/abs/2606.20537v1",
+          "source": "arxiv",
+          "description": "Mainstream LLM serving systems reuse prefix work mainly through paged or radix key-value (KV) caches. This is highly effective for high-throughput, high-concurrency serving, but it manages only one positional fragment of execution state: the KV cache. We study the opposite regime: low-latency, small-batch, on-device physical-AI serving, where interactive LLM agents, speech systems, and robot policies repeatedly branch, reset, interrupt, and re-enter under tight responsiveness budgets. We introduce execution-state capsules, a graph-bound checkpoint and restore mechanism for the complete restorable state at a committed boundary. FlashRT is a white-box, backend-facing kernel runtime whose evaluated NVIDIA CUDA backend runs captured graph plans over contiguous static buffers with no block-table indirection. Because the live state is a closed set of named buffers, a capsule can snapshot, restore, fork, or roll back the whole execution boundary, including KV, recurrent state, convolution state, MTP state, and metadata. This moves reuse from token-addressed KV fragments to graph-bound execution-state boundaries. On an RTX 5090, capsule restore is byte-exact at the stored-state level and token-identical under greedy decode. A KV-only ablation diverges, showing that recurrent state is load-bearing. GPU-resident snapshot and restore are sub-millisecond, and TTFT speedup over cold prefill grows from 3.9x at 2k tokens to 27x at 16k tokens. On Jetson AGX Thor and DGX Spark, the same correctness and structural properties hold. Capsules are not a replacement for high-throughput KV-cache serving; they define a complementary latency-first serving point for explicit execution-state reuse.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.20537",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Zen and the Art of Machine Learning Research",
+          "url": "https://blog.jxmo.io/p/zen-and-the-art-of-machine-learning",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48549118",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Building a robotics research setup that lives next to my desk",
+          "url": "https://dfdxlabs.com/research/2026/robotics-setup/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48586329",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Reddit’s Games with a Hook Hackathon",
+          "url": "https://redditgameswithahook.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 17 - Jul 15, 2026 | prize $ 40,000 | themes: Beginner Friendly, Gaming, Web",
+          "deadline": "2026-07-15",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30086",
+          "score": 9,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Fearless Concurrency on the GPU: Safe GPU inference in Rust, competitive with vLLM/SGLang [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u9j7md/fearless_concurrency_on_the_gpu_safe_gpu/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u9j7md",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Latent space interpretation [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u9afup/latent_space_interpretation_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u9afup",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Voice debugging at the conversation level seems far more useful than isolated benchmark metrics [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u99fe5/voice_debugging_at_the_conversation_level_seems/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u99fe5",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Is ACL now irrelevant? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1u945j5/is_acl_now_irrelevant_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1u945j5",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Codeforces Round (Div. 1) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2239",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-06-27T14:35:00",
+          "deadline": "2026-06-27",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68369340",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Codeforces Round (Div. 2) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2240",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-06-27T14:35:00",
+          "deadline": "2026-06-27",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68369341",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Codeforces Round (Div. 2) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2238",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-06-28T14:35:00",
+          "deadline": "2026-06-28",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68369339",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Starters 246 (codechef.com)",
+          "url": "https://www.codechef.com/START246",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-07-08T14:30:00",
+          "deadline": "2026-07-08",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68356367",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Starters 247 (codechef.com)",
+          "url": "https://www.codechef.com/START247",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-07-15T14:30:00",
+          "deadline": "2026-07-15",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68356715",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "CodeFusion",
+          "url": "https://unstop.com/hackathons/codefusion-manipal-university-mu-jaipur-1700989",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1700989",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Infinity Hack 1.0",
+          "url": "https://unstop.com/hackathons/infinity-hack-10-sangam-soft-solutions-1701080",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1701080",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        }
+      ]
     }
   ]
 }
