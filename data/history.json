@@ -3009,6 +3009,230 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-20",
+      "items": [
+        {
+          "title": "1ove9/antenna-forge — ★260",
+          "url": "https://github.com/1ove9/antenna-forge",
+          "source": "github",
+          "description": "AI-driven inverse antenna design with real NEC2 + openEMS in the loop. Try the live in-browser playground. (topics: antenna, antenna design, electromagnetics, fdtd, inverse design, machine learning, nec2, openems, python, rf, yagi)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "1ove9/antenna-forge",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "John Jumper to join Anthropic",
+          "url": "https://twitter.com/JohnJumperSci/status/2068001285173834106",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48601162",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Ten years of ClickHouse in open source",
+          "url": "https://clickhouse.com/blog/open-source-10",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48546890",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "How does torch.compile() achieve massive speedups despite highly optimized NumPy functions? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ua2hwj/how_does_torchcompile_achieve_massive_speedups/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ua2hwj",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "how to access books3 dataset for research purposes? [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uaoomx/how_to_access_books3_dataset_for_research/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uaoomx",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Best library for releasing my research optimization algorithm? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ua2o00/best_library_for_releasing_my_research/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ua2o00",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Dealing with a messy prescriptive monolith. How do you survive this? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ua5xfg/dealing_with_a_messy_prescriptive_monolith_how_do/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ua5xfg",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "FlutterFlow Champions League Hackathon",
+          "url": "https://flutterflow-champions-league-hackathon.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | Mumbai, India | themes: No Restrictions",
+          "deadline": "2026-07-18",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "7267d88b12f948539641fea683cb6c66",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Monday Munch - DSA Challenge 008 (Rated) (codechef.com)",
+          "url": "https://www.codechef.com/DSAMONDAY008",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-06-22T13:30:00",
+          "deadline": "2026-06-22",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68380209",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "World Tour Finals 2026 Heuristic (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/awtf2026heuristic",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-07-07T00:00:00",
+          "deadline": "2026-07-07",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68393065",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "World Tour Finals 2026 Algorithm (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/awtf2026algo",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-07-09T02:00:00",
+          "deadline": "2026-07-09",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68393066",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "World Tour Finals 2026 Algorithm（Open Contest） (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/awtf2026algo-open",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-07-09T02:00:00",
+          "deadline": "2026-07-09",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68393067",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Business Leadership Simulator 2026",
+          "url": "https://unstop.com/hackathons/business-leadership-simulator-2026-yai-infraventure-1693713",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1693713",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "ThreadCounty Web Development Hackathon 2026",
+          "url": "https://unstop.com/hackathons/threadcounty-web-development-hackathon-2026-dkte-societys-textile-engineering-institute-dktestei-ichalkaranji-1701194",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1701194",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "StoxraHack 2026 — India's Student FinTech & AI Trading Hackathon",
+          "url": "https://unstop.com/hackathons/stoxrahack-2026-indias-student-fintech-ai-trading-hackathon-stoxra-hackathon-2026-iimt-university-iimtu-great-1694014",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1694014",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": ""
+        }
+      ]
     }
   ]
 }
