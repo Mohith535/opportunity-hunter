@@ -3233,6 +3233,189 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-21",
+      "items": [
+        {
+          "title": "Arm Create: AI Optimization Challenge",
+          "url": "https://arm-ai-optimization-challenge.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 04 - Aug 14, 2026 | prize $ 8,000 | themes: Machine Learning/AI",
+          "deadline": "2026-08-14",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30218",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Hi Reddit, I posted my Build Your Own LLM workshop to Youtube teaching ML, LLM and math intuition [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uazlnd/hi_reddit_i_posted_my_build_your_own_llm_workshop/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uazlnd",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "DVD-JEPA: an open-source, fully-reproducible JEPA world model [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uatlzx/dvdjepa_an_opensource_fullyreproducible_jepa/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uatlzx",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Would you let an ML PhD student graduate without a top-tier paper? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uazlhg/would_you_let_an_ml_phd_student_graduate_without/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uazlhg",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Time Series Modeling Needs a Dynamical Systems Perspective [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uark0u/time_series_modeling_needs_a_dynamical_systems/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uark0u",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "An open handbook on LLM inference at scale (GPU internals, KV cache, batching, vLLM/SGLang/TensorRT-LLM) [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uavduv/an_open_handbook_on_llm_inference_at_scale_gpu/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uavduv",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Python packages for particle swarms, genetic algorithms. Scikit-opt maybe? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ub81us/python_packages_for_particle_swarms_genetic/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ub81us",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "TSAuditor: A time-series auditing framework [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ub15wf/tsauditor_a_timeseries_auditing_framework_p/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ub15wf",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Studying FLUX in diffusers library was hard, so I built a smaller open-source version [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ub1db3/studying_flux_in_diffusers_library_was_hard_so_i/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ub1db3",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Built a Global AQ (PM2.5) Forecaster ML Model [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uar4vc/built_a_global_aq_pm25_forecaster_ml_model_p/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uar4vc",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Codeforces Round (Div. 3) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2241",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-06-30T14:35:00",
+          "deadline": "2026-06-30",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68403846",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "DropHack",
+          "url": "https://unstop.com/hackathons/drophack-siec-community-1701822",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1701822",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        }
+      ]
     }
   ]
 }
