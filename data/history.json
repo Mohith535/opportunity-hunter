@@ -3915,6 +3915,355 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-24",
+      "items": [
+        {
+          "title": "OpenThoughts-Agent: Data Recipes for Agentic Models",
+          "url": "https://arxiv.org/abs/2606.24855v1",
+          "source": "arxiv",
+          "description": "Agentic language models dramatically expand the applications of AI yet little is publicly known about how to curate training data for broadly capable agents. Existing open efforts such as SWE-Smith, SERA, and Nemotron-Terminal typically target a single benchmark, leaving open the question of how to train models that generalize across diverse agentic tasks. The OpenThoughts-Agent (OT-Agent) project addresses this gap with a fully open data curation pipeline for training agentic models. We conduct more than 100 controlled ablation experiments to systematically investigate each stage of the pipeline, yielding insights on the importance of task sources and diversity. We then assemble a training set of 100K examples from our pipeline and fine-tune Qwen3-32B on this dataset, which yields an average accuracy of 44.8% across seven agentic benchmarks and a 3.9 percentage point improvement over the strongest existing open data agentic model (Nemotron-Terminal-32B, 40.9%). Moreover, our training data exhibits strong scaling properties, outperforming alternative open datasets at every training set size in compute-controlled comparisons. We publicly release our training sets, data pipeline, experimental data, and models at openthoughts.ai to support future open research on agentic model training.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.24855",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "It's Complicated: On the Design and Evaluation of AI-Powered AAC Interfaces",
+          "url": "https://arxiv.org/abs/2606.24854v1",
+          "source": "arxiv",
+          "description": "Artificial intelligence (AI) can enhance what people who use augmentative and alternative communication (AAC) are able to do with their systems. However, evaluating AI-powered AAC interfaces can be difficult. People are intersectional beings and current evaluation metrics can struggle to capture the multifaceted and nuanced desires people may have for their AAC. We explore the complicated nature of six AAC problem spaces, explore how AI might be used in these spaces, and suggest more robust methods of evaluation that take the intersectional nuances of people into account. We also discuss broader issues that arise across these problem spaces and how they could be addressed using our proposed evaluation methods.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.24854",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "IV-CoT: Implicit Visual Chain-of-Thought for Structure-Aware Text-to-Image Generation",
+          "url": "https://arxiv.org/abs/2606.24849v1",
+          "source": "arxiv",
+          "description": "Unified multi-modal large language models (MLLMs) have achieved strong text-to-image generation quality, but still struggle with structure-aware prompt following, where object counts, spatial relations, attribute bindings, and coarse layouts must be preserved. We attribute this limitation in part to the entanglement of structural planning and appearance rendering within a single conditioning stream. To address this issue, we propose Implicit Visual Chain-of-Thought (IV-CoT), a latent visual reasoning framework for query-conditioned image generation. IV-CoT decomposes the visual conditioning queries into a structural-to-semantic cascade, where structural queries first form a latent visual plan and semantic queries then render appearance conditioned on this plan. To guide the structural queries, we introduce training-only sketch supervision, which encourages them to capture structure from sketches without requiring sketch extraction or intermediate decoding at inference time. IV-CoT performs implicit CoT reasoning in a single forward pass and achieves superior results on GenEval and T2I-CompBench. Visualizations and analyses demonstrate that the learned structural and semantic queries play complementary roles in structure-aware generation.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.24849",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Grading the Grader: Lessons from Evaluating an Agentic Data Analysis System",
+          "url": "https://arxiv.org/abs/2606.24839v1",
+          "source": "arxiv",
+          "description": "Agentic data analysis systems produce rich outputs, including code, numerical results, and verbal diagnostics. This makes them more challenging to evaluate than single-turn LLM responses. It is therefore necessary to distinguish genuine disagreement between an agent's output and a ground-truth answer from grading artifacts. We investigate how reliably automated graders assess such a system and what strategies improve grading quality by applying LAMBDA, a multi-agent data-analysis system, on 153 numerical QRData tasks from DSGym. We develop and evaluate a three-layer human-AI grading cascade: strict regex matching, LLM-based lenient grading, and snippet-based human inspection, which combines non-GenAI and GenAI strategies with different failure profiles. Both automated graders achieve 100% observed precision (0/70 false positives). The lenient grader's recall is 97% against human labels. A keyword-anchored extraction pipeline raises the strict grader's recall by 60 percentage points over a last-number heuristic; the lenient grader is architecturally parser-independent. An iterative nudge mechanism raises grading run success from 36% to 97% and lenient-pass rates from 16% to 46%; comparing nudging with and without original-question re-injection shows that re-injection offers no benefit, confirming the nudge as an answer template cue. We further observe in this case study that variable type is the task metadata field most consistently associated with grading pipeline dynamics and observed outcome grades.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.24839",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Fired by Google for creating the Google workspace CLI",
+          "url": "https://twitter.com/JPoehnelt/status/2069482265953087602",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48649011",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Are model security risks (extraction, poisoning) actually being tested in production? [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uddtws/are_model_security_risks_extraction_poisoning/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uddtws",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "What's your biggest pain point when choosing between cloud GPU providers for LLM inference?[R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1udfovh/whats_your_biggest_pain_point_when_choosing/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1udfovh",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "DeepSWE: new benchmark looking at how well today's frontier models can actually write code [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ue0hlp/deepswe_new_benchmark_looking_at_how_well_todays/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ue0hlp",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "WACV supp. mat. video [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1udgv9h/wacv_supp_mat_video_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1udgv9h",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Miccai grants results [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1udneyh/miccai_grants_results_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1udneyh",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Found a potential mistake in an ICLR 2026 blogpost [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ud9i2g/found_a_potential_mistake_in_an_iclr_2026/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ud9i2g",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Will I be desk rejected for this[R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1udsfgk/will_i_be_desk_rejected_for_thisr/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1udsfgk",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "An open source AI Engineering course with 503 lessons and every lesson comes with projects, prompts, skills as output",
+          "url": "https://www.reddit.com/r/developersIndia/comments/1udc9u4/an_open_source_ai_engineering_course_with_503/",
+          "source": "reddit",
+          "description": "r/developersIndia | india software developer | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/developersIndia"
+          ],
+          "native_id": "1udc9u4",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "IKIGAI 2026",
+          "url": "https://unstop.com/hackathons/ikigai-2026-acropolis-institute-of-technology-and-research-indore-1703362",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1703362",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Agent-A-Thon NCR Marketing Challenge",
+          "url": "https://unstop.com/hackathons/agent-a-thon-ncr-marketing-challenge-vishveshwarya-group-of-institutions-vgi-greater-noida-uttar-pradesh-1703244",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1703244",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "The Black-Box Protocol: Stage 01 - \"System Escalation\"",
+          "url": "https://unstop.com/hackathons/the-black-box-protocol-stage-01-samrat-ashok-technological-institute-sati-vidisha-1695117",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1695117",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Code. Innovate. Impact",
+          "url": "https://unstop.com/hackathons/code-innovate-impact-iit-bombay-1703222",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1703222",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "The Closer Challenge - Pitch. Convince. Win.",
+          "url": "https://unstop.com/hackathons/the-closer-challenge-pitch-convince-win-yai-infraventure-1703153",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1703153",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Agentic AI Hackahton",
+          "url": "https://unstop.com/hackathons/agentic-ai-hackahton-gradient-1702893",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1702893",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "TNX Codathon",
+          "url": "https://unstop.com/hackathons/tnx-codathon-techneekx-1701580",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1701580",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "The Cipher Trail",
+          "url": "https://unstop.com/hackathons/the-cipher-trail-wie-week-20-institute-of-electrical-and-electronics-engineers-gtbit-1703194",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1703194",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Creative Lens",
+          "url": "https://unstop.com/hackathons/creative-lens-wie-week-20-guru-tegh-bahadur-institute-of-technology-gtbit-new-delhi-1703189",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1703189",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "BrandVerse 2026: India's Startup Branding & AI Innovation Challenge",
+          "url": "https://unstop.com/hackathons/brandverse-2026-indias-startup-branding-ai-innovation-challenge-printila-services-private-limited-1702966",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1702966",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Nexus: Where Prompts Become Products",
+          "url": "https://unstop.com/hackathons/nexus-where-prompts-become-products-techverse-solutions-1702501",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1702501",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        }
+      ]
     }
   ]
 }
