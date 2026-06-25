@@ -4264,6 +4264,446 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-25",
+      "items": [
+        {
+          "title": "RevengeBench: Reverse Engineering Code-Space Policies from Behavioral Experiments",
+          "url": "https://arxiv.org/abs/2606.26094v1",
+          "source": "arxiv",
+          "description": "For most of scientific history, researchers studying behavior could only infer hidden mechanisms from outward actions: an inverse problem that becomes more tractable when observation is augmented by targeted intervention. We pose a computational analogue: given only behavioral traces of an agent in a game environment, can a learner reconstruct the underlying decision program as executable code, and how much does this reconstruction improve with the ability to design controlled experiments? We introduce RevengeBench, a benchmark of 75 LLM generated, Elo-calibrated policies across five game environments, drawn from CodeClash tournament trajectories. The learner observes the hidden target policy play against sampled opponents and designs behavioral probes in the form of custom opponent policies that elicit informative behavior. It then submits an executable hypothesis, which is evaluated using continuous action-distance metrics. We further validate that recovered code carries informative signal in downstream player-versus-player tournaments. Across twelve frontier LLMs, recovery quality varies substantially (34 to 72% of initial distance closed), with reconstructed policies yielding measurable competitive advantage, particularly for weaker models that otherwise struggle to design effective counter-strategies. Our benchmark positions behavioral recovery of programmatic policies as a tractable inverse problem in code-space, opening a path to opponent modeling, policy interpretability, and the broader question of inferring latent mechanisms from observations.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.26094",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Real-Time Voice AI Hears but Does Not Listen",
+          "url": "https://arxiv.org/abs/2606.26083v1",
+          "source": "arxiv",
+          "description": "Speech conveys information through both words and vocal delivery. We evaluate four leading production realtime voice systems-OpenAI's GPT Realtime 2, Google's Gemini 3.1 Flash Live, and Alibaba's Qwen3.5 Omni Plus and Omni Flash-on tasks where the words and the delivery patterns both convey meaningful information. Across three consequential scenarios, all four systems act on the words rather than the voice. They end calls with crying callers who insist nothing is wrong, approve wire transfers authorized in frightened voices, and enroll callers whose agreement is clearly sarcastic. Surprisingly, this is often not a failure of perception. When asked directly, three of the four systems reliably identify the distress, fear, or sarcasm they later ignore when making decisions. We observe a similar pattern when these realtime voice systems estimate accent and age, as their responses frequently follow the biases of the words rather than the acoustic properties of the speaker. We term this disconnect between perception and action the emotional intelligence gap of voice AI. Prompting systems to explicitly attend to vocal delivery improves performance only partially and inconsistently. Our findings show that current realtime voice AI systems often behave as if speech had been reduced to a transcript, suggesting that they should be used with caution in settings where the tone and emotion of delivery convey important information.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.26083",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Neglected Free Lunch from Post-training: Progress Advantage for LLM Agents",
+          "url": "https://arxiv.org/abs/2606.26080v1",
+          "source": "arxiv",
+          "description": "Process reward models enable fine-grained, step-level evaluation of LLMs, yet building them for agentic settings remains prohibitively difficult: long-horizon interactions, irreversible actions, and stochastic environment feedback make both human annotation and Monte Carlo estimation infeasible at scale. In this work, we show that reinforcement learning (RL) post-training already provides the ingredients for effective step-level scoring, eliminating the need for dedicated reward model training altogether. Concretely, we derive an implicit advantage under a general stochastic Markov decision process, which we term progress advantage -- log-probability ratio between the RL-trained policy and its reference policy exactly recovers the optimal advantage function. This formulation makes the resulting signal annotation-free, domain-agnostic, and available as a byproduct of the standard RL post-training pipeline. We validate the effectiveness of the progress advantage across three different applications: test-time scaling, uncertainty quantification, and failure attribution on five benchmarks and four model families. Across all settings, it consistently outperforms confidence-based baselines and, despite requiring no task-specific training, surpasses dedicated trained reward models. We complement these results with deeper analyses on characteristics of progress advantage, offering practical guidance for adoption in real-world agentic systems.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.26080",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Same Evidence, Different Answer: Auditing Order Sensitivity in Multimodal Large Language Models",
+          "url": "https://arxiv.org/abs/2606.26079v1",
+          "source": "arxiv",
+          "description": "Standard benchmarks for multimodal large language models (MLLMs) score each item on one canonical ordering and miss whether order-irrelevant shuffling changes the answer, a baseline reliability property called for by emerging AI evaluation guidelines. We introduce Facet-Probe, a five-facet audit (option, evidence-chunk, document-rank, image-set, and mixed-modality ordering) of 18 frontier and open-weight MLLMs. A Bayesian item-response model separates ordering noise from per-facet bias, and a same-ordering control estimates the decoder-stochastic floor for observed flips. We find that none of the 18 MLLMs we audit are order-invariant: screened per-facet panel-mean flip rates span 24-50%. A Gemini same-ordering control at temperature 0 estimates a substantial ordering excess over a same-input decoder-noise floor in verified cells. Capability predicts but does not eliminate flips; the best model still flips on 13.4% of trials. In our Gemini mitigation tests, training-free prompt changes are modality-conditional and do not transfer from text to visual reasoning. These results suggest that prompt-level mitigation alone is unlikely to provide general order robustness, motivating future work on training-time and architectural approaches. We propose cross-ordering flip rate as a standard reporting axis for MLLMs.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.26079",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "A cross-process welding penetration status prediction algorithm based on unsupervised domain adaptation in laser and TIG welding",
+          "url": "https://arxiv.org/abs/2606.26078v1",
+          "source": "arxiv",
+          "description": "Supervised deep learning has been widely used for weld penetration state classification; however, its performance often degrades significantly under domain shift, such as when transferring models between welding processes with distinct physical mechanisms:for instance, from arc-dominated tungsten inert gas (TIG) welding to keyhole-based laser welding. To overcome this limitation, we propose an unsupervised domain adaptation (UDA) framework integrated with a gradual source domain expansion (GSDE) strategy. Evaluated on dedicated TIG and laser welding datasets, our approach achieves high accuracy in both same-process and cross-process transfer tasks. Specifically, it attains average accuracies of 90.65% on TIGFH and 90.72% on LSPS in same-process settings, surpassing a supervised baseline by 35.83% and 38.87%, respectively. More notably, in cross-process scenarios, it reaches 80.48% for TIG to Laser and 81.13% for Laser to TIG, improving upon the baseline by 43.39% and 43.40%. UMAP visualizations verify that the model learns domain-invariant features while maintaining discriminative class boundaries. This method considerably lowers the relabeling cost for new welding processes and enhances the versatility of intelligent monitoring across different welding systems.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.26078",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Model Forensics: Investigating Whether Concerning Behavior Reflects Misalignment",
+          "url": "https://arxiv.org/abs/2606.26071v1",
+          "source": "arxiv",
+          "description": "A central goal of safety research is determining whether a model is misaligned. Prior work has largely focused on detecting concerning behavior. But behavior alone does not establish misalignment: a concerning action can arise from benign causes such as confusion. This motivates model forensics: investigating whether the action was driven by malign intent. In this paper, we propose a baseline protocol for model forensics consisting of two steps, iterated as needed. First, we read the chain of thought (CoT) to generate hypotheses about what drives model behavior. Second, we make edits to the prompt or environment to test these hypotheses. While the CoT is not always faithful, it is a rich source of unsupervised insight that can guide the collection of more rigorous evidence. To evaluate our protocol, we create a suite of six agentic environments where models exhibit concerning behavior, and apply it to each. We establish that Kimi K2 Thinking takes shortcuts due to a genuine disposition towards low-effort actions, by showing this hypothesis successfully predicts its behavior. Through counterfactual experiments, we show DeepSeek R1 deceives out of a desire to be consistent with a previous instance of itself. Our methods nonetheless leave significant room for refinement. For example, when we test whether Kimi K2 Thinking believes it is violating user intent, we find no evidence of such a belief, but without positive controls we cannot confirm our tests would detect it. Overall, we find our simple protocol provides a strong baseline that we hope future work will improve upon. More broadly, our work is a concrete step in developing the growing field of model forensics.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.26071",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "When Certainty Is an Artifact: Keyword Lexicon Blindness and the (Mis)Measurement of Rhetorical Stance",
+          "url": "https://arxiv.org/abs/2606.26062v1",
+          "source": "arxiv",
+          "description": "Can a statistically significant, large-effect-size finding in computational social science be entirely an artifact of the measurement instrument? We present a case where the answer appears to be yes. Analyzing 85 interviews across four public intellectuals (2016--2026), we find a robust negative-affect/emphatic-certainty lexical co-occurrence pattern under keyword-based scoring ($r = 0.72$--$0.93$, $p < 0.01$ for all four speakers). Replacing keyword counting with LLM-based zero-shot semantic classification on the complete diarized corpus (32,625 sentences) dramatically reduces this correlation: Dalio's $r = 0.851$ drops to $r = 0.206$, with two speakers showing negative $r(\\text{neg}, \\text{emphatic})$ and one showing null. In contrast, the LLM reveals a strong negative-hedging coupling across speakers -- Rogoff's $r(\\text{neg}, \\text{hedged}) = 0.875$ ($p = 0.001$) and Zeihan's $r(\\text{neg}, \\text{hedged}) = 0.722$ ($p = 0.008$) -- consistent with the conventional expectation that pessimistic discourse attracts hedging, not certainty. Sentence-level error analysis traces this discrepancy to three structural failure modes in keyword lexicons -- syntactic blindness, polysemy blindness, and categorical absence -- illustrated through cases where keyword counting inverts semantic meaning (e.g., ''never absolutely totally confident'' scored as high-certainty). We argue that keyword lexicons measure a universal lexical co-occurrence tendency -- negative discourse naturally attracts emphatic vocabulary -- that is orthogonal to, and can systematically invert, rhetorical stance. Treating keyword counts as measurements of epistemic certainty is a category error: a finding that appears to be about a speaker's psychology may be entirely about the counting of words.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.26062",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Liu-Ming-Yu/alpha-forge — ★167",
+          "url": "https://github.com/Liu-Ming-Yu/alpha-forge",
+          "source": "github",
+          "description": "Alpha Forge — an agentic AI operating system for systematic trading. (topics: algorithmic trading, alpha research, backtesting, financial ml, ibkr, machine learning, portfolio construction, python, quantitative finance, risk management, trading systems)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "Liu-Ming-Yu/alpha-forge",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "cobusgreyling/loop-engineering — ★1,162",
+          "url": "https://github.com/cobusgreyling/loop-engineering",
+          "source": "github",
+          "description": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost. (topics: agentic ai, ai agents, ai coding, anthropic, automation, claude, claude code, codex, coding agents, devops automation, devtools, github actions, grok, llm, loop engineering, mcp, prompt engineering)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "cobusgreyling/loop-engineering",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Reyzowter/Hello-Agents — ★129",
+          "url": "https://github.com/Reyzowter/Hello-Agents",
+          "source": "github",
+          "description": "🤖 Building AI Agent Systems from Scratch — A comprehensive, practical tutorial from fundamentals to production-grade multi-agent applications (topics: agent, ai, deep learning, langchain, llm, machine learning, multi agent, openai, rag, tutorial)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "Reyzowter/Hello-Agents",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
+          "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48664814",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Medical students are using popular research tool to pump out misleading studies",
+          "url": "https://www.science.org/content/article/medical-students-are-using-popular-research-tool-pump-out-misleading-studies",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48668119",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Backblaze Generative Media Hackathon: Build with Genblaze on B2",
+          "url": "https://backblaze-generative-media.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 22 - Aug 03, 2026 | prize $ 10,000 | themes: Machine Learning/AI, Music/Art, Voice skills",
+          "deadline": "2026-08-03",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30205",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Find the best open-source OCR models in one place at Papers with Code [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ueiam6/find_the_best_opensource_ocr_models_in_one_place/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ueiam6",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "I made a superhuman Generals.io agent with self-play RL [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uei2yg/i_made_a_superhuman_generalsio_agent_with/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uei2yg",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "MuJoCo derived Simulator for High Fidelity Vision RL training natively on GPU [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uemrch/mujoco_derived_simulator_for_high_fidelity_vision/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uemrch",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "High Dimensional, Dynamic Rotary Positional Embedding [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uelcm9/high_dimensional_dynamic_rotary_positional/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uelcm9",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Xperience-10M Download Help [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ueyr4w/xperience10m_download_help_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ueyr4w",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Replacing Binary AI Safety with Vector-Based Behavioral Judgment: Cross-Platform Validation on 5 LLMs [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uf22s6/replacing_binary_ai_safety_with_vectorbased/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uf22s6",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Could it be that there aren’t really any medical LLM APIs available right now? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ue87js/could_it_be_that_there_arent_really_any_medical/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ue87js",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "I compiled LLM inference pricing across 7 providers — the caching numbers are surprising(spreadsheet included) [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ueavxn/i_compiled_llm_inference_pricing_across_7/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ueavxn",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Any ideas for unconventional ML projects? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uezvgj/any_ideas_for_unconventional_ml_projects_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uezvgj",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Tech Genesis '26",
+          "url": "https://tech-genesis.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | online | themes: No Restrictions",
+          "deadline": "2026-06-26",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "578ba548958c4e399804e1cc03d72608",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Weekend Dev Challenge 56: .NET projects (codechef.com)",
+          "url": "https://www.codechef.com/DEVWEEKEND56",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-06-26T18:30:00",
+          "deadline": "2026-06-26",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68482930",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Monday Munch - DSA Challenge 009 (Rated) (codechef.com)",
+          "url": "https://www.codechef.com/DSAMONDAY009",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-06-29T13:30:00",
+          "deadline": "2026-06-29",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68488399",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Codeforces Round (Div. 3) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2244",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-07-10T14:35:00",
+          "deadline": "2026-07-10",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68492696",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Women Who Master",
+          "url": "https://unstop.com/hackathons/crp-women-who-master-aspire-for-her-x-logitech-1702474",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1702474",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Build in AI for India",
+          "url": "https://unstop.com/hackathons/build-in-ai-for-india-build-in-ai-for-india-1703750",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1703750",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "AI Alliance Forge 2026",
+          "url": "https://unstop.com/hackathons/ai-alliance-forge-2026-apex-institute-of-technology-chandigarh-university-1703568",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1703568",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Heritage to Horizon",
+          "url": "https://unstop.com/hackathons/heritage-to-horizon-wie-week-20-guru-tegh-bahadur-institute-of-technology-gtbit-new-delhi-1703493",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1703493",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        }
+      ]
     }
   ]
 }
