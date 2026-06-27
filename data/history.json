@@ -5070,6 +5070,231 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-27",
+      "items": [
+        {
+          "title": "inkeep/open-knowledge — ★1,099",
+          "url": "https://github.com/inkeep/open-knowledge",
+          "source": "github",
+          "description": "Beautiful, AI-native markdown editor and LLM Wiki (topics: 2nd brain, agent skills, claude, codex, docs, knowledge base, knowledge management, llm, llm wiki, markdown, markdown editor, md, mdx, notes, pkm, second brain, skills)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "inkeep/open-knowledge",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "EDF-Lab/ts-icl — ★84",
+          "url": "https://github.com/EDF-Lab/ts-icl",
+          "source": "github",
+          "description": "TS-ICL: a Time-Indexed Foundation Model for Time Series Forecasting & Imputation via In-Context Learning (topics: deep learning, foundation models, time series forecasting, time series imputation, times series)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "EDF-Lab/ts-icl",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations",
+          "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48692995",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Foreign funds help make housing unaffordable: research",
+          "url": "https://news.mccombs.utexas.edu/research/foreign-funds-help-make-housing-unaffordable/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48693420",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "H0: Hack the Zero Stack with Vercel v0 and AWS Databases",
+          "url": "https://h01.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 27 - Jun 29, 2026 | prize $ 80,000 | themes: Databases, Open Ended, Web",
+          "deadline": "2026-06-29",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29812",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "A debugger for RL reward functions that detects reward hacking during training [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uga687/a_debugger_for_rl_reward_functions_that_detects/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uga687",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "How're you deploying LLMs in production now-a-days? What's the best and most affordable way? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ufyuph/howre_you_deploying_llms_in_production_nowadays/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ufyuph",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Live Continual Learning in Machine Learning [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ug7vxs/live_continual_learning_in_machine_learning_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ug7vxs",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Late Submission of NeurIPS Review [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ugtjov/late_submission_of_neurips_review_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ugtjov",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Which offices in India have Google-level snack and beverage perks?",
+          "url": "https://www.reddit.com/r/developersIndia/comments/1ug8iuc/which_offices_in_india_have_googlelevel_snack_and/",
+          "source": "reddit",
+          "description": "r/developersIndia | india software developer | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/developersIndia"
+          ],
+          "native_id": "1ug8iuc",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Stuck in a choice between big tech and a startup. Give me your opinions.",
+          "url": "https://www.reddit.com/r/developersIndia/comments/1ugeqw1/stuck_in_a_choice_between_big_tech_and_a_startup/",
+          "source": "reddit",
+          "description": "r/developersIndia | india software developer | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/developersIndia"
+          ],
+          "native_id": "1ugeqw1",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Weekly Contest 509 (leetcode.com)",
+          "url": "https://leetcode.com/contest/weekly-contest-509",
+          "source": "clist",
+          "description": "competitive programming contest on leetcode.com; starts 2026-07-05T02:30:00",
+          "deadline": "2026-07-05",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68507917",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "AtCoder Regular Contest-- 224 (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/arc224",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-07-12T12:00:00",
+          "deadline": "2026-07-12",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68506788",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Student Innovation & Product Summit (SIPS) 2026",
+          "url": "https://unstop.com/hackathons/student-innovation-product-summit-sips-2026-iim-bangalore-1704216",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1704216",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Build in AI for India",
+          "url": "https://unstop.com/hackathons/build-in-ai-for-india-build-in-ai-for-india-1704081",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1704081",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        }
+      ]
     }
   ]
 }
