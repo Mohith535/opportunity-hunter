@@ -15,3 +15,6 @@ logs/*.log
 
 # NOTE: data/*.json is intentionally NOT ignored — the cloud workflow commits
 # seen_items.json / history.json back so dedup survives across daily runs.
+
+# Project brain — local-only, never public
+CLAUDE.md
