@@ -147,6 +147,116 @@
       "window": "Applications typically ~Oct-Dec for the next summer",
       "tags": ["internship", "google", "students", "software engineering"],
       "description": "Google's software-engineering internship for 1st/2nd-year students — paid, mentored, and a direct line into Google. Applications usually open in the autumn for the following summer."
+    },
+    {
+      "id": "amazon-ml-summer-school",
+      "title": "Amazon ML Summer School (India)",
+      "org": "Amazon",
+      "url": "https://www.amazon.science/academic-engagements/amazon-ml-summer-school",
+      "deadline": null,
+      "window": "Registration ~May-Jun, selection test ~Jun-Jul",
+      "tags": ["program", "machine learning", "amazon", "india", "free", "certification"],
+      "description": "Free, intensive ML training taught by Amazon scientists for B.Tech/M.Tech/PhD students at recognised Indian institutions (graduating 2026/2027). No prior ML needed; selection via SOP + online assessment. Amazon credential + SWAG, and a path toward Amazon roles."
+    },
+    {
+      "id": "flipkart-grid",
+      "title": "Flipkart GRiD",
+      "org": "Flipkart",
+      "url": "https://unstop.com/competitions?oppstatus=open&searchTerm=Flipkart%20GRiD",
+      "deadline": null,
+      "window": "Typically opens ~Aug-Oct",
+      "tags": ["competition", "hackathon", "flipkart", "india", "internship"],
+      "description": "Flagship national engineering challenge (software/ML/robotics tracks) with a high-stipend internship and strong full-time CTC for winners. One of India's most prestigious campus competitions — elite resume signal."
+    },
+    {
+      "id": "amazon-hackon",
+      "title": "Amazon HackOn (India)",
+      "org": "Amazon",
+      "url": "https://unstop.com/hackathons?oppstatus=open&searchTerm=Amazon%20HackOn",
+      "deadline": null,
+      "window": "Seasonal — usually early year",
+      "tags": ["hackathon", "amazon", "india", "machine learning"],
+      "description": "Amazon's India machine-learning / software hackathon with cash prizes and interview fast-tracks. Strong AI-themed problem statements and a direct line into Amazon's hiring funnel."
+    },
+    {
+      "id": "walmart-sparkathon",
+      "title": "Walmart Sparkathon / CodeHers",
+      "org": "Walmart Global Tech",
+      "url": "https://unstop.com/hackathons?oppstatus=open&searchTerm=Walmart",
+      "deadline": null,
+      "window": "Seasonal",
+      "tags": ["hackathon", "walmart", "india", "software engineering"],
+      "description": "Walmart Global Tech's India hackathons (Sparkathon; CodeHers for women) with real product problems, cash prizes, and internship/PPO opportunities."
+    },
+    {
+      "id": "microsoft-imagine-cup",
+      "title": "Microsoft Imagine Cup",
+      "org": "Microsoft",
+      "url": "https://imaginecup.microsoft.com/",
+      "deadline": null,
+      "window": "Annual cycle, rounds through the academic year",
+      "tags": ["competition", "microsoft", "ai", "startup", "global"],
+      "description": "Microsoft's global student startup/tech competition with a strong AI track, Azure credits, mentorship, and a big prize. Perfect for a builder-with-startup-mindset — turn a project into a venture."
+    },
+    {
+      "id": "microsoft-engage",
+      "title": "Microsoft Engage / India Internships",
+      "org": "Microsoft",
+      "url": "https://careers.microsoft.com/students/",
+      "deadline": null,
+      "window": "When offered (watch Microsoft India student careers)",
+      "tags": ["internship", "program", "microsoft", "india"],
+      "description": "Microsoft India's mentorship-driven student engagement and internship pipeline. When a cohort is offered it's a direct mentored route into Microsoft; otherwise track the student careers page for openings."
+    },
+    {
+      "id": "adobe-india",
+      "title": "Adobe India — Research & Internships",
+      "org": "Adobe",
+      "url": "https://research.adobe.com/careers/",
+      "deadline": null,
+      "window": "Rolling; research internships seasonal",
+      "tags": ["internship", "research", "adobe", "india", "ai"],
+      "description": "Adobe India research internships and the Adobe India Hackathon — applied AI/ML on real creative-tech problems, strong mentorship, and a recognised brand for a portfolio."
+    },
+    {
+      "id": "samsung-prism",
+      "title": "Samsung PRISM (India)",
+      "org": "Samsung R&D India",
+      "url": "https://www.samsung.com/in/aboutsamsung/careers/prism/",
+      "deadline": null,
+      "window": "Rolling worklets through the year",
+      "tags": ["research", "program", "samsung", "india", "ai"],
+      "description": "Samsung's Research Institute India student R&D program: real AI/ML/systems 'worklets' mentored by Samsung engineers, a stipend, certificate, and patent/publication potential — remote-friendly and resume-strong."
+    },
+    {
+      "id": "lfx-mentorship",
+      "title": "LFX Mentorship (Linux Foundation)",
+      "org": "Linux Foundation",
+      "url": "https://lfx.linuxfoundation.org/tools/mentorship/",
+      "deadline": null,
+      "window": "Three cohorts a year (Spring/Summer/Fall)",
+      "tags": ["program", "fellowship", "open source", "remote", "stipend"],
+      "description": "Paid, remote open-source mentorships across major CNCF/AI projects (Kubernetes, PyTorch, etc.). Like GSoC/Outreachy but year-round — elite OSS track record and a global maintainer network."
+    },
+    {
+      "id": "openai-programs",
+      "title": "OpenAI — Residency & Programs",
+      "org": "OpenAI",
+      "url": "https://openai.com/careers/",
+      "deadline": null,
+      "window": "Periodic — watch openai.com/careers + research",
+      "tags": ["program", "residency", "llm", "openai", "research"],
+      "description": "OpenAI's Residency and research/engineering programs — a frontier-lab pathway for exceptional builders pivoting into AI research. Rare and elite; worth tracking even if a stretch today."
+    },
+    {
+      "id": "meta-ai-programs",
+      "title": "Meta AI — University Programs & Internships",
+      "org": "Meta",
+      "url": "https://www.metacareers.com/students",
+      "deadline": null,
+      "window": "Internship cycles ~autumn for next year",
+      "tags": ["internship", "research", "meta", "ai", "global"],
+      "description": "Meta's student AI/ML research and engineering internships and university programs (incl. PyTorch ecosystem). Top-tier lab exposure and a major resume signal."
     }
   ]
 }
