@@ -172,3 +172,27 @@ Scout's one-click is the confirm path.
   vision — noted, not now).
 - Not building the Telegram bot in Phase A.
 - Not touching Nova's code at all.
+- **Not building a complexity-aware model router yet** (see §12).
+
+## 12. DEFERRED — complexity-aware model router (build when there are multiple task types)
+
+**The idea (Mohith, 2026-06-28):** route *hard, reasoning-heavy* work to a big model and *small,
+simple* work to a fast/cheap model, to conserve free quota — exactly like Nova's quota-aware router,
+but keyed on task complexity.
+
+**Why deferred:** right now the Hunter has ONE LLM task (scoring), and uses **<1%** of the free
+quota (~1–5 calls/day vs Groq's 1,000/day). A router has nothing to route and saves nothing yet —
+premature optimization.
+
+**Build it when** the Hunter gains more LLM tasks (deadline extraction, summarization, a chat layer).
+At that point:
+- Add a `tier` concept to the provider chain — e.g. each provider entry carries both a
+  `model_fast` and a `model_smart` (Groq: `llama-3.1-8b-instant` vs `llama-3.3-70b-versatile`;
+  OpenRouter has tiny→huge free models; Cerebras free is limited, so its fast==smart).
+- `llm_scorer.score_items(...)` and any new LLM call take a `complexity: "fast" | "smart"` hint;
+  a thin `pick_model(provider, complexity)` chooses the model id. The provider fall-through logic
+  is unchanged.
+- Keep scoring on the **smart** tier (it's the core value); send only genuinely trivial calls to fast.
+
+**Cost of waiting: zero.** The current `LLM_PROVIDERS` structure already isolates model ids per
+provider, so this is an additive change, not a refactor.
