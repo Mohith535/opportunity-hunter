@@ -206,21 +206,27 @@ def fetch_mlh() -> list[Opportunity]:
 
 
 # ─── UNSTOP (India-focused opportunities) ────────────────────────────
-UNSTOP_API = (
-    "https://unstop.com/api/public/opportunity/search-result"
-    "?opportunity=hackathons&page=1&per_page=15&oppstatus=open"
-)
+# Same public JSON API across categories — so beyond hackathons we also pull
+# internships, competitions, and scholarships (where Google/Microsoft/Amazon
+# student programs and AI challenges are routinely posted). One category failing
+# never kills the others; ids are deduped across categories.
+UNSTOP_API = "https://unstop.com/api/public/opportunity/search-result"
+UNSTOP_CATEGORIES = ("hackathons", "internships", "competitions", "scholarships")
+UNSTOP_PER_CATEGORY = 8
 
 
-def fetch_unstop() -> list[Opportunity]:
+def _fetch_unstop_category(category: str) -> list[Opportunity]:
     resp = requests.get(
         UNSTOP_API, headers={**_HEADERS, "Accept": "application/json"},
+        params={"opportunity": category, "page": 1,
+                "per_page": UNSTOP_PER_CATEGORY, "oppstatus": "open"},
         timeout=config.REQUEST_TIMEOUT,
     )
     resp.raise_for_status()
     data = resp.json().get("data", {})
     listings = data.get("data") if isinstance(data, dict) else data
 
+    label = category.rstrip("s")  # hackathons -> hackathon, internships -> internship
     items: list[Opportunity] = []
     for o in listings or []:
         seo = o.get("seo_url") or ""
@@ -233,12 +239,28 @@ def fetch_unstop() -> list[Opportunity]:
                 title=_strip(o.get("title")),
                 url=url,
                 source="unstop",
-                description=f"hackathon | {region} | India | tags: {tag_text}",
+                description=f"{label} | {region} | India | tags: {tag_text}",
                 native_id=str(o.get("id", "")),
-                tags=["hackathon"],
-                raw={"status": o.get("status"), "region": region},
+                tags=[label],
+                raw={"status": o.get("status"), "region": region, "category": category},
             )
         )
+    return items
+
+
+def fetch_unstop() -> list[Opportunity]:
+    """Open opportunities across Unstop categories, deduped by id."""
+    seen: set[str] = set()
+    items: list[Opportunity] = []
+    for category in UNSTOP_CATEGORIES:
+        try:
+            for it in _fetch_unstop_category(category):
+                if it.native_id and it.native_id in seen:
+                    continue
+                seen.add(it.native_id)
+                items.append(it)
+        except requests.RequestException:
+            continue  # this category failed; keep the others
     return items
 
 

@@ -1,0 +1,152 @@
+{
+  "_comment": [
+    "Curated watchlist of elite, recurring programs that generic feeds miss.",
+    "These are PUBLIC programs, so this file is safe to commit in a public repo.",
+    "sources/programs.py reads it; the LLM scorer ranks each against Mohith's",
+    "profile, so the elite ones rise and stale ones sink. To curate: add/edit an",
+    "object below. Set 'deadline' (YYYY-MM-DD) only when you KNOW the date; leave",
+    "it null otherwise and describe the typical window in 'description'."
+  ],
+  "programs": [
+    {
+      "id": "gsoc",
+      "title": "Google Summer of Code (GSoC)",
+      "org": "Google",
+      "url": "https://summerofcode.withgoogle.com/",
+      "deadline": null,
+      "window": "Org list ~Feb, applications ~Mar-Apr",
+      "tags": ["program", "internship", "open source", "google", "remote"],
+      "description": "Global remote open-source program with a stipend. Contribute to a major org over the summer. Elite resume credential for an AI/ML builder. Applications typically open March-April; org list lands in February."
+    },
+    {
+      "id": "outreachy",
+      "title": "Outreachy Internships",
+      "org": "Software Freedom Conservancy",
+      "url": "https://www.outreachy.org/",
+      "deadline": null,
+      "window": "Two rounds a year (~Feb and ~Aug)",
+      "tags": ["program", "internship", "open source", "remote", "stipend"],
+      "description": "Paid (~$7000), fully remote, 3-month open-source internships. Two cohorts per year (around February and August). Strong for international exposure and a real FOSS track record."
+    },
+    {
+      "id": "mlh-fellowship",
+      "title": "MLH Fellowship",
+      "org": "Major League Hacking",
+      "url": "https://fellowship.mlh.io/",
+      "deadline": null,
+      "window": "Multiple batches per year (Spring/Summer/Fall)",
+      "tags": ["program", "fellowship", "open source", "remote", "mlh"],
+      "description": "12-week remote software-engineering / open-source fellowship with a stipend, run in batches across the year. Project-based, portfolio-building, strong peer network."
+    },
+    {
+      "id": "ms-student-ambassador",
+      "title": "Microsoft Learn Student Ambassadors",
+      "org": "Microsoft",
+      "url": "https://mvp.microsoft.com/studentambassadors",
+      "deadline": null,
+      "window": "Rolling — apply anytime",
+      "tags": ["program", "student ambassador", "microsoft", "cloud", "global"],
+      "description": "Rolling global student program: build community, earn Microsoft/Azure credentials and swag, climb tiers (Beta -> Gold). Direct Microsoft brand signal and a path into the Microsoft ecosystem."
+    },
+    {
+      "id": "github-campus-expert",
+      "title": "GitHub Campus Experts",
+      "org": "GitHub",
+      "url": "https://education.github.com/experts",
+      "deadline": null,
+      "window": "Rolling — apply anytime",
+      "tags": ["program", "github", "leadership", "open source", "global"],
+      "description": "Rolling program training students to build technical communities on campus. GitHub credential, public speaking + leadership development, and a global network."
+    },
+    {
+      "id": "nvidia-dli",
+      "title": "NVIDIA Deep Learning Institute (DLI)",
+      "org": "NVIDIA",
+      "url": "https://www.nvidia.com/en-us/training/",
+      "deadline": null,
+      "window": "Self-paced; free credits via events (GTC) and Ambassador program",
+      "tags": ["certification", "deep learning", "nvidia", "ai", "free"],
+      "description": "Hands-on, certificate-bearing courses in deep learning, CUDA, LLMs and generative AI. Free seats frequently via GTC and the University Ambassador program. Recognized NVIDIA certificate."
+    },
+    {
+      "id": "kaggle-competitions",
+      "title": "Kaggle Competitions",
+      "org": "Kaggle (Google)",
+      "url": "https://www.kaggle.com/competitions",
+      "deadline": null,
+      "window": "Always-on — new competitions launch continuously",
+      "tags": ["competition", "machine learning", "kaggle", "google", "data science"],
+      "description": "Ongoing ML competitions (incl. Google-partnered ones). Real leaderboard results, prizes, and a portfolio that AI employers recognize. Pick an active comp that matches your stack."
+    },
+    {
+      "id": "google-genai-exchange",
+      "title": "Google Gen AI Exchange / Build with AI (APAC)",
+      "org": "Google",
+      "url": "https://developers.google.com/community/gdg",
+      "deadline": null,
+      "window": "Seasonal cohorts; APAC editions via GDG",
+      "tags": ["program", "generative ai", "google", "gemini", "apac"],
+      "description": "Google's generative-AI upskilling + hackathon programs (Gemini, Vertex AI), often run in APAC through Google Developer Groups. Hands-on GenAI building with a Google credential."
+    },
+    {
+      "id": "ms-ai-skills-fest",
+      "title": "Microsoft AI Skills Fest / Learn Challenges",
+      "org": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/training/",
+      "deadline": null,
+      "window": "Periodic time-boxed challenges",
+      "tags": ["certification", "microsoft", "ai", "azure", "free"],
+      "description": "Time-boxed Microsoft Learn challenges and AI skill events that award badges and discounted/free certification vouchers. Fast, free, resume-relevant AI/Azure credentials."
+    },
+    {
+      "id": "ibm-skillsbuild",
+      "title": "IBM SkillsBuild — AI Credentials",
+      "org": "IBM",
+      "url": "https://skillsbuild.org/",
+      "deadline": null,
+      "window": "Self-paced; periodic cohorts/hackathons",
+      "tags": ["certification", "ibm", "ai", "free"],
+      "description": "Free IBM courses and digital credentials in AI, data, and cloud, with periodic student cohorts and hackathons. Recognized IBM badges at zero cost."
+    },
+    {
+      "id": "huggingface-learn",
+      "title": "Hugging Face — Courses, Events & Community",
+      "org": "Hugging Face",
+      "url": "https://huggingface.co/learn",
+      "deadline": null,
+      "window": "Always-on courses; periodic community events",
+      "tags": ["learning", "llm", "open source", "hugging face", "ai"],
+      "description": "Free, high-quality courses (LLMs, agents, deep RL) plus frequent community sprints and events. The center of gravity for open-source AI — directly aligned with AI-agent/LLM work."
+    },
+    {
+      "id": "aws-educate",
+      "title": "AWS Educate / AWS AI & Cloud Programs",
+      "org": "Amazon Web Services",
+      "url": "https://aws.amazon.com/education/awseducate/",
+      "deadline": null,
+      "window": "Rolling enrollment; periodic challenges (DeepRacer)",
+      "tags": ["cloud", "aws", "certification", "free"],
+      "description": "Free AWS cloud + AI learning, labs, and credits, plus contests like DeepRacer Student. Cloud credentials that pair well with AI engineering and backend skills."
+    },
+    {
+      "id": "anthropic-programs",
+      "title": "Anthropic — Builder & Research Programs",
+      "org": "Anthropic",
+      "url": "https://www.anthropic.com/",
+      "deadline": null,
+      "window": "Periodic — watch their site/socials",
+      "tags": ["program", "llm", "anthropic", "ai safety", "research"],
+      "description": "Anthropic's developer/builder programs, hackathons, and research/fellowship opportunities around Claude and AI safety. Frontier-lab credential; highly aligned with AI-agent ambitions."
+    },
+    {
+      "id": "google-step",
+      "title": "Google STEP Internship",
+      "org": "Google",
+      "url": "https://buildyourfuture.withgoogle.com/programs/step",
+      "deadline": null,
+      "window": "Applications typically ~Oct-Dec for the next summer",
+      "tags": ["internship", "google", "students", "software engineering"],
+      "description": "Google's software-engineering internship for 1st/2nd-year students — paid, mentored, and a direct line into Google. Applications usually open in the autumn for the following summer."
+    }
+  ]
+}

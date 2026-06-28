@@ -63,6 +63,7 @@ def _deadline_phrase(item) -> str:
 _CATEGORY_EMOJI = {
     "devpost": "🏆", "devfolio": "🏆", "mlh": "🏆",   # 🏆 Hackathon
     "unstop": "💼",                                    # 💼 Student program / fellowship
+    "programs": "🎓",                                  # 🎓 Flagship program (curated)
     "clist": "💻",                                     # 💻 Coding contest
     "arxiv": "📄",                                     # 📄 Research paper
     "github": "🔧",                                    # 🔧 Trending repo
@@ -211,8 +212,12 @@ def run(source_names=None, test=False):
     # 1. Gather
     all_items, sources_ok, sources_total = _gather(source_names)
 
-    # 2. Relevance filter
-    relevant = [it for it in all_items if is_relevant(it)]
+    # 2. Relevance filter. The curated "programs" watchlist is pre-vetted (every
+    # entry was hand-picked as relevant), so it bypasses the keyword gate and goes
+    # straight to the LLM scorer — which then ranks it. Noisy sources still pass
+    # through the keyword filter as before.
+    trusted = {"programs"}
+    relevant = [it for it in all_items if it.source in trusted or is_relevant(it)]
 
     # 3. Score
     for it in relevant:
