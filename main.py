@@ -184,12 +184,18 @@ def _telegram_digest(crit, high, cap=6):
             if it.ai_summary:
                 seg += f"\n   <i>{_tg_escape(it.ai_summary)}</i>"
             parts.append(seg)
-            row = []
+            key = it.dedup_key()
+            row1 = []
             if it.url:
-                row.append({"text": "🔗 Open", "url": it.url})
-            row.append({"text": "✅ Plan in TaskFlow",
-                        "callback_data": f"plan:{it.dedup_key()}"})
-            buttons.append(row)
+                row1.append({"text": "🔗 Open", "url": it.url})
+            row1.append({"text": "➕ Plan", "callback_data": f"plan:{key}"})
+            buttons.append(row1)
+            # Application-tracker row: act on it and the agent remembers.
+            buttons.append([
+                {"text": "✅ Applied", "callback_data": f"applied:{key}"},
+                {"text": "⏭ Skip", "callback_data": f"skip:{key}"},
+                {"text": "⏰ Remind", "callback_data": f"remind:{key}"},
+            ])
 
     _block("🔥 <b>CRITICAL</b>", [i for i in pool
                                   if policy.classify(policy.effective_score(i)) == "CRITICAL"])

@@ -1,21 +1,27 @@
 """
-Telegram listener (Phase C — the two-way half). FREE.
+Telegram listener (Phase C — the two-way half + Application Tracker). FREE.
 
 Run this on your laptop:   python telegram_listener.py
 
-It long-polls Telegram for button taps from the digest. When you tap
-"✅ Plan in TaskFlow" on an opportunity, it finds that item (by dedup key, from
-data/history.json) and creates the TaskFlow task — locally, where TaskFlow lives.
+It long-polls Telegram for button taps from the digest and remembers what you do
+with each opportunity:
+  ➕ Plan      → creates a TaskFlow task (status: planned)
+  ✅ Applied   → marks it applied
+  ⏭ Skip      → marks it skipped (stops nagging)
+  ⏰ Remind    → revisit in a few days; the listener nudges you when it's due
 
+It also handles:
+  /start   → prints your chat id
+  /top     → your current top opportunities
+  /report  → the weekly "Regret Report" on demand
+
+Once a day it fires due reminders, and every Sunday it sends the weekly report.
 Telegram queues taps for ~24h, so taps made while this isn't running are handled
-the next time you start it. Also supports:
-  /start  → prints your chat id (put it in .env as TELEGRAM_CHAT_ID)
-  /top    → your current top opportunities
-
-Stop with Ctrl+C.
+the next time you start it. Stop with Ctrl+C.
 """
 
 import html
+import json
 import time
 from datetime import date
 
@@ -23,10 +29,13 @@ import requests
 
 import config
 import store
+import tracker
 from filters import policy
 from models import Opportunity
 from taskflow import integration
 from util import log
+
+_last_tick: date | None = None
 
 
 def _api(method: str) -> str:
@@ -69,9 +78,25 @@ def _answer(cb_id: str, text: str = "") -> None:
     _post("answerCallbackQuery", callback_query_id=cb_id, text=text)
 
 
-def _send(chat_id, text: str) -> None:
-    _post("sendMessage", chat_id=chat_id, text=text,
-          parse_mode="HTML", disable_web_page_preview=True)
+def _send(chat_id, text: str, buttons: list | None = None) -> None:
+    payload = dict(chat_id=chat_id, text=text, parse_mode="HTML",
+                   disable_web_page_preview=True)
+    if buttons:
+        payload["reply_markup"] = json.dumps({"inline_keyboard": buttons})
+    _post("sendMessage", **payload)
+
+
+def _tracker_buttons(key: str, url: str = "") -> list:
+    rows = []
+    if url:
+        rows.append([{"text": "🔗 Open", "url": url},
+                     {"text": "➕ Plan", "callback_data": f"plan:{key}"}])
+    else:
+        rows.append([{"text": "➕ Plan", "callback_data": f"plan:{key}"}])
+    rows.append([{"text": "✅ Applied", "callback_data": f"applied:{key}"},
+                 {"text": "⏭ Skip", "callback_data": f"skip:{key}"},
+                 {"text": "⏰ Remind", "callback_data": f"remind:{key}"}])
+    return rows
 
 
 def _handle_plan(key: str, cb: dict) -> None:
@@ -84,18 +109,31 @@ def _handle_plan(key: str, cb: dict) -> None:
         _answer(cb["id"], "TaskFlow isn't available on this machine.")
         return
     if integration.already_dumped(it):
+        tracker.set_status(key, "planned", item=it)
         _answer(cb["id"], "Already in TaskFlow ✅ — no duplicate created.")
-        _send(cb["message"]["chat"]["id"],
-              f"ℹ️ Already in TaskFlow:\n<b>{html.escape(it.title)}</b>")
         return
     ok = integration.dump(it, policy.effective_score(it))
     _answer(cb["id"], "Added to TaskFlow ✅" if ok else "Dump failed — check logs")
     if ok:
+        tracker.set_status(key, "planned", item=it)
         _send(chat_id, f"✅ Added to TaskFlow:\n<b>{html.escape(it.title)}</b>")
         if it.action_plan:
             steps = "\n".join(f"{i}. {html.escape(s)}"
                               for i, s in enumerate(it.action_plan, 1))
             _send(chat_id, f"<b>Suggested plan</b>\n{steps}")
+
+
+def _handle_status(action: str, key: str, cb: dict) -> None:
+    it = _history_items().get(key)
+    if action == "applied":
+        tracker.set_status(key, "applied", item=it)
+        _answer(cb["id"], "Marked as applied ✅ — nice one!")
+    elif action == "skip":
+        tracker.set_status(key, "skipped", item=it)
+        _answer(cb["id"], "Skipped — I won't nag you about this.")
+    elif action == "remind":
+        tracker.set_status(key, "remind", item=it)
+        _answer(cb["id"], f"I'll remind you in {config.TRACKER_REMIND_DAYS} days ⏰")
 
 
 def _handle_message(msg: dict) -> None:
@@ -106,7 +144,7 @@ def _handle_message(msg: dict) -> None:
               "👋 <b>Opportunity Hunter</b> is connected.\n"
               f"Your chat id is <code>{chat_id}</code> — put it in .env as "
               "<code>TELEGRAM_CHAT_ID</code> to receive digests.\n"
-              "Send /top to see your top opportunities.")
+              "Commands: /top · /report")
         print(f"[chat id] {chat_id}")
     elif text.startswith("/top"):
         items = sorted(_history_items().values(),
@@ -117,6 +155,32 @@ def _handle_message(msg: dict) -> None:
         lines = [f"{policy.effective_score(i)}/10 — <b>{html.escape(i.title[:60])}</b>"
                  for i in items]
         _send(chat_id, "<b>Top opportunities</b>\n" + "\n".join(lines))
+    elif text.startswith("/report"):
+        _send(chat_id, tracker.build_report(_history_items()))
+
+
+def _daily_tick() -> None:
+    """Once a day: fire due reminders, and on Sundays send the weekly report."""
+    global _last_tick
+    today = date.today()
+    if _last_tick == today:
+        return
+    _last_tick = today
+    cid = config.TELEGRAM_CHAT_ID
+    if not cid:
+        return
+
+    hist = _history_items()
+    for key, entry in tracker.due_reminders(today):
+        it = hist.get(key)
+        title = it.title if it else entry.get("title", "this opportunity")
+        url = it.url if it else entry.get("url", "")
+        _send(cid, f"⏰ <b>Reminder</b> — you asked to revisit:\n<b>{html.escape(title)}</b>",
+              buttons=_tracker_buttons(key, url))
+        tracker.clear_remind(key)
+
+    if today.weekday() == 6:  # Sunday
+        _send(cid, tracker.build_report(hist))
 
 
 def run() -> None:
@@ -136,13 +200,16 @@ def run() -> None:
                     offset = upd["update_id"] + 1
                     if "callback_query" in upd:
                         cb = upd["callback_query"]
-                        data = cb.get("data", "")
-                        if data.startswith("plan:"):
-                            _handle_plan(data[5:], cb)
+                        action, _, key = cb.get("data", "").partition(":")
+                        if action == "plan":
+                            _handle_plan(key, cb)
+                        elif action in ("applied", "skip", "remind"):
+                            _handle_status(action, key, cb)
                         else:
                             _answer(cb["id"])
                     elif "message" in upd:
                         _handle_message(upd["message"])
+                _daily_tick()
             except requests.RequestException as e:
                 log(f"[telegram-listener] poll error: {e}", level="WARN")
                 time.sleep(5)

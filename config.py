@@ -82,6 +82,10 @@ def telegram_configured() -> bool:
     return bool(TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID)
 
 
+# Application Tracker (Phase C+): how many days "⏰ Remind" pushes an item out.
+TRACKER_REMIND_DAYS = int(os.environ.get("OH_REMIND_DAYS", "3"))
+
+
 # ─── TASKFLOW SETTINGS ───────────────────────────────────────────────
 # Phase 2 decision: "propose, never auto" — opportunities are surfaced (phone +
 # Nova's Scout), and YOU confirm them into TaskFlow. So auto-dump now defaults
