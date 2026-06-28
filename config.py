@@ -122,31 +122,58 @@ CLIST_API_KEY = os.environ.get("CLIST_API_KEY", "")
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
 
-# ─── PHASE 2 — LLM INTELLIGENCE (Gemini) ─────────────────────────────
-# Free Gemini key (1,500 req/day): https://aistudio.google.com/apikey
-# Same provider Nova uses, so one brain across both projects, zero new accounts.
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-
-# Master toggle. When True AND a key is present, the LLM scorer runs; otherwise
-# the system gracefully falls back to the rule-based scorer (never crashes).
+# ─── PHASE 2 — LLM INTELLIGENCE (provider-agnostic chain) ────────────
+# The scorer speaks the OpenAI-compatible chat format, so we keep a CHAIN of free
+# providers and fall through them on quota/error. Gemini is deliberately NOT here:
+# it's reserved for Nova's Kaggle x Google capstone (must keep that quota free).
+#
+# Free, no-card keys:
+#   Groq       -> https://console.groq.com      (primary — ~1,000 req/day, fastest)
+#   Cerebras   -> https://cloud.cerebras.ai     (backup  — ~1M tokens/day)
+#   OpenRouter -> https://openrouter.ai/keys    (backup  — many free models, 1 key)
+#
+# Master toggle. When True AND at least one provider key is set, the LLM scorer
+# runs; otherwise the system falls back to rule-based scoring (never crashes).
 USE_LLM_SCORING = _env_bool("OH_LLM", True)
 
-# Model + quota guards. flash is cheap/fast and plenty for scoring; the fallback
-# is tried if the primary is quota-exhausted (429). Mirrors Nova's router idea.
-GEMINI_MODEL = os.environ.get("OH_GEMINI_MODEL", "gemini-2.0-flash")
-GEMINI_FALLBACK_MODEL = os.environ.get("OH_GEMINI_FALLBACK_MODEL", "gemini-2.5-flash")
-LLM_BATCH_SIZE = 8     # opportunities scored per Gemini call (quota-frugal)
-LLM_MAX_ITEMS = 40     # hard cap on items scored per run (protects the daily quota)
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
+CEREBRAS_API_KEY = os.environ.get("CEREBRAS_API_KEY", "")
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 
-# Phase-2 dimension weights (sum = 1.0). The LLM also returns these per item, but
-# the final score is recomputed here so the weighting stays under our control.
+# Tried in order; a provider is used only when its key is present. Each entry is
+# OpenAI-compatible (POST {base_url}/chat/completions), so ONE code path serves all.
+LLM_PROVIDERS = [
+    {"name": "groq", "base_url": "https://api.groq.com/openai/v1",
+     "api_key": GROQ_API_KEY,
+     "model": os.environ.get("OH_GROQ_MODEL", "llama-3.3-70b-versatile")},
+    {"name": "cerebras", "base_url": "https://api.cerebras.ai/v1",
+     "api_key": CEREBRAS_API_KEY,
+     "model": os.environ.get("OH_CEREBRAS_MODEL", "llama-3.3-70b")},
+    {"name": "openrouter", "base_url": "https://openrouter.ai/api/v1",
+     "api_key": OPENROUTER_API_KEY,
+     "model": os.environ.get("OH_OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free")},
+]
+
+
+def active_llm_providers() -> list:
+    """The provider chain, in order, limited to those with a key configured."""
+    return [p for p in LLM_PROVIDERS if p["api_key"]]
+
+
+LLM_TIMEOUT = 60       # seconds per LLM call (longer than the 10s web default)
+LLM_BATCH_SIZE = 8     # opportunities scored per call (quota-frugal)
+LLM_MAX_ITEMS = 40     # hard cap on items scored per run (protects daily quota)
+
+# Dimension weights (sum = 1.0). The model returns per-dimension scores; the final
+# 0-10 is recomputed HERE so the weighting stays under our control, not the model's.
 SCORE_WEIGHTS = {
     "career": 0.35, "interest": 0.25, "prestige": 0.15,
     "deadline": 0.10, "skill": 0.10, "time": 0.05,
 }
 
-# Legacy (unused) — kept so old .env files don't break.
+# Legacy / reserved — read but unused here, so old .env files never break.
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")  # reserved for Nova; not used here
 
 
 # ─── PATHS ───────────────────────────────────────────────────────────

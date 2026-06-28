@@ -6,6 +6,7 @@ plyer>=2.1.0           # desktop notifications
 python-dotenv>=1.0.0   # load secrets from .env (optional, gracefully skipped if missing)
 beautifulsoup4>=4.12.0 # MLH scrape (added when we build hackathons.py)
 
-# Phase 2 — LLM intelligence (Gemini). Free key: https://aistudio.google.com/apikey
-# Optional at runtime: if absent, the scorer cleanly falls back to rule scoring.
-google-generativeai>=0.8.0
+# Phase 2 — LLM intelligence is provider-agnostic (OpenAI-compatible chat over
+# plain HTTP), so it needs NO vendor SDK — it reuses `requests` above. Free keys:
+#   Groq https://console.groq.com · Cerebras https://cloud.cerebras.ai · OpenRouter https://openrouter.ai/keys
+# If no provider key is set, the scorer cleanly falls back to rule scoring.
