@@ -5295,6 +5295,213 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-28",
+      "items": [
+        {
+          "title": "Wayfinder Router: deterministic routing of queries between local and hosted LLM",
+          "url": "https://github.com/itsthelore/wayfinder-router",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48704373",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
+          "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48696585",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "H0: Hack the Zero Stack with Vercel v0 and AWS Databases",
+          "url": "https://h01.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 27 - Jun 29, 2026 | prize $ 80,000 | themes: Databases, Open Ended, Web",
+          "deadline": "2026-06-29",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29812",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "MathFormer: Testing whether symbolic math is pattern matching or reasoning [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uhatw8/mathformer_testing_whether_symbolic_math_is/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uhatw8",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Hiding messages in the least significant mantissa bits of fine-tuned ONNX model weights [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uh61uw/hiding_messages_in_the_least_significant_mantissa/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uh61uw",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "NagaTranslate: Building a translation and voice pipeline for low-resource Nagaland creoles (Whisper, VITS, LLMs) [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uhlvjv/nagatranslate_building_a_translation_and_voice/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uhlvjv",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Built an LLM training framework that actually runs on older GPUs without crashing [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uh7ib3/built_an_llm_training_framework_that_actually/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uh7ib3",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Showcase: Building ML models that \"watch\" MMA fights and label events and positional changes making these moments all searchable on a timeline [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ugwrmz/showcase_building_ml_models_that_watch_mma_fights/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ugwrmz",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Do we still need to study algorithms now that AI writes most of our code? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uhdydj/do_we_still_need_to_study_algorithms_now_that_ai/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uhdydj",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Hack to Survive",
+          "url": "https://unstop.com/hackathons/hack-to-survive-kiras-logic-1705001",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1705001",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Ai Filmmaking Hackathon - Bangalore Edition",
+          "url": "https://unstop.com/hackathons/ai-filmmaking-hackathon-bangalore-edition-ai-film-hackathon-bangalore-edition-11-fps-1703147",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1703147",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Bizzathon-Hackathon",
+          "url": "https://unstop.com/hackathons/bizzathon-hackathon-e-summit-2026-iit-ism-dhanbad-indian-institute-of-technology-indian-school-of-mines-iit-i-1704716",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1704716",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "AlgoQuest 2026 – National Level Coding Competition",
+          "url": "https://unstop.com/hackathons/algoquest-2026-national-level-coding-competition-apex-institute-of-technology-chandigarh-university-1704834",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1704834",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": ""
+        },
+        {
+          "title": "Grand Hack IPEC",
+          "url": "https://unstop.com/hackathons/grand-hack-ipec-hackshastra-1704703",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1704703",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": ""
+        }
+      ]
     }
   ]
 }
