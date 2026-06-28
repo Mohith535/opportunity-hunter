@@ -13,6 +13,7 @@ CLI:
 """
 
 import argparse
+import html
 import textwrap
 import time
 from datetime import date, datetime
@@ -23,6 +24,7 @@ import config
 from filters import policy
 from filters.relevance import is_relevant
 from filters.scorer import score_item
+from notifiers import telegram
 from notifiers.desktop import send_desktop
 from notifiers.ntfy import send_phone
 from sources import available_sources, get_sources
@@ -160,9 +162,45 @@ def _actions_header(items) -> str:
     return "; ".join(actions)
 
 
+def _tg_escape(s: str) -> str:
+    return html.escape(s or "")
+
+
+def _telegram_digest(crit, high, cap=6):
+    """Build the Telegram message (HTML) + inline keyboard for the urgent set.
+    Each item gets an 'Open' (link) and a 'Plan in TaskFlow' (callback) button;
+    the callback carries the dedup_key so the listener can find and dump it."""
+    pool = _by_deadline(crit + high)[:cap]
+    parts, buttons = [], []
+
+    def _block(label, items):
+        if not items:
+            return
+        parts.append(label)
+        for it in items:
+            dl = _deadline_phrase(it) or "rolling"
+            title = _tg_escape(textwrap.shorten(it.title, width=60, placeholder="…"))
+            seg = f"{_cat_emoji(it.source)} <b>{title}</b> — {dl}"
+            if it.ai_summary:
+                seg += f"\n   <i>{_tg_escape(it.ai_summary)}</i>"
+            parts.append(seg)
+            row = []
+            if it.url:
+                row.append({"text": "🔗 Open", "url": it.url})
+            row.append({"text": "✅ Plan in TaskFlow",
+                        "callback_data": f"plan:{it.dedup_key()}"})
+            buttons.append(row)
+
+    _block("🔥 <b>CRITICAL</b>", [i for i in pool
+                                  if policy.classify(policy.effective_score(i)) == "CRITICAL"])
+    _block("⚡ <b>HIGH</b>", [i for i in pool
+                             if policy.classify(policy.effective_score(i)) == "HIGH"])
+    return "\n\n".join(parts), buttons
+
+
 def _notify(new_items, test):
     """Send a focused main push (CRITICAL+HIGH) plus a separate low-priority
-    learning push (medium/low), to phone + desktop."""
+    learning push (medium/low), to phone + desktop + Telegram (two-way)."""
     if not new_items:
         return
     from collections import Counter
@@ -202,6 +240,12 @@ def _notify(new_items, test):
     if learning:
         send_phone(f"{len(learning)} more to explore", _format_learning(learning),
                    priority="low", tags="books", markdown=True)
+
+    # 3) TELEGRAM (two-way) — the urgent set with tap-to-act buttons. Tapping
+    # "Plan in TaskFlow" is handled by telegram_listener.py running locally.
+    if telegram.is_configured() and (crit or high):
+        text, buttons = _telegram_digest(crit, high)
+        telegram.send_telegram(f"<b>{_tg_escape(stat_line)}</b>\n\n{text}", buttons=buttons)
 
 
 def run(source_names=None, test=False):

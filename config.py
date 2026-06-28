@@ -69,6 +69,18 @@ NTFY_URL = f"https://ntfy.sh/{NTFY_TOPIC}"
 DESKTOP_NOTIFICATIONS = _env_bool("OH_DESKTOP", True)
 PHONE_NOTIFICATIONS = _env_bool("OH_PHONE", True)
 
+# Telegram (Phase C — two-way, FREE). When both are set, the digest is ALSO sent
+# to Telegram with inline buttons ("Plan in TaskFlow" / "Open"). The tap is handled
+# by telegram_listener.py running locally (TaskFlow is local-only). Create a bot via
+# @BotFather to get the token; get your chat id by messaging the bot then visiting
+# https://api.telegram.org/bot<TOKEN>/getUpdates (or it's printed by the listener).
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
+
+
+def telegram_configured() -> bool:
+    return bool(TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID)
+
 
 # ─── TASKFLOW SETTINGS ───────────────────────────────────────────────
 # Phase 2 decision: "propose, never auto" — opportunities are surfaced (phone +
