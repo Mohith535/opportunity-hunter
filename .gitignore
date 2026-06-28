@@ -19,6 +19,8 @@ logs/*.log
 
 # NOTE: data/*.json is intentionally NOT ignored — the cloud workflow commits
 # seen_items.json / history.json back so dedup survives across daily runs.
+# Exception: dumped.json is LOCAL TaskFlow-dump state (taps happen locally only).
+data/dumped.json
 
 # Project brain — local-only, never public
 CLAUDE.md

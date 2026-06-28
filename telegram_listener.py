@@ -83,6 +83,11 @@ def _handle_plan(key: str, cb: dict) -> None:
     if not integration.is_available():
         _answer(cb["id"], "TaskFlow isn't available on this machine.")
         return
+    if integration.already_dumped(it):
+        _answer(cb["id"], "Already in TaskFlow ✅ — no duplicate created.")
+        _send(cb["message"]["chat"]["id"],
+              f"ℹ️ Already in TaskFlow:\n<b>{html.escape(it.title)}</b>")
+        return
     ok = integration.dump(it, policy.effective_score(it))
     _answer(cb["id"], "Added to TaskFlow ✅" if ok else "Dump failed — check logs")
     if ok:
