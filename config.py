@@ -148,10 +148,10 @@ LLM_PROVIDERS = [
      "model": os.environ.get("OH_GROQ_MODEL", "llama-3.3-70b-versatile")},
     {"name": "cerebras", "base_url": "https://api.cerebras.ai/v1",
      "api_key": CEREBRAS_API_KEY,
-     "model": os.environ.get("OH_CEREBRAS_MODEL", "llama-3.3-70b")},
+     "model": os.environ.get("OH_CEREBRAS_MODEL", "gpt-oss-120b")},
     {"name": "openrouter", "base_url": "https://openrouter.ai/api/v1",
      "api_key": OPENROUTER_API_KEY,
-     "model": os.environ.get("OH_OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free")},
+     "model": os.environ.get("OH_OPENROUTER_MODEL", "google/gemma-4-31b-it:free")},
 ]
 
 
