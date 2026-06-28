@@ -50,8 +50,10 @@ class Opportunity:
 
     # Scores
     score: int = 0                   # rule-based score (filters/scorer.py)
-    ai_score: int = -1               # Phase 2: LLM score, -1 = not computed
-    ai_summary: str = ""             # Phase 2: one-line LLM summary
+    ai_score: int = -1               # Phase 2: LLM score 0-10, -1 = not computed
+    ai_summary: str = ""             # Phase 2: one-line "why this matters for Mohith"
+    action_plan: list[str] = field(default_factory=list)  # Phase 2: suggested steps
+    dimensions: dict = field(default_factory=dict)        # Phase 2: per-dimension scores
 
     raw: dict = field(default_factory=dict)  # source-specific extras
 

@@ -71,10 +71,17 @@ PHONE_NOTIFICATIONS = _env_bool("OH_PHONE", True)
 
 
 # ─── TASKFLOW SETTINGS ───────────────────────────────────────────────
-# Cloud runs set OH_TASKFLOW=false — TaskFlow is local-only (~/.taskflow).
-TASKFLOW_AUTO_DUMP = _env_bool("OH_TASKFLOW", True)
+# Phase 2 decision: "propose, never auto" — opportunities are surfaced (phone +
+# Nova's Scout), and YOU confirm them into TaskFlow. So auto-dump now defaults
+# OFF. Set OH_TASKFLOW=true to bring back the old auto-create behaviour.
+TASKFLOW_AUTO_DUMP = _env_bool("OH_TASKFLOW", False)
 TASKFLOW_MIN_SCORE = 7      # only dump items scoring this or higher
 TASKFLOW_TITLE_LIMIT = 80   # README: no hard limit, 80 is a safe cap
+
+# Where TaskFlow / Nova keep their data — the Hunter READS the profile from here
+# (~/.taskflow/user_profile.json) to score against the real Mohith. Overridable
+# (Nova uses the same TASKFLOW_DATA_PATH env) so tests can point at a temp dir.
+TASKFLOW_DATA_DIR = Path(os.environ.get("TASKFLOW_DATA_PATH", Path.home() / ".taskflow"))
 
 
 # ─── SCHEDULER ───────────────────────────────────────────────────────
@@ -115,7 +122,30 @@ CLIST_API_KEY = os.environ.get("CLIST_API_KEY", "")
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
 
-# ─── PHASE 2 (not used yet) ──────────────────────────────────────────
+# ─── PHASE 2 — LLM INTELLIGENCE (Gemini) ─────────────────────────────
+# Free Gemini key (1,500 req/day): https://aistudio.google.com/apikey
+# Same provider Nova uses, so one brain across both projects, zero new accounts.
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+
+# Master toggle. When True AND a key is present, the LLM scorer runs; otherwise
+# the system gracefully falls back to the rule-based scorer (never crashes).
+USE_LLM_SCORING = _env_bool("OH_LLM", True)
+
+# Model + quota guards. flash is cheap/fast and plenty for scoring; the fallback
+# is tried if the primary is quota-exhausted (429). Mirrors Nova's router idea.
+GEMINI_MODEL = os.environ.get("OH_GEMINI_MODEL", "gemini-2.0-flash")
+GEMINI_FALLBACK_MODEL = os.environ.get("OH_GEMINI_FALLBACK_MODEL", "gemini-2.5-flash")
+LLM_BATCH_SIZE = 8     # opportunities scored per Gemini call (quota-frugal)
+LLM_MAX_ITEMS = 40     # hard cap on items scored per run (protects the daily quota)
+
+# Phase-2 dimension weights (sum = 1.0). The LLM also returns these per item, but
+# the final score is recomputed here so the weighting stays under our control.
+SCORE_WEIGHTS = {
+    "career": 0.35, "interest": 0.25, "prestige": 0.15,
+    "deadline": 0.10, "skill": 0.10, "time": 0.05,
+}
+
+# Legacy (unused) — kept so old .env files don't break.
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 
 

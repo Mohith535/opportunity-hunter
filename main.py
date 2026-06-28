@@ -94,29 +94,40 @@ def _by_deadline(items):
                                           -policy.effective_score(it)))
 
 
+def _item_block(it, with_plan: bool) -> str:
+    """One push block: the clickable link, the LLM 'why it matters' line, and —
+    for the elite items — the suggested mini action plan as a numbered list."""
+    parts = [_md_link(it)]
+    if it.ai_summary:
+        parts.append(f"_{it.ai_summary}_")                      # why it matters
+    if with_plan and it.action_plan:
+        parts.append("  \n".join(f"{n}. {step}"
+                                 for n, step in enumerate(it.action_plan, 1)))
+    return "  \n".join(parts)
+
+
 def _format_main(critical, high, cap=6) -> str:
     """Main-push body: CRITICAL + HIGH only, max `cap` combined, soonest first.
 
-    The cap is allocated across both tiers by soonest deadline, then the chosen
-    items are shown under their tier headers (blank lines between blocks so
-    CommonMark renders them spaced out)."""
+    Each item shows its 'why it matters' line; CRITICAL items also show their
+    action plan. Tiers are separated by blank lines for CommonMark spacing."""
     pool = _by_deadline(critical + high)
     selected = pool[:cap]
     crit = [i for i in selected if policy.classify(policy.effective_score(i)) == "CRITICAL"]
     hi = [i for i in selected if policy.classify(policy.effective_score(i)) == "HIGH"]
 
-    # Items within a tier are joined with hard breaks ("  \n") so each stays on
-    # its own line; tiers are separated by a blank line for CommonMark spacing.
     blocks = []
     if crit:
-        blocks.append("🔥 **CRITICAL**\n\n" + "  \n".join(_md_link(i) for i in crit))
+        body = "\n\n".join(_item_block(i, with_plan=True) for i in crit)
+        blocks.append("🔥 **CRITICAL**\n\n" + body)
     if hi:
-        blocks.append("⚡ **HIGH**\n\n" + "  \n".join(_md_link(i) for i in hi))
+        body = "\n\n".join(_item_block(i, with_plan=False) for i in hi)
+        blocks.append("⚡ **HIGH**\n\n" + body)
     body = "\n\n".join(blocks)
 
     remaining = len(pool) - len(selected)
     if remaining > 0:
-        body += f"\n\n_+{remaining} more — check TaskFlow_"
+        body += f"\n\n_+{remaining} more — open Nova Scout_"
     return body.strip()
 
 
@@ -214,6 +225,17 @@ def run(source_names=None, test=False):
         if not store.is_seen(seen, it) or store.should_resurface(it)
     ]
 
+    # 4b. LLM scoring (Phase 2) — the "filter by Mohith" brain. Only the fresh,
+    # deduped items are scored (quota-frugal); falls back to rule scores if the
+    # LLM is unavailable. effective_score() then prefers ai_score automatically.
+    if config.USE_LLM_SCORING and new_items:
+        from filters import llm_scorer
+        from user_profile import load_profile
+
+        prof = load_profile()
+        log(f"[profile] scoring against Mohith — layers: {', '.join(prof.sources)}")
+        llm_scorer.score_items(new_items, prof)
+
     # 5. Policy -> side effects
     taskflow_ready = (not test) and integration.is_available()
     dumped_keys, dumps, high_priority = set(), 0, 0
@@ -270,6 +292,9 @@ def recap():
         )
         item.score = d.get("score", 0)
         item.ai_score = d.get("ai_score", -1)
+        item.ai_summary = d.get("ai_summary", "")
+        item.action_plan = d.get("action_plan", [])
+        item.dimensions = d.get("dimensions", {})
         if dl:
             try:
                 item.deadline = date.fromisoformat(dl)

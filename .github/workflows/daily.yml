@@ -31,6 +31,12 @@ jobs:
       CLIST_API_KEY: ${{ secrets.CLIST_API_KEY }}
       # Auto-provided by Actions (no manual secret needed); lifts GitHub API rate limit.
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Phase 2 — LLM intelligence. GEMINI_API_KEY: free key (aistudio.google.com/apikey).
+      # OH_PROFILE_JSON: the personal profile as a JSON string (the repo is public, so the
+      # real profile lives in this secret, never in code). Both optional — if absent the
+      # run cleanly falls back to rule-based scoring with built-in profile defaults.
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      OH_PROFILE_JSON: ${{ secrets.OH_PROFILE_JSON }}
       OH_PHONE: "true"
       OH_DESKTOP: "false"
       OH_TASKFLOW: "false"

@@ -1,0 +1,37 @@
+{
+  "_comment": [
+    "Optional personal-profile override for the LLM scorer.",
+    "Copy this file to 'profile.local.json' (which is gitignored) and edit it,",
+    "OR paste its contents into the OH_PROFILE_JSON secret for the cloud run.",
+    "Every field is optional — anything you omit keeps its built-in default",
+    "(see DEFAULT_PROFILE in user_profile.py). Numeric weights are 0-10",
+    "(geo is 1-5). On your own machine the loader ALSO reads your real Nova",
+    "profile from ~/.taskflow/user_profile.json, so you may not need this at all."
+  ],
+  "name": "Mohith",
+  "long_term_goal": "Become an exceptional AI engineer, builder, and entrepreneur before graduation.",
+  "personal_purpose": "",
+  "interests": {
+    "ai agents": 10,
+    "llms": 10,
+    "generative ai": 10
+  },
+  "companies": {
+    "google": 10,
+    "microsoft": 9.8,
+    "anthropic": 9.4
+  },
+  "opportunity_types": {
+    "international internship": 10,
+    "ai residency": 9.8,
+    "ai hackathon": 8.8
+  },
+  "geo": {
+    "japan": 5,
+    "remote": 5,
+    "india": 4
+  },
+  "values": [
+    "Portfolio and resume value matter far more than cash prizes or swag."
+  ]
+}

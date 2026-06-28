@@ -55,14 +55,20 @@ def score_item(item) -> int:
     return min(score, 10)
 
 
-# ─── PHASE 2 HOOK — not implemented yet ──────────────────────────────
+# ─── PHASE 2 — LLM scoring ───────────────────────────────────────────
 def ai_score_item(item) -> int:
-    """Phase 2: call Claude API to intelligently score this item.
+    """Intelligently (re)score a single item via Gemini, in place.
 
-    Returns -1 to signal "not implemented" so callers know to use the
-    rule-based score instead. Wire this into policy.effective_score() later.
+    Returns the new ai_score, or -1 if LLM scoring was unavailable (no key,
+    quota, SDK missing) — in which case policy.effective_score() keeps using the
+    rule-based score. For batch scoring (the efficient path the pipeline uses)
+    call filters.llm_scorer.score_items() directly.
     """
-    return -1
+    from filters import llm_scorer
+    from user_profile import load_profile
+
+    llm_scorer.score_items([item], load_profile())
+    return item.ai_score
 
 
 if __name__ == "__main__":

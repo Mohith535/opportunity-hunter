@@ -7,6 +7,10 @@ venv/
 # Secrets — never commit
 .env
 
+# Personal profile override — local-only (the repo is public). The real "Mohith
+# profile" lives here or in the OH_PROFILE_JSON secret; only the .example is tracked.
+profile.local.json
+
 # Logs (regenerated each run; not worth versioning)
 logs/*.log
 
