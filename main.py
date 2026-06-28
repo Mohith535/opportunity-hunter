@@ -20,6 +20,7 @@ from datetime import date, datetime
 
 import daily_brief
 import store
+import verifier
 import config
 from filters import policy
 from filters.relevance import is_relevant
@@ -65,6 +66,7 @@ def _deadline_phrase(item) -> str:
 _CATEGORY_EMOJI = {
     "devpost": "🏆", "devfolio": "🏆", "mlh": "🏆",   # 🏆 Hackathon
     "unstop": "💼",                                    # 💼 Student program / fellowship
+    "internships": "🏢",                               # 🏢 Internship (aggregator, verified)
     "programs": "🎓",                                  # 🎓 Flagship program (curated)
     "clist": "💻",                                     # 💻 Coding contest
     "arxiv": "📄",                                     # 📄 Research paper
@@ -279,6 +281,10 @@ def run(source_names=None, test=False):
         it for it in relevant
         if not store.is_seen(seen, it) or store.should_resurface(it)
     ]
+
+    # 4a. Verify aggregator items — drop clearly-dead application links before we
+    # spend LLM calls on them (trusted sources pass straight through).
+    new_items = verifier.filter_dead(new_items)
 
     # 4b. LLM scoring (Phase 2) — the "filter by Mohith" brain. Only the fresh,
     # deduped items are scored (quota-frugal); falls back to rule scores if the
