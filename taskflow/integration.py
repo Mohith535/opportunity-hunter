@@ -98,10 +98,6 @@ def _build_note(item) -> str:
     if item.action_plan:
         steps = "  ".join(f"{i}. {s}" for i, s in enumerate(item.action_plan, 1))
         parts.append(f"Plan: {steps}")
-    if item.deadline:
-        # Deadline goes in the note for now: `taskflow dump --deadline` currently
-        # hangs (TaskFlow bug). Once that's fixed we can pass it as a real field.
-        parts.append(f"Deadline: {item.deadline.isoformat()}")
     org = (item.raw or {}).get("org")
     parts.append(f"Source: {item.source}" + (f" ({org})" if org else "") + " · via OP Hunter")
     return "\n".join(parts)
@@ -162,9 +158,10 @@ def dump(item, score: int) -> bool:
     note = _build_note(item)
     if note:
         cmd += ["--note", note]
-    # NB: we intentionally do NOT pass `--deadline` — `taskflow dump --deadline`
-    # currently hangs (TaskFlow bug). The deadline is in the note instead. Re-enable
-    # once TaskFlow is fixed. stdin is closed so the CLI can never block on a prompt.
+    if item.deadline:
+        # Real opportunity deadlines are hard — feed TaskFlow's urgency system.
+        cmd += ["--deadline", item.deadline.isoformat(), "--hard"]
+    # stdin is closed so the CLI can never block on a prompt.
 
     try:
         result = subprocess.run(cmd, capture_output=True, timeout=15, text=True,
