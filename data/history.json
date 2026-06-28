@@ -5502,6 +5502,38 @@
           "ai_summary": ""
         }
       ]
+    },
+    {
+      "date": "2026-06-28",
+      "items": [
+        {
+          "title": "H0: Hack the Zero Stack with Vercel v0 and AWS Databases",
+          "url": "https://h01.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 27 - Jun 29, 2026 | prize $ 80,000 | themes: Databases, Open Ended, Web",
+          "deadline": "2026-06-29",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29812",
+          "score": 10,
+          "ai_score": 5,
+          "ai_summary": "Relevant tech, skill growth",
+          "action_plan": [
+            "Research Vercel v0, AWS Databases (2h)",
+            "Form a team, discuss project ideas (4h)",
+            "Start building the project (20h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 8,
+            "skill": 7,
+            "time": 6
+          }
+        }
+      ]
     }
   ]
 }
