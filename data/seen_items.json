@@ -117,8 +117,8 @@
     "bbc20568713a": {
       "title": "H0: Hack the Zero Stack with Vercel v0 and AWS Databases",
       "first_seen": "2026-06-13",
-      "last_seen": "2026-06-28",
-      "times_seen": 5
+      "last_seen": "2026-06-29",
+      "times_seen": 6
     },
     "d2ca4c2753a6": {
       "title": "FIND EVIL!",
@@ -2164,6 +2164,462 @@
       "title": "Grand Hack IPEC",
       "first_seen": "2026-06-28",
       "last_seen": "2026-06-28",
+      "times_seen": 1
+    },
+    "f46dbd76c908": {
+      "title": "Democratic ICAI: Debating Our Way to Steering Principles from Preferences",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "6dd2199cbda2": {
+      "title": "Agentic Hardware Design as Repository-Level Code Evolution",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "c33a60630cca": {
+      "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "93c3e98ebf42": {
+      "title": "Knowledge Distillation of Black-Box Large Language Models (2024)",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "68ff0a956c7a": {
+      "title": "I shrank a transformer until every number fitted on the screen and made the weights editable [R]",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "15dace48316f": {
+      "title": "ECCV 2026 Final Decisions after Provisional Acceptance [D]",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "48abded009bd": {
+      "title": "Double-Blind submission in single-blind tracks [D]",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "f74dc6fdcf2a": {
+      "title": "Evaluating long-term memory limits in stateless LLM chatbots — feedback needed [D]",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "29dcb096dd6c": {
+      "title": "AtCoder Beginner Contest 467 (atcoder.jp)",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "2219b1155640": {
+      "title": "AtCoder Regular Contest 225 (atcoder.jp)",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "c02b8691794d": {
+      "title": "Starters 248 (codechef.com)",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "cbf6ef3dca85": {
+      "title": "Founder's Office (Sales) Internship",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "1b27cbd580de": {
+      "title": "Business Development Internship",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "e551e179c3f4": {
+      "title": "Social Media Marketing Internship",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "5c8b16f8999e": {
+      "title": "HR Generalist Internship",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "54b28ec9baca": {
+      "title": "Business Development Internship",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "4572e03dc043": {
+      "title": "Business Development Internship",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "0caf09d594b0": {
+      "title": "Sales Development Representative Internship",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "55f01066b80c": {
+      "title": "Graphic Designer Internship",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "443d63f1d56c": {
+      "title": "Crack the Internship: Lead Challenge-2",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "6e5bfe0f4590": {
+      "title": "AI Career Readiness Challenge 2026",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "5ad8b8317125": {
+      "title": "Sage IT Scholarship India - November 2026",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "b3fe1dc9834c": {
+      "title": "Amber Scholar September 2026",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "ee4738e826c6": {
+      "title": "Avanse Education Loan for Studying Abroad",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "b653189c0468": {
+      "title": "IET India Scholarship Award 2026",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "e407852beba7": {
+      "title": "Sitaram Jindal Scholarship Scheme",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "81992ea58a94": {
+      "title": "IISER Berhampur Post-Doctoral Research Fellowship (PDRF) 2025-26",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "15e34ffda925": {
+      "title": "Google Summer of Code (GSoC)",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "286dbd785a10": {
+      "title": "Outreachy Internships",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "4fec7b2bae9b": {
+      "title": "MLH Fellowship",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "fd996a68ef23": {
+      "title": "Microsoft Learn Student Ambassadors",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "c3c5cea42a21": {
+      "title": "GitHub Campus Experts",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "adfb8339da45": {
+      "title": "NVIDIA Deep Learning Institute (DLI)",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "c9015f11a09b": {
+      "title": "Kaggle Competitions",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "bce329a08f01": {
+      "title": "Google Gen AI Exchange / Build with AI (APAC)",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "01eb6edb0a64": {
+      "title": "Microsoft AI Skills Fest / Learn Challenges",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "4f03524fe26b": {
+      "title": "IBM SkillsBuild — AI Credentials",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "f8d71e5f3959": {
+      "title": "Hugging Face — Courses, Events & Community",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "3bd337b0ef6f": {
+      "title": "AWS Educate / AWS AI & Cloud Programs",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "932599bd2034": {
+      "title": "Anthropic — Builder & Research Programs",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "725a9fff3122": {
+      "title": "Google STEP Internship",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "a83e5c50dfec": {
+      "title": "Amazon ML Summer School (India)",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "73818f6ee676": {
+      "title": "Flipkart GRiD",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "e700cd6b8d80": {
+      "title": "Amazon HackOn (India)",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "6e162f22d816": {
+      "title": "Walmart Sparkathon / CodeHers",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "0bcdc89b9b95": {
+      "title": "Microsoft Imagine Cup",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "a03b7057cf03": {
+      "title": "Microsoft Engage / India Internships",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "2d72d0ea2df0": {
+      "title": "Adobe India — Research & Internships",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "0eb0ecb3e162": {
+      "title": "Samsung PRISM (India)",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "e1bee6486b67": {
+      "title": "LFX Mentorship (Linux Foundation)",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "ac0248aecdaa": {
+      "title": "OpenAI — Residency & Programs",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "91e5a868b9f7": {
+      "title": "Meta AI — University Programs & Internships",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "41e9fcb40027": {
+      "title": "Photon — AI Intern",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "a0cae8b5b615": {
+      "title": "Xaira Therapeutics — Lab Automation Vision AI Engineer Intern",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "eb902d3b7292": {
+      "title": "Persona — Software Engineer - Infrastructure Resident",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "cc9426ce6b58": {
+      "title": "TDS — Software Engineer Intern",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "5fba8543ee1e": {
+      "title": "Intel — AI Security Engineer Intern",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "ed699fad0505": {
+      "title": "Lunon — Software Engineer Intern",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "b5d690d4d4b2": {
+      "title": "Later — AI Automation Engineer Co-op",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "fb8ed5df463f": {
+      "title": "Delta Air Lines — Intern, Innovation - AI Engineering",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "09fd79d6c94c": {
+      "title": "Markem-Imaje — Software Engineer Intern",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "063d40aef822": {
+      "title": "HARMAN — Intern – Software Engineering",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "ace31490442e": {
+      "title": "VetsEZ — Full Stack Developer Intern",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "3bb05ab50fc8": {
+      "title": "Mindsmith — Software Engineering Intern",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "d5a846c0debe": {
+      "title": "Rivian and Volkswagen Group Technologies — Software Engineering Intern - Vehicle Controls",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "faa2fb64fcca": {
+      "title": "Bank of Montreal — AI Business Architecture & Delivery Intern Co-op",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "20cbc3c2b1db": {
+      "title": "GXO Logistics — Data Science Apprentice",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "ad2f53767748": {
+      "title": "Ciena — Embedded Software Engineer Intern",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "7a14e1767e64": {
+      "title": "Ciena — Embedded Software Engineer Intern",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "01ab8ab606b7": {
+      "title": "MyEmployment — AI Product Engineer Intern",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "7a4bf097510c": {
+      "title": "SimonComputing — Software Development Internship",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "d8b4717cf004": {
+      "title": "Muru — Full-Stack Software Engineer Intern",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "c2813d39e458": {
+      "title": "Muru — Mobile Software Engineer Intern",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "bb926e793907": {
+      "title": "AirCapture — Applied AI Research & Engineer Intern",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "87bca012aa60": {
+      "title": "Centerfield — Data Science Intern",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "7f16d9dfb4e9": {
+      "title": "Simple Technology Solutions — AI & Data Engineering Apprentice",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
       "times_seen": 1
     }
   }
