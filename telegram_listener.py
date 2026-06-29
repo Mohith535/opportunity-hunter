@@ -87,16 +87,15 @@ def _send(chat_id, text: str, buttons: list | None = None) -> None:
 
 
 def _tracker_buttons(key: str, url: str = "") -> list:
-    rows = []
+    row1 = []
     if url:
-        rows.append([{"text": "🔗 Open", "url": url},
-                     {"text": "➕ Plan", "callback_data": f"plan:{key}"}])
-    else:
-        rows.append([{"text": "➕ Plan", "callback_data": f"plan:{key}"}])
-    rows.append([{"text": "✅ Applied", "callback_data": f"applied:{key}"},
-                 {"text": "⏭ Skip", "callback_data": f"skip:{key}"},
-                 {"text": "⏰ Remind", "callback_data": f"remind:{key}"}])
-    return rows
+        row1.append({"text": "🔗 Open", "url": url})
+    row1.append({"text": "➕ Plan", "callback_data": f"plan:{key}"})
+    row1.append({"text": "✍️ Draft", "callback_data": f"draft:{key}"})
+    return [row1,
+            [{"text": "✅ Applied", "callback_data": f"applied:{key}"},
+             {"text": "⏭ Skip", "callback_data": f"skip:{key}"},
+             {"text": "⏰ Remind", "callback_data": f"remind:{key}"}]]
 
 
 def _handle_plan(key: str, cb: dict) -> None:
@@ -134,6 +133,24 @@ def _handle_status(action: str, key: str, cb: dict) -> None:
     elif action == "remind":
         tracker.set_status(key, "remind", item=it)
         _answer(cb["id"], f"I'll remind you in {config.TRACKER_REMIND_DAYS} days ⏰")
+
+
+def _handle_draft(key: str, cb: dict) -> None:
+    chat_id = cb["message"]["chat"]["id"]
+    it = _history_items().get(key)
+    if not it:
+        _answer(cb["id"], "Couldn't find that item.")
+        return
+    # Answer the callback immediately (Telegram needs it fast), then do the slow
+    # LLM call and send the draft as a follow-up message.
+    _answer(cb["id"], "✍️ Drafting your application — one sec…")
+    import draft
+    text = draft.generate_draft(it)
+    if text:
+        _send(chat_id, f"✍️ <b>Draft — {html.escape(it.title[:60])}</b>\n\n"
+                       f"{html.escape(text)}\n\n<i>Tweak it and send. Good luck. 🚀</i>")
+    else:
+        _send(chat_id, "Couldn't generate a draft right now (LLM busy) — try again shortly.")
 
 
 def _handle_message(msg: dict) -> None:
@@ -203,6 +220,8 @@ def run() -> None:
                         action, _, key = cb.get("data", "").partition(":")
                         if action == "plan":
                             _handle_plan(key, cb)
+                        elif action == "draft":
+                            _handle_draft(key, cb)
                         elif action in ("applied", "skip", "remind"):
                             _handle_status(action, key, cb)
                         else:

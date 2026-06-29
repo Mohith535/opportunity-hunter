@@ -142,7 +142,8 @@ def _apply(it, result: dict) -> bool:
     return True
 
 
-def _call(provider: dict, prompt: str) -> str:
+def _call(provider: dict, prompt: str, json_mode: bool = True,
+          max_tokens: int = 3000, temperature: float = 0.2) -> str:
     """One OpenAI-compatible chat completion. Returns the message content string.
     Raises on HTTP/network error (the caller handles fall-through)."""
     url = f"{provider['base_url']}/chat/completions"
@@ -153,10 +154,11 @@ def _call(provider: dict, prompt: str) -> str:
     body = {
         "model": provider["model"],
         "messages": [{"role": "user", "content": prompt}],
-        "temperature": 0.2,
-        "max_tokens": 3000,
-        "response_format": {"type": "json_object"},
+        "temperature": temperature,
+        "max_tokens": max_tokens,
     }
+    if json_mode:
+        body["response_format"] = {"type": "json_object"}
     try:
         resp = requests.post(url, headers=headers, json=body, timeout=config.LLM_TIMEOUT)
         resp.raise_for_status()
@@ -167,6 +169,22 @@ def _call(provider: dict, prompt: str) -> str:
         resp.raise_for_status()
     data = resp.json()
     return data["choices"][0]["message"]["content"]
+
+
+def complete(prompt: str, max_tokens: int = 600, temperature: float = 0.5) -> str:
+    """Run a FREE-TEXT prompt through the provider chain (no JSON mode). Returns the
+    text response, or '' if every provider fails. Shared by the draft generator and
+    any other free-text feature — same Groq->Cerebras->OpenRouter fall-through."""
+    if not config.USE_LLM_SCORING:
+        return ""
+    for provider in config.active_llm_providers():
+        try:
+            return _call(provider, prompt, json_mode=False,
+                         max_tokens=max_tokens, temperature=temperature).strip()
+        except Exception as e:
+            log(f"[llm] complete via {provider['name']} failed: {e}")
+            continue
+    return ""
 
 
 def _score_chunk(chunk, profile) -> tuple[list[dict], str]:

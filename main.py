@@ -191,6 +191,7 @@ def _telegram_digest(crit, high, cap=6):
             if it.url:
                 row1.append({"text": "🔗 Open", "url": it.url})
             row1.append({"text": "➕ Plan", "callback_data": f"plan:{key}"})
+            row1.append({"text": "✍️ Draft", "callback_data": f"draft:{key}"})
             buttons.append(row1)
             # Application-tracker row: act on it and the agent remembers.
             buttons.append([
