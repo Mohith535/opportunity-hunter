@@ -104,6 +104,7 @@ class MohithProfile:
     geo: dict
     values: list
     drivers: dict
+    learned: str = ""                            # taste learned from behaviour
     sources: list = field(default_factory=list)  # which layers actually loaded
 
     def to_prompt_block(self) -> str:
@@ -133,6 +134,8 @@ class MohithProfile:
                 f"energy={self.drivers.get('energy_state','?')}."
             ),
         ]
+        if self.learned:
+            lines.append(self.learned)
         return "\n".join(lines)
 
 
@@ -220,6 +223,14 @@ def load_profile() -> MohithProfile:
                              "OH_PROFILE_JSON")
 
     sources = merged.pop("_sources", ["default"])
+    # Taste learned from behaviour (local; empty until there's enough evidence).
+    try:
+        import taste
+        learned = taste.summary_line()
+        if learned:
+            sources.append("taste")
+    except Exception:
+        learned = ""
     return MohithProfile(
         name=merged["name"],
         identity=merged["identity"],
@@ -231,6 +242,7 @@ def load_profile() -> MohithProfile:
         geo=merged["geo"],
         values=merged["values"],
         drivers=merged["drivers"],
+        learned=learned,
         sources=sources,
     )
 

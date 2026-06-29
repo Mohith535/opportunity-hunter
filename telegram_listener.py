@@ -29,6 +29,7 @@ import requests
 
 import config
 import store
+import taste
 import tracker
 from filters import policy
 from models import Opportunity
@@ -109,12 +110,14 @@ def _handle_plan(key: str, cb: dict) -> None:
         return
     if integration.already_dumped(it):
         tracker.set_status(key, "planned", item=it)
+        taste.relearn()
         _answer(cb["id"], "Already in TaskFlow ✅ — no duplicate created.")
         return
     ok = integration.dump(it, policy.effective_score(it))
     _answer(cb["id"], "Added to TaskFlow ✅" if ok else "Dump failed — check logs")
     if ok:
         tracker.set_status(key, "planned", item=it)
+        taste.relearn()
         _send(chat_id, f"✅ Added to TaskFlow:\n<b>{html.escape(it.title)}</b>")
         if it.action_plan:
             steps = "\n".join(f"{i}. {html.escape(s)}"
@@ -126,9 +129,11 @@ def _handle_status(action: str, key: str, cb: dict) -> None:
     it = _history_items().get(key)
     if action == "applied":
         tracker.set_status(key, "applied", item=it)
+        taste.relearn()
         _answer(cb["id"], "Marked as applied ✅ — nice one!")
     elif action == "skip":
         tracker.set_status(key, "skipped", item=it)
+        taste.relearn()
         _answer(cb["id"], "Skipped — I won't nag you about this.")
     elif action == "remind":
         tracker.set_status(key, "remind", item=it)
@@ -161,7 +166,7 @@ def _handle_message(msg: dict) -> None:
               "👋 <b>Opportunity Hunter</b> is connected.\n"
               f"Your chat id is <code>{chat_id}</code> — put it in .env as "
               "<code>TELEGRAM_CHAT_ID</code> to receive digests.\n"
-              "Commands: /top · /report")
+              "Commands: /top · /report · /taste")
         print(f"[chat id] {chat_id}")
     elif text.startswith("/top"):
         items = sorted(_history_items().values(),
@@ -174,6 +179,8 @@ def _handle_message(msg: dict) -> None:
         _send(chat_id, "<b>Top opportunities</b>\n" + "\n".join(lines))
     elif text.startswith("/report"):
         _send(chat_id, tracker.build_report(_history_items()))
+    elif text.startswith("/taste"):
+        _send(chat_id, taste.report_line())
 
 
 def _daily_tick() -> None:

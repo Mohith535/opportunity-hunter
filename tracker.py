@@ -58,6 +58,7 @@ def set_status(key: str, status: str, item=None, remind_days: int = 0) -> None:
         entry.setdefault("url", item.url)
         entry["score"] = _effective_score(item)
         entry["deadline"] = item.deadline.isoformat() if item.deadline else None
+        entry["tags"] = list(item.tags)   # for taste-learning
     if status == "remind":
         days = remind_days or config.TRACKER_REMIND_DAYS
         entry["remind_at"] = (date.today() + timedelta(days=days)).isoformat()

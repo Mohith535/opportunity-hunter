@@ -19,9 +19,11 @@ logs/*.log
 
 # NOTE: data/*.json is intentionally NOT ignored — the cloud workflow commits
 # seen_items.json / history.json back so dedup survives across daily runs.
-# Exception: dumped.json + tracker.json are LOCAL state (taps happen locally only).
+# Exception: dumped.json + tracker.json + taste.json are LOCAL state (taps happen
+# locally only).
 data/dumped.json
 data/tracker.json
+data/taste.json
 
 # Project brain — local-only, never public
 CLAUDE.md
