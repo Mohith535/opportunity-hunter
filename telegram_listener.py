@@ -166,7 +166,7 @@ def _handle_message(msg: dict) -> None:
               "👋 <b>Opportunity Hunter</b> is connected.\n"
               f"Your chat id is <code>{chat_id}</code> — put it in .env as "
               "<code>TELEGRAM_CHAT_ID</code> to receive digests.\n"
-              "Commands: /top · /report · /taste")
+              "Commands: /top · /report · /taste — or just ask me anything.")
         print(f"[chat id] {chat_id}")
     elif text.startswith("/top"):
         items = sorted(_history_items().values(),
@@ -181,6 +181,14 @@ def _handle_message(msg: dict) -> None:
         _send(chat_id, tracker.build_report(_history_items()))
     elif text.startswith("/taste"):
         _send(chat_id, taste.report_line())
+    elif text.startswith("/"):
+        _send(chat_id, "Try /top · /report · /taste — or just ask me a question.")
+    elif text:
+        # Freeform question → grounded answer over the feed.
+        import ask
+        ans = ask.answer(text, _history_items())
+        _send(chat_id, html.escape(ans) if ans
+              else "Couldn't answer that right now — try again shortly.")
 
 
 def _daily_tick() -> None:
