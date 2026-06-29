@@ -166,7 +166,7 @@ def _handle_message(msg: dict) -> None:
               "👋 <b>Opportunity Hunter</b> is connected.\n"
               f"Your chat id is <code>{chat_id}</code> — put it in .env as "
               "<code>TELEGRAM_CHAT_ID</code> to receive digests.\n"
-              "Commands: /top · /report · /taste — or just ask me anything.")
+              "Commands: /top · /report · /taste · /coach — or just ask me anything.")
         print(f"[chat id] {chat_id}")
     elif text.startswith("/top"):
         items = sorted(_history_items().values(),
@@ -181,8 +181,11 @@ def _handle_message(msg: dict) -> None:
         _send(chat_id, tracker.build_report(_history_items()))
     elif text.startswith("/taste"):
         _send(chat_id, taste.report_line())
+    elif text.startswith("/coach"):
+        import coach
+        _send(chat_id, html.escape(coach.analyze(_history_items())))
     elif text.startswith("/"):
-        _send(chat_id, "Try /top · /report · /taste — or just ask me a question.")
+        _send(chat_id, "Try /top · /report · /taste · /coach — or just ask me a question.")
     elif text:
         # Freeform question → grounded answer over the feed.
         import ask
