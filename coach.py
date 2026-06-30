@@ -14,30 +14,31 @@ import config
 from filters import llm_scorer, policy
 from user_profile import load_profile
 
-_PROMPT = """You are {name}'s career coach — a senior mentor who is direct and honest,
-not a cheerleader. Look at the ELITE opportunities he's currently seeing (below) and
-his profile, and coach him:
+_PROMPT = """You are the user's personal career coach — a senior mentor who is direct and
+honest, not a cheerleader. Speak to them DIRECTLY in the second person ("you", "your") —
+never the third person or by name. Look at the ELITE opportunities below plus their
+profile, and coach them:
 
-1. GAP: What do these high-value opportunities repeatedly REQUIRE that he most likely
-   doesn't have yet? (e.g. a published paper, real open-source contributions, a
-   standout portfolio project, a specific skill, competition results.) Be specific
-   and honest — name the actual gap.
+1. GAP: What do these high-value opportunities repeatedly REQUIRE that you most likely
+   don't have yet? (e.g. a published paper, real open-source contributions, a standout
+   portfolio project, a specific skill, competition results.) Be specific and honest —
+   name the actual gap.
 2. PLAN: Give 2-3 CONCRETE things to build or do over the next 4-6 weeks to close that
    gap, each tied to what these opportunities actually want. Real actions, not "study
    more". Lead with the highest-leverage one.
 
-Ground everything in his REAL profile and these specific opportunities. No clichés,
-no fluff, no invented facts. Speak plainly, like a mentor who's read the research.
+Keep it tight and skimmable; use **bold** for key terms. No clichés, no fluff, no
+invented facts. Speak plainly, like a mentor who's read the research.
 
-{name}'s long-term goal: {goal}
+Your long-term goal: {goal}
 
-{name}'s profile:
+About you (your profile):
 {profile}
 
-Elite opportunities he's seeing right now:
+Elite opportunities you're seeing right now:
 {context}
 
-Coaching (GAP, then PLAN):"""
+Coach them now (GAP, then PLAN):"""
 
 MIN_ITEMS = 3
 

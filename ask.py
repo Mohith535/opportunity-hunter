@@ -12,22 +12,23 @@ from datetime import date
 from filters import llm_scorer, policy
 from user_profile import load_profile
 
-_PROMPT = """You are {name}'s personal opportunity assistant. Answer the question using
-ONLY the opportunities listed below (his current feed). Be concise and specific, and
-cite opportunity titles. If the answer isn't in the data, say so honestly — never invent
-opportunities, deadlines, or details.
+_PROMPT = """You are the user's personal opportunity assistant. Answer their question using
+ONLY the opportunities listed below (their current feed). Speak to them DIRECTLY in the
+second person ("you", "your") — never the third person or by name. Be concise and specific,
+and cite opportunity titles. If the answer isn't in the data, say so honestly — never invent
+opportunities, deadlines, or details. Use **bold** for emphasis.
 
-{name}'s profile (for judging relevance):
+About you (for judging relevance):
 {profile}
 
 Today is {today}.
 
-Opportunities (title | score/10 | deadline | source):
+Your opportunities (title | score/10 | deadline | source):
 {context}
 
 Question: {question}
 
-Answer concisely, citing specific titles:"""
+Answer concisely in the second person, citing specific titles:"""
 
 MAX_CONTEXT = 30
 

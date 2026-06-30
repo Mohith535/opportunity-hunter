@@ -76,7 +76,7 @@ async function handleMessage(env, msg) {
   // freeform question -> grounded answer
   const feed = await getFeed(env);
   const ans = await llmComplete(env, askPrompt(await profileBlock(env), feed, text), 450);
-  return sendMessage(env, chatId, ans ? esc(ans) : "Couldn't answer right now — try again shortly.");
+  return sendMessage(env, chatId, ans ? mdToHtml(ans) : "Couldn't answer right now — try again shortly.");
 }
 
 // ─── handlers ────────────────────────────────────────────────────────
@@ -111,7 +111,7 @@ async function handleDraft(env, key, cb, chatId) {
   await answerCallback(env, cb.id, "✍️ Drafting your application — one sec…");
   const text = await llmComplete(env, draftPrompt(await profileBlock(env), item), 400);
   return sendMessage(env, chatId, text
-    ? `✍️ <b>Draft — ${esc(item.title.slice(0, 60))}</b>\n\n${esc(text)}\n\n<i>Tweak it and send. Good luck. 🚀</i>`
+    ? `✍️ <b>Draft — ${esc(item.title.slice(0, 60))}</b>\n\n${mdToHtml(text)}\n\n<i>Tweak it and send. Good luck. 🚀</i>`
     : "Couldn't generate a draft right now — try again shortly.");
 }
 
@@ -143,7 +143,7 @@ async function handleCoach(env, chatId) {
       "🧭 Not enough high-value opportunities in your feed yet to coach on. Let the hunter run a few days, then ask again.");
   const context = elite.map((it) => `- ${it.title.slice(0, 74)} (${it.source})`).join("\n");
   const text = await llmComplete(env, coachPrompt(await profileBlock(env), context), 650);
-  return sendMessage(env, chatId, text ? esc(text) : "Couldn't coach right now — try again shortly.");
+  return sendMessage(env, chatId, text ? mdToHtml(text) : "Couldn't coach right now — try again shortly.");
 }
 
 async function handleReport(env, chatId) {
@@ -386,20 +386,21 @@ async function profileBlock(env) {
 }
 
 function draftPrompt(profile, item) {
-  return `You are helping Mohith write a short application note for an opportunity.
+  return `You are helping the user write a short application note for an opportunity. The note is in
+the FIRST person — it is their own application ("I", "my").
 
 OPPORTUNITY:
 ${item.title}
 ${item.ai_summary || ""}
 
-Mohith's profile:
+About the user (their profile):
 ${profile}
 
-Write a first-person application paragraph (120-160 words) that Mohith can adapt and send.
+Write a first-person application paragraph (120-160 words) they can adapt and send.
 Rules:
 - Specific to THIS opportunity (reference what it actually is) — not generic.
-- Lead with genuine fit: why it matches his goals and what he concretely brings
-  (e.g. building TaskFlow and Nova, AI agents, the strengths in his profile).
+- Lead with genuine fit: why it matches their goals and what they concretely bring
+  (e.g. building TaskFlow and Nova, AI agents, the strengths in the profile).
 - Confident but honest. No clichés like "I am passionate", no invented achievements.
 - End with one clear line of intent.
 Return ONLY the paragraph — no preamble, no greeting, no sign-off block.`;
@@ -409,43 +410,45 @@ function askPrompt(profile, feed, question) {
   const ctx = feed.slice(0, 30).map((it) =>
     `- ${it.title.slice(0, 72)} | ${it.score} | ${it.deadline || "rolling"} | ${it.source}`).join("\n") || "(no opportunities tracked yet)";
   const today = new Date().toISOString().slice(0, 10);
-  return `You are Mohith's personal opportunity assistant. Answer the question using ONLY the
-opportunities listed below (his current feed). Be concise and specific, and cite opportunity
-titles. If the answer isn't in the data, say so honestly — never invent opportunities or details.
+  return `You are the user's personal opportunity assistant. Answer their question using ONLY the
+opportunities listed below (their current feed). Speak to them DIRECTLY in the second person
+("you", "your") — never the third person or by name. Be concise and specific, and cite opportunity
+titles. If the answer isn't in the data, say so honestly — never invent. Use **bold** for emphasis.
 
-Mohith's profile (for relevance):
+About you (for judging relevance):
 ${profile}
 
 Today is ${today}.
 
-Opportunities (title | score/10 | deadline | source):
+Your opportunities (title | score/10 | deadline | source):
 ${ctx}
 
 Question: ${question.slice(0, 300)}
 
-Answer concisely, citing specific titles:`;
+Answer (concise, second person, cite specific titles):`;
 }
 
 function coachPrompt(profile, context) {
-  return `You are Mohith's career coach — a senior mentor who is direct and honest, not a
-cheerleader. Look at the ELITE opportunities he's currently seeing (below) and his profile:
+  return `You are the user's personal career coach — a senior mentor who is direct and honest, not a
+cheerleader. Speak to them DIRECTLY in the second person ("you", "your") — never the third person or
+by name. Look at the ELITE opportunities below plus their profile, then coach them:
 
-1. GAP: What do these high-value opportunities repeatedly REQUIRE that he most likely doesn't
-   have yet? (a published paper, real open-source contributions, a standout project, a specific
-   skill, competition results.) Be specific and honest — name the actual gap.
-2. PLAN: Give 2-3 CONCRETE things to build or do over the next 4-6 weeks to close that gap, each
-   tied to what these opportunities actually want. Real actions, not "study more". Lead with the
+1. GAP: What do these high-value opportunities repeatedly REQUIRE that you most likely don't have
+   yet? (a published paper, real open-source contributions, a standout project, a specific skill,
+   competition results.) Be specific and honest — name the actual gap.
+2. PLAN: Give 2-3 CONCRETE things to build or do over the next 4-6 weeks to close that gap, each tied
+   to what these opportunities actually want. Real actions, not "study more". Lead with the
    highest-leverage one.
 
-Ground everything in his REAL profile and these specific opportunities. No clichés, no fluff.
+Keep it tight and skimmable. Use **bold** for the key terms. No clichés, no fluff.
 
-Mohith's profile:
+About you (the person you're coaching):
 ${profile}
 
-Elite opportunities he's seeing right now:
+Elite opportunities you're seeing right now:
 ${context}
 
-Coaching (GAP, then PLAN):`;
+Coach them now (GAP, then PLAN):`;
 }
 
 // ─── Telegram + util ─────────────────────────────────────────────────
@@ -466,5 +469,16 @@ function esc(s) {
   return (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
+// LLM output is Markdown; Telegram renders our HTML. Convert so **bold**, headings,
+// and * bullets show as real bold / bullets instead of literal asterisks.
+function mdToHtml(s) {
+  s = esc(s || "");
+  s = s.replace(/^#{1,6}\s*(.+?)\s*$/gm, "<b>$1</b>");        // # Heading -> bold
+  s = s.replace(/\*\*([^*\n]+)\*\*/g, "<b>$1</b>");           // **bold**
+  s = s.replace(/^[ \t]*[*\-]\s+/gm, "• ");                   // "* item" / "- item" -> "• "
+  s = s.replace(/(^|[^*\w])\*([^*\n]+)\*/g, "$1<i>$2</i>");   // *italic*
+  return s;
+}
+
 // Exported for unit-testing the inbox-item format against the Python side.
-export { classifyType, priorityWord, buildTitle, buildNote, toInboxItem };
+export { classifyType, priorityWord, buildTitle, buildNote, toInboxItem, mdToHtml };
