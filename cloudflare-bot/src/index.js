@@ -111,16 +111,17 @@ async function handleDraft(env, key, cb, chatId) {
   await answerCallback(env, cb.id, "✍️ Drafting your application — one sec…");
   const text = await llmComplete(env, draftPrompt(await profileBlock(env), item), 400);
   return sendMessage(env, chatId, text
-    ? `✍️ <b>Draft — ${esc(item.title.slice(0, 60))}</b>\n\n${mdToHtml(text)}\n\n<i>Tweak it and send. Good luck. 🚀</i>`
+    ? `✍️ <b>Draft — ${esc(item.title.slice(0, 60))}</b>\n<blockquote>${mdToHtml(text)}</blockquote>\n<i>Tweak it and send. Good luck. 🚀</i>`
     : "Couldn't generate a draft right now — try again shortly.");
 }
 
 async function handleTop(env, chatId) {
   const feed = await getFeed(env);
-  const top = feed.slice(0, 5);
+  const top = feed.slice(0, 7);
   if (!top.length) return sendMessage(env, chatId, "No opportunities yet — let the hunter run.");
-  return sendMessage(env, chatId, "<b>Top opportunities</b>\n" +
-    top.map((it) => `${it.score}/10 — <b>${esc(it.title.slice(0, 60))}</b>`).join("\n"));
+  // Monospace table = clean, aligned, "designed" look within Telegram's limits.
+  const rows = top.map((it) => `${String(it.score).padStart(2)}/10  ${it.title.slice(0, 40)}`).join("\n");
+  return sendMessage(env, chatId, `🏆 <b>Top opportunities</b>\n<pre>${esc(rows)}</pre>`);
 }
 
 async function handleTaste(env, chatId) {
@@ -143,7 +144,10 @@ async function handleCoach(env, chatId) {
       "🧭 Not enough high-value opportunities in your feed yet to coach on. Let the hunter run a few days, then ask again.");
   const context = elite.map((it) => `- ${it.title.slice(0, 74)} (${it.source})`).join("\n");
   const text = await llmComplete(env, coachPrompt(await profileBlock(env), context), 650);
-  return sendMessage(env, chatId, text ? mdToHtml(text) : "Couldn't coach right now — try again shortly.");
+  if (!text) return sendMessage(env, chatId, "Couldn't coach right now — try again shortly.");
+  // Expandable blockquote = a tidy preview that taps open — great for long coaching.
+  return sendMessage(env, chatId,
+    `🧭 <b>Your Career Coaching</b>\n<blockquote expandable>${mdToHtml(text)}</blockquote>`);
 }
 
 async function handleReport(env, chatId) {
@@ -164,7 +168,8 @@ async function handleReport(env, chatId) {
     `✅ Applied this week: <b>${applied.length}</b>`];
   applied.slice(0, 5).forEach((e) => lines.push(`   • ${esc((e.title || "").slice(0, 50))}`));
   lines.push(`⏭ Skipped this week: <b>${skipped.length}</b>`);
-  lines.push(`⏰ Reminders pending: <b>${reminders.length}</b>`, "");
+  lines.push(`⏰ Reminders pending: <b>${reminders.length}</b>`);
+  lines.push("─────────────────");
   if (regret.length) {
     lines.push("⚠️ <b>Closing soon — you haven't acted on these:</b>");
     regret.forEach(({ it, days }) => {
