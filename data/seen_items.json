@@ -2343,8 +2343,8 @@
     "4fec7b2bae9b": {
       "title": "MLH Fellowship",
       "first_seen": "2026-06-29",
-      "last_seen": "2026-06-29",
-      "times_seen": 1
+      "last_seen": "2026-06-30",
+      "times_seen": 2
     },
     "fd996a68ef23": {
       "title": "Microsoft Learn Student Ambassadors",
@@ -2620,6 +2620,210 @@
       "title": "Simple Technology Solutions — AI & Data Engineering Apprentice",
       "first_seen": "2026-06-29",
       "last_seen": "2026-06-29",
+      "times_seen": 1
+    },
+    "09d9685b248a": {
+      "title": "LeVo 2: Stable and Melodious Song Generation via Hierarchical Representation Modeling and Progressive Post-Training",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "29da5cfa0897": {
+      "title": "Self-Evolving World Models for LLM Agent Planning",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "c2007ce16590": {
+      "title": "One-Step Gradient Delay is Not a Barrier for Large-Scale Asynchronous Pipeline Parallel LLM Pretraining",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "07b501f3e50b": {
+      "title": "DOPD: Dual On-policy Distillation",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "95f46d619010": {
+      "title": "C$^{2}$R: Cross-sample Consistency Regularization Mitigates Feature Splitting and Absorption in Sparse Autoencoders",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "d0d5b3a1305f": {
+      "title": "Open Source Low Tech",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "98881522ea10": {
+      "title": "Africa Deep Tech Challenge 2026",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "e9e2e3debc2f": {
+      "title": "Kaya AI IIT India Hackathon 2026",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "4d41be7b33f6": {
+      "title": "Cerebras OpenAI deal capacity has effectively killed the waitlist for everyone else [D]",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "7f376a6a7354": {
+      "title": "Google's Agentic Peer-Reviewer Handled ~10K Papers at ICML/STOC — Formal Research Paper Now Out [R]",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "3848d0220533": {
+      "title": "EML Trees are Universal Approximators [R]",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "25b46961ad77": {
+      "title": "What do you think of Recursive Self Improvement ? [D]",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "fb495e1228c5": {
+      "title": "I do historical swordfighting and noticed AI struggles to track it. I’m building an open dataset to help fix this. Does my schema make sense? [P]",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "ac74e2802e33": {
+      "title": "Loss functions in Instance Representation Learning [R]",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "ef3945d04972": {
+      "title": "I'm trying to implement CALM paper, and I have some questions. [P]",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "e3f84cc0b97e": {
+      "title": "Rejected MICCAI paper: workshop -> journal/conference or directly journal/conference [R]",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "be10fbcb7598": {
+      "title": "I made a quiz that tells you which LLM you align with most, based on personality and values research across 15 models [R]",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "3716178f2dc7": {
+      "title": "Port Mortem 2026 - Code Resurrection Hackathon",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "e732b0c5afb8": {
+      "title": "Vibe2Vision",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "ce4c6984edb2": {
+      "title": "Cascade - A Cryptic Hunt",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "96799038a767": {
+      "title": "Growth Ambassador Internship",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "10f0ee75dd68": {
+      "title": "Sales Development Internship",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "97f72f96bb90": {
+      "title": "Business Development Internship",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "9a8eaa1e01c0": {
+      "title": "Lab Testing Research & Outreach Internship",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "055708ba33e0": {
+      "title": "Warehouse Research & Outreach Internship",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "e92721abac66": {
+      "title": "Operations Internship",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "e514935651ac": {
+      "title": "Strategy & Research Internship",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "85380560c8d3": {
+      "title": "Motion Graphics Video Editor Internship",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "4d7982f38545": {
+      "title": "Palantir — Software Engineer Intern - Infrastructure",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "739b4075b752": {
+      "title": "Palantir — Software Engineer Intern - Defense Tech",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "13ab99168ed3": {
+      "title": "Palantir — Software Engineer Intern",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "d5f7fd2fe432": {
+      "title": "Palantir — Software Engineer Intern",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "1e68b3984195": {
+      "title": "Palantir — Software Engineer Intern",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "times_seen": 1
+    },
+    "8e09e4c5df03": {
+      "title": "Palantir — Software Engineer Intern",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
       "times_seen": 1
     }
   }
