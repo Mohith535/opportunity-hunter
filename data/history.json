@@ -7305,6 +7305,944 @@
           "dimensions": {}
         }
       ]
+    },
+    {
+      "date": "2026-06-30",
+      "items": [
+        {
+          "title": "LeVo 2: Stable and Melodious Song Generation via Hierarchical Representation Modeling and Progressive Post-Training",
+          "url": "https://arxiv.org/abs/2606.30642v1",
+          "source": "arxiv",
+          "description": "Full-length song generation must preserve coherence and musicality, render detailed vocal and accompaniment acoustics, and follow lyrics and prompts. Existing language model-based systems face a structural trade-off: mixed-token modeling preserves vocal-instrument coordination but obscures track-specific details, whereas dual-track prediction improves acoustics but requires longer sequences and weakens global planning. We present LeVo 2, a hybrid LLM-Diffusion framework for controllable full-length song generation. LeVo 2 formulates this trade-off as hierarchical modeling: LeLM first predicts mixed tokens for semantic planning, then predicts vocal and accompaniment tokens in parallel for track-specific refinement, while a diffusion-based Music Codec reconstructs full-length waveforms. A central contribution of this extended version is an aesthetics-guided training schedule for alignment. During pre-training, an automated music aesthetic evaluation framework assigns musicality-tier conditions to large-scale data, providing musicality priors before preference alignment. Progressive post-training applies SFT, large-scale offline DPO, and closed-loop semi-online DPO to separately improve generation quality, controllability, and musicality. Modular extension then trains the Track-Specific LM for acoustic refinement while preserving the aligned semantic planner. This schedule separates musicality learning, controllability alignment, and acoustic refinement, mitigating optimization conflict and the limitations of static offline preference pairs. Expert listening tests and objective evaluations show that LeVo 2 outperforms open-source baselines across six subjective dimensions, and approaches leading commercial systems on several listening metrics. Ablations validate the effects of the training strategy, aesthetics guidance, scaling, and hierarchical architecture.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.30642",
+          "score": 4,
+          "ai_score": 6,
+          "ai_summary": "Relevant research in AI",
+          "action_plan": [
+            "Read paper, 1 hour",
+            "Implement key concepts, 5 hours",
+            "Apply to own project, 10 hours"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4
+          }
+        },
+        {
+          "title": "Self-Evolving World Models for LLM Agent Planning",
+          "url": "https://arxiv.org/abs/2606.30639v1",
+          "source": "arxiv",
+          "description": "World models offer a principled way to equip long-horizon LLM agents with foresight: predictions of action consequences before execution. However, unreliable foresight can be ignored, misused, or even degrade downstream decision-making. In this paper, we introduce WorldEvolver, a self-evolving world model framework that revises its deployment-time context while keeping the downstream agent and all model parameters frozen. WorldEvolver integrates three modules: (i) Episodic Memory, which exploits real action transitions through retrieval-based simulation; (ii) Semantic Memory, which extracts persistent heuristic rules from prediction-observation mismatches; and (iii) Selective Foresight, which filters low-confidence predictions before integrating them into agent reasoning context. We evaluate WorldEvolver on ALFWorld and ScienceWorld, measuring world model prediction accuracy on Word2World and downstream agent success rate on AgentBoard. Extensive experiments show that WorldEvolver achieves the highest prediction accuracy across three backbones and leads other world model baselines on downstream agent success rate, demonstrating that test-time memory revision enhances both predictive fidelity and planning performance.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.30639",
+          "score": 5,
+          "ai_score": 8,
+          "ai_summary": "LLM agent planning research",
+          "action_plan": [
+            "Read paper (2 days)",
+            "Implement WorldEvolver (4 weeks)",
+            "Publish results (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 10,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 9,
+            "time": 8,
+            "regret": true
+          }
+        },
+        {
+          "title": "One-Step Gradient Delay is Not a Barrier for Large-Scale Asynchronous Pipeline Parallel LLM Pretraining",
+          "url": "https://arxiv.org/abs/2606.30634v1",
+          "source": "arxiv",
+          "description": "Modern large-scale LLM pretraining benefits from utilizing Pipeline Parallelism; however, synchronous implementations leave GPUs idle during pipeline bubbles, wasting computational resources. Asynchronous Pipeline Parallelism eliminates these bubbles, maximizing throughput at the cost of gradient staleness. Among asynchronous schedules, PipeDream-2BW is particularly appealing: unlike the original PipeDream schedule, it ensures a constant one-step gradient delay regardless of pipeline depth. However, its adoption remains limited due to the common belief that optimizing under staleness is fundamentally unstable. In this work, we challenge this assumption, demonstrating that degradation under one-step delay depends strongly on optimizer choice rather than being an intrinsic limitation. We provide the first comprehensive empirical analysis showing that while AdamW, the predominant optimizer at the time when PipeDream-2BW was introduced, indeed suffers from severe degradation, recent methods like Muon exhibit strong robustness under a one-step delay. We introduce an optimizer-agnostic Error Feedback-inspired correction to further mitigate delay effects. We provide supporting theoretical analysis demonstrating convergence for Muon with and without this correction. Extensive evaluation on models up to 10B parameters confirms that our strategies bridge the performance gap with synchronous training, highlighting the practical potential of asynchronous pipeline parallelism at scale.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.30634",
+          "score": 5,
+          "ai_score": 8,
+          "ai_summary": "Asynchronous pipeline parallel LLM pretraining",
+          "action_plan": [
+            "Read paper (2 days)",
+            "Implement PipeDream-2BW (4 weeks)",
+            "Publish results (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 9,
+            "time": 8,
+            "regret": true
+          }
+        },
+        {
+          "title": "DOPD: Dual On-policy Distillation",
+          "url": "https://arxiv.org/abs/2606.30626v1",
+          "source": "arxiv",
+          "description": "On-policy distillation (OPD) offers superior capacity transfer by supervising student-sampled trajectories with dense token-level signals. To furnish high-quality supervision sources and thereby elevate the performance frontier of distillation, an intuitive direction is to infuse privileged information to either teacher or student itself. However, this additional input induces a potential failure mode we dub privilege illusion: a pattern that conflates the transferable capability gap that students are meant to close, and the information asymmetry gap that can only be mimicked but never replicated. This issue is further amplified by the inherent non-uniformity of token-level supervision, where only a small subset of tokens carries pivotal capability-bearing signals. To this end, we propose DOPD, an advantage-aware dual distillation paradigm that dynamically routes token-level supervision between privileged teacher and privileged student policies based on their advantage gap and relative probabilities. Each token receives supervision of different strength, objective, and strategy from either teacher or student itself, which transfers credible capability while simultaneously receiving auxiliary signals, to alleviate privilege illusion. Extensive experiments on both large language model (LLM) and vision-language model (VLM) settings demonstrate that DOPD consistently outperforms Vanilla OPD and other counterparts. Further results on stability, robustness, continual learning, and out-of-distribution tasks validate its superiority.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.30626",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Relevant research in AI",
+          "action_plan": [
+            "Read paper, 1 hour",
+            "Implement key concepts, 5 hours",
+            "Apply to own project, 10 hours"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4
+          }
+        },
+        {
+          "title": "C$^{2}$R: Cross-sample Consistency Regularization Mitigates Feature Splitting and Absorption in Sparse Autoencoders",
+          "url": "https://arxiv.org/abs/2606.30609v1",
+          "source": "arxiv",
+          "description": "Sparse Autoencoders (SAEs) are widely used to interpret large language models by decomposing activations into sparse, human-understandable features, but scaling to large dictionaries exposes fundamental challenges. Systematic studies reveal pervasive feature splitting that fragments coherent concepts into non-atomic latents and widespread feature absorption that creates arbitrary exceptions in general features, severely compromising latent reliability. These issues stem from inconsistent latent assignment across samples: without cross-sample constraints, per-sample optimization often allows a single underlying concept to be inconsistently distributed across multiple redundant or interfering latents. To address this, we introduce C$^2$R (\\underline{\\textbf{C}}ross-sample \\underline{\\textbf{C}}onsistency \\underline{\\textbf{R}}egularization). C$^2$R explicitly encourages that each semantic feature is consistently represented by a unified latent across the batch by penalizing the co-activation of directionally similar latents. Comprehensive evaluation demonstrates that C$^2$R effectively mitigates both splitting and absorption while, crucially, preserving reconstruction fidelity, providing a principled solution that enhances latent interpretability without degrading model performance. Source code is available at https://github.com/hr-jin/Cross-sample-Consistency-Regularization.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2606.30609",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Relevant research in AI",
+          "action_plan": [
+            "Read paper, 1 hour",
+            "Implement key concepts, 5 hours",
+            "Apply to own project, 10 hours"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4
+          }
+        },
+        {
+          "title": "Open Source Low Tech",
+          "url": "https://opensourcelowtech.org/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48683098",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "Not directly relevant",
+          "action_plan": [
+            "Skim article, 15 minutes",
+            "Move on"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 3,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2
+          }
+        },
+        {
+          "title": "Africa Deep Tech Challenge 2026",
+          "url": "https://adtc-2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 17 - Aug 25, 2026 | prize $ 16,500 | themes: Machine Learning/AI, Productivity",
+          "deadline": "2026-08-25",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30091",
+          "score": 5,
+          "ai_score": 6,
+          "ai_summary": "Africa Deep Tech Challenge",
+          "action_plan": [
+            "Form team (1 week)",
+            "Prepare for challenge (2 weeks)",
+            "Participate in challenge (3 days)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 8,
+            "skill": 7,
+            "time": 6
+          }
+        },
+        {
+          "title": "Kaya AI IIT India Hackathon 2026",
+          "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 10 - Jul 10, 2026 | prize ₹ 350,000 | themes: IoT, Machine Learning/AI, Enterprise",
+          "deadline": "2026-07-10",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30326",
+          "score": 9,
+          "ai_score": 7,
+          "ai_summary": "AI/ML project experience",
+          "action_plan": [
+            "Form a team by 2026-06-20",
+            "Brainstorm project ideas",
+            "Submit project by 2026-07-10"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 9,
+            "skill": 7,
+            "time": 5
+          }
+        },
+        {
+          "title": "Cerebras OpenAI deal capacity has effectively killed the waitlist for everyone else [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uiqhiv/cerebras_openai_deal_capacity_has_effectively/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uiqhiv",
+          "score": 4,
+          "ai_score": 3,
+          "ai_summary": "News, not directly relevant",
+          "action_plan": [
+            "Skim article, 15 minutes",
+            "Move on"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2
+          }
+        },
+        {
+          "title": "Google's Agentic Peer-Reviewer Handled ~10K Papers at ICML/STOC — Formal Research Paper Now Out [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uio9rb/googles_agentic_peerreviewer_handled_10k_papers/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uio9rb",
+          "score": 7,
+          "ai_score": 8,
+          "ai_summary": "Google research paper",
+          "action_plan": [
+            "Read paper (2 days)",
+            "Analyze findings (1 week)",
+            "Apply to Google programs (1 week)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true
+          }
+        },
+        {
+          "title": "EML Trees are Universal Approximators [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uipl1t/eml_trees_are_universal_approximators_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uipl1t",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Just a research paper; low impact on Mohith’s portfolio or career.",
+          "action_plan": [
+            "Read the paper (2 hrs)",
+            "Write a short summary (1 hr)",
+            "Prototype a tiny demo (1 week)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 3,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2
+          }
+        },
+        {
+          "title": "What do you think of Recursive Self Improvement ? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uip4yo/what_do_you_think_of_recursive_self_improvement_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uip4yo",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Philosophical discussion; minimal relevance to building AI systems.",
+          "action_plan": [
+            "Skim the thread (30 min)",
+            "Note key arguments (15 min)",
+            "Consider writing a brief reflection (1 hr)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 3,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2
+          }
+        },
+        {
+          "title": "I do historical swordfighting and noticed AI struggles to track it. I’m building an open dataset to help fix this. Does my schema make sense? [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uivddx/i_do_historical_swordfighting_and_noticed_ai/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uivddx",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Niche dataset idea; interesting but not aligned with core AI interests.",
+          "action_plan": [
+            "Review the proposed schema (1 hr)",
+            "Assess feasibility for AI‑agent training (2 hrs)",
+            "Decide whether to contribute (1 day)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 3,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2
+          }
+        },
+        {
+          "title": "Loss functions in Instance Representation Learning [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uj8nse/loss_functions_in_instance_representation/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uj8nse",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Reddit discussion; minimal resume impact and no deadline.",
+          "action_plan": [
+            "Read the thread (15 min)",
+            "Locate the referenced paper (30 min)",
+            "Skim key sections (1 h)",
+            "Prototype a simple loss (2 h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 5,
+            "time": 3
+          }
+        },
+        {
+          "title": "I'm trying to implement CALM paper, and I have some questions. [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uix556/im_trying_to_implement_calm_paper_and_i_have_some/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uix556",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Hands‑on CALM implementation helps skill but lacks credential.",
+          "action_plan": [
+            "Download CALM paper (10 min)",
+            "Set up a minimal repo (20 min)",
+            "Re‑run provided experiments (2 h)",
+            "Add a small extension (3 h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 6,
+            "time": 4
+          }
+        },
+        {
+          "title": "Rejected MICCAI paper: workshop -> journal/conference or directly journal/conference [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uj35gh/rejected_miccai_paper_workshop_journalconference/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uj35gh",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "Talk about a rejected MICCAI paper; not his work, low leverage.",
+          "action_plan": [
+            "Read the discussion summary (15 min)",
+            "Identify reasons for rejection (30 min)",
+            "Note any useful insights (15 min)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 1,
+            "skill": 4,
+            "time": 2
+          }
+        },
+        {
+          "title": "I made a quiz that tells you which LLM you align with most, based on personality and values research across 15 models [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uin5ad/i_made_a_quiz_that_tells_you_which_llm_you_align/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uin5ad",
+          "score": 5,
+          "ai_score": 3,
+          "ai_summary": "Not relevant to career goals",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3
+          }
+        },
+        {
+          "title": "Port Mortem 2026 - Code Resurrection Hackathon",
+          "url": "https://portmortem.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | online | themes: No Restrictions",
+          "deadline": "2026-07-31",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "5ae5936ffa784a76902dc2990615b8d4",
+          "score": 7,
+          "ai_score": 7,
+          "ai_summary": "Code resurrection hackathon",
+          "action_plan": [
+            "Form team (1 week)",
+            "Prepare for hackathon (2 weeks)",
+            "Participate in hackathon (3 days)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 8,
+            "skill": 8,
+            "time": 7,
+            "regret": true
+          }
+        },
+        {
+          "title": "Vibe2Vision",
+          "url": "https://unstop.com/hackathons/vibe2vision-ieee-sheaspire-30-veer-surendra-sai-university-of-technology-vssut-odisha-1703344",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1703344",
+          "score": 4,
+          "ai_score": 4,
+          "ai_summary": "Hackathon, potential skill growth",
+          "action_plan": [
+            "Form team, 2 hours",
+            "Plan project, 4 hours",
+            "Implement, 20 hours"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 4,
+            "deadline": 3,
+            "skill": 6,
+            "time": 6
+          }
+        },
+        {
+          "title": "Cascade - A Cryptic Hunt",
+          "url": "https://unstop.com/hackathons/cascade-a-cryptic-hunt-manipal-university-mu-jaipur-1704689",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1704689",
+          "score": 4,
+          "ai_score": 4,
+          "ai_summary": "Hackathon, potential skill growth",
+          "action_plan": [
+            "Form team, 2 hours",
+            "Plan project, 4 hours",
+            "Implement, 20 hours"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 4,
+            "deadline": 3,
+            "skill": 6,
+            "time": 6
+          }
+        },
+        {
+          "title": "Growth Ambassador Internship",
+          "url": "https://unstop.com/internships/growth-ambassador-internship-bitewise-tech-pvt-ltd-1708770",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1708770",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 3,
+            "time": 4
+          }
+        },
+        {
+          "title": "Sales Development Internship",
+          "url": "https://unstop.com/internships/sales-development-internship-savvyzo-pvt-ltd-1708737",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1708737",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Unrelated to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 2,
+            "time": 3
+          }
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-shamaim-lifestyle-1708163",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1708163",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 3,
+            "time": 4
+          }
+        },
+        {
+          "title": "Lab Testing Research & Outreach Internship",
+          "url": "https://unstop.com/internships/lab-testing-research-outreach-internship-obaol-supreme-1708739",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1708739",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Research experience",
+          "action_plan": [],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5
+          }
+        },
+        {
+          "title": "Warehouse Research & Outreach Internship",
+          "url": "https://unstop.com/internships/warehouse-research-outreach-internship-obaol-supreme-1708740",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1708740",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Unrelated to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 2,
+            "time": 3
+          }
+        },
+        {
+          "title": "Operations Internship",
+          "url": "https://unstop.com/internships/operations-internship-aurexiss-ventures-private-limited-1708700",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1708700",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 3,
+            "time": 4
+          }
+        },
+        {
+          "title": "Strategy & Research Internship",
+          "url": "https://unstop.com/internships/strategy-research-internship-blive-1708704",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1708704",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Internship experience",
+          "action_plan": [
+            "Research company (1 week)",
+            "Update resume (2 days)",
+            "Apply for internship (1 day)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          }
+        },
+        {
+          "title": "Motion Graphics Video Editor Internship",
+          "url": "https://unstop.com/internships/motion-graphics-video-editor-internship-accesco-living-1708709",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1708709",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3
+          }
+        },
+        {
+          "title": "MLH Fellowship",
+          "url": "https://fellowship.mlh.io/",
+          "source": "programs",
+          "description": "[WINDOW OPEN] 12-week remote software-engineering / open-source fellowship with a stipend, run in batches across the year. Project-based, portfolio-building, strong peer network. (Typical window: Multiple batches per year (Spring/Summer/Fall))",
+          "deadline": "2026-06-30",
+          "tags": [
+            "program",
+            "fellowship",
+            "open source",
+            "remote",
+            "mlh",
+            "in-season"
+          ],
+          "native_id": "mlh-fellowship-2026",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "Portfolio growth",
+          "action_plan": [
+            "Apply by 2026-06-15",
+            "Prepare for interviews",
+            "Network with peers"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 8,
+            "skill": 9,
+            "time": 6,
+            "regret": true
+          }
+        },
+        {
+          "title": "Palantir — Software Engineer Intern - Infrastructure",
+          "url": "https://jobs.lever.co/palantir/f221738b-e97c-4ce3-a12a-17ada2b855e4/apply",
+          "source": "internships",
+          "description": "internship | Palantir | Palo Alto, CA | Winter 2028, Spring 2028, Summer 2028 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4b0a0a22-ba97-43e6-b131-336344fb7fe6",
+          "score": 3,
+          "ai_score": 8,
+          "ai_summary": "Prestigious internship",
+          "action_plan": [
+            "Update resume, 2 hours",
+            "Practice coding, 10 hours",
+            "Apply, 2 hours"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 6,
+            "prestige": 9,
+            "deadline": 8,
+            "skill": 8,
+            "time": 7,
+            "regret": true
+          }
+        },
+        {
+          "title": "Palantir — Software Engineer Intern - Defense Tech",
+          "url": "https://jobs.lever.co/palantir/f17e98d0-046a-4e6e-9d65-ed0b12dd0ff7/apply",
+          "source": "internships",
+          "description": "internship | Palantir | Washington, DC | Winter 2028, Spring 2028, Summer 2028 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4a30dd71-73a0-48c8-9e4a-9422a6952920",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Palantir is reputable but not AI‑focused; missing it isn’t career‑critical.",
+          "action_plan": [
+            "Update resume highlighting AI projects (1 day)",
+            "Submit application via Palantir portal (1 hour)",
+            "Prepare for technical interview (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          }
+        },
+        {
+          "title": "Palantir — Software Engineer Intern",
+          "url": "https://jobs.lever.co/palantir/373eb939-6f57-4836-8479-be79a5e07249/apply",
+          "source": "internships",
+          "description": "internship | Palantir | Denver, CO | Winter 2028, Spring 2028, Summer 2028 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "da1074aa-7344-4ad3-9b53-078f1dbd2edc",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Palantir internship offers solid experience but low AI relevance.",
+          "action_plan": [
+            "Tailor resume for software engineering role (1 day)",
+            "Apply through Palantir career site (30 min)",
+            "Study system design basics (1 week)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          }
+        },
+        {
+          "title": "Palantir — Software Engineer Intern",
+          "url": "https://jobs.lever.co/palantir/e27af7ab-41fc-40c9-b31d-02c6cb1c505c/apply",
+          "source": "internships",
+          "description": "internship | Palantir | Palo Alto, CA | Winter 2028, Spring 2028, Summer 2028 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d0302d05-c84f-4a36-a91e-cc293f08604e",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Same as other Palantir offers; decent skill gain but not AI‑centric.",
+          "action_plan": [
+            "Refresh LinkedIn with AI projects (2 hrs)",
+            "Submit application (15 min)",
+            "Mock interview practice (1 week)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          }
+        },
+        {
+          "title": "Palantir — Software Engineer Intern",
+          "url": "https://jobs.lever.co/palantir/bdcfb29f-4f27-42de-933f-7f83a359b9f0/apply",
+          "source": "internships",
+          "description": "internship | Palantir | Washington, DC | Winter 2028, Spring 2028, Summer 2028 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0f0aeb67-6d9f-4204-85d7-29cb04386943",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Palantir’s brand helps resume, yet AI focus remains limited.",
+          "action_plan": [
+            "Add Palantir‑style project to portfolio (2 days)",
+            "Apply online (10 min)",
+            "Review past interview questions (3 days)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          }
+        },
+        {
+          "title": "Palantir — Software Engineer Intern",
+          "url": "https://jobs.lever.co/palantir/7d69cf8a-06fd-4f05-bd84-27149db29c4d/apply",
+          "source": "internships",
+          "description": "internship | Palantir | NYC | Winter 2028, Spring 2028, Summer 2028 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e1cb71b6-18fc-4d48-9c80-55c54bb62a50",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "NYC location adds prestige but still not aligned with AI‑agent goals.",
+          "action_plan": [
+            "Customize cover letter for Palantir (1 hr)",
+            "Submit application (5 min)",
+            "Prepare coding challenges (1 week)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          }
+        }
+      ]
     }
   ]
 }
