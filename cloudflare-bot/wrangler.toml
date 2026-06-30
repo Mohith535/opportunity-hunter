@@ -1,0 +1,21 @@
+name = "ophunter-bot"
+main = "src/index.js"
+compatibility_date = "2026-06-01"
+workers_dev = true
+
+# Non-secret config. Edit OPHUNTER_FEED_URL / TASKFLOW_SYNC_REPO if your repos differ.
+[vars]
+TASKFLOW_SYNC_REPO = "Mohith535/taskflow-sync"
+OPHUNTER_FEED_URL = "https://raw.githubusercontent.com/Mohith535/opportunity-hunter/main/data/feed.json"
+REMIND_DAYS = "3"
+
+# KV namespace for bot state (tracker + taste). Create it with:
+#   wrangler kv namespace create BOT_KV
+# then paste the printed id below.
+[[kv_namespaces]]
+binding = "BOT_KV"
+id = "PASTE_KV_NAMESPACE_ID_HERE"
+
+# Secrets are NOT stored here. Set them with `wrangler secret put <NAME>`:
+#   TELEGRAM_BOT_TOKEN  WEBHOOK_SECRET  TASKFLOW_SYNC_TOKEN
+#   GROQ_API_KEY  CEREBRAS_API_KEY  OPENROUTER_API_KEY

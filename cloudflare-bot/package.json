@@ -1,0 +1,15 @@
+{
+  "name": "ophunter-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Opportunity Hunter — always-on Telegram bot on Cloudflare Workers (free, no PC).",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}
