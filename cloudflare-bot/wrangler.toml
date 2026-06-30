@@ -14,7 +14,7 @@ REMIND_DAYS = "3"
 # then paste the printed id below.
 [[kv_namespaces]]
 binding = "BOT_KV"
-id = "PASTE_KV_NAMESPACE_ID_HERE"
+id = "22c274eb2b75484fad6a1717f25a5c2f"
 
 # Secrets are NOT stored here. Set them with `wrangler secret put <NAME>`:
 #   TELEGRAM_BOT_TOKEN  WEBHOOK_SECRET  TASKFLOW_SYNC_TOKEN
