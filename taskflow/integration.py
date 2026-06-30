@@ -184,6 +184,16 @@ def dump(item, score: int) -> bool:
         return False
 
 
+def plan(item, score: int) -> bool:
+    """Route a "plan this" action: use the local TaskFlow CLI when it's available,
+    otherwise queue into the cloud-sync inbox (for cloud/remote runs where there is
+    no local TaskFlow). Returns True on success. Never raises."""
+    if is_available():
+        return dump(item, score)
+    from taskflow import cloud_sync
+    return cloud_sync.add_to_inbox(item, score)
+
+
 if __name__ == "__main__":
     from datetime import date, timedelta
 

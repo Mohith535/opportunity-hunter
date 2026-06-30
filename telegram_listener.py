@@ -105,24 +105,29 @@ def _handle_plan(key: str, cb: dict) -> None:
     if not it:
         _answer(cb["id"], "Couldn't find that item (it may have aged out).")
         return
-    if not integration.is_available():
-        _answer(cb["id"], "TaskFlow isn't available on this machine.")
-        return
-    if integration.already_dumped(it):
+    if integration.is_available() and integration.already_dumped(it):
         tracker.set_status(key, "planned", item=it)
         taste.relearn()
         _answer(cb["id"], "Already in TaskFlow ✅ — no duplicate created.")
         return
-    ok = integration.dump(it, policy.effective_score(it))
-    _answer(cb["id"], "Added to TaskFlow ✅" if ok else "Dump failed — check logs")
-    if ok:
-        tracker.set_status(key, "planned", item=it)
-        taste.relearn()
+    local = integration.is_available()
+    ok = integration.plan(it, policy.effective_score(it))
+    if not ok:
+        _answer(cb["id"], "Couldn't add it right now — try again shortly.")
+        return
+    tracker.set_status(key, "planned", item=it)
+    taste.relearn()
+    if local:
+        _answer(cb["id"], "Added to TaskFlow ✅")
         _send(chat_id, f"✅ Added to TaskFlow:\n<b>{html.escape(it.title)}</b>")
-        if it.action_plan:
-            steps = "\n".join(f"{i}. {html.escape(s)}"
-                              for i, s in enumerate(it.action_plan, 1))
-            _send(chat_id, f"<b>Suggested plan</b>\n{steps}")
+    else:
+        _answer(cb["id"], "Queued for TaskFlow ✅")
+        _send(chat_id, "✅ Queued for TaskFlow — run <code>taskflow sync pull</code> "
+                       f"(or tap ↓ in the dashboard):\n<b>{html.escape(it.title)}</b>")
+    if it.action_plan:
+        steps = "\n".join(f"{i}. {html.escape(s)}"
+                          for i, s in enumerate(it.action_plan, 1))
+        _send(chat_id, f"<b>Suggested plan</b>\n{steps}")
 
 
 def _handle_status(action: str, key: str, cb: dict) -> None:

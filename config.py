@@ -137,6 +137,16 @@ CLIST_API_KEY = os.environ.get("CLIST_API_KEY", "")
 # Lifts the Search API rate limit (avoids 403s from shared runner IPs).
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
+# ─── TASKFLOW CLOUD SYNC (optional) ──────────────────────────────────
+# Lets OPHunter add tasks to TaskFlow from the CLOUD (no local PC needed): it
+# appends to the private taskflow-sync repo's inbox.json, and TaskFlow's
+# `taskflow sync pull` ingests them. Locally, the integration still uses the
+# TaskFlow CLI directly; this is the fallback when no local TaskFlow is present.
+# Token needs `repo` scope on the sync repo (a PAT; add as a GH Actions secret in
+# the cloud). Empty -> the inbox path is simply disabled.
+TASKFLOW_SYNC_REPO = os.environ.get("TASKFLOW_SYNC_REPO", "")    # e.g. "Mohith535/taskflow-sync"
+TASKFLOW_SYNC_TOKEN = os.environ.get("TASKFLOW_SYNC_TOKEN", "")
+
 
 # ─── PHASE 2 — LLM INTELLIGENCE (provider-agnostic chain) ────────────
 # The scorer speaks the OpenAI-compatible chat format, so we keep a CHAIN of free
