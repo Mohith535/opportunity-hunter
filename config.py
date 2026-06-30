@@ -208,6 +208,7 @@ DATA_DIR = BASE_DIR / "data"
 LOGS_DIR = BASE_DIR / "logs"
 SEEN_FILE = DATA_DIR / "seen_items.json"
 HISTORY_FILE = DATA_DIR / "history.json"
+FEED_FILE = DATA_DIR / "feed.json"   # compact, key-bearing feed for the cloud bot
 RUNS_LOG = LOGS_DIR / "runs.log"
 DUMPS_LOG = LOGS_DIR / "dumps.log"
 

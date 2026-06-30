@@ -84,6 +84,41 @@ def append_history(items: list) -> None:
     _save(config.HISTORY_FILE, {"runs": runs})
 
 
+def write_feed(limit: int = 100) -> None:
+    """Write a compact, key-bearing feed of the top opportunities for the cloud bot
+    (Cloudflare Worker) to consume — so it never has to parse the whole history or
+    re-derive dedup keys. Union of recent runs, deduped by key, sorted by score."""
+    from models import dedup_key_from_dict
+
+    data = _load(config.HISTORY_FILE)
+    runs = data.get("runs", [])
+    by_key: dict = {}
+    for run in runs[-12:]:                 # recent runs cover what's in live digests
+        for d in run.get("items", []):
+            key = d.get("key") or dedup_key_from_dict(d)
+            by_key[key] = d                # latest wins
+
+    def _score(d: dict) -> int:
+        ai = d.get("ai_score", -1)
+        return ai if ai is not None and ai >= 0 else d.get("score", 0)
+
+    top = sorted(by_key.values(), key=_score, reverse=True)[:limit]
+    feed = []
+    for d in top:
+        feed.append({
+            "key": d.get("key") or dedup_key_from_dict(d),
+            "title": d.get("title", ""),
+            "url": d.get("url", ""),
+            "source": d.get("source", ""),
+            "score": _score(d),
+            "deadline": d.get("deadline"),
+            "tags": d.get("tags", []),
+            "ai_summary": d.get("ai_summary", ""),
+            "action_plan": d.get("action_plan", []),
+        })
+    _save(config.FEED_FILE, {"updated_at": date.today().isoformat(), "items": feed})
+
+
 if __name__ == "__main__":
     from models import Opportunity
 

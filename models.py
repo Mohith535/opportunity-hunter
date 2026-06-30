@@ -36,6 +36,19 @@ def _normalize_title(title: str) -> str:
     return re.sub(r"\s+", " ", (title or "").strip().lower())
 
 
+def dedup_key_from_dict(d: dict) -> str:
+    """The same stable identity dedup_key() produces, but computed from a plain
+    history/feed dict. Lets consumers (and the cloud bot) match items by key
+    without re-deriving the hashing rule."""
+    native_id = d.get("native_id")
+    source = d.get("source", "")
+    if native_id:
+        base = f"{source}:{native_id}"
+    else:
+        base = f"{_normalize_title(d.get('title', ''))}|{canonicalize_url(d.get('url', ''))}"
+    return hashlib.md5(base.encode("utf-8")).hexdigest()[:12]
+
+
 @dataclass
 class Opportunity:
     """One opportunity, normalized across all sources."""
@@ -60,11 +73,10 @@ class Opportunity:
     def dedup_key(self) -> str:
         """Stable identity. Prefer the source-native id; fall back to a hash of
         the normalized title + canonical URL."""
-        if self.native_id:
-            base = f"{self.source}:{self.native_id}"
-        else:
-            base = f"{_normalize_title(self.title)}|{canonicalize_url(self.url)}"
-        return hashlib.md5(base.encode("utf-8")).hexdigest()[:12]
+        return dedup_key_from_dict(
+            {"native_id": self.native_id, "source": self.source,
+             "title": self.title, "url": self.url}
+        )
 
     @property
     def text(self) -> str:
@@ -72,9 +84,12 @@ class Opportunity:
         return f"{self.title} {self.description}".lower()
 
     def to_dict(self) -> dict:
-        """JSON-serializable view (for history/logging). Drops `raw`."""
+        """JSON-serializable view (for history/logging). Drops `raw`, adds `key`
+        (the dedup key) so downstream consumers — incl. the cloud bot — can match
+        items without re-deriving the hash."""
         d = asdict(self)
         if isinstance(self.deadline, (date, datetime)):
             d["deadline"] = self.deadline.isoformat()
         d.pop("raw", None)
+        d["key"] = self.dedup_key()
         return d

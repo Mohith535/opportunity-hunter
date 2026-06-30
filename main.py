@@ -316,6 +316,7 @@ def run(source_names=None, test=False):
         store.save_seen(seen)
         if new_items:  # don't record empty runs (keeps --recap meaningful)
             store.append_history(new_items)
+        store.write_feed()   # refresh the compact feed the cloud bot reads
 
     # 6. Notify
     _notify(new_items, test)
