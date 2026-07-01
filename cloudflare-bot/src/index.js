@@ -70,7 +70,7 @@ async function handleMessage(env, msg) {
   if (text.startsWith("/top")) return handleTop(env, chatId);
   if (text.startsWith("/report")) return handleReport(env, chatId);
   if (text.startsWith("/taste")) return handleTaste(env, chatId);
-  if (text.startsWith("/coach")) return handleCoach(env, chatId);
+  if (text.startsWith("/coach")) return handleCoach(env, chatId, text.slice(6).trim());
   if (text.startsWith("/"))
     return sendMessage(env, chatId, "Try /top · /report · /taste · /coach — or ask me a question.");
   // freeform question -> grounded answer
@@ -136,18 +136,24 @@ async function handleTaste(env, chatId) {
     `👎 You skip: <b>${(d.avoids || []).join(", ") || "—"}</b>`);
 }
 
-async function handleCoach(env, chatId) {
+async function handleCoach(env, chatId, question) {
   const feed = await getFeed(env);
   const elite = feed.filter((it) => (it.score || 0) >= 7).slice(0, 15);
   if (elite.length < 3)
     return sendMessage(env, chatId,
       "🧭 Not enough high-value opportunities in your feed yet to coach on. Let the hunter run a few days, then ask again.");
   const context = elite.map((it) => `- ${it.title.slice(0, 74)} (${it.source})`).join("\n");
-  const text = await llmComplete(env, coachPrompt(await profileBlock(env), context), 650);
+  const profile = await profileBlock(env);
+  // If you typed a question after /coach, answer THAT specifically; otherwise give
+  // the default gap-analysis. (Fixes the "same response every time" bug.)
+  const prompt = question
+    ? coachAskPrompt(profile, context, question)
+    : coachPrompt(profile, context);
+  const text = await llmComplete(env, prompt, 650);
   if (!text) return sendMessage(env, chatId, "Couldn't coach right now — try again shortly.");
-  // Expandable blockquote = a tidy preview that taps open — great for long coaching.
+  const heading = question ? "Coach" : "Your Career Coaching";
   return sendMessage(env, chatId,
-    `🧭 <b>Your Career Coaching</b>\n<blockquote expandable>${mdToHtml(text)}</blockquote>`);
+    `🧭 <b>${heading}</b>\n<blockquote expandable>${mdToHtml(text)}</blockquote>`);
 }
 
 async function handleReport(env, chatId) {
@@ -454,6 +460,26 @@ Elite opportunities you're seeing right now:
 ${context}
 
 Coach them now (GAP, then PLAN):`;
+}
+
+function coachAskPrompt(profile, context, question) {
+  return `You are the user's personal career coach — direct, specific, and genuinely useful (not
+generic). They asked you:
+
+"${question}"
+
+Answer THAT question directly with real specifics — e.g. actual research topics, specific
+venues/conferences/journals to submit to, concrete next steps — grounded in their profile and the
+opportunities below. Speak in the second person ("you", "your"), never the third person or by name.
+Use **bold** for key terms. Don't repeat a generic gap analysis; answer what they actually asked.
+
+About you:
+${profile}
+
+Opportunities you're seeing:
+${context}
+
+Your answer:`;
 }
 
 // ─── Telegram + util ─────────────────────────────────────────────────
