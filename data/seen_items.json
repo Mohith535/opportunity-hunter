@@ -2825,6 +2825,342 @@
       "first_seen": "2026-06-30",
       "last_seen": "2026-06-30",
       "times_seen": 1
+    },
+    "702be179dfb1": {
+      "title": "QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "d27833e18388": {
+      "title": "Reinforcement Learning with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "fcc683626444": {
+      "title": "When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "9d7c8337d122": {
+      "title": "Generative Skill Composition for LLM Agents",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "a56e21b76d8c": {
+      "title": "FLORA: A deep learning approach to predict forest attributes from heterogeneous LiDAR data",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "878821832162": {
+      "title": "okesipoke/manuscript-phoneme-decipher — ★152",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "3819e0d45cdf": {
+      "title": "Google copybara: moving code between repositories",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "87ff8c1a95ff": {
+      "title": "A map of the latest 11 million papers split by semantic similarity and time slices [P]",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "6f9c9ffbbb01": {
+      "title": "[D] Monthly Who's Hiring and Who wants to be Hired?",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "bb569473949b": {
+      "title": "Update on CVIL: the free CV interview prep checklist after landing my internship... just added Segmentation, OCR, and VLM sections [D]",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "7ca7b4715d95": {
+      "title": "EACL 2027: Author response and author-reviewer discussion are now two separate stages and allow more time [D]",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "5bc13b4e0362": {
+      "title": "How to improve a 5-class Diabetic Retinopathy model (APTOS 2019) – Mixed predictions across classes[P]",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "cc070e74e02d": {
+      "title": "80TB+ of astronomy for the HDD-poor: crossmatch the Universe from your laptop [R]",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "b85253ed17c5": {
+      "title": "Anyone looking into the new MARS2 Workshop/Competition @ ECCV 2026? I saw Tec-do posting it. [D]",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "463b86339a11": {
+      "title": "REAP: Automatic Curation of Coding Agent Benchmarks from Interactive Production Usage [R]",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "1cece922b81f": {
+      "title": "Are all LLM research papers nowadays 100+ pages beasts?[D]",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "e0b90e9b87a5": {
+      "title": "MUBA Blockchain Hackathon",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "cefeab139e04": {
+      "title": "PEC HACKS 4.0",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "b83797c5d5a6": {
+      "title": "NexHack 2.0",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "ad9d0e755d92": {
+      "title": "Weekly Contest 510 (leetcode.com)",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "64f759780a37": {
+      "title": "MSOC 2026 — MSTC Summer of Code Data Science",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "361081d5bded": {
+      "title": "Roboauto-2026",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "e66461630be4": {
+      "title": "COSC Hackweek",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "795c98d26abb": {
+      "title": "Business Development Internship",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "16b8b39dcbee": {
+      "title": "Recruitment & Talent Acquisition Internship",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "37c147784e5d": {
+      "title": "Business Development Internship",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "67c77fc0246e": {
+      "title": "Organic Growth & SEO Internship",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "688e0f65f877": {
+      "title": "Field Sales Internship",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "148d064656dd": {
+      "title": "Social Media Internship",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "5fbea3d5fb98": {
+      "title": "Founder's office",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "fb3b37968db4": {
+      "title": "Creator Outreach and Content Internship",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "f61e2473f1bf": {
+      "title": "CII POST-HARVEST HACKATHON",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "b11abb7cdee5": {
+      "title": "AI & Machine Learning Competition",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "eb4a574fd41e": {
+      "title": "Citadel Securities — Machine Learning Researcher PhD Intern",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "cb63c4752f7d": {
+      "title": "Tesla — Vehicle Software Intern - Torque Path & Chassis Controls",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "07943466e5ba": {
+      "title": "Tesla — RL Engineer Intern - RL Engineer - Tesla AI",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "70f4b2327e79": {
+      "title": "PLS — AI Intern",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "488fc0b5f723": {
+      "title": "Tesla — Machine Learning Engineer Intern - Machine Learning Engineer - Factory Software",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "132510a4e9c4": {
+      "title": "The Home Depot — Full Stack Software Developer Intern",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "0da8a35f7d56": {
+      "title": "The Home Depot — Firmware Developer Intern",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "d6506bc17d61": {
+      "title": "The Home Depot — Data Scientist Intern",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "5fc5827a988f": {
+      "title": "The Home Depot — AI Machine Learning Developer Intern",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "544f9f30e8d4": {
+      "title": "Susquehanna International Group (SIG) — AI Co-op",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "fab9d6f6116b": {
+      "title": "Susquehanna International Group (SIG) — Financial Reporting AI Co-op",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "58082d25f3fc": {
+      "title": "RTX — Data Science and Advanced Analytics Internship",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "f02e5fc8ad94": {
+      "title": "Sony — Research on Generative and Protective AI for Content Creation Intern",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "979f73e7bddf": {
+      "title": "AssetWorks — Software Development Intern - Engineering Team - React Native",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "67e6db7ba79d": {
+      "title": "Palantir — Forward Deployed Software Engineer Intern - Commercial",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "6f109c570b7f": {
+      "title": "Worcester Polytechnic Institute — Research Software Engineer",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "2554bccee9d2": {
+      "title": "Rise8 — Software Engineer Intern - Software Engineer",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "f633ee909058": {
+      "title": "Saronic — Software Engineer Intern",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "e4a04ccb7aee": {
+      "title": "Tesla — AI/ML Modeling Engineer Intern - ML Modeling Engineer - AI Hardware",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "068455284afd": {
+      "title": "Remarcable — Full Stack Developer Co-op",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "02670165dc13": {
+      "title": "Intuit — Software Developer Co-op",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "9c35c4cd82a5": {
+      "title": "Palantir — Software Engineer Intern - Production Infrastructure",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
+    },
+    "0c6291579484": {
+      "title": "Palantir — Software Engineer Intern - Production Infrastructure",
+      "first_seen": "2026-07-01",
+      "last_seen": "2026-07-01",
+      "times_seen": 1
     }
   }
 }
