@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01",
+  "updated_at": "2026-07-02",
   "items": [
     {
       "key": "15e34ffda925",
@@ -99,6 +99,23 @@
         "Apply for RL Engineer Intern (2h)",
         "Prepare for interview (4h)",
         "Follow up on application (1h)"
+      ]
+    },
+    {
+      "key": "4179dd973e9d",
+      "title": "Tesla — Machine Learning Intern - AI Engineer - Tesla AI",
+      "url": "https://www.tesla.com/careers/search/job/275331",
+      "source": "internships",
+      "score": 9,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Tesla AI Engineer internship",
+      "action_plan": [
+        "Check eligibility",
+        "Prepare resume and cover letter",
+        "Apply"
       ]
     },
     {
@@ -331,6 +348,78 @@
       "action_plan": [
         "Research Sony's GenAI projects (3 hours)",
         "Update resume and apply (4 hours)"
+      ]
+    },
+    {
+      "key": "a9d95ea2da17",
+      "title": "Measuring the Gap Between Human and LLM Research Ideas",
+      "url": "https://arxiv.org/abs/2607.01233v1",
+      "source": "arxiv",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "LLM research paper",
+      "action_plan": [
+        "Read the paper",
+        "Analyze the research",
+        "Consider implementing the ideas"
+      ]
+    },
+    {
+      "key": "fdc21d699fba",
+      "title": "Intel — SOC AI Power and Performance Validation Intern",
+      "url": "https://intel.wd1.myworkdayjobs.com/en-us/external/job/US-California-Folsom/SOC-AI-Power-and-Performance-Validation-Undergrad-Intern_JR0285242-1",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Intel AI intern offers elite resume signal and deep hardware experience.",
+      "action_plan": [
+        "Locate internship posting (15m)",
+        "Tailor resume to SOC AI work (2h)",
+        "Draft cover letter highlighting hardware focus (2h)",
+        "Submit application (1h)",
+        "Prepare for interview (1 week)"
+      ]
+    },
+    {
+      "key": "83ba6844066d",
+      "title": "Palantir — Forward Deployed Software Engineer Intern - Intel",
+      "url": "https://jobs.lever.co/palantir/9e40d77f-b07c-437b-98e7-def9b0184d89/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Palantir forward‑deployed role gives elite exposure to real‑world AI systems.",
+      "action_plan": [
+        "Find posting (10m)",
+        "Update resume with relevant projects (2h)",
+        "Write tailored cover letter (2h)",
+        "Submit application (1h)",
+        "Study Palantir case studies for interview (1 week)"
+      ]
+    },
+    {
+      "key": "9a190c518e3b",
+      "title": "NVIDIA — Applied Research Intern - NLP",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Applied-Research-Intern--NLP---Fall-2026_JR2010488",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "NVIDIA NLP internship",
+      "action_plan": [
+        "Check eligibility",
+        "Prepare resume and cover letter",
+        "Apply"
       ]
     },
     {
@@ -674,6 +763,93 @@
       ]
     },
     {
+      "key": "8350e6ee6b72",
+      "title": "Are Performance-Optimization Benchmarks Reliably Measuring Coding Agents?",
+      "url": "https://arxiv.org/abs/2607.01211v1",
+      "source": "arxiv",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "Coding agents research",
+      "action_plan": [
+        "Read paper",
+        "Implement ideas",
+        "Write blog post"
+      ]
+    },
+    {
+      "key": "8dfb546c4ae9",
+      "title": "A system-level approach to prompt injection: separating instruction and data channels in LLM agents [P]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1ukgwk1/a_systemlevel_approach_to_prompt_injection/",
+      "source": "reddit",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "LLM agents research",
+      "action_plan": [
+        "Read paper",
+        "Implement ideas",
+        "Write blog post"
+      ]
+    },
+    {
+      "key": "284e0e4eb30f",
+      "title": "NVIDIA — PhD Research Intern - System Software and I/O Architecture",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--System-Software-and-I-O-Architecture---Fall-2026_JR2019667",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "NVIDIA PhD research",
+      "action_plan": [
+        "Research NVIDIA's System Software (1 week)",
+        "Update resume with relevant skills (2 days)",
+        "Apply for the internship (1 day)"
+      ]
+    },
+    {
+      "key": "a7fb4d684d18",
+      "title": "IMC Trading — Machine Learning Research Intern",
+      "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4907430101",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Machine Learning Research Intern",
+      "action_plan": [
+        "Check eligibility",
+        "Prepare resume and cover letter",
+        "Apply"
+      ]
+    },
+    {
+      "key": "59844de4a876",
+      "title": "Human Computer Lab — Software/ML Engineering Intern",
+      "url": "https://jobs.ashbyhq.com/human-computer-lab/7d13ae27-1f02-4d9b-8d39-e3d9d67df705/application",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Human Computer Lab blends software and ML, matching his AI interests well.",
+      "action_plan": [
+        "Add recent ML work to resume (1 day).",
+        "Read lab's recent publications (2 days).",
+        "Prepare coding + ML interview questions (1 week).",
+        "Apply via email or portal (1 hour)."
+      ]
+    },
+    {
       "key": "c33a60630cca",
       "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
       "url": "https://arxiv.org/abs/2606.28277v1",
@@ -889,59 +1065,113 @@
       ]
     },
     {
-      "key": "910eed49ab4f",
-      "title": "Arm Create: AI Optimization Challenge",
-      "url": "https://arm-ai-optimization-challenge.devpost.com/",
-      "source": "devpost",
-      "score": 5,
-      "deadline": "2026-08-14",
+      "key": "d7ac5e3bc6bb",
+      "title": "benlamiro/ShipGenAI — ★155",
+      "url": "https://github.com/benlamiro/ShipGenAI",
+      "source": "github",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "github",
+        "learning"
+      ],
+      "ai_summary": "Open‑source SaaS templates boost portfolio but no deadline or brand signal.",
+      "action_plan": [
+        "Clone repo & read README (1h)",
+        "Pick one app to deploy locally (2 days)",
+        "Customize and publish on Vercel (1 week)",
+        "Add deployed app to portfolio (1 day)"
+      ]
+    },
+    {
+      "key": "a7e0b3be0a49",
+      "title": "infracv/rf-detr-cpp — ★98",
+      "url": "https://github.com/infracv/rf-detr-cpp",
+      "source": "github",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "github",
+        "learning"
+      ],
+      "ai_summary": "High‑skill CV engine showcases deep‑learning deployment, but no urgency.",
+      "action_plan": [
+        "Read repo docs (30m)",
+        "Set up Docker environment (2h)",
+        "Run demo inference (1 day)",
+        "Integrate into a personal project (1 week)"
+      ]
+    },
+    {
+      "key": "a2214331987d",
+      "title": "Weekend Dev Challenge 57: LLD Projects (codechef.com)",
+      "url": "https://www.codechef.com/DEVWEEKEND57",
+      "source": "clist",
+      "score": 6,
+      "deadline": "2026-07-03",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "Competitive programming",
+      "action_plan": [
+        "Register",
+        "Practice problems",
+        "Participate"
+      ]
+    },
+    {
+      "key": "48789711c963",
+      "title": "Monday Munch - DSA Challenge 010 (Rated) (codechef.com)",
+      "url": "https://www.codechef.com/DSAMONDAY010",
+      "source": "clist",
+      "score": 6,
+      "deadline": "2026-07-06",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "Competitive programming",
+      "action_plan": [
+        "Register",
+        "Practice problems",
+        "Participate"
+      ]
+    },
+    {
+      "key": "f8aaf5b26072",
+      "title": "AI for Bharat Hackathon 2026 – Build AI Solutions for India's Real Problems",
+      "url": "https://unstop.com/hackathons/ai-for-bharat-hackathon-2026-build-ai-solutions-for-indias-real-problems-indraprastha-institute-of-informatio-1709437",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "AI for Bharat Hackathon",
+      "action_plan": [
+        "Form a team",
+        "Brainstorm ideas",
+        "Participate in hackathon"
+      ]
     },
     {
-      "key": "c7b74211150a",
-      "title": "Hi Reddit, I posted my Build Your Own LLM workshop to Youtube teaching ML, LLM and math intuition [P]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1uazlnd/hi_reddit_i_posted_my_build_your_own_llm_workshop/",
-      "source": "reddit",
-      "score": 5,
+      "key": "4a9a33b0073b",
+      "title": "Tesla — Software Engineer Intern - Distributed Systems Software Engineer - Energy Engineering",
+      "url": "https://www.tesla.com/careers/search/job/275558",
+      "source": "internships",
+      "score": 6,
       "deadline": null,
       "tags": [
-        "news",
-        "r/MachineLearning"
+        "internship"
       ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "9d9d39b98a48",
-      "title": "An open handbook on LLM inference at scale (GPU internals, KV cache, batching, vLLM/SGLang/TensorRT-LLM) [P]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1uavduv/an_open_handbook_on_llm_inference_at_scale_gpu/",
-      "source": "reddit",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "064a4b15d390",
-      "title": "Python packages for particle swarms, genetic algorithms. Scikit-opt maybe? [D]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1ub81us/python_packages_for_particle_swarms_genetic/",
-      "source": "reddit",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "Tesla offers high brand value; role is systems‑focused, not core AI.",
+      "action_plan": [
+        "Tailor resume to emphasize distributed systems experience (1 day).",
+        "Study Tesla's open‑source projects and AI initiatives (2 days).",
+        "Do system design prep (1 week).",
+        "Apply through Tesla careers (1 hour)."
+      ]
     },
     {
       "key": "89e6c811e3cb",
@@ -1452,163 +1682,6 @@
         "Tailor resume to highlight Nova and TaskFlow (1 hr)",
         "Submit and set reminder for interview prep (2 hrs)"
       ]
-    },
-    {
-      "key": "15609a83d1a4",
-      "title": "withkynam/vibecode-pro-max-kit — ★963",
-      "url": "https://github.com/withkynam/vibecode-pro-max-kit",
-      "source": "github",
-      "score": 4,
-      "deadline": null,
-      "tags": [
-        "github",
-        "learning"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4345eb4c8674",
-      "title": "Agentic AI Build Week 2026",
-      "url": "https://agentic-ai-build-week-2026.devpost.com/",
-      "source": "devpost",
-      "score": 4,
-      "deadline": "2026-07-11",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ae00d4d439cd",
-      "title": "X-Play Aaruush '26",
-      "url": "https://unstop.com/hackathons/x-play-aaruush-26-srm-institute-of-science-and-technology-kattankulathur-chennai-1702397",
-      "source": "unstop",
-      "score": 4,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f4d53046b619",
-      "title": "Build The Next Big UI",
-      "url": "https://unstop.com/hackathons/build-the-next-big-ui-techverse-solutions-1702167",
-      "source": "unstop",
-      "score": 4,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "aaabd8cc87f8",
-      "title": "Unlock'D",
-      "url": "https://unstop.com/hackathons/unlockd-manipal-university-mu-jaipur-1701427",
-      "source": "unstop",
-      "score": 4,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "e39ec2f367e8",
-      "title": "AIR: Adaptive Interleaved Reasoning with Code in MLLMs",
-      "url": "https://arxiv.org/abs/2606.23678v1",
-      "source": "arxiv",
-      "score": 4,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "e61fedc207bf",
-      "title": "Teaching LLMs String Matching, Backtracking, and Error Recovery to Deduce Bases and Truth Tables for the Combinatorially Exploding Bit Manipulation Puzzles",
-      "url": "https://arxiv.org/abs/2606.23672v1",
-      "source": "arxiv",
-      "score": 4,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5d12dc2e7898",
-      "title": "Forge 3",
-      "url": "https://unstop.com/hackathons/forge-3-nmg-technologies-1702556",
-      "source": "unstop",
-      "score": 4,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0f1c1331cc38",
-      "title": "U-19 AI Olympics",
-      "url": "https://unstop.com/hackathons/u-19-ai-olympics-algo-university-1702568",
-      "source": "unstop",
-      "score": 4,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "9f823044cbe1",
-      "title": "Agent-A-Thon NCR Marketing Challenge",
-      "url": "https://unstop.com/hackathons/agent-a-thon-ncr-marketing-challenge-vishveshwarya-group-of-institutions-vgi-greater-noida-uttar-pradesh-1703244",
-      "source": "unstop",
-      "score": 4,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4f107779d870",
-      "title": "Code. Innovate. Impact",
-      "url": "https://unstop.com/hackathons/code-innovate-impact-iit-bombay-1703222",
-      "source": "unstop",
-      "score": 4,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "9a84877510d1",
-      "title": "The Closer Challenge - Pitch. Convince. Win.",
-      "url": "https://unstop.com/hackathons/the-closer-challenge-pitch-convince-win-yai-infraventure-1703153",
-      "source": "unstop",
-      "score": 4,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
     }
   ]
 }
