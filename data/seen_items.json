@@ -3527,6 +3527,276 @@
       "first_seen": "2026-07-02",
       "last_seen": "2026-07-02",
       "times_seen": 1
+    },
+    "c2a89f5e1a70": {
+      "title": "LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "705ef025f740": {
+      "title": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "b4e7a37f870c": {
+      "title": "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "4f181e710536": {
+      "title": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "ccc1bb442ebc": {
+      "title": "DemoPSD: Disagreement-Modulated Policy Self-Distillation",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "f00f1cd4c424": {
+      "title": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "91d8f2cd64d5": {
+      "title": "tigicion/dao-code — ★1,333",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "bcac25372acc": {
+      "title": "Claude-real-video － any LLM can watch a video",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "855764fba0d4": {
+      "title": "What do you think about paper fishing? [D]",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "2378b492046c": {
+      "title": "Books/Resources to improve mathematical foundations for ML research [D]",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "1c26c5f66bf2": {
+      "title": "BMVC 2026 Review Discussion Thread [D]",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "36b9a6d32abd": {
+      "title": "How papers are selected for Best Paper, Oral, or Highlight presentation at major ML/CV conferences such as CVPR, ICCV, ECCV, NeurIPS, and ICLR? [D]",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "58e34a0c30e2": {
+      "title": "Improving machine-translated novels via style transfer — looking for advice on the faithfulness/fluency tradeoff [P]",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "211bf0fa71e1": {
+      "title": "Hierarchos: Preliminary Findings From a 232M Recurrent Memory-Augmented Assistant Model [P]",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "0c1eede7ed8b": {
+      "title": "Looking for feedback on a small test SLM I built completely from scratch [P]",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "fc74af7b1dd4": {
+      "title": "Has anyone tried this approach with Fast Byte Latent Transformers ? [R]",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "27f283c32090": {
+      "title": "SpartaHack 12",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "fb46c1cfbb8f": {
+      "title": "NeuraMorphix HackForge 2026",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "1a6e22e12241": {
+      "title": "SquidHack 2026",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "3b7da25c58c7": {
+      "title": "CMR Thinkfest 3.0",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "a684846f2e8e": {
+      "title": "Code Cup 2026",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "4e8e26a8c1ce": {
+      "title": "Hacklabify V1.0",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "a67e91cda9e0": {
+      "title": "Frontend Wars 2026: Build the Future",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "a796a44d681c": {
+      "title": "Aerothon 2026 - HAL x IITI",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "c3f9aa0d9c33": {
+      "title": "Business Development Internship",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "66907037053d": {
+      "title": "Content Creation / Writer Internship",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "2afa0120b822": {
+      "title": "Video Editing & UI/UX Design Internship (Marketing)",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "b2e75f596660": {
+      "title": "Influencer Marketing Internship",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "d915a7a257fb": {
+      "title": "Mainline Advertising Internship",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "3f9fabb5dcd1": {
+      "title": "SEO & Digital PR Specialist Internship",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "8aa6b473578c": {
+      "title": "Human Resource Internship",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "54af8428381e": {
+      "title": "GTM & Field Marketing Internship",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "cee8e427b2d2": {
+      "title": "Free Scholarship Test on UI/UX Design with AI",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "06ddf29e43a3": {
+      "title": "Tesla — Energy Engineering Intern - Software Engineer Diagnostics - Energy Engineering",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "748a9b126cd1": {
+      "title": "ByteDance — Research Scientist Intern - AI Infrastructure",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "e0d198537ce2": {
+      "title": "ByteDance — Research Scientist Intern - AI Infrastructure",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "291b6d6fee6c": {
+      "title": "Saronic — Enterprise Technology Intern - AI and Automation",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "1bcae701afea": {
+      "title": "Zoox — Student Worker - AI Validation and Benchmarking Engineer",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "484017bbe37a": {
+      "title": "X Development — PhD Residency Intern - Physical ML & Hardware-in-the-Loop - Future of Compute",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "8c41b6952c9a": {
+      "title": "Moment Energy — Software Engineering Co-op",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "5560f3aefdc5": {
+      "title": "Bot Auto — Deep Learning Engineer Intern",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "dd99dc80c971": {
+      "title": "Fidelity Investments — Software Engineer",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "518ff72356a0": {
+      "title": "Kpler — Quantitative Data Scientist",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "2d16b86cf39f": {
+      "title": "Traackr — Software Engineer Intern - Internal Tooling",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
+    },
+    "38fc8606b799": {
+      "title": "JP Morgan Chase — Machine Learning Center of Excellence Intern - NLP",
+      "first_seen": "2026-07-03",
+      "last_seen": "2026-07-03",
+      "times_seen": 1
     }
   }
 }

@@ -11155,6 +11155,1205 @@
           "key": "0034727e35a0"
         }
       ]
+    },
+    {
+      "date": "2026-07-03",
+      "items": [
+        {
+          "title": "LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning",
+          "url": "https://arxiv.org/abs/2607.02513v1",
+          "source": "arxiv",
+          "description": "LLMs memorize sensitive training data, including personally identifiable information (PII), creating a pressing need for reliable post hoc removal methods. Unlearning has emerged as a promising solution, with state-of-the-art(SOTA) methods often following a localize-first, unlearn-second paradigm that targets specific model parameters. However, existing benchmarks evaluate unlearning solely at the output level, leaving open the question of whether unlearning truly erases knowledge from a model's parameters or merely obfuscates it, a concern reinforced by the success of resurfacing attacks. To bridge this gap, we introduce LACUNA: the first unlearning testbed with ground-truth parameter-level localization. LACUNA injects PII of synthetic individuals into predefined parameters of 1B and 7B OLMo-based models via masked continual pretraining, enabling direct evaluation of whether unlearning targets the weights responsible for knowledge storage. We use LACUNA to benchmark current SOTA unlearning methods and find that, despite strong output-level performance, existing methods are highly imprecise and susceptible to resurfacing attacks. We further show that when localization is successful, even a simple gradient-based unlearning method achieves strong erasure and robustness to resurfacing attacks, highlighting the importance of precise unlearning. We release LACUNA to complement behavioral evaluations and drive further advances in robust, localization-based unlearning.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.02513",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "Cutting‑edge LLM unlearning problem; high‑impact research potential.",
+          "action_plan": [
+            "Read the LACUNA paper (2 h).",
+            "Define a small experiment on a public LLM.",
+            "Write a short report for a conference submission."
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 4
+          },
+          "key": "c2a89f5e1a70"
+        },
+        {
+          "title": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
+          "url": "https://arxiv.org/abs/2607.02509v1",
+          "source": "arxiv",
+          "description": "Understanding and reasoning over long contexts has become a key requirement for deploying large language models (LLMs) in realistic applications. Although recent LLMs support increasingly long context windows, they often fail to use relevant evidence that is already present in the input, revealing a gap between context access and effective context utilization. In this work, we propose Recursive Evidence Replay as LLM Harness for Long-Context Reasoning (RECONTEXT), a training-free inference method for improving long-context reasoning. RECONTEXT uses model-internal relevance signals to construct a query-conditioned evidence pool and replays it before final generation while preserving the full original context. This recursive selection process separates evidence organization from answer generation without training, external memory, or context pruning. We also provide a theoretical analysis based on associative memory, which characterizes the context as a memory store, the question as a retrieval cue, attention as cue-trace association, and replay as trace reactivation. Experiments on eight long-context datasets with 128K context length show that RECONTEXT consistently improves evidence utilization across Qwen3-4B, Qwen3-8B, and Llama3-8B, achieving the best average rank on all three backbones. Code is available at https://github.com/Yanjun-Zhao/ReContext.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.02509",
+          "score": 5,
+          "ai_score": 8,
+          "ai_summary": "Relevant LLM research for long-context reasoning",
+          "action_plan": [
+            "Read the paper",
+            "Analyze the methodology"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 10,
+            "prestige": 9,
+            "deadline": 2,
+            "skill": 8,
+            "time": 7
+          },
+          "key": "705ef025f740"
+        },
+        {
+          "title": "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
+          "url": "https://arxiv.org/abs/2607.02507v1",
+          "source": "arxiv",
+          "description": "LLM agents will increasingly act in socially structured settings where role, audience, and relational context can shape what is advantageous or costly to say. We study whether such social structure, without any explicit objective in the prompt, changes what an agent expresses publicly relative to an off-the-record (OTR) channel elicited under the same condition. We introduce a dual-channel debate framework in which agents produce public utterances that enter the shared history alongside OTR responses that are recorded but never shown to the other participant. Across 10 models, 3 scenarios, and 5 variations within each scenario, alignment-inducing settings produce systematic public-OTR divergence in the targeted agent, with its decision divergence rising from a $\\sim$3% baseline to roughly 40%. The effect is consistent across four aggregate analyses: stance, semantic similarity, natural language inference, and survey responses. In some cases, the OTR response explicitly attributes public accommodation to relational pressures, such as career risk or sponsorship obligation. The findings suggest that agent evaluation should extend beyond explicit goals and detect emergent objectives. We present a dual-channel evaluation framework and complementary behavioral measures that operationalize this assessment.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.02507",
+          "score": 6,
+          "ai_score": 7,
+          "ai_summary": "Relevant LLM research",
+          "action_plan": [
+            "Read the paper",
+            "Analyze the methodology"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 6,
+            "time": 6
+          },
+          "key": "b4e7a37f870c"
+        },
+        {
+          "title": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
+          "url": "https://arxiv.org/abs/2607.02504v1",
+          "source": "arxiv",
+          "description": "Long-form TV dramas present a formidable challenge for comprehensive video understanding, where deciphering complex storyline often relies on \\textbf{speaker recognition}, the task of accurately attributing each spoken utterance to its respective character. In this paper, we advance this field through two primary contributions. (1) We introduce \\textbf{DramaSR-532K}, a large-scale benchmark comprising 532K annotated dialogue lines across more than 900 unique characters, necessitating the integration of auditory, linguistic, and visual cues for speaker recognition. (2) We propose \\textbf{DramaSR-LRM}, a robust approach built upon a large reasoning model (LRM). DramaSR-LRM is designed to autonomously aggregate contextual evidence via multimodal tool-use, synthesizing diverse inputs to achieve high-fidelity attribution. Experimental results demonstrate that DramaSR-LRM significantly outperforms existing baselines, particularly on short utterances where acoustic biometrics are inherently unreliable. \\textit{All the data and code will be made publicly available at the project page: https://www.github.com/198808xc/DramaSR-LRM.}",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.02504",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "LLM‑based speaker recognition merges AI agents and multimodal work.",
+          "action_plan": [
+            "Gather the DramaSR‑532K dataset (1 h).",
+            "Implement a baseline LLM‑speaker model.",
+            "Evaluate and draft a pre‑print."
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 8,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 4
+          },
+          "key": "4f181e710536"
+        },
+        {
+          "title": "DemoPSD: Disagreement-Modulated Policy Self-Distillation",
+          "url": "https://arxiv.org/abs/2607.02502v1",
+          "source": "arxiv",
+          "description": "On-policy self-distillation (OPSD) has emerged as a practical method for training large language models (LLMs) to reason, where a single model acts as both the teacher and the student with different levels of information access. However, recent studies have found that the teacher's dense token-level supervision, conditioned on privileged information, can lead to overfitting to in-domain patterns, suppress exploration, and hurt cross-domain generalization, while also introducing a more fundamental issue: *privileged information leakage*, where the student encodes answer-dependent shortcuts that are unavailable at test time. We introduce **DemoPSD**, a novel framework that resolves such problems through the idea of *selective adoption of teacher guidance*. Instead of fitting the full teacher distribution, DemoPSD steers the student toward a *reverse-KL barycenter target*, a weighted geometric combination of the teacher and student distributions, that naturally balances learning from the teacher with preserving the student's own reasoning capacity. We measure the difference between their distributions and use such a discrepancy to adaptively control the blending at each token position. We provably show that DemoPSD achieves **(1)** *leakage attenuation*, i.e., effective mitigation of privileged information leakage; and **(2)** *exploration preservation*, i.e., preservation of exploration capacity under dense token-level distillation. Extensive experiments on SciKnowEval across four scientific fields show that DemoPSD outperforms both GRPO and SDPO while maintaining higher training entropy and robustly generalizing to out-of-distribution GPQA benchmarks.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.02502",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "Policy self‑distillation research aligns with generative AI engineering.",
+          "action_plan": [
+            "Read the DemoPSD paper (1 h).",
+            "Re‑implement the core algorithm on a small LLM.",
+            "Run ablation experiments and document results."
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 4
+          },
+          "key": "ccc1bb442ebc"
+        },
+        {
+          "title": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials",
+          "url": "https://arxiv.org/abs/2607.02499v1",
+          "source": "arxiv",
+          "description": "Machine learning interatomic potentials (MLIPs) have become a hallmark of AI for scientific simulation. While efforts on new architectures and datasets have led to increasingly accurate and general models, the choice of optimizer for training has largely remained unexplored, defaulting to Adam and its variants in the community. Here, we implement and systematically compare a class of recently proposed matrix-structured optimizers, including Muon, SOAP, and the hybrid SOAP-Muon, for training NequIP and Allegro MLIP models. We find that these optimizers can substantially outperform Adam in both convergence speed and final accuracy. SOAP and SOAP-Muon emerge as robust and consistently strong methods, while Muon only provides partial gains relative to Adam. The improvements are particularly pronounced under partial force supervision. Our results indicate that optimizer choice is an overlooked yet impactful design axis for MLIPs.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.02499",
+          "score": 5,
+          "ai_score": 6,
+          "ai_summary": "Machine learning research for interatomic potentials",
+          "action_plan": [
+            "Read the paper",
+            "Analyze the methodology"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          },
+          "key": "f00f1cd4c424"
+        },
+        {
+          "title": "tigicion/dao-code — ★1,333",
+          "url": "https://github.com/tigicion/dao-code",
+          "source": "github",
+          "description": "Open-source TypeScript terminal coding agent for DeepSeek-V4 — builds on DeepSeek's strong price-performance and ultra-cheap cache pricing, engineering byte-stable prefixes and cache-reusing forks so cross-session memory and a continuous self-correction layer add almost no token cost; 1M context, Skills/MCP/Hooks, Claude Code config compatible. (topics: ai agent, cli, coding agent, deepseek, llm, terminal, typescript)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "tigicion/dao-code",
+          "score": 2,
+          "ai_score": 7,
+          "ai_summary": "AI agent and LLM project",
+          "action_plan": [
+            "Explore repository, 2h",
+            "Contribute to code, 10h",
+            "Write blog post, 5h"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 9,
+            "time": 8,
+            "regret": true
+          },
+          "key": "91d8f2cd64d5"
+        },
+        {
+          "title": "Claude-real-video － any LLM can watch a video",
+          "url": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48766005",
+          "score": 3,
+          "ai_score": 1,
+          "ai_summary": "Just a news item; no actionable career impact for Mohith.",
+          "action_plan": [
+            "Read the article to stay informed."
+          ],
+          "dimensions": {
+            "career": 0,
+            "interest": 2,
+            "prestige": 1,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0
+          },
+          "key": "bcac25372acc"
+        },
+        {
+          "title": "What do you think about paper fishing? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ulgunh/what_do_you_think_about_paper_fishing_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ulgunh",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Not relevant to goals",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1
+          },
+          "key": "855764fba0d4"
+        },
+        {
+          "title": "Books/Resources to improve mathematical foundations for ML research [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ulmy9g/booksresources_to_improve_mathematical/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ulmy9g",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "Math basics boost research ability but are evergreen and low‑signal.",
+          "action_plan": [
+            "Allocate 30 min daily to a recommended textbook chapter.",
+            "Summarize key concepts in a personal wiki.",
+            "Apply one concept to a small ML experiment."
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 5,
+            "time": 3
+          },
+          "key": "2378b492046c"
+        },
+        {
+          "title": "BMVC 2026 Review Discussion Thread [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ulnp4d/bmvc_2026_review_discussion_thread_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ulnp4d",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Not relevant to goals",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1
+          },
+          "key": "1c26c5f66bf2"
+        },
+        {
+          "title": "How papers are selected for Best Paper, Oral, or Highlight presentation at major ML/CV conferences such as CVPR, ICCV, ECCV, NeurIPS, and ICLR? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ulnstb/how_papers_are_selected_for_best_paper_oral_or/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ulnstb",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "General ML knowledge",
+          "action_plan": [
+            "Read thread, 1h"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2
+          },
+          "key": "36b9a6d32abd"
+        },
+        {
+          "title": "Improving machine-translated novels via style transfer — looking for advice on the faithfulness/fluency tradeoff [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ulrdw9/improving_machinetranslated_novels_via_style/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ulrdw9",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Style transfer and ML",
+          "action_plan": [
+            "Read thread, 1h",
+            "Research style transfer, 2h"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 1,
+            "skill": 3,
+            "time": 3
+          },
+          "key": "58e34a0c30e2"
+        },
+        {
+          "title": "Hierarchos: Preliminary Findings From a 232M Recurrent Memory-Augmented Assistant Model [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1um123n/hierarchos_preliminary_findings_from_a_232m/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1um123n",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Recurrent memory-augmented model",
+          "action_plan": [
+            "Read thread, 1h",
+            "Research model, 2h"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 1,
+            "skill": 4,
+            "time": 4
+          },
+          "key": "211bf0fa71e1"
+        },
+        {
+          "title": "Looking for feedback on a small test SLM I built completely from scratch [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1um013f/looking_for_feedback_on_a_small_test_slm_i_built/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1um013f",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "SLM project and feedback",
+          "action_plan": [
+            "Read thread, 1h",
+            "Research SLM, 2h",
+            "Provide feedback, 1h"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 1,
+            "skill": 5,
+            "time": 5
+          },
+          "key": "0c1eede7ed8b"
+        },
+        {
+          "title": "Has anyone tried this approach with Fast Byte Latent Transformers ? [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ulngy8/has_anyone_tried_this_approach_with_fast_byte/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ulngy8",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fc74af7b1dd4"
+        },
+        {
+          "title": "SpartaHack 12",
+          "url": "https://events.mlh.io/events/14442-spartahack-12",
+          "source": "mlh",
+          "description": "hackathon | MLH event | SpartaHack 12",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "mlh-14442",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "27f283c32090"
+        },
+        {
+          "title": "NeuraMorphix HackForge 2026",
+          "url": "https://unstop.com/hackathons/neuramorphix-hackforge-2026-srm-institute-of-science-and-technology-kattankulathur-chennai-1708229",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1708229",
+          "score": 4,
+          "ai_score": 3,
+          "ai_summary": "Generic hackathon; builds code fast but little AI prestige.",
+          "action_plan": [
+            "Register for the event (takes 5 min).",
+            "Form a 2‑person team focused on an AI tool.",
+            "Deliver a prototype in the final week."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 3
+          },
+          "key": "fb46c1cfbb8f"
+        },
+        {
+          "title": "SquidHack 2026",
+          "url": "https://unstop.com/hackathons/squidhack-sage-university-sageu-indore-madhya-pradesh-1703351",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1703351",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1a6e22e12241"
+        },
+        {
+          "title": "CMR Thinkfest 3.0",
+          "url": "https://unstop.com/hackathons/cmr-thinkfest-30-cmr-college-of-engineering-and-technology-cmrcet-hyderabad-1708928",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1708928",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3b7da25c58c7"
+        },
+        {
+          "title": "Code Cup 2026",
+          "url": "https://unstop.com/hackathons/code-cup-2026-rv-college-of-engineering-rvce-bangalore-1709589",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1709589",
+          "score": 4,
+          "ai_score": 3,
+          "ai_summary": "Another broad hackathon; similar low‑impact ROI.",
+          "action_plan": [
+            "Sign up (5 min).",
+            "Pick a problem aligning with LLMs.",
+            "Build a demo before the deadline."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 3
+          },
+          "key": "a684846f2e8e"
+        },
+        {
+          "title": "Hacklabify V1.0",
+          "url": "https://unstop.com/hackathons/hacklabify-v10-hacklabify-1699949",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1699949",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4e8e26a8c1ce"
+        },
+        {
+          "title": "Frontend Wars 2026: Build the Future",
+          "url": "https://unstop.com/hackathons/frontend-wars-2026-build-the-future-frontend-arena-1709357",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1709357",
+          "score": 4,
+          "ai_score": 2,
+          "ai_summary": "Frontend‑focused; little relevance to AI engineering goals.",
+          "action_plan": [
+            "Read the competition brief (5 min).",
+            "Sketch a UI mockup using React.",
+            "Submit a minimal viable product."
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3
+          },
+          "key": "a67e91cda9e0"
+        },
+        {
+          "title": "Aerothon 2026 - HAL x IITI",
+          "url": "https://unstop.com/hackathons/aerothon-2026-hal-x-iiti-iit-indore-1709519",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1709519",
+          "score": 4,
+          "ai_score": 2,
+          "ai_summary": "Aerospace hackathon; not aligned with AI/ML focus.",
+          "action_plan": [
+            "Check eligibility (5 min).",
+            "Brainstorm a simple AI‑driven control module.",
+            "Prototype a proof‑of‑concept."
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3
+          },
+          "key": "a796a44d681c"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-skillentrix-technologies-1709767",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1709767",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not AI/ML focused",
+          "action_plan": [
+            "Review job description",
+            "Check company AI initiatives",
+            "Decide if worth applying"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 3,
+            "time": 4
+          },
+          "key": "c3f9aa0d9c33"
+        },
+        {
+          "title": "Content Creation / Writer Internship",
+          "url": "https://unstop.com/internships/content-creation-writer-internship-highkon-medias-1710223",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1710223",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not technical enough",
+          "action_plan": [
+            "Review job requirements",
+            "Check if relevant to AI/ML",
+            "Decide if worth applying"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 3,
+            "time": 4
+          },
+          "key": "66907037053d"
+        },
+        {
+          "title": "Video Editing & UI/UX Design Internship (Marketing)",
+          "url": "https://unstop.com/internships/video-editing-uiux-design-internship-marketing-nexovai-1710220",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1710220",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Some design skills applicable",
+          "action_plan": [
+            "Review UI/UX design basics",
+            "Check company tech stack",
+            "Decide if worth applying"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5
+          },
+          "key": "2afa0120b822"
+        },
+        {
+          "title": "Influencer Marketing Internship",
+          "url": "https://unstop.com/internships/influencer-marketing-internship-syncin-media-1709840",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1709840",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not relevant to AI/ML",
+          "action_plan": [
+            "Review job description",
+            "Check company AI initiatives",
+            "Decide if worth applying"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 3,
+            "time": 4
+          },
+          "key": "b2e75f596660"
+        },
+        {
+          "title": "Mainline Advertising Internship",
+          "url": "https://unstop.com/internships/mainline-advertising-internship-auraa-brand-consultants-1710219",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1710219",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not technical enough",
+          "action_plan": [
+            "Review job requirements",
+            "Check if relevant to AI/ML",
+            "Decide if worth applying"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 3,
+            "time": 4
+          },
+          "key": "d915a7a257fb"
+        },
+        {
+          "title": "SEO & Digital PR Specialist Internship",
+          "url": "https://unstop.com/internships/seo-digital-pr-specialist-internship-hrdyam-1710217",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1710217",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Some digital skills applicable",
+          "action_plan": [
+            "Review SEO basics",
+            "Check company tech stack",
+            "Decide if worth applying"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5
+          },
+          "key": "3f9fabb5dcd1"
+        },
+        {
+          "title": "Human Resource Internship",
+          "url": "https://unstop.com/internships/human-resource-intern-frequent-research-fieldwork-solutions-1709967",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1709967",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not relevant to AI/ML",
+          "action_plan": [
+            "Review job description",
+            "Check company AI initiatives",
+            "Decide if worth applying"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 3,
+            "time": 4
+          },
+          "key": "8aa6b473578c"
+        },
+        {
+          "title": "GTM & Field Marketing Internship",
+          "url": "https://unstop.com/internships/gtm-field-marketing-intern-dazzl-technologies-pvt-ltd-1709980",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1709980",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Some marketing skills applicable",
+          "action_plan": [
+            "Review GTM basics",
+            "Check company tech stack",
+            "Decide if worth applying"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5
+          },
+          "key": "54af8428381e"
+        },
+        {
+          "title": "Free Scholarship Test on UI/UX Design with AI",
+          "url": "https://unstop.com/scholarships/free-scholarship-test-on-uiux-design-with-ai-quality-thought-info-systems-1710235",
+          "source": "unstop",
+          "description": "scholarship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "scholarship"
+          ],
+          "native_id": "1710235",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not AI-focused",
+          "action_plan": [
+            "Explore AI-related scholarships",
+            "Check eligibility criteria"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 3,
+            "time": 4
+          },
+          "key": "cee8e427b2d2"
+        },
+        {
+          "title": "Tesla — Energy Engineering Intern - Software Engineer Diagnostics - Energy Engineering",
+          "url": "https://www.tesla.com/careers/search/job/275805",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cbf7c33c-7f5a-40a6-9ec5-b27895094847",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Tesla brand is strong but the role is energy‑focused, not AI.",
+          "action_plan": [
+            "Check Tesla career page for exact deadline.",
+            "Prepare a concise resume highlighting AI projects.",
+            "Submit application before deadline."
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5
+          },
+          "key": "06ddf29e43a3"
+        },
+        {
+          "title": "ByteDance — Research Scientist Intern - AI Infrastructure",
+          "url": "https://jobs.bytedance.com/en/position/7553916190126524680/detail",
+          "source": "internships",
+          "description": "internship | ByteDance | Seattle, WA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "81a22594-7cb3-4fa8-a10f-7d86bc57fcf6",
+          "score": 6,
+          "ai_score": 6,
+          "ai_summary": "AI infrastructure internship",
+          "action_plan": [
+            "Check internship requirements",
+            "Update resume"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5
+          },
+          "key": "748a9b126cd1"
+        },
+        {
+          "title": "ByteDance — Research Scientist Intern - AI Infrastructure",
+          "url": "https://jobs.bytedance.com/en/position/7553917136512076050/detail",
+          "source": "internships",
+          "description": "internship | ByteDance | San Jose, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "39b14011-bd7a-48d9-b759-cf7d5b7cd8b9",
+          "score": 6,
+          "ai_score": 6,
+          "ai_summary": "AI infrastructure internship",
+          "action_plan": [
+            "Check internship requirements",
+            "Update resume"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5
+          },
+          "key": "e0d198537ce2"
+        },
+        {
+          "title": "Saronic — Enterprise Technology Intern - AI and Automation",
+          "url": "https://jobs.ashbyhq.com/saronic/c95c2e3a-4c67-47b0-a03d-0e0317ac11a3/application",
+          "source": "internships",
+          "description": "internship | Saronic | Austin, TX | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c230446a-3c98-496a-96d9-235c2b74f10e",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "AI & automation aligns with interests; company less known but decent.",
+          "action_plan": [
+            "Locate Saronic internship posting.",
+            "Tailor cover letter to AI automation work.",
+            "Apply and follow up via LinkedIn."
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          },
+          "key": "291b6d6fee6c"
+        },
+        {
+          "title": "Zoox — Student Worker - AI Validation and Benchmarking Engineer",
+          "url": "https://jobs.lever.co/zoox/6d8b31d2-6391-44b7-bf9f-93360172fae8/apply",
+          "source": "internships",
+          "description": "internship | Zoox | San Mateo, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "55c81c03-2da3-406d-8777-b78eb48256fe",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Zoox offers AI validation experience; moderate prestige (Amazon).",
+          "action_plan": [
+            "Find Zoox student worker posting.",
+            "Build a mini AI‑validation demo.",
+            "Submit application with demo link."
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5
+          },
+          "key": "1bcae701afea"
+        },
+        {
+          "title": "X Development — PhD Residency Intern - Physical ML & Hardware-in-the-Loop - Future of Compute",
+          "url": "https://x.company/careers/8616839002?gh_jid=8616839002",
+          "source": "internships",
+          "description": "internship | X Development | Mountain View, CA | Summer 2026, Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "22924009-36ef-406f-a964-9076c39fa889",
+          "score": 3,
+          "ai_score": 8,
+          "ai_summary": "Google X PhD residency is rare, high‑impact, and hard to redo.",
+          "action_plan": [
+            "Identify exact application window (summer/fall 2026).",
+            "Draft research proposal on physical ML.",
+            "Gather recommendation letters and submit."
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 8,
+            "prestige": 9,
+            "deadline": 3,
+            "skill": 8,
+            "time": 6,
+            "regret": true
+          },
+          "key": "484017bbe37a"
+        },
+        {
+          "title": "Moment Energy — Software Engineering Co-op",
+          "url": "https://job-boards.greenhouse.io/momentenergy/jobs/4257336009",
+          "source": "internships",
+          "description": "internship | Moment Energy | Surrey, BC, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "dbf73971-bce3-47b3-929f-77929a59c11c",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Moment Energy offers software work but low AI relevance and prestige.",
+          "action_plan": [
+            "Search Moment Energy co‑op posting.",
+            "Update CV with relevant Python projects.",
+            "Apply and set reminder to follow up."
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5
+          },
+          "key": "8c41b6952c9a"
+        },
+        {
+          "title": "Bot Auto — Deep Learning Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/botauto/jobs/5289440008",
+          "source": "internships",
+          "description": "internship | Bot Auto | Houston, TX | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1294efe4-9bb6-417c-83bc-7da76b87978c",
+          "score": 6,
+          "ai_score": 6,
+          "ai_summary": "Deep learning engineer internship",
+          "action_plan": [
+            "Check internship requirements",
+            "Update resume"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          },
+          "key": "5560f3aefdc5"
+        },
+        {
+          "title": "Fidelity Investments — Software Engineer",
+          "url": "https://fmr.wd1.myworkdayjobs.com/fidelitycareers/job/Westlake-TX/Leap-Software-Engineer_2132114",
+          "source": "internships",
+          "description": "internship | Fidelity Investments | Westlake, TX, Durham, NC | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "17699a31-38e1-4e82-b409-fe317a841c6f",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Fidelity role is solid software engineering; AI focus minimal.",
+          "action_plan": [
+            "Locate Fidelity internship page.",
+            "Highlight any ML coursework.",
+            "Submit application before closing date."
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5
+          },
+          "key": "dd99dc80c971"
+        },
+        {
+          "title": "Kpler — Quantitative Data Scientist",
+          "url": "https://jobs.lever.co/kpler/2c127e67-55ee-48eb-823e-d49f5fb207ec/apply",
+          "source": "internships",
+          "description": "internship | Kpler | NYC | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "38fae718-2ebc-4e97-af8f-e135cff957b4",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Quant data science aligns with ML skills but lacks AI‑centric prestige.",
+          "action_plan": [
+            "Find Kpler job posting.",
+            "Prepare a portfolio of quantitative projects.",
+            "Apply and network with current Kpler employees."
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 5,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          },
+          "key": "518ff72356a0"
+        },
+        {
+          "title": "Traackr — Software Engineer Intern - Internal Tooling",
+          "url": "https://jobs.lever.co/traackr/9d884d26-018c-45b2-8cfb-f17d29d4e688/apply",
+          "source": "internships",
+          "description": "internship | Traackr | NYC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8c3c4866-6c14-4ec0-bc29-3ce391b4bea3",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Internship experience",
+          "action_plan": [
+            "Research company and role, 1h",
+            "Update resume, 2h",
+            "Apply, 1h"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 4,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 4
+          },
+          "key": "2d16b86cf39f"
+        },
+        {
+          "title": "JP Morgan Chase — Machine Learning Center of Excellence Intern - NLP",
+          "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210765492",
+          "source": "internships",
+          "description": "internship | JP Morgan Chase | London, UK | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5971e10c-96c8-4605-9fe5-6b3de66eb784",
+          "score": 6,
+          "ai_score": 7,
+          "ai_summary": "NLP internship at JP Morgan Chase",
+          "action_plan": [
+            "Check internship requirements",
+            "Update resume"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 8,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 7,
+            "time": 6
+          },
+          "key": "38fc8606b799"
+        }
+      ]
     }
   ]
 }

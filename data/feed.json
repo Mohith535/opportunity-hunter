@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02",
+  "updated_at": "2026-07-03",
   "items": [
     {
       "key": "15e34ffda925",
@@ -423,30 +423,37 @@
       ]
     },
     {
-      "key": "8ad1affa808b",
-      "title": "Open Source Hackathon",
-      "url": "https://unstop.com/hackathons/open-source-hackathon-iit-bombay-1702266",
-      "source": "unstop",
-      "score": 7,
+      "key": "705ef025f740",
+      "title": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
+      "url": "https://arxiv.org/abs/2607.02509v1",
+      "source": "arxiv",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "research"
       ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "Relevant LLM research for long-context reasoning",
+      "action_plan": [
+        "Read the paper",
+        "Analyze the methodology"
+      ]
     },
     {
-      "key": "0ba1a7f2e2bf",
-      "title": "AI Product Hackathon",
-      "url": "https://unstop.com/hackathons/ai-product-hackathon-product-space-1702203",
-      "source": "unstop",
-      "score": 7,
+      "key": "484017bbe37a",
+      "title": "X Development — PhD Residency Intern - Physical ML & Hardware-in-the-Loop - Future of Compute",
+      "url": "https://x.company/careers/8616839002?gh_jid=8616839002",
+      "source": "internships",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
       ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "Google X PhD residency is rare, high‑impact, and hard to redo.",
+      "action_plan": [
+        "Identify exact application window (summer/fall 2026).",
+        "Draft research proposal on physical ML.",
+        "Gather recommendation letters and submit."
+      ]
     },
     {
       "key": "1149deca2666",
@@ -850,6 +857,107 @@
       ]
     },
     {
+      "key": "c2a89f5e1a70",
+      "title": "LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning",
+      "url": "https://arxiv.org/abs/2607.02513v1",
+      "source": "arxiv",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "Cutting‑edge LLM unlearning problem; high‑impact research potential.",
+      "action_plan": [
+        "Read the LACUNA paper (2 h).",
+        "Define a small experiment on a public LLM.",
+        "Write a short report for a conference submission."
+      ]
+    },
+    {
+      "key": "b4e7a37f870c",
+      "title": "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
+      "url": "https://arxiv.org/abs/2607.02507v1",
+      "source": "arxiv",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "Relevant LLM research",
+      "action_plan": [
+        "Read the paper",
+        "Analyze the methodology"
+      ]
+    },
+    {
+      "key": "4f181e710536",
+      "title": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
+      "url": "https://arxiv.org/abs/2607.02504v1",
+      "source": "arxiv",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "LLM‑based speaker recognition merges AI agents and multimodal work.",
+      "action_plan": [
+        "Gather the DramaSR‑532K dataset (1 h).",
+        "Implement a baseline LLM‑speaker model.",
+        "Evaluate and draft a pre‑print."
+      ]
+    },
+    {
+      "key": "ccc1bb442ebc",
+      "title": "DemoPSD: Disagreement-Modulated Policy Self-Distillation",
+      "url": "https://arxiv.org/abs/2607.02502v1",
+      "source": "arxiv",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "Policy self‑distillation research aligns with generative AI engineering.",
+      "action_plan": [
+        "Read the DemoPSD paper (1 h).",
+        "Re‑implement the core algorithm on a small LLM.",
+        "Run ablation experiments and document results."
+      ]
+    },
+    {
+      "key": "91d8f2cd64d5",
+      "title": "tigicion/dao-code — ★1,333",
+      "url": "https://github.com/tigicion/dao-code",
+      "source": "github",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "github",
+        "learning"
+      ],
+      "ai_summary": "AI agent and LLM project",
+      "action_plan": [
+        "Explore repository, 2h",
+        "Contribute to code, 10h",
+        "Write blog post, 5h"
+      ]
+    },
+    {
+      "key": "38fc8606b799",
+      "title": "JP Morgan Chase — Machine Learning Center of Excellence Intern - NLP",
+      "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210765492",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "NLP internship at JP Morgan Chase",
+      "action_plan": [
+        "Check internship requirements",
+        "Update resume"
+      ]
+    },
+    {
       "key": "c33a60630cca",
       "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
       "url": "https://arxiv.org/abs/2606.28277v1",
@@ -1174,17 +1282,103 @@
       ]
     },
     {
-      "key": "89e6c811e3cb",
-      "title": "Hacknite: 12 Hour Hackathon",
-      "url": "https://unstop.com/hackathons/hacknite-12-hour-hackathon-hackers-cult-1701779",
-      "source": "unstop",
-      "score": 5,
+      "key": "f00f1cd4c424",
+      "title": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials",
+      "url": "https://arxiv.org/abs/2607.02499v1",
+      "source": "arxiv",
+      "score": 6,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "research"
       ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "Machine learning research for interatomic potentials",
+      "action_plan": [
+        "Read the paper",
+        "Analyze the methodology"
+      ]
+    },
+    {
+      "key": "0c1eede7ed8b",
+      "title": "Looking for feedback on a small test SLM I built completely from scratch [P]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1um013f/looking_for_feedback_on_a_small_test_slm_i_built/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "SLM project and feedback",
+      "action_plan": [
+        "Read thread, 1h",
+        "Research SLM, 2h",
+        "Provide feedback, 1h"
+      ]
+    },
+    {
+      "key": "748a9b126cd1",
+      "title": "ByteDance — Research Scientist Intern - AI Infrastructure",
+      "url": "https://jobs.bytedance.com/en/position/7553916190126524680/detail",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI infrastructure internship",
+      "action_plan": [
+        "Check internship requirements",
+        "Update resume"
+      ]
+    },
+    {
+      "key": "e0d198537ce2",
+      "title": "ByteDance — Research Scientist Intern - AI Infrastructure",
+      "url": "https://jobs.bytedance.com/en/position/7553917136512076050/detail",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI infrastructure internship",
+      "action_plan": [
+        "Check internship requirements",
+        "Update resume"
+      ]
+    },
+    {
+      "key": "291b6d6fee6c",
+      "title": "Saronic — Enterprise Technology Intern - AI and Automation",
+      "url": "https://jobs.ashbyhq.com/saronic/c95c2e3a-4c67-47b0-a03d-0e0317ac11a3/application",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI & automation aligns with interests; company less known but decent.",
+      "action_plan": [
+        "Locate Saronic internship posting.",
+        "Tailor cover letter to AI automation work.",
+        "Apply and follow up via LinkedIn."
+      ]
+    },
+    {
+      "key": "5560f3aefdc5",
+      "title": "Bot Auto — Deep Learning Engineer Intern",
+      "url": "https://job-boards.greenhouse.io/botauto/jobs/5289440008",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Deep learning engineer internship",
+      "action_plan": [
+        "Check internship requirements",
+        "Update resume"
+      ]
     },
     {
       "key": "01b42f732050",
@@ -1500,188 +1694,6 @@
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "7f16d9dfb4e9",
-      "title": "Simple Technology Solutions — AI & Data Engineering Apprentice",
-      "url": "https://job-boards.greenhouse.io/simpletechnologysolutions/jobs/6099047004",
-      "source": "internships",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "739b4075b752",
-      "title": "Palantir — Software Engineer Intern - Defense Tech",
-      "url": "https://jobs.lever.co/palantir/f17e98d0-046a-4e6e-9d65-ed0b12dd0ff7/apply",
-      "source": "internships",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Palantir is reputable but not AI‑focused; missing it isn’t career‑critical.",
-      "action_plan": [
-        "Update resume highlighting AI projects (1 day)",
-        "Submit application via Palantir portal (1 hour)",
-        "Prepare for technical interview (2 weeks)"
-      ]
-    },
-    {
-      "key": "13ab99168ed3",
-      "title": "Palantir — Software Engineer Intern",
-      "url": "https://jobs.lever.co/palantir/373eb939-6f57-4836-8479-be79a5e07249/apply",
-      "source": "internships",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Palantir internship offers solid experience but low AI relevance.",
-      "action_plan": [
-        "Tailor resume for software engineering role (1 day)",
-        "Apply through Palantir career site (30 min)",
-        "Study system design basics (1 week)"
-      ]
-    },
-    {
-      "key": "d5f7fd2fe432",
-      "title": "Palantir — Software Engineer Intern",
-      "url": "https://jobs.lever.co/palantir/e27af7ab-41fc-40c9-b31d-02c6cb1c505c/apply",
-      "source": "internships",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Same as other Palantir offers; decent skill gain but not AI‑centric.",
-      "action_plan": [
-        "Refresh LinkedIn with AI projects (2 hrs)",
-        "Submit application (15 min)",
-        "Mock interview practice (1 week)"
-      ]
-    },
-    {
-      "key": "1e68b3984195",
-      "title": "Palantir — Software Engineer Intern",
-      "url": "https://jobs.lever.co/palantir/bdcfb29f-4f27-42de-933f-7f83a359b9f0/apply",
-      "source": "internships",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Palantir’s brand helps resume, yet AI focus remains limited.",
-      "action_plan": [
-        "Add Palantir‑style project to portfolio (2 days)",
-        "Apply online (10 min)",
-        "Review past interview questions (3 days)"
-      ]
-    },
-    {
-      "key": "8e09e4c5df03",
-      "title": "Palantir — Software Engineer Intern",
-      "url": "https://jobs.lever.co/palantir/7d69cf8a-06fd-4f05-bd84-27149db29c4d/apply",
-      "source": "internships",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "NYC location adds prestige but still not aligned with AI‑agent goals.",
-      "action_plan": [
-        "Customize cover letter for Palantir (1 hr)",
-        "Submit application (5 min)",
-        "Prepare coding challenges (1 week)"
-      ]
-    },
-    {
-      "key": "9d7c8337d122",
-      "title": "Generative Skill Composition for LLM Agents",
-      "url": "https://arxiv.org/abs/2606.32025v1",
-      "source": "arxiv",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Highly relevant to LLM agents but no concrete deliverable or deadline.",
-      "action_plan": [
-        "Read abstract (15 min)",
-        "Identify open research questions (30 min)",
-        "Draft a short experiment outline (1 hr)"
-      ]
-    },
-    {
-      "key": "5fbea3d5fb98",
-      "title": "Founder's office",
-      "url": "https://unstop.com/internships/founders-office-sales-sunday-1709189",
-      "source": "unstop",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Generic startup internship; modest resume boost, limited elite signal.",
-      "action_plan": [
-        "Find internship page link (5 min)",
-        "Prepare one‑page pitch highlighting TaskFlow (2 hrs)",
-        "Submit application before next rolling deadline"
-      ]
-    },
-    {
-      "key": "b11abb7cdee5",
-      "title": "AI & Machine Learning Competition",
-      "url": "https://unstop.com/competitions/bharat-academix-ai-machine-learning-internship-hackathon-2026-bharat-academix-1709148",
-      "source": "unstop",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "competition"
-      ],
-      "ai_summary": "Broad AI competition; decent skill practice but little elite credential.",
-      "action_plan": [
-        "Read competition rules (10 min)",
-        "Sketch solution approach (1 hr)",
-        "Implement prototype before submission deadline"
-      ]
-    },
-    {
-      "key": "5fc5827a988f",
-      "title": "The Home Depot — AI Machine Learning Developer Intern",
-      "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepotCanada/job/CANADA-STORE-SUPPORT-CENTER---7000/Intern--AI-Machine-Learning-Developer_Req185607",
-      "source": "internships",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI ML developer internship",
-      "action_plan": [
-        "Research Home Depot's AI projects (2 hours)",
-        "Update resume and apply (3 hours)"
-      ]
-    },
-    {
-      "key": "2554bccee9d2",
-      "title": "Rise8 — Software Engineer Intern - Software Engineer",
-      "url": "https://job-boards.greenhouse.io/rise8/jobs/4359623007",
-      "source": "internships",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Remote US software internship; decent resume but not AI‑focused elite.",
-      "action_plan": [
-        "Locate application portal (5 min)",
-        "Tailor resume to highlight Nova and TaskFlow (1 hr)",
-        "Submit and set reminder for interview prep (2 hrs)"
-      ]
     }
   ]
 }
