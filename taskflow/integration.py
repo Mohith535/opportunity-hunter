@@ -148,6 +148,10 @@ def is_available() -> bool:
 def dump(item, score: int) -> bool:
     """Create a well-formed TaskFlow task for this item. Returns True on success
     (or if it was already dumped). Never raises (§12)."""
+    from taskflow import prefs
+    if not prefs.can_write():
+        log("[taskflow] ophunter_write permission is off — not creating the task.")
+        return False
     if already_dumped(item):
         log(f"[taskflow] already dumped, skipping duplicate: {item.title[:50]}")
         return True

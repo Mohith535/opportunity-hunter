@@ -298,6 +298,13 @@ def run(source_names=None, test=False):
         log(f"[profile] scoring against Mohith — layers: {', '.join(prof.sources)}")
         llm_scorer.score_items(new_items, prof)
 
+    # 4c. Offload-aware down-weighting — respect TaskFlow's ophunter_read permission
+    # and de-prioritise categories the user repeatedly drops/offloads. No-op when the
+    # permission is off, tasks.json is unreadable, or no repeated pattern exists.
+    if new_items:
+        from taskflow import prefs
+        prefs.apply_downweight(new_items)
+
     # 5. Policy -> side effects
     taskflow_ready = (not test) and integration.is_available()
     dumped_keys, dumps, high_priority = set(), 0, 0
