@@ -189,10 +189,13 @@ async function handleReport(env, chatId) {
 }
 
 // ─── opportunity feed (from the public repo) ─────────────────────────
-async function getFeed(env) {
+async function getFeed(env, bust) {
   try {
-    const r = await fetch(env.OPHUNTER_FEED_URL, {
-      headers: { "User-Agent": "ophunter-bot" }, cf: { cacheTtl: 300 },
+    // bust=true adds a cache-buster + skips the edge cache, to dodge a stale CDN copy
+    // right after a fresh digest (feed.json is pushed seconds after the digest is sent).
+    const url = bust ? `${env.OPHUNTER_FEED_URL}?t=${Date.now()}` : env.OPHUNTER_FEED_URL;
+    const r = await fetch(url, {
+      headers: { "User-Agent": "ophunter-bot" }, cf: { cacheTtl: bust ? 0 : 60 },
     });
     if (!r.ok) return [];
     const d = await r.json();
@@ -200,8 +203,13 @@ async function getFeed(env) {
   } catch (e) { return []; }
 }
 async function findItem(env, key) {
-  const feed = await getFeed(env);
-  return feed.find((x) => x.key === key);
+  let feed = await getFeed(env);
+  let item = feed.find((x) => x.key === key);
+  if (!item) {                          // stale edge copy? force a fresh fetch and retry once
+    feed = await getFeed(env, true);
+    item = feed.find((x) => x.key === key);
+  }
+  return item;
 }
 
 // ─── KV state: tracker + taste ───────────────────────────────────────
