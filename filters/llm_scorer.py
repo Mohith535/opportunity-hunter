@@ -46,6 +46,16 @@ even if on-topic.
 Here is who {name} actually is — score against THIS person, not a generic student:
 {profile}
 
+STEP 0 — ELIGIBILITY GATE (do this FIRST, before scoring). Check the text against who he
+actually is (student status, degree, country, experience level). Mark:
+  "yes"     — nothing in the text excludes him
+  "no"      — the text clearly excludes him (requires a PhD / 5+ years professional experience /
+              citizenship or residence in a country that is not his / women-only or another
+              demographic he doesn't match / high-schoolers only / a degree field that isn't his)
+  "unclear" — eligibility criteria exist but the text doesn't settle them (verify before applying)
+An opportunity he CANNOT apply to has near-zero regret no matter how prestigious — if "no",
+score career/deadline 0-2 and set regret false.
+
 Score each opportunity on six dimensions, each 0-10:
   career   — does it move him toward his long-term goal / purpose?
   interest — match to his real interests (AI agents, LLMs, GenAI, building), not just any CS
@@ -60,6 +70,8 @@ high-leverage, hard-to-reverse opportunities he'd truly regret missing.
 Return ONLY a JSON object of the form {{"results": [ ... ]}} with one element per
 input opportunity, no prose. Each element:
 {{"i": <input index int>,
+  "eligible": "yes" | "no" | "unclear",
+  "elig_note": "<<=60 chars, the criterion that decides it, empty if eligible>",
   "dim": {{"career":int,"interest":int,"prestige":int,"deadline":int,"skill":int,"time":int}},
   "reason": "<<=90 chars, why it matters for {name} SPECIFICALLY>",
   "plan": ["<step with rough time, tiny first step first>", "...", "..."],
@@ -83,7 +95,9 @@ def _item_payload(idx: int, it) -> dict:
         "source": it.source,
         "deadline": it.deadline.isoformat() if it.deadline else None,
         "tags": it.tags,
-        "description": (it.description or "")[:500],
+        # 800 not 500: eligibility criteria ("must be enrolled…", "US persons only") tend to
+        # sit past the pitch paragraph — the gate needs to see them.
+        "description": (it.description or "")[:800],
     }
 
 
@@ -139,6 +153,24 @@ def _apply(it, result: dict) -> bool:
         it.action_plan = [str(s).strip() for s in plan if str(s).strip()][:5]
     if result.get("regret"):
         it.dimensions["regret"] = True
+
+    # ELIGIBILITY GATE — enforce here, never trust the model to cap its own score.
+    # "no" → cap at 2 (policy LOW: log-only, no notification, no TaskFlow dump).
+    # "unclear" → keep the score but flag it in the summary so he verifies before applying.
+    # Stored in dimensions (a persisted dict) so it survives asdict() into history.json.
+    elig = str(result.get("eligible") or "").strip().lower()
+    note = (result.get("elig_note") or "").strip()[:60]
+    if elig in ("yes", "no", "unclear"):
+        it.dimensions["eligible"] = elig
+        if note:
+            it.dimensions["elig_note"] = note
+        if elig == "no":
+            it.ai_score = min(it.ai_score, 2)
+            it.ai_summary = ("⛔ Not eligible" + (f" — {note}" if note else "")
+                             + (f" · {it.ai_summary}" if it.ai_summary else ""))[:140]
+        elif elig == "unclear":
+            it.ai_summary = (it.ai_summary + " · ⚠ verify eligibility"
+                             + (f": {note}" if note else ""))[:140]
     return True
 
 
