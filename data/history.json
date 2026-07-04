@@ -12354,6 +12354,779 @@
           "key": "38fc8606b799"
         }
       ]
+    },
+    {
+      "date": "2026-07-04",
+      "items": [
+        {
+          "title": "Giant trees have no trouble pumping water to top branches: new research",
+          "url": "https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/giant-trees-have-no-trouble-pumping-water-to-top-branches/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48780870",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "Not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2
+          },
+          "key": "0193c0c5f95c"
+        },
+        {
+          "title": "Contrastive Decoding Diffing (CDD): recovering verbatim finetuning data from logits alone, no weight access needed[R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1umn2dk",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Machine learning research",
+          "action_plan": [
+            "Read paper (2h)",
+            "Implement research (10h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 1,
+            "skill": 4,
+            "time": 2
+          },
+          "key": "2fa88b4e1e29"
+        },
+        {
+          "title": "H64LM: A 249M-parameter Mixture-of-Experts Transformer built from scratch in PyTorch [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1umqfd2/h64lm_a_249mparameter_mixtureofexperts/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1umqfd2",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Mixture-of-Experts Transformer",
+          "action_plan": [
+            "Read paper (2h)",
+            "Implement research (10h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 9,
+            "prestige": 4,
+            "deadline": 1,
+            "skill": 5,
+            "time": 2
+          },
+          "key": "54e26310071d"
+        },
+        {
+          "title": "Tom Yeh's AI by hand? is it worth it? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1umqf58/tom_yehs_ai_by_hand_is_it_worth_it_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1umqf58",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "AI by hand discussion",
+          "action_plan": [
+            "Read discussion (1h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 6,
+            "prestige": 3,
+            "deadline": 1,
+            "skill": 3,
+            "time": 1
+          },
+          "key": "63ba3e434c83"
+        },
+        {
+          "title": "Small Language Model SLM [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1umissr/small_language_model_slm_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1umissr",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Small Language Model",
+          "action_plan": [
+            "Read paper (2h)",
+            "Implement research (10h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 1,
+            "skill": 5,
+            "time": 2
+          },
+          "key": "46ac51a53ae8"
+        },
+        {
+          "title": "What does \"Safe AI\" look like? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1um9bs7/what_does_safe_ai_look_like_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1um9bs7",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Reddit post, no concrete deliverable; low impact on career or resume.",
+          "action_plan": [
+            "Visit the Reddit thread to gauge discussion depth (5 min).",
+            "Decide if contributing adds any value (5 min).",
+            "If not, move on to higher‑impact tasks."
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2
+          },
+          "key": "0475c0042bb5"
+        },
+        {
+          "title": "Build with Gemma",
+          "url": "https://build-with-gemma-bengaluru-ai-sprint.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | Bengaluru, India | themes: FinTech, AI/ML",
+          "deadline": "2026-07-18",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "9ca9be8320484be0840ad2f4771bc4f9",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "AI/ML hackathon",
+          "action_plan": [
+            "Research hackathon rules (2 hours)",
+            "Form a team (1 week)",
+            "Prepare for the hackathon (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 8,
+            "skill": 8,
+            "time": 6,
+            "regret": true
+          },
+          "key": "0feb12ad465d"
+        },
+        {
+          "title": "Codeforces Round (Div. 2) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2246",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-07-12T14:35:00",
+          "deadline": "2026-07-12",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68633798",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Competitive programming",
+          "action_plan": [
+            "Research contest rules (2 hours)",
+            "Prepare for the contest (1 week)",
+            "Participate in the contest (1 day)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 9,
+            "skill": 7,
+            "time": 5,
+            "regret": true
+          },
+          "key": "aa8695231051"
+        },
+        {
+          "title": "Biweekly Contest 187 (leetcode.com)",
+          "url": "https://leetcode.com/contest/biweekly-contest-187",
+          "source": "clist",
+          "description": "competitive programming contest on leetcode.com; starts 2026-07-18T14:30:00",
+          "deadline": "2026-07-18",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68572090",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Competitive programming",
+          "action_plan": [
+            "Research contest rules (2 hours)",
+            "Prepare for the contest (1 week)",
+            "Participate in the contest (1 day)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 9,
+            "skill": 7,
+            "time": 5,
+            "regret": true
+          },
+          "key": "aa1cfc4473dd"
+        },
+        {
+          "title": "Codeforces Round (Div. 2) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2247",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-07-18T14:35:00",
+          "deadline": "2026-07-18",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68635073",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Competitive programming",
+          "action_plan": [
+            "Register on codeforces.com (1h)",
+            "Practice problems (5h)",
+            "Participate in contest (2h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 8,
+            "skill": 7,
+            "time": 3
+          },
+          "key": "2cc837dc5c01"
+        },
+        {
+          "title": "Agents of Change – National Agentic AI Bootcamp & Buildathon 2026",
+          "url": "https://unstop.com/hackathons/agents-of-change-national-agentic-ai-bootcamp-buildathon-2026-agents-of-change-2026-oriental-group-of-institu-1710516",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1710516",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "Bootcamp aligns with AI agents interest; builds portfolio but limited prestige.",
+          "action_plan": [
+            "Open the Unstop page, note registration deadline (10 min).",
+            "Prepare a short project idea on AI agents (30 min).",
+            "Submit application and set calendar reminder for event dates."
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 5,
+            "skill": 8,
+            "time": 5
+          },
+          "key": "597132fb665f"
+        },
+        {
+          "title": "Tech-A-Thon 5.0",
+          "url": "https://unstop.com/hackathons/tech-a-thon-50-bit-mesra-ranchi-1699177",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1699177",
+          "score": 4,
+          "ai_score": 5,
+          "ai_summary": "Hackathon experience",
+          "action_plan": [
+            "Research hackathon rules (2 hours)",
+            "Form a team (1 week)",
+            "Prepare for the hackathon (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          },
+          "key": "dea0a264b1b3"
+        },
+        {
+          "title": "AlgoSprint 2026 – Online Coding Challenge",
+          "url": "https://unstop.com/hackathons/algosprint-2026-online-coding-challenge-gyan-ganga-college-of-technology-ggct-1710621",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1710621",
+          "score": 4,
+          "ai_score": 5,
+          "ai_summary": "Coding challenge",
+          "action_plan": [
+            "Research challenge rules (2 hours)",
+            "Prepare for the challenge (1 week)",
+            "Participate in the challenge (1 day)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          },
+          "key": "9d3752e57433"
+        },
+        {
+          "title": "Hack Synthesis 3.0 - 2026",
+          "url": "https://unstop.com/hackathons/hack-synthesis-30-2026-university-of-engineering-and-management-kolkata-1710631",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1710631",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Generic hackathon; some skill gain but low resume signal.",
+          "action_plan": [
+            "Check Hack Synthesis site for theme and dates (10 min).",
+            "Brainstorm a quick prototype idea (20 min).",
+            "Register if schedule permits; otherwise skip."
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 7,
+            "prestige": 4,
+            "deadline": 4,
+            "skill": 6,
+            "time": 5
+          },
+          "key": "89d506b5a066"
+        },
+        {
+          "title": "International Innovation Challenge 3.0",
+          "url": "https://unstop.com/hackathons/international-innovation-challenge-30-manipal-university-mu-jaipur-1702624",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1702624",
+          "score": 2,
+          "ai_score": 7,
+          "ai_summary": "International‑named challenge offers better signal; still a hackathon.",
+          "action_plan": [
+            "Visit the International Innovation Challenge page, note eligibility (10 min).",
+            "Draft a project outline that showcases AI agent work (30 min).",
+            "Apply before deadline and block out preparation time."
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 7,
+            "deadline": 5,
+            "skill": 7,
+            "time": 5
+          },
+          "key": "6472691b0bff"
+        },
+        {
+          "title": "Devengers Promptwars 2026",
+          "url": "https://unstop.com/hackathons/devengers-promptwars-2026-devengers-promptwars-2026-devengers-1709488",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1709488",
+          "score": 4,
+          "ai_score": 5,
+          "ai_summary": "Hackathon experience",
+          "action_plan": [
+            "Research hackathon rules (2 hours)",
+            "Form a team (1 week)",
+            "Prepare for the hackathon (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          },
+          "key": "647fadc7ceba"
+        },
+        {
+          "title": "Vibeathon 6.0 (Vibecoding Hackathon)",
+          "url": "https://unstop.com/hackathons/vibeathon-60-vibecoding-hackathon-nxtgensec-1710440",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1710440",
+          "score": 7,
+          "ai_score": 5,
+          "ai_summary": "Hackathon experience",
+          "action_plan": [
+            "Research hackathon rules (2 hours)",
+            "Form a team (1 week)",
+            "Prepare for the hackathon (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          },
+          "key": "5500cfef19e4"
+        },
+        {
+          "title": "Founding AI Engineer Internship",
+          "url": "https://unstop.com/internships/founding-ai-engineer-internship-praman-network-1710653",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1710653",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI Engineer Intern",
+          "action_plan": [
+            "Research company (1hr)",
+            "Update resume (2hr)",
+            "Apply (1hr)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true
+          },
+          "key": "20831302a433"
+        },
+        {
+          "title": "Communications & Digital Media Internship",
+          "url": "https://unstop.com/internships/communications-digital-media-internship-children-of-india-foundation-1710630",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1710630",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Not AI-related",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4
+          },
+          "key": "4b9e2bb2a1b9"
+        },
+        {
+          "title": "Campus Ambassador Internship",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-jobscoutly-1710641",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1710641",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Ambassador role",
+          "action_plan": [],
+          "dimensions": {
+            "career": 4,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4
+          },
+          "key": "9445d6fb80c3"
+        },
+        {
+          "title": "E-Commerce Executive Internship",
+          "url": "https://unstop.com/internships/e-commerce-executive-internship-michri-home-and-living-1710640",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1710640",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Not AI-related",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4
+          },
+          "key": "13bb61aea296"
+        },
+        {
+          "title": "Mobile App Engineer Internship",
+          "url": "https://unstop.com/internships/mobile-app-engineer-internship-vyntage-1710606",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1710606",
+          "score": 8,
+          "ai_score": 5,
+          "ai_summary": "Mobile App Engineer",
+          "action_plan": [
+            "Research company (1hr)",
+            "Update resume (2hr)",
+            "Apply (1hr)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          },
+          "key": "1b2fab8ecf17"
+        },
+        {
+          "title": "Web Frontend Engineer Internship",
+          "url": "https://unstop.com/internships/web-frontend-engineer-internship-vyntage-1710607",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1710607",
+          "score": 8,
+          "ai_score": 5,
+          "ai_summary": "Web Frontend Engineer",
+          "action_plan": [
+            "Research company (1hr)",
+            "Update resume (2hr)",
+            "Apply (1hr)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5
+          },
+          "key": "08ba50f6e841"
+        },
+        {
+          "title": "Product Internship",
+          "url": "https://unstop.com/internships/product-internship-koshiqa-1710589",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1710589",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Product Intern",
+          "action_plan": [],
+          "dimensions": {
+            "career": 4,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4
+          },
+          "key": "ee997f539b80"
+        },
+        {
+          "title": "Campus Ambassador Internship",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-preppright-edtech-pvt-ltd-1710577",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1710577",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Ambassador role",
+          "action_plan": [],
+          "dimensions": {
+            "career": 4,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4
+          },
+          "key": "30f1d7a62e3f"
+        },
+        {
+          "title": "Eulerity — Website Development & Content Marketing Intern - AI & Automation",
+          "url": "https://job-boards.greenhouse.io/eulerity/jobs/4694300006",
+          "source": "internships",
+          "description": "internship | Eulerity | NYC | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "da2a97f8-9827-4fe9-a716-a33f244952bc",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "AI & Automation internship",
+          "action_plan": [
+            "Update resume (2h)",
+            "Apply for internship (1h)",
+            "Prepare for interview (5h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true
+          },
+          "key": "1c9fb87ffe8e"
+        },
+        {
+          "title": "Travelers — Data Science Leadership Development Program Intern - Dsldp",
+          "url": "https://travelers.wd5.myworkdayjobs.com/External/job/CT---Hartford/Data-Science-Leadership-Development-Program--DSLDP--Intern_R-51337",
+          "source": "internships",
+          "description": "internship | Travelers | Hartford, CT, St Paul, MN | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2a5c7288-d7fe-41bb-98ec-b663fb23c85f",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Data Science internship",
+          "action_plan": [
+            "Update resume (2h)",
+            "Apply for internship (1h)",
+            "Prepare for interview (5h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4
+          },
+          "key": "5408bd2b3966"
+        },
+        {
+          "title": "Travelers — Engineering Development Program - Engineering Development Program - Software Engineering",
+          "url": "https://travelers.wd5.myworkdayjobs.com/External/job/CT---Hartford/Engineering-Development-Program--EDP----Software-Engineering_R-51183-1",
+          "source": "internships",
+          "description": "internship | Travelers | Sparks, MD, Hartford, CT, Atlanta, GA, St Paul, MN | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "940c277c-55c2-4e03-8046-d765e0c14dd7",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Software Engineering internship",
+          "action_plan": [
+            "Update resume (2h)",
+            "Apply for internship (1h)",
+            "Prepare for interview (5h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 4
+          },
+          "key": "beec149120bc"
+        }
+      ]
     }
   ]
 }

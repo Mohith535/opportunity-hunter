@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03",
+  "updated_at": "2026-07-04",
   "items": [
     {
       "key": "15e34ffda925",
@@ -958,6 +958,74 @@
       ]
     },
     {
+      "key": "0feb12ad465d",
+      "title": "Build with Gemma",
+      "url": "https://build-with-gemma-bengaluru-ai-sprint.devfolio.co",
+      "source": "devfolio",
+      "score": 7,
+      "deadline": "2026-07-18",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "AI/ML hackathon",
+      "action_plan": [
+        "Research hackathon rules (2 hours)",
+        "Form a team (1 week)",
+        "Prepare for the hackathon (2 weeks)"
+      ]
+    },
+    {
+      "key": "6472691b0bff",
+      "title": "International Innovation Challenge 3.0",
+      "url": "https://unstop.com/hackathons/international-innovation-challenge-30-manipal-university-mu-jaipur-1702624",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "International‑named challenge offers better signal; still a hackathon.",
+      "action_plan": [
+        "Visit the International Innovation Challenge page, note eligibility (10 min).",
+        "Draft a project outline that showcases AI agent work (30 min).",
+        "Apply before deadline and block out preparation time."
+      ]
+    },
+    {
+      "key": "20831302a433",
+      "title": "Founding AI Engineer Internship",
+      "url": "https://unstop.com/internships/founding-ai-engineer-internship-praman-network-1710653",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI Engineer Intern",
+      "action_plan": [
+        "Research company (1hr)",
+        "Update resume (2hr)",
+        "Apply (1hr)"
+      ]
+    },
+    {
+      "key": "1c9fb87ffe8e",
+      "title": "Eulerity — Website Development & Content Marketing Intern - AI & Automation",
+      "url": "https://job-boards.greenhouse.io/eulerity/jobs/4694300006",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI & Automation internship",
+      "action_plan": [
+        "Update resume (2h)",
+        "Apply for internship (1h)",
+        "Prepare for interview (5h)"
+      ]
+    },
+    {
       "key": "c33a60630cca",
       "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
       "url": "https://arxiv.org/abs/2606.28277v1",
@@ -1381,17 +1449,57 @@
       ]
     },
     {
-      "key": "01b42f732050",
-      "title": "Chevron signs 20-year power agreement with Microsoft for West Texas data center",
-      "url": "https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center",
-      "source": "hackernews",
-      "score": 5,
+      "key": "aa8695231051",
+      "title": "Codeforces Round (Div. 2) (codeforces.com)",
+      "url": "https://codeforces.com/contests/2246",
+      "source": "clist",
+      "score": 6,
+      "deadline": "2026-07-12",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "Competitive programming",
+      "action_plan": [
+        "Research contest rules (2 hours)",
+        "Prepare for the contest (1 week)",
+        "Participate in the contest (1 day)"
+      ]
+    },
+    {
+      "key": "aa1cfc4473dd",
+      "title": "Biweekly Contest 187 (leetcode.com)",
+      "url": "https://leetcode.com/contest/biweekly-contest-187",
+      "source": "clist",
+      "score": 6,
+      "deadline": "2026-07-18",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "Competitive programming",
+      "action_plan": [
+        "Research contest rules (2 hours)",
+        "Prepare for the contest (1 week)",
+        "Participate in the contest (1 day)"
+      ]
+    },
+    {
+      "key": "597132fb665f",
+      "title": "Agents of Change – National Agentic AI Bootcamp & Buildathon 2026",
+      "url": "https://unstop.com/hackathons/agents-of-change-national-agentic-ai-bootcamp-buildathon-2026-agents-of-change-2026-oriental-group-of-institu-1710516",
+      "source": "unstop",
+      "score": 6,
       "deadline": null,
       "tags": [
-        "news"
+        "hackathon"
       ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "Bootcamp aligns with AI agents interest; builds portfolio but limited prestige.",
+      "action_plan": [
+        "Open the Unstop page, note registration deadline (10 min).",
+        "Prepare a short project idea on AI agents (30 min).",
+        "Submit application and set calendar reminder for event dates."
+      ]
     },
     {
       "key": "01bb59035fd8",
@@ -1597,100 +1705,6 @@
       "tags": [
         "news",
         "r/MachineLearning"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4ad6be149814",
-      "title": "Ai Filmmaking Hackathon - Bangalore Edition",
-      "url": "https://unstop.com/hackathons/ai-filmmaking-hackathon-bangalore-edition-ai-film-hackathon-bangalore-edition-11-fps-1703147",
-      "source": "unstop",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1cb7a653f944",
-      "title": "Bizzathon-Hackathon",
-      "url": "https://unstop.com/hackathons/bizzathon-hackathon-e-summit-2026-iit-ism-dhanbad-indian-institute-of-technology-indian-school-of-mines-iit-i-1704716",
-      "source": "unstop",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "fd996a68ef23",
-      "title": "Microsoft Learn Student Ambassadors",
-      "url": "https://mvp.microsoft.com/studentambassadors",
-      "source": "programs",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "program",
-        "student ambassador",
-        "microsoft",
-        "cloud",
-        "global"
-      ],
-      "ai_summary": "Microsoft brand signal, but rolling and community‑focused, low urgency.",
-      "action_plan": [
-        "Spend 1 hour reviewing ambassador tiers on the site.",
-        "Apply for the Beta tier (quick form).",
-        "Schedule a monthly community‑building activity."
-      ]
-    },
-    {
-      "key": "01eb6edb0a64",
-      "title": "Microsoft AI Skills Fest / Learn Challenges",
-      "url": "https://learn.microsoft.com/en-us/training/",
-      "source": "programs",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "certification",
-        "microsoft",
-        "ai",
-        "azure",
-        "free"
-      ],
-      "ai_summary": "Microsoft badges boost resume but are easy to redo later.",
-      "action_plan": [
-        "Sign up for next challenge (≈1h)",
-        "Complete first module (≈2 days)",
-        "Add badge to LinkedIn (≈1h)"
-      ]
-    },
-    {
-      "key": "ace31490442e",
-      "title": "VetsEZ — Full Stack Developer Intern",
-      "url": "https://vetsez.breezy.hr/p/a4010fdb3a7001-full-stack-developer-intern-remote-opportunity",
-      "source": "internships",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "01ab8ab606b7",
-      "title": "MyEmployment — AI Product Engineer Intern",
-      "url": "https://jobs.gusto.com/postings/myemployment-llc-ai-product-engineer-intern-c08d7fd3-115e-46ad-a46f-6c4be1f77263",
-      "source": "internships",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
