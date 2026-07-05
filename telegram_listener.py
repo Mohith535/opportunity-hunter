@@ -25,6 +25,49 @@ import json
 import time
 from datetime import date
 
+
+# ── self-heal ───────────────────────────────────────────────────────────────
+# This helper is usually launched as `python telegram_listener.py`. If that "python" is the
+# *system* interpreter, it won't have the Hunter's dependencies and used to crash with a
+# cryptic `ModuleNotFoundError: requests`. Instead: relaunch under a nearby virtualenv that
+# already has them (no changes to your system) — or, only if none exists, install them here
+# once. Either way, `python telegram_listener.py` now just works.
+def _ensure_deps() -> None:
+    try:
+        import requests  # noqa: F401
+        return
+    except ModuleNotFoundError:
+        pass
+    import os
+    import sys
+    import subprocess
+    from pathlib import Path
+    script = Path(__file__).resolve()
+    here = script.parent
+    sub = "Scripts/python.exe" if os.name == "nt" else "bin/python"
+    # 1) Prefer re-running under a virtualenv (this folder's, or a sibling like ../nova/.venv)
+    #    that already has our deps — the clean path, nothing installed system-wide.
+    candidates = [here / ".venv" / sub, *(v / sub for v in here.parent.glob("*/.venv"))]
+    for py in candidates:
+        try:
+            # Probe two distinctive deps (not just requests) so we don't relaunch into an
+            # unrelated project's venv that happens to have requests but not the Hunter's stack.
+            if py.is_file() and str(py) != sys.executable and subprocess.run(
+                    [str(py), "-c", "import requests, feedparser"], capture_output=True).returncode == 0:
+                print(f"[setup] Using the environment that has the Hunter's dependencies:\n"
+                      f"        {py}\n")
+                sys.exit(subprocess.run([str(py), str(script), *sys.argv[1:]]).returncode)
+        except Exception:
+            continue
+    # 2) No suitable virtualenv found — install our requirements into THIS interpreter, once.
+    reqs = here / "requirements.txt"
+    target = ["-r", str(reqs)] if reqs.is_file() else ["requests", "python-dotenv"]
+    print("[setup] Installing the Hunter's dependencies into this Python (one-time)…")
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", *target])
+
+
+_ensure_deps()
+
 import requests
 
 import config
