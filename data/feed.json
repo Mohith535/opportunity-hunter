@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-04",
+  "updated_at": "2026-07-05",
   "items": [
     {
       "key": "15e34ffda925",
@@ -456,17 +456,89 @@
       ]
     },
     {
-      "key": "1149deca2666",
-      "title": "BrandVerse 2026: India's Startup Branding & AI Innovation Challenge",
-      "url": "https://unstop.com/hackathons/brandverse-2026-indias-startup-branding-ai-innovation-challenge-printila-services-private-limited-1702966",
-      "source": "unstop",
-      "score": 7,
+      "key": "850c9ec89c93",
+      "title": "Google Books (or similar) all book scans – $200k bounty (2025)",
+      "url": "https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234",
+      "source": "hackernews",
+      "score": 8,
       "deadline": null,
+      "tags": [
+        "news"
+      ],
+      "ai_summary": "High-profile bounty, relevant to AI and machine learning",
+      "action_plan": [
+        "Research bounty details (2 hours)",
+        "Develop a plan to tackle the bounty (5 hours)",
+        "Work on the bounty (20 hours)"
+      ]
+    },
+    {
+      "key": "bd5c9c376843",
+      "title": "CockroachDB × AWS Hackathon - Build with Agentic Memory",
+      "url": "https://cockroachdb-ai.devpost.com/",
+      "source": "devpost",
+      "score": 8,
+      "deadline": "2026-08-18",
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "ML/AI hackathon",
+      "action_plan": [
+        "Research Agentic Memory (2 hours)",
+        "Form a team (1 week)",
+        "Build a project (4 weeks)"
+      ]
+    },
+    {
+      "key": "7a576e36bc4a",
+      "title": "Meta Ads Performance Marketing and Content Internship",
+      "url": "https://unstop.com/internships/meta-ads-performance-marketing-and-content-internship-saush-innovations-private-limited-1711269",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Meta AI internship",
+      "action_plan": [
+        "Update resume (1 day)",
+        "Apply for internship (1 day)",
+        "Prepare for interview (2 weeks)"
+      ]
+    },
+    {
+      "key": "891327272b7d",
+      "title": "Droyd Robotics — Machine Learning Intern",
+      "url": "https://jobs.ashbyhq.com/droyd/fd533fd8-65a7-41eb-bdf0-e75f02e739e9/application",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Machine learning internship, relevant to AI engineering",
+      "action_plan": [
+        "Research internship details (2 hours)",
+        "Update resume and apply (5 hours)",
+        "Prepare for interviews (10 hours)"
+      ]
+    },
+    {
+      "key": "d0e251591293",
+      "title": "Output Biosciences — Research Intern - Machine Learning",
+      "url": "https://jobs.ashbyhq.com/output/da2723ca-a418-49f1-b7da-a4f383dd8239/application",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Research internship in machine learning, relevant to AI engineering",
+      "action_plan": [
+        "Research internship details (2 hours)",
+        "Update resume and apply (5 hours)",
+        "Prepare for interviews (10 hours)"
+      ]
     },
     {
       "key": "fdc9328f80ae",
@@ -1026,6 +1098,40 @@
       ]
     },
     {
+      "key": "e0f9903a9ac2",
+      "title": "CTGT — Software Engineer Intern",
+      "url": "https://jobs.ashbyhq.com/ctgt/f657c2f5-125e-42b6-a68a-646bbea3d155/application",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "SF intern at CTGT offers high‑impact engineering experience. · ⚠ verify eligibility: May need senior status / work visa for US internship",
+      "action_plan": [
+        "1d: Verify eligibility (visa, year).",
+        "2d: Tailor resume to highlight AI projects.",
+        "3d: Apply via company portal."
+      ]
+    },
+    {
+      "key": "c0407eb44404",
+      "title": "Droyd Robotics — Software Engineer Intern",
+      "url": "https://jobs.ashbyhq.com/droyd/8d46ed05-1b38-4c68-938e-f10b4c7d4694/application",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Robotics intern in SF aligns with building focus and AI. · ⚠ verify eligibility: May need senior status / work visa for US internship",
+      "action_plan": [
+        "1d: Check visa & year‑in‑program requirements.",
+        "2d: Update CV with robotics/AI work.",
+        "3d: Submit application before Fall 2026 deadline."
+      ]
+    },
+    {
       "key": "c33a60630cca",
       "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
       "url": "https://arxiv.org/abs/2606.28277v1",
@@ -1502,31 +1608,21 @@
       ]
     },
     {
-      "key": "01bb59035fd8",
-      "title": "Fired by Google for creating the Google workspace CLI",
-      "url": "https://twitter.com/JPoehnelt/status/2069482265953087602",
-      "source": "hackernews",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "news"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "720c429458a4",
-      "title": "What's your biggest pain point when choosing between cloud GPU providers for LLM inference?[R]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1udfovh/whats_your_biggest_pain_point_when_choosing/",
+      "key": "a40f68a795e7",
+      "title": "If DeepMind or Anthropic is doing your exact research topic, do you still continue? [D]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1unt64q/if_deepmind_or_anthropic_is_doing_your_exact/",
       "source": "reddit",
-      "score": 5,
+      "score": 6,
       "deadline": null,
       "tags": [
         "news",
         "r/MachineLearning"
       ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "ML research discussion",
+      "action_plan": [
+        "Read the discussion (1 hour)",
+        "Participate in the discussion (1 hour)"
+      ]
     },
     {
       "key": "ad02b0ce07df",
@@ -1631,74 +1727,6 @@
       "key": "b869485692e6",
       "title": "[R] Compiling Agentic Workflows into LLM Weights: Near-Frontier Quality at Two Orders of Magnitude Less Cost",
       "url": "https://www.reddit.com/r/MachineLearning/comments/1ufgpnh/r_compiling_agentic_workflows_into_llm_weights/",
-      "source": "reddit",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "34f7f2055ac6",
-      "title": "InnoGenesis 2026 - National Level Hackathon",
-      "url": "https://unstop.com/hackathons/innogenesis-2026-national-level-hackathon-dr-rvr-nri-institute-of-technology-deemed-to-be-university-1702857",
-      "source": "unstop",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "db1267e971a4",
-      "title": "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations",
-      "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
-      "source": "hackernews",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "news"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "227c70a6b2a5",
-      "title": "Live Continual Learning in Machine Learning [D]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1ug7vxs/live_continual_learning_in_machine_learning_d/",
-      "source": "reddit",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "8fc988b4445a",
-      "title": "Which offices in India have Google-level snack and beverage perks?",
-      "url": "https://www.reddit.com/r/developersIndia/comments/1ug8iuc/which_offices_in_india_have_googlelevel_snack_and/",
-      "source": "reddit",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/developersIndia"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4ade0c676309",
-      "title": "Built an LLM training framework that actually runs on older GPUs without crashing [P]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1uh7ib3/built_an_llm_training_framework_that_actually/",
       "source": "reddit",
       "score": 5,
       "deadline": null,

@@ -13127,6 +13127,700 @@
           "key": "beec149120bc"
         }
       ]
+    },
+    {
+      "date": "2026-07-05",
+      "items": [
+        {
+          "title": "Google Books (or similar) all book scans – $200k bounty (2025)",
+          "url": "https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48786838",
+          "score": 6,
+          "ai_score": 8,
+          "ai_summary": "High-profile bounty, relevant to AI and machine learning",
+          "action_plan": [
+            "Research bounty details (2 hours)",
+            "Develop a plan to tackle the bounty (5 hours)",
+            "Work on the bounty (20 hours)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "850c9ec89c93"
+        },
+        {
+          "title": "Backon – Python retry (zero deps, circuit breaker, async native)",
+          "url": "https://github.com/Llucs/backon",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48790898",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Useful Python tool; low resume impact.",
+          "action_plan": [
+            "1h: Clone repo, run basic tests.",
+            "2h: Integrate into a personal project.",
+            "1d: Write a short blog note."
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 5,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 5,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "47e39331cdb2"
+        },
+        {
+          "title": "CockroachDB × AWS Hackathon - Build with Agentic Memory",
+          "url": "https://cockroachdb-ai.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 30 - Aug 18, 2026 | prize $ 8,750 | themes: Machine Learning/AI, Databases, DevOps",
+          "deadline": "2026-08-18",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29613",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "ML/AI hackathon",
+          "action_plan": [
+            "Research Agentic Memory (2 hours)",
+            "Form a team (1 week)",
+            "Build a project (4 weeks)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 8,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "bd5c9c376843"
+        },
+        {
+          "title": "If DeepMind or Anthropic is doing your exact research topic, do you still continue? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1unt64q/if_deepmind_or_anthropic_is_doing_your_exact/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1unt64q",
+          "score": 7,
+          "ai_score": 6,
+          "ai_summary": "ML research discussion",
+          "action_plan": [
+            "Read the discussion (1 hour)",
+            "Participate in the discussion (1 hour)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "a40f68a795e7"
+        },
+        {
+          "title": "BaryGraph - knowledge graph where every relationship is its own embedded document (not an edge) [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1un3lsf/barygraph_knowledge_graph_where_every/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1un3lsf",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "Interesting ML research idea; no direct credential value.",
+          "action_plan": [
+            "1h: Read the Reddit post.",
+            "2h: Sketch how to experiment with knowledge graphs.",
+            "1d: Log findings in a personal notebook."
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 8,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 3,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "d307cabdbcde"
+        },
+        {
+          "title": "If your GPU can run inference, it should be able to fine-tune too. [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1unl62q/if_your_gpu_can_run_inference_it_should_be_able/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1unl62q",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Relevant to fine‑tuning; good for skill building.",
+          "action_plan": [
+            "30m: Review the post details.",
+            "1h: Test fine‑tuning on a small model.",
+            "1d: Document performance and share on GitHub."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 7,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 5,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "ac19a9679f24"
+        },
+        {
+          "title": "Proposal: Use semantic compression as input diffusion to read sessions larger than the context window [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1un63hv/proposal_use_semantic_compression_as_input/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1un63hv",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "High‑interest research concept; no immediate application.",
+          "action_plan": [
+            "30m: Read the proposal.",
+            "1h: Outline a small experiment on semantic compression.",
+            "1d: Add notes to personal research repo."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 9,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 6,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "8c8dffbfe607"
+        },
+        {
+          "title": "ThunderCipher Case Files #001: The Crypto Heist",
+          "url": "https://unstop.com/hackathons/thundercipher-case-files-001-the-crypto-heist-thundercipher-1710309",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1710309",
+          "score": 4,
+          "ai_score": 4,
+          "ai_summary": "Hackathon builds a showcase project; modest AI tie‑in.",
+          "action_plan": [
+            "1d: Read rules, form a 2‑person team.",
+            "2d: Sketch a crypto‑AI demo.",
+            "3d: Submit prototype before deadline."
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 4,
+            "deadline": 3,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "b9cb96175839"
+        },
+        {
+          "title": "HI Labs AI & Tech Hackathon 2026 | ₹10,000 Prize Pool",
+          "url": "https://unstop.com/hackathons/hi-labs-ai-tech-hackathon-2026-rs10000-prize-pool-human-intelligence-labs-private-limited-1709796",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1709796",
+          "score": 6,
+          "ai_score": 5,
+          "ai_summary": "AI and tech hackathon, relevant to AI engineering",
+          "action_plan": [
+            "Research hackathon details (1 hour)",
+            "Form a team (2 hours)",
+            "Prepare for the hackathon (10 hours)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "30c294691aa6"
+        },
+        {
+          "title": "Safe Click Hackathon",
+          "url": "https://unstop.com/hackathons/safe-click-hackathon-symbiosis-university-of-applied-sciences-suas-indore-madhya-pradesh-1710806",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1710806",
+          "score": 5,
+          "ai_score": 5,
+          "ai_summary": "Hackathon, relevant to AI engineering",
+          "action_plan": [
+            "Research hackathon details (1 hour)",
+            "Form a team (2 hours)",
+            "Prepare for the hackathon (10 hours)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "caa330947bd3"
+        },
+        {
+          "title": "HackOcean - A National Level Frontend Hackathon",
+          "url": "https://unstop.com/hackathons/hackocean-a-national-level-frontend-hackathon-madhav-institute-of-technology-and-science-mits-gwalior-1707618",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1707618",
+          "score": 7,
+          "ai_score": 5,
+          "ai_summary": "Frontend hackathon, relevant to AI engineering",
+          "action_plan": [
+            "Research hackathon details (1 hour)",
+            "Form a team (2 hours)",
+            "Prepare for the hackathon (10 hours)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "419f2b109731"
+        },
+        {
+          "title": "Campus Ambassador",
+          "url": "https://unstop.com/internships/campus-ambassador-vcreadypro-1711342",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711342",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "Campus ambassador, less relevant to AI engineering",
+          "action_plan": [
+            "Research ambassador details (1 hour)",
+            "Apply for the ambassador position (2 hours)",
+            "Prepare for the role (5 hours)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "9427190c3962"
+        },
+        {
+          "title": "Business Development (Sales & Partnerships) Internship",
+          "url": "https://unstop.com/internships/business-development-sales-partnerships-internship-garisson-flow-1711327",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711327",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 2,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "75532a9b07f7"
+        },
+        {
+          "title": "Campus Ambassador (Business Development & Leadership)",
+          "url": "https://unstop.com/internships/campus-ambassador-business-development-leadership-gogo-pogo-1709960",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1709960",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "Campus ambassador, less relevant to AI engineering",
+          "action_plan": [
+            "Research ambassador details (1 hour)",
+            "Apply for the ambassador position (2 hours)",
+            "Prepare for the role (5 hours)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "0b181a27a122"
+        },
+        {
+          "title": "Digital Marketing Internship",
+          "url": "https://unstop.com/internships/digital-marketing-internship-clarity2cloud-technology-private-limited-1711318",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711318",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 2,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "3eab4088cb8f"
+        },
+        {
+          "title": "Sales & Business Development Internship",
+          "url": "https://unstop.com/internships/sales-business-development-internship-drevenue-1711299",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711299",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 2,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "da01cd099b80"
+        },
+        {
+          "title": "Figma Designer Internship",
+          "url": "https://unstop.com/internships/figma-designer-internship-saush-innovations-private-limited-1711274",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711274",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 2,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "ca493f574469"
+        },
+        {
+          "title": "Meta Ads Performance Marketing and Content Internship",
+          "url": "https://unstop.com/internships/meta-ads-performance-marketing-and-content-internship-saush-innovations-private-limited-1711269",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711269",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "Meta AI internship",
+          "action_plan": [
+            "Update resume (1 day)",
+            "Apply for internship (1 day)",
+            "Prepare for interview (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 8,
+            "prestige": 9,
+            "deadline": 2,
+            "skill": 8,
+            "time": 8,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "7a576e36bc4a"
+        },
+        {
+          "title": "Campus Ambassador",
+          "url": "https://unstop.com/internships/campus-ambassador-ai-fiesta-1710809",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1710809",
+          "score": 5,
+          "ai_score": 3,
+          "ai_summary": "Adds campus resume but low AI relevance.",
+          "action_plan": [
+            "1d: Register on unstop.",
+            "2d: Draft a 2‑page impact statement.",
+            "3d: Submit application."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "369a82d6bf7d"
+        },
+        {
+          "title": "Free Scholarship Test on VLSI",
+          "url": "https://unstop.com/scholarships/free-scholarship-test-on-vlsi-quality-thought-info-systems-1710805",
+          "source": "unstop",
+          "description": "scholarship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "scholarship"
+          ],
+          "native_id": "1710805",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "VLSI scholarship",
+          "action_plan": [
+            "Prepare for test (2 weeks)",
+            "Take the test (1 day)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "5627af646322"
+        },
+        {
+          "title": "CTGT — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/ctgt/f657c2f5-125e-42b6-a68a-646bbea3d155/application",
+          "source": "internships",
+          "description": "internship | CTGT | SF | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8c8a1f21-e711-48d0-8cec-601018138920",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "SF intern at CTGT offers high‑impact engineering experience. · ⚠ verify eligibility: May need senior status / work visa for US internship",
+          "action_plan": [
+            "1d: Verify eligibility (visa, year).",
+            "2d: Tailor resume to highlight AI projects.",
+            "3d: Apply via company portal."
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 6,
+            "prestige": 7,
+            "deadline": 3,
+            "skill": 8,
+            "time": 7,
+            "eligible": "unclear",
+            "elig_note": "May need senior status / work visa for US internship"
+          },
+          "key": "e0f9903a9ac2"
+        },
+        {
+          "title": "Droyd Robotics — Machine Learning Intern",
+          "url": "https://jobs.ashbyhq.com/droyd/fd533fd8-65a7-41eb-bdf0-e75f02e739e9/application",
+          "source": "internships",
+          "description": "internship | Droyd Robotics | SF | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d423afb4-e4be-41f7-923e-d55ed5e3bddb",
+          "score": 6,
+          "ai_score": 8,
+          "ai_summary": "Machine learning internship, relevant to AI engineering",
+          "action_plan": [
+            "Research internship details (2 hours)",
+            "Update resume and apply (5 hours)",
+            "Prepare for interviews (10 hours)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 6,
+            "skill": 8,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "891327272b7d"
+        },
+        {
+          "title": "Droyd Robotics — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/droyd/8d46ed05-1b38-4c68-938e-f10b4c7d4694/application",
+          "source": "internships",
+          "description": "internship | Droyd Robotics | SF | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "457f1bf0-10ec-41b5-ab16-bc702e1a0fb4",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "Robotics intern in SF aligns with building focus and AI. · ⚠ verify eligibility: May need senior status / work visa for US internship",
+          "action_plan": [
+            "1d: Check visa & year‑in‑program requirements.",
+            "2d: Update CV with robotics/AI work.",
+            "3d: Submit application before Fall 2026 deadline."
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 6,
+            "prestige": 7,
+            "deadline": 4,
+            "skill": 8,
+            "time": 7,
+            "eligible": "unclear",
+            "elig_note": "May need senior status / work visa for US internship"
+          },
+          "key": "c0407eb44404"
+        },
+        {
+          "title": "Output Biosciences — Research Intern - Machine Learning",
+          "url": "https://jobs.ashbyhq.com/output/da2723ca-a418-49f1-b7da-a4f383dd8239/application",
+          "source": "internships",
+          "description": "internship | Output Biosciences | SF, NYC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "366c2106-60ad-48af-b7c0-95537c275a17",
+          "score": 6,
+          "ai_score": 8,
+          "ai_summary": "Research internship in machine learning, relevant to AI engineering",
+          "action_plan": [
+            "Research internship details (2 hours)",
+            "Update resume and apply (5 hours)",
+            "Prepare for interviews (10 hours)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 6,
+            "skill": 8,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "d0e251591293"
+        }
+      ]
     }
   ]
 }
