@@ -13821,6 +13821,634 @@
           "key": "d0e251591293"
         }
       ]
+    },
+    {
+      "date": "2026-07-06",
+      "items": [
+        {
+          "title": "Global AI Hackathon Series with Qwen Cloud",
+          "url": "https://qwencloud-hackathon.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 26 - Jul 09, 2026 | prize $ 45,000 | themes: Machine Learning/AI, Design, Productivity",
+          "deadline": "2026-07-09",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29966",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "AI Hackathon with Qwen Cloud",
+          "action_plan": [
+            "Research Qwen Cloud (1 hour)",
+            "Form a team (2 days)",
+            "Submit project proposal (3 days)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 8,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "9f13fb5f6774"
+        },
+        {
+          "title": "Is Intrinsic Motivation a Viable PhD Topic in 2026? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uo5kg6/is_intrinsic_motivation_a_viable_phd_topic_in/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uo5kg6",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — Not an application; just a discussion topic · No actionable opportunity for a student builder",
+          "action_plan": [
+            "Ignore; focus on concrete projects",
+            "Bookmark for future reading only"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 5,
+            "prestige": 1,
+            "deadline": 0,
+            "skill": 0,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "Not an application; just a discussion topic"
+          },
+          "key": "676d447e4b2d"
+        },
+        {
+          "title": "Competence Gate: gating tool-use on a small model's internal confidence signal instead of its verbalised one — Qwen3.5-4B, open weights [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1unw5un/competence_gate_gating_tooluse_on_a_small_models/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1unw5un",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — Research post, not a program to apply · No formal application; just a paper idea",
+          "action_plan": [
+            "Read the paper for inspiration",
+            "Consider implementing as a side project"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 7,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 1,
+            "time": 3,
+            "eligible": "no",
+            "elig_note": "Research post, not a program to apply"
+          },
+          "key": "6219a0215427"
+        },
+        {
+          "title": "Is machine learning research worth it for now? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uo0dqi/is_machine_learning_research_worth_it_for_now_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uo0dqi",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "ML research discussion",
+          "action_plan": [
+            "read discussion (1 day)",
+            "comment on discussion (1 day)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 8,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 4,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "3098158f2ae2"
+        },
+        {
+          "title": "I built an open, from-scratch MT pipeline + parallel corpus for Tunisian Darija (Arabizi) early baseline, and I'm growing it into a curated community corpus [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uo92vz/i_built_an_open_fromscratch_mt_pipeline_parallel/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uo92vz",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — Project showcase, not an open opportunity · Cannot apply; only a description of someone's work",
+          "action_plan": [
+            "Study the pipeline for learning",
+            "Reuse ideas in personal MT experiments"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 0,
+            "skill": 2,
+            "time": 3,
+            "eligible": "no",
+            "elig_note": "Project showcase, not an open opportunity"
+          },
+          "key": "907e82970e2d"
+        },
+        {
+          "title": "Best models for generating red-team attacks? Also looking for public datasets [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uoejrl/best_models_for_generating_redteam_attacks_also/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uoejrl",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — Collaboration request, not a formal program · No structured application or deadline",
+          "action_plan": [
+            "Reply if interested in joint research",
+            "Otherwise keep as reference"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 8,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 2,
+            "time": 3,
+            "eligible": "no",
+            "elig_note": "Collaboration request, not a formal program"
+          },
+          "key": "ac3cee2833e1"
+        },
+        {
+          "title": "Does anyone have a name for that subtle \"Sameness\" creeping into model outputs lately? [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uon503/does_anyone_have_a_name_for_that_subtle_sameness/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uon503",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — Open question, not an opportunity to apply · Just a discussion prompt, no actionable path",
+          "action_plan": [
+            "Read answers for insight",
+            "Ignore for career planning"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 6,
+            "prestige": 1,
+            "deadline": 0,
+            "skill": 0,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "Open question, not an opportunity to apply"
+          },
+          "key": "4e99bef7092e"
+        },
+        {
+          "title": "AtCoder Beginner Contest 468 (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/abc468",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-07-25T12:00:00",
+          "deadline": "2026-07-25",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68437903",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "competitive programming",
+          "action_plan": [
+            "practice problems (2 weeks)",
+            "participate in contest (1 day)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 8,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "96769d593ab7"
+        },
+        {
+          "title": "Starters 249 (codechef.com)",
+          "url": "https://www.codechef.com/START249",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-07-29T14:30:00",
+          "deadline": "2026-07-29",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68357848",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "competitive programming",
+          "action_plan": [
+            "practice problems (2 weeks)",
+            "participate in contest (1 day)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 8,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "64d91dd64f1a"
+        },
+        {
+          "title": "Varithon 2026",
+          "url": "https://unstop.com/hackathons/varithon-2026-marathwada-mitra-mandals-college-of-engineering-mmcoe-pune-1711499",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1711499",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "Hackathon adds portfolio, builds AI tools, good resume signal",
+          "action_plan": [
+            "Check registration deadline (1‑day)",
+            "Form a team with complementary skills (2‑days)",
+            "Design a prototype aligned with AI agents (1‑week)",
+            "Iterate and prepare demo for event (1‑week)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 9,
+            "prestige": 5,
+            "deadline": 4,
+            "skill": 8,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "56d70833e420"
+        },
+        {
+          "title": "Campus Ambassador Internship",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-campus-unite-1711677",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711677",
+          "score": 8,
+          "ai_score": 5,
+          "ai_summary": "Campus Ambassador Internship",
+          "action_plan": [
+            "Check internship details (1 hour)",
+            "Apply for internship (2 hours)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 5,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "fff5a53aed67"
+        },
+        {
+          "title": "React Developer Internship",
+          "url": "https://unstop.com/internships/react-developer-internship-mindmash-data-labs-1711672",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711672",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Not AI/ML focused",
+          "action_plan": [],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "9bc1314deb2b"
+        },
+        {
+          "title": "Full Stack App Developer Internship",
+          "url": "https://unstop.com/internships/full-stack-app-developer-internship-accesco-living-1711649",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711649",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Not AI/ML focused",
+          "action_plan": [],
+          "dimensions": {
+            "career": 5,
+            "interest": 3,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "c7f4acde2b67"
+        },
+        {
+          "title": "Frontend App Developer Internship",
+          "url": "https://unstop.com/internships/frontend-app-developer-internship-accesco-living-1711655",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711655",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Not AI/ML focused",
+          "action_plan": [],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "6db8ce89c03c"
+        },
+        {
+          "title": "Inside Sales Internship",
+          "url": "https://unstop.com/internships/inside-sales-internship-jesseena-human-resources-1711646",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711646",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "90f9c5e5f587"
+        },
+        {
+          "title": "Digital Marketing Internship",
+          "url": "https://unstop.com/internships/digital-marketing-internship-testprepkart-1711653",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711653",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "3744c7d37b48"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-irtiqa-hub-1711629",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711629",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 3,
+            "interest": 1,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "0d3fff438a41"
+        },
+        {
+          "title": "Digital Marketing Internship",
+          "url": "https://unstop.com/internships/digital-marketing-internship-clustal-1711613",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711613",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "ff1aad9a150b"
+        },
+        {
+          "title": "Citadel Securities — Software Engineer Intern",
+          "url": "https://www.citadelsecurities.com/careers/details/software-engineer-intern-us/",
+          "source": "internships",
+          "description": "internship | Citadel Securities | Miami, FL, NYC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c76dbe61-c0f6-47a8-b05e-b219b4e28fb7",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "software engineer intern",
+          "action_plan": [
+            "research Citadel Securities (1 week)",
+            "update resume (2 weeks)",
+            "apply for internship (1 week)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 8,
+            "deadline": 4,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "ff7d91ef2d87"
+        },
+        {
+          "title": "Citadel — Software Engineer Intern",
+          "url": "https://www.citadel.com/careers/details/software-engineer-intern-us/",
+          "source": "internships",
+          "description": "internship | Citadel | Greenwich, CT, Houston, TX, Miami, FL, NYC | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "28286b52-4c99-4d00-a870-d919c13d68c6",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "software engineer intern",
+          "action_plan": [
+            "research Citadel (1 week)",
+            "update resume (2 weeks)",
+            "apply for internship (1 week)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 8,
+            "deadline": 4,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "3b999b6b9a90"
+        },
+        {
+          "title": "Susquehanna International Group (SIG) — Quantitative Strategy Developer Intern",
+          "url": "https://careers-sig.icims.com/jobs/11170/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Susquehanna International Group (SIG) | Philadelphia, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5e40a228-3721-4f88-96d5-3f59b73be6c4",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "quant strategy dev intern",
+          "action_plan": [
+            "research SIG (1 week)",
+            "update resume (2 weeks)",
+            "apply for internship (1 week)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 8,
+            "deadline": 4,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "53e1c2e25b6c"
+        },
+        {
+          "title": "Tower Research Capital — Quantitative Developer Intern",
+          "url": "https://www.tower-research.com/open-positions/?gh_jid=8044334",
+          "source": "internships",
+          "description": "internship | Tower Research Capital | Chicago, IL, NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9d506d4e-91ee-4f46-bda5-4ab9b5dddf55",
+          "score": 6,
+          "ai_score": 6,
+          "ai_summary": "quant dev intern",
+          "action_plan": [
+            "research Tower Research Capital (1 week)",
+            "update resume (2 weeks)",
+            "apply for internship (1 week)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 8,
+            "deadline": 4,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "84e6ca7a6ad2"
+        }
+      ]
     }
   ]
 }

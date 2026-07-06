@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-05",
+  "updated_at": "2026-07-06",
   "items": [
     {
       "key": "15e34ffda925",
@@ -117,19 +117,6 @@
         "Prepare resume and cover letter",
         "Apply"
       ]
-    },
-    {
-      "key": "c0d39df56dc0",
-      "title": "Backblaze Generative Media Hackathon: Build with Genblaze on B2",
-      "url": "https://backblaze-generative-media.devpost.com/",
-      "source": "devpost",
-      "score": 8,
-      "deadline": "2026-08-03",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
     },
     {
       "key": "81992ea58a94",
@@ -541,17 +528,21 @@
       ]
     },
     {
-      "key": "fdc9328f80ae",
-      "title": "Tech Genesis '26",
-      "url": "https://tech-genesis.devfolio.co",
-      "source": "devfolio",
-      "score": 7,
-      "deadline": "2026-06-26",
+      "key": "9f13fb5f6774",
+      "title": "Global AI Hackathon Series with Qwen Cloud",
+      "url": "https://qwencloud-hackathon.devpost.com/",
+      "source": "devpost",
+      "score": 8,
+      "deadline": "2026-07-09",
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "AI Hackathon with Qwen Cloud",
+      "action_plan": [
+        "Research Qwen Cloud (1 hour)",
+        "Form a team (2 days)",
+        "Submit project proposal (3 days)"
+      ]
     },
     {
       "key": "7f6cde29a914",
@@ -1132,6 +1123,40 @@
       ]
     },
     {
+      "key": "96769d593ab7",
+      "title": "AtCoder Beginner Contest 468 (atcoder.jp)",
+      "url": "https://atcoder.jp/contests/abc468",
+      "source": "clist",
+      "score": 7,
+      "deadline": "2026-07-25",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "competitive programming",
+      "action_plan": [
+        "practice problems (2 weeks)",
+        "participate in contest (1 day)"
+      ]
+    },
+    {
+      "key": "64d91dd64f1a",
+      "title": "Starters 249 (codechef.com)",
+      "url": "https://www.codechef.com/START249",
+      "source": "clist",
+      "score": 7,
+      "deadline": "2026-07-29",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "competitive programming",
+      "action_plan": [
+        "practice problems (2 weeks)",
+        "participate in contest (1 day)"
+      ]
+    },
+    {
       "key": "c33a60630cca",
       "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
       "url": "https://arxiv.org/abs/2606.28277v1",
@@ -1625,86 +1650,90 @@
       ]
     },
     {
-      "key": "ad02b0ce07df",
-      "title": "Same Evidence, Different Answer: Auditing Order Sensitivity in Multimodal Large Language Models",
-      "url": "https://arxiv.org/abs/2606.26079v1",
-      "source": "arxiv",
-      "score": 5,
+      "key": "56d70833e420",
+      "title": "Varithon 2026",
+      "url": "https://unstop.com/hackathons/varithon-2026-marathwada-mitra-mandals-college-of-engineering-mmcoe-pune-1711499",
+      "source": "unstop",
+      "score": 6,
       "deadline": null,
       "tags": [
-        "research"
+        "hackathon"
       ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "Hackathon adds portfolio, builds AI tools, good resume signal",
+      "action_plan": [
+        "Check registration deadline (1‑day)",
+        "Form a team with complementary skills (2‑days)",
+        "Design a prototype aligned with AI agents (1‑week)",
+        "Iterate and prepare demo for event (1‑week)"
+      ]
     },
     {
-      "key": "ea60cf50864b",
-      "title": "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
-      "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
-      "source": "hackernews",
-      "score": 5,
+      "key": "ff7d91ef2d87",
+      "title": "Citadel Securities — Software Engineer Intern",
+      "url": "https://www.citadelsecurities.com/careers/details/software-engineer-intern-us/",
+      "source": "internships",
+      "score": 6,
       "deadline": null,
       "tags": [
-        "news"
+        "internship"
       ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "software engineer intern",
+      "action_plan": [
+        "research Citadel Securities (1 week)",
+        "update resume (2 weeks)",
+        "apply for internship (1 week)"
+      ]
     },
     {
-      "key": "2d4ef78b937b",
-      "title": "Could it be that there aren’t really any medical LLM APIs available right now? [D]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1ue87js/could_it_be_that_there_arent_really_any_medical/",
-      "source": "reddit",
-      "score": 5,
+      "key": "3b999b6b9a90",
+      "title": "Citadel — Software Engineer Intern",
+      "url": "https://www.citadel.com/careers/details/software-engineer-intern-us/",
+      "source": "internships",
+      "score": 6,
       "deadline": null,
       "tags": [
-        "news",
-        "r/MachineLearning"
+        "internship"
       ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "software engineer intern",
+      "action_plan": [
+        "research Citadel (1 week)",
+        "update resume (2 weeks)",
+        "apply for internship (1 week)"
+      ]
     },
     {
-      "key": "8cddb047d574",
-      "title": "I compiled LLM inference pricing across 7 providers — the caching numbers are surprising(spreadsheet included) [R]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1ueavxn/i_compiled_llm_inference_pricing_across_7/",
-      "source": "reddit",
-      "score": 5,
+      "key": "53e1c2e25b6c",
+      "title": "Susquehanna International Group (SIG) — Quantitative Strategy Developer Intern",
+      "url": "https://careers-sig.icims.com/jobs/11170/job?mobile=true&needsRedirect=false",
+      "source": "internships",
+      "score": 6,
       "deadline": null,
       "tags": [
-        "news",
-        "r/MachineLearning"
+        "internship"
       ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "quant strategy dev intern",
+      "action_plan": [
+        "research SIG (1 week)",
+        "update resume (2 weeks)",
+        "apply for internship (1 week)"
+      ]
     },
     {
-      "key": "69160253e20a",
-      "title": "Weekend Dev Challenge 56: .NET projects (codechef.com)",
-      "url": "https://www.codechef.com/DEVWEEKEND56",
-      "source": "clist",
-      "score": 5,
-      "deadline": "2026-06-26",
+      "key": "84e6ca7a6ad2",
+      "title": "Tower Research Capital — Quantitative Developer Intern",
+      "url": "https://www.tower-research.com/open-positions/?gh_jid=8044334",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
       "tags": [
-        "contest",
-        "competitive programming"
+        "internship"
       ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "11d1587197b2",
-      "title": "Monday Munch - DSA Challenge 009 (Rated) (codechef.com)",
-      "url": "https://www.codechef.com/DSAMONDAY009",
-      "source": "clist",
-      "score": 5,
-      "deadline": "2026-06-29",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "quant dev intern",
+      "action_plan": [
+        "research Tower Research Capital (1 week)",
+        "update resume (2 weeks)",
+        "apply for internship (1 week)"
+      ]
     },
     {
       "key": "bbc20568713a",
