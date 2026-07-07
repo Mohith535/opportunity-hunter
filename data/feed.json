@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06",
+  "updated_at": "2026-07-07",
   "items": [
     {
       "key": "15e34ffda925",
@@ -537,25 +537,81 @@
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "AI Hackathon with Qwen Cloud",
+      "ai_summary": "Global AI Hackathon",
       "action_plan": [
         "Research Qwen Cloud (1 hour)",
-        "Form a team (2 days)",
-        "Submit project proposal (3 days)"
+        "Form a team (2 hours)",
+        "Brainstorm project ideas (4 hours)"
       ]
     },
     {
-      "key": "7f6cde29a914",
-      "title": "Port Mortem 2026 | Code Resurrection Hackathon",
-      "url": "https://unstop.com/hackathons/port-mortem-2026-code-resurrection-hackathon-hackathon-raptors-1704134",
-      "source": "unstop",
-      "score": 7,
+      "key": "55f3a5af046e",
+      "title": "LLM-as-a-Verifier: A General-Purpose Verification Framework",
+      "url": "https://arxiv.org/abs/2607.05391v1",
+      "source": "arxiv",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "research"
       ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "Research on LLMs and verification",
+      "action_plan": [
+        "Read and understand the paper (2 weeks)",
+        "Implement and experiment with the framework (4 weeks)",
+        "Write a blog post or create a project based on the research (2 weeks)"
+      ]
+    },
+    {
+      "key": "88cea60831e8",
+      "title": "Jane Street — Machine Learning Researcher",
+      "url": "https://job-boards.greenhouse.io/janestreet/jobs/8384490002",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Machine learning research at Jane Street",
+      "action_plan": [
+        "Research the team and project (1 week)",
+        "Update resume and online profiles (1 week)",
+        "Apply for the internship (1 day)"
+      ]
+    },
+    {
+      "key": "8cf2703f8612",
+      "title": "Jane Street — Machine Learning Engineer",
+      "url": "https://job-boards.greenhouse.io/janestreet/jobs/8611307002",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Machine learning engineering at Jane Street",
+      "action_plan": [
+        "Research the team and project (1 week)",
+        "Update resume and online profiles (1 week)",
+        "Apply for the internship (1 day)"
+      ]
+    },
+    {
+      "key": "759bbb12f28d",
+      "title": "Ada — Software Engineer Intern",
+      "url": "https://job-boards.greenhouse.io/ada18/jobs/5180710007",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Remote intern at Ada gives elite resume signal and real AI engineering experience",
+      "action_plan": [
+        "Week 1: Update CV, highlight TaskFlow/Nova projects",
+        "Week 2: Submit application, attach portfolio link",
+        "Week 3: Prepare for interview (review ML fundamentals, coding)",
+        "Week 4+: If accepted, start internship tasks"
+      ]
     },
     {
       "key": "5ad8b8317125",
@@ -717,7 +773,7 @@
     },
     {
       "key": "e9e2e3debc2f",
-      "title": "Kaya AI IIT India Hackathon 2026",
+      "title": "Kaya AI India Hackathon 2026",
       "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
       "source": "devpost",
       "score": 7,
@@ -725,11 +781,11 @@
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "AI/ML project experience",
+      "ai_summary": "AI Hackathon in India",
       "action_plan": [
-        "Form a team by 2026-06-20",
-        "Brainstorm project ideas",
-        "Submit project by 2026-07-10"
+        "Research Kaya AI (1 hour)",
+        "Form a team (2 hours)",
+        "Brainstorm project ideas (4 hours)"
       ]
     },
     {
@@ -1154,6 +1210,108 @@
       "action_plan": [
         "practice problems (2 weeks)",
         "participate in contest (1 day)"
+      ]
+    },
+    {
+      "key": "c5e21abb367c",
+      "title": "Interpretable Human-Label-Free Deep Learning for Real-Bogus Classification with Uncertainty Quantification",
+      "url": "https://arxiv.org/abs/2607.05393v1",
+      "source": "arxiv",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "Deep‑learning research aligns with AI goals and builds strong paper record. · ⚠ verify eligibility: Research role may require PhD or specifi",
+      "action_plan": [
+        "Read the full paper",
+        "Contact authors for collaboration",
+        "Draft a brief contribution proposal"
+      ]
+    },
+    {
+      "key": "d6aedc65a424",
+      "title": "Meta — Research Scientist Intern - 3D Vision & World Simulation",
+      "url": "https://www.metacareers.com/jobs/2839011673109571",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Research internship at Meta",
+      "action_plan": [
+        "Research the team and project (1 week)",
+        "Update resume and online profiles (1 week)",
+        "Apply for the internship (1 day)"
+      ]
+    },
+    {
+      "key": "3f3a408c5ddf",
+      "title": "Blue River Technology — Machine Learning Intern - Autonomy",
+      "url": "https://www.bluerivertechnology.com/job/?gh_jid=7947246",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Machine learning internship at Blue River Technology",
+      "action_plan": [
+        "Research the team and project (1 week)",
+        "Update resume and online profiles (1 week)",
+        "Apply for the internship (1 day)"
+      ]
+    },
+    {
+      "key": "a4f6397ab2ae",
+      "title": "IMC Trading — Machine Learning Research Intern",
+      "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4912874101",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Machine learning research internship at IMC Trading",
+      "action_plan": [
+        "Research the team and project (1 week)",
+        "Update resume and online profiles (1 week)",
+        "Apply for the internship (1 day)"
+      ]
+    },
+    {
+      "key": "93e1cb28a73e",
+      "title": "CSL — AI Technology Product Co-op",
+      "url": "https://csl.wd1.myworkdayjobs.com/CSL_External/job/Americas-US-PA-King-of-Prussia-CSL-Behring/AI-Technology-Product-Co-op_R-277204",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI product co‑op fits his AI engineering and portfolio goals",
+      "action_plan": [
+        "Visit CSL careers page (30 min)",
+        "Tailor resume to AI product focus (1 day)",
+        "Submit application (1 day)"
+      ]
+    },
+    {
+      "key": "f0116d481c7f",
+      "title": "American Bureau of Shipping — AI Software Engineering Intern",
+      "url": "https://hbbq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/4564",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI software intern aligns with his focus but location may block · ⚠ verify eligibility: requires Canadian work authorization",
+      "action_plan": [
+        "Check Canadian work‑visa requirements (1 hr)",
+        "Update resume with AI intern projects (1 day)",
+        "Apply via ABS portal (1 day)"
       ]
     },
     {
@@ -1614,157 +1772,6 @@
         "Prepare for the contest (1 week)",
         "Participate in the contest (1 day)"
       ]
-    },
-    {
-      "key": "597132fb665f",
-      "title": "Agents of Change – National Agentic AI Bootcamp & Buildathon 2026",
-      "url": "https://unstop.com/hackathons/agents-of-change-national-agentic-ai-bootcamp-buildathon-2026-agents-of-change-2026-oriental-group-of-institu-1710516",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Bootcamp aligns with AI agents interest; builds portfolio but limited prestige.",
-      "action_plan": [
-        "Open the Unstop page, note registration deadline (10 min).",
-        "Prepare a short project idea on AI agents (30 min).",
-        "Submit application and set calendar reminder for event dates."
-      ]
-    },
-    {
-      "key": "a40f68a795e7",
-      "title": "If DeepMind or Anthropic is doing your exact research topic, do you still continue? [D]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1unt64q/if_deepmind_or_anthropic_is_doing_your_exact/",
-      "source": "reddit",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "ML research discussion",
-      "action_plan": [
-        "Read the discussion (1 hour)",
-        "Participate in the discussion (1 hour)"
-      ]
-    },
-    {
-      "key": "56d70833e420",
-      "title": "Varithon 2026",
-      "url": "https://unstop.com/hackathons/varithon-2026-marathwada-mitra-mandals-college-of-engineering-mmcoe-pune-1711499",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Hackathon adds portfolio, builds AI tools, good resume signal",
-      "action_plan": [
-        "Check registration deadline (1‑day)",
-        "Form a team with complementary skills (2‑days)",
-        "Design a prototype aligned with AI agents (1‑week)",
-        "Iterate and prepare demo for event (1‑week)"
-      ]
-    },
-    {
-      "key": "ff7d91ef2d87",
-      "title": "Citadel Securities — Software Engineer Intern",
-      "url": "https://www.citadelsecurities.com/careers/details/software-engineer-intern-us/",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "software engineer intern",
-      "action_plan": [
-        "research Citadel Securities (1 week)",
-        "update resume (2 weeks)",
-        "apply for internship (1 week)"
-      ]
-    },
-    {
-      "key": "3b999b6b9a90",
-      "title": "Citadel — Software Engineer Intern",
-      "url": "https://www.citadel.com/careers/details/software-engineer-intern-us/",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "software engineer intern",
-      "action_plan": [
-        "research Citadel (1 week)",
-        "update resume (2 weeks)",
-        "apply for internship (1 week)"
-      ]
-    },
-    {
-      "key": "53e1c2e25b6c",
-      "title": "Susquehanna International Group (SIG) — Quantitative Strategy Developer Intern",
-      "url": "https://careers-sig.icims.com/jobs/11170/job?mobile=true&needsRedirect=false",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "quant strategy dev intern",
-      "action_plan": [
-        "research SIG (1 week)",
-        "update resume (2 weeks)",
-        "apply for internship (1 week)"
-      ]
-    },
-    {
-      "key": "84e6ca7a6ad2",
-      "title": "Tower Research Capital — Quantitative Developer Intern",
-      "url": "https://www.tower-research.com/open-positions/?gh_jid=8044334",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "quant dev intern",
-      "action_plan": [
-        "research Tower Research Capital (1 week)",
-        "update resume (2 weeks)",
-        "apply for internship (1 week)"
-      ]
-    },
-    {
-      "key": "bbc20568713a",
-      "title": "H0: Hack the Zero Stack with Vercel v0 and AWS Databases",
-      "url": "https://h01.devpost.com/",
-      "source": "devpost",
-      "score": 5,
-      "deadline": "2026-06-29",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Relevant hackathon",
-      "action_plan": [
-        "Research Vercel v0 and AWS Databases (2 hours)",
-        "Form a team and brainstorm ideas (4 hours)",
-        "Start building the project (20 hours)"
-      ]
-    },
-    {
-      "key": "b869485692e6",
-      "title": "[R] Compiling Agentic Workflows into LLM Weights: Near-Frontier Quality at Two Orders of Magnitude Less Cost",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1ufgpnh/r_compiling_agentic_workflows_into_llm_weights/",
-      "source": "reddit",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "",
-      "action_plan": []
     }
   ]
 }

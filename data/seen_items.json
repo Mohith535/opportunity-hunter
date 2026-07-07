@@ -135,8 +135,8 @@
     "9f13fb5f6774": {
       "title": "Global AI Hackathon Series with Qwen Cloud",
       "first_seen": "2026-06-13",
-      "last_seen": "2026-07-06",
-      "times_seen": 2
+      "last_seen": "2026-07-07",
+      "times_seen": 3
     },
     "a27f7f1206ca": {
       "title": "Splunk Agentic Ops Hackathon",
@@ -2667,8 +2667,8 @@
     "e9e2e3debc2f": {
       "title": "Kaya AI IIT India Hackathon 2026",
       "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "times_seen": 1
+      "last_seen": "2026-07-07",
+      "times_seen": 2
     },
     "4d41be7b33f6": {
       "title": "Cerebras OpenAI deal capacity has effectively killed the waitlist for everyone else [D]",
@@ -4234,6 +4234,324 @@
       "title": "Tower Research Capital — Quantitative Developer Intern",
       "first_seen": "2026-07-06",
       "last_seen": "2026-07-06",
+      "times_seen": 1
+    },
+    "c5e21abb367c": {
+      "title": "Interpretable Human-Label-Free Deep Learning for Real-Bogus Classification with Uncertainty Quantification",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "55f3a5af046e": {
+      "title": "LLM-as-a-Verifier: A General-Purpose Verification Framework",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "695bd34aca09": {
+      "title": "Search Beyond What Can Be Taught: Evolving the Knowledge Boundary in Agentic Visual Generation",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "732d61615f0c": {
+      "title": "TabPack: Efficient Hyperparameter Ensembles for Tabular Deep Learning",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "5d317cadfabb": {
+      "title": "CompactionRL: Reinforcement Learning with Context Compaction for Long-Horizon Agents",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "d4a4f3686541": {
+      "title": "goobolabs/ds-ml-bootcamp — ★159",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "1d2ae8b98b98": {
+      "title": "shy3130/tickflow-stock-panel — ★1,771",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "b198d60bac83": {
+      "title": "OfficeCLI: Office suite for AI agents to read and edit Microsoft Office files",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "96ae18b104d5": {
+      "title": "Machine learning industry job requirements used to be myopic, but now it feels impossible. Anyone else seeing this? [D]",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "71196fe4108a": {
+      "title": "LingBot-Vision: masked boundary modeling for self-supervised pretraining (0.296 NYUv2 linear-probe RMSE at 1.1B vs 0.309 for DINOv3-7B, trails on ImageNet); weights in 4 sizes[R]",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "299e6dbb18eb": {
+      "title": "ICML Position Track: Want Better ML Reviews? Stop Asking Nicely and Start Incentivizing with a Credit System [D]",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "0a7eeda27eae": {
+      "title": "TRACE: open-source hierarchical memory for LLM agents, 82.5% on MemoryAgentBench’s EventQA using gpt-oss-20B [P]",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "dad7d6fdc419": {
+      "title": "Edge AI ASL Recognition on Raspberry Pi 5 – Looking for Feedback on My System Design [P]",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "537a506a8437": {
+      "title": "How should I encode both target and feature variable for a multiclass classification? [D]",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "9cd5ab240ac0": {
+      "title": "CPU TTS benchmark with UTMOS MOS scoring: Kokoro, Supertonic, Inflect-Nano, and Kyutai's new Pocket TTS [P]",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "dd794aeb2a7a": {
+      "title": "does quantising a model reduce its performance ?[R]",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "fa16d7111ac9": {
+      "title": "SynexHack",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "4f9dd7d38fd2": {
+      "title": "Brainwave 2026",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "9832fd7f557f": {
+      "title": ".hack '26",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "70bc75f040a5": {
+      "title": "Weekly Contest 511 (leetcode.com)",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "b6bd18be327b": {
+      "title": "RECRUIT Nihonbashi Half Marathon 2026 Summer (AtCoder Heuristic Contest 069) (atcoder.jp)",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "78ce7f891871": {
+      "title": "Trinity Idea Pitch Arena Hackathon 2026",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "296912a848dc": {
+      "title": "ExploitX: Into the Void 2.0 CTF",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "982ba341e9ad": {
+      "title": "Innovate 4 Impact",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "157677b03920": {
+      "title": "National Level Technical Hackathon",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "9f08a8524f00": {
+      "title": "The ₹100 Founder Challenge",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "263a7c327ed0": {
+      "title": "Business Development Manager Internship",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "2a33d46bf811": {
+      "title": "Export Merchandising Internship",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "26bb4d663335": {
+      "title": "Global Campus Ambassador Internship",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "8203ec936d8c": {
+      "title": "HR Internship",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "220ad3afc85e": {
+      "title": "Content Creator & Writer Internship",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "639d6e2506f4": {
+      "title": "Campus Ambassador Internship",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "ca0edabdccf3": {
+      "title": "Founding Campus Head Internship",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "3aa847782d83": {
+      "title": "Graphic Designer Internship",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "552d9b43737c": {
+      "title": "TikTok — Applied Scientist Intern - Recommendation AI Lab",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "d6aedc65a424": {
+      "title": "Meta — Research Scientist Intern - 3D Vision & World Simulation",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "9f3b2c319380": {
+      "title": "AlixPartners — Data Scientist Intern",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "fc9f63888ee5": {
+      "title": "Jane Street — Software Engineering Intern",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "1c5596b346ef": {
+      "title": "Jane Street — Software Engineer",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "88cea60831e8": {
+      "title": "Jane Street — Machine Learning Researcher",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "8cf2703f8612": {
+      "title": "Jane Street — Machine Learning Engineer",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "759bbb12f28d": {
+      "title": "Ada — Software Engineer Intern",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "3f3a408c5ddf": {
+      "title": "Blue River Technology — Machine Learning Intern - Autonomy",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "a4f6397ab2ae": {
+      "title": "IMC Trading — Machine Learning Research Intern",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "93e1cb28a73e": {
+      "title": "CSL — AI Technology Product Co-op",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "de02c137242e": {
+      "title": "CSL — Data Science / Analytics Co-op",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "f921aaece10a": {
+      "title": "CSL — Data Science / Analytics Co-op",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "fcd685d7ac50": {
+      "title": "CSL — Data Science/Analytics Co-op",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "3b3f23b7244e": {
+      "title": "CSL — Analytics Co-op - Strategic Forecasting & AI",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "f0116d481c7f": {
+      "title": "American Bureau of Shipping — AI Software Engineering Intern",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "a70287305141": {
+      "title": "Cloudflare — AI Builder Intern - Global Customer Engineering - Service Sales",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "7d2de9f5705a": {
+      "title": "Quest Global — Software Engineer",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "times_seen": 1
+    },
+    "cebaae33e1b3": {
+      "title": "Celonis — Associate Value Engineer - AI-Driven Data Science & Analytics - Orbit Program",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
       "times_seen": 1
     }
   }
