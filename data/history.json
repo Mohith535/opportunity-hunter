@@ -15868,6 +15868,1367 @@
           "key": "cebaae33e1b3"
         }
       ]
+    },
+    {
+      "date": "2026-07-08",
+      "items": [
+        {
+          "title": "Rethinking Indic AI from a Lens of Cultural Heritage Preservation",
+          "url": "https://arxiv.org/abs/2607.06544v1",
+          "source": "arxiv",
+          "description": "As Artificial Intelligence (AI) makes inroads into different parts of the Indian subcontinent, there is significant interest in studying how AI impacts the linguistic and cultural foundations of this civilization. AI is seen as a ''double-edged sword'' where on the one hand, it can enable access and inclusion for a large population, on the other, it can homogenize worldviews and exclude underrepresented languages and worldviews. In this paper, we try to characterize this problem by addressing the extensive characteristic nature of Indian linguistics and the way they closely connect to cultural practices and worldview. We then perform a longitudinal survey of how Natural Language Processing (NLP) techniques have evolved in this space, tracing the historical development of Indic NLP, covering key milestones, methodological shifts, and resource creation efforts. In addition, the paper also examines the structural and sociolinguistic characteristics of Indian languages, such as rich morphology, complex scripts and grammar rules, diglossia, and large dialectal variation, and explains how these create unique challenges for building AI foundation models. We then discuss the growing role of Indic foundation models and analyze how these models address these long-standing resource and representation gaps. Finally, we propose a research direction called 'Culture Sensing', which re-imagines AI based on hermeneutic reasoning. Culture Sensing aims to address open problems such as ensuring equitable performance across low-resource languages and producing outputs that are culturally meaningful. By bringing together past work, current techniques, and emerging trends, this paper outlines research directions that can guide the next phase of Indic NLP and contribute to the development of more robust and inclusive Indic foundation models.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.06544",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "Relevant NLP topic; could inspire a portfolio project on Indic AI",
+          "action_plan": [
+            "Download paper and skim abstract (15m)",
+            "Read full paper focusing on methodology (2h)",
+            "Brainstorm project ideas based on gaps (2h)",
+            "Implement a small prototype (1w)",
+            "Write a blog post showcasing results (2d)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 6,
+            "deadline": 1,
+            "skill": 5,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "028da6cc18a3"
+        },
+        {
+          "title": "Hierarchical Acoustic-Semantic Modeling: Modality Separation and Semantic Coherence for Full-Duplex SLMs",
+          "url": "https://arxiv.org/abs/2607.06540v1",
+          "source": "arxiv",
+          "description": "Developing seamless, high-performance, native intelligent full-duplex Spoken Language Models (SLMs) remains a critical challenge and long-standing goal for the speech and NLP community. Despite notable progress, recent endeavors are fundamentally constrained by severe modality interference, which causes substantial knowledge degradation and compromises semantic integrity -- ultimately making full-duplex SLMs feel unnatural and unintelligent. In this paper, through an exhaustive fine-grained analysis of model optimization dynamics, we uncover the root cause of such performance degradation, revealing that modality interference arises from inherent gradient conflicts between acoustic and semantic modeling when the two modalities are forced to share a deep parameter space. Guided by this key insight, we introduce Lychee-FD, a native end-to-end full-duplex framework designed to mitigate modality interference. Importantly, we propose a hierarchical parameter separation strategy that decouples conflicting modalities in deep layers while preserving cross-modality coherence via a dedicated semantic alignment channel. Extensive experiments on multiple full-duplex benchmarks demonstrate that our method significantly advances the state of the art, yielding substantial improvements in both speech intelligence (+7.4% on Spoken QA) and full-duplex interaction fluidity (+28.5% on FullDuplexBench 1.5) without compromising inference efficiency. To the best of our knowledge, this work is the first to achieve two key advances: 1) uncovering and elucidating the root cause of modality interference in full-duplex SLMs, and 2) designing an elegant hierarchical model together with a practical solution for seamless, high-performance, native intelligent full-duplex SLMs.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.06540",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Advanced speech modeling research; outside core AI focus but useful",
+          "action_plan": [
+            "Obtain paper PDF (10m)",
+            "Read introduction and related work (1h)",
+            "Identify key technical contributions (1h)",
+            "Prototype a simplified version of the model (1w)",
+            "Document findings in a short report (2d)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 1,
+            "skill": 5,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "cc579555c434"
+        },
+        {
+          "title": "The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology",
+          "url": "https://arxiv.org/abs/2607.06531v1",
+          "source": "arxiv",
+          "description": "- Objective: Multimodal deep learning models in oncology are currently limited by monolithic designs that rigidly couple data ingestion, clinical routing, and artificial intelligence (AI) inference. To address this inflexibility, we propose the Large Cancer Assistant (LCA), a model-agnostic, post-hoc orchestration framework designed for scalable clinical decision support. - Methods: The LCA is mathematically formalized as a 7-tuple architecture grounded in the principle of Algorithmic Impermeability, ensuring the orchestration logic remains strictly independent of underlying black-box AI models. We introduce the Entry Theory, leveraging Geometric Deep Learning (GDL) to standardize multimodal patient data along distinct structural and medical axes. The system dynamically orchestrates data via a Cancer Switching Module and intentionally isolates the core AI execution from volatile hospital IT infrastructures by outputting a Standardized Intermediate Payload (SIP). - Results: A Proof of Concept (PoC) validated the orchestration logic across four technical scenarios. The framework executed a nominal flow with negligible orchestration overhead. It empirically demonstrated algorithmic impermeability by maintaining an invariant routing projection during AI model swaps, and it validated strict failure-safety by achieving a 100\\% recall rate in generating targeted Supplementary Data Requests (SDR) under injected data anomalies. Multi-protocol execution capability was also successfully verified. - Conclusion: By structurally decoupling multimodal ingestion from feature inference, the LCA provides a highly adaptable and modular orchestration foundation. The SIP establishes a clear architectural boundary, natively setting the stage for downstream Electronic Medical Record (EMR) interoperability as an independent future paradigm.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.06531",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Healthcare AI angle broadens portfolio but not primary interest area",
+          "action_plan": [
+            "Read paper abstract to gauge relevance (15m)",
+            "Deep dive into architecture section (1h)",
+            "Sketch how to adapt framework for a student project (2h)",
+            "Build a minimal demo using open datasets (1w)",
+            "Publish demo on GitHub with documentation (2d)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 5,
+            "deadline": 1,
+            "skill": 5,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "d660fc80a19d"
+        },
+        {
+          "title": "Life Style Levels: Neighborhood Delineation using Geospatial Data",
+          "url": "https://arxiv.org/abs/2607.06529v1",
+          "source": "arxiv",
+          "description": "Fine-scale socioeconomic information is often unavailable across rapidly ur-banizing regions of the developing world, like India, limiting the ability to delineate intra-urban variations in affluence and deprivation. This study pro-poses a scalable, grid-based urban delineation framework using building morphology derived from open-source satellite imagery. Urban areas across 59 Indian cities and towns are partitioned into high-resolution spatial grids and characterized using interpretable morphological indicators, which are combined into a transparent, rule-based scoring framework to delineate areas with contrasting levels of urban affluence. The resulting classifications are validated through ground-level Google Street View observations, revealing a sharp contrast between the grid classes which are consistent with the ex-pected effects of the lifestyle affluence indicators. We further investigate density-based clustering of building footprints in Mumbai to identify dense urban settlements, demonstrating that the resulting clusters exhibit substan-tial spatial overlap with known informal settlements across the city. Finally, we conduct an exploratory analysis mapping consumer loan delinquency across the derived affluence classes. By relying entirely on publicly available geospatial data, the proposed framework provides a scalable, interpretable, and cost-effective approach for granular urban affluence mapping across In-dian cities.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.06529",
+          "score": 4,
+          "ai_score": 6,
+          "ai_summary": "research in geospatial data",
+          "action_plan": [
+            "read paper",
+            "explore related work",
+            "apply concepts to own projects"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 6,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "bbefc6a483ff"
+        },
+        {
+          "title": "RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation",
+          "url": "https://arxiv.org/abs/2607.06527v1",
+          "source": "arxiv",
+          "description": "Multi-hop Question Answering over Knowledge Graphs faces a critical challenge: traditional retrieve-then-read pipelines break differentiability, preventing the retriever from learning to bridge the semantic gap where intermediate nodes lack lexical overlap with the query. To address this, we propose RSF-GLLM, a framework decoupling differentiable graph reasoning from answer generation. Our Recurrent Soft-Flow (RSF) module employs a GRU-guided query updater to propagate continuous relevance scores, utilizing a dynamic gating mechanism to traverse semantically dissimilar bridge nodes via structural cues. We introduce flow sparsity regularization to theoretically guarantee convergence from soft probabilities to discrete reasoning paths. These paths are extracted and textualized to fine-tune a Large Language Model (LLM), ensuring generation is grounded in factual topology. Experiments on WebQSP and CWQ demonstrate that RSF-GLLM achieves competitive performance with superior inference efficiency compared to LLM based computationally expensive approaches.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.06527",
+          "score": 5,
+          "ai_score": 8,
+          "ai_summary": "aligns with AI research interests",
+          "action_plan": [
+            "read paper",
+            "explore related work",
+            "apply concepts to own projects"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "2a8ef4aa3a13"
+        },
+        {
+          "title": "eli-labz/Cognitive-Core-Skills — ★274",
+          "url": "https://github.com/eli-labz/Cognitive-Core-Skills",
+          "source": "github",
+          "description": "A universal, industry-neutral taxonomy of cognitive core skills (perception, memory, reasoning, planning, action, verification, learning, governance) for LLMs, SLMs, AI agents, and world models — with schemas, 159 skill cards, benchmarks, and CI. (topics: agent skills, agentic ai, ai agents, ai safety, artificial intelligence, benchmarks, cognitive architecture, json schema, knowledge graph, llm, machine learning, prompt engineering, schema, slm, taxonomy, world models)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "eli-labz/Cognitive-Core-Skills",
+          "score": 2,
+          "ai_score": 7,
+          "ai_summary": "Directly matches agent skill taxonomy; high learning and contribution value",
+          "action_plan": [
+            "Clone the repo and explore README (30m)",
+            "Pick one skill card to implement (1h)",
+            "Create a small demo showcasing the skill (2d)",
+            "Write a concise contribution guide (1d)",
+            "Submit a pull request to the repo (1d)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "ea7a40939623"
+        },
+        {
+          "title": "Pure-Python symbolic regression that rediscovered Kepler's law from 8 data point",
+          "url": "https://github.com/ariel95500-create/gp-elite",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48761788",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "Research‑level project aligns with AI goals and showcases originality.",
+          "action_plan": [
+            "Read the original paper (2h)",
+            "Implement regression in Python (4h)",
+            "Write a short blog post (2h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "fea91446676b"
+        },
+        {
+          "title": "IEEE Rolls Out Large Language Models Training Course",
+          "url": "https://spectrum.ieee.org/large-language-models-ieee-course",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48742703",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "IEEE LLM course builds relevant knowledge; certificate adds modest resume value.",
+          "action_plan": [
+            "Enroll in the course (5m)",
+            "Complete weekly modules (2h/week)",
+            "Apply learned tricks to a side project (4h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 7,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "6c018477bd64"
+        },
+        {
+          "title": "Kaya AI India Hackathon 2026",
+          "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 10 - Jul 10, 2026 | prize ₹ 350,000 | themes: IoT, Machine Learning/AI, Enterprise",
+          "deadline": "2026-07-10",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30326",
+          "score": 10,
+          "ai_score": 6,
+          "ai_summary": "ML/AI theme, prize, and online format",
+          "action_plan": [
+            "Review hackathon rules (1 hour)",
+            "Form a team and choose a theme (2 hours)",
+            "Develop a project (20 hours)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 8,
+            "skill": 7,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "e9e2e3debc2f"
+        },
+        {
+          "title": "MIRA: Multiplayer Interactive World Models trained on Rocket League [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1upofuw/mira_multiplayer_interactive_world_models_trained/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1upofuw",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "834ced8e7bbb"
+        },
+        {
+          "title": "TorchJD: Training with multiple losses in PyTorch [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1upzxk2/torchjd_training_with_multiple_losses_in_pytorch_p/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1upzxk2",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d4321f9f96d3"
+        },
+        {
+          "title": "Ph.D. thesis on Differentiable Ray Tracing for Radio Propagation Modeling [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1upvkp5/phd_thesis_on_differentiable_ray_tracing_for/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1upvkp5",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d6ffb1dc212e"
+        },
+        {
+          "title": "Raffi Krikorian (CTO, Mozilla) — AMA on the State of Open Source AI (July 14 @ 1pm EDT) [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1upxdvc/raffi_krikorian_cto_mozilla_ama_on_the_state_of/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1upxdvc",
+          "score": 5,
+          "ai_score": 5,
+          "ai_summary": "limited skill growth",
+          "action_plan": [
+            "attend AMA",
+            "take notes"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 8,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "55b6ed929c1d"
+        },
+        {
+          "title": "ACL ARR May 2026[D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uqdpdb/acl_arr_may_2026d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uqdpdb",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bef91bde5d28"
+        },
+        {
+          "title": "[D] Issue with arxiv - abstract not matching pdf/html [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1upr21d/d_issue_with_arxiv_abstract_not_matching_pdfhtml_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1upr21d",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "384fdf418b53"
+        },
+        {
+          "title": "What if a model could only learn what trusted LoRA adapters can express? [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uq68li/what_if_a_model_could_only_learn_what_trusted/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uq68li",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "26e1f2ec7d84"
+        },
+        {
+          "title": "Learning FlashAttention the Hard Way. Part 1: The Algebraic Foundation [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uqcglz/learning_flashattention_the_hard_way_part_1_the/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uqcglz",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "856b93c22e72"
+        },
+        {
+          "title": "Masked depth modeling with sensor-validity masking: reports best RMSE on 7 of 8 masked/sparse depth benchmarks, plus a controlled encoder-init study[R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1upqghy/masked_depth_modeling_with_sensorvalidity_masking/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1upqghy",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ed9f775eb2c3"
+        },
+        {
+          "title": "Mid research got me thinking what about reversed alignment, would trained \"bad\" model exhibit\"good\" behavior later and/or secretly [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uq4qis/mid_research_got_me_thinking_what_about_reversed/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uq4qis",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "limited skill growth",
+          "action_plan": [
+            "read discussion",
+            "participate if relevant"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "fcd8e8da5ebe"
+        },
+        {
+          "title": "Dora Hack 2.0",
+          "url": "https://dora-hack.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon |  | themes: No Restrictions",
+          "deadline": "2026-08-06",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "04f0bd660de3437e990c6b771e62fc53",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Upcoming hackathon offers a chance to build quickly, but low AI focus.",
+          "action_plan": [
+            "Check Dora Hack rules (15m)",
+            "Brainstorm a simple AI demo (1h)",
+            "Develop prototype before deadline (2 days)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 6,
+            "skill": 6,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "525ef091051e"
+        },
+        {
+          "title": "Weekend Dev Challenge 58: LLD Projects (codechef.com)",
+          "url": "https://www.codechef.com/DEVWEEKEND58",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-07-10T18:30:00",
+          "deadline": "2026-07-10",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68719373",
+          "score": 5,
+          "ai_score": 6,
+          "ai_summary": "competitive programming",
+          "action_plan": [
+            "review contest rules",
+            "practice relevant problems",
+            "participate in contest"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 9,
+            "skill": 6,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "b6e529d375e0"
+        },
+        {
+          "title": "Spectral::Cup 2026 Round 3 (Codeforces Round, Div. 1 + Div. 2) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2245",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-07-16T14:35:00",
+          "deadline": "2026-07-16",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68724585",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Competitive‑programming contest, little relevance to AI engineering goals.",
+          "action_plan": [
+            "Review past Spectral problems (2h)",
+            "Practice key algorithms (3h)",
+            "Participate on contest day (2h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 7,
+            "skill": 5,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "24dfa1025437"
+        },
+        {
+          "title": "Indradhanu: PCCOE International Grand Challenge 2026",
+          "url": "https://unstop.com/hackathons/indradhanu-pccoe-international-grand-challenge-2026-pimpri-chinchwad-college-of-engineering-pccoe-pune-1710779",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1710779",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0cf0b8ac4aa5"
+        },
+        {
+          "title": "EduSync: Connect the Web",
+          "url": "https://unstop.com/hackathons/edusync-connect-the-web-paper-buddy-1712464",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1712464",
+          "score": 4,
+          "ai_score": 4,
+          "ai_summary": "Hackathon adds a project but low AI focus and no prestige.",
+          "action_plan": [
+            "Research EduSync theme (1h)",
+            "Form a small team (2h)",
+            "Build a demo (2 days)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "14c566b5bf84"
+        },
+        {
+          "title": "Shepreneurs 2026",
+          "url": "https://unstop.com/hackathons/shepreneurs-2026-techverse-solutions-1712083",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1712083",
+          "score": 4,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Women‑only event excludes male participants · Cannot apply due to gender restriction.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Women‑only event excludes male participants"
+          },
+          "key": "9745da90bfff"
+        },
+        {
+          "title": "Brainwave",
+          "url": "https://unstop.com/hackathons/brainwave-2026-guru-gobind-singh-indraprastha-university-ggsipu-delhi-1711474",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1711474",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fd7e39ab7160"
+        },
+        {
+          "title": "Generative AI Creative Internship",
+          "url": "https://unstop.com/internships/generative-ai-creative-internship-terrabyte-1714132",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1714132",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Generative AI focus and internship experience",
+          "action_plan": [
+            "Update resume and portfolio (2 hours)",
+            "Apply for the internship (1 hour)",
+            "Prepare for potential interviews (5 hours)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "1c62b28460c1"
+        },
+        {
+          "title": "Founder Office Role Internship",
+          "url": "https://unstop.com/internships/founder-office-role-internship-mindgrid-1711496",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711496",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Non-technical role, less relevant to AI/ML goals",
+          "action_plan": [
+            "Review job description (30 minutes)",
+            "Consider applying if skills match (1 hour)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "43f1e7dfc323"
+        },
+        {
+          "title": "Digital Marketing Internship",
+          "url": "https://unstop.com/internships/digital-marketing-internship-sensorspine-pvt-ltd-1713454",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1713454",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Non-technical role, less relevant to AI/ML goals",
+          "action_plan": [
+            "Review job description (30 minutes)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "12f7b17ca224"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-wholesome-co-1713268",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1713268",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Non-technical role, less relevant to AI/ML goals",
+          "action_plan": [
+            "Review job description (30 minutes)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "50b03b1033f3"
+        },
+        {
+          "title": "Junior Agentic AI Developer Internship",
+          "url": "https://unstop.com/internships/junior-agentic-ai-developer-internship-smaranaiin-1713690",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1713690",
+          "score": 8,
+          "ai_score": 6,
+          "ai_summary": "AI development focus and internship experience",
+          "action_plan": [
+            "Update resume and portfolio (2 hours)",
+            "Apply for the internship (1 hour)",
+            "Prepare for potential interviews (5 hours)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "1dd48d7bece8"
+        },
+        {
+          "title": "Digital Growth & Outreach Internship",
+          "url": "https://unstop.com/internships/digital-growth-outreach-internship-vivid-nexus-1711709",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711709",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Non-technical role, less relevant to AI/ML goals",
+          "action_plan": [
+            "Review job description (30 minutes)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "ed4268fdbbe1"
+        },
+        {
+          "title": "Student Outreach Coordinator",
+          "url": "https://unstop.com/internships/student-outreach-coordinator-innovative-edspark-pvt-ltd-1711945",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1711945",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "not directly related to AI",
+          "action_plan": [
+            "review internship description",
+            "apply if interested"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "a5c3e3135bb4"
+        },
+        {
+          "title": "Cirkled In “No Sweat” Scholarship (Q3)",
+          "url": "https://unstop.com/scholarships/cirkled-in-no-sweat-scholarship-q3-cirkled-in-1713025",
+          "source": "unstop",
+          "description": "scholarship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "scholarship"
+          ],
+          "native_id": "1713025",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Scholarship, not directly related to AI/ML experience",
+          "action_plan": [
+            "Review scholarship requirements (30 minutes)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "827da0aeb459"
+        },
+        {
+          "title": "Amwins — Analytics & AI Intern",
+          "url": "https://www.amwins.com/who-we-are/careers/open-positions?gh_jid=4302229009",
+          "source": "internships",
+          "description": "internship | Amwins | Hartford, CT | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "96edf10e-0444-407a-bdcd-f798aedcb75d",
+          "score": 3,
+          "ai_score": 8,
+          "ai_summary": "AI internship at Amwins could boost portfolio, but eligibility uncertain. · ⚠ verify eligibility: US location may need visa/work authorizati",
+          "action_plan": [
+            "Check visa/remote policy (30m)",
+            "Tailor resume to analytics role (1h)",
+            "Submit application (1h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 3,
+            "skill": 9,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US location may need visa/work authorization"
+          },
+          "key": "9de6d46bc9f7"
+        },
+        {
+          "title": "Bank of Montreal — Data Scientist Co-op/Internship - Months",
+          "url": "https://bmo.wd3.myworkdayjobs.com/External/job/Toronto-ON-CAN/Data-Scientist--Fall-2026---Co-op-Internship----12-months_R260019879",
+          "source": "internships",
+          "description": "internship | Bank of Montreal | Toronto, ON, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "951ea1eb-5dba-4124-a68e-3b001ca355d9",
+          "score": 6,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — location · not in target location",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "no",
+            "elig_note": "location"
+          },
+          "key": "f4a1369fa82d"
+        },
+        {
+          "title": "Harris Computer — AI & Automation Intern",
+          "url": "https://harriscomputer.wd3.myworkdayjobs.com/1/job/Remote---North-Carolina/Intern_R0044342-1",
+          "source": "internships",
+          "description": "internship | Harris Computer | North Carolina | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "970c3ae9-b47d-4765-baf9-239112cff3a7",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "AI & Automation internship aligns with goals; eligibility unclear. · ⚠ verify eligibility: US location may need visa/work authorization",
+          "action_plan": [
+            "Research Harris Computer remote options (30m)",
+            "Update CV with AI projects (1h)",
+            "Apply before deadline (1h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 3,
+            "skill": 8,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US location may need visa/work authorization"
+          },
+          "key": "d244bee823b4"
+        },
+        {
+          "title": "Schweitzer Engineering Laboratories — Software Engineering Intern",
+          "url": "https://selinc.wd1.myworkdayjobs.com/SEL/job/Texas---Round-Rock/Software-Engineer-Intern_2026-21720",
+          "source": "internships",
+          "description": "internship | Schweitzer Engineering Laboratories | Round Rock, TX | Fall 2026, Winter 2027, Spring 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c397c573-0849-4481-968f-9dd2b5b1ab87",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "General software role, low AI relevance, moderate brand · ⚠ verify eligibility: US work visa needed for Indian student",
+          "action_plan": [
+            "Research visa options (1 day)",
+            "Tailor resume to highlight AI projects (2 days)",
+            "Submit application before internal deadline (1 week)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "unclear",
+            "elig_note": "US work visa needed for Indian student"
+          },
+          "key": "2674040e9c4e"
+        },
+        {
+          "title": "Bank of Montreal — Data Scientist Co-op/Internship - Months",
+          "url": "https://bmo.wd3.myworkdayjobs.com/Campus/job/Toronto-ON-CAN/Data-Scientist--Fall-2026---Co-op-Internship----12-months_R260019879-1",
+          "source": "internships",
+          "description": "internship | Bank of Montreal | Toronto, ON, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5e294159-e3e6-40db-afb9-65ff63749aa3",
+          "score": 6,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — location · not in target location",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "no",
+            "elig_note": "location"
+          },
+          "key": "8f18c72a7c60"
+        },
+        {
+          "title": "Amgen — Software Engineer Co-op - Multiple Teams",
+          "url": "https://amgen.wd1.myworkdayjobs.com/careers/job/Canada---Burnaby/Undergraduate--Co-op-Student---Software-Engineer---Large-Molecule-Discovery---Technology_R-249424",
+          "source": "internships",
+          "description": "internship | Amgen | Burnaby, BC, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "242592f3-d34b-4408-83fc-12609e3b71f9",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Pharma software, not aligned with AI focus · ⚠ verify eligibility: Canadian co‑op may require local work permit",
+          "action_plan": [
+            "Check eligibility for international co‑op (1 day)",
+            "Map any AI‑related coursework to role (2 days)",
+            "Apply via university portal (1 week)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "unclear",
+            "elig_note": "Canadian co‑op may require local work permit"
+          },
+          "key": "beee0071dd06"
+        },
+        {
+          "title": "1X — AI Residency Intern",
+          "url": "https://jobs.ashbyhq.com/1x/5b2b4c73-13b5-46ca-8467-8024741a4b57/application",
+          "source": "internships",
+          "description": "internship | 1X | San Carlos, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cce4a124-68d8-4941-9fff-ddbee5dfc0b3",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — AI residency expects PhD or post‑grad experience · Not open to undergrad students; too advanced",
+          "action_plan": [
+            "N/A"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 2,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "AI residency expects PhD or post‑grad experience"
+          },
+          "key": "ef40f99bdc34"
+        },
+        {
+          "title": "Caterpillar Inc. — Communications & AI Intern - AI Developer",
+          "url": "https://cat.wd5.myworkdayjobs.com/CaterpillarCareers/job/Peoria-Illinois/Part-time-Intern---AI-Developer_R0000376582",
+          "source": "internships",
+          "description": "internship | Caterpillar Inc. | Peoria, IL | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0a5d1e5d-49ca-48f2-bc26-b0fd949cbe4b",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "AI developer role, but industrial focus limits AI depth · ⚠ verify eligibility: US internship needs visa for Indian undergrad",
+          "action_plan": [
+            "Identify visa pathways (1 day)",
+            "Highlight AI projects in resume (2 days)",
+            "Submit before summer 2026 posting (1 week)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 4,
+            "eligible": "unclear",
+            "elig_note": "US internship needs visa for Indian undergrad"
+          },
+          "key": "d678a67c2770"
+        },
+        {
+          "title": "Blackberry — QNX Software Developer Co-op - Integration",
+          "url": "https://bb.wd3.myworkdayjobs.com/Student/job/Ottawa-Ontario/QNX--Software-Developer-Student--Integration-_20260244",
+          "source": "internships",
+          "description": "internship | Blackberry | Ottawa, ON, Canada | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "af9f0a8b-b6df-4358-9834-160d1d0d7a32",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "QNX integration, low AI relevance, modest brand · ⚠ verify eligibility: Canadian co‑op may need work authorization",
+          "action_plan": [
+            "Confirm eligibility for international co‑op (1 day)",
+            "Adapt CV to emphasize systems work (2 days)",
+            "Apply via company portal (1 week)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "unclear",
+            "elig_note": "Canadian co‑op may need work authorization"
+          },
+          "key": "b35f107b2251"
+        },
+        {
+          "title": "KLA Corporation — AI Intern",
+          "url": "https://kla.wd1.myworkdayjobs.com/Search/job/Newport-United-Kingdom/AI-Summer-Intern_2638689",
+          "source": "internships",
+          "description": "internship | KLA Corporation | Cardiff, UK | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e4e553a8-fbb0-4a2e-ba7c-ee84eda6d40f",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "AI intern at leading semiconductor firm; good AI exposure · ⚠ verify eligibility: UK internship may require visa for Indian student",
+          "action_plan": [
+            "Research UK Tier‑5 visa requirements (1 day)",
+            "Showcase AI research and KLA‑relevant projects (2 days)",
+            "Submit application before summer 2026 deadline (1 week)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "UK internship may require visa for Indian student"
+          },
+          "key": "7ea86515197b"
+        },
+        {
+          "title": "Hitachi Energy — Software Analyst Intern",
+          "url": "https://hitachi.wd1.myworkdayjobs.com/hitachi/job/Burnaby-British-Columbia-Canada/Software-Analyst-Intern--Fall-2026--4-8-12-months-_R1012892-1",
+          "source": "internships",
+          "description": "internship | Hitachi Energy | Burnaby, BC, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7717c612-0855-40d4-8f2d-ceb5c5bc2d57",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Software analyst role, moderate AI relevance, decent brand · ⚠ verify eligibility: Canadian internship may need work permit",
+          "action_plan": [
+            "Check eligibility for Canadian work experience (1 day)",
+            "Align past AI projects with analyst duties (2 days)",
+            "Apply before Fall 2026 posting (1 week)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 5,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "unclear",
+            "elig_note": "Canadian internship may need work permit"
+          },
+          "key": "bc60caae2d71"
+        },
+        {
+          "title": "Charles River Analytics — Software Engineer Intern",
+          "url": "https://cra.com/job-listings/job?gh_jid=8047653",
+          "source": "internships",
+          "description": "internship | Charles River Analytics | Cambridge, MA | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "26d82c3c-2d34-4225-b3e9-810a1b478679",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Charles River does AI research; good fit for AI engineering · ⚠ verify eligibility: US internship needs visa for Indian undergrad",
+          "action_plan": [
+            "Explore US J‑1 visa options (1 day)",
+            "Highlight AI research and open‑source contributions (2 days)",
+            "Submit application before summer 2026 deadline (1 week)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US internship needs visa for Indian undergrad"
+          },
+          "key": "971a4c495fc0"
+        },
+        {
+          "title": "Hitachi — Software Analyst Intern",
+          "url": "https://hitachi.wd1.myworkdayjobs.com/hitachi/job/Toronto-Ontario-Canada/Software-Analyst-Intern--Fall-2026--8-months-_R1012810-1",
+          "source": "internships",
+          "description": "internship | Hitachi | Toronto, ON, Canada | Fall 2026, Winter 2027, Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3274d779-e985-4d1a-a236-73e8fe32e66e",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Software role at Hitachi offers modest resume boost but low AI focus · ⚠ verify eligibility: visa/work authorization not specified",
+          "action_plan": [
+            "Check Hitachi internship eligibility (1h)",
+            "Tailor resume to software analyst role (2d)",
+            "Submit application before next intake (1w)",
+            "Prepare for interview (2d)",
+            "If accepted, schedule internship (3m)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "visa/work authorization not specified"
+          },
+          "key": "c88fda3c748d"
+        },
+        {
+          "title": "Hitachi — Software Analyst Intern",
+          "url": "https://hitachi.wd1.myworkdayjobs.com/hitachi/job/Toronto-Ontario-Canada/Software-Analyst-Intern--Fall-2026--12months-_R1012380-1",
+          "source": "internships",
+          "description": "internship | Hitachi | Toronto, ON, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3c775d29-c599-4fd1-828e-591304e4cdd0",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Same as other Hitachi intern; modest career impact, low AI relevance · ⚠ verify eligibility: visa/work authorization not specified",
+          "action_plan": [
+            "Verify eligibility for Canadian internship (1h)",
+            "Update resume with relevant projects (2d)",
+            "Apply via Hitachi portal (1w)",
+            "Study typical interview questions (2d)",
+            "Plan internship logistics if selected (3m)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "visa/work authorization not specified"
+          },
+          "key": "45672920eabe"
+        },
+        {
+          "title": "Hitachi — Software Analyst Intern",
+          "url": "https://hitachi.wd1.myworkdayjobs.com/hitachi/job/Toronto-Ontario-Canada/Software-Analyst-Intern--Fall-2026--8-months-_R1012739-1",
+          "source": "internships",
+          "description": "internship | Hitachi | Scarborough, ON, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "bec6ff98-96c4-4532-8ffa-4bb1365c60c5",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Scarborough location adds no extra value; still low AI alignment · ⚠ verify eligibility: visa/work authorization not specified",
+          "action_plan": [
+            "Confirm eligibility for Scarborough site (1h)",
+            "Customize resume for software analyst (2d)",
+            "Submit application before deadline (1w)",
+            "Prepare technical interview (2d)",
+            "Arrange relocation if offered (3m)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "visa/work authorization not specified"
+          },
+          "key": "d90f935cae03"
+        },
+        {
+          "title": "Hitachi — Software Analyst Intern",
+          "url": "https://hitachi.wd1.myworkdayjobs.com/hitachi/job/Toronto-Ontario-Canada/Software-Analyst-Intern--Fall-2026--8-months-_R1013034-1",
+          "source": "internships",
+          "description": "internship | Hitachi | Toronto, ON, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a86f5630-f0c3-4242-8953-47503546c39f",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Duplicate Hitachi intern; limited AI relevance, moderate resume gain · ⚠ verify eligibility: visa/work authorization not specified",
+          "action_plan": [
+            "Check eligibility for Toronto internship (1h)",
+            "Polish resume with recent AI projects (2d)",
+            "Apply via Hitachi career page (1w)",
+            "Mock interview practice (2d)",
+            "Plan onboarding if selected (3m)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "visa/work authorization not specified"
+          },
+          "key": "3a2462502e17"
+        }
+      ]
     }
   ]
 }

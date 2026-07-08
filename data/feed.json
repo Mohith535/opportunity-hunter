@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-07",
+  "updated_at": "2026-07-08",
   "items": [
     {
       "key": "15e34ffda925",
@@ -614,6 +614,40 @@
       ]
     },
     {
+      "key": "2a8ef4aa3a13",
+      "title": "RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation",
+      "url": "https://arxiv.org/abs/2607.06527v1",
+      "source": "arxiv",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "aligns with AI research interests",
+      "action_plan": [
+        "read paper",
+        "explore related work",
+        "apply concepts to own projects"
+      ]
+    },
+    {
+      "key": "9de6d46bc9f7",
+      "title": "Amwins — Analytics & AI Intern",
+      "url": "https://www.amwins.com/who-we-are/careers/open-positions?gh_jid=4302229009",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI internship at Amwins could boost portfolio, but eligibility uncertain. · ⚠ verify eligibility: US location may need visa/work authorizati",
+      "action_plan": [
+        "Check visa/remote policy (30m)",
+        "Tailor resume to analytics role (1h)",
+        "Submit application (1h)"
+      ]
+    },
+    {
       "key": "5ad8b8317125",
       "title": "Sage IT Scholarship India - November 2026",
       "url": "https://unstop.com/scholarships/sage-it-scholarship-india-november-2026-sage-it-1688111",
@@ -769,23 +803,6 @@
         "Apply via Samsung portal (≈1h)",
         "Select a worklet aligned with AI agents (≈2 days)",
         "Deliver project during semester"
-      ]
-    },
-    {
-      "key": "e9e2e3debc2f",
-      "title": "Kaya AI India Hackathon 2026",
-      "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
-      "source": "devpost",
-      "score": 7,
-      "deadline": "2026-07-10",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AI Hackathon in India",
-      "action_plan": [
-        "Research Kaya AI (1 hour)",
-        "Form a team (2 hours)",
-        "Brainstorm project ideas (4 hours)"
       ]
     },
     {
@@ -1315,6 +1332,94 @@
       ]
     },
     {
+      "key": "ea7a40939623",
+      "title": "eli-labz/Cognitive-Core-Skills — ★274",
+      "url": "https://github.com/eli-labz/Cognitive-Core-Skills",
+      "source": "github",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "github",
+        "learning"
+      ],
+      "ai_summary": "Directly matches agent skill taxonomy; high learning and contribution value",
+      "action_plan": [
+        "Clone the repo and explore README (30m)",
+        "Pick one skill card to implement (1h)",
+        "Create a small demo showcasing the skill (2d)",
+        "Write a concise contribution guide (1d)",
+        "Submit a pull request to the repo (1d)"
+      ]
+    },
+    {
+      "key": "fea91446676b",
+      "title": "Pure-Python symbolic regression that rediscovered Kepler's law from 8 data point",
+      "url": "https://github.com/ariel95500-create/gp-elite",
+      "source": "hackernews",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "news"
+      ],
+      "ai_summary": "Research‑level project aligns with AI goals and showcases originality.",
+      "action_plan": [
+        "Read the original paper (2h)",
+        "Implement regression in Python (4h)",
+        "Write a short blog post (2h)"
+      ]
+    },
+    {
+      "key": "6c018477bd64",
+      "title": "IEEE Rolls Out Large Language Models Training Course",
+      "url": "https://spectrum.ieee.org/large-language-models-ieee-course",
+      "source": "hackernews",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "news"
+      ],
+      "ai_summary": "IEEE LLM course builds relevant knowledge; certificate adds modest resume value.",
+      "action_plan": [
+        "Enroll in the course (5m)",
+        "Complete weekly modules (2h/week)",
+        "Apply learned tricks to a side project (4h)"
+      ]
+    },
+    {
+      "key": "1c62b28460c1",
+      "title": "Generative AI Creative Internship",
+      "url": "https://unstop.com/internships/generative-ai-creative-internship-terrabyte-1714132",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Generative AI focus and internship experience",
+      "action_plan": [
+        "Update resume and portfolio (2 hours)",
+        "Apply for the internship (1 hour)",
+        "Prepare for potential interviews (5 hours)"
+      ]
+    },
+    {
+      "key": "d244bee823b4",
+      "title": "Harris Computer — AI & Automation Intern",
+      "url": "https://harriscomputer.wd3.myworkdayjobs.com/1/job/Remote---North-Carolina/Intern_R0044342-1",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI & Automation internship aligns with goals; eligibility unclear. · ⚠ verify eligibility: US location may need visa/work authorization",
+      "action_plan": [
+        "Research Harris Computer remote options (30m)",
+        "Update CV with AI projects (1h)",
+        "Apply before deadline (1h)"
+      ]
+    },
+    {
       "key": "c33a60630cca",
       "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
       "url": "https://arxiv.org/abs/2606.28277v1",
@@ -1457,6 +1562,23 @@
         "Form team (1 week)",
         "Prepare for challenge (2 weeks)",
         "Participate in challenge (3 days)"
+      ]
+    },
+    {
+      "key": "e9e2e3debc2f",
+      "title": "Kaya AI India Hackathon 2026",
+      "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
+      "source": "devpost",
+      "score": 6,
+      "deadline": "2026-07-10",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "ML/AI theme, prize, and online format",
+      "action_plan": [
+        "Review hackathon rules (1 hour)",
+        "Form a team and choose a theme (2 hours)",
+        "Develop a project (20 hours)"
       ]
     },
     {
@@ -1652,125 +1774,6 @@
       "action_plan": [
         "Read the paper",
         "Analyze the methodology"
-      ]
-    },
-    {
-      "key": "0c1eede7ed8b",
-      "title": "Looking for feedback on a small test SLM I built completely from scratch [P]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1um013f/looking_for_feedback_on_a_small_test_slm_i_built/",
-      "source": "reddit",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "SLM project and feedback",
-      "action_plan": [
-        "Read thread, 1h",
-        "Research SLM, 2h",
-        "Provide feedback, 1h"
-      ]
-    },
-    {
-      "key": "748a9b126cd1",
-      "title": "ByteDance — Research Scientist Intern - AI Infrastructure",
-      "url": "https://jobs.bytedance.com/en/position/7553916190126524680/detail",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI infrastructure internship",
-      "action_plan": [
-        "Check internship requirements",
-        "Update resume"
-      ]
-    },
-    {
-      "key": "e0d198537ce2",
-      "title": "ByteDance — Research Scientist Intern - AI Infrastructure",
-      "url": "https://jobs.bytedance.com/en/position/7553917136512076050/detail",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI infrastructure internship",
-      "action_plan": [
-        "Check internship requirements",
-        "Update resume"
-      ]
-    },
-    {
-      "key": "291b6d6fee6c",
-      "title": "Saronic — Enterprise Technology Intern - AI and Automation",
-      "url": "https://jobs.ashbyhq.com/saronic/c95c2e3a-4c67-47b0-a03d-0e0317ac11a3/application",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI & automation aligns with interests; company less known but decent.",
-      "action_plan": [
-        "Locate Saronic internship posting.",
-        "Tailor cover letter to AI automation work.",
-        "Apply and follow up via LinkedIn."
-      ]
-    },
-    {
-      "key": "5560f3aefdc5",
-      "title": "Bot Auto — Deep Learning Engineer Intern",
-      "url": "https://job-boards.greenhouse.io/botauto/jobs/5289440008",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Deep learning engineer internship",
-      "action_plan": [
-        "Check internship requirements",
-        "Update resume"
-      ]
-    },
-    {
-      "key": "aa8695231051",
-      "title": "Codeforces Round (Div. 2) (codeforces.com)",
-      "url": "https://codeforces.com/contests/2246",
-      "source": "clist",
-      "score": 6,
-      "deadline": "2026-07-12",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "Competitive programming",
-      "action_plan": [
-        "Research contest rules (2 hours)",
-        "Prepare for the contest (1 week)",
-        "Participate in the contest (1 day)"
-      ]
-    },
-    {
-      "key": "aa1cfc4473dd",
-      "title": "Biweekly Contest 187 (leetcode.com)",
-      "url": "https://leetcode.com/contest/biweekly-contest-187",
-      "source": "clist",
-      "score": 6,
-      "deadline": "2026-07-18",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "Competitive programming",
-      "action_plan": [
-        "Research contest rules (2 hours)",
-        "Prepare for the contest (1 week)",
-        "Participate in the contest (1 day)"
       ]
     }
   ]
