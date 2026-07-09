@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-08",
+  "updated_at": "2026-07-09",
   "items": [
     {
       "key": "15e34ffda925",
@@ -645,6 +645,24 @@
         "Check visa/remote policy (30m)",
         "Tailor resume to analytics role (1h)",
         "Submit application (1h)"
+      ]
+    },
+    {
+      "key": "7d7518156e18",
+      "title": "Loblaw Companies — AI Engineering Co-op",
+      "url": "https://myview.wd3.myworkdayjobs.com/paradox_careers/job/1-Presidents-Choice-Circle-Brampton-ON/AI-Engineering---Co-op-Student_R2000681500",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI engineering co‑op aligns with goals; moderate prestige, visa uncertain. · ⚠ verify eligibility: Canadian work permit may be needed",
+      "action_plan": [
+        "Research Canada co‑op work‑permit rules (2h)",
+        "Craft AI‑focused resume & cover letter (4h)",
+        "Submit application (1h)",
+        "Prepare for interview with AI project examples (1 week)"
       ]
     },
     {
@@ -1420,6 +1438,74 @@
       ]
     },
     {
+      "key": "25bda6661f33",
+      "title": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass",
+      "url": "https://arxiv.org/abs/2607.07696v1",
+      "source": "arxiv",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "LLM and database research",
+      "action_plan": [
+        "read paper",
+        "explore Jailbreak",
+        "apply to related internships"
+      ]
+    },
+    {
+      "key": "7fc6355d2892",
+      "title": "Jump Trading — AI Research Engineer Intern",
+      "url": "https://boards.greenhouse.io/embed/job_app?token=8052281",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI research experience",
+      "action_plan": [
+        "Update resume (2 hours)",
+        "Prepare for interview (5 hours)",
+        "Apply for the internship (1 hour)"
+      ]
+    },
+    {
+      "key": "07956ec455b7",
+      "title": "Jump Trading — AI Research Engineer Intern - Research Automation",
+      "url": "https://boards.greenhouse.io/embed/job_app?token=8052351",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI research experience",
+      "action_plan": [
+        "Update resume (2 hours)",
+        "Prepare for interview (5 hours)",
+        "Apply for the internship (1 hour)"
+      ]
+    },
+    {
+      "key": "ea9515b6fe37",
+      "title": "Jump Trading — Campus AI Research Engineer Intern - Deep Learning",
+      "url": "https://boards.greenhouse.io/embed/job_app?token=8052338",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI research experience",
+      "action_plan": [
+        "Update resume (2 hours)",
+        "Prepare for interview (5 hours)",
+        "Apply for the internship (1 hour)"
+      ]
+    },
+    {
       "key": "c33a60630cca",
       "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
       "url": "https://arxiv.org/abs/2606.28277v1",
@@ -1574,11 +1660,11 @@
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "ML/AI theme, prize, and online format",
+      "ai_summary": "AI/ML hackathon",
       "action_plan": [
-        "Review hackathon rules (1 hour)",
-        "Form a team and choose a theme (2 hours)",
-        "Develop a project (20 hours)"
+        "Register by Jun 20 (1h)",
+        "Form team and choose theme (2h)",
+        "Develop project (40h)"
       ]
     },
     {
@@ -1687,93 +1773,6 @@
         "Set up Docker environment (2h)",
         "Run demo inference (1 day)",
         "Integrate into a personal project (1 week)"
-      ]
-    },
-    {
-      "key": "a2214331987d",
-      "title": "Weekend Dev Challenge 57: LLD Projects (codechef.com)",
-      "url": "https://www.codechef.com/DEVWEEKEND57",
-      "source": "clist",
-      "score": 6,
-      "deadline": "2026-07-03",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "Competitive programming",
-      "action_plan": [
-        "Register",
-        "Practice problems",
-        "Participate"
-      ]
-    },
-    {
-      "key": "48789711c963",
-      "title": "Monday Munch - DSA Challenge 010 (Rated) (codechef.com)",
-      "url": "https://www.codechef.com/DSAMONDAY010",
-      "source": "clist",
-      "score": 6,
-      "deadline": "2026-07-06",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "Competitive programming",
-      "action_plan": [
-        "Register",
-        "Practice problems",
-        "Participate"
-      ]
-    },
-    {
-      "key": "f8aaf5b26072",
-      "title": "AI for Bharat Hackathon 2026 – Build AI Solutions for India's Real Problems",
-      "url": "https://unstop.com/hackathons/ai-for-bharat-hackathon-2026-build-ai-solutions-for-indias-real-problems-indraprastha-institute-of-informatio-1709437",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AI for Bharat Hackathon",
-      "action_plan": [
-        "Form a team",
-        "Brainstorm ideas",
-        "Participate in hackathon"
-      ]
-    },
-    {
-      "key": "4a9a33b0073b",
-      "title": "Tesla — Software Engineer Intern - Distributed Systems Software Engineer - Energy Engineering",
-      "url": "https://www.tesla.com/careers/search/job/275558",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Tesla offers high brand value; role is systems‑focused, not core AI.",
-      "action_plan": [
-        "Tailor resume to emphasize distributed systems experience (1 day).",
-        "Study Tesla's open‑source projects and AI initiatives (2 days).",
-        "Do system design prep (1 week).",
-        "Apply through Tesla careers (1 hour)."
-      ]
-    },
-    {
-      "key": "f00f1cd4c424",
-      "title": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials",
-      "url": "https://arxiv.org/abs/2607.02499v1",
-      "source": "arxiv",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Machine learning research for interatomic potentials",
-      "action_plan": [
-        "Read the paper",
-        "Analyze the methodology"
       ]
     }
   ]

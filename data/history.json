@@ -17229,6 +17229,1197 @@
           "key": "3a2462502e17"
         }
       ]
+    },
+    {
+      "date": "2026-07-09",
+      "items": [
+        {
+          "title": "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
+          "url": "https://arxiv.org/abs/2607.07708v1",
+          "source": "arxiv",
+          "description": "Structure-property relationships are foundational to biology, chemistry and materials science, where function, reactivity and physical response emerge from spatial, chemical and periodic organization. Mechanistically explaining these relationships requires interpreting structural evidence through scientific principles and physical constraints, from stereochemistry and bonding to symmetry, energetics and periodic order. However, applying artificial intelligence to this process presents a joint challenge of representation and reasoning: models must preserve domain-native structural information while showing how specific evidence supports predictions under these constraints. Here we introduce SciReasoner, a multimodal scientific foundation model for native structural reasoning across proteins, small molecules and inorganic crystals. SciReasoner discretizes coordinates, topologies and periodic connectivities into a unified structure-aware vocabulary, treating structural tokens as addressable evidence units during reasoning. In homology-controlled Gene Ontology prediction, SciReasoner improves Cellular Component annotation for low-homology and orphan-like proteins, increasing $F_{\\max}$ from 0.42 to 0.55. In chemistry, it raises single-step retrosynthesis accuracy from 0.63 to 0.72 while generating fragment-level disconnection and precursor-verification traces. In materials science, its representations separate elemental and compound phases and resolve high- and low-band-gap regimes. Across 86 benchmarks, SciReasoner achieves state-of-the-art performance on 67 tasks. Double-blind expert evaluation rates its reasoning traces as preferred or at least comparable to those of a frontier large language model in 98% of cases. By making structure an inspectable substrate for reasoning under scientific constraints, SciReasoner connects accurate prediction with interpretable scientific inference.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.07708",
+          "score": 3,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Not an application call · Just a research paper; no participation possible.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Not an application call"
+          },
+          "key": "ba85176f0173"
+        },
+        {
+          "title": "From Noisy Traces to Root Causes: Structural Trajectory Analysis and Causal Extraction for Agent Optimization",
+          "url": "https://arxiv.org/abs/2607.07702v1",
+          "source": "arxiv",
+          "description": "The optimization of long-horizon agents increasingly relies on reflection-based mechanisms, where a large language model (LLM) acts as an optimizer to diagnose agent failures and improve agent policies. However, real execution traces are difficult to use directly for optimization: large trace collections are often redundant and heterogeneous, making optimization inefficient and prone to overfitting to low-value failures; meanwhile, each individual trajectory also contains many irrelevant steps, while naive context reduction methods such as truncation or sliding windows can discard causally important evidence and produce misleading optimization signals. To resolve this dilemma, we introduce STRACE (Structural TRajectory Analysis and Causal Extraction), a framework that constructs high signal-noise optimization contexts for more precise and effective optimization. At the batch level, STRACE mines failure patterns to filter redundant traces and retain representative failures; within each selected trace, it performs causal localization over a textual dependency graph to remove non-causal steps and identify the true root-cause module for optimization. Empirical results demonstrate that STRACE significantly outperforms standard context-filtering baselines. Notably, on a challenging formal verification task (VeruSAGE-Bench), it successfully optimizes human-expert designed agents, delivering $1.4\\times$ success-rate improvement (42.5% to 58.5%). The code is available at https://github.com/moomight/STRACE .",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.07702",
+          "score": 3,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Not an application call · Paper description; no opportunity to apply.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Not an application call"
+          },
+          "key": "f783bb98c9d2"
+        },
+        {
+          "title": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass",
+          "url": "https://arxiv.org/abs/2607.07696v1",
+          "source": "arxiv",
+          "description": "Analytical workloads operating on data stored in external database systems face a fundamental bottleneck: data access is guarded entirely by the database driver, like JDBC or ODBC, forcing all reads through query execution and other driver layers that are not designed for bulk columnar analytics. We present Jailbreak, an approach that bypasses the database engine entirely by reading storage files directly and materializing data as in-memory columnar buffers. Jailbreak's key insight is that database file formats, while complex, are fully specified by their source code and documentation, artifacts that Large Language Models (LLMs) can ingest to regenerate operator-specific table reading components without human-engineered parsing logic. Jailbreak leverages LLM-assisted code synthesis for database storage decoding, turning a traditionally opaque format into a directly queryable artifact. We evaluate Jailbreak on PostgreSQL and MySQL storage files, targeting analytical snapshot scenarios common in read replicas and offline processing pipelines. The generated reader produces Apache Arrow buffers consumable directly by most of the widely known query engines, including DuckDB, Apache Spark, and GPU-accelerated frameworks such as cuDF and Spark RAPIDS. We validate correctness against JDBC/ODBC-based baselines using the TPC-H benchmark across all query results, and demonstrate significant performance improvements in end-to-end analytical throughput, achieving up to 27x speedups. Our results showcase that LLM-assisted storage reader synthesis is a viable and generalizable methodology for breaking data lock-in across database systems, with applications beyond PostgreSQL and MySQL for any system whose file format is available to the LLM from documentation or source code.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.07696",
+          "score": 2,
+          "ai_score": 7,
+          "ai_summary": "LLM and database research",
+          "action_plan": [
+            "read paper",
+            "explore Jailbreak",
+            "apply to related internships"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 0,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "25bda6661f33"
+        },
+        {
+          "title": "synthetic-sciences/openscience — ★1,816",
+          "url": "https://github.com/synthetic-sciences/openscience",
+          "source": "github",
+          "description": "The open-source AI workbench for scientific research (topics: agent, ai, ai agent, bun, cli, co scientist, llm, ml, ml engineering, open source, research, research tools, science, scientific computing, typescript)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "synthetic-sciences/openscience",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "open-source AI workbench",
+          "action_plan": [
+            "explore repository",
+            "contribute to project",
+            "learn from community"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 0,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "e2775f6259e9"
+        },
+        {
+          "title": "Chatto is now open source",
+          "url": "https://www.hmans.dev/blog/chatto-is-open-source",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48833116",
+          "score": 3,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — News item, not a chance to apply · Announcement only; no actionable opportunity.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "News item, not a chance to apply"
+          },
+          "key": "56ec4bf88f63"
+        },
+        {
+          "title": "Show HN: Microsoft releases Flint, a visualization language for AI agents",
+          "url": "https://microsoft.github.io/flint-chart/#/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48834924",
+          "score": 5,
+          "ai_score": 5,
+          "ai_summary": "Staying updated on AI",
+          "action_plan": [
+            "Read the article (30 minutes)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 1,
+            "skill": 3,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "609b1c63caeb"
+        },
+        {
+          "title": "I think I have LLM burnout",
+          "url": "https://www.alecscollon.com/blog/llm-burnout/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48839984",
+          "score": 3,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Personal blog, not an opportunity · Article about burnout; not a chance to apply.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Personal blog, not an opportunity"
+          },
+          "key": "617ba316d77e"
+        },
+        {
+          "title": "Kaya AI India Hackathon 2026",
+          "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 10 - Jul 10, 2026 | prize ₹ 350,000 | themes: IoT, Machine Learning/AI, Enterprise",
+          "deadline": "2026-07-10",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30326",
+          "score": 10,
+          "ai_score": 6,
+          "ai_summary": "AI/ML hackathon",
+          "action_plan": [
+            "Register by Jun 20 (1h)",
+            "Form team and choose theme (2h)",
+            "Develop project (40h)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 8,
+            "skill": 7,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "e9e2e3debc2f"
+        },
+        {
+          "title": "COLM 2026 Decision Discussion [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uqr2ev/colm_2026_decision_discussion_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uqr2ev",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "general ML discussion",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "4eee63a0503e"
+        },
+        {
+          "title": "DINOv2 way worse than SigLIP in k-NN. Is this expected? [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uqtamz/dinov2_way_worse_than_siglip_in_knn_is_this/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uqtamz",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "general ML discussion",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "3f07cf472588"
+        },
+        {
+          "title": "LingBot-Video: sparse-MoE video diffusion transformer (13B total, 1.4B active) post-trained as an action-conditioned world model[R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ur0bxq/lingbotvideo_sparsemoe_video_diffusion/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ur0bxq",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "ML research paper",
+          "action_plan": [
+            "read paper",
+            "explore related topics"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 0,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "1d509ad67d9e"
+        },
+        {
+          "title": "First time ARR users - some questions [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uqx3f6/first_time_arr_users_some_questions_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uqx3f6",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "general ML discussion",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "e63e9d1cc63e"
+        },
+        {
+          "title": "Agentic safety triggers aren't textual safety triggers — MCP attacks that beat SOTA guardrails more than half the time (code + dataset) [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ur1fnz/agentic_safety_triggers_arent_textual_safety/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ur1fnz",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "ML research paper",
+          "action_plan": [
+            "read paper",
+            "explore related topics"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 0,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "8324e6f88701"
+        },
+        {
+          "title": "Monday Munch - DSA Challenge 011 (Rated) (codechef.com)",
+          "url": "https://www.codechef.com/DSAMONDAY011",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-07-13T13:30:00",
+          "deadline": "2026-07-13",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68742756",
+          "score": 5,
+          "ai_score": 6,
+          "ai_summary": "Competitive programming",
+          "action_plan": [
+            "Prepare for the contest (5 hours)",
+            "Participate in the contest (2 hours)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 4,
+            "deadline": 8,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "cf1643945a2d"
+        },
+        {
+          "title": "STELLAR HACK",
+          "url": "https://unstop.com/hackathons/stellar-hack-manipal-university-mu-jaipur-1707195",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1707195",
+          "score": 4,
+          "ai_score": 6,
+          "ai_summary": "Building experience",
+          "action_plan": [
+            "Research hackathon details (1 hour)",
+            "Form a team (2 hours)",
+            "Prepare for the hackathon (10 hours)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "5296682a1b2b"
+        },
+        {
+          "title": "Parsewave Game Jam 2026",
+          "url": "https://unstop.com/hackathons/parsewave-game-jam-2026-parsewave-ai-1713521",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1713521",
+          "score": 4,
+          "ai_score": 2,
+          "ai_summary": "Low AI relevance; hackathon adds minor portfolio value.",
+          "action_plan": [
+            "Read hackathon rules (1h)",
+            "Form a small team (2h)",
+            "Sketch game concept (4h)",
+            "Develop prototype over 2 weeks",
+            "Submit entry before closing"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 3,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "3639df922242"
+        },
+        {
+          "title": "System Seige",
+          "url": "https://unstop.com/hackathons/system-seige-amrita-vishwa-vidyapeetham-avv-chennai-1714505",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1714505",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "af7e38f09d9e"
+        },
+        {
+          "title": "Hackside Down",
+          "url": "https://unstop.com/hackathons/hackside-down-falcon-sphere-1712468",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1712468",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4c99436fa278"
+        },
+        {
+          "title": "DevFusion 4.O- The Developers Hackathon",
+          "url": "https://unstop.com/hackathons/devfusion-4o-the-developers-hackathon-iit-bombay-1714389",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1714389",
+          "score": 7,
+          "ai_score": 6,
+          "ai_summary": "Building experience",
+          "action_plan": [
+            "Research hackathon details (1 hour)",
+            "Form a team (2 hours)",
+            "Prepare for the hackathon (10 hours)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "6374322c22c8"
+        },
+        {
+          "title": "Datasphere",
+          "url": "https://unstop.com/hackathons/datathon-sathyabama-university-of-science-and-technology-1714310",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1714310",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "475243c4ef7d"
+        },
+        {
+          "title": "Marketing Internship",
+          "url": "https://unstop.com/internships/marketing-internship-teora-lifesciences-pvt-ltd-1715340",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715340",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "6e4c591dbd30"
+        },
+        {
+          "title": "Sales Internship",
+          "url": "https://unstop.com/internships/sales-internship-difmo-technologies-1715341",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715341",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "f6529b3af4fd"
+        },
+        {
+          "title": "Campus Ambassador Internship",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-exammateai-1715312",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715312",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "9def8f9897f1"
+        },
+        {
+          "title": "Social Media Growth & Content Creation Internship",
+          "url": "https://unstop.com/internships/social-media-growth-content-creation-internship-oyesense-private-limited-1715300",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715300",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "2e8fdae45db3"
+        },
+        {
+          "title": "ConnexSoul Community Ambassador Program",
+          "url": "https://unstop.com/internships/connexsoul-community-ambassador-program-connexsoul-digital-platform-private-limited-1712991",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1712991",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "Community experience",
+          "action_plan": [
+            "Research the program (1 hour)",
+            "Apply for the program (1 hour)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "c0fc1e04463e"
+        },
+        {
+          "title": "Marketing Internship",
+          "url": "https://unstop.com/internships/marketing-internship-market-orbit-agency-llp-1715240",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715240",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "0861268ef807"
+        },
+        {
+          "title": "Product Design Internship (UI/UX) – Founder's Office",
+          "url": "https://unstop.com/internships/product-design-internship-uiux-founders-office-shopgroww-1715249",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715249",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "0d331d4eb8ac"
+        },
+        {
+          "title": "Product Internship – Research, Testing & QA",
+          "url": "https://unstop.com/internships/product-internship-research-testing-qa-qurovo-1715256",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715256",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "82fd7d7e5ea5"
+        },
+        {
+          "title": "Jump Trading — Campus UI Software Engineer Intern",
+          "url": "https://boards.greenhouse.io/embed/job_app?token=8003019",
+          "source": "internships",
+          "description": "internship | Jump Trading | Chicago, IL | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "17780196-7325-4b2e-b9d8-42c0b3830d62",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "High‑prestige UI role; limited AI relevance, visa uncertain. · ⚠ verify eligibility: US work authorization may be required",
+          "action_plan": [
+            "Check CPT/visa eligibility (2h)",
+            "Tailor resume to UI focus (3h)",
+            "Submit application (1h)",
+            "Prepare for technical interview (1 week)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 3,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US work authorization may be required"
+          },
+          "key": "2d6c49b6f274"
+        },
+        {
+          "title": "Jump Trading — AI Research Engineer Intern",
+          "url": "https://boards.greenhouse.io/embed/job_app?token=8052281",
+          "source": "internships",
+          "description": "internship | Jump Trading | Chicago, IL, NYC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9d14590b-3922-4c2d-a411-04bbe025a5bc",
+          "score": 6,
+          "ai_score": 7,
+          "ai_summary": "AI research experience",
+          "action_plan": [
+            "Update resume (2 hours)",
+            "Prepare for interview (5 hours)",
+            "Apply for the internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "7fc6355d2892"
+        },
+        {
+          "title": "Jump Trading — Campus Software Engineer Intern",
+          "url": "https://boards.greenhouse.io/embed/job_app?token=8002989",
+          "source": "internships",
+          "description": "internship | Jump Trading | Chicago, IL | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5eb655ae-5b71-490f-93e4-7026519c395f",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Similar to Fall role but summer deadline tighter; still UI‑centric. · ⚠ verify eligibility: US work authorization may be required",
+          "action_plan": [
+            "Verify visa/CPT eligibility (2h)",
+            "Update resume for software intern (3h)",
+            "Apply before deadline (1h)",
+            "Study Jump Trading interview topics (1 week)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 3,
+            "prestige": 8,
+            "deadline": 4,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US work authorization may be required"
+          },
+          "key": "80838f9b2185"
+        },
+        {
+          "title": "Jump Trading — AI Research Engineer Intern - Research Automation",
+          "url": "https://boards.greenhouse.io/embed/job_app?token=8052351",
+          "source": "internships",
+          "description": "internship | Jump Trading | Chicago, IL, NYC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7dde25d1-45b9-4f21-b627-cae44898fbb3",
+          "score": 6,
+          "ai_score": 7,
+          "ai_summary": "AI research experience",
+          "action_plan": [
+            "Update resume (2 hours)",
+            "Prepare for interview (5 hours)",
+            "Apply for the internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "07956ec455b7"
+        },
+        {
+          "title": "Jump Trading — Campus AI Research Engineer Intern - Deep Learning",
+          "url": "https://boards.greenhouse.io/embed/job_app?token=8052338",
+          "source": "internships",
+          "description": "internship | Jump Trading | Chicago, IL, NYC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5cbbf737-ec58-4199-bd17-62438749ebc9",
+          "score": 6,
+          "ai_score": 7,
+          "ai_summary": "AI research experience",
+          "action_plan": [
+            "Update resume (2 hours)",
+            "Prepare for interview (5 hours)",
+            "Apply for the internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "ea9515b6fe37"
+        },
+        {
+          "title": "Loblaw Companies — AI Engineering Co-op",
+          "url": "https://myview.wd3.myworkdayjobs.com/paradox_careers/job/1-Presidents-Choice-Circle-Brampton-ON/AI-Engineering---Co-op-Student_R2000681500",
+          "source": "internships",
+          "description": "internship | Loblaw Companies | Brampton, ON, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "00bb6bac-77e5-4bdc-8de2-5007d1937338",
+          "score": 3,
+          "ai_score": 8,
+          "ai_summary": "AI engineering co‑op aligns with goals; moderate prestige, visa uncertain. · ⚠ verify eligibility: Canadian work permit may be needed",
+          "action_plan": [
+            "Research Canada co‑op work‑permit rules (2h)",
+            "Craft AI‑focused resume & cover letter (4h)",
+            "Submit application (1h)",
+            "Prepare for interview with AI project examples (1 week)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 5,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "Canadian work permit may be needed"
+          },
+          "key": "7d7518156e18"
+        },
+        {
+          "title": "National Laboratory of the Rockies — Software and Data Infrastructure Intern",
+          "url": "https://nrel.wd5.myworkdayjobs.com/NLR/job/Golden-CO/Undergraduate-graduate-intern---software-and-data-infrastructure-for-autonomous-thin-film-experimentation--Year-Round-_R14394",
+          "source": "internships",
+          "description": "internship | National Laboratory of the Rockies | Golden, CO | Winter 2026, Spring 2026, Summer 2026, Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c1d1053c-438a-481e-8375-57149313ea2f",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "National lab offers solid research exposure but visa uncertainty and low urgency. · ⚠ verify eligibility: US work auth unclear",
+          "action_plan": [
+            "Check visa eligibility (1 day)",
+            "Tailor resume to data infrastructure role (2 days)",
+            "Submit application (by next week)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 5,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US work auth unclear"
+          },
+          "key": "0fac14c7b6ad"
+        },
+        {
+          "title": "Rakuten International — Software Engineer Intern",
+          "url": "https://rakuten.wd1.myworkdayjobs.com/en-US/RakutenAmericas/job/San-Mateo-California/Intern---Software-Engineer--AI-User-Experience_1033171",
+          "source": "internships",
+          "description": "internship | Rakuten International | San Mateo, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4dc5f31e-e744-4c5c-ac98-baeb6b6f17f3",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Rakuten is a known global firm; role is software‑engineer, not core AI focus. · ⚠ verify eligibility: US work auth unclear",
+          "action_plan": [
+            "Verify eligibility for US internship (1 day)",
+            "Update resume with relevant projects (2 days)",
+            "Apply via Rakuten portal (by next week)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 5,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US work auth unclear"
+          },
+          "key": "cf5a42a4e264"
+        },
+        {
+          "title": "OLG — Front End Developer",
+          "url": "https://olg.wd3.myworkdayjobs.com/Careers-Students/job/Toronto-Ontario-Canada/Front-End-Developer-Student_R26_00492",
+          "source": "internships",
+          "description": "internship | OLG | Toronto, ON, Canada, Sault Ste. Marie, ON, Canada | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0e77d643-8649-4aaa-8742-15190102da70",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Front‑end role, low AI relevance, modest resume boost. · ⚠ verify eligibility: Canada work auth unclear",
+          "action_plan": [
+            "Confirm Canadian work eligibility (1 day)",
+            "Highlight any UI work in resume (1 day)",
+            "Submit application (within two weeks)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 3,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "Canada work auth unclear"
+          },
+          "key": "69e4357a821e"
+        },
+        {
+          "title": "Aramark — Student IT Associate - Application Developer - ASU-C-Store Markets",
+          "url": "https://aramarkcareers.com/UnitedStates/job/Tempe-Student-IT-Associate-Application-Developer-ASU-C-Store-Markets-AZ-85281/1406888100/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Aramark | Tempe, AZ | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "89eac7a4-2ee8-4449-ace7-5150e68daab7",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "General IT associate; limited AI impact, low prestige. · ⚠ verify eligibility: US work auth unclear",
+          "action_plan": [
+            "Check US work‑authorization requirements (1 day)",
+            "Adapt resume to highlight application dev experience (2 days)",
+            "Apply through Aramark career site (by end of month)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US work auth unclear"
+          },
+          "key": "e04337706cde"
+        },
+        {
+          "title": "Datasite — AI Transformation / Forward Deployed Engineer Intern - Forward Deployed Engineer",
+          "url": "https://datasite.wd1.myworkdayjobs.com/datasite/job/USA---NY---New-York-City/AI-Transformation---Forward-Deployed-Engineer--FDE--Intern_R36255",
+          "source": "internships",
+          "description": "internship | Datasite | NYC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "268262ab-3056-48bd-a78d-3fe70d2fb886",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "AI transformation role aligns with his goals; decent signal but not elite. · ⚠ verify eligibility: US work auth unclear",
+          "action_plan": [
+            "Verify US eligibility (1 day)",
+            "Craft AI‑focused resume bullet points (2 days)",
+            "Submit to Datasite (within two weeks)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US work auth unclear"
+          },
+          "key": "9b86d913ea06"
+        },
+        {
+          "title": "Zoox — Student Worker - Manufacturing Software Engineer",
+          "url": "https://jobs.lever.co/zoox/02f4bebd-ab47-4d4c-b887-cffcfeea3494/apply",
+          "source": "internships",
+          "description": "internship | Zoox | Hayward, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b4979a01-4110-4ef8-a1a3-cf9c33776e5a",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Zoox offers high‑profile brand but role is manufacturing‑software, not AI. · ⚠ verify eligibility: US work auth unclear",
+          "action_plan": [
+            "Confirm US work eligibility (1 day)",
+            "Highlight relevant software engineering projects (2 days)",
+            "Apply to Zoox (by next week)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US work auth unclear"
+          },
+          "key": "779caa3e118b"
+        },
+        {
+          "title": "Innodata — Generative AI Associate",
+          "url": "https://job-boards.greenhouse.io/innodatainc/jobs/4307422009",
+          "source": "internships",
+          "description": "internship | Innodata | Montana | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4c9bb250-a013-4acd-8de3-05b3d7c7f2b2",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Generative AI focus matches interests; company prestige modest. · ⚠ verify eligibility: US work auth unclear",
+          "action_plan": [
+            "Check US work‑authorization status (1 day)",
+            "Showcase generative‑AI projects in resume (2 days)",
+            "Apply to Innodata (within two weeks)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US work auth unclear"
+          },
+          "key": "2d4e30b94868"
+        },
+        {
+          "title": "Northrop Grumman — Software Engineer Intern",
+          "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Florida-Melbourne/XMLNAME-2027-Intern-Software-Engineer_R10239275",
+          "source": "internships",
+          "description": "internship | Northrop Grumman | Melbourne, FL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8085b0fb-3683-4307-b90e-062ef95c0389",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Defense contractor offers solid engineering experience; limited AI relevance. · ⚠ verify eligibility: US work auth unclear",
+          "action_plan": [
+            "Verify US work eligibility (1 day)",
+            "Tailor resume to software engineering duties (2 days)",
+            "Submit application to Northrop Grumman (by next week)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 5,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US work auth unclear"
+          },
+          "key": "f7406903abea"
+        },
+        {
+          "title": "OLG — Data Scientist Co-op",
+          "url": "https://olg.wd3.myworkdayjobs.com/Careers-Students/job/Toronto-Ontario-Canada/Data-Scientist-Student_R26_00479",
+          "source": "internships",
+          "description": "internship | OLG | Toronto, ON, Canada | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "464d3bee-1f3b-477c-ac68-50ee629f3a9d",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — location · not in target location",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "location"
+          },
+          "key": "b7734c32bea3"
+        }
+      ]
     }
   ]
 }
