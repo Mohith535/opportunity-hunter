@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-09",
+  "updated_at": "2026-07-10",
   "items": [
     {
       "key": "15e34ffda925",
@@ -663,6 +663,23 @@
         "Craft AI‑focused resume & cover letter (4h)",
         "Submit application (1h)",
         "Prepare for interview with AI project examples (1 week)"
+      ]
+    },
+    {
+      "key": "aa7029edc4b5",
+      "title": "ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation",
+      "url": "https://arxiv.org/abs/2607.08741v1",
+      "source": "arxiv",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "Research in AI",
+      "action_plan": [
+        "Read the paper (2 days)",
+        "Implement the model (4 days)",
+        "Write a report (2 days)"
       ]
     },
     {
@@ -1506,6 +1523,23 @@
       ]
     },
     {
+      "key": "8fc265ae5bec",
+      "title": "AI Developer Internship",
+      "url": "https://unstop.com/internships/ai-developer-internship-skillpilot-solutions-llp-1715792",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI developer internship",
+      "action_plan": [
+        "Review internship description (30m)",
+        "Apply online (1h)",
+        "Prepare for technical interview (10h)"
+      ]
+    },
+    {
       "key": "c33a60630cca",
       "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
       "url": "https://arxiv.org/abs/2606.28277v1",
@@ -1660,10 +1694,10 @@
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "AI/ML hackathon",
+      "ai_summary": "AI/ML theme, prize, online",
       "action_plan": [
-        "Register by Jun 20 (1h)",
-        "Form team and choose theme (2h)",
+        "Review hackathon rules (1h)",
+        "Form team, choose theme (2h)",
         "Develop project (40h)"
       ]
     },
@@ -1735,44 +1769,6 @@
         "Apply for AI Intern (2h)",
         "Prepare for interview (4h)",
         "Follow up on application (1h)"
-      ]
-    },
-    {
-      "key": "d7ac5e3bc6bb",
-      "title": "benlamiro/ShipGenAI — ★155",
-      "url": "https://github.com/benlamiro/ShipGenAI",
-      "source": "github",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "github",
-        "learning"
-      ],
-      "ai_summary": "Open‑source SaaS templates boost portfolio but no deadline or brand signal.",
-      "action_plan": [
-        "Clone repo & read README (1h)",
-        "Pick one app to deploy locally (2 days)",
-        "Customize and publish on Vercel (1 week)",
-        "Add deployed app to portfolio (1 day)"
-      ]
-    },
-    {
-      "key": "a7e0b3be0a49",
-      "title": "infracv/rf-detr-cpp — ★98",
-      "url": "https://github.com/infracv/rf-detr-cpp",
-      "source": "github",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "github",
-        "learning"
-      ],
-      "ai_summary": "High‑skill CV engine showcases deep‑learning deployment, but no urgency.",
-      "action_plan": [
-        "Read repo docs (30m)",
-        "Set up Docker environment (2h)",
-        "Run demo inference (1 day)",
-        "Integrate into a personal project (1 week)"
       ]
     }
   ]

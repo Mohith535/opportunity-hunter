@@ -2667,8 +2667,8 @@
     "e9e2e3debc2f": {
       "title": "Kaya AI IIT India Hackathon 2026",
       "first_seen": "2026-06-30",
-      "last_seen": "2026-07-09",
-      "times_seen": 4
+      "last_seen": "2026-07-10",
+      "times_seen": 5
     },
     "4d41be7b33f6": {
       "title": "Cerebras OpenAI deal capacity has effectively killed the waitlist for everyone else [D]",
@@ -5098,6 +5098,204 @@
       "title": "OLG — Data Scientist Co-op",
       "first_seen": "2026-07-09",
       "last_seen": "2026-07-09",
+      "times_seen": 1
+    },
+    "2b2fc2bfbea3": {
+      "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "1e36477f9fdc": {
+      "title": "OpenCoF: Learning to Reason Through Video Generation",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "08495e495f69": {
+      "title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "20708af771f9": {
+      "title": "SLORR: Simple and Efficient In-Training Low-Rank Regularization",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "999b221a88b4": {
+      "title": "Using AI-based Learning Assistants in Higher Education: A Large-Scale Descriptive Analysis",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "f4442d735c59": {
+      "title": "AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "aa7029edc4b5": {
+      "title": "ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "c0b5e62d874c": {
+      "title": "Ben Bernanke Joins Anthropic Oversight Trust",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "6d35ec0b9338": {
+      "title": "Journals vs Conferences ML Research [R]",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "da36c6d5b899": {
+      "title": "Hyperparameter tuning approach question [R]",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "30d4d741c803": {
+      "title": "Talos-XII: hand-written autograd + small RL/MLP stack in Rust, applied to gacha probability modeling (no tch-rs/ndarray/PyTorch) — looking for benchmark help on ARM/AVX-512/GPU [P]",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "f0c3aaeb6869": {
+      "title": "I built IMGNet – a face verification model that identifies people using sign patterns, not cosine similarity [R]",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "34e0e46c7c07": {
+      "title": "test",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "fe264c3c2fb1": {
+      "title": "NextGen Innovators Hackathon 2026",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "bc31323c5a91": {
+      "title": "RealWorldIQ Challenge 2026",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "67085adae928": {
+      "title": "Business Development Internship",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "91c6579cdd17": {
+      "title": "Trading Internship",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "682e7864c3a0": {
+      "title": "Growth & Marketing Internship",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "f88f92b81629": {
+      "title": "Design Internship - Graphic Design & Social Media",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "ebd4c18c40a8": {
+      "title": "Business Development Executive Internship",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "8fc265ae5bec": {
+      "title": "AI Developer Internship",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "ec6ddc203f21": {
+      "title": "Digital Marketing & Outreach Internship",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "9c8fef918c47": {
+      "title": "Expert Onboarding Internship",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "a71ebe07d11d": {
+      "title": "Future Leaders Assessment 2026",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "227c71561c59": {
+      "title": "Tesla — Software Engineer Intern - Energy Engineering",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "02a92697ae08": {
+      "title": "Later — Software Development Co-op",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "e53047c5a90d": {
+      "title": "Vital Lyfe — Software Engineer Intern",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "ecc2930563c1": {
+      "title": "Pylon — Software Engineer Intern",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "8d2c3597782e": {
+      "title": "Cotiviti — AI Engineer Intern",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "6f5ee954d105": {
+      "title": "Uber Freight — Data Scientist Intern",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "17c8b4d54bd4": {
+      "title": "Eulerity — Digital Marketing Intern - Technical AI & Automation",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "54f7e4c2e03b": {
+      "title": "CACI — Software Engineer Intern",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "times_seen": 1
+    },
+    "1df2081d380b": {
+      "title": "Sentara Health — AI Intern",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
       "times_seen": 1
     }
   }

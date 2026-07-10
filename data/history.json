@@ -18420,6 +18420,990 @@
           "key": "b7734c32bea3"
         }
       ]
+    },
+    {
+      "date": "2026-07-10",
+      "items": [
+        {
+          "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+          "url": "https://arxiv.org/abs/2607.08768v1",
+          "source": "arxiv",
+          "description": "The rapid development of large language models and multimodal large language models has accelerated the emergence of proactive agents capable of operating everyday tools and assisting users in real-world environments. However, existing benchmarks struggle to evaluate such agents effectively, as they often rely on sandboxed environments and single-turn evaluation paradigms. Moreover, their scenario-based task taxonomies mix multiple model capabilities within the same task category, making it difficult to identify the root causes of agent failures. To address these limitations, we introduce UniClawBench, the first capability-driven benchmark designed to evaluate proactive agents in dynamic, real-world settings. UniClawBench is built around five foundational model capabilities: Skill Usage, Exploration, Long-Context Reasoning, Multimodal Understanding, and Cross-Platform Coordination. Based on these capabilities, we design 400 bilingual real-world tasks. Unlike previous benchmarks that rely on static, pre-recorded answers, our benchmark evaluates agents in live Docker containers using fine-grained, step-by-step completion checkpoints. Furthermore, we design a closed-loop evaluation strategy comprising an executor agent, a hidden supervisor agent, and a user agent to simulate realistic multi-turn human feedback without leaking grading criteria. To disentangle base model capabilities from framework-level design choices, we evaluate state-of-the-art models under multiple agent frameworks. Through comprehensive comparisons across both models and frameworks, we show how base model capabilities and agent framework designs jointly shape performance in real-world environments. To facilitate future research, we make our benchmark and code publicly available at https://github.com/HKU-MMLab/UniClawBench.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.08768",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Benchmark aligns with his AI agent focus, useful for portfolio.",
+          "action_plan": [
+            "Read abstract (15m)",
+            "Review benchmark design (45m)",
+            "Implement a simple agent test (2d)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 9,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "2b2fc2bfbea3"
+        },
+        {
+          "title": "OpenCoF: Learning to Reason Through Video Generation",
+          "url": "https://arxiv.org/abs/2607.08763v1",
+          "source": "arxiv",
+          "description": "Reasoning has become a core capability for large models, especially when reliable decisions require understanding logical consequences. Recent video generation models offer a reasoning path distinct from previous Chain-of-Thought (CoT): reasoning can unfold through temporally connected frames, known as Chain-of-Frame (CoF) reasoning. However, existing video generators are primarily trained on general video corpora, still lacking diverse supervision and dedicated designs for CoF reasoning. To address this gap, we introduce OpenCoF, a framework comprising the OpenCoF-17K dataset, a reasoning video dataset spanning 11 task families, and Wan-CoF, a fine-tuned video model for studying whether diverse temporal supervision improves CoF behavior. Across four video reasoning benchmarks, Wan-CoF achieves considerable gains over the Wan2.2-I2V-A14B baseline. Building on this, we empirically explore more advanced designs for CoF capabilities, i.e., equipping the model with visual and textual reasoning tokens. This mechanism respectively captures low-level visual cues and high-level semantic priors for spatial and temporal reasoning. Through performance comparisons and attention analysis, we examine how these tokens contribute across model depth, denoising steps, space, and time. Our results suggest that stronger video reasoning requires both broad temporal supervision and explicit mechanisms for organizing intermediate reasoning state. We open-source the dataset, model, and code to facilitate future research on reasoning-oriented video generation.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.08763",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Video reasoning ties to LLM reasoning interest, modest skill boost.",
+          "action_plan": [
+            "Skim abstract (10m)",
+            "Read methodology (30m)",
+            "Run provided code on sample (1d)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 8,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "1e36477f9fdc"
+        },
+        {
+          "title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+          "url": "https://arxiv.org/abs/2607.08758v1",
+          "source": "arxiv",
+          "description": "Scientific ideas rarely start from a blank page. They inherit mechanisms, repair known limitations, and recombine pieces of earlier work, much like biological genomes. Current benchmarks still say little about whether AI systems can follow this inheritance structure. We present IdeaGene-Bench (IG-Bench), a benchmark for scientific lineage reasoning and lineage-grounded idea generation. IG-Bench is organized around the IdeaGene framework: each paper or proposal is represented as a set of minimal, typed, evidence-grounded Idea Genome objects, and a GenomeDiff aligns these objects to record inheritance, mutation, loss, external import, and novel insertion under six operational evolutionary dynamics. The benchmark contains 1,961 golden lineage traces, 1,085 curated Idea Genome objects, and 920 pairwise GenomeDiff records across 10 scientific domains. It supports two evaluations. IG-Exam (42 task types, 1,029 instances) tests closed-form lineage reasoning across Idea Genome abstraction, inheritance tracing, evolutionary reasoning, and lineage verification. IG-Arena evaluates generation with a lineage-conditioned Population-Evolution Score(PES), asking whether a proposal can be inserted as a coherent descendant of a given lineage population: it should inherit the right Idea Genome objects, vary meaningfully from nearby work, and offer selection value for future research. Experiments on 14 LLM-based scientists expose a compositional bottleneck. The strongest system reaches only 27.3% exact accuracy on lineage reasoning, and structured lineage context reshuffles system rankings rather than helping every participant uniformly.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.08758",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Scientific lineage links to generative AI research, modest relevance.",
+          "action_plan": [
+            "Read abstract (10m)",
+            "Explore dataset description (30m)",
+            "Create a small lineage example (1d)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 7,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "08495e495f69"
+        },
+        {
+          "title": "SLORR: Simple and Efficient In-Training Low-Rank Regularization",
+          "url": "https://arxiv.org/abs/2607.08754v1",
+          "source": "arxiv",
+          "description": "Low-rank factorization is widely used to compress neural networks, but modern models are often not naturally amenable to aggressive factorization without significant accuracy loss. Existing training-time low-rank regularizers can improve compressibility, but they often require SVDs of large weight matrices, modify the model architecture (introducing additional trainable parameters), or rely on stateful cached quantities. To address these limitations, we introduce SLORR, a simple, stateless, and architecture-preserving framework for in-training low-rank regularization, instantiated with two main variants based on the Hoyer sparsity metric and the nuclear norm. SLORR directly regularizes the original weight matrices using GPU-friendly approximations for the forward and backward passes of the regularizers, for which we provide approximation guarantees. We first evaluate SLORR on ImageNet-1K across short-horizon continued training of ResNet-50, ViT-B/16, and ViT-L/16, and pretraining of ResNet-18, where SLORR induces compressibility while introducing less than 8% training overhead. We further evaluate SLORR-Hoyer in LLM pretraining at 135M and 560M scales: SLORR-trained compressed models preserve performance substantially better than unregularized models while adding less than 1% average training overhead.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.08754",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "Low‑rank regularization is peripheral to his core AI interests.",
+          "action_plan": [
+            "Read abstract (10m)",
+            "Study regularization method (30m)",
+            "Apply SLORR to a toy model (1d)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 5,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 3,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "20708af771f9"
+        },
+        {
+          "title": "Using AI-based Learning Assistants in Higher Education: A Large-Scale Descriptive Analysis",
+          "url": "https://arxiv.org/abs/2607.08748v1",
+          "source": "arxiv",
+          "description": "In this study, we present a large-scale descriptive analysis of the use of an AI-based learning assistant (Syntea) in higher education. Based on objective log data from 77,543 students enrolled in distance studies, we examine usage patterns across gender, age group, study cluster, degree, and study mode. To date, existing research on educational chatbots has largely relied on comparatively small samples and self-reported survey data, while large-scale evidence on actual usage behavior remains limited. Our findings show that Syntea is already embedded in the study routines of many learners, but that usage differs across demographic and structural contexts. By identifying these patterns, our study provides an empirical basis for the further development of AI-based learning support and contributes a large-scale analysis of educational chatbot usage in higher education.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.08748",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "AI learning assistant study offers insight but low direct impact.",
+          "action_plan": [
+            "Read abstract (10m)",
+            "Analyze usage stats (30m)",
+            "Write short blog summary (4h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 6,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 3,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "999b221a88b4"
+        },
+        {
+          "title": "AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding",
+          "url": "https://arxiv.org/abs/2607.08745v1",
+          "source": "arxiv",
+          "description": "Recent advances in Vision-Language Models, Large Language Models, and Multimodal Large Language Models have improved autonomous driving tasks such as scene understanding, decision making, trajectory prediction, and visual question answering. However, evaluating whether these models can reliably reason about safety-critical incidents remains challenging. To address this gap, we present AUTOPILOT-VQA, an incident-centric visual question answering benchmark for dashcam video understanding. The dataset evaluates different systems through structured questions designed around real-world driving incidents and near-incidents. The benchmark covers diverse safety-relevant categories, including weather and lighting conditions, traffic environment, road layout, road surface state, signage, involved entities, accident occurrence, impact location, and avoidability-related reasoning. By requiring models to answer grounded questions about both contextual scene properties and event-level incident details, AUTOPILOT-VQA moves beyond object recognition toward temporally grounded, safety-aware reasoning. The dataset is released as part of the AUTOPILOT CVPR 2026 competition and provides a standardized benchmark for assessing the reliability of autonomous driving systems in different scenarios. Our benchmark support developments for more interpretable, robust, and safety-conscious vision-language systems for real-world autonomous driving.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.08745",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "Multimodal VQA benchmark matches interest, limited career leverage.",
+          "action_plan": [
+            "Read abstract (10m)",
+            "Inspect dataset samples (30m)",
+            "Run baseline VQA model (1d)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 6,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 3,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "f4442d735c59"
+        },
+        {
+          "title": "ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation",
+          "url": "https://arxiv.org/abs/2607.08741v1",
+          "source": "arxiv",
+          "description": "Generating realistic 3D human motions in real-time within interactive applications is key for animation, simulation, and humanoid robotics. While recent offline motion generation approaches offer precise control via text and kinematic constraints, they lack the inference speed required for interactive settings. Conversely, existing online methods enable real-time synthesis but often sacrifice controllability or struggle with complex text semantics and long-horizon goals due to limited context windows. In this work, we introduce ARDY, a streaming generation framework that bridges this gap by enabling high-fidelity motion generation controllable via online text prompts and flexible kinematic constraints. ARDY employs a hybrid representation that combines explicit root features with a latent body embedding, balancing precise trajectory control with efficient generative learning. We propose a two-stage autoregressive transformer denoiser that features variable history context and supports conditioning on flexible, long-horizon kinematic constraints. By training on a large-scale motion capture dataset and being directly conditioned on text labels and kinematic constraints sampled from ground truth poses, ARDY natively learns controllable generation that supports online prompting and flexible long-horizon goals. Extensive evaluations on the HumanML3D benchmark and the large-scale, high-fidelity Bones Rigplay dataset demonstrate ARDY's high motion quality and constraint adherence, validating the efficacy of our key architectural decisions. Finally, we demonstrate the method's practical versatility through an interactive demo featuring dynamic text control, diverse keyframe pose constraints, path following, and interactive locomotion control via mouse and keyboard. Supplementary video results, code, and model releases can be found at https://research.nvidia.com/labs/sil/projects/ardy/.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.08741",
+          "score": 6,
+          "ai_score": 8,
+          "ai_summary": "Research in AI",
+          "action_plan": [
+            "Read the paper (2 days)",
+            "Implement the model (4 days)",
+            "Write a report (2 days)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "aa7029edc4b5"
+        },
+        {
+          "title": "Ben Bernanke Joins Anthropic Oversight Trust",
+          "url": "https://www.anthropic.com/news/ben-bernanke",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48855112",
+          "score": 5,
+          "ai_score": 3,
+          "ai_summary": "News about AI company",
+          "action_plan": [
+            "Read the article (1 day)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 6,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "c0b5e62d874c"
+        },
+        {
+          "title": "Kaya AI India Hackathon 2026",
+          "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 10 - Jul 10, 2026 | prize ₹ 350,000 | themes: IoT, Machine Learning/AI, Enterprise",
+          "deadline": "2026-07-10",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30326",
+          "score": 10,
+          "ai_score": 6,
+          "ai_summary": "AI/ML theme, prize, online",
+          "action_plan": [
+            "Review hackathon rules (1h)",
+            "Form team, choose theme (2h)",
+            "Develop project (40h)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 8,
+            "skill": 7,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "e9e2e3debc2f"
+        },
+        {
+          "title": "Journals vs Conferences ML Research [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1urqqk6/journals_vs_conferences_ml_research_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1urqqk6",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "Discussion about ML research",
+          "action_plan": [
+            "Read the discussion (1 day)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 1,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "6d35ec0b9338"
+        },
+        {
+          "title": "Hyperparameter tuning approach question [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1usa46w/hyperparameter_tuning_approach_question_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1usa46w",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Hyperparameter query is generic; low relevance to his goals.",
+          "action_plan": [
+            "Read post (5m)",
+            "Check related answers (10m)",
+            "Try a quick experiment (30m)"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 5,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 2,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "da36c6d5b899"
+        },
+        {
+          "title": "Talos-XII: hand-written autograd + small RL/MLP stack in Rust, applied to gacha probability modeling (no tch-rs/ndarray/PyTorch) — looking for benchmark help on ARM/AVX-512/GPU [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1urvxgb/talosxii_handwritten_autograd_small_rlmlp_stack/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1urvxgb",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Rust RL project matches builder mindset, could enhance portfolio.",
+          "action_plan": [
+            "Read project description (10m)",
+            "Clone repo and build (1h)",
+            "Add a benchmark test (1d)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 7,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 5,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "30d4d741c803"
+        },
+        {
+          "title": "I built IMGNet – a face verification model that identifies people using sign patterns, not cosine similarity [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1urxvxh/i_built_imgnet_a_face_verification_model_that/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1urxvxh",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Shows AI/ML skill, adds to portfolio, modest prestige, no deadline.",
+          "action_plan": [
+            "Write a concise blog post (2h)",
+            "Create a GitHub repo with code and README (1h)",
+            "Share on LinkedIn and relevant subreddits (30m)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 7,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "f0c3aaeb6869"
+        },
+        {
+          "title": "test",
+          "url": "https://unstop.com/hackathons/hacknova-2026-kvg-college-of-engineering-kvgce-sullia-karnataka-1715653",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1715653",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "Local hackathon, low prestige, generic AI relevance, modest skill boost.",
+          "action_plan": [
+            "Visit unstop page, note registration deadline (5m)",
+            "Register for the hackathon (10m)",
+            "Form a team or plan solo project idea (1h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 5,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "34e0e46c7c07"
+        },
+        {
+          "title": "NextGen Innovators Hackathon 2026",
+          "url": "https://unstop.com/hackathons/nextgen-innovators-hackathon-2026-h-p-projects-1715619",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1715619",
+          "score": 7,
+          "ai_score": 5,
+          "ai_summary": "Hackathon experience",
+          "action_plan": [
+            "Form a team (2 days)",
+            "Choose a project (1 day)",
+            "Participate in hackathon (3 days)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 7,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "fe264c3c2fb1"
+        },
+        {
+          "title": "RealWorldIQ Challenge 2026",
+          "url": "https://unstop.com/hackathons/realworldiq-challenge-2026-bansal-institute-of-research-technology-science-1715032",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1715032",
+          "score": 4,
+          "ai_score": 6,
+          "ai_summary": "Hackathon experience",
+          "action_plan": [
+            "Form a team (2 days)",
+            "Choose a project (1 day)",
+            "Participate in hackathon (3 days)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 7,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "bc31323c5a91"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-quabrick-1715836",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715836",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Non-technical internship",
+          "action_plan": [
+            "Review internship description (30m)",
+            "Apply online (1h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "67085adae928"
+        },
+        {
+          "title": "Trading Internship",
+          "url": "https://unstop.com/internships/trading-internship-fintitans-1715828",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715828",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Non-technical, non-AI",
+          "action_plan": [
+            "Review internship description (30m)",
+            "Apply online (1h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "91c6579cdd17"
+        },
+        {
+          "title": "Growth & Marketing Internship",
+          "url": "https://unstop.com/internships/growth-marketing-internship-corporate-shiksha-1715819",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715819",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Non-technical internship",
+          "action_plan": [
+            "Review internship description (30m)",
+            "Apply online (1h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "682e7864c3a0"
+        },
+        {
+          "title": "Design Internship - Graphic Design & Social Media",
+          "url": "https://unstop.com/internships/design-internship-graphic-design-social-media-alltex-exim-1715818",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715818",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Non-technical, non-AI",
+          "action_plan": [
+            "Review internship description (30m)",
+            "Apply online (1h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "f88f92b81629"
+        },
+        {
+          "title": "Business Development Executive Internship",
+          "url": "https://unstop.com/internships/business-development-executive-internship-fleetwebtech-1715804",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715804",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Non-technical internship",
+          "action_plan": [
+            "Review internship description (30m)",
+            "Apply online (1h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "ebd4c18c40a8"
+        },
+        {
+          "title": "AI Developer Internship",
+          "url": "https://unstop.com/internships/ai-developer-internship-skillpilot-solutions-llp-1715792",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715792",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI developer internship",
+          "action_plan": [
+            "Review internship description (30m)",
+            "Apply online (1h)",
+            "Prepare for technical interview (10h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "8fc265ae5bec"
+        },
+        {
+          "title": "Digital Marketing & Outreach Internship",
+          "url": "https://unstop.com/internships/digital-marketing-outreach-internship-qubits-consultancy-1715784",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715784",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Non-technical internship",
+          "action_plan": [
+            "Review internship description (30m)",
+            "Apply online (1h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "ec6ddc203f21"
+        },
+        {
+          "title": "Expert Onboarding Internship",
+          "url": "https://unstop.com/internships/expert-onboarding-internship-vishavara-tech-india-pvt-ltd-1715785",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715785",
+          "score": 8,
+          "ai_score": 5,
+          "ai_summary": "Internship experience",
+          "action_plan": [
+            "Research company (1 day)",
+            "Update resume (2 days)",
+            "Apply for internship (1 day)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 5,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "9c8fef918c47"
+        },
+        {
+          "title": "Future Leaders Assessment 2026",
+          "url": "https://unstop.com/scholarships/future-leaders-assessment-2026-dyndox-1715493",
+          "source": "unstop",
+          "description": "scholarship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "scholarship"
+          ],
+          "native_id": "1715493",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "Scholarship opportunity",
+          "action_plan": [
+            "Check eligibility (1 day)",
+            "Apply for scholarship (2 days)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "a71ebe07d11d"
+        },
+        {
+          "title": "Tesla — Software Engineer Intern - Energy Engineering",
+          "url": "https://www.tesla.com/careers/search/job/276333",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f5df0ff3-923c-48b4-abf3-9c10848eb7ed",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Tesla prestige high but not AI-focused; modest career impact.",
+          "action_plan": [
+            "Update resume with AI projects (1h)",
+            "Find Tesla recruiting contact (30m)",
+            "Submit application (1h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 3,
+            "prestige": 9,
+            "deadline": 2,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "227c71561c59"
+        },
+        {
+          "title": "Later — Software Development Co-op",
+          "url": "https://job-boards.greenhouse.io/later/jobs/8621762002",
+          "source": "internships",
+          "description": "internship | Later | Vancouver, BC, Canada | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "828b332d-f015-47d7-a4ed-82a7f8d8ce3a",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Co‑op offers software experience; low AI relevance, moderate value.",
+          "action_plan": [
+            "Tailor resume for software co‑op (1h)",
+            "Identify Later recruiter on LinkedIn (30m)",
+            "Apply online (1h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "02a92697ae08"
+        },
+        {
+          "title": "Vital Lyfe — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/vital-lyfe/43a79d8f-a8bb-4c57-a411-1bac946128af/application",
+          "source": "internships",
+          "description": "internship | Vital Lyfe | Carson, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1de12102-5f3b-4c75-83ce-02e4d9bb828d",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Generic software role, low AI relevance and limited prestige.",
+          "action_plan": [
+            "Add relevant coursework to resume (45m)",
+            "Search Vital Lyfe hiring page (15m)",
+            "Submit application (1h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "e53047c5a90d"
+        },
+        {
+          "title": "Pylon — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/pylon-labs/fcea8b52-81f1-4b0c-b575-d7b180faec4d/application",
+          "source": "internships",
+          "description": "internship | Pylon | SF | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f0aadc2c-2a47-404c-bc18-f3863ab3e456",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "SF software internship; decent exposure but not AI‑centric.",
+          "action_plan": [
+            "Refresh portfolio with Python projects (1h)",
+            "Locate Pylon recruiter (30m)",
+            "Apply with cover letter (1h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "ecc2930563c1"
+        },
+        {
+          "title": "Cotiviti — AI Engineer Intern",
+          "url": "https://careers-cotiviti.icims.com/jobs/19531/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Cotiviti | Remote in USA | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1cf14ab5-bc9d-4842-9fb3-7f423c965a86",
+          "score": 5,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Remote in USA · Not eligible",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Remote in USA"
+          },
+          "key": "8d2c3597782e"
+        },
+        {
+          "title": "Uber Freight — Data Scientist Intern",
+          "url": "https://job-boards.greenhouse.io/uberfreight/jobs/5194491008",
+          "source": "internships",
+          "description": "internship | Uber Freight | Chicago, IL | Summer 2026, Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "51146492-0c25-4e83-b0f2-9bd98505db21",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Data‑science focus aligns with AI interests; high‑profile company.",
+          "action_plan": [
+            "Highlight ML coursework on resume (45m)",
+            "Connect with Uber Freight data team (30m)",
+            "Submit application (1h)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "6f5ee954d105"
+        },
+        {
+          "title": "Eulerity — Digital Marketing Intern - Technical AI & Automation",
+          "url": "https://job-boards.greenhouse.io/eulerity/jobs/4695806006",
+          "source": "internships",
+          "description": "internship | Eulerity | NYC | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c5e8d6dd-ca17-4cde-89c3-e8da016a78e5",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Technical marketing role; some AI exposure but low career leverage.",
+          "action_plan": [
+            "Showcase AI automation scripts in resume (30m)",
+            "Find Eulerity HR contact (15m)",
+            "Apply (1h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 3,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "17c8b4d54bd4"
+        },
+        {
+          "title": "CACI — Software Engineer Intern",
+          "url": "https://caci.wd1.myworkdayjobs.com/external/job/Jessup-MD-US/Software-Engineering-Intern---Fall-2026_328740",
+          "source": "internships",
+          "description": "internship | CACI | Annapolis Junction, MD | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1bfc9357-5590-4abc-b602-691403283106",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Software internship at defense contractor; modest relevance.",
+          "action_plan": [
+            "Update resume with security‑aware projects (45m)",
+            "Locate CACI recruiter (20m)",
+            "Submit application (1h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "54f7e4c2e03b"
+        },
+        {
+          "title": "Sentara Health — AI Intern",
+          "url": "https://sentara.wd1.myworkdayjobs.com/SCS/job/Virginia-Beach-VA/Intern--AI_JR-102248",
+          "source": "internships",
+          "description": "internship | Sentara Health | Virginia Beach, VA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "534e330d-1ccf-4d74-b28e-3c9a73a7a005",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "AI intern role matches interests; decent prestige, good skill growth.",
+          "action_plan": [
+            "Add AI‑internship projects to portfolio (1h)",
+            "Reach out to Sentara Health AI lead (30m)",
+            "Apply with tailored cover letter (1h)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "1df2081d380b"
+        }
+      ]
     }
   ]
 }
