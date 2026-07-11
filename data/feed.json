@@ -1,89 +1,6 @@
 {
-  "updated_at": "2026-07-10",
+  "updated_at": "2026-07-11",
   "items": [
-    {
-      "key": "15e34ffda925",
-      "title": "Google Summer of Code (GSoC)",
-      "url": "https://summerofcode.withgoogle.com/",
-      "source": "programs",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "program",
-        "internship",
-        "open source",
-        "google",
-        "remote"
-      ],
-      "ai_summary": "Elite program for AI/ML builders",
-      "action_plan": [
-        "Research organizations",
-        "Update resume",
-        "Apply"
-      ]
-    },
-    {
-      "key": "725a9fff3122",
-      "title": "Google STEP Internship",
-      "url": "https://buildyourfuture.withgoogle.com/programs/step",
-      "source": "programs",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "google",
-        "students",
-        "software engineering"
-      ],
-      "ai_summary": "Direct Google internship, limited window, elite resume boost.",
-      "action_plan": [
-        "Read STEP eligibility guide (30 min).",
-        "Draft resume focusing on TaskFlow/Nova (2 hrs).",
-        "Submit application before Oct deadline."
-      ]
-    },
-    {
-      "key": "0bcdc89b9b95",
-      "title": "Microsoft Imagine Cup",
-      "url": "https://imaginecup.microsoft.com/",
-      "source": "programs",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "competition",
-        "microsoft",
-        "ai",
-        "startup",
-        "global"
-      ],
-      "ai_summary": "Microsoft Imagine Cup with AI track",
-      "action_plan": [
-        "Research Microsoft Imagine Cup (2 hours)",
-        "Form a team and brainstorm ideas (4 hours)",
-        "Start building the project (40 hours)"
-      ]
-    },
-    {
-      "key": "91e5a868b9f7",
-      "title": "Meta AI — University Programs & Internships",
-      "url": "https://www.metacareers.com/students",
-      "source": "programs",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "research",
-        "meta",
-        "ai",
-        "global"
-      ],
-      "ai_summary": "Meta AI internship is elite, high‑prestige, and hard to replace.",
-      "action_plan": [
-        "Mark Meta internship cycle (autumn)",
-        "Polish research papers and code samples",
-        "Submit application with strong recommendation"
-      ]
-    },
     {
       "key": "07943466e5ba",
       "title": "Tesla — RL Engineer Intern - RL Engineer - Tesla AI",
@@ -116,124 +33,6 @@
         "Check eligibility",
         "Prepare resume and cover letter",
         "Apply"
-      ]
-    },
-    {
-      "key": "81992ea58a94",
-      "title": "IISER Berhampur Post-Doctoral Research Fellowship (PDRF) 2025-26",
-      "url": "https://unstop.com/scholarships/iiser-berhampur-post-doctoral-research-fellowship-pdrf-2025-26-indian-institute-of-science-education-and-re-1391914",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "scholarship"
-      ],
-      "ai_summary": "Research fellowship",
-      "action_plan": [
-        "Check eligibility",
-        "Gather documents",
-        "Apply"
-      ]
-    },
-    {
-      "key": "4fec7b2bae9b",
-      "title": "MLH Fellowship",
-      "url": "https://fellowship.mlh.io/",
-      "source": "programs",
-      "score": 8,
-      "deadline": "2026-06-30",
-      "tags": [
-        "program",
-        "fellowship",
-        "open source",
-        "remote",
-        "mlh",
-        "in-season"
-      ],
-      "ai_summary": "Portfolio growth",
-      "action_plan": [
-        "Apply by 2026-06-15",
-        "Prepare for interviews",
-        "Network with peers"
-      ]
-    },
-    {
-      "key": "bce329a08f01",
-      "title": "Google Gen AI Exchange / Build with AI (APAC)",
-      "url": "https://developers.google.com/community/gdg",
-      "source": "programs",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "program",
-        "generative ai",
-        "google",
-        "gemini",
-        "apac"
-      ],
-      "ai_summary": "Google Gen AI program offers hands‑on creds; seasonal but repeatable.",
-      "action_plan": [
-        "Watch upcoming APAC cohort announcement (5 min).",
-        "Prepare a mini GenAI demo using Gemini (2 hrs).",
-        "Submit application before cohort closes."
-      ]
-    },
-    {
-      "key": "932599bd2034",
-      "title": "Anthropic — Builder & Research Programs",
-      "url": "https://www.anthropic.com/",
-      "source": "programs",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "program",
-        "llm",
-        "anthropic",
-        "ai safety",
-        "research"
-      ],
-      "ai_summary": "Anthropic program offers frontier LLM work and strong signal.",
-      "action_plan": [
-        "Monitor Anthropic site for open calls (daily)",
-        "Prepare a Claude project demo (≈1 week)",
-        "Submit application before deadline"
-      ]
-    },
-    {
-      "key": "a03b7057cf03",
-      "title": "Microsoft Engage / India Internships",
-      "url": "https://careers.microsoft.com/students/",
-      "source": "programs",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "program",
-        "microsoft",
-        "india"
-      ],
-      "ai_summary": "Microsoft India pipeline, high prestige, deadline‑driven internship.",
-      "action_plan": [
-        "Monitor Microsoft India careers page weekly (5 min).",
-        "Tailor CV to highlight Azure and AI projects (2 hrs).",
-        "Apply as soon as cohort opens."
-      ]
-    },
-    {
-      "key": "bb926e793907",
-      "title": "AirCapture — Applied AI Research & Engineer Intern",
-      "url": "https://job-boards.greenhouse.io/aircapture/jobs/4687916006",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Summer AI research at Berkeley boosts resume and builds real AI systems.",
-      "action_plan": [
-        "Check application deadline (next 2 weeks)",
-        "Prepare resume highlighting TaskFlow/Nova",
-        "Submit application and follow up email"
       ]
     },
     {
@@ -286,6 +85,28 @@
         "Read paper (2 days)",
         "Analyze findings (1 week)",
         "Apply to Google programs (1 week)"
+      ]
+    },
+    {
+      "key": "4fec7b2bae9b",
+      "title": "MLH Fellowship",
+      "url": "https://fellowship.mlh.io/",
+      "source": "programs",
+      "score": 8,
+      "deadline": "2026-06-30",
+      "tags": [
+        "program",
+        "fellowship",
+        "open source",
+        "remote",
+        "mlh",
+        "in-season"
+      ],
+      "ai_summary": "Portfolio growth",
+      "action_plan": [
+        "Apply by 2026-06-15",
+        "Prepare for interviews",
+        "Network with peers"
       ]
     },
     {
@@ -680,164 +501,6 @@
         "Read the paper (2 days)",
         "Implement the model (4 days)",
         "Write a report (2 days)"
-      ]
-    },
-    {
-      "key": "5ad8b8317125",
-      "title": "Sage IT Scholarship India - November 2026",
-      "url": "https://unstop.com/scholarships/sage-it-scholarship-india-november-2026-sage-it-1688111",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "scholarship"
-      ],
-      "ai_summary": "Scholarship for IT students",
-      "action_plan": [
-        "Check eligibility",
-        "Gather documents",
-        "Apply"
-      ]
-    },
-    {
-      "key": "b653189c0468",
-      "title": "IET India Scholarship Award 2026",
-      "url": "https://unstop.com/scholarships/iet-india-scholarship-award-2026-institute-of-engineering-and-technologyiet-london-1700365",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "scholarship"
-      ],
-      "ai_summary": "Scholarship for students",
-      "action_plan": [
-        "Check eligibility",
-        "Gather documents",
-        "Apply"
-      ]
-    },
-    {
-      "key": "e407852beba7",
-      "title": "Sitaram Jindal Scholarship Scheme",
-      "url": "https://unstop.com/scholarships/sitaram-jindal-scholarship-scheme-sitaram-jindal-foundation-1678295",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "scholarship"
-      ],
-      "ai_summary": "Scholarship for students",
-      "action_plan": [
-        "Check eligibility",
-        "Gather documents",
-        "Apply"
-      ]
-    },
-    {
-      "key": "adfb8339da45",
-      "title": "NVIDIA Deep Learning Institute (DLI)",
-      "url": "https://www.nvidia.com/en-us/training/",
-      "source": "programs",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "certification",
-        "deep learning",
-        "nvidia",
-        "ai",
-        "free"
-      ],
-      "ai_summary": "NVIDIA DLI certificates are respected; self‑paced, low urgency.",
-      "action_plan": [
-        "Register for next free DLI session (5 min).",
-        "Complete one module on CUDA basics (3 hrs).",
-        "Add the certificate to portfolio."
-      ]
-    },
-    {
-      "key": "c9015f11a09b",
-      "title": "Kaggle Competitions",
-      "url": "https://www.kaggle.com/competitions",
-      "source": "programs",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "competition",
-        "machine learning",
-        "kaggle",
-        "google",
-        "data science"
-      ],
-      "ai_summary": "Kaggle comps build strong ML portfolio but are always available.",
-      "action_plan": [
-        "Pick a competition matching his stack (15 min).",
-        "Set up notebook and baseline model (2 hrs).",
-        "Iterate weekly, log improvements."
-      ]
-    },
-    {
-      "key": "a83e5c50dfec",
-      "title": "Amazon ML Summer School (India)",
-      "url": "https://www.amazon.science/academic-engagements/amazon-ml-summer-school",
-      "source": "programs",
-      "score": 7,
-      "deadline": "2026-06-30",
-      "tags": [
-        "program",
-        "machine learning",
-        "amazon",
-        "india",
-        "free",
-        "certification",
-        "in-season"
-      ],
-      "ai_summary": "Amazon ML School gives solid ML foundation and Amazon brand.",
-      "action_plan": [
-        "Apply before 2026-06-30 (≈2h)",
-        "Complete pre‑assessment (≈1 day)",
-        "Attend the summer sessions (≈4 weeks)"
-      ]
-    },
-    {
-      "key": "2d72d0ea2df0",
-      "title": "Adobe India — Research & Internships",
-      "url": "https://research.adobe.com/careers/",
-      "source": "programs",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "research",
-        "adobe",
-        "india",
-        "ai"
-      ],
-      "ai_summary": "Adobe internship offers strong brand and portfolio work on creative AI.",
-      "action_plan": [
-        "Track Adobe internship window",
-        "Tailor resume to creative‑AI projects",
-        "Apply before rolling deadline"
-      ]
-    },
-    {
-      "key": "0eb0ecb3e162",
-      "title": "Samsung PRISM (India)",
-      "url": "https://www.samsung.com/in/aboutsamsung/careers/prism/",
-      "source": "programs",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "research",
-        "program",
-        "samsung",
-        "india",
-        "ai"
-      ],
-      "ai_summary": "Samsung PRISM offers real AI work and patent potential.",
-      "action_plan": [
-        "Apply via Samsung portal (≈1h)",
-        "Select a worklet aligned with AI agents (≈2 days)",
-        "Deliver project during semester"
       ]
     },
     {
@@ -1540,80 +1203,88 @@
       ]
     },
     {
-      "key": "c33a60630cca",
-      "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
-      "url": "https://arxiv.org/abs/2606.28277v1",
-      "source": "arxiv",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Research idea aligns with AI‑review but lacks concrete deliverable or deadline.",
-      "action_plan": [
-        "Read the paper abstract (10 min).",
-        "Identify one open problem to explore (1 hr).",
-        "Write a short proposal for a personal project."
-      ]
-    },
-    {
-      "key": "286dbd785a10",
-      "title": "Outreachy Internships",
-      "url": "https://www.outreachy.org/",
-      "source": "programs",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "program",
-        "internship",
-        "open source",
-        "remote",
-        "stipend"
-      ],
-      "ai_summary": "Outreachy gives paid OSS experience and global signal.",
-      "action_plan": [
-        "Check upcoming cohort dates (weekly)",
-        "Prepare a project proposal (≈1 week)",
-        "Apply and complete onboarding"
-      ]
-    },
-    {
-      "key": "e1bee6486b67",
-      "title": "LFX Mentorship (Linux Foundation)",
-      "url": "https://lfx.linuxfoundation.org/tools/mentorship/",
-      "source": "programs",
-      "score": 6,
-      "deadline": "2026-06-30",
-      "tags": [
-        "program",
-        "fellowship",
-        "open source",
-        "remote",
-        "stipend",
-        "in-season"
-      ],
-      "ai_summary": "LFX mentorship builds OSS credentials and global network.",
-      "action_plan": [
-        "Apply to the current cohort (≈2h)",
-        "Select a project matching AI interests (≈1 day)",
-        "Deliver contributions over 3 months"
-      ]
-    },
-    {
-      "key": "cc9426ce6b58",
-      "title": "TDS — Software Engineer Intern",
-      "url": "https://external-telecom-teldta.icims.com/jobs/29561/job?mobile=true&needsRedirect=false",
+      "key": "eb0f3000f365",
+      "title": "Meta — Research Scientist Intern - Monetization Computer Vision",
+      "url": "https://www.metacareers.com/jobs/2281218542616482",
       "source": "internships",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "TDS remote internship provides experience but low prestige and easy to replace.",
+      "ai_summary": "relevant to AI/ML",
       "action_plan": [
-        "Check TDS posting",
-        "Update resume for remote software role",
-        "Apply quickly"
+        "Research Meta internship",
+        "Update resume",
+        "Apply"
+      ]
+    },
+    {
+      "key": "fcbe2af1cd0e",
+      "title": "Amazon — Junior Software Development Engineer - Jr. Developer Program",
+      "url": "https://amazon.jobs/en/jobs/10420146/jr-software-development-engineer-san-luis-obispo-ca-jr-developer-program",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Amazon SDE internship",
+      "action_plan": [
+        "Update resume with relevant experience (2 days)",
+        "Practice coding interviews (4 days)",
+        "Apply for the internship (1 day)"
+      ]
+    },
+    {
+      "key": "9c43a8400169",
+      "title": "Hitachi Energy — Computer Vision Research & Development Engineer",
+      "url": "https://hitachi.wd1.myworkdayjobs.com/hitachi/job/Remote---Berkshire-United-Kingdom/Computer-Vision-R-D-Engineer_R0128079",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Computer Vision R&D",
+      "action_plan": [
+        "Research Hitachi Energy's CV projects (1 week)",
+        "Update resume with relevant CV experience (2 days)",
+        "Apply for the internship (1 day)"
+      ]
+    },
+    {
+      "key": "fc210617e740",
+      "title": "Aptiv — Working Student Interior Sensing ML",
+      "url": "https://aptiv.wd5.myworkdayjobs.com/aptiv_careers/job/Wuppertal-Germany/Working-Student-Interior-Sensing-ML_J000700630",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "ML internship at Aptiv, good prestige and skill growth; visa unclear. · ⚠ verify eligibility: German work authorization may be required",
+      "action_plan": [
+        "Check German student‑internship visa rules (≈30m)",
+        "Highlight interior‑sensing ML work in CV (≈2h)",
+        "Apply (≈1h)"
+      ]
+    },
+    {
+      "key": "ab3f271f6336",
+      "title": "Parsons — AI & Digital Innovation Engineer Intern",
+      "url": "https://parsons.wd5.myworkdayjobs.com/en-US/search/job/CA---ON-Toronto/AI---Digital-Innovation-Engineering-Intern_R180895",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI‑focused intern; adds relevant experience and international exposure.",
+      "action_plan": [
+        "1. Draft a one‑page AI project summary (2 h).",
+        "2. Submit application on Parsons site (1 h).",
+        "3. Prepare for AI interview: LoRA, diffusion basics (4 h)."
       ]
     },
     {
@@ -1769,6 +1440,284 @@
         "Apply for AI Intern (2h)",
         "Prepare for interview (4h)",
         "Follow up on application (1h)"
+      ]
+    },
+    {
+      "key": "d7ac5e3bc6bb",
+      "title": "benlamiro/ShipGenAI — ★155",
+      "url": "https://github.com/benlamiro/ShipGenAI",
+      "source": "github",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "github",
+        "learning"
+      ],
+      "ai_summary": "Open‑source SaaS templates boost portfolio but no deadline or brand signal.",
+      "action_plan": [
+        "Clone repo & read README (1h)",
+        "Pick one app to deploy locally (2 days)",
+        "Customize and publish on Vercel (1 week)",
+        "Add deployed app to portfolio (1 day)"
+      ]
+    },
+    {
+      "key": "a7e0b3be0a49",
+      "title": "infracv/rf-detr-cpp — ★98",
+      "url": "https://github.com/infracv/rf-detr-cpp",
+      "source": "github",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "github",
+        "learning"
+      ],
+      "ai_summary": "High‑skill CV engine showcases deep‑learning deployment, but no urgency.",
+      "action_plan": [
+        "Read repo docs (30m)",
+        "Set up Docker environment (2h)",
+        "Run demo inference (1 day)",
+        "Integrate into a personal project (1 week)"
+      ]
+    },
+    {
+      "key": "a2214331987d",
+      "title": "Weekend Dev Challenge 57: LLD Projects (codechef.com)",
+      "url": "https://www.codechef.com/DEVWEEKEND57",
+      "source": "clist",
+      "score": 6,
+      "deadline": "2026-07-03",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "Competitive programming",
+      "action_plan": [
+        "Register",
+        "Practice problems",
+        "Participate"
+      ]
+    },
+    {
+      "key": "48789711c963",
+      "title": "Monday Munch - DSA Challenge 010 (Rated) (codechef.com)",
+      "url": "https://www.codechef.com/DSAMONDAY010",
+      "source": "clist",
+      "score": 6,
+      "deadline": "2026-07-06",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "Competitive programming",
+      "action_plan": [
+        "Register",
+        "Practice problems",
+        "Participate"
+      ]
+    },
+    {
+      "key": "f8aaf5b26072",
+      "title": "AI for Bharat Hackathon 2026 – Build AI Solutions for India's Real Problems",
+      "url": "https://unstop.com/hackathons/ai-for-bharat-hackathon-2026-build-ai-solutions-for-indias-real-problems-indraprastha-institute-of-informatio-1709437",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "AI for Bharat Hackathon",
+      "action_plan": [
+        "Form a team",
+        "Brainstorm ideas",
+        "Participate in hackathon"
+      ]
+    },
+    {
+      "key": "4a9a33b0073b",
+      "title": "Tesla — Software Engineer Intern - Distributed Systems Software Engineer - Energy Engineering",
+      "url": "https://www.tesla.com/careers/search/job/275558",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Tesla offers high brand value; role is systems‑focused, not core AI.",
+      "action_plan": [
+        "Tailor resume to emphasize distributed systems experience (1 day).",
+        "Study Tesla's open‑source projects and AI initiatives (2 days).",
+        "Do system design prep (1 week).",
+        "Apply through Tesla careers (1 hour)."
+      ]
+    },
+    {
+      "key": "f00f1cd4c424",
+      "title": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials",
+      "url": "https://arxiv.org/abs/2607.02499v1",
+      "source": "arxiv",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "Machine learning research for interatomic potentials",
+      "action_plan": [
+        "Read the paper",
+        "Analyze the methodology"
+      ]
+    },
+    {
+      "key": "0c1eede7ed8b",
+      "title": "Looking for feedback on a small test SLM I built completely from scratch [P]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1um013f/looking_for_feedback_on_a_small_test_slm_i_built/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "SLM project and feedback",
+      "action_plan": [
+        "Read thread, 1h",
+        "Research SLM, 2h",
+        "Provide feedback, 1h"
+      ]
+    },
+    {
+      "key": "748a9b126cd1",
+      "title": "ByteDance — Research Scientist Intern - AI Infrastructure",
+      "url": "https://jobs.bytedance.com/en/position/7553916190126524680/detail",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI infrastructure internship",
+      "action_plan": [
+        "Check internship requirements",
+        "Update resume"
+      ]
+    },
+    {
+      "key": "e0d198537ce2",
+      "title": "ByteDance — Research Scientist Intern - AI Infrastructure",
+      "url": "https://jobs.bytedance.com/en/position/7553917136512076050/detail",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI infrastructure internship",
+      "action_plan": [
+        "Check internship requirements",
+        "Update resume"
+      ]
+    },
+    {
+      "key": "291b6d6fee6c",
+      "title": "Saronic — Enterprise Technology Intern - AI and Automation",
+      "url": "https://jobs.ashbyhq.com/saronic/c95c2e3a-4c67-47b0-a03d-0e0317ac11a3/application",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI & automation aligns with interests; company less known but decent.",
+      "action_plan": [
+        "Locate Saronic internship posting.",
+        "Tailor cover letter to AI automation work.",
+        "Apply and follow up via LinkedIn."
+      ]
+    },
+    {
+      "key": "5560f3aefdc5",
+      "title": "Bot Auto — Deep Learning Engineer Intern",
+      "url": "https://job-boards.greenhouse.io/botauto/jobs/5289440008",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Deep learning engineer internship",
+      "action_plan": [
+        "Check internship requirements",
+        "Update resume"
+      ]
+    },
+    {
+      "key": "aa8695231051",
+      "title": "Codeforces Round (Div. 2) (codeforces.com)",
+      "url": "https://codeforces.com/contests/2246",
+      "source": "clist",
+      "score": 6,
+      "deadline": "2026-07-12",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "Competitive programming",
+      "action_plan": [
+        "Research contest rules (2 hours)",
+        "Prepare for the contest (1 week)",
+        "Participate in the contest (1 day)"
+      ]
+    },
+    {
+      "key": "aa1cfc4473dd",
+      "title": "Biweekly Contest 187 (leetcode.com)",
+      "url": "https://leetcode.com/contest/biweekly-contest-187",
+      "source": "clist",
+      "score": 6,
+      "deadline": "2026-07-18",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "Competitive programming",
+      "action_plan": [
+        "Research contest rules (2 hours)",
+        "Prepare for the contest (1 week)",
+        "Participate in the contest (1 day)"
+      ]
+    },
+    {
+      "key": "597132fb665f",
+      "title": "Agents of Change – National Agentic AI Bootcamp & Buildathon 2026",
+      "url": "https://unstop.com/hackathons/agents-of-change-national-agentic-ai-bootcamp-buildathon-2026-agents-of-change-2026-oriental-group-of-institu-1710516",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Bootcamp aligns with AI agents interest; builds portfolio but limited prestige.",
+      "action_plan": [
+        "Open the Unstop page, note registration deadline (10 min).",
+        "Prepare a short project idea on AI agents (30 min).",
+        "Submit application and set calendar reminder for event dates."
+      ]
+    },
+    {
+      "key": "a40f68a795e7",
+      "title": "If DeepMind or Anthropic is doing your exact research topic, do you still continue? [D]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1unt64q/if_deepmind_or_anthropic_is_doing_your_exact/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "ML research discussion",
+      "action_plan": [
+        "Read the discussion (1 hour)",
+        "Participate in the discussion (1 hour)"
       ]
     }
   ]

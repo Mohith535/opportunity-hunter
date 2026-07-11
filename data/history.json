@@ -19404,6 +19404,1008 @@
           "key": "1df2081d380b"
         }
       ]
+    },
+    {
+      "date": "2026-07-11",
+      "items": [
+        {
+          "title": "Doriandarko/texts-to-transformer — ★321",
+          "url": "https://github.com/Doriandarko/texts-to-transformer",
+          "source": "github",
+          "description": "Train a tiny Transformer from scratch on your iMessage history, entirely on your Mac. (topics: apple silicon, imessage, local first, machine learning, mlx, transformer)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "Doriandarko/texts-to-transformer",
+          "score": 4,
+          "ai_score": 6,
+          "ai_summary": "Transformer training project",
+          "action_plan": [
+            "Fork the repository (1 day)",
+            "Train the model (4 days)",
+            "Improve the project (4 days)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 9,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "906a2dddbf46"
+        },
+        {
+          "title": "sums001/Windows-Copilot-API — ★1,092",
+          "url": "https://github.com/sums001/Windows-Copilot-API",
+          "source": "github",
+          "description": "Reverse engineered Windows Copilot into an OpenAI-compatible API. Access GPT-4 and GPT-5 models through a simple REST interface without API keys or billing. (topics: ai, ai agents, api, copilot, llm, microsoft copilot, openai)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "sums001/Windows-Copilot-API",
+          "score": 4,
+          "ai_score": 4,
+          "ai_summary": "Builds a usable Copilot API, aligns with AI agents interest, modest portfolio boost.",
+          "action_plan": [
+            "Clone repo (≈1h)",
+            "Run sample queries (≈2h)",
+            "Create a tiny demo app (≈4h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 8,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "8581bf3549ed"
+        },
+        {
+          "title": "Einstein's relativity rules chemical bonds in heavy elements, new research shows",
+          "url": "https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48866134",
+          "score": 3,
+          "ai_score": 1,
+          "ai_summary": "Just a news article; no direct impact on career or skill growth.",
+          "action_plan": [
+            "Read article (≈5m)"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 2,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "yes"
+          },
+          "key": "46ffe70e16bb"
+        },
+        {
+          "title": "United Hacks V7",
+          "url": "https://unitedhacksv7.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jul 10 - 12, 2026 | prize $ 1,050 | themes: Beginner Friendly, Design, Education",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "28199",
+          "score": 5,
+          "ai_score": 5,
+          "ai_summary": "Hackathon experience",
+          "action_plan": [
+            "Form a team (2 days)",
+            "Choose a theme and idea (1 day)",
+            "Participate in the hackathon (3 days)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 8,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "bb073c5991e2"
+        },
+        {
+          "title": "Why doesn't the ML research community limit the number of submissions per author? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1usq43t/why_doesnt_the_ml_research_community_limit_the/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1usq43t",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "ML research discussion",
+          "action_plan": [
+            "Read the discussion (30 minutes)",
+            "Comment with own thoughts (30 minutes)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 8,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "04303d5ad66a"
+        },
+        {
+          "title": "Please help me understand figure on subspace similarity in LoRA paper. [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uso667/please_help_me_understand_figure_on_subspace/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uso667",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Not an actionable opportunity; just a Reddit query. · Cannot apply; only a discussion prompt.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Not an actionable opportunity; just a Reddit query."
+          },
+          "key": "cd5384fe9d1f"
+        },
+        {
+          "title": "How does *ACL conferences acceptance work [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1ut5krb/how_does_acl_conferences_acceptance_work_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1ut5krb",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Not an actionable opportunity; just a Reddit query. · Cannot apply; only a discussion prompt.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Not an actionable opportunity; just a Reddit query."
+          },
+          "key": "82b728fc1388"
+        },
+        {
+          "title": "multiple linear regression in scratch [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uszkri/multiple_linear_regression_in_scratch_p/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uszkri",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Not an actionable opportunity; just a Reddit query. · Cannot apply; only a discussion prompt.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Not an actionable opportunity; just a Reddit query."
+          },
+          "key": "09a835eac62c"
+        },
+        {
+          "title": "How should I approach training this specific ML model for my startup project [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1usnuc0/how_should_i_approach_training_this_specific_ml/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1usnuc0",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "ML model training advice",
+          "action_plan": [
+            "Read the question and answers (30 minutes)",
+            "Apply the advice to own project (1 week)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 8,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "0326e41b928c"
+        },
+        {
+          "title": "On Adversarial RL [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1usx96p/on_adversarial_rl_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1usx96p",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Not an actionable opportunity; just a Reddit query. · Cannot apply; only a discussion prompt.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Not an actionable opportunity; just a Reddit query."
+          },
+          "key": "2012b9242d63"
+        },
+        {
+          "title": "Mapping world model taxonomy [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1usp482/mapping_world_model_taxonomy_p/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1usp482",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "Just a Reddit post; low impact on resume or skill growth.",
+          "action_plan": [
+            "Read the post (5 min)",
+            "Summarize key ideas (15 min)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 5,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "1cf1f75faf69"
+        },
+        {
+          "title": "ML Papers with hundreds of authors should just collapse down to the organization response instead of listing every author [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1usz695/ml_papers_with_hundreds_of_authors_should_just/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1usz695",
+          "score": 2,
+          "ai_score": 1,
+          "ai_summary": "Discussion about paper authorship; no direct benefit for Mohith.",
+          "action_plan": [
+            "Skim the thread (5 min)",
+            "Note any useful citation tips (10 min)"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 2,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 1,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "8ff6421bbf68"
+        },
+        {
+          "title": "Placement Prep Weekends - 01 (codechef.com)",
+          "url": "https://www.codechef.com/PLACEPREP01",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-07-31T18:30:00",
+          "deadline": "2026-07-31",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68740314",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "Competitive‑programming contest; low AI relevance, but deadline soon.",
+          "action_plan": [
+            "Register on CodeChef (≈10m)",
+            "Solve warm‑up problems (≈2h)",
+            "Participate on 31‑Jul (≈3h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 5,
+            "skill": 3,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "2023c28f86da"
+        },
+        {
+          "title": "Code Build 1.0",
+          "url": "https://unstop.com/hackathons/code-build-10-cobuild-1703709",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1703709",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "Hackathon builds portfolio, aligns with AI building interests, deadline soon.",
+          "action_plan": [
+            "Check registration deadline (10 min)",
+            "Form a team (1 day)",
+            "Pick project idea (2 days)",
+            "Develop MVP (1 week)",
+            "Submit entry (by deadline)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 6,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "8223baae9503"
+        },
+        {
+          "title": "Marketing Internship",
+          "url": "https://unstop.com/internships/marketing-internship-mycaptain-1715968",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715968",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "4d2ccf901686"
+        },
+        {
+          "title": "Digital Media & Internet Internship",
+          "url": "https://unstop.com/internships/digital-media-internet-internship-abhiratech-1716261",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1716261",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "fa05d60af7a4"
+        },
+        {
+          "title": "Social Media & Content Marketing Internship",
+          "url": "https://unstop.com/internships/social-media-content-marketing-internship-qurovo-1716263",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1716263",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "a14262f002d3"
+        },
+        {
+          "title": "Data Analyst Internship",
+          "url": "https://unstop.com/internships/data-analyst-internship-lavera-labs-private-limited-1716259",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1716259",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "some relevance",
+          "action_plan": [
+            "Research data analyst role",
+            "Update resume",
+            "Apply"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "3109d2b61989"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-phyllo-1715996",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715996",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "de4f01deaee7"
+        },
+        {
+          "title": "Campus Ambassador Internship",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-arkham-archives-1715897",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715897",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "709a52dd0356"
+        },
+        {
+          "title": "Human Resources (HR)",
+          "url": "https://unstop.com/internships/human-resources-hr-accesco-living-1716238",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1716238",
+          "score": 5,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — HR internship · Not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "HR internship"
+          },
+          "key": "47f8bfd8d75b"
+        },
+        {
+          "title": "Content and Social Media Marketing Internship",
+          "url": "https://unstop.com/internships/content-and-social-media-marketing-internship-upstagex-1715238",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1715238",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "280ee2c6e52d"
+        },
+        {
+          "title": "2026 Hack4Health Labs Research Challenge",
+          "url": "https://unstop.com/competitions/2026-hack4health-labs-research-challenge-hack4health-labs-hack4health-1715636",
+          "source": "unstop",
+          "description": "competition | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "competition"
+          ],
+          "native_id": "1715636",
+          "score": 5,
+          "ai_score": 6,
+          "ai_summary": "Research challenge",
+          "action_plan": [
+            "Research the challenge (2 days)",
+            "Form a team and plan (2 days)",
+            "Participate in the challenge (4 days)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 6,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "e356f978adf3"
+        },
+        {
+          "title": "Meta — Research Scientist Intern - Monetization Computer Vision",
+          "url": "https://www.metacareers.com/jobs/2281218542616482",
+          "source": "internships",
+          "description": "internship | Meta | Menlo Park, CA | Winter 2026, Spring 2026, Summer 2026, Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ba1e95d6-38c8-4dfd-98bb-f6954a1aaab8",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "relevant to AI/ML",
+          "action_plan": [
+            "Research Meta internship",
+            "Update resume",
+            "Apply"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 6,
+            "prestige": 9,
+            "deadline": 6,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "eb0f3000f365"
+        },
+        {
+          "title": "Exowatt — Software Engineer Intern - Agent Platform - AI",
+          "url": "https://jobs.lever.co/exowatt/2623555d-8b81-4f95-8bca-de9fafd2381c/apply",
+          "source": "internships",
+          "description": "internship | Exowatt | Austin, TX | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c0a71d19-4941-44c1-9408-7c39f29dfb85",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "AI agent platform internship, strong skill boost, but visa uncertainty. · ⚠ verify eligibility: US work authorization may be required",
+          "action_plan": [
+            "Check visa eligibility (≈30m)",
+            "Prepare resume focusing on AI projects (≈2h)",
+            "Submit application (≈1h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 3,
+            "skill": 7,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization may be required"
+          },
+          "key": "18dd1c7681a4"
+        },
+        {
+          "title": "Xsolla — AI-First Engineer Intern",
+          "url": "https://jobs.lever.co/xsolla/5d5fd6b3-d82f-437a-b251-abf4674ac874/apply",
+          "source": "internships",
+          "description": "internship | Xsolla | Raleigh, NC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cbc90c52-de35-4d7b-b7f2-bc0a30bb1d72",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "AI‑first role at Xsolla, good for building, but US work permit unclear. · ⚠ verify eligibility: US work authorization may be required",
+          "action_plan": [
+            "Verify internship visa policy (≈30m)",
+            "Tailor CV to AI‑first focus (≈2h)",
+            "Apply (≈1h)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 3,
+            "skill": 6,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization may be required"
+          },
+          "key": "825525e87624"
+        },
+        {
+          "title": "Xsolla — AI-First Engineer Intern",
+          "url": "https://jobs.lever.co/xsolla/1c0e5375-2352-4a2c-a816-48ddebbdd3d6/apply",
+          "source": "internships",
+          "description": "internship | Xsolla | LA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9eeb2878-4b21-43db-94eb-1586edccfa2a",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Same AI‑first internship in LA; similar benefits and visa concerns. · ⚠ verify eligibility: US work authorization may be required",
+          "action_plan": [
+            "Confirm eligibility for US internship (≈30m)",
+            "Update portfolio with relevant AI work (≈2h)",
+            "Submit application (≈1h)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 3,
+            "skill": 6,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization may be required"
+          },
+          "key": "27192d2e39c4"
+        },
+        {
+          "title": "Xsolla — AI Engineer Intern",
+          "url": "https://jobs.lever.co/xsolla/5ec8e8f7-ed75-4697-a1c0-28a026f2e571/apply",
+          "source": "internships",
+          "description": "internship | Xsolla | Montreal, QC, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d37c57dd-2a33-4fb5-a1f5-71e277f49809",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "AI engineer role in Canada; strong skill fit, but work‑permit status unknown. · ⚠ verify eligibility: Canadian work permit may be required",
+          "action_plan": [
+            "Research Canada student‑intern visa (≈30m)",
+            "Polish AI project showcase (≈2h)",
+            "Apply (≈1h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 3,
+            "skill": 7,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "Canadian work permit may be required"
+          },
+          "key": "291b0ec64716"
+        },
+        {
+          "title": "Amazon — Junior Software Development Engineer - Jr. Developer Program",
+          "url": "https://amazon.jobs/en/jobs/10420146/jr-software-development-engineer-san-luis-obispo-ca-jr-developer-program",
+          "source": "internships",
+          "description": "internship | Amazon | San Luis Obispo, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "49d144b5-0812-45e0-b67c-5d07571de5e5",
+          "score": 5,
+          "ai_score": 7,
+          "ai_summary": "Amazon SDE internship",
+          "action_plan": [
+            "Update resume with relevant experience (2 days)",
+            "Practice coding interviews (4 days)",
+            "Apply for the internship (1 day)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 8,
+            "prestige": 9,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "fcbe2af1cd0e"
+        },
+        {
+          "title": "Hitachi Energy — Computer Vision Research & Development Engineer",
+          "url": "https://hitachi.wd1.myworkdayjobs.com/hitachi/job/Remote---Berkshire-United-Kingdom/Computer-Vision-R-D-Engineer_R0128079",
+          "source": "internships",
+          "description": "internship | Hitachi Energy | Remote in UK | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8d8f9605-6605-4474-9a61-7960df14b4a0",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Computer Vision R&D",
+          "action_plan": [
+            "Research Hitachi Energy's CV projects (1 week)",
+            "Update resume with relevant CV experience (2 days)",
+            "Apply for the internship (1 day)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 7,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "9c43a8400169"
+        },
+        {
+          "title": "Aptiv — Working Student Interior Sensing ML",
+          "url": "https://aptiv.wd5.myworkdayjobs.com/aptiv_careers/job/Wuppertal-Germany/Working-Student-Interior-Sensing-ML_J000700630",
+          "source": "internships",
+          "description": "internship | Aptiv | Neukirchen-Vluyn, Germany | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a62910e6-5d07-4c79-b9be-d6c633815782",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "ML internship at Aptiv, good prestige and skill growth; visa unclear. · ⚠ verify eligibility: German work authorization may be required",
+          "action_plan": [
+            "Check German student‑internship visa rules (≈30m)",
+            "Highlight interior‑sensing ML work in CV (≈2h)",
+            "Apply (≈1h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 3,
+            "skill": 7,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "German work authorization may be required"
+          },
+          "key": "fc210617e740"
+        },
+        {
+          "title": "LexisNexis Risk Solutions — Software Engineer Apprentice",
+          "url": "https://relx.wd3.myworkdayjobs.com/en-US/RiskSolutions/job/Grosvernor-House/Software-Engineer-Apprentice_R115941-2",
+          "source": "internships",
+          "description": "internship | LexisNexis Risk Solutions | London, UK | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9de0cd3c-8069-46b0-8a3f-21a2cf350daa",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Provides generic software experience; low AI relevance, modest resume boost.",
+          "action_plan": [
+            "1. Update CV (2 h).",
+            "2. Submit application via company portal (1 h).",
+            "3. Prepare for interview: review OOP & system design (4 h)."
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 4,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "1ad6e27214cf"
+        },
+        {
+          "title": "RELX — Software Engineer Apprentice",
+          "url": "https://relx.wd3.myworkdayjobs.com/en-US/relx/job/Grosvernor-House/Software-Engineer-Apprentice_R115941-3",
+          "source": "internships",
+          "description": "internship | RELX | London, UK | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d0fe3c23-78d8-4f8b-a69a-17d72eaa5eb2",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Similar to LexisNexis; offers engineering exposure but little AI impact.",
+          "action_plan": [
+            "1. Tailor CV to highlight Python projects (2 h).",
+            "2. Apply through RELX careers page (1 h).",
+            "3. Mock interview on coding problems (3 h)."
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 4,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "d2e92c6a6d9a"
+        },
+        {
+          "title": "Parsons — AI & Digital Innovation Engineer Intern",
+          "url": "https://parsons.wd5.myworkdayjobs.com/en-US/search/job/CA---ON-Toronto/AI---Digital-Innovation-Engineering-Intern_R180895",
+          "source": "internships",
+          "description": "internship | Parsons | Toronto, ON, Canada, Markham, ON, Canada, Oakville, ON, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d02d254a-90f8-42a3-a7d2-178982f54fc7",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "AI‑focused intern; adds relevant experience and international exposure.",
+          "action_plan": [
+            "1. Draft a one‑page AI project summary (2 h).",
+            "2. Submit application on Parsons site (1 h).",
+            "3. Prepare for AI interview: LoRA, diffusion basics (4 h)."
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 4,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "ab3f271f6336"
+        },
+        {
+          "title": "Arrowstreet Capital — Quantitative Developer Intern",
+          "url": "https://arrowstreetcapital.wd5.myworkdayjobs.com/Campus_Careers/job/Boston/Quantitative-Developer-Intern--Summer-2027_R1506",
+          "source": "internships",
+          "description": "internship | Arrowstreet Capital | Boston, MA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cee814d5-6814-4bea-b567-0b0b7460e127",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Quant finance role; good prestige but misaligned with AI builder goals.",
+          "action_plan": [
+            "1. Refresh C++/Python quant basics (3 h).",
+            "2. Apply via Arrowstreet portal (1 h).",
+            "3. Practice probability & statistics interview questions (3 h)."
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 6,
+            "deadline": 4,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "1cd74bac797e"
+        }
+      ]
     }
   ]
 }
