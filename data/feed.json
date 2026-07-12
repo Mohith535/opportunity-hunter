@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11",
+  "updated_at": "2026-07-12",
   "items": [
     {
       "key": "07943466e5ba",
@@ -33,97 +33,6 @@
         "Check eligibility",
         "Prepare resume and cover letter",
         "Apply"
-      ]
-    },
-    {
-      "key": "29da5cfa0897",
-      "title": "Self-Evolving World Models for LLM Agent Planning",
-      "url": "https://arxiv.org/abs/2606.30639v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "LLM agent planning research",
-      "action_plan": [
-        "Read paper (2 days)",
-        "Implement WorldEvolver (4 weeks)",
-        "Publish results (2 weeks)"
-      ]
-    },
-    {
-      "key": "c2007ce16590",
-      "title": "One-Step Gradient Delay is Not a Barrier for Large-Scale Asynchronous Pipeline Parallel LLM Pretraining",
-      "url": "https://arxiv.org/abs/2606.30634v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Asynchronous pipeline parallel LLM pretraining",
-      "action_plan": [
-        "Read paper (2 days)",
-        "Implement PipeDream-2BW (4 weeks)",
-        "Publish results (2 weeks)"
-      ]
-    },
-    {
-      "key": "7f376a6a7354",
-      "title": "Google's Agentic Peer-Reviewer Handled ~10K Papers at ICML/STOC — Formal Research Paper Now Out [R]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1uio9rb/googles_agentic_peerreviewer_handled_10k_papers/",
-      "source": "reddit",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "Google research paper",
-      "action_plan": [
-        "Read paper (2 days)",
-        "Analyze findings (1 week)",
-        "Apply to Google programs (1 week)"
-      ]
-    },
-    {
-      "key": "4fec7b2bae9b",
-      "title": "MLH Fellowship",
-      "url": "https://fellowship.mlh.io/",
-      "source": "programs",
-      "score": 8,
-      "deadline": "2026-06-30",
-      "tags": [
-        "program",
-        "fellowship",
-        "open source",
-        "remote",
-        "mlh",
-        "in-season"
-      ],
-      "ai_summary": "Portfolio growth",
-      "action_plan": [
-        "Apply by 2026-06-15",
-        "Prepare for interviews",
-        "Network with peers"
-      ]
-    },
-    {
-      "key": "4d7982f38545",
-      "title": "Palantir — Software Engineer Intern - Infrastructure",
-      "url": "https://jobs.lever.co/palantir/f221738b-e97c-4ce3-a12a-17ada2b855e4/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Prestigious internship",
-      "action_plan": [
-        "Update resume, 2 hours",
-        "Practice coding, 10 hours",
-        "Apply, 2 hours"
       ]
     },
     {
@@ -504,20 +413,21 @@
       ]
     },
     {
-      "key": "3716178f2dc7",
-      "title": "Port Mortem 2026 - Code Resurrection Hackathon",
-      "url": "https://portmortem.devfolio.co",
-      "source": "devfolio",
-      "score": 7,
-      "deadline": "2026-07-31",
+      "key": "308dd671f8c2",
+      "title": "AtCoder Beginner Contest 469 (atcoder.jp)",
+      "url": "https://atcoder.jp/contests/abc469",
+      "source": "clist",
+      "score": 8,
+      "deadline": "2026-08-01",
       "tags": [
-        "hackathon"
+        "contest",
+        "competitive programming"
       ],
-      "ai_summary": "Code resurrection hackathon",
+      "ai_summary": "Competitive programming contest",
       "action_plan": [
-        "Form team (1 week)",
-        "Prepare for hackathon (2 weeks)",
-        "Participate in hackathon (3 days)"
+        "Research contest rules (1h)",
+        "Prepare for the contest (10h)",
+        "Participate in the contest (2h)"
       ]
     },
     {
@@ -945,6 +855,23 @@
       ]
     },
     {
+      "key": "e9e2e3debc2f",
+      "title": "Kaya AI India Hackathon 2026",
+      "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
+      "source": "devpost",
+      "score": 7,
+      "deadline": "2026-07-13",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "ML/AI focus, prize money",
+      "action_plan": [
+        "Review IoT & ML themes (2h)",
+        "Brainstorm ideas (1d)",
+        "Develop a project (7d)"
+      ]
+    },
+    {
       "key": "d6aedc65a424",
       "title": "Meta — Research Scientist Intern - 3D Vision & World Simulation",
       "url": "https://www.metacareers.com/jobs/2839011673109571",
@@ -1288,88 +1215,20 @@
       ]
     },
     {
-      "key": "09d9685b248a",
-      "title": "LeVo 2: Stable and Melodious Song Generation via Hierarchical Representation Modeling and Progressive Post-Training",
-      "url": "https://arxiv.org/abs/2606.30642v1",
-      "source": "arxiv",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Relevant research in AI",
-      "action_plan": [
-        "Read paper, 1 hour",
-        "Implement key concepts, 5 hours",
-        "Apply to own project, 10 hours"
-      ]
-    },
-    {
-      "key": "07b501f3e50b",
-      "title": "DOPD: Dual On-policy Distillation",
-      "url": "https://arxiv.org/abs/2606.30626v1",
-      "source": "arxiv",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Relevant research in AI",
-      "action_plan": [
-        "Read paper, 1 hour",
-        "Implement key concepts, 5 hours",
-        "Apply to own project, 10 hours"
-      ]
-    },
-    {
-      "key": "95f46d619010",
-      "title": "C$^{2}$R: Cross-sample Consistency Regularization Mitigates Feature Splitting and Absorption in Sparse Autoencoders",
-      "url": "https://arxiv.org/abs/2606.30609v1",
-      "source": "arxiv",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Relevant research in AI",
-      "action_plan": [
-        "Read paper, 1 hour",
-        "Implement key concepts, 5 hours",
-        "Apply to own project, 10 hours"
-      ]
-    },
-    {
-      "key": "98881522ea10",
-      "title": "Africa Deep Tech Challenge 2026",
-      "url": "https://adtc-2026.devpost.com/",
-      "source": "devpost",
-      "score": 6,
-      "deadline": "2026-08-25",
+      "key": "273b2b6ecc4f",
+      "title": "Agentic Commerce Hackathon",
+      "url": "https://agentic-commerce.devfolio.co",
+      "source": "devfolio",
+      "score": 7,
+      "deadline": "2026-08-01",
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "Africa Deep Tech Challenge",
+      "ai_summary": "Hackathon with GPU theme",
       "action_plan": [
-        "Form team (1 week)",
-        "Prepare for challenge (2 weeks)",
-        "Participate in challenge (3 days)"
-      ]
-    },
-    {
-      "key": "e9e2e3debc2f",
-      "title": "Kaya AI India Hackathon 2026",
-      "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
-      "source": "devpost",
-      "score": 6,
-      "deadline": "2026-07-10",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AI/ML theme, prize, online",
-      "action_plan": [
-        "Review hackathon rules (1h)",
-        "Form team, choose theme (2h)",
-        "Develop project (40h)"
+        "Research GPU and hackathon (2h)",
+        "Form a team (2h)",
+        "Prepare for the hackathon (15h)"
       ]
     },
     {
@@ -1718,6 +1577,146 @@
       "action_plan": [
         "Read the discussion (1 hour)",
         "Participate in the discussion (1 hour)"
+      ]
+    },
+    {
+      "key": "56d70833e420",
+      "title": "Varithon 2026",
+      "url": "https://unstop.com/hackathons/varithon-2026-marathwada-mitra-mandals-college-of-engineering-mmcoe-pune-1711499",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Hackathon adds portfolio, builds AI tools, good resume signal",
+      "action_plan": [
+        "Check registration deadline (1‑day)",
+        "Form a team with complementary skills (2‑days)",
+        "Design a prototype aligned with AI agents (1‑week)",
+        "Iterate and prepare demo for event (1‑week)"
+      ]
+    },
+    {
+      "key": "ff7d91ef2d87",
+      "title": "Citadel Securities — Software Engineer Intern",
+      "url": "https://www.citadelsecurities.com/careers/details/software-engineer-intern-us/",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "software engineer intern",
+      "action_plan": [
+        "research Citadel Securities (1 week)",
+        "update resume (2 weeks)",
+        "apply for internship (1 week)"
+      ]
+    },
+    {
+      "key": "3b999b6b9a90",
+      "title": "Citadel — Software Engineer Intern",
+      "url": "https://www.citadel.com/careers/details/software-engineer-intern-us/",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "software engineer intern",
+      "action_plan": [
+        "research Citadel (1 week)",
+        "update resume (2 weeks)",
+        "apply for internship (1 week)"
+      ]
+    },
+    {
+      "key": "53e1c2e25b6c",
+      "title": "Susquehanna International Group (SIG) — Quantitative Strategy Developer Intern",
+      "url": "https://careers-sig.icims.com/jobs/11170/job?mobile=true&needsRedirect=false",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "quant strategy dev intern",
+      "action_plan": [
+        "research SIG (1 week)",
+        "update resume (2 weeks)",
+        "apply for internship (1 week)"
+      ]
+    },
+    {
+      "key": "84e6ca7a6ad2",
+      "title": "Tower Research Capital — Quantitative Developer Intern",
+      "url": "https://www.tower-research.com/open-positions/?gh_jid=8044334",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "quant dev intern",
+      "action_plan": [
+        "research Tower Research Capital (1 week)",
+        "update resume (2 weeks)",
+        "apply for internship (1 week)"
+      ]
+    },
+    {
+      "key": "9f08a8524f00",
+      "title": "The ₹100 Founder Challenge",
+      "url": "https://unstop.com/hackathons/the-rs100-founder-challenge-techverse-solutions-1711619",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Founder challenge aligns with entrepreneurship goal and adds to resume",
+      "action_plan": [
+        "Day 1: Read rules, note submission deadline",
+        "Day 2‑3: Draft startup idea, validate quickly",
+        "Day 4‑6: Build minimal viable product (MVP) prototype",
+        "Day 7: Submit application and pitch deck"
+      ]
+    },
+    {
+      "key": "3b3f23b7244e",
+      "title": "CSL — Analytics Co-op - Strategic Forecasting & AI",
+      "url": "https://csl.wd1.myworkdayjobs.com/CSL_External/job/Americas-US-PA-King-of-Prussia-CSL-Behring/Analytics-Co-op--Strategic-Forecasting---AI_R-278068",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Strategic forecasting AI co‑op adds AI and business insight",
+      "action_plan": [
+        "Research strategic forecasting role (1 hr)",
+        "Emphasize AI analytics projects in resume (1 day)",
+        "Submit application (1 day)"
+      ]
+    },
+    {
+      "key": "028da6cc18a3",
+      "title": "Rethinking Indic AI from a Lens of Cultural Heritage Preservation",
+      "url": "https://arxiv.org/abs/2607.06544v1",
+      "source": "arxiv",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "Relevant NLP topic; could inspire a portfolio project on Indic AI",
+      "action_plan": [
+        "Download paper and skim abstract (15m)",
+        "Read full paper focusing on methodology (2h)",
+        "Brainstorm project ideas based on gaps (2h)",
+        "Implement a small prototype (1w)",
+        "Write a blog post showcasing results (2d)"
       ]
     }
   ]

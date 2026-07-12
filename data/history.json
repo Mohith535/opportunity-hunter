@@ -20406,6 +20406,779 @@
           "key": "1cd74bac797e"
         }
       ]
+    },
+    {
+      "date": "2026-07-12",
+      "items": [
+        {
+          "title": "grandgaming9321-prog/reality-engine — ★153",
+          "url": "https://github.com/grandgaming9321-prog/reality-engine",
+          "source": "github",
+          "description": "Top Dynamic AI World Simulation & Storytelling Tools 2026 (topics: 3d, ai, ai simulation, creative ai, digital twin, game ai, game development, generative ai, hacktoberfest, llm, llm agent, machine learning, open source, predictive modeling, procedural generation, python, reinforcement learning, simulation, virtual worlds, world generation)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "grandgaming9321-prog/reality-engine",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Hands‑on AI simulation work matches interests and builds portfolio.",
+          "action_plan": [
+            "Fork repo and read README (1h)",
+            "Set up dev environment (2h)",
+            "Implement a small feature (2d)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 7,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "43926a8dbb4d"
+        },
+        {
+          "title": "jmerelnyc/Talos — ★977",
+          "url": "https://github.com/jmerelnyc/Talos",
+          "source": "github",
+          "description": "GPU worker client for the Talos network. Pairs with your Talos account, serves open-model inference jobs over a WebSocket, and reports uptime for payouts. (topics: ai, distributed computing, gpu, llm, ollama, python, websocket, worker)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "jmerelnyc/Talos",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "GPU inference client gives real‑world AI infra experience for resume.",
+          "action_plan": [
+            "Clone repo and run example (1h)",
+            "Read contribution guide (30m)",
+            "Submit a PR fixing a bug (2d)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "b7680ba68969"
+        },
+        {
+          "title": "Enping-Hu/minimind-deep-dive — ★96",
+          "url": "https://github.com/Enping-Hu/minimind-deep-dive",
+          "source": "github",
+          "description": "逐行对照 MiniMind 源码精读、并延伸到大模型技术体系的中文学习笔记 —— 预训练 / SFT / DPO / PPO / GRPO、训练机制、MiniMind2→3 版本对照、真实实验证据。 (topics: deep learning, dpo, fine tuning, from scratch, grpo, large language models, llm, llm training, minimind, moe, nlp, ppo, pretraining, pytorch, rlhf, rope, study notes, transformer)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "Enping-Hu/minimind-deep-dive",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Deep dive notes deepen LLM knowledge, high interest, low time cost.",
+          "action_plan": [
+            "Download notes (5m)",
+            "Read sections on pretraining (2h)",
+            "Summarize key takeaways (1h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 9,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 5,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "2365f540a677"
+        },
+        {
+          "title": "Mesh LLM: distributed AI computing on iroh",
+          "url": "https://www.iroh.computer/blog/mesh-llm",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48876505",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "News article, not an opportunity",
+          "action_plan": [],
+          "dimensions": {
+            "career": 4,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "d00a95ffc4ff"
+        },
+        {
+          "title": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
+          "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48873836",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "News article, not an opportunity",
+          "action_plan": [],
+          "dimensions": {
+            "career": 4,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "31379fe9f199"
+        },
+        {
+          "title": "Reddit’s Games with a Hook Hackathon",
+          "url": "https://redditgameswithahook.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 17 - Jul 15, 2026 | prize $ 40,000 | themes: Beginner Friendly, Gaming, Web",
+          "deadline": "2026-07-15",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30086",
+          "score": 10,
+          "ai_score": 6,
+          "ai_summary": "Gaming & AI intersection",
+          "action_plan": [
+            "Research hackathon rules (2h)",
+            "Form a team (1d)",
+            "Develop a game (7d)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 8,
+            "skill": 7,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "94396d6024e0"
+        },
+        {
+          "title": "Kaya AI India Hackathon 2026",
+          "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 10 - Jul 13, 2026 | prize ₹ 350,000 | themes: IoT, Machine Learning/AI, Enterprise",
+          "deadline": "2026-07-13",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30326",
+          "score": 10,
+          "ai_score": 7,
+          "ai_summary": "ML/AI focus, prize money",
+          "action_plan": [
+            "Review IoT & ML themes (2h)",
+            "Brainstorm ideas (1d)",
+            "Develop a project (7d)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 9,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "e9e2e3debc2f"
+        },
+        {
+          "title": "Public Library Find [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1utplzc/public_library_find_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1utplzc",
+          "score": 2,
+          "ai_score": 1,
+          "ai_summary": "Just a news post; negligible impact on career or skills.",
+          "action_plan": [
+            "Open link (1m)",
+            "Skim headline (2m)"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 1,
+            "time": 7,
+            "eligible": "yes"
+          },
+          "key": "414484149bf2"
+        },
+        {
+          "title": "Withdraw from ACL ARR and resubmit to a workshop? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uth7j8/withdraw_from_acl_arr_and_resubmit_to_a_workshop_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uth7j8",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Decision‑making discussion, low direct benefit for his goals.",
+          "action_plan": [
+            "Read thread (5m)",
+            "Consider advice (10m)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "dc5ec65cb054"
+        },
+        {
+          "title": "Predicting human preference for generated image pairs using HPSv3 [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1utdj1f/predicting_human_preference_for_generated_image/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1utdj1f",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Research on human preference aligns with generative AI interests.",
+          "action_plan": [
+            "Read abstract (5m)",
+            "Check code repo if available (30m)",
+            "Try reproducing experiment (2d)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "0488df1f4d1b"
+        },
+        {
+          "title": "Context and average best linear mappings [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uu2p63/context_and_average_best_linear_mappings_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uu2p63",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Low-impact ML news",
+          "action_plan": [
+            "Read in 10 minutes",
+            "Consider sharing"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "72fa711cc2c3"
+        },
+        {
+          "title": "VultronRetriever family of models released on HuggingFace![R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1utmxq8/vultronretriever_family_of_models_released_on/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1utmxq8",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "HuggingFace model release",
+          "action_plan": [
+            "Explore models in 30 minutes",
+            "Consider using in projects"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 1,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "f47734f6f48e"
+        },
+        {
+          "title": "Agentic Commerce Hackathon",
+          "url": "https://agentic-commerce.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon |  | themes: No Restrictions",
+          "deadline": "2026-08-01",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1c28ec243edb49ff9b98a902ccd768b8",
+          "score": 6,
+          "ai_score": 7,
+          "ai_summary": "Hackathon with GPU theme",
+          "action_plan": [
+            "Research GPU and hackathon (2h)",
+            "Form a team (2h)",
+            "Prepare for the hackathon (15h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 7,
+            "prestige": 7,
+            "deadline": 8,
+            "skill": 7,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "273b2b6ecc4f"
+        },
+        {
+          "title": "AtCoder Beginner Contest 469 (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/abc469",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-08-01T12:00:00",
+          "deadline": "2026-08-01",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68695403",
+          "score": 3,
+          "ai_score": 8,
+          "ai_summary": "Competitive programming contest",
+          "action_plan": [
+            "Research contest rules (1h)",
+            "Prepare for the contest (10h)",
+            "Participate in the contest (2h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 8,
+            "prestige": 8,
+            "deadline": 9,
+            "skill": 8,
+            "time": 8,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "308dd671f8c2"
+        },
+        {
+          "title": "HackerRank Orchestrate August'26 (hackerrank.com)",
+          "url": "https://hackerrank.com/contests/hackerrank-orchestrate-august26",
+          "source": "clist",
+          "description": "competitive programming contest on hackerrank.com; starts 2026-08-01T12:30:00",
+          "deadline": "2026-08-01",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68492247",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Boosts algorithmic skill but low AI relevance and resume impact.",
+          "action_plan": [
+            "Read contest rules (1h)",
+            "Solve practice problems (2d)",
+            "Participate on 2026-08-01 (1d)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 5,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "0e24c447abce"
+        },
+        {
+          "title": "AI Fun Night : Party Planning Challenge",
+          "url": "https://unstop.com/hackathons/ai-fun-night-party-planning-challenge-kalindi-college-kc-university-of-delhi-du-delhi-1716108",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1716108",
+          "score": 4,
+          "ai_score": 5,
+          "ai_summary": "AI-themed hackathon",
+          "action_plan": [
+            "Research hackathon rules (1h)",
+            "Form a team (2h)",
+            "Prepare for the hackathon (10h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 5,
+            "prestige": 5,
+            "deadline": 4,
+            "skill": 5,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "8e8a3a360c16"
+        },
+        {
+          "title": "Hacksynergy 2026",
+          "url": "https://unstop.com/hackathons/hacksynergy-2026-inderprastha-engineering-college-ipec-ghaziabad-1716413",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1716413",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "Hackathon for portfolio growth",
+          "action_plan": [
+            "Register in 10 minutes",
+            "Form team in 1 day",
+            "Start project in 3 days"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 8,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "0d2711b568cc"
+        },
+        {
+          "title": "All India Hackathon",
+          "url": "https://unstop.com/hackathons/all-india-hackathon-axcentra-1703933",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1703933",
+          "score": 7,
+          "ai_score": 6,
+          "ai_summary": "Hackathon experience",
+          "action_plan": [
+            "Research hackathon rules (1h)",
+            "Form a team (2h)",
+            "Prepare for the hackathon (10h)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 6,
+            "deadline": 4,
+            "skill": 6,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "72c8d353e7d4"
+        },
+        {
+          "title": "Django Developer Internship",
+          "url": "https://unstop.com/internships/django-developer-intern-mind-revel-1714712",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1714712",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Django dev experience",
+          "action_plan": [
+            "Apply for internship (1h)",
+            "Prepare for interview (2d)",
+            "Complete internship (3m)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "2dffa9e88f2e"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-and-client-outreach-intern-qubits-consultancy-1716652",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1716652",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "9be5a8515a3e"
+        },
+        {
+          "title": "HR Internship",
+          "url": "https://unstop.com/internships/hr-internship-springer-capital-investments-llc-usa-1716577",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1716577",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "f29ccdbac4a4"
+        },
+        {
+          "title": "Marketing & Growth Internship",
+          "url": "https://unstop.com/internships/marketing-growth-internship-onyatrips-tech-private-limited-1716572",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1716572",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "456833965ec6"
+        },
+        {
+          "title": "Campus Ambassador Internship",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-internzvalley-1716571",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1716571",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "1a01e06d4e66"
+        },
+        {
+          "title": "Content Creator Internship",
+          "url": "https://unstop.com/internships/content-creator-internship-onyatrips-tech-private-limited-1716564",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1716564",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "dc7e82cabe6f"
+        },
+        {
+          "title": "UI/UX Design Internship",
+          "url": "https://unstop.com/internships/uiux-design-internship-sunsys-techsol-pvt-ltd-1716535",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1716535",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — UI/UX not AI/ML · Not AI/ML related",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "UI/UX not AI/ML"
+          },
+          "key": "02461e2622b9"
+        },
+        {
+          "title": "Business Research & Strategy Internship",
+          "url": "https://unstop.com/internships/business-research-strategy-internship-aurig-ai-1716530",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1716530",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — Business not AI/ML · Not AI/ML related",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "Business not AI/ML"
+          },
+          "key": "ade9e59c858e"
+        },
+        {
+          "title": "Startup Spotlight",
+          "url": "https://unstop.com/competitions/startup-spotlight-e-summit26-guru-jambheshwar-university-of-science-and-technology-hisar-haryana-1714513",
+          "source": "unstop",
+          "description": "competition | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "competition"
+          ],
+          "native_id": "1714513",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Entrepreneurial exposure aligns with his startup goal, but eligibility vague. · ⚠ verify eligibility: may require startup registration",
+          "action_plan": [
+            "Check eligibility on site (30m)",
+            "Form a team or register solo (1d)",
+            "Prepare pitch deck (2d)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 4,
+            "eligible": "unclear",
+            "elig_note": "may require startup registration"
+          },
+          "key": "2765806b7917"
+        }
+      ]
     }
   ]
 }
