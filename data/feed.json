@@ -1,23 +1,6 @@
 {
-  "updated_at": "2026-07-12",
+  "updated_at": "2026-07-13",
   "items": [
-    {
-      "key": "07943466e5ba",
-      "title": "Tesla — RL Engineer Intern - RL Engineer - Tesla AI",
-      "url": "https://www.tesla.com/careers/search/job/275494",
-      "source": "internships",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Tesla AI internship",
-      "action_plan": [
-        "Apply for RL Engineer Intern (2h)",
-        "Prepare for interview (4h)",
-        "Follow up on application (1h)"
-      ]
-    },
     {
       "key": "4179dd973e9d",
       "title": "Tesla — Machine Learning Intern - AI Engineer - Tesla AI",
@@ -33,38 +16,6 @@
         "Check eligibility",
         "Prepare resume and cover letter",
         "Apply"
-      ]
-    },
-    {
-      "key": "488fc0b5f723",
-      "title": "Tesla — Machine Learning Engineer Intern - Machine Learning Engineer - Factory Software",
-      "url": "https://www.tesla.com/careers/search/job/275380",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Tesla ML engineer internship",
-      "action_plan": [
-        "Research Tesla's ML projects (3 hours)",
-        "Update resume and apply (4 hours)"
-      ]
-    },
-    {
-      "key": "f02e5fc8ad94",
-      "title": "Sony — Research on Generative and Protective AI for Content Creation Intern",
-      "url": "https://sonyglobal.wd1.myworkdayjobs.com/SonyGlobalCareers/job/Remote---New-York/Research-Intern-on-Generative-and-Protective-AI-for-Content-Creation_JR-119335",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Sony research internship on GenAI",
-      "action_plan": [
-        "Research Sony's GenAI projects (3 hours)",
-        "Update resume and apply (4 hours)"
       ]
     },
     {
@@ -431,89 +382,6 @@
       ]
     },
     {
-      "key": "702be179dfb1",
-      "title": "QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents",
-      "url": "https://arxiv.org/abs/2606.32034v1",
-      "source": "arxiv",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "LLM agents research paper",
-      "action_plan": [
-        "Read QVal paper (4 hours)",
-        "Implement QVal ideas in a project (8 hours)"
-      ]
-    },
-    {
-      "key": "e0b90e9b87a5",
-      "title": "MUBA Blockchain Hackathon",
-      "url": "https://muba-hackathon.devfolio.co",
-      "source": "devfolio",
-      "score": 7,
-      "deadline": "2026-08-26",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AI/ML hackathon",
-      "action_plan": [
-        "Form team",
-        "Choose theme",
-        "Start building"
-      ]
-    },
-    {
-      "key": "eb4a574fd41e",
-      "title": "Citadel Securities — Machine Learning Researcher PhD Intern",
-      "url": "https://www.citadelsecurities.com/careers/details/machine-learning-researcher-phd-intern-us/",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "ML research internship",
-      "action_plan": [
-        "Research Citadel Securities (2 hours)",
-        "Update resume and apply (4 hours)"
-      ]
-    },
-    {
-      "key": "67e6db7ba79d",
-      "title": "Palantir — Forward Deployed Software Engineer Intern - Commercial",
-      "url": "https://jobs.lever.co/palantir/d5486403-c050-4920-b2e0-91b69b61ebb2/apply",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Palantir FDS role is high‑prestige, builds AI‑centric product skills.",
-      "action_plan": [
-        "Gather Palantir case studies",
-        "Network with current FDS interns",
-        "Practice system‑design and ML questions"
-      ]
-    },
-    {
-      "key": "e4a04ccb7aee",
-      "title": "Tesla — AI/ML Modeling Engineer Intern - ML Modeling Engineer - AI Hardware",
-      "url": "https://www.tesla.com/careers/search/job/275316",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Tesla AI/ML intern is elite, aligns perfectly with AI agent ambitions.",
-      "action_plan": [
-        "Study Tesla AI hardware papers",
-        "Connect with past Tesla interns",
-        "Build a small ML model for hardware inference"
-      ]
-    },
-    {
       "key": "8350e6ee6b72",
       "title": "Are Performance-Optimization Benchmarks Reliably Measuring Coding Agents?",
       "url": "https://arxiv.org/abs/2607.01211v1",
@@ -864,11 +732,11 @@
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "ML/AI focus, prize money",
+      "ai_summary": "AI & IoT focus",
       "action_plan": [
-        "Review IoT & ML themes (2h)",
-        "Brainstorm ideas (1d)",
-        "Develop a project (7d)"
+        "Review IoT & ML concepts (4h)",
+        "Brainstorm project ideas (2h)",
+        "Develop a project (10d)"
       ]
     },
     {
@@ -1232,73 +1100,37 @@
       ]
     },
     {
-      "key": "878821832162",
-      "title": "okesipoke/manuscript-phoneme-decipher — ★152",
-      "url": "https://github.com/okesipoke/manuscript-phoneme-decipher",
-      "source": "github",
-      "score": 6,
+      "key": "165c107f2f18",
+      "title": "Global AI Hackathon 2026",
+      "url": "https://unstop.com/hackathons/global-ai-hackathon-2026-innovation-hacks-1716925",
+      "source": "unstop",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "github",
-        "learning"
+        "hackathon"
       ],
-      "ai_summary": "AI, NLP, ML",
+      "ai_summary": "Global AI hackathon",
       "action_plan": [
-        "Explore Voynich Manuscript Decoded (2h)",
-        "Contribute to phonetic transcription toolkit (4h)",
-        "Apply ML to historical linguistics (8h)"
+        "Form a team",
+        "Choose a project",
+        "Start building"
       ]
     },
     {
-      "key": "ad9d0e755d92",
-      "title": "Weekly Contest 510 (leetcode.com)",
-      "url": "https://leetcode.com/contest/weekly-contest-510",
-      "source": "clist",
-      "score": 6,
-      "deadline": "2026-07-12",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "Competitive programming",
-      "action_plan": [
-        "Prepare for Weekly Contest 510 (4h)",
-        "Participate in contest (2h)",
-        "Review and learn from mistakes (2h)"
-      ]
-    },
-    {
-      "key": "cb63c4752f7d",
-      "title": "Tesla — Vehicle Software Intern - Torque Path & Chassis Controls",
-      "url": "https://www.tesla.com/careers/search/job/274760",
-      "source": "internships",
-      "score": 6,
+      "key": "b8a65991a6d9",
+      "title": "Full Stack Developer Internship",
+      "url": "https://unstop.com/internships/full-stack-developer-internship-saush-innovations-private-limited-1717268",
+      "source": "unstop",
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "Tesla internship",
+      "ai_summary": "Full stack development",
       "action_plan": [
-        "Apply for Vehicle Software Intern (2h)",
-        "Prepare for interview (4h)",
-        "Follow up on application (1h)"
-      ]
-    },
-    {
-      "key": "70f4b2327e79",
-      "title": "PLS — AI Intern",
-      "url": "https://job-boards.greenhouse.io/plscareers/jobs/5287786008",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI internship",
-      "action_plan": [
-        "Apply for AI Intern (2h)",
-        "Prepare for interview (4h)",
-        "Follow up on application (1h)"
+        "Review full stack concepts (4h)",
+        "Practice coding challenges (2h)",
+        "Develop a project (10d)"
       ]
     },
     {
@@ -1717,6 +1549,178 @@
         "Brainstorm project ideas based on gaps (2h)",
         "Implement a small prototype (1w)",
         "Write a blog post showcasing results (2d)"
+      ]
+    },
+    {
+      "key": "bbefc6a483ff",
+      "title": "Life Style Levels: Neighborhood Delineation using Geospatial Data",
+      "url": "https://arxiv.org/abs/2607.06529v1",
+      "source": "arxiv",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "research in geospatial data",
+      "action_plan": [
+        "read paper",
+        "explore related work",
+        "apply concepts to own projects"
+      ]
+    },
+    {
+      "key": "b6e529d375e0",
+      "title": "Weekend Dev Challenge 58: LLD Projects (codechef.com)",
+      "url": "https://www.codechef.com/DEVWEEKEND58",
+      "source": "clist",
+      "score": 6,
+      "deadline": "2026-07-10",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "competitive programming",
+      "action_plan": [
+        "review contest rules",
+        "practice relevant problems",
+        "participate in contest"
+      ]
+    },
+    {
+      "key": "1dd48d7bece8",
+      "title": "Junior Agentic AI Developer Internship",
+      "url": "https://unstop.com/internships/junior-agentic-ai-developer-internship-smaranaiin-1713690",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI development focus and internship experience",
+      "action_plan": [
+        "Update resume and portfolio (2 hours)",
+        "Apply for the internship (1 hour)",
+        "Prepare for potential interviews (5 hours)"
+      ]
+    },
+    {
+      "key": "7ea86515197b",
+      "title": "KLA Corporation — AI Intern",
+      "url": "https://kla.wd1.myworkdayjobs.com/Search/job/Newport-United-Kingdom/AI-Summer-Intern_2638689",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI intern at leading semiconductor firm; good AI exposure · ⚠ verify eligibility: UK internship may require visa for Indian student",
+      "action_plan": [
+        "Research UK Tier‑5 visa requirements (1 day)",
+        "Showcase AI research and KLA‑relevant projects (2 days)",
+        "Submit application before summer 2026 deadline (1 week)"
+      ]
+    },
+    {
+      "key": "971a4c495fc0",
+      "title": "Charles River Analytics — Software Engineer Intern",
+      "url": "https://cra.com/job-listings/job?gh_jid=8047653",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Charles River does AI research; good fit for AI engineering · ⚠ verify eligibility: US internship needs visa for Indian undergrad",
+      "action_plan": [
+        "Explore US J‑1 visa options (1 day)",
+        "Highlight AI research and open‑source contributions (2 days)",
+        "Submit application before summer 2026 deadline (1 week)"
+      ]
+    },
+    {
+      "key": "e2775f6259e9",
+      "title": "synthetic-sciences/openscience — ★1,816",
+      "url": "https://github.com/synthetic-sciences/openscience",
+      "source": "github",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "github",
+        "learning"
+      ],
+      "ai_summary": "open-source AI workbench",
+      "action_plan": [
+        "explore repository",
+        "contribute to project",
+        "learn from community"
+      ]
+    },
+    {
+      "key": "cf1643945a2d",
+      "title": "Monday Munch - DSA Challenge 011 (Rated) (codechef.com)",
+      "url": "https://www.codechef.com/DSAMONDAY011",
+      "source": "clist",
+      "score": 6,
+      "deadline": "2026-07-13",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "Competitive programming",
+      "action_plan": [
+        "Prepare for the contest (5 hours)",
+        "Participate in the contest (2 hours)"
+      ]
+    },
+    {
+      "key": "5296682a1b2b",
+      "title": "STELLAR HACK",
+      "url": "https://unstop.com/hackathons/stellar-hack-manipal-university-mu-jaipur-1707195",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Building experience",
+      "action_plan": [
+        "Research hackathon details (1 hour)",
+        "Form a team (2 hours)",
+        "Prepare for the hackathon (10 hours)"
+      ]
+    },
+    {
+      "key": "6374322c22c8",
+      "title": "DevFusion 4.O- The Developers Hackathon",
+      "url": "https://unstop.com/hackathons/devfusion-4o-the-developers-hackathon-iit-bombay-1714389",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Building experience",
+      "action_plan": [
+        "Research hackathon details (1 hour)",
+        "Form a team (2 hours)",
+        "Prepare for the hackathon (10 hours)"
+      ]
+    },
+    {
+      "key": "9b86d913ea06",
+      "title": "Datasite — AI Transformation / Forward Deployed Engineer Intern - Forward Deployed Engineer",
+      "url": "https://datasite.wd1.myworkdayjobs.com/datasite/job/USA---NY---New-York-City/AI-Transformation---Forward-Deployed-Engineer--FDE--Intern_R36255",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI transformation role aligns with his goals; decent signal but not elite. · ⚠ verify eligibility: US work auth unclear",
+      "action_plan": [
+        "Verify US eligibility (1 day)",
+        "Craft AI‑focused resume bullet points (2 days)",
+        "Submit to Datasite (within two weeks)"
       ]
     }
   ]

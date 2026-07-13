@@ -21179,6 +21179,752 @@
           "key": "2765806b7917"
         }
       ]
+    },
+    {
+      "date": "2026-07-13",
+      "items": [
+        {
+          "title": "Evolution of Accuracy and Visual-Cognitive Errors in a Decade of Vision-Language AI Models",
+          "url": "https://arxiv.org/abs/2607.09654v1",
+          "source": "arxiv",
+          "description": "Vision language models (VLMs) have made remarkable progress in visual reasoning during the last decade. Most evaluations have used simple scenes (MS-COCO) that do not showcase complex human interactions or behaviors, only a handful of non-curated human descriptions as a benchmark, and have not focused on understanding the model's error types. Here, we introduce the Complex Social Behavior (CSB) dataset, containing 100 images depicting complex social interactions/behaviors. We analyze the progression of scene descriptions over a decade (2017-2025) of VLMs (four pre-Multimodal Large Language Models, MLLMs, and five MLLMs). We evaluate the accuracy of the models and 20 human descriptions relative to a gold standard on the CSB dataset and on a sample from MS-COCO. We analyzed five visual-cognitive error types: object detection, recognition, hallucination, scene understanding, and spatial dependence. The CSB dataset showed a more pronounced improvement than MS-COCO in scene description accuracy, with pre-MLLMs achieving much lower accuracy than the bottom-ranked human descriptions and MLLMs attaining accuracies similar to the top-ranked human descriptions. We show that MLLMs have eliminated the gap in scene description accuracy between simpler MS-COCO scenes and scenes depicting complex behaviors (CSB). MLLMs have almost eliminated all error types in our tested datasets, except for occasionally relying on different image regions for scene descriptions than humans do (spatial dependence error). We also show that detection, recognition, and hallucination errors have the highest impact on scene description accuracy. Together, our findings provide a more thorough evaluation of how visual language models have advanced over the last decade.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.09654",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Research on vision-language errors deepens domain knowledge useful for future AI work.",
+          "action_plan": [
+            "Day 1: Read abstract and dataset description (30m).",
+            "Day 2-3: Run provided evaluation scripts on a sample model (3h).",
+            "Week 1: Draft a short analysis note for personal reference (2h)."
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 9,
+            "prestige": 4,
+            "deadline": 1,
+            "skill": 6,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "f16f9f74ae4f"
+        },
+        {
+          "title": "VEXAIoT: Autonomous IoT Vulnerability EXploitation using AI Agents",
+          "url": "https://arxiv.org/abs/2607.09653v1",
+          "source": "arxiv",
+          "description": "Internet of Things (IoT) systems are inherently vulnerable due to constrained hardware, outdated firmware, and insecure default configurations, creating a need for scalable and adaptive security testing approaches. While recent adoptions of Large Language Model (LLM) agents have demonstrated promise in penetration testing and Capture-the-Flag (CTF) environments, their application to IoT specific vulnerabilities remains unexplored. This paper presents an autonomous multi-agent framework, referred to as Vulnerability EXploitation using AI Agents (VEXAIoT), for vulnerability discovery and exploitation in IoT environments using LLM-based reasoning and offensive security tools. The framework combines a vulnerability detection agent and an attack execution agent to perform reconnaissance, plan attack sequences, and execute exploits against vulnerable IoT services. The system is evaluated in IoTGoat and Metasploitable environments across ten attack scenarios mapped to OWASP IoT vulnerabilities. Experimental results show attack success rate of up to 100% with low token overhead and average execution times under two minutes for most attacks. Across 260 attack executions, VEXAIoT achieves a 95.0% overall success rate, including 94.5% success in IoTGoat and 96.7% success in Metasploitable2. These results demonstrate the potential for LLM-driven agents to automate IoT vulnerability assessment and offensive security workflows in controlled environments",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.09653",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Combines AI agents with IoT security, matching his builder mindset and AI interests.",
+          "action_plan": [
+            "Day 1: Review paper overview and list required tools (45m).",
+            "Week 1: Set up a minimal IoT testbed and run the vulnerability agent (5h).",
+            "Week 2: Extend the framework with a new exploit scenario (6h)."
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 9,
+            "prestige": 4,
+            "deadline": 1,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "225cee74ee92"
+        },
+        {
+          "title": "ConceptSMILE: Auditing the Trustworthiness of Concept-Based Explainable AI",
+          "url": "https://arxiv.org/abs/2607.09649v1",
+          "source": "arxiv",
+          "description": "Concept-based explainable artificial intelligence (AI) can make model reasoning more human-understandable, but concept-level outputs are not automatically trustworthy. We introduce ConceptSMILE, a model-agnostic perturbation-based auditing framework for evaluating the reliability of concept-based explanations. Rather than replacing SMILE, ConceptSMILE extends its perturbation-based logic from feature- or region-level attribution to the auditing of human-understandable concept explanations. The framework perturbs input regions, measures concept-response shifts, applies locality weighting, and fits an XGBoost surrogate to approximate local concept behaviour. Reliability is assessed through attribution accuracy, surrogate fidelity, faithfulness, stability, and consistency. We evaluate ConceptSMILE on retinal fundus images by comparing MedSAM-derived visual concepts with VLM-based semantic concepts. Results show that reliability varies across concepts and pathways: MedSAM achieves stronger spatial attribution and the highest surrogate fidelity ($R^2 = 0.8503$, $R_w^2 = 0.8465$), while the VLM pathway shows stronger vessel faithfulness and stronger stability under selected artefact conditions. ConceptSMILE provides an independent audit layer for evaluating the trustworthiness of concept-based XAI.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.09649",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Deep dive into explainable AI aligns with his interests and can inform future projects.",
+          "action_plan": [
+            "Day 1: Download and skim the paper (30m).",
+            "Day 2-3: Reproduce key experiments on a small dataset (4h).",
+            "Week 1: Write a short blog post summarizing insights (2h)."
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 9,
+            "prestige": 4,
+            "deadline": 1,
+            "skill": 6,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "c67abfd5f95e"
+        },
+        {
+          "title": "Semantic Pareto-DQN: A Multi-Objective Reinforcement Learning Framework for Financial Anomaly Detection",
+          "url": "https://arxiv.org/abs/2607.09641v1",
+          "source": "arxiv",
+          "description": "Financial anomaly detection suffers from extreme class imbalance, causing traditional single-objective algorithms to exhibit ``fraud collapse'', defaulting to the majority class and failing to balance anomaly interdiction with customer friction. To overcome this without distortive data resampling, we propose the Semantic Pareto-DQN, a multi-objective reinforcement learning framework. Our approach synthesizes heterogeneous transaction features into cohesive natural-language narratives, encoded by large language models, thereby producing a robust, scale-invariant state representation. The agent optimizes a vectorial reward that explicitly decouples financial efficacy, operational friction, and semantic discovery. By mapping the continuous Pareto frontier, the system dynamically navigates the asymmetric costs of missed anomalies versus false positives. Empirical evaluations across E-Commerce fraud and UCI Credit datasets show that semantic Pareto-DQN successfully shatters the zero-recall trap. It achieves superior minority-class recall compared to scalarized baselines, providing an alternative to trade bounded operational friction for financial anomaly discovery.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.09641",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Multi-objective RL for finance showcases advanced RL skills, valuable for AI engineering.",
+          "action_plan": [
+            "Day 1: Scan the paper for algorithm pseudocode (30m).",
+            "Week 1: Implement core Semantic Pareto-DQN on a toy financial dataset (6h).",
+            "Week 2: Evaluate performance and write a concise report (3h)."
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 9,
+            "prestige": 4,
+            "deadline": 1,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "efc58db93246"
+        },
+        {
+          "title": "Reddit’s Games with a Hook Hackathon",
+          "url": "https://redditgameswithahook.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 17 - Jul 15, 2026 | prize $ 40,000 | themes: Beginner Friendly, Gaming, Web",
+          "deadline": "2026-07-15",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30086",
+          "score": 10,
+          "ai_score": 5,
+          "ai_summary": "Gaming & AI",
+          "action_plan": [
+            "Research hackathon rules (2h)",
+            "Form a team (1d)",
+            "Develop a game (7d)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 8,
+            "skill": 7,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "94396d6024e0"
+        },
+        {
+          "title": "Kaya AI India Hackathon 2026",
+          "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 10 - Jul 13, 2026 | prize ₹ 350,000 | themes: IoT, Machine Learning/AI, Enterprise",
+          "deadline": "2026-07-13",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30326",
+          "score": 10,
+          "ai_score": 7,
+          "ai_summary": "AI & IoT focus",
+          "action_plan": [
+            "Review IoT & ML concepts (4h)",
+            "Brainstorm project ideas (2h)",
+            "Develop a project (10d)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 9,
+            "skill": 8,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "e9e2e3debc2f"
+        },
+        {
+          "title": "Zer0Fit: I took Google's new TabFM & TimesFM ML foundation models and made them available as an MCP server for zero-shot ML tasks (forecasts / classifications / regressions). 100% local. [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uue8cc/zer0fit_i_took_googles_new_tabfm_timesfm_ml/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uue8cc",
+          "score": 7,
+          "ai_score": 6,
+          "ai_summary": "Zero-shot ML tasks",
+          "action_plan": [
+            "Explore TabFM & TimesFM",
+            "Set up MCP server",
+            "Test zero-shot tasks"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "152c5b143270"
+        },
+        {
+          "title": "Prompt-engineering paper accepted to ICML [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uv1xb3/promptengineering_paper_accepted_to_icml_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uv1xb3",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Just a news item; no actionable component for his career or portfolio.",
+          "action_plan": [
+            "Day 1: Read the headline and note the paper title (5m)."
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "yes"
+          },
+          "key": "5fad87a0d030"
+        },
+        {
+          "title": "Ph.D. in Operations Research / Big Tech Eng: How to transition into intermediate/advanced ML for high-value industries (Robotics, Defense, Finance)? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uumkkg/phd_in_operations_research_big_tech_eng_how_to/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uumkkg",
+          "score": 5,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — Ph.D. required · Not applicable",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 2,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "Ph.D. required"
+          },
+          "key": "2f8bc600b7b3"
+        },
+        {
+          "title": "Where to publish a construction BIM Benchmark? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uufp11/where_to_publish_a_construction_bim_benchmark_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uufp11",
+          "score": 2,
+          "ai_score": 1,
+          "ai_summary": "Discussion about BIM benchmarks unrelated to his AI focus and goals.",
+          "action_plan": [
+            "Day 1: Skip; no action needed."
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "yes"
+          },
+          "key": "60c52e0f0ea8"
+        },
+        {
+          "title": "Look for a team to join ML/AI competition [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uv0crm/look_for_a_team_to_join_mlai_competition_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uv0crm",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Joining ML/AI competition",
+          "action_plan": [
+            "Research teams (2h)",
+            "Reach out to teams (1h)",
+            "Prepare portfolio (4h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "a37b39d0094c"
+        },
+        {
+          "title": "Obtaining Irregular Learning Curves with HyberBand Tuned ANN model for Price Prediction [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uud3qj/obtaining_irregular_learning_curves_with/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uud3qj",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Improving ML skills",
+          "action_plan": [
+            "Read paper (2h)",
+            "Implement model (4h)",
+            "Analyze results (2h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "2f80151fd4df"
+        },
+        {
+          "title": "Starters 250 (codechef.com)",
+          "url": "https://www.codechef.com/START250",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-08-05T14:30:00",
+          "deadline": "2026-08-05",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68357843",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Contest offers quick coding practice; low relevance to AI but deadline is near.",
+          "action_plan": [
+            "Today: Register for the contest (5m).",
+            "Day before: Solve 2 practice problems (3h).",
+            "Contest day: Attempt all problems, submit solutions (4h)."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 8,
+            "skill": 5,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "027e70c64f6b"
+        },
+        {
+          "title": "ByteBattle Hackathon 2026",
+          "url": "https://unstop.com/hackathons/bytebattle-hackathon-2026-h-p-projects-1717192",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1717192",
+          "score": 7,
+          "ai_score": 6,
+          "ai_summary": "Hackathon experience",
+          "action_plan": [
+            "Form a team",
+            "Choose a project",
+            "Start building"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "fe177850c217"
+        },
+        {
+          "title": "IgniteX HackFest 2026",
+          "url": "https://unstop.com/hackathons/ignitex-hackfest-2026-h-p-projects-1717162",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1717162",
+          "score": 4,
+          "ai_score": 6,
+          "ai_summary": "Hackathon experience",
+          "action_plan": [
+            "Form a team",
+            "Choose a project",
+            "Start building"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "046149d69388"
+        },
+        {
+          "title": "HackMatriX 2026 - 24 Hour National Hackathon",
+          "url": "https://unstop.com/hackathons/hackmatrix-2026-24-hour-national-hackathon-ieee-computer-society-mits-gwalior-1701757",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1701757",
+          "score": 7,
+          "ai_score": 6,
+          "ai_summary": "National hackathon",
+          "action_plan": [
+            "Form a team",
+            "Choose a project",
+            "Start building"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "94bb93556f29"
+        },
+        {
+          "title": "Global AI Hackathon 2026",
+          "url": "https://unstop.com/hackathons/global-ai-hackathon-2026-innovation-hacks-1716925",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1716925",
+          "score": 7,
+          "ai_score": 7,
+          "ai_summary": "Global AI hackathon",
+          "action_plan": [
+            "Form a team",
+            "Choose a project",
+            "Start building"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "165c107f2f18"
+        },
+        {
+          "title": "FutureTech HackFest 2026",
+          "url": "https://unstop.com/hackathons/futuretech-hackfest-2026-h-p-projects-1716746",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1716746",
+          "score": 4,
+          "ai_score": 5,
+          "ai_summary": "Online hackathon gives a modest portfolio boost but low prestige and no deadline.",
+          "action_plan": [
+            "Day 1: Review hackathon theme and register (1h).",
+            "Week 1: Sketch a prototype using TaskFlow (4h).",
+            "Week 2: Build and submit the project (8h)."
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 7,
+            "prestige": 3,
+            "deadline": 1,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "134bd6023ea1"
+        },
+        {
+          "title": "Pre-Sales Internship",
+          "url": "https://unstop.com/internships/pre-sales-internship-digital-info-media-private-limited-1717074",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1717074",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "9d95b61e01ca"
+        },
+        {
+          "title": "Business Development & Outreach Internship",
+          "url": "https://unstop.com/internships/business-development-outreach-internship-fibmesh-1717339",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1717339",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "b256bf82f538"
+        },
+        {
+          "title": "Business Development Internship (Sales)",
+          "url": "https://unstop.com/internships/business-development-internship-sales-clinikite-1717330",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1717330",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "745c76c75b5b"
+        },
+        {
+          "title": "International Business Development & Client Success Associate Internship",
+          "url": "https://unstop.com/internships/international-business-development-client-success-associate-internship-ideanix-1717315",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1717315",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "0c482db1aa2a"
+        },
+        {
+          "title": "Ecommerce Internship",
+          "url": "https://unstop.com/internships/ecommerce-internship-faucek-1717310",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1717310",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "8bb228c688d4"
+        },
+        {
+          "title": "People Operations & HR Associate – Founder's Office",
+          "url": "https://unstop.com/internships/people-operations-hr-associate-founders-office-wholesome-co-1717306",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1717306",
+          "score": 5,
+          "ai_score": 3,
+          "ai_summary": "Not AI-focused",
+          "action_plan": [
+            "Apply for internship",
+            "Prepare for interview"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "efdf14cbbe56"
+        },
+        {
+          "title": "Nash Energy Capital Fellows Programme",
+          "url": "https://unstop.com/internships/nash-energy-capital-fellows-programme-nash-energy-i-pvt-ltd-1717296",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1717296",
+          "score": 5,
+          "ai_score": 3,
+          "ai_summary": "Not AI-focused",
+          "action_plan": [
+            "Apply for internship",
+            "Prepare for interview"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "cf0e06e2409f"
+        },
+        {
+          "title": "Full Stack Developer Internship",
+          "url": "https://unstop.com/internships/full-stack-developer-internship-saush-innovations-private-limited-1717268",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1717268",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Full stack development",
+          "action_plan": [
+            "Review full stack concepts (4h)",
+            "Practice coding challenges (2h)",
+            "Develop a project (10d)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 5,
+            "skill": 8,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "b8a65991a6d9"
+        }
+      ]
     }
   ]
 }

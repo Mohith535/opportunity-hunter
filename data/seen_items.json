@@ -1101,8 +1101,8 @@
     "94396d6024e0": {
       "title": "Reddit’s Games with a Hook Hackathon",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-12",
-      "times_seen": 2
+      "last_seen": "2026-07-13",
+      "times_seen": 3
     },
     "990163b0fcd2": {
       "title": "Fearless Concurrency on the GPU: Safe GPU inference in Rust, competitive with vLLM/SGLang [R]",
@@ -2667,8 +2667,8 @@
     "e9e2e3debc2f": {
       "title": "Kaya AI IIT India Hackathon 2026",
       "first_seen": "2026-06-30",
-      "last_seen": "2026-07-12",
-      "times_seen": 6
+      "last_seen": "2026-07-13",
+      "times_seen": 7
     },
     "4d41be7b33f6": {
       "title": "Cerebras OpenAI deal capacity has effectively killed the waitlist for everyone else [D]",
@@ -5656,6 +5656,150 @@
       "title": "Startup Spotlight",
       "first_seen": "2026-07-12",
       "last_seen": "2026-07-12",
+      "times_seen": 1
+    },
+    "f16f9f74ae4f": {
+      "title": "Evolution of Accuracy and Visual-Cognitive Errors in a Decade of Vision-Language AI Models",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "225cee74ee92": {
+      "title": "VEXAIoT: Autonomous IoT Vulnerability EXploitation using AI Agents",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "c67abfd5f95e": {
+      "title": "ConceptSMILE: Auditing the Trustworthiness of Concept-Based Explainable AI",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "efc58db93246": {
+      "title": "Semantic Pareto-DQN: A Multi-Objective Reinforcement Learning Framework for Financial Anomaly Detection",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "152c5b143270": {
+      "title": "Zer0Fit: I took Google's new TabFM & TimesFM ML foundation models and made them available as an MCP server for zero-shot ML tasks (forecasts / classifications / regressions). 100% local. [P]",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "5fad87a0d030": {
+      "title": "Prompt-engineering paper accepted to ICML [R]",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "2f8bc600b7b3": {
+      "title": "Ph.D. in Operations Research / Big Tech Eng: How to transition into intermediate/advanced ML for high-value industries (Robotics, Defense, Finance)? [D]",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "60c52e0f0ea8": {
+      "title": "Where to publish a construction BIM Benchmark? [D]",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "a37b39d0094c": {
+      "title": "Look for a team to join ML/AI competition [D]",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "2f80151fd4df": {
+      "title": "Obtaining Irregular Learning Curves with HyberBand Tuned ANN model for Price Prediction [P]",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "027e70c64f6b": {
+      "title": "Starters 250 (codechef.com)",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "fe177850c217": {
+      "title": "ByteBattle Hackathon 2026",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "046149d69388": {
+      "title": "IgniteX HackFest 2026",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "94bb93556f29": {
+      "title": "HackMatriX 2026 - 24 Hour National Hackathon",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "165c107f2f18": {
+      "title": "Global AI Hackathon 2026",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "134bd6023ea1": {
+      "title": "FutureTech HackFest 2026",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "9d95b61e01ca": {
+      "title": "Pre-Sales Internship",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "b256bf82f538": {
+      "title": "Business Development & Outreach Internship",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "745c76c75b5b": {
+      "title": "Business Development Internship (Sales)",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "0c482db1aa2a": {
+      "title": "International Business Development & Client Success Associate Internship",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "8bb228c688d4": {
+      "title": "Ecommerce Internship",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "efdf14cbbe56": {
+      "title": "People Operations & HR Associate – Founder's Office",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "cf0e06e2409f": {
+      "title": "Nash Energy Capital Fellows Programme",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "b8a65991a6d9": {
+      "title": "Full Stack Developer Internship",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
       "times_seen": 1
     }
   }
