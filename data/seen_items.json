@@ -1101,8 +1101,8 @@
     "94396d6024e0": {
       "title": "Reddit’s Games with a Hook Hackathon",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-13",
-      "times_seen": 3
+      "last_seen": "2026-07-14",
+      "times_seen": 4
     },
     "990163b0fcd2": {
       "title": "Fearless Concurrency on the GPU: Safe GPU inference in Rust, competitive with vLLM/SGLang [R]",
@@ -5800,6 +5800,336 @@
       "title": "Full Stack Developer Internship",
       "first_seen": "2026-07-13",
       "last_seen": "2026-07-13",
+      "times_seen": 1
+    },
+    "7bf42b78677b": {
+      "title": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "1624d39e465d": {
+      "title": "A Durability and Cross-Language Transfer Benchmark for a Validated Teaching-Feedback Classification Protocol",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "3361f8cc39b7": {
+      "title": "Inside the Unfair Judge: A Mechanistic Interpretability Account of LLM-as-Judge Bias",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "d6023adfca72": {
+      "title": "Evidence-Backed Video Question Answering",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "213712222a30": {
+      "title": "AdvancedMathBench: A Benchmark Suite for Advanced Mathematical Proof Generation and Verification",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "95dddd612bf3": {
+      "title": "Building Food Metadata with LLM Juries",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "5b18a983ade6": {
+      "title": "Show HN: RandoFont – A browser for Google Fonts",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "837717d2d7b1": {
+      "title": "A Study of Microsoft's Early 2026 Rollout of Claude Code and GitHub Copilot CLI",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "0ac0a97977dd": {
+      "title": "OpenAI Build Week",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "5e2e5f39a26f": {
+      "title": "Build with DataHub: The Agent Hackathon",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "5ac7c511df2f": {
+      "title": "Chain of Thought is a scaling trap. the next wave is latent reasoning (Coconut / HRM / RecrusiveMAS)... but then we hit the black box wall. Where does BDH fit? [D]",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "cf6cb57efb2f": {
+      "title": "Evaluating J-space entropy as an error predictor across 7 datasets on Qwen3-4B [R]",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "16ec0f81a89c": {
+      "title": "Hundreds of papers hit arXiv every day and maybe 3 matter to my research, so I built an open-source tool that finds them [P]",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "a46627b8ef7b": {
+      "title": "Doubt regarding TMLR[R]",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "ae98e5306d72": {
+      "title": "Are the contents of this monograph reliable with respect to the modern theoretical understanding of deep neural networks? [D]",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "09ffb35929be": {
+      "title": "GPUHedge: Hedging serverless GPU providers improves cold start p95 latency from 117s to 30s [P]",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "13c281e0777d": {
+      "title": "[ECCV 2026] Meaning of \"Authorized Delegate\" & Registration Advice [D]",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "c513c06b2be1": {
+      "title": "How many on-the-fly augmentations per image for a single-class segmentation mode [R]",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "4acfc24971b4": {
+      "title": "Fast track through a CS PhD using LLM's for paper writing [D]",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "6ada854f6109": {
+      "title": "Road To Devcon",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "7f9f0f60a368": {
+      "title": "UNIQUE VISION Programming Contest 2026 Summer (AtCoder Regular Contest 226) (atcoder.jp)",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "2b9c1506bb0d": {
+      "title": "DTI Ideathon & Hackathon 2026",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "815407d54880": {
+      "title": "S.T.E.M Jam",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "8f48d9f151ae": {
+      "title": "NextHorizon Hackathon",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "dbf55894150e": {
+      "title": "Marketing Internship",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "9982a09fd43a": {
+      "title": "AI/ML Technical Content Engineer Internship",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "e4b35c0048dc": {
+      "title": "Customer Support Associate Internship",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "162be958405f": {
+      "title": "Founder's Office Internship",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "1e98d0f55979": {
+      "title": "Sales Internship",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "8cad8d3c15df": {
+      "title": "Campus Ambassador Internship",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "39547c0bd000": {
+      "title": "Assistant Sales & Marketing Internship",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "6f6ea423df97": {
+      "title": "Marketing & Social Media Internship",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "6cb618953de6": {
+      "title": "Hudson River Trading — Software Engineer Intern - C++ or Python",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "1da906208908": {
+      "title": "Nextiva — AI Engineer Intern",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "3e74c0f1959d": {
+      "title": "DRW — Software Developer Intern",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "e819064987a2": {
+      "title": "DRW — Software Developer Intern",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "b3be046fdcf1": {
+      "title": "DRW — AI/ML Research Intern",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "8407ef16894a": {
+      "title": "Citadel Securities — Software Engineer Intern",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "3f6031cb5281": {
+      "title": "Persona AI — Teleoperation Software Engineering Internship",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "7b7d75bff568": {
+      "title": "Citadel — Software Engineer Intern",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "58e9fad2daba": {
+      "title": "Adaptive Security — AI Product Operations Intern",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "7e6b5d298b2a": {
+      "title": "Akuna Capital University — Software Engineer Intern - C++",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "7002dd4a248c": {
+      "title": "Akuna Capital University — Software Engineer Intern - C# .NET Desktop",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "93e06f16d8e0": {
+      "title": "Akuna Capital University — Software Engineer Intern - Full Stack Web",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "993b8622ce54": {
+      "title": "Akuna Capital University — Software Engineer Intern - Python",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "0118c42e23c9": {
+      "title": "Jump Trading — Campus UI Software Engineer Intern",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "eaae746160a8": {
+      "title": "Jump Trading — Campus Software Engineer Intern",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "7dcbca1b69a2": {
+      "title": "Jump Trading — Campus ML Research Engineer Intern",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "2292a4c0b43b": {
+      "title": "Jump Trading — Campus AI Researcher Intern",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "7cce199c9a06": {
+      "title": "DRW — Software Developer Intern",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "90d05d72d8c7": {
+      "title": "Revvity — Front-End AI Marketing Co-op",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "0472889175f8": {
+      "title": "U.S. Bank — Mainframe Software Engineering Apprentice 2",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "babf5250ab15": {
+      "title": "Revvity — Front-End AI Marketing Co-op",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "88c2e845fbb9": {
+      "title": "Revvity — AI Developer Intern/Co-op",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "e6331586fef9": {
+      "title": "Arizona State University — Student Data Science Assistant",
+      "first_seen": "2026-07-14",
+      "last_seen": "2026-07-14",
       "times_seen": 1
     }
   }

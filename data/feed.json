@@ -1,95 +1,6 @@
 {
-  "updated_at": "2026-07-13",
+  "updated_at": "2026-07-14",
   "items": [
-    {
-      "key": "4179dd973e9d",
-      "title": "Tesla — Machine Learning Intern - AI Engineer - Tesla AI",
-      "url": "https://www.tesla.com/careers/search/job/275331",
-      "source": "internships",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Tesla AI Engineer internship",
-      "action_plan": [
-        "Check eligibility",
-        "Prepare resume and cover letter",
-        "Apply"
-      ]
-    },
-    {
-      "key": "a9d95ea2da17",
-      "title": "Measuring the Gap Between Human and LLM Research Ideas",
-      "url": "https://arxiv.org/abs/2607.01233v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "LLM research paper",
-      "action_plan": [
-        "Read the paper",
-        "Analyze the research",
-        "Consider implementing the ideas"
-      ]
-    },
-    {
-      "key": "fdc21d699fba",
-      "title": "Intel — SOC AI Power and Performance Validation Intern",
-      "url": "https://intel.wd1.myworkdayjobs.com/en-us/external/job/US-California-Folsom/SOC-AI-Power-and-Performance-Validation-Undergrad-Intern_JR0285242-1",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Intel AI intern offers elite resume signal and deep hardware experience.",
-      "action_plan": [
-        "Locate internship posting (15m)",
-        "Tailor resume to SOC AI work (2h)",
-        "Draft cover letter highlighting hardware focus (2h)",
-        "Submit application (1h)",
-        "Prepare for interview (1 week)"
-      ]
-    },
-    {
-      "key": "83ba6844066d",
-      "title": "Palantir — Forward Deployed Software Engineer Intern - Intel",
-      "url": "https://jobs.lever.co/palantir/9e40d77f-b07c-437b-98e7-def9b0184d89/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Palantir forward‑deployed role gives elite exposure to real‑world AI systems.",
-      "action_plan": [
-        "Find posting (10m)",
-        "Update resume with relevant projects (2h)",
-        "Write tailored cover letter (2h)",
-        "Submit application (1h)",
-        "Study Palantir case studies for interview (1 week)"
-      ]
-    },
-    {
-      "key": "9a190c518e3b",
-      "title": "NVIDIA — Applied Research Intern - NLP",
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Applied-Research-Intern--NLP---Fall-2026_JR2010488",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "NVIDIA NLP internship",
-      "action_plan": [
-        "Check eligibility",
-        "Prepare resume and cover letter",
-        "Apply"
-      ]
-    },
     {
       "key": "705ef025f740",
       "title": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
@@ -382,90 +293,54 @@
       ]
     },
     {
-      "key": "8350e6ee6b72",
-      "title": "Are Performance-Optimization Benchmarks Reliably Measuring Coding Agents?",
-      "url": "https://arxiv.org/abs/2607.01211v1",
-      "source": "arxiv",
-      "score": 7,
+      "key": "0ac0a97977dd",
+      "title": "OpenAI Build Week",
+      "url": "https://openai.devpost.com/",
+      "source": "devpost",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "research"
+        "hackathon"
       ],
-      "ai_summary": "Coding agents research",
+      "ai_summary": "OpenAI, AI/ML focus",
       "action_plan": [
-        "Read paper",
-        "Implement ideas",
-        "Write blog post"
+        "Research OpenAI Build Week",
+        "Prepare a team and idea",
+        "Apply before deadline"
       ]
     },
     {
-      "key": "8dfb546c4ae9",
-      "title": "A system-level approach to prompt injection: separating instruction and data channels in LLM agents [P]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1ukgwk1/a_systemlevel_approach_to_prompt_injection/",
-      "source": "reddit",
-      "score": 7,
-      "deadline": null,
+      "key": "5e2e5f39a26f",
+      "title": "Build with DataHub: The Agent Hackathon",
+      "url": "https://datahub.devpost.com/",
+      "source": "devpost",
+      "score": 8,
+      "deadline": "2026-08-10",
       "tags": [
-        "news",
-        "r/MachineLearning"
+        "hackathon"
       ],
-      "ai_summary": "LLM agents research",
+      "ai_summary": "AI Agents & ML",
       "action_plan": [
-        "Read paper",
-        "Implement ideas",
-        "Write blog post"
+        "Research DataHub (2h)",
+        "Form a team (2h)",
+        "Develop an agent (60h)"
       ]
     },
     {
-      "key": "284e0e4eb30f",
-      "title": "NVIDIA — PhD Research Intern - System Software and I/O Architecture",
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--System-Software-and-I-O-Architecture---Fall-2026_JR2019667",
+      "key": "b3be046fdcf1",
+      "title": "DRW — AI/ML Research Intern",
+      "url": "https://job-boards.greenhouse.io/drweng/jobs/7991171",
       "source": "internships",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "NVIDIA PhD research",
+      "ai_summary": "AI/ML research intern",
       "action_plan": [
-        "Research NVIDIA's System Software (1 week)",
-        "Update resume with relevant skills (2 days)",
-        "Apply for the internship (1 day)"
-      ]
-    },
-    {
-      "key": "a7fb4d684d18",
-      "title": "IMC Trading — Machine Learning Research Intern",
-      "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4907430101",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Machine Learning Research Intern",
-      "action_plan": [
-        "Check eligibility",
-        "Prepare resume and cover letter",
-        "Apply"
-      ]
-    },
-    {
-      "key": "59844de4a876",
-      "title": "Human Computer Lab — Software/ML Engineering Intern",
-      "url": "https://jobs.ashbyhq.com/human-computer-lab/7d13ae27-1f02-4d9b-8d39-e3d9d67df705/application",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Human Computer Lab blends software and ML, matching his AI interests well.",
-      "action_plan": [
-        "Add recent ML work to resume (1 day).",
-        "Read lab's recent publications (2 days).",
-        "Prepare coding + ML interview questions (1 week).",
-        "Apply via email or portal (1 hour)."
+        "Research DRW",
+        "Update resume and apply",
+        "Prepare for interviews"
       ]
     },
     {
@@ -1134,112 +1009,54 @@
       ]
     },
     {
-      "key": "d7ac5e3bc6bb",
-      "title": "benlamiro/ShipGenAI — ★155",
-      "url": "https://github.com/benlamiro/ShipGenAI",
-      "source": "github",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "github",
-        "learning"
-      ],
-      "ai_summary": "Open‑source SaaS templates boost portfolio but no deadline or brand signal.",
-      "action_plan": [
-        "Clone repo & read README (1h)",
-        "Pick one app to deploy locally (2 days)",
-        "Customize and publish on Vercel (1 week)",
-        "Add deployed app to portfolio (1 day)"
-      ]
-    },
-    {
-      "key": "a7e0b3be0a49",
-      "title": "infracv/rf-detr-cpp — ★98",
-      "url": "https://github.com/infracv/rf-detr-cpp",
-      "source": "github",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "github",
-        "learning"
-      ],
-      "ai_summary": "High‑skill CV engine showcases deep‑learning deployment, but no urgency.",
-      "action_plan": [
-        "Read repo docs (30m)",
-        "Set up Docker environment (2h)",
-        "Run demo inference (1 day)",
-        "Integrate into a personal project (1 week)"
-      ]
-    },
-    {
-      "key": "a2214331987d",
-      "title": "Weekend Dev Challenge 57: LLD Projects (codechef.com)",
-      "url": "https://www.codechef.com/DEVWEEKEND57",
-      "source": "clist",
-      "score": 6,
-      "deadline": "2026-07-03",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "Competitive programming",
-      "action_plan": [
-        "Register",
-        "Practice problems",
-        "Participate"
-      ]
-    },
-    {
-      "key": "48789711c963",
-      "title": "Monday Munch - DSA Challenge 010 (Rated) (codechef.com)",
-      "url": "https://www.codechef.com/DSAMONDAY010",
-      "source": "clist",
-      "score": 6,
-      "deadline": "2026-07-06",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "Competitive programming",
-      "action_plan": [
-        "Register",
-        "Practice problems",
-        "Participate"
-      ]
-    },
-    {
-      "key": "f8aaf5b26072",
-      "title": "AI for Bharat Hackathon 2026 – Build AI Solutions for India's Real Problems",
-      "url": "https://unstop.com/hackathons/ai-for-bharat-hackathon-2026-build-ai-solutions-for-indias-real-problems-indraprastha-institute-of-informatio-1709437",
+      "key": "9982a09fd43a",
+      "title": "AI/ML Technical Content Engineer Internship",
+      "url": "https://unstop.com/internships/aiml-technical-content-engineer-internship-learn-depth-1717854",
       "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AI for Bharat Hackathon",
-      "action_plan": [
-        "Form a team",
-        "Brainstorm ideas",
-        "Participate in hackathon"
-      ]
-    },
-    {
-      "key": "4a9a33b0073b",
-      "title": "Tesla — Software Engineer Intern - Distributed Systems Software Engineer - Energy Engineering",
-      "url": "https://www.tesla.com/careers/search/job/275558",
-      "source": "internships",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "Tesla offers high brand value; role is systems‑focused, not core AI.",
+      "ai_summary": "AI/ML technical role",
       "action_plan": [
-        "Tailor resume to emphasize distributed systems experience (1 day).",
-        "Study Tesla's open‑source projects and AI initiatives (2 days).",
-        "Do system design prep (1 week).",
-        "Apply through Tesla careers (1 hour)."
+        "Update resume (2h)",
+        "Apply online (1h)",
+        "Prepare for interview (10h)"
+      ]
+    },
+    {
+      "key": "3f6031cb5281",
+      "title": "Persona AI — Teleoperation Software Engineering Internship",
+      "url": "https://jobs.ashbyhq.com/persona.ai/6078fafd-ba34-4c89-b260-7eb15be3cb9c/application",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI software engineering intern",
+      "action_plan": [
+        "Research Persona AI",
+        "Update resume and apply",
+        "Prepare for interviews"
+      ]
+    },
+    {
+      "key": "2292a4c0b43b",
+      "title": "Jump Trading — Campus AI Researcher Intern",
+      "url": "https://boards.greenhouse.io/embed/job_app?token=7976964",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI researcher intern aligns strongly with his AI engineering and entrepreneurship goals. · ⚠ verify eligibility: visa/work auth not specifie",
+      "action_plan": [
+        "Verify UK work visa requirements (1h)",
+        "Prepare AI research mini‑project (3h)",
+        "Submit application (30m)"
       ]
     },
     {
@@ -1721,6 +1538,179 @@
         "Verify US eligibility (1 day)",
         "Craft AI‑focused resume bullet points (2 days)",
         "Submit to Datasite (within two weeks)"
+      ]
+    },
+    {
+      "key": "2d4e30b94868",
+      "title": "Innodata — Generative AI Associate",
+      "url": "https://job-boards.greenhouse.io/innodatainc/jobs/4307422009",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Generative AI focus matches interests; company prestige modest. · ⚠ verify eligibility: US work auth unclear",
+      "action_plan": [
+        "Check US work‑authorization status (1 day)",
+        "Showcase generative‑AI projects in resume (2 days)",
+        "Apply to Innodata (within two weeks)"
+      ]
+    },
+    {
+      "key": "bc31323c5a91",
+      "title": "RealWorldIQ Challenge 2026",
+      "url": "https://unstop.com/hackathons/realworldiq-challenge-2026-bansal-institute-of-research-technology-science-1715032",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Hackathon experience",
+      "action_plan": [
+        "Form a team (2 days)",
+        "Choose a project (1 day)",
+        "Participate in hackathon (3 days)"
+      ]
+    },
+    {
+      "key": "6f5ee954d105",
+      "title": "Uber Freight — Data Scientist Intern",
+      "url": "https://job-boards.greenhouse.io/uberfreight/jobs/5194491008",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Data‑science focus aligns with AI interests; high‑profile company.",
+      "action_plan": [
+        "Highlight ML coursework on resume (45m)",
+        "Connect with Uber Freight data team (30m)",
+        "Submit application (1h)"
+      ]
+    },
+    {
+      "key": "1df2081d380b",
+      "title": "Sentara Health — AI Intern",
+      "url": "https://sentara.wd1.myworkdayjobs.com/SCS/job/Virginia-Beach-VA/Intern--AI_JR-102248",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI intern role matches interests; decent prestige, good skill growth.",
+      "action_plan": [
+        "Add AI‑internship projects to portfolio (1h)",
+        "Reach out to Sentara Health AI lead (30m)",
+        "Apply with tailored cover letter (1h)"
+      ]
+    },
+    {
+      "key": "906a2dddbf46",
+      "title": "Doriandarko/texts-to-transformer — ★321",
+      "url": "https://github.com/Doriandarko/texts-to-transformer",
+      "source": "github",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "github",
+        "learning"
+      ],
+      "ai_summary": "Transformer training project",
+      "action_plan": [
+        "Fork the repository (1 day)",
+        "Train the model (4 days)",
+        "Improve the project (4 days)"
+      ]
+    },
+    {
+      "key": "8223baae9503",
+      "title": "Code Build 1.0",
+      "url": "https://unstop.com/hackathons/code-build-10-cobuild-1703709",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Hackathon builds portfolio, aligns with AI building interests, deadline soon.",
+      "action_plan": [
+        "Check registration deadline (10 min)",
+        "Form a team (1 day)",
+        "Pick project idea (2 days)",
+        "Develop MVP (1 week)",
+        "Submit entry (by deadline)"
+      ]
+    },
+    {
+      "key": "e356f978adf3",
+      "title": "2026 Hack4Health Labs Research Challenge",
+      "url": "https://unstop.com/competitions/2026-hack4health-labs-research-challenge-hack4health-labs-hack4health-1715636",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "competition"
+      ],
+      "ai_summary": "Research challenge",
+      "action_plan": [
+        "Research the challenge (2 days)",
+        "Form a team and plan (2 days)",
+        "Participate in the challenge (4 days)"
+      ]
+    },
+    {
+      "key": "18dd1c7681a4",
+      "title": "Exowatt — Software Engineer Intern - Agent Platform - AI",
+      "url": "https://jobs.lever.co/exowatt/2623555d-8b81-4f95-8bca-de9fafd2381c/apply",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI agent platform internship, strong skill boost, but visa uncertainty. · ⚠ verify eligibility: US work authorization may be required",
+      "action_plan": [
+        "Check visa eligibility (≈30m)",
+        "Prepare resume focusing on AI projects (≈2h)",
+        "Submit application (≈1h)"
+      ]
+    },
+    {
+      "key": "825525e87624",
+      "title": "Xsolla — AI-First Engineer Intern",
+      "url": "https://jobs.lever.co/xsolla/5d5fd6b3-d82f-437a-b251-abf4674ac874/apply",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI‑first role at Xsolla, good for building, but US work permit unclear. · ⚠ verify eligibility: US work authorization may be required",
+      "action_plan": [
+        "Verify internship visa policy (≈30m)",
+        "Tailor CV to AI‑first focus (≈2h)",
+        "Apply (≈1h)"
+      ]
+    },
+    {
+      "key": "27192d2e39c4",
+      "title": "Xsolla — AI-First Engineer Intern",
+      "url": "https://jobs.lever.co/xsolla/1c0e5375-2352-4a2c-a816-48ddebbdd3d6/apply",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Same AI‑first internship in LA; similar benefits and visa concerns. · ⚠ verify eligibility: US work authorization may be required",
+      "action_plan": [
+        "Confirm eligibility for US internship (≈30m)",
+        "Update portfolio with relevant AI work (≈2h)",
+        "Submit application (≈1h)"
       ]
     }
   ]
