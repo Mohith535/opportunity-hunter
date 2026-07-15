@@ -1101,8 +1101,8 @@
     "94396d6024e0": {
       "title": "Reddit’s Games with a Hook Hackathon",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-14",
-      "times_seen": 4
+      "last_seen": "2026-07-15",
+      "times_seen": 5
     },
     "990163b0fcd2": {
       "title": "Fearless Concurrency on the GPU: Safe GPU inference in Rust, competitive with vLLM/SGLang [R]",
@@ -6130,6 +6130,282 @@
       "title": "Arizona State University — Student Data Science Assistant",
       "first_seen": "2026-07-14",
       "last_seen": "2026-07-14",
+      "times_seen": 1
+    },
+    "42655925cf57": {
+      "title": "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "17a2f5bf9075": {
+      "title": "PalmClaw: A Native On-Device Agent Framework for Mobile Phones",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "873a44a40fc4": {
+      "title": "Win by Silence: Deletion Non-Monotonicity, Autonomous Exploitation, and Typed-State Gating in LLM Plan Evaluation",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "5ee8ac3f9a6e": {
+      "title": "Microsoft Patches a Record 570 Security Flaws",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "153f4e38cb83": {
+      "title": "Guardian Angels: LLM Personalization for Productivity and Security",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "83aa41c207c6": {
+      "title": "LLM hallucination paper(using math) accepted to ICML workshop[R]",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "eb1f6120e1c5": {
+      "title": "New LLM Coordination Benchmark - Benchmarking Open-Ended Multi-Agent Coordination in Language Agents [R]",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "120f92a8a0a1": {
+      "title": "[N] AMA Reminder: Raffi Krikorian (CTO, Mozilla)",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "cc1bc6199e6c": {
+      "title": "Cloud-vLLM Benchmark Differences [R]",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "230c4d381916": {
+      "title": "Things I got wrong building an incremental indexing pipeline [P]",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "f00916a09a02": {
+      "title": "Push to Prod Hackathon: Building at the Frontier",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "c566d7d7d1f7": {
+      "title": "ETHKochi",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "17490e1a7af7": {
+      "title": "Weekend Dev Challenge 59: LLD Projects (codechef.com)",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "350a68763cb9": {
+      "title": "Codeforces Round (Div. 2) (codeforces.com)",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "08c5b7185f92": {
+      "title": "NERDS 1.0 - India's First AI Hackathon For Schools",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "8c11e80490dd": {
+      "title": "AI Design Sprint: Fresher Party Planning Night",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "08065db14aea": {
+      "title": "Segue 3.0 : Global Design Thinking Challenge (Online + Offline)",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "ac944bb94518": {
+      "title": "DEMUX 3.0",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "d52d4616e0d2": {
+      "title": "Orchestrix: Newgen x AI Club IITM",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "4f3fb0b7ba19": {
+      "title": "Sales Internship",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "8cc412855927": {
+      "title": "Human Resources & Talent Acquisition Internship",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "25f3a71ba5b5": {
+      "title": "Full Stack Developer Internship",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "4d618df5748c": {
+      "title": "Social Media Manager Internship",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "9911505d16d4": {
+      "title": "Customer Excellence Internship",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "04f47353cd3f": {
+      "title": "Software Developer Internship",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "5204e6434b4c": {
+      "title": "Social Media Manager Internship",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "441768087887": {
+      "title": "MERN Stack Developer Internship",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "06e55b37b0b1": {
+      "title": "Custom Computer Specialists — Developer Intern",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "d009a4bf3f16": {
+      "title": "Five Rings Capital — Software Developer Intern - Software Developer",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "9442612735bb": {
+      "title": "Formlabs — Test Software Intern",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "eba1df6a51b1": {
+      "title": "Rivian — Machine Learning Compiler Intern - Machine Learning Compiler",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "59c7954329a2": {
+      "title": "Argmax — On-device AI Frameworks Engineer Intern",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "cfca54bbc8a8": {
+      "title": "Global Relay — AI Developer Co-op",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "b0ee6989f29a": {
+      "title": "Global Relay — Frontend Software Developer Co-op - Information Archiving",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "85c3843c16bf": {
+      "title": "Global Relay — C# Developer Co-op",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "8d2286a4a13b": {
+      "title": "NextGen Federal Systems — Software Engineer Intern",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "ca9dd4f29fc2": {
+      "title": "NextGen Federal Systems — Data Science & Machine Learning Intern",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "2fc455221474": {
+      "title": "Voloridge — Quantitative Developer Intern",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "063502eecdda": {
+      "title": "Orbital Industries — AI Residency Programme",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "cb2496bc37ea": {
+      "title": "Amazon — Software Development Engineer Apprentice - Military Veterans",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "4311dae694b8": {
+      "title": "Cincinnati Children’s Hospital and Medical Center — Student 2 - Software Engineering",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "f3877a59f717": {
+      "title": "Cincinnati Children’s Hospital and Medical Center — Student 2 - AI/ML Governance",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "0026d2591d94": {
+      "title": "Cincinnati Children’s Hospital and Medical Center — Student 2 - Software Engineering",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "228d97b01c9b": {
+      "title": "Bank of Montreal — AI Engineer Co-op/Intern - 4 months",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "377bac0e915e": {
+      "title": "TMX Group — Software Engineer Intern - Java",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "times_seen": 1
+    },
+    "f95a7d1bff5a": {
+      "title": "McKesson — AI & Strategic Analytics Intern",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
       "times_seen": 1
     }
   }

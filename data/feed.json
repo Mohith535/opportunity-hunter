@@ -1,37 +1,21 @@
 {
-  "updated_at": "2026-07-14",
+  "updated_at": "2026-07-15",
   "items": [
     {
-      "key": "705ef025f740",
-      "title": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
-      "url": "https://arxiv.org/abs/2607.02509v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Relevant LLM research for long-context reasoning",
-      "action_plan": [
-        "Read the paper",
-        "Analyze the methodology"
-      ]
-    },
-    {
-      "key": "484017bbe37a",
-      "title": "X Development — PhD Residency Intern - Physical ML & Hardware-in-the-Loop - Future of Compute",
-      "url": "https://x.company/careers/8616839002?gh_jid=8616839002",
+      "key": "063502eecdda",
+      "title": "Orbital Industries — AI Residency Programme",
+      "url": "https://jobs.ashbyhq.com/orbitalindustries/837b7e29-b89a-4ea4-b90d-48d8782f48b8/application",
       "source": "internships",
-      "score": 8,
+      "score": 9,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "Google X PhD residency is rare, high‑impact, and hard to redo.",
+      "ai_summary": "AI Residency at Orbital is elite, international, hard‑to‑replace signal.",
       "action_plan": [
-        "Identify exact application window (summer/fall 2026).",
-        "Draft research proposal on physical ML.",
-        "Gather recommendation letters and submit."
+        "Gather research papers & portfolio (2h)",
+        "Draft tailored application essay (3h)",
+        "Request a recommendation from professor (1h)"
       ]
     },
     {
@@ -344,104 +328,73 @@
       ]
     },
     {
-      "key": "c2a89f5e1a70",
-      "title": "LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning",
-      "url": "https://arxiv.org/abs/2607.02513v1",
+      "key": "873a44a40fc4",
+      "title": "Win by Silence: Deletion Non-Monotonicity, Autonomous Exploitation, and Typed-State Gating in LLM Plan Evaluation",
+      "url": "https://arxiv.org/abs/2607.12986v1",
       "source": "arxiv",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
         "research"
       ],
-      "ai_summary": "Cutting‑edge LLM unlearning problem; high‑impact research potential.",
-      "action_plan": [
-        "Read the LACUNA paper (2 h).",
-        "Define a small experiment on a public LLM.",
-        "Write a short report for a conference submission."
-      ]
-    },
-    {
-      "key": "b4e7a37f870c",
-      "title": "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
-      "url": "https://arxiv.org/abs/2607.02507v1",
-      "source": "arxiv",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Relevant LLM research",
+      "ai_summary": "LLM research paper",
       "action_plan": [
         "Read the paper",
-        "Analyze the methodology"
+        "Implement the ideas",
+        "Write a blog post"
       ]
     },
     {
-      "key": "4f181e710536",
-      "title": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
-      "url": "https://arxiv.org/abs/2607.02504v1",
-      "source": "arxiv",
-      "score": 7,
+      "key": "83aa41c207c6",
+      "title": "LLM hallucination paper(using math) accepted to ICML workshop[R]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1uw4j6a/llm_hallucination_paperusing_math_accepted_to/",
+      "source": "reddit",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "research"
+        "news",
+        "r/MachineLearning"
       ],
-      "ai_summary": "LLM‑based speaker recognition merges AI agents and multimodal work.",
+      "ai_summary": "LLM hallucination paper",
       "action_plan": [
-        "Gather the DramaSR‑532K dataset (1 h).",
-        "Implement a baseline LLM‑speaker model.",
-        "Evaluate and draft a pre‑print."
+        "Read the paper",
+        "Implement the ideas",
+        "Write a blog post"
       ]
     },
     {
-      "key": "ccc1bb442ebc",
-      "title": "DemoPSD: Disagreement-Modulated Policy Self-Distillation",
-      "url": "https://arxiv.org/abs/2607.02502v1",
-      "source": "arxiv",
-      "score": 7,
+      "key": "eb1f6120e1c5",
+      "title": "New LLM Coordination Benchmark - Benchmarking Open-Ended Multi-Agent Coordination in Language Agents [R]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1uwc6ni/new_llm_coordination_benchmark_benchmarking/",
+      "source": "reddit",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "research"
+        "news",
+        "r/MachineLearning"
       ],
-      "ai_summary": "Policy self‑distillation research aligns with generative AI engineering.",
+      "ai_summary": "LLM coordination benchmark",
       "action_plan": [
-        "Read the DemoPSD paper (1 h).",
-        "Re‑implement the core algorithm on a small LLM.",
-        "Run ablation experiments and document results."
+        "Read the paper",
+        "Implement the ideas",
+        "Write a blog post"
       ]
     },
     {
-      "key": "91d8f2cd64d5",
-      "title": "tigicion/dao-code — ★1,333",
-      "url": "https://github.com/tigicion/dao-code",
-      "source": "github",
-      "score": 7,
-      "deadline": null,
+      "key": "f00916a09a02",
+      "title": "Push to Prod Hackathon: Building at the Frontier",
+      "url": "https://pushtoprod-india.devfolio.co",
+      "source": "devfolio",
+      "score": 8,
+      "deadline": "2026-08-08",
       "tags": [
-        "github",
-        "learning"
+        "hackathon"
       ],
-      "ai_summary": "AI agent and LLM project",
+      "ai_summary": "AI hackathon",
       "action_plan": [
-        "Explore repository, 2h",
-        "Contribute to code, 10h",
-        "Write blog post, 5h"
-      ]
-    },
-    {
-      "key": "38fc8606b799",
-      "title": "JP Morgan Chase — Machine Learning Center of Excellence Intern - NLP",
-      "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210765492",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "NLP internship at JP Morgan Chase",
-      "action_plan": [
-        "Check internship requirements",
-        "Update resume"
+        "Form a team",
+        "Choose a theme",
+        "Start building"
       ]
     },
     {
@@ -1060,102 +1013,20 @@
       ]
     },
     {
-      "key": "f00f1cd4c424",
-      "title": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials",
-      "url": "https://arxiv.org/abs/2607.02499v1",
-      "source": "arxiv",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Machine learning research for interatomic potentials",
-      "action_plan": [
-        "Read the paper",
-        "Analyze the methodology"
-      ]
-    },
-    {
-      "key": "0c1eede7ed8b",
-      "title": "Looking for feedback on a small test SLM I built completely from scratch [P]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1um013f/looking_for_feedback_on_a_small_test_slm_i_built/",
-      "source": "reddit",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "SLM project and feedback",
-      "action_plan": [
-        "Read thread, 1h",
-        "Research SLM, 2h",
-        "Provide feedback, 1h"
-      ]
-    },
-    {
-      "key": "748a9b126cd1",
-      "title": "ByteDance — Research Scientist Intern - AI Infrastructure",
-      "url": "https://jobs.bytedance.com/en/position/7553916190126524680/detail",
-      "source": "internships",
-      "score": 6,
+      "key": "04f47353cd3f",
+      "title": "Software Developer Internship",
+      "url": "https://unstop.com/internships/software-developer-intern-the-developers-arena-1718316",
+      "source": "unstop",
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "AI infrastructure internship",
+      "ai_summary": "Software dev internship",
       "action_plan": [
-        "Check internship requirements",
-        "Update resume"
-      ]
-    },
-    {
-      "key": "e0d198537ce2",
-      "title": "ByteDance — Research Scientist Intern - AI Infrastructure",
-      "url": "https://jobs.bytedance.com/en/position/7553917136512076050/detail",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI infrastructure internship",
-      "action_plan": [
-        "Check internship requirements",
-        "Update resume"
-      ]
-    },
-    {
-      "key": "291b6d6fee6c",
-      "title": "Saronic — Enterprise Technology Intern - AI and Automation",
-      "url": "https://jobs.ashbyhq.com/saronic/c95c2e3a-4c67-47b0-a03d-0e0317ac11a3/application",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI & automation aligns with interests; company less known but decent.",
-      "action_plan": [
-        "Locate Saronic internship posting.",
-        "Tailor cover letter to AI automation work.",
-        "Apply and follow up via LinkedIn."
-      ]
-    },
-    {
-      "key": "5560f3aefdc5",
-      "title": "Bot Auto — Deep Learning Engineer Intern",
-      "url": "https://job-boards.greenhouse.io/botauto/jobs/5289440008",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Deep learning engineer internship",
-      "action_plan": [
-        "Check internship requirements",
-        "Update resume"
+        "Update resume (2 hours)",
+        "Apply for internship (1 hour)",
+        "Prepare for interview (10 hours)"
       ]
     },
     {
@@ -1711,6 +1582,144 @@
         "Confirm eligibility for US internship (≈30m)",
         "Update portfolio with relevant AI work (≈2h)",
         "Submit application (≈1h)"
+      ]
+    },
+    {
+      "key": "291b0ec64716",
+      "title": "Xsolla — AI Engineer Intern",
+      "url": "https://jobs.lever.co/xsolla/5ec8e8f7-ed75-4697-a1c0-28a026f2e571/apply",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI engineer role in Canada; strong skill fit, but work‑permit status unknown. · ⚠ verify eligibility: Canadian work permit may be required",
+      "action_plan": [
+        "Research Canada student‑intern visa (≈30m)",
+        "Polish AI project showcase (≈2h)",
+        "Apply (≈1h)"
+      ]
+    },
+    {
+      "key": "b7680ba68969",
+      "title": "jmerelnyc/Talos — ★977",
+      "url": "https://github.com/jmerelnyc/Talos",
+      "source": "github",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "github",
+        "learning"
+      ],
+      "ai_summary": "GPU inference client gives real‑world AI infra experience for resume.",
+      "action_plan": [
+        "Clone repo and run example (1h)",
+        "Read contribution guide (30m)",
+        "Submit a PR fixing a bug (2d)"
+      ]
+    },
+    {
+      "key": "0d2711b568cc",
+      "title": "Hacksynergy 2026",
+      "url": "https://unstop.com/hackathons/hacksynergy-2026-inderprastha-engineering-college-ipec-ghaziabad-1716413",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Hackathon for portfolio growth",
+      "action_plan": [
+        "Register in 10 minutes",
+        "Form team in 1 day",
+        "Start project in 3 days"
+      ]
+    },
+    {
+      "key": "72c8d353e7d4",
+      "title": "All India Hackathon",
+      "url": "https://unstop.com/hackathons/all-india-hackathon-axcentra-1703933",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Hackathon experience",
+      "action_plan": [
+        "Research hackathon rules (1h)",
+        "Form a team (2h)",
+        "Prepare for the hackathon (10h)"
+      ]
+    },
+    {
+      "key": "152c5b143270",
+      "title": "Zer0Fit: I took Google's new TabFM & TimesFM ML foundation models and made them available as an MCP server for zero-shot ML tasks (forecasts / classifications / regressions). 100% local. [P]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1uue8cc/zer0fit_i_took_googles_new_tabfm_timesfm_ml/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "Zero-shot ML tasks",
+      "action_plan": [
+        "Explore TabFM & TimesFM",
+        "Set up MCP server",
+        "Test zero-shot tasks"
+      ]
+    },
+    {
+      "key": "fe177850c217",
+      "title": "ByteBattle Hackathon 2026",
+      "url": "https://unstop.com/hackathons/bytebattle-hackathon-2026-h-p-projects-1717192",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Hackathon experience",
+      "action_plan": [
+        "Form a team",
+        "Choose a project",
+        "Start building"
+      ]
+    },
+    {
+      "key": "046149d69388",
+      "title": "IgniteX HackFest 2026",
+      "url": "https://unstop.com/hackathons/ignitex-hackfest-2026-h-p-projects-1717162",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Hackathon experience",
+      "action_plan": [
+        "Form a team",
+        "Choose a project",
+        "Start building"
+      ]
+    },
+    {
+      "key": "94bb93556f29",
+      "title": "HackMatriX 2026 - 24 Hour National Hackathon",
+      "url": "https://unstop.com/hackathons/hackmatrix-2026-24-hour-national-hackathon-ieee-computer-society-mits-gwalior-1701757",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "National hackathon",
+      "action_plan": [
+        "Form a team",
+        "Choose a project",
+        "Start building"
       ]
     }
   ]
