@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-16",
   "items": [
     {
       "key": "063502eecdda",
@@ -398,71 +398,37 @@
       ]
     },
     {
-      "key": "0feb12ad465d",
-      "title": "Build with Gemma",
-      "url": "https://build-with-gemma-bengaluru-ai-sprint.devfolio.co",
-      "source": "devfolio",
-      "score": 7,
-      "deadline": "2026-07-18",
+      "key": "bc000b57087b",
+      "title": "YouCam API Skin AI & Apparel VTO Hackathon",
+      "url": "https://youcam-api.devpost.com/",
+      "source": "devpost",
+      "score": 8,
+      "deadline": "2026-08-17",
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "AI/ML hackathon",
+      "ai_summary": "AI & ML hackathon",
       "action_plan": [
-        "Research hackathon rules (2 hours)",
+        "Research YouCam API (2 hours)",
         "Form a team (1 week)",
-        "Prepare for the hackathon (2 weeks)"
+        "Develop a project (4 weeks)"
       ]
     },
     {
-      "key": "6472691b0bff",
-      "title": "International Innovation Challenge 3.0",
-      "url": "https://unstop.com/hackathons/international-innovation-challenge-30-manipal-university-mu-jaipur-1702624",
+      "key": "d24bcccc3215",
+      "title": "AI Developer & Research Support internship",
+      "url": "https://unstop.com/internships/research-support-internship-work-from-anywhere-smaranaiin-1719161",
       "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "International‑named challenge offers better signal; still a hackathon.",
-      "action_plan": [
-        "Visit the International Innovation Challenge page, note eligibility (10 min).",
-        "Draft a project outline that showcases AI agent work (30 min).",
-        "Apply before deadline and block out preparation time."
-      ]
-    },
-    {
-      "key": "20831302a433",
-      "title": "Founding AI Engineer Internship",
-      "url": "https://unstop.com/internships/founding-ai-engineer-internship-praman-network-1710653",
-      "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "AI Engineer Intern",
+      "ai_summary": "AI/ML internship",
       "action_plan": [
-        "Research company (1hr)",
-        "Update resume (2hr)",
-        "Apply (1hr)"
-      ]
-    },
-    {
-      "key": "1c9fb87ffe8e",
-      "title": "Eulerity — Website Development & Content Marketing Intern - AI & Automation",
-      "url": "https://job-boards.greenhouse.io/eulerity/jobs/4694300006",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI & Automation internship",
-      "action_plan": [
-        "Update resume (2h)",
-        "Apply for internship (1h)",
-        "Prepare for interview (5h)"
+        "Research company (2 hours)",
+        "Update resume (2 hours)",
+        "Apply (1 hour)"
       ]
     },
     {
@@ -1030,56 +996,88 @@
       ]
     },
     {
-      "key": "aa8695231051",
-      "title": "Codeforces Round (Div. 2) (codeforces.com)",
-      "url": "https://codeforces.com/contests/2246",
+      "key": "15d0fc2c6002",
+      "title": "CodeQUEEN 2026 決勝 (atcoder.jp)",
+      "url": "https://atcoder.jp/contests/codequeen2026-final-Public",
       "source": "clist",
-      "score": 6,
-      "deadline": "2026-07-12",
+      "score": 7,
+      "deadline": "2026-08-01",
       "tags": [
         "contest",
         "competitive programming"
       ],
-      "ai_summary": "Competitive programming",
+      "ai_summary": "Competitive programming contest",
       "action_plan": [
-        "Research contest rules (2 hours)",
-        "Prepare for the contest (1 week)",
-        "Participate in the contest (1 day)"
+        "Register for the contest (30m)",
+        "Prepare for the contest (4h)"
       ]
     },
     {
-      "key": "aa1cfc4473dd",
-      "title": "Biweekly Contest 187 (leetcode.com)",
-      "url": "https://leetcode.com/contest/biweekly-contest-187",
-      "source": "clist",
-      "score": 6,
-      "deadline": "2026-07-18",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "Competitive programming",
-      "action_plan": [
-        "Research contest rules (2 hours)",
-        "Prepare for the contest (1 week)",
-        "Participate in the contest (1 day)"
-      ]
-    },
-    {
-      "key": "597132fb665f",
-      "title": "Agents of Change – National Agentic AI Bootcamp & Buildathon 2026",
-      "url": "https://unstop.com/hackathons/agents-of-change-national-agentic-ai-bootcamp-buildathon-2026-agents-of-change-2026-oriental-group-of-institu-1710516",
+      "key": "eb7bc170b891",
+      "title": "Conquer AI Hackathon – Chapter 1",
+      "url": "https://unstop.com/hackathons/conquer-ai-hackathon-chapter-1-conquer-e-learning-1718767",
       "source": "unstop",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "Bootcamp aligns with AI agents interest; builds portfolio but limited prestige.",
+      "ai_summary": "AI hackathon for portfolio building",
       "action_plan": [
-        "Open the Unstop page, note registration deadline (10 min).",
-        "Prepare a short project idea on AI agents (30 min).",
-        "Submit application and set calendar reminder for event dates."
+        "Form a team (2 hours)",
+        "Choose a project (1 hour)",
+        "Start building (4 hours)"
+      ]
+    },
+    {
+      "key": "c1156e46b8fd",
+      "title": "DataRobot — Agentic AI Intern",
+      "url": "https://datarobot.wd1.myworkdayjobs.com/en-US/DataRobot_External_Careers/job/Boston-Massachusetts-US/Agentic-AI-Intern_R-102729",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "DataRobot intern aligns with agentic AI interest and offers solid resume signal",
+      "action_plan": [
+        "Read internship description thoroughly (15m)",
+        "Tailor resume to agentic AI work (2h)",
+        "Submit application (30m)"
+      ]
+    },
+    {
+      "key": "bac2e0c8dcf6",
+      "title": "Tencent — Research Intern - Video World Models - Research & ML Systems",
+      "url": "https://tencent.wd1.myworkdayjobs.com/OA_Huoshui_Platform/job/US-California-Palo-Alto/Research-Intern---Video-World-Models--Research---ML-Systems-_R107752",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Research internship at Tencent",
+      "action_plan": [
+        "Research company (1 hour)",
+        "Update resume (2 hours)",
+        "Apply for internship (1 hour)"
+      ]
+    },
+    {
+      "key": "886e3f75ae5d",
+      "title": "Tencent — Research Intern - Video World Models - Research & ML Systems",
+      "url": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Research-Intern---Video-World-Models--Research---ML-Systems-_R107752-1",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Research internship at Tencent",
+      "action_plan": [
+        "Research company (1 hour)",
+        "Update resume (2 hours)",
+        "Apply for internship (1 hour)"
       ]
     },
     {
