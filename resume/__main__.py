@@ -8,6 +8,7 @@ report (never a fake score, never invented experience).
 """
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -23,6 +24,10 @@ def main() -> int:
     ap.add_argument("--have", default="",
                     help="comma-separated skills you've CONFIRMED you genuinely have (from the gap "
                          "list) — woven into the tailored draft, truthfully")
+    ap.add_argument("--github", default="",
+                    help="your GitHub username — auto-verifies skills from your real public repos")
+    ap.add_argument("--certs", default="",
+                    help="path to your certificates folder — auto-verifies skills from credentials")
     ap.add_argument("--tailor", action="store_true",
                     help="also produce a tailored DRAFT (Summary / Skills / rewritten Experience)")
     args = ap.parse_args()
@@ -39,10 +44,36 @@ def main() -> int:
 
     print(format_report(result))
 
+    # Slice 3: auto-build a VERIFIED skill set from real evidence, and auto-check the gap list.
+    verified_missing: list[str] = []
+    if args.github or args.certs:
+        from .harvest import format_profile, harvest, verify_against
+        token = os.environ.get("GITHUB_TOKEN")
+        try:
+            import config  # project root; optional (raises the unauthenticated rate limit if present)
+            token = getattr(config, "GITHUB_TOKEN", None) or token
+        except Exception:
+            pass
+        harvested = harvest(args.github or None, args.certs or None, token=token)
+        print("\n" + format_profile(harvested))
+
+        checked = verify_against(harvested, result["missing"])
+        verified_missing = [kw for kw, ev in checked.items() if ev]
+        if result["missing"]:
+            print("\n── Gap list, auto-checked against your real evidence ──")
+            for kw in result["missing"]:
+                ev = checked.get(kw) or []
+                if ev:
+                    print(f"  ✅ {kw} — evidence found ({', '.join(ev[:2])}) → safe to add, in your own words")
+                else:
+                    print(f"  ⚠️ {kw} — no evidence found → only add if it's genuinely true")
+
     if args.tailor:
         from .tailor import tailor
-        # Truthful skill set = JD keywords already in the resume + the ones you confirmed via --have.
-        confirmed = result["present"] + [s.strip() for s in args.have.split(",") if s.strip()]
+        # Truthful skill set = JD keywords in the resume + evidenced skills + anything you confirmed.
+        confirmed = (list(result["present"])
+                     + verified_missing
+                     + [s.strip() for s in args.have.split(",") if s.strip()])
         draft = tailor(result["text"], jd_text, confirmed)
         print("\n" + "=" * 60)
         print("TAILORED DRAFT — review + edit; nothing here is applied or submitted")
