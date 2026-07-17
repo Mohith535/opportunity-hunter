@@ -177,10 +177,15 @@ def main() -> int:
                     help='the goal, e.g. "Machine Learning Engineer intern" or "Google STEP 2027"')
     ap.add_argument("--months", type=int, default=6, help="planning horizon in months (default 6)")
     ap.add_argument("--github", default="", help="your GitHub username (verifies skills from repos)")
+    ap.add_argument("--include-private", action="store_true",
+                    help="also read PRIVATE repos (needs GITHUB_TOKEN with 'repo' scope, your own)")
     ap.add_argument("--certs", default="", help="path to your certificates folder (verifies skills)")
+    ap.add_argument("--linkedin", default="",
+                    help="path to your LinkedIn data-export folder or .zip (no scraping)")
     args = ap.parse_args()
 
-    harvested = harvest(args.github or None, args.certs or None, token=_token())
+    harvested = harvest(args.github or None, args.certs or None, token=_token(),
+                        include_private=args.include_private, linkedin=args.linkedin or None)
     feed_items = relevant_opportunities(load_feed(), args.target)
 
     out = simulate(args.target, harvested, feed_items, args.months)

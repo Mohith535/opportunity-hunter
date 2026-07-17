@@ -77,26 +77,57 @@ _CERT_CONNECTORS = {"to", "from", "by", "on"}
 
 
 # ─── GitHub ──────────────────────────────────────────────────────────
-def _github_repos(username: str, token: str | None) -> list[dict]:
-    """Public, non-fork repos as raw dicts. [] on any failure (network, bad user, rate limit)."""
+def _github_repos(username: str, token: str | None, include_private: bool = False) -> list[dict]:
+    """Non-fork repos as raw dicts, all pages. [] on any failure (network, bad user, rate limit).
+
+    Public repos come from the public endpoint. PRIVATE repos require a token whose OWN account is
+    `username` — then we use the authenticated `/user/repos` endpoint (the public one never returns
+    private repos, even with auth). We verify ownership first so a token for someone else can't be
+    used to claim another user's private work.
+    """
     import requests  # noqa: PLC0415
     headers = {"Accept": "application/vnd.github+json", "User-Agent": "OpportunityHunter/1.0"}
     if token:
         headers["Authorization"] = f"Bearer {token}"
+
+    use_auth = False
+    if include_private and token:
+        try:
+            me = requests.get("https://api.github.com/user", headers=headers, timeout=10)
+            use_auth = me.status_code == 200 and \
+                (me.json().get("login", "").lower() == username.lower())
+        except Exception:
+            use_auth = False
+
+    repos: list[dict] = []
     try:
-        r = requests.get(
-            f"https://api.github.com/users/{username}/repos",
-            params={"per_page": 100, "sort": "updated"}, headers=headers, timeout=10)
-        if r.status_code != 200:
-            return []
-        data = r.json()
-        return [repo for repo in data if isinstance(repo, dict) and not repo.get("fork")]
+        page = 1
+        while True:
+            if use_auth:
+                url, params = "https://api.github.com/user/repos", {
+                    "per_page": 100, "page": page, "visibility": "all",
+                    "affiliation": "owner,collaborator,organization_member", "sort": "updated"}
+            else:
+                url, params = f"https://api.github.com/users/{username}/repos", {
+                    "per_page": 100, "page": page, "sort": "updated"}
+            r = requests.get(url, params=params, headers=headers, timeout=10)
+            if r.status_code != 200:
+                break
+            batch = r.json()
+            if not isinstance(batch, list) or not batch:
+                break
+            repos.extend(b for b in batch if isinstance(b, dict) and not b.get("fork"))
+            if len(batch) < 100:
+                break
+            page += 1
     except Exception:
-        return []
+        return repos
+    return repos
 
 
-def github_skills(username: str, token: str | None = None) -> dict[str, list[str]]:
-    """{skill: [evidence repos]} inferred from a GitHub user's public repos.
+def github_skills(username: str, token: str | None = None,
+                  include_private: bool = False) -> dict[str, list[str]]:
+    """{skill: [evidence repos]} inferred from a GitHub user's repos (public, +private with a token).
 
     Language and topics are trusted directly; descriptions are matched against the tech lexicon.
     Evidence is the repo name, so every skill is traceable to real code.
@@ -108,7 +139,7 @@ def github_skills(username: str, token: str | None = None) -> dict[str, list[str
         if s:
             skills.setdefault(s, set()).add(f"repo:{repo}")
 
-    for repo in _github_repos(username, token):
+    for repo in _github_repos(username, token, include_private):
         name = repo.get("name") or "?"
         if repo.get("language"):
             add(repo["language"], name)
@@ -172,10 +203,13 @@ def _match_tech(text: str) -> list[str]:
 
 # ─── assemble + verify ───────────────────────────────────────────────
 def harvest(github_user: str | None = None, certs_folder: str | Path | None = None,
-            token: str | None = None) -> dict:
+            token: str | None = None, include_private: bool = False,
+            linkedin: str | Path | None = None) -> dict:
     """Merge every evidence source into one verified profile.
 
-    Returns {"skills": {skill: [evidence...]}, "certifications": [titles]}. Each skill's evidence
+    Sources: GitHub repos (public, +private with a token), a certificates folder, and a LinkedIn
+    data export (folder or .zip — never scraped). Returns {"skills": {skill: [evidence...]},
+    "certifications": [titles], "positions": [work history from LinkedIn]}. Each skill's evidence
     list says exactly why we believe the candidate has it — nothing here is unsourced.
     """
     skills: dict[str, set[str]] = {}
@@ -185,15 +219,23 @@ def harvest(github_user: str | None = None, certs_folder: str | Path | None = No
             skills.setdefault(skill, set()).update(ev)
 
     certifications: list[str] = []
+    positions: list[dict] = []
     if github_user:
-        merge(github_skills(github_user, token))
+        merge(github_skills(github_user, token, include_private))
     if certs_folder:
         certs, cert_sk = certificate_skills(certs_folder)
-        certifications = certs
+        certifications += certs
         merge(cert_sk)
+    if linkedin:
+        from .linkedin import linkedin_profile  # noqa: PLC0415
+        li = linkedin_profile(linkedin)
+        merge(li["skills"])
+        certifications += li["certifications"]
+        positions = li["positions"]
     return {
         "skills": {k: sorted(v) for k, v in sorted(skills.items())},
         "certifications": certifications,
+        "positions": positions,
     }
 
 

@@ -26,8 +26,13 @@ def main() -> int:
                          "list) — woven into the tailored draft, truthfully")
     ap.add_argument("--github", default="",
                     help="your GitHub username — auto-verifies skills from your real public repos")
+    ap.add_argument("--include-private", action="store_true",
+                    help="also read your PRIVATE repos (needs GITHUB_TOKEN with 'repo' scope, your own)")
     ap.add_argument("--certs", default="",
                     help="path to your certificates folder — auto-verifies skills from credentials")
+    ap.add_argument("--linkedin", default="",
+                    help="path to your LinkedIn data-export folder or .zip (Settings > Get a copy of "
+                         "your data) — verifies skills + work history, no scraping")
     ap.add_argument("--tailor", action="store_true",
                     help="also produce a tailored DRAFT (Summary / Skills / rewritten Experience)")
     args = ap.parse_args()
@@ -46,7 +51,7 @@ def main() -> int:
 
     # Slice 3: auto-build a VERIFIED skill set from real evidence, and auto-check the gap list.
     verified_missing: list[str] = []
-    if args.github or args.certs:
+    if args.github or args.certs or args.linkedin:
         from .harvest import format_profile, harvest, verify_against
         token = os.environ.get("GITHUB_TOKEN")
         try:
@@ -54,7 +59,8 @@ def main() -> int:
             token = getattr(config, "GITHUB_TOKEN", None) or token
         except Exception:
             pass
-        harvested = harvest(args.github or None, args.certs or None, token=token)
+        harvested = harvest(args.github or None, args.certs or None, token=token,
+                            include_private=args.include_private, linkedin=args.linkedin or None)
         print("\n" + format_profile(harvested))
 
         checked = verify_against(harvested, result["missing"])
