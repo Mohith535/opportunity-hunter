@@ -20,6 +20,11 @@ def main() -> int:
     ap.add_argument("--resume", required=True, help="path to your resume (.pdf / .docx / .txt)")
     ap.add_argument("--jd", required=True,
                     help="path to a job-description .txt file, OR the JD text inline")
+    ap.add_argument("--have", default="",
+                    help="comma-separated skills you've CONFIRMED you genuinely have (from the gap "
+                         "list) — woven into the tailored draft, truthfully")
+    ap.add_argument("--tailor", action="store_true",
+                    help="also produce a tailored DRAFT (Summary / Skills / rewritten Experience)")
     args = ap.parse_args()
 
     jd_path = Path(args.jd)
@@ -33,6 +38,16 @@ def main() -> int:
         return 1
 
     print(format_report(result))
+
+    if args.tailor:
+        from .tailor import tailor
+        # Truthful skill set = JD keywords already in the resume + the ones you confirmed via --have.
+        confirmed = result["present"] + [s.strip() for s in args.have.split(",") if s.strip()]
+        draft = tailor(result["text"], jd_text, confirmed)
+        print("\n" + "=" * 60)
+        print("TAILORED DRAFT — review + edit; nothing here is applied or submitted")
+        print("=" * 60)
+        print(draft or "(tailoring unavailable — set an LLM key in .env)")
     return 0
 
 

@@ -11,8 +11,10 @@ from .analyzer import (
     format_report,
     keyword_coverage,
 )
+from .tailor import tailor
 
 __all__ = [
     "analyze", "format_report", "extract_text",
     "ats_format_check", "extract_jd_keywords", "keyword_coverage",
+    "tailor",
 ]

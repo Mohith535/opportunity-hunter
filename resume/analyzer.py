@@ -191,6 +191,7 @@ def analyze(resume_path: str | Path, jd_text: str) -> dict:
     present, missing = keyword_coverage(text, keywords)
     return {
         "resume_path": str(resume_path),
+        "text": text,
         "word_count": len(text.split()),
         "issues": issues,
         "keywords": keywords,
