@@ -26153,6 +26153,1291 @@
           "key": "abd132cb40e2"
         }
       ]
+    },
+    {
+      "date": "2026-07-17",
+      "items": [
+        {
+          "title": "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models",
+          "url": "https://arxiv.org/abs/2607.15277v1",
+          "source": "arxiv",
+          "description": "In-context learning is commonly interpreted as a form of conditional inference, in which the prompt specifies a context and the model's output is treated as an estimate of the corresponding conditional distribution. If this interpretation holds, then LLM estimates should satisfy basic probabilistic identities. In particular, the law of total probability asserts that prior-weighted conditional distributions aggregate into population-level marginals over any valid partition of the population. In this work, we investigate to what extent LLM estimates adhere to this self-consistency principle. We use binary trees as an evaluation scaffold to recursively partition a population into increasingly fine-grained subpopulations. We then prompt LLMs with verbalized subpopulation descriptions in context, aggregate the resulting estimates back into population-level estimates, and compare them across partitions of varying granularity. Applying this protocol across problem domains and state-of-the-art frontier models, we show widespread violations of basic consistency properties. An in-depth study of persona prompting reveals a pattern we call the macro fallacy: estimates reconstructed from more fine-grained subpopulation responses are often better aligned with human reference data than direct population-level estimates. This effect persists across variations in tree structure and estimation task, and can be partially recovered through implicit prompting. Together, these findings suggest that models possess relevant subpopulation knowledge but do not reliably propagate it into aggregate estimates. This gap establishes statistical self-consistency as an unsaturated, reference-free criterion for evaluating LLMs.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.15277",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Deepens LLM theory, aligns with his AI agent focus, but no direct output.",
+          "action_plan": [
+            "Read abstract (30m)",
+            "Skim methods (1h)",
+            "Reproduce one experiment (2d)",
+            "Write short note (4h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 0,
+            "skill": 3,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "e1e922978abc"
+        },
+        {
+          "title": "RoboTTT: Context Scaling for Robot Policies",
+          "url": "https://arxiv.org/abs/2607.15275v1",
+          "source": "arxiv",
+          "description": "Recent robot foundation models operate with single-step or short-history visuomotor context. We introduce Test-Time-Training Robot Policies (RoboTTT), a robot model and training recipe that scale visuomotor context to 8K timesteps, three orders of magnitude beyond state-of-the-art policies, without growing inference latency. At this context length, we unlock new robot capabilities: one-shot in-context imitation from human video demonstrations, on-the-fly policy improvement, robustness to perturbations, and stronger performance on multi-stage, long-horizon tasks. We also observe, for the first time, steady gains in closed-loop performance as pretraining context length scales. At its core, RoboTTT integrates Test-Time Training into robot foundation models such as Vision-Language-Action policies, yielding a sequence model whose recurrent state consists of fast weights, parameters updated by gradient descent during both training and inference, compressing histories into weight space and retrieving contextual information for long-context conditioning. To scale training context length, the recipe combines sequence action forcing with truncated backpropagation through time. On challenging real-robot manipulation tasks, RoboTTT improves overall performance by 87% over the single-step context baseline and fully completes a five-minute, ten-stage assembly task, which no baseline ever does. RoboTTT trained with 8K-timestep context outperforms the same model pretrained with 1K timesteps by 62%, suggesting context length as a new scaling axis for robot foundation models. Videos are available at https://research.nvidia.com/labs/gear/robottt/",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.15275",
+          "score": 4,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not an application · Just a research paper; no actionable step for Mohith.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not an application"
+          },
+          "key": "f9066ef15314"
+        },
+        {
+          "title": "SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions",
+          "url": "https://arxiv.org/abs/2607.15272v1",
+          "source": "arxiv",
+          "description": "Editing the figures in a research paper is a routine and time-consuming part of everyday research practice: authors relabel components, rearrange panels, and restyle visuals as they revise their manuscripts. Automating this editing workflow under a natural-language instruction, however, is challenging, because a scientific figure is a dense infographic in which heterogeneous visual elements such as schematics, plots, photos, captions, and arrows are composed under a tight visual grammar to advance a specific argument. To address this, we present SciDiagramEdit, a benchmark and skill-evolution framework that learns from natural paper revisions and operates on the figure's editable vector source, where users can inspect and co-edit individual primitives alongside the agent. Our benchmark mines before/after figure pairs from arXiv version histories, each grounded in the authors' own revision intent. To accommodate the diversity of editing instructions, we adopt agentic learning via skill evolution: an agentic proposer continually refines the agent's skill specification from execution traces over multiple epochs. The resulting skill progressively lifts edit accuracy on a held-out validation set, providing evidence that natural paper revisions are an effective training signal for instruction-driven figure editing.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.15272",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Offers practical diagram editing skill, modest relevance to AI building.",
+          "action_plan": [
+            "Read paper summary (45m)",
+            "Explore provided code repo (1h)",
+            "Modify a figure (2h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 0,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "5617c8006eee"
+        },
+        {
+          "title": "Decoding Market Emotion from Blockchain Activity: A Data-Driven Sentiment Classifier",
+          "url": "https://arxiv.org/abs/2607.15258v1",
+          "source": "arxiv",
+          "description": "The growing use of Bitcoin as a decentralized digital asset and investment tool has sparked strong interest in understanding its market behavior. This study presents a new approach to analyze Bitcoin market sentiment by combining on-chain and financial data with social media posts. Unlike models that aim to predict prices, this work focuses on explaining market sentiment using blockchain transactions, historical price data of Bitcoin, and daily Twitter sentiment classifications. The method merges sentiment trends with on-chain and financial metrics, normalized into a dataset for detailed market analysis. Multiple machine learning models were tested using cross-validation, with Gradient Boosting (XGBoost) emerging as the most reliable model for classifying sentiment, achieving an average F1-score of about 0.84. SHAP (SHapley Additive exPlanations), a game theory-based method for model interpretability, was used to quantify the contribution of on-chain features to the model's predictions, improving transparency. The results indicate that this data combination yields meaningful predictive signals and insights, supporting data-driven cryptocurrency analysis and future improvements with deep learning.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.15258",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Combines ML with blockchain data; useful for data pipelines but peripheral.",
+          "action_plan": [
+            "Read intro & dataset section (30m)",
+            "Clone repo and run baseline (2h)",
+            "Add a feature (3h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 3,
+            "deadline": 0,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "e4ea6319ca91"
+        },
+        {
+          "title": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
+          "url": "https://arxiv.org/abs/2607.15257v1",
+          "source": "arxiv",
+          "description": "Recent advances in Tool-Integrated Large Language Models have made web search a core capability of information-seeking agents. However, as interaction histories grow, agents increasingly struggle to track task progress. When search attempts fail to yield useful evidence, current single- and multi-agent systems can become trapped in repetitive loops, wasting search budgets and ultimately compromising the quality and completeness of the final output. We introduce SearchOS, a system-level multi-agent framework that turns fragile, implicit search progress into explicit, persistent, and shared state. First, we formulate open-domain information seeking as relational schema completion with grounded citations, where agents discover entities, populate attributes across linked tables, and anchor each value to source evidence. Then we design Search-Oriented Context Management (SOCM), which externalizes the evolving state into Frontier Task, an Evidence Graph, a Coverage Map, and Failure Memory. Built on SOCM, SearchOS applies a pipeline-parallel scheduling mechanism that overlaps the execution of sub-agents and continuously refills freed slots with tasks targeting unresolved coverage gaps to improve utilization and throughput. To schedule and control the execution of search agents, SearchOS introduces a Search Tool Middleware Harness that intercepts model and tool interactions to record grounded evidence and react to stalls or budget exhaustion, and provides a reusable hierarchical skill system comprising strategy and access skills to augment the agents' search process and avoid repeating failed search patterns across runs. On WideSearch and GISA, SearchOS leads all metrics among the evaluated single- and multi-agent baselines, paving the way toward robust information-seeking collaboration.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.15257",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "Directly matches AI agent research, high skill gain, strong portfolio potential.",
+          "action_plan": [
+            "Read overview (30m)",
+            "Set up SearchOS demo (1h)",
+            "Implement a new agent task (3d)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 9,
+            "prestige": 5,
+            "deadline": 0,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "57854c7f42da"
+        },
+        {
+          "title": "Microsoft Comic Chat is now open source",
+          "url": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48936426",
+          "score": 5,
+          "ai_score": 5,
+          "ai_summary": "Microsoft open source project",
+          "action_plan": [
+            "Explore the project",
+            "Contribute to the project",
+            "Learn from the experience"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 6,
+            "prestige": 9,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "6d7a4864c5f1"
+        },
+        {
+          "title": "Detecting LLM-Generated Texts with “Classical” Machine Learning",
+          "url": "https://blog.lyc8503.net/en/post/llm-classifier/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48936880",
+          "score": 3,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not an application · News article; no participation required.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not an application"
+          },
+          "key": "f6a4b4dfbff6"
+        },
+        {
+          "title": "Global AI Hackathon Series with Qwen Cloud",
+          "url": "https://qwencloud-hackathon.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 26 - Jul 20, 2026 | prize $ 45,000 | themes: Machine Learning/AI, Design, Productivity",
+          "deadline": "2026-07-20",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29966",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "AI hackathon with Qwen Cloud",
+          "action_plan": [
+            "Research Qwen Cloud AI (2 hours)",
+            "Form a team (1 week)",
+            "Submit project (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 8,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "9f13fb5f6774"
+        },
+        {
+          "title": "Why is ECCV so insanely expensive for students presenting papers? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uxyd6z/why_is_eccv_so_insanely_expensive_for_students/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uxyd6z",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Just a discussion thread; minimal impact on career or skill growth.",
+          "action_plan": [
+            "Open thread (5m)",
+            "Read comments (10m)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 1,
+            "deadline": 0,
+            "skill": 1,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "72081076d0ce"
+        },
+        {
+          "title": "The qlora 2e-4 default is wrong under 10k samples and nobody talks about it [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uy1z8b/the_qlora_2e4_default_is_wrong_under_10k_samples/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uy1z8b",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Technical tip on qlora; low relevance beyond niche tuning knowledge.",
+          "action_plan": [
+            "Read post (5m)",
+            "Check qlora repo (15m)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 3,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 3,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "22931fab72de"
+        },
+        {
+          "title": "whats the best and complete way to keep up with ai/ml news? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uyecez/whats_the_best_and_complete_way_to_keep_up_with/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uyecez",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Guidance on news consumption; indirect benefit to staying informed.",
+          "action_plan": [
+            "Read post (5m)",
+            "List recommended sources (10m)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 1,
+            "deadline": 0,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "3bd2e0a075e2"
+        },
+        {
+          "title": "Seeking collaborators for scaling and independent evaluation of a new recurrent language model architecture (preprint + code) [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uycffg/seeking_collaborators_for_scaling_and_independent/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uycffg",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "Collaboration on novel LM could boost portfolio and network, but no deadline.",
+          "action_plan": [
+            "Read announcement (15m)",
+            "Contact author with brief intro (30m)",
+            "Propose a small contribution (2d)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 0,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "83d6fc22d688"
+        },
+        {
+          "title": "ExTernD: Expanded-Rank Ternary Decomposition Ternary LLM PTQ with Accuracy Approaching Any Quantization Level [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uy2zb3/externd_expandedrank_ternary_decomposition/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uy2zb3",
+          "score": 5,
+          "ai_score": 5,
+          "ai_summary": "Machine learning research",
+          "action_plan": [
+            "Read the research paper",
+            "Implement the research",
+            "Learn from the experience"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "3a1dd7211a78"
+        },
+        {
+          "title": "Are Current AI Memory Architectures Optimizing for the Wrong Abstraction? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uy6yht/are_current_ai_memory_architectures_optimizing/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uy6yht",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1f98a4fafe63"
+        },
+        {
+          "title": "Best current tools for Multi-Objective Surrogate-Based Optimization (MOSBO) on heterogeneous study data meta-analysis?[P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uxty9v/best_current_tools_for_multiobjective/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uxty9v",
+          "score": 4,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not an application · Discussion thread, not a chance to apply or build.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not an application"
+          },
+          "key": "d03d36bce252"
+        },
+        {
+          "title": "CfP | RTCA @ NeurIPS 2026 [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uy8e0v/cfp_rtca_neurips_2026_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uy8e0v",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "28a64b14aa9f"
+        },
+        {
+          "title": "PnP-CoSMo: A Multi-Contrast MRI Reconstruction Framework based on Content/Style Modeling [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uy2h66/pnpcosmo_a_multicontrast_mri_reconstruction/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uy2h66",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ae0c5be82316"
+        },
+        {
+          "title": "New Fable5/Opus4.8 harness called \"Schema\" claims 99% on ARC-3 [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uyf8oo/new_fable5opus48_harness_called_schema_claims_99/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uyf8oo",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "45c65889fc48"
+        },
+        {
+          "title": "Google Gemini AI Product Trial – Freshers Party Planning Challenge",
+          "url": "https://unstop.com/hackathons/google-gemini-ai-product-trial-freshers-party-planning-challenge-keshav-memorial-institute-of-technology-1719562",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1719562",
+          "score": 9,
+          "ai_score": 8,
+          "ai_summary": "Google AI product trial",
+          "action_plan": [
+            "Explore Google Gemini AI (1 hour)",
+            "Plan project (1 week)",
+            "Develop project (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 8,
+            "prestige": 10,
+            "deadline": 0,
+            "skill": 8,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "18d24a2a7af3"
+        },
+        {
+          "title": "Smackathon 2k26",
+          "url": "https://unstop.com/hackathons/smackathon-2k26-yeshwantrao-chavan-college-of-engineering-ycce-nagpur-1718448",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1718448",
+          "score": 4,
+          "ai_score": 4,
+          "ai_summary": "Online Indian hackathon gives modest portfolio boost.",
+          "action_plan": [
+            "Check hackathon page (1h)",
+            "Form a team (2d)",
+            "Build prototype (1w)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 3,
+            "deadline": 4,
+            "skill": 5,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "9ae5a1efc470"
+        },
+        {
+          "title": "GBT BuildStorm 2026",
+          "url": "https://unstop.com/hackathons/gbt-buildstorm-2026-go-beyond-tickets-1719425",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1719425",
+          "score": 4,
+          "ai_score": 4,
+          "ai_summary": "Another Indian hackathon; similar modest impact.",
+          "action_plan": [
+            "Read BuildStorm details (30m)",
+            "Gather teammates (1d)",
+            "Create demo (1w)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 3,
+            "deadline": 4,
+            "skill": 5,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "da2e29d1b3e0"
+        },
+        {
+          "title": "BLACKBOX",
+          "url": "https://unstop.com/hackathons/blackbox-vellore-institute-of-technology-vit-chennai-1719341",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1719341",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "86ad4105672d"
+        },
+        {
+          "title": "H & P PROJECTS Hackathon Global Challenges 2026",
+          "url": "https://unstop.com/hackathons/h-p-projects-hackathon-global-challenges-2026-h-p-projects-1719280",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1719280",
+          "score": 7,
+          "ai_score": 5,
+          "ai_summary": "Global hackathon challenge",
+          "action_plan": [
+            "Form a team",
+            "Choose a challenge",
+            "Start building"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "215639175b91"
+        },
+        {
+          "title": "Code O'Clock 2K26",
+          "url": "https://unstop.com/hackathons/code-oclock-2k26-coimbatore-institute-of-technology-cit-coimbatore-1719235",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1719235",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4256fddc1133"
+        },
+        {
+          "title": "Build With Bharat 2.0",
+          "url": "https://unstop.com/hackathons/build-with-bharat-40-national-institute-of-technology-nit-delhi-1719203",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1719203",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7d419ff0ccb1"
+        },
+        {
+          "title": "Digital Marketing Internship",
+          "url": "https://unstop.com/internships/digital-marketing-internship-atumcode-solutions-pvt-ltd-1719641",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1719641",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Non-AI internship",
+          "action_plan": [
+            "Research company (1 hour)",
+            "Apply for internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 0,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "4a4217c6f36f"
+        },
+        {
+          "title": "Campus Ambassador Internship",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-internzvalley-1719560",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1719560",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Campus ambassador internship",
+          "action_plan": [
+            "Research company (1 hour)",
+            "Apply for internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 0,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "8aed1a05a2a4"
+        },
+        {
+          "title": "Digital Marketing Internship",
+          "url": "https://unstop.com/internships/digital-marketing-intern-educorn-learning-pvt-ltd-1719554",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1719554",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Non-AI internship",
+          "action_plan": [
+            "Research company (1 hour)",
+            "Apply for internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 0,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "b44527cb9d1d"
+        },
+        {
+          "title": "Operations Management Internship",
+          "url": "https://unstop.com/internships/operations-management-internship-educorn-learning-pvt-ltd-1719535",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1719535",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "Non-AI internship",
+          "action_plan": [
+            "Research company (1 hour)",
+            "Apply for internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 3,
+            "deadline": 0,
+            "skill": 3,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "c76facf8c530"
+        },
+        {
+          "title": "Community Growth Internship",
+          "url": "https://unstop.com/internships/community-growth-intern-mycaptain-1719505",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1719505",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Community growth internship",
+          "action_plan": [
+            "Research company (1 hour)",
+            "Apply for internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 0,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "67cf1db1b2af"
+        },
+        {
+          "title": "Human Resource Internship",
+          "url": "https://unstop.com/internships/human-resource-intern-dnaha-kisan365-pvt-ltd-1719491",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1719491",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "Non-AI internship",
+          "action_plan": [
+            "Research company (1 hour)",
+            "Apply for internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 3,
+            "deadline": 0,
+            "skill": 3,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "b67c7bb689f0"
+        },
+        {
+          "title": "AI Assisted Educational Content Creator Internship",
+          "url": "https://unstop.com/internships/ai-assisted-educational-content-creator-internship-smaranaiin-1719485",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1719485",
+          "score": 8,
+          "ai_score": 6,
+          "ai_summary": "AI assisted content creation",
+          "action_plan": [
+            "Research AI assisted content creation",
+            "Apply for internship",
+            "Network with professionals"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "15e30dd34cc7"
+        },
+        {
+          "title": "Business Development & Sales Internship",
+          "url": "https://unstop.com/internships/business-development-sales-internship-vishvena-techno-solutions-pvt-ltd-1719486",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1719486",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not directly related to AI",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "2161bc218050"
+        },
+        {
+          "title": "Free Scholarship Test on Digital Marketing",
+          "url": "https://unstop.com/scholarships/free-scholarship-test-on-digital-marketing-quality-thought-info-systems-1715463",
+          "source": "unstop",
+          "description": "scholarship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "scholarship"
+          ],
+          "native_id": "1715463",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "Not related to AI or CS",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "0daae7b92c6c"
+        },
+        {
+          "title": "Composio — Full-stack Intern",
+          "url": "https://jobs.ashbyhq.com/composio/4d819015-0b9a-466f-9b41-8e1cc1e5b6d9/application?embed=true",
+          "source": "internships",
+          "description": "internship | Composio | SF | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "015239c6-bc89-4abd-a7a9-97acc270ae0a",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "SF startup internship adds international exposure and real‑world code.",
+          "action_plan": [
+            "Visit Composio careers page (30m)",
+            "Tailor resume to full‑stack (2h)",
+            "Submit application (1h)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 5,
+            "prestige": 5,
+            "deadline": 4,
+            "skill": 7,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "0a4843ed84ae"
+        },
+        {
+          "title": "Formlabs — Algorithms Software Intern",
+          "url": "https://careers.formlabs.com/job/8060759/apply/?gh_jid=8060759",
+          "source": "internships",
+          "description": "internship | Formlabs | Cambridge, MA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "da57bdc2-8679-4ce5-a046-ae2d4ab54823",
+          "score": 3,
+          "ai_score": 8,
+          "ai_summary": "Algorithms internship at Formlabs aligns with AI engineering goals.",
+          "action_plan": [
+            "Read Formlabs posting (30m)",
+            "Update CV with relevant projects (2h)",
+            "Apply (1h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 8,
+            "prestige": 8,
+            "deadline": 5,
+            "skill": 8,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "3ee21da52869"
+        },
+        {
+          "title": "Formlabs — AI Software Intern",
+          "url": "https://careers.formlabs.com/job/8067641/apply/?gh_jid=8067641",
+          "source": "internships",
+          "description": "internship | Formlabs | Cambridge, MA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a0a6c7de-12fb-4e52-93f3-86d62a5a9b19",
+          "score": 3,
+          "ai_score": 9,
+          "ai_summary": "AI‑focused role directly matches his AI agent and LLM interests.",
+          "action_plan": [
+            "Identify AI intern requirements (30m)",
+            "Showcase AI projects (2h)",
+            "Apply (1h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 5,
+            "skill": 9,
+            "time": 8,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "e38a0c78f2e8"
+        },
+        {
+          "title": "Tesla — Energy Battery Firmware Intern - Software Engineer - Energy Engineering",
+          "url": "https://www.tesla.com/careers/search/job/276987",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ce535c93-f706-49f8-98ac-5f72c9bd6729",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Tesla prestige high but AI relevance low for Mohith · ⚠ verify eligibility: US work authorization not specified",
+          "action_plan": [
+            "Visit Tesla careers page (1h)",
+            "Identify required visa docs (2h)",
+            "Prepare resume focusing on firmware projects (3h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 9,
+            "deadline": 1,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US work authorization not specified"
+          },
+          "key": "dd9ef384e766"
+        },
+        {
+          "title": "Mackenzie Investments — Data Science and AI Specialist Intern - Investment Management - Fundamental Equity",
+          "url": "https://careersen-mackenzieinvestments.icims.com/jobs/5938/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Mackenzie Investments | Greater Toronto Area, ON, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8995009f-c277-4ecd-b03c-355b2ec8cc54",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "Finance focus misaligned with AI builder goals · ⚠ verify eligibility: Canada work eligibility unclear",
+          "action_plan": [
+            "Search Mackenzie internship details (1h)",
+            "Check eligibility for Indian students (1h)",
+            "Tailor resume to data science (2h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 4,
+            "deadline": 1,
+            "skill": 4,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "Canada work eligibility unclear"
+          },
+          "key": "ec7a38d895bc"
+        },
+        {
+          "title": "GeoComply — Full Stack Developer Intern",
+          "url": "https://jobs.lever.co/geocomply-2/a3131ad8-06ec-4c6e-b27c-81aa4c02cc40/apply",
+          "source": "internships",
+          "description": "internship | GeoComply | Vancouver, BC, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1d0df9c8-c66c-43a4-a73a-ee0c92dc7fc6",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Full‑stack role offers skill growth but low AI prestige · ⚠ verify eligibility: Canada work eligibility unclear",
+          "action_plan": [
+            "Read GeoComply intern posting (30m)",
+            "Verify visa sponsorship (1h)",
+            "Update portfolio with React/Node projects (2h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 1,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "Canada work eligibility unclear"
+          },
+          "key": "d91630cd91ae"
+        },
+        {
+          "title": "Western Digital — Software Engineering Co-op",
+          "url": "https://jobs.smartrecruiters.com/WesternDigital/744000138184309",
+          "source": "internships",
+          "description": "internship | Western Digital | Rochester, MN | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "668cc2ce-ddbc-4d16-9c40-c27e83c81d93",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Storage company, moderate relevance, limited AI impact · ⚠ verify eligibility: US work authorization not specified",
+          "action_plan": [
+            "Open Western Digital co‑op page (30m)",
+            "Check eligibility for Indian students (1h)",
+            "Draft resume highlighting C++ skills (2h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 3,
+            "prestige": 6,
+            "deadline": 1,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US work authorization not specified"
+          },
+          "key": "9d88819031b5"
+        },
+        {
+          "title": "DNV — AI Research Intern",
+          "url": "https://ecyq.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/7094",
+          "source": "internships",
+          "description": "internship | DNV | Oakland, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "94f30519-e919-4254-ba2a-658e89d3d846",
+          "score": 6,
+          "ai_score": 7,
+          "ai_summary": "AI research internship",
+          "action_plan": [
+            "Update resume",
+            "Apply for internship",
+            "Prepare for interviews"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "7d952e78b493"
+        },
+        {
+          "title": "JP Morgan Chase — Machine Learning Center of Excellence Summer Associate Time Series & Reinforcement Learning Interns…",
+          "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210770593",
+          "source": "internships",
+          "description": "internship | JP Morgan Chase | London, UK | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "eb1d24c5-f96d-49eb-88c4-9c78d81659f8",
+          "score": 6,
+          "ai_score": 7,
+          "ai_summary": "Machine learning internship",
+          "action_plan": [
+            "Research JP Morgan Chase",
+            "Apply for internship",
+            "Network with professionals"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 7,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "9a8e1e592287"
+        },
+        {
+          "title": "Cybernetic Labs — Software Engineer Intern - Agent Platform",
+          "url": "https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7/application?embed=true",
+          "source": "internships",
+          "description": "internship | Cybernetic Labs | SF | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a6f02442-de0a-454f-a56f-8462c72d7c74",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Agent platform aligns with AI agents interest and builds portfolio · ⚠ verify eligibility: US work authorization not specified",
+          "action_plan": [
+            "Visit Cybernetic Labs careers (30m)",
+            "Confirm visa sponsorship (1h)",
+            "Create a mini agent demo for application (3h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 1,
+            "skill": 7,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization not specified"
+          },
+          "key": "da0e101aed97"
+        },
+        {
+          "title": "CAE — AI Intern",
+          "url": "https://cae.wd3.myworkdayjobs.com/career/job/Montreal-St-Laurent/C-IT-106---AI-Intern_122744",
+          "source": "internships",
+          "description": "internship | CAE | Montreal, QC, Canada | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5896e523-7da8-4367-a4fd-6569940ba09a",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "AI intern role fits ML focus, modest prestige · ⚠ verify eligibility: Canada work eligibility unclear",
+          "action_plan": [
+            "Read CAE AI intern posting (30m)",
+            "Check eligibility for Indian students (1h)",
+            "Prepare ML project summary for resume (2h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 1,
+            "skill": 6,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "Canada work eligibility unclear"
+          },
+          "key": "77988bcbbc9f"
+        },
+        {
+          "title": "Torch Technologies — Software Engineer Intern",
+          "url": "https://starfish.wd501.myworkdayjobs.com/Careers/job/Huntsville-AL/Software-Engineer-Intern_R1381",
+          "source": "internships",
+          "description": "internship | Torch Technologies | Huntsville, AL | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8c876217-e8c7-4d37-9703-ecd3485077ae",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Defense contractor, low AI relevance, limited career leverage · ⚠ verify eligibility: US work authorization not specified",
+          "action_plan": [
+            "Open Torch Technologies intern page (30m)",
+            "Verify visa requirements (1h)",
+            "Adapt resume to C++/embedded focus (2h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 1,
+            "skill": 4,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US work authorization not specified"
+          },
+          "key": "a9a413393f86"
+        },
+        {
+          "title": "Chevron Corporation — Software Engineer Intern - Information Technology - Software Engineer",
+          "url": "https://chevron.wd5.myworkdayjobs.com/University/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398-1",
+          "source": "internships",
+          "description": "internship | Chevron Corporation | Houston, TX | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "09855ad6-f11c-4939-b41a-39ff8df98ee6",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Software role in oil sector, modest prestige, low AI alignment · ⚠ verify eligibility: US work authorization not specified",
+          "action_plan": [
+            "Check Chevron intern listing (30m)",
+            "Confirm eligibility for Indian students (1h)",
+            "Highlight Python skills in resume (2h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 5,
+            "deadline": 1,
+            "skill": 4,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US work authorization not specified"
+          },
+          "key": "7978d1920154"
+        }
+      ]
     }
   ]
 }

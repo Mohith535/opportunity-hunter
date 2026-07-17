@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-16",
+  "updated_at": "2026-07-17",
   "items": [
     {
       "key": "063502eecdda",
@@ -19,88 +19,20 @@
       ]
     },
     {
-      "key": "850c9ec89c93",
-      "title": "Google Books (or similar) all book scans – $200k bounty (2025)",
-      "url": "https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234",
-      "source": "hackernews",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "news"
-      ],
-      "ai_summary": "High-profile bounty, relevant to AI and machine learning",
-      "action_plan": [
-        "Research bounty details (2 hours)",
-        "Develop a plan to tackle the bounty (5 hours)",
-        "Work on the bounty (20 hours)"
-      ]
-    },
-    {
-      "key": "bd5c9c376843",
-      "title": "CockroachDB × AWS Hackathon - Build with Agentic Memory",
-      "url": "https://cockroachdb-ai.devpost.com/",
-      "source": "devpost",
-      "score": 8,
-      "deadline": "2026-08-18",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "ML/AI hackathon",
-      "action_plan": [
-        "Research Agentic Memory (2 hours)",
-        "Form a team (1 week)",
-        "Build a project (4 weeks)"
-      ]
-    },
-    {
-      "key": "7a576e36bc4a",
-      "title": "Meta Ads Performance Marketing and Content Internship",
-      "url": "https://unstop.com/internships/meta-ads-performance-marketing-and-content-internship-saush-innovations-private-limited-1711269",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Meta AI internship",
-      "action_plan": [
-        "Update resume (1 day)",
-        "Apply for internship (1 day)",
-        "Prepare for interview (2 weeks)"
-      ]
-    },
-    {
-      "key": "891327272b7d",
-      "title": "Droyd Robotics — Machine Learning Intern",
-      "url": "https://jobs.ashbyhq.com/droyd/fd533fd8-65a7-41eb-bdf0-e75f02e739e9/application",
+      "key": "e38a0c78f2e8",
+      "title": "Formlabs — AI Software Intern",
+      "url": "https://careers.formlabs.com/job/8067641/apply/?gh_jid=8067641",
       "source": "internships",
-      "score": 8,
+      "score": 9,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "Machine learning internship, relevant to AI engineering",
+      "ai_summary": "AI‑focused role directly matches his AI agent and LLM interests.",
       "action_plan": [
-        "Research internship details (2 hours)",
-        "Update resume and apply (5 hours)",
-        "Prepare for interviews (10 hours)"
-      ]
-    },
-    {
-      "key": "d0e251591293",
-      "title": "Output Biosciences — Research Intern - Machine Learning",
-      "url": "https://jobs.ashbyhq.com/output/da2723ca-a418-49f1-b7da-a4f383dd8239/application",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Research internship in machine learning, relevant to AI engineering",
-      "action_plan": [
-        "Research internship details (2 hours)",
-        "Update resume and apply (5 hours)",
-        "Prepare for interviews (10 hours)"
+        "Identify AI intern requirements (30m)",
+        "Showcase AI projects (2h)",
+        "Apply (1h)"
       ]
     },
     {
@@ -109,15 +41,15 @@
       "url": "https://qwencloud-hackathon.devpost.com/",
       "source": "devpost",
       "score": 8,
-      "deadline": "2026-07-09",
+      "deadline": "2026-07-20",
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "Global AI Hackathon",
+      "ai_summary": "AI hackathon with Qwen Cloud",
       "action_plan": [
-        "Research Qwen Cloud (1 hour)",
-        "Form a team (2 hours)",
-        "Brainstorm project ideas (4 hours)"
+        "Research Qwen Cloud AI (2 hours)",
+        "Form a team (1 week)",
+        "Submit project (2 weeks)"
       ]
     },
     {
@@ -432,37 +364,37 @@
       ]
     },
     {
-      "key": "e0f9903a9ac2",
-      "title": "CTGT — Software Engineer Intern",
-      "url": "https://jobs.ashbyhq.com/ctgt/f657c2f5-125e-42b6-a68a-646bbea3d155/application",
-      "source": "internships",
-      "score": 7,
+      "key": "18d24a2a7af3",
+      "title": "Google Gemini AI Product Trial – Freshers Party Planning Challenge",
+      "url": "https://unstop.com/hackathons/google-gemini-ai-product-trial-freshers-party-planning-challenge-keshav-memorial-institute-of-technology-1719562",
+      "source": "unstop",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "internship"
+        "hackathon"
       ],
-      "ai_summary": "SF intern at CTGT offers high‑impact engineering experience. · ⚠ verify eligibility: May need senior status / work visa for US internship",
+      "ai_summary": "Google AI product trial",
       "action_plan": [
-        "1d: Verify eligibility (visa, year).",
-        "2d: Tailor resume to highlight AI projects.",
-        "3d: Apply via company portal."
+        "Explore Google Gemini AI (1 hour)",
+        "Plan project (1 week)",
+        "Develop project (2 weeks)"
       ]
     },
     {
-      "key": "c0407eb44404",
-      "title": "Droyd Robotics — Software Engineer Intern",
-      "url": "https://jobs.ashbyhq.com/droyd/8d46ed05-1b38-4c68-938e-f10b4c7d4694/application",
+      "key": "3ee21da52869",
+      "title": "Formlabs — Algorithms Software Intern",
+      "url": "https://careers.formlabs.com/job/8060759/apply/?gh_jid=8060759",
       "source": "internships",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "Robotics intern in SF aligns with building focus and AI. · ⚠ verify eligibility: May need senior status / work visa for US internship",
+      "ai_summary": "Algorithms internship at Formlabs aligns with AI engineering goals.",
       "action_plan": [
-        "1d: Check visa & year‑in‑program requirements.",
-        "2d: Update CV with robotics/AI work.",
-        "3d: Submit application before Fall 2026 deadline."
+        "Read Formlabs posting (30m)",
+        "Update CV with relevant projects (2h)",
+        "Apply (1h)"
       ]
     },
     {
@@ -1081,20 +1013,37 @@
       ]
     },
     {
-      "key": "a40f68a795e7",
-      "title": "If DeepMind or Anthropic is doing your exact research topic, do you still continue? [D]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1unt64q/if_deepmind_or_anthropic_is_doing_your_exact/",
-      "source": "reddit",
-      "score": 6,
+      "key": "7d952e78b493",
+      "title": "DNV — AI Research Intern",
+      "url": "https://ecyq.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/7094",
+      "source": "internships",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "news",
-        "r/MachineLearning"
+        "internship"
       ],
-      "ai_summary": "ML research discussion",
+      "ai_summary": "AI research internship",
       "action_plan": [
-        "Read the discussion (1 hour)",
-        "Participate in the discussion (1 hour)"
+        "Update resume",
+        "Apply for internship",
+        "Prepare for interviews"
+      ]
+    },
+    {
+      "key": "9a8e1e592287",
+      "title": "JP Morgan Chase — Machine Learning Center of Excellence Summer Associate Time Series & Reinforcement Learning Interns…",
+      "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210770593",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Machine learning internship",
+      "action_plan": [
+        "Research JP Morgan Chase",
+        "Apply for internship",
+        "Network with professionals"
       ]
     },
     {
@@ -1718,6 +1667,56 @@
         "Form a team",
         "Choose a project",
         "Start building"
+      ]
+    },
+    {
+      "key": "162be958405f",
+      "title": "Founder's Office Internship",
+      "url": "https://unstop.com/internships/founders-office-internship-interactup-1717830",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Founder's office experience",
+      "action_plan": [
+        "Apply online (1h)",
+        "Prepare for interview (10h)"
+      ]
+    },
+    {
+      "key": "6cb618953de6",
+      "title": "Hudson River Trading — Software Engineer Intern - C++ or Python",
+      "url": "https://www.hudsonrivertrading.com/careers/job/?gh_jid=8052083",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "software engineer intern",
+      "action_plan": [
+        "Research Hudson River Trading",
+        "Update resume and apply",
+        "Prepare for interviews"
+      ]
+    },
+    {
+      "key": "7dcbca1b69a2",
+      "title": "Jump Trading — Campus ML Research Engineer Intern",
+      "url": "https://boards.greenhouse.io/embed/job_app?token=7977145",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "ML research intern aligns with AI goals, moderate prestige · ⚠ verify eligibility: London location may require UK work visa",
+      "action_plan": [
+        "1. Verify visa eligibility (1 day)",
+        "2. Tailor CV to highlight ML projects (2 hrs)",
+        "3. Apply via company portal (1 day)"
       ]
     }
   ]

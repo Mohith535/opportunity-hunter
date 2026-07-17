@@ -135,8 +135,8 @@
     "9f13fb5f6774": {
       "title": "Global AI Hackathon Series with Qwen Cloud",
       "first_seen": "2026-06-13",
-      "last_seen": "2026-07-07",
-      "times_seen": 3
+      "last_seen": "2026-07-17",
+      "times_seen": 4
     },
     "a27f7f1206ca": {
       "title": "Splunk Agentic Ops Hackathon",
@@ -6784,6 +6784,282 @@
       "title": "Revvity — Full-Stack AI Developer Intern",
       "first_seen": "2026-07-16",
       "last_seen": "2026-07-16",
+      "times_seen": 1
+    },
+    "e1e922978abc": {
+      "title": "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "f9066ef15314": {
+      "title": "RoboTTT: Context Scaling for Robot Policies",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "5617c8006eee": {
+      "title": "SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "e4ea6319ca91": {
+      "title": "Decoding Market Emotion from Blockchain Activity: A Data-Driven Sentiment Classifier",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "57854c7f42da": {
+      "title": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "6d7a4864c5f1": {
+      "title": "Microsoft Comic Chat is now open source",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "f6a4b4dfbff6": {
+      "title": "Detecting LLM-Generated Texts with “Classical” Machine Learning",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "72081076d0ce": {
+      "title": "Why is ECCV so insanely expensive for students presenting papers? [D]",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "22931fab72de": {
+      "title": "The qlora 2e-4 default is wrong under 10k samples and nobody talks about it [D]",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "3bd2e0a075e2": {
+      "title": "whats the best and complete way to keep up with ai/ml news? [D]",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "83d6fc22d688": {
+      "title": "Seeking collaborators for scaling and independent evaluation of a new recurrent language model architecture (preprint + code) [R]",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "3a1dd7211a78": {
+      "title": "ExTernD: Expanded-Rank Ternary Decomposition Ternary LLM PTQ with Accuracy Approaching Any Quantization Level [P]",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "1f98a4fafe63": {
+      "title": "Are Current AI Memory Architectures Optimizing for the Wrong Abstraction? [D]",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "d03d36bce252": {
+      "title": "Best current tools for Multi-Objective Surrogate-Based Optimization (MOSBO) on heterogeneous study data meta-analysis?[P]",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "28a64b14aa9f": {
+      "title": "CfP | RTCA @ NeurIPS 2026 [R]",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "ae0c5be82316": {
+      "title": "PnP-CoSMo: A Multi-Contrast MRI Reconstruction Framework based on Content/Style Modeling [R]",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "45c65889fc48": {
+      "title": "New Fable5/Opus4.8 harness called \"Schema\" claims 99% on ARC-3 [R]",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "18d24a2a7af3": {
+      "title": "Google Gemini AI Product Trial – Freshers Party Planning Challenge",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "9ae5a1efc470": {
+      "title": "Smackathon 2k26",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "da2e29d1b3e0": {
+      "title": "GBT BuildStorm 2026",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "86ad4105672d": {
+      "title": "BLACKBOX",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "215639175b91": {
+      "title": "H & P PROJECTS Hackathon Global Challenges 2026",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "4256fddc1133": {
+      "title": "Code O'Clock 2K26",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "7d419ff0ccb1": {
+      "title": "Build With Bharat 2.0",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "4a4217c6f36f": {
+      "title": "Digital Marketing Internship",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "8aed1a05a2a4": {
+      "title": "Campus Ambassador Internship",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "b44527cb9d1d": {
+      "title": "Digital Marketing Internship",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "c76facf8c530": {
+      "title": "Operations Management Internship",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "67cf1db1b2af": {
+      "title": "Community Growth Internship",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "b67c7bb689f0": {
+      "title": "Human Resource Internship",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "15e30dd34cc7": {
+      "title": "AI Assisted Educational Content Creator Internship",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "2161bc218050": {
+      "title": "Business Development & Sales Internship",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "0daae7b92c6c": {
+      "title": "Free Scholarship Test on Digital Marketing",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "0a4843ed84ae": {
+      "title": "Composio — Full-stack Intern",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "3ee21da52869": {
+      "title": "Formlabs — Algorithms Software Intern",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "e38a0c78f2e8": {
+      "title": "Formlabs — AI Software Intern",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "dd9ef384e766": {
+      "title": "Tesla — Energy Battery Firmware Intern - Software Engineer - Energy Engineering",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "ec7a38d895bc": {
+      "title": "Mackenzie Investments — Data Science and AI Specialist Intern - Investment Management - Fundamental Equity",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "d91630cd91ae": {
+      "title": "GeoComply — Full Stack Developer Intern",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "9d88819031b5": {
+      "title": "Western Digital — Software Engineering Co-op",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "7d952e78b493": {
+      "title": "DNV — AI Research Intern",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "9a8e1e592287": {
+      "title": "JP Morgan Chase — Machine Learning Center of Excellence Summer Associate Time Series & Reinforcement Learning Interns…",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "da0e101aed97": {
+      "title": "Cybernetic Labs — Software Engineer Intern - Agent Platform",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "77988bcbbc9f": {
+      "title": "CAE — AI Intern",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "a9a413393f86": {
+      "title": "Torch Technologies — Software Engineer Intern",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "times_seen": 1
+    },
+    "7978d1920154": {
+      "title": "Chevron Corporation — Software Engineer Intern - Information Technology - Software Engineer",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
       "times_seen": 1
     }
   }
