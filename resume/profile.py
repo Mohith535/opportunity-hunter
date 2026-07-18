@@ -165,6 +165,51 @@ def to_harvest_shape(profile: dict) -> dict:
     }
 
 
+def relevant_projects(profile: dict, keywords: list[str], limit: int = 6) -> list[dict]:
+    """The candidate's REAL projects most relevant to this job — ranked by keyword overlap.
+
+    Only projects that carry real info (a description or tech keywords) are eligible, so the tailorer
+    never has to guess what an untitled repo does.
+    """
+    kws = {k.lower().strip() for k in keywords if k.strip()}
+    scored = []
+    for p in profile.get("projects", []):
+        if not (p.get("description") or p.get("keywords")):
+            continue  # nothing real to say about it — skip rather than invent
+        hay = (f"{p.get('name','')} {p.get('description','')} "
+               f"{' '.join(p.get('keywords') or [])}").lower()
+        overlap = sum(1 for k in kws if k and k in hay)
+        if overlap:
+            scored.append((overlap, p))
+    scored.sort(key=lambda s: -s[0])
+    return [p for _, p in scored[:limit]]
+
+
+def evidence_context(profile: dict, keywords: list[str], project_limit: int = 6) -> str:
+    """A prompt-ready block of the candidate's REAL projects + work history, for honest tailoring.
+
+    Everything here is sourced (real GitHub repos, real LinkedIn roles), so the tailorer can strengthen
+    the resume with genuine experience it might be omitting — without ever inventing.
+    """
+    lines: list[str] = []
+    projects = relevant_projects(profile, keywords, project_limit)
+    if projects:
+        lines.append("REAL PROJECTS you've actually built (from your verified GitHub):")
+        for p in projects:
+            priv = " [private]" if p.get("private") else ""
+            tech = ", ".join(p.get("keywords") or [])
+            desc = p.get("description") or "(no description on GitHub)"
+            lines.append(f"- {p.get('name')}{priv}: {desc}" + (f"  (tech: {tech})" if tech else ""))
+    work = profile.get("work", [])
+    if work:
+        lines.append("REAL WORK history (from your LinkedIn export):")
+        for w in work:
+            when = " – ".join(x for x in [w.get("start"), w.get("end")] if x)
+            lines.append(f"- {w.get('title')} at {w.get('company')}"
+                         + (f" ({when})" if when else "") + f": {w.get('description', '')}")
+    return "\n".join(lines)
+
+
 # ─── present ─────────────────────────────────────────────────────────
 def format_summary(profile: dict) -> str:
     m = profile.get("meta", {})

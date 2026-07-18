@@ -21,13 +21,16 @@ _TAILOR_PROMPT = """You are an expert technical resume writer. Tailor the candid
 the job below — honestly, without inventing anything.
 
 INVIOLABLE HONESTY RULES:
-- Use ONLY experience, projects, and skills that appear in the RESUME below, OR in this list of
-  skills the candidate has CONFIRMED they genuinely have: {confirmed}
+- Use ONLY experience, projects, and skills that appear in the RESUME below, in the REAL PROJECTS &
+  WORK section, OR in this list of skills the candidate has CONFIRMED they genuinely have: {confirmed}
 - NEVER invent metrics, tools, employers, dates, or achievements. If a bullet would be stronger with
   a number the resume doesn't give, insert a placeholder exactly like "[add metric: %, count, or
   time]" for the candidate to fill. Do NOT make up a number.
 - Only weave in a keyword if it is truly theirs (in the resume or the confirmed list). If it is not,
   leave it out — do not imply experience they don't have.
+- You MAY add a bullet for a real project or role listed under REAL PROJECTS & WORK when it strengthens
+  the fit — but using ONLY the facts stated there. Never invent a project, a description, or a detail
+  beyond what is listed.
 
 STYLE (how strong technical resumes read):
 - Mirror the JOB's exact keywords and phrasing wherever it is truthful (exact matches rank highest
@@ -47,7 +50,11 @@ SKILLS:
 
 EXPERIENCE:
 <the candidate's real bullets, rewritten per the rules; keep [add metric] placeholders where a
-number is genuinely missing>
+number is genuinely missing. You may add a bullet drawn from REAL PROJECTS & WORK when it strengthens
+the fit for this job.>
+
+--- REAL PROJECTS & WORK (from the candidate's verified profile — reference truthfully, never invent beyond this) ---
+{context}
 
 --- RESUME ---
 {resume}
@@ -57,16 +64,20 @@ number is genuinely missing>
 """
 
 
-def tailor(resume_text: str, jd_text: str, confirmed_skills: list[str]) -> str:
+def tailor(resume_text: str, jd_text: str, confirmed_skills: list[str],
+           evidence_context: str = "") -> str:
     """A tailored resume DRAFT (Summary + Skills + rewritten Experience), honest and JD-aligned.
 
     `confirmed_skills` = the JD keywords already in the resume PLUS any the candidate has verified
-    they genuinely have. Skills outside this set are never woven in. Returns '' if the LLM chain is
+    they genuinely have. Skills outside this set are never woven in. `evidence_context` (optional) is a
+    block of the candidate's REAL projects + work history from their verified profile, so the draft can
+    surface genuine experience the resume omits — never invented. Returns '' if the LLM chain is
     unavailable. The candidate reviews and edits — nothing here is applied or submitted automatically.
     """
     confirmed = ", ".join(sorted({s.strip() for s in confirmed_skills if s.strip()})) or "(none)"
     prompt = _TAILOR_PROMPT.format(
-        confirmed=confirmed, resume=resume_text[:6000], jd=jd_text[:4000])
+        confirmed=confirmed, context=evidence_context or "(none provided)",
+        resume=resume_text[:6000], jd=jd_text[:4000])
     return complete(prompt, max_tokens=900, temperature=0.4)
 
 

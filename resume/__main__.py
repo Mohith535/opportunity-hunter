@@ -33,6 +33,9 @@ def main() -> int:
     ap.add_argument("--linkedin", default="",
                     help="path to your LinkedIn data-export folder or .zip (Settings > Get a copy of "
                          "your data) — verifies skills + work history, no scraping")
+    ap.add_argument("--profile", action="store_true",
+                    help="read your cached career_profile.json (build via `python -m resume.profile`) "
+                         "as the single source of truth — includes your real projects for tailoring")
     ap.add_argument("--tailor", action="store_true",
                     help="also produce a tailored DRAFT (Summary / Skills / rewritten Experience)")
     args = ap.parse_args()
@@ -49,10 +52,24 @@ def main() -> int:
 
     print(format_report(result))
 
-    # Slice 3: auto-build a VERIFIED skill set from real evidence, and auto-check the gap list.
+    # Verified skill set — from the cached SSOT (--profile) or a live harvest (--github/--certs/--linkedin).
     verified_missing: list[str] = []
-    if args.github or args.certs or args.linkedin:
-        from .harvest import format_profile, harvest, verify_against
+    evidence_ctx = ""
+    harvested = None
+    profile_obj = None
+
+    if args.profile:
+        from .profile import load_profile_json, to_harvest_shape
+        profile_obj = load_profile_json()
+        if profile_obj:
+            harvested = to_harvest_shape(profile_obj)
+            print("\n[reading your cached career_profile.json — single source of truth]")
+        else:
+            print("\n[--profile given but no cached profile found — build it first:\n"
+                  "   python -m resume.profile --github <you> --include-private --certs <folder>]")
+
+    if harvested is None and (args.github or args.certs or args.linkedin):
+        from .harvest import harvest
         token = os.environ.get("GITHUB_TOKEN")
         try:
             import config  # project root; optional (raises the unauthenticated rate limit if present)
@@ -61,8 +78,10 @@ def main() -> int:
             pass
         harvested = harvest(args.github or None, args.certs or None, token=token,
                             include_private=args.include_private, linkedin=args.linkedin or None)
-        print("\n" + format_profile(harvested))
 
+    if harvested is not None:
+        from .harvest import format_profile, verify_against
+        print("\n" + format_profile(harvested))
         checked = verify_against(harvested, result["missing"])
         verified_missing = [kw for kw, ev in checked.items() if ev]
         if result["missing"]:
@@ -73,6 +92,10 @@ def main() -> int:
                     print(f"  ✅ {kw} — evidence found ({', '.join(ev[:2])}) → safe to add, in your own words")
                 else:
                     print(f"  ⚠️ {kw} — no evidence found → only add if it's genuinely true")
+        # Real projects + work history for honest tailoring grounding — only from the full profile.
+        if profile_obj:
+            from .profile import evidence_context
+            evidence_ctx = evidence_context(profile_obj, result["keywords"])
 
     if args.tailor:
         from .tailor import tailor
@@ -80,7 +103,7 @@ def main() -> int:
         confirmed = (list(result["present"])
                      + verified_missing
                      + [s.strip() for s in args.have.split(",") if s.strip()])
-        draft = tailor(result["text"], jd_text, confirmed)
+        draft = tailor(result["text"], jd_text, confirmed, evidence_context=evidence_ctx)
         print("\n" + "=" * 60)
         print("TAILORED DRAFT — review + edit; nothing here is applied or submitted")
         print("=" * 60)
