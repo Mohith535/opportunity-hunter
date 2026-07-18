@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-18",
   "items": [
     {
       "key": "063502eecdda",
@@ -36,23 +36,6 @@
       ]
     },
     {
-      "key": "9f13fb5f6774",
-      "title": "Global AI Hackathon Series with Qwen Cloud",
-      "url": "https://qwencloud-hackathon.devpost.com/",
-      "source": "devpost",
-      "score": 8,
-      "deadline": "2026-07-20",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AI hackathon with Qwen Cloud",
-      "action_plan": [
-        "Research Qwen Cloud AI (2 hours)",
-        "Form a team (1 week)",
-        "Submit project (2 weeks)"
-      ]
-    },
-    {
       "key": "55f3a5af046e",
       "title": "LLM-as-a-Verifier: A General-Purpose Verification Framework",
       "url": "https://arxiv.org/abs/2607.05391v1",
@@ -67,6 +50,23 @@
         "Read and understand the paper (2 weeks)",
         "Implement and experiment with the framework (4 weeks)",
         "Write a blog post or create a project based on the research (2 weeks)"
+      ]
+    },
+    {
+      "key": "9f13fb5f6774",
+      "title": "Global AI Hackathon Series with Qwen Cloud",
+      "url": "https://qwencloud-hackathon.devpost.com/",
+      "source": "devpost",
+      "score": 8,
+      "deadline": "2026-07-20",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "AI hackathon with Qwen Cloud",
+      "action_plan": [
+        "Research Qwen Cloud (1 hour)",
+        "Form a team (2 hours)",
+        "Brainstorm project ideas (4 hours)"
       ]
     },
     {
@@ -398,37 +398,37 @@
       ]
     },
     {
-      "key": "96769d593ab7",
-      "title": "AtCoder Beginner Contest 468 (atcoder.jp)",
-      "url": "https://atcoder.jp/contests/abc468",
-      "source": "clist",
-      "score": 7,
-      "deadline": "2026-07-25",
+      "key": "1d194c630781",
+      "title": "Odyssey — AI Resident",
+      "url": "https://jobs.ashbyhq.com/odysseyml/1af903b4-3cab-4d3b-8d8b-ce918fdf6a3d/application?embed=true",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
       "tags": [
-        "contest",
-        "competitive programming"
+        "internship"
       ],
-      "ai_summary": "competitive programming",
+      "ai_summary": "AI Resident program offers elite credential and deep AI exposure. · ⚠ verify eligibility: Eligibility unclear (likely requires senior/gradua",
       "action_plan": [
-        "practice problems (2 weeks)",
-        "participate in contest (1 day)"
+        "Verify eligibility on program site (30m)",
+        "Gather CV, research papers, and project portfolio (3h)",
+        "Draft application essay (2h)"
       ]
     },
     {
-      "key": "64d91dd64f1a",
-      "title": "Starters 249 (codechef.com)",
-      "url": "https://www.codechef.com/START249",
-      "source": "clist",
-      "score": 7,
-      "deadline": "2026-07-29",
+      "key": "be0fac722e79",
+      "title": "Deepgram — Software Engineer Intern",
+      "url": "https://jobs.ashbyhq.com/deepgram/dc8693b5-72ce-4ca3-ab15-9c8434d35da1/application?embed=true",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
       "tags": [
-        "contest",
-        "competitive programming"
+        "internship"
       ],
-      "ai_summary": "competitive programming",
+      "ai_summary": "Relevant internship",
       "action_plan": [
-        "practice problems (2 weeks)",
-        "participate in contest (1 day)"
+        "Update resume (2 hours)",
+        "Apply for the internship (2 hours)",
+        "Prepare for interviews (10 hours)"
       ]
     },
     {
@@ -1047,89 +1047,20 @@
       ]
     },
     {
-      "key": "56d70833e420",
-      "title": "Varithon 2026",
-      "url": "https://unstop.com/hackathons/varithon-2026-marathwada-mitra-mandals-college-of-engineering-mmcoe-pune-1711499",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Hackathon adds portfolio, builds AI tools, good resume signal",
-      "action_plan": [
-        "Check registration deadline (1‑day)",
-        "Form a team with complementary skills (2‑days)",
-        "Design a prototype aligned with AI agents (1‑week)",
-        "Iterate and prepare demo for event (1‑week)"
-      ]
-    },
-    {
-      "key": "ff7d91ef2d87",
-      "title": "Citadel Securities — Software Engineer Intern",
-      "url": "https://www.citadelsecurities.com/careers/details/software-engineer-intern-us/",
+      "key": "cbe985435101",
+      "title": "Amazon — Software Development Engineer - Temp",
+      "url": "https://amazon.jobs/en/jobs/10477224/software-dev-engineer-temp",
       "source": "internships",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "software engineer intern",
+      "ai_summary": "Relevant internship",
       "action_plan": [
-        "research Citadel Securities (1 week)",
-        "update resume (2 weeks)",
-        "apply for internship (1 week)"
-      ]
-    },
-    {
-      "key": "3b999b6b9a90",
-      "title": "Citadel — Software Engineer Intern",
-      "url": "https://www.citadel.com/careers/details/software-engineer-intern-us/",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "software engineer intern",
-      "action_plan": [
-        "research Citadel (1 week)",
-        "update resume (2 weeks)",
-        "apply for internship (1 week)"
-      ]
-    },
-    {
-      "key": "53e1c2e25b6c",
-      "title": "Susquehanna International Group (SIG) — Quantitative Strategy Developer Intern",
-      "url": "https://careers-sig.icims.com/jobs/11170/job?mobile=true&needsRedirect=false",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "quant strategy dev intern",
-      "action_plan": [
-        "research SIG (1 week)",
-        "update resume (2 weeks)",
-        "apply for internship (1 week)"
-      ]
-    },
-    {
-      "key": "84e6ca7a6ad2",
-      "title": "Tower Research Capital — Quantitative Developer Intern",
-      "url": "https://www.tower-research.com/open-positions/?gh_jid=8044334",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "quant dev intern",
-      "action_plan": [
-        "research Tower Research Capital (1 week)",
-        "update resume (2 weeks)",
-        "apply for internship (1 week)"
+        "Update resume (2 hours)",
+        "Apply for the internship (2 hours)",
+        "Prepare for interviews (10 hours)"
       ]
     },
     {
@@ -1717,6 +1648,74 @@
         "1. Verify visa eligibility (1 day)",
         "2. Tailor CV to highlight ML projects (2 hrs)",
         "3. Apply via company portal (1 day)"
+      ]
+    },
+    {
+      "key": "25f3a71ba5b5",
+      "title": "Full Stack Developer Internship",
+      "url": "https://unstop.com/internships/full-stack-developer-nextadhikari-1718335",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Full stack dev internship",
+      "action_plan": [
+        "Update resume (2 hours)",
+        "Apply for internship (1 hour)",
+        "Prepare for interview (10 hours)"
+      ]
+    },
+    {
+      "key": "228d97b01c9b",
+      "title": "Bank of Montreal — AI Engineer Co-op/Intern - 4 months",
+      "url": "https://bmo.wd3.myworkdayjobs.com/Privileged/job/Toronto-ON-CAN/AI-Engineer--Fall-2026-Co-op-Internship---4-months_R260015224",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Bank AI co‑op adds experience but limited prestige for top AI labs.",
+      "action_plan": [
+        "Update resume with AI projects (1h)",
+        "Submit application via career portal (30m)",
+        "Prepare case‑study questions (2h)"
+      ]
+    },
+    {
+      "key": "f95a7d1bff5a",
+      "title": "McKesson — AI & Strategic Analytics Intern",
+      "url": "https://mckesson.wd3.myworkdayjobs.com/External_Careers/job/CAN-ON-Mississauga/AI---Strategic-Analytics-Intern---Fall-2026_JR0150114",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI & analytics intern offers relevant skill growth and decent signal.",
+      "action_plan": [
+        "Review analytics tools used (30m)",
+        "Tailor resume to highlight AI work (1h)",
+        "Submit application (15m)"
+      ]
+    },
+    {
+      "key": "72619f3793d4",
+      "title": "Hindcast: Replaying Prediction Markets to Evaluate LLM Forecasters",
+      "url": "https://arxiv.org/abs/2607.14051v1",
+      "source": "arxiv",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "Paper on LLM forecasting matches his top interests and research ambition.",
+      "action_plan": [
+        "Skim abstract (10m)",
+        "Read full paper (2h)",
+        "Summarize insights (30m)"
       ]
     }
   ]
