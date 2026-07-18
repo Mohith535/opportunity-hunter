@@ -123,12 +123,24 @@ def linkedin_profile(export_path: str | Path) -> dict:
         for term in _match_tech(f"{_col(row, 'Title')} {_col(row, 'Description')}"):
             add(term, "linkedin:Projects")
 
+    # Education.
+    education: list[dict] = []
+    for row in csvs.get("education", []):
+        school = _col(row, "School Name", "School")
+        degree = _col(row, "Degree Name", "Degree")
+        if school or degree:
+            education.append({
+                "institution": school, "studyType": degree,
+                "startDate": _col(row, "Start Date"), "endDate": _col(row, "End Date"),
+            })
+
     profile_rows = csvs.get("profile", [])
     head = profile_rows[0] if profile_rows else {}
     return {
         "skills": {k: sorted(v) for k, v in skills.items()},
         "positions": positions,
         "certifications": certifications,
+        "education": education,
         "headline": _col(head, "Headline"),
         "summary": _col(head, "Summary"),
     }

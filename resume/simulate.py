@@ -182,10 +182,20 @@ def main() -> int:
     ap.add_argument("--certs", default="", help="path to your certificates folder (verifies skills)")
     ap.add_argument("--linkedin", default="",
                     help="path to your LinkedIn data-export folder or .zip (no scraping)")
+    ap.add_argument("--profile", action="store_true",
+                    help="read your cached career_profile.json (build via `python -m resume.profile`) "
+                         "instead of re-harvesting live — the single-source-of-truth path")
     args = ap.parse_args()
 
-    harvested = harvest(args.github or None, args.certs or None, token=_token(),
-                        include_private=args.include_private, linkedin=args.linkedin or None)
+    if args.profile:
+        from .profile import load_profile_json, to_harvest_shape
+        cached = load_profile_json()
+        harvested = to_harvest_shape(cached) if cached else \
+            harvest(args.github or None, args.certs or None, token=_token(),
+                    include_private=args.include_private, linkedin=args.linkedin or None)
+    else:
+        harvested = harvest(args.github or None, args.certs or None, token=_token(),
+                            include_private=args.include_private, linkedin=args.linkedin or None)
     feed_items = relevant_opportunities(load_feed(), args.target)
 
     out = simulate(args.target, harvested, feed_items, args.months)

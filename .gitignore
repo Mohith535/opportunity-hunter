@@ -24,6 +24,12 @@ logs/*.log
 data/dumped.json
 data/tracker.json
 data/taste.json
+# Career profile — the unified single-source-of-truth; holds personal data (work
+# history, email), derived from your GitHub/certs/LinkedIn. Local-only, never public.
+data/career_profile.json
 
 # Project brain — local-only, never public
 CLAUDE.md
+
+# Personal marketing drafts — never public
+linkedin post/

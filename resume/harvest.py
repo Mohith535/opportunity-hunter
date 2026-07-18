@@ -153,6 +153,26 @@ def github_skills(username: str, token: str | None = None,
     return {k: sorted(v) for k, v in skills.items()}
 
 
+def github_projects(username: str, token: str | None = None,
+                    include_private: bool = False) -> list[dict]:
+    """Repos as normalized project entries (name, description, keywords, url, private).
+
+    Used by the Profile Engine to populate the JSON-Resume `projects` section. Same repos the skill
+    harvester reads — this just keeps the structured project record instead of only the skills.
+    """
+    out = []
+    for r in _github_repos(username, token, include_private):
+        keywords = ([r["language"]] if r.get("language") else []) + list(r.get("topics") or [])
+        out.append({
+            "name": r.get("name"),
+            "description": r.get("description") or "",
+            "keywords": keywords,
+            "url": r.get("html_url") or "",
+            "private": bool(r.get("private")),
+        })
+    return out
+
+
 # ─── certificates ────────────────────────────────────────────────────
 def _clean_cert_name(filename: str) -> str:
     """A readable credential title from a messy filename — dates and capture-artefacts stripped."""
