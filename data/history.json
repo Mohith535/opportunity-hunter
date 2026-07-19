@@ -28601,6 +28601,762 @@
           "key": "12fff476739d"
         }
       ]
+    },
+    {
+      "date": "2026-07-19",
+      "items": [
+        {
+          "title": "AlephAITech/WorkBuddyGuide — ★1,090",
+          "url": "https://github.com/AlephAITech/WorkBuddyGuide",
+          "source": "github",
+          "description": "A practical, open-source guide to mastering WorkBuddy through real-world workflows.开源的 WorkBuddy 实战蓝皮书：教程、真实工作流、Skills、MCP、自动化与多智能体实践。 (topics: codex, guide, llm, workbuddy)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "AlephAITech/WorkBuddyGuide",
+          "score": 2,
+          "ai_score": 7,
+          "ai_summary": "Hands‑on LLM workflow aligns with building AI agents.",
+          "action_plan": [
+            "Clone repo (15m)",
+            "Read intro (30m)",
+            "Implement first tutorial (2h)",
+            "Add results to portfolio (1h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 3,
+            "deadline": 1,
+            "skill": 8,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "a33e05e71351"
+        },
+        {
+          "title": "lucidrains/x-jepa — ★96",
+          "url": "https://github.com/lucidrains/x-jepa",
+          "source": "github",
+          "description": "Explorations into some of the approaches advocated by Yann LeCun, and just a more wholistic architecture (JEPA) in general (topics: artificial intelligence, deep learning, jepa, world models)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "lucidrains/x-jepa",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "Research‑oriented deep‑learning project matches AI engineering goals.",
+          "action_plan": [
+            "Fork repo (10m)",
+            "Read paper summary (1h)",
+            "Run example notebooks (2h)",
+            "Experiment with modifications (3h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 9,
+            "prestige": 3,
+            "deadline": 1,
+            "skill": 7,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "00fc2371f52d"
+        },
+        {
+          "title": "dvbs2000/visible-ai — ★43",
+          "url": "https://github.com/dvbs2000/visible-ai",
+          "source": "github",
+          "description": "看得见的 AI · The Visible AI —— 一本全图解、零基础到亲手构建的 AI 通识书,永久免费。30 章 / 6 阶段,元元×小满带你从一个神经元走到亲手搭 AI 应用。 (topics: ai, ai education, beginners, chinese, deep learning, ebook, free book, llm, llm tutorial, machine learning, transformer, tutorial)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "dvbs2000/visible-ai",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Free AI textbook offers solid basics, but low resume impact.",
+          "action_plan": [
+            "Download book (5m)",
+            "Outline chapters (30m)",
+            "Study first two chapters (3h)",
+            "Implement exercises (2h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "b1c5eec05d25"
+        },
+        {
+          "title": "LLM-Integrated Multivariable Calculus Course",
+          "url": "https://calculus.academa.ai/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48964585",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Math foundation useful but low prestige and no deadline.",
+          "action_plan": [
+            "Review syllabus (1h)",
+            "Allocate weekly 3h study",
+            "Complete assignments"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 3,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "770508bfa1a4"
+        },
+        {
+          "title": "Our Approach to Bioresilience: Isomorphic Labs and Google DeepMind",
+          "url": "https://deepmind.google/blog/our-approach-to-bioresilience/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48959297",
+          "score": 5,
+          "ai_score": 7,
+          "ai_summary": "Google DeepMind",
+          "action_plan": [
+            "read article (1 hour)",
+            "research Isomorphic Labs (2 hours)",
+            "apply to similar programs (4 hours)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 0,
+            "skill": 8,
+            "time": 2,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "0963848a2642"
+        },
+        {
+          "title": "Global AI Hackathon Series with Qwen Cloud",
+          "url": "https://qwencloud-hackathon.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 26 - Jul 20, 2026 | prize $ 45,000 | themes: Machine Learning/AI, Design, Productivity",
+          "deadline": "2026-07-20",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29966",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "Global AI Hackathon",
+          "action_plan": [
+            "Research Qwen Cloud (2h)",
+            "Form a team (1 week)",
+            "Submit project (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 8,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "9f13fb5f6774"
+        },
+        {
+          "title": "Did blatant AI Slop just win a 25K USD Deepmind / Kaggle Grand Prize? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uzyf66/did_blatant_ai_slop_just_win_a_25k_usd_deepmind/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uzyf66",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "News, not an opportunity",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "ecf5e094662f"
+        },
+        {
+          "title": "GPT-2 Small’s embedding geometry around “Trump”: discretized vs. continuous nearest neighbours [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v07xai/gpt2_smalls_embedding_geometry_around_trump/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v07xai",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Embedding analysis deepens LLM knowledge, good for research skill.",
+          "action_plan": [
+            "Locate paper (5m)",
+            "Skim abstract (10m)",
+            "Read methods (1h)",
+            "Replicate experiment (2h)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "71a10c172e2f"
+        },
+        {
+          "title": "Interactive map of GPT-2's token embedding space - tap any token and explore [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v09muj/interactive_map_of_gpt2s_token_embedding_space/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v09muj",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Interactive map aids intuition on token embeddings, low effort.",
+          "action_plan": [
+            "Open map site (5m)",
+            "Explore sample tokens (15m)",
+            "Note observations (30m)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 5,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "2d2ad62bede8"
+        },
+        {
+          "title": "AAAI 27 AI Alignment track [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uzxrn4/aaai_27_ai_alignment_track_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uzxrn4",
+          "score": 2,
+          "ai_score": 8,
+          "ai_summary": "AAAI track offers elite signal; missing is hard‑to‑reverse.",
+          "action_plan": [
+            "Check submission deadline (15m)",
+            "Read call for papers (30m)",
+            "Brainstorm idea (2h)",
+            "Draft outline (3h)",
+            "Write paper (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 7,
+            "prestige": 9,
+            "deadline": 6,
+            "skill": 8,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "664749555fb1"
+        },
+        {
+          "title": "Deep learning tackles single-cell analysis – A survey of deep learning for scRNA-seq analysis [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v06nc1/deep_learning_tackles_singlecell_analysis_a/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v06nc1",
+          "score": 5,
+          "ai_score": 6,
+          "ai_summary": "deep learning research",
+          "action_plan": [
+            "read survey (2 hours)",
+            "research scRNA-seq analysis (4 hours)",
+            "apply to similar research (6 hours)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 0,
+            "skill": 6,
+            "time": 2,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "09bb7cc3789e"
+        },
+        {
+          "title": "TabFM Studio: point-and-click predictions on spreadsheets with tabular foundation models, fully local [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1uzx1el/tabfm_studio_pointandclick_predictions_on/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1uzx1el",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "Local ML research, relevant to AI interests",
+          "action_plan": [
+            "Explore TabFM Studio, 30m",
+            "Assess potential for portfolio project, 1h",
+            "Discuss with peers, 1h"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "561223737609"
+        },
+        {
+          "title": "Codeforces Round (Div. 1) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2249",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-07-26T14:35:00",
+          "deadline": "2026-07-26",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68938374",
+          "score": 5,
+          "ai_score": 7,
+          "ai_summary": "competitive programming",
+          "action_plan": [
+            "practice problems (4 hours)",
+            "register for contest (1 hour)",
+            "participate in contest (4 hours)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 8,
+            "deadline": 8,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "8ed478106ee8"
+        },
+        {
+          "title": "Codeforces Round (Div. 2) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2250",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-07-26T14:35:00",
+          "deadline": "2026-07-26",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68938375",
+          "score": 5,
+          "ai_score": 7,
+          "ai_summary": "competitive programming",
+          "action_plan": [
+            "practice problems (4 hours)",
+            "register for contest (1 hour)",
+            "participate in contest (4 hours)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 8,
+            "deadline": 8,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "a8caa0b3b851"
+        },
+        {
+          "title": "Starters 251 (codechef.com)",
+          "url": "https://www.codechef.com/START251",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-08-12T14:30:00",
+          "deadline": "2026-08-12",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68880967",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Short contest, limited AI relevance, but deadline creates urgency.",
+          "action_plan": [
+            "Register for contest (15m)",
+            "Practice similar problems (5h)",
+            "Participate on 2026-08-12"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 8,
+            "skill": 5,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "37e9227427d6"
+        },
+        {
+          "title": "Project Viksit Bharat 2026 | National-Level Innovation Hackathon",
+          "url": "https://unstop.com/hackathons/project-viksit-bharat-2026-national-level-innovation-hackathon-frontend-arena-1720487",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1720487",
+          "score": 7,
+          "ai_score": 4,
+          "ai_summary": "innovation hackathon",
+          "action_plan": [
+            "research hackathon theme (1 hour)",
+            "form a team (2 hours)",
+            "submit project (4 hours)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 4,
+            "prestige": 6,
+            "deadline": 0,
+            "skill": 6,
+            "time": 4,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "f28ab21b0d5e"
+        },
+        {
+          "title": "Placement Readiness Challenge – Quantitative Aptitude & Logical Reasoning",
+          "url": "https://unstop.com/hackathons/placement-readiness-challenge-quantitative-aptitude-logical-reasoning-unsaidtalks-education-1718550",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1718550",
+          "score": 4,
+          "ai_score": 3,
+          "ai_summary": "placement readiness",
+          "action_plan": [
+            "practice quantitative aptitude (2 hours)",
+            "practice logical reasoning (2 hours)",
+            "participate in challenge (4 hours)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 0,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "992582c0676f"
+        },
+        {
+          "title": "KONE Elevate'26",
+          "url": "https://unstop.com/hackathons/kone-elevate26-srm-easwari-engineering-college-srmeec-ramapuram-1719196",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1719196",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Hackathon experience, potential portfolio addition",
+          "action_plan": [
+            "Research KONE Elevate'26, 1h",
+            "Form team or decide solo participation, 2h",
+            "Prepare for hackathon, 4h"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "00b998b59ee5"
+        },
+        {
+          "title": "Robotics and Stem Engineer Internship",
+          "url": "https://unstop.com/internships/robotics-and-stem-engineer-internship-studentinno-1720601",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1720601",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Robotics internship",
+          "action_plan": [
+            "Update resume (1h)",
+            "Apply to internship (1h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 4,
+            "deadline": 1,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "fbcd19aaa8ab"
+        },
+        {
+          "title": "Full Stack Engineer Internship",
+          "url": "https://unstop.com/internships/full-stack-engineer-internship-qurovo-1720577",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1720577",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Not AI-focused",
+          "action_plan": [],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 1,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "f614eb20c0fb"
+        },
+        {
+          "title": "Business Development & Growth Internship",
+          "url": "https://unstop.com/internships/business-development-growth-internship-qurovo-1720573",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1720573",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "Not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "0266ab99c23a"
+        },
+        {
+          "title": "Growth Outreach Internship",
+          "url": "https://unstop.com/internships/growth-outreach-internship-vivid-nexus-1720583",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1720583",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "Not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "b964f0257349"
+        },
+        {
+          "title": "AI Solution Developer Internship",
+          "url": "https://unstop.com/internships/ai-solution-developer-internship-ventu-renewable-private-limited-1720588",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1720588",
+          "score": 8,
+          "ai_score": 6,
+          "ai_summary": "AI Solution Developer",
+          "action_plan": [
+            "Update resume (1h)",
+            "Apply to internship (1h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 1,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "401d10e22e05"
+        },
+        {
+          "title": "Marketing & Social Media Internship",
+          "url": "https://unstop.com/internships/marketing-social-media-internship-hulstiai-1720559",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1720559",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "Not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "33ddc6392fc4"
+        },
+        {
+          "title": "Video Editor Internship",
+          "url": "https://unstop.com/internships/video-editor-intern-plantenium-1720531",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1720531",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "75354041fbad"
+        },
+        {
+          "title": "Biomedical Internship",
+          "url": "https://unstop.com/internships/biomedical-intern-swethareddy-innovations-pvt-ltd-1720538",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1720538",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "4486cef28bf3"
+        }
+      ]
     }
   ]
 }
