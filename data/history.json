@@ -29357,6 +29357,631 @@
           "key": "4486cef28bf3"
         }
       ]
+    },
+    {
+      "date": "2026-07-20",
+      "items": [
+        {
+          "title": "PagedWeight: Efficient MoE LLM Serving with Dynamic Quality-Aware Weight Quantization",
+          "url": "https://arxiv.org/abs/2607.16184v1",
+          "source": "arxiv",
+          "description": "Mixture-of-Experts (MoE) is a popular class of large language models (LLMs), offering high efficiency and accuracy. However, in KV-cache-intensive serving scenarios, MoEs often exhibit a tension between the GPU memory requirements of the model weights and the growing KV cache. We propose PagedWeight, a novel management method for MoE LLM serving that dynamically quantizes MoE model's weights at runtime and balances expert-weight precision with the KV cache sizes. PagedWeight exposes and effectively navigates the complex tradeoff between the model's task accuracy, memory consumption, and throughput/latency. Across several memory-sensitive MoE serving scenarios, PagedWeight improves the quality-memory tradeoff over several existing quantization baselines. PagedWeight achieves FP16-equivalent accuracy with up to 72.0% GPU memory savings and 1.94$\\times$ throughput improvement, and improves quality over quantization methods by up to 39.3% at a similar memory budget with at most 4.1% throughput loss.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.16184",
+          "score": 6,
+          "ai_score": 7,
+          "ai_summary": "Relevant LLM research",
+          "action_plan": [
+            "Read the paper (2 hours)",
+            "Implement PagedWeight (1 week)",
+            "Compare with existing quantization methods (1 week)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 7,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "aab3e15d9ff7"
+        },
+        {
+          "title": "A Blueprint for Equilibrium-Based Differentiable Continuous-Variable Thermodynamic Computing",
+          "url": "https://arxiv.org/abs/2607.16183v1",
+          "source": "arxiv",
+          "description": "To address the escalating energy and latency demands of machine-learning workloads, we introduce a blueprint for an energy-efficient and fast thermodynamic computing stack that leverages stochastic analog processes in physical hardware. In this work, we focus on energy-based thermodynamic computing where the stochastic process is well described by Langevin dynamics with tunable energy potentials. The implementation of such potentials in physical hardware enables us to generate and sample from basic parameterized energy-based models. We demonstrate how to construct and train popular classes of machine learning models based on these hardware-native energy-based models, using the framework of probabilistic graphical models. We analyze the runtime and energy consumption of different models in this thermodynamic paradigm based on theoretical considerations and numerical studies. As a preliminary experimental realization of such hardware, we present our stochastic analog superconducting circuits driven by thermal noise. Together, these results outline a path toward energy-efficient thermodynamic hardware for probabilistic machine learning.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.16183",
+          "score": 2,
+          "ai_score": 7,
+          "ai_summary": "Relevant research in thermodynamic computing",
+          "action_plan": [
+            "Read the paper (2 hours)",
+            "Explore applications in AI (1 week)",
+            "Discuss with experts (1 week)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 7,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "6e52777360f0"
+        },
+        {
+          "title": "Evaluating Open-Weight LLMs for Generating Structured Threat Information for Autonomous Vehicle Vulnerabilities",
+          "url": "https://arxiv.org/abs/2607.16175v1",
+          "source": "arxiv",
+          "description": "Connected and Autonomous Vehicles (CAVs) rely on interconnected software and hardware components, including sensors, Electronic Control Units, in-vehicle infotainment systems, and telematics units, where vulnerabilities can compromise assets, users, and vehicle operations. These vulnerabilities are commonly documented as plain text in the Common Vulnerabilities and Exposures (CVE) database; however, security practitioners require structured information about affected assets, types of weaknesses, and attack behaviors to effectively mitigate the risks from these vulnerabilities. To this end, we evaluate open-weight Large Language Models (LLMs) for generating Structured Threat Information Expression (STIX), a well-known structured format for representing threat information, for CAV-related CVEs. We construct a dataset called CAV-STIXGen that maps CAV vulnerability descriptions to STIX domain objects (SDO), STIX relationship objects (SRO), Common Weakness Enumeration (CWE), and MITRE ATT&CK techniques mappings. Using this dataset, we evaluated 11 open-weight LLMs (4B to 120B parameters) across various prompting strategies and temperatures. Single-model configurations achieve F1 scores of 0.94 for SDO, 0.63 for SRO, and 0.99 for CWE mapping, while complete MITRE ATT&CK mapping remains challenging. In a multi-agent setup, Gemma-4-31B and Codestral-22B achieve F1 scores of 0.91 for SDOs and 0.43 for SROs, respectively. Lastly, we analyze CWE and MITRE ATT&CK co-occurrences to identify recurring threat patterns in the CAV domain, demonstrating how AI-assisted vulnerability-to-STIX translation can automate threat intelligence and prioritize defense in transportation security.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.16175",
+          "score": 2,
+          "ai_score": 7,
+          "ai_summary": "Research aligns with LLMs and builds a publishable AI security portfolio.",
+          "action_plan": [
+            "Read the abstract and related work (1 day).",
+            "Set up an open‑weight LLM environment (2 days).",
+            "Implement STIX generation script (3 days).",
+            "Run experiments on CVE data (4 days).",
+            "Write a short report or paper draft (2 days)."
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "48118f422f12"
+        },
+        {
+          "title": "An Exam for Active Observers",
+          "url": "https://arxiv.org/abs/2607.16165v1",
+          "source": "arxiv",
+          "description": "Human vision is a closed loop: gaze is continuously redirected by intermediate hypotheses rather than a single snapshot. Decades of psychophysics and cognitive science have argued that this active observation is essential for a wide range of tasks. Whether today's multimodal large language models (MLLMs) exercise active observation is an empirical question that current vision-language benchmarks do not answer. We introduce ActiveVision, a benchmark that makes active observation measurable for MLLMs, comprising 17 tasks across 3 categories. Tasks are designed to force repeated visual perception rather than a single static description. Frontier MLLMs collapse on ActiveVision: the highest-scoring model we evaluate, GPT-5.5 at the highest exposed reasoning-effort tier, solves only 10.6% of items and scores zero on 11 of the 17 tasks, and even Claude Fable 5, despite topping most reasoning and coding leaderboards, solves just 3.5%, far behind three human participants who average 96.1%. Furthermore, much of the gap persists even when models write and run their own vision code: such code is unreliable on realistic imagery, and catching its failures itself requires the active perception the models lack. Together, these results indicate that current MLLMs lack robust active visual observation, motivating architectures and training objectives that close the perception-reasoning loop.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.16165",
+          "score": 2,
+          "ai_score": 7,
+          "ai_summary": "Cutting‑edge MLLM benchmark offers high‑impact research and skill growth.",
+          "action_plan": [
+            "Read the ActiveVision paper (1 day).",
+            "Clone the benchmark repo and run baseline models (2 days).",
+            "Design a simple experiment with a leading MLLM (2 days).",
+            "Collect results and analyze performance (2 days).",
+            "Draft a short write‑up for a workshop or blog (2 days)."
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "086b8d1fc63a"
+        },
+        {
+          "title": "PRISA: Proactive Infrastructure LiDAR Framework for Intersection Safety Assessment",
+          "url": "https://arxiv.org/abs/2607.16156v1",
+          "source": "arxiv",
+          "description": "Urban intersections are among the most hazardous locations in road networks, posing significant risks to vehicles and vulnerable road users (VRUs) such as pedestrians and cyclists. The complexity of multi-agent interactions demands continuous, real-time monitoring systems capable of anticipating conflicts before they escalate into crashes. We present PRISA, a modular infrastructure LiDAR framework leveraging privacy-preserving, low-light-robust roadside sensors for long-term traffic observation and real-time risk detection at the edge. The framework comprises two core components: a sensing and perception layer and a plug-and-play risk assessment module. The latter automatically curates site-specific training data from accumulated perception outputs to train a trajectory prediction model without manual annotation. It then deploys the trained model for continuous motion forecasting and dual surrogate safety evaluation, using Time-to-Collision (TTC) for longitudinal conflicts and Predicted Post-Encroachment Time (PPET) for crossing and VRU-involved interactions. PRISA is evaluated on the public R-LiViT dataset and deployed on an NVIDIA Jetson AGX Thor at a live signalized intersection in Chattanooga, Tennessee. PPET-based assessment operates at 194~ms end-to-end latency over a 2.4-second predictive horizon, with TTC-based detection and perception remaining within real-time constraints, demonstrating practical feasibility for proactive multi-agent intersection safety monitoring.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.16156",
+          "score": 4,
+          "ai_score": 7,
+          "ai_summary": "Relevant research in infrastructure LiDAR",
+          "action_plan": [
+            "Read the paper (2 hours)",
+            "Explore applications in AI (1 week)",
+            "Discuss with experts (1 week)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "02eac178e1d5"
+        },
+        {
+          "title": "egeorcun/lucida — ★70",
+          "url": "https://github.com/egeorcun/lucida",
+          "source": "github",
+          "description": "Background removal that keeps what matters: glass, camouflage, text, glow and line art. BiRefNet fine-tune, MIT. (topics: background removal, birefnet, camouflage, computer vision, deep learning, huggingface, image matting, image segmentation, pytorch, transparency)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "egeorcun/lucida",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "Open‑source CV project boosts deep‑learning credentials and code portfolio.",
+          "action_plan": [
+            "Fork the lucida repository on GitHub (30 min).",
+            "Read the README and open issues (1 hour).",
+            "Pick a beginner‑friendly issue (30 min).",
+            "Implement the fix or feature (2 days).",
+            "Submit a pull request and document changes (1 day)."
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "4acc4df63138"
+        },
+        {
+          "title": "Global AI Hackathon Series with Qwen Cloud",
+          "url": "https://qwencloud-hackathon.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 26 - Jul 20, 2026 | prize $ 45,000 | themes: Machine Learning/AI, Design, Productivity",
+          "deadline": "2026-07-20",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29966",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "AI hackathon with Qwen Cloud",
+          "action_plan": [
+            "Research Qwen Cloud (1h)",
+            "Form a team (2h)",
+            "Submit project (10h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 9,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "9f13fb5f6774"
+        },
+        {
+          "title": "Am I focusing on the wrong skills as a CS student in the AI era? (Need brutally honest advice) [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v0pc9u/am_i_focusing_on_the_wrong_skills_as_a_cs_student/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v0pc9u",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "General advice on CS skills",
+          "action_plan": [
+            "Read the discussion (1 hour)",
+            "Reflect on own skills (1 hour)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 5,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "a6ae6a85cc36"
+        },
+        {
+          "title": "Follow up: GPT-2's vocabulary as a hyperbolic tree — 32,070 tokens in a Poincaré ball you can fly through [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v0pv45/follow_up_gpt2s_vocabulary_as_a_hyperbolic_tree/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v0pv45",
+          "score": 2,
+          "ai_score": 1,
+          "ai_summary": "Just a news post; minimal career impact and no actionable work.",
+          "action_plan": [
+            "Read the Reddit post (5 min).",
+            "Explore hyperbolic embeddings in a notebook (2 hours).",
+            "Experiment with GPT‑2 token tree visualisation (2 hours).",
+            "Write a brief personal note summarising insights (30 min)."
+          ],
+          "dimensions": {
+            "career": 0,
+            "interest": 4,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 1,
+            "eligible": "yes"
+          },
+          "key": "398292ca38d1"
+        },
+        {
+          "title": "Are there some textbooks that take a primarily engineering approach to machine learning (as opposed to a \"scientific\" approach)? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v16l6a/are_there_some_textbooks_that_take_a_primarily/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v16l6a",
+          "score": 5,
+          "ai_score": 2,
+          "ai_summary": "Not a hands-on opportunity",
+          "action_plan": [
+            "Skip this opportunity"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "86784dc47cf2"
+        },
+        {
+          "title": "ARR 2026 Meta Review score [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v1bd95/arr_2026_meta_review_score_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v1bd95",
+          "score": 4,
+          "ai_score": 2,
+          "ai_summary": "Not a hands-on opportunity",
+          "action_plan": [
+            "Skip this opportunity"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "654f21039baa"
+        },
+        {
+          "title": "HackInverse 1.0",
+          "url": "https://hackinverse-s1.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | Kolkata, India | themes: No Restrictions",
+          "deadline": "2026-08-29",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "6ecaa82827354b4cb56968d1c2b14faa",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "Regional hackathon provides building experience but limited prestige.",
+          "action_plan": [
+            "Register for HackInverse 1.0 (15 min).",
+            "Brainstorm an AI‑agent project idea (2 hours).",
+            "Form or join a team (1 day).",
+            "Develop a prototype MVP (2 weeks).",
+            "Submit the final project before the deadline (1 day)."
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 9,
+            "prestige": 4,
+            "deadline": 4,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "8e6295a43905"
+        },
+        {
+          "title": "InfoBlitz '26 — 24H Intercollege Hackathon",
+          "url": "https://unstop.com/hackathons/infoblitz-26-24h-intercollege-hackathon-am-jain-college-chennai-1720185",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1720185",
+          "score": 5,
+          "ai_score": 6,
+          "ai_summary": "Hands-on hackathon experience",
+          "action_plan": [
+            "Form a team (1 week)",
+            "Prepare for the hackathon (2 weeks)",
+            "Participate in the hackathon (24 hours)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 8,
+            "skill": 8,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "9bf242a2054f"
+        },
+        {
+          "title": "Campus Ambassador",
+          "url": "https://unstop.com/internships/campus-ambassador-reddora-labs-private-limited-1721228",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1721228",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "Ambassador role with limited technical scope",
+          "action_plan": [
+            "Apply for the ambassador role (1 hour)",
+            "Fulfill ambassador duties (2 months)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 5,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "a9f9505e30c1"
+        },
+        {
+          "title": "AI Engineer Internship",
+          "url": "https://unstop.com/internships/ai-engineer-internship-fasal-vimaan-1721129",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1721129",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "AI Engineer Internship",
+          "action_plan": [
+            "Update resume (2h)",
+            "Apply for internship (1h)",
+            "Prepare for interview (5h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "6060951de4b2"
+        },
+        {
+          "title": "Graphic Designer Internship",
+          "url": "https://unstop.com/internships/graphic-designer-internship-akh-labs-ltd-1721195",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1721195",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not AI/ML related · Not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "not AI/ML related"
+          },
+          "key": "2f4845b87cd8"
+        },
+        {
+          "title": "College Ambassador Internship",
+          "url": "https://unstop.com/internships/college-ambassador-internship-studentinno-1721261",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1721261",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "College Ambassador Internship",
+          "action_plan": [
+            "Research company (1h)",
+            "Apply for internship (1h)",
+            "Prepare for interview (2h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 2,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "7e26a879f63f"
+        },
+        {
+          "title": "Creator Outreach Internship",
+          "url": "https://unstop.com/internships/creator-outreach-internship-genzaic-1721658",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1721658",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Creator Outreach Internship",
+          "action_plan": [
+            "Research company (1h)",
+            "Apply for internship (1h)",
+            "Prepare for interview (2h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 1,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "939071b17cd6"
+        },
+        {
+          "title": "Social Media Marketing Internship",
+          "url": "https://unstop.com/internships/social-media-marketing-internship-brighteye-technologies-india-private-limited-1720941",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1720941",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Social Media Marketing Internship",
+          "action_plan": [
+            "Research company (1h)",
+            "Apply for internship (1h)",
+            "Prepare for interview (2h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 1,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "2e003a121959"
+        },
+        {
+          "title": "Growth Associate Internship",
+          "url": "https://unstop.com/internships/growth-associate-internship-api-hub-1720907",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1720907",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Growth Associate Internship",
+          "action_plan": [
+            "Research company (1h)",
+            "Apply for internship (1h)",
+            "Prepare for interview (2h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "7df0dcfe7fee"
+        },
+        {
+          "title": "Cybersecurity Labs Developer Internship",
+          "url": "https://unstop.com/internships/cybersecurity-labs-developer-internship-thundercipher-1720997",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1720997",
+          "score": 8,
+          "ai_score": 5,
+          "ai_summary": "Cybersecurity Labs Developer Internship",
+          "action_plan": [
+            "Research company (1h)",
+            "Apply for internship (1h)",
+            "Prepare for interview (2h)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "5d2b2404927a"
+        }
+      ]
     }
   ]
 }

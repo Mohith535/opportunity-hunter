@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19",
+  "updated_at": "2026-07-20",
   "items": [
     {
       "key": "063502eecdda",
@@ -33,40 +33,6 @@
         "Identify AI intern requirements (30m)",
         "Showcase AI projects (2h)",
         "Apply (1h)"
-      ]
-    },
-    {
-      "key": "2a8ef4aa3a13",
-      "title": "RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation",
-      "url": "https://arxiv.org/abs/2607.06527v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "aligns with AI research interests",
-      "action_plan": [
-        "read paper",
-        "explore related work",
-        "apply concepts to own projects"
-      ]
-    },
-    {
-      "key": "9de6d46bc9f7",
-      "title": "Amwins — Analytics & AI Intern",
-      "url": "https://www.amwins.com/who-we-are/careers/open-positions?gh_jid=4302229009",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI internship at Amwins could boost portfolio, but eligibility uncertain. · ⚠ verify eligibility: US location may need visa/work authorizati",
-      "action_plan": [
-        "Check visa/remote policy (30m)",
-        "Tailor resume to analytics role (1h)",
-        "Submit application (1h)"
       ]
     },
     {
@@ -287,11 +253,11 @@
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "Global AI Hackathon",
+      "ai_summary": "AI hackathon with Qwen Cloud",
       "action_plan": [
-        "Research Qwen Cloud (2h)",
-        "Form a team (1 week)",
-        "Submit project (2 weeks)"
+        "Research Qwen Cloud (1h)",
+        "Form a team (2h)",
+        "Submit project (10h)"
       ]
     },
     {
@@ -383,108 +349,20 @@
       ]
     },
     {
-      "key": "ea7a40939623",
-      "title": "eli-labz/Cognitive-Core-Skills — ★274",
-      "url": "https://github.com/eli-labz/Cognitive-Core-Skills",
-      "source": "github",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "github",
-        "learning"
-      ],
-      "ai_summary": "Directly matches agent skill taxonomy; high learning and contribution value",
-      "action_plan": [
-        "Clone the repo and explore README (30m)",
-        "Pick one skill card to implement (1h)",
-        "Create a small demo showcasing the skill (2d)",
-        "Write a concise contribution guide (1d)",
-        "Submit a pull request to the repo (1d)"
-      ]
-    },
-    {
-      "key": "fea91446676b",
-      "title": "Pure-Python symbolic regression that rediscovered Kepler's law from 8 data point",
-      "url": "https://github.com/ariel95500-create/gp-elite",
-      "source": "hackernews",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "news"
-      ],
-      "ai_summary": "Research‑level project aligns with AI goals and showcases originality.",
-      "action_plan": [
-        "Read the original paper (2h)",
-        "Implement regression in Python (4h)",
-        "Write a short blog post (2h)"
-      ]
-    },
-    {
-      "key": "6c018477bd64",
-      "title": "IEEE Rolls Out Large Language Models Training Course",
-      "url": "https://spectrum.ieee.org/large-language-models-ieee-course",
-      "source": "hackernews",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "news"
-      ],
-      "ai_summary": "IEEE LLM course builds relevant knowledge; certificate adds modest resume value.",
-      "action_plan": [
-        "Enroll in the course (5m)",
-        "Complete weekly modules (2h/week)",
-        "Apply learned tricks to a side project (4h)"
-      ]
-    },
-    {
-      "key": "e9e2e3debc2f",
-      "title": "Kaya AI India Hackathon 2026",
-      "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
-      "source": "devpost",
-      "score": 7,
-      "deadline": "2026-07-13",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AI & IoT focus",
-      "action_plan": [
-        "Review IoT & ML concepts (4h)",
-        "Brainstorm project ideas (2h)",
-        "Develop a project (10d)"
-      ]
-    },
-    {
-      "key": "1c62b28460c1",
-      "title": "Generative AI Creative Internship",
-      "url": "https://unstop.com/internships/generative-ai-creative-internship-terrabyte-1714132",
+      "key": "6060951de4b2",
+      "title": "AI Engineer Internship",
+      "url": "https://unstop.com/internships/ai-engineer-internship-fasal-vimaan-1721129",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "Generative AI focus and internship experience",
+      "ai_summary": "AI Engineer Internship",
       "action_plan": [
-        "Update resume and portfolio (2 hours)",
-        "Apply for the internship (1 hour)",
-        "Prepare for potential interviews (5 hours)"
-      ]
-    },
-    {
-      "key": "d244bee823b4",
-      "title": "Harris Computer — AI & Automation Intern",
-      "url": "https://harriscomputer.wd3.myworkdayjobs.com/1/job/Remote---North-Carolina/Intern_R0044342-1",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI & Automation internship aligns with goals; eligibility unclear. · ⚠ verify eligibility: US location may need visa/work authorization",
-      "action_plan": [
-        "Research Harris Computer remote options (30m)",
-        "Update CV with AI projects (1h)",
-        "Apply before deadline (1h)"
+        "Update resume (2h)",
+        "Apply for internship (1h)",
+        "Prepare for interview (5h)"
       ]
     },
     {
@@ -502,6 +380,23 @@
         "read paper",
         "explore Jailbreak",
         "apply to related internships"
+      ]
+    },
+    {
+      "key": "e9e2e3debc2f",
+      "title": "Kaya AI India Hackathon 2026",
+      "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
+      "source": "devpost",
+      "score": 7,
+      "deadline": "2026-07-13",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "AI & IoT focus",
+      "action_plan": [
+        "Review IoT & ML concepts (4h)",
+        "Brainstorm project ideas (2h)",
+        "Develop a project (10d)"
       ]
     },
     {
@@ -985,108 +880,92 @@
       ]
     },
     {
-      "key": "028da6cc18a3",
-      "title": "Rethinking Indic AI from a Lens of Cultural Heritage Preservation",
-      "url": "https://arxiv.org/abs/2607.06544v1",
+      "key": "aab3e15d9ff7",
+      "title": "PagedWeight: Efficient MoE LLM Serving with Dynamic Quality-Aware Weight Quantization",
+      "url": "https://arxiv.org/abs/2607.16184v1",
       "source": "arxiv",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "research"
       ],
-      "ai_summary": "Relevant NLP topic; could inspire a portfolio project on Indic AI",
+      "ai_summary": "Relevant LLM research",
       "action_plan": [
-        "Download paper and skim abstract (15m)",
-        "Read full paper focusing on methodology (2h)",
-        "Brainstorm project ideas based on gaps (2h)",
-        "Implement a small prototype (1w)",
-        "Write a blog post showcasing results (2d)"
+        "Read the paper (2 hours)",
+        "Implement PagedWeight (1 week)",
+        "Compare with existing quantization methods (1 week)"
       ]
     },
     {
-      "key": "bbefc6a483ff",
-      "title": "Life Style Levels: Neighborhood Delineation using Geospatial Data",
-      "url": "https://arxiv.org/abs/2607.06529v1",
+      "key": "6e52777360f0",
+      "title": "A Blueprint for Equilibrium-Based Differentiable Continuous-Variable Thermodynamic Computing",
+      "url": "https://arxiv.org/abs/2607.16183v1",
       "source": "arxiv",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "research"
       ],
-      "ai_summary": "research in geospatial data",
+      "ai_summary": "Relevant research in thermodynamic computing",
       "action_plan": [
-        "read paper",
-        "explore related work",
-        "apply concepts to own projects"
+        "Read the paper (2 hours)",
+        "Explore applications in AI (1 week)",
+        "Discuss with experts (1 week)"
       ]
     },
     {
-      "key": "b6e529d375e0",
-      "title": "Weekend Dev Challenge 58: LLD Projects (codechef.com)",
-      "url": "https://www.codechef.com/DEVWEEKEND58",
-      "source": "clist",
-      "score": 6,
-      "deadline": "2026-07-10",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "competitive programming",
-      "action_plan": [
-        "review contest rules",
-        "practice relevant problems",
-        "participate in contest"
-      ]
-    },
-    {
-      "key": "1dd48d7bece8",
-      "title": "Junior Agentic AI Developer Internship",
-      "url": "https://unstop.com/internships/junior-agentic-ai-developer-internship-smaranaiin-1713690",
-      "source": "unstop",
-      "score": 6,
+      "key": "48118f422f12",
+      "title": "Evaluating Open-Weight LLMs for Generating Structured Threat Information for Autonomous Vehicle Vulnerabilities",
+      "url": "https://arxiv.org/abs/2607.16175v1",
+      "source": "arxiv",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
+        "research"
       ],
-      "ai_summary": "AI development focus and internship experience",
+      "ai_summary": "Research aligns with LLMs and builds a publishable AI security portfolio.",
       "action_plan": [
-        "Update resume and portfolio (2 hours)",
-        "Apply for the internship (1 hour)",
-        "Prepare for potential interviews (5 hours)"
+        "Read the abstract and related work (1 day).",
+        "Set up an open‑weight LLM environment (2 days).",
+        "Implement STIX generation script (3 days).",
+        "Run experiments on CVE data (4 days).",
+        "Write a short report or paper draft (2 days)."
       ]
     },
     {
-      "key": "7ea86515197b",
-      "title": "KLA Corporation — AI Intern",
-      "url": "https://kla.wd1.myworkdayjobs.com/Search/job/Newport-United-Kingdom/AI-Summer-Intern_2638689",
-      "source": "internships",
-      "score": 6,
+      "key": "086b8d1fc63a",
+      "title": "An Exam for Active Observers",
+      "url": "https://arxiv.org/abs/2607.16165v1",
+      "source": "arxiv",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
+        "research"
       ],
-      "ai_summary": "AI intern at leading semiconductor firm; good AI exposure · ⚠ verify eligibility: UK internship may require visa for Indian student",
+      "ai_summary": "Cutting‑edge MLLM benchmark offers high‑impact research and skill growth.",
       "action_plan": [
-        "Research UK Tier‑5 visa requirements (1 day)",
-        "Showcase AI research and KLA‑relevant projects (2 days)",
-        "Submit application before summer 2026 deadline (1 week)"
+        "Read the ActiveVision paper (1 day).",
+        "Clone the benchmark repo and run baseline models (2 days).",
+        "Design a simple experiment with a leading MLLM (2 days).",
+        "Collect results and analyze performance (2 days).",
+        "Draft a short write‑up for a workshop or blog (2 days)."
       ]
     },
     {
-      "key": "971a4c495fc0",
-      "title": "Charles River Analytics — Software Engineer Intern",
-      "url": "https://cra.com/job-listings/job?gh_jid=8047653",
-      "source": "internships",
-      "score": 6,
+      "key": "02eac178e1d5",
+      "title": "PRISA: Proactive Infrastructure LiDAR Framework for Intersection Safety Assessment",
+      "url": "https://arxiv.org/abs/2607.16156v1",
+      "source": "arxiv",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
+        "research"
       ],
-      "ai_summary": "Charles River does AI research; good fit for AI engineering · ⚠ verify eligibility: US internship needs visa for Indian undergrad",
+      "ai_summary": "Relevant research in infrastructure LiDAR",
       "action_plan": [
-        "Explore US J‑1 visa options (1 day)",
-        "Highlight AI research and open‑source contributions (2 days)",
-        "Submit application before summer 2026 deadline (1 week)"
+        "Read the paper (2 hours)",
+        "Explore applications in AI (1 week)",
+        "Discuss with experts (1 week)"
       ]
     },
     {
@@ -1720,6 +1599,123 @@
       "action_plan": [
         "Apply for the internship (1h)",
         "Prepare for the interview (2h)"
+      ]
+    },
+    {
+      "key": "fa00bbf8b414",
+      "title": "Revvity — Full-Stack AI Developer Intern",
+      "url": "https://revvity.wd103.myworkdayjobs.com/External/job/CAD-Remote--ON/Full-Stack-AI-Developer-Intern_JR-044912",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Revvity AI intern adds experience but company prestige is low for Mohith",
+      "action_plan": [
+        "Read Revvity internship posting (15m)",
+        "Update portfolio with relevant projects (2h)",
+        "Submit application (30m)"
+      ]
+    },
+    {
+      "key": "dec1f9116223",
+      "title": "Revvity — Full-Stack AI Developer Intern",
+      "url": "https://revvity.wd103.myworkdayjobs.com/External/job/CAD-Remote--ON/Full-Stack-AI-Developer-Intern_JR-044905",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Same Revvity internship; repeat entry unlikely to increase value",
+      "action_plan": [
+        "Confirm application status (10m)",
+        "Prepare for possible interview (2h)"
+      ]
+    },
+    {
+      "key": "57a2ad78ab6f",
+      "title": "Revvity — Full-Stack AI Developer Intern",
+      "url": "https://revvity.wd103.myworkdayjobs.com/External/job/CAD-Remote--ON/Full-Stack-AI-Developer-Intern_JR-044915",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Revvity internship duplicate; marginal added benefit",
+      "action_plan": [
+        "Check for any new internship rounds (10m)",
+        "Refresh resume if needed (1h)"
+      ]
+    },
+    {
+      "key": "a0960f9c0b61",
+      "title": "Revvity — Full-Stack AI Developer Intern",
+      "url": "https://revvity.wd103.myworkdayjobs.com/External/job/CAD-Remote--ON/Full-Stack-AI-Developer-Intern_JR-044914",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Another Revvity posting; low incremental impact",
+      "action_plan": [
+        "Monitor email for interview invite (5m)",
+        "Prepare quick project demo (2h)"
+      ]
+    },
+    {
+      "key": "57854c7f42da",
+      "title": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
+      "url": "https://arxiv.org/abs/2607.15257v1",
+      "source": "arxiv",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "Directly matches AI agent research, high skill gain, strong portfolio potential.",
+      "action_plan": [
+        "Read overview (30m)",
+        "Set up SearchOS demo (1h)",
+        "Implement a new agent task (3d)"
+      ]
+    },
+    {
+      "key": "83d6fc22d688",
+      "title": "Seeking collaborators for scaling and independent evaluation of a new recurrent language model architecture (preprint + code) [R]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1uycffg/seeking_collaborators_for_scaling_and_independent/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "Collaboration on novel LM could boost portfolio and network, but no deadline.",
+      "action_plan": [
+        "Read announcement (15m)",
+        "Contact author with brief intro (30m)",
+        "Propose a small contribution (2d)"
+      ]
+    },
+    {
+      "key": "15e30dd34cc7",
+      "title": "AI Assisted Educational Content Creator Internship",
+      "url": "https://unstop.com/internships/ai-assisted-educational-content-creator-internship-smaranaiin-1719485",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI assisted content creation",
+      "action_plan": [
+        "Research AI assisted content creation",
+        "Apply for internship",
+        "Network with professionals"
       ]
     }
   ]
