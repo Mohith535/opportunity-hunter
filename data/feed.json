@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-20",
+  "updated_at": "2026-07-21",
   "items": [
     {
       "key": "063502eecdda",
@@ -33,24 +33,6 @@
         "Identify AI intern requirements (30m)",
         "Showcase AI projects (2h)",
         "Apply (1h)"
-      ]
-    },
-    {
-      "key": "7d7518156e18",
-      "title": "Loblaw Companies — AI Engineering Co-op",
-      "url": "https://myview.wd3.myworkdayjobs.com/paradox_careers/job/1-Presidents-Choice-Circle-Brampton-ON/AI-Engineering---Co-op-Student_R2000681500",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI engineering co‑op aligns with goals; moderate prestige, visa uncertain. · ⚠ verify eligibility: Canadian work permit may be needed",
-      "action_plan": [
-        "Research Canada co‑op work‑permit rules (2h)",
-        "Craft AI‑focused resume & cover letter (4h)",
-        "Submit application (1h)",
-        "Prepare for interview with AI project examples (1 week)"
       ]
     },
     {
@@ -366,20 +348,37 @@
       ]
     },
     {
-      "key": "25bda6661f33",
-      "title": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass",
-      "url": "https://arxiv.org/abs/2607.07696v1",
-      "source": "arxiv",
-      "score": 7,
+      "key": "274bb6345d6e",
+      "title": "SpreeAI — Machine Learning Engineer Intern - Computer Vision/Multimodal/Generative AI",
+      "url": "https://ats.rippling.com/spreeai/jobs/aa087086-dd4b-42be-a499-051546655e97",
+      "source": "internships",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "research"
+        "internship"
       ],
-      "ai_summary": "LLM and database research",
+      "ai_summary": "Generative AI experience",
       "action_plan": [
-        "read paper",
-        "explore Jailbreak",
-        "apply to related internships"
+        "Research SpreeAI (1 hour)",
+        "Update resume (2 hours)",
+        "Apply for internship (1 hour)"
+      ]
+    },
+    {
+      "key": "b09a501dfaab",
+      "title": "Veeda AI — AI Scientist Intern - Veeda AI Scientist",
+      "url": "https://jobs.ashbyhq.com/veeda-labs/58cc42fb-1d6f-4e5f-860d-3b97bdccc6f4/application?embed=true",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI scientist internship at Veeda AI",
+      "action_plan": [
+        "Research Veeda AI's AI initiatives (1 week)",
+        "Update portfolio with relevant projects (2 weeks)",
+        "Apply for the internship with a strong cover letter (1 week)"
       ]
     },
     {
@@ -397,57 +396,6 @@
         "Review IoT & ML concepts (4h)",
         "Brainstorm project ideas (2h)",
         "Develop a project (10d)"
-      ]
-    },
-    {
-      "key": "7fc6355d2892",
-      "title": "Jump Trading — AI Research Engineer Intern",
-      "url": "https://boards.greenhouse.io/embed/job_app?token=8052281",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI research experience",
-      "action_plan": [
-        "Update resume (2 hours)",
-        "Prepare for interview (5 hours)",
-        "Apply for the internship (1 hour)"
-      ]
-    },
-    {
-      "key": "07956ec455b7",
-      "title": "Jump Trading — AI Research Engineer Intern - Research Automation",
-      "url": "https://boards.greenhouse.io/embed/job_app?token=8052351",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI research experience",
-      "action_plan": [
-        "Update resume (2 hours)",
-        "Prepare for interview (5 hours)",
-        "Apply for the internship (1 hour)"
-      ]
-    },
-    {
-      "key": "ea9515b6fe37",
-      "title": "Jump Trading — Campus AI Research Engineer Intern - Deep Learning",
-      "url": "https://boards.greenhouse.io/embed/job_app?token=8052338",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI research experience",
-      "action_plan": [
-        "Update resume (2 hours)",
-        "Prepare for interview (5 hours)",
-        "Apply for the internship (1 hour)"
       ]
     },
     {
@@ -969,106 +917,138 @@
       ]
     },
     {
-      "key": "e2775f6259e9",
-      "title": "synthetic-sciences/openscience — ★1,816",
-      "url": "https://github.com/synthetic-sciences/openscience",
-      "source": "github",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "github",
-        "learning"
-      ],
-      "ai_summary": "open-source AI workbench",
-      "action_plan": [
-        "explore repository",
-        "contribute to project",
-        "learn from community"
-      ]
-    },
-    {
-      "key": "cf1643945a2d",
-      "title": "Monday Munch - DSA Challenge 011 (Rated) (codechef.com)",
-      "url": "https://www.codechef.com/DSAMONDAY011",
-      "source": "clist",
-      "score": 6,
-      "deadline": "2026-07-13",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "Competitive programming",
-      "action_plan": [
-        "Prepare for the contest (5 hours)",
-        "Participate in the contest (2 hours)"
-      ]
-    },
-    {
-      "key": "5296682a1b2b",
-      "title": "STELLAR HACK",
-      "url": "https://unstop.com/hackathons/stellar-hack-manipal-university-mu-jaipur-1707195",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
+      "key": "4ffb4879ed41",
+      "title": "VoltHacks",
+      "url": "https://volthacks.devpost.com/",
+      "source": "devpost",
+      "score": 7,
+      "deadline": "2026-09-05",
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "Building experience",
+      "ai_summary": "Hands‑on AI project for portfolio, showcases building skills.",
       "action_plan": [
-        "Research hackathon details (1 hour)",
-        "Form a team (2 hours)",
-        "Prepare for the hackathon (10 hours)"
+        "Register for hackathon (15m)",
+        "Brainstorm project idea (2h)",
+        "Build MVP prototype (2 weeks)"
       ]
     },
     {
-      "key": "6374322c22c8",
-      "title": "DevFusion 4.O- The Developers Hackathon",
-      "url": "https://unstop.com/hackathons/devfusion-4o-the-developers-hackathon-iit-bombay-1714389",
+      "key": "77a587218350",
+      "title": "Artificial Intelligence Internship",
+      "url": "https://unstop.com/internships/artificial-intelligence-internship-intern-crowd-1722613",
       "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Building experience",
-      "action_plan": [
-        "Research hackathon details (1 hour)",
-        "Form a team (2 hours)",
-        "Prepare for the hackathon (10 hours)"
-      ]
-    },
-    {
-      "key": "9b86d913ea06",
-      "title": "Datasite — AI Transformation / Forward Deployed Engineer Intern - Forward Deployed Engineer",
-      "url": "https://datasite.wd1.myworkdayjobs.com/datasite/job/USA---NY---New-York-City/AI-Transformation---Forward-Deployed-Engineer--FDE--Intern_R36255",
-      "source": "internships",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "AI transformation role aligns with his goals; decent signal but not elite. · ⚠ verify eligibility: US work auth unclear",
+      "ai_summary": "AI internship, skill growth",
       "action_plan": [
-        "Verify US eligibility (1 day)",
-        "Craft AI‑focused resume bullet points (2 days)",
-        "Submit to Datasite (within two weeks)"
+        "Apply immediately",
+        "Prepare for interviews"
       ]
     },
     {
-      "key": "2d4e30b94868",
-      "title": "Innodata — Generative AI Associate",
-      "url": "https://job-boards.greenhouse.io/innodatainc/jobs/4307422009",
+      "key": "0b65d7bc5ad5",
+      "title": "Mistral AI — Applied Scientist / Research Engineer Intern",
+      "url": "https://jobs.ashbyhq.com/mistral.ai/de46ba8b-00cb-4618-83df-66e15a78434e/application?embed=true",
       "source": "internships",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "Generative AI focus matches interests; company prestige modest. · ⚠ verify eligibility: US work auth unclear",
+      "ai_summary": "AI research experience",
       "action_plan": [
-        "Check US work‑authorization status (1 day)",
-        "Showcase generative‑AI projects in resume (2 days)",
-        "Apply to Innodata (within two weeks)"
+        "Research Mistral AI (1 hour)",
+        "Update resume (2 hours)",
+        "Apply for internship (1 hour)"
+      ]
+    },
+    {
+      "key": "d143fcf71697",
+      "title": "Mistral AI — Applied Scientist / Research Engineer Intern",
+      "url": "https://jobs.ashbyhq.com/mtesting.ai/de46ba8b-00cb-4618-83df-66e15a78434e/application?embed=true",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI research experience",
+      "action_plan": [
+        "Research Mistral AI (1 hour)",
+        "Update resume (2 hours)",
+        "Apply for internship (1 hour)"
+      ]
+    },
+    {
+      "key": "2b5ff2fc22bb",
+      "title": "SpreeAI — Software Engineer Intern",
+      "url": "https://ats.rippling.com/spreeai/jobs/d34aed29-7a11-4e37-b5bc-e9317f82f0b1",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Real AI engineering internship, strong resume signal, limited slots. · ⚠ verify eligibility: visa/work authorization not specified",
+      "action_plan": [
+        "Visit internship page and note requirements (10m)",
+        "Prepare resume highlighting AI projects (2h)",
+        "Submit application with cover letter (1h)"
+      ]
+    },
+    {
+      "key": "6e69013a1931",
+      "title": "Egra — AI Researcher Intern",
+      "url": "https://jobs.ashbyhq.com/egra/6f295102-6330-4a9e-9fc4-9b414e620003/application?embed=true",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI researcher internship at Egra",
+      "action_plan": [
+        "Research Egra's AI research areas (1 week)",
+        "Prepare a strong application package (2 weeks)",
+        "Network with Egra's current interns (1 week)"
+      ]
+    },
+    {
+      "key": "c3f6103b7949",
+      "title": "GenMD — AI Research Scientist Intern",
+      "url": "https://jobs.ashbyhq.com/genmd/807adafc-7842-4e05-90f3-9bc45dd39a13/application?embed=true",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI research experience",
+      "action_plan": [
+        "Research GenMD (1 hour)",
+        "Update resume (2 hours)",
+        "Apply for internship (1 hour)"
+      ]
+    },
+    {
+      "key": "73737dc1ca26",
+      "title": "Bild AI — AI/Software Engineer Intern",
+      "url": "https://jobs.ashbyhq.com/bild-ai/b333f0f7-0ca6-4509-8697-9303396b5364/application?embed=true",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI/software engineer internship at Bild AI",
+      "action_plan": [
+        "Research Bild AI's AI initiatives (1 week)",
+        "Prepare a strong application package (2 weeks)",
+        "Network with Bild AI's current interns (1 week)"
       ]
     },
     {
@@ -1716,6 +1696,23 @@
         "Research AI assisted content creation",
         "Apply for internship",
         "Network with professionals"
+      ]
+    },
+    {
+      "key": "0a4843ed84ae",
+      "title": "Composio — Full-stack Intern",
+      "url": "https://jobs.ashbyhq.com/composio/4d819015-0b9a-466f-9b41-8e1cc1e5b6d9/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "SF startup internship adds international exposure and real‑world code.",
+      "action_plan": [
+        "Visit Composio careers page (30m)",
+        "Tailor resume to full‑stack (2h)",
+        "Submit application (1h)"
       ]
     }
   ]

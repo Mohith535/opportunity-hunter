@@ -29982,6 +29982,1452 @@
           "key": "5d2b2404927a"
         }
       ]
+    },
+    {
+      "date": "2026-07-21",
+      "items": [
+        {
+          "title": "Automated Discovery Has No Universally Superior Harness",
+          "url": "https://arxiv.org/abs/2607.18235v1",
+          "source": "arxiv",
+          "description": "Autonomous discovery systems such as OpenEvolve and TTT-Discover are often used as general-purpose harnesses. However, in practice these are composite systems combining several design choices about archives, parent selection, exploration, and budget allocation into a single recipe. Because discovery runs are expensive and inherently stochastic, existing harnesses are often compared using too few independent trials to distinguish key methodological improvements from run-to-run variance. We systematically decompose OpenEvolve-style evolutionary search and the TTT-Discover search harness into its constituent components and systematically evaluate 30 budget-matched harnesses across 12 model-problem pairs using more than 3.1 million LLM rollouts and repeated-trial statistical analysis. Our results show that discovery harnesses have a generalization problem: No fixed harness is reliably superior across the evaluated model-problem pairs, and variants of OpenEvolve generally underperform simpler alternatives. Thus, harness choice is better viewed as a hyperparameter rather than as a universal recipe, and should be tailored to the specific problem and underlying model. We also find that early discovery progress predicts final performance, and use this property to present a budget-matched adaptive-allocation experiment that starts multiple harnesses, prunes weak partial runs, and reallocates compute to stronger survivors, outperforming both commitment to a randomly sampled fixed harness and a non-adaptive harness ensemble. Together, these results motivate shifting from fixed harness selection to online adaptation guided by early performance. We release all run pools including baseline null distributions for every model-problem pair as reusable statistical infrastructure against for future harness proposals.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.18235",
+          "score": 4,
+          "ai_score": 4,
+          "ai_summary": "Explores automated discovery, modest relevance to his AI focus.",
+          "action_plan": [
+            "Read abstract (1h)",
+            "Summarize key findings (1h)",
+            "Try reproducing one experiment (2 days)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "95b3a56da8a6"
+        },
+        {
+          "title": "It's Not What You Say, It's How You Say It: Evaluating LLM Responses to Expressions of Belief",
+          "url": "https://arxiv.org/abs/2607.18232v1",
+          "source": "arxiv",
+          "description": "Users frequently express their beliefs to large language models (LLMs). In some situations, the LLM should accept these contextual beliefs as true. In others, they should stick to their prior knowledge. Notably, users' expressions of belief (EoBs) can take linguistically diverse forms - using presuppositions, evidential and certainty markers, or varied tones - each of which may have a different persuasiveness over the LLMs. We introduce a typology to systematically evaluate how different EoBs affect whether models follow context versus prior knowledge. The typology is grounded in four linguistically motivated dimensions: form, evidentiality, epistemic stance, and tone, spanning 17 fine-grained types. By pairing these EoBs with world knowledge facts, we generate controlled EoB-query pairs that isolate the effect of linguistic variation. Using this benchmark, we evaluate 16 LLMs that differ in architecture (Llama3, Qwen3, Gemma3), scale (1B-30B parameters), and training stages (base vs instruct). We identify meaningful variations in response behavior across these axes, e.g., that bigger models and instruction models tend to be less context-following than smaller models and base models. We further identify specific EoBs that statistically significantly persuade LMs more consistently than others. Our work reveals systematic patterns in how linguistic framing affects LLM context integration, with implications for prompt engineering and model robustness.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.18232",
+          "score": 5,
+          "ai_score": 5,
+          "ai_summary": "Boosts understanding of LLM belief handling, aligns with his LLM interest.",
+          "action_plan": [
+            "Read abstract (1h)",
+            "Download paper and skim sections (2h)",
+            "Implement a small experiment (1 day)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "961a10b2a7a3"
+        },
+        {
+          "title": "GigaPath-Flash and GigaTIME-Flash: Efficient Pathology Foundation Models for Whole-Slide and Tumor Microenvironment Analysis",
+          "url": "https://arxiv.org/abs/2607.18218v1",
+          "source": "arxiv",
+          "description": "Foundation models have emerged as a driving force in computational pathology, with the potential to transform cancer diagnosis, prognosis, and treatment selection by learning transferable representations from large-scale histopathology data. A growing landscape of pathology foundation models now spans diverse data sources, architectures, and downstream applications. However, most pretrained models operate only at the image-tile level, use restrictive licenses, and remain computationally expensive, limiting large-scale slide-level clinical and research use. Here, we introduce GigaPath-Flash and GigaTIME-Flash, efficient models for whole-slide pathology AI and spatial proteomics prediction. GigaPath-Flash combines a 22M-parameter ViT-S tile encoder with a 21M-parameter LongNet slide encoder, both pretrained on large-scale real-world histopathology data. Its compact tile encoder is distilled from the billion-parameter GigaPath (ViT-g) teacher and shared by both models. GigaPath-Flash retains 97% of GigaPath's average slide-level performance with 50x less compute. GigaTIME-Flash extends this backbone to predict the tumor immune microenvironment directly from routine H&E images. It surpasses the original CNN-based GigaTIME in prediction quality while running 6x faster and using 8x less GPU memory. Together with GigaPath and GigaTIME, these models form an open-weight, Apache-2.0-licensed family pretrained on large-scale real-world clinical data. By releasing all models and weights, we provide accessible building blocks for computational pathology, immuno-oncology, and precision health.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.18218",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "aba3c99029bc"
+        },
+        {
+          "title": "SWE-Pruner Pro: The Coder LLM Already Knows What to Prune",
+          "url": "https://arxiv.org/abs/2607.18213v1",
+          "source": "arxiv",
+          "description": "Pruning long context for coding agents has been a vital technology for efficient context management. While existing context pruning methods such as SWE-Pruner realize this by attaching a separate code classifier, we find the agent itself encodes internal representations indicating the relevance of code context when reading tool output. Based on this finding, we propose SWE-Pruner Pro, which prunes tool outputs directly inside the agent. Concretely, a small head turns the agent's own internal representations into a keep-or-prune label for each line, with a length-aware embedding keyed to each tool output's line count. Across two open-weight backbones and four multi-turn benchmarks, SWE-Pruner Pro saves up to 39% of prompt and completion tokens while preserving task quality, with bounded inference overhead. Notably, on MiMo-V2-Flash SWE-Pruner Pro additionally raises the SWE-Bench Verified resolve rate by +3.8% and the long-context Oolong accuracy by +2.2 points.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.18213",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Insights into LLM code pruning can inform his own tool building.",
+          "action_plan": [
+            "Read paper intro (30m)",
+            "Identify pruning technique to test (1h)",
+            "Code a prototype on a small codebase (1 day)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "3a90eb937403"
+        },
+        {
+          "title": "arcships/light-ocr — ★329",
+          "url": "https://github.com/arcships/light-ocr",
+          "source": "github",
+          "description": "Fast, offline OCR for Node.js & C++. PP-OCRv6 with Core ML / WebGPU hardware acceleration — recognize text in images with confidence scores & coordinates. npm: @arcships/light-ocr (topics: apple silicon, computer vision, coreml, cpp17, d3d12, image processing, machine learning, napi, native addon, nodejs, nvidia, ocr, ocr recognition, offline ocr, paddleocr, ppocr, text recognition, typescript, vulkan, webgpu)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "arcships/light-ocr",
+          "score": 4,
+          "ai_score": 5,
+          "ai_summary": "Open‑source OCR work adds ML implementation experience.",
+          "action_plan": [
+            "Fork repo (5m)",
+            "Run demo locally (30m)",
+            "Submit a small PR fixing a bug (1 day)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "ec463484a464"
+        },
+        {
+          "title": "VoltHacks",
+          "url": "https://volthacks.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | May 22 - Sep 05, 2026 | prize $ 32,585 | themes: IoT, Machine Learning/AI, Beginner Friendly",
+          "deadline": "2026-09-05",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29884",
+          "score": 5,
+          "ai_score": 7,
+          "ai_summary": "Hands‑on AI project for portfolio, showcases building skills.",
+          "action_plan": [
+            "Register for hackathon (15m)",
+            "Brainstorm project idea (2h)",
+            "Build MVP prototype (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 9,
+            "prestige": 5,
+            "deadline": 6,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "4ffb4879ed41"
+        },
+        {
+          "title": "I just read LeCun’s recent thoughts on world models. Thoughts on JEPA as a path forward? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v1i26p/i_just_read_lecuns_recent_thoughts_on_world/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v1i26p",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3b5f0d82a052"
+        },
+        {
+          "title": "Tri-Net v2: Open-source implementation of our Scientific Reports paper on unified skin lesion and symptom-based monkeypox detection [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v26adz/trinet_v2_opensource_implementation_of_our/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v26adz",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "556548f859f5"
+        },
+        {
+          "title": "ACL ARR (May 2026)- Updating Reviewer Score post 17 July AoE Deadline? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v1ukpx/acl_arr_may_2026_updating_reviewer_score_post_17/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v1ukpx",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "05343728137c"
+        },
+        {
+          "title": "Exploring continual learning without replay buffers: Our findings using dynamic task-similarity routing [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v1rmbb/exploring_continual_learning_without_replay/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v1rmbb",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ba205233276f"
+        },
+        {
+          "title": "Training a harness for model-agnostic and task-environment-agnostic capability improvements with PyTorch-like framework [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v1qbl7/training_a_harness_for_modelagnostic_and/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v1qbl7",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5133c3f08c51"
+        },
+        {
+          "title": "Introducing ASCIITermDraw Bench | Testing the ability of VLMs to Generate and Edit ASCII [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v1fzuy/introducing_asciitermdraw_bench_testing_the/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v1fzuy",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b0b7dd8bb5fe"
+        },
+        {
+          "title": "Guidance a bit [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v1pnyj/guidance_a_bit_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v1pnyj",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "87ad2457c357"
+        },
+        {
+          "title": "HACKBIOS 2K26",
+          "url": "https://hackbios2k26.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | Junwani, India | themes: No Restrictions",
+          "deadline": "2026-09-24",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "d1b100bab969429eb9bd286cfac13f52",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "54d0e43a9078"
+        },
+        {
+          "title": "Weekly Contest 513 (leetcode.com)",
+          "url": "https://leetcode.com/contest/weekly-contest-513",
+          "source": "clist",
+          "description": "competitive programming contest on leetcode.com; starts 2026-08-02T02:30:00",
+          "deadline": "2026-08-02",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "68982643",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Sharpens algorithmic coding, useful but not core AI goal.",
+          "action_plan": [
+            "Sign up for contest (5m)",
+            "Practice similar problems (2h)",
+            "Participate on contest day (2h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 3,
+            "deadline": 7,
+            "skill": 6,
+            "time": 7,
+            "eligible": "yes"
+          },
+          "key": "0175de9fc380"
+        },
+        {
+          "title": "P.A.C.E - Where Logic Meets Expression.",
+          "url": "https://unstop.com/hackathons/pace-where-logic-meets-expression-technocrats-institute-of-technology-excellence-bhopal-1719528",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1719528",
+          "score": 4,
+          "ai_score": 5,
+          "ai_summary": "Online hackathon offers extra AI project experience.",
+          "action_plan": [
+            "Check hackathon rules (10m)",
+            "Form a team or solo plan (1h)",
+            "Develop prototype before deadline (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "81c2ef9e96fb"
+        },
+        {
+          "title": "Build With Bharat 3.0",
+          "url": "https://unstop.com/hackathons/build-with-bharat-30-chitkara-university-cu-himachal-pradesh-1722484",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1722484",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a995df05ef1d"
+        },
+        {
+          "title": "Vibewright",
+          "url": "https://unstop.com/hackathons/vibewright-oblivion26-dcode-nsut-1722532",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1722532",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7632117967f6"
+        },
+        {
+          "title": "Ascendant Agents",
+          "url": "https://unstop.com/hackathons/ascendant-agents-oblivion26-dcode-nsut-1722256",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1722256",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2043c931b537"
+        },
+        {
+          "title": "Hack-4-Crown",
+          "url": "https://unstop.com/hackathons/hack-4-crown-oblivion26-dcode-nsut-1721294",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1721294",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "462cd758670d"
+        },
+        {
+          "title": "Code Royale",
+          "url": "https://unstop.com/hackathons/code-royale-oblivion26-dcode-nsut-1722239",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1722239",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b3ac9ef57e90"
+        },
+        {
+          "title": "The Innovator's Court",
+          "url": "https://unstop.com/hackathons/the-innovators-court-oblivion26-netaji-subhas-university-of-technology-nsut-delhi-1722249",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1722249",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d110e9766559"
+        },
+        {
+          "title": "UX Imperium",
+          "url": "https://unstop.com/hackathons/ux-imperium-oblivion26-netaji-subhas-university-of-technology-nsut-delhi-1722371",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1722371",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "87c470a72980"
+        },
+        {
+          "title": "Recruitment & Talent Acquisition Internship",
+          "url": "https://unstop.com/internships/recruitment-talent-acquisition-internship-skillentrix-technologies-1722655",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1722655",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Not AI/ML focused · ⚠ verify eligibility: no AI/ML mention",
+          "action_plan": [
+            "Research company",
+            "Check job description"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "unclear",
+            "elig_note": "no AI/ML mention"
+          },
+          "key": "2a82c38faee7"
+        },
+        {
+          "title": "Artificial Intelligence Internship",
+          "url": "https://unstop.com/internships/artificial-intelligence-internship-intern-crowd-1722613",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1722613",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI internship, skill growth",
+          "action_plan": [
+            "Apply immediately",
+            "Prepare for interviews"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "77a587218350"
+        },
+        {
+          "title": "Python Developer Internship",
+          "url": "https://unstop.com/internships/python-developer-internship-intern-crowd-1722610",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1722610",
+          "score": 8,
+          "ai_score": 6,
+          "ai_summary": "Python dev, some AI overlap",
+          "action_plan": [
+            "Check job description",
+            "Apply if AI-related"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "eeac96cc1e52"
+        },
+        {
+          "title": "HR and Talent Operations Internship",
+          "url": "https://unstop.com/internships/hr-and-talent-operations-internship-hulstiai-1722617",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1722617",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Not AI/ML focused",
+          "action_plan": [
+            "Skip",
+            "Focus on AI/ML opportunities"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "174122ec3be5"
+        },
+        {
+          "title": "Java Developer Internship",
+          "url": "https://unstop.com/internships/java-developer-internship-intern-crowd-1722612",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1722612",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Some software dev overlap",
+          "action_plan": [
+            "Check job description",
+            "Apply if relevant"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 4,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "2291cdd0675b"
+        },
+        {
+          "title": "Campus Leader Internship 2026",
+          "url": "https://unstop.com/internships/campus-leader-internship-2026-placement-pulse-1719095",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1719095",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Leadership experience, not AI/ML",
+          "action_plan": [
+            "Consider if time allows",
+            "Prioritize AI/ML opportunities"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "26dbfcc4b193"
+        },
+        {
+          "title": "Cybersecurity Internship",
+          "url": "https://unstop.com/internships/cybersecurity-internship-cybermindspace-1722608",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1722608",
+          "score": 8,
+          "ai_score": 5,
+          "ai_summary": "Some security overlap with AI",
+          "action_plan": [
+            "Research company",
+            "Check job description"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 5,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 6,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "a2a0e001f45e"
+        },
+        {
+          "title": "Digital Marketing Internship",
+          "url": "https://unstop.com/internships/digital-marketing-internship-intern-crowd-1722606",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1722606",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Not AI/ML focused",
+          "action_plan": [
+            "Skip",
+            "Focus on AI/ML opportunities"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "3f819f1569b4"
+        },
+        {
+          "title": "Mistral AI — Applied Scientist / Research Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/mistral.ai/de46ba8b-00cb-4618-83df-66e15a78434e/application?embed=true",
+          "source": "internships",
+          "description": "internship | Mistral AI | London, UK, Paris, France | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "aecef2e9-da18-4866-9323-61bd88a7681b",
+          "score": 6,
+          "ai_score": 7,
+          "ai_summary": "AI research experience",
+          "action_plan": [
+            "Research Mistral AI (1 hour)",
+            "Update resume (2 hours)",
+            "Apply for internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "0b65d7bc5ad5"
+        },
+        {
+          "title": "Mistral AI — Applied Scientist / Research Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/mtesting.ai/de46ba8b-00cb-4618-83df-66e15a78434e/application?embed=true",
+          "source": "internships",
+          "description": "internship | Mistral AI | London, UK, Paris, France | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9c623c6e-1770-474c-942e-c2c0bcd6d9c0",
+          "score": 6,
+          "ai_score": 7,
+          "ai_summary": "AI research experience",
+          "action_plan": [
+            "Research Mistral AI (1 hour)",
+            "Update resume (2 hours)",
+            "Apply for internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "d143fcf71697"
+        },
+        {
+          "title": "SpreeAI — Software Engineer Intern",
+          "url": "https://ats.rippling.com/spreeai/jobs/d34aed29-7a11-4e37-b5bc-e9317f82f0b1",
+          "source": "internships",
+          "description": "internship | SpreeAI | SF | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0b289d87-b4b1-4056-8003-0a76181dcb52",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "Real AI engineering internship, strong resume signal, limited slots. · ⚠ verify eligibility: visa/work authorization not specified",
+          "action_plan": [
+            "Visit internship page and note requirements (10m)",
+            "Prepare resume highlighting AI projects (2h)",
+            "Submit application with cover letter (1h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 7,
+            "prestige": 6,
+            "deadline": 6,
+            "skill": 8,
+            "time": 7,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "visa/work authorization not specified"
+          },
+          "key": "2b5ff2fc22bb"
+        },
+        {
+          "title": "SpreeAI — Machine Learning Engineer Intern - Computer Vision/Multimodal/Generative AI",
+          "url": "https://ats.rippling.com/spreeai/jobs/aa087086-dd4b-42be-a499-051546655e97",
+          "source": "internships",
+          "description": "internship | SpreeAI | SF | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b307b311-8a8c-4096-bd3b-0d244f3423f0",
+          "score": 6,
+          "ai_score": 8,
+          "ai_summary": "Generative AI experience",
+          "action_plan": [
+            "Research SpreeAI (1 hour)",
+            "Update resume (2 hours)",
+            "Apply for internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 10,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 9,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "274bb6345d6e"
+        },
+        {
+          "title": "SpreeAI — Mobile Software Engineer Intern - Flagship Apps - iOS / Android / Web",
+          "url": "https://ats.rippling.com/spreeai/jobs/c52472cb-2671-45d7-b666-17196dc3df25",
+          "source": "internships",
+          "description": "internship | SpreeAI | SF | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4c54516c-986b-40c6-be23-fc11b0404861",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Mobile app internship gives coding practice but little AI relevance.",
+          "action_plan": [
+            "Read job description (1h)",
+            "Update resume with mobile projects (2h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "a6edc6ad8b59"
+        },
+        {
+          "title": "Gitar, Inc. — Software Engineer Intern",
+          "url": "https://ats.rippling.com/gitar-careers/jobs/76868d2c-10f0-4c43-8f47-c541f1d41e49",
+          "source": "internships",
+          "description": "internship | Gitar, Inc. | San Mateo, CA | Summer 2025 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c8b23aef-956a-4e8f-bf36-9f747b2a67ef",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Software engineer role at Gitar offers general dev experience, not AI focus.",
+          "action_plan": [
+            "Review Gitar internship posting (1h)",
+            "Tailor resume to highlight relevant coding skills (2h)",
+            "Apply through portal (30m)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "a3c0a5ca37a1"
+        },
+        {
+          "title": "Gitar, Inc. — Software Engineer Intern",
+          "url": "https://ats.rippling.com/gitar-careers/jobs/bfc2d948-40d8-4479-9885-fd1619ec2bda",
+          "source": "internships",
+          "description": "internship | Gitar, Inc. | San Mateo, CA | Summer 2025 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "53fcaec4-0e49-4a63-94d1-c52a5741cef0",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Duplicate of Gitar internship; same low AI relevance.",
+          "action_plan": [
+            "Confirm duplicate posting (15m)",
+            "Adjust resume if needed (1h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "c50444e3c55f"
+        },
+        {
+          "title": "NERv Technology Inc. D.B.A. FluidAI Medical — Data and AI Engineering Associate Co-op",
+          "url": "https://ats.rippling.com/fluidai-medical-careers/jobs/c87d6d49-edd6-47eb-93f8-6e8a93216b39",
+          "source": "internships",
+          "description": "internship | NERv Technology Inc. D.B.A. FluidAI Medical | Kitchener, ON, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "aea064c1-caa5-4d1b-ac55-f280216fe181",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "AI co‑op aligns with his AI engineering goal and adds niche AI resume value.",
+          "action_plan": [
+            "Research FluidAI medical AI work (2h)",
+            "Customize resume for data/AI tasks (2h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "6625bfd7b667"
+        },
+        {
+          "title": "Moon — Software Engineer Intern - Backend & API",
+          "url": "https://ats.rippling.com/moon/jobs/8b81bca7-1a64-4377-8ea8-869aac03080b",
+          "source": "internships",
+          "description": "internship | Moon | Glendale, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "de36e85a-366d-49db-98a9-fb9c3004ef0b",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Backend API internship builds engineering skills but lacks AI focus.",
+          "action_plan": [
+            "Read Moon backend internship details (1h)",
+            "Highlight API projects on resume (2h)",
+            "Apply online (30m)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "d91bcde98ec3"
+        },
+        {
+          "title": "Moon — Software Engineer Intern - Data & Machine Learning",
+          "url": "https://ats.rippling.com/moon/jobs/5f0b98b7-561a-41d2-9104-76bdf06df094",
+          "source": "internships",
+          "description": "internship | Moon | Glendale, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "88bc4fe7-cbcb-4692-9f88-d12ee309d254",
+          "score": 6,
+          "ai_score": 6,
+          "ai_summary": "Machine learning experience",
+          "action_plan": [
+            "Research Moon (1 hour)",
+            "Update resume (2 hours)",
+            "Apply for internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "673d24d29791"
+        },
+        {
+          "title": "Mobius Renewables — Software Engineer Intern",
+          "url": "https://ats.rippling.com/greengas/jobs/b2938290-cc66-4f54-9888-bbe286c1d9b6",
+          "source": "internships",
+          "description": "internship | Mobius Renewables | Houston, TX | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8a94a455-b2cb-44e4-9b0b-00bfda978a73",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "Renewables software role diverts from AI path, low career leverage.",
+          "action_plan": [
+            "Check Mobius Renewables internship criteria (30m)",
+            "Adjust resume to emphasize software work (1h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "c67984bf41e1"
+        },
+        {
+          "title": "Onware — Full Stack Developer-Intern Opportunity",
+          "url": "https://ats.rippling.com/onware/jobs/1b9d59b6-1ab0-4c40-8429-39b5b62f019a",
+          "source": "internships",
+          "description": "internship | Onware | Edmonton, AB, Canada | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "47396485-020d-4723-a0eb-84364424bc72",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Full‑stack internship provides coding practice but minimal AI impact.",
+          "action_plan": [
+            "Read Onware full‑stack intern posting (45m)",
+            "Update resume with full‑stack projects (2h)",
+            "Apply via their portal (30m)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "39ab9d3126b5"
+        },
+        {
+          "title": "Ampliwork, Inc — Full-Stack Developer",
+          "url": "https://ats.rippling.com/ampliwork-inc/jobs/df7e9bf9-b88b-4f5b-9ac7-51e85664fe0e",
+          "source": "internships",
+          "description": "internship | Ampliwork, Inc | Montreal, QC, Canada | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8b2cbddc-da27-4fb2-b8db-666cf3beb9ca",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Full‑stack role similar to other generic dev gigs, low AI relevance.",
+          "action_plan": [
+            "Verify Ampliwork internship details (30m)",
+            "Tailor resume for full‑stack experience (1.5h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "248fed0c4266"
+        },
+        {
+          "title": "Faculte — Faculty Fellowship - Data Science",
+          "url": "https://jobs.ashbyhq.com/faculty-fellowship/dd2a8104-fbec-4e54-bed8-1e0553186e00/application?embed=true",
+          "source": "internships",
+          "description": "internship | Faculte | London, UK | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "fb43720e-79c4-4c34-9a41-0b4821276689",
+          "score": 6,
+          "ai_score": 6,
+          "ai_summary": "Data science experience",
+          "action_plan": [
+            "Research Faculte (1 hour)",
+            "Update resume (2 hours)",
+            "Apply for internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "e87db1ca081c"
+        },
+        {
+          "title": "Phonely — Software Engineer Intern - Multiple Teams",
+          "url": "https://jobs.ashbyhq.com/phonely/c83696cb-ca3a-4a9d-9e87-bfcf4f79fef5/application?embed=true",
+          "source": "internships",
+          "description": "internship | Phonely | SF | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5c68573e-df1f-407a-99e4-7a870ec61813",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Software engineering internship",
+          "action_plan": [
+            "Research Phonely's AI initiatives (1 week)",
+            "Update resume and portfolio (2 weeks)",
+            "Apply for the internship (1 week)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "e97810eb7a50"
+        },
+        {
+          "title": "Egra — AI Researcher Intern",
+          "url": "https://jobs.ashbyhq.com/egra/6f295102-6330-4a9e-9fc4-9b414e620003/application?embed=true",
+          "source": "internships",
+          "description": "internship | Egra | NYC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "44d9733e-5e40-42b0-bed0-471fb6dfa64e",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "AI researcher internship at Egra",
+          "action_plan": [
+            "Research Egra's AI research areas (1 week)",
+            "Prepare a strong application package (2 weeks)",
+            "Network with Egra's current interns (1 week)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "6e69013a1931"
+        },
+        {
+          "title": "GenMD — AI Research Scientist Intern",
+          "url": "https://jobs.ashbyhq.com/genmd/807adafc-7842-4e05-90f3-9bc45dd39a13/application?embed=true",
+          "source": "internships",
+          "description": "internship | GenMD | Palo Alto, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "25b39cd6-8460-4aa3-be55-52865cb6c034",
+          "score": 6,
+          "ai_score": 7,
+          "ai_summary": "AI research experience",
+          "action_plan": [
+            "Research GenMD (1 hour)",
+            "Update resume (2 hours)",
+            "Apply for internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "c3f6103b7949"
+        },
+        {
+          "title": "Veeda AI — AI Scientist Intern - Veeda AI Scientist",
+          "url": "https://jobs.ashbyhq.com/veeda-labs/58cc42fb-1d6f-4e5f-860d-3b97bdccc6f4/application?embed=true",
+          "source": "internships",
+          "description": "internship | Veeda AI | Seattle, WA, Toronto, ON, Canada, California | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c4946cfa-e397-493b-a5f8-f1e84a399bc5",
+          "score": 3,
+          "ai_score": 8,
+          "ai_summary": "AI scientist internship at Veeda AI",
+          "action_plan": [
+            "Research Veeda AI's AI initiatives (1 week)",
+            "Update portfolio with relevant projects (2 weeks)",
+            "Apply for the internship with a strong cover letter (1 week)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 9,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "b09a501dfaab"
+        },
+        {
+          "title": "NationGraph — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/nationgraph/6c3e8de6-bd8e-4ead-936f-d98c277c6416/application?embed=true",
+          "source": "internships",
+          "description": "internship | NationGraph | Toronto, ON, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a196474c-7f86-4710-8275-f7701867a7ad",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Software engineering internship",
+          "action_plan": [
+            "Research NationGraph's products (1 week)",
+            "Update resume and portfolio (2 weeks)",
+            "Apply for the internship (1 week)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "8fef9f6e1cbd"
+        },
+        {
+          "title": "Bild AI — AI/Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/bild-ai/b333f0f7-0ca6-4509-8697-9303396b5364/application?embed=true",
+          "source": "internships",
+          "description": "internship | Bild AI | SF | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8f6e9cb7-8cc0-439e-96df-b4749d49ba45",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "AI/software engineer internship at Bild AI",
+          "action_plan": [
+            "Research Bild AI's AI initiatives (1 week)",
+            "Prepare a strong application package (2 weeks)",
+            "Network with Bild AI's current interns (1 week)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "73737dc1ca26"
+        },
+        {
+          "title": "NationGraph — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true",
+          "source": "internships",
+          "description": "internship | NationGraph | Toronto, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a829ca2b-67d1-4241-b6db-70adc403355e",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Software engineering internship",
+          "action_plan": [
+            "Research NationGraph's products (1 week)",
+            "Update resume and portfolio (2 weeks)",
+            "Apply for the internship (1 week)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "09c5b5ac06a8"
+        },
+        {
+          "title": "Frontier Health — Applied Scientist / Research Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/frontier-health/0ff47d07-91b5-4456-9ecf-8438239b00ef/application?embed=true",
+          "source": "internships",
+          "description": "internship | Frontier Health | London, UK | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3fa76277-1482-466b-8699-4aeec94965be",
+          "score": 6,
+          "ai_score": 6,
+          "ai_summary": "AI research experience",
+          "action_plan": [
+            "Research Frontier Health (1 hour)",
+            "Update resume (2 hours)",
+            "Apply for internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "b22215411b74"
+        },
+        {
+          "title": "Bloxd — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/bloxd/7ade559a-d07d-4ffe-b6ec-c79e41632474/application?embed=true",
+          "source": "internships",
+          "description": "internship | Bloxd | London, UK | Summer 2026, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "fc5686cd-7212-4d14-b8c4-20c9dfeb974d",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Software engineering internship at Bloxd",
+          "action_plan": [
+            "Research Bloxd's products (1 week)",
+            "Update resume and portfolio (2 weeks)",
+            "Apply for the internship (1 week)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 4,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "b5f3e22e4206"
+        },
+        {
+          "title": "Aptura — Investment Banking MBA Intern - AI Research",
+          "url": "https://jobs.ashbyhq.com/aptura/fbe2e597-52df-49f8-9bed-0e3a21e620a9/application?embed=true",
+          "source": "internships",
+          "description": "internship | Aptura | London, UK | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f7ab19f7-01aa-450e-aae8-eb040b5b3ea2",
+          "score": 6,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — MBA required · Not relevant to AI engineering",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "MBA required"
+          },
+          "key": "fc76daba46f2"
+        },
+        {
+          "title": "Quadrillion — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/quadrillion-labs/601e105d-2f0f-4482-9bae-3a825a1b97fd/application?embed=true",
+          "source": "internships",
+          "description": "internship | Quadrillion | NYC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5ea98056-c56b-4b75-bc44-d64a3c6c73a3",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Software engineering internship",
+          "action_plan": [
+            "Research Quadrillion's products (1 week)",
+            "Update resume and portfolio (2 weeks)",
+            "Apply for the internship (1 week)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "ddb7a01a7df0"
+        }
+      ]
     }
   ]
 }
