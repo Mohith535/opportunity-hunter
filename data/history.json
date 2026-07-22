@@ -31428,6 +31428,773 @@
           "key": "ddb7a01a7df0"
         }
       ]
+    },
+    {
+      "date": "2026-07-22",
+      "items": [
+        {
+          "title": "Copy Less, Ground More: Overcoming Repetitive Copying in Long-Context Reasoning via Evidence-Aware Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2607.19345v1",
+          "source": "arxiv",
+          "description": "Large language models that generate step-by-step reasoning traces have achieved strong performance on complex tasks, and extending them to long-context settings has emerged as an important frontier. However, we identify a critical failure mode in this regime: \\emph{repetitive copying}, where models extensively copy text from the input into their reasoning traces rather than productively solving the problem. We show that this behavior is pervasive across frontier long-context LLMs and intensifies with context length. By separating each prompt into task-relevant key evidence and irrelevant distractor context, we further show that the root cause is insufficient grounding: models copy from the prompt indiscriminately, and those that fail to focus on key evidence are far more likely to answer incorrectly. Motivated by this diagnosis, we propose GEAR (Grounding Evidence-Aware Reward), a reward shaping method that augments the accuracy signal with a grounding reward for overlap with key evidence and a distractor penalty for overlap with irrelevant context. To enable GEAR on natural-language data, we develop an automated pipeline that constructs evidence-annotated training data from arbitrary documents. We validate GEAR across multiple model scales and benchmarks, showing consistent improvements of up to +4.6 average points over standard RL with accuracy-based rewards, with larger gains at longer contexts, while also reducing repetitive copying and thinking length. Our findings suggest that, even as long-context evaluation shifts from simple retrieval toward complex reasoning, accurate grounding in relevant evidence remains an indispensable capability with substantial room for improvement.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.19345",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Not an application opportunity, just a research paper · No actionable opportunity to apply for.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Not an application opportunity, just a research paper"
+          },
+          "key": "63625b9bbda0"
+        },
+        {
+          "title": "Agents in the Wild: Where Research Meets Deployment",
+          "url": "https://arxiv.org/abs/2607.19336v1",
+          "source": "arxiv",
+          "description": "Agentic systems large language model (LLM) based architectures capable of reasoning, planning, acting, and coordinating with tools and other agents are rapidly transitioning from research prototypes to production scale deployments across domains such as software engineering, scientific discovery, and finance. While academic work has emphasized benchmarks and algorithmic innovation, deployment raises new challenges around robustness, safety, and reliability. This tutorial brings together researchers and practitioners to explore advances in reasoning and planning, multi agent coordination, and evaluation, highlighting open challenges arising from deployment experience. Through applied case studies in pharmaceutical discovery and financial systems, we analyze common design patterns that make agentic systems successful, and discuss practical mitigation strategies for failure modes, such as verification pipelines, fallback mechanisms, and human in the loop supervision. Attendees will gain a comprehensive view of the field along with concrete design patterns, evaluation checklists, and templates for safe and reliable deployment across industries.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.19336",
+          "score": 5,
+          "ai_score": 6,
+          "ai_summary": "research on AI agents and LLMs",
+          "action_plan": [
+            "read the tutorial (4h)",
+            "take notes (2h)",
+            "apply knowledge (4h)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 0,
+            "skill": 8,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "4f4c473ce339"
+        },
+        {
+          "title": "Judge approves $1.5B Anthropic settlement for pirated books used to train Claude",
+          "url": "https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "48996652",
+          "score": 6,
+          "ai_score": 0,
+          "ai_summary": "news article, no action required",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 2,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "yes"
+          },
+          "key": "d82a3f9ab90c"
+        },
+        {
+          "title": "3D Websites Hackathon",
+          "url": "https://3d-websites-hackathon.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 22 - Jul 31, 2026 | prize $ 55 | themes: Design, Web, Beginner Friendly",
+          "deadline": "2026-07-31",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30501",
+          "score": 9,
+          "ai_score": 4,
+          "ai_summary": "Building experience",
+          "action_plan": [
+            "Research hackathon details (1 hour)",
+            "Form a team (2 hours)",
+            "Develop a project (20 hours)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 6,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "3dc64ec0221e"
+        },
+        {
+          "title": "Number of Submissions @ AAAI [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v2ef98/number_of_submissions_aaai_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v2ef98",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Informational post, not an opportunity · Just a news item, no action required.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Informational post, not an opportunity"
+          },
+          "key": "0829eb8aa528"
+        },
+        {
+          "title": "Looking for feedback on my GPU-accelerated Snake AI project [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v2xktw/looking_for_feedback_on_my_gpuaccelerated_snake/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v2xktw",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Feedback request, not an opportunity · Not a formal opportunity to apply for.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Feedback request, not an opportunity"
+          },
+          "key": "6af092a88a0c"
+        },
+        {
+          "title": "Reproducing OpenAI’s “persistently beneficial models” - GRPO trait install barely moves. Ideas? [P] [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v2b8rd/reproducing_openais_persistently_beneficial/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v2b8rd",
+          "score": 4,
+          "ai_score": 5,
+          "ai_summary": "machine learning research discussion",
+          "action_plan": [
+            "read the discussion (2h)",
+            "take notes (1h)",
+            "apply knowledge (2h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 0,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "d62d7dd23b7d"
+        },
+        {
+          "title": "My OCR model mislabels section titles as body text. Is a CRF the right fix, or am I overcomplicating it? [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v2bs2k/my_ocr_model_mislabels_section_titles_as_body/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v2bs2k",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — Not an application opportunity · OCR/CRF question is niche, low resume impact for Mohith",
+          "action_plan": [
+            "Spend 15 min reading the Reddit thread",
+            "Draft a concise answer if confident",
+            "Post reply and note any learning"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 7,
+            "prestige": 1,
+            "deadline": 0,
+            "skill": 3,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "Not an application opportunity"
+          },
+          "key": "eaaa23e204db"
+        },
+        {
+          "title": "NeurIPS 2026 reviews exact timing[D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v2j950/neurips_2026_reviews_exact_timingd/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v2j950",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — Not an application opportunity · NeurIPS timing info is informational, no direct career leverage",
+          "action_plan": [
+            "Read the post for 5 min",
+            "Bookmark if useful for future conference planning"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 5,
+            "prestige": 1,
+            "deadline": 0,
+            "skill": 2,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "Not an application opportunity"
+          },
+          "key": "fb49a4056b40"
+        },
+        {
+          "title": "My federated learning project just showed that \"high accuracy\" can completely hide a model missing every single attack from an entire category, and I think more people should know about this [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v32mfs/my_federated_learning_project_just_showed_that/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v32mfs",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — Not an application opportunity · Federated learning security insight aligns with interests but no credential",
+          "action_plan": [
+            "Read the discussion (10 min)",
+            "Summarize key point in personal notes",
+            "Consider a short blog post to showcase insight"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 8,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 4,
+            "time": 3,
+            "eligible": "no",
+            "elig_note": "Not an application opportunity"
+          },
+          "key": "7033bdf19dca"
+        },
+        {
+          "title": "Weekend Dev Challenge 60: LLD Projects (codechef.com)",
+          "url": "https://www.codechef.com/DEVWEEKEND60",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-07-24T18:30:00",
+          "deadline": "2026-07-24",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69010429",
+          "score": 5,
+          "ai_score": 6,
+          "ai_summary": "competitive programming contest",
+          "action_plan": [
+            "review contest rules (1h)",
+            "practice coding (4h)",
+            "participate in contest (4h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 8,
+            "skill": 7,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "d9450b2b78f5"
+        },
+        {
+          "title": "SimuCode Robotics Challenge Week 2026",
+          "url": "https://unstop.com/hackathons/simucode-robotics-challenge-week-2026-simucode-1720382",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1720382",
+          "score": 4,
+          "ai_score": 4,
+          "ai_summary": "robotics challenge",
+          "action_plan": [
+            "review challenge rules (1h)",
+            "form a team (2h)",
+            "start building (4h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 0,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "63eef288c2b4"
+        },
+        {
+          "title": "PixxelHack 2.0 – A Web Development Hackathon",
+          "url": "https://unstop.com/hackathons/pixxelhack-20-a-web-development-hackathon-thakur-college-of-engineering-and-technology-tcet-mumbai-1719044",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1719044",
+          "score": 7,
+          "ai_score": 4,
+          "ai_summary": "web development skills",
+          "action_plan": [
+            "review hackathon rules (1h)",
+            "form a team (2h)",
+            "start building (4h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 0,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "4de5e2d050ef"
+        },
+        {
+          "title": "Bidaya - Under The Surface (Prizes:100K USD In Virtual Cards)",
+          "url": "https://unstop.com/hackathons/under-the-surface-hackathon-bidaya-1722539",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1722539",
+          "score": 4,
+          "ai_score": 4,
+          "ai_summary": "Hackathon builds portfolio but low prestige and no urgency.",
+          "action_plan": [
+            "Research hackathon rules (1h)",
+            "Form a 2‑person team (2h)",
+            "Prototype AI demo (1 week)",
+            "Submit before final deadline (if any)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "474cb8cb4050"
+        },
+        {
+          "title": "Video Editor Internship",
+          "url": "https://unstop.com/internships/video-editor-internship-shopexer-technologies-llp-1723217",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1723217",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "a047a9d72dd7"
+        },
+        {
+          "title": "Web Development Internship",
+          "url": "https://unstop.com/internships/web-development-internship-the-developers-arena-1723221",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1723221",
+          "score": 8,
+          "ai_score": 5,
+          "ai_summary": "Web development skills",
+          "action_plan": [
+            "Apply for internship (1 hour)",
+            "Prepare for interview (5 hours)",
+            "Complete internship (40 hours)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 7,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "185f6d13e57b"
+        },
+        {
+          "title": "Digital Marketing & Social Media Internship",
+          "url": "https://unstop.com/internships/digital-marketing-social-media-internship-devnexus-agency-1723218",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1723218",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "6f33709c64ad"
+        },
+        {
+          "title": "Business Development & Sales Internship",
+          "url": "https://unstop.com/internships/business-development-sales-internship-devnexus-agency-1723212",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1723212",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "aefe2ede317c"
+        },
+        {
+          "title": "Sales and Marketing Internship",
+          "url": "https://unstop.com/internships/sales-and-marketing-internship-leadsico-enterprises-1723105",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1723105",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "92ba768dbaca"
+        },
+        {
+          "title": "SEO Internship",
+          "url": "https://unstop.com/internships/seo-internship-accesco-living-1723108",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1723108",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "0dc8084de282"
+        },
+        {
+          "title": "Campus Ambassador Internship",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-smarted-innovations-1723084",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1723084",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — non-technical · Non-technical internship",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "non-technical"
+          },
+          "key": "65312786b410"
+        },
+        {
+          "title": "Sales Internship",
+          "url": "https://unstop.com/internships/sales-internship-stickyhr-1723090",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1723090",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not AI/ML related · not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not AI/ML related"
+          },
+          "key": "26567b9198c5"
+        },
+        {
+          "title": "Virtu Financial — Software Engineer Intern - Software Engineer",
+          "url": "https://job-boards.greenhouse.io/virtu/jobs/8624410002",
+          "source": "internships",
+          "description": "internship | Virtu Financial | Austin, TX, NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "800e06ea-4a8a-4db5-a93a-7aae82cfac49",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Finance intern gives industry experience but misaligned with AI focus.",
+          "action_plan": [
+            "Check application window for Summer 2027 (1h)",
+            "Update resume highlighting relevant CS skills (2h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "7543bb01b483"
+        },
+        {
+          "title": "Fab2 — Rust Software Engineer Intern - Chip Design Tools",
+          "url": "https://jobs.ashbyhq.com/fab2/907766af-a3c0-49a3-b01e-246baa437d10/application?embed=true",
+          "source": "internships",
+          "description": "internship | Fab2 | SF | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f97c8aa5-6888-44e1-a593-8b2b91ce485e",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Rust/chip‑design role adds niche skills, modest prestige, no deadline pressure.",
+          "action_plan": [
+            "Read Fab2 internship description (30m)",
+            "Prepare Rust project demo (1 week)",
+            "Apply with cover letter (1h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "ec8f97c4d836"
+        },
+        {
+          "title": "ShyftLabs — AI Engineer Intern",
+          "url": "https://jobs.lever.co/shyftlabs/4f389ea7-9b98-4ed0-99c2-b25ea8cc2dcd/apply",
+          "source": "internships",
+          "description": "internship | ShyftLabs | Toronto, ON, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e58f0b09-70e5-4b05-ab01-b3f5d8348c72",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "AI engineer internship abroad aligns with career and interests, but visa uncertainty. · ⚠ verify eligibility: Visa/work permit for Canada no",
+          "action_plan": [
+            "Verify eligibility for Canadian work permit (1h)",
+            "Gather AI project portfolio (2 days)",
+            "Submit application (1h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "Visa/work permit for Canada not specified"
+          },
+          "key": "3812d1f92dc9"
+        },
+        {
+          "title": "Medpace — AI Engineer Intern",
+          "url": "https://careers.medpace.com/jobs/12863?icims=1",
+          "source": "internships",
+          "description": "internship | Medpace | London, UK | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "78b03927-c204-476c-947a-99cb2714c3ee",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "International AI role offers strong career boost; visa status unknown. · ⚠ verify eligibility: UK work eligibility unclear for Indian studen",
+          "action_plan": [
+            "Check UK Tier‑5 internship visa requirements (1h)",
+            "Prepare AI portfolio (2 days)",
+            "Apply if eligible (1h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "UK work eligibility unclear for Indian student"
+          },
+          "key": "402de5a27eff"
+        },
+        {
+          "title": "Keysight Technologies — AI/ML Research Intern",
+          "url": "https://jobs.keysight.com/jobs/52557?icims=1",
+          "source": "internships",
+          "description": "internship | Keysight Technologies | Edinburgh, UK | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "94d15250-b26f-43ee-8091-069b19db76c3",
+          "score": 6,
+          "ai_score": 8,
+          "ai_summary": "AI/ML research internship",
+          "action_plan": [
+            "review internship requirements (2h)",
+            "update resume (2h)",
+            "apply for internship (2h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 0,
+            "skill": 9,
+            "time": 8,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "8512e2e26b4a"
+        }
+      ]
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-21",
+  "updated_at": "2026-07-22",
   "items": [
     {
       "key": "063502eecdda",
@@ -33,23 +33,6 @@
         "Identify AI intern requirements (30m)",
         "Showcase AI projects (2h)",
         "Apply (1h)"
-      ]
-    },
-    {
-      "key": "aa7029edc4b5",
-      "title": "ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation",
-      "url": "https://arxiv.org/abs/2607.08741v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Research in AI",
-      "action_plan": [
-        "Read the paper (2 days)",
-        "Implement the model (4 days)",
-        "Write a report (2 days)"
       ]
     },
     {
@@ -382,37 +365,20 @@
       ]
     },
     {
-      "key": "e9e2e3debc2f",
-      "title": "Kaya AI India Hackathon 2026",
-      "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
-      "source": "devpost",
-      "score": 7,
-      "deadline": "2026-07-13",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AI & IoT focus",
-      "action_plan": [
-        "Review IoT & ML concepts (4h)",
-        "Brainstorm project ideas (2h)",
-        "Develop a project (10d)"
-      ]
-    },
-    {
-      "key": "8fc265ae5bec",
-      "title": "AI Developer Internship",
-      "url": "https://unstop.com/internships/ai-developer-internship-skillpilot-solutions-llp-1715792",
-      "source": "unstop",
-      "score": 7,
+      "key": "8512e2e26b4a",
+      "title": "Keysight Technologies — AI/ML Research Intern",
+      "url": "https://jobs.keysight.com/jobs/52557?icims=1",
+      "source": "internships",
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "AI developer internship",
+      "ai_summary": "AI/ML research internship",
       "action_plan": [
-        "Review internship description (30m)",
-        "Apply online (1h)",
-        "Prepare for technical interview (10h)"
+        "review internship requirements (2h)",
+        "update resume (2h)",
+        "apply for internship (2h)"
       ]
     },
     {
@@ -498,6 +464,23 @@
         "1. Draft a one‑page AI project summary (2 h).",
         "2. Submit application on Parsons site (1 h).",
         "3. Prepare for AI interview: LoRA, diffusion basics (4 h)."
+      ]
+    },
+    {
+      "key": "e9e2e3debc2f",
+      "title": "Kaya AI India Hackathon 2026",
+      "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
+      "source": "devpost",
+      "score": 7,
+      "deadline": "2026-07-13",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "AI & IoT focus",
+      "action_plan": [
+        "Review IoT & ML concepts (4h)",
+        "Brainstorm project ideas (2h)",
+        "Develop a project (10d)"
       ]
     },
     {
@@ -1052,54 +1035,37 @@
       ]
     },
     {
-      "key": "bc31323c5a91",
-      "title": "RealWorldIQ Challenge 2026",
-      "url": "https://unstop.com/hackathons/realworldiq-challenge-2026-bansal-institute-of-research-technology-science-1715032",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Hackathon experience",
-      "action_plan": [
-        "Form a team (2 days)",
-        "Choose a project (1 day)",
-        "Participate in hackathon (3 days)"
-      ]
-    },
-    {
-      "key": "6f5ee954d105",
-      "title": "Uber Freight — Data Scientist Intern",
-      "url": "https://job-boards.greenhouse.io/uberfreight/jobs/5194491008",
+      "key": "3812d1f92dc9",
+      "title": "ShyftLabs — AI Engineer Intern",
+      "url": "https://jobs.lever.co/shyftlabs/4f389ea7-9b98-4ed0-99c2-b25ea8cc2dcd/apply",
       "source": "internships",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "Data‑science focus aligns with AI interests; high‑profile company.",
+      "ai_summary": "AI engineer internship abroad aligns with career and interests, but visa uncertainty. · ⚠ verify eligibility: Visa/work permit for Canada no",
       "action_plan": [
-        "Highlight ML coursework on resume (45m)",
-        "Connect with Uber Freight data team (30m)",
+        "Verify eligibility for Canadian work permit (1h)",
+        "Gather AI project portfolio (2 days)",
         "Submit application (1h)"
       ]
     },
     {
-      "key": "1df2081d380b",
-      "title": "Sentara Health — AI Intern",
-      "url": "https://sentara.wd1.myworkdayjobs.com/SCS/job/Virginia-Beach-VA/Intern--AI_JR-102248",
+      "key": "402de5a27eff",
+      "title": "Medpace — AI Engineer Intern",
+      "url": "https://careers.medpace.com/jobs/12863?icims=1",
       "source": "internships",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "AI intern role matches interests; decent prestige, good skill growth.",
+      "ai_summary": "International AI role offers strong career boost; visa status unknown. · ⚠ verify eligibility: UK work eligibility unclear for Indian studen",
       "action_plan": [
-        "Add AI‑internship projects to portfolio (1h)",
-        "Reach out to Sentara Health AI lead (30m)",
-        "Apply with tailored cover letter (1h)"
+        "Check UK Tier‑5 internship visa requirements (1h)",
+        "Prepare AI portfolio (2 days)",
+        "Apply if eligible (1h)"
       ]
     },
     {
@@ -1713,6 +1679,41 @@
         "Visit Composio careers page (30m)",
         "Tailor resume to full‑stack (2h)",
         "Submit application (1h)"
+      ]
+    },
+    {
+      "key": "da0e101aed97",
+      "title": "Cybernetic Labs — Software Engineer Intern - Agent Platform",
+      "url": "https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Agent platform aligns with AI agents interest and builds portfolio · ⚠ verify eligibility: US work authorization not specified",
+      "action_plan": [
+        "Visit Cybernetic Labs careers (30m)",
+        "Confirm visa sponsorship (1h)",
+        "Create a mini agent demo for application (3h)"
+      ]
+    },
+    {
+      "key": "adc68adaff87",
+      "title": "Optim-Agent/optim-agent — ★180",
+      "url": "https://github.com/Optim-Agent/optim-agent",
+      "source": "github",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "github",
+        "learning"
+      ],
+      "ai_summary": "Hands‑on LLM‑agent project matches core AI interests",
+      "action_plan": [
+        "Fork repo (5m)",
+        "Run demo notebook (30m)",
+        "Add a new agent feature (2d)"
       ]
     }
   ]
