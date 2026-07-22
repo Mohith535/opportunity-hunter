@@ -80,7 +80,42 @@ python -m resume.cover --jd "jd.txt" --company "Anthropic" --role "AI/ML Intern"
 `--why` is the one thing the tool will **never** invent for you. Omit it and you get a visible
 placeholder to fill — not a fluent lie about admiring their work.
 
-## 5. Career simulation
+## 5. Which job should you even apply to? (Feed → Fit)
+
+```bash
+python -m resume.fit --top 8
+```
+Ranks the opportunities OPHunter already found (`data/feed.json`) against your **verified** profile:
+what you can *prove* it asks for, plus an honest verdict — **STRONG FIT / STRETCH / NOT YET**. No
+invented match percentage; expired deadlines dropped (`--include-expired` to look back,
+`--no-verdict` to skip the LLM).
+
+## 6. Can you defend it? ("Prove it")
+
+```bash
+python -m resume.prove --resume resume.md
+```
+A receipt for every claim — each verified skill/project gets its evidence trail, and anything the
+profile **can't back** is flagged before an interviewer finds it.
+
+## 7. Fix your evidence (audit)
+
+```bash
+python -m resume.audit
+```
+Finds what silently weakens every document: repos with no description (skipped everywhere), skills
+backed **only** by a certificate (*exposure, not practice*), thin single-evidence skills, staleness.
+Each finding has a FIX and a WHY.
+
+## 8. LinkedIn profile text
+
+```bash
+python -m resume.social --target "AI/ML Engineering Intern" --out linkedin.md
+```
+An honest headline (220-char limit, first ~70 are what recruiters see) + About section (2,600 limit,
+first ~300 show before "See more"), written from your real projects. Works today — no export needed.
+
+## 9. Career simulation
 
 ```bash
 python -m resume.simulate --target "Machine Learning Engineer intern" --months 6 --profile
