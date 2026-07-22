@@ -30,19 +30,102 @@ Free, offline-friendly, never crashes on a missing source. Output is gitignored 
 from __future__ import annotations
 
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-from .harvest import github_projects, harvest
+from .harvest import _canon, github_projects, harvest
 
 _BASE = Path(__file__).resolve().parent.parent
 DEFAULT_PATH = _BASE / "data" / "career_profile.json"
 
 
 # ─── build ───────────────────────────────────────────────────────────
+def _norm(s: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", (s or "").lower())
+
+
+def _apply_resume(profile: dict, r: dict) -> dict:
+    """Merge an ingested résumé into the profile — the richest source the user owns.
+
+    Résumé content is SELF-ASSERTED, so it is tagged `resume:` and never silently upgraded to the
+    same standing as a repo or certificate. But it carries what nothing else can: education, awards
+    and programs, real project depth, and contact details.
+    """
+    tag = f"resume:{r.get('_source_file', 'resume')[:32]}"
+    rb = r.get("basics") or {}
+    b = profile["basics"]
+
+    for key in ("name", "email", "phone", "location", "summary"):
+        if rb.get(key):
+            b[key] = rb[key]
+    b.setdefault("profiles", [])
+    for net, url in (("LinkedIn", rb.get("linkedin")), ("Portfolio", rb.get("portfolio")),
+                     ("GitHub", rb.get("github"))):
+        if url and not any(p.get("network") == net for p in b["profiles"]):
+            b["profiles"].append({"network": net, "url": url})
+
+    if r.get("education"):
+        profile["education"] = r["education"] + [e for e in profile.get("education", [])]
+    if r.get("work"):
+        profile["work"] = r["work"] + [w for w in profile.get("work", [])]
+    # Awards / selections / programs — a section GitHub and certificates simply cannot produce.
+    profile["awards"] = r.get("awards") or []
+
+    # Certificates from a résumé carry issuer + date; folder-derived ones are just filenames.
+    if r.get("certificates"):
+        seen = {_norm(c.get("name", "")) for c in r["certificates"]}
+        rich = [{"name": c.get("name", ""), "issuer": c.get("issuer", ""), "date": c.get("date", ""),
+                 "x_source": "resume"} for c in r["certificates"] if c.get("name")]
+        keep = [c for c in profile.get("certificates", [])
+                if not any(_norm(c["name"]).startswith(s[:12]) or s.startswith(_norm(c["name"])[:12])
+                           for s in seen if s)]
+        profile["certificates"] = rich + keep
+
+    # Projects: enrich matching repos with the résumé's real bullets; append résumé-only projects.
+    gh = profile.get("projects", [])
+    for rp in r.get("projects") or []:
+        rn = _norm(rp.get("name", ""))
+        if not rn:
+            continue
+        match = next((p for p in gh if _norm(p["name"]) and
+                      (rn.startswith(_norm(p["name"])) or _norm(p["name"]).startswith(rn[:14]))), None)
+        if match:
+            match["highlights"] = rp.get("highlights") or []
+            match["x_resume_name"] = rp.get("name")
+            if rp.get("description") and len(rp["description"]) > len(match.get("description") or ""):
+                match["description"] = rp["description"]
+            match["keywords"] = list(dict.fromkeys((match.get("keywords") or []) +
+                                                   (rp.get("keywords") or [])))
+        else:
+            gh.append({"name": rp.get("name"), "description": rp.get("description", ""),
+                       "keywords": rp.get("keywords") or [], "url": "", "private": False,
+                       "highlights": rp.get("highlights") or [], "x_source": "resume"})
+    profile["projects"] = gh
+
+    # Skills the résumé asserts — visible as self-asserted, never dressed up as verified.
+    by_name = {s["name"]: s for s in profile.get("skills", [])}
+    for raw in r.get("skills") or []:
+        name = _canon(re.sub(r"\(.*?\)", "", str(raw)).strip())
+        if not name or len(name) < 2:
+            continue
+        if name in by_name:
+            if tag not in by_name[name]["evidence"]:
+                by_name[name]["evidence"].append(tag)
+                by_name[name]["evidenceCount"] = len(by_name[name]["evidence"])
+                if "resume" not in by_name[name]["x_sources"]:
+                    by_name[name]["x_sources"].append("resume")
+        else:
+            by_name[name] = {"name": name, "evidenceCount": 1, "evidence": [tag],
+                             "x_sources": ["resume"]}
+    profile["skills"] = sorted(by_name.values(),
+                               key=lambda s: (-s["evidenceCount"], s["name"]))
+    return profile
+
+
 def build_profile(github_user: str | None = None, certs_folder: str | None = None,
                   linkedin: str | None = None, include_private: bool = False,
-                  token: str | None = None) -> dict:
+                  token: str | None = None, resume_path: str | None = None) -> dict:
     """Gather every source and normalise into one JSON-Resume-aligned profile with evidence.
 
     Every argument is optional; whatever's provided is merged. Never raises on a missing/broken
@@ -91,13 +174,12 @@ def build_profile(github_user: str | None = None, certs_folder: str | None = Non
     if declared:
         sources.append("declared")
 
-    return {
+    profile = {
         "meta": {
             "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "schema": "jsonresume-1.0.0+ophunter",
             "sources": sources,
-            "counts": {"skills": len(skills), "certificates": len(certificates),
-                       "projects": len(projects), "work": len(work), "education": len(education)},
+            "counts": {},
         },
         "basics": basics,
         "skills": skills,
@@ -105,8 +187,26 @@ def build_profile(github_user: str | None = None, certs_folder: str | None = Non
         "work": work,
         "projects": projects,
         "education": education,
+        "awards": [],
         "x_declared": declared,   # what Mohith WANTS — interests, companies, goals, psychology
     }
+
+    if resume_path:
+        from .ingest import ingest_resume  # noqa: PLC0415
+        try:
+            ingested = ingest_resume(resume_path)
+        except (FileNotFoundError, RuntimeError):
+            ingested = {}
+        if ingested:
+            profile = _apply_resume(profile, ingested)
+            sources.append("resume")
+
+    profile["meta"]["counts"] = {
+        "skills": len(profile["skills"]), "certificates": len(profile["certificates"]),
+        "projects": len(profile["projects"]), "work": len(profile["work"]),
+        "education": len(profile["education"]), "awards": len(profile.get("awards", [])),
+    }
+    return profile
 
 
 def _declared_layer() -> tuple[dict, str]:
@@ -245,6 +345,9 @@ def main() -> int:
     ap.add_argument("--include-private", action="store_true", help="include private repos (needs token)")
     ap.add_argument("--certs", default="", help="path to your certificates folder")
     ap.add_argument("--linkedin", default="", help="path to your LinkedIn data-export folder or .zip")
+    ap.add_argument("--resume", default="",
+                    help="path to your EXISTING resume (.pdf/.docx/.txt) — the richest source you "
+                         "own: education, awards/programs, real project depth, contact details")
     ap.add_argument("--out", default=str(DEFAULT_PATH), help="where to write the profile JSON")
     ap.add_argument("--show", action="store_true", help="just show the cached profile, don't rebuild")
     args = ap.parse_args()
@@ -262,7 +365,8 @@ def main() -> int:
         pass
 
     profile = build_profile(args.github or None, args.certs or None, args.linkedin or None,
-                            include_private=args.include_private, token=token)
+                            include_private=args.include_private, token=token,
+                            resume_path=args.resume or None)
     path = save_profile(profile, args.out)
     print(format_summary(profile))
     print(f"\nSaved → {path}  (gitignored; your single source of truth from now on)")

@@ -1,24 +1,28 @@
 """
-Resume Generator (capstone) — turn your `career_profile.json` into a clean, ATS-safe resume.
+Resume Generator — render a real, ATS-safe resume from your `career_profile.json`.
 
-This is where the whole engine pays off: Slices 1-5 built the intelligence (analyse, tailor, harvest,
-simulate, unified profile); this renders an actual resume from your single source of truth — your real
-skills (with evidence), your real projects (incl. private repos), your certificates, and — when your
-LinkedIn export lands — your work history and education.
+This was rebuilt after an honest failure: the first version produced a thin, generic resume that was
+far worse than the one the user had written by hand. Three root causes, all fixed here:
 
-Two design choices keep it honest AND high quality:
-  * The STRUCTURE is deterministic — standard single-column headings (Summary / Skills / Projects /
-    Certifications / Education / Experience), reverse-chronological, plain text. That's exactly what
-    ATS parse best (per the analyzer's own rules), and it means the resume renders even with no LLM.
-  * The PROSE is LLM-polished but fact-bound — the summary, the project bullets (Google XYZ shape),
-    and the selection of resume-worthy certificates come from the model, but ONLY from the real facts
-    in your profile. Never invents; missing numbers become "[add metric]"; placeholders like
-    "[add email]" mark what only you can fill.
+  1. **Impoverished data.** GitHub descriptions + certificate filenames can't see education, awards,
+     programs, or that TaskFlow is "3200+ lines across 8 versions grounded in behavioural research".
+     Fixed upstream: `resume/ingest.py` reads your existing résumé into the profile.
+  2. **It replaced good content with generic prose.** The model was rewriting rich, specific bullets
+     into vague ones. Now: where the profile holds REAL bullets, they are preserved — the model may
+     only reorder and mirror the job's language, and is explicitly forbidden from dropping a specific.
+  3. **No sense of significance.** It listed practice repos (HelloApp, week-N exercises). Research on
+     new-grad resumes is blunt: a tutorial/practice project is rarely persuasive and costs you space.
+     Those are now filtered out unless the résumé itself features them.
 
-Optional `--jd` tailors it to a specific job (front-loads matching skills, orders projects by
-relevance, tailors the summary). Output is Markdown — readable, and it converts cleanly to a
-single-column PDF/DOCX (don't pour it into a fancy multi-column template — that's what breaks parsers).
-It's a DRAFT you review, complete the placeholders, and submit. Nothing is auto-applied.
+Grounded in what the evidence actually says about resumes:
+  * Recruiters spend ~7.4 seconds on the first pass and fixate on name → title → dates → education,
+    and they look LONGER at simple layouts with clear section headings. So: single column, standard
+    headings, no tables/columns/graphics.
+  * ATS match keywords literally, not by synonym — so the job's own words are mirrored where truthful.
+  * Strong bullets follow XYZ / STAR: action verb + what you did + the tech + a measurable result.
+
+Everything stays honest: only real content, no invented metrics, and every section traces to the
+profile. Output is Markdown → export to a single-column PDF.
 """
 
 from __future__ import annotations
@@ -28,7 +32,6 @@ import re
 from filters.llm_scorer import complete
 from .profile import load_profile_json, relevant_projects
 
-# Pretty display for skills stored lowercase in the profile. Fallback = word-capitalise.
 _DISPLAY = {
     "aws": "AWS", "sql": "SQL", "llm": "LLM", "llms": "LLMs", "api": "API", "rest api": "REST APIs",
     "rest apis": "REST APIs", "ui/ux": "UI/UX", "html": "HTML", "css": "CSS", "gcp": "GCP",
@@ -37,12 +40,14 @@ _DISPLAY = {
     "google cloud": "Google Cloud", "generative ai": "Generative AI", "machine learning":
     "Machine Learning", "deep learning": "Deep Learning", "prompt engineering": "Prompt Engineering",
     "data analytics": "Data Analytics", "security copilot": "Security Copilot", "critical thinking":
-    "Critical Thinking",
+    "Critical Thinking", "mcp": "MCP", "eda": "EDA", "oop": "OOP", "cli": "CLI", "dns": "DNS",
+    "json": "JSON", "ai agents": "AI Agents", "c++": "C++", "c": "C", "java": "Java",
 }
-# Cert-folder entries that aren't real credentials (screenshots, tips, proofs) — dropped in the
-# no-LLM fallback (the LLM does finer selection when available).
-_CERT_NOISE = ("interview tip", "resume", "snippet", "application", "proof", "confirmation",
-               "screenshot", "camp")
+# Practice/tutorial repos actively cost you space on a resume (per new-grad resume research).
+_PRACTICE = re.compile(r"(practice|week\s*\d|hello[-_ ]?(app|world)|tutorial|demo|sample|assignment"
+                       r"|test[-_]?repo|learning|exercise|banner)", re.I)
+# Certificate entries that aren't credentials.
+_CERT_NOISE = ("interview tip", "snippet", "application", "proof", "confirmation", "screenshot")
 
 
 def _pretty(skill: str) -> str:
@@ -51,9 +56,9 @@ def _pretty(skill: str) -> str:
     return " ".join(_DISPLAY.get(w, w.capitalize()) for w in skill.split())
 
 
-# ─── selection (deterministic, honest) ───────────────────────────────
-def _skills_ordered(profile: dict, jd_keywords: list[str], limit: int = 20) -> list[str]:
-    names = [s["name"] for s in profile.get("skills", [])]  # already sorted by evidence
+# ─── selection ───────────────────────────────────────────────────────
+def _skills_ordered(profile: dict, jd_keywords: list[str], limit: int = 22) -> list[str]:
+    names = [s["name"] for s in profile.get("skills", [])]
     if jd_keywords:
         kws = {k.lower().strip() for k in jd_keywords if k.strip()}
         matched = [s for s in names if any(k and (k in s or s in k) for k in kws)]
@@ -61,88 +66,141 @@ def _skills_ordered(profile: dict, jd_keywords: list[str], limit: int = 20) -> l
     return [_pretty(s) for s in names[:limit]]
 
 
-def _pick_projects(profile: dict, jd_keywords: list[str], limit: int = 6) -> list[dict]:
+def _pick_projects(profile: dict, jd_keywords: list[str], limit: int = 5) -> list[dict]:
+    """Significance first, then job relevance.
+
+    A project the résumé already features (it has real bullets) outranks a bare repo, and practice
+    repos are excluded — they dilute the page.
+    """
+    projects = [p for p in profile.get("projects", [])
+                if p.get("highlights") or not _PRACTICE.search(p.get("name") or "")]
+    featured = [p for p in projects if p.get("highlights")]
+    described = [p for p in projects if not p.get("highlights") and (p.get("description") or "").strip()]
+
     if jd_keywords:
-        picks = relevant_projects(profile, jd_keywords, limit)
-        if picks:
-            return picks
-    described = [p for p in profile.get("projects", []) if p.get("description")]
-    return (described or profile.get("projects", []))[:limit]
+        relevant = {(p.get("name") or "") for p in relevant_projects(profile, jd_keywords, 12)}
+        featured.sort(key=lambda p: (p.get("name") not in relevant,))
+        described.sort(key=lambda p: (p.get("name") not in relevant,))
+    return (featured + described)[:limit]
 
 
-def _clean_certs(profile: dict, limit: int = 12) -> list[str]:
-    out = []
-    for c in profile.get("certificates", []):
-        name = c["name"]
-        if any(n in name.lower() for n in _CERT_NOISE):
-            continue
-        out.append(name)
-    return out[:limit]
+def _tokens(s: str) -> set[str]:
+    return {w for w in re.findall(r"[a-z0-9']+", (s or "").lower()) if len(w) > 2}
 
 
-# ─── LLM enhancement (fact-bound) ────────────────────────────────────
-_ENHANCE_PROMPT = """You are an expert technical resume writer. Using ONLY the real facts below, write
-three sections for {name}'s resume. NEVER invent — no fake metrics, tools, employers, or details.
-Where a number would strengthen a bullet but isn't given, write "[add metric]".{jd_line}
+def _pick_certs(profile: dict, jd_keywords: list[str], limit: int = 8) -> list[dict]:
+    certs = [c for c in profile.get("certificates", [])
+             if not any(n in c.get("name", "").lower() for n in _CERT_NOISE)]
+    # Résumé-sourced certificates carry issuer + date — richer, so prefer them.
+    certs.sort(key=lambda c: (c.get("x_source") != "resume",))
+    # Drop folder-derived duplicates of a richer résumé entry ("Google Cloud Best of Next" when
+    # "Google Cloud Asia Pacific Best of Next '26 — Google · May 2026" is already present).
+    award_toks = [_tokens(a.get("title", "")) for a in profile.get("awards", [])]
+    kept: list[dict] = []
+    for c in certs:
+        toks = _tokens(c.get("name", ""))
+        if c.get("x_source") != "resume" and toks:
+            # already covered by a richer résumé entry…
+            if any(len(toks & _tokens(k.get("name", ""))) >= max(2, len(toks) - 1) for k in kept):
+                continue
+            # …or it's really a programme already listed under Selections & Programs.
+            if any(len(toks & a) >= max(2, len(toks) - 1) for a in award_toks if a):
+                continue
+        kept.append(c)
+    certs = kept
+    if jd_keywords:
+        kws = {k.lower() for k in jd_keywords}
+        certs.sort(key=lambda c: (not any(k in c.get("name", "").lower() for k in kws),))
+    return certs[:limit]
 
-Return EXACTLY these three blocks, plain text, nothing else:
+
+# ─── LLM polish (fact-bound) ─────────────────────────────────────────
+_PROMPT = """You are an expert technical resume writer. Write two sections for {name}'s resume using
+ONLY the real facts below. This resume must survive an interview where every line is questioned.
+
+ABSOLUTE RULES:
+- NEVER invent metrics, tools, employers, dates or achievements.
+- RESUME VOICE: no pronouns, no third person, never the candidate's own name. Resume convention is
+  implied first person — "2nd-year B.Tech CSE student who ships…", never "He is…" or "Mohith is…".
+- For each project listed under NEEDS A BULLET, write ONE factual bullet from its description and
+  tech. If there is genuinely nothing to say, skip that project entirely.
+- Never output bracketed instructions or placeholder text of any kind.
+
+STYLE (what the evidence says works):
+- Each bullet: strong action verb + what you built + the tech + a measurable result (XYZ / STAR shape).
+  No "responsible for", no "helped with".
+- Mirror the job description's exact terms wherever they are TRUE for this candidate — ATS match
+  literally, not by synonym.
+- Student/early-career framing: confident, never inflated.
+
+Output EXACTLY these two blocks and nothing else:
 
 SUMMARY:
-<2-3 line professional summary, grounded only in these facts{jd_tailor}>
+<3-4 lines, no pronouns. Lead with the identity + strongest proof (a real project or selection), then
+the skills that match this job, then the goal. Concrete, no adjective soup.>
 
-PROJECTS:
-<for each project below, ONE line formatted "- **Exact Project Name** — <bullet>": strong action verb
-+ what it does + the tech + a result or [add metric]. Use ONLY that project's stated description/tech;
-keep its real name. Do not add projects.>
-
-CERTIFICATIONS:
-<from the certificate entries below, select ONLY the ones that are genuine, resume-worthy credentials
-(DROP screenshots, "interview tips", "resume snippets", application proofs). Format each as a clean
-"- Title". At most 10.>
+BULLETS:
+<one line per project listed under NEEDS A BULLET, formatted exactly:
+"<Project Name> :: <the single bullet>">
 
 --- FACTS ---
 Name: {name}
 Background: {about}
-Skills: {skills}
-Projects:
-{projects}
-Certificate entries (select the real credentials):
-{certs}{jd_block}
+Selections / programs: {awards}
+Top skills: {skills}
+Already-written projects (context only — do NOT rewrite these):
+{featured}
+NEEDS A BULLET (write one each):
+{bare}
+{jd_block}
 """
 
 
-def _enhance(profile: dict, projects: list[dict], certs: list[str], jd_text: str | None) -> dict | None:
-    name = profile.get("basics", {}).get("name", "Candidate")
+def _enhance(profile: dict, featured: list[dict], bare: list[dict],
+             jd_text: str | None) -> dict | None:
+    """Summary + one bullet per bullet-less project.
+
+    Deliberately narrow: projects that already carry the candidate's own bullets are passed as
+    CONTEXT ONLY and never rewritten. A model paraphrasing a good bullet silently destroys specifics
+    (a live run turned "blue→amber→red" into "blue-amber-fired"), so those go in verbatim instead.
+    """
+    basics = profile.get("basics", {})
     declared = profile.get("x_declared", {})
-    about = " ".join(x for x in [declared.get("identity", ""), declared.get("longTermGoal", "")]
-                     if x) or "(not specified)"
-    proj_lines = "\n".join(
-        f"- {p.get('name')} (tech: {', '.join(p.get('keywords') or []) or 'n/a'}): "
-        f"{p.get('description') or '(no description)'}" for p in projects)
-    prompt = _ENHANCE_PROMPT.format(
-        name=name,
-        about=about,
-        skills=", ".join(_skills_ordered(profile, [], 25)),
-        projects=proj_lines or "(none)",
-        certs="\n".join(f"- {c}" for c in certs) or "(none)",
-        jd_line=(" Tailor the summary and bullet emphasis toward the JOB DESCRIPTION at the end."
-                 if jd_text else ""),
-        jd_tailor=", tailored to the job" if jd_text else "",
-        jd_block=(f"\n\n--- JOB DESCRIPTION (tailor toward this) ---\n{jd_text[:2500]}"
-                  if jd_text else ""))
-    out = complete(prompt, max_tokens=1000, temperature=0.4)
+    feat = "\n".join(f"- {p.get('x_resume_name') or p['name']}: "
+                     f"{'; '.join((p.get('highlights') or [])[:2])[:220]}" for p in featured)
+    bar = "\n".join(f"- {p['name']} (tech: {', '.join((p.get('keywords') or [])[:5]) or 'n/a'}): "
+                    f"{p.get('description') or '(no description)'}" for p in bare)
+    awards = "; ".join(f"{a.get('title')} ({a.get('awarder','')})" for a in profile.get("awards", [])[:6])
+
+    out = complete(_PROMPT.format(
+        name=basics.get("name", "Candidate"),
+        about=" ".join(x for x in [declared.get("identity", ""), basics.get("summary", "")] if x)[:600],
+        awards=awards or "(none)",
+        skills=", ".join(_skills_ordered(profile, [], 24)),
+        featured=feat or "(none)", bare=bar or "(none)",
+        jd_block=(f"\n--- JOB DESCRIPTION (mirror its language where true) ---\n{jd_text[:2500]}"
+                  if jd_text else "")), max_tokens=1200, temperature=0.3)
     if not out:
         return None
-    return {
-        "summary": _block(out, "SUMMARY", ("PROJECTS", "CERTIFICATIONS")),
-        "projects": _block(out, "PROJECTS", ("CERTIFICATIONS", "SUMMARY")),
-        "certifications": _block(out, "CERTIFICATIONS", ("SUMMARY", "PROJECTS")),
-    }
+
+    bullets: dict[str, str] = {}
+    for line in _clean(_block(out, "BULLETS", ("SUMMARY",))).splitlines():
+        if "::" in line:
+            k, v = line.split("::", 1)
+            bullets[k.strip().lstrip("-* ").lower()] = v.strip()
+    return {"summary": _block(out, "SUMMARY", ("BULLETS",)), "bullets": bullets}
 
 
 def _block(text: str, name: str, nexts: tuple[str, ...]) -> str:
     m = re.search(rf"{name}:\s*(.*?)(?=\n(?:{'|'.join(nexts)}):|\Z)", text, re.S | re.I)
     return m.group(1).strip() if m else ""
+
+
+def _clean(text: str) -> str:
+    """Strip any leaked instruction placeholders — a real bug seen in live output."""
+    text = re.sub(r"\[\s*(add|insert|write)\s+description[^\]]*\]", "", text, flags=re.I)
+    return "\n".join(ln for ln in text.splitlines()
+                     if not re.search(r"only the given tech|placeholder|<.*?>", ln, re.I)).strip()
 
 
 # ─── assemble ────────────────────────────────────────────────────────
@@ -151,71 +209,84 @@ def generate_resume(profile: dict, jd_text: str | None = None) -> str:
     jd_keywords = extract_jd_keywords(jd_text) if jd_text else []
 
     basics = profile.get("basics", {})
-    name = basics.get("name", "Your Name")
-    gh = next((p.get("url") for p in basics.get("profiles", []) if p.get("network") == "GitHub"), "")
+    name = basics.get("name") or "Your Name"
+    contact = [basics.get("email"), basics.get("phone")] + \
+              [p.get("url") for p in basics.get("profiles", []) if p.get("url")]
+    contact = [c for c in contact if c] or ["[add email]"]
 
     projects = _pick_projects(profile, jd_keywords)
-    certs = _clean_certs(profile)
-    enh = _enhance(profile, projects, certs, jd_text)
+    featured = [p for p in projects if p.get("highlights")]
+    bare = [p for p in projects if not p.get("highlights")]
+    enh = _enhance(profile, featured, bare, jd_text)
 
-    # Summary (LLM, else deterministic from declared identity + top skills).
-    top_skills = _skills_ordered(profile, jd_keywords, 20)
+    top_skills = _skills_ordered(profile, jd_keywords)
     if enh and enh["summary"]:
         summary = enh["summary"]
     else:
-        identity = profile.get("x_declared", {}).get("identity", "")
-        summary = (identity + " Core skills: " + ", ".join(top_skills[:6]) + ".").strip()
+        summary = ((profile.get("x_declared", {}).get("identity", "") or "") +
+                   " Core skills: " + ", ".join(top_skills[:8]) + ".").strip()
 
-    # Projects (LLM bullets, else deterministic name — description).
-    if enh and enh["projects"]:
-        projects_md = enh["projects"]
-    else:
-        projects_md = "\n".join(
-            f"- **{p.get('name')}** — {p.get('description') or 'project'} "
-            f"({', '.join(_pretty(k) for k in (p.get('keywords') or [])[:4])})" for p in projects)
+    # Your own bullets go in VERBATIM — no model paraphrase, so no specific can be corrupted.
+    parts = []
+    for p in projects:
+        parts.append(f"### {p.get('x_resume_name') or p['name']} — "
+                     f"{', '.join(_pretty(k) for k in (p.get('keywords') or [])[:5])}")
+        if p.get("highlights"):
+            parts += [f"- {h}" for h in p["highlights"]]
+        else:
+            bullet = (enh or {}).get("bullets", {}).get(p["name"].lower()) or p.get("description")
+            if bullet:
+                parts.append(f"- {bullet}")
+    projects_md = "\n".join(parts)
 
-    certs_md = (enh["certifications"] if enh and enh["certifications"]
-                else "\n".join(f"- {c}" for c in certs))
+    lines = [f"# {name}", " · ".join(contact), "", "## Summary", summary,
+             "", "## Skills", ", ".join(top_skills), "", "## Projects", projects_md]
 
-    # Education (LinkedIn if present, else a fill-in grounded in the declared identity).
-    edu = profile.get("education", [])
-    if edu:
-        education_md = "\n".join(
-            f"- **{e.get('studyType') or 'Degree'}**, {e.get('institution') or ''}"
-            f"{' (' + e.get('endDate') + ')' if e.get('endDate') else ''}" for e in edu)
-    else:
-        education_md = "- **B.Tech, Computer Science (AI & ML)**, [Your University], India — [grad year]"
-
-    lines = [
-        f"# {name}",
-        " · ".join(x for x in [gh, "[add email]", "[add phone]", "[add location]"] if x),
-        "", "## Summary", summary,
-        "", "## Skills", ", ".join(top_skills),
-        "", "## Projects", projects_md,
-        "", "## Certifications", certs_md,
-        "", "## Education", education_md,
-    ]
+    awards = profile.get("awards", [])
+    if awards:
+        lines += ["", "## Selections & Programs"]
+        for a in awards:
+            meta = " · ".join(x for x in [a.get("awarder"), a.get("date")] if x)
+            lines.append(f"- **{a.get('title')}**" + (f" — {meta}" if meta else ""))
+            if a.get("summary"):
+                lines.append(f"  {a['summary']}")
 
     work = profile.get("work", [])
     if work:
         lines += ["", "## Experience"]
         for w in work:
-            when = " – ".join(x for x in [w.get("start"), w.get("end")] if x)
-            lines.append(f"- **{w.get('title')}**, {w.get('company')}" + (f" ({when})" if when else ""))
-            if w.get("description"):
-                lines.append(f"  {w['description']}")
+            when = " – ".join(x for x in [w.get("startDate") or w.get("start"),
+                                          w.get("endDate") or w.get("end")] if x)
+            lines.append(f"- **{w.get('position') or w.get('title')}**, "
+                         f"{w.get('name') or w.get('company')}" + (f" ({when})" if when else ""))
+            for h in w.get("highlights") or ([w["description"]] if w.get("description") else []):
+                lines.append(f"  - {h}")
 
-    footer = ("\n---\n*Draft generated from your verified profile. Fill the [bracketed] placeholders, "
-              "review every line, then export to a single-column PDF. Nothing here is invented or "
-              "auto-submitted.*")
-    if not work:
-        footer = ("\n---\n*Draft from your verified profile — projects-first (a strong shape for a "
-                  "student). Your Work Experience + Education fill in automatically once you add your "
-                  "LinkedIn export. Fill [placeholders], review, export to a single-column PDF.*")
-    return "\n".join(lines) + footer
+    certs = _pick_certs(profile, jd_keywords)
+    if certs:
+        lines += ["", "## Certifications"]
+        for c in certs:
+            meta = " · ".join(x for x in [c.get("issuer"), c.get("date")] if x)
+            lines.append(f"- {c['name']}" + (f" — {meta}" if meta else ""))
+
+    edu = profile.get("education", [])
+    lines += ["", "## Education"]
+    if edu:
+        for e in edu:
+            when = " – ".join(x for x in [e.get("startDate"), e.get("endDate")] if x)
+            deg = " ".join(x for x in [e.get("studyType"), e.get("area")] if x) or "Degree"
+            lines.append(f"- **{deg}**, {e.get('institution','')}" + (f" ({when})" if when else ""))
+            if e.get("note"):
+                lines.append(f"  {e['note']}")
+    else:
+        lines.append("- **B.Tech, Computer Science (AI & ML)**, [Your University] — [grad year]")
+
+    return "\n".join(lines) + (
+        "\n\n---\n*Generated from your verified profile — every line traces to a real project, "
+        "credential, or selection. Review, then export to a SINGLE-COLUMN PDF (no tables or columns — "
+        "they break ATS parsers).*")
 
 
-# ─── CLI ─────────────────────────────────────────────────────────────
 def main() -> int:
     import argparse
     from pathlib import Path
@@ -228,7 +299,8 @@ def main() -> int:
     profile = load_profile_json()
     if not profile:
         print("No career_profile.json yet — build it first:\n"
-              "   python -m resume.profile --github <you> --include-private --certs <folder>")
+              "   python -m resume.profile --github <you> --include-private --certs <folder> "
+              "--resume <your existing resume>")
         return 1
 
     jd_text = None
@@ -236,12 +308,12 @@ def main() -> int:
         p = Path(args.jd)
         jd_text = p.read_text(encoding="utf-8", errors="ignore") if p.exists() else args.jd
 
-    resume_md = generate_resume(profile, jd_text)
+    md = generate_resume(profile, jd_text)
     if args.out:
-        Path(args.out).write_text(resume_md, encoding="utf-8")
+        Path(args.out).write_text(md, encoding="utf-8")
         print(f"Resume written → {args.out}")
     else:
-        print(resume_md)
+        print(md)
     return 0
 
 
