@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22",
+  "updated_at": "2026-07-23",
   "items": [
     {
       "key": "063502eecdda",
@@ -382,88 +382,20 @@
       ]
     },
     {
-      "key": "eb0f3000f365",
-      "title": "Meta — Research Scientist Intern - Monetization Computer Vision",
-      "url": "https://www.metacareers.com/jobs/2281218542616482",
-      "source": "internships",
-      "score": 7,
+      "key": "edf40a396255",
+      "title": "Forge 2 Edition 2 — AI Agent Hackathon",
+      "url": "https://unstop.com/hackathons/forge-2-edition-2-ai-agent-hackathon-nmg-technologies-1723594",
+      "source": "unstop",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "internship"
+        "hackathon"
       ],
-      "ai_summary": "relevant to AI/ML",
+      "ai_summary": "AI agent hackathon",
       "action_plan": [
-        "Research Meta internship",
-        "Update resume",
-        "Apply"
-      ]
-    },
-    {
-      "key": "fcbe2af1cd0e",
-      "title": "Amazon — Junior Software Development Engineer - Jr. Developer Program",
-      "url": "https://amazon.jobs/en/jobs/10420146/jr-software-development-engineer-san-luis-obispo-ca-jr-developer-program",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Amazon SDE internship",
-      "action_plan": [
-        "Update resume with relevant experience (2 days)",
-        "Practice coding interviews (4 days)",
-        "Apply for the internship (1 day)"
-      ]
-    },
-    {
-      "key": "9c43a8400169",
-      "title": "Hitachi Energy — Computer Vision Research & Development Engineer",
-      "url": "https://hitachi.wd1.myworkdayjobs.com/hitachi/job/Remote---Berkshire-United-Kingdom/Computer-Vision-R-D-Engineer_R0128079",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Computer Vision R&D",
-      "action_plan": [
-        "Research Hitachi Energy's CV projects (1 week)",
-        "Update resume with relevant CV experience (2 days)",
-        "Apply for the internship (1 day)"
-      ]
-    },
-    {
-      "key": "fc210617e740",
-      "title": "Aptiv — Working Student Interior Sensing ML",
-      "url": "https://aptiv.wd5.myworkdayjobs.com/aptiv_careers/job/Wuppertal-Germany/Working-Student-Interior-Sensing-ML_J000700630",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "ML internship at Aptiv, good prestige and skill growth; visa unclear. · ⚠ verify eligibility: German work authorization may be required",
-      "action_plan": [
-        "Check German student‑internship visa rules (≈30m)",
-        "Highlight interior‑sensing ML work in CV (≈2h)",
-        "Apply (≈1h)"
-      ]
-    },
-    {
-      "key": "ab3f271f6336",
-      "title": "Parsons — AI & Digital Innovation Engineer Intern",
-      "url": "https://parsons.wd5.myworkdayjobs.com/en-US/search/job/CA---ON-Toronto/AI---Digital-Innovation-Engineering-Intern_R180895",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI‑focused intern; adds relevant experience and international exposure.",
-      "action_plan": [
-        "1. Draft a one‑page AI project summary (2 h).",
-        "2. Submit application on Parsons site (1 h).",
-        "3. Prepare for AI interview: LoRA, diffusion basics (4 h)."
+        "Form team (1 week)",
+        "Prepare for hackathon (2 weeks)",
+        "Participate in hackathon (2 days)"
       ]
     },
     {
@@ -1069,125 +1001,71 @@
       ]
     },
     {
-      "key": "906a2dddbf46",
-      "title": "Doriandarko/texts-to-transformer — ★321",
-      "url": "https://github.com/Doriandarko/texts-to-transformer",
-      "source": "github",
-      "score": 6,
+      "key": "f0924ecacb60",
+      "title": "LKValues: Aligning Large Language Models with Sri Lankan Societal Values",
+      "url": "https://arxiv.org/abs/2607.20410v1",
+      "source": "arxiv",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "github",
-        "learning"
+        "research"
       ],
-      "ai_summary": "Transformer training project",
+      "ai_summary": "LLM research",
       "action_plan": [
-        "Fork the repository (1 day)",
-        "Train the model (4 days)",
-        "Improve the project (4 days)"
+        "Read research paper (2 days)",
+        "Analyze results (1 week)",
+        "Implement findings (2 weeks)"
       ]
     },
     {
-      "key": "8223baae9503",
-      "title": "Code Build 1.0",
-      "url": "https://unstop.com/hackathons/code-build-10-cobuild-1703709",
+      "key": "2397d005b694",
+      "title": "Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2607.20399v1",
+      "source": "arxiv",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "High‑impact AI research on RL & robotics; strong resume signal. · ⚠ verify eligibility: Eligibility not specified; may require research affi",
+      "action_plan": [
+        "Identify project lead/contact (0.5d)",
+        "Confirm eligibility (0.5d)",
+        "Prepare research proposal (1d)"
+      ]
+    },
+    {
+      "key": "ef8351d17961",
+      "title": "CodeYourCult",
+      "url": "https://unstop.com/hackathons/codeyourcult-build-cult-1723045",
       "source": "unstop",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "Hackathon builds portfolio, aligns with AI building interests, deadline soon.",
+      "ai_summary": "CodeYourCult hackathon offers hands‑on AI building and strong resume signal.",
       "action_plan": [
-        "Check registration deadline (10 min)",
-        "Form a team (1 day)",
-        "Pick project idea (2 days)",
-        "Develop MVP (1 week)",
-        "Submit entry (by deadline)"
+        "Register for hackathon (10 min)",
+        "Form team and brainstorm idea (2 h)",
+        "Develop MVP during event (24 h)"
       ]
     },
     {
-      "key": "e356f978adf3",
-      "title": "2026 Hack4Health Labs Research Challenge",
-      "url": "https://unstop.com/competitions/2026-hack4health-labs-research-challenge-hack4health-labs-hack4health-1715636",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "competition"
-      ],
-      "ai_summary": "Research challenge",
-      "action_plan": [
-        "Research the challenge (2 days)",
-        "Form a team and plan (2 days)",
-        "Participate in the challenge (4 days)"
-      ]
-    },
-    {
-      "key": "18dd1c7681a4",
-      "title": "Exowatt — Software Engineer Intern - Agent Platform - AI",
-      "url": "https://jobs.lever.co/exowatt/2623555d-8b81-4f95-8bca-de9fafd2381c/apply",
+      "key": "a8d764c0f5e8",
+      "title": "OpusClip — AI Research Intern",
+      "url": "https://jobs.ashbyhq.com/opusclip/1966160d-8b4a-40f8-96c5-39a6d81122c2/application?embed=true",
       "source": "internships",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "AI agent platform internship, strong skill boost, but visa uncertainty. · ⚠ verify eligibility: US work authorization may be required",
+      "ai_summary": "AI research internship",
       "action_plan": [
-        "Check visa eligibility (≈30m)",
-        "Prepare resume focusing on AI projects (≈2h)",
-        "Submit application (≈1h)"
-      ]
-    },
-    {
-      "key": "825525e87624",
-      "title": "Xsolla — AI-First Engineer Intern",
-      "url": "https://jobs.lever.co/xsolla/5d5fd6b3-d82f-437a-b251-abf4674ac874/apply",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI‑first role at Xsolla, good for building, but US work permit unclear. · ⚠ verify eligibility: US work authorization may be required",
-      "action_plan": [
-        "Verify internship visa policy (≈30m)",
-        "Tailor CV to AI‑first focus (≈2h)",
-        "Apply (≈1h)"
-      ]
-    },
-    {
-      "key": "27192d2e39c4",
-      "title": "Xsolla — AI-First Engineer Intern",
-      "url": "https://jobs.lever.co/xsolla/1c0e5375-2352-4a2c-a816-48ddebbdd3d6/apply",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Same AI‑first internship in LA; similar benefits and visa concerns. · ⚠ verify eligibility: US work authorization may be required",
-      "action_plan": [
-        "Confirm eligibility for US internship (≈30m)",
-        "Update portfolio with relevant AI work (≈2h)",
-        "Submit application (≈1h)"
-      ]
-    },
-    {
-      "key": "291b0ec64716",
-      "title": "Xsolla — AI Engineer Intern",
-      "url": "https://jobs.lever.co/xsolla/5ec8e8f7-ed75-4697-a1c0-28a026f2e571/apply",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI engineer role in Canada; strong skill fit, but work‑permit status unknown. · ⚠ verify eligibility: Canadian work permit may be required",
-      "action_plan": [
-        "Research Canada student‑intern visa (≈30m)",
-        "Polish AI project showcase (≈2h)",
-        "Apply (≈1h)"
+        "Update resume (1 week)",
+        "Prepare for interview (2 weeks)",
+        "Apply for internship (1 day)"
       ]
     },
     {
@@ -1714,6 +1592,128 @@
         "Fork repo (5m)",
         "Run demo notebook (30m)",
         "Add a new agent feature (2d)"
+      ]
+    },
+    {
+      "key": "d42aaf8d9f45",
+      "title": "HUANGCHIHHUNGLeo/claude-real-video — ★1,716",
+      "url": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
+      "source": "github",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "github",
+        "learning"
+      ],
+      "ai_summary": "Multimodal LLM project aligns with generative AI focus",
+      "action_plan": [
+        "Clone repository (5m)",
+        "Test video‑to‑LLM pipeline (30m)",
+        "Improve frame extraction (2d)"
+      ]
+    },
+    {
+      "key": "53cc205d0db2",
+      "title": "IEEE HackSynapse 2026",
+      "url": "https://unstop.com/hackathons/ieee-hacksynapse-2026-madhav-institute-of-technology-and-science-1717985",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "IEEE hackathon offers portfolio work, AI focus, and IEEE signal",
+      "action_plan": [
+        "Check official dates (1‑2 hrs)",
+        "Register on the portal (30 min)",
+        "Form or join a team (2 hrs)",
+        "Define a project aligned with AI agents (3‑4 hrs)",
+        "Develop prototype and prepare demo (1‑2 weeks)"
+      ]
+    },
+    {
+      "key": "fc695f51f468",
+      "title": "Data Analyst Internship",
+      "url": "https://unstop.com/internships/data-analyst-internship-aalteon-1720164",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Data Analyst Internship",
+      "action_plan": [
+        "Update resume (2 hours)",
+        "Apply for internship (1 hour)",
+        "Prepare for interview (4 hours)"
+      ]
+    },
+    {
+      "key": "58894d2eb5ff",
+      "title": "Pennsylvania State University — Nittany AI Intern",
+      "url": "https://psu.wd1.myworkdayjobs.com/PSU_Staff/job/Penn-State-University-Park/Nittany-AI-Innovator_REQ_0000080373-1",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI intern at US university aligns with AI interests · ⚠ verify eligibility: requires US work authorization",
+      "action_plan": [
+        "Verify visa options (1 day)",
+        "Tailor resume to AI focus (2h)",
+        "Apply via portal (30m)"
+      ]
+    },
+    {
+      "key": "da4d7ef7b137",
+      "title": "Ensemble Health Partners — Data Scientist Intern",
+      "url": "https://ensemblehp.wd5.myworkdayjobs.com/ensemblehealthpartnerscareers/job/Remote---Nationwide/Data-Scientist--AI_R048077",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Relevant internship",
+      "action_plan": [
+        "Update resume (2 hours)",
+        "Apply for the internship (2 hours)",
+        "Prepare for interviews (10 hours)"
+      ]
+    },
+    {
+      "key": "0066c13ffb77",
+      "title": "Viavi Solutions — Software Development Data Analytics Intern",
+      "url": "https://viavisolutions.wd1.myworkdayjobs.com/careers/job/Home-Office-USA/SW-Development-Intern-Data-Analytics_260004919-1",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Relevant internship",
+      "action_plan": [
+        "Update resume (2 hours)",
+        "Apply for the internship (2 hours)",
+        "Prepare for interviews (10 hours)"
+      ]
+    },
+    {
+      "key": "12fff476739d",
+      "title": "Altera Corporation — AI Software Development Engineer Intern",
+      "url": "https://altera.wd1.myworkdayjobs.com/altera/job/San-Jose-California-United-States/AI-Software-Development-Engineer---Intern_R02707",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI role at major hardware firm adds strong signal · ⚠ verify eligibility: requires US work authorization",
+      "action_plan": [
+        "Confirm US internship visa options (1 day)",
+        "Adapt resume for AI engineer (2h)",
+        "Submit application (30m)"
       ]
     }
   ]
