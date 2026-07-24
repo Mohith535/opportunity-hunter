@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-23",
+  "updated_at": "2026-07-24",
   "items": [
     {
       "key": "063502eecdda",
@@ -33,24 +33,6 @@
         "Identify AI intern requirements (30m)",
         "Showcase AI projects (2h)",
         "Apply (1h)"
-      ]
-    },
-    {
-      "key": "308dd671f8c2",
-      "title": "AtCoder Beginner Contest 469 (atcoder.jp)",
-      "url": "https://atcoder.jp/contests/abc469",
-      "source": "clist",
-      "score": 8,
-      "deadline": "2026-08-01",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "Competitive programming contest",
-      "action_plan": [
-        "Research contest rules (1h)",
-        "Prepare for the contest (10h)",
-        "Participate in the contest (2h)"
       ]
     },
     {
@@ -399,6 +381,58 @@
       ]
     },
     {
+      "key": "a2b03a9e411a",
+      "title": "MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education",
+      "url": "https://arxiv.org/abs/2607.21570v1",
+      "source": "arxiv",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "LLMs for medical education",
+      "action_plan": [
+        "research MedGame (2h)",
+        "explore applications (2h)",
+        "develop a project (8h)"
+      ]
+    },
+    {
+      "key": "2d5c32547806",
+      "title": "EchoSphere: Agora Conversational AI Hackathon",
+      "url": "https://unstop.com/hackathons/echosphere-agora-conversational-ai-hackathon-knotic-1723695",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "conversational AI hackathon",
+      "action_plan": [
+        "research Agora AI (1h)",
+        "form a team (2h)",
+        "submit project (4h)"
+      ]
+    },
+    {
+      "key": "43c6e0367177",
+      "title": "G-Research — Machine Learning Research Intern",
+      "url": "https://gresearch.wd103.myworkdayjobs.com/G-Research/job/London-UK/Machine-Learning-Research-Internship_R3682",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Top ML research role at elite firm, aligns with AI engineer goal",
+      "action_plan": [
+        "1h: Scan G-Research internship page for requirements",
+        "2h: Tailor resume to highlight TaskFlow, Nova projects",
+        "3h: Draft cover letter linking research interests to role",
+        "1h: Gather references and submit application"
+      ]
+    },
+    {
       "key": "e9e2e3debc2f",
       "title": "Kaya AI India Hackathon 2026",
       "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
@@ -413,23 +447,6 @@
         "Review IoT & ML concepts (4h)",
         "Brainstorm project ideas (2h)",
         "Develop a project (10d)"
-      ]
-    },
-    {
-      "key": "273b2b6ecc4f",
-      "title": "Agentic Commerce Hackathon",
-      "url": "https://agentic-commerce.devfolio.co",
-      "source": "devfolio",
-      "score": 7,
-      "deadline": "2026-08-01",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Hackathon with GPU theme",
-      "action_plan": [
-        "Research GPU and hackathon (2h)",
-        "Form a team (2h)",
-        "Prepare for the hackathon (15h)"
       ]
     },
     {
@@ -1069,55 +1086,39 @@
       ]
     },
     {
-      "key": "b7680ba68969",
-      "title": "jmerelnyc/Talos — ★977",
-      "url": "https://github.com/jmerelnyc/Talos",
-      "source": "github",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "github",
-        "learning"
-      ],
-      "ai_summary": "GPU inference client gives real‑world AI infra experience for resume.",
-      "action_plan": [
-        "Clone repo and run example (1h)",
-        "Read contribution guide (30m)",
-        "Submit a PR fixing a bug (2d)"
-      ]
-    },
-    {
-      "key": "0d2711b568cc",
-      "title": "Hacksynergy 2026",
-      "url": "https://unstop.com/hackathons/hacksynergy-2026-inderprastha-engineering-college-ipec-ghaziabad-1716413",
+      "key": "6893bd8afc75",
+      "title": "The Great Agent Hackathon",
+      "url": "https://unstop.com/hackathons/the-great-agent-hackathon-women-in-product-india-1724089",
       "source": "unstop",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "Hackathon for portfolio growth",
+      "ai_summary": "Agent‑focused hackathon builds portfolio, high personal interest",
       "action_plan": [
-        "Register in 10 minutes",
-        "Form team in 1 day",
-        "Start project in 3 days"
+        "30m: Register for the hackathon",
+        "1h: Brainstorm agent idea using TaskFlow",
+        "2h: Prototype core features",
+        "1h: Submit final demo"
       ]
     },
     {
-      "key": "72c8d353e7d4",
-      "title": "All India Hackathon",
-      "url": "https://unstop.com/hackathons/all-india-hackathon-axcentra-1703933",
-      "source": "unstop",
-      "score": 6,
+      "key": "57d3addd7845",
+      "title": "G-Research — Data Science Intern",
+      "url": "https://gresearch.wd103.myworkdayjobs.com/G-Research/job/London-UK/Data-Science-Internship_R3679",
+      "source": "internships",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
       ],
-      "ai_summary": "Hackathon experience",
+      "ai_summary": "Data science stint at a prestigious quant firm, good resume boost",
       "action_plan": [
-        "Research hackathon rules (1h)",
-        "Form a team (2h)",
-        "Prepare for the hackathon (10h)"
+        "30m: Review data‑science intern description",
+        "1h: Update CV with ML projects",
+        "2h: Write concise cover letter",
+        "30m: Submit application"
       ]
     },
     {
