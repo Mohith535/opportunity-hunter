@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24",
+  "updated_at": "2026-07-25",
   "items": [
     {
       "key": "063502eecdda",
@@ -430,57 +430,6 @@
         "2h: Tailor resume to highlight TaskFlow, Nova projects",
         "3h: Draft cover letter linking research interests to role",
         "1h: Gather references and submit application"
-      ]
-    },
-    {
-      "key": "e9e2e3debc2f",
-      "title": "Kaya AI India Hackathon 2026",
-      "url": "https://kaya-ai-iit-hackathon-2026.devpost.com/",
-      "source": "devpost",
-      "score": 7,
-      "deadline": "2026-07-13",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AI & IoT focus",
-      "action_plan": [
-        "Review IoT & ML concepts (4h)",
-        "Brainstorm project ideas (2h)",
-        "Develop a project (10d)"
-      ]
-    },
-    {
-      "key": "165c107f2f18",
-      "title": "Global AI Hackathon 2026",
-      "url": "https://unstop.com/hackathons/global-ai-hackathon-2026-innovation-hacks-1716925",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Global AI hackathon",
-      "action_plan": [
-        "Form a team",
-        "Choose a project",
-        "Start building"
-      ]
-    },
-    {
-      "key": "b8a65991a6d9",
-      "title": "Full Stack Developer Internship",
-      "url": "https://unstop.com/internships/full-stack-developer-internship-saush-innovations-private-limited-1717268",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Full stack development",
-      "action_plan": [
-        "Review full stack concepts (4h)",
-        "Practice coding challenges (2h)",
-        "Develop a project (10d)"
       ]
     },
     {
@@ -1122,75 +1071,6 @@
       ]
     },
     {
-      "key": "152c5b143270",
-      "title": "Zer0Fit: I took Google's new TabFM & TimesFM ML foundation models and made them available as an MCP server for zero-shot ML tasks (forecasts / classifications / regressions). 100% local. [P]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1uue8cc/zer0fit_i_took_googles_new_tabfm_timesfm_ml/",
-      "source": "reddit",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "Zero-shot ML tasks",
-      "action_plan": [
-        "Explore TabFM & TimesFM",
-        "Set up MCP server",
-        "Test zero-shot tasks"
-      ]
-    },
-    {
-      "key": "fe177850c217",
-      "title": "ByteBattle Hackathon 2026",
-      "url": "https://unstop.com/hackathons/bytebattle-hackathon-2026-h-p-projects-1717192",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Hackathon experience",
-      "action_plan": [
-        "Form a team",
-        "Choose a project",
-        "Start building"
-      ]
-    },
-    {
-      "key": "046149d69388",
-      "title": "IgniteX HackFest 2026",
-      "url": "https://unstop.com/hackathons/ignitex-hackfest-2026-h-p-projects-1717162",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Hackathon experience",
-      "action_plan": [
-        "Form a team",
-        "Choose a project",
-        "Start building"
-      ]
-    },
-    {
-      "key": "94bb93556f29",
-      "title": "HackMatriX 2026 - 24 Hour National Hackathon",
-      "url": "https://unstop.com/hackathons/hackmatrix-2026-24-hour-national-hackathon-ieee-computer-society-mits-gwalior-1701757",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "National hackathon",
-      "action_plan": [
-        "Form a team",
-        "Choose a project",
-        "Start building"
-      ]
-    },
-    {
       "key": "162be958405f",
       "title": "Founder's Office Internship",
       "url": "https://unstop.com/internships/founders-office-internship-interactup-1717830",
@@ -1715,6 +1595,133 @@
         "Confirm US internship visa options (1 day)",
         "Adapt resume for AI engineer (2h)",
         "Submit application (30m)"
+      ]
+    },
+    {
+      "key": "00fc2371f52d",
+      "title": "lucidrains/x-jepa — ★96",
+      "url": "https://github.com/lucidrains/x-jepa",
+      "source": "github",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "github",
+        "learning"
+      ],
+      "ai_summary": "Research‑oriented deep‑learning project matches AI engineering goals.",
+      "action_plan": [
+        "Fork repo (10m)",
+        "Read paper summary (1h)",
+        "Run example notebooks (2h)",
+        "Experiment with modifications (3h)"
+      ]
+    },
+    {
+      "key": "09bb7cc3789e",
+      "title": "Deep learning tackles single-cell analysis – A survey of deep learning for scRNA-seq analysis [R]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1v06nc1/deep_learning_tackles_singlecell_analysis_a/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "deep learning research",
+      "action_plan": [
+        "read survey (2 hours)",
+        "research scRNA-seq analysis (4 hours)",
+        "apply to similar research (6 hours)"
+      ]
+    },
+    {
+      "key": "561223737609",
+      "title": "TabFM Studio: point-and-click predictions on spreadsheets with tabular foundation models, fully local [P]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1uzx1el/tabfm_studio_pointandclick_predictions_on/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "Local ML research, relevant to AI interests",
+      "action_plan": [
+        "Explore TabFM Studio, 30m",
+        "Assess potential for portfolio project, 1h",
+        "Discuss with peers, 1h"
+      ]
+    },
+    {
+      "key": "401d10e22e05",
+      "title": "AI Solution Developer Internship",
+      "url": "https://unstop.com/internships/ai-solution-developer-internship-ventu-renewable-private-limited-1720588",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI Solution Developer",
+      "action_plan": [
+        "Update resume (1h)",
+        "Apply to internship (1h)"
+      ]
+    },
+    {
+      "key": "4acc4df63138",
+      "title": "egeorcun/lucida — ★70",
+      "url": "https://github.com/egeorcun/lucida",
+      "source": "github",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "github",
+        "learning"
+      ],
+      "ai_summary": "Open‑source CV project boosts deep‑learning credentials and code portfolio.",
+      "action_plan": [
+        "Fork the lucida repository on GitHub (30 min).",
+        "Read the README and open issues (1 hour).",
+        "Pick a beginner‑friendly issue (30 min).",
+        "Implement the fix or feature (2 days).",
+        "Submit a pull request and document changes (1 day)."
+      ]
+    },
+    {
+      "key": "8e6295a43905",
+      "title": "HackInverse 1.0",
+      "url": "https://hackinverse-s1.devfolio.co",
+      "source": "devfolio",
+      "score": 6,
+      "deadline": "2026-08-29",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Regional hackathon provides building experience but limited prestige.",
+      "action_plan": [
+        "Register for HackInverse 1.0 (15 min).",
+        "Brainstorm an AI‑agent project idea (2 hours).",
+        "Form or join a team (1 day).",
+        "Develop a prototype MVP (2 weeks).",
+        "Submit the final project before the deadline (1 day)."
+      ]
+    },
+    {
+      "key": "9bf242a2054f",
+      "title": "InfoBlitz '26 — 24H Intercollege Hackathon",
+      "url": "https://unstop.com/hackathons/infoblitz-26-24h-intercollege-hackathon-am-jain-college-chennai-1720185",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Hands-on hackathon experience",
+      "action_plan": [
+        "Form a team (1 week)",
+        "Prepare for the hackathon (2 weeks)",
+        "Participate in the hackathon (24 hours)"
       ]
     }
   ]

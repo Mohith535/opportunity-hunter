@@ -34486,6 +34486,885 @@
           "key": "e741103474be"
         }
       ]
+    },
+    {
+      "date": "2026-07-25",
+      "items": [
+        {
+          "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+          "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49035303",
+          "score": 5,
+          "ai_score": 2,
+          "ai_summary": "Staying updated on industry news",
+          "action_plan": [
+            "Read the article (30 minutes)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "yes"
+          },
+          "key": "a585663ba459"
+        },
+        {
+          "title": "I built a compiler that turns computation graphs into the weights of a vanilla transformer — no training anywhere [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v5fxbe/i_built_a_compiler_that_turns_computation_graphs/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v5fxbe",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not an application opportunity · just a research news item",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not an application opportunity"
+          },
+          "key": "035cb14f1941"
+        },
+        {
+          "title": "ACM MM 26 Registration [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v54i9j/acm_mm_26_registration_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v54i9j",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "ML conference adds modest resume value",
+          "action_plan": [
+            "Check registration deadline (1h)",
+            "Submit abstract if allowed (2d)",
+            "Prepare short talk (1w)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 4,
+            "skill": 2,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "c354f3b5298b"
+        },
+        {
+          "title": "I built an open-source multi-agent SDLC harness that beats a cold Claude Code run on large repos, by learning the repo once. Real benchmarks (incl. where it loses) inside. [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v59pal/i_built_an_opensource_multiagent_sdlc_harness/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v59pal",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not an application opportunity · project announcement, not a chance to apply",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not an application opportunity"
+          },
+          "key": "5737f1ec71d4"
+        },
+        {
+          "title": "NeurIPS Meta Review - whats going on? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v5586m/neurips_meta_review_whats_going_on_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v5586m",
+          "score": 4,
+          "ai_score": 2,
+          "ai_summary": "Staying updated on research",
+          "action_plan": [
+            "Read the discussion (30 minutes)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "yes"
+          },
+          "key": "da042045201d"
+        },
+        {
+          "title": "Neurips Position Track Rebuttal and Reviews [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v5ykl8/neurips_position_track_rebuttal_and_reviews_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v5ykl8",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not an application opportunity · call for reviews, not a personal opportunity",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not an application opportunity"
+          },
+          "key": "2eaf5fd43257"
+        },
+        {
+          "title": "I still didn't get my NeurIPS meta review [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v5wcy3/i_still_didnt_get_my_neurips_meta_review_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v5wcy3",
+          "score": 4,
+          "ai_score": 2,
+          "ai_summary": "Staying updated on research",
+          "action_plan": [
+            "Read the discussion (30 minutes)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "yes"
+          },
+          "key": "b94dff5bce5c"
+        },
+        {
+          "title": "JPRS Programming Contest 2026#2 (AtCoder Beginner Contest 470) (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/abc470",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-08-08T12:00:00",
+          "deadline": "2026-08-08",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69051500",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Competitive programming sharpens algorithmic skill; modest AI relevance.",
+          "action_plan": [
+            "Read contest format (30m)",
+            "Practice similar AtCoder problems (2d)",
+            "Set up contest environment (1h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 5,
+            "prestige": 4,
+            "deadline": 7,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "090f39df1e5f"
+        },
+        {
+          "title": "Hackosquad CTF 2026 : Multiverse",
+          "url": "https://unstop.com/hackathons/hackosquad-ctf-2026-multiverse-hackosquad-ctf-2026-multiverse-hackosquadctf-1724658",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1724658",
+          "score": 4,
+          "ai_score": 6,
+          "ai_summary": "Building experience",
+          "action_plan": [
+            "Research CTF rules (1 hour)",
+            "Form a team (2 hours)",
+            "Brainstorm strategies (2 hours)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "d831e867d44f"
+        },
+        {
+          "title": "Future Ready Ops Innovation Challenge",
+          "url": "https://unstop.com/hackathons/future-ready-ops-innovation-challenge-paper-buddy-1724585",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1724585",
+          "score": 4,
+          "ai_score": 6,
+          "ai_summary": "Building experience",
+          "action_plan": [
+            "Research challenge rules (1 hour)",
+            "Form a team (2 hours)",
+            "Brainstorm project ideas (2 hours)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "1270b4ef98d2"
+        },
+        {
+          "title": "Omnikon National Hackathon 2026",
+          "url": "https://unstop.com/hackathons/omnikon-national-hackathon-2026-omnikon-1715716",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1715716",
+          "score": 7,
+          "ai_score": 6,
+          "ai_summary": "Building experience",
+          "action_plan": [
+            "Research hackathon rules (1 hour)",
+            "Form a team (2 hours)",
+            "Brainstorm project ideas (2 hours)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "9e2114156176"
+        },
+        {
+          "title": "LevelUp Game Hackathon",
+          "url": "https://unstop.com/hackathons/levelup-game-hackathon-gamnexis-1722925",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1722925",
+          "score": 7,
+          "ai_score": 6,
+          "ai_summary": "Building experience",
+          "action_plan": [
+            "Research hackathon rules (1 hour)",
+            "Form a team (2 hours)",
+            "Brainstorm project ideas (2 hours)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "7784a91ac664"
+        },
+        {
+          "title": "HackQuest 2026",
+          "url": "https://unstop.com/hackathons/hackquest-2026-oriental-college-of-technology-oct-bhopal-1724486",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1724486",
+          "score": 4,
+          "ai_score": 5,
+          "ai_summary": "Boosts AI building portfolio, but low prestige and no deadline.",
+          "action_plan": [
+            "Read hackathon rules (1h)",
+            "Register on platform (15m)",
+            "Sketch a quick AI prototype (2d)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "aa715b6dc316"
+        },
+        {
+          "title": "CodeRush 2.0",
+          "url": "https://unstop.com/hackathons/coderush-20-yeshwantrao-chavan-college-of-engineering-ycce-nagpur-1723466",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1723466",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "local hackathon builds portfolio, aligns with interests",
+          "action_plan": [
+            "Find hackathon details (30m)",
+            "Form team (2d)",
+            "Prototype core feature (1w)",
+            "Finalize demo (3d)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 6,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "1a5fa7f3fc13"
+        },
+        {
+          "title": "HackNexus'26",
+          "url": "https://unstop.com/hackathons/hacknexus26-droidecks-1695049",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1695049",
+          "score": 4,
+          "ai_score": 5,
+          "ai_summary": "Similar to HackQuest; good for hands‑on AI work, limited resume impact.",
+          "action_plan": [
+            "Check hackathon theme (30m)",
+            "Sign up (5m)",
+            "Build a minimal viable AI demo (2d)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "6cd55a5d9fd9"
+        },
+        {
+          "title": "Product and Technology Internship",
+          "url": "https://unstop.com/internships/product-and-technology-internship-sponsogram-1724809",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1724809",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Tech internship, some relevance",
+          "action_plan": [
+            "Research company (1h)",
+            "Update resume (2h)",
+            "Apply (1h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "d39c1e58586b"
+        },
+        {
+          "title": "Social Media & Trend Analyst Internship",
+          "url": "https://unstop.com/internships/social-media-trend-analyst-internship-accesco-living-1724795",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1724795",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not AI/ML focused",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "3ed010c8e33b"
+        },
+        {
+          "title": "Sales Internship",
+          "url": "https://unstop.com/internships/sales-internship-aditya-birla-fashion-retail-ltd-1724797",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1724797",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "Not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 1,
+            "time": 1,
+            "eligible": "yes"
+          },
+          "key": "a178ed38e616"
+        },
+        {
+          "title": "Lead Generation & Email Marketing Internship",
+          "url": "https://unstop.com/internships/lead-generation-email-marketing-internship-oxferal-1724758",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1724758",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not AI/ML focused",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "defad2bfd94b"
+        },
+        {
+          "title": "Social Media Marketing Internship",
+          "url": "https://unstop.com/internships/social-media-marketing-internship-lawxygen-1724791",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1724791",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not AI/ML focused",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "c5cf0f830325"
+        },
+        {
+          "title": "Video Editor Internship",
+          "url": "https://unstop.com/internships/video-editor-internship-accesco-living-1724782",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1724782",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "Not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 1,
+            "time": 1,
+            "eligible": "yes"
+          },
+          "key": "3a363813bb4f"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-gyansify-services-private-limited-1724741",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1724741",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Some business development skills",
+          "action_plan": [
+            "Research company (1h)",
+            "Update resume (2h)",
+            "Apply (1h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "e2469fdc89f6"
+        },
+        {
+          "title": "Founder’s Office Internship - Strategy, Operations & Marketing",
+          "url": "https://unstop.com/internships/founderss-office-internship-strategy-operations-marketing-cent-care-1724713",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1724713",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Founder's office, strategy skills",
+          "action_plan": [
+            "Research company (1h)",
+            "Update resume (2h)",
+            "Apply (1h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 3,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "bfd505c2326c"
+        },
+        {
+          "title": "BlackEdge Capital — Quantitative Developer Intern",
+          "url": "https://job-boards.greenhouse.io/blackedgecapital/jobs/4703821005",
+          "source": "internships",
+          "description": "internship | BlackEdge Capital | Chicago, IL | Winter 2028, Spring 2028, Summer 2028 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4bd46e38-6629-44aa-b557-05c1094d119c",
+          "score": 3,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — US work authorization required · Cannot apply without US work permit; no impact on Mohith.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "US work authorization required"
+          },
+          "key": "e3d36334b621"
+        },
+        {
+          "title": "Nextiva — Forward Deployed Engineer Intern - AI Implementation",
+          "url": "https://www.nextiva.com/company/careers-listing?gh_jid=8639480002",
+          "source": "internships",
+          "description": "internship | Nextiva | Scottsdale, AZ | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a743b22b-067a-47c3-aef7-8e3f2b8a912c",
+          "score": 3,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — US work authorization required · US internship not open to Indian student without visa.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "US work authorization required"
+          },
+          "key": "660507fcfefc"
+        },
+        {
+          "title": "TechInsights — Software Developer Co-op",
+          "url": "https://techinsights.applytojob.com/apply/JihPx6iShB/Software-Development-Coop-Student-Fall-2026",
+          "source": "internships",
+          "description": "internship | TechInsights | Ottawa, ON, Canada | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "42ac32cf-f533-4b2a-ba45-60441a95cdda",
+          "score": 3,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Canadian work permit required · Requires Canadian co‑op eligibility which Mohith lacks.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Canadian work permit required"
+          },
+          "key": "0fd55936f702"
+        },
+        {
+          "title": "PDT Partners — Software Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/pdtpartners/jobs/8077685",
+          "source": "internships",
+          "description": "internship | PDT Partners | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7e5feb76-9fea-420d-a0ea-32c19e256975",
+          "score": 3,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — US work authorization required · Internship in NYC needs US work eligibility; not applicable.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "US work authorization required"
+          },
+          "key": "29d3ad5470ea"
+        },
+        {
+          "title": "MSM Inc. — AI Solutions Co-op",
+          "url": "https://ats.rippling.com/msm/jobs/6326629b-5434-4a86-8fce-d0e28ec424d4",
+          "source": "internships",
+          "description": "internship | MSM Inc. | Webster, NY | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6277e90d-1e91-4b5e-9644-631c6bdaa131",
+          "score": 3,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — US work authorization required · US co‑op not open to Indian undergrad without visa.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "US work authorization required"
+          },
+          "key": "46df070a42c2"
+        },
+        {
+          "title": "Northwell Health — Data Analytics / Data Science Intern",
+          "url": "https://eppr.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/job/192734",
+          "source": "internships",
+          "description": "internship | Northwell Health | Manhasset, NY | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c9e4f3b2-4e34-43ea-add3-ddcd7ae26931",
+          "score": 3,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — requires US work authorization · US internship not accessible for Indian student",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "requires US work authorization"
+          },
+          "key": "f94320fed582"
+        },
+        {
+          "title": "Mistral AI — AI Data Solutions Intern - Data Partnerships",
+          "url": "https://jobs.ashbyhq.com/mistral.ai/60fcc44d-4d96-469d-a96c-d6a9bbfe8edd/application?embed=true",
+          "source": "internships",
+          "description": "internship | Mistral AI | Palo Alto, CA | Summer 2026, Fall 2026, Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2cad125a-155b-4008-b769-930277d26375",
+          "score": 3,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — requires US work authorization · US location, visa needed",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "requires US work authorization"
+          },
+          "key": "2ef7c884490f"
+        },
+        {
+          "title": "Quadrillion — Software Engineering Intern",
+          "url": "https://jobs.ashbyhq.com/quadrillion-labs/a4acc44c-31ce-41a0-ab44-2500487b4d05/application?embed=true",
+          "source": "internships",
+          "description": "internship | Quadrillion | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "53663e4c-42be-4d2a-ba0f-ac7a0d65da22",
+          "score": 3,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — requires US work authorization · US internship not open to Indian student",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "requires US work authorization"
+          },
+          "key": "db75ddd11796"
+        },
+        {
+          "title": "Magna — R&D-Computer Vision Engineer Intern",
+          "url": "https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Troy-Michigan-US/R-D--Computer-Vision-Engineering-Intern_R00253444-1",
+          "source": "internships",
+          "description": "internship | Magna | Troy, MI | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d1b5909b-5773-4d89-92a7-604b04556e03",
+          "score": 6,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — Location: US · Not in target location",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "Location: US"
+          },
+          "key": "590ba576e19c"
+        }
+      ]
     }
   ]
 }
