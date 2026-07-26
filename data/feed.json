@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-25",
+  "updated_at": "2026-07-26",
   "items": [
     {
       "key": "063502eecdda",
@@ -33,57 +33,6 @@
         "Identify AI intern requirements (30m)",
         "Showcase AI projects (2h)",
         "Apply (1h)"
-      ]
-    },
-    {
-      "key": "0ac0a97977dd",
-      "title": "OpenAI Build Week",
-      "url": "https://openai.devpost.com/",
-      "source": "devpost",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "OpenAI, AI/ML focus",
-      "action_plan": [
-        "Research OpenAI Build Week",
-        "Prepare a team and idea",
-        "Apply before deadline"
-      ]
-    },
-    {
-      "key": "5e2e5f39a26f",
-      "title": "Build with DataHub: The Agent Hackathon",
-      "url": "https://datahub.devpost.com/",
-      "source": "devpost",
-      "score": 8,
-      "deadline": "2026-08-10",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AI Agents & ML",
-      "action_plan": [
-        "Research DataHub (2h)",
-        "Form a team (2h)",
-        "Develop an agent (60h)"
-      ]
-    },
-    {
-      "key": "b3be046fdcf1",
-      "title": "DRW — AI/ML Research Intern",
-      "url": "https://job-boards.greenhouse.io/drweng/jobs/7991171",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI/ML research intern",
-      "action_plan": [
-        "Research DRW",
-        "Update resume and apply",
-        "Prepare for interviews"
       ]
     },
     {
@@ -430,57 +379,6 @@
         "2h: Tailor resume to highlight TaskFlow, Nova projects",
         "3h: Draft cover letter linking research interests to role",
         "1h: Gather references and submit application"
-      ]
-    },
-    {
-      "key": "9982a09fd43a",
-      "title": "AI/ML Technical Content Engineer Internship",
-      "url": "https://unstop.com/internships/aiml-technical-content-engineer-internship-learn-depth-1717854",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI/ML technical role",
-      "action_plan": [
-        "Update resume (2h)",
-        "Apply online (1h)",
-        "Prepare for interview (10h)"
-      ]
-    },
-    {
-      "key": "3f6031cb5281",
-      "title": "Persona AI — Teleoperation Software Engineering Internship",
-      "url": "https://jobs.ashbyhq.com/persona.ai/6078fafd-ba34-4c89-b260-7eb15be3cb9c/application",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI software engineering intern",
-      "action_plan": [
-        "Research Persona AI",
-        "Update resume and apply",
-        "Prepare for interviews"
-      ]
-    },
-    {
-      "key": "2292a4c0b43b",
-      "title": "Jump Trading — Campus AI Researcher Intern",
-      "url": "https://boards.greenhouse.io/embed/job_app?token=7976964",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI researcher intern aligns strongly with his AI engineering and entrepreneurship goals. · ⚠ verify eligibility: visa/work auth not specifie",
-      "action_plan": [
-        "Verify UK work visa requirements (1h)",
-        "Prepare AI research mini‑project (3h)",
-        "Submit application (30m)"
       ]
     },
     {
@@ -1071,53 +969,37 @@
       ]
     },
     {
-      "key": "162be958405f",
-      "title": "Founder's Office Internship",
-      "url": "https://unstop.com/internships/founders-office-internship-interactup-1717830",
+      "key": "9a99ac190176",
+      "title": "Running a 28.9M parameter LLM on an $8 microcontroller",
+      "url": "https://github.com/slvDev/esp32-ai",
+      "source": "hackernews",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "news"
+      ],
+      "ai_summary": "LLM on microcontroller",
+      "action_plan": [
+        "Read article (1hr)",
+        "Experiment with code (4hr)",
+        "Share results (2hr)"
+      ]
+    },
+    {
+      "key": "1362d692a39c",
+      "title": "AI & Full Stack Engineering Internship",
+      "url": "https://unstop.com/internships/ai-full-stack-engineering-internship-intellinesia-labs-1725043",
       "source": "unstop",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "Founder's office experience",
+      "ai_summary": "AI & Full Stack Engineering",
       "action_plan": [
-        "Apply online (1h)",
-        "Prepare for interview (10h)"
-      ]
-    },
-    {
-      "key": "6cb618953de6",
-      "title": "Hudson River Trading — Software Engineer Intern - C++ or Python",
-      "url": "https://www.hudsonrivertrading.com/careers/job/?gh_jid=8052083",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "software engineer intern",
-      "action_plan": [
-        "Research Hudson River Trading",
-        "Update resume and apply",
-        "Prepare for interviews"
-      ]
-    },
-    {
-      "key": "7dcbca1b69a2",
-      "title": "Jump Trading — Campus ML Research Engineer Intern",
-      "url": "https://boards.greenhouse.io/embed/job_app?token=7977145",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "ML research intern aligns with AI goals, moderate prestige · ⚠ verify eligibility: London location may require UK work visa",
-      "action_plan": [
-        "1. Verify visa eligibility (1 day)",
-        "2. Tailor CV to highlight ML projects (2 hrs)",
-        "3. Apply via company portal (1 day)"
+        "Review internship description",
+        "Update resume and portfolio",
+        "Apply for internship"
       ]
     },
     {
@@ -1722,6 +1604,125 @@
         "Form a team (1 week)",
         "Prepare for the hackathon (2 weeks)",
         "Participate in the hackathon (24 hours)"
+      ]
+    },
+    {
+      "key": "eeac96cc1e52",
+      "title": "Python Developer Internship",
+      "url": "https://unstop.com/internships/python-developer-internship-intern-crowd-1722610",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Python dev, some AI overlap",
+      "action_plan": [
+        "Check job description",
+        "Apply if AI-related"
+      ]
+    },
+    {
+      "key": "6625bfd7b667",
+      "title": "NERv Technology Inc. D.B.A. FluidAI Medical — Data and AI Engineering Associate Co-op",
+      "url": "https://ats.rippling.com/fluidai-medical-careers/jobs/c87d6d49-edd6-47eb-93f8-6e8a93216b39",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI co‑op aligns with his AI engineering goal and adds niche AI resume value.",
+      "action_plan": [
+        "Research FluidAI medical AI work (2h)",
+        "Customize resume for data/AI tasks (2h)",
+        "Submit application (30m)"
+      ]
+    },
+    {
+      "key": "673d24d29791",
+      "title": "Moon — Software Engineer Intern - Data & Machine Learning",
+      "url": "https://ats.rippling.com/moon/jobs/5f0b98b7-561a-41d2-9104-76bdf06df094",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Machine learning experience",
+      "action_plan": [
+        "Research Moon (1 hour)",
+        "Update resume (2 hours)",
+        "Apply for internship (1 hour)"
+      ]
+    },
+    {
+      "key": "e87db1ca081c",
+      "title": "Faculte — Faculty Fellowship - Data Science",
+      "url": "https://jobs.ashbyhq.com/faculty-fellowship/dd2a8104-fbec-4e54-bed8-1e0553186e00/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Data science experience",
+      "action_plan": [
+        "Research Faculte (1 hour)",
+        "Update resume (2 hours)",
+        "Apply for internship (1 hour)"
+      ]
+    },
+    {
+      "key": "b22215411b74",
+      "title": "Frontier Health — Applied Scientist / Research Engineer Intern",
+      "url": "https://jobs.ashbyhq.com/frontier-health/0ff47d07-91b5-4456-9ecf-8438239b00ef/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI research experience",
+      "action_plan": [
+        "Research Frontier Health (1 hour)",
+        "Update resume (2 hours)",
+        "Apply for internship (1 hour)"
+      ]
+    },
+    {
+      "key": "4f4c473ce339",
+      "title": "Agents in the Wild: Where Research Meets Deployment",
+      "url": "https://arxiv.org/abs/2607.19336v1",
+      "source": "arxiv",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "research on AI agents and LLMs",
+      "action_plan": [
+        "read the tutorial (4h)",
+        "take notes (2h)",
+        "apply knowledge (4h)"
+      ]
+    },
+    {
+      "key": "d9450b2b78f5",
+      "title": "Weekend Dev Challenge 60: LLD Projects (codechef.com)",
+      "url": "https://www.codechef.com/DEVWEEKEND60",
+      "source": "clist",
+      "score": 6,
+      "deadline": "2026-07-24",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "competitive programming contest",
+      "action_plan": [
+        "review contest rules (1h)",
+        "practice coding (4h)",
+        "participate in contest (4h)"
       ]
     }
   ]

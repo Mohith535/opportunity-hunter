@@ -35365,6 +35365,405 @@
           "key": "590ba576e19c"
         }
       ]
+    },
+    {
+      "date": "2026-07-26",
+      "items": [
+        {
+          "title": "Running a 28.9M parameter LLM on an $8 microcontroller",
+          "url": "https://github.com/slvDev/esp32-ai",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49050512",
+          "score": 4,
+          "ai_score": 7,
+          "ai_summary": "LLM on microcontroller",
+          "action_plan": [
+            "Read article (1hr)",
+            "Experiment with code (4hr)",
+            "Share results (2hr)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "9a99ac190176"
+        },
+        {
+          "title": "LLM Usage in Debian: Three Proposals",
+          "url": "https://www.debian.org/vote/2026/vote_002",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49050859",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "LLM usage proposals",
+          "action_plan": [
+            "Read proposals (2hr)",
+            "Analyze feasibility (3hr)",
+            "Discuss online (2hr)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "f50c45ed2bf9"
+        },
+        {
+          "title": "Paper lengths, and reasonable assumptions in ML conferences. [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v6gh43/paper_lengths_and_reasonable_assumptions_in_ml/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v6gh43",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "ML research discussion",
+          "action_plan": [
+            "Read thread (1hr)",
+            "Participate in discussion (2hr)",
+            "Learn from others (2hr)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "99af130e61b1"
+        },
+        {
+          "title": "Link plots/figures in NeurIPS rebuttal [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v6qt8l/link_plotsfigures_in_neurips_rebuttal_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v6qt8l",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "NeurIPS rebuttal",
+          "action_plan": [
+            "Read rebuttal (1hr)",
+            "Understand context (2hr)",
+            "Share insights (2hr)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "5b5ec104cea2"
+        },
+        {
+          "title": "Understanding GPU Inference Workloads [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v6sjiu/understanding_gpu_inference_workloads_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v6sjiu",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "GPU inference workloads",
+          "action_plan": [
+            "Read article (2hr)",
+            "Analyze workloads (3hr)",
+            "Discuss online (2hr)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "7751ba60fbf9"
+        },
+        {
+          "title": "He is teaching AWS System Design only in whole public.",
+          "url": "https://www.reddit.com/r/developersIndia/comments/1v6fv6s/he_is_teaching_aws_system_design_only_in_whole/",
+          "source": "reddit",
+          "description": "r/developersIndia | india software developer | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/developersIndia"
+          ],
+          "native_id": "1v6fv6s",
+          "score": 5,
+          "ai_score": 5,
+          "ai_summary": "AWS System Design",
+          "action_plan": [
+            "Review AWS System Design",
+            "Practice with online resources",
+            "Apply knowledge to projects"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "0fa6a2556972"
+        },
+        {
+          "title": "Business Development Associate Internship",
+          "url": "https://unstop.com/internships/business-development-associate-internship-solvusai-technologies-1725041",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1725041",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not AI/ML related",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "271985b71792"
+        },
+        {
+          "title": "AI & Full Stack Engineering Internship",
+          "url": "https://unstop.com/internships/ai-full-stack-engineering-internship-intellinesia-labs-1725043",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1725043",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI & Full Stack Engineering",
+          "action_plan": [
+            "Review internship description",
+            "Update resume and portfolio",
+            "Apply for internship"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "1362d692a39c"
+        },
+        {
+          "title": "Frontend Developer Internship",
+          "url": "https://unstop.com/internships/frontend-developer-internship-tripflow-technologies-pvt-ltd-1725051",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1725051",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not AI/ML related",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "a577e3cd90d7"
+        },
+        {
+          "title": "Direct Marketing Internship",
+          "url": "https://unstop.com/internships/direct-marketing-internship-100-rankers-1725029",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1725029",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not tech · not tech related",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "not tech"
+          },
+          "key": "f09ea4b75b60"
+        },
+        {
+          "title": "Brand and Media Internship",
+          "url": "https://unstop.com/internships/brand-and-media-internship-lynkrclub-1725015",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1725015",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not tech · not tech related",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "not tech"
+          },
+          "key": "6506e3a9f20f"
+        },
+        {
+          "title": "Content & Creative Intern",
+          "url": "https://unstop.com/internships/content-creative-intern-eightpopx-technologies-private-limited-1725024",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1725024",
+          "score": 5,
+          "ai_score": 3,
+          "ai_summary": "Internship experience",
+          "action_plan": [
+            "Research company (1hr)",
+            "Update resume (2hr)",
+            "Apply online (1hr)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "acc430bb214d"
+        },
+        {
+          "title": "Sales & Marketing Internship",
+          "url": "https://unstop.com/internships/sales-marketing-internship-mech-on-site-pvt-ltd-1724558",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1724558",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not tech · not tech related",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "not tech"
+          },
+          "key": "bf1b253528e5"
+        },
+        {
+          "title": "Growth Internship",
+          "url": "https://unstop.com/internships/growth-internship-lynkrclub-1725020",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1725020",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not AI/ML related",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "fa8db1db286c"
+        }
+      ]
     }
   ]
 }
