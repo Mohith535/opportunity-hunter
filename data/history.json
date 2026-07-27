@@ -35764,6 +35764,906 @@
           "key": "fa8db1db286c"
         }
       ]
+    },
+    {
+      "date": "2026-07-27",
+      "items": [
+        {
+          "title": "Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills",
+          "url": "https://arxiv.org/abs/2607.22529v1",
+          "source": "arxiv",
+          "description": "LLM training is shifting from manual design and annotation to interaction-driven self-evolution. However, existing self-evolutionary methods face a fundamental dilemma between task diversity and verification reliability: environment-bound methods obtain precise feedback but confine learning to narrow domains, while open-ended self-generation broadens the task space but lacks reliable verification, allowing misleading rewards to pollute the training loop. We identify agent skills as a powerful middle ground to reconcile this tension: each skill ensures deep, verifiable execution in a specific scenario, while dynamic routing across skills maintains open-ended task variety. Leveraging this insight, we introduce Skill Self-Play (Skill-SP), a co-evolutionary framework comprising a proposer, a solver, and a dynamic skill controller. Orchestrated via a reinforcement learning loop, these components co-evolve in a continuous self-play loop: the proposer generates challenging tasks conditioned on dynamically sampled skills; the solver explores candidate solutions to push its capability boundaries; and the skill controller collects execution feedback to update and expand the skill library. This interactive co-evolution effectively bridges the gap between structured verification and open-ended exploration. Empirical evaluations on tool-use and reasoning benchmarks demonstrate that Skill-SP, serving as a robust evolution engine, consistently pushes the performance ceiling of competent backbones while catalyzing striking turnarounds for initially misaligned models. Our code is available at https://github.com/Qwen-Applications/skill-self-play.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.22529",
+          "score": 5,
+          "ai_score": 8,
+          "ai_summary": "LLM research",
+          "action_plan": [
+            "Read the research paper (2 hours)",
+            "Analyze the methodology (3 hours)",
+            "Implement the approach (6 hours)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "0fdb802ccbef"
+        },
+        {
+          "title": "Explainable Reinforcement Learning for assisting Air Traffic Controllers",
+          "url": "https://arxiv.org/abs/2607.22525v1",
+          "source": "arxiv",
+          "description": "To effectively integrate AI into high-stakes, critical environments such as healthcare, autonomous driving, and aviation--and to advance toward higher levels of automation and seamless human-AI collaboration--building trust in AI-driven solutions is essential. Trust, in turn, is closely linked to the explainability of AI systems. The rapid advancements in AI across various domains have underscored the challenges of establishing trust, raising increasing interest in AI explainability even more when applied to deep learning. In this context, the present work aims to explore the application of explainability techniques to Reinforcement Learning (RL) algorithms, specifically within the safety-critical domain of Air Traffic Control (ATC). Using a simplified ATC environment as an initial testbed, an intelligent agent is trained with a reinforcement learning algorithm to make decisions on alternative flight routes that avoid no-fly zones. As a preliminary explainability approach, a saliency map is employed, providing insights into the input features that most significantly influence the agent's decision-making process.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.22525",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Relevant RL safety research; could boost AI credibility if published.",
+          "action_plan": [
+            "1d: Read the abstract and locate the full paper.",
+            "2d: Identify open research questions you could address.",
+            "1w: Prototype a small experiment in a simulated ATC env.",
+            "2w: Draft a short report and seek feedback from a professor."
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 5,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "a16beaa388dc"
+        },
+        {
+          "title": "The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents",
+          "url": "https://arxiv.org/abs/2607.22520v1",
+          "source": "arxiv",
+          "description": "Adding procedural skills to an LLM agent is typically evaluated by average improvement in task success. However, this metric hides an important cost: skills can also make agents worse. We measure both sides by comparing agents with and without skills across nearly 6,000 runs spanning two office automation benchmarks and three model harness stacks. This allows us to distinguish two outcomes. A regression is a task solved without skills but failed after skills are added. A residual failure is a task that fails both with and without skills. We find that regressions are substantial enough that the best performing skills outperform others primarily by regressing less, not by gaining more. We identify three causes of regression: (i) skill description osmosis, a skill changes an agent's behavior simply by being present in context, even when it is never invoked; (ii) grounding displacement, a skill's prescribed procedure overrides how the agent interprets its inputs; and (iii) verification displacement, where the procedure suppresses checks the agent would otherwise perform on its outputs. Analysing persistent failures reveals the same underlying pattern. Existing skills overemphasize procedural guidance the stage least often responsible for failure while under supporting grounding and verification, the dominant sources of remaining errors. After correcting evaluation artifacts and studying traces, we find many regressions and persistent failures recoverable through better grounding and verification. Procedural skills should be evaluated by decomposing their net effect into gains and regressions, not by aggregate improvement alone. We identify three regression modes skills should avoid, and find that reliability depends more on grounding and verification than on procedural skill choice.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.22520",
+          "score": 5,
+          "ai_score": 7,
+          "ai_summary": "LLM agent research",
+          "action_plan": [
+            "Read the research paper (2 hours)",
+            "Analyze the results (3 hours)",
+            "Discuss the implications (2 hours)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "e6c63b24254a"
+        },
+        {
+          "title": "Quantum Spectral Model: Data Reuploading with Input-Conditioned Frequency Support",
+          "url": "https://arxiv.org/abs/2607.22516v1",
+          "source": "arxiv",
+          "description": "A central design principle in modern machine learning and artificial intelligence is to align a model's inductive bias with the structure of its input data. For matrix-valued inputs, relevant matrix-level relationships can be characterised through spectral values and spectral subspaces; however, common coordinate-wise rotation-gate data-encoding unitaries used in most quantum machine learning models do not explicitly construct such a matrix-level representation. We introduce Quantum Spectral Models (QSMs), in which we construct the generator of the data-encoding unitary directly from each input matrix. We study three QSM variants based on symmetric, global block, and non-overlapping patch-local block Hamiltonians. Their outputs admit truncated Fourier representations in which input-dependent spectral gaps supply candidate phase carriers, while spectral subspaces help determine their coefficients. We evaluate the QSMs and comparison quantum models on two matrix representations of Pendigits and two controlled synthetic tasks defined by spectral statistics. At the largest evaluated circuit depth, QSM variants lead the tested quantum models in mean test accuracy across all four benchmarks. The patch-local QSM leads on Pendigits, whereas the global block-Hamiltonian QSM leads on the controlled spectral tasks. Ablations show a task-dependent reversal: subspace-preserving controls perform better on Pendigits, whereas spectral-value-only controls lead among the tested ablations on the synthetic tasks. Together, these results shed new light on quantum machine-learning model design by showing how input-conditioned spectral representations can provide an analysable inductive bias, while offering a broader perspective on structure-aware model design in machine learning and artificial intelligence.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.22516",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "Quantum ML is niche; modest resume value but low direct relevance.",
+          "action_plan": [
+            "1d: Scan the paper for required background.",
+            "2d: Watch a tutorial on quantum data encoding.",
+            "1w: Implement a simple QSM example in Python.",
+            "2w: Evaluate if further work aligns with personal goals."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "a23711d233b5"
+        },
+        {
+          "title": "Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science",
+          "url": "https://arxiv.org/abs/2607.22513v1",
+          "source": "arxiv",
+          "description": "Commercial large language models are increasingly used as knowledge references, yet their stance on contested scientific claims is neither stable nor transparent. We tested how four major LLM families (Claude, Grok, GPT, Gemini) evaluate ethnonationalist pseudo-science derived from Frank Salter's biosocial framework across four temporal snapshots (October 2025-February 2026), via both API and web interfaces. Grok's Fast versions (which power the default user experience on X) consistently assigned credibility scores of 70-75, two to five times higher than all other models (which scored 15-40). This pattern was absent from control prompts testing basic evolutionary consensus and refuted Lamarckian claims, where all models performed comparably. Three additional findings emerged: (1) a silent patch reversed Grok's behaviour from chaotic to stably high validation overnight, without any public documentation; (2) the same Grok model identifier produced radically divergent outputs via API (75) and web (5.5) three months later; (3) refusal to rate the pseudo-scientific claim, the most defensible response observed, appeared in two model families through different interfaces (Claude Opus 4.1 categorically via web, GPT-5.1 Chat intermittently via API) and eroded in the successor version of each. These results indicate that the epistemic stance of a commercial LLM is not a stable property of the model but a contingent effect of deployment configuration: system prompts, safety layers, interface routing, and silent updates. This remains opaque to users and researchers alike. We argue this constitutes a matter of public concern requiring new forms of epistemic accountability.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.22513",
+          "score": 5,
+          "ai_score": 5,
+          "ai_summary": "LLM deployment research",
+          "action_plan": [
+            "Read the research paper (2 hours)",
+            "Analyze the methodology (2 hours)",
+            "Discuss the results (2 hours)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "574cccabd2ec"
+        },
+        {
+          "title": "CausalForge: A Formally Grounded, Self-Improving Agentic Framework for Automated Research in Causal Inference",
+          "url": "https://arxiv.org/abs/2607.22511v1",
+          "source": "arxiv",
+          "description": "Automating theoretical research is constrained not only by the generation of candidate results, but also by their reliable evaluation. A common approach is to close the research loop with a large language model (LLM) reviewer. However, such reviewers remain empirically unreliable: they may accept fabricated papers and detect them at rates close to chance (Bad Scientist, 2025). We present CausalForge, a framework for automated theoretical research in causal inference grounded in the Lean proof assistant. CausalForge combines Causalean, a foundational Lean library for causal inference containing 7,035 machine-checked declarations developed with language-model assistance under human design and review, with CausalSmith, a self-improving agentic pipeline that selects research topics, proposes results, formalizes statements, constructs proofs, and presents the resulting artifacts for human inspection. Because a machine-checked proof establishes only that a formal statement follows from its assumptions, not that the statement faithfully captures the intended scientific claim, the pipeline augments kernel verification with a statement audit that compares each formal theorem against the informal claim it is intended to express. We evaluate the system using artifacts produced by completed autonomous research runs. The source code, formal library, and run records are available at https://github.com/Jiyuan-Tan/CausalForge.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.22511",
+          "score": 5,
+          "ai_score": 8,
+          "ai_summary": "Causal inference research",
+          "action_plan": [
+            "Read the research paper (2 hours)",
+            "Analyze the framework (3 hours)",
+            "Implement the approach (6 hours)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "667176159fba"
+        },
+        {
+          "title": "I implemented the YOLO26n model inference from scratch using ARM64 Assembly Language (No framework) [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v6w394/i_implemented_the_yolo26n_model_inference_from/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v6w394",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Low‑level AI inference project fits builder mindset, limited prestige.",
+          "action_plan": [
+            "1d: Read the Reddit post and locate the original implementation.",
+            "2d: Set up ARM64 cross‑compilation toolchain.",
+            "1w: Re‑implement a core YOLO block in assembly.",
+            "2w: Benchmark performance and document findings."
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 5,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "099a4b4df88d"
+        },
+        {
+          "title": "Neurips 2026 Main Track Theory Paper Tracker- Discussion Thread [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v77r9s/neurips_2026_main_track_theory_paper_tracker/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v77r9s",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "NeurIPS tracker is informational; minimal direct impact on career.",
+          "action_plan": [
+            "1d: Bookmark the tracker page.",
+            "2d: Scan titles for papers matching personal interests.",
+            "1w: Summarize one relevant paper for future reference."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 3,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "e83e94845ec9"
+        },
+        {
+          "title": "Open-weight 4B models approach o3-level medical question answering in Swedish [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v71wds/openweight_4b_models_approach_o3level_medical/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v71wds",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Generative AI model with medical QA shows cutting‑edge application.",
+          "action_plan": [
+            "1d: Locate the model repository and read the README.",
+            "2d: Run inference on a sample Swedish medical query.",
+            "1w: Compare results with baseline models.",
+            "2w: Write a short blog post summarizing insights."
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "46b2625a586e"
+        },
+        {
+          "title": "We compared different LLMs on IMO 2026 [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v6wskz/we_compared_different_llms_on_imo_2026_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v6wskz",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "LLM comparison aligns with core interests; low prestige but useful insight.",
+          "action_plan": [
+            "1d: Open the Reddit discussion and list evaluated LLMs.",
+            "2d: Replicate one experiment on a sample IMO problem.",
+            "1w: Record performance metrics and note observations.",
+            "2w: Share findings in a personal blog or GitHub repo."
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "f304dbe90b31"
+        },
+        {
+          "title": "CICD / KAFKA / KUBERNETES / Interview questions (MLE) [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v7jvsx/cicd_kafka_kubernetes_interview_questions_mle_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v7jvsx",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "DevOps topics modestly aid AI engineering skill set.",
+          "action_plan": [
+            "Read the post (30m)",
+            "Pick one tool to experiment (2h)",
+            "Summarize learnings in a note (15m)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "86175f5f5dd1"
+        },
+        {
+          "title": "Recent project I worked on: End to End Edge ML platform [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v7nudc/recent_project_i_worked_on_end_to_end_edge_ml/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v7nudc",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Edge ML platform showcases end‑to‑end AI building, strong portfolio.",
+          "action_plan": [
+            "Outline platform components (1h)",
+            "Implement core inference pipeline (3d)",
+            "Publish repo and write blog (4h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 3,
+            "deadline": 1,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "d438dea50a13"
+        },
+        {
+          "title": "Multi-Tenant SaaS: Which Architecture Would You Choose? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v794kw/multitenant_saas_which_architecture_would_you/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v794kw",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "SaaS architecture knowledge complements AI product development.",
+          "action_plan": [
+            "Research multi‑tenant patterns (2h)",
+            "Sketch architecture diagram (1h)",
+            "Share on GitHub (30m)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "8aa0f649d85c"
+        },
+        {
+          "title": "Missed AAAI reciprocal reviewer nomination deadline — risk of desk rejection? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v7hgrh/missed_aaai_reciprocal_reviewer_nomination/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v7hgrh",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "AAAI reviewer role could boost academic credibility but deadline missed.",
+          "action_plan": [
+            "Check next reviewer call (15m)",
+            "Prepare short reviewer statement (30m)",
+            "Submit before next deadline"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 3,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "dc8489065230"
+        },
+        {
+          "title": "I want to use AI coding agents for machine learning projects [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1v758ek/i_want_to_use_ai_coding_agents_for_machine/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1v758ek",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "AI coding agents discussion",
+          "action_plan": [
+            "Read the discussion (1 hour)",
+            "Participate in the discussion (2 hours)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 5,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "1094f721eebd"
+        },
+        {
+          "title": "Innohacks 4.0",
+          "url": "https://innohacks-4.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | Ghaziabad, India | themes: No Restrictions",
+          "deadline": "2026-10-03",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "aec2f88c6f674e8ca9c87b9074f937ad",
+          "score": 2,
+          "ai_score": 7,
+          "ai_summary": "Innohacks offers hands‑on AI building and a concrete portfolio piece.",
+          "action_plan": [
+            "Register before deadline (10m)",
+            "Form a team (1d)",
+            "Build MVP during hackathon (2‑3d)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 7,
+            "skill": 7,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "ba792c13877d"
+        },
+        {
+          "title": "Codeforces Round (Div. 2) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2252",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-08-06T14:35:00",
+          "deadline": "2026-08-06",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69144710",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Competitive programming contest",
+          "action_plan": [
+            "Prepare for the contest (4 hours)",
+            "Participate in the contest (2 hours)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 6,
+            "deadline": 8,
+            "skill": 7,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "b7a459ae0336"
+        },
+        {
+          "title": "Catalyst 1.0",
+          "url": "https://unstop.com/hackathons/catalyst-10-integral-university-iu-lucknow-1726311",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1726311",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Catalyst hackathon provides offline networking and project showcase.",
+          "action_plan": [
+            "Sign up (5m)",
+            "Brainstorm project ideas (2h)",
+            "Develop prototype (2‑3d)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 4,
+            "deadline": 3,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "5d2f08d76a2f"
+        },
+        {
+          "title": "STAMPERS National Hackathon 2026",
+          "url": "https://unstop.com/hackathons/stampers-national-hackathon-2026-stampers-1726290",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1726290",
+          "score": 7,
+          "ai_score": 5,
+          "ai_summary": "Hackathon experience",
+          "action_plan": [
+            "Research hackathon rules (1 hour)",
+            "Form a team (2 hours)",
+            "Prepare for the hackathon (4 hours)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "bf65ea3782c7"
+        },
+        {
+          "title": "Specathon 2026",
+          "url": "https://unstop.com/hackathons/specathon-2026-st-peters-engineering-college-1723868",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1723868",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Specathon focuses on AI specs, aligning with his research interests.",
+          "action_plan": [
+            "Apply (5m)",
+            "Read spec brief (1h)",
+            "Create solution demo (2‑3d)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 4,
+            "deadline": 3,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "da1a89fa0d39"
+        },
+        {
+          "title": "Client Acquisition Internship",
+          "url": "https://unstop.com/internships/client-acquisition-internship-idealizeer-content-solutions-pvt-ltd-hinjewadi-pune-1726420",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1726420",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "41ed33ecb8bc"
+        },
+        {
+          "title": "Admin Associate Internship",
+          "url": "https://unstop.com/internships/admin-associate-internship-elewinza-1726407",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1726407",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "13a444f93a0b"
+        },
+        {
+          "title": "Full Stack Developer Internship",
+          "url": "https://unstop.com/internships/full-stack-developer-internship-confluent-solutions-1726397",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1726397",
+          "score": 8,
+          "ai_score": 6,
+          "ai_summary": "relevant to software engineering",
+          "action_plan": [
+            "research company (1 day)",
+            "update resume (2 days)",
+            "apply (1 day)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "0f6b019bfcc2"
+        },
+        {
+          "title": "Project Management Internship",
+          "url": "https://unstop.com/internships/project-management-internship-amaanitvam-foundation-1726351",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1726351",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "4c9d4495d1c6"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-nexaris-1726361",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1726361",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "4059818fad35"
+        },
+        {
+          "title": "Content Creator & Writer Internship",
+          "url": "https://unstop.com/internships/content-creator-writer-internship-amaanitvam-foundation-1726353",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1726353",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "106826a644d9"
+        },
+        {
+          "title": "Social Media Manager Internship",
+          "url": "https://unstop.com/internships/social-media-manager-internship-neerajpharma-1726357",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1726357",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "516ec0c2658d"
+        },
+        {
+          "title": "E-Commerce Internship",
+          "url": "https://unstop.com/internships/e-commerce-internship-fortuna-enterprise-1726391",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1726391",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "264086df7cec"
+        },
+        {
+          "title": "Ops Elevate- The Internship Showcase 2026",
+          "url": "https://unstop.com/competitions/ops-elevate-the-internship-showcase-2026-symbiosis-institute-of-management-studies-sims-pune-1726095",
+          "source": "unstop",
+          "description": "competition | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "competition"
+          ],
+          "native_id": "1726095",
+          "score": 4,
+          "ai_score": 4,
+          "ai_summary": "Internship showcase",
+          "action_plan": [
+            "Research the internship (1 hour)",
+            "Prepare for the showcase (2 hours)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "e567c5c48c36"
+        },
+        {
+          "title": "Toshiba Global Commerce — Agentic Software Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/toshibaglobalcommercesolutions/jobs/5177892007",
+          "source": "internships",
+          "description": "internship | Toshiba Global Commerce | Durham, NC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5dc00cee-4e2e-4533-9b44-94c295ffddd4",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Hands‑on AI‑agent work but low brand impact for resume.",
+          "action_plan": [
+            "1d: List required skills and compare with current resume.",
+            "2d: Update CV highlighting relevant projects.",
+            "3d: Submit application via Toshiba portal.",
+            "1w: Prepare for potential interview with mock questions."
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "f7560351c3e6"
+        },
+        {
+          "title": "Toshiba Global Commerce — AI Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/toshibaglobalcommercesolutions/jobs/5192820007",
+          "source": "internships",
+          "description": "internship | Toshiba Global Commerce | Frisco, TX | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3393d4cf-e1e5-47d1-8143-309545e4195f",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "AI engineering role matches interests; still low prestige.",
+          "action_plan": [
+            "1d: Review internship description and note key qualifications.",
+            "2d: Tailor resume to emphasize AI projects.",
+            "3d: Apply through Toshiba career site.",
+            "1w: Practice technical interview questions."
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "2ec2ec6eaefc"
+        }
+      ]
     }
   ]
 }

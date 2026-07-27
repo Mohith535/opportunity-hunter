@@ -1,23 +1,6 @@
 {
-  "updated_at": "2026-07-26",
+  "updated_at": "2026-07-27",
   "items": [
-    {
-      "key": "063502eecdda",
-      "title": "Orbital Industries — AI Residency Programme",
-      "url": "https://jobs.ashbyhq.com/orbitalindustries/837b7e29-b89a-4ea4-b90d-48d8782f48b8/application",
-      "source": "internships",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI Residency at Orbital is elite, international, hard‑to‑replace signal.",
-      "action_plan": [
-        "Gather research papers & portfolio (2h)",
-        "Draft tailored application essay (3h)",
-        "Request a recommendation from professor (1h)"
-      ]
-    },
     {
       "key": "e38a0c78f2e8",
       "title": "Formlabs — AI Software Intern",
@@ -33,76 +16,6 @@
         "Identify AI intern requirements (30m)",
         "Showcase AI projects (2h)",
         "Apply (1h)"
-      ]
-    },
-    {
-      "key": "873a44a40fc4",
-      "title": "Win by Silence: Deletion Non-Monotonicity, Autonomous Exploitation, and Typed-State Gating in LLM Plan Evaluation",
-      "url": "https://arxiv.org/abs/2607.12986v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "LLM research paper",
-      "action_plan": [
-        "Read the paper",
-        "Implement the ideas",
-        "Write a blog post"
-      ]
-    },
-    {
-      "key": "83aa41c207c6",
-      "title": "LLM hallucination paper(using math) accepted to ICML workshop[R]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1uw4j6a/llm_hallucination_paperusing_math_accepted_to/",
-      "source": "reddit",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "LLM hallucination paper",
-      "action_plan": [
-        "Read the paper",
-        "Implement the ideas",
-        "Write a blog post"
-      ]
-    },
-    {
-      "key": "eb1f6120e1c5",
-      "title": "New LLM Coordination Benchmark - Benchmarking Open-Ended Multi-Agent Coordination in Language Agents [R]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1uwc6ni/new_llm_coordination_benchmark_benchmarking/",
-      "source": "reddit",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "LLM coordination benchmark",
-      "action_plan": [
-        "Read the paper",
-        "Implement the ideas",
-        "Write a blog post"
-      ]
-    },
-    {
-      "key": "f00916a09a02",
-      "title": "Push to Prod Hackathon: Building at the Frontier",
-      "url": "https://pushtoprod-india.devfolio.co",
-      "source": "devfolio",
-      "score": 8,
-      "deadline": "2026-08-08",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AI hackathon",
-      "action_plan": [
-        "Form a team",
-        "Choose a theme",
-        "Start building"
       ]
     },
     {
@@ -382,20 +295,37 @@
       ]
     },
     {
-      "key": "04f47353cd3f",
-      "title": "Software Developer Internship",
-      "url": "https://unstop.com/internships/software-developer-intern-the-developers-arena-1718316",
-      "source": "unstop",
-      "score": 7,
+      "key": "0fdb802ccbef",
+      "title": "Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills",
+      "url": "https://arxiv.org/abs/2607.22529v1",
+      "source": "arxiv",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "internship"
+        "research"
       ],
-      "ai_summary": "Software dev internship",
+      "ai_summary": "LLM research",
       "action_plan": [
-        "Update resume (2 hours)",
-        "Apply for internship (1 hour)",
-        "Prepare for interview (10 hours)"
+        "Read the research paper (2 hours)",
+        "Analyze the methodology (3 hours)",
+        "Implement the approach (6 hours)"
+      ]
+    },
+    {
+      "key": "667176159fba",
+      "title": "CausalForge: A Formally Grounded, Self-Improving Agentic Framework for Automated Research in Causal Inference",
+      "url": "https://arxiv.org/abs/2607.22511v1",
+      "source": "arxiv",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "Causal inference research",
+      "action_plan": [
+        "Read the research paper (2 hours)",
+        "Analyze the framework (3 hours)",
+        "Implement the approach (6 hours)"
       ]
     },
     {
@@ -1003,54 +933,37 @@
       ]
     },
     {
-      "key": "25f3a71ba5b5",
-      "title": "Full Stack Developer Internship",
-      "url": "https://unstop.com/internships/full-stack-developer-nextadhikari-1718335",
-      "source": "unstop",
-      "score": 6,
+      "key": "e6c63b24254a",
+      "title": "The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents",
+      "url": "https://arxiv.org/abs/2607.22520v1",
+      "source": "arxiv",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
+        "research"
       ],
-      "ai_summary": "Full stack dev internship",
+      "ai_summary": "LLM agent research",
       "action_plan": [
-        "Update resume (2 hours)",
-        "Apply for internship (1 hour)",
-        "Prepare for interview (10 hours)"
+        "Read the research paper (2 hours)",
+        "Analyze the results (3 hours)",
+        "Discuss the implications (2 hours)"
       ]
     },
     {
-      "key": "228d97b01c9b",
-      "title": "Bank of Montreal — AI Engineer Co-op/Intern - 4 months",
-      "url": "https://bmo.wd3.myworkdayjobs.com/Privileged/job/Toronto-ON-CAN/AI-Engineer--Fall-2026-Co-op-Internship---4-months_R260015224",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
+      "key": "ba792c13877d",
+      "title": "Innohacks 4.0",
+      "url": "https://innohacks-4.devfolio.co",
+      "source": "devfolio",
+      "score": 7,
+      "deadline": "2026-10-03",
       "tags": [
-        "internship"
+        "hackathon"
       ],
-      "ai_summary": "Bank AI co‑op adds experience but limited prestige for top AI labs.",
+      "ai_summary": "Innohacks offers hands‑on AI building and a concrete portfolio piece.",
       "action_plan": [
-        "Update resume with AI projects (1h)",
-        "Submit application via career portal (30m)",
-        "Prepare case‑study questions (2h)"
-      ]
-    },
-    {
-      "key": "f95a7d1bff5a",
-      "title": "McKesson — AI & Strategic Analytics Intern",
-      "url": "https://mckesson.wd3.myworkdayjobs.com/External_Careers/job/CAN-ON-Mississauga/AI---Strategic-Analytics-Intern---Fall-2026_JR0150114",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI & analytics intern offers relevant skill growth and decent signal.",
-      "action_plan": [
-        "Review analytics tools used (30m)",
-        "Tailor resume to highlight AI work (1h)",
-        "Submit application (15m)"
+        "Register before deadline (10m)",
+        "Form a team (1d)",
+        "Build MVP during hackathon (2‑3d)"
       ]
     },
     {
@@ -1723,6 +1636,96 @@
         "review contest rules (1h)",
         "practice coding (4h)",
         "participate in contest (4h)"
+      ]
+    },
+    {
+      "key": "b0d06ebd3884",
+      "title": "Building an AI-text detector from scratch [P]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1v3j2g0/building_an_aitext_detector_from_scratch_p/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "Building a detector aligns with AI‑building goal and adds to portfolio.",
+      "action_plan": [
+        "Outline detector architecture (1 h)",
+        "Implement prototype on Colab (3 h)",
+        "Publish code on GitHub (1 h)"
+      ]
+    },
+    {
+      "key": "3ec07691aedc",
+      "title": "Vibe-coded a tool to ELI5 research papers in-place [P]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1v37s1f/vibecoded_a_tool_to_eli5_research_papers_inplace_p/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "Research tool",
+      "action_plan": [
+        "Read post (1 day)",
+        "Try tool (1 day)",
+        "Provide feedback (1 week)"
+      ]
+    },
+    {
+      "key": "c13775ef583d",
+      "title": "Monday Munch - DSA Challenge 013 (Rated) (codechef.com)",
+      "url": "https://www.codechef.com/DSAMONDAY013",
+      "source": "clist",
+      "score": 6,
+      "deadline": "2026-07-27",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "DSA challenge",
+      "action_plan": [
+        "Prepare for challenge (2 weeks)",
+        "Participate in challenge (1 day)",
+        "Review results (1 week)"
+      ]
+    },
+    {
+      "key": "9fd7d11d584b",
+      "title": "PitchX 2026 – India's Biggest Startup Pitch Challenge | Pitch. Build. Scale.",
+      "url": "https://unstop.com/hackathons/pitchx-2026-indias-biggest-startup-pitch-challenge-pitch-build-scale-devtech-it-solution-1715544",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Boosts entrepreneurship portfolio; aligns with his startup goal.",
+      "action_plan": [
+        "Read PitchX rules (0.5d)",
+        "Brainstorm startup idea (1d)",
+        "Build MVP prototype (2d)",
+        "Prepare pitch deck (1d)",
+        "Submit before deadline (if any)"
+      ]
+    },
+    {
+      "key": "66069162b291",
+      "title": "Technical Internship",
+      "url": "https://unstop.com/internships/technical-internship-mckinley-rice-1723775",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "technical internship",
+      "action_plan": [
+        "Research company",
+        "Update resume",
+        "Apply"
       ]
     }
   ]
