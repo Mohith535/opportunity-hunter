@@ -25,7 +25,7 @@ doesn't get written.
 from __future__ import annotations
 
 from filters.llm_scorer import complete
-from .generate import _clean_certs, _skills_ordered
+from .generate import _pick_certs, _skills_ordered
 from .profile import load_profile_json
 
 HEADLINE_LIMIT = 220
@@ -57,8 +57,11 @@ LINKEDIN CRAFT RULES (how the platform actually works):
   for that. Show each skill through the project that proves it ("built X in Python").
 - Mention at most 2-3 credentials, and only substantial, recognisable ones. Skip webinars and short
   workshops — they cost space and signal little.
+- If a selection, competitive programme, or university research lab genuinely stands out (e.g. a lab
+  at a top university, an elite programme), weave the single strongest one into the About as proof —
+  from the list only, never invented. For a student these are high-signal; do not list them all.
 - ABOUT length: hard max {a_limit} characters, aim 1200-1800. Structure: concrete hook → the proof
-  (real projects) → what you're looking for and how to reach you.
+  (real projects + the strongest selection) → what you're looking for and how to reach you.
 - First person, natural, specific. No buzzword soup, no emoji spam.
 
 Output EXACTLY these two blocks and nothing else:
@@ -76,6 +79,8 @@ Target role: {target}
 Proven skills: {skills}
 Real projects:
 {projects}
+Selections / programmes (real, competitive — use the strongest if it fits): {awards}
+Education: {education}
 Credentials: {certs}
 """
 
@@ -98,10 +103,17 @@ def generate_social(profile: dict, target_role: str = "") -> dict:
                                       declared.get("longTermGoal", "")] if x)
     target = target_role or declared.get("longTermGoal", "") or "AI/ML engineering roles"
 
-    projects = [p for p in profile.get("projects", []) if (p.get("description") or "").strip()][:5]
+    projects = [p for p in profile.get("projects", [])
+                if (p.get("description") or "").strip() or p.get("highlights")][:5]
     proj_lines = "\n".join(
-        f"- {p['name']}{' (private)' if p.get('private') else ''}: {p['description']} "
+        f"- {p['name']}{' (private)' if p.get('private') else ''}: "
+        f"{p.get('description') or (p.get('highlights') or [''])[0]} "
         f"({', '.join((p.get('keywords') or [])[:4])})" for p in projects)
+    awards = "; ".join(f"{a.get('title')} ({a.get('awarder', '')})".strip(" ()")
+                       for a in profile.get("awards", [])[:5])
+    education = "; ".join(
+        " ".join(x for x in [e.get("studyType"), e.get("institution"), e.get("note")] if x)
+        for e in profile.get("education", [])[:2])
 
     out = complete(_PROMPT.format(
         h_limit=HEADLINE_LIMIT, h_visible=HEADLINE_VISIBLE, a_limit=ABOUT_LIMIT, a_hook=ABOUT_HOOK,
@@ -109,7 +121,8 @@ def generate_social(profile: dict, target_role: str = "") -> dict:
         name=name, about=background or "(not specified)", target=target,
         skills=", ".join(_skills_ordered(profile, [], 14)),
         projects=proj_lines or "(none)",
-        certs=", ".join(_clean_certs(profile, 6)) or "(none)"),
+        awards=awards or "(none)", education=education or "(none)",
+        certs=", ".join(c["name"] for c in _pick_certs(profile, [], 6)) or "(none)"),
         max_tokens=900, temperature=0.5)
 
     if not out:

@@ -24,7 +24,7 @@ is auto-submitted.
 from __future__ import annotations
 
 from filters.llm_scorer import complete
-from .generate import _clean_certs, _skills_ordered
+from .generate import _pick_certs, _skills_ordered
 from .profile import load_profile_json, relevant_projects
 
 _NO_REASON = "[add: your genuine reason for this company — one specific thing about their work]"
@@ -46,6 +46,11 @@ STYLE:
   "passionate" or "hardworking".
 - Do NOT enumerate skills — the resume already lists them. Name only the two or three that matter for
   this job, and show them THROUGH a project ("built X in Python"), never as a comma-separated list.
+- SELECTIONS ARE PROOF: if a listed selection or programme is relevant to this role (a university
+  research lab, an elite/competitive programme, a data-science/ML programme, a relevant hackathon
+  role), cite the single most relevant one as concrete evidence in the middle paragraph — from the
+  list below, never invented. For a student these are among the strongest signals available. Use one;
+  never list them all.
 - Mirror the job's own language wherever it is truthful.
 - Close with a clear, confident ask for a conversation. No groveling, no clichés.
 - First person, natural human voice.
@@ -58,6 +63,7 @@ Background: {about}
 Top skills: {skills}
 Real projects (pick the 1-2 that fit this job best):
 {projects}
+Selections / programmes (real + competitive — cite ONE only if it fits): {awards}
 Credentials: {certs}
 Company: {company}
 Role: {role}
@@ -100,11 +106,15 @@ def generate_cover_letter(profile: dict, jd_text: str, company: str = "", role: 
         "enthusiasm. The candidate did NOT supply a reason, so output this placeholder EXACTLY ONCE in "
         f'the closing paragraph, and nothing else in its place: "{_NO_REASON}"')
 
+    awards = "; ".join(f"{a.get('title')} ({a.get('awarder', '')})".strip(" ()")
+                       for a in profile.get("awards", [])[:5])
+
     body = complete(_COVER_PROMPT.format(
         reason_rule=reason_rule, name=name, about=about or "(not specified)",
         skills=", ".join(_skills_ordered(profile, jd_keywords, 12)),
         projects=proj_lines or "(none)",
-        certs=", ".join(_clean_certs(profile, 6)) or "(none)",
+        awards=awards or "(none)",
+        certs=", ".join(c["name"] for c in _pick_certs(profile, jd_keywords, 6)) or "(none)",
         company=company or "(not specified — use a neutral greeting)",
         role=role or "(infer from the job description)",
         why=why or "(NOT SUPPLIED — use the placeholder exactly as instructed)",
@@ -113,8 +123,10 @@ def generate_cover_letter(profile: dict, jd_text: str, company: str = "", role: 
     if not body:
         body = _fallback(name, about, company, role, projects, why)
 
-    gh = next((p.get("url") for p in basics.get("profiles", []) if p.get("network") == "GitHub"), "")
-    header = f"{name}\n" + " · ".join(x for x in [gh, "[add email]", "[add phone]"] if x)
+    contact = [basics.get("email"), basics.get("phone")] + \
+              [p.get("url") for p in basics.get("profiles", []) if p.get("url")]
+    contact = [c for c in contact if c] or ["[add email]"]
+    header = f"{name}\n" + " · ".join(contact)
     footer = ("\n\n---\n*Draft from your verified profile — every claim traces to a real project or "
               "credential. Fill any [bracketed] parts (especially your genuine reason for this "
               "company), read it once in your own voice, then send it yourself.*")
