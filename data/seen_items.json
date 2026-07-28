@@ -2343,8 +2343,8 @@
     "4fec7b2bae9b": {
       "title": "MLH Fellowship",
       "first_seen": "2026-06-29",
-      "last_seen": "2026-06-30",
-      "times_seen": 2
+      "last_seen": "2026-07-28",
+      "times_seen": 3
     },
     "fd996a68ef23": {
       "title": "Microsoft Learn Student Ambassadors",
@@ -2727,8 +2727,8 @@
     "3716178f2dc7": {
       "title": "Port Mortem 2026 - Code Resurrection Hackathon",
       "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "times_seen": 1
+      "last_seen": "2026-07-28",
+      "times_seen": 2
     },
     "e732b0c5afb8": {
       "title": "Vibe2Vision",
@@ -9010,6 +9010,294 @@
       "title": "Toshiba Global Commerce — AI Engineer Intern",
       "first_seen": "2026-07-27",
       "last_seen": "2026-07-27",
+      "times_seen": 1
+    },
+    "bc89b8ab14e8": {
+      "title": "ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "51c53409971c": {
+      "title": "KANEx: Translating Kolmogorov-Arnold Networks' Interpretability to Medical Explainability",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "682093e686ef": {
+      "title": "Global Convergence of DGM and PINN Algorithms for Solving Nonlinear PDEs",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "e5be731474cc": {
+      "title": "DataOrchestra: Learning to Orchestrate Per-Example Curation of Pretraining Data",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "d331667577d1": {
+      "title": "Efficient LLM-Generated Shuttling Compilers for Complex Trapped-Ion Architectures",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "39af7d267f21": {
+      "title": "ieldante/thayernet — ★51",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "d77bbf789be8": {
+      "title": "Self-contained highly-portable Python distributions",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "6f4b2d0173c3": {
+      "title": "Agentic Cinema: The Blockbuster Hackathon",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "231f4db9133c": {
+      "title": "CALL-E: Your Code Is Calling",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "865660c2ced4": {
+      "title": "Built & Trained a Transformer from Scratch in Pure PyTorch for English-to-Tamil Machine Translation [Math + Code Breakdown] [P]",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "875509c09a57": {
+      "title": "Editing Neurips Rebuttal [D]",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "90fa88c9ab3c": {
+      "title": "Made a small model that extracts text from a white background [P]",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "253001f322b9": {
+      "title": "Mix local LLMs, Claude Code, Codex, Gemini and more in one SDLC pipeline (open source) [P]",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "186a476a8e96": {
+      "title": "Evaluated 6 frontier LLMs (GPT-5.4, Claude Sonnet 4.6, Claude Opus 4.7, Gemini Pro/Flash, Grok 4.3) on political, gender, and racial bias across 8 benchmarks (~20,600 examples) [R]",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "a572b4bb39ce": {
+      "title": "Educational Codeforces Round 193 (Rated for Div. 2) (codeforces.com)",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "7ebbc74cb256": {
+      "title": "Weekly Contest 514 (leetcode.com)",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "68379cc60592": {
+      "title": "AtCoder Beginner Contest 471 (atcoder.jp)",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "e261102d8808": {
+      "title": "CodeFury 9.0",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "0e27f5aeba7d": {
+      "title": "Paper Buddy EduVerse Hackathon 2026",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "b6607966b139": {
+      "title": "Techfusion Hackathon",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "9e57589fe94e": {
+      "title": "Open Innovation Hackathon",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "11d68c72b315": {
+      "title": "Code Chakra Competitive Programming Championship",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "5ae730b95421": {
+      "title": "Research Internship",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "45b3a7e34c11": {
+      "title": "Business Development Internship",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "e508d9946cbf": {
+      "title": "Data Analytics Internship",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "21b618b49a80": {
+      "title": "Research & Presentation Internship",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "33a92405046d": {
+      "title": "Data Analytics Internship",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "0ac5af5dc25a": {
+      "title": "Consulting Analyst Internship – AI & Business Transformation",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "4a3cc9e3d646": {
+      "title": "Business Development Internship (B2B Sales & Partnerships)",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "01a5884e4b7b": {
+      "title": "Campus Marketing Internship",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "40c6446fa542": {
+      "title": "Metropolitan Transportation Authority — Computer Specialist - Software",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "af44382053f9": {
+      "title": "Metropolitan Transportation Authority — Application Developer 1 - PeopleSoft",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "8dd3b2b9f77c": {
+      "title": "Tesla — Vehicle Software Intern - Vehicle Controls",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "7f280bb8c7e0": {
+      "title": "SRI International — Drexel University Co-op: Software Engineering/Full stack development",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "c48ff62ae28a": {
+      "title": "Bosch Home Comfort — Powertrain Controls Software Engineer Intern",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "f9d481aa2754": {
+      "title": "Keysight Technologies — R&D Software Engineer Intern",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "a70a55c3f697": {
+      "title": "Apptronik — Software Engineer Intern - ML Systems",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "0b34c9cb8ce7": {
+      "title": "Toshiba Global Commerce — AI Product Management Intern",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "b93c9d1ed9e1": {
+      "title": "Nokia — Architecture AI Co-op",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "7e7f940ab98d": {
+      "title": "RTX — Software Engineer Intern",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "51842271b200": {
+      "title": "GE Appliances — AI Data Science Analytics",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "28f9e26be75b": {
+      "title": "Ciena — Software Engineer Intern",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "e967103615d9": {
+      "title": "CCC Intelligent Solutions — Applied AI Engineer Intern",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "71e6aac851ef": {
+      "title": "Bank of Montreal — Data and AI Operations Analyst Intern/Co-op - Cloud - 8 months",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "d6e7a09085a2": {
+      "title": "Northrop Grumman — Software Engineer Intern",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "79eb18bacf88": {
+      "title": "RSM — ServiceNow Developer Associate",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "f12c6dbb3926": {
+      "title": "Intel — AI Applied Intern",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "c627b6d8dc81": {
+      "title": "Nelnet — Program Intern - Agentic AI",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
       "times_seen": 1
     }
   }
