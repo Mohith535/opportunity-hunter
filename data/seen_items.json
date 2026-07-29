@@ -2343,8 +2343,8 @@
     "4fec7b2bae9b": {
       "title": "MLH Fellowship",
       "first_seen": "2026-06-29",
-      "last_seen": "2026-07-28",
-      "times_seen": 3
+      "last_seen": "2026-07-29",
+      "times_seen": 4
     },
     "fd996a68ef23": {
       "title": "Microsoft Learn Student Ambassadors",
@@ -2727,8 +2727,8 @@
     "3716178f2dc7": {
       "title": "Port Mortem 2026 - Code Resurrection Hackathon",
       "first_seen": "2026-06-30",
-      "last_seen": "2026-07-28",
-      "times_seen": 2
+      "last_seen": "2026-07-29",
+      "times_seen": 3
     },
     "e732b0c5afb8": {
       "title": "Vibe2Vision",
@@ -9298,6 +9298,288 @@
       "title": "Nelnet — Program Intern - Agentic AI",
       "first_seen": "2026-07-28",
       "last_seen": "2026-07-28",
+      "times_seen": 1
+    },
+    "3e8f926e1663": {
+      "title": "Falling Behind Drives Unsafe Development in an Idealised AI Race Experiment",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "55814726f73d": {
+      "title": "CHARM: A Multimodal Graph Foundation Model with Hierarchical Context Modeling for Zero-Shot Transfer",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "521e9ddbda78": {
+      "title": "UniMem: Complementary Episodic-to-Parametric Memory for Boundary-Agnostic Task Streams",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "b0df145211de": {
+      "title": "wzn1118/AsteriaAnalyst — ★246",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "ce2c2fd62d72": {
+      "title": "Truth is not a direction: a Tarski attack on LLM probes",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "5da48d85666c": {
+      "title": "Show HN: Lean4 Datalog DSL Based on Google Zanzibar for AI Projects",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "535445392f95": {
+      "title": "NeurIPS 2026 Reviewer: AI-Generated Rebuttals (and Paper) [D]",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "d0dd090b1b9a": {
+      "title": "Are single GPU research still published in ML/DL and its applications nowadays? Which are the most notable recent ones? [D]",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "b971d7709c32": {
+      "title": "NeurIPS 2026 AI-generated reviews [D]",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "e2b03acf05b6": {
+      "title": "Neurips rebuttals not visible to reviewers [D]",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "dbec320f8bfe": {
+      "title": "How exactly does the NeurIPS meta reviewer response work? [D]",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "d2c164e2c628": {
+      "title": "EMNLP 2026 AI Reviewing Experiment [D]",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "5149aef2d6bb": {
+      "title": "PNAS: Over Half of All Academic Articles Now Show LLM Influence—7.3M-Paper Study [R]",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "c143332176dc": {
+      "title": "NeurIPS-side prompt injection triggering ethics reviewers? [D]",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "a912c4636a6d": {
+      "title": "How to deal with text only vector search across multimodal embedding space? [D]",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "f8896e30a928": {
+      "title": "NeurIPS E&D: Should authors respond to ethical reviews during the discussion period? [D]",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "38ec25b241aa": {
+      "title": "Infinity Hacks 2026",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "f8569109415e": {
+      "title": "VENTURE'26",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "9f4ed3b0c3e5": {
+      "title": "National Level MIT India Hackathon 2026",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "bb793f358353": {
+      "title": "Game of Codes 3.0",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "8613c0beaf47": {
+      "title": "Flight Hack 2.0",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "d4f91a2b7ef7": {
+      "title": "InnoVenture 2026 – International Innovation & Technology Challenge",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "a7e28cc8c88c": {
+      "title": "Code Forge 2026",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "0e052b5a2768": {
+      "title": "AI Research & Digital Enablement Internship",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "cdd7e64cae50": {
+      "title": "Founding Campus Ambassador Internship",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "7ab756e3cbd7": {
+      "title": "Founder's Office Internship",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "f5964982e5fd": {
+      "title": "Campus Ambassador Internship",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "1c55c5f127df": {
+      "title": "Business Development Internship",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "f4d703493aa6": {
+      "title": "Product Designer Internship (UI/UX & Brand)",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "d3674edd990a": {
+      "title": "Brand Promotion Internship",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "880e71b9bfe3": {
+      "title": "Sales Internship",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "28888f762339": {
+      "title": "TikTok — Machine Learning Engineer Intern - Tiktok-Data-Search-Search Quality",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "af05e29ceb42": {
+      "title": "Modal — Machine Learning Research Intern",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "0bbd5a0f06d1": {
+      "title": "Berkshire Grey — Software Co-op",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "e62a8a595cca": {
+      "title": "Tesla — Charging Data Modeling Intern - Charging Data Modeling - Machine Learning Engineer",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "967466d5ec75": {
+      "title": "Savannah River National Laboratory — Software Developer Undergraduate Intern",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "b12a79acaa60": {
+      "title": "General Dynamics Mission Systems — Embedded Software Engineer - HOH Fellows - Spouseworks Fellows",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "85780b467b1e": {
+      "title": "Zurich Insurance — Data Analytics & AI Internship/Co-op - Data Analytics & AI",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "155f459253c1": {
+      "title": "Riverside Research — Junior Artificial Intelligence / Machine Learning Engineer",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "58cf7be50ef3": {
+      "title": "Bosch Home Comfort — ADAS Software Engineer Intern",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "e2e6fb811a3a": {
+      "title": "Blackberry — QNX-Software Development Student - Acoustics",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "5e6541ec610f": {
+      "title": "Ciena — Software Liquid Spectrum Applications Intern",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "c03d6975359b": {
+      "title": "Assurant — Digital & AI Transformation Intern",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "34e4c95d28dd": {
+      "title": "RTX — Software Engineer 1",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "056377eb12e1": {
+      "title": "Vizient — Data Science Fellow",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "2627cd080188": {
+      "title": "RTX — Software Engineer 1",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "1314ac7b9079": {
+      "title": "RTX — Software Engineer 1",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
       "times_seen": 1
     }
   }

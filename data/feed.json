@@ -1,23 +1,6 @@
 {
-  "updated_at": "2026-07-28",
+  "updated_at": "2026-07-29",
   "items": [
-    {
-      "key": "e38a0c78f2e8",
-      "title": "Formlabs — AI Software Intern",
-      "url": "https://careers.formlabs.com/job/8067641/apply/?gh_jid=8067641",
-      "source": "internships",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI‑focused role directly matches his AI agent and LLM interests.",
-      "action_plan": [
-        "Identify AI intern requirements (30m)",
-        "Showcase AI projects (2h)",
-        "Apply (1h)"
-      ]
-    },
     {
       "key": "d331667577d1",
       "title": "Efficient LLM-Generated Shuttling Compilers for Complex Trapped-Ion Architectures",
@@ -50,11 +33,11 @@
         "mlh",
         "in-season"
       ],
-      "ai_summary": "Elite fellowship, open-source, portfolio-building",
+      "ai_summary": "MLH Fellowship for portfolio",
       "action_plan": [
-        "Review MLH Fellowship requirements (2 hours)",
-        "Prepare a strong application (8 hours)",
-        "Apply before the deadline (1 hour)"
+        "Review requirements (1h)",
+        "Prepare application (2d)",
+        "Submit application (1d)"
       ]
     },
     {
@@ -72,40 +55,6 @@
         "Research Qwen Cloud (1h)",
         "Form a team (2h)",
         "Submit project (10h)"
-      ]
-    },
-    {
-      "key": "18d24a2a7af3",
-      "title": "Google Gemini AI Product Trial – Freshers Party Planning Challenge",
-      "url": "https://unstop.com/hackathons/google-gemini-ai-product-trial-freshers-party-planning-challenge-keshav-memorial-institute-of-technology-1719562",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Google AI product trial",
-      "action_plan": [
-        "Explore Google Gemini AI (1 hour)",
-        "Plan project (1 week)",
-        "Develop project (2 weeks)"
-      ]
-    },
-    {
-      "key": "3ee21da52869",
-      "title": "Formlabs — Algorithms Software Intern",
-      "url": "https://careers.formlabs.com/job/8060759/apply/?gh_jid=8060759",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Algorithms internship at Formlabs aligns with AI engineering goals.",
-      "action_plan": [
-        "Read Formlabs posting (30m)",
-        "Update CV with relevant projects (2h)",
-        "Apply (1h)"
       ]
     },
     {
@@ -368,37 +317,54 @@
       ]
     },
     {
-      "key": "7d952e78b493",
-      "title": "DNV — AI Research Intern",
-      "url": "https://ecyq.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/7094",
+      "key": "28888f762339",
+      "title": "TikTok — Machine Learning Engineer Intern - Tiktok-Data-Search-Search Quality",
+      "url": "https://lifeattiktok.com/search/7667690418804902149",
       "source": "internships",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "AI research internship",
+      "ai_summary": "ML engineer internship",
       "action_plan": [
-        "Update resume",
-        "Apply for internship",
-        "Prepare for interviews"
+        "review ML concepts (1 week)",
+        "apply to internship (1 day)",
+        "prepare for interview (2 weeks)"
       ]
     },
     {
-      "key": "9a8e1e592287",
-      "title": "JP Morgan Chase — Machine Learning Center of Excellence Summer Associate Time Series & Reinforcement Learning Interns…",
-      "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210770593",
+      "key": "af05e29ceb42",
+      "title": "Modal — Machine Learning Research Intern",
+      "url": "https://jobs.ashbyhq.com/modal/38888294-6bc7-4dab-b072-6d0f0c2ed79a/application?embed=true",
       "source": "internships",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "Machine learning internship",
+      "ai_summary": "ML research internship",
       "action_plan": [
-        "Research JP Morgan Chase",
-        "Apply for internship",
-        "Network with professionals"
+        "review research papers (2 weeks)",
+        "apply to internship (1 day)",
+        "prepare for interview (2 weeks)"
+      ]
+    },
+    {
+      "key": "e62a8a595cca",
+      "title": "Tesla — Charging Data Modeling Intern - Charging Data Modeling - Machine Learning Engineer",
+      "url": "https://www.tesla.com/careers/search/job/278249",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "ML engineer internship",
+      "action_plan": [
+        "review ML concepts (1 week)",
+        "apply to internship (1 day)",
+        "prepare for interview (2 weeks)"
       ]
     },
     {
@@ -972,89 +938,20 @@
       ]
     },
     {
-      "key": "57854c7f42da",
-      "title": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
-      "url": "https://arxiv.org/abs/2607.15257v1",
-      "source": "arxiv",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Directly matches AI agent research, high skill gain, strong portfolio potential.",
-      "action_plan": [
-        "Read overview (30m)",
-        "Set up SearchOS demo (1h)",
-        "Implement a new agent task (3d)"
-      ]
-    },
-    {
-      "key": "83d6fc22d688",
-      "title": "Seeking collaborators for scaling and independent evaluation of a new recurrent language model architecture (preprint + code) [R]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1uycffg/seeking_collaborators_for_scaling_and_independent/",
-      "source": "reddit",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "Collaboration on novel LM could boost portfolio and network, but no deadline.",
-      "action_plan": [
-        "Read announcement (15m)",
-        "Contact author with brief intro (30m)",
-        "Propose a small contribution (2d)"
-      ]
-    },
-    {
-      "key": "15e30dd34cc7",
-      "title": "AI Assisted Educational Content Creator Internship",
-      "url": "https://unstop.com/internships/ai-assisted-educational-content-creator-internship-smaranaiin-1719485",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI assisted content creation",
-      "action_plan": [
-        "Research AI assisted content creation",
-        "Apply for internship",
-        "Network with professionals"
-      ]
-    },
-    {
-      "key": "0a4843ed84ae",
-      "title": "Composio — Full-stack Intern",
-      "url": "https://jobs.ashbyhq.com/composio/4d819015-0b9a-466f-9b41-8e1cc1e5b6d9/application?embed=true",
+      "key": "155f459253c1",
+      "title": "Riverside Research — Junior Artificial Intelligence / Machine Learning Engineer",
+      "url": "https://careers-riversideresearch.icims.com/jobs/4309/job?mobile=true&needsRedirect=false",
       "source": "internships",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "SF startup internship adds international exposure and real‑world code.",
+      "ai_summary": "AI/ML engineer job",
       "action_plan": [
-        "Visit Composio careers page (30m)",
-        "Tailor resume to full‑stack (2h)",
-        "Submit application (1h)"
-      ]
-    },
-    {
-      "key": "da0e101aed97",
-      "title": "Cybernetic Labs — Software Engineer Intern - Agent Platform",
-      "url": "https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Agent platform aligns with AI agents interest and builds portfolio · ⚠ verify eligibility: US work authorization not specified",
-      "action_plan": [
-        "Visit Cybernetic Labs careers (30m)",
-        "Confirm visa sponsorship (1h)",
-        "Create a mini agent demo for application (3h)"
+        "review AI/ML concepts (1 week)",
+        "apply to job (1 day)",
+        "prepare for interview (2 weeks)"
       ]
     },
     {
@@ -1739,6 +1636,110 @@
         "Read proposals (2hr)",
         "Analyze feasibility (3hr)",
         "Discuss online (2hr)"
+      ]
+    },
+    {
+      "key": "7751ba60fbf9",
+      "title": "Understanding GPU Inference Workloads [D]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1v6sjiu/understanding_gpu_inference_workloads_d/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "GPU inference workloads",
+      "action_plan": [
+        "Read article (2hr)",
+        "Analyze workloads (3hr)",
+        "Discuss online (2hr)"
+      ]
+    },
+    {
+      "key": "b7a459ae0336",
+      "title": "Codeforces Round (Div. 2) (codeforces.com)",
+      "url": "https://codeforces.com/contests/2252",
+      "source": "clist",
+      "score": 6,
+      "deadline": "2026-08-06",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "Competitive programming contest",
+      "action_plan": [
+        "Prepare for the contest (4 hours)",
+        "Participate in the contest (2 hours)"
+      ]
+    },
+    {
+      "key": "0f6b019bfcc2",
+      "title": "Full Stack Developer Internship",
+      "url": "https://unstop.com/internships/full-stack-developer-internship-confluent-solutions-1726397",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "relevant to software engineering",
+      "action_plan": [
+        "research company (1 day)",
+        "update resume (2 days)",
+        "apply (1 day)"
+      ]
+    },
+    {
+      "key": "6f4b2d0173c3",
+      "title": "Agentic Cinema: The Blockbuster Hackathon",
+      "url": "https://agentic-cinema.devpost.com/",
+      "source": "devpost",
+      "score": 6,
+      "deadline": "2026-09-07",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Hackathon with AI/ML theme",
+      "action_plan": [
+        "Review hackathon rules (1 hour)",
+        "Form a team or decide to participate solo (2 hours)",
+        "Brainstorm project ideas (4 hours)"
+      ]
+    },
+    {
+      "key": "253001f322b9",
+      "title": "Mix local LLMs, Claude Code, Codex, Gemini and more in one SDLC pipeline (open source) [P]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1v8nuwc/mix_local_llms_claude_code_codex_gemini_and_more/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "Mix local LLMs",
+      "action_plan": [
+        "Research LLMs (2 days)",
+        "Implement pipeline (5 days)",
+        "Test pipeline (3 days)"
+      ]
+    },
+    {
+      "key": "3716178f2dc7",
+      "title": "Port Mortem 2026 - Code Resurrection Hackathon",
+      "url": "https://portmortem.devfolio.co",
+      "source": "devfolio",
+      "score": 6,
+      "deadline": "2026-07-31",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Hackathon for portfolio",
+      "action_plan": [
+        "Research themes (2h)",
+        "Form team (1d)",
+        "Start coding (3d)"
       ]
     }
   ]
