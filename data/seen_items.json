@@ -2343,8 +2343,8 @@
     "4fec7b2bae9b": {
       "title": "MLH Fellowship",
       "first_seen": "2026-06-29",
-      "last_seen": "2026-07-29",
-      "times_seen": 4
+      "last_seen": "2026-07-30",
+      "times_seen": 5
     },
     "fd996a68ef23": {
       "title": "Microsoft Learn Student Ambassadors",
@@ -2727,8 +2727,8 @@
     "3716178f2dc7": {
       "title": "Port Mortem 2026 - Code Resurrection Hackathon",
       "first_seen": "2026-06-30",
-      "last_seen": "2026-07-29",
-      "times_seen": 3
+      "last_seen": "2026-07-30",
+      "times_seen": 4
     },
     "e732b0c5afb8": {
       "title": "Vibe2Vision",
@@ -9580,6 +9580,276 @@
       "title": "RTX — Software Engineer 1",
       "first_seen": "2026-07-29",
       "last_seen": "2026-07-29",
+      "times_seen": 1
+    },
+    "4898a962b869": {
+      "title": "Mental World Modeling",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "afe1313334d0": {
+      "title": "Can AI agents conduct open-ended AI research? Early evidence from two case studies",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "811d4a4bedeb": {
+      "title": "The Social Cost of an AI Teammate: How an Artificial Teammate Reshapes Human-Human Communication in Small-Team Decision-Making",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "5de4660c7c83": {
+      "title": "drumih/turbo-fieldfare — ★1,268",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "302a3534be27": {
+      "title": "AI's top startups are barely publishing their research",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "423a349d4248": {
+      "title": "NSF pilots 4-year PhDs with industry research placements",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "63de173f55e7": {
+      "title": "LLM Honeypot",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "c989648a7868": {
+      "title": "Some thoughts about Anthropic's new cryptanalysis results",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "2ddca011ad14": {
+      "title": "ICLR 2027 Deadline is before NeurIPS 2026 Decisions [D]",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "8a67029c8e16": {
+      "title": "Workshop paper accepted, reviewers asked new experiments [D]",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "3270a38b8d1d": {
+      "title": "I built ganfs: A Python package that uses GANs to automate feature selection for high-dimensional datasets. (No domain expert required) [P] [R]",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "8dbf1dd22e38": {
+      "title": "Open-source tabular model validation toolkit TanML needs feedback [D]",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "b4fcc7a4a3c3": {
+      "title": "Vendor-agnostic ML inference on production edge devices [R]",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "638530b338e7": {
+      "title": "AI Security Leaderboard: benchmarking model robustness [P]",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "9cb726cd9f56": {
+      "title": "NeurIPS reviewers not engaging [D]",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "f6e099d897d7": {
+      "title": "Monday Munch - DSA Challenge 014 (Rated) (codechef.com)",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "53814818d9cf": {
+      "title": "Codeforces Round (Div. 3) (codeforces.com)",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "f328b2c462c4": {
+      "title": "Puzzle Masters Hackathon 2026",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "1b98fac65ac3": {
+      "title": "Trivium 2.0",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "b81b4168246a": {
+      "title": "Caspian AI Agent Hackathon",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "6935143233a8": {
+      "title": "Synapse 2026",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "a79d07b5fb91": {
+      "title": "Business Development Internship",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "181e02248e65": {
+      "title": "Insurance Back Office Internship",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "45c286365199": {
+      "title": "AI Video Generation Internship",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "63d7e230d714": {
+      "title": "Data Analyst and Engineer Internship",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "8f5e3a4988f7": {
+      "title": "Executive Secretary Internship",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "c994a129b9d7": {
+      "title": "Unlox Campus Accelerator",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "12281ccd333f": {
+      "title": "Business Development Internship (Sales)",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "da5354949875": {
+      "title": "Marketing Internship",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "747db38b85e2": {
+      "title": "Tesla — Software Engineer Intern - Software Engineer - AI Infrastructure",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "058297d5d85d": {
+      "title": "Virtu Financial — Frontend Developer Internship",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "f8a704f3708a": {
+      "title": "Redwood Materials — Embedded Software Engineer Intern",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "c81d44a54e81": {
+      "title": "Loop — Data Scientist Intern",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "20b44e976799": {
+      "title": "Dexterra Group — Coordinator AI & Data Systems Co-op",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "33b7b628c3f6": {
+      "title": "General Motors — Digital Vehicle Experience Software Developer Co-op",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "a812939b3231": {
+      "title": "Leidos — Software Developer Intern",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "6cadef5377b1": {
+      "title": "Leidos — Application Developer Intern",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "705ffcea1574": {
+      "title": "RTX — Software Engineer Intern",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "560280590a85": {
+      "title": "Leidos — Data Science Intern",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "0432fc569c2a": {
+      "title": "Generac — AI Productivity & Adoption Co-op",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "7f2706001037": {
+      "title": "Rockwell Automation — Applied AI Intern",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "1c24d661f519": {
+      "title": "Rockwell Automation — Applied AI Intern",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "b6dd504033f7": {
+      "title": "CVS Health — Analytics & Behavior Change – Data Science Grad - Conversion",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "9d132332c261": {
+      "title": "Canadian Tire — AI Enablement Student",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "acbeb87862c5": {
+      "title": "CVS Health — Analytics & Behavior Change - Data Science - Conversion",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
       "times_seen": 1
     }
   }

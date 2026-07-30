@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-29",
+  "updated_at": "2026-07-30",
   "items": [
     {
       "key": "d331667577d1",
@@ -33,11 +33,11 @@
         "mlh",
         "in-season"
       ],
-      "ai_summary": "MLH Fellowship for portfolio",
+      "ai_summary": "ML fellowship for portfolio",
       "action_plan": [
-        "Review requirements (1h)",
-        "Prepare application (2d)",
-        "Submit application (1d)"
+        "Review MLH Fellowship requirements (1 hour)",
+        "Prepare application (2 weeks)",
+        "Submit application (1 day)"
       ]
     },
     {
@@ -55,40 +55,6 @@
         "Research Qwen Cloud (1h)",
         "Form a team (2h)",
         "Submit project (10h)"
-      ]
-    },
-    {
-      "key": "1d194c630781",
-      "title": "Odyssey — AI Resident",
-      "url": "https://jobs.ashbyhq.com/odysseyml/1af903b4-3cab-4d3b-8d8b-ce918fdf6a3d/application?embed=true",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI Resident program offers elite credential and deep AI exposure. · ⚠ verify eligibility: Eligibility unclear (likely requires senior/gradua",
-      "action_plan": [
-        "Verify eligibility on program site (30m)",
-        "Gather CV, research papers, and project portfolio (3h)",
-        "Draft application essay (2h)"
-      ]
-    },
-    {
-      "key": "be0fac722e79",
-      "title": "Deepgram — Software Engineer Intern",
-      "url": "https://jobs.ashbyhq.com/deepgram/dc8693b5-72ce-4ca3-ab15-9c8434d35da1/application?embed=true",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Relevant internship",
-      "action_plan": [
-        "Update resume (2 hours)",
-        "Apply for the internship (2 hours)",
-        "Prepare for interviews (10 hours)"
       ]
     },
     {
@@ -368,20 +334,20 @@
       ]
     },
     {
-      "key": "cbe985435101",
-      "title": "Amazon — Software Development Engineer - Temp",
-      "url": "https://amazon.jobs/en/jobs/10477224/software-dev-engineer-temp",
+      "key": "747db38b85e2",
+      "title": "Tesla — Software Engineer Intern - Software Engineer - AI Infrastructure",
+      "url": "https://www.tesla.com/careers/search/job/278578",
       "source": "internships",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "Relevant internship",
+      "ai_summary": "High‑impact AI infrastructure role at Tesla; strong resume signal, limited window · ⚠ verify eligibility: Visa/work eligibility not specifie",
       "action_plan": [
-        "Update resume (2 hours)",
-        "Apply for the internship (2 hours)",
-        "Prepare for interviews (10 hours)"
+        "Check visa/work eligibility for US internship",
+        "Tailor resume to AI infrastructure projects",
+        "Submit application before Fall 2026 deadline"
       ]
     },
     {
@@ -887,6 +853,23 @@
       ]
     },
     {
+      "key": "3716178f2dc7",
+      "title": "Port Mortem 2026 - Code Resurrection Hackathon",
+      "url": "https://portmortem.devfolio.co",
+      "source": "devfolio",
+      "score": 7,
+      "deadline": "2026-07-31",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Hackathon for portfolio",
+      "action_plan": [
+        "Research hackathon themes (2 hours)",
+        "Form a team (1 week)",
+        "Develop a project (3 weeks)"
+      ]
+    },
+    {
       "key": "5ae730b95421",
       "title": "Research Internship",
       "url": "https://unstop.com/internships/research-internship-onyatrips-tech-private-limited-1726724",
@@ -955,143 +938,37 @@
       ]
     },
     {
-      "key": "adc68adaff87",
-      "title": "Optim-Agent/optim-agent — ★180",
-      "url": "https://github.com/Optim-Agent/optim-agent",
-      "source": "github",
-      "score": 6,
+      "key": "afe1313334d0",
+      "title": "Can AI agents conduct open-ended AI research? Early evidence from two case studies",
+      "url": "https://arxiv.org/abs/2607.27191v1",
+      "source": "arxiv",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "github",
-        "learning"
+        "research"
       ],
-      "ai_summary": "Hands‑on LLM‑agent project matches core AI interests",
+      "ai_summary": "AI research paper",
       "action_plan": [
-        "Fork repo (5m)",
-        "Run demo notebook (30m)",
-        "Add a new agent feature (2d)"
+        "read paper (4h)",
+        "analyze results (4h)",
+        "write summary (2h)"
       ]
     },
     {
-      "key": "d42aaf8d9f45",
-      "title": "HUANGCHIHHUNGLeo/claude-real-video — ★1,716",
-      "url": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
-      "source": "github",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "github",
-        "learning"
-      ],
-      "ai_summary": "Multimodal LLM project aligns with generative AI focus",
-      "action_plan": [
-        "Clone repository (5m)",
-        "Test video‑to‑LLM pipeline (30m)",
-        "Improve frame extraction (2d)"
-      ]
-    },
-    {
-      "key": "53cc205d0db2",
-      "title": "IEEE HackSynapse 2026",
-      "url": "https://unstop.com/hackathons/ieee-hacksynapse-2026-madhav-institute-of-technology-and-science-1717985",
+      "key": "b81b4168246a",
+      "title": "Caspian AI Agent Hackathon",
+      "url": "https://unstop.com/hackathons/caspian-buildathon-build-agents-that-can-reach-anyone-caspian-1726439",
       "source": "unstop",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "IEEE hackathon offers portfolio work, AI focus, and IEEE signal",
+      "ai_summary": "AI agent hackathon",
       "action_plan": [
-        "Check official dates (1‑2 hrs)",
-        "Register on the portal (30 min)",
-        "Form or join a team (2 hrs)",
-        "Define a project aligned with AI agents (3‑4 hrs)",
-        "Develop prototype and prepare demo (1‑2 weeks)"
-      ]
-    },
-    {
-      "key": "fc695f51f468",
-      "title": "Data Analyst Internship",
-      "url": "https://unstop.com/internships/data-analyst-internship-aalteon-1720164",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Data Analyst Internship",
-      "action_plan": [
-        "Update resume (2 hours)",
-        "Apply for internship (1 hour)",
-        "Prepare for interview (4 hours)"
-      ]
-    },
-    {
-      "key": "58894d2eb5ff",
-      "title": "Pennsylvania State University — Nittany AI Intern",
-      "url": "https://psu.wd1.myworkdayjobs.com/PSU_Staff/job/Penn-State-University-Park/Nittany-AI-Innovator_REQ_0000080373-1",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI intern at US university aligns with AI interests · ⚠ verify eligibility: requires US work authorization",
-      "action_plan": [
-        "Verify visa options (1 day)",
-        "Tailor resume to AI focus (2h)",
-        "Apply via portal (30m)"
-      ]
-    },
-    {
-      "key": "da4d7ef7b137",
-      "title": "Ensemble Health Partners — Data Scientist Intern",
-      "url": "https://ensemblehp.wd5.myworkdayjobs.com/ensemblehealthpartnerscareers/job/Remote---Nationwide/Data-Scientist--AI_R048077",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Relevant internship",
-      "action_plan": [
-        "Update resume (2 hours)",
-        "Apply for the internship (2 hours)",
-        "Prepare for interviews (10 hours)"
-      ]
-    },
-    {
-      "key": "0066c13ffb77",
-      "title": "Viavi Solutions — Software Development Data Analytics Intern",
-      "url": "https://viavisolutions.wd1.myworkdayjobs.com/careers/job/Home-Office-USA/SW-Development-Intern-Data-Analytics_260004919-1",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Relevant internship",
-      "action_plan": [
-        "Update resume (2 hours)",
-        "Apply for the internship (2 hours)",
-        "Prepare for interviews (10 hours)"
-      ]
-    },
-    {
-      "key": "12fff476739d",
-      "title": "Altera Corporation — AI Software Development Engineer Intern",
-      "url": "https://altera.wd1.myworkdayjobs.com/altera/job/San-Jose-California-United-States/AI-Software-Development-Engineer---Intern_R02707",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI role at major hardware firm adds strong signal · ⚠ verify eligibility: requires US work authorization",
-      "action_plan": [
-        "Confirm US internship visa options (1 day)",
-        "Adapt resume for AI engineer (2h)",
-        "Submit application (30m)"
+        "review hackathon rules (1h)",
+        "form a team (2h)",
+        "develop AI agent (20h)"
       ]
     },
     {
@@ -1726,20 +1603,139 @@
       ]
     },
     {
-      "key": "3716178f2dc7",
-      "title": "Port Mortem 2026 - Code Resurrection Hackathon",
-      "url": "https://portmortem.devfolio.co",
-      "source": "devfolio",
+      "key": "0e27f5aeba7d",
+      "title": "Paper Buddy EduVerse Hackathon 2026",
+      "url": "https://unstop.com/hackathons/paper-buddy-eduverse-hackathon-2026-deenbandhu-chhotu-ram-university-of-science-and-technology-dcrust-murthal-1726534",
+      "source": "unstop",
       "score": 6,
-      "deadline": "2026-07-31",
+      "deadline": null,
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "Hackathon for portfolio",
+      "ai_summary": "EduVerse Hackathon",
       "action_plan": [
-        "Research themes (2h)",
-        "Form team (1d)",
-        "Start coding (3d)"
+        "Form team (2 days)",
+        "Brainstorm ideas (3 days)",
+        "Develop project (10 days)"
+      ]
+    },
+    {
+      "key": "a70a55c3f697",
+      "title": "Apptronik — Software Engineer Intern - ML Systems",
+      "url": "https://boards.greenhouse.io/apptronik/jobs/6128057004",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "ML‑systems focus aligns with his AI interests and builds strong portfolio.",
+      "action_plan": [
+        "Read Apptronik ML intern specs (0.5d)",
+        "Prepare project showcase of ML work (1d)",
+        "Submit application (0.5d)"
+      ]
+    },
+    {
+      "key": "0b34c9cb8ce7",
+      "title": "Toshiba Global Commerce — AI Product Management Intern",
+      "url": "https://job-boards.greenhouse.io/toshibaglobalcommercesolutions/jobs/5195826007",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI product management gives cross‑functional AI exposure and decent signal.",
+      "action_plan": [
+        "Study Toshiba AI product intern role (0.5d)",
+        "Highlight product and AI experience in CV (1d)",
+        "Apply (0.5d)"
+      ]
+    },
+    {
+      "key": "b93c9d1ed9e1",
+      "title": "Nokia — Architecture AI Co-op",
+      "url": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/36722",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI architecture co‑op aligns with his AI engineering goal and adds US resume signal · ⚠ verify eligibility: visa/work auth unclear",
+      "action_plan": [
+        "Update resume highlighting AI architecture projects (2h)",
+        "Connect with Nokia recruiter on LinkedIn (1h)",
+        "Submit application via internship portal (30m)"
+      ]
+    },
+    {
+      "key": "51842271b200",
+      "title": "GE Appliances — AI Data Science Analytics",
+      "url": "https://haier.wd3.myworkdayjobs.com/ge_appliances/job/USA-Louisville-KY/AI-Data-Science-Analytics_REQ-26337",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI data‑science role matches interests and builds portfolio, decent corporate brand · ⚠ verify eligibility: visa/work auth unclear",
+      "action_plan": [
+        "Tailor resume to highlight data‑science work (1h)",
+        "Gather a short AI project demo for portfolio (2h)",
+        "Submit application on GE Careers (30m)"
+      ]
+    },
+    {
+      "key": "0e052b5a2768",
+      "title": "AI Research & Digital Enablement Internship",
+      "url": "https://unstop.com/internships/ai-research-digital-enablement-internship-kotak-education-foundation-1718474",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI Research Internship",
+      "action_plan": [
+        "Research company (1h)",
+        "Update resume (1d)",
+        "Apply for internship (1d)"
+      ]
+    },
+    {
+      "key": "85780b467b1e",
+      "title": "Zurich Insurance — Data Analytics & AI Internship/Co-op - Data Analytics & AI",
+      "url": "https://www.careers.zurich.com/job/Toronto-Fall-2026-InternshipCo-op-Data-Analytics-&-AI-ON/1367953057/?ats=successfactors",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "data analytics internship",
+      "action_plan": [
+        "review data analytics concepts (1 week)",
+        "apply to internship (1 day)",
+        "prepare for interview (2 weeks)"
+      ]
+    },
+    {
+      "key": "3270a38b8d1d",
+      "title": "I built ganfs: A Python package that uses GANs to automate feature selection for high-dimensional datasets. (No domain expert required) [P] [R]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1vahcwo/i_built_ganfs_a_python_package_that_uses_gans_to/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "ML package",
+      "action_plan": [
+        "review package (2h)",
+        "test package (4h)"
       ]
     }
   ]
