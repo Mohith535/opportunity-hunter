@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30",
+  "updated_at": "2026-07-31",
   "items": [
     {
       "key": "d331667577d1",
@@ -33,11 +33,11 @@
         "mlh",
         "in-season"
       ],
-      "ai_summary": "ML fellowship for portfolio",
+      "ai_summary": "MLH Fellowship, portfolio-building",
       "action_plan": [
-        "Review MLH Fellowship requirements (1 hour)",
-        "Prepare application (2 weeks)",
-        "Submit application (1 day)"
+        "Review MLH projects (2h)",
+        "Apply to the fellowship (1d)",
+        "Prepare for the program (1w)"
       ]
     },
     {
@@ -55,26 +55,6 @@
         "Research Qwen Cloud (1h)",
         "Form a team (2h)",
         "Submit project (10h)"
-      ]
-    },
-    {
-      "key": "664749555fb1",
-      "title": "AAAI 27 AI Alignment track [D]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1uzxrn4/aaai_27_ai_alignment_track_d/",
-      "source": "reddit",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "AAAI track offers elite signal; missing is hard‑to‑reverse.",
-      "action_plan": [
-        "Check submission deadline (15m)",
-        "Read call for papers (30m)",
-        "Brainstorm idea (2h)",
-        "Draft outline (3h)",
-        "Write paper (2 weeks)"
       ]
     },
     {
@@ -351,75 +331,54 @@
       ]
     },
     {
-      "key": "a33e05e71351",
-      "title": "AlephAITech/WorkBuddyGuide — ★1,090",
-      "url": "https://github.com/AlephAITech/WorkBuddyGuide",
-      "source": "github",
-      "score": 7,
+      "key": "c0d39df56dc0",
+      "title": "Backblaze Generative Media Hackathon: Build with Genblaze on B2",
+      "url": "https://backblaze-generative-media.devpost.com/",
+      "source": "devpost",
+      "score": 8,
+      "deadline": "2026-08-03",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "GenAI, ML/AI themes",
+      "action_plan": [
+        "Research Genblaze (2h)",
+        "Form a team (1d)",
+        "Start building (3d)"
+      ]
+    },
+    {
+      "key": "d53fb48a2a0c",
+      "title": "Helsing — AI Research Intern - 3D Computer Vision",
+      "url": "https://helsing.ai/jobs/4941957101?gh_jid=4941957101",
+      "source": "internships",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "github",
-        "learning"
+        "internship"
       ],
-      "ai_summary": "Hands‑on LLM workflow aligns with building AI agents.",
+      "ai_summary": "AI research internship",
       "action_plan": [
-        "Clone repo (15m)",
-        "Read intro (30m)",
-        "Implement first tutorial (2h)",
-        "Add results to portfolio (1h)"
+        "Research company (1 week)",
+        "Update resume (2 days)",
+        "Apply for internship (1 day)"
       ]
     },
     {
-      "key": "0963848a2642",
-      "title": "Our Approach to Bioresilience: Isomorphic Labs and Google DeepMind",
-      "url": "https://deepmind.google/blog/our-approach-to-bioresilience/",
-      "source": "hackernews",
-      "score": 7,
+      "key": "0ef5a7efc457",
+      "title": "Spotify — Research Scientist",
+      "url": "https://jobs.lever.co/spotify/35198a63-5c42-4dad-929f-818aab639284/apply",
+      "source": "internships",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "news"
+        "internship"
       ],
-      "ai_summary": "Google DeepMind",
+      "ai_summary": "Research scientist at Spotify",
       "action_plan": [
-        "read article (1 hour)",
-        "research Isomorphic Labs (2 hours)",
-        "apply to similar programs (4 hours)"
-      ]
-    },
-    {
-      "key": "8ed478106ee8",
-      "title": "Codeforces Round (Div. 1) (codeforces.com)",
-      "url": "https://codeforces.com/contests/2249",
-      "source": "clist",
-      "score": 7,
-      "deadline": "2026-07-26",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "competitive programming",
-      "action_plan": [
-        "practice problems (4 hours)",
-        "register for contest (1 hour)",
-        "participate in contest (4 hours)"
-      ]
-    },
-    {
-      "key": "a8caa0b3b851",
-      "title": "Codeforces Round (Div. 2) (codeforces.com)",
-      "url": "https://codeforces.com/contests/2250",
-      "source": "clist",
-      "score": 7,
-      "deadline": "2026-07-26",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "competitive programming",
-      "action_plan": [
-        "practice problems (4 hours)",
-        "register for contest (1 hour)",
-        "participate in contest (4 hours)"
+        "Research company (1 week)",
+        "Update resume (2 days)",
+        "Apply for internship (1 day)"
       ]
     },
     {
@@ -853,23 +812,6 @@
       ]
     },
     {
-      "key": "3716178f2dc7",
-      "title": "Port Mortem 2026 - Code Resurrection Hackathon",
-      "url": "https://portmortem.devfolio.co",
-      "source": "devfolio",
-      "score": 7,
-      "deadline": "2026-07-31",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Hackathon for portfolio",
-      "action_plan": [
-        "Research hackathon themes (2 hours)",
-        "Form a team (1 week)",
-        "Develop a project (3 weeks)"
-      ]
-    },
-    {
       "key": "5ae730b95421",
       "title": "Research Internship",
       "url": "https://unstop.com/internships/research-internship-onyatrips-tech-private-limited-1726724",
@@ -972,74 +914,20 @@
       ]
     },
     {
-      "key": "00fc2371f52d",
-      "title": "lucidrains/x-jepa — ★96",
-      "url": "https://github.com/lucidrains/x-jepa",
-      "source": "github",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "github",
-        "learning"
-      ],
-      "ai_summary": "Research‑oriented deep‑learning project matches AI engineering goals.",
-      "action_plan": [
-        "Fork repo (10m)",
-        "Read paper summary (1h)",
-        "Run example notebooks (2h)",
-        "Experiment with modifications (3h)"
-      ]
-    },
-    {
-      "key": "09bb7cc3789e",
-      "title": "Deep learning tackles single-cell analysis – A survey of deep learning for scRNA-seq analysis [R]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1v06nc1/deep_learning_tackles_singlecell_analysis_a/",
-      "source": "reddit",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "deep learning research",
-      "action_plan": [
-        "read survey (2 hours)",
-        "research scRNA-seq analysis (4 hours)",
-        "apply to similar research (6 hours)"
-      ]
-    },
-    {
-      "key": "561223737609",
-      "title": "TabFM Studio: point-and-click predictions on spreadsheets with tabular foundation models, fully local [P]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1uzx1el/tabfm_studio_pointandclick_predictions_on/",
-      "source": "reddit",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "Local ML research, relevant to AI interests",
-      "action_plan": [
-        "Explore TabFM Studio, 30m",
-        "Assess potential for portfolio project, 1h",
-        "Discuss with peers, 1h"
-      ]
-    },
-    {
-      "key": "401d10e22e05",
-      "title": "AI Solution Developer Internship",
-      "url": "https://unstop.com/internships/ai-solution-developer-internship-ventu-renewable-private-limited-1720588",
+      "key": "8d6aa9512180",
+      "title": "Y-Hack'26 – 24-Hour National Hackathon",
+      "url": "https://unstop.com/hackathons/y-hack26-24-hour-national-hackathon-kpr-institute-of-engineering-and-technology-kpriet-coimbatore-1702198",
       "source": "unstop",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
+        "hackathon"
       ],
-      "ai_summary": "AI Solution Developer",
+      "ai_summary": "Hackathon experience",
       "action_plan": [
-        "Update resume (1h)",
-        "Apply to internship (1h)"
+        "Form team (1 week)",
+        "Choose project (2 days)",
+        "Participate in hackathon (2 days)"
       ]
     },
     {
@@ -1603,6 +1491,23 @@
       ]
     },
     {
+      "key": "3716178f2dc7",
+      "title": "Port Mortem 2026 - Code Resurrection Hackathon",
+      "url": "https://portmortem.devfolio.co",
+      "source": "devfolio",
+      "score": 6,
+      "deadline": "2026-07-31",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "No restrictions, build anything",
+      "action_plan": [
+        "Brainstorm ideas (2h)",
+        "Choose a project (1d)",
+        "Start coding (3d)"
+      ]
+    },
+    {
       "key": "0e27f5aeba7d",
       "title": "Paper Buddy EduVerse Hackathon 2026",
       "url": "https://unstop.com/hackathons/paper-buddy-eduverse-hackathon-2026-deenbandhu-chhotu-ram-university-of-science-and-technology-dcrust-murthal-1726534",
@@ -1736,6 +1641,91 @@
       "action_plan": [
         "review package (2h)",
         "test package (4h)"
+      ]
+    },
+    {
+      "key": "45c286365199",
+      "title": "AI Video Generation Internship",
+      "url": "https://unstop.com/internships/ai-video-generation-internship-work-from-anywhere-peblo-1727954",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI internship for portfolio",
+      "action_plan": [
+        "Research AI video generation (2 hours)",
+        "Prepare application (1 week)",
+        "Submit application (1 day)"
+      ]
+    },
+    {
+      "key": "63d7e230d714",
+      "title": "Data Analyst and Engineer Internship",
+      "url": "https://unstop.com/internships/data-analyst-and-engineer-internship-euroasiann-group-1727747",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Data analyst internship",
+      "action_plan": [
+        "Review data analyst requirements (1 hour)",
+        "Prepare application (1 week)",
+        "Submit application (1 day)"
+      ]
+    },
+    {
+      "key": "16a68e34b998",
+      "title": "Learning to Trace Seiberg Dualities",
+      "url": "https://arxiv.org/abs/2607.28628v1",
+      "source": "arxiv",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "Research paper on Seiberg dualities",
+      "action_plan": [
+        "Read paper (2 days)",
+        "Research topic (1 week)",
+        "Implement project (2 weeks)"
+      ]
+    },
+    {
+      "key": "1836224753bd",
+      "title": "Samarthya 2026 Project Competition",
+      "url": "https://unstop.com/hackathons/samarthya-2026-project-competition-smt-kashibai-navale-college-of-engineering-sknce-pune-1727380",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Project competition can showcase AI building, modest resume boost.",
+      "action_plan": [
+        "Define project scope (1h)",
+        "Gather data & prototype (3d)",
+        "Prepare presentation (1d)"
+      ]
+    },
+    {
+      "key": "5d2b2404927a",
+      "title": "Cybersecurity Labs Developer Internship",
+      "url": "https://unstop.com/internships/cybersecurity-labs-developer-internship-thundercipher-1720997",
+      "source": "unstop",
+      "score": 5,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Cybersecurity Labs Developer Internship",
+      "action_plan": [
+        "Research company (1h)",
+        "Apply for internship (1h)",
+        "Prepare for interview (2h)"
       ]
     }
   ]

@@ -1755,8 +1755,8 @@
     "c0d39df56dc0": {
       "title": "Backblaze Generative Media Hackathon: Build with Genblaze on B2",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25",
-      "times_seen": 1
+      "last_seen": "2026-07-31",
+      "times_seen": 2
     },
     "0b9e4e003464": {
       "title": "Find the best open-source OCR models in one place at Papers with Code [P]",
@@ -2343,8 +2343,8 @@
     "4fec7b2bae9b": {
       "title": "MLH Fellowship",
       "first_seen": "2026-06-29",
-      "last_seen": "2026-07-30",
-      "times_seen": 5
+      "last_seen": "2026-07-31",
+      "times_seen": 6
     },
     "fd996a68ef23": {
       "title": "Microsoft Learn Student Ambassadors",
@@ -2727,8 +2727,8 @@
     "3716178f2dc7": {
       "title": "Port Mortem 2026 - Code Resurrection Hackathon",
       "first_seen": "2026-06-30",
-      "last_seen": "2026-07-30",
-      "times_seen": 4
+      "last_seen": "2026-07-31",
+      "times_seen": 5
     },
     "e732b0c5afb8": {
       "title": "Vibe2Vision",
@@ -9850,6 +9850,240 @@
       "title": "CVS Health — Analytics & Behavior Change - Data Science - Conversion",
       "first_seen": "2026-07-30",
       "last_seen": "2026-07-30",
+      "times_seen": 1
+    },
+    "16a68e34b998": {
+      "title": "Learning to Trace Seiberg Dualities",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "428806e6680a": {
+      "title": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "436fcd28e748": {
+      "title": "Inducing language models to assert their own consciousness restores human beliefs and values",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "0deabfd371a0": {
+      "title": "I flagged two research papers for fake authors and both were accepted as orals",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "49bea71194dd": {
+      "title": "Google will expand age checks on Android worldwide till the end of the year",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "53f99d73b83e": {
+      "title": "Rune 1.1: adds Python, an Emacs editor, a symbol index and is now free",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "c47c7d5b430b": {
+      "title": "I have lost three and a half potential PhD students due to the conference review process [D]",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "14959ea42f4b": {
+      "title": "MLVC: Multi-platform Learned Video Codec for Real-World Deployment [P]",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "07bc38585f17": {
+      "title": "If reviewing is mandatory for paper submissions, low-quality reviews can no longer be justified as “volunteer work” [D]",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "89f7cf312a78": {
+      "title": "How Kimi K3 Engineered Its Way to the Frontier [R]",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "039365d48b5d": {
+      "title": "I taught an LSTM to move a mouse like a human [P]",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "fe2dfd1a75df": {
+      "title": "[D] Monthly Who's Hiring and Who wants to be Hired?",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "8e4a2920110f": {
+      "title": "I don’t think ML is worth learning [D]",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "fdbf6bfbdb73": {
+      "title": "Prasunethon 2.0",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "f9e2f0f91a5a": {
+      "title": "CodeSprint 2.O : One Shot Challenge",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "efb9a8409ead": {
+      "title": "Techno Vbiquity 2.O – Technical Coding Competition",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "8d6aa9512180": {
+      "title": "Y-Hack'26 – 24-Hour National Hackathon",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "1836224753bd": {
+      "title": "Samarthya 2026 Project Competition",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "5d0c54dee2ba": {
+      "title": "Nexora",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "7723354a2684": {
+      "title": "Sales Internship",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "76c6ef17f312": {
+      "title": "Campus Ambassador Internship Program",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "b87d73f55ca6": {
+      "title": "Technical Content - Copywriting Internship",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "72deddbe03bd": {
+      "title": "Campus Marketing Internship",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "5466d74fc621": {
+      "title": "General Management Internship",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "08d09c0821b8": {
+      "title": "Campus Executive Internship",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "b7d735bf0124": {
+      "title": "Campus Ambassador Internship",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "1b0994271fb2": {
+      "title": "Business Development Executive (BDE) Internship",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "7d66fee9b263": {
+      "title": "AI & Machine Learning Competition",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "04caecc24e3d": {
+      "title": "The Teen Theory Scholars Programme",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "f86464a7ae5d": {
+      "title": "Melius — Software Engineer Intern",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "8eb9390c403b": {
+      "title": "GoDaddy — Software Development Engineer Intern",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "d53fb48a2a0c": {
+      "title": "Helsing — AI Research Intern - 3D Computer Vision",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "0ef5a7efc457": {
+      "title": "Spotify — Research Scientist",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "9ba4d5c9f2df": {
+      "title": "RTX — Software Engineer Intern",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "a1cb620c4744": {
+      "title": "RTX — Software Engineer Intern",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "e35e79972b95": {
+      "title": "Copart — Software Engineer Intern",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "8affece7dd52": {
+      "title": "Copart — Software Engineer Intern",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "eeb55b218b70": {
+      "title": "The Home Depot — AI Engineer Intern",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "times_seen": 1
+    },
+    "787caee8729d": {
+      "title": "Autostore — AI Engineer - Hardware Development",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
       "times_seen": 1
     }
   }
