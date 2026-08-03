@@ -43901,6 +43901,1034 @@
           "key": "b2d99b2eed2c"
         }
       ]
+    },
+    {
+      "date": "2026-08-03",
+      "items": [
+        {
+          "title": "TokTier: Exact Stateful Tokenization for Agentic LLM Serving",
+          "url": "https://arxiv.org/abs/2607.29678v1",
+          "source": "arxiv",
+          "description": "LLM serving systems cache prompt KV state, yet most front ends still re-tokenize the full request text on every call. The cost lands on coding agents, which resubmit a long transcript after each small tool result, and reuse is hard because even a short append can change token boundaries near the end of the previous sequence. Across 153,951 calls from two agent ecosystems, the median call appends about 1.4K characters, and only 1.0-3.6% of calls start or rebuild a session with contexts of millions of characters. At a 94.1% fleet prompt-cache hit rate, tokenization reaches up to 64% of time to first token. TokTier is a stateful tokenization service with one contract: emitted token IDs are always identical to full reference tokenization of the request text. For a session continuation, it re-tokenizes a small window around the append and splices only after a per-request stable-boundary check, widening the window or falling back to full tokenization on failure. For a call without a reusable prefix, it decomposes GPT-family regex pre-tokenization into run-local rules and runs exact pre-tokenization and BPE on a GPU. A sampled shadow verifier re-checks live traffic. Across 17 tokenizer families, differential campaigns cover 1.5x10^10 split checks, a 12.4 TB real-text corpus, and 93,000+ replayed agent steps, with zero divergence. Incremental repair takes 0.5-1.1 ms from 100K to 3M characters, up to 437x faster than HF tokenization and 2.1x faster at 1M than the strongest cache-based baseline (Gigatoken) fully prewarmed. GPU full tokenization encodes a 1M-character request in 0.87 ms, up to 491x below HF and 23.4x below the fastest published CPU method. With vLLM, median time to first token drops 16-34% and P99 drops 23% under recorded bursts. Under a 50 ms P99 objective, four repair cores plus one GPU sustain 1,821 requests/s where a 16-core stateless front end saturates at 40.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.29678",
+          "score": 5,
+          "ai_score": 8,
+          "ai_summary": "LLM serving systems research",
+          "action_plan": [
+            "Review research paper (1 week)",
+            "Implement and experiment (4 weeks)",
+            "Write and publish paper (8 weeks)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 10,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "f3bc68e0e801"
+        },
+        {
+          "title": "Development of FDD-ON: an Ontology for VAV HVAC System Fault Detection and Diagnostics",
+          "url": "https://arxiv.org/abs/2607.29657v1",
+          "source": "arxiv",
+          "description": "Fault detection and diagnosis (FDD) technology is essential for improving HVAC system reliability, energy efficiency, and maintenance effectiveness. However, effective deployment of FDD solutions in buildings requires structured domain knowledge that can bridge heterogeneous data sources, diverse equipment types, and varied diagnostic outputs. Limited data interpretability and interoperability within the FDD domain have led to fragmented information silos, hindering the implementation of FDD and related applications, such as the digital twin-enabled FDD frameworks and artificial intelligence (AI)-driven maintenance decision-making systems. This paper presents an FDD Ontology (FDD-ON), a modular and extensible ontology to formally represent variable air volume (VAV) HVAC system components, fault types, symptom statuses, fault impacts and associated attributes. FDD-ON integrates HVAC system FDD semantics to provide comprehensive representations of fault and symptom attributes, supported by the well-defined controlled vocabulary. Additionally, FDD-ON offers comprehensive fault, symptom, and impact libraries to capture a broad spectrum of operational abnormalities and their consequences in VAV HVAC systems. Through explicit contributing cause-fault-symptom-impact relations, FDD-ON serves as a machine-interpretable basis for querying diagnostic knowledge, mapping heterogeneous FDD outputs, and developing interoperable FDD-related applications. FDD-ON is evaluated using publicly available VAV HVAC system datasets and demonstrated through FDD development applications. Results indicate that FDD-ON provides a foundational semantic framework for advancing scalable, transparent, and interoperable FDD solutions across various applications.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.29657",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Research‑oriented AI ontology, good for AI engineering portfolio · ⚠ verify eligibility: no explicit eligibility info",
+          "action_plan": [
+            "Read the arXiv paper",
+            "Contact the authors for collaboration",
+            "Contribute a module"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 5,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 7,
+            "time": 4,
+            "eligible": "unclear",
+            "elig_note": "no explicit eligibility info"
+          },
+          "key": "3c01b02187ef"
+        },
+        {
+          "title": "AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers",
+          "url": "https://arxiv.org/abs/2607.29626v1",
+          "source": "arxiv",
+          "description": "As LLMs evolve from code completion systems into autonomous scientific agents, evaluating their ability to conduct experiments has become increasingly important. Existing benchmarks typically focus on static code generation, paper replication, or final answer correctness, but do not directly assess whether agents can interpret experimental evidence and use it to guide subsequent hyperparameter decisions. To address this gap, we introduce AgentHPOBench, a sequential benchmark comprising 30 executable machine learning tasks across seven research categories. Each task begins with a validated baseline run, after which an agent performs several sequential interventions. At each step, the agent observes the accumulated configurations, metrics, and logs before proposing the next valid configuration. We evaluate 12 widely used agents and conventional HPO baselines under a unified protocol. The results show that current agents exhibit measurable experimental optimization ability across domains, but still face clear limitations in sustained iterative refinement, complex log diagnosis, and consistent progress toward reported reference performance.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2607.29626",
+          "score": 5,
+          "ai_score": 9,
+          "ai_summary": "LLM agents benchmark",
+          "action_plan": [
+            "Review benchmark details (1 week)",
+            "Prepare and experiment (4 weeks)",
+            "Write and publish paper (8 weeks)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 10,
+            "prestige": 9,
+            "deadline": 4,
+            "skill": 9,
+            "time": 8,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "2e7e19d9dc18"
+        },
+        {
+          "title": "FareedKhan-dev/kimi-k3-in-c — ★390",
+          "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+          "source": "github",
+          "description": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU. (topics: avx2, c99, cpu inference, deep learning, from scratch, inference engine, kimi k3, linear attention, llm, llm inference, machine learning, memory efficient, mixture of experts, moe, mxfp4, quantization, simd, systems programming, transformer, zero dependencies)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "FareedKhan-dev/kimi-k3-in-c",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Hands‑on LLM inference repo, aligns with generative AI interests",
+          "action_plan": [
+            "Clone the repo",
+            "Run the K3 inference demo",
+            "Experiment with quantization tweaks"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 7,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "b5c1c4817e3c"
+        },
+        {
+          "title": "Backblaze Generative Media Hackathon: Build with Genblaze on B2",
+          "url": "https://backblaze-generative-media.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 22 - Aug 03, 2026 | prize $ 10,000 | themes: Machine Learning/AI, Music/Art, Voice skills",
+          "deadline": "2026-08-03",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30205",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "GenAI, ML, and hackathon",
+          "action_plan": [
+            "Research Genblaze on B2 (2 hours)",
+            "Form a team and brainstorm ideas (4 hours)",
+            "Build and submit project (20 hours)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 8,
+            "skill": 8,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "c0d39df56dc0"
+        },
+        {
+          "title": "neurips 2026: ACs and reviewers have disappeared [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vdu92a/neurips_2026_acs_and_reviewers_have_disappeared_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vdu92a",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not an application opportunity · News post, no action required",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not an application opportunity"
+          },
+          "key": "82c2cf210941"
+        },
+        {
+          "title": "No replies to rebuttals and comments even by AC [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vdeae3/no_replies_to_rebuttals_and_comments_even_by_ac_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vdeae3",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not an application opportunity · News post, no action required",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not an application opportunity"
+          },
+          "key": "688d18299cba"
+        },
+        {
+          "title": "No rebuttals from neurips authors [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vdz19e/no_rebuttals_from_neurips_authors_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vdz19e",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "Reading NeurIPS rebuttal news gives minor insight, low resume impact.",
+          "action_plan": [
+            "Open the Reddit thread",
+            "Skim the discussion",
+            "Bookmark key points"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 5,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 1,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "24db6b023f97"
+        },
+        {
+          "title": "Neurips 2026: does every metareview recommend accept/reject? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vdvkp5/neurips_2026_does_every_metareview_recommend/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vdvkp5",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "NeurIPS meta‑review trends are interesting but not career‑critical.",
+          "action_plan": [
+            "Visit the post",
+            "Read the summary",
+            "Note any patterns for future use"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 5,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 1,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "c16f107c08f9"
+        },
+        {
+          "title": "Conference Reviews: Asking Too Much? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vdl461/conference_reviews_asking_too_much_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vdl461",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "General conference review critique offers limited skill growth.",
+          "action_plan": [
+            "Open the thread",
+            "Read the article",
+            "Save any useful critique tips"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 5,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 1,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "789149ee7f2f"
+        },
+        {
+          "title": "Context degradation in LLMs: what the papers actually show, and the habits I built for long analysis sessions [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vdsgcj/context_degradation_in_llms_what_the_papers/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vdsgcj",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Deep dive on LLM degradation aligns with his core interests.",
+          "action_plan": [
+            "Read the post",
+            "Extract key findings",
+            "Add insights to personal notes"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 7,
+            "prestige": 3,
+            "deadline": 0,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "16b0d3f06efa"
+        },
+        {
+          "title": "ARR August Cycle [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vdgpha/arr_august_cycle_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vdgpha",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "ARR cycle news is peripheral to his AI‑builder goals.",
+          "action_plan": [
+            "Open the Reddit link",
+            "Quickly scan content",
+            "Dismiss if irrelevant"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 1,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "6eddbdef498f"
+        },
+        {
+          "title": "[R] CausalVLBench: Benchmarking Visual Causal Reasoning in Large VLMs.",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vdd7ty/r_causalvlbench_benchmarking_visual_causal/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vdd7ty",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Benchmark paper on VLMs adds niche knowledge, modest resume boost.",
+          "action_plan": [
+            "Read the abstract",
+            "Skim methodology",
+            "Save for deeper study later"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 3,
+            "deadline": 0,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "9714f6227fa4"
+        },
+        {
+          "title": "Looking for the right pipeline to convert academic textbook figures into interactive/editable assets [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vdlj8j/looking_for_the_right_pipeline_to_convert/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vdlj8j",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Building a pipeline matches his builder mindset and can become a portfolio piece.",
+          "action_plan": [
+            "Read the description",
+            "Outline required steps",
+            "Prototype a tiny component"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 3,
+            "deadline": 0,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "67020da02289"
+        },
+        {
+          "title": "Port Mortem 2026 - Code Resurrection Hackathon",
+          "url": "https://portmortem.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | online | themes: No Restrictions",
+          "deadline": "2026-08-03",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "5ae5936ffa784a76902dc2990615b8d4",
+          "score": 10,
+          "ai_score": 6,
+          "ai_summary": "No restrictions, can apply AI/ML",
+          "action_plan": [
+            "Research hackathon theme (2 hours)",
+            "Form a team and brainstorm ideas (4 hours)",
+            "Build and submit project (20 hours)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 8,
+            "skill": 7,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "3716178f2dc7"
+        },
+        {
+          "title": "Binary Hacks 4.0",
+          "url": "https://binary-hacks-4.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | Ghaziabad, India | themes: No Restrictions",
+          "deadline": "2026-09-21",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "2fee4bc9c6af4d16a8eb996243fc6b39",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "Regional hackathon offers concrete project, deadline, and resume signal.",
+          "action_plan": [
+            "Register before deadline",
+            "Form a small team",
+            "Plan a 2‑week prototype then iterate"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 4,
+            "deadline": 8,
+            "skill": 7,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "4d30818aa8c5"
+        },
+        {
+          "title": "Codeforces Round (Div. 1) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2255",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-08-09T14:35:00",
+          "deadline": "2026-08-09",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69294684",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "Short CP contest, modest resume boost, low AI relevance",
+          "action_plan": [
+            "Register on Codeforces",
+            "Solve 5 similar Div1 problems",
+            "Compete on Aug 9"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 5,
+            "deadline": 8,
+            "skill": 5,
+            "time": 7,
+            "eligible": "yes"
+          },
+          "key": "2714b8d29b8a"
+        },
+        {
+          "title": "Codeforces Round (Div. 2) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2256",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-08-09T14:35:00",
+          "deadline": "2026-08-09",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69294685",
+          "score": 5,
+          "ai_score": 3,
+          "ai_summary": "Div2 contest, low AI impact, still deadline‑driven",
+          "action_plan": [
+            "Sign up on Codeforces",
+            "Practice Div2 problems",
+            "Participate on Aug 9"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 8,
+            "skill": 4,
+            "time": 7,
+            "eligible": "yes"
+          },
+          "key": "a220af02db83"
+        },
+        {
+          "title": "AtCoder Beginner Contest 473 (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/abc473",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-08-29T12:00:00",
+          "deadline": "2026-08-29",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69152057",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Beginner contest, modest CV value, deadline present",
+          "action_plan": [
+            "Register on AtCoder",
+            "Solve recent Beginner contests",
+            "Compete on Aug 29"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 7,
+            "skill": 4,
+            "time": 7,
+            "eligible": "yes"
+          },
+          "key": "65ab30d3028c"
+        },
+        {
+          "title": "Web-Forge",
+          "url": "https://unstop.com/hackathons/web-forge-loyola-icam-college-of-engineering-and-technology-licet-chennai-1729524",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1729524",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "Generic hackathon, modest skill boost, low resume impact.",
+          "action_plan": [
+            "1. Spend 2h reading past hackathon projects.",
+            "2. Register (5 min).",
+            "3. Brainstorm a simple AI‑agent demo (4 h).",
+            "4. Build prototype during event.",
+            "5. Add project to portfolio."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 3,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "b42ef3f31de8"
+        },
+        {
+          "title": "Spider-Sprint",
+          "url": "https://unstop.com/hackathons/spider-sprint-loyola-icam-college-of-engineering-and-technology-licet-chennai-1729511",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1729511",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "Similar to Web‑Forge; offers limited leverage for AI‑focused goals.",
+          "action_plan": [
+            "1. Review event rules (1 h).",
+            "2. Sign up (5 min).",
+            "3. Sketch a quick ML‑tool concept (3 h).",
+            "4. Implement during hackathon.",
+            "5. Publish code on GitHub."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 3,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "d2cd244001f8"
+        },
+        {
+          "title": "ML Bubble 2026 – Machine Learning Awareness & Skill Building Challenge",
+          "url": "https://unstop.com/hackathons/ml-bubble-2026-machine-learning-awareness-skill-building-challenge-army-institute-of-technology-ait-pune-1729558",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1729558",
+          "score": 7,
+          "ai_score": 6,
+          "ai_summary": "Machine learning challenge",
+          "action_plan": [
+            "Review challenge details (1 week)",
+            "Prepare for challenge (2 weeks)",
+            "Participate in challenge (1 week)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 4,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "01fb77e4d444"
+        },
+        {
+          "title": "Codeissance 2026",
+          "url": "https://unstop.com/hackathons/codessiance-2026-thadomal-shahani-engineering-college-tsec-mumbai-1729289",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1729289",
+          "score": 2,
+          "ai_score": 3,
+          "ai_summary": "Another offline hackathon; low prestige, no deadline pressure.",
+          "action_plan": [
+            "1. Look up previous Codeissance winners (2 h).",
+            "2. Register (5 min).",
+            "3. Choose a small generative‑AI project (4 h).",
+            "4. Code and demo at event.",
+            "5. Add outcome to portfolio."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 3,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "6b02e7793ba9"
+        },
+        {
+          "title": "Trivarna CTF — International CTF Championship",
+          "url": "https://unstop.com/hackathons/trivarna-ctf-international-ctf-championship-astitwam-1724784",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1724784",
+          "score": 4,
+          "ai_score": 3,
+          "ai_summary": "CTF hackathon, security focus, no fixed deadline",
+          "action_plan": [
+            "Create account on platform",
+            "Review past CTF write‑ups",
+            "Join when live"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "c5b24e629088"
+        },
+        {
+          "title": "Python Basic Programming Competition",
+          "url": "https://unstop.com/hackathons/python-basic-programming-competition-bvc-college-of-engineering-rajamahendravaram-andhra-pradesh-1729093",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1729093",
+          "score": 7,
+          "ai_score": 4,
+          "ai_summary": "Basic programming competition",
+          "action_plan": [
+            "Review competition details (1 week)",
+            "Prepare for competition (1 week)",
+            "Participate in competition (1 week)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 4,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "bfee2339b89d"
+        },
+        {
+          "title": "Full Stack Developer Internship",
+          "url": "https://unstop.com/internships/full-stack-developer-internship-ignix-social-1729692",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1729692",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Not AI/ML focused",
+          "action_plan": [
+            "Update resume and apply (2 hours)",
+            "Prepare for interview (4 hours)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "6a8fc5c09d3c"
+        },
+        {
+          "title": "Campus Leader Internship",
+          "url": "https://unstop.com/internships/campus-leader-internship-internzvalley-opc-pvt-ltd-1729670",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1729670",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Not AI/ML focused",
+          "action_plan": [
+            "Update resume and apply (2 hours)",
+            "Prepare for interview (4 hours)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "d88265ade351"
+        },
+        {
+          "title": "Market Development Internship",
+          "url": "https://unstop.com/internships/market-development-internship-codework-1729658",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1729658",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Not AI/ML focused",
+          "action_plan": [
+            "Update resume and apply (2 hours)",
+            "Prepare for interview (4 hours)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "cdd2c15ca426"
+        },
+        {
+          "title": "NextJs Frontend Internship",
+          "url": "https://unstop.com/internships/nextjs-frontend-internship-dezainahub-1729657",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1729657",
+          "score": 8,
+          "ai_score": 5,
+          "ai_summary": "Frontend development skills",
+          "action_plan": [
+            "Update resume and apply (2 hours)",
+            "Prepare for interview (4 hours)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 5,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "d48f6eee5e57"
+        },
+        {
+          "title": "Social Media Internship",
+          "url": "https://unstop.com/internships/social-media-internship-pontaq-venture-1729653",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1729653",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not AI/ML focused",
+          "action_plan": [
+            "Update resume and apply (2 hours)",
+            "Prepare for interview (4 hours)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "8749e3fb0236"
+        },
+        {
+          "title": "Video Editor Internship",
+          "url": "https://unstop.com/internships/video-editor-internship-gulmohar-talent-management-private-limited-1729624",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1729624",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not AI/ML focused",
+          "action_plan": [
+            "Update resume and apply (2 hours)",
+            "Prepare for interview (4 hours)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "286a5d1b9977"
+        },
+        {
+          "title": "HR Internship",
+          "url": "https://unstop.com/internships/hr-internship-gulmohar-talent-management-private-limited-1729619",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1729619",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "658480f7e531"
+        },
+        {
+          "title": "Full Stack Developer Internship",
+          "url": "https://unstop.com/internships/full-stack-developer-internship-zyoris-technology-1729617",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1729617",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant to AI/ML",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "b80d622b329d"
+        },
+        {
+          "title": "Yotta Labs — Research Engineer Intern - AI Systems",
+          "url": "https://jobs.ashbyhq.com/yotta/09821a51-fbe6-42a7-a566-0d2b5d40fae3/application?embed=true",
+          "source": "internships",
+          "description": "internship | Yotta Labs | Remote in USA, Remote in Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "48c4cfa3-389b-4a66-abd7-a1d6cb9708a5",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI systems research",
+          "action_plan": [
+            "Review Yotta Labs' work (1 week)",
+            "Prepare resume and cover letter (2 weeks)",
+            "Apply for internship (1 week)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 4,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "0fa96e7e2681"
+        },
+        {
+          "title": "Microsoft — Software Engineer Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556951951",
+          "source": "internships",
+          "description": "internship | Microsoft | Vancouver, BC, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "14175068-fa33-4dcb-b0de-4819bdef5ae5",
+          "score": 8,
+          "ai_score": 9,
+          "ai_summary": "Microsoft software engineer",
+          "action_plan": [
+            "Review Microsoft's work (1 week)",
+            "Prepare resume and cover letter (2 weeks)",
+            "Apply for internship (1 week)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 8,
+            "prestige": 10,
+            "deadline": 6,
+            "skill": 9,
+            "time": 8,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "a51736250e6e"
+        }
+      ]
     }
   ]
 }

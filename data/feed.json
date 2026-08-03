@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02",
+  "updated_at": "2026-08-03",
   "items": [
     {
       "key": "d331667577d1",
@@ -58,20 +58,37 @@
       ]
     },
     {
-      "key": "8512e2e26b4a",
-      "title": "Keysight Technologies — AI/ML Research Intern",
-      "url": "https://jobs.keysight.com/jobs/52557?icims=1",
+      "key": "2e7e19d9dc18",
+      "title": "AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers",
+      "url": "https://arxiv.org/abs/2607.29626v1",
+      "source": "arxiv",
+      "score": 9,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "LLM agents benchmark",
+      "action_plan": [
+        "Review benchmark details (1 week)",
+        "Prepare and experiment (4 weeks)",
+        "Write and publish paper (8 weeks)"
+      ]
+    },
+    {
+      "key": "a51736250e6e",
+      "title": "Microsoft — Software Engineer Intern",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556951951",
       "source": "internships",
-      "score": 8,
+      "score": 9,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "AI/ML research internship",
+      "ai_summary": "Microsoft software engineer",
       "action_plan": [
-        "review internship requirements (2h)",
-        "update resume (2h)",
-        "apply for internship (2h)"
+        "Review Microsoft's work (1 week)",
+        "Prepare resume and cover letter (2 weeks)",
+        "Apply for internship (1 week)"
       ]
     },
     {
@@ -289,11 +306,11 @@
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "GenAI, ML, building",
+      "ai_summary": "GenAI, ML, and hackathon",
       "action_plan": [
-        "Research Genblaze (2h)",
-        "Form a team (1d)",
-        "Build a project (7d)"
+        "Research Genblaze on B2 (2 hours)",
+        "Form a team and brainstorm ideas (4 hours)",
+        "Build and submit project (20 hours)"
       ]
     },
     {
@@ -427,37 +444,20 @@
       ]
     },
     {
-      "key": "3812d1f92dc9",
-      "title": "ShyftLabs — AI Engineer Intern",
-      "url": "https://jobs.lever.co/shyftlabs/4f389ea7-9b98-4ed0-99c2-b25ea8cc2dcd/apply",
-      "source": "internships",
-      "score": 7,
+      "key": "f3bc68e0e801",
+      "title": "TokTier: Exact Stateful Tokenization for Agentic LLM Serving",
+      "url": "https://arxiv.org/abs/2607.29678v1",
+      "source": "arxiv",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "internship"
+        "research"
       ],
-      "ai_summary": "AI engineer internship abroad aligns with career and interests, but visa uncertainty. · ⚠ verify eligibility: Visa/work permit for Canada no",
+      "ai_summary": "LLM serving systems research",
       "action_plan": [
-        "Verify eligibility for Canadian work permit (1h)",
-        "Gather AI project portfolio (2 days)",
-        "Submit application (1h)"
-      ]
-    },
-    {
-      "key": "402de5a27eff",
-      "title": "Medpace — AI Engineer Intern",
-      "url": "https://careers.medpace.com/jobs/12863?icims=1",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "International AI role offers strong career boost; visa status unknown. · ⚠ verify eligibility: UK work eligibility unclear for Indian studen",
-      "action_plan": [
-        "Check UK Tier‑5 internship visa requirements (1h)",
-        "Prepare AI portfolio (2 days)",
-        "Apply if eligible (1h)"
+        "Review research paper (1 week)",
+        "Implement and experiment (4 weeks)",
+        "Write and publish paper (8 weeks)"
       ]
     },
     {
@@ -803,38 +803,20 @@
       ]
     },
     {
-      "key": "4f4c473ce339",
-      "title": "Agents in the Wild: Where Research Meets Deployment",
-      "url": "https://arxiv.org/abs/2607.19336v1",
-      "source": "arxiv",
-      "score": 6,
+      "key": "0fa96e7e2681",
+      "title": "Yotta Labs — Research Engineer Intern - AI Systems",
+      "url": "https://jobs.ashbyhq.com/yotta/09821a51-fbe6-42a7-a566-0d2b5d40fae3/application?embed=true",
+      "source": "internships",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "research"
+        "internship"
       ],
-      "ai_summary": "research on AI agents and LLMs",
+      "ai_summary": "AI systems research",
       "action_plan": [
-        "read the tutorial (4h)",
-        "take notes (2h)",
-        "apply knowledge (4h)"
-      ]
-    },
-    {
-      "key": "d9450b2b78f5",
-      "title": "Weekend Dev Challenge 60: LLD Projects (codechef.com)",
-      "url": "https://www.codechef.com/DEVWEEKEND60",
-      "source": "clist",
-      "score": 6,
-      "deadline": "2026-07-24",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "competitive programming contest",
-      "action_plan": [
-        "review contest rules (1h)",
-        "practice coding (4h)",
-        "participate in contest (4h)"
+        "Review Yotta Labs' work (1 week)",
+        "Prepare resume and cover letter (2 weeks)",
+        "Apply for internship (1 week)"
       ]
     },
     {
@@ -1232,11 +1214,11 @@
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "No restrictions, can build",
+      "ai_summary": "No restrictions, can apply AI/ML",
       "action_plan": [
-        "Explore themes (1h)",
-        "Form a team (1d)",
-        "Build a project (7d)"
+        "Research hackathon theme (2 hours)",
+        "Form a team and brainstorm ideas (4 hours)",
+        "Build and submit project (20 hours)"
       ]
     },
     {
@@ -1517,38 +1499,37 @@
       ]
     },
     {
-      "key": "d62d7dd23b7d",
-      "title": "Reproducing OpenAI’s “persistently beneficial models” - GRPO trait install barely moves. Ideas? [P] [R]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1v2b8rd/reproducing_openais_persistently_beneficial/",
-      "source": "reddit",
-      "score": 5,
-      "deadline": null,
+      "key": "4d30818aa8c5",
+      "title": "Binary Hacks 4.0",
+      "url": "https://binary-hacks-4.devfolio.co",
+      "source": "devfolio",
+      "score": 6,
+      "deadline": "2026-09-21",
       "tags": [
-        "news",
-        "r/MachineLearning"
+        "hackathon"
       ],
-      "ai_summary": "machine learning research discussion",
+      "ai_summary": "Regional hackathon offers concrete project, deadline, and resume signal.",
       "action_plan": [
-        "read the discussion (2h)",
-        "take notes (1h)",
-        "apply knowledge (2h)"
+        "Register before deadline",
+        "Form a small team",
+        "Plan a 2‑week prototype then iterate"
       ]
     },
     {
-      "key": "185f6d13e57b",
-      "title": "Web Development Internship",
-      "url": "https://unstop.com/internships/web-development-internship-the-developers-arena-1723221",
+      "key": "01fb77e4d444",
+      "title": "ML Bubble 2026 – Machine Learning Awareness & Skill Building Challenge",
+      "url": "https://unstop.com/hackathons/ml-bubble-2026-machine-learning-awareness-skill-building-challenge-army-institute-of-technology-ait-pune-1729558",
       "source": "unstop",
-      "score": 5,
+      "score": 6,
       "deadline": null,
       "tags": [
-        "internship"
+        "hackathon"
       ],
-      "ai_summary": "Web development skills",
+      "ai_summary": "Machine learning challenge",
       "action_plan": [
-        "Apply for internship (1 hour)",
-        "Prepare for interview (5 hours)",
-        "Complete internship (40 hours)"
+        "Review challenge details (1 week)",
+        "Prepare for challenge (2 weeks)",
+        "Participate in challenge (1 week)"
       ]
     },
     {
@@ -1740,6 +1721,24 @@
         "Check hackathon theme (30m)",
         "Sign up (5m)",
         "Build a minimal viable AI demo (2d)"
+      ]
+    },
+    {
+      "key": "0fa6a2556972",
+      "title": "He is teaching AWS System Design only in whole public.",
+      "url": "https://www.reddit.com/r/developersIndia/comments/1v6fv6s/he_is_teaching_aws_system_design_only_in_whole/",
+      "source": "reddit",
+      "score": 5,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/developersIndia"
+      ],
+      "ai_summary": "AWS System Design",
+      "action_plan": [
+        "Review AWS System Design",
+        "Practice with online resources",
+        "Apply knowledge to projects"
       ]
     }
   ]

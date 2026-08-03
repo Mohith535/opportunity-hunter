@@ -1755,8 +1755,8 @@
     "c0d39df56dc0": {
       "title": "Backblaze Generative Media Hackathon: Build with Genblaze on B2",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-08-02",
-      "times_seen": 4
+      "last_seen": "2026-08-03",
+      "times_seen": 5
     },
     "0b9e4e003464": {
       "title": "Find the best open-source OCR models in one place at Papers with Code [P]",
@@ -2727,8 +2727,8 @@
     "3716178f2dc7": {
       "title": "Port Mortem 2026 - Code Resurrection Hackathon",
       "first_seen": "2026-06-30",
-      "last_seen": "2026-08-02",
-      "times_seen": 7
+      "last_seen": "2026-08-03",
+      "times_seen": 8
     },
     "e732b0c5afb8": {
       "title": "Vibe2Vision",
@@ -10492,6 +10492,204 @@
       "title": "Ciena — WaveLogic Software Engineer Intern",
       "first_seen": "2026-08-02",
       "last_seen": "2026-08-02",
+      "times_seen": 1
+    },
+    "f3bc68e0e801": {
+      "title": "TokTier: Exact Stateful Tokenization for Agentic LLM Serving",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "3c01b02187ef": {
+      "title": "Development of FDD-ON: an Ontology for VAV HVAC System Fault Detection and Diagnostics",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "2e7e19d9dc18": {
+      "title": "AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "b5c1c4817e3c": {
+      "title": "FareedKhan-dev/kimi-k3-in-c — ★390",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "82c2cf210941": {
+      "title": "neurips 2026: ACs and reviewers have disappeared [D]",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "688d18299cba": {
+      "title": "No replies to rebuttals and comments even by AC [D]",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "24db6b023f97": {
+      "title": "No rebuttals from neurips authors [D]",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "c16f107c08f9": {
+      "title": "Neurips 2026: does every metareview recommend accept/reject? [D]",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "789149ee7f2f": {
+      "title": "Conference Reviews: Asking Too Much? [D]",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "16b0d3f06efa": {
+      "title": "Context degradation in LLMs: what the papers actually show, and the habits I built for long analysis sessions [R]",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "6eddbdef498f": {
+      "title": "ARR August Cycle [D]",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "9714f6227fa4": {
+      "title": "[R] CausalVLBench: Benchmarking Visual Causal Reasoning in Large VLMs.",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "67020da02289": {
+      "title": "Looking for the right pipeline to convert academic textbook figures into interactive/editable assets [R]",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "4d30818aa8c5": {
+      "title": "Binary Hacks 4.0",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "2714b8d29b8a": {
+      "title": "Codeforces Round (Div. 1) (codeforces.com)",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "a220af02db83": {
+      "title": "Codeforces Round (Div. 2) (codeforces.com)",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "65ab30d3028c": {
+      "title": "AtCoder Beginner Contest 473 (atcoder.jp)",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "b42ef3f31de8": {
+      "title": "Web-Forge",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "d2cd244001f8": {
+      "title": "Spider-Sprint",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "01fb77e4d444": {
+      "title": "ML Bubble 2026 – Machine Learning Awareness & Skill Building Challenge",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "6b02e7793ba9": {
+      "title": "Codeissance 2026",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "c5b24e629088": {
+      "title": "Trivarna CTF — International CTF Championship",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "bfee2339b89d": {
+      "title": "Python Basic Programming Competition",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "6a8fc5c09d3c": {
+      "title": "Full Stack Developer Internship",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "d88265ade351": {
+      "title": "Campus Leader Internship",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "cdd2c15ca426": {
+      "title": "Market Development Internship",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "d48f6eee5e57": {
+      "title": "NextJs Frontend Internship",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "8749e3fb0236": {
+      "title": "Social Media Internship",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "286a5d1b9977": {
+      "title": "Video Editor Internship",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "658480f7e531": {
+      "title": "HR Internship",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "b80d622b329d": {
+      "title": "Full Stack Developer Internship",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "0fa96e7e2681": {
+      "title": "Yotta Labs — Research Engineer Intern - AI Systems",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "times_seen": 1
+    },
+    "a51736250e6e": {
+      "title": "Microsoft — Software Engineer Intern",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
       "times_seen": 1
     }
   }
