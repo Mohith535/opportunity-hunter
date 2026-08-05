@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-08-05",
   "items": [
     {
       "key": "d331667577d1",
@@ -89,58 +89,6 @@
         "Review Microsoft's work (1 week)",
         "Prepare resume and cover letter (2 weeks)",
         "Apply for internship (1 week)"
-      ]
-    },
-    {
-      "key": "a2b03a9e411a",
-      "title": "MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education",
-      "url": "https://arxiv.org/abs/2607.21570v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "LLMs for medical education",
-      "action_plan": [
-        "research MedGame (2h)",
-        "explore applications (2h)",
-        "develop a project (8h)"
-      ]
-    },
-    {
-      "key": "2d5c32547806",
-      "title": "EchoSphere: Agora Conversational AI Hackathon",
-      "url": "https://unstop.com/hackathons/echosphere-agora-conversational-ai-hackathon-knotic-1723695",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "conversational AI hackathon",
-      "action_plan": [
-        "research Agora AI (1h)",
-        "form a team (2h)",
-        "submit project (4h)"
-      ]
-    },
-    {
-      "key": "43c6e0367177",
-      "title": "G-Research — Machine Learning Research Intern",
-      "url": "https://gresearch.wd103.myworkdayjobs.com/G-Research/job/London-UK/Machine-Learning-Research-Internship_R3682",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Top ML research role at elite firm, aligns with AI engineer goal",
-      "action_plan": [
-        "1h: Scan G-Research internship page for requirements",
-        "2h: Tailor resume to highlight TaskFlow, Nova projects",
-        "3h: Draft cover letter linking research interests to role",
-        "1h: Gather references and submit application"
       ]
     },
     {
@@ -461,39 +409,122 @@
       ]
     },
     {
-      "key": "6893bd8afc75",
-      "title": "The Great Agent Hackathon",
-      "url": "https://unstop.com/hackathons/the-great-agent-hackathon-women-in-product-india-1724089",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Agent‑focused hackathon builds portfolio, high personal interest",
-      "action_plan": [
-        "30m: Register for the hackathon",
-        "1h: Brainstorm agent idea using TaskFlow",
-        "2h: Prototype core features",
-        "1h: Submit final demo"
-      ]
-    },
-    {
-      "key": "57d3addd7845",
-      "title": "G-Research — Data Science Intern",
-      "url": "https://gresearch.wd103.myworkdayjobs.com/G-Research/job/London-UK/Data-Science-Internship_R3679",
+      "key": "edecb88f5577",
+      "title": "TikTok — Machine Learning Engineer Intern - Data-Global E-Commerce-Search",
+      "url": "https://lifeattiktok.com/search/7668415591670417717",
       "source": "internships",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "Data science stint at a prestigious quant firm, good resume boost",
+      "ai_summary": "ML engineer internship at TikTok",
       "action_plan": [
-        "30m: Review data‑science intern description",
-        "1h: Update CV with ML projects",
-        "2h: Write concise cover letter",
-        "30m: Submit application"
+        "Update resume (2 hours)",
+        "Prepare for internship application (5 hours)",
+        "Apply for the internship (1 hour)"
+      ]
+    },
+    {
+      "key": "19c3dd6379fe",
+      "title": "TikTok — Research Engineer Intern - Agentic Systems & AI Infrastructure - Tiktok-Generalized Arch",
+      "url": "https://lifeattiktok.com/search/7667935568626043141",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Research engineer internship at TikTok",
+      "action_plan": [
+        "Research the role (2 hours)",
+        "Prepare for internship application (5 hours)",
+        "Apply for the internship (1 hour)"
+      ]
+    },
+    {
+      "key": "0a85454b9838",
+      "title": "TikTok — Machine Learning Engineer Intern - Commerce Ads - Summer 2027",
+      "url": "https://lifeattiktok.com/search/7669711968043092229",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "ML engineer internship at TikTok",
+      "action_plan": [
+        "Update resume (2 hours)",
+        "Prepare for internship application (5 hours)",
+        "Apply for the internship (1 hour)"
+      ]
+    },
+    {
+      "key": "490b3cef0a7d",
+      "title": "TikTok — Machine Learning Engineer Intern - Lead Ads",
+      "url": "https://lifeattiktok.com/search/7669707492914727221",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "ML engineer internship at TikTok",
+      "action_plan": [
+        "Update resume (2 hours)",
+        "Prepare for internship application (5 hours)",
+        "Apply for the internship (1 hour)"
+      ]
+    },
+    {
+      "key": "884b4fab03ec",
+      "title": "TikTok — Machine Learning Engineer Intern - Data Search Recommendation Global E-Commerce",
+      "url": "https://lifeattiktok.com/search/7668383643375257909",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "ML engineer internship at TikTok",
+      "action_plan": [
+        "Update resume (2 hours)",
+        "Prepare for internship application (5 hours)",
+        "Apply for the internship (1 hour)"
+      ]
+    },
+    {
+      "key": "e6a66b975b58",
+      "title": "TikTok — Machine Learning Engineer Intern - Brand Ads",
+      "url": "https://lifeattiktok.com/search/7668654528822954245",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "ML engineer internship at TikTok",
+      "action_plan": [
+        "Update resume (2 hours)",
+        "Prepare for internship application (5 hours)",
+        "Apply for the internship (1 hour)"
+      ]
+    },
+    {
+      "key": "90f5f2000cf0",
+      "title": "TikTok — Machine Learning Engineer Intern - Performance Monetization",
+      "url": "https://lifeattiktok.com/search/7669693205558561077",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "ML engineer internship at TikTok",
+      "action_plan": [
+        "Update resume (2 hours)",
+        "Prepare for internship application (5 hours)",
+        "Apply for the internship (1 hour)"
       ]
     },
     {
@@ -888,91 +919,37 @@
       ]
     },
     {
-      "key": "5db8f15ded5c",
-      "title": "International Hackathon Competition 2026",
-      "url": "https://unstop.com/hackathons/international-hackathon-competition-2026-sofzenix-it-solution-llp-1724168",
+      "key": "a7dae5228437",
+      "title": "AI/ML Developer Internship",
+      "url": "https://unstop.com/internships/aiml-developer-internship-aitechgen-technology-1730809",
       "source": "unstop",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
       ],
-      "ai_summary": "international hackathon",
+      "ai_summary": "AI/ML internship",
       "action_plan": [
-        "research hackathon rules (1h)",
-        "form a team (2h)",
-        "submit project (4h)"
+        "Research company",
+        "Update resume",
+        "Apply"
       ]
     },
     {
-      "key": "e8e1947a62b7",
-      "title": "2nd NextGen Hackathon 2026",
-      "url": "https://unstop.com/hackathons/2nd-nextgen-hackathon-2026-soft-computing-research-society-new-delhi-delhi-1722019",
+      "key": "fa5d951bd3ff",
+      "title": "AI Data Intelligence Internship",
+      "url": "https://unstop.com/internships/ai-data-intelligence-internship-qurovo-1730796",
       "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "NextGen hackathon",
-      "action_plan": [
-        "research hackathon rules (1h)",
-        "form a team (2h)",
-        "submit project (4h)"
-      ]
-    },
-    {
-      "key": "671326f2e74d",
-      "title": "Axogen — AI/ML Engineer Intern",
-      "url": "https://www.axogeninc.com/about-axogen/careers/?gh_jid=8645955002",
-      "source": "internships",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "AI/ML focus aligns with his interests and builds a strong portfolio",
+      "ai_summary": "AI/ML internship",
       "action_plan": [
-        "Read Axogen intern requirements (15m)",
-        "Craft resume highlighting ML projects (1h)",
-        "Write a brief cover letter linking to TaskFlow (30m)",
-        "Submit application (10m)"
-      ]
-    },
-    {
-      "key": "c3247165963e",
-      "title": "Tenstorrent — Software Engineer Intern - Power Modeling & AI Tools",
-      "url": "https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5186916007",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI tools at leading chip company, strong resume signal",
-      "action_plan": [
-        "Research Tenstorrent internship specifics (20m)",
-        "Polish resume to emphasize AI tooling experience (1h)",
-        "Prepare a short project demo (1h)",
-        "Submit application (15m)"
-      ]
-    },
-    {
-      "key": "3e686df26ac7",
-      "title": "Veralto — Machine Learning Co-op Intern",
-      "url": "https://veralto.wd1.myworkdayjobs.com/hachjobs/job/London-Ontario-Canada/Aquatic-Informatics---Machine-Learning-Co-Op--Intern-_R10267571",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "International co‑op gives real ML work, modest prestige",
-      "action_plan": [
-        "45m: Check Veralto co‑op eligibility",
-        "1h: Align resume to ML tasks",
-        "1h: Prepare brief motivation note",
-        "30m: Apply"
+        "Research company",
+        "Update resume",
+        "Apply"
       ]
     },
     {
@@ -1647,26 +1624,96 @@
       ]
     },
     {
-      "key": "da062d18a2f3",
-      "title": "Synthetic data generation framework for quality control automation in gravure printing",
-      "url": "https://arxiv.org/abs/2607.21577v1",
+      "key": "aa715b6dc316",
+      "title": "HackQuest 2026",
+      "url": "https://unstop.com/hackathons/hackquest-2026-oriental-college-of-technology-oct-bhopal-1724486",
+      "source": "unstop",
+      "score": 5,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Boosts AI building portfolio, but low prestige and no deadline.",
+      "action_plan": [
+        "Read hackathon rules (1h)",
+        "Register on platform (15m)",
+        "Sketch a quick AI prototype (2d)"
+      ]
+    },
+    {
+      "key": "6cd55a5d9fd9",
+      "title": "HackNexus'26",
+      "url": "https://unstop.com/hackathons/hacknexus26-droidecks-1695049",
+      "source": "unstop",
+      "score": 5,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Similar to HackQuest; good for hands‑on AI work, limited resume impact.",
+      "action_plan": [
+        "Check hackathon theme (30m)",
+        "Sign up (5m)",
+        "Build a minimal viable AI demo (2d)"
+      ]
+    },
+    {
+      "key": "0fa6a2556972",
+      "title": "He is teaching AWS System Design only in whole public.",
+      "url": "https://www.reddit.com/r/developersIndia/comments/1v6fv6s/he_is_teaching_aws_system_design_only_in_whole/",
+      "source": "reddit",
+      "score": 5,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/developersIndia"
+      ],
+      "ai_summary": "AWS System Design",
+      "action_plan": [
+        "Review AWS System Design",
+        "Practice with online resources",
+        "Apply knowledge to projects"
+      ]
+    },
+    {
+      "key": "a16beaa388dc",
+      "title": "Explainable Reinforcement Learning for assisting Air Traffic Controllers",
+      "url": "https://arxiv.org/abs/2607.22525v1",
       "source": "arxiv",
       "score": 5,
       "deadline": null,
       "tags": [
         "research"
       ],
-      "ai_summary": "Relevant synthetic data work, but just a paper; no direct portfolio boost.",
+      "ai_summary": "Relevant RL safety research; could boost AI credibility if published.",
       "action_plan": [
-        "Read abstract (15m)",
-        "Skim methodology (30m)",
-        "Note ideas for personal project (15m)"
+        "1d: Read the abstract and locate the full paper.",
+        "2d: Identify open research questions you could address.",
+        "1w: Prototype a small experiment in a simulated ATC env.",
+        "2w: Draft a short report and seek feedback from a professor."
       ]
     },
     {
-      "key": "7c4be4a10951",
-      "title": "First ML coding round (HackerRank) at Adyen, what should I expect? [D]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1v4c3tz/first_ml_coding_round_hackerrank_at_adyen_what/",
+      "key": "574cccabd2ec",
+      "title": "Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science",
+      "url": "https://arxiv.org/abs/2607.22513v1",
+      "source": "arxiv",
+      "score": 5,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "LLM deployment research",
+      "action_plan": [
+        "Read the research paper (2 hours)",
+        "Analyze the methodology (2 hours)",
+        "Discuss the results (2 hours)"
+      ]
+    },
+    {
+      "key": "46b2625a586e",
+      "title": "Open-weight 4B models approach o3-level medical question answering in Swedish [P]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1v71wds/openweight_4b_models_approach_o3level_medical/",
       "source": "reddit",
       "score": 5,
       "deadline": null,
@@ -1674,64 +1721,12 @@
         "news",
         "r/MachineLearning"
       ],
-      "ai_summary": "Adyen coding round offers real‑world experience; decent resume signal.",
+      "ai_summary": "Generative AI model with medical QA shows cutting‑edge application.",
       "action_plan": [
-        "Review HackerRank topics (2h)",
-        "Practice similar problems (3h)",
-        "Schedule interview prep (1h)"
-      ]
-    },
-    {
-      "key": "20550dfee05c",
-      "title": "AlgoVerse'26",
-      "url": "https://unstop.com/hackathons/algoverse26-bharati-vidyapeeth-college-of-engineering-pune-1724255",
-      "source": "unstop",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AlgoVerse hackathon gives building experience and a modest credential.",
-      "action_plan": [
-        "Check registration deadline (5m)",
-        "Form a team (1h)",
-        "Plan project scope (2h)"
-      ]
-    },
-    {
-      "key": "61ac8c4f6148",
-      "title": "CraftVerse 2.0",
-      "url": "https://unstop.com/hackathons/craftverse-20-pimpri-chinchwad-college-of-engineering-research-pccoer-ravet-pimpri-chinchwad-pune-1719658",
-      "source": "unstop",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Online hackathon, modest skill gain, not core AI focus",
-      "action_plan": [
-        "15m: Sign up for CraftVerse 2.0",
-        "45m: Define project scope",
-        "2h: Build prototype",
-        "30m: Upload final submission"
-      ]
-    },
-    {
-      "key": "b2a667efd81a",
-      "title": "Buildathon 2026",
-      "url": "https://unstop.com/hackathons/buildathon-2026-techverse-solutions-1723834",
-      "source": "unstop",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Buildathon offers practice, but low impact on elite AI resume",
-      "action_plan": [
-        "15m: Register for Buildathon 2026",
-        "45m: Sketch project plan",
-        "2h: Implement core features",
-        "30m: Submit entry"
+        "1d: Locate the model repository and read the README.",
+        "2d: Run inference on a sample Swedish medical query.",
+        "1w: Compare results with baseline models.",
+        "2w: Write a short blog post summarizing insights."
       ]
     }
   ]

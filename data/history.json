@@ -46427,6 +46427,1434 @@
           "key": "ecb44c772e2d"
         }
       ]
+    },
+    {
+      "date": "2026-08-05",
+      "items": [
+        {
+          "title": "ParVL: Parallel Scaling and Expandable Compute Allocation for Multimodal LLMs",
+          "url": "https://arxiv.org/abs/2608.04010v1",
+          "source": "arxiv",
+          "description": "Existing scaling strategies for Multimodal Large Language Models (MLLMs) typically expand either model parameters or sequential inference computation, incurring substantial memory or latency overhead. More importantly, most existing methods fail to alter the rigid, fixed computation allocation between the Vision Transformer and the Large Language Model components, limiting task-specific optimization. To address this, we introduce the Parallel Vision-Language (ParVL) scaling framework for MLLMs, which scales parallel computation by reusing the existing ViT and LLM backbone parameters across multiple vision and language branches. This framework raises a central question: given a fixed backbone parameter budget, how should additional shared-backbone computation be allocated between the vision and language modalities? We instantiate each parallel computational stream with branch-specific prefix parameters over a shared backbone, and train the entire model end-to-end via full-parameter supervised fine-tuning on roughly 13B tokens. We systematically study the computation-allocation trade-off between the ViT encoder and LLM decoder. ParVL improves overall multimodal performance over same-recipe single-branch baselines, and the best evaluated vision--language allocation varies across tasks. Code is available at https://github.com/YangYangGirl/ParVL.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.04010",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — Not an application opportunity · Research paper matches interests but can't be applied to directly.",
+          "action_plan": [
+            "Read full ParVL paper (2h)",
+            "Summarize key ideas for personal blog (3h)",
+            "Experiment with parallel scaling code (1 week)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 1,
+            "skill": 7,
+            "time": 4,
+            "eligible": "no",
+            "elig_note": "Not an application opportunity"
+          },
+          "key": "7d6c5eb19eb7"
+        },
+        {
+          "title": "SocietyBench: Forecasting Counterfactual Social-World Evolution",
+          "url": "https://arxiv.org/abs/2608.04009v1",
+          "source": "arxiv",
+          "description": "Large language models (LLMs), and the agents built on top of them, are now benchmarked heavily on whether they can finish a task -- fix a bug, drive a browser, operate a GUI. A complementary social ability, namely how well a model understands and forecasts the way real social events unfold, has barely been measured. We introduce SocietyBench, an end-to-end benchmark that takes a one-line event topic, collects Web news and social-media posts across five platforms, distills them into a date-indexed timeline that keeps factual events and a public-opinion layer separate, and then turns every cutoff date on that timeline into an audited bank of forecasting questions. Questions are scored on two orthogonal 100-point axes: probability calibration and temporal accuracy. Before any model sees a timeline, a three-phase procedure replaces every named entity and shifts every date by a per-event constant, turning a real arc into a counterfactual social world -- structurally identical to what happened, but stripped of the surface labels a model could match against pre-training memory. On five heterogeneous events and 125 prediction points in Chinese and English editions, the strongest of six frontier LLMs reaches only 75.0 out of 100, against a trivial anchor of 50. The two axes come apart: a model can be calibration-strong but time-weak, or the reverse. Three agent frameworks built on a shared base model fail to improve on that base, and two model-free heuristics trail every LLM. Per-event gaps reach 21.4 points on a single axis, which is our main argument for evaluating on several events rather than one. All anonymized timelines, question banks, ground truth, and scoring code are released.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.04009",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "90cea5692e86"
+        },
+        {
+          "title": "WorldCup Arena: Prospective, Leakage-Free Evaluation of Frontier LLMs on a Live Tournament",
+          "url": "https://arxiv.org/abs/2608.04008v1",
+          "source": "arxiv",
+          "description": "Benchmarks that measure the forecasting ability of large language models are almost always retrospective: the event has happened, the answer is somewhere on the Web, and the evaluation must defend itself against memorisation. We report the opposite design. Over the 39 days of the 2026 FIFA World Cup, six frontier LLMs -- all with extended thinking and native server-side web search -- were asked before every kickoff, one match at a time, to fill in a seven-market prediction card for all 104 matches, plus 12 group winners and a pre-tournament outright pool; no answer existed when the question was asked, so the evaluation is leakage-free by construction rather than by filtering, and the frozen archive holds 4,494 scored predictions. What the tournament establishes is a set of behaviours the six systems share. On match outcome they average 63.9%, level with backing the bookmaker's favourite -- which is in fact what they usually do. They agree with one another far more often than they are right, so a majority vote adds nothing. They under-commit to draws and to goals, and crowd their scoreline picks onto a single prototypical result. Accuracy tracks how lopsided a fixture is rather than how much is known about it: it collapses in the closest ties, where the dossiers are richest, while questions about the tournament as a whole are answered well. On this task the current generation of frontier systems is not sharply differentiated: the standings hold up at the top and the bottom across the run and churn in the middle, and the margins stay narrow throughout. The briefing dossiers, fixtures and official results are released as a benchmark, together with the scoring code.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.04008",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c9a5dd973cc9"
+        },
+        {
+          "title": "Test-Time Scaling in Reasoning LLMs: Inference Regimes, Evaluation, and Reproducibility",
+          "url": "https://arxiv.org/abs/2608.04001v1",
+          "source": "arxiv",
+          "description": "Large language models can solve substantially harder reasoning problems with more inference-time compute. The term \"test-time scaling,\" however, now covers diverse inference algorithms that extend deliberation along a single trajectory, sample completed candidates and aggregate them through voting or verification, or search over unfinished partial states. These algorithms differ in their statistical structure, compute accounting, and failure modes. Treating these procedures as interchangeable under a single scalar \"budget,\" or reporting accuracy without the inference protocol that produced it, makes results difficult to compare across studies. We develop a systematic account of test-time scaling along three axes. First, we formalize test-time scaling as budgeted inference over the implicit prefix tree of an autoregressive model and distinguish three structural regimes: single-trajectory sequential scaling, leaf-level scaling with terminal reduction, and prefix-level scaling. Second, we treat the evaluated object as the entire inference system and develop evaluation principles that separate end-to-end system performance from candidate-bank diagnostics. We introduce an evaluation profile whose coordinates and simple functionals recover or bound common repeated-sampling metrics, and prescribe protocol-matched reporting of compute and uncertainty. Third, we specify reproducibility requirements for inference protocols, distinguishing exact replay from distributional reproducibility and identifying the artifacts needed to support each. We also organize the open-weight reasoning ecosystem by model-side and interface mechanisms, apply these principles to broad-knowledge, symbolic-reasoning, and competition-mathematics benchmarks, and assemble over 2 billion full reasoning traces for release with progressively richer verifier and token-level signals.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.04001",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bb32d1207591"
+        },
+        {
+          "title": "Agogic: Performance-Timed Music Tokens for LLM-Native Text-to-Symbolic-Music Generation",
+          "url": "https://arxiv.org/abs/2608.03999v1",
+          "source": "arxiv",
+          "description": "Text-to-music language models begin with a choice usually made by default: how to tokenize music. Normally entangled with backbone, data, and recipe, its effect has never been measured in isolation. We fix pretrained Qwen3.5 (0.8B-27B), data, budget, and decoding, and swap only the representation across seven tokenizations, anchoring texture metrics to each representation's model-free ceiling. The ordering is clean and surprising: representation, not model size, is the binding variable for distributional fidelity. Scaling the backbone 34x barely moves Frechet Music Distance (FMD), whereas switching representation halves it. PMT, a performance-resolution stream we release (10 ms timing, per-note velocity, multi-track texture; 609 symbols), reaches FMD 159 at 0.8B against 272-286 for beat grids (1.7-1.8x lower, up to 2.8x elsewhere; non-overlapping bootstrap CIs), so a 0.8B performance-resolution model beats a 27B beat grid. It reappears on a 26M from-scratch backbone and a second performance-resolution tokenizer: a property of the class, not one lucky vocabulary. Nor is it a finer-lattice artifact: snapping PMT's onsets to the beat grids' resolution still leaves it 67-129 FMD ahead of both (n=500). The effect is distributional; whether it is audible is a separate question, left open by our probe, with a human study pre-registered. Native caption adherence is weak but separable: a lightweight decode-time constraint doubles instrument-F1 (.28 to .60) and Correct-Key (.16 to .35) at no distributional cost. We release the harness, 25+ checkpoints, two corpora (86.6k aligned across caption/MIDI/ABC/audio; 6.25M captioned, the largest for music), and an imprinting diagnostic: published text-to-MIDI systems reproduce their training distribution near-invariant to the caption (72% vs. 71% chord-time on disjoint domains). The field's next representation claim can now be measured, not asserted.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.03999",
+          "score": 3,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Research paper, not an application · Only a paper; no participation or application possible.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Research paper, not an application"
+          },
+          "key": "e735415b3fea"
+        },
+        {
+          "title": "string2string Studio: An Interactive, In-Browser Platform for String-to-String Algorithms",
+          "url": "https://arxiv.org/abs/2608.03984v1",
+          "source": "arxiv",
+          "description": "We present string2string Studio, an interactive in-browser platform for string-to-string analysis across natural language processing, computational biology, and the digital humanities. The system integrates six main modules (alignment, distance, similarity, search, generation metrics, and BLAST homology search), operating at character, word, token, line, and residue levels. Its C++-based algorithms compile to WebAssembly, so core operations run locally by default without any installation or data upload. The interface reports scores with their \"evidence\" (alignments, edit paths, metric matches, search hits, and homology traces), making methods inspectable, debuggable, and comparable on shared inputs. Internal benchmarks show speedups of up to 2,500x over the Python predecessor, faster global/local alignment than a general-purpose native C aligner, and exact agreement with independent references under declared settings. For homology search, the scoped client-side blastn path closely matches NCBI BLAST+ rankings and statistics under matched parameters. A curated showcase and Learn mode present canonical algorithms and metrics as reusable demonstrations. string2string Studio is open-source and freely available at string2string.org.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.03984",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4205412b9b27"
+        },
+        {
+          "title": "Zero-Mem: Zero-Token Memory Operations for LLM Agents",
+          "url": "https://arxiv.org/abs/2607.29377",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49178608",
+          "score": 3,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — Not an actionable opportunity · Just a news item; no application or tangible skill gain.",
+          "action_plan": [
+            "Read the article (15 min)"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "Not an actionable opportunity"
+          },
+          "key": "d8d784b95ac2"
+        },
+        {
+          "title": "Completely dead NeurIPS review period from both ends? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vfm2k9/completely_dead_neurips_review_period_from_both/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vfm2k9",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bcedc6d8f107"
+        },
+        {
+          "title": "The Downsides of LLM-Generated Peer Reviews [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vf4zjz/the_downsides_of_llmgenerated_peer_reviews_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vf4zjz",
+          "score": 5,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Not an application opportunity · Just a Reddit news post; no actionable participation.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Not an application opportunity"
+          },
+          "key": "8725ef674eb0"
+        },
+        {
+          "title": "A question on ICLR and NeurIPS deadlines, and OpenReview [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vf747o/a_question_on_iclr_and_neurips_deadlines_and/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vf747o",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bd6c11b8ae24"
+        },
+        {
+          "title": "NeurIPS 2026 post-rebuttal score distribution poll [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vfi23r/neurips_2026_postrebuttal_score_distribution_poll/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vfi23r",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8230e31eb06c"
+        },
+        {
+          "title": "NeurIPS 2026 Main Track — Theory papers score tracking post Rebuttal [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vfx8pn/neurips_2026_main_track_theory_papers_score/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vfx8pn",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2a6855b7a018"
+        },
+        {
+          "title": "Building a new project[P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vfnuxw/building_a_new_projectp/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vfnuxw",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a57f8962f9c5"
+        },
+        {
+          "title": "\"Explorative Modeling: Unlocking a Third Pretraining Axis and End-to-End Generation\", Gladstone et al. 2026 [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vf6r6f/explorative_modeling_unlocking_a_third/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vf6r6f",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e30068c5f05e"
+        },
+        {
+          "title": "NeurIPS 2026 Concept & Feasibility Track [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vfv9fj/neurips_2026_concept_feasibility_track_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vfv9fj",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0e0433b6414b"
+        },
+        {
+          "title": "Reactive Play: Achieved!! Experimenting with Atari Breakout [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vfa9im/reactive_play_achieved_experimenting_with_atari/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vfa9im",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5e440bf621df"
+        },
+        {
+          "title": "SuperNova Hackathon",
+          "url": "https://unstop.com/hackathons/supernova-hackathon-university-of-engineering-and-management-uem-kolkata-1730807",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1730807",
+          "score": 5,
+          "ai_score": 5,
+          "ai_summary": "Local hackathon gives hands‑on AI building for portfolio and skill growth.",
+          "action_plan": [
+            "Check hackathon site for rules (15m)",
+            "Form team with peers (1d)",
+            "Prototype AI project (3d)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "c91d0b86e23a"
+        },
+        {
+          "title": "Build Bank",
+          "url": "https://unstop.com/hackathons/build-bank-igdtuw-delhi-1728282",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1728282",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4c9df3e7020e"
+        },
+        {
+          "title": "Binary Hacks 4.0",
+          "url": "https://unstop.com/hackathons/binary-hacks-40-raj-kumar-goel-institute-of-technology-rkgit-ghaziabad-1730767",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1730767",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5f0ea24f825b"
+        },
+        {
+          "title": "Hack Fusion 2026",
+          "url": "https://unstop.com/hackathons/hack-fusion-2026-chennai-institute-of-technology-1730112",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1730112",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "46903cee1cc0"
+        },
+        {
+          "title": "Orvix Hackathon",
+          "url": "https://unstop.com/hackathons/orvix-hackathon-nimblux-1730437",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1730437",
+          "score": 7,
+          "ai_score": 4,
+          "ai_summary": "Building experience",
+          "action_plan": [
+            "Research hackathon details (1 hour)",
+            "Form a team (2 hours)",
+            "Prepare for the hackathon (10 hours)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "9ccfa76e70b5"
+        },
+        {
+          "title": "PitchX 2026 – India's Biggest Startup Pitch Challenge",
+          "url": "https://unstop.com/hackathons/pitchx-2026-indias-biggest-startup-pitch-challenge-devtech-it-solution-1729843",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1729843",
+          "score": 5,
+          "ai_score": 5,
+          "ai_summary": "Startup pitch aligns with entrepreneurial goal and adds visibility in India.",
+          "action_plan": [
+            "Register for competition (10m)",
+            "Develop pitch deck (2d)",
+            "Practice pitch with mentors (1d)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "26c49432448f"
+        },
+        {
+          "title": "HR Internship",
+          "url": "https://unstop.com/internships/hr-internship-acriotech-pvt-ltd-1730860",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1730860",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not AI/CS · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not AI/CS"
+          },
+          "key": "2ba6272c1924"
+        },
+        {
+          "title": "Operations and Marketing Internship",
+          "url": "https://unstop.com/internships/operations-and-marketing-internship-lit-labs-1730831",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1730831",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not AI/CS · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not AI/CS"
+          },
+          "key": "99617ac16690"
+        },
+        {
+          "title": "Graphic Designer Internship",
+          "url": "https://unstop.com/internships/graphic-designer-internship-zeepty-technologies-private-limited-1730840",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1730840",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not AI/CS · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not AI/CS"
+          },
+          "key": "31d17f24c29c"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-highgrowth-tradecom-pvt-ltd-1730820",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1730820",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — not AI/CS · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 2,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "not AI/CS"
+          },
+          "key": "eb77df9d63e3"
+        },
+        {
+          "title": "Data Analysis Developer Internship",
+          "url": "https://unstop.com/internships/data-analysis-developer-internship-aitechgen-technology-1730825",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1730825",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "related to AI/CS",
+          "action_plan": [
+            "Research company",
+            "Update resume",
+            "Apply"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 0,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "2772b2bdb748"
+        },
+        {
+          "title": "Frontend Developer Internship",
+          "url": "https://unstop.com/internships/frontend-developer-internship-aitechgen-technology-1730815",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1730815",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "related to AI/CS",
+          "action_plan": [
+            "Research company",
+            "Update resume",
+            "Apply"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 0,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "4d69719c39d2"
+        },
+        {
+          "title": "AI/ML Developer Internship",
+          "url": "https://unstop.com/internships/aiml-developer-internship-aitechgen-technology-1730809",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1730809",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI/ML internship",
+          "action_plan": [
+            "Research company",
+            "Update resume",
+            "Apply"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 0,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "a7dae5228437"
+        },
+        {
+          "title": "AI Data Intelligence Internship",
+          "url": "https://unstop.com/internships/ai-data-intelligence-internship-qurovo-1730796",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1730796",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI/ML internship",
+          "action_plan": [
+            "Research company",
+            "Update resume",
+            "Apply"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 0,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "fa5d951bd3ff"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - Data-Global E-Commerce-Search",
+          "url": "https://lifeattiktok.com/search/7668415591670417717",
+          "source": "internships",
+          "description": "internship | TikTok | Seattle, WA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "87667d11-6adc-446a-9b2e-15e0dc0b761b",
+          "score": 6,
+          "ai_score": 8,
+          "ai_summary": "ML engineer internship at TikTok",
+          "action_plan": [
+            "Update resume (2 hours)",
+            "Prepare for internship application (5 hours)",
+            "Apply for the internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "edecb88f5577"
+        },
+        {
+          "title": "TikTok — Data Science Intern - TikTok Product",
+          "url": "https://lifeattiktok.com/search/7669683639101884725",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3b700557-5c32-4773-8cfe-f11a66b71a4f",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "TikTok data‑science role offers modest resume value, limited AI depth. · ⚠ verify eligibility: US internship may require work visa",
+          "action_plan": [
+            "Check visa eligibility (30 min)",
+            "Tailor resume for data science (2 h)",
+            "Submit application (1 h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US internship may require work visa"
+          },
+          "key": "841cc4794b96"
+        },
+        {
+          "title": "Valstad — Robotics Software Intern - Manipulation & Simulation",
+          "url": "https://jobs.ashbyhq.com/valstad/8478558b-c5b5-43d2-b9c0-eae7a1fb30d8/application?embed=true",
+          "source": "internships",
+          "description": "internship | Valstad | Austin, TX | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e1ae2c85-470c-4630-9b2d-c0fcd897ad01",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Robotics software intern aligns with AI/ML interest but low prestige. · ⚠ verify eligibility: US location may need work visa",
+          "action_plan": [
+            "Review internship description (20 min)",
+            "Update CV with robotics projects (1 h)",
+            "Apply (1 h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 5,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US location may need work visa"
+          },
+          "key": "4b834b3479f5"
+        },
+        {
+          "title": "Valstad — Software Engineer Intern - 3D & Manufacturing Applications",
+          "url": "https://jobs.ashbyhq.com/valstad/7ff6d452-969f-43a6-9127-d153025e6aea/application?embed=true",
+          "source": "internships",
+          "description": "internship | Valstad | Austin, TX | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "daba25e4-9e11-4769-bf2a-22371dbb26a5",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "General software engineering intern; limited AI relevance, low signal. · ⚠ verify eligibility: US location may need work visa",
+          "action_plan": [
+            "Read role details (15 min)",
+            "Highlight relevant C++/Python work (1 h)",
+            "Submit (1 h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 5,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US location may need work visa"
+          },
+          "key": "a6c6fdf5bf09"
+        },
+        {
+          "title": "Diversified Automation — Software Engineering Co-op",
+          "url": "https://jobs.lever.co/diversified-automation/827a092d-b8a3-4ca9-a84a-e8c236d1aabc/apply",
+          "source": "internships",
+          "description": "internship | Diversified Automation | Louisville, KY | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1f3a2e50-1559-4143-8c9e-f2a8d5462388",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Co‑op at Diversified Automation gives experience but little AI prestige. · ⚠ verify eligibility: US location may need work visa",
+          "action_plan": [
+            "Confirm eligibility (30 min)",
+            "Adapt resume for automation focus (1 h)",
+            "Apply (1 h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US location may need work visa"
+          },
+          "key": "65a3b023049a"
+        },
+        {
+          "title": "Keysight Technologies — Software Engineer Intern - R&D - FPGA",
+          "url": "https://jobs.keysight.com/jobs/53636?icims=1",
+          "source": "internships",
+          "description": "internship | Keysight Technologies | Santa Clara, CA, Calabasas, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cbd56b83-ba52-4c04-b781-d4ae5e585151",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "FPGA R&D role offers solid engineering skill, modest AI relevance. · ⚠ verify eligibility: US location may need work visa",
+          "action_plan": [
+            "Read job posting (15 min)",
+            "Showcase hardware‑software projects (1 h)",
+            "Submit application (1 h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 5,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US location may need work visa"
+          },
+          "key": "09de17576467"
+        },
+        {
+          "title": "Simple Technology Solutions — AI Apprentice",
+          "url": "https://job-boards.greenhouse.io/simpletechnologysolutions/jobs/6134105004",
+          "source": "internships",
+          "description": "internship | Simple Technology Solutions | Remote in USA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7bd4f4c6-eca9-4fd7-93db-4bbd9540ca11",
+          "score": 5,
+          "ai_score": 5,
+          "ai_summary": "Remote AI apprenticeship offers international exposure but low brand prestige. · ⚠ verify eligibility: Remote USA may require work authoriza",
+          "action_plan": [
+            "Verify eligibility for remote US internship (30m)",
+            "Tailor resume to AI apprenticeship (1h)",
+            "Submit application (15m)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "Remote USA may require work authorization"
+          },
+          "key": "24b2aabb4bc4"
+        },
+        {
+          "title": "TikTok — Research Engineer Intern - Agentic Systems & AI Infrastructure - Tiktok-Generalized Arch",
+          "url": "https://lifeattiktok.com/search/7667935568626043141",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a355430e-bb97-47ee-9229-434cec3e3a6c",
+          "score": 6,
+          "ai_score": 8,
+          "ai_summary": "Research engineer internship at TikTok",
+          "action_plan": [
+            "Research the role (2 hours)",
+            "Prepare for internship application (5 hours)",
+            "Apply for the internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 2,
+            "skill": 9,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "19c3dd6379fe"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - Commerce Ads - Summer 2027",
+          "url": "https://lifeattiktok.com/search/7669711968043092229",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6c0be2d1-eac9-429a-b900-df719577d679",
+          "score": 6,
+          "ai_score": 8,
+          "ai_summary": "ML engineer internship at TikTok",
+          "action_plan": [
+            "Update resume (2 hours)",
+            "Prepare for internship application (5 hours)",
+            "Apply for the internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "0a85454b9838"
+        },
+        {
+          "title": "TikTok — Backend Software Engineer Intern - LIVE Foundation Governance Engineering",
+          "url": "https://lifeattiktok.com/search/7667935150530840837",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6454b1b2-6daf-4a13-9e9f-47209a333d39",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Backend intern at TikTok gives engineering practice, low AI prestige. · ⚠ verify eligibility: US location may need work visa",
+          "action_plan": [
+            "Check visa requirements (30 min)",
+            "Highlight backend projects (1 h)",
+            "Apply (1 h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 5,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US location may need work visa"
+          },
+          "key": "96ded99429e2"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - Lead Ads",
+          "url": "https://lifeattiktok.com/search/7669707492914727221",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e6fd79b5-22a9-40cb-a2a0-896d01ebf44b",
+          "score": 6,
+          "ai_score": 8,
+          "ai_summary": "ML engineer internship at TikTok",
+          "action_plan": [
+            "Update resume (2 hours)",
+            "Prepare for internship application (5 hours)",
+            "Apply for the internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "490b3cef0a7d"
+        },
+        {
+          "title": "TikTok — AI Product Manager Intern - Content Ecosystem",
+          "url": "https://lifeattiktok.com/search/7667578131150506293",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8bc8874a-e4e7-4cc8-ba27-aa5854cba4d6",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "AI product‑manager role aligns with AI interest, but TikTok less elite. · ⚠ verify eligibility: US location may require work visa",
+          "action_plan": [
+            "Verify eligibility (30 min)",
+            "Craft product‑focused resume (1 h)",
+            "Submit (1 h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US location may require work visa"
+          },
+          "key": "2c32b38c4d78"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - Data Search Recommendation Global E-Commerce",
+          "url": "https://lifeattiktok.com/search/7668383643375257909",
+          "source": "internships",
+          "description": "internship | TikTok | Seattle, WA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b6428bbb-bf53-4e9c-8121-3217159bb9b6",
+          "score": 6,
+          "ai_score": 8,
+          "ai_summary": "ML engineer internship at TikTok",
+          "action_plan": [
+            "Update resume (2 hours)",
+            "Prepare for internship application (5 hours)",
+            "Apply for the internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "884b4fab03ec"
+        },
+        {
+          "title": "TikTok — Data Science Intern - TikTok Live",
+          "url": "https://lifeattiktok.com/search/7669700822370945333",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0fb5cd0a-2141-450b-b5c0-d7a1d71036dd",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Data science internship gives modest AI exposure but low prestige.",
+          "action_plan": [
+            "Update resume highlighting ML projects (2h)",
+            "Submit application via TikTok portal (1h)",
+            "Practice data science interview questions (1 week)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "59bcc9086da1"
+        },
+        {
+          "title": "TikTok — Data Science Intern - Integrity and Safety",
+          "url": "https://lifeattiktok.com/search/7669682935444900149",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3b44efc2-7d58-43bc-a375-21f4344932d3",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Safety-focused data role offers limited AI relevance and low signal.",
+          "action_plan": [
+            "Tailor resume to safety analytics (2h)",
+            "Apply through TikTok career site (1h)",
+            "Review case studies on integrity systems (1 week)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "853650b50dff"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - Brand Ads",
+          "url": "https://lifeattiktok.com/search/7668654528822954245",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6dabe551-58cb-4dd5-9ba4-5656067dd84a",
+          "score": 6,
+          "ai_score": 8,
+          "ai_summary": "ML engineer internship at TikTok",
+          "action_plan": [
+            "Update resume (2 hours)",
+            "Prepare for internship application (5 hours)",
+            "Apply for the internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "e6a66b975b58"
+        },
+        {
+          "title": "TikTok — Software Engineer Intern",
+          "url": "https://lifeattiktok.com/search/7669712589169117445",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "722bb14f-670f-48c9-8320-e07db2eff930",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "General software internship builds engineering chops but lacks AI focus.",
+          "action_plan": [
+            "Highlight full‑stack projects on resume (2h)",
+            "Submit application on TikTok jobs page (1h)",
+            "Prep for system design interview (1 week)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "c72d769c16a9"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - Performance Monetization",
+          "url": "https://lifeattiktok.com/search/7669693205558561077",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f3e5daf4-604e-43d1-9fbc-8dc1c33b4ec5",
+          "score": 6,
+          "ai_score": 8,
+          "ai_summary": "ML engineer internship at TikTok",
+          "action_plan": [
+            "Update resume (2 hours)",
+            "Prepare for internship application (5 hours)",
+            "Apply for the internship (1 hour)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "90f5f2000cf0"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - App Ads and Gaming",
+          "url": "https://lifeattiktok.com/search/7669709472078170373",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b11dddb4-7bc4-4864-8ee8-ab5d5bb12c9a",
+          "score": 6,
+          "ai_score": 5,
+          "ai_summary": "TikTok internship adds industry experience but low relevance to target firms.",
+          "action_plan": [
+            "Update resume with ML projects (1h)",
+            "Prepare ML interview prep (2d)",
+            "Submit application via portal (30m)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "0c8bb1bcbf00"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - Search Ads",
+          "url": "https://lifeattiktok.com/search/7669698648817305909",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "fb88f1c3-967a-419b-8ac4-535d941480ac",
+          "score": 6,
+          "ai_score": 5,
+          "ai_summary": "TikTok internship in Search Ads offers similar value; still not a top‑target company.",
+          "action_plan": [
+            "Refresh CV focusing on search‑related ML work (1h)",
+            "Study TikTok ad ML basics (1d)",
+            "Apply through internship portal (30m)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "ceba04c6d981"
+        },
+        {
+          "title": "TikTok — Software Engineer Intern - Intelligent Creation-Camera",
+          "url": "https://lifeattiktok.com/search/7668862422178318597",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "dde435d3-0494-49e6-bba7-811e7131b9be",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Camera AI role touches generative AI, modest prestige, good skill boost.",
+          "action_plan": [
+            "Add computer‑vision work to resume (2h)",
+            "Apply via TikTok internship portal (1h)",
+            "Study vision‑LLM integration papers (1 week)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "07fe819e70a6"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - Performance Monetization",
+          "url": "https://lifeattiktok.com/search/7669693163422845237",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "708992c3-129c-4bbd-9c10-a0ae59f29fd2",
+          "score": 6,
+          "ai_score": 5,
+          "ai_summary": "Performance Monetization role gives ML exposure but lacks prestige for elite resumes.",
+          "action_plan": [
+            "Highlight relevant ML metrics in resume (45m)",
+            "Research TikTok monetization pipelines (1d)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "9ebdf39923a8"
+        },
+        {
+          "title": "TikTok — Software Engineer Intern - Transaction Platform",
+          "url": "https://lifeattiktok.com/search/7669943120351906053",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5182ae3f-a0b7-4e07-80fd-25a69767ee5d",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Transaction platform engineering adds backend depth, limited AI relevance.",
+          "action_plan": [
+            "Emphasize backend projects in resume (2h)",
+            "File application on TikTok site (1h)",
+            "Review distributed systems concepts (1 week)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "8319125dc003"
+        },
+        {
+          "title": "ByteDance — Software Engineer Intern - AI Platform",
+          "url": "https://jobs.bytedance.com/en/position/7668212952030841093/detail",
+          "source": "internships",
+          "description": "internship | ByteDance | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b59992d0-e14b-4009-9121-ed1172ad9b24",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "AI Platform role aligns with generative AI interests and offers solid resume signal.",
+          "action_plan": [
+            "Showcase AI platform code (e.g., Nova) on resume (2h)",
+            "Apply through ByteDance career portal (1h)",
+            "Prepare ML system design questions (1 week)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "c85e3fc94dce"
+        },
+        {
+          "title": "TikTok — Backend Software Engineer Intern - Product Infrastructure",
+          "url": "https://lifeattiktok.com/search/7667935633764370741",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "04eb8758-e0be-4ae4-aca7-40e1626d3e24",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Backend infrastructure internship builds scalable systems skill, low prestige.",
+          "action_plan": [
+            "List cloud infra projects on resume (2h)",
+            "Submit application on TikTok portal (1h)",
+            "Study product infrastructure case studies (1 week)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 5,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "d27792dc0cd4"
+        }
+      ]
     }
   ]
 }
