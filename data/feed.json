@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05",
+  "updated_at": "2026-08-06",
   "items": [
     {
       "key": "d331667577d1",
@@ -89,6 +89,23 @@
         "Review Microsoft's work (1 week)",
         "Prepare resume and cover letter (2 weeks)",
         "Apply for internship (1 week)"
+      ]
+    },
+    {
+      "key": "8937fe71fd80",
+      "title": "ByteDance — Student Researcher - LLM Post Training - Agent & Reinforcement Learning",
+      "url": "https://jobs.bytedance.com/en/position/7670325736893565189/detail",
+      "source": "internships",
+      "score": 9,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Top AI research fit, high resume boost, but not time‑critical · ⚠ verify eligibility: location San Jose, CA may require relocation/visa",
+      "action_plan": [
+        "Check visa/relocation feasibility (1 day)",
+        "Update resume with TaskFlow/Nova projects (1 day)",
+        "Submit application before internal deadline (2 days)"
       ]
     },
     {
@@ -528,6 +545,74 @@
       ]
     },
     {
+      "key": "28969ab832ec",
+      "title": "TikTok — LLM Post-training Engineer Intern - Research & Product",
+      "url": "https://lifeattiktok.com/search/7670285031018432773",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "LLM internship at TikTok",
+      "action_plan": [
+        "Research TikTok's LLM projects (1 week)",
+        "Update resume and online profiles (1 week)",
+        "Apply for the internship (1 day)"
+      ]
+    },
+    {
+      "key": "0e6a1b34c754",
+      "title": "ByteDance — AI/LLM Network Research Intern - High Speed Network",
+      "url": "https://jobs.bytedance.com/en/position/7670281454740818181/detail",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI/LLM internship at ByteDance",
+      "action_plan": [
+        "Research ByteDance's AI/LLM projects (1 week)",
+        "Update resume and online profiles (1 week)",
+        "Apply for the internship (1 day)"
+      ]
+    },
+    {
+      "key": "ed635fd31277",
+      "title": "ByteDance — Research Scientist Intern",
+      "url": "https://jobs.bytedance.com/en/position/7670375041041320245/detail",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Research Scientist internship at ByteDance",
+      "action_plan": [
+        "Research ByteDance's research projects (1 week)",
+        "Update resume and online profiles (1 week)",
+        "Apply for the internship (1 day)"
+      ]
+    },
+    {
+      "key": "5240d5b54e90",
+      "title": "TikTok — Machine Learning Engineer Intern - Search",
+      "url": "https://lifeattiktok.com/search/7668396597746862341",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Machine Learning Engineer internship at TikTok",
+      "action_plan": [
+        "Research TikTok's ML projects (1 week)",
+        "Update resume and online profiles (1 week)",
+        "Apply for the internship (1 day)"
+      ]
+    },
+    {
       "key": "9a99ac190176",
       "title": "Running a 28.9M parameter LLM on an $8 microcontroller",
       "url": "https://github.com/slvDev/esp32-ai",
@@ -953,89 +1038,20 @@
       ]
     },
     {
-      "key": "d831e867d44f",
-      "title": "Hackosquad CTF 2026 : Multiverse",
-      "url": "https://unstop.com/hackathons/hackosquad-ctf-2026-multiverse-hackosquad-ctf-2026-multiverse-hackosquadctf-1724658",
-      "source": "unstop",
-      "score": 6,
+      "key": "6ccad4519ea9",
+      "title": "ByteDance — Research Scientist Intern - Multimedia Streaming",
+      "url": "https://jobs.bytedance.com/en/position/7670354800621603125/detail",
+      "source": "internships",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
       ],
-      "ai_summary": "Building experience",
+      "ai_summary": "Research Scientist internship at ByteDance",
       "action_plan": [
-        "Research CTF rules (1 hour)",
-        "Form a team (2 hours)",
-        "Brainstorm strategies (2 hours)"
-      ]
-    },
-    {
-      "key": "1270b4ef98d2",
-      "title": "Future Ready Ops Innovation Challenge",
-      "url": "https://unstop.com/hackathons/future-ready-ops-innovation-challenge-paper-buddy-1724585",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Building experience",
-      "action_plan": [
-        "Research challenge rules (1 hour)",
-        "Form a team (2 hours)",
-        "Brainstorm project ideas (2 hours)"
-      ]
-    },
-    {
-      "key": "9e2114156176",
-      "title": "Omnikon National Hackathon 2026",
-      "url": "https://unstop.com/hackathons/omnikon-national-hackathon-2026-omnikon-1715716",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Building experience",
-      "action_plan": [
-        "Research hackathon rules (1 hour)",
-        "Form a team (2 hours)",
-        "Brainstorm project ideas (2 hours)"
-      ]
-    },
-    {
-      "key": "7784a91ac664",
-      "title": "LevelUp Game Hackathon",
-      "url": "https://unstop.com/hackathons/levelup-game-hackathon-gamnexis-1722925",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Building experience",
-      "action_plan": [
-        "Research hackathon rules (1 hour)",
-        "Form a team (2 hours)",
-        "Brainstorm project ideas (2 hours)"
-      ]
-    },
-    {
-      "key": "1a5fa7f3fc13",
-      "title": "CodeRush 2.0",
-      "url": "https://unstop.com/hackathons/coderush-20-yeshwantrao-chavan-college-of-engineering-ycce-nagpur-1723466",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "local hackathon builds portfolio, aligns with interests",
-      "action_plan": [
-        "Find hackathon details (30m)",
-        "Form team (2d)",
-        "Prototype core feature (1w)",
-        "Finalize demo (3d)"
+        "Research ByteDance's research projects (1 week)",
+        "Update resume and online profiles (1 week)",
+        "Apply for the internship (1 day)"
       ]
     },
     {
@@ -1624,109 +1640,89 @@
       ]
     },
     {
-      "key": "aa715b6dc316",
-      "title": "HackQuest 2026",
-      "url": "https://unstop.com/hackathons/hackquest-2026-oriental-college-of-technology-oct-bhopal-1724486",
-      "source": "unstop",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Boosts AI building portfolio, but low prestige and no deadline.",
-      "action_plan": [
-        "Read hackathon rules (1h)",
-        "Register on platform (15m)",
-        "Sketch a quick AI prototype (2d)"
-      ]
-    },
-    {
-      "key": "6cd55a5d9fd9",
-      "title": "HackNexus'26",
-      "url": "https://unstop.com/hackathons/hacknexus26-droidecks-1695049",
-      "source": "unstop",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Similar to HackQuest; good for hands‑on AI work, limited resume impact.",
-      "action_plan": [
-        "Check hackathon theme (30m)",
-        "Sign up (5m)",
-        "Build a minimal viable AI demo (2d)"
-      ]
-    },
-    {
-      "key": "0fa6a2556972",
-      "title": "He is teaching AWS System Design only in whole public.",
-      "url": "https://www.reddit.com/r/developersIndia/comments/1v6fv6s/he_is_teaching_aws_system_design_only_in_whole/",
-      "source": "reddit",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/developersIndia"
-      ],
-      "ai_summary": "AWS System Design",
-      "action_plan": [
-        "Review AWS System Design",
-        "Practice with online resources",
-        "Apply knowledge to projects"
-      ]
-    },
-    {
-      "key": "a16beaa388dc",
-      "title": "Explainable Reinforcement Learning for assisting Air Traffic Controllers",
-      "url": "https://arxiv.org/abs/2607.22525v1",
+      "key": "322229e19697",
+      "title": "Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains",
+      "url": "https://arxiv.org/abs/2608.05138v1",
       "source": "arxiv",
-      "score": 5,
+      "score": 6,
       "deadline": null,
       "tags": [
         "research"
       ],
-      "ai_summary": "Relevant RL safety research; could boost AI credibility if published.",
+      "ai_summary": "Research on Nemotron aligns with LLM/GenAI interests; strong portfolio value.",
       "action_plan": [
-        "1d: Read the abstract and locate the full paper.",
-        "2d: Identify open research questions you could address.",
-        "1w: Prototype a small experiment in a simulated ATC env.",
-        "2w: Draft a short report and seek feedback from a professor."
+        "Read the arXiv paper (2 h)",
+        "Reproduce Greek corpus mining (1 day)",
+        "Write a short report or blog (1 day)"
       ]
     },
     {
-      "key": "574cccabd2ec",
-      "title": "Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science",
-      "url": "https://arxiv.org/abs/2607.22513v1",
-      "source": "arxiv",
-      "score": 5,
-      "deadline": null,
+      "key": "f48ab80ab634",
+      "title": "Buildora Hackathon",
+      "url": "https://buildorahackathon.devfolio.co",
+      "source": "devfolio",
+      "score": 6,
+      "deadline": "2026-08-08",
       "tags": [
-        "research"
+        "hackathon"
       ],
-      "ai_summary": "LLM deployment research",
+      "ai_summary": "AI theme in hackathon",
       "action_plan": [
-        "Read the research paper (2 hours)",
-        "Analyze the methodology (2 hours)",
-        "Discuss the results (2 hours)"
+        "Research hackathon rules (2 hours)",
+        "Form a team (1 week)",
+        "Prepare for the hackathon (2 weeks)"
       ]
     },
     {
-      "key": "46b2625a586e",
-      "title": "Open-weight 4B models approach o3-level medical question answering in Swedish [P]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1v71wds/openweight_4b_models_approach_o3level_medical/",
-      "source": "reddit",
-      "score": 5,
+      "key": "11286af180cc",
+      "title": "VYNORAE",
+      "url": "https://vynorae.devfolio.co",
+      "source": "devfolio",
+      "score": 6,
+      "deadline": "2026-08-21",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Local hackathon adds portfolio, aligns with AI interests, modest prestige",
+      "action_plan": [
+        "Week 1: Review theme, sketch project idea",
+        "Week 2: Recruit 2‑3 teammates with complementary skills",
+        "Week 3: Build MVP prototype (focus on AI agent demo)",
+        "Week 4: Polish, test, and submit before Aug 21"
+      ]
+    },
+    {
+      "key": "4035d33f5b88",
+      "title": "AI with Initiative: AI Makes the First Move - Hackathon",
+      "url": "https://unstop.com/hackathons/ai-with-initiative-ai-makes-the-first-move-hackathon-symbiosis-institute-of-digital-and-telecom-management-si-1731061",
+      "source": "unstop",
+      "score": 6,
       "deadline": null,
       "tags": [
-        "news",
-        "r/MachineLearning"
+        "hackathon"
       ],
-      "ai_summary": "Generative AI model with medical QA shows cutting‑edge application.",
+      "ai_summary": "AI‑focused hackathon, good portfolio piece, moderate prestige",
       "action_plan": [
-        "1d: Locate the model repository and read the README.",
-        "2d: Run inference on a sample Swedish medical query.",
-        "1w: Compare results with baseline models.",
-        "2w: Write a short blog post summarizing insights."
+        "Read hackathon brief and rules (1 day)",
+        "Form team and sketch project plan (2 days)",
+        "Build prototype during event (48 h)"
+      ]
+    },
+    {
+      "key": "a9dffb76e2a3",
+      "title": "Software Development Engineer Internship",
+      "url": "https://unstop.com/internships/software-development-engineer-internship-confluent-solutions-1731560",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Software development internship",
+      "action_plan": [
+        "Update resume (1 day)",
+        "Apply for the internship (1 day)",
+        "Prepare for interviews (1 week)"
       ]
     }
   ]
