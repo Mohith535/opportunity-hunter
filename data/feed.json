@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06",
+  "updated_at": "2026-08-07",
   "items": [
     {
       "key": "d331667577d1",
@@ -613,37 +613,37 @@
       ]
     },
     {
-      "key": "9a99ac190176",
-      "title": "Running a 28.9M parameter LLM on an $8 microcontroller",
-      "url": "https://github.com/slvDev/esp32-ai",
-      "source": "hackernews",
-      "score": 7,
-      "deadline": null,
+      "key": "5e2e5f39a26f",
+      "title": "Build with DataHub: The Agent Hackathon",
+      "url": "https://datahub.devpost.com/",
+      "source": "devpost",
+      "score": 8,
+      "deadline": "2026-08-10",
       "tags": [
-        "news"
+        "hackathon"
       ],
-      "ai_summary": "LLM on microcontroller",
+      "ai_summary": "AI/ML hackathon",
       "action_plan": [
-        "Read article (1hr)",
-        "Experiment with code (4hr)",
-        "Share results (2hr)"
+        "Research hackathon rules (2h)",
+        "Form a team (1d)",
+        "Develop a project (1w)"
       ]
     },
     {
-      "key": "1362d692a39c",
-      "title": "AI & Full Stack Engineering Internship",
-      "url": "https://unstop.com/internships/ai-full-stack-engineering-internship-intellinesia-labs-1725043",
-      "source": "unstop",
-      "score": 7,
+      "key": "2dab32bcc965",
+      "title": "ByteDance — Machine Learning Research Scientist Intern - Seed AI for Science - Atomistic AI",
+      "url": "https://jobs.bytedance.com/en/position/7670855041951795509/detail",
+      "source": "internships",
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "AI & Full Stack Engineering",
+      "ai_summary": "ML research internship",
       "action_plan": [
-        "Review internship description",
-        "Update resume and portfolio",
-        "Apply for internship"
+        "Research ByteDance (1h)",
+        "Update resume (2h)",
+        "Apply (1h)"
       ]
     },
     {
@@ -1055,38 +1055,38 @@
       ]
     },
     {
-      "key": "f50c45ed2bf9",
-      "title": "LLM Usage in Debian: Three Proposals",
-      "url": "https://www.debian.org/vote/2026/vote_002",
-      "source": "hackernews",
-      "score": 6,
-      "deadline": null,
+      "key": "500eec53b7bf",
+      "title": "Weekly Contest 515 (leetcode.com)",
+      "url": "https://leetcode.com/contest/weekly-contest-515",
+      "source": "clist",
+      "score": 7,
+      "deadline": "2026-08-16",
       "tags": [
-        "news"
+        "contest",
+        "competitive programming"
       ],
-      "ai_summary": "LLM usage proposals",
+      "ai_summary": "Competitive programming contest for skill growth",
       "action_plan": [
-        "Read proposals (2hr)",
-        "Analyze feasibility (3hr)",
-        "Discuss online (2hr)"
+        "Register for the contest (1 hour)",
+        "Practice problems (2 weeks)",
+        "Participate in the contest (1 day)"
       ]
     },
     {
-      "key": "7751ba60fbf9",
-      "title": "Understanding GPU Inference Workloads [D]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1v6sjiu/understanding_gpu_inference_workloads_d/",
-      "source": "reddit",
-      "score": 6,
+      "key": "c55dc7223162",
+      "title": "Microsoft — Software Engineer Intern - Gears of War",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556956276",
+      "source": "internships",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "news",
-        "r/MachineLearning"
+        "internship"
       ],
-      "ai_summary": "GPU inference workloads",
+      "ai_summary": "Microsoft internship",
       "action_plan": [
-        "Read article (2hr)",
-        "Analyze workloads (3hr)",
-        "Discuss online (2hr)"
+        "Research Microsoft (1h)",
+        "Update resume (2h)",
+        "Apply (1h)"
       ]
     },
     {

@@ -5859,8 +5859,8 @@
     "5e2e5f39a26f": {
       "title": "Build with DataHub: The Agent Hackathon",
       "first_seen": "2026-07-14",
-      "last_seen": "2026-07-14",
-      "times_seen": 1
+      "last_seen": "2026-08-07",
+      "times_seen": 2
     },
     "5ac7c511df2f": {
       "title": "Chain of Thought is a scaling trap. the next wave is latent reasoning (Coconut / HRM / RecrusiveMAS)... but then we hit the black box wall. Where does BDH fit? [D]",
@@ -11716,6 +11716,354 @@
       "title": "John Deere — Data Science and Analytics Part-Time Student - Data and Analytics",
       "first_seen": "2026-08-06",
       "last_seen": "2026-08-06",
+      "times_seen": 1
+    },
+    "41c4b9218625": {
+      "title": "The Bitter Lesson of Tool Calling",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "776dd46ea3d1": {
+      "title": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "7fbd66f56f2c": {
+      "title": "Investigating Artificial Intelligence Digital Sovereignty in Mobile Shopping Apps: A Case Study of Nigeria",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "6eee968bcb04": {
+      "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "958a104b733f": {
+      "title": "Challenges in Evaluating Explanation Methods for Static and Evolving Data",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "ade3b6380802": {
+      "title": "kirodotdev/KiroCrew — ★1,967",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "2d434d5ddab0": {
+      "title": "Inside vLLM: Anatomy of a High-Throughput LLM Inference System (2025)",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "46c07fb93cd8": {
+      "title": "Round-Trip Consistency: Bidirectional Diffusion Models Can Predict Their Own Rollout Errors [R]",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "d482e141c341": {
+      "title": "NeurIPS Meta Reviewer comment gone. What gives? [R]",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "9469ff2b48fe": {
+      "title": "CIKM '26 Notification [D]",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "4f90a7fc02ba": {
+      "title": "What are the biggest challenges in collecting high-quality speech and egocentric video datasets? [D]",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "75ebbf762ff6": {
+      "title": "The current state of language models and human preference based rankings [R]",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "f443066cbb90": {
+      "title": "Can recurring LLM traces be synthesized into deterministic pipelines of typed ML and NLP operators? [D]",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "626ec8d4fadb": {
+      "title": "[R], Need some best model suggestions for Face Detection,Face Recognition,Body Detection and Body identification. [R]",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "0d1a8f30df54": {
+      "title": "ByteDance is leaning heavily into AI education with Gauth — helpful tutoring or just another shortcut machine? [D]",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "500eec53b7bf": {
+      "title": "Weekly Contest 515 (leetcode.com)",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "b744d1948f34": {
+      "title": "BharatBuild: A Low-code Hackathon",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "290fcf7764c6": {
+      "title": "Pasumai Hackathon",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "6c41349d03c0": {
+      "title": "Campus Championship Challenge",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "60e875ec0fd7": {
+      "title": "NextGen Hackathon",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "850258558fdb": {
+      "title": "OOSC 4.O Hackathon",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "e87baecf8c0f": {
+      "title": "Hackblox AI & Open Source Hackathon",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "9e882d87ccb4": {
+      "title": "Bitmela Launchpad: Ideathon 01",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "099280bedc9d": {
+      "title": "Growth & Digital Marketing Internship",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "869642dddbae": {
+      "title": "Digital Marketing And Outreach Internship",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "883d0d91a105": {
+      "title": "SEO Operations Internship",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "de3bc8020fe5": {
+      "title": "Finance Internship",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "674a7e0c91e9": {
+      "title": "Web Designer Internship",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "4a1797bd59c4": {
+      "title": "Flutter Developer Internship",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "b06b42764d58": {
+      "title": "Campus Ambassador Internship",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "ad27351f8dc9": {
+      "title": "Data Science Internship",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "2ee06fb0c8c8": {
+      "title": "Thalir'26 - Startup Pitch Ideathon",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "ddda9a32218e": {
+      "title": "FINSMART – The Entrepreneurship Ideathon",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "acb9e955acf8": {
+      "title": "TikTok — Software Engineer Intern - Global E-Commerce Search Infrastructure",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "220f3ad9cb1d": {
+      "title": "TikTok — Fullstack Software Engineer Intern - Global E-Commerce",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "2f8bc4a4e808": {
+      "title": "TikTok — Fullstack Software Engineer Intern - Global E-Commerce - 2027 Summer",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "2dab32bcc965": {
+      "title": "ByteDance — Machine Learning Research Scientist Intern - Seed AI for Science - Atomistic AI",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "0f0824d9dc6e": {
+      "title": "ByteDance — Network Software Engineer Intern - Network Switch",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "bf8eb5d1e76c": {
+      "title": "ByteDance — Network Software Engineer Intern - Network Observation",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "d19d0660da75": {
+      "title": "Alayacare — Full-Stack Developer Intern - Python",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "d6fd15420956": {
+      "title": "John Deere — Display Software Development Student - Product Engineering",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "4025a6bc4138": {
+      "title": "Sargent & Lundy — Software Engineer Intern",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "d2d6a1e08355": {
+      "title": "Nokia — AI R&D Engineer Co-op",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "ef7ee2e57f6d": {
+      "title": "Nokia — AI R&D Engineer Co-op",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "b0da833fdc0b": {
+      "title": "Nokia — AI R&D Engineer Co-op",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "a7bacacecc99": {
+      "title": "Nokia — AI R&D Engineer Co-op",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "34fa2145c9e3": {
+      "title": "Otter Products — Artificial Intelligence Intern",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "3a4754d04c49": {
+      "title": "Nokia — AI R&D Engineer Co-op",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "9ec7382bcb46": {
+      "title": "PlusAI — Deep Learning Research Intern - Multimodal BEV Perception",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "1bb9e5bbce91": {
+      "title": "Atoms — Software Engineer Intern - Winter 2027",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "c55dc7223162": {
+      "title": "Microsoft — Software Engineer Intern - Gears of War",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "5017a2d92b12": {
+      "title": "Canva — PhD Research Scientist Intern - Reinforcement Learning - Images",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "0336cef468e1": {
+      "title": "impact.com — Associate Software Engineer Intern",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "797d75e48d16": {
+      "title": "Terminal — Software Engineer Intern - Data Platform",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "30a4a279ca45": {
+      "title": "Terminal — Software Engineer Intern - Backend",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "cf3d5e95466e": {
+      "title": "Canva — PhD Research Scientist Intern",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "dd18d2c5730e": {
+      "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Recommendation/Search Alliance",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
+      "times_seen": 1
+    },
+    "7db0f7f8fbd6": {
+      "title": "ByteDance — AI Network Automation Engineer Intern - Global Physical Network Infrastructure",
+      "first_seen": "2026-08-07",
+      "last_seen": "2026-08-07",
       "times_seen": 1
     }
   }
