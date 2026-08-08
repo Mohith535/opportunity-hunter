@@ -50728,6 +50728,1320 @@
           "key": "7db0f7f8fbd6"
         }
       ]
+    },
+    {
+      "date": "2026-08-08",
+      "items": [
+        {
+          "title": "Indhu27-pixel/Labour-Law-Violation-System — ★51",
+          "url": "https://github.com/Indhu27-pixel/Labour-Law-Violation-System",
+          "source": "github",
+          "description": "AI-powered Labour Law Violation Detection System using Weak Supervision, BiLSTM, Graph Neural Networks (GNN), and Explainable AI to identify labour law violations. (topics: artificial intelligence, deep learning, explainable ai, flask, gnn, graph neural networks, labour law, machine learning, python, pytorch)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "Indhu27-pixel/Labour-Law-Violation-System",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "696259997722"
+        },
+        {
+          "title": "Build with DataHub: The Agent Hackathon",
+          "url": "https://datahub.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jul 06 - Aug 10, 2026 | prize $ 20,500 | themes: Machine Learning/AI, DevOps, Open Ended",
+          "deadline": "2026-08-10",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "28039",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "AI/ML hackathon",
+          "action_plan": [
+            "Research DataHub (2h)",
+            "Form a team (1d)",
+            "Submit project (3d)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 8,
+            "skill": 8,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "5e2e5f39a26f"
+        },
+        {
+          "title": "Imagenet-1k Classifier trained entirely on an Android [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vhwwfr/imagenet1k_classifier_trained_entirely_on_an/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vhwwfr",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "27271c6998e5"
+        },
+        {
+          "title": "2026 NeurIPS: Where are you going? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vi5xz7/2026_neurips_where_are_you_going_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vi5xz7",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3cb5cc24ef1a"
+        },
+        {
+          "title": "Improved compression of Bad Apple into a Neural Network [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vhvfws/improved_compression_of_bad_apple_into_a_neural/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vhvfws",
+          "score": 4,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Not an application opportunity · Personal research idea, not a selectable opportunity",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Not an application opportunity"
+          },
+          "key": "f921726fad62"
+        },
+        {
+          "title": "CIKM 2026 decisions [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vhtto1/cikm_2026_decisions_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vhtto1",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1084c7f21bcd"
+        },
+        {
+          "title": "What is currently considered the theoretically optimal quantization bit-width for LLMs? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vi6im4/what_is_currently_considered_the_theoretically/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vi6im4",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0a25ff694628"
+        },
+        {
+          "title": "On the ACM Multimedia 2026 Conference Registration and APC [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vhtrz2/on_the_acm_multimedia_2026_conference/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vhtrz2",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d28c80ef6cfe"
+        },
+        {
+          "title": "Good OCR strategy for detecting doctor handwritting [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vi7br1/good_ocr_strategy_for_detecting_doctor/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vi7br1",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2f45f9df9559"
+        },
+        {
+          "title": "​Built a tool to generate slides from research papers using local LLMs (because I hate formatting decks and privacy matters) [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vi0c4k/built_a_tool_to_generate_slides_from_research/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vi0c4k",
+          "score": 5,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Not an application opportunity · Personal project, not a chance to apply",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Not an application opportunity"
+          },
+          "key": "efdea257db13"
+        },
+        {
+          "title": "CoArena Hackathon",
+          "url": "https://unstop.com/hackathons/coarena-hackathon-coarena-1733431",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1733431",
+          "score": 7,
+          "ai_score": 6,
+          "ai_summary": "Opportunity to build and showcase projects",
+          "action_plan": [
+            "Form a team or find a partner (1 week)",
+            "Choose a project idea (1 week)",
+            "Develop and submit the project (4 weeks)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "3aa7a3d90835"
+        },
+        {
+          "title": "Evil Corp CTF V2",
+          "url": "https://unstop.com/hackathons/evil-corp-ctf-v2-nexploit-1733381",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1733381",
+          "score": 4,
+          "ai_score": 3,
+          "ai_summary": "CTF focuses on security, low relevance to his AI‑builder path",
+          "action_plan": [
+            "Day 1: register (0.5h)",
+            "Day 2: brush up on CTF skills (4h)",
+            "Day 3: compete (6h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "94cb2b7fcd60"
+        },
+        {
+          "title": "Precision Care Challenge 2026",
+          "url": "https://unstop.com/hackathons/crp-precision-care-challenge-2026-ge-healthcare-1731208",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1731208",
+          "score": 4,
+          "ai_score": 5,
+          "ai_summary": "Healthcare AI challenge offers decent portfolio value",
+          "action_plan": [
+            "Week 1: read problem statement (2h)",
+            "Week 2: design solution (5h)",
+            "Week 3: implement prototype (8h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "6fdcbb58704e"
+        },
+        {
+          "title": "Aethon 2026 | 24-Hour National Hackathon",
+          "url": "https://unstop.com/hackathons/aethon-2026-24-hour-national-hackathon-enac-3-day-innovation-entrepreneurship-fest-2026-central-university-of-1731459",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1731459",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "National hackathon gives building practice but low prestige",
+          "action_plan": [
+            "Day 1: read challenge (2h)",
+            "Day 1‑2: form team (4h)",
+            "Day 2‑3: prototype (8h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 3,
+            "deadline": 3,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "f86d12b9825a"
+        },
+        {
+          "title": "TEJAS India Hackathon 2026",
+          "url": "https://unstop.com/hackathons/tejas-india-hackathon-2026-government-engineering-collegegec-jamui-1733064",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1733064",
+          "score": 7,
+          "ai_score": 6,
+          "ai_summary": "Opportunity to build and showcase projects",
+          "action_plan": [
+            "Form a team or find a partner (1 week)",
+            "Choose a project idea (1 week)",
+            "Develop and submit the project (4 weeks)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "33a17f78df21"
+        },
+        {
+          "title": "Edge AI Hackathon 2026",
+          "url": "https://unstop.com/hackathons/edge-ai-hackathon-2026-parala-maharaja-engineering-college-berhampur-1720578",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1720578",
+          "score": 5,
+          "ai_score": 6,
+          "ai_summary": "Edge AI focus aligns with his AI‑engineering interests",
+          "action_plan": [
+            "Day 1: review edge‑AI rules (1h)",
+            "Day 1‑2: assemble toolkit (3h)",
+            "Day 2‑3: build demo (8h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 3,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "b52efc3daf58"
+        },
+        {
+          "title": "Content Writer Internship",
+          "url": "https://unstop.com/internships/content-writer-internship-marvedge-1733434",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1733434",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "53c6959bf0bb"
+        },
+        {
+          "title": "HR Internship",
+          "url": "https://unstop.com/internships/hr-internship-atavishaala-1733436",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1733436",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "7ce57ed633ca"
+        },
+        {
+          "title": "Video Editor Internship",
+          "url": "https://unstop.com/internships/video-editor-internship-toolfe-1733430",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1733430",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "c8c915312ce9"
+        },
+        {
+          "title": "AI Engineer Internship",
+          "url": "https://unstop.com/internships/ai-engineer-internship-the-ai-signal-1733421",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1733421",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "AI Engineer Intern",
+          "action_plan": [
+            "Update resume (1d)",
+            "Apply for internship (1d)",
+            "Prepare for interview (3d)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 10,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "9bae7dc0be7d"
+        },
+        {
+          "title": "Graphic Design Internship",
+          "url": "https://unstop.com/internships/graphic-design-internship-takshila-inc-1733411",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1733411",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 1,
+            "time": 1,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "abd5a4cd624d"
+        },
+        {
+          "title": "Data Analyst Internship",
+          "url": "https://unstop.com/internships/data-analyst-internship-gayatri-education-1733409",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1733409",
+          "score": 8,
+          "ai_score": 5,
+          "ai_summary": "Data Analyst Intern",
+          "action_plan": [
+            "Update resume (1d)",
+            "Apply for internship (1d)",
+            "Prepare for interview (3d)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "705204a29fd2"
+        },
+        {
+          "title": "Full Stack Developer Internship",
+          "url": "https://unstop.com/internships/full-stack-developer-internship-the-ai-signal-1733416",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1733416",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Full Stack Dev Intern",
+          "action_plan": [
+            "Update resume (1d)",
+            "Apply for internship (1d)",
+            "Prepare for interview (3d)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 5,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "f6441adfb46f"
+        },
+        {
+          "title": "Web Developer Internship",
+          "url": "https://unstop.com/internships/web-developer-internship-atavishaala-1733394",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1733394",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Web development skills",
+          "action_plan": [
+            "Review web development basics (1 week)",
+            "Apply for internship (1 day)",
+            "Prepare for potential interview (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "16754d5b503d"
+        },
+        {
+          "title": "ProNexus — Software Engineer Intern",
+          "url": "https://apply.workable.com/pronexus-1/j/AF8C34AC6D/apply",
+          "source": "internships",
+          "description": "internship | ProNexus | Remote in USA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7ededa5d-af4b-4f9d-80ae-9e03985190e9",
+          "score": 5,
+          "ai_score": 6,
+          "ai_summary": "Remote US internship adds international exposure and solid experience",
+          "action_plan": [
+            "Week 1: update resume (2h)",
+            "Week 1: submit application (1h)",
+            "Week 2‑4: interview prep (5h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 6,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 7,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "c7cd3e35a55b"
+        },
+        {
+          "title": "Turabify — AI Automation Intern",
+          "url": "https://apply.workable.com/turabify-co/j/0B50CC0D49/apply",
+          "source": "internships",
+          "description": "internship | Turabify | Franklin, OH | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "bf2f6a21-e220-45d3-a0b5-847a2cb769f8",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "AI automation internship aligns with building focus and adds US experience",
+          "action_plan": [
+            "Week 1: polish CV (2h)",
+            "Week 1: apply (1h)",
+            "Week 2: interview prep (4h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 7,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "f24b3b89c3bd"
+        },
+        {
+          "title": "TMEIC Corporation Americas — Applications Intern - AI and Machine Learning",
+          "url": "https://apply.workable.com/tmeic-corporation-americas/j/FD4C9770FF/apply",
+          "source": "internships",
+          "description": "internship | TMEIC Corporation Americas | Roanoke, VA | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "aedb4915-aa4d-46c4-9e18-d1b6144d3a70",
+          "score": 6,
+          "ai_score": 8,
+          "ai_summary": "AI and ML internship at a reputable company",
+          "action_plan": [
+            "Review AI and ML concepts (2 weeks)",
+            "Update resume and apply (1 week)",
+            "Prepare for potential interview (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 4,
+            "skill": 9,
+            "time": 8,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "f9acb3eff884"
+        },
+        {
+          "title": "ByteDance — Software Development Engineer Intern - Network Automation - 2027 Summer",
+          "url": "https://jobs.bytedance.com/en/position/7671147251943213317/detail",
+          "source": "internships",
+          "description": "internship | ByteDance | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "30e36d66-cf25-4851-9655-d22bb0c6d319",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "ByteDance is high‑profile but a generic software role, low AI relevance.",
+          "action_plan": [
+            "1d: Update resume with current projects.",
+            "2d: Draft a short cover letter highlighting AI interests.",
+            "1w: Submit application via the internship portal."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "72c3317c0bfb"
+        },
+        {
+          "title": "Trillium — Software Engineer Intern - Summer 2027",
+          "url": "https://www.trlm.com/apply/5207089007?gh_jid=5207089007",
+          "source": "internships",
+          "description": "internship | Trillium | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "01ba76c4-8637-49c3-a04f-324409838c74",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "Trillium is a lesser‑known firm; role offers minimal AI growth.",
+          "action_plan": [
+            "1d: Research Trillium’s tech stack.",
+            "2d: Tailor resume to match required skills.",
+            "1w: Apply through the company careers page."
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 3,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "04eff497b021"
+        },
+        {
+          "title": "Axon — Software Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/axontalentcommunity/jobs/7837133003",
+          "source": "internships",
+          "description": "internship | Axon | Boston, MA, Seattle, WA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6eff9788-f38e-4357-8646-cd6f5984f3cb",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Axon focuses on safety tech; limited relevance to generative AI goals.",
+          "action_plan": [
+            "1d: Identify any AI‑related projects at Axon.",
+            "2d: Highlight relevant Python experience on resume.",
+            "1w: Submit application and follow‑up email."
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 3,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "983382f0b9f0"
+        },
+        {
+          "title": "Epic Games — Machine Learning Intern - Special Projects - Epic Research Group",
+          "url": "https://epicgames.com/careers/jobs/5708589004?gh_jid=5708589004",
+          "source": "internships",
+          "description": "internship | Epic Games | London, UK | Summer 2026, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8d32ce9d-b2f0-4126-8727-69bbd17e3c2e",
+          "score": 6,
+          "ai_score": 9,
+          "ai_summary": "Machine learning internship at Epic Games",
+          "action_plan": [
+            "Review machine learning concepts (2 weeks)",
+            "Update resume and apply (1 week)",
+            "Prepare for potential interview (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 6,
+            "skill": 9,
+            "time": 8,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "3582cc5fc119"
+        },
+        {
+          "title": "Epic Games — Machine Learning Intern",
+          "url": "https://epicgames.com/careers/jobs/6138134004?gh_jid=6138134004",
+          "source": "internships",
+          "description": "internship | Epic Games | Canada, United Kingdom, United States | Summer 2026, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9d04080d-0ad1-42fe-b047-599eef0c1fd7",
+          "score": 6,
+          "ai_score": 9,
+          "ai_summary": "Machine learning internship at Epic Games",
+          "action_plan": [
+            "Review machine learning concepts (2 weeks)",
+            "Update resume and apply (1 week)",
+            "Prepare for potential interview (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 6,
+            "skill": 9,
+            "time": 8,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "42624b3833b4"
+        },
+        {
+          "title": "Epic Games — Machine Learning Intern - Special Projects - Epic Research Group",
+          "url": "https://epicgames.com/careers/jobs/6138140004?gh_jid=6138140004",
+          "source": "internships",
+          "description": "internship | Epic Games | Montreal, QC, Canada | Summer 2026, Winter 2027, Spring 2027, Summer 2027, Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "31ab487e-bda7-4337-94b7-bda1786f13f2",
+          "score": 6,
+          "ai_score": 9,
+          "ai_summary": "Machine learning internship at Epic Games",
+          "action_plan": [
+            "Review machine learning concepts (2 weeks)",
+            "Update resume and apply (1 week)",
+            "Prepare for potential interview (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 6,
+            "skill": 9,
+            "time": 8,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "d8cfd45e5881"
+        },
+        {
+          "title": "The Nuclear Company — Data Science Intern",
+          "url": "https://job-boards.greenhouse.io/thenuclearcompany/jobs/5383244008",
+          "source": "internships",
+          "description": "internship | The Nuclear Company | Washington, DC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "becc9f50-d65f-4749-b064-6d3e221e83da",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Data Science intern offers some AI exposure but low prestige and urgency.",
+          "action_plan": [
+            "1d: Gather any data‑science work for portfolio.",
+            "2d: Align resume to data‑science keywords.",
+            "1w: Apply and request informational interview."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 3,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "be4578480385"
+        },
+        {
+          "title": "The Nuclear Company — Software Engineering Intern",
+          "url": "https://job-boards.greenhouse.io/thenuclearcompany/jobs/5383171008",
+          "source": "internships",
+          "description": "internship | The Nuclear Company | Washington, DC | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "50faea58-028e-467f-b373-f0c40e657222",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Software Engineering role adds general experience; not aligned with AI focus.",
+          "action_plan": [
+            "1d: List relevant software projects.",
+            "2d: Customize resume for backend development.",
+            "1w: Submit application and track status."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 3,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "81ba494f997d"
+        },
+        {
+          "title": "The Nuclear Company — AI/ML Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/thenuclearcompany/jobs/5383231008",
+          "source": "internships",
+          "description": "internship | The Nuclear Company | Washington, DC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cca92450-5ead-4d71-8d7f-084c27b9d1f9",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "AI/ML Engineer intern matches his AI interests and adds portfolio value.",
+          "action_plan": [
+            "1d: Compile AI‑related projects (TaskFlow, Nova).",
+            "2d: Write a concise cover letter linking to his AI work.",
+            "1w: Apply and prepare for technical interview."
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 5,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "644788e09c02"
+        },
+        {
+          "title": "The Nuclear Company — Software Engineering Intern - Product - Platform",
+          "url": "https://job-boards.greenhouse.io/thenuclearcompany/jobs/5383236008",
+          "source": "internships",
+          "description": "internship | The Nuclear Company | Washington, DC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b57a206e-05f4-4b02-9ccd-b54ba30848e2",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Product‑platform software role offers solid experience but limited AI impact.",
+          "action_plan": [
+            "1d: Identify product‑related projects to showcase.",
+            "2d: Tailor resume for product engineering.",
+            "1w: Submit application and set reminder for follow‑up."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 3,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "cff739808095"
+        },
+        {
+          "title": "The Nuclear Company — Data Science Intern",
+          "url": "https://job-boards.greenhouse.io/thenuclearcompany/jobs/5383218008",
+          "source": "internships",
+          "description": "internship | The Nuclear Company | Washington, DC | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e53bf9a1-b4a2-4708-ab00-bcc4ac9a8901",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Spring Data Science internship provides some AI work but low prestige.",
+          "action_plan": [
+            "1d: Review past data‑science coursework.",
+            "2d: Update resume with relevant analytics tools.",
+            "1w: Apply and arrange a brief call with recruiter."
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 3,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "b1b9191479f3"
+        },
+        {
+          "title": "The Nuclear Company — AI/ML Engineer Intern - Platform Integration & AI/Data",
+          "url": "https://job-boards.greenhouse.io/thenuclearcompany/jobs/5383212008",
+          "source": "internships",
+          "description": "internship | The Nuclear Company | Washington, DC | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "46feb1be-8c27-4695-b879-9eaddca4b9ea",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "AI/ML intern adds relevant experience but low brand value.",
+          "action_plan": [
+            "Update resume with AI projects (1h)",
+            "Submit application via portal (2h)",
+            "Prep ML interview basics (1w)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "e2043d763581"
+        },
+        {
+          "title": "The Nuclear Company — AI/ML Engineer Intern - Platform Integration & AI/Data",
+          "url": "https://job-boards.greenhouse.io/thenuclearcompany/jobs/5383163008",
+          "source": "internships",
+          "description": "internship | The Nuclear Company | Washington, DC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "40ea3092-e7fc-4bc8-9e63-abe6f047adf4",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Same role as i0, fall term; good skill boost, modest prestige.",
+          "action_plan": [
+            "Tailor resume for fall cycle (1h)",
+            "Apply through company site (2h)",
+            "Practice coding interview (1w)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "5b493f28c91b"
+        },
+        {
+          "title": "The Nuclear Company — AI Software Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/thenuclearcompany/jobs/5383113008",
+          "source": "internships",
+          "description": "internship | The Nuclear Company | Washington, DC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "44950f93-2f35-41ce-9bbc-d82279022aa6",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "AI software focus aligns with goals; brand still low.",
+          "action_plan": [
+            "Highlight AI coursework on CV (1h)",
+            "Send application (2h)",
+            "Review system design topics (1w)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "42bd12d20a8f"
+        },
+        {
+          "title": "Atoms — Software Engineer Intern - Summer 2027",
+          "url": "https://job-boards.greenhouse.io/cssmerge/jobs/8687896002",
+          "source": "internships",
+          "description": "internship | Atoms | Seattle, WA, SF, LA, NYC, Mountain View, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2751af83-9f4f-48b8-8aba-6f534e9681e7",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Startup software role gives hands‑on building, limited prestige.",
+          "action_plan": [
+            "Research Atoms products (1h)",
+            "Customize resume for startup vibe (2h)",
+            "Mock interview practice (1w)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "d64813c01e77"
+        },
+        {
+          "title": "TikTok — AI Agent Product Manager Intern - Product Infrastructure-Customer Service Platform",
+          "url": "https://lifeattiktok.com/search/7670010726514493749",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "34280898-ae52-4450-896d-1e47305b467e",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "AI agent PM internship matches interest but shifts to product track.",
+          "action_plan": [
+            "Map AI agent projects to product experience (1h)",
+            "Apply to TikTok portal (2h)",
+            "Study product case studies (1w)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "9dcb17d33236"
+        },
+        {
+          "title": "Belvedere Trading — Software Engineer Intern - Summer 2027",
+          "url": "https://jobs.lever.co/belvederetrading/10746b3d-1760-4573-9b63-b93f5a5e4fc0/apply",
+          "source": "internships",
+          "description": "internship | Belvedere Trading | Chicago, IL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "fc66b12e-8d7f-4a0e-b4f6-8f54189941d9",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Finance software internship offers coding practice, low AI relevance.",
+          "action_plan": [
+            "Highlight algorithmic skills on resume (1h)",
+            "Submit to Belvedere portal (2h)",
+            "Brush up on C++ basics (1w)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "53a2005fc961"
+        },
+        {
+          "title": "Varda Space — Flight Software Intern - Spring 2027",
+          "url": "https://job-boards.greenhouse.io/vardaspace/jobs/7824815003",
+          "source": "internships",
+          "description": "internship | Varda Space | El Segundo, CA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "da5a57a2-4947-4eb5-9195-d53eb6871b1c",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Space flight software role is interesting but not AI‑centric.",
+          "action_plan": [
+            "Identify relevant flight software projects (1h)",
+            "Apply to Varda (2h)",
+            "Review embedded systems concepts (1w)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "47b4164fa06a"
+        },
+        {
+          "title": "Canva — PhD Research Scientist Intern - Edge AI",
+          "url": "https://jobs.smartrecruiters.com/Canva/6000000001295782",
+          "source": "internships",
+          "description": "internship | Canva | London, UK | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6a212112-d9f9-4c10-9b56-d8fd10c8fd96",
+          "score": 6,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — PhD required · Requires PhD, not eligible",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "PhD required"
+          },
+          "key": "0d5ca5efcb9e"
+        },
+        {
+          "title": "Kastle AI — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/kastle/6f32db51-de45-472f-a9c8-d9419d3634ee/application?embed=true",
+          "source": "internships",
+          "description": "internship | Kastle AI | SF | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "600d65ac-5918-4d2c-80ed-c6a5ba2a90d4",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "AI startup intern offers strong skill growth, modest brand impact.",
+          "action_plan": [
+            "Gather AI demo work for portfolio (1h)",
+            "Apply to Kastle AI (2h)",
+            "Prep for system design interview (1w)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "412645532df4"
+        },
+        {
+          "title": "Terranova — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/terranova/a8e5a8d2-4af3-4736-b66e-e0804447f7a0/application?embed=true",
+          "source": "internships",
+          "description": "internship | Terranova | Berkeley, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5725405b-6f22-485b-a418-ad3c6148afb4",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "098bc1f388b5"
+        },
+        {
+          "title": "Luminance — AI Engineering Intern",
+          "url": "https://apply.workable.com/luminance-1/j/E045EF5A7A/apply",
+          "source": "internships",
+          "description": "internship | Luminance | Cambridge, UK | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1befbdf8-c7d1-4c45-8adc-8870dcde0ff4",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "36972de00f69"
+        }
+      ]
     }
   ]
 }

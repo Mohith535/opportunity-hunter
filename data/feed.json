@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-07",
+  "updated_at": "2026-08-08",
   "items": [
     {
       "key": "d331667577d1",
@@ -109,37 +109,54 @@
       ]
     },
     {
-      "key": "0fdb802ccbef",
-      "title": "Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills",
-      "url": "https://arxiv.org/abs/2607.22529v1",
-      "source": "arxiv",
-      "score": 8,
+      "key": "3582cc5fc119",
+      "title": "Epic Games — Machine Learning Intern - Special Projects - Epic Research Group",
+      "url": "https://epicgames.com/careers/jobs/5708589004?gh_jid=5708589004",
+      "source": "internships",
+      "score": 9,
       "deadline": null,
       "tags": [
-        "research"
+        "internship"
       ],
-      "ai_summary": "LLM research",
+      "ai_summary": "Machine learning internship at Epic Games",
       "action_plan": [
-        "Read the research paper (2 hours)",
-        "Analyze the methodology (3 hours)",
-        "Implement the approach (6 hours)"
+        "Review machine learning concepts (2 weeks)",
+        "Update resume and apply (1 week)",
+        "Prepare for potential interview (2 weeks)"
       ]
     },
     {
-      "key": "667176159fba",
-      "title": "CausalForge: A Formally Grounded, Self-Improving Agentic Framework for Automated Research in Causal Inference",
-      "url": "https://arxiv.org/abs/2607.22511v1",
-      "source": "arxiv",
-      "score": 8,
+      "key": "42624b3833b4",
+      "title": "Epic Games — Machine Learning Intern",
+      "url": "https://epicgames.com/careers/jobs/6138134004?gh_jid=6138134004",
+      "source": "internships",
+      "score": 9,
       "deadline": null,
       "tags": [
-        "research"
+        "internship"
       ],
-      "ai_summary": "Causal inference research",
+      "ai_summary": "Machine learning internship at Epic Games",
       "action_plan": [
-        "Read the research paper (2 hours)",
-        "Analyze the framework (3 hours)",
-        "Implement the approach (6 hours)"
+        "Review machine learning concepts (2 weeks)",
+        "Update resume and apply (1 week)",
+        "Prepare for potential interview (2 weeks)"
+      ]
+    },
+    {
+      "key": "d8cfd45e5881",
+      "title": "Epic Games — Machine Learning Intern - Special Projects - Epic Research Group",
+      "url": "https://epicgames.com/careers/jobs/6138140004?gh_jid=6138140004",
+      "source": "internships",
+      "score": 9,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Machine learning internship at Epic Games",
+      "action_plan": [
+        "Review machine learning concepts (2 weeks)",
+        "Update resume and apply (1 week)",
+        "Prepare for potential interview (2 weeks)"
       ]
     },
     {
@@ -624,9 +641,9 @@
       ],
       "ai_summary": "AI/ML hackathon",
       "action_plan": [
-        "Research hackathon rules (2h)",
+        "Research DataHub (2h)",
         "Form a team (1d)",
-        "Develop a project (1w)"
+        "Submit project (3d)"
       ]
     },
     {
@@ -647,37 +664,37 @@
       ]
     },
     {
-      "key": "e6c63b24254a",
-      "title": "The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents",
-      "url": "https://arxiv.org/abs/2607.22520v1",
-      "source": "arxiv",
-      "score": 7,
+      "key": "9bae7dc0be7d",
+      "title": "AI Engineer Internship",
+      "url": "https://unstop.com/internships/ai-engineer-internship-the-ai-signal-1733421",
+      "source": "unstop",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "research"
+        "internship"
       ],
-      "ai_summary": "LLM agent research",
+      "ai_summary": "AI Engineer Intern",
       "action_plan": [
-        "Read the research paper (2 hours)",
-        "Analyze the results (3 hours)",
-        "Discuss the implications (2 hours)"
+        "Update resume (1d)",
+        "Apply for internship (1d)",
+        "Prepare for interview (3d)"
       ]
     },
     {
-      "key": "ba792c13877d",
-      "title": "Innohacks 4.0",
-      "url": "https://innohacks-4.devfolio.co",
-      "source": "devfolio",
-      "score": 7,
-      "deadline": "2026-10-03",
+      "key": "f9acb3eff884",
+      "title": "TMEIC Corporation Americas — Applications Intern - AI and Machine Learning",
+      "url": "https://apply.workable.com/tmeic-corporation-americas/j/FD4C9770FF/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
       ],
-      "ai_summary": "Innohacks offers hands‑on AI building and a concrete portfolio piece.",
+      "ai_summary": "AI and ML internship at a reputable company",
       "action_plan": [
-        "Register before deadline (10m)",
-        "Form a team (1d)",
-        "Build MVP during hackathon (2‑3d)"
+        "Review AI and ML concepts (2 weeks)",
+        "Update resume and apply (1 week)",
+        "Prepare for potential interview (2 weeks)"
       ]
     },
     {
@@ -1087,40 +1104,6 @@
         "Research Microsoft (1h)",
         "Update resume (2h)",
         "Apply (1h)"
-      ]
-    },
-    {
-      "key": "b7a459ae0336",
-      "title": "Codeforces Round (Div. 2) (codeforces.com)",
-      "url": "https://codeforces.com/contests/2252",
-      "source": "clist",
-      "score": 6,
-      "deadline": "2026-08-06",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "Competitive programming contest",
-      "action_plan": [
-        "Prepare for the contest (4 hours)",
-        "Participate in the contest (2 hours)"
-      ]
-    },
-    {
-      "key": "0f6b019bfcc2",
-      "title": "Full Stack Developer Internship",
-      "url": "https://unstop.com/internships/full-stack-developer-internship-confluent-solutions-1726397",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "relevant to software engineering",
-      "action_plan": [
-        "research company (1 day)",
-        "update resume (2 days)",
-        "apply (1 day)"
       ]
     },
     {
@@ -1719,6 +1702,23 @@
         "internship"
       ],
       "ai_summary": "Software development internship",
+      "action_plan": [
+        "Update resume (1 day)",
+        "Apply for the internship (1 day)",
+        "Prepare for interviews (1 week)"
+      ]
+    },
+    {
+      "key": "c5f5ba3cf094",
+      "title": "Python Developer Internship",
+      "url": "https://unstop.com/internships/python-developer-internship-ai-tech-gen-technologies-1731502",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Python developer internship",
       "action_plan": [
         "Update resume (1 day)",
         "Apply for the internship (1 day)",
