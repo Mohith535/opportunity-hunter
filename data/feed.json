@@ -1,23 +1,6 @@
 {
-  "updated_at": "2026-08-08",
+  "updated_at": "2026-08-09",
   "items": [
-    {
-      "key": "d331667577d1",
-      "title": "Efficient LLM-Generated Shuttling Compilers for Complex Trapped-Ion Architectures",
-      "url": "https://arxiv.org/abs/2607.24714v1",
-      "source": "arxiv",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "LLM-Generated Shuttling Compilers",
-      "action_plan": [
-        "Read paper (2 days)",
-        "Implement compiler (15 days)",
-        "Write research paper (15 days)"
-      ]
-    },
     {
       "key": "4fec7b2bae9b",
       "title": "MLH Fellowship",
@@ -157,40 +140,6 @@
         "Review machine learning concepts (2 weeks)",
         "Update resume and apply (1 week)",
         "Prepare for potential interview (2 weeks)"
-      ]
-    },
-    {
-      "key": "bc89b8ab14e8",
-      "title": "ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding",
-      "url": "https://arxiv.org/abs/2607.24743v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Vision-Centric Multimodal LLM",
-      "action_plan": [
-        "Read paper (2 days)",
-        "Implement model (10 days)",
-        "Write research paper (15 days)"
-      ]
-    },
-    {
-      "key": "231f4db9133c",
-      "title": "CALL-E: Your Code Is Calling",
-      "url": "https://call-e.devpost.com/",
-      "source": "devpost",
-      "score": 8,
-      "deadline": "2026-09-14",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "CALL-E Hackathon",
-      "action_plan": [
-        "Form team (2 days)",
-        "Brainstorm ideas (3 days)",
-        "Develop project (10 days)"
       ]
     },
     {
@@ -643,7 +592,7 @@
       "action_plan": [
         "Research DataHub (2h)",
         "Form a team (1d)",
-        "Submit project (3d)"
+        "Submit project (5d)"
       ]
     },
     {
@@ -698,54 +647,21 @@
       ]
     },
     {
-      "key": "5ae730b95421",
-      "title": "Research Internship",
-      "url": "https://unstop.com/internships/research-internship-onyatrips-tech-private-limited-1726724",
-      "source": "unstop",
-      "score": 7,
+      "key": "13d1c0044485",
+      "title": "Real-Time Conversational Agents (RTCA) Workshop @ NeurIPS 2026 — submissions now open, deadline Aug 29 AoE [N]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1vir5t6/realtime_conversational_agents_rtca_workshop/",
+      "source": "reddit",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "internship"
+        "news",
+        "r/MachineLearning"
       ],
-      "ai_summary": "Research internship, potential AI/ML application",
+      "ai_summary": "RTCA workshop at NeurIPS, high prestige",
       "action_plan": [
-        "Review internship requirements (2 hours)",
-        "Prepare a strong application (4 hours)",
-        "Apply and follow up (2 hours)"
-      ]
-    },
-    {
-      "key": "e967103615d9",
-      "title": "CCC Intelligent Solutions — Applied AI Engineer Intern",
-      "url": "https://cccis.wd1.myworkdayjobs.com/broadbean_external/job/Chicago-Green-St-IL/Applied-AI-Engineering-Intern_0014827",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Applied AI engineer role directly supports his AI building ambition and adds strong resume signal · ⚠ verify eligibility: visa/work auth unc",
-      "action_plan": [
-        "Create a one‑page AI‑focused resume (1h)",
-        "Prepare a short project video demo (2h)",
-        "Submit application and follow up with recruiter (1h)"
-      ]
-    },
-    {
-      "key": "71e6aac851ef",
-      "title": "Bank of Montreal — Data and AI Operations Analyst Intern/Co-op - Cloud - 8 months",
-      "url": "https://bmo.wd3.myworkdayjobs.com/Privileged/job/Toronto-ON-CAN/Data-and-AI-Operations-Analyst--Cloud---Fall-2026--Co-op-Internship----8-months_R260021724",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Long‑term AI‑ops internship gives deep cloud experience and solid portfolio, high relevance · ⚠ verify eligibility: visa/work auth unclear",
-      "action_plan": [
-        "Highlight cloud‑AI projects on resume (1h)",
-        "Draft a cover letter linking to his TaskFlow/Nova work (1h)",
-        "Apply through BMO career site (30m)"
+        "Research RTCA workshop",
+        "Prepare submission",
+        "Submit before Aug 29"
       ]
     },
     {
@@ -1107,38 +1023,37 @@
       ]
     },
     {
-      "key": "6f4b2d0173c3",
-      "title": "Agentic Cinema: The Blockbuster Hackathon",
-      "url": "https://agentic-cinema.devpost.com/",
-      "source": "devpost",
-      "score": 6,
-      "deadline": "2026-09-07",
+      "key": "fc9ba0f9d06a",
+      "title": "zhiningsun/bert_finchina-sa-project — ★67",
+      "url": "https://github.com/zhiningsun/bert_finchina-sa-project",
+      "source": "github",
+      "score": 7,
+      "deadline": null,
       "tags": [
-        "hackathon"
+        "github",
+        "learning"
       ],
-      "ai_summary": "Hackathon with AI/ML theme",
+      "ai_summary": "BERT project",
       "action_plan": [
-        "Review hackathon rules (1 hour)",
-        "Form a team or decide to participate solo (2 hours)",
-        "Brainstorm project ideas (4 hours)"
+        "Explore project (1h)",
+        "Contribute to project (5d)"
       ]
     },
     {
-      "key": "253001f322b9",
-      "title": "Mix local LLMs, Claude Code, Codex, Gemini and more in one SDLC pipeline (open source) [P]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1v8nuwc/mix_local_llms_claude_code_codex_gemini_and_more/",
-      "source": "reddit",
-      "score": 6,
-      "deadline": null,
+      "key": "e4eb6331401b",
+      "title": "Codeforces Round (Div. 2) (codeforces.com)",
+      "url": "https://codeforces.com/contests/2257",
+      "source": "clist",
+      "score": 7,
+      "deadline": "2026-08-17",
       "tags": [
-        "news",
-        "r/MachineLearning"
+        "contest",
+        "competitive programming"
       ],
-      "ai_summary": "Mix local LLMs",
+      "ai_summary": "competitive programming",
       "action_plan": [
-        "Research LLMs (2 days)",
-        "Implement pipeline (5 days)",
-        "Test pipeline (3 days)"
+        "Practice problems (2h)",
+        "Participate in contest (2h)"
       ]
     },
     {
@@ -1156,91 +1071,6 @@
         "Research hackathon theme (2 hours)",
         "Form a team and brainstorm ideas (4 hours)",
         "Build and submit project (20 hours)"
-      ]
-    },
-    {
-      "key": "0e27f5aeba7d",
-      "title": "Paper Buddy EduVerse Hackathon 2026",
-      "url": "https://unstop.com/hackathons/paper-buddy-eduverse-hackathon-2026-deenbandhu-chhotu-ram-university-of-science-and-technology-dcrust-murthal-1726534",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "EduVerse Hackathon",
-      "action_plan": [
-        "Form team (2 days)",
-        "Brainstorm ideas (3 days)",
-        "Develop project (10 days)"
-      ]
-    },
-    {
-      "key": "a70a55c3f697",
-      "title": "Apptronik — Software Engineer Intern - ML Systems",
-      "url": "https://boards.greenhouse.io/apptronik/jobs/6128057004",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "ML‑systems focus aligns with his AI interests and builds strong portfolio.",
-      "action_plan": [
-        "Read Apptronik ML intern specs (0.5d)",
-        "Prepare project showcase of ML work (1d)",
-        "Submit application (0.5d)"
-      ]
-    },
-    {
-      "key": "0b34c9cb8ce7",
-      "title": "Toshiba Global Commerce — AI Product Management Intern",
-      "url": "https://job-boards.greenhouse.io/toshibaglobalcommercesolutions/jobs/5195826007",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI product management gives cross‑functional AI exposure and decent signal.",
-      "action_plan": [
-        "Study Toshiba AI product intern role (0.5d)",
-        "Highlight product and AI experience in CV (1d)",
-        "Apply (0.5d)"
-      ]
-    },
-    {
-      "key": "b93c9d1ed9e1",
-      "title": "Nokia — Architecture AI Co-op",
-      "url": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/36722",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI architecture co‑op aligns with his AI engineering goal and adds US resume signal · ⚠ verify eligibility: visa/work auth unclear",
-      "action_plan": [
-        "Update resume highlighting AI architecture projects (2h)",
-        "Connect with Nokia recruiter on LinkedIn (1h)",
-        "Submit application via internship portal (30m)"
-      ]
-    },
-    {
-      "key": "51842271b200",
-      "title": "GE Appliances — AI Data Science Analytics",
-      "url": "https://haier.wd3.myworkdayjobs.com/ge_appliances/job/USA-Louisville-KY/AI-Data-Science-Analytics_REQ-26337",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI data‑science role matches interests and builds portfolio, decent corporate brand · ⚠ verify eligibility: visa/work auth unclear",
-      "action_plan": [
-        "Tailor resume to highlight data‑science work (1h)",
-        "Gather a short AI project demo for portfolio (2h)",
-        "Submit application on GE Careers (30m)"
       ]
     },
     {
@@ -1723,6 +1553,175 @@
         "Update resume (1 day)",
         "Apply for the internship (1 day)",
         "Prepare for interviews (1 week)"
+      ]
+    },
+    {
+      "key": "89413bf48edf",
+      "title": "Python Developer Internship",
+      "url": "https://unstop.com/internships/python-developer-internship-aitechgen-technology-1731496",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Python developer internship",
+      "action_plan": [
+        "Update resume (1 day)",
+        "Apply for the internship (1 day)",
+        "Prepare for interviews (1 week)"
+      ]
+    },
+    {
+      "key": "b744d1948f34",
+      "title": "BharatBuild: A Low-code Hackathon",
+      "url": "https://unstop.com/hackathons/bharatbuild-a-low-code-hackathon-srm-institute-of-science-and-technology-kattankulathur-chennai-1729858",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Low-code hackathon for building skills",
+      "action_plan": [
+        "Research hackathon details (2 hours)",
+        "Form a team (1 week)",
+        "Prepare for the hackathon (2 weeks)"
+      ]
+    },
+    {
+      "key": "e87baecf8c0f",
+      "title": "Hackblox AI & Open Source Hackathon",
+      "url": "https://unstop.com/hackathons/hackblox-open-source-hackathon-hackers-cult-1731738",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "AI hackathon",
+      "action_plan": [
+        "Research hackathon (1h)",
+        "Form team (2h)",
+        "Participate (4h)"
+      ]
+    },
+    {
+      "key": "4a1797bd59c4",
+      "title": "Flutter Developer Internship",
+      "url": "https://unstop.com/internships/flutter-developer-internship-digontom-pvt-ltd-1732000",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "software development",
+      "action_plan": [
+        "Learn Flutter (1w)",
+        "Apply for internship (1d)"
+      ]
+    },
+    {
+      "key": "ad27351f8dc9",
+      "title": "Data Science Internship",
+      "url": "https://unstop.com/internships/data-science-internship-zenotalent-1732032",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Relevant internship",
+      "action_plan": [
+        "Research company (1h)",
+        "Update resume (2h)",
+        "Apply (1h)"
+      ]
+    },
+    {
+      "key": "d2d6a1e08355",
+      "title": "Nokia — AI R&D Engineer Co-op",
+      "url": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/39287",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Nokia AI R&D co‑op aligns with AI engineering; decent prestige and skill growth",
+      "action_plan": [
+        "1. Research Nokia AI labs and recent publications (1h)",
+        "2. Draft resume highlighting ML projects and TaskFlow work (2h)",
+        "3. Submit application and prepare for technical interview (2h)"
+      ]
+    },
+    {
+      "key": "ef7ee2e57f6d",
+      "title": "Nokia — AI R&D Engineer Co-op",
+      "url": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/39284",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Summer AI R&D co‑op offers timely AI experience; missing it reduces early exposure",
+      "action_plan": [
+        "1. Locate summer 2026 posting and note required deliverables (30m)",
+        "2. Update CV with recent AI projects and open‑source contributions (1.5h)",
+        "3. Apply and schedule interview prep session (1h)"
+      ]
+    },
+    {
+      "key": "9ec7382bcb46",
+      "title": "PlusAI — Deep Learning Research Intern - Multimodal BEV Perception",
+      "url": "https://jobs.lever.co/plus-2/2ee24f85-bfa1-47fc-bfe3-fd07521a7b62/apply",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Research intern at PlusAI offers deep‑learning work relevant to his interests · ⚠ verify eligibility: research intern may require advanced e",
+      "action_plan": [
+        "Tailor CV to highlight multimodal DL work (1 day)",
+        "Contact PlusAI recruiter for eligibility clarification (2 days)",
+        "Prepare a short research demo (3 days)"
+      ]
+    },
+    {
+      "key": "dd18d2c5730e",
+      "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Recommendation/Search Alliance",
+      "url": "https://lifeattiktok.com/search/7670247810111768837",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "TikTok ML internship provides real‑world ML exposure but limited elite signal",
+      "action_plan": [
+        "Refresh resume focusing on recommendation systems (1 day)",
+        "Apply through TikTok careers page (2 days)",
+        "Practice coding interview problems (3 days)"
+      ]
+    },
+    {
+      "key": "3aa7a3d90835",
+      "title": "CoArena Hackathon",
+      "url": "https://unstop.com/hackathons/coarena-hackathon-coarena-1733431",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Opportunity to build and showcase projects",
+      "action_plan": [
+        "Form a team or find a partner (1 week)",
+        "Choose a project idea (1 week)",
+        "Develop and submit the project (4 weeks)"
       ]
     }
   ]

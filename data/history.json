@@ -52042,6 +52042,419 @@
           "key": "36972de00f69"
         }
       ]
+    },
+    {
+      "date": "2026-08-09",
+      "items": [
+        {
+          "title": "zhiningsun/bert_finchina-sa-project — ★67",
+          "url": "https://github.com/zhiningsun/bert_finchina-sa-project",
+          "source": "github",
+          "description": "中文金融新闻细粒度情感分析（-3 到 +2）与预警类型分类。双路线实现：BERT 多任务学习（Focal Loss + 早停 + 混合精度）与传统机器学习（RF / XGBoost + TF-IDF）。附带 Flask API 和 Streamlit 部署界面 (topics: bert, chinese nlp, deep learning, early warning, financial nlp, fintech, flask, focal loss, machine learning, multi task learning, named entity recognition, natural language processing, pytorch, random forest, sentiment analysis, streamlit, text classification, tf idf, xgboost)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "zhiningsun/bert_finchina-sa-project",
+          "score": 2,
+          "ai_score": 7,
+          "ai_summary": "BERT project",
+          "action_plan": [
+            "Explore project (1h)",
+            "Contribute to project (5d)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 8,
+            "time": 8,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "fc9ba0f9d06a"
+        },
+        {
+          "title": "Build with DataHub: The Agent Hackathon",
+          "url": "https://datahub.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jul 06 - Aug 10, 2026 | prize $ 20,500 | themes: Machine Learning/AI, DevOps, Open Ended",
+          "deadline": "2026-08-10",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "28039",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "AI/ML hackathon",
+          "action_plan": [
+            "Research DataHub (2h)",
+            "Form a team (1d)",
+            "Submit project (5d)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 8,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "5e2e5f39a26f"
+        },
+        {
+          "title": "73 NeurIPS workshops, and not a single one on Causality [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vj8lag/73_neurips_workshops_and_not_a_single_one_on/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vj8lag",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "ML research discussion",
+          "action_plan": [
+            "Read discussion (30m)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "766d8faab803"
+        },
+        {
+          "title": "NeurIPS AI Assisted Review authors/reviewers? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vj3oqr/neurips_ai_assisted_review_authorsreviewers_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vj3oqr",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "ML research, but unclear eligibility · ⚠ verify eligibility: no clear criteria",
+          "action_plan": [
+            "Research NeurIPS",
+            "Check eligibility",
+            "Submit if eligible"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "unclear",
+            "elig_note": "no clear criteria"
+          },
+          "key": "01156b18b02d"
+        },
+        {
+          "title": "Evaluation metrics - [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vj1ke5/evaluation_metrics_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vj1ke5",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "ML research, low deadline urgency",
+          "action_plan": [
+            "Research evaluation metrics",
+            "Apply if interested",
+            "Follow up"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "66ab5fd4a668"
+        },
+        {
+          "title": "AACL-IJCNLP Commitment Submission Number [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1viyloc/aaclijcnlp_commitment_submission_number_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1viyloc",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "ML research, but unclear eligibility · ⚠ verify eligibility: no clear criteria",
+          "action_plan": [
+            "Research AACL-IJCNLP",
+            "Check eligibility",
+            "Submit if eligible"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "unclear",
+            "elig_note": "no clear criteria"
+          },
+          "key": "58f6556241b1"
+        },
+        {
+          "title": "ICDE Results [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vj1oq6/icde_results_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vj1oq6",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "ML research, low deadline urgency",
+          "action_plan": [
+            "Research ICDE",
+            "Apply if interested",
+            "Follow up"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "bdf25bdb0d61"
+        },
+        {
+          "title": "Real-Time Conversational Agents (RTCA) Workshop @ NeurIPS 2026 — submissions now open, deadline Aug 29 AoE [N]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vir5t6/realtime_conversational_agents_rtca_workshop/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vir5t6",
+          "score": 2,
+          "ai_score": 8,
+          "ai_summary": "RTCA workshop at NeurIPS, high prestige",
+          "action_plan": [
+            "Research RTCA workshop",
+            "Prepare submission",
+            "Submit before Aug 29"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 8,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "13d1c0044485"
+        },
+        {
+          "title": "HackSpire'26",
+          "url": "https://hackspire26.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | Kolkata, India | themes: No Restrictions",
+          "deadline": "2026-10-02",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "9f3e3e2ea4194c7195b519b6808c4779",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Hackathon, potential skill growth",
+          "action_plan": [
+            "Research HackSpire'26",
+            "Form team",
+            "Submit project before Oct 2"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 6,
+            "deadline": 6,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "a3753eb02fd4"
+        },
+        {
+          "title": "Codeforces Round (Div. 2) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2257",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-08-17T14:35:00",
+          "deadline": "2026-08-17",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69466977",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "competitive programming",
+          "action_plan": [
+            "Practice problems (2h)",
+            "Participate in contest (2h)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 6,
+            "deadline": 9,
+            "skill": 7,
+            "time": 4,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "e4eb6331401b"
+        },
+        {
+          "title": "AtCoder Beginner Contest 474 (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/abc474",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-09-06T04:10:00",
+          "deadline": "2026-09-06",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69004622",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "competitive programming",
+          "action_plan": [
+            "Practice problems (2h)",
+            "Participate in contest (2h)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 6,
+            "deadline": 8,
+            "skill": 7,
+            "time": 4,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "c2065a94fc2c"
+        },
+        {
+          "title": "Marketing Internship",
+          "url": "https://unstop.com/internships/marketing-internship-wavygo-1733730",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1733730",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "936a83fdce3b"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-marketing-makhni-1733696",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1733696",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "c6b718ff88f8"
+        },
+        {
+          "title": "Marketing Internship",
+          "url": "https://unstop.com/internships/marketing-internship-gradus-1733714",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1733714",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — not AI/ML · not relevant",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "not AI/ML"
+          },
+          "key": "abb4a07402f0"
+        }
+      ]
     }
   ]
 }
