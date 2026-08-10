@@ -5859,8 +5859,8 @@
     "5e2e5f39a26f": {
       "title": "Build with DataHub: The Agent Hackathon",
       "first_seen": "2026-07-14",
-      "last_seen": "2026-08-09",
-      "times_seen": 4
+      "last_seen": "2026-08-10",
+      "times_seen": 5
     },
     "5ac7c511df2f": {
       "title": "Chain of Thought is a scaling trap. the next wave is latent reasoning (Coconut / HRM / RecrusiveMAS)... but then we hit the black box wall. Where does BDH fit? [D]",
@@ -12430,6 +12430,174 @@
       "title": "Marketing Internship",
       "first_seen": "2026-08-09",
       "last_seen": "2026-08-09",
+      "times_seen": 1
+    },
+    "574620c7920a": {
+      "title": "MirrorWorld: Taming Video Diffusion Models for Mirror Reflection Generation",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "09501d65d969": {
+      "title": "CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "c0d3d3dfdb19": {
+      "title": "Strategy-first synthesis planning for complex natural products",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "b0c6ee5458d4": {
+      "title": "SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "c29935075eef": {
+      "title": "Taxonomy-Driven Analysis of Open-Source AI Risk Mitigation Tools",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "ba2fefea4e8b": {
+      "title": "Blast Radius",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "dfae59f5058b": {
+      "title": "An Exploratory Evaluation of LLM-Assisted Rewriting of Moderate-Complexity Financial Sentences for DisCoCat-Based Sentiment Analysis",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "5f68132372c4": {
+      "title": "Noise-aware training for analog hardware: accuracy collapses at a threshold rather than degrading smoothly [D]",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "1bbab6f8ae66": {
+      "title": "[R] Generative design of novel bacteriophages with genome language models [R]",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "e5c590114b1d": {
+      "title": "ECCV workshop, camera ready instructions? [D]",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "9ae435d1ba17": {
+      "title": "A Mechanistic Explanation of Prompt Injection (and why you should study roles) [R]",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "8f20cac47d6b": {
+      "title": "Non-Physical Intelligence Has A Ceiling [D]",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "243b21165f4c": {
+      "title": "I never understood positional encoding until I read this article. [D]",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "647c33ea82e3": {
+      "title": "StartupX Hackathon 2026",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "2ed9e13cb536": {
+      "title": "Zero Dependency | 72-Hour Hackathon",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "a45fbda8f27d": {
+      "title": "Webverse Hackathon",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "fbaea0d065b8": {
+      "title": "byteBuilt 1.0",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "da91998a5b0f": {
+      "title": "QuantStorm",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "998dd4edba1a": {
+      "title": "SN1PHERS 3.0: Capture The Flag(CTF)",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "45cd5b17c3e7": {
+      "title": "Marketing Executive Internship",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "a4704ca83674": {
+      "title": "Sales Business Development Internship",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "4a463b587395": {
+      "title": "Web Developer Internship",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "1c155d99cd35": {
+      "title": "Python Developer Internship",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "ea7e15e276e3": {
+      "title": "Business Development (Sales) Internship",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "8cb7e2dc127b": {
+      "title": "MERN Stack Developer Internship",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "74f569113e6f": {
+      "title": "Java Developer Internship",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "b4c85d4e2934": {
+      "title": "React Js Developer Internship",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "times_seen": 1
+    },
+    "f854041aa586": {
+      "title": "EUREKA! 2026 — STARTUP PITCHING COMPETITION",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
       "times_seen": 1
     }
   }

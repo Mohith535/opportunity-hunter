@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09",
+  "updated_at": "2026-08-10",
   "items": [
     {
       "key": "4fec7b2bae9b",
@@ -140,57 +140,6 @@
         "Review machine learning concepts (2 weeks)",
         "Update resume and apply (1 week)",
         "Prepare for potential interview (2 weeks)"
-      ]
-    },
-    {
-      "key": "28888f762339",
-      "title": "TikTok — Machine Learning Engineer Intern - Tiktok-Data-Search-Search Quality",
-      "url": "https://lifeattiktok.com/search/7667690418804902149",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "ML engineer internship",
-      "action_plan": [
-        "review ML concepts (1 week)",
-        "apply to internship (1 day)",
-        "prepare for interview (2 weeks)"
-      ]
-    },
-    {
-      "key": "af05e29ceb42",
-      "title": "Modal — Machine Learning Research Intern",
-      "url": "https://jobs.ashbyhq.com/modal/38888294-6bc7-4dab-b072-6d0f0c2ed79a/application?embed=true",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "ML research internship",
-      "action_plan": [
-        "review research papers (2 weeks)",
-        "apply to internship (1 day)",
-        "prepare for interview (2 weeks)"
-      ]
-    },
-    {
-      "key": "e62a8a595cca",
-      "title": "Tesla — Charging Data Modeling Intern - Charging Data Modeling - Machine Learning Engineer",
-      "url": "https://www.tesla.com/careers/search/job/278249",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "ML engineer internship",
-      "action_plan": [
-        "review ML concepts (1 week)",
-        "apply to internship (1 day)",
-        "prepare for interview (2 weeks)"
       ]
     },
     {
@@ -590,9 +539,9 @@
       ],
       "ai_summary": "AI/ML hackathon",
       "action_plan": [
-        "Research DataHub (2h)",
+        "Review hackathon rules (2h)",
         "Form a team (1d)",
-        "Submit project (5d)"
+        "Develop a project (10d)"
       ]
     },
     {
@@ -665,20 +614,37 @@
       ]
     },
     {
-      "key": "155f459253c1",
-      "title": "Riverside Research — Junior Artificial Intelligence / Machine Learning Engineer",
-      "url": "https://careers-riversideresearch.icims.com/jobs/4309/job?mobile=true&needsRedirect=false",
-      "source": "internships",
-      "score": 7,
+      "key": "ba2fefea4e8b",
+      "title": "Blast Radius",
+      "url": "https://arxiv.org/abs/2608.07440v1",
+      "source": "arxiv",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "internship"
+        "research"
       ],
-      "ai_summary": "AI/ML engineer job",
+      "ai_summary": "research opportunity in agentic coding and memory management",
       "action_plan": [
-        "review AI/ML concepts (1 week)",
-        "apply to job (1 day)",
-        "prepare for interview (2 weeks)"
+        "read the research paper (4 hours)",
+        "research related topics (8 hours)",
+        "brainstorm potential contributions (4 hours)"
+      ]
+    },
+    {
+      "key": "dfae59f5058b",
+      "title": "An Exploratory Evaluation of LLM-Assisted Rewriting of Moderate-Complexity Financial Sentences for DisCoCat-Based Sentiment Analysis",
+      "url": "https://arxiv.org/abs/2608.07439v1",
+      "source": "arxiv",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "research opportunity in LLMs and sentiment analysis",
+      "action_plan": [
+        "read the research paper (4 hours)",
+        "research related topics (8 hours)",
+        "brainstorm potential contributions (4 hours)"
       ]
     },
     {
@@ -1057,57 +1023,6 @@
       ]
     },
     {
-      "key": "3716178f2dc7",
-      "title": "Port Mortem 2026 - Code Resurrection Hackathon",
-      "url": "https://portmortem.devfolio.co",
-      "source": "devfolio",
-      "score": 6,
-      "deadline": "2026-08-03",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "No restrictions, can apply AI/ML",
-      "action_plan": [
-        "Research hackathon theme (2 hours)",
-        "Form a team and brainstorm ideas (4 hours)",
-        "Build and submit project (20 hours)"
-      ]
-    },
-    {
-      "key": "0e052b5a2768",
-      "title": "AI Research & Digital Enablement Internship",
-      "url": "https://unstop.com/internships/ai-research-digital-enablement-internship-kotak-education-foundation-1718474",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI Research Internship",
-      "action_plan": [
-        "Research company (1h)",
-        "Update resume (1d)",
-        "Apply for internship (1d)"
-      ]
-    },
-    {
-      "key": "85780b467b1e",
-      "title": "Zurich Insurance — Data Analytics & AI Internship/Co-op - Data Analytics & AI",
-      "url": "https://www.careers.zurich.com/job/Toronto-Fall-2026-InternshipCo-op-Data-Analytics-&-AI-ON/1367953057/?ats=successfactors",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "data analytics internship",
-      "action_plan": [
-        "review data analytics concepts (1 week)",
-        "apply to internship (1 day)",
-        "prepare for interview (2 weeks)"
-      ]
-    },
-    {
       "key": "3270a38b8d1d",
       "title": "I built ganfs: A Python package that uses GANs to automate feature selection for high-dimensional datasets. (No domain expert required) [P] [R]",
       "url": "https://www.reddit.com/r/MachineLearning/comments/1vahcwo/i_built_ganfs_a_python_package_that_uses_gans_to/",
@@ -1122,6 +1037,23 @@
       "action_plan": [
         "review package (2h)",
         "test package (4h)"
+      ]
+    },
+    {
+      "key": "3716178f2dc7",
+      "title": "Port Mortem 2026 - Code Resurrection Hackathon",
+      "url": "https://portmortem.devfolio.co",
+      "source": "devfolio",
+      "score": 6,
+      "deadline": "2026-08-03",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "No restrictions, can apply AI/ML",
+      "action_plan": [
+        "Research hackathon theme (2 hours)",
+        "Form a team and brainstorm ideas (4 hours)",
+        "Build and submit project (20 hours)"
       ]
     },
     {
@@ -1722,6 +1654,74 @@
         "Form a team or find a partner (1 week)",
         "Choose a project idea (1 week)",
         "Develop and submit the project (4 weeks)"
+      ]
+    },
+    {
+      "key": "33a17f78df21",
+      "title": "TEJAS India Hackathon 2026",
+      "url": "https://unstop.com/hackathons/tejas-india-hackathon-2026-government-engineering-collegegec-jamui-1733064",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Opportunity to build and showcase projects",
+      "action_plan": [
+        "Form a team or find a partner (1 week)",
+        "Choose a project idea (1 week)",
+        "Develop and submit the project (4 weeks)"
+      ]
+    },
+    {
+      "key": "b52efc3daf58",
+      "title": "Edge AI Hackathon 2026",
+      "url": "https://unstop.com/hackathons/edge-ai-hackathon-2026-parala-maharaja-engineering-college-berhampur-1720578",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Edge AI focus aligns with his AI‑engineering interests",
+      "action_plan": [
+        "Day 1: review edge‑AI rules (1h)",
+        "Day 1‑2: assemble toolkit (3h)",
+        "Day 2‑3: build demo (8h)"
+      ]
+    },
+    {
+      "key": "c7cd3e35a55b",
+      "title": "ProNexus — Software Engineer Intern",
+      "url": "https://apply.workable.com/pronexus-1/j/AF8C34AC6D/apply",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Remote US internship adds international exposure and solid experience",
+      "action_plan": [
+        "Week 1: update resume (2h)",
+        "Week 1: submit application (1h)",
+        "Week 2‑4: interview prep (5h)"
+      ]
+    },
+    {
+      "key": "f24b3b89c3bd",
+      "title": "Turabify — AI Automation Intern",
+      "url": "https://apply.workable.com/turabify-co/j/0B50CC0D49/apply",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI automation internship aligns with building focus and adds US experience",
+      "action_plan": [
+        "Week 1: polish CV (2h)",
+        "Week 1: apply (1h)",
+        "Week 2: interview prep (4h)"
       ]
     }
   ]
