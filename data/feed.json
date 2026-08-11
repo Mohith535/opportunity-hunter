@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10",
+  "updated_at": "2026-08-11",
   "items": [
     {
       "key": "4fec7b2bae9b",
@@ -140,23 +140,6 @@
         "Review machine learning concepts (2 weeks)",
         "Update resume and apply (1 week)",
         "Prepare for potential interview (2 weeks)"
-      ]
-    },
-    {
-      "key": "747db38b85e2",
-      "title": "Tesla — Software Engineer Intern - Software Engineer - AI Infrastructure",
-      "url": "https://www.tesla.com/careers/search/job/278578",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "High‑impact AI infrastructure role at Tesla; strong resume signal, limited window · ⚠ verify eligibility: Visa/work eligibility not specifie",
-      "action_plan": [
-        "Check visa/work eligibility for US internship",
-        "Tailor resume to AI infrastructure projects",
-        "Submit application before Fall 2026 deadline"
       ]
     },
     {
@@ -648,37 +631,52 @@
       ]
     },
     {
-      "key": "afe1313334d0",
-      "title": "Can AI agents conduct open-ended AI research? Early evidence from two case studies",
-      "url": "https://arxiv.org/abs/2607.27191v1",
-      "source": "arxiv",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "AI research paper",
-      "action_plan": [
-        "read paper (4h)",
-        "analyze results (4h)",
-        "write summary (2h)"
-      ]
-    },
-    {
-      "key": "b81b4168246a",
-      "title": "Caspian AI Agent Hackathon",
-      "url": "https://unstop.com/hackathons/caspian-buildathon-build-agents-that-can-reach-anyone-caspian-1726439",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
+      "key": "526c9925142b",
+      "title": "The Great Agent Hackathon",
+      "url": "https://the-great-agent-hackathon.devfolio.co",
+      "source": "devfolio",
+      "score": 8,
+      "deadline": "2026-09-25",
       "tags": [
         "hackathon"
       ],
       "ai_summary": "AI agent hackathon",
       "action_plan": [
-        "review hackathon rules (1h)",
-        "form a team (2h)",
-        "develop AI agent (20h)"
+        "Form a team (1 day)",
+        "Brainstorm ideas (2 days)",
+        "Start building (2 weeks)"
+      ]
+    },
+    {
+      "key": "6c7538966b55",
+      "title": "AI/ML Developer Internship",
+      "url": "https://unstop.com/internships/aiml-developer-internship-ai-invito-1735019",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI/ML developer experience",
+      "action_plan": [
+        "Review internship description (1h)",
+        "Apply if interested (2h)"
+      ]
+    },
+    {
+      "key": "a9242ae51fce",
+      "title": "ByteDance — Agent Evaluation & Evolution Machine Learning Engineer Intern - Applied Machine Learning Ark",
+      "url": "https://jobs.bytedance.com/en/position/7671096345243535669/detail",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Agent evaluation internship",
+      "action_plan": [
+        "Review agent evaluation basics (2 weeks)",
+        "Apply to internship (1 week)"
       ]
     },
     {
@@ -1023,71 +1021,70 @@
       ]
     },
     {
-      "key": "3270a38b8d1d",
-      "title": "I built ganfs: A Python package that uses GANs to automate feature selection for high-dimensional datasets. (No domain expert required) [P] [R]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1vahcwo/i_built_ganfs_a_python_package_that_uses_gans_to/",
-      "source": "reddit",
-      "score": 6,
+      "key": "74711298bc7f",
+      "title": "All Things Agentic Hackathon",
+      "url": "https://allthingsagentichackathon.devpost.com/",
+      "source": "devpost",
+      "score": 7,
       "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "ML package",
-      "action_plan": [
-        "review package (2h)",
-        "test package (4h)"
-      ]
-    },
-    {
-      "key": "3716178f2dc7",
-      "title": "Port Mortem 2026 - Code Resurrection Hackathon",
-      "url": "https://portmortem.devfolio.co",
-      "source": "devfolio",
-      "score": 6,
-      "deadline": "2026-08-03",
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "No restrictions, can apply AI/ML",
+      "ai_summary": "AI/ML theme, hackathon experience",
       "action_plan": [
-        "Research hackathon theme (2 hours)",
-        "Form a team and brainstorm ideas (4 hours)",
-        "Build and submit project (20 hours)"
+        "Research hackathon rules (2h)",
+        "Form a team (1 week)",
+        "Develop a project (3 weeks)"
       ]
     },
     {
-      "key": "45c286365199",
-      "title": "AI Video Generation Internship",
-      "url": "https://unstop.com/internships/ai-video-generation-internship-work-from-anywhere-peblo-1727954",
+      "key": "d3f741dee40f",
+      "title": "ZYRORA - 24-Hour National Level Inter-College Hackathon",
+      "url": "https://unstop.com/hackathons/zyrora-24-hour-national-level-inter-college-hackathon-aaa-college-of-engineering-and-technology-aaacet-sivaka-1734489",
       "source": "unstop",
-      "score": 6,
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "College hackathon offers fast portfolio piece and teamwork",
+      "action_plan": [
+        "Check registration deadline (15m)",
+        "Form team with peers (2d)",
+        "Build prototype (1w)"
+      ]
+    },
+    {
+      "key": "d299f86f4d15",
+      "title": "Thingtrax — Vision AI Intern - Vision AI",
+      "url": "https://apply.workable.com/thingtrax/j/5D09B73294/apply",
+      "source": "internships",
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "AI internship for portfolio",
+      "ai_summary": "International AI internship aligns with career and exposure goals",
       "action_plan": [
-        "Research AI video generation (2 hours)",
-        "Prepare application (1 week)",
-        "Submit application (1 day)"
+        "Find application portal (30m)",
+        "Update CV for vision AI (2h)",
+        "Submit application (1h)"
       ]
     },
     {
-      "key": "63d7e230d714",
-      "title": "Data Analyst and Engineer Internship",
-      "url": "https://unstop.com/internships/data-analyst-and-engineer-internship-euroasiann-group-1727747",
-      "source": "unstop",
-      "score": 6,
+      "key": "dd7e5a0c6996",
+      "title": "ByteDance — Visual Generation & Multimodal Evaluation Machine Learning Engineer Intern - Aml-Ark",
+      "url": "https://jobs.bytedance.com/en/position/7671105026009925893/detail",
+      "source": "internships",
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "Data analyst internship",
+      "ai_summary": "Visual generation internship",
       "action_plan": [
-        "Review data analyst requirements (1 hour)",
-        "Prepare application (1 week)",
-        "Submit application (1 day)"
+        "Review visual generation basics (2 weeks)",
+        "Apply to internship (1 week)"
       ]
     },
     {
@@ -1105,6 +1102,23 @@
         "Read paper (2 days)",
         "Research topic (1 week)",
         "Implement project (2 weeks)"
+      ]
+    },
+    {
+      "key": "3716178f2dc7",
+      "title": "Port Mortem 2026 - Code Resurrection Hackathon",
+      "url": "https://portmortem.devfolio.co",
+      "source": "devfolio",
+      "score": 6,
+      "deadline": "2026-08-03",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "No restrictions, can apply AI/ML",
+      "action_plan": [
+        "Research hackathon theme (2 hours)",
+        "Form a team and brainstorm ideas (4 hours)",
+        "Build and submit project (20 hours)"
       ]
     },
     {
@@ -1705,23 +1719,6 @@
         "Week 1: update resume (2h)",
         "Week 1: submit application (1h)",
         "Week 2‑4: interview prep (5h)"
-      ]
-    },
-    {
-      "key": "f24b3b89c3bd",
-      "title": "Turabify — AI Automation Intern",
-      "url": "https://apply.workable.com/turabify-co/j/0B50CC0D49/apply",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI automation internship aligns with building focus and adds US experience",
-      "action_plan": [
-        "Week 1: polish CV (2h)",
-        "Week 1: apply (1h)",
-        "Week 2: interview prep (4h)"
       ]
     }
   ]
