@@ -1,28 +1,6 @@
 {
-  "updated_at": "2026-08-11",
+  "updated_at": "2026-08-12",
   "items": [
-    {
-      "key": "4fec7b2bae9b",
-      "title": "MLH Fellowship",
-      "url": "https://fellowship.mlh.io/",
-      "source": "programs",
-      "score": 9,
-      "deadline": "2026-07-31",
-      "tags": [
-        "program",
-        "fellowship",
-        "open source",
-        "remote",
-        "mlh",
-        "in-season"
-      ],
-      "ai_summary": "MLH Fellowship, portfolio-building",
-      "action_plan": [
-        "Review MLH projects (2h)",
-        "Apply to the fellowship (1d)",
-        "Prepare for the program (1w)"
-      ]
-    },
     {
       "key": "2f06c7623da9",
       "title": "Tesla — Software Compiler Engineer Intern - AI Inference",
@@ -157,40 +135,6 @@
         "Research Genblaze on B2 (2 hours)",
         "Form a team and brainstorm ideas (4 hours)",
         "Build and submit project (20 hours)"
-      ]
-    },
-    {
-      "key": "d53fb48a2a0c",
-      "title": "Helsing — AI Research Intern - 3D Computer Vision",
-      "url": "https://helsing.ai/jobs/4941957101?gh_jid=4941957101",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI research internship",
-      "action_plan": [
-        "Research company (1 week)",
-        "Update resume (2 days)",
-        "Apply for internship (1 day)"
-      ]
-    },
-    {
-      "key": "0ef5a7efc457",
-      "title": "Spotify — Research Scientist",
-      "url": "https://jobs.lever.co/spotify/35198a63-5c42-4dad-929f-818aab639284/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Research scientist at Spotify",
-      "action_plan": [
-        "Research company (1 week)",
-        "Update resume (2 days)",
-        "Apply for internship (1 day)"
       ]
     },
     {
@@ -680,20 +624,54 @@
       ]
     },
     {
-      "key": "8d6aa9512180",
-      "title": "Y-Hack'26 – 24-Hour National Hackathon",
-      "url": "https://unstop.com/hackathons/y-hack26-24-hour-national-hackathon-kpr-institute-of-engineering-and-technology-kpriet-coimbatore-1702198",
-      "source": "unstop",
-      "score": 7,
+      "key": "6ec1a041844a",
+      "title": "Long-Horizon AI Research for Grothendieck Constant: A Case Study in Human-AI Mathematical Collaboration",
+      "url": "https://arxiv.org/abs/2608.11195v1",
+      "source": "arxiv",
+      "score": 8,
       "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "AI research, human-AI collaboration",
+      "action_plan": [
+        "read the case study (2 hours)",
+        "explore AI applications in mathematics (4 hours)",
+        "discuss with experts (2 hours)"
+      ]
+    },
+    {
+      "key": "cdb9d90dd553",
+      "title": "Agents for Humans Hackathon",
+      "url": "https://agentsforhumans.devpost.com/",
+      "source": "devpost",
+      "score": 8,
+      "deadline": "2026-09-14",
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "Hackathon experience",
+      "ai_summary": "AI/ML hackathon",
       "action_plan": [
-        "Form team (1 week)",
-        "Choose project (2 days)",
-        "Participate in hackathon (2 days)"
+        "Research themes (2h)",
+        "Form team (1d)",
+        "Submit project (1w)"
+      ]
+    },
+    {
+      "key": "0ca244a39c26",
+      "title": "Tesla — Software Engineer Intern - AI Inference Co Design",
+      "url": "https://www.tesla.com/careers/search/job/279600",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Tesla AI internship offers elite signal and deep AI work · ⚠ verify eligibility: requires US work auth/visa",
+      "action_plan": [
+        "Check visa eligibility (1d)",
+        "Prepare AI‑focused resume (2d)",
+        "Apply via Tesla portal (1d)"
       ]
     },
     {
@@ -1088,20 +1066,70 @@
       ]
     },
     {
-      "key": "16a68e34b998",
-      "title": "Learning to Trace Seiberg Dualities",
-      "url": "https://arxiv.org/abs/2607.28628v1",
-      "source": "arxiv",
-      "score": 6,
+      "key": "89644923da27",
+      "title": "AI/ML Developer Internship",
+      "url": "https://unstop.com/internships/aiml-developer-atg-1735582",
+      "source": "unstop",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "research"
+        "internship"
       ],
-      "ai_summary": "Research paper on Seiberg dualities",
+      "ai_summary": "AI/ML internship",
       "action_plan": [
-        "Read paper (2 days)",
-        "Research topic (1 week)",
-        "Implement project (2 weeks)"
+        "Review job desc (1h)",
+        "Apply online (1h)"
+      ]
+    },
+    {
+      "key": "09446168caaa",
+      "title": "PathAI — Software Engineer Co-op",
+      "url": "https://www.pathai.com/careers/8623056002?gh_jid=8623056002",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "PathAI co‑op provides strong AI research exposure · ⚠ verify eligibility: US co‑op may need work authorization",
+      "action_plan": [
+        "Confirm eligibility (1d)",
+        "Highlight ML projects in CV (2d)",
+        "Apply before internal deadline (1d)"
+      ]
+    },
+    {
+      "key": "59bdb7e57349",
+      "title": "ByteDance — Agent Evaluation & Evolution Machine Learning Engineer Intern - Applied Machine Learning Ark",
+      "url": "https://jobs.bytedance.com/en/position/7672391300141877557/detail",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "agent evaluation and evolution internship",
+      "action_plan": [
+        "review agent evaluation concepts (4 hours)",
+        "practice machine learning (4 hours)",
+        "apply to the internship (2 hours)"
+      ]
+    },
+    {
+      "key": "abc2e138ae9e",
+      "title": "ByteDance — Visual Generation & Multimodal Evaluation Machine Learning Engineer Intern - AML-ARK",
+      "url": "https://jobs.bytedance.com/en/position/7672392998231050549/detail",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "visual generation and multimodal evaluation internship",
+      "action_plan": [
+        "review visual generation concepts (4 hours)",
+        "practice multimodal evaluation (4 hours)",
+        "apply to the internship (2 hours)"
       ]
     },
     {
@@ -1119,23 +1147,6 @@
         "Research hackathon theme (2 hours)",
         "Form a team and brainstorm ideas (4 hours)",
         "Build and submit project (20 hours)"
-      ]
-    },
-    {
-      "key": "1836224753bd",
-      "title": "Samarthya 2026 Project Competition",
-      "url": "https://unstop.com/hackathons/samarthya-2026-project-competition-smt-kashibai-navale-college-of-engineering-sknce-pune-1727380",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Project competition can showcase AI building, modest resume boost.",
-      "action_plan": [
-        "Define project scope (1h)",
-        "Gather data & prototype (3d)",
-        "Prepare presentation (1d)"
       ]
     },
     {
@@ -1702,23 +1713,6 @@
         "Day 1: review edge‑AI rules (1h)",
         "Day 1‑2: assemble toolkit (3h)",
         "Day 2‑3: build demo (8h)"
-      ]
-    },
-    {
-      "key": "c7cd3e35a55b",
-      "title": "ProNexus — Software Engineer Intern",
-      "url": "https://apply.workable.com/pronexus-1/j/AF8C34AC6D/apply",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Remote US internship adds international exposure and solid experience",
-      "action_plan": [
-        "Week 1: update resume (2h)",
-        "Week 1: submit application (1h)",
-        "Week 2‑4: interview prep (5h)"
       ]
     }
   ]
