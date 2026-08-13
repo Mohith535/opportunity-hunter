@@ -56112,6 +56112,1146 @@
           "key": "5e09bc0dc257"
         }
       ]
+    },
+    {
+      "date": "2026-08-13",
+      "items": [
+        {
+          "title": "Constructing Dynamic Master Logic Models as Knowledge Graphs for Complex System Diagnostics Using Retrieval-Augmented Large Language Models",
+          "url": "https://arxiv.org/abs/2608.12304v1",
+          "source": "arxiv",
+          "description": "Dynamic Master Logic (DML) provides a hierarchical framework for representing system behavior by linking functional objectives to underlying structural elements. However, DML construction typically relies on expert interpretation of technical documentation, limiting scalability for complex systems. This study presents a framework for automated construction of DML models from system descriptions and their representation as Knowledge Graphs (KG-DML), using Retrieval-Augmented Generation and Large Language Models as enabling tools. Building on prior work with small-scale systems, the framework extends automated KG-DML construction and evaluation to substantially larger and more complex systems. Model construction proceeds across the DML hierarchy using targeted retrieval while preserving functional dependencies and explicit logical relationships. The resulting KG-DML supports diagnostic reasoning, safety assessment, upward failure propagation, and downward dependency tracing. A multi-level validation methodology evaluates layer-specific precision and recall, logical gate consistency, and overall structural integrity. Application to the Low-Pressure Coolant Injection system of a decommissioned Boiling Water Reactor demonstrates consistent reconstruction across repeated runs. The results show that automated KG-DML construction can transform technical documentation into executable functional models for diagnostic and reliability analysis.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.12304",
+          "score": 5,
+          "ai_score": 7,
+          "ai_summary": "Research paper on LLMs and Knowledge Graphs",
+          "action_plan": [
+            "Read the paper (4 hours)",
+            "Analyze the methodology (4 hours)",
+            "Implement the approach (16 hours)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "5447b34fc634"
+        },
+        {
+          "title": "Class Activation Mapping in Explainable Computer Vision: A Method-Centered Review of CNN, Transformer, and Foundation-Model-Era Visual Explanations",
+          "url": "https://arxiv.org/abs/2608.12299v1",
+          "source": "arxiv",
+          "description": "Class activation mapping (CAM) is one of the most widely used visual explanation families in explainable artificial intelligence. Its purpose is intuitive: it converts internal model evidence into a heatmap that highlights the image regions, convolutional channels, tokens, or patches that support a target class or concept. Since the first CAM formulation in 2016, the field has moved far beyond global-average-pooled CNN classifiers. CAM-style methods now include gradient-based post-hoc explanations, gradient-free score and ablation methods, high-resolution upscaling, weakly supervised localization and segmentation, transformer token attribution, causal and debiasing methods, and foundation-model-era approaches that use CLIP, DINO, SAM, or feature-distribution comparisons. This review synthesizes a strict corpus of 57 method-centered papers published from 2016 onward. The paper develops a taxonomy that separates methods by attribution mechanism, architectural dependence, and evaluation objective. It then reviews gradient-based CAMs, recent and hybrid CAM-style methods, and model-based or architecture-aware methods. Across the corpus, the main trend is clear: the field is shifting from explaining one class score in one low-resolution CNN layer toward comparative, multi-layer, probabilistic, token-aware, and foundation-model-aware explanations. At the same time, evaluation remains fragmented. Faithfulness, localization, robustness, computational cost, and human trust are often measured with different protocols. The review therefore emphasizes not only what each method contributes, but also which gap it leaves open and which later methods attempt to close that gap.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.12299",
+          "score": 5,
+          "ai_score": 6,
+          "ai_summary": "Research paper on Explainable AI",
+          "action_plan": [
+            "Read the paper (4 hours)",
+            "Analyze the methodology (4 hours)",
+            "Implement the approach (12 hours)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "c991103bb810"
+        },
+        {
+          "title": "Large Language Model-Driven Small-Capitalization Trading: Integrating Financial News Sentiment, Macroeconomic Indicators, and Technical Signals",
+          "url": "https://arxiv.org/abs/2608.12283v1",
+          "source": "arxiv",
+          "description": "Large language models can extract richer signals from financial news than fixed sentiment lexicons, and recent work has explored feeding such signals into portfolio construction. We study an uncertainty-aware construction that feeds model-predicted risk -- decomposed into aleatoric and epistemic components -- directly into the covariance matrix of portfolio allocators, rather than treating portfolio risk as fixed or adjusting only expected returns. We evaluate the pipeline on Russell 2000 equities under three stock-selection regimes: a pure-alpha trigger that isolates abnormal stock moves not explained by macro indicators, a pure-beta trigger that captures macro-indicator moves before the stock itself fires, and a beta trigger in which both channels agree. Across the full holding-period grid, the separated pure-alpha and pure-beta legs usually dominate the beta intersection on Sharpe and return. Two horizons are especially informative. At one day, pure beta can work under low and moderate transaction costs because it captures immediate lead-lag spillovers from liquid macro and sector indicators into exposed small-cap stocks, but this advantage disappears at 100 bps when turnover and microstructure noise dominate. At 40 days, pure beta works for a different reason: slower macro repricing overtakes the firm-specific pure-alpha channel. The strongest conservative row is pure beta with GPT-4o mini sentiment, a Student-t target, a 40-day holding period, and risk parity allocation, reaching Sharpe 2.33 at 100 bps. The results suggest that stock-selection regime and allocator choice matter at least as much as the sentiment model, and that separating firm-specific and macro-exposure triggers is more informative than requiring both to fire simultaneously.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.12283",
+          "score": 3,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — no application or participation details provided · Research paper description, not an actionable opportunity",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "no application or participation details provided"
+          },
+          "key": "6463553c9e56"
+        },
+        {
+          "title": "VAKRA: Evaluating Multi-Hop Reasoning Across APIs and Retrieval Under Tool-Use Policies",
+          "url": "https://arxiv.org/abs/2608.12282v1",
+          "source": "arxiv",
+          "description": "Agents deployed in enterprise settings must reason across structured APIs and document collections, yet existing benchmarks evaluate these capabilities in isolation. We introduce VAKRA (e\\textbf{V}aluating \\textbf{A}PI and \\textbf{K}nowledge \\textbf{R}etrieval \\textbf{A}gents), a benchmark of over $8{,}000$ executable APIs across $62$ domains with tasks spanning three settings of increasing difficulty: diverse API interaction styles, multi-hop reasoning over structured APIs, and multi-source reasoning with natural-language tool-use policy constraints. Correctness is verified by re-executing predicted tool calls against live APIs, accommodating multiple valid paths. Using a fixed ReAct harness to isolate model capabilities from agent architecture, we evaluate frontier and open-weight models and find that even the best model achieves only 70.4\\% on single-hop endpoint-style tasks and drops to 50--51\\% on compositional APIs; performance degrades by over 50\\% as reasoning depth increases, and policy-constrained questions expose severe failures (as low as 2.4\\% on unanswerable queries). Trace analysis shows failures concentrate at language-mediated reasoning - entity disambiguation, cross-source grounding, rather than tool invocation mechanics. Code is available https://github.com/IBM/VAKRA. Dataset is available https://huggingface.co/datasets/ibm-research/VAKRA",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.12282",
+          "score": 5,
+          "ai_score": 8,
+          "ai_summary": "Research paper on Multi-Hop Reasoning",
+          "action_plan": [
+            "Read the paper (4 hours)",
+            "Analyze the methodology (4 hours)",
+            "Implement the approach (16 hours)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "af4f397a39e8"
+        },
+        {
+          "title": "AhmadJeddi/Plant-Disease-Classification — ★55",
+          "url": "https://github.com/AhmadJeddi/Plant-Disease-Classification",
+          "source": "github",
+          "description": "A ResNet50-DCBAM deep learning framework for plant disease classification using the PlantVillage dataset with reproducible training and evaluation pipelines. (topics: attention mechanism, cbam, cnn, computer vision, dcbam, deep learning, image classification, plant disease classification, plantvillage, precision agriculture, pytorch, resnet50, transfer learning)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "AhmadJeddi/Plant-Disease-Classification",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "Project deepens DL skills and yields a showcase for AI builder profile.",
+          "action_plan": [
+            "Fork repo (0.5h)",
+            "Run baseline training (2h)",
+            "Add improvement (1w)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "a26709d13c21"
+        },
+        {
+          "title": "Would you choose a PhD advisor who gives you complete freedom but almost no guidance? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vmhks7/would_you_choose_a_phd_advisor_who_gives_you/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vmhks7",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Reddit post, not an actionable opportunity · Just a discussion thread, no application possible.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Reddit post, not an actionable opportunity"
+          },
+          "key": "9f7c83cde154"
+        },
+        {
+          "title": "I built an \"honest\" CS conference ranking: sorted by how good the trip is, not the CORE ranking [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vmbdk6/i_built_an_honest_cs_conference_ranking_sorted_by/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vmbdk6",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Reddit post, not an actionable opportunity · Just a discussion thread, no application possible.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Reddit post, not an actionable opportunity"
+          },
+          "key": "fd21c114f68e"
+        },
+        {
+          "title": "The Loss Does Not See the Basis, But Adam Does [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vmjb3p/the_loss_does_not_see_the_basis_but_adam_does_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vmjb3p",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Reddit post, not an actionable opportunity · Just a discussion thread, no application possible.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Reddit post, not an actionable opportunity"
+          },
+          "key": "aeb23f6855d9"
+        },
+        {
+          "title": "Looking for real-world examples of predictive analytics in mortgage lending [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vmf7xu/looking_for_realworld_examples_of_predictive/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vmf7xu",
+          "score": 2,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Reddit post, not an actionable opportunity · Just a discussion thread, no application possible.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Reddit post, not an actionable opportunity"
+          },
+          "key": "43d88ffa48d8"
+        },
+        {
+          "title": "Monday Munch - DSA Challenge 016 (Rated) (codechef.com)",
+          "url": "https://www.codechef.com/DSAMONDAY016",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-08-17T13:30:00",
+          "deadline": "2026-08-17",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69563241",
+          "score": 5,
+          "ai_score": 3,
+          "ai_summary": "CP contest low relevance to AI builder goal",
+          "action_plan": [
+            "Register on CodeChef (15m)",
+            "Practice similar problems (2h)",
+            "Compete on 2026-08-17 (3h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 5,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "cea44a712716"
+        },
+        {
+          "title": "Internal Smart India Hackathon 2026",
+          "url": "https://unstop.com/hackathons/internal-smart-india-hackathon-2026-bharat-ratna-baba-saheb-bhim-rao-ambedkar-rajkiya-engineering-college-pra-1736096",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1736096",
+          "score": 5,
+          "ai_score": 5,
+          "ai_summary": "Hackathon can showcase AI building, modest resume boost",
+          "action_plan": [
+            "Form a 2‑person team (30m)",
+            "Brainstorm AI‑driven solution (2h)",
+            "Build prototype (1‑2 weeks)",
+            "Submit entry"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 4,
+            "deadline": 4,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "b49dd8803fd0"
+        },
+        {
+          "title": "InfiniX'26 – National Level 32-Hour Hackathon",
+          "url": "https://unstop.com/hackathons/infinix26-national-level-32-hour-hackathon-ramco-institute-of-technology-1730876",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1730876",
+          "score": 7,
+          "ai_score": 6,
+          "ai_summary": "National hackathon, relevant to AI/ML",
+          "action_plan": [
+            "Research hackathon rules (1 hour)",
+            "Form a team (2 hours)",
+            "Brainstorm project ideas (2 hours)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "4f2fad463fe5"
+        },
+        {
+          "title": "Idea Competition 2026",
+          "url": "https://unstop.com/hackathons/idea-competition-2026-fr-conceicao-rodrigues-college-of-engineering-frcrce-bandra-1736048",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1736048",
+          "score": 4,
+          "ai_score": 5,
+          "ai_summary": "Online idea competition offers AI project exposure",
+          "action_plan": [
+            "Review competition theme (30m)",
+            "Define AI concept (1h)",
+            "Implement prototype (1‑2 weeks)",
+            "Submit entry"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 3,
+            "deadline": 3,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "1728796bae73"
+        },
+        {
+          "title": "Hack Forge-Ai Powered Vibe Coding Hackathon",
+          "url": "https://unstop.com/hackathons/hack-forge-ai-powered-vibe-coding-hackathon-c-abdul-hakeem-college-of-engineering-and-technology-cahcet-veppu-1735862",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1735862",
+          "score": 5,
+          "ai_score": 6,
+          "ai_summary": "AI‑focused hackathon aligns with interests, adds portfolio",
+          "action_plan": [
+            "Read hackathon brief (15m)",
+            "Sketch project plan (1h)",
+            "Develop MVP (1‑2 weeks)",
+            "Present demo"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 4,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "12ea9b60c0ce"
+        },
+        {
+          "title": "Full Stack Developer Internship",
+          "url": "https://unstop.com/internships/full-stack-developer-internship-gigsforme-1736102",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1736102",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Full stack development skills",
+          "action_plan": [
+            "Review full stack development basics (1 week)",
+            "Apply for internship (1 day)",
+            "Prepare for interview (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "bcd4399872f1"
+        },
+        {
+          "title": "Campus Relations Internship",
+          "url": "https://unstop.com/internships/campus-relations-internship-internsforge-private-limited-1736173",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1736173",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not directly related to AI/ML",
+          "action_plan": [
+            "Review campus relations role (1 week)",
+            "Apply for internship (1 day)",
+            "Prepare for interview (1 week)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "9dfff5e1715c"
+        },
+        {
+          "title": "Sales Apprenticeship Internship",
+          "url": "https://unstop.com/internships/sales-apprenticeship-internship-yugasa-software-labs-1735741",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1735741",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not related to AI/ML or tech",
+          "action_plan": [
+            "Review sales apprenticeship role (1 week)",
+            "Apply for internship (1 day)",
+            "Prepare for interview (1 week)"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 3,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "5f8365784dbf"
+        },
+        {
+          "title": "Field Sales & Business Development Internship",
+          "url": "https://unstop.com/internships/field-sales-business-development-internship-better-analytics-pvt-ltd-1735955",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1735955",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not directly related to AI/ML",
+          "action_plan": [
+            "Review field sales role (1 week)",
+            "Apply for internship (1 day)",
+            "Prepare for interview (1 week)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "a2d41f141809"
+        },
+        {
+          "title": "Frontend Web Developer Internship",
+          "url": "https://unstop.com/internships/frontend-web-developer-internship-atg-1736110",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1736110",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Frontend development skills",
+          "action_plan": [
+            "Review frontend development basics (1 week)",
+            "Apply for internship (1 day)",
+            "Prepare for interview (2 weeks)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "074c3fb9bcdf"
+        },
+        {
+          "title": "Business Development & Lead Research Internship",
+          "url": "https://unstop.com/internships/business-development-lead-research-internship-byagog-1736099",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1736099",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not directly related to AI/ML",
+          "action_plan": [
+            "Review business development role (1 week)",
+            "Apply for internship (1 day)",
+            "Prepare for interview (1 week)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "f0ab48699a69"
+        },
+        {
+          "title": "Student Coordinator Internship",
+          "url": "https://unstop.com/internships/student-coordinator-internship-edu-versity-1736042",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1736042",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Not directly related to AI/ML",
+          "action_plan": [
+            "Review student coordinator role (1 week)",
+            "Apply for internship (1 day)",
+            "Prepare for interview (1 week)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "473c5dac5f72"
+        },
+        {
+          "title": "Website & AI Solutions Calling Sales Executive",
+          "url": "https://unstop.com/internships/website-ai-solutions-calling-sales-executive-successcv-1736069",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1736069",
+          "score": 5,
+          "ai_score": 2,
+          "ai_summary": "Sales role misaligned with AI engineering aspirations · ⚠ verify eligibility: may require sales experience or specific qualifications",
+          "action_plan": [],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "unclear",
+            "elig_note": "may require sales experience or specific qualifications"
+          },
+          "key": "daf9b51e9518"
+        },
+        {
+          "title": "Oracle — Platform Software Engineer 1 Intern - Full-time Intern Conversion",
+          "url": "https://eeho.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_45001/job/342415",
+          "source": "internships",
+          "description": "internship | Oracle | United States | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "685487cc-2bf1-41f3-9324-4441e3ba0475",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — requires US work authorization · Oracle internship high prestige but not eligible (US visa)",
+          "action_plan": [],
+          "dimensions": {
+            "career": 7,
+            "interest": 6,
+            "prestige": 9,
+            "deadline": 4,
+            "skill": 7,
+            "time": 5,
+            "eligible": "no",
+            "elig_note": "requires US work authorization"
+          },
+          "key": "bbccb26a730c"
+        },
+        {
+          "title": "Navy Federal — Data Scientist Intern",
+          "url": "https://fa-etbx-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/nfcu/job/31873",
+          "source": "internships",
+          "description": "internship | Navy Federal | Pensacola, FL, Vienna, VA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2521a871-df84-4798-bdaf-7c07de0b8a64",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — requires US work authorization · Data Scientist intern at US bank, high prestige but ineligible",
+          "action_plan": [],
+          "dimensions": {
+            "career": 7,
+            "interest": 6,
+            "prestige": 9,
+            "deadline": 4,
+            "skill": 7,
+            "time": 5,
+            "eligible": "no",
+            "elig_note": "requires US work authorization"
+          },
+          "key": "b338fb0783cb"
+        },
+        {
+          "title": "Cotiviti — Agentic AI Research Intern",
+          "url": "https://careers-cotiviti.icims.com/jobs/19480/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Cotiviti | Remote in USA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "094fc400-8cf1-4839-8605-e5f144700551",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Remote in USA · Not available for Indian students",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Remote in USA"
+          },
+          "key": "93c1ab536355"
+        },
+        {
+          "title": "Assured Guaranty — Product Software Developer Intern",
+          "url": "https://boards.greenhouse.io/assuredguaranty/jobs/8700953002",
+          "source": "internships",
+          "description": "internship | Assured Guaranty | NYC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "26469c50-c009-48da-9415-b146a1d441df",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "Generic product dev role, low AI relevance, modest resume boost.",
+          "action_plan": [
+            "Update resume with AI projects (1h)",
+            "Apply via company portal (30m)",
+            "Prep interview basics (2h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "9161a1e017ed"
+        },
+        {
+          "title": "TMEIC Corporation Americas — Applications Intern - AI and Machine Learning",
+          "url": "https://apply.workable.com/tmeic-corporation-americas/j/6FDBF2FD32/apply",
+          "source": "internships",
+          "description": "internship | TMEIC Corporation Americas | Roanoke, VA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6a24db4e-df46-4cfb-94c1-a7709787033d",
+          "score": 6,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — Location: US, not international · US-based internship, not international",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 1,
+            "skill": 6,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "Location: US, not international"
+          },
+          "key": "e73ee07331d6"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Recommendation Foundation",
+          "url": "https://lifeattiktok.com/search/7672883129493948677",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "37258bf6-9a8c-4245-bc45-0fb8e73fecca",
+          "score": 6,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — Location: US, not international · US-based internship, not international",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 1,
+            "skill": 7,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "Location: US, not international"
+          },
+          "key": "d69276f4e995"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Recommendation Foundation",
+          "url": "https://lifeattiktok.com/search/7672881840860940597",
+          "source": "internships",
+          "description": "internship | TikTok | Seattle, WA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0d1a5d14-2cc4-4c85-a1a6-aa02ecc2b4f8",
+          "score": 6,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — Location: US, not international · US-based internship, not international",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 1,
+            "skill": 7,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "Location: US, not international"
+          },
+          "key": "38411d9bc57c"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Recommendation Mall",
+          "url": "https://lifeattiktok.com/search/7672920375646488885",
+          "source": "internships",
+          "description": "internship | TikTok | Seattle, WA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "baeedb05-7415-43b1-a352-ff0efdc23b6b",
+          "score": 6,
+          "ai_score": 2,
+          "ai_summary": "⛔ Not eligible — Location: US, not international · US-based internship, not international",
+          "action_plan": [],
+          "dimensions": {
+            "career": 1,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 1,
+            "skill": 7,
+            "time": 2,
+            "eligible": "no",
+            "elig_note": "Location: US, not international"
+          },
+          "key": "b9f5bab3fc50"
+        },
+        {
+          "title": "Felix Magazine — Web Developer/Programmer Intern",
+          "url": "https://jobs.smartrecruiters.com/LuxeMediaLLC/83337967",
+          "source": "internships",
+          "description": "internship | Felix Magazine | Chicago, IL | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e9c6fbb2-27a0-4da8-bd66-1d4be992ae95",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "Web dev internship, minimal AI impact, low prestige for resume.",
+          "action_plan": [
+            "Add web dev AI demos to portfolio (1h)",
+            "Submit application (30m)",
+            "Review common interview Qs (2h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 2,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "695901a6a35b"
+        },
+        {
+          "title": "Felix Magazine — Web Developer/Programmer Intern",
+          "url": "https://jobs.smartrecruiters.com/LuxeMediaLLC/89098193",
+          "source": "internships",
+          "description": "internship | Felix Magazine | Chicago, IL | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8ea8d323-6e8b-4380-b4c1-2367ba88c40f",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "Same as i1; duplicate low‑value opportunity.",
+          "action_plan": [
+            "Refresh resume bullet points (1h)",
+            "Apply via LinkedIn (30m)",
+            "Mock interview (2h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 2,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "534881f788cd"
+        },
+        {
+          "title": "Felix Magazine — Web Developer/Programmer Intern",
+          "url": "https://jobs.smartrecruiters.com/LuxeMediaLLC/83337884",
+          "source": "internships",
+          "description": "internship | Felix Magazine | LA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a51d3e95-42ac-4e2b-88ba-5f6d2c3c2595",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "Web dev role in LA, still low AI relevance and prestige.",
+          "action_plan": [
+            "Tailor resume for LA market (1h)",
+            "Submit application (30m)",
+            "Practice coding interview (2h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 2,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "21cb71d81d4a"
+        },
+        {
+          "title": "CCC Intelligent Solutions — Data Science Engineer Intern",
+          "url": "https://cccis.wd1.myworkdayjobs.com/broadbean_external/job/Chicago-Green-St-IL/Data-Science-Engineer-Internship_0014843",
+          "source": "internships",
+          "description": "internship | CCC Intelligent Solutions | Chicago, IL | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "05cc6b19-1ebc-4435-b908-56f4805a54d3",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Data science focus aligns modestly with ML goals, modest resume value.",
+          "action_plan": [
+            "Highlight data‑science coursework (1h)",
+            "Apply on company site (30m)",
+            "Study case studies (2h)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 3,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "c141c116776c"
+        },
+        {
+          "title": "RTX — Software Engineer Intern",
+          "url": "https://globalhr.wd5.myworkdayjobs.com/fr-CA/Private_Posting_No_TMP/job/US-AL-HUNTSVILLE-382--420-Jan-Davis-Dr--DAVIS-382/Summer-2027--Software-Intern-OnSite_01865160",
+          "source": "internships",
+          "description": "internship | RTX | Huntsville, AL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "98803f68-563e-4966-9b99-92606c5b702e",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "Software role at RTX, low AI relevance, decent engineering exposure.",
+          "action_plan": [
+            "Update resume with C++/Python projects (1h)",
+            "Submit application (30m)",
+            "Review system design basics (2h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "ec6f6dcd85a2"
+        },
+        {
+          "title": "Loblaw Companies — Software Development Co-op",
+          "url": "https://myview.wd3.myworkdayjobs.com/paradox_careers/job/500-Lake-Shore-Blvd-W-Toronto-ON/Software-Development---Co-op-Student_R2000693078",
+          "source": "internships",
+          "description": "internship | Loblaw Companies | Toronto, ON, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5116425b-3685-4fd2-8e7c-e7900b53e239",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "International co‑op, but still generic software work, limited AI impact.",
+          "action_plan": [
+            "Add cross‑border project experience (1h)",
+            "Apply via portal (30m)",
+            "Prep behavioral interview (2h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 3,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "739b150a1311"
+        },
+        {
+          "title": "American Fidelity — Software Development Intern",
+          "url": "https://americanfidelity.wd5.myworkdayjobs.com/External/job/Oklahoma-City-Oklahoma/Software-Dev-Internship_JR1005",
+          "source": "internships",
+          "description": "internship | American Fidelity | Oklahoma City, OK | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5f12771f-a545-4521-ba17-ecb175d4dbcb",
+          "score": 3,
+          "ai_score": 2,
+          "ai_summary": "Low‑prestige software intern, little AI relevance, minimal long‑term gain.",
+          "action_plan": [
+            "Polish resume bullet points (1h)",
+            "Submit application (30m)",
+            "Run mock interview (2h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 1,
+            "deadline": 1,
+            "skill": 2,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "05405255851f"
+        },
+        {
+          "title": "RTX — Software Engineering Intern - Summer 2027",
+          "url": "https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-IA-CEDAR-RAPIDS-137--855-35Th-St-NE--BLDG-137/Software-Engineering-Intern--Summer-2027-_01865875",
+          "source": "internships",
+          "description": "internship | RTX | Cedar Rapids, IA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "bd6358b0-c6b0-436e-bb7a-e2dcb370e692",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "US software internship gives modest AI exposure, decent resume boost. · ⚠ verify eligibility: Visa/work authorization not specified",
+          "action_plan": [
+            "Update resume (1d)",
+            "Tailor cover letter (2d)",
+            "Submit application (if open)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "Visa/work authorization not specified"
+          },
+          "key": "de57f47f8ec5"
+        },
+        {
+          "title": "Northrop Grumman — Software Engineer Intern - Aeronautics Systems",
+          "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Florida-Melbourne/XMLNAME-2027-Intern-Software-Engineer_R10245255",
+          "source": "internships",
+          "description": "internship | Northrop Grumman | Melbourne, FL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b560def8-65f9-4a57-a4f0-06cb45b403c3",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "US aerospace software role offers limited AI relevance but solid brand. · ⚠ verify eligibility: Visa/work authorization not specified",
+          "action_plan": [
+            "Refresh resume (1d)",
+            "Write targeted cover letter (2d)",
+            "Apply via company portal"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "Visa/work authorization not specified"
+          },
+          "key": "c36da2e5ec2a"
+        },
+        {
+          "title": "Schweitzer Engineering Laboratories — Software Engineer Intern - AI Focus",
+          "url": "https://selinc.wd1.myworkdayjobs.com/SEL/job/Washington---Pullman/Software-Engineering-Intern--AI-Focus-_2026-22601",
+          "source": "internships",
+          "description": "internship | Schweitzer Engineering Laboratories | Pullman, WA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "acf117a3-c0c1-472f-ad4c-e68012e06ab4",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "AI‑focused internship aligns with his goals and adds strong portfolio piece. · ⚠ verify eligibility: Visa/work authorization not specified",
+          "action_plan": [
+            "Polish resume highlighting AI projects (1d)",
+            "Draft AI‑specific cover letter (2d)",
+            "Submit application when posting opens"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 7,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "Visa/work authorization not specified"
+          },
+          "key": "6dbaa5b79d2d"
+        }
+      ]
     }
   ]
 }

@@ -1,23 +1,6 @@
 {
-  "updated_at": "2026-08-12",
+  "updated_at": "2026-08-13",
   "items": [
-    {
-      "key": "2f06c7623da9",
-      "title": "Tesla — Software Compiler Engineer Intern - AI Inference",
-      "url": "https://www.tesla.com/careers/search/job/278847",
-      "source": "internships",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Tesla AI inference internship is elite, high‑impact for AI engineer path · ⚠ verify eligibility: visa/work‑authorization may be required for",
-      "action_plan": [
-        "1. Verify work‑authorization options (2 hrs)",
-        "2. Prepare resume focusing on AI projects (3 hrs)",
-        "3. Apply via Tesla portal before deadline"
-      ]
-    },
     {
       "key": "2e7e19d9dc18",
       "title": "AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers",
@@ -121,84 +104,6 @@
       ]
     },
     {
-      "key": "c0d39df56dc0",
-      "title": "Backblaze Generative Media Hackathon: Build with Genblaze on B2",
-      "url": "https://backblaze-generative-media.devpost.com/",
-      "source": "devpost",
-      "score": 8,
-      "deadline": "2026-08-03",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "GenAI, ML, and hackathon",
-      "action_plan": [
-        "Research Genblaze on B2 (2 hours)",
-        "Form a team and brainstorm ideas (4 hours)",
-        "Build and submit project (20 hours)"
-      ]
-    },
-    {
-      "key": "0c6345d2bf30",
-      "title": "Outreachy Internships",
-      "url": "https://www.outreachy.org/",
-      "source": "programs",
-      "score": 8,
-      "deadline": "2026-08-31",
-      "tags": [
-        "program",
-        "internship",
-        "open source",
-        "remote",
-        "stipend",
-        "in-season"
-      ],
-      "ai_summary": "international open-source internship",
-      "action_plan": [
-        "research Outreachy",
-        "prepare application",
-        "apply before deadline"
-      ]
-    },
-    {
-      "key": "48072ba34747",
-      "title": "Flipkart GRiD",
-      "url": "https://unstop.com/competitions?oppstatus=open&searchTerm=Flipkart%20GRiD",
-      "source": "programs",
-      "score": 8,
-      "deadline": "2026-08-31",
-      "tags": [
-        "competition",
-        "hackathon",
-        "flipkart",
-        "india",
-        "internship",
-        "in-season"
-      ],
-      "ai_summary": "prestigious engineering challenge",
-      "action_plan": [
-        "research challenge",
-        "prepare application",
-        "apply before deadline"
-      ]
-    },
-    {
-      "key": "e4431d48b427",
-      "title": "Persona AI — Machine Learning Intern - Manipulation",
-      "url": "https://jobs.ashbyhq.com/persona.ai/ed9a7425-9798-471e-b46a-fefd59570630/application?embed=true",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "machine learning internship",
-      "action_plan": [
-        "research company",
-        "update resume",
-        "apply"
-      ]
-    },
-    {
       "key": "5e72c622cd6a",
       "title": "simonlin1212/Vibe-Research — ★1,473",
       "url": "https://github.com/simonlin1212/Vibe-Research",
@@ -214,6 +119,23 @@
         "explore Vibe-Research project (1 week)",
         "contribute to project (2 weeks)",
         "build personal project using similar tech (4 weeks)"
+      ]
+    },
+    {
+      "key": "c0d39df56dc0",
+      "title": "Backblaze Generative Media Hackathon: Build with Genblaze on B2",
+      "url": "https://backblaze-generative-media.devpost.com/",
+      "source": "devpost",
+      "score": 8,
+      "deadline": "2026-08-03",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "GenAI, ML, and hackathon",
+      "action_plan": [
+        "Research Genblaze on B2 (2 hours)",
+        "Form a team and brainstorm ideas (4 hours)",
+        "Build and submit project (20 hours)"
       ]
     },
     {
@@ -675,20 +597,20 @@
       ]
     },
     {
-      "key": "0bc3970723f6",
-      "title": "RevenueCat Shipaton 2026",
-      "url": "https://revenuecat-shipaton-2026.devpost.com/",
-      "source": "devpost",
-      "score": 7,
-      "deadline": "2026-10-01",
+      "key": "af4f397a39e8",
+      "title": "VAKRA: Evaluating Multi-Hop Reasoning Across APIs and Retrieval Under Tool-Use Policies",
+      "url": "https://arxiv.org/abs/2608.12282v1",
+      "source": "arxiv",
+      "score": 8,
+      "deadline": null,
       "tags": [
-        "hackathon"
+        "research"
       ],
-      "ai_summary": "hackathon with prize",
+      "ai_summary": "Research paper on Multi-Hop Reasoning",
       "action_plan": [
-        "form team",
-        "choose theme",
-        "participate in hackathon"
+        "Read the paper (4 hours)",
+        "Analyze the methodology (4 hours)",
+        "Implement the approach (16 hours)"
       ]
     },
     {
@@ -1133,6 +1055,23 @@
       ]
     },
     {
+      "key": "5447b34fc634",
+      "title": "Constructing Dynamic Master Logic Models as Knowledge Graphs for Complex System Diagnostics Using Retrieval-Augmented Large Language Models",
+      "url": "https://arxiv.org/abs/2608.12304v1",
+      "source": "arxiv",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "Research paper on LLMs and Knowledge Graphs",
+      "action_plan": [
+        "Read the paper (4 hours)",
+        "Analyze the methodology (4 hours)",
+        "Implement the approach (16 hours)"
+      ]
+    },
+    {
       "key": "3716178f2dc7",
       "title": "Port Mortem 2026 - Code Resurrection Hackathon",
       "url": "https://portmortem.devfolio.co",
@@ -1147,62 +1086,6 @@
         "Research hackathon theme (2 hours)",
         "Form a team and brainstorm ideas (4 hours)",
         "Build and submit project (20 hours)"
-      ]
-    },
-    {
-      "key": "bc5983a32d89",
-      "title": "Full Stack Developer Internship",
-      "url": "https://unstop.com/internships/app-developer-internship-klanvision-1728779",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Full stack development",
-      "action_plan": [
-        "Apply online (1h)",
-        "Prepare for interview (2d)",
-        "Learn full stack (7d)"
-      ]
-    },
-    {
-      "key": "d7deb337704a",
-      "title": "Data Science Internship",
-      "url": "https://unstop.com/internships/data-science-internship-zenotalent-1728764",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "data science internship",
-      "action_plan": [
-        "research company",
-        "update resume",
-        "apply"
-      ]
-    },
-    {
-      "key": "14922f560a47",
-      "title": "Amazon ML Summer School (India)",
-      "url": "https://www.amazon.science/academic-engagements/amazon-ml-summer-school",
-      "source": "programs",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "program",
-        "machine learning",
-        "amazon",
-        "india",
-        "free",
-        "certification"
-      ],
-      "ai_summary": "Amazon brand adds resume value; solid ML up‑skill for AI goals",
-      "action_plan": [
-        "1. Draft SOP (2 hrs) highlighting AI projects",
-        "2. Complete online assessment (1 day)",
-        "3. Submit application before June deadline"
       ]
     },
     {
@@ -1713,6 +1596,108 @@
         "Day 1: review edge‑AI rules (1h)",
         "Day 1‑2: assemble toolkit (3h)",
         "Day 2‑3: build demo (8h)"
+      ]
+    },
+    {
+      "key": "c7cd3e35a55b",
+      "title": "ProNexus — Software Engineer Intern",
+      "url": "https://apply.workable.com/pronexus-1/j/AF8C34AC6D/apply",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Remote US internship adds international exposure and solid experience",
+      "action_plan": [
+        "Week 1: update resume (2h)",
+        "Week 1: submit application (1h)",
+        "Week 2‑4: interview prep (5h)"
+      ]
+    },
+    {
+      "key": "f24b3b89c3bd",
+      "title": "Turabify — AI Automation Intern",
+      "url": "https://apply.workable.com/turabify-co/j/0B50CC0D49/apply",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI automation internship aligns with building focus and adds US experience",
+      "action_plan": [
+        "Week 1: polish CV (2h)",
+        "Week 1: apply (1h)",
+        "Week 2: interview prep (4h)"
+      ]
+    },
+    {
+      "key": "412645532df4",
+      "title": "Kastle AI — Software Engineer Intern",
+      "url": "https://jobs.ashbyhq.com/kastle/6f32db51-de45-472f-a9c8-d9419d3634ee/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI startup intern offers strong skill growth, modest brand impact.",
+      "action_plan": [
+        "Gather AI demo work for portfolio (1h)",
+        "Apply to Kastle AI (2h)",
+        "Prep for system design interview (1w)"
+      ]
+    },
+    {
+      "key": "c2065a94fc2c",
+      "title": "AtCoder Beginner Contest 474 (atcoder.jp)",
+      "url": "https://atcoder.jp/contests/abc474",
+      "source": "clist",
+      "score": 6,
+      "deadline": "2026-09-06",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "competitive programming",
+      "action_plan": [
+        "Practice problems (2h)",
+        "Participate in contest (2h)"
+      ]
+    },
+    {
+      "key": "647c33ea82e3",
+      "title": "StartupX Hackathon 2026",
+      "url": "https://unstop.com/hackathons/startupx-hackathon-2026-gamnexis-1733546",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "opportunity to build and showcase skills",
+      "action_plan": [
+        "research hackathon rules (1 hour)",
+        "form a team (2 hours)",
+        "brainstorm project ideas (4 hours)"
+      ]
+    },
+    {
+      "key": "2ed9e13cb536",
+      "title": "Zero Dependency | 72-Hour Hackathon",
+      "url": "https://unstop.com/hackathons/zero-dependency-72-hour-hackathon-hackathon-raptors-1733673",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "opportunity to build and showcase skills",
+      "action_plan": [
+        "research hackathon rules (1 hour)",
+        "form a team (2 hours)",
+        "brainstorm project ideas (4 hours)"
       ]
     }
   ]
