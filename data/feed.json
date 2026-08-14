@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13",
+  "updated_at": "2026-08-14",
   "items": [
     {
       "key": "2e7e19d9dc18",
@@ -104,21 +104,20 @@
       ]
     },
     {
-      "key": "5e72c622cd6a",
-      "title": "simonlin1212/Vibe-Research — ★1,473",
-      "url": "https://github.com/simonlin1212/Vibe-Research",
-      "source": "github",
+      "key": "f3bc68e0e801",
+      "title": "TokTier: Exact Stateful Tokenization for Agentic LLM Serving",
+      "url": "https://arxiv.org/abs/2607.29678v1",
+      "source": "arxiv",
       "score": 8,
       "deadline": null,
       "tags": [
-        "github",
-        "learning"
+        "research"
       ],
-      "ai_summary": "AI agent and LLM project",
+      "ai_summary": "LLM serving systems research",
       "action_plan": [
-        "explore Vibe-Research project (1 week)",
-        "contribute to project (2 weeks)",
-        "build personal project using similar tech (4 weeks)"
+        "Review research paper (1 week)",
+        "Implement and experiment (4 weeks)",
+        "Write and publish paper (8 weeks)"
       ]
     },
     {
@@ -136,40 +135,6 @@
         "Research Genblaze on B2 (2 hours)",
         "Form a team and brainstorm ideas (4 hours)",
         "Build and submit project (20 hours)"
-      ]
-    },
-    {
-      "key": "d33f262735f0",
-      "title": "Two Sigma — AI Research Scientist Intern - 2027 Summer",
-      "url": "https://twosigma.avature.net/careers/JobDetail/14096",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI research at Two Sigma",
-      "action_plan": [
-        "research Two Sigma AI projects (1 week)",
-        "update resume and online profiles (1 week)",
-        "apply for internship (1 week)"
-      ]
-    },
-    {
-      "key": "f3bc68e0e801",
-      "title": "TokTier: Exact Stateful Tokenization for Agentic LLM Serving",
-      "url": "https://arxiv.org/abs/2607.29678v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "LLM serving systems research",
-      "action_plan": [
-        "Review research paper (1 week)",
-        "Implement and experiment (4 weeks)",
-        "Write and publish paper (8 weeks)"
       ]
     },
     {
@@ -614,37 +579,71 @@
       ]
     },
     {
-      "key": "e1726dbe29a9",
-      "title": "HPR (Hyannis Port Research) — Software Engineer Intern",
-      "url": "https://job-boards.greenhouse.io/hyannisportresearch/jobs/7822989003",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
+      "key": "bc000b57087b",
+      "title": "YouCam API Skin AI & Apparel VTO Hackathon",
+      "url": "https://youcam-api.devpost.com/",
+      "source": "devpost",
+      "score": 8,
+      "deadline": "2026-08-17",
       "tags": [
-        "internship"
+        "hackathon"
       ],
-      "ai_summary": "software engineer at HPR",
+      "ai_summary": "AI & ML hackathon",
       "action_plan": [
-        "research HPR projects (1 week)",
-        "update resume and online profiles (1 week)",
-        "apply for internship (1 week)"
+        "Research YouCam API (2h)",
+        "Form a team (1d)",
+        "Develop a project (10d)"
       ]
     },
     {
-      "key": "e055af16ed36",
-      "title": "Postman — AI Engineer Intern",
-      "url": "https://job-boards.greenhouse.io/postman/jobs/7823417003",
+      "key": "f1b78b16f136",
+      "title": "Calpion/Plutus Health — AI Engineering Intern - Python & Agentic AI",
+      "url": "https://calpionplutus.bamboohr.com/careers/310/",
       "source": "internships",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "AI Engineer internship at Postman offers strong AI experience and portfolio value. · ⚠ verify eligibility: visa/work‑authorization not speci",
+      "ai_summary": "AI engineering internship",
       "action_plan": [
-        "1. Verify eligibility (visa/work status) (≈1h)",
-        "2. Tailor resume & cover letter to AI focus (≈2h)",
-        "3. Submit application through portal (≈30m)"
+        "update resume (2h)",
+        "apply for the internship (1h)",
+        "prepare for interviews (5h)"
+      ]
+    },
+    {
+      "key": "ac1760b9da3c",
+      "title": "ByteDance — Student Researcher - AI Foundation Model Infrastructure - Seed",
+      "url": "https://jobs.bytedance.com/en/position/7673274910202988805/detail",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "ByteDance AI foundation model research, high AI relevance and rare slot",
+      "action_plan": [
+        "Read recent ByteDance AI papers (2d)",
+        "Prepare short research proposal (2d)",
+        "Submit application (1d)"
+      ]
+    },
+    {
+      "key": "912c8441226d",
+      "title": "ByteDance — Student Researcher - AI Foundation Model Infrastructure - Seed",
+      "url": "https://jobs.bytedance.com/en/position/7673274430383032629/detail",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Same as i6 – missing this would lose a top AI research experience",
+      "action_plan": [
+        "Gather relevant ML code samples (2d)",
+        "Draft motivation letter (2d)",
+        "Apply before cutoff (1d)"
       ]
     },
     {
@@ -1072,6 +1071,23 @@
       ]
     },
     {
+      "key": "2461f2286147",
+      "title": "Analytical Mechanics Associates — Research Scientist Intern",
+      "url": "https://amainc.wd12.myworkdayjobs.com/ama_careers/job/Remote---New-Jersey/Graduate-Research-Scientist-intern_R-100717-1",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "research scientist internship",
+      "action_plan": [
+        "research the company (1h)",
+        "apply for the internship (1h)",
+        "prepare for interviews (5h)"
+      ]
+    },
+    {
       "key": "3716178f2dc7",
       "title": "Port Mortem 2026 - Code Resurrection Hackathon",
       "url": "https://portmortem.devfolio.co",
@@ -1086,23 +1102,6 @@
         "Research hackathon theme (2 hours)",
         "Form a team and brainstorm ideas (4 hours)",
         "Build and submit project (20 hours)"
-      ]
-    },
-    {
-      "key": "bb72511190a8",
-      "title": "NexBuildOn Hack 2026",
-      "url": "https://unstop.com/hackathons/nexbuildon-hack-2026-nexbuildon-community-1728774",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "hackathon with potential AI/ML projects",
-      "action_plan": [
-        "research hackathon projects (1 week)",
-        "form team and plan project (1 week)",
-        "participate in hackathon (2 weeks)"
       ]
     },
     {
