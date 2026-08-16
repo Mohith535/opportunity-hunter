@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15",
+  "updated_at": "2026-08-16",
   "items": [
     {
       "key": "8937fe71fd80",
@@ -67,23 +67,6 @@
         "Review machine learning concepts (2 weeks)",
         "Update resume and apply (1 week)",
         "Prepare for potential interview (2 weeks)"
-      ]
-    },
-    {
-      "key": "4e3e1feb3cac",
-      "title": "ByteDance — Research Scientist Intern - Multi-modal Agentic Databases",
-      "url": "https://jobs.bytedance.com/en/position/7667380487805995269/detail",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Top AI internship aligning with agents & generative AI builds elite resume.",
-      "action_plan": [
-        "Update resume with TaskFlow/Nova (1 day)",
-        "Draft cover letter highlighting AI agent work (2 days)",
-        "Gather recommendation letters and submit before deadline (1 week)"
       ]
     },
     {
@@ -574,8 +557,8 @@
       "ai_summary": "AI/ML hackathon with Agentic Memory",
       "action_plan": [
         "Research Agentic Memory (2 hours)",
-        "Form a team and brainstorm ideas (4 hours)",
-        "Start building the project (10 hours)"
+        "Form a team (1 week)",
+        "Develop a project (4 weeks)"
       ]
     },
     {
@@ -596,139 +579,20 @@
       ]
     },
     {
-      "key": "8ca9e4672a7c",
-      "title": "Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework",
-      "url": "https://arxiv.org/abs/2608.02599v1",
-      "source": "arxiv",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Relevant AI research",
-      "action_plan": [
-        "Read the paper (2 hours)",
-        "Analyze the framework (4 hours)",
-        "Explore applications (6 hours)"
-      ]
-    },
-    {
-      "key": "6820cc025cc7",
-      "title": "AI Internship",
-      "url": "https://unstop.com/internships/ai-internship-vaultsphere-ai-technology-pvt-ltd-1729326",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI internship opportunity",
-      "action_plan": [
-        "Apply for the internship (1 hour)",
-        "Prepare for interviews (4 hours)",
-        "Complete the internship (3 months)"
-      ]
-    },
-    {
-      "key": "ffc8af4fb0ce",
-      "title": "AI Internship",
-      "url": "https://unstop.com/internships/ai-internship-innovation-hacks-1730391",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI internship opportunity",
-      "action_plan": [
-        "Apply for the internship (1 hour)",
-        "Prepare for interviews (4 hours)",
-        "Complete the internship (3 months)"
-      ]
-    },
-    {
-      "key": "1ddc973dc27d",
-      "title": "NTT DATA AIVista — AI Scientist Intern",
-      "url": "https://jobs.ashbyhq.com/ntt-data-aivista/75f9f312-1cf9-4141-b352-60cb2fac8fe9/application?embed=true",
+      "key": "77bca2d90e3a",
+      "title": "Photon — Software Engineering Intern - AI",
+      "url": "https://fa-ertb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/job/26738",
       "source": "internships",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "AI scientist role aligns with long‑term goal; decent signal · ⚠ verify eligibility: US locations may require work visa",
+      "ai_summary": "AI software engineering",
       "action_plan": [
-        "Highlight AI research in resume (2h)",
-        "Submit application to NTT DATA (1h)",
-        "Prepare AI case studies (4h)"
-      ]
-    },
-    {
-      "key": "e37cbf38e270",
-      "title": "Jane Street — Machine Learning Researcher",
-      "url": "https://www.janestreet.com/join-jane-street/apply/8594416002?gh_jid=8594416002",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Machine learning research",
-      "action_plan": [
-        "Research Jane Street (1 week)",
-        "Update resume (2 days)",
-        "Apply for internship (1 day)"
-      ]
-    },
-    {
-      "key": "2fe10d6e02cc",
-      "title": "ByteDance — AI Perception Intern - Pico",
-      "url": "https://jobs.bytedance.com/en/position/7665457718334425349/detail",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI perception work fits Mohith's focus; high‑profile company · ⚠ verify eligibility: US location may need work visa",
-      "action_plan": [
-        "Highlight computer‑vision work in resume (2h)",
-        "Apply on ByteDance portal (1h)",
-        "Review perception research (4h)"
-      ]
-    },
-    {
-      "key": "5fc7e0287a93",
-      "title": "ByteDance — Research Scientist Intern - Multi-modal Agentic Databases",
-      "url": "https://jobs.bytedance.com/en/position/7667380184615127301/detail",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Multi-modal agentic databases",
-      "action_plan": [
-        "Research ByteDance (1 week)",
-        "Update resume (2 days)",
-        "Apply for internship (1 day)"
-      ]
-    },
-    {
-      "key": "e92ba7ec2db8",
-      "title": "ByteDance — Research Scientist Intern - AI Infra Compute",
-      "url": "https://jobs.bytedance.com/en/position/7667379221434796341/detail",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI infra role fits his engineering focus and adds high‑profile experience.",
-      "action_plan": [
-        "List relevant infra projects (1 day)",
-        "Prepare technical write‑up for internship app (2 days)",
-        "Submit application promptly (within 1 week)"
+        "review internship description (1h)",
+        "update resume (2h)",
+        "apply for internship (2h)"
       ]
     },
     {
@@ -1012,11 +876,11 @@
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "ML/AI hackathon with Skin AI & Apparel",
+      "ai_summary": "ML/AI hackathon with Skin AI",
       "action_plan": [
-        "Research Skin AI & Apparel (2 hours)",
-        "Form a team and brainstorm ideas (4 hours)",
-        "Start building the project (10 hours)"
+        "Research Skin AI (2 hours)",
+        "Form a team (1 week)",
+        "Develop a project (3 weeks)"
       ]
     },
     {
@@ -1054,156 +918,38 @@
       ]
     },
     {
-      "key": "552018f2fd84",
-      "title": "StepStone Group — AI Intern",
-      "url": "https://boards.greenhouse.io/embed/job_app?token=8096268",
-      "source": "internships",
-      "score": 6,
+      "key": "a45a5966b472",
+      "title": "hahhforest/pi-textbook — ★1,047",
+      "url": "https://github.com/hahhforest/pi-textbook",
+      "source": "github",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
+        "github",
+        "learning"
       ],
-      "ai_summary": "AI‑focused internship aligns with his goal, but prestige is moderate and visa is uncertain. · ⚠ verify eligibility: Visa/work‑authorization ",
+      "ai_summary": "Contributing to pi‑textbook showcases agent engineering, high portfolio value.",
       "action_plan": [
-        "Update resume highlighting AI projects (2 h).",
-        "Submit application through StepStone careers portal (30 m).",
-        "Prepare for technical interview focusing on ML fundamentals (1 week)."
+        "Clone the repo (2 min)",
+        "Read the first checkpoint guide (30 min)",
+        "Implement a small improvement and submit PR"
       ]
     },
     {
-      "key": "495387725fb8",
-      "title": "Persona AI — Autonomy Software Engineer Intern - World Modeling",
-      "url": "https://jobs.ashbyhq.com/persona.ai/fd514a3f-4138-48d5-9862-05ff74a4ca08/application?embed=true",
-      "source": "internships",
-      "score": 6,
+      "key": "7eb6dfe7f007",
+      "title": "AI Innovation Hackathon 2026 – Build Real-World AI Solutions",
+      "url": "https://unstop.com/hackathons/ai-innovation-hackathon-2026-build-real-world-ai-solutions-bharat-academix-1737263",
+      "source": "unstop",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
+        "hackathon"
       ],
-      "ai_summary": "Strong AI relevance and skill growth; moderate prestige · ⚠ verify eligibility: US location may need work visa",
+      "ai_summary": "builds AI solutions",
       "action_plan": [
-        "Tailor resume to autonomy work (2h)",
-        "Apply on Persona AI site (1h)",
-        "Study world modeling papers (4h)"
-      ]
-    },
-    {
-      "key": "394ae8738d33",
-      "title": "Bosch Home Comfort — Artificial Intelligence and Software Development Engineering Intern",
-      "url": "https://jobs.smartrecruiters.com/BoschGroup/744000141302469",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI and software development",
-      "action_plan": [
-        "Research Bosch Home Comfort (1 week)",
-        "Update resume (2 days)",
-        "Apply for internship (1 day)"
-      ]
-    },
-    {
-      "key": "41aec5c424ae",
-      "title": "TikTok — Research Scientist Intern - Monetization Technology - Business Integrity",
-      "url": "https://lifeattiktok.com/search/7668202600147552517",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Research scientist intern",
-      "action_plan": [
-        "Research TikTok (1 week)",
-        "Update resume (2 days)",
-        "Apply for internship (1 day)"
-      ]
-    },
-    {
-      "key": "0339c3c7b4ad",
-      "title": "TikTok — Research Scientist Intern - Monetization Technology - Business Integrity",
-      "url": "https://lifeattiktok.com/search/7668204438271969589",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Research scientist intern",
-      "action_plan": [
-        "Research TikTok (1 week)",
-        "Update resume (2 days)",
-        "Apply for internship (1 day)"
-      ]
-    },
-    {
-      "key": "a0762b04d77a",
-      "title": "ByteDance — Research Scientist Intern",
-      "url": "https://jobs.bytedance.com/en/position/7667379218929780997/detail",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Research scientist intern",
-      "action_plan": [
-        "Research ByteDance (1 week)",
-        "Update resume (2 days)",
-        "Apply for internship (1 day)"
-      ]
-    },
-    {
-      "key": "3aced7e64bcd",
-      "title": "ByteDance — Research Scientist Intern",
-      "url": "https://jobs.bytedance.com/en/position/7667380188619131189/detail",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Research scientist intern",
-      "action_plan": [
-        "Research ByteDance (1 week)",
-        "Update resume (2 days)",
-        "Apply for internship (1 day)"
-      ]
-    },
-    {
-      "key": "d67fff727bbb",
-      "title": "ByteDance — Software Engineer Intern - AI Infra Compute",
-      "url": "https://jobs.bytedance.com/en/position/7667378931599214853/detail",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI infrastructure role offers solid skill growth and prestige · ⚠ verify eligibility: US location may need work visa",
-      "action_plan": [
-        "Showcase AI infra projects in resume (2h)",
-        "Submit application to ByteDance (1h)",
-        "Study compute architecture (4h)"
-      ]
-    },
-    {
-      "key": "9b41016152f6",
-      "title": "ByteDance — Software Engineer Intern - AI Infrastructure Compute",
-      "url": "https://jobs.bytedance.com/en/position/7667377525182662965/detail",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Same as i6; strong AI relevance and brand value · ⚠ verify eligibility: US location may need work visa",
-      "action_plan": [
-        "Update resume with AI infra experience (2h)",
-        "Apply via ByteDance site (1h)",
-        "Prepare for system design interview (4h)"
+        "research hackathon rules (1h)",
+        "form a team (2h)",
+        "start building (4h)"
       ]
     },
     {
@@ -1695,6 +1441,263 @@
       "action_plan": [
         "Review internship description (1h)",
         "Apply if interested (2h)"
+      ]
+    },
+    {
+      "key": "dfc597f6de78",
+      "title": "Startup Premier League",
+      "url": "https://unstop.com/competitions/startup-premier-league-udyam26-the-business-fest-jindal-global-business-school-jgbs-sonipat-1730647",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "competition"
+      ],
+      "ai_summary": "could boost entrepreneurship résumé with AI focus · ⚠ verify eligibility: requires startup/team formation",
+      "action_plan": [
+        "Check competition website for team rules (1 day)",
+        "Identify potential co‑founders on campus (2 days)",
+        "Draft a prototype concept aligned with AI agents (1 week)",
+        "Prepare pitch deck and submit before deadline"
+      ]
+    },
+    {
+      "key": "f1f59abddae1",
+      "title": "OpusClip — AI Product Management Intern",
+      "url": "https://jobs.ashbyhq.com/opusclip/501d374d-7d4f-4889-bc53-0a1fd16253ea/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI product management aligns with his AI building goals, visa barrier · ⚠ verify eligibility: US work authorization required",
+      "action_plan": [
+        "Check if OpusClip accepts remote interns from India (1 day)",
+        "Prepare a product case study using Nova (2 days)",
+        "Reach out to recruiter about visa sponsorship (2 days)",
+        "Submit tailored application before deadline"
+      ]
+    },
+    {
+      "key": "25d36d625c62",
+      "title": "ByteDance — Machine Learning Engineer Intern",
+      "url": "https://jobs.bytedance.com/en/position/7671291260529821957/detail",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Machine learning internship",
+      "action_plan": [
+        "Review machine learning basics (2 weeks)",
+        "Apply to internship (1 week)"
+      ]
+    },
+    {
+      "key": "b83952bb32fd",
+      "title": "ByteDance — Data Lake Infrastructure and Data Analytics Research Engineer Intern - Applied Machine Learning Ark",
+      "url": "https://jobs.bytedance.com/en/position/7671109787509213445/detail",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Data analytics internship",
+      "action_plan": [
+        "Review data analytics basics (2 weeks)",
+        "Apply to internship (1 week)"
+      ]
+    },
+    {
+      "key": "65e965190856",
+      "title": "DevCrest Buildathon '26",
+      "url": "https://unstop.com/hackathons/devcrest-buildathon-26-devcrest-1734263",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Buildathon matches builder mindset; offers portfolio piece but not elite signal.",
+      "action_plan": [
+        "Sign up on unstop",
+        "Pick a project theme",
+        "Allocate 10 h/week for prototype development"
+      ]
+    },
+    {
+      "key": "869e8af93d1e",
+      "title": "Zoox — Machine Learning Engineer Student Worker - Data Mining & VLM",
+      "url": "https://jobs.lever.co/zoox/7206fd97-14e4-43a0-b903-ba65dfeee53e/apply",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "machine learning engineer internship",
+      "action_plan": [
+        "review machine learning concepts (4 hours)",
+        "practice data mining (4 hours)",
+        "apply to the internship (2 hours)"
+      ]
+    },
+    {
+      "key": "f7c188b4634b",
+      "title": "Deloitte — AI and Data Engineering Summer Scholar Intern - Government & Public Services",
+      "url": "https://apply.deloitte.com/en_US/careers/JobDetail/Consultative-Offerings-Government-Public-Services-Summer-Scholar-AI-and-Data-Engineering/362479",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI/Data engineering internship at Deloitte offers decent AI exposure.",
+      "action_plan": [
+        "Refresh AI project list for resume (1h)",
+        "Apply via Deloitte portal (30m)",
+        "Study data pipelines (2d)"
+      ]
+    },
+    {
+      "key": "2465630f8dad",
+      "title": "Quantbot Technologies — Machine Learning Research Engineer Intern",
+      "url": "https://www.quantbot.com/careers/4340833009?gh_jid=4340833009",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "machine learning research engineer internship",
+      "action_plan": [
+        "review research papers (4 hours)",
+        "practice machine learning (4 hours)",
+        "apply to the internship (2 hours)"
+      ]
+    },
+    {
+      "key": "6cbbcb371458",
+      "title": "ByteDance — Data Lake Infrastructure & Data Analytics Research Engineer Intern - Applied Machine Learning Ark",
+      "url": "https://jobs.bytedance.com/en/position/7672394389001816325/detail",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "data analytics research engineer internship",
+      "action_plan": [
+        "review data analytics concepts (4 hours)",
+        "practice applied machine learning (4 hours)",
+        "apply to the internship (2 hours)"
+      ]
+    },
+    {
+      "key": "4177d93ccef6",
+      "title": "ByteDance — Machine Learning Engineer Intern - AML-Engine-Orchestration",
+      "url": "https://jobs.bytedance.com/en/position/7672382828525832501/detail",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "machine learning engineer internship",
+      "action_plan": [
+        "review machine learning concepts (4 hours)",
+        "practice engine orchestration (4 hours)",
+        "apply to the internship (2 hours)"
+      ]
+    },
+    {
+      "key": "c991103bb810",
+      "title": "Class Activation Mapping in Explainable Computer Vision: A Method-Centered Review of CNN, Transformer, and Foundation-Model-Era Visual Explanations",
+      "url": "https://arxiv.org/abs/2608.12299v1",
+      "source": "arxiv",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "Research paper on Explainable AI",
+      "action_plan": [
+        "Read the paper (4 hours)",
+        "Analyze the methodology (4 hours)",
+        "Implement the approach (12 hours)"
+      ]
+    },
+    {
+      "key": "a26709d13c21",
+      "title": "AhmadJeddi/Plant-Disease-Classification — ★55",
+      "url": "https://github.com/AhmadJeddi/Plant-Disease-Classification",
+      "source": "github",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "github",
+        "learning"
+      ],
+      "ai_summary": "Project deepens DL skills and yields a showcase for AI builder profile.",
+      "action_plan": [
+        "Fork repo (0.5h)",
+        "Run baseline training (2h)",
+        "Add improvement (1w)"
+      ]
+    },
+    {
+      "key": "4f2fad463fe5",
+      "title": "InfiniX'26 – National Level 32-Hour Hackathon",
+      "url": "https://unstop.com/hackathons/infinix26-national-level-32-hour-hackathon-ramco-institute-of-technology-1730876",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "National hackathon, relevant to AI/ML",
+      "action_plan": [
+        "Research hackathon rules (1 hour)",
+        "Form a team (2 hours)",
+        "Brainstorm project ideas (2 hours)"
+      ]
+    },
+    {
+      "key": "12ea9b60c0ce",
+      "title": "Hack Forge-Ai Powered Vibe Coding Hackathon",
+      "url": "https://unstop.com/hackathons/hack-forge-ai-powered-vibe-coding-hackathon-c-abdul-hakeem-college-of-engineering-and-technology-cahcet-veppu-1735862",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "AI‑focused hackathon aligns with interests, adds portfolio",
+      "action_plan": [
+        "Read hackathon brief (15m)",
+        "Sketch project plan (1h)",
+        "Develop MVP (1‑2 weeks)",
+        "Present demo"
+      ]
+    },
+    {
+      "key": "6dbaa5b79d2d",
+      "title": "Schweitzer Engineering Laboratories — Software Engineer Intern - AI Focus",
+      "url": "https://selinc.wd1.myworkdayjobs.com/SEL/job/Washington---Pullman/Software-Engineering-Intern--AI-Focus-_2026-22601",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI‑focused internship aligns with his goals and adds strong portfolio piece. · ⚠ verify eligibility: Visa/work authorization not specified",
+      "action_plan": [
+        "Polish resume highlighting AI projects (1d)",
+        "Draft AI‑specific cover letter (2d)",
+        "Submit application when posting opens"
       ]
     }
   ]
