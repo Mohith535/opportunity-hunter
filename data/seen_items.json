@@ -3981,8 +3981,8 @@
     "bd5c9c376843": {
       "title": "CockroachDB × AWS Hackathon - Build with Agentic Memory",
       "first_seen": "2026-07-05",
-      "last_seen": "2026-08-16",
-      "times_seen": 3
+      "last_seen": "2026-08-17",
+      "times_seen": 4
     },
     "a40f68a795e7": {
       "title": "If DeepMind or Anthropic is doing your exact research topic, do you still continue? [D]",
@@ -6471,8 +6471,8 @@
     "bc000b57087b": {
       "title": "YouCam API Skin AI & Apparel VTO Hackathon",
       "first_seen": "2026-07-16",
-      "last_seen": "2026-08-16",
-      "times_seen": 4
+      "last_seen": "2026-08-17",
+      "times_seen": 5
     },
     "282d10ab9624": {
       "title": "Mechanistic interpretability: a first paper on disentangling a convolutional neuron [R]",
@@ -14290,6 +14290,150 @@
       "title": "Hypercubic — Software Engineering Intern",
       "first_seen": "2026-08-16",
       "last_seen": "2026-08-16",
+      "times_seen": 1
+    },
+    "650f5d73b840": {
+      "title": "Decoding the Past: An Uncertainty-Aware Deep Learning Framework for Sex Attribution in Prehistoric Hand Stencils",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "bc41609c5134": {
+      "title": "Handover of In-Context Learning State Across Session Boundaries",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "c12acd9cbc9b": {
+      "title": "The federal keyword lists that canceled billions in research funding",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "074fbb0e78e0": {
+      "title": "Nvidia dramatically reduces amount of OpenAI infra financing it may guarantee",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "860dd4ea6e94": {
+      "title": "SSOG-Attention: Sum Of Separable Gaussians as a sub-quadratic and scalable alternative to SDPA. [R]",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "5d65a1e859e4": {
+      "title": "How can we solve long-range recall in linear attention? [D]",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "8115d124531e": {
+      "title": "[Career Advice] Final-year in Physical AI / Robotics. How is the market & global hiring for freshers? [D]",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "66cd26864f51": {
+      "title": "Revisiting the Efficient Channel Attention paper (2019, 12k citations) - the central hypothesis isn't quite right [D]",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "ca1737ee8dc7": {
+      "title": "ICDM 2026 Results Waiting Place [D]",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "ecf15756e55e": {
+      "title": "[R] SineKAN: Kolmogorov-Arnold Networks Using Sinusoidal Activation Functions",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "56d77f96960e": {
+      "title": "Input 4-5x Reduction with sentence and keyword based trie on chat. [P]",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "dbec438ebcb8": {
+      "title": "It only took 200 update steps to flip Qwen2.5-7B-Instruct from denying sentience to developing a robust identity of being a \"sentient machine\" [P]",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "1be406d1b8e8": {
+      "title": "Z0d1ak CTF",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "14a898977b60": {
+      "title": "The Pirate’s Flag – Capture the Flag Challenge",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "2b74e9175cc0": {
+      "title": "Quantum Alpha",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "8dcc220db189": {
+      "title": "Frontend Developer Internship",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "f3c58933a8a2": {
+      "title": "Campus Ambassador",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "b19efbc8ee27": {
+      "title": "Product Internship – Growth",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "d64a23ca46ac": {
+      "title": "Content Creator and Brand Creation Internship",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "36e7e026be0c": {
+      "title": "Product Engineering Internship",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "0701f335db66": {
+      "title": "Healthcare Content Internship",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "5040da4a8574": {
+      "title": "Business Development Internship",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "faf67021cce2": {
+      "title": "Content Creator Internship",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "times_seen": 1
+    },
+    "103f8e4c293e": {
+      "title": "EUREKA! 2026 – Startup Pitching Competition",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
       "times_seen": 1
     }
   }

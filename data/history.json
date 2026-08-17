@@ -60812,6 +60812,775 @@
           "key": "0535c3382517"
         }
       ]
+    },
+    {
+      "date": "2026-08-17",
+      "items": [
+        {
+          "title": "Decoding the Past: An Uncertainty-Aware Deep Learning Framework for Sex Attribution in Prehistoric Hand Stencils",
+          "url": "https://arxiv.org/abs/2608.14539v1",
+          "source": "arxiv",
+          "description": "Determining the biological sex of the individuals who created Upper Paleolithic hand stencils remains a challenging problem due to the absence of ground truth, population differences between contemporary and prehistoric groups, and the uncertainty introduced by image degradation. Traditional morphometric methods suffer from high structural overlap across sexes, poor cross-population generalizability, and subjective feature engineering. This study presents an uncertainty-aware deep learning framework for sex attribution in prehistoric hand stencils that explicitly models, propagates, and aggregates uncertainty throughout the analytical pipeline. The methodology combines dual image processing, dual contour extraction, structured silhouette augmentation, model architectural diversity, and ensemble-based decision aggregation. The pipeline generates twelve plausible silhouette realizations per stencil to capture boundary uncertainties, which are processed by two ensembles of ten deep neural networks each (EfficientNet-B3 and MobileViT-S) trained on 14,036 contemporary hand samples. Furthermore, a triangulated validation scheme integrates ensemble predictions with unsupervised 2D latent-space manifold mapping (UMAP + k-NN) and explainable AI spatial attributions (LayerCAM) to ensure anatomical consistency. On contemporary data, ensemble models achieve strong classification performance, with accuracies exceeding 88% in older age groups. When applied to prehistoric stencils, the framework produces both sex predictions and confidence measures of internal agreement, enabling the distinction between morphologically stable and ambiguous cases. Convergence across ensemble predictions, latent-space structure, and interpretability analyses shows that uncertainty can become a measurable component of archaeological inference, enabling robust and reproducible decoding of ancient rock art.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.14539",
+          "score": 5,
+          "ai_score": 8,
+          "ai_summary": "Deep learning research experience",
+          "action_plan": [
+            "Read the research paper",
+            "Implement the framework",
+            "Publish results"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "650f5d73b840"
+        },
+        {
+          "title": "Handover of In-Context Learning State Across Session Boundaries",
+          "url": "https://arxiv.org/abs/2608.14528v1",
+          "source": "arxiv",
+          "description": "This study investigates the methodological and theoretical properties of session handover in applications that use large language models. A task may continue in a new session when the context reaches the model's input limit, when the application restarts, or when another agent is asked to finish the task. The application must then decide which information from the earlier session to pass on. We formulate handover as the transfer of a task-relative in-context learning (ICL) state and distinguish exact recovery of earlier material from preservation of the target distribution. Under an exogeneity condition, predictive equivalence characterizes the coarsest deterministic sufficient handover and gives a fixed-length bit requirement. The analysis isolates the effects of the memory constraint, the writer, and the continuation procedure, and quantifies the cost of writing before the realized downstream query is known. We propose a three-part record that stores decisions and constraints exactly, uses task-justified statistics for repeated evidence, and retains original observations whose effect is not preserved by those statistics. Gaussian linear regression gives an exact finite-dimensional handover and finite-bit perturbation bounds, while nonparametric regression gives upper and lower bounds that relate memory to squared prediction error. These results provide a theory and method for deciding what a handover must retain and how its memory requirement depends on the continuation task.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.14528",
+          "score": 2,
+          "ai_score": 8,
+          "ai_summary": "Research experience in in-context learning",
+          "action_plan": [
+            "Read the research paper",
+            "Implement the framework",
+            "Publish results"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "bc41609c5134"
+        },
+        {
+          "title": "The federal keyword lists that canceled billions in research funding",
+          "url": "https://www.highereddive.com/news/inside-the-federal-keyword-lists-that-canceled-billions-in-research-funding/826203/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49325159",
+          "score": 3,
+          "ai_score": 3,
+          "ai_summary": "Industry news and trends",
+          "action_plan": [
+            "Read the news article",
+            "Discuss with peers"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "c12acd9cbc9b"
+        },
+        {
+          "title": "Nvidia dramatically reduces amount of OpenAI infra financing it may guarantee",
+          "url": "https://www.reuters.com/business/nvidia-scales-back-250-billion-openai-data-center-guarantee-wsj-reports-2026-08-14/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49323686",
+          "score": 5,
+          "ai_score": 3,
+          "ai_summary": "Industry news and trends",
+          "action_plan": [
+            "Read the news article",
+            "Discuss with peers"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 4,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 2,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "074fbb0e78e0"
+        },
+        {
+          "title": "CockroachDB × AWS Hackathon - Build with Agentic Memory",
+          "url": "https://cockroachdb-ai.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 30 - Aug 18, 2026 | prize $ 8,750 | themes: Machine Learning/AI, Databases, DevOps",
+          "deadline": "2026-08-18",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29613",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "AI/ML hackathon with Agentic Memory",
+          "action_plan": [
+            "Research Agentic Memory (2 hours)",
+            "Form a team (1 day)",
+            "Develop a project plan (2 days)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 9,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "bd5c9c376843"
+        },
+        {
+          "title": "YouCam API Skin AI & Apparel VTO Hackathon",
+          "url": "https://youcam-api.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jul 06 - Aug 17, 2026 | prize $ 6,000 | themes: Machine Learning/AI, AR/VR, E-commerce/Retail",
+          "deadline": "2026-08-17",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30518",
+          "score": 10,
+          "ai_score": 7,
+          "ai_summary": "ML/AI hackathon with Skin AI",
+          "action_plan": [
+            "Research Skin AI (2 hours)",
+            "Brainstorm project ideas (1 day)",
+            "Start building (2 days)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 9,
+            "skill": 7,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "bc000b57087b"
+        },
+        {
+          "title": "SSOG-Attention: Sum Of Separable Gaussians as a sub-quadratic and scalable alternative to SDPA. [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vpt6ay/ssogattention_sum_of_separable_gaussians_as_a/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vpt6ay",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Boosts attention research skills, aligns with generative AI interests.",
+          "action_plan": [
+            "Read the SSOG-Attention paper (0.5h)",
+            "Implement a toy version (2h)",
+            "Post a short demo on GitHub (1h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "860dd4ea6e94"
+        },
+        {
+          "title": "How can we solve long-range recall in linear attention? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vpqwdc/how_can_we_solve_longrange_recall_in_linear/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vpqwdc",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Directly tackles linear attention, core to LLM efficiency work.",
+          "action_plan": [
+            "Skim the long-range recall discussion (0.5h)",
+            "Code a minimal experiment (2h)",
+            "Share results in a Reddit comment (0.5h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "5d65a1e859e4"
+        },
+        {
+          "title": "[Career Advice] Final-year in Physical AI / Robotics. How is the market & global hiring for freshers? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vq3p9w/career_advice_finalyear_in_physical_ai_robotics/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vq3p9w",
+          "score": 2,
+          "ai_score": 4,
+          "ai_summary": "Provides market insight for fresh AI/robotics grads, modest career boost.",
+          "action_plan": [
+            "Read the advice thread (0.5h)",
+            "Summarize key points in personal notes (0.5h)",
+            "Discuss with peers (0.5h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 3,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "8115d124531e"
+        },
+        {
+          "title": "Revisiting the Efficient Channel Attention paper (2019, 12k citations) - the central hypothesis isn't quite right [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vptaw9/revisiting_the_efficient_channel_attention_paper/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vptaw9",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Reevaluates a high‑citation attention paper, good for research depth.",
+          "action_plan": [
+            "Read the Efficient Channel Attention paper (0.5h)",
+            "Reproduce a core experiment (2h)",
+            "Write a short critique blog (1h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "66cd26864f51"
+        },
+        {
+          "title": "ICDM 2026 Results Waiting Place [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vpv9ct/icdm_2026_results_waiting_place_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vpv9ct",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Just a conference result notice; minimal impact on his AI trajectory.",
+          "action_plan": [
+            "Check ICDM 2026 results page (0.2h)",
+            "Note any relevant papers (0.3h)",
+            "Ignore if unrelated (0.1h)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 3,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 1,
+            "eligible": "yes"
+          },
+          "key": "ca1737ee8dc7"
+        },
+        {
+          "title": "[R] SineKAN: Kolmogorov-Arnold Networks Using Sinusoidal Activation Functions",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vqdode/r_sinekan_kolmogorovarnold_networks_using/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vqdode",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Explores novel activation functions, useful for generative model building.",
+          "action_plan": [
+            "Read SineKAN paper abstract (0.5h)",
+            "Implement a small network with sinusoidal activations (2h)",
+            "Post code on GitHub (1h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "ecf15756e55e"
+        },
+        {
+          "title": "Input 4-5x Reduction with sentence and keyword based trie on chat. [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vq9ji0/input_45x_reduction_with_sentence_and_keyword/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vq9ji0",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Trie‑based reduction ties to efficient LLM prompting, high relevance.",
+          "action_plan": [
+            "Review the reduction technique description (0.5h)",
+            "Prototype the trie on a sample chat dataset (2h)",
+            "Document findings in a markdown file (1h)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "56d77f96960e"
+        },
+        {
+          "title": "It only took 200 update steps to flip Qwen2.5-7B-Instruct from denying sentience to developing a robust identity of being a \"sentient machine\" [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vqaq9x/it_only_took_200_update_steps_to_flip/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vqaq9x",
+          "score": 2,
+          "ai_score": 5,
+          "ai_summary": "Shows model behavior manipulation, valuable for safety‑focused AI work.",
+          "action_plan": [
+            "Read the Qwen2.5 flip post (0.5h)",
+            "Run the described update steps on a local model (1.5h)",
+            "Summarize insights for personal notes (0.5h)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "dbec438ebcb8"
+        },
+        {
+          "title": "Z0d1ak CTF",
+          "url": "https://unstop.com/hackathons/z0d1ak-ctf-gravitas26-vit-vellore-1735740",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1735740",
+          "score": 4,
+          "ai_score": 4,
+          "ai_summary": "CTF experience and problem-solving skills",
+          "action_plan": [
+            "Participate in CTF",
+            "Learn from challenges"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 5,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "1be406d1b8e8"
+        },
+        {
+          "title": "The Pirate’s Flag – Capture the Flag Challenge",
+          "url": "https://unstop.com/hackathons/the-pirates-flag-capture-the-flag-challenge-thakur-ramnarayan-college-of-arts-and-commerce-1737865",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1737865",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Local CTF gives modest coding practice but little AI relevance.",
+          "action_plan": [
+            "1. Review challenge rules (≈1h)",
+            "2. Register on platform (≈5m)",
+            "3. Brush up on basic scripting/tools (≈2d)",
+            "4. Attend and compete (≈1d)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "14a898977b60"
+        },
+        {
+          "title": "Quantum Alpha",
+          "url": "https://unstop.com/hackathons/quantum-alpha-yantrika-10-innovate-elevate-faculty-of-technology-delhi-university-1736992",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1736992",
+          "score": 2,
+          "ai_score": 2,
+          "ai_summary": "Another local hackathon; similar low AI impact and limited prestige.",
+          "action_plan": [
+            "1. Scan event details (≈30m)",
+            "2. Sign up (≈5m)",
+            "3. Prepare quick demo code (≈2d)",
+            "4. Compete on event day (≈1d)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 1,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "2b74e9175cc0"
+        },
+        {
+          "title": "Frontend Developer Internship",
+          "url": "https://unstop.com/internships/frontend-developer-internship-evoc-labs-1738105",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1738105",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Non-AI internship",
+          "action_plan": [
+            "Review job description (1 hour)",
+            "Update resume (1 day)",
+            "Apply (1 day)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 4,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "8dcc220db189"
+        },
+        {
+          "title": "Campus Ambassador",
+          "url": "https://unstop.com/internships/campus-ambassador-cybermindspace-1738086",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1738086",
+          "score": 5,
+          "ai_score": 4,
+          "ai_summary": "Leadership and networking opportunities",
+          "action_plan": [
+            "Apply to campus ambassador program",
+            "Attend program events"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 3,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "f3c58933a8a2"
+        },
+        {
+          "title": "Product Internship – Growth",
+          "url": "https://unstop.com/internships/product-internship-growth-qurovo-1738072",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1738072",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Non-technical internship",
+          "action_plan": [
+            "Review job description (1 hour)",
+            "Update resume (1 day)",
+            "Apply (1 day)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 3,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "b19efbc8ee27"
+        },
+        {
+          "title": "Content Creator and Brand Creation Internship",
+          "url": "https://unstop.com/internships/content-creator-and-brand-creation-internship-closekart-private-limited-1737935",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1737935",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Non-technical internship",
+          "action_plan": [
+            "Review job description (1 hour)",
+            "Update resume (1 day)",
+            "Apply (1 day)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 2,
+            "skill": 2,
+            "time": 1,
+            "eligible": "yes"
+          },
+          "key": "d64a23ca46ac"
+        },
+        {
+          "title": "Product Engineering Internship",
+          "url": "https://unstop.com/internships/product-engineering-internship-lumi6-1738074",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1738074",
+          "score": 8,
+          "ai_score": 5,
+          "ai_summary": "Product engineering internship",
+          "action_plan": [
+            "Review job description (1 hour)",
+            "Update resume (1 day)",
+            "Apply (1 day)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "36e7e026be0c"
+        },
+        {
+          "title": "Healthcare Content Internship",
+          "url": "https://unstop.com/internships/healthcare-content-internship-qurovo-1738056",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1738056",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Non-technical internship",
+          "action_plan": [
+            "Review job description (1 hour)",
+            "Update resume (1 day)",
+            "Apply (1 day)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 2,
+            "skill": 2,
+            "time": 1,
+            "eligible": "yes"
+          },
+          "key": "0701f335db66"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-biforgence-private-limited-1738014",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1738014",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Non-technical internship",
+          "action_plan": [
+            "Review job description (1 hour)",
+            "Update resume (1 day)",
+            "Apply (1 day)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 3,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "5040da4a8574"
+        },
+        {
+          "title": "Content Creator Internship",
+          "url": "https://unstop.com/internships/content-creator-internship-avloryn-labs-llp-1738010",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1738010",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Content creation skills",
+          "action_plan": [
+            "Research content creation internship roles",
+            "Update portfolio with relevant projects",
+            "Apply to internship"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 3,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "faf67021cce2"
+        },
+        {
+          "title": "EUREKA! 2026 – Startup Pitching Competition",
+          "url": "https://unstop.com/competitions/eureka-2026-startup-pitching-competition-shah-and-anchor-kutchhi-engineering-college-sakec-mumbai-maharasht-1737729",
+          "source": "unstop",
+          "description": "competition | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "competition"
+          ],
+          "native_id": "1737729",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Startup pitching and entrepreneurship experience",
+          "action_plan": [
+            "Prepare a startup pitch",
+            "Attend the competition"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 7,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "103f8e4c293e"
+        }
+      ]
     }
   ]
 }

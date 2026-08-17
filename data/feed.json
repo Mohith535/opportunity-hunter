@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16",
+  "updated_at": "2026-08-17",
   "items": [
     {
       "key": "8937fe71fd80",
@@ -67,125 +67,6 @@
         "Review machine learning concepts (2 weeks)",
         "Update resume and apply (1 week)",
         "Prepare for potential interview (2 weeks)"
-      ]
-    },
-    {
-      "key": "edecb88f5577",
-      "title": "TikTok — Machine Learning Engineer Intern - Data-Global E-Commerce-Search",
-      "url": "https://lifeattiktok.com/search/7668415591670417717",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "ML engineer internship at TikTok",
-      "action_plan": [
-        "Update resume (2 hours)",
-        "Prepare for internship application (5 hours)",
-        "Apply for the internship (1 hour)"
-      ]
-    },
-    {
-      "key": "19c3dd6379fe",
-      "title": "TikTok — Research Engineer Intern - Agentic Systems & AI Infrastructure - Tiktok-Generalized Arch",
-      "url": "https://lifeattiktok.com/search/7667935568626043141",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Research engineer internship at TikTok",
-      "action_plan": [
-        "Research the role (2 hours)",
-        "Prepare for internship application (5 hours)",
-        "Apply for the internship (1 hour)"
-      ]
-    },
-    {
-      "key": "0a85454b9838",
-      "title": "TikTok — Machine Learning Engineer Intern - Commerce Ads - Summer 2027",
-      "url": "https://lifeattiktok.com/search/7669711968043092229",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "ML engineer internship at TikTok",
-      "action_plan": [
-        "Update resume (2 hours)",
-        "Prepare for internship application (5 hours)",
-        "Apply for the internship (1 hour)"
-      ]
-    },
-    {
-      "key": "490b3cef0a7d",
-      "title": "TikTok — Machine Learning Engineer Intern - Lead Ads",
-      "url": "https://lifeattiktok.com/search/7669707492914727221",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "ML engineer internship at TikTok",
-      "action_plan": [
-        "Update resume (2 hours)",
-        "Prepare for internship application (5 hours)",
-        "Apply for the internship (1 hour)"
-      ]
-    },
-    {
-      "key": "884b4fab03ec",
-      "title": "TikTok — Machine Learning Engineer Intern - Data Search Recommendation Global E-Commerce",
-      "url": "https://lifeattiktok.com/search/7668383643375257909",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "ML engineer internship at TikTok",
-      "action_plan": [
-        "Update resume (2 hours)",
-        "Prepare for internship application (5 hours)",
-        "Apply for the internship (1 hour)"
-      ]
-    },
-    {
-      "key": "e6a66b975b58",
-      "title": "TikTok — Machine Learning Engineer Intern - Brand Ads",
-      "url": "https://lifeattiktok.com/search/7668654528822954245",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "ML engineer internship at TikTok",
-      "action_plan": [
-        "Update resume (2 hours)",
-        "Prepare for internship application (5 hours)",
-        "Apply for the internship (1 hour)"
-      ]
-    },
-    {
-      "key": "90f5f2000cf0",
-      "title": "TikTok — Machine Learning Engineer Intern - Performance Monetization",
-      "url": "https://lifeattiktok.com/search/7669693205558561077",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "ML engineer internship at TikTok",
-      "action_plan": [
-        "Update resume (2 hours)",
-        "Prepare for internship application (5 hours)",
-        "Apply for the internship (1 hour)"
       ]
     },
     {
@@ -557,8 +438,8 @@
       "ai_summary": "AI/ML hackathon with Agentic Memory",
       "action_plan": [
         "Research Agentic Memory (2 hours)",
-        "Form a team (1 week)",
-        "Develop a project (4 weeks)"
+        "Form a team (1 day)",
+        "Develop a project plan (2 days)"
       ]
     },
     {
@@ -596,37 +477,37 @@
       ]
     },
     {
-      "key": "a7dae5228437",
-      "title": "AI/ML Developer Internship",
-      "url": "https://unstop.com/internships/aiml-developer-internship-aitechgen-technology-1730809",
-      "source": "unstop",
-      "score": 7,
+      "key": "650f5d73b840",
+      "title": "Decoding the Past: An Uncertainty-Aware Deep Learning Framework for Sex Attribution in Prehistoric Hand Stencils",
+      "url": "https://arxiv.org/abs/2608.14539v1",
+      "source": "arxiv",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "internship"
+        "research"
       ],
-      "ai_summary": "AI/ML internship",
+      "ai_summary": "Deep learning research experience",
       "action_plan": [
-        "Research company",
-        "Update resume",
-        "Apply"
+        "Read the research paper",
+        "Implement the framework",
+        "Publish results"
       ]
     },
     {
-      "key": "fa5d951bd3ff",
-      "title": "AI Data Intelligence Internship",
-      "url": "https://unstop.com/internships/ai-data-intelligence-internship-qurovo-1730796",
-      "source": "unstop",
-      "score": 7,
+      "key": "bc41609c5134",
+      "title": "Handover of In-Context Learning State Across Session Boundaries",
+      "url": "https://arxiv.org/abs/2608.14528v1",
+      "source": "arxiv",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "internship"
+        "research"
       ],
-      "ai_summary": "AI/ML internship",
+      "ai_summary": "Research experience in in-context learning",
       "action_plan": [
-        "Research company",
-        "Update resume",
-        "Apply"
+        "Read the research paper",
+        "Implement the framework",
+        "Publish results"
       ]
     },
     {
@@ -879,8 +760,8 @@
       "ai_summary": "ML/AI hackathon with Skin AI",
       "action_plan": [
         "Research Skin AI (2 hours)",
-        "Form a team (1 week)",
-        "Develop a project (3 weeks)"
+        "Brainstorm project ideas (1 day)",
+        "Start building (2 days)"
       ]
     },
     {
@@ -1698,6 +1579,127 @@
         "Polish resume highlighting AI projects (1d)",
         "Draft AI‑specific cover letter (2d)",
         "Submit application when posting opens"
+      ]
+    },
+    {
+      "key": "49163596c76e",
+      "title": "UrgenT Help Detecting Performance Regressions Using Machine Learning and Hardware Counters [P]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1vngjmv/urgent_help_detecting_performance_regressions/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "machine learning research",
+      "action_plan": [
+        "read the research paper (2h)",
+        "try out the code (2h)",
+        "apply the knowledge (5h)"
+      ]
+    },
+    {
+      "key": "b1902e87dfa1",
+      "title": "Signal Quest – IEEE SPS Hackathon 2026",
+      "url": "https://unstop.com/hackathons/signal-quest-ieee-sps-hackathon-2026-cmr-institute-of-technology-1736521",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "IEEE SPS hackathon",
+      "action_plan": [
+        "research the hackathon (1h)",
+        "form a team (2h)",
+        "prepare for the hackathon (10h)"
+      ]
+    },
+    {
+      "key": "953b2eb74626",
+      "title": "Breakpoint Hackathon 2026",
+      "url": "https://unstop.com/hackathons/breakpoint-hackathon-2026-invoqe-1734966",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "building experience",
+      "action_plan": [
+        "research hackathon rules (1h)",
+        "form a team (2h)",
+        "prepare for the hackathon (10h)"
+      ]
+    },
+    {
+      "key": "570b26177cb6",
+      "title": "Crowe — AI Engineering Intern",
+      "url": "https://crowe.wd12.myworkdayjobs.com/en-US/external_careers/job/Chicago-IL-USA/AI-Engineering-Intern_R-51782",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "AI engineering intern aligns with his AI‑agent focus. · ⚠ verify eligibility: requires US work authorization",
+      "action_plan": [
+        "1. Verify Crowe’s visa policy for Indian interns (≈1h).",
+        "2. Highlight AI agent projects in resume (≈2h).",
+        "3. Submit application promptly."
+      ]
+    },
+    {
+      "key": "ad15961909e2",
+      "title": "Data Science Internship",
+      "url": "https://unstop.com/internships/data-science-intern-zenotalent-1736972",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Data Science Internship aligns with AI/ML interests",
+      "action_plan": [
+        "Research company and role (1 hour)",
+        "Update resume and portfolio (2 hours)",
+        "Apply for internship (1 hour)"
+      ]
+    },
+    {
+      "key": "0d2935315d2f",
+      "title": "Weekly Contest 516 (leetcode.com)",
+      "url": "https://leetcode.com/contest/weekly-contest-516",
+      "source": "clist",
+      "score": 6,
+      "deadline": "2026-08-23",
+      "tags": [
+        "contest",
+        "competitive programming"
+      ],
+      "ai_summary": "improves coding skills",
+      "action_plan": [
+        "review contest format (30m)",
+        "practice coding (2h)",
+        "participate in contest (2h)"
+      ]
+    },
+    {
+      "key": "6d39200a7f03",
+      "title": "Gameathon 2026",
+      "url": "https://unstop.com/hackathons/gameathon-2026-amrita-vishwa-vidyapeetham-chennai-1736083",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "builds real-world solutions",
+      "action_plan": [
+        "research hackathon rules (1h)",
+        "form a team (2h)",
+        "start building (4h)"
       ]
     }
   ]
