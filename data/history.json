@@ -61581,6 +61581,867 @@
           "key": "103f8e4c293e"
         }
       ]
+    },
+    {
+      "date": "2026-08-18",
+      "items": [
+        {
+          "title": "Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory",
+          "url": "https://arxiv.org/abs/2608.16889v1",
+          "source": "arxiv",
+          "description": "Long-horizon robot manipulation chains many contact-rich skills into one multi-stage task. Vision-language-action (VLA) models increasingly master the individual skills, yet the chain still fails: errors compound beyond the policy's ability to correct, and one subtask silently constrains the next. A promising recipe freezes the VLA and puts an LLM agent in charge: it plans in language, moves in free space with analytic primitives, invokes the VLA only for contact-rich segments, and writes adaptation into language memory. Applied to long horizons, it breaks twice. (1) Competence comes from whole-task exploration at test time, whose cost is multiplicative in stages: if one stage needs T episodes, a K-stage task needs about T^K, and a failure does not reveal which stage caused it. (2) It has no representation of transitions: the VLA primitive carries an exit but no entry condition, so a subtask can succeed in a form its successor cannot use. We present BATON. Against (1), BATON makes the subtask the unit of exploration: each is explored in the cheap short-horizon regime and its solution stored in memory; a long-horizon trajectory is then composed from these solutions rather than discovered whole. Cost becomes additive (T*K) and every failure is attributed to a single stage. Against (2), BATON equips exploration with a transition-aware memory. Within a subtask, a verifier agent governs the invocation transition: the VLA is called only after the wrist view confirms the scene is ready. Across subtasks, a handoff transition restores an entry state disturbed by the predecessor's residue, and a lookahead transition selects the strategy whose outcome the successor can inherit. No parameters are updated. On the long-horizon benchmark RoboMemArena, BATON improves task success by 11.6% and cumulative success by 14.9% over the SoTA.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.16889",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fab274c20433"
+        },
+        {
+          "title": "Improving the matrix multiplication exponent with modern optimization and AlphaEvolve",
+          "url": "https://arxiv.org/abs/2608.16884v1",
+          "source": "arxiv",
+          "description": "The current best bounds on the matrix multiplication exponent $ω$ are obtained through a refinement of the laser method called combination loss analysis (Duan et al., 2022; Williams et al., 2024; Alman et al., 2025). In this note, we address the optimization problem at the core of this approach and propose several improvements. First, we reformulate the optimization problem allowing us to solve it in a larger setting than was previously possible. Second, we leverage recent advances in machine learning to design a new optimization algorithm for this problem. Finally, we refine the resulting optimization algorithm with AlphaEvolve. Our combined approach yields an upper bound of $ω$ < 2.371177, improving the previous best bound of 2.371339.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.16884",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9bcb11de54ca"
+        },
+        {
+          "title": "AutoSR: Automatic Symbolic Regression by Searching Research States",
+          "url": "https://arxiv.org/abs/2608.16876v1",
+          "source": "arxiv",
+          "description": "We introduce Automatic Symbolic Regression (AutoSR), a fully automated system that instantiates Research-Space Symbolic Regression by searching persistent scientific investigations rather than isolated equations. Finite, noisy data often yield numerically competitive expressions that imply very different behavior outside the observed regime, making numerical fit and syntactic complexity insufficient measures of scientific credibility. Existing approaches largely focus on improving expressions, yet the search typically retains little beyond the resulting formula and score, losing the scientific record, such as motivations and probes, that inform what to try next. AutoSR preserves this record in a \\textbf{Research State}, coupling each candidate equation with the reasoning, computational evidence, and independent review developed along its branch. Proposer--reviewer agents develop these states under progressive-widening Monte Carlo tree search (PW-MCTS), which allocates computation across competing investigations, while the accumulated research record is ultimately synthesized into a final report that explains the leading relation and the basis for its selection. Across nine selected challenges from two benchmark suites, AutoSR recovers algebraically equivalent relations in every case, including three cp3-bench problems that no published system recovers and six structurally diverse LSR-Transform problems. Overall, AutoSR extends symbolic regression from equation-level search toward automated scientific investigation, allowing scientific knowledge and accumulated evidence to shape both what is explored and how the resulting equation is justified.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.16876",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "dc4af0600dd2"
+        },
+        {
+          "title": "mrcanlaco/Dao-Vang-Peak-Pulse — ★92",
+          "url": "https://github.com/mrcanlaco/Dao-Vang-Peak-Pulse",
+          "source": "github",
+          "description": "PeakPulse AI — Machine Learning Crypto Distribution & Top Formation Radar for Binance Futures (topics: agent, binance automation, binance future, crypto, finance, fintech, investment, machine learning, python, trading, trading agent, trading bot monitoring, trading scanners, trading stratergies)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "mrcanlaco/Dao-Vang-Peak-Pulse",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a1e21e0dfca7"
+        },
+        {
+          "title": "SaladDay/pi-from-scratch — ★1,045",
+          "url": "https://github.com/SaladDay/pi-from-scratch",
+          "source": "github",
+          "description": "600 行 TypeScript 写成的超级迷你版 pi，让你轻松从 0 写出属于你的 pi-agent (topics: agent loop, ai agent, coding agent, llm, llm agent, pi, pi agent, tool calling, typescript, typescript tutorial)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "SaladDay/pi-from-scratch",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3d4340c4a192"
+        },
+        {
+          "title": "A simple fix for LLM tail latency",
+          "url": "https://engineering.myhoai.com/posts/a-simple-fix-for-llm-tail-latency/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49295179",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e5411a4563da"
+        },
+        {
+          "title": "Roboflow Playground: Try and Compare 30 Computer Vision Models",
+          "url": "https://blog.roboflow.com/roboflow-playground/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49335517",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "49d598be8604"
+        },
+        {
+          "title": "CockroachDB × AWS Hackathon - Build with Agentic Memory",
+          "url": "https://cockroachdb-ai.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 30 - Aug 18, 2026 | prize $ 8,750 | themes: Machine Learning/AI, Databases, DevOps",
+          "deadline": "2026-08-18",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29613",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bd5c9c376843"
+        },
+        {
+          "title": "Reverie Hacks 2026",
+          "url": "https://reverie-hacks-2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Aug 02 - 24, 2026 | prize $ 1,096,950 | themes: Beginner Friendly, Machine Learning/AI, Open Ended",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30198",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "eeffcacd11df"
+        },
+        {
+          "title": "How to make any Sparse Attention / KV Compression look good? [D] [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vqqqcs/how_to_make_any_sparse_attention_kv_compression/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vqqqcs",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f61a74d05210"
+        },
+        {
+          "title": "trying to build a solid math library for stats/ML/DL, need a sanity check on my picks[D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vr76lf/trying_to_build_a_solid_math_library_for/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vr76lf",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5df631b543e9"
+        },
+        {
+          "title": "We’ve got a workshop on production retrieval-augmented generation with open models, benchmarked end to end, thought it’d be relevant here [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vr6cd2/weve_got_a_workshop_on_production/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vr6cd2",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8a2bbe972dc2"
+        },
+        {
+          "title": "ICLR numbered citations possible? [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vr6644/iclr_numbered_citations_possible_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vr6644",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5001dfa9a2bf"
+        },
+        {
+          "title": "MOSIP Decode 2026",
+          "url": "https://unstop.com/hackathons/mosip-decode-2026-synergy-26-international-institute-of-information-technology-iiit-bangalore-1735221",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1735221",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e688ddc74518"
+        },
+        {
+          "title": "CardioViz XR: 48-Hour Medical Animation Challenge",
+          "url": "https://unstop.com/hackathons/cardioviz-xr-48-hour-medical-animation-challenge-lv8-tech-1738943",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1738943",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "112fec063e51"
+        },
+        {
+          "title": "ONE HACK: 8 Hours Web3 Hackathon",
+          "url": "https://unstop.com/hackathons/one-hack-8-hours-web3-hackathon-hackers-cult-1737227",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1737227",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8401cde6eab1"
+        },
+        {
+          "title": "AUREX'26 - Classical Tamil's First Lingual Tech Hackathon",
+          "url": "https://unstop.com/hackathons/aurex26-classical-tamils-first-lingual-tech-hackathon-central-institute-of-classical-tamil-cict-1736281",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1736281",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7dd09be7e77b"
+        },
+        {
+          "title": "Graphic Designer Internship",
+          "url": "https://unstop.com/internships/graphic-designer-internship-aarthik-ai-1739424",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1739424",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8cc4cb02b4bd"
+        },
+        {
+          "title": "Sales Internship",
+          "url": "https://unstop.com/internships/sales-intern-internship-aarthik-ai-1739420",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1739420",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b67a1caad41d"
+        },
+        {
+          "title": "Video Editor Internship",
+          "url": "https://unstop.com/internships/video-editor-internship-aarthik-ai-1739426",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1739426",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d4539c9fad34"
+        },
+        {
+          "title": "Influencer Marketing Internship",
+          "url": "https://unstop.com/internships/influencer-marketing-internship-songartcraft-1739459",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1739459",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2d875020c4d8"
+        },
+        {
+          "title": "Hardware & Firmware Engineering Trainee Internship",
+          "url": "https://unstop.com/internships/hardware-firmware-engineering-trainee-internship-jobtrix-1739448",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1739448",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1f5b6d7713d7"
+        },
+        {
+          "title": "Web Development Internship",
+          "url": "https://unstop.com/internships/web-development-internship-intelleqacademy-1739432",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1739432",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "66f697a820b8"
+        },
+        {
+          "title": "AI Generalist Internship",
+          "url": "https://unstop.com/internships/ai-generalist-internship-rupeevyze-1739377",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1739377",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "004aaf4d0152"
+        },
+        {
+          "title": "Data Analyst Internship",
+          "url": "https://unstop.com/internships/data-analyst-internship-fortune-analytics-1739413",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1739413",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8084928e90e4"
+        },
+        {
+          "title": "Fannie Mae — Data Science Analyst 3 Intern - Cat J",
+          "url": "https://jobs.smartrecruiters.com/FannieMae1SB/743999731568800",
+          "source": "internships",
+          "description": "internship | Fannie Mae | Washington, DC | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "02d12760-33ed-4f97-8ffc-4f561fac43d0",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ce0763eaab93"
+        },
+        {
+          "title": "RegDesk — Front End Developer Intern",
+          "url": "https://jobs.smartrecruiters.com/RegDeskInc/92145731",
+          "source": "internships",
+          "description": "internship | RegDesk | Philadelphia, PA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7a1b2d0b-fb4d-450e-9f60-44a50b914ab1",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "65324477eede"
+        },
+        {
+          "title": "SightCall — Web Developer Intern",
+          "url": "https://jobs.smartrecruiters.com/SightCall/80298252",
+          "source": "internships",
+          "description": "internship | SightCall | SF | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "06d4f7fc-332c-4434-9f9b-abc6fc22ddca",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "40a018accf43"
+        },
+        {
+          "title": "Encephalo Investments — Software Developer Intern",
+          "url": "https://jobs.smartrecruiters.com/EncephaloInvestments/743999734497349",
+          "source": "internships",
+          "description": "internship | Encephalo Investments | Woodbury, MN | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a4cdc0e5-bf6b-4620-a36e-7486462931cc",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7825d7c22418"
+        },
+        {
+          "title": "Zoomifier — Software Development Intern",
+          "url": "https://jobs.smartrecruiters.com/CustomShow/75886593",
+          "source": "internships",
+          "description": "internship | Zoomifier | NYC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "149cce4b-7421-4fc6-8841-bd40fabd4c41",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3d2c0eaf24fc"
+        },
+        {
+          "title": "American Express — AI Engineer Intern - Enterprise Technology Services",
+          "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26012392",
+          "source": "internships",
+          "description": "internship | American Express | Phoenix, AZ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d81967d4-8c47-4e80-bbb7-94d38eb66c5b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5a41fea80b2a"
+        },
+        {
+          "title": "American Express — AI Engineer Intern - Enterprise Technology Services",
+          "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26012375",
+          "source": "internships",
+          "description": "internship | American Express | Phoenix, AZ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7b295350-3015-456a-8a5a-c1c0bc02557c",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6f48d84bc4d9"
+        },
+        {
+          "title": "American Express — Software Engineer Intern - Enterprise Technology Services",
+          "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26011784",
+          "source": "internships",
+          "description": "internship | American Express | Phoenix, AZ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "fccd4367-7e28-42a3-93ee-6e8e6447fbf3",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b818e470f845"
+        },
+        {
+          "title": "L3Harris Technologies — Software Engineering Intern",
+          "url": "https://jobs.l3harris.com/job/Clifton-Software-Engineering-Intern-(Clifton,-NJ)-1-NJ-07014/1420083900/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Clifton, NJ | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f3e59677-5514-4b20-94b5-e6729edf6fd5",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "92f8e3fc7e9c"
+        },
+        {
+          "title": "Point72 — Quantitative Developer Intern",
+          "url": "https://boards.greenhouse.io/point72/jobs/8721562002",
+          "source": "internships",
+          "description": "internship | Point72 | NYC | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "60c7c83c-4da3-419f-b94d-37706d65f534",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0a5023199761"
+        },
+        {
+          "title": "Google — Research Scientist PhD Intern",
+          "url": "https://www.google.com/about/careers/applications/jobs/results/134795423167455942",
+          "source": "internships",
+          "description": "internship | Google | London, UK | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2de78b3a-47c4-4a03-9f0b-683df19e56db",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b2e8104a9a21"
+        },
+        {
+          "title": "GE Aerospace — Aerospace Engineering Engines Co-op - Computer or Software Engineering",
+          "url": "https://geaerospace.wd5.myworkdayjobs.com/ge_externalsite/job/Evendale/Engines-Engineering-Co-op---Computer-or-Software-Engineering---US---Fall-2027_R5029637-1",
+          "source": "internships",
+          "description": "internship | GE Aerospace | Lynn, MA, Evendale, OH | Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5f3d33fb-4b34-47a8-a127-86e779a876b6",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "89c75ea92bde"
+        },
+        {
+          "title": "Xantium — Quantitative Developer Intern",
+          "url": "https://job-boards.greenhouse.io/xantium/jobs/4360768009",
+          "source": "internships",
+          "description": "internship | Xantium | London, UK, NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "baf0289f-d552-40cc-956a-c2184364f85a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "27ffc0722dbb"
+        },
+        {
+          "title": "American Express — AI Engineer Intern - Enterprise Technology Services",
+          "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26011796",
+          "source": "internships",
+          "description": "internship | American Express | Atlanta, GA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "63a29ab9-6ce2-4acf-982b-ed23f2035ab4",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "07c9e3ae17cc"
+        },
+        {
+          "title": "ByteDance — Software Engineer Intern - Global Payment",
+          "url": "https://jobs.bytedance.com/en/position/7668650945276168453/detail",
+          "source": "internships",
+          "description": "internship | ByteDance | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9d9a6729-76a5-4fb4-b71f-ea04e053c877",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bdfb0d3a4ec0"
+        },
+        {
+          "title": "American Express — AI Engineer Intern - Enterprise Technology Services",
+          "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26011698",
+          "source": "internships",
+          "description": "internship | American Express | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "35fb935f-b0e2-45fc-b47d-30f441bc8d56",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "31a7e135ce9f"
+        },
+        {
+          "title": "American Express — AI Engineer Intern - Enterprise Technology Services",
+          "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26011999",
+          "source": "internships",
+          "description": "internship | American Express | Sunrise, FL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3bde4886-9568-4579-8754-68e8e2f44ca1",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9a75d9a4bc3a"
+        },
+        {
+          "title": "American Express — Software Engineer Intern - Enterprise Technology Services",
+          "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26011084",
+          "source": "internships",
+          "description": "internship | American Express | Sunrise, FL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ffbd8a22-814b-4fc4-b848-80a29b63fb66",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7da30e3cc338"
+        },
+        {
+          "title": "American Express — Software Engineer Intern - Enterprise Technology Services",
+          "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26011679",
+          "source": "internships",
+          "description": "internship | American Express | Charlotte, NC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3f62999c-13f9-4d85-b98b-66660fd47199",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "987828cecd25"
+        },
+        {
+          "title": "American Express — AI Engineer Intern - Enterprise Technology Services",
+          "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26011991",
+          "source": "internships",
+          "description": "internship | American Express | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6c81f43a-0537-494d-a776-dd4ac38accbf",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "de4b6fbcfdad"
+        },
+        {
+          "title": "American Express — Software Engineer Intern - Technology",
+          "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26010970",
+          "source": "internships",
+          "description": "internship | American Express | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "057837b7-3fc8-4359-a8b2-1a63802d4a6e",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2e2d5f49ca67"
+        },
+        {
+          "title": "American Express — AI Engineer Intern - Enterprise Technology Services",
+          "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26011745",
+          "source": "internships",
+          "description": "internship | American Express | Sunrise, FL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "838b7d8e-c2bf-4395-b660-6f3484019451",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b783c76c7e7b"
+        },
+        {
+          "title": "Hilton Worldwide — Corporate Summer Internship - Technology, Software Engineering and Cyber",
+          "url": "https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1009/job/218257",
+          "source": "internships",
+          "description": "internship | Hilton Worldwide | Dallas, TX, McLean, VA, Memphis, TN | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f585bde5-311b-4e38-b814-787eb3d19819",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "572a94e9219a"
+        },
+        {
+          "title": "Optiver — Software Engineer Intern",
+          "url": "https://www.optiver.com/join-us/jobs/8713435002/?gh_jid=8713435002",
+          "source": "internships",
+          "description": "internship | Optiver | London, UK | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b723e864-0d78-4dec-835e-0f2da12a40db",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "685c72adca22"
+        },
+        {
+          "title": "Datadog — Software Engineer Intern - Observability and Security Platform",
+          "url": "https://careers.datadoghq.com/detail/8052095/?gh_jid=8052095",
+          "source": "internships",
+          "description": "internship | Datadog | Boston, MA, NYC | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "47fe2157-ddd3-4233-87d7-cf96058a286d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "149de5cac2ed"
+        }
+      ]
     }
   ]
 }
