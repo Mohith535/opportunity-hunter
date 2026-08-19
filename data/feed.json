@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18",
+  "updated_at": "2026-08-19",
   "items": [
     {
       "key": "bd5c9c376843",
@@ -80,23 +80,6 @@
         "Review hackathon rules (2h)",
         "Form a team (1d)",
         "Develop a project (10d)"
-      ]
-    },
-    {
-      "key": "2dab32bcc965",
-      "title": "ByteDance — Machine Learning Research Scientist Intern - Seed AI for Science - Atomistic AI",
-      "url": "https://jobs.bytedance.com/en/position/7670855041951795509/detail",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "ML research internship",
-      "action_plan": [
-        "Research ByteDance (1h)",
-        "Update resume (2h)",
-        "Apply (1h)"
       ]
     },
     {
@@ -539,39 +522,108 @@
       "action_plan": []
     },
     {
-      "key": "500eec53b7bf",
-      "title": "Weekly Contest 515 (leetcode.com)",
-      "url": "https://leetcode.com/contest/weekly-contest-515",
-      "source": "clist",
-      "score": 7,
-      "deadline": "2026-08-16",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "Competitive programming contest for skill growth",
-      "action_plan": [
-        "Register for the contest (1 hour)",
-        "Practice problems (2 weeks)",
-        "Participate in the contest (1 day)"
-      ]
-    },
-    {
-      "key": "c55dc7223162",
-      "title": "Microsoft — Software Engineer Intern - Gears of War",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556956276",
-      "source": "internships",
-      "score": 7,
+      "key": "60d67be1baef",
+      "title": "UI/UX & Frontend Development Internship",
+      "url": "https://unstop.com/internships/uiux-frontend-development-internship-zyoris-technology-1740016",
+      "source": "unstop",
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "Microsoft internship",
-      "action_plan": [
-        "Research Microsoft (1h)",
-        "Update resume (2h)",
-        "Apply (1h)"
-      ]
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7d50a8c8c13a",
+      "title": "Architecture Design Internship",
+      "url": "https://unstop.com/internships/architecture-design-internship-meltplan-india-1739990",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "cc19cc0f1477",
+      "title": "Content & Growth Internship",
+      "url": "https://unstop.com/internships/content-growth-internship-innovate-io-1740003",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "78acbcb3bf15",
+      "title": "Sales and Marketing Internship",
+      "url": "https://unstop.com/internships/sales-and-marketing-internship-yetimarketing-1739952",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b17aa7b0fe0c",
+      "title": "AI Micro-Internship",
+      "url": "https://unstop.com/internships/ai-micro-internship-greyalpha-technologies-pvt-ltd-1739945",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8a26bef591e5",
+      "title": "Digital Marketing Internship",
+      "url": "https://unstop.com/internships/digital-marketing-internship-cornixe-edutech-pvt-ltd-1740019",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3f6d89970a94",
+      "title": "Video Editor Internship",
+      "url": "https://unstop.com/internships/video-editor-internship-bragright-technologies-1739973",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "67980ba34298",
+      "title": "Software Developer Internship",
+      "url": "https://unstop.com/internships/software-developer-internship-aalteon-1740005",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "fc9ba0f9d06a",
@@ -845,139 +897,17 @@
       ]
     },
     {
-      "key": "b744d1948f34",
-      "title": "BharatBuild: A Low-code Hackathon",
-      "url": "https://unstop.com/hackathons/bharatbuild-a-low-code-hackathon-srm-institute-of-science-and-technology-kattankulathur-chennai-1729858",
+      "key": "cb610885911e",
+      "title": "Hackathon 4.0",
+      "url": "https://unstop.com/hackathons/hackathon-40-indian-education-society-management-college-research-mumbai-1739792",
       "source": "unstop",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "Low-code hackathon for building skills",
-      "action_plan": [
-        "Research hackathon details (2 hours)",
-        "Form a team (1 week)",
-        "Prepare for the hackathon (2 weeks)"
-      ]
-    },
-    {
-      "key": "e87baecf8c0f",
-      "title": "Hackblox AI & Open Source Hackathon",
-      "url": "https://unstop.com/hackathons/hackblox-open-source-hackathon-hackers-cult-1731738",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AI hackathon",
-      "action_plan": [
-        "Research hackathon (1h)",
-        "Form team (2h)",
-        "Participate (4h)"
-      ]
-    },
-    {
-      "key": "4a1797bd59c4",
-      "title": "Flutter Developer Internship",
-      "url": "https://unstop.com/internships/flutter-developer-internship-digontom-pvt-ltd-1732000",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "software development",
-      "action_plan": [
-        "Learn Flutter (1w)",
-        "Apply for internship (1d)"
-      ]
-    },
-    {
-      "key": "ad27351f8dc9",
-      "title": "Data Science Internship",
-      "url": "https://unstop.com/internships/data-science-internship-zenotalent-1732032",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Relevant internship",
-      "action_plan": [
-        "Research company (1h)",
-        "Update resume (2h)",
-        "Apply (1h)"
-      ]
-    },
-    {
-      "key": "d2d6a1e08355",
-      "title": "Nokia — AI R&D Engineer Co-op",
-      "url": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/39287",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Nokia AI R&D co‑op aligns with AI engineering; decent prestige and skill growth",
-      "action_plan": [
-        "1. Research Nokia AI labs and recent publications (1h)",
-        "2. Draft resume highlighting ML projects and TaskFlow work (2h)",
-        "3. Submit application and prepare for technical interview (2h)"
-      ]
-    },
-    {
-      "key": "ef7ee2e57f6d",
-      "title": "Nokia — AI R&D Engineer Co-op",
-      "url": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/39284",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Summer AI R&D co‑op offers timely AI experience; missing it reduces early exposure",
-      "action_plan": [
-        "1. Locate summer 2026 posting and note required deliverables (30m)",
-        "2. Update CV with recent AI projects and open‑source contributions (1.5h)",
-        "3. Apply and schedule interview prep session (1h)"
-      ]
-    },
-    {
-      "key": "9ec7382bcb46",
-      "title": "PlusAI — Deep Learning Research Intern - Multimodal BEV Perception",
-      "url": "https://jobs.lever.co/plus-2/2ee24f85-bfa1-47fc-bfe3-fd07521a7b62/apply",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Research intern at PlusAI offers deep‑learning work relevant to his interests · ⚠ verify eligibility: research intern may require advanced e",
-      "action_plan": [
-        "Tailor CV to highlight multimodal DL work (1 day)",
-        "Contact PlusAI recruiter for eligibility clarification (2 days)",
-        "Prepare a short research demo (3 days)"
-      ]
-    },
-    {
-      "key": "dd18d2c5730e",
-      "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Recommendation/Search Alliance",
-      "url": "https://lifeattiktok.com/search/7670247810111768837",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "TikTok ML internship provides real‑world ML exposure but limited elite signal",
-      "action_plan": [
-        "Refresh resume focusing on recommendation systems (1 day)",
-        "Apply through TikTok careers page (2 days)",
-        "Practice coding interview problems (3 days)"
-      ]
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "3aa7a3d90835",
@@ -1658,6 +1588,36 @@
       "action_plan": [
         "Prepare a startup pitch",
         "Attend the competition"
+      ]
+    },
+    {
+      "key": "572a94e9219a",
+      "title": "Hilton Worldwide — Corporate Summer Internship - Technology, Software Engineering and Cyber",
+      "url": "https://efet.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1009/job/218257",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6fdcbb58704e",
+      "title": "Precision Care Challenge 2026",
+      "url": "https://unstop.com/hackathons/crp-precision-care-challenge-2026-ge-healthcare-1731208",
+      "source": "unstop",
+      "score": 5,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "Healthcare AI challenge offers decent portfolio value",
+      "action_plan": [
+        "Week 1: read problem statement (2h)",
+        "Week 2: design solution (5h)",
+        "Week 3: implement prototype (8h)"
       ]
     }
   ]
