@@ -63236,6 +63236,903 @@
           "key": "17db1f8bad88"
         }
       ]
+    },
+    {
+      "date": "2026-08-20",
+      "items": [
+        {
+          "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+          "url": "https://arxiv.org/abs/2608.19197v1",
+          "source": "arxiv",
+          "description": "Continuous self-improvement requires an ever-expanding pool of self-generated, diverse, adaptive goals. For language agents, existing training environment pools (hand-curated, statically synthesized, or frozen-verifier) keep the goal distribution fixed as the learner scales. We introduce SPADE (Self-Play in Adaptive Synthetic Executable Environments), a self-play RL framework in which a single LLM plays two roles: an Environment Designer that writes complete, long-horizon training environments as executable code with an OpenAI Gym-style reset()/step() interface, and a Reasoning Agent that learns to act in them. Each is a stateful, multi-turn environment (state transitions, reward functions, and verification code), so one interface spans reasoning problems and multi-step agentic tool use. The Reasoning Agent's regret is estimated using the gap between its reward with and without privileged hints; in optimizing this regret signal the Environment Designer learns to target environments at the edge of the agent's capabilities while keeping them feasible. Through extensive experimentation, we find several components critical to success: grounding the Environment Designer on documents sampled from a large pretraining corpus, and giving it an accumulated environment memory. Scaling to 30B-parameter models, SPADE improves over the strongest fixed-environment baseline by +5.3 on average across eight held-out math, science, code, and reasoning benchmarks, and lifts the tool-use setting by +5.7 on BFCL-v4 multi-turn and +13.9 on ACEBench-Agent; on the games setting, the margin over the strongest baseline grows with model scale. By making environment design itself a learnable component, SPADE takes a concrete step toward open-ended self-improvement.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.19197",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c67d20a6aa85"
+        },
+        {
+          "title": "Interpretable AI predicts a 2026 summer dry anomaly in central China",
+          "url": "https://arxiv.org/abs/2608.19163v1",
+          "source": "arxiv",
+          "description": "Seasonal precipitation anomalies are largely regulated by atmospheric circulation, which dynamical models predict with greater reliability than precipitation itself. Here, we employ a deep learning model that translates dynamical circulation predictions into precipitation estimates. Predictions initialized from March to May consistently indicate a dry anomaly over central China in summer 2026. Retrospective evaluations revealed higher predictive skill in the analogue years, which also tended to feature central equatorial Pacific warming persisting from the preceding winter into summer. This warming favors an anomalous cyclonic circulation over the western North Pacific-South China Sea-South China region, which induces northerly winds and moisture divergence that jointly suppress rainfall over central China. Supporting this mechanism, layer-wise relevance propagation (LRP) independently identifies these northerly winds as the dominant driver of the prediction among all model inputs. Perturbation tests supported this attribution: removing LRP-identified features effectively eliminates the dry anomaly. Our framework thus provides physically interpretable explanations for AI-derived regional climate projections, facilitating evidence-based assessment before observational data become available.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.19163",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "acb990d4dac8"
+        },
+        {
+          "title": "Continuous-Time Reinforcement Learning for Controlled Hawkes Jump-Diffusions",
+          "url": "https://arxiv.org/abs/2608.19151v1",
+          "source": "arxiv",
+          "description": "We study stochastic control of multivariate Hawkes-driven stochastic differential equations with machine learning algorithms in a non-Markovian setting. Due to the path dependence of the memory of the Hawkes intensity, this problem does not fall within classical stochastic control theory outside particular Markovian kernels. We first develop a finite-dimensional Markovianization procedure and algorithm to approximate multivariate Hawkes processes with mixtures of exponential kernels. We prove the convergence of the Markovianized approximation of the Hawkes process, its intensity, and the value of the problem to the original non-Markovian processes and the value of the primal problem. We then formulate continuous-time deterministic policy gradient learning on the Markovianized approximation of the problem, called Hawkes-CT DDPG. We propose a model-free algorithm to solve the non-Markovian Hawkes-driven optimization by observing only the event times of the process, the realization of the solution to the SDE, and a chosen set of decay filters, while the Hawkes kernel coefficients remain unknown. We compare our continuous time reinforcement learning Hawkes-CT DDPG method with discrete time reinforcement learning techniques under three different types of kernels: simple exponential, Erlang, and power-law kernels.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.19151",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8110720a4f7c"
+        },
+        {
+          "title": "harrrshall/barunlm-35m — ★61",
+          "url": "https://github.com/harrrshall/barunlm-35m",
+          "source": "github",
+          "description": "BarunLM-35M: a parameter-efficient 35M base language model trained on 5.7B tokens (topics: language model, machine learning, pytorch, small language model, text generation)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "harrrshall/barunlm-35m",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c3b97a3ff825"
+        },
+        {
+          "title": "fuxicodex/Fuxi — ★1,232",
+          "url": "https://github.com/fuxicodex/Fuxi",
+          "source": "github",
+          "description": "FuXi is a fast, self-contained AI coding agent that lives in your terminal — edit code, run commands, and drive tools, with cost-aware routing across LLM providers. (topics: agent, ai, ai agent, ai coding, cli, code assistant, coding assistant, developer tools, llm, mcp, terminal, tui)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "fuxicodex/Fuxi",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3570fd8cc1c0"
+        },
+        {
+          "title": "Google replaced Git tags for certain source code with obtaining via Google Drive",
+          "url": "https://grapheneos.social/@GrapheneOS/117057099753905023",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49364745",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fdcfd03716ab"
+        },
+        {
+          "title": "Same GRPO recipe on three from-scratch LLMs (353M/316M/672M) gave three different outcomes, with no clean relationship to scale [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vszsit/same_grpo_recipe_on_three_fromscratch_llms/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vszsit",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "38953c74ae6c"
+        },
+        {
+          "title": "Looking for 1 teammate — RealPDE Competition (NeurIPS 2026)[D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vsjlzj/looking_for_1_teammate_realpde_competition/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vsjlzj",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "31eee0d5f64b"
+        },
+        {
+          "title": "Is it possible to fine-tune gemma4 A4B to generate complex legal principles of court decision? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vt53dp/is_it_possible_to_finetune_gemma4_a4b_to_generate/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vt53dp",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a5ec97831d6d"
+        },
+        {
+          "title": "How much of the weight-space perception gap is actually symmetry? Evidence from ~1.8M fitted SIRENs [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vswdnf/how_much_of_the_weightspace_perception_gap_is/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vswdnf",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ee3050acf817"
+        },
+        {
+          "title": "Monday Munch - DSA Challenge 017 (Rated) (codechef.com)",
+          "url": "https://www.codechef.com/DSAMONDAY017",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-08-24T13:30:00",
+          "deadline": "2026-08-24",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69738961",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "915e91b840ea"
+        },
+        {
+          "title": "Codeforces Round (Div. 2) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2258",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-08-29T14:35:00",
+          "deadline": "2026-08-29",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69744408",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "de11dbcdc3f7"
+        },
+        {
+          "title": "Code to Creation (Project Submission)",
+          "url": "https://unstop.com/hackathons/code-to-creation-project-submission-samrat-ashok-technological-institute-sati-vidisha-1740116",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1740116",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "26eaee0700d1"
+        },
+        {
+          "title": "Captain’s Code – Blind Typing Challenge",
+          "url": "https://unstop.com/hackathons/captains-code-blind-typing-challenge-thakur-ramnarayan-college-of-arts-and-commerce-1740464",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1740464",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4baabba2dc60"
+        },
+        {
+          "title": "HackCelestial 3.0",
+          "url": "https://unstop.com/hackathons/hackcelestial-30-pillai-university-navi-mumbai-1737808",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1737808",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c3d0b617342f"
+        },
+        {
+          "title": "CSI KJSSE Hackday 2.0",
+          "url": "https://unstop.com/hackathons/csi-kjsse-hackday-20-computer-society-of-india-kjsse-1739732",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1739732",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ceb2ba7a553e"
+        },
+        {
+          "title": "Code-X-Novas Innovathon 2026 – National Software, AI Hackathon",
+          "url": "https://unstop.com/hackathons/code-x-novas-innovathon-2026-national-software-ai-hackathon-code-x-novas-1737822",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1737822",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "793ef36a1064"
+        },
+        {
+          "title": "Manufacture Your Dream: RC Car Building and Racing",
+          "url": "https://unstop.com/hackathons/manufacture-your-dream-rc-car-building-and-racing-gravitas26-vit-vellore-1733628",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1733628",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6dbec297ca51"
+        },
+        {
+          "title": "Battlecode",
+          "url": "https://unstop.com/hackathons/battlecode-gravitas26-vit-vellore-1735714",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1735714",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c71b7e8a1dc2"
+        },
+        {
+          "title": "Celestia 2.0",
+          "url": "https://unstop.com/hackathons/celestia-20-gravitas26-vit-vellore-1735987",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1735987",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1025ae0f3ca7"
+        },
+        {
+          "title": "Content Writer Internship",
+          "url": "https://unstop.com/internships/content-writer-internship-accesco-living-1740502",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1740502",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7828cd97cb9b"
+        },
+        {
+          "title": "Campus Ambassador Internship",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-the-helping-society-1740526",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1740526",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a11cb32420e9"
+        },
+        {
+          "title": "Marketing Sales Internship",
+          "url": "https://unstop.com/internships/marketing-sales-internship-clapingocom-1740508",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1740508",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "91e815699be2"
+        },
+        {
+          "title": "Technical Lead Qualifier Internship",
+          "url": "https://unstop.com/internships/technical-lead-qualifier-internship-flyyourtech-1740522",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1740522",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f1287e404899"
+        },
+        {
+          "title": "Management Trainee",
+          "url": "https://unstop.com/internships/management-trainee-webmob-technologies-1740532",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1740532",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9d0647078f32"
+        },
+        {
+          "title": "Telecalling Internship",
+          "url": "https://unstop.com/internships/telecalling-internship-spellzee-1740523",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1740523",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4cc8edc69510"
+        },
+        {
+          "title": "Campus Marketing Internship",
+          "url": "https://unstop.com/internships/campus-marketing-internship-internsforge-private-limited-1740539",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1740539",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "54fbe9abadc6"
+        },
+        {
+          "title": "Outreach Internship",
+          "url": "https://unstop.com/internships/outreach-internship-prepzo-1737028",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1737028",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bd9f3e1e9324"
+        },
+        {
+          "title": "TikTok — Software Engineer Intern - Recommendation Infra - Performance Efficiency",
+          "url": "https://lifeattiktok.com/search/7675159726676101381",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f9783cfd-0933-41da-8102-1c15ae7d9c3c",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1b5f54a93f76"
+        },
+        {
+          "title": "TikTok — Software Engineer Intern - Recommendation Architecture - Feeds Infrastructure",
+          "url": "https://lifeattiktok.com/search/7672926068681951493",
+          "source": "internships",
+          "description": "internship | TikTok | Seattle, WA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "dcab0a63-0790-4990-ad6c-517c42b6436b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a59056f5a162"
+        },
+        {
+          "title": "TikTok — Software Engineer Intern - Recommendation Architecture - Feeds Infrastructure",
+          "url": "https://lifeattiktok.com/search/7672934842451577141",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "89769fe8-b21d-48e7-bc68-0ac457b3a934",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "21bc62a7a7a3"
+        },
+        {
+          "title": "TikTok — Software Engineer Intern - Recommendation Architecture - Feeds Infrastructure",
+          "url": "https://lifeattiktok.com/search/7672930401597671733",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7a6d014a-e6ad-4587-8acf-9acfe710342d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ba7e83ca4eb6"
+        },
+        {
+          "title": "TikTok — Software Engineer Intern - Recommendation Architecture - Feeds Infrastructure",
+          "url": "https://lifeattiktok.com/search/7674029284224092421",
+          "source": "internships",
+          "description": "internship | TikTok | Seattle, WA | Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4ecdff57-6188-48f4-9540-4521c485bc53",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "37a2ac968dc3"
+        },
+        {
+          "title": "TikTok — Software Engineer Intern - TikTok Search Architecture",
+          "url": "https://lifeattiktok.com/search/7675524738811218229",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "af4f346b-7d83-473b-b205-a8487c067438",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9cfdbae2ae5a"
+        },
+        {
+          "title": "TikTok — Software Engineer Intern - TikTok Search Architecture",
+          "url": "https://lifeattiktok.com/search/7675517686256863541",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c2b2c451-d750-4afe-a76b-18cec45fff86",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "60f125840204"
+        },
+        {
+          "title": "TikTok — Software Engineer Intern - Recommendation Infra - Performance Efficiency",
+          "url": "https://lifeattiktok.com/search/7675163472469444917",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0027f5ce-0bdc-419e-ac80-095bae27c176",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a8716d9aa3d4"
+        },
+        {
+          "title": "General Matter — Software Engineering Intern",
+          "url": "https://job-boards.greenhouse.io/generalmatter/jobs/5377118008",
+          "source": "internships",
+          "description": "internship | General Matter | LA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "52758ea7-052d-4c85-9fbe-2558a05538f1",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "dfbbbeaa37fa"
+        },
+        {
+          "title": "Western Magnetics — Software Engineer Intern",
+          "url": "https://apply.workable.com/western-magnetics/j/E366930F3F/apply",
+          "source": "internships",
+          "description": "internship | Western Magnetics | South SF | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "67334d37-7e0d-42f1-8946-bdab22643cc3",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bde944f79dc6"
+        },
+        {
+          "title": "Boston Consulting Group — Forward Deployed AI Engineer - Campus",
+          "url": "https://careers.bcg.com/global/en/job/59067",
+          "source": "internships",
+          "description": "internship | Boston Consulting Group | Boston, MA, Seattle, WA, Washington, DC, SF, LA, Miami, FL, Dallas, TX, Chicago, IL, Pittsburgh, PA, NYC, Brooklyn, NY, Manhattan Beach, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f6f17706-f32e-4624-8175-889945a160e5",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "268f4085c634"
+        },
+        {
+          "title": "Notion — Data Science Intern",
+          "url": "https://jobs.ashbyhq.com/notion/a67d6f2b-7c13-41d0-b36b-b2f662c9873e/application?embed=true",
+          "source": "internships",
+          "description": "internship | Notion | SF | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "efc56001-b148-410d-babd-1c8374028468",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f22a2f846360"
+        },
+        {
+          "title": "METECS — Software Intern",
+          "url": "https://metecs.applytojob.com/apply/XTBhKHIVhQ/Summer-Software-Internship",
+          "source": "internships",
+          "description": "internship | METECS | Houston, TX | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4fd996db-84f4-40ce-9d98-4134847d754f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b6a2dfbc2f30"
+        },
+        {
+          "title": "StudyFetch — AI Research Assistant - Machine Learning & AI",
+          "url": "https://ats.rippling.com/studyfetch/jobs/ae12be8f-32a4-469f-8d71-452c8409a92a",
+          "source": "internships",
+          "description": "internship | StudyFetch | Beverly Hills, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "179e11a1-a541-4256-a6c3-e36544663802",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9df611fa895d"
+        },
+        {
+          "title": "Specialisterne — Software Engineer Intern - Neurodiversity Hiring Initiative",
+          "url": "https://specialisterne.applytojob.com/apply/gOkVN8zGTL/Software-Engineer-Intern-Neurodiversity-Hiring-Initiative",
+          "source": "internships",
+          "description": "internship | Specialisterne | Dallas, TX | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "01f94977-fc40-414b-bd6d-f44693eacceb",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "93d0d3053b7c"
+        },
+        {
+          "title": "Microsoft — AI for Science Resident - Machine Learning",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556871066",
+          "source": "internships",
+          "description": "internship | Microsoft | Cambridge, UK, Berlin, Germany | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1b2916de-7e46-4f2e-b790-241b1fd38a82",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fab31c91bf45"
+        },
+        {
+          "title": "TikTok — Machine Learning MLOps Intern - Global Site Reliability Engineering",
+          "url": "https://lifeattiktok.com/search/7670875283026053381",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "af0078da-4418-4e04-afb5-17ec87e8381a",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fd334ac439b4"
+        },
+        {
+          "title": "Kepler Communications — Embedded Software Engineer Intern - January 2027 - 4 months",
+          "url": "https://jobs.lever.co/kepler/2ad02ce3-1d56-4aee-9f1d-5199c780c0c1/apply",
+          "source": "internships",
+          "description": "internship | Kepler Communications | Toronto, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "fec46c2b-cf8e-4226-8293-73d3380e239d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bc2fe2042301"
+        },
+        {
+          "title": "InfiniteQuant — Quantitative Developer Internship - Summer 2027",
+          "url": "https://jobs.smartrecruiters.com/InfiniteQuant/744000144281579",
+          "source": "internships",
+          "description": "internship | InfiniteQuant | Dubai - United Arab Emirates, NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "480a3ec4-1b4b-4ee7-9901-ed9ea485c1c5",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fc0065c78d07"
+        },
+        {
+          "title": "Microsoft — AI Software Engineer Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556962891",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA, Mountain View, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b5b15050-2287-4ebf-8a26-f0745c794fd3",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a09d83736095"
+        },
+        {
+          "title": "ByteDance — Machine Learning Engineer Intern - E-Commerce Risk Control - PhD",
+          "url": "https://jobs.bytedance.com/en/position/7675477254269765941/detail",
+          "source": "internships",
+          "description": "internship | ByteDance | Seattle, WA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "19652a32-abb6-4c77-8971-0c6514ed8034",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "297090d4f5d2"
+        },
+        {
+          "title": "ByteDance — Machine Learning Engineer Intern - E-Commerce Risk Control - PhD",
+          "url": "https://jobs.bytedance.com/en/position/7675478684795881781/detail",
+          "source": "internships",
+          "description": "internship | ByteDance | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "20db6da0-8e69-4119-8287-080208c765ec",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "dd48ad2e55b9"
+        },
+        {
+          "title": "NVIDIA — Generative AI Ph.D. Research Intern",
+          "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--PhD-Research-Generative-AI_JR2023475",
+          "source": "internships",
+          "description": "internship | NVIDIA | Santa Clara, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "31523bd0-3228-448d-b0ce-f99812c17fca",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "306e75618925"
+        },
+        {
+          "title": "NVIDIA — Systems Software Engineering Intern",
+          "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Systems-Software-Engineering_JR2023492",
+          "source": "internships",
+          "description": "internship | NVIDIA | Santa Clara, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ea8c5ebd-a6c4-49ff-9dac-f3532c41737a",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ffaff76c19b6"
+        }
+      ]
     }
   ]
 }

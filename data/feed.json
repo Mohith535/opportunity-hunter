@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19",
+  "updated_at": "2026-08-20",
   "items": [
     {
       "key": "bd5c9c376843",
@@ -13,57 +13,6 @@
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "3582cc5fc119",
-      "title": "Epic Games — Machine Learning Intern - Special Projects - Epic Research Group",
-      "url": "https://epicgames.com/careers/jobs/5708589004?gh_jid=5708589004",
-      "source": "internships",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Machine learning internship at Epic Games",
-      "action_plan": [
-        "Review machine learning concepts (2 weeks)",
-        "Update resume and apply (1 week)",
-        "Prepare for potential interview (2 weeks)"
-      ]
-    },
-    {
-      "key": "42624b3833b4",
-      "title": "Epic Games — Machine Learning Intern",
-      "url": "https://epicgames.com/careers/jobs/6138134004?gh_jid=6138134004",
-      "source": "internships",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Machine learning internship at Epic Games",
-      "action_plan": [
-        "Review machine learning concepts (2 weeks)",
-        "Update resume and apply (1 week)",
-        "Prepare for potential interview (2 weeks)"
-      ]
-    },
-    {
-      "key": "d8cfd45e5881",
-      "title": "Epic Games — Machine Learning Intern - Special Projects - Epic Research Group",
-      "url": "https://epicgames.com/careers/jobs/6138140004?gh_jid=6138140004",
-      "source": "internships",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Machine learning internship at Epic Games",
-      "action_plan": [
-        "Review machine learning concepts (2 weeks)",
-        "Update resume and apply (1 week)",
-        "Prepare for potential interview (2 weeks)"
-      ]
     },
     {
       "key": "5e2e5f39a26f",
@@ -80,40 +29,6 @@
         "Review hackathon rules (2h)",
         "Form a team (1d)",
         "Develop a project (10d)"
-      ]
-    },
-    {
-      "key": "9bae7dc0be7d",
-      "title": "AI Engineer Internship",
-      "url": "https://unstop.com/internships/ai-engineer-internship-the-ai-signal-1733421",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI Engineer Intern",
-      "action_plan": [
-        "Update resume (1d)",
-        "Apply for internship (1d)",
-        "Prepare for interview (3d)"
-      ]
-    },
-    {
-      "key": "f9acb3eff884",
-      "title": "TMEIC Corporation Americas — Applications Intern - AI and Machine Learning",
-      "url": "https://apply.workable.com/tmeic-corporation-americas/j/FD4C9770FF/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI and ML internship at a reputable company",
-      "action_plan": [
-        "Review AI and ML concepts (2 weeks)",
-        "Update resume and apply (1 week)",
-        "Prepare for potential interview (2 weeks)"
       ]
     },
     {
@@ -626,6 +541,149 @@
       "action_plan": []
     },
     {
+      "key": "7828cd97cb9b",
+      "title": "Content Writer Internship",
+      "url": "https://unstop.com/internships/content-writer-internship-accesco-living-1740502",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a11cb32420e9",
+      "title": "Campus Ambassador Internship",
+      "url": "https://unstop.com/internships/campus-ambassador-internship-the-helping-society-1740526",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "91e815699be2",
+      "title": "Marketing Sales Internship",
+      "url": "https://unstop.com/internships/marketing-sales-internship-clapingocom-1740508",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f1287e404899",
+      "title": "Technical Lead Qualifier Internship",
+      "url": "https://unstop.com/internships/technical-lead-qualifier-internship-flyyourtech-1740522",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4cc8edc69510",
+      "title": "Telecalling Internship",
+      "url": "https://unstop.com/internships/telecalling-internship-spellzee-1740523",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "54fbe9abadc6",
+      "title": "Campus Marketing Internship",
+      "url": "https://unstop.com/internships/campus-marketing-internship-internsforge-private-limited-1740539",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "bd9f3e1e9324",
+      "title": "Outreach Internship",
+      "url": "https://unstop.com/internships/outreach-internship-prepzo-1737028",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "fab31c91bf45",
+      "title": "Microsoft — AI for Science Resident - Machine Learning",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556871066",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a09d83736095",
+      "title": "Microsoft — AI Software Engineer Intern",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556962891",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "306e75618925",
+      "title": "NVIDIA — Generative AI Ph.D. Research Intern",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--PhD-Research-Generative-AI_JR2023475",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "ffaff76c19b6",
+      "title": "NVIDIA — Systems Software Engineering Intern",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Systems-Software-Engineering_JR2023492",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "fc9ba0f9d06a",
       "title": "zhiningsun/bert_finchina-sa-project — ★67",
       "url": "https://github.com/zhiningsun/bert_finchina-sa-project",
@@ -910,106 +968,17 @@
       "action_plan": []
     },
     {
-      "key": "3aa7a3d90835",
-      "title": "CoArena Hackathon",
-      "url": "https://unstop.com/hackathons/coarena-hackathon-coarena-1733431",
+      "key": "793ef36a1064",
+      "title": "Code-X-Novas Innovathon 2026 – National Software, AI Hackathon",
+      "url": "https://unstop.com/hackathons/code-x-novas-innovathon-2026-national-software-ai-hackathon-code-x-novas-1737822",
       "source": "unstop",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "Opportunity to build and showcase projects",
-      "action_plan": [
-        "Form a team or find a partner (1 week)",
-        "Choose a project idea (1 week)",
-        "Develop and submit the project (4 weeks)"
-      ]
-    },
-    {
-      "key": "33a17f78df21",
-      "title": "TEJAS India Hackathon 2026",
-      "url": "https://unstop.com/hackathons/tejas-india-hackathon-2026-government-engineering-collegegec-jamui-1733064",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Opportunity to build and showcase projects",
-      "action_plan": [
-        "Form a team or find a partner (1 week)",
-        "Choose a project idea (1 week)",
-        "Develop and submit the project (4 weeks)"
-      ]
-    },
-    {
-      "key": "b52efc3daf58",
-      "title": "Edge AI Hackathon 2026",
-      "url": "https://unstop.com/hackathons/edge-ai-hackathon-2026-parala-maharaja-engineering-college-berhampur-1720578",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Edge AI focus aligns with his AI‑engineering interests",
-      "action_plan": [
-        "Day 1: review edge‑AI rules (1h)",
-        "Day 1‑2: assemble toolkit (3h)",
-        "Day 2‑3: build demo (8h)"
-      ]
-    },
-    {
-      "key": "c7cd3e35a55b",
-      "title": "ProNexus — Software Engineer Intern",
-      "url": "https://apply.workable.com/pronexus-1/j/AF8C34AC6D/apply",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Remote US internship adds international exposure and solid experience",
-      "action_plan": [
-        "Week 1: update resume (2h)",
-        "Week 1: submit application (1h)",
-        "Week 2‑4: interview prep (5h)"
-      ]
-    },
-    {
-      "key": "f24b3b89c3bd",
-      "title": "Turabify — AI Automation Intern",
-      "url": "https://apply.workable.com/turabify-co/j/0B50CC0D49/apply",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI automation internship aligns with building focus and adds US experience",
-      "action_plan": [
-        "Week 1: polish CV (2h)",
-        "Week 1: apply (1h)",
-        "Week 2: interview prep (4h)"
-      ]
-    },
-    {
-      "key": "412645532df4",
-      "title": "Kastle AI — Software Engineer Intern",
-      "url": "https://jobs.ashbyhq.com/kastle/6f32db51-de45-472f-a9c8-d9419d3634ee/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI startup intern offers strong skill growth, modest brand impact.",
-      "action_plan": [
-        "Gather AI demo work for portfolio (1h)",
-        "Apply to Kastle AI (2h)",
-        "Prep for system design interview (1w)"
-      ]
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "c2065a94fc2c",
@@ -1602,23 +1571,6 @@
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "6fdcbb58704e",
-      "title": "Precision Care Challenge 2026",
-      "url": "https://unstop.com/hackathons/crp-precision-care-challenge-2026-ge-healthcare-1731208",
-      "source": "unstop",
-      "score": 5,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Healthcare AI challenge offers decent portfolio value",
-      "action_plan": [
-        "Week 1: read problem statement (2h)",
-        "Week 2: design solution (5h)",
-        "Week 3: implement prototype (8h)"
-      ]
     }
   ]
 }
