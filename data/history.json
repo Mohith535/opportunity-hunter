@@ -64133,6 +64133,785 @@
           "key": "ffaff76c19b6"
         }
       ]
+    },
+    {
+      "date": "2026-08-21",
+      "items": [
+        {
+          "title": "ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models",
+          "url": "https://arxiv.org/abs/2608.20338v1",
+          "source": "arxiv",
+          "description": "Large Language Models (LLMs) increasingly require selective removal of harmful or sensitive knowledge, called unlearning, yet existing methods and benchmarks fail to evaluate this capability completely. Current approaches rely on disjoint forget and retain sets composed of independent facts, and measure success using simple and direct factual recall. This framing fails to capture a key requirement of unlearning, namely the ability to eliminate harmful behaviors while preserving benign and beneficial knowledge. We argue that effective unlearning must operate at the level of concepts, ensuring complete removal of unsafe applications while maintaining their correct and useful usage, thereby achieving conceptually meaningful and complete unlearning. To better evaluate unlearning techniques from such a practical viewpoint, we introduce the notion of dual-use concepts: concepts that can be used in both harmful and benign contexts. Building on these concepts, we construct a benchmark called ConceptGuard where forget and retain sets are explicitly complementary in concept usage. Our benchmark uniquely enables unlearning to be explored and gauged at the level of concepts, instead of sparse facts, and evaluation is intent-sensitive with the goal of maximizing contextual separation to promote safer behavior. We demonstrate that current unlearning techniques perform poorly under this setting, showing weak contextual separation alongside poor performance in ROUGE and concept-level metrics. Our results reveal strong forgetting-utility trade-offs, limited gains in contextual sensitivity, and poor consistency in concept-level control across methods, and provide ideas for unlearning approaches that better align with real-world safety requirements. Our dataset is publicly available.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.20338",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7d50127b2d38"
+        },
+        {
+          "title": "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement",
+          "url": "https://arxiv.org/abs/2608.20318v1",
+          "source": "arxiv",
+          "description": "Recursive self-improvement (RSI) asks whether an AI system can improve the process that produces AI systems, so that the next system inherits the improvement. That process is the training algorithm: a better objective or update rule improves the compute\\mbox{-}capability exchange rate for every subsequent run, including the one that produces the next agent. Whether RSI is feasible therefore turns on whether an agent can design training algorithms. No benchmark isolates that ability: existing suites are won by collecting data or by tuning hyperparameters, and none tells a change to how a run is executed apart from a change to how the model learns. We present AI4AI\\mbox{-}Bench, 10 frozen research repositories spanning 10 training algorithm families. In each task, an agent has 4 hours on one B300 to rewrite the training algorithm; its code is then rerun from scratch for up to 12 hours and scored by a fixed evaluator hidden from the agent, against the repository's original algorithm under the same procedure. Because the 10 metrics are incommensurable, every task is mapped onto one scale on which $0$ is an uninformative model, $0.1$ is the algorithm the repository ships, and $1.0$ is the task optimum. Across 29 configurations of 6 systems on all 10 tasks the mean score is $0.166$, and the best system reaches $0.250$: even the strongest closes under a fifth of the distance between the algorithm that was already there and the optimum. The submissions show where that distance went: most never change how the model learns at all, and the minority that do average $0.226$ against $0.126$ for the rest. More reasoning effort mostly buys the willingness to go there, taking that minority from $8\\%$ of submissions to $64\\%$ and the mean score from $0.094$ to $0.196$. We release the task suite, the evaluators and every scored submission, so that the measurement can be repeated as these systems change.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.20318",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b774c1956b5f"
+        },
+        {
+          "title": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
+          "url": "https://arxiv.org/abs/2608.20316v1",
+          "source": "arxiv",
+          "description": "Heterogeneous AI systems composed of multiple models, architectures, harnesses, or inference-time settings can improve quality and efficiency by routing queries to the specialist who can answer most effectively at the lowest cost. Routing requires estimating each specialist's expected return, but this value estimation has a cost. Cheap estimators (e.g., embedding-based predictors) are fast but noisy, while accurate estimators (e.g., fine-tuned models with access to retrieval results or partial reasoning traces) are expensive. We formalize this tradeoff as an instance of Pandora's Box, the classical problem of optimal search with costly inspection. Under a Gaussian signal model, the resulting policies have closed-form value-of-information expressions that determine, for each specialist and input, whether refining the value estimate is worth its cost. We call the centralized policy Pandora's Router. We extend this to a decentralized setting, Pandora's Bidder, where specialists independently decide whether to invest in self-assessment before accepting an offered price to claim a query. Experiments across three domains---a standard multi-LLM benchmark, retrieval-augmented specialists, and LLMs with variable inference-time reasoning---show that Pandora's Router matches the routing quality of exhaustive estimation, while querying the expensive estimator far less often. In the decentralized setting, value-of-information reasoning improves allocative efficiency when competing estimates are accurate; when competing estimates are noisy, however, it can increase the strategic specialist's utility at the expense of others.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.20316",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "97a59dd86d44"
+        },
+        {
+          "title": "Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records",
+          "url": "https://arxiv.org/abs/2608.20315v1",
+          "source": "arxiv",
+          "description": "Predictive models over structured electronic health records (EHRs) remain central to machine learning for healthcare, but few have jointly emphasized quantitative laboratory information and interpretability with respect to input medical events. We present BERT-LER, a BERT-style model for coded EHR timelines pretrained and fine-tuned from a de-identified EHR dataset of 75 million patients, that encodes laboratory test results as discrete tokens while retaining graded information through percentile-based binning, paired with Integrated Gradients for token-level attributions grounded in the input EHR sequence. We benchmark our approach on the public EHRShot benchmark suite and on an asthma severity progression study based on real-world data. This addresses a methodological gap in EHR foundation-style modeling by unifying laboratory value representation and explainability in a single framework, while assessing whether both predictive performance and explanations generalize beyond standard clinical prediction tasks. Across EHRShot and asthma tasks, BERT-LER achieves predictive performance that is competitive with, and on laboratory-related tasks often exceeds, publicly available benchmark models, and provides attributions that align with clinically known risk factors. Our architecture and explainability approach can be applied to many therapeutic areas and prediction tasks using language models trained on structured EHRs.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.20315",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bdab43c1a970"
+        },
+        {
+          "title": "zorost/AI-Engineering-Lab — ★98",
+          "url": "https://github.com/zorost/AI-Engineering-Lab",
+          "source": "github",
+          "description": "A free, self-paced 24-week AI engineering course: Python, machine learning, LLMs, RAG, fine-tuning, agents and MCP, Azure and Vertex and Bedrock, and Databricks. 43 runnable notebooks, one continuous case study. MIT licensed, no signup. By Zorost Intelligence AI Lab. (topics: ai agents, ai engineering, course, curriculum, databricks, deep learning, fine tuning, generative ai, learning resources, llm, machine learning, mcp, mlops, prompt engineering, pyspark, python, rag, roadmap, vector search, zorost)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "zorost/AI-Engineering-Lab",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c81502bbdd14"
+        },
+        {
+          "title": "Pinvou/pinvou-agent — ★1,056",
+          "url": "https://github.com/Pinvou/pinvou-agent",
+          "source": "github",
+          "description": "Open-source desktop AI agent for tools, files, knowledge, workflows, and real deliverables. (topics: ai agent, automation, desktop app, llm, local first, mcp, open source, react, rust, tauri)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "Pinvou/pinvou-agent",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "10b76897ef1d"
+        },
+        {
+          "title": "Vomit: Clean up Claude 5's token output with a separate LLM",
+          "url": "https://github.com/zachahn/vomit",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49375996",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bf73042a8cfd"
+        },
+        {
+          "title": "Mojo is now open source",
+          "url": "https://www.modular.com/blog/mojo-open-source",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49348079",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e2b57146c469"
+        },
+        {
+          "title": "Artificial Intelligence Policy",
+          "url": "https://www.law.berkeley.edu/academics/registrar/academic-rules/artificial-intelligence-policy/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49382614",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "db3614d588a0"
+        },
+        {
+          "title": "Discussion thread for EMNLP 2026 Notifications/Results [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vtdpve/discussion_thread_for_emnlp_2026/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vtdpve",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d1f3b4809d4b"
+        },
+        {
+          "title": "About the impact of grouping classes in multiclass classification [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vtctaz/about_the_impact_of_grouping_classes_in/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vtctaz",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b9ab1e11c21e"
+        },
+        {
+          "title": "The spectral neuron - an ML primitive for scalable and interpretable models [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vtfimo/the_spectral_neuron_an_ml_primitive_for_scalable/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vtfimo",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e8209de1973d"
+        },
+        {
+          "title": "AI-generated code detection in CI/CD — looking for approaches and real-world experience [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vtgw1g/aigenerated_code_detection_in_cicd_looking_for/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vtgw1g",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0b089a905afe"
+        },
+        {
+          "title": "Resizing images from Flutter Camera Stream for TFLite modle [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vth6d9/resizing_images_from_flutter_camera_stream_for/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vth6d9",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f0ad8fba6925"
+        },
+        {
+          "title": "Mapping intrinsic rank and informational gravity in complex tabular data: I developed a non-parametric, model-agnostic, information-theoretic diagnostic to bypass the limits of linear, rank, and Euclidean baselines. [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vtjotb/mapping_intrinsic_rank_and_informational_gravity/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vtjotb",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4ca2e433b2dd"
+        },
+        {
+          "title": "Is KV Cache in a high dimensional vector space? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vtrdem/is_kv_cache_in_a_high_dimensional_vector_space_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vtrdem",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "23079c1d836c"
+        },
+        {
+          "title": "Cloudforge",
+          "url": "https://unstop.com/hackathons/cloudforge-atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-1741840",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1741840",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a1ae2acefda7"
+        },
+        {
+          "title": "Identity under Attack",
+          "url": "https://unstop.com/hackathons/identity-under-attack-amrita-vishwa-vidyapeetham-avv-chennai-1736594",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1736594",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7690bec1b545"
+        },
+        {
+          "title": "Ignition Hackathon Series 2026",
+          "url": "https://unstop.com/hackathons/ignition-hackathon-series-2026-concept2action-1742078",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742078",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d29391390257"
+        },
+        {
+          "title": "Deepsprint Hackathon",
+          "url": "https://unstop.com/hackathons/deepsprint-hackathon-chennai-insitute-of-technology-1742000",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742000",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3cbbc9addcb5"
+        },
+        {
+          "title": "Bug Blitz",
+          "url": "https://unstop.com/hackathons/bug-blitz-ksr-college-of-engineering-namakkal-tamil-nadu-1741998",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1741998",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9e7806ec28fe"
+        },
+        {
+          "title": "Crew Assemble — Build, Battle & Conquer",
+          "url": "https://unstop.com/hackathons/crew-assemble-build-battle-conquer-thakur-ramnarayan-college-of-arts-and-commerce-1740745",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1740745",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "719f5b28546d"
+        },
+        {
+          "title": "The Lost Algorithm (DSA)",
+          "url": "https://unstop.com/hackathons/the-lost-algorithm-dsa-thakur-ramnarayan-college-of-arts-and-commerce-1740704",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1740704",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "aab8fe46346c"
+        },
+        {
+          "title": "Rebuild the Classroom : Build the tool that teaches when AI is the teacher.",
+          "url": "https://unstop.com/hackathons/rebuild-the-classroom-build-the-tool-that-teaches-when-ai-is-the-teacher-lv8-tech-1741171",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1741171",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e83e07e866af"
+        },
+        {
+          "title": "AI/ML Internship",
+          "url": "https://unstop.com/internships/aiml-internship-pgagi-consultancy-private-limited-1742212",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742212",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ef46ad1aea89"
+        },
+        {
+          "title": "Social Media Internship",
+          "url": "https://unstop.com/internships/social-media-internship-talapatramai-1742233",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742233",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "26539fa6190e"
+        },
+        {
+          "title": "Market Research Analyst Internship",
+          "url": "https://unstop.com/internships/market-research-analyst-internship-estatus-official-1742227",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742227",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1f9a853cb7d1"
+        },
+        {
+          "title": "Human Resources Internship",
+          "url": "https://unstop.com/internships/human-resources-internship-estatus-official-1742220",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742220",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5b7d8541346a"
+        },
+        {
+          "title": "HR Recruiter Internship",
+          "url": "https://unstop.com/internships/hr-recruiter-internship-twiite-1742142",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742142",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9e4a97bf4add"
+        },
+        {
+          "title": "Video Content Creator Internship",
+          "url": "https://unstop.com/internships/video-content-creator-internship-flauntbiz-1742157",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742157",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5ae576101068"
+        },
+        {
+          "title": "Full Stack Developer Internship",
+          "url": "https://unstop.com/internships/full-stack-developer-internship-aalteon-1742172",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742172",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d1815181e018"
+        },
+        {
+          "title": "Social Media Internship",
+          "url": "https://unstop.com/internships/social-media-internship-rigi-1742121",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742121",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0694c1d78340"
+        },
+        {
+          "title": "ByteDance — Software Engineer Intern - CIS Knowledge Bank",
+          "url": "https://jobs.bytedance.com/en/position/7675345626188335365/detail",
+          "source": "internships",
+          "description": "internship | ByteDance | San Jose, CA | Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "162be72f-9782-48cc-94af-9e3dcbf2c8de",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "71a8cb326020"
+        },
+        {
+          "title": "Phoebe — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/phoebe-work/1ffe3e63-2163-447e-a8b0-1fff8b87e0ca/application?embed=true",
+          "source": "internships",
+          "description": "internship | Phoebe | NYC | Fall 2026, Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "52a1bad8-5a44-4bf7-a4ef-fe2683e423b5",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e57fbfa0f530"
+        },
+        {
+          "title": "Blue Shield of California — Data Full Stack Engineer Intern",
+          "url": "https://ecge.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003/job/20261580",
+          "source": "internships",
+          "description": "internship | Blue Shield of California | Oakland, CA | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f8c3812a-4e5d-48e3-b329-54a28233db3a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5bdb92b12bb4"
+        },
+        {
+          "title": "Zipline — Software Engineer Intern - Spring 2027",
+          "url": "https://www.zipline.com/open-roles?gh_jid=7907191003",
+          "source": "internships",
+          "description": "internship | Zipline | South SF | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d8608143-b6cd-4a6e-9563-519ce1b5d368",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "89c49b0a3f11"
+        },
+        {
+          "title": "Tesla — Internship - Fullstack Engineer - Applications Engineering - Winter/Spring 2027",
+          "url": "https://www.tesla.com/careers/search/job/280820",
+          "source": "internships",
+          "description": "internship | Tesla | Fremont, CA | Winter 2027, Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7e502eb4-3d9c-4f91-8e83-a471504d8a4b",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7e9d9b393628"
+        },
+        {
+          "title": "Toshiba Global Commerce — AI Software Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/toshibaglobalcommercesolutions/jobs/5214224007",
+          "source": "internships",
+          "description": "internship | Toshiba Global Commerce | Durham, NC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e780d84e-674d-477d-9d4c-829d501deca8",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6a3a0031c5e8"
+        },
+        {
+          "title": "Cloudflare — Software Engineer Intern - Fall 2026",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118855",
+          "source": "internships",
+          "description": "internship | Cloudflare | London, UK | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "be8b4a1c-c612-44fe-aa64-8a99e9144450",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cb7a517097af"
+        },
+        {
+          "title": "Zoox — Data Scientist",
+          "url": "https://jobs.lever.co/zoox/51838a63-2dde-44dc-9c3e-757f35b9690f/apply",
+          "source": "internships",
+          "description": "internship | Zoox | Foster City, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1b670e5e-9edc-4255-93f8-5fdac2fb70ac",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "14b8e084bdfe"
+        },
+        {
+          "title": "AbbVie — Business Technology Solutions Intern - Data & Software Engineering - Undergraduate",
+          "url": "https://jobs.smartrecruiters.com/AbbVie/3743990014697918",
+          "source": "internships",
+          "description": "internship | AbbVie | North Chicago, IL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8569a45d-e504-4cc5-897a-de907ab8e0f7",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ab4b593c302c"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Supply Chain & Logistics-LLM/Agent - PhD",
+          "url": "https://lifeattiktok.com/search/7675845333947812149",
+          "source": "internships",
+          "description": "internship | TikTok | Seattle, WA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "79ddabd2-cd14-4fd6-8aec-f82858b2190e",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5a18a07c4cee"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern",
+          "url": "https://lifeattiktok.com/search/7675847556668295429",
+          "source": "internships",
+          "description": "internship | TikTok | Seattle, WA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a908b011-3049-4c5c-831e-b0a4e17ddebf",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5e22b22045da"
+        },
+        {
+          "title": "E-Space — Embedded Software Engineer Intern",
+          "url": "https://jobs.lever.co/espace/1e189295-a315-414d-8c0b-686f204e3cb3/apply",
+          "source": "internships",
+          "description": "internship | E-Space | Arlington, TX | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1bd50634-5114-480f-8a35-3a592f0fe763",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2782b0d7cc06"
+        },
+        {
+          "title": "Boston Consulting Group — Forward Deployed AI Scientist",
+          "url": "https://careers.bcg.com/global/en/job/59068",
+          "source": "internships",
+          "description": "internship | Boston Consulting Group | Boston, MA, Seattle, WA, Washington, DC, SF, LA, Miami, FL, Dallas, TX, Chicago, IL, Pittsburgh, PA, NYC, Brooklyn, NY, Manhattan Beach, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "08532603-7472-48a9-a825-fef3a7108472",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "02bc712d3c9e"
+        }
+      ]
     }
   ]
 }

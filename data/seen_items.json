@@ -15317,6 +15317,276 @@
       "first_seen": "2026-08-20",
       "last_seen": "2026-08-20",
       "times_seen": 1
+    },
+    "7d50127b2d38": {
+      "title": "ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "b774c1956b5f": {
+      "title": "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "97a59dd86d44": {
+      "title": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "bdab43c1a970": {
+      "title": "Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "c81502bbdd14": {
+      "title": "zorost/AI-Engineering-Lab — ★98",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "10b76897ef1d": {
+      "title": "Pinvou/pinvou-agent — ★1,056",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "bf73042a8cfd": {
+      "title": "Vomit: Clean up Claude 5's token output with a separate LLM",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "e2b57146c469": {
+      "title": "Mojo is now open source",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "db3614d588a0": {
+      "title": "Artificial Intelligence Policy",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "d1f3b4809d4b": {
+      "title": "Discussion thread for EMNLP 2026 Notifications/Results [D]",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "b9ab1e11c21e": {
+      "title": "About the impact of grouping classes in multiclass classification [D]",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "e8209de1973d": {
+      "title": "The spectral neuron - an ML primitive for scalable and interpretable models [R]",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "0b089a905afe": {
+      "title": "AI-generated code detection in CI/CD — looking for approaches and real-world experience [D]",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "f0ad8fba6925": {
+      "title": "Resizing images from Flutter Camera Stream for TFLite modle [P]",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "4ca2e433b2dd": {
+      "title": "Mapping intrinsic rank and informational gravity in complex tabular data: I developed a non-parametric, model-agnostic, information-theoretic diagnostic to bypass the limits of linear, rank, and Euclidean baselines. [R]",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "23079c1d836c": {
+      "title": "Is KV Cache in a high dimensional vector space? [D]",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "a1ae2acefda7": {
+      "title": "Cloudforge",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "7690bec1b545": {
+      "title": "Identity under Attack",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "d29391390257": {
+      "title": "Ignition Hackathon Series 2026",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "3cbbc9addcb5": {
+      "title": "Deepsprint Hackathon",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "9e7806ec28fe": {
+      "title": "Bug Blitz",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "719f5b28546d": {
+      "title": "Crew Assemble — Build, Battle & Conquer",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "aab8fe46346c": {
+      "title": "The Lost Algorithm (DSA)",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "e83e07e866af": {
+      "title": "Rebuild the Classroom : Build the tool that teaches when AI is the teacher.",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "ef46ad1aea89": {
+      "title": "AI/ML Internship",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "26539fa6190e": {
+      "title": "Social Media Internship",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "1f9a853cb7d1": {
+      "title": "Market Research Analyst Internship",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "5b7d8541346a": {
+      "title": "Human Resources Internship",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "9e4a97bf4add": {
+      "title": "HR Recruiter Internship",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "5ae576101068": {
+      "title": "Video Content Creator Internship",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "d1815181e018": {
+      "title": "Full Stack Developer Internship",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "0694c1d78340": {
+      "title": "Social Media Internship",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "71a8cb326020": {
+      "title": "ByteDance — Software Engineer Intern - CIS Knowledge Bank",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "e57fbfa0f530": {
+      "title": "Phoebe — Software Engineer Intern",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "5bdb92b12bb4": {
+      "title": "Blue Shield of California — Data Full Stack Engineer Intern",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "89c49b0a3f11": {
+      "title": "Zipline — Software Engineer Intern - Spring 2027",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "7e9d9b393628": {
+      "title": "Tesla — Internship - Fullstack Engineer - Applications Engineering - Winter/Spring 2027",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "6a3a0031c5e8": {
+      "title": "Toshiba Global Commerce — AI Software Engineer Intern",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "cb7a517097af": {
+      "title": "Cloudflare — Software Engineer Intern - Fall 2026",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "14b8e084bdfe": {
+      "title": "Zoox — Data Scientist",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "ab4b593c302c": {
+      "title": "AbbVie — Business Technology Solutions Intern - Data & Software Engineering - Undergraduate",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "5a18a07c4cee": {
+      "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Supply Chain & Logistics-LLM/Agent - PhD",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "5e22b22045da": {
+      "title": "TikTok — Machine Learning Engineer Intern",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "2782b0d7cc06": {
+      "title": "E-Space — Embedded Software Engineer Intern",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
+    },
+    "02bc712d3c9e": {
+      "title": "Boston Consulting Group — Forward Deployed AI Scientist",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "times_seen": 1
     }
   }
 }
