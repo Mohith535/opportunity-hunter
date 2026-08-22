@@ -64912,6 +64912,943 @@
           "key": "02bc712d3c9e"
         }
       ]
+    },
+    {
+      "date": "2026-08-22",
+      "items": [
+        {
+          "title": "AI Builders Hackathon",
+          "url": "https://ai-builders-hackathon-2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Aug 21 - Sep 15, 2026 | prize $ 33,900 | themes: Machine Learning/AI, Open Ended, Beginner Friendly",
+          "deadline": "2026-09-15",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30452",
+          "score": 9,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "148a255e8453"
+        },
+        {
+          "title": "Does telling an LLM to \"be concise\" actually save you money? We measured it across 9 models. Compressing the output can save you money and keep accuracy, compressing the input prompt does not. [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vulfei/does_telling_an_llm_to_be_concise_actually_save/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vulfei",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "af57c351f8f5"
+        },
+        {
+          "title": "Rejected at EMNLP with decent scores. What can be done next? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vuatkw/rejected_at_emnlp_with_decent_scores_what_can_be/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vuatkw",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2ac3193a23f2"
+        },
+        {
+          "title": "EMNLP 2026 Findings : worth attending in person?[D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vu8zag/emnlp_2026_findings_worth_attending_in_persond/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vu8zag",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3531845e665a"
+        },
+        {
+          "title": "Research internship at MSR [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vuloyq/research_internship_at_msr_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vuloyq",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "25feae6c6e5d"
+        },
+        {
+          "title": "I have a mid-sized GPU cluster and was thinking about giving free compute [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vulefc/i_have_a_midsized_gpu_cluster_and_was_thinking/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vulefc",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "39e937af9ffa"
+        },
+        {
+          "title": "EMNLP26 Cost [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vul1fw/emnlp26_cost_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vul1fw",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1bf71922fefa"
+        },
+        {
+          "title": "What coding practices are you adopting for development today? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vumbwe/what_coding_practices_are_you_adopting_for/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vumbwe",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a638835c5d56"
+        },
+        {
+          "title": "On-prem MLOps in a hospital: advice needed for production monitoring of self-built and vendor models? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vut9wm/onprem_mlops_in_a_hospital_advice_needed_for/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vut9wm",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "76615975a92f"
+        },
+        {
+          "title": "Hybrid collaborative filtering recommendation system for judging and suggesting books based on their covers [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vus26i/hybrid_collaborative_filtering_recommendation/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vus26i",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "499f0d0ce7de"
+        },
+        {
+          "title": "BMVC 2026 orals [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vur05y/bmvc_2026_orals_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vur05y",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b48d96432932"
+        },
+        {
+          "title": "AtCoder Regular Contest++ 228 (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/arc228",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-08-30T12:00:00",
+          "deadline": "2026-08-30",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69784723",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "178e861b9752"
+        },
+        {
+          "title": "AtCoder Regular Contest-- 229 (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/arc229",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-09-05T12:00:00",
+          "deadline": "2026-09-05",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69784724",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "38fbce23c83a"
+        },
+        {
+          "title": "AtCoder Beginner Contest 475 (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/abc475",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-09-12T12:00:00",
+          "deadline": "2026-09-12",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69760923",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4aec4d6942e0"
+        },
+        {
+          "title": "AtCoder Heuristic Contest 071 (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/ahc071",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-09-13T10:00:00",
+          "deadline": "2026-09-13",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69780795",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b2d4cdddc8c8"
+        },
+        {
+          "title": "Innovation Unbound Prelims",
+          "url": "https://unstop.com/hackathons/innovation-unbound-prelims-vellore-institute-of-technology-vit-chennai-1742601",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742601",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "96f670994ca4"
+        },
+        {
+          "title": "Code O' Fiesta Prelims",
+          "url": "https://unstop.com/hackathons/code-o-fiesta-prelims-vellore-institute-of-technology-vit-chennai-1742593",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742593",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "02ccaf03fc18"
+        },
+        {
+          "title": "HackRonyX 2.0",
+          "url": "https://unstop.com/hackathons/hackronyx-20-st-vincent-pallotti-college-of-engineering-and-technology-svpcet-nagpur-1741857",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1741857",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "dd243e897e70"
+        },
+        {
+          "title": "Innov8 4.0: A Hackathon by Eightfold Ai X Aries IIT Delhi",
+          "url": "https://unstop.com/hackathons/innov8-40-a-hackathon-by-eightfold-ai-x-aries-iit-delhi-iit-delhi-1742230",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742230",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "819001acd998"
+        },
+        {
+          "title": "Eureka x Devengers",
+          "url": "https://unstop.com/hackathons/eureka-x-devengers-devengers-1740270",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1740270",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "48748c635407"
+        },
+        {
+          "title": "Horizon",
+          "url": "https://unstop.com/hackathons/horizon-hoollow-1726596",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1726596",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3ee3e267a23c"
+        },
+        {
+          "title": "EC-Council HackAI Challenge: RACEx360",
+          "url": "https://unstop.com/hackathons/ec-council-hackai-challenge-racex360-reva-academy-for-corporate-excellence-bangalore-karnataka-1739884",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1739884",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "59d980c5d989"
+        },
+        {
+          "title": "Codearambh 2.0 – 24-Hour National-Level Hackathon: Dare to Code, Dare to Create",
+          "url": "https://unstop.com/hackathons/codearambh-20-24-hour-national-level-hackathon-dare-to-code-dare-to-create-hi-tech-institute-of-engineering-a-1742494",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742494",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a4ada38a5793"
+        },
+        {
+          "title": "Video Content Creator Internship",
+          "url": "https://unstop.com/internships/video-content-creator-internship-delbon-ai-1742655",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742655",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0c48352ff1b2"
+        },
+        {
+          "title": "Frontend Web Developer Internship",
+          "url": "https://unstop.com/internships/frontend-web-developer-internship-accesco-living-1742166",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742166",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "88a9a409e62c"
+        },
+        {
+          "title": "Social Media Marketing Internship",
+          "url": "https://unstop.com/internships/social-media-marketing-internship-litspark-solutions-1742623",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742623",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cd9b8b4a9627"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-know-your-careers-1742667",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742667",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b5a4a63f750f"
+        },
+        {
+          "title": "Research and Strategic Initiative Internship",
+          "url": "https://unstop.com/internships/research-and-strategic-initiative-internship-jobsupi-1742594",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742594",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9a3a4d14a86d"
+        },
+        {
+          "title": "Strategic Planning Internship",
+          "url": "https://unstop.com/internships/strategic-planning-internship-accesco-living-1742664",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742664",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d64cbb0bbbf3"
+        },
+        {
+          "title": "UI/UX Internship",
+          "url": "https://unstop.com/internships/uiux-internship-my-indian-things-1742669",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742669",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0f16472a5674"
+        },
+        {
+          "title": "Software Development Internship",
+          "url": "https://unstop.com/internships/software-development-internship-vertawo-labs-private-limited-1742649",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742649",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5b1a8fef4855"
+        },
+        {
+          "title": "Microsoft — AI Software Engineer Intern - Edge",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556979054",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA, Mountain View, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6245b5b1-9a7d-4d30-aabb-19a2cedbde40",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "293e9f9088bd"
+        },
+        {
+          "title": "TikTok — Software Engineer Intern",
+          "url": "https://lifeattiktok.com/search/7676276048527214901",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b9776d83-bf68-42d9-88e2-4ebdd4ffda09",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "188edea1dc4e"
+        },
+        {
+          "title": "TikTok — AI Product Manager Intern - Product Social",
+          "url": "https://lifeattiktok.com/search/7675616554318596357",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7fff5796-fc88-4d04-a6fa-be35e0bdb2e0",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bbeaf5d1da97"
+        },
+        {
+          "title": "Ambrook — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/ambrook/e458b046-aa7f-4022-bca5-63cdfd495456/application?embed=true",
+          "source": "internships",
+          "description": "internship | Ambrook | NYC | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "45b27f18-198a-4ef0-b8f3-abb8018e7c99",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5e41285723b2"
+        },
+        {
+          "title": "SimIS — Artificial Intelligence Developer Intern - Aerospace/Aviation",
+          "url": "https://simisinc.applytojob.com/apply/U1yOSyvkvH/AerospaceAviation-Artificial-Intelligence-Developer-Intern",
+          "source": "internships",
+          "description": "internship | SimIS | Suffolk, VA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "733e27ec-57f0-4e26-8f45-410e4fd4aed5",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a81fdeadf9a8"
+        },
+        {
+          "title": "Fullbay — Software Engineer Intern",
+          "url": "https://fullbay.bamboohr.com/careers/131/",
+          "source": "internships",
+          "description": "internship | Fullbay | Phoenix, AZ | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e4dd1ece-36bc-4785-88a7-beb7bdfb4414",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ac4999a03b0a"
+        },
+        {
+          "title": "Mackenzie Investments — Data Science Intern",
+          "url": "https://careersen-mackenzieinvestments.icims.com/jobs/5977/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Mackenzie Investments | Toronto, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "01d8233d-2aa0-4e40-9c48-0069512ee4ae",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "dd3a2f73bdff"
+        },
+        {
+          "title": "Syska Hennessy Group — Innovations Intern - Full Stack/Front End Engineering",
+          "url": "https://job-boards.greenhouse.io/syskahennessy/jobs/8147733",
+          "source": "internships",
+          "description": "internship | Syska Hennessy Group | NYC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "631bbbfe-8d2d-4b49-8e16-c60d7eebde34",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e32cb602c330"
+        },
+        {
+          "title": "Zipline — Software Engineer Intern - Summer 2027",
+          "url": "https://www.zipline.com/open-roles?gh_jid=7929236003",
+          "source": "internships",
+          "description": "internship | Zipline | South SF | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6b73883a-ab74-444e-93ce-5fd790148177",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f76e82210645"
+        },
+        {
+          "title": "W.W. Grainger — Data Science Intern",
+          "url": "https://jobs.grainger.com/job/CHICAGO-GTG-Intern-Data-Science-IL-60661-4555/1421972400/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | W.W. Grainger | Chicago, IL | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "590cbdfc-ce9f-4a0b-96e5-ec715e077d97",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "913b70663b6f"
+        },
+        {
+          "title": "Susquehanna International Group — Quantitative Strategy Developer Intern",
+          "url": "https://careers-sig.icims.com/jobs/11333/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Susquehanna International Group | London, UK, Dublin, Ireland | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "78f9e1b5-9870-4a25-816c-c69294b6b6cb",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0450bfc6ed15"
+        },
+        {
+          "title": "Databricks — Software Engineer Intern",
+          "url": "https://boards.greenhouse.io/embed/job_app?token=8732364002",
+          "source": "internships",
+          "description": "internship | Databricks | SF, Bellevue, WA, Mountain View, CA | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1a0df397-2083-456f-9ecb-137eec7603ef",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ae24fe4f13e6"
+        },
+        {
+          "title": "AMD — Software Engineer Intern/Co-op - Masters",
+          "url": "https://careers.amd.com/jobs/91176?icims=1",
+          "source": "internships",
+          "description": "internship | AMD | San Jose, CA, Santa Clara, CA | Spring 2027, Summer 2027, Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2057d1a3-289b-49ae-8328-fa3527c533c5",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "47dd75b2f38a"
+        },
+        {
+          "title": "AMD — Machine Learning Intern/Co-op - Multiple Teams",
+          "url": "https://careers.amd.com/jobs/91170?icims=1",
+          "source": "internships",
+          "description": "internship | AMD | Rochester, NY, Austin, TX, Longmont, CO, Fishkill, NY, Fort Collins, CO, Boxborough, MA | Spring 2027, Summer 2027, Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f7eaba38-fbcf-47fb-88d0-928f5427c0cb",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f32dd7f99bda"
+        },
+        {
+          "title": "AMD — Software Engineer Intern/Co-op",
+          "url": "https://careers.amd.com/jobs/90891?icims=1",
+          "source": "internships",
+          "description": "internship | AMD | San Jose, CA, Santa Clara, CA | Winter 2027, Summer 2027, Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3e9d3b5d-b9b8-4556-8c46-75ca36c2b15d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1242d5c4efd5"
+        },
+        {
+          "title": "AMD — Software Engineer Intern/Co-op",
+          "url": "https://careers.amd.com/jobs/91180?icims=1",
+          "source": "internships",
+          "description": "internship | AMD | Rochester, NY, Austin, TX, Longmont, CO, Fishkill, NY, Fort Collins, CO, Boxborough, MA | Spring 2027, Summer 2027, Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3142b23d-4dfa-443e-82dd-703b3711394b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d3136d770bd4"
+        },
+        {
+          "title": "AMD — Software Engineer Intern/Co-op",
+          "url": "https://careers.amd.com/jobs/90947?icims=1",
+          "source": "internships",
+          "description": "internship | AMD | Rochester, NY, Austin, TX, Longmont, CO, Fishkill, NY, Fort Collins, CO, Boxborough, MA | Winter 2027, Summer 2027, Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "944978fc-7eeb-4346-82ad-857bec5239a5",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d1d51eb165b5"
+        },
+        {
+          "title": "AMD — Machine Learning Intern/Co-op - Machine Learning - Artificial Intelligence",
+          "url": "https://careers.amd.com/jobs/90892?icims=1",
+          "source": "internships",
+          "description": "internship | AMD | San Jose, CA, Santa Clara, CA | Spring 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "212a153a-1fd0-4d17-a022-c1db71569fd9",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3ddde8f15ed1"
+        },
+        {
+          "title": "AMD — Machine Learning Intern/Co-op - Artificial Intelligence",
+          "url": "https://careers.amd.com/jobs/91181?icims=1",
+          "source": "internships",
+          "description": "internship | AMD | Rochester, NY, Austin, TX, Longmont, CO, Fishkill, NY, Fort Collins, CO, Boxborough, MA | Winter 2027, Summer 2027, Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "646c1eeb-a6b8-40f6-95c7-581780504d2e",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "34f30bc24436"
+        },
+        {
+          "title": "AMD — Machine Learning Intern/Co-op - Machine Learning - Artificial Intelligence",
+          "url": "https://careers.amd.com/jobs/91177?icims=1",
+          "source": "internships",
+          "description": "internship | AMD | San Jose, CA, Santa Clara, CA | Spring 2027, Summer 2027, Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ec03908e-3e83-4c51-adc1-4f9414e3faef",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "00c88a08cdee"
+        },
+        {
+          "title": "GE Vernova — Energy Optimization Software Engineer Intern - Summer 2027",
+          "url": "https://gevernova.wd5.myworkdayjobs.com/only_confidential_executive_recruiting/job/Bellevue/GE-Vernova---Energy-Optimization-Software-Engineer-Intern---Summer-2027_R5050022-1",
+          "source": "internships",
+          "description": "internship | GE Vernova | Bellevue, WA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cda123ef-2e15-45a0-8ef1-f1983b6bf58b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b12991d07fd9"
+        },
+        {
+          "title": "Blackstone — Data Science Summer Analyst",
+          "url": "https://blackstone.wd1.myworkdayjobs.com/zh-CN/Blackstone_Campus_Careers/job/New-York/XMLNAME-2027-Data-Science-Summer-Analyst_44862",
+          "source": "internships",
+          "description": "internship | Blackstone | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e557afc8-009d-464e-a765-a92b4a72e18a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3037865c3914"
+        },
+        {
+          "title": "GE Vernova — Energy Optimization Software Engineer Intern - Summer 2027",
+          "url": "https://gevernova.wd5.myworkdayjobs.com/vernova_externalsite/job/Bellevue/GE-Vernova---Energy-Optimization-Software-Engineer-Intern---Summer-2027_R5050022-2",
+          "source": "internships",
+          "description": "internship | GE Vernova | Bellevue, WA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e2e530e2-ab90-45f9-976f-41287cf6edcc",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b9650f2ed18e"
+        }
+      ]
     }
   ]
 }

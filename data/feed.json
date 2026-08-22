@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21",
+  "updated_at": "2026-08-22",
   "items": [
     {
       "key": "bd5c9c376843",
@@ -15,55 +15,17 @@
       "action_plan": []
     },
     {
-      "key": "ba2fefea4e8b",
-      "title": "Blast Radius",
-      "url": "https://arxiv.org/abs/2608.07440v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "research opportunity in agentic coding and memory management",
-      "action_plan": [
-        "read the research paper (4 hours)",
-        "research related topics (8 hours)",
-        "brainstorm potential contributions (4 hours)"
-      ]
-    },
-    {
-      "key": "dfae59f5058b",
-      "title": "An Exploratory Evaluation of LLM-Assisted Rewriting of Moderate-Complexity Financial Sentences for DisCoCat-Based Sentiment Analysis",
-      "url": "https://arxiv.org/abs/2608.07439v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "research opportunity in LLMs and sentiment analysis",
-      "action_plan": [
-        "read the research paper (4 hours)",
-        "research related topics (8 hours)",
-        "brainstorm potential contributions (4 hours)"
-      ]
-    },
-    {
-      "key": "5e2e5f39a26f",
-      "title": "Build with DataHub: The Agent Hackathon",
-      "url": "https://datahub.devpost.com/",
+      "key": "148a255e8453",
+      "title": "AI Builders Hackathon",
+      "url": "https://ai-builders-hackathon-2026.devpost.com/",
       "source": "devpost",
-      "score": 8,
-      "deadline": "2026-08-10",
+      "score": 9,
+      "deadline": "2026-09-15",
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "AI/ML hackathon",
-      "action_plan": [
-        "Review hackathon rules (2h)",
-        "Form a team (1d)",
-        "Develop a project (10d)"
-      ]
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "526c9925142b",
@@ -770,6 +732,123 @@
       "action_plan": []
     },
     {
+      "key": "0c48352ff1b2",
+      "title": "Video Content Creator Internship",
+      "url": "https://unstop.com/internships/video-content-creator-internship-delbon-ai-1742655",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "88a9a409e62c",
+      "title": "Frontend Web Developer Internship",
+      "url": "https://unstop.com/internships/frontend-web-developer-internship-accesco-living-1742166",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "cd9b8b4a9627",
+      "title": "Social Media Marketing Internship",
+      "url": "https://unstop.com/internships/social-media-marketing-internship-litspark-solutions-1742623",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b5a4a63f750f",
+      "title": "Business Development Internship",
+      "url": "https://unstop.com/internships/business-development-internship-know-your-careers-1742667",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "9a3a4d14a86d",
+      "title": "Research and Strategic Initiative Internship",
+      "url": "https://unstop.com/internships/research-and-strategic-initiative-internship-jobsupi-1742594",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d64cbb0bbbf3",
+      "title": "Strategic Planning Internship",
+      "url": "https://unstop.com/internships/strategic-planning-internship-accesco-living-1742664",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0f16472a5674",
+      "title": "UI/UX Internship",
+      "url": "https://unstop.com/internships/uiux-internship-my-indian-things-1742669",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "5b1a8fef4855",
+      "title": "Software Development Internship",
+      "url": "https://unstop.com/internships/software-development-internship-vertawo-labs-private-limited-1742649",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "293e9f9088bd",
+      "title": "Microsoft — AI Software Engineer Intern - Edge",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556979054",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "74711298bc7f",
       "title": "All Things Agentic Hackathon",
       "url": "https://allthingsagentichackathon.devpost.com/",
@@ -1031,90 +1110,6 @@
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "647c33ea82e3",
-      "title": "StartupX Hackathon 2026",
-      "url": "https://unstop.com/hackathons/startupx-hackathon-2026-gamnexis-1733546",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "opportunity to build and showcase skills",
-      "action_plan": [
-        "research hackathon rules (1 hour)",
-        "form a team (2 hours)",
-        "brainstorm project ideas (4 hours)"
-      ]
-    },
-    {
-      "key": "2ed9e13cb536",
-      "title": "Zero Dependency | 72-Hour Hackathon",
-      "url": "https://unstop.com/hackathons/zero-dependency-72-hour-hackathon-hackathon-raptors-1733673",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "opportunity to build and showcase skills",
-      "action_plan": [
-        "research hackathon rules (1 hour)",
-        "form a team (2 hours)",
-        "brainstorm project ideas (4 hours)"
-      ]
-    },
-    {
-      "key": "a45fbda8f27d",
-      "title": "Webverse Hackathon",
-      "url": "https://unstop.com/hackathons/webverse-hackathon-modern-education-societys-college-of-engineering-mes-pune-1733529",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "opportunity to build and showcase skills",
-      "action_plan": [
-        "research hackathon rules (1 hour)",
-        "form a team (2 hours)",
-        "brainstorm project ideas (4 hours)"
-      ]
-    },
-    {
-      "key": "da91998a5b0f",
-      "title": "QuantStorm",
-      "url": "https://unstop.com/hackathons/quantstorm-iit-guwahati-1733840",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "opportunity to build and showcase skills",
-      "action_plan": [
-        "research hackathon rules (1 hour)",
-        "form a team (2 hours)",
-        "brainstorm project ideas (4 hours)"
-      ]
-    },
-    {
-      "key": "1c155d99cd35",
-      "title": "Python Developer Internship",
-      "url": "https://unstop.com/internships/python-developer-internship-ai-invito-1734308",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Python dev internship",
-      "action_plan": [
-        "Review company info (2h)",
-        "Apply for internship (1d)"
-      ]
     },
     {
       "key": "e1db0b8baf92",
@@ -1508,40 +1503,6 @@
         "review contest format (30m)",
         "practice coding (2h)",
         "participate in contest (2h)"
-      ]
-    },
-    {
-      "key": "6d39200a7f03",
-      "title": "Gameathon 2026",
-      "url": "https://unstop.com/hackathons/gameathon-2026-amrita-vishwa-vidyapeetham-chennai-1736083",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "builds real-world solutions",
-      "action_plan": [
-        "research hackathon rules (1h)",
-        "form a team (2h)",
-        "start building (4h)"
-      ]
-    },
-    {
-      "key": "253ce0d2fd43",
-      "title": "Nerds Room: Launch Hacks",
-      "url": "https://unstop.com/hackathons/nerds-room-launch-hacks-nerds-room-launch-hacks-ambalika-institute-of-management-and-technology-aimt-uttaar-g-1737146",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "builds real-world solutions",
-      "action_plan": [
-        "research hackathon rules (1h)",
-        "form a team (2h)",
-        "start building (4h)"
       ]
     }
   ]
