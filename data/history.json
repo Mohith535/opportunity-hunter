@@ -65849,6 +65849,530 @@
           "key": "b9650f2ed18e"
         }
       ]
+    },
+    {
+      "date": "2026-08-23",
+      "items": [
+        {
+          "title": "elie222/rakazo — ★1,134",
+          "url": "https://github.com/elie222/rakazo",
+          "source": "github",
+          "description": "Open-source Grok Bot alternative. Choose your own model and sandbox. (topics: ai agents, chatgpt, docker, electron, expo, grok, llm, self hosted, typescript)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "elie222/rakazo",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "59afd53013a1"
+        },
+        {
+          "title": "Why your local LLM feels dumber than it is",
+          "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49402232",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5388ae34d18b"
+        },
+        {
+          "title": "Thinking in Python",
+          "url": "https://thinkinginpython.com/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49402202",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0ab8086cb090"
+        },
+        {
+          "title": "I developed my own quantized LLM from scratch, trained on 30B tokens, deploys in 60 MB [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vv2nkh/i_developed_my_own_quantized_llm_from_scratch/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vv2nkh",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d4c87df31015"
+        },
+        {
+          "title": "acl arr august 2026 (desk rejected ) [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vvd9ub/acl_arr_august_2026_desk_rejected_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vvd9ub",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "60c668b6259f"
+        },
+        {
+          "title": "Why does lightgbm not fit my toy example but catboost does? (2 order interactions) [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vv7wx3/why_does_lightgbm_not_fit_my_toy_example_but/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vv7wx3",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "32c33de4e246"
+        },
+        {
+          "title": "I built an open-source roguelike specifically for training game-playing agents [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vvii1j/i_built_an_opensource_roguelike_specifically_for/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vvii1j",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a757c86ee3ec"
+        },
+        {
+          "title": "Ablating 1 of a chess transformer's 128 attention heads causes the model to stop finding the queen sacrifice in a famous chess game. [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vvsf5b/ablating_1_of_a_chess_transformers_128_attention/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vvsf5b",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3034a5d1c8ce"
+        },
+        {
+          "title": "The evaluation resolution has been shown to have a significant impact on the identification of the \"learning rule\" that exhibits the most brain-like characteristics at V1. [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vvdxwt/the_evaluation_resolution_has_been_shown_to_have/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vvdxwt",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "27c189aaa45f"
+        },
+        {
+          "title": "How to grow a project? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vvsm9j/how_to_grow_a_project_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vvsm9j",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "21738dc365e3"
+        },
+        {
+          "title": "MUBA Blockchain Hackathon",
+          "url": "https://muba-hackathon.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | online | themes: Blockchain, FinTech, AI",
+          "deadline": "2026-08-26",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "c9616c07274742db8c57310b5d61adc7",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e0b90e9b87a5"
+        },
+        {
+          "title": "Builders Day by HackUnion",
+          "url": "https://builders-day-hackunion.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | Hyderabad, India | themes: No Restrictions",
+          "deadline": "2026-09-20",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "6e3603d1dc1743ee81f13f11ed9af014",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c39de4b383ab"
+        },
+        {
+          "title": "Weekly Contest 517 (leetcode.com)",
+          "url": "https://leetcode.com/contest/weekly-contest-517",
+          "source": "clist",
+          "description": "competitive programming contest on leetcode.com; starts 2026-08-30T02:30:00",
+          "deadline": "2026-08-30",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69818178",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f4ca85a064f6"
+        },
+        {
+          "title": "Full Stack Python with Gen-AI",
+          "url": "https://unstop.com/hackathons/full-stack-python-with-gen-ai-quality-thought-info-systems-1742888",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742888",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c96275d9f811"
+        },
+        {
+          "title": "TurtleBot Pursuit & Evasion Challenge",
+          "url": "https://unstop.com/hackathons/turtlebot-pursuit-evasion-challenge-tech-zephyr-40-indian-institute-of-technology-bhubaneswar-1742795",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742795",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0ac8049addaf"
+        },
+        {
+          "title": "Agentic AI Hackathon",
+          "url": "https://unstop.com/hackathons/agentic-ai-hackathon-tech-zephyr-40-indian-institute-of-technology-bhubaneswar-1742838",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742838",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e718441dfab1"
+        },
+        {
+          "title": "Math-O-Stellar",
+          "url": "https://unstop.com/hackathons/math-o-stellar-tech-zephyr-40-indian-institute-of-technology-bhubaneswar-1742777",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742777",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "519eda526d27"
+        },
+        {
+          "title": "CADathon",
+          "url": "https://unstop.com/hackathons/cadathon-tech-zephyr-40-indian-institute-of-technology-bhubaneswar-1742714",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742714",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bb468e01c443"
+        },
+        {
+          "title": "Graviton",
+          "url": "https://unstop.com/hackathons/graviton-iste-cgc-university-1742794",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742794",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "382ce3f5e5dc"
+        },
+        {
+          "title": "Design Marathon",
+          "url": "https://unstop.com/hackathons/design-marathon-indian-institute-of-technology-bhubaneswar-1742740",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742740",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "71493272fb62"
+        },
+        {
+          "title": "CP Contest",
+          "url": "https://unstop.com/hackathons/cp-contest-indian-institute-of-technology-bhubaneswar-1742751",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742751",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "25d4c07dfba7"
+        },
+        {
+          "title": "Data Annotation Internship - Physical AI",
+          "url": "https://unstop.com/internships/data-annotation-internship-praxis-robotics-1743039",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743039",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7b22e30ede0a"
+        },
+        {
+          "title": "Founding Growth & Ecosystem Internship",
+          "url": "https://unstop.com/internships/founding-growth-ecosystem-internship-praman-network-1743038",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743038",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2638112ed7a7"
+        },
+        {
+          "title": "Operations Internship",
+          "url": "https://unstop.com/internships/solar-execution-and-operation-intern-greenmile-energies-1742992",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742992",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0565502c3b14"
+        },
+        {
+          "title": "Business Development Executive Internship",
+          "url": "https://unstop.com/internships/business-development-executive-bde-cubegraph-technologies-1742977",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742977",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "efc0e5faad81"
+        },
+        {
+          "title": "Lead Generation & Business Development Internship",
+          "url": "https://unstop.com/internships/lead-generation-business-development-intern-cogniza-private-limited-1742931",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742931",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f570809c6113"
+        },
+        {
+          "title": "Business Development & Management Internship",
+          "url": "https://unstop.com/internships/business-development-management-intern-highgrowth-tradecom-pvt-ltd-1742941",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742941",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fb19b093ee34"
+        },
+        {
+          "title": "Graphic Design Internship",
+          "url": "https://unstop.com/internships/graphic-design-internship-prolino-1742918",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742918",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ec4ba0bb2f95"
+        },
+        {
+          "title": "Content Creator Internship",
+          "url": "https://unstop.com/internships/content-creator-internship-rare-side-innovation-private-limited-1742891",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1742891",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5f1baf67db05"
+        },
+        {
+          "title": "Springs Window Fashions — AI Analyst Intern - Consumer Business Unit",
+          "url": "https://careers-springswindowfashions.icims.com/jobs/12875/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Springs Window Fashions | Middleton, WI | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a9cd2f49-efd8-4433-b2f9-c9ddea84ea80",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8a59e8142b20"
+        }
+      ]
     }
   ]
 }

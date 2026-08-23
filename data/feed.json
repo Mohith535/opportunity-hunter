@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22",
+  "updated_at": "2026-08-23",
   "items": [
     {
       "key": "bd5c9c376843",
@@ -8,6 +8,19 @@
       "source": "devpost",
       "score": 10,
       "deadline": "2026-08-18",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e0b90e9b87a5",
+      "title": "MUBA Blockchain Hackathon",
+      "url": "https://muba-hackathon.devfolio.co",
+      "source": "devfolio",
+      "score": 10,
+      "deadline": "2026-08-26",
       "tags": [
         "hackathon"
       ],
@@ -26,55 +39,6 @@
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "526c9925142b",
-      "title": "The Great Agent Hackathon",
-      "url": "https://the-great-agent-hackathon.devfolio.co",
-      "source": "devfolio",
-      "score": 8,
-      "deadline": "2026-09-25",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AI agent hackathon",
-      "action_plan": [
-        "Form a team (1 day)",
-        "Brainstorm ideas (2 days)",
-        "Start building (2 weeks)"
-      ]
-    },
-    {
-      "key": "6c7538966b55",
-      "title": "AI/ML Developer Internship",
-      "url": "https://unstop.com/internships/aiml-developer-internship-ai-invito-1735019",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI/ML developer experience",
-      "action_plan": [
-        "Review internship description (1h)",
-        "Apply if interested (2h)"
-      ]
-    },
-    {
-      "key": "a9242ae51fce",
-      "title": "ByteDance — Agent Evaluation & Evolution Machine Learning Engineer Intern - Applied Machine Learning Ark",
-      "url": "https://jobs.bytedance.com/en/position/7671096345243535669/detail",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Agent evaluation internship",
-      "action_plan": [
-        "Review agent evaluation basics (2 weeks)",
-        "Apply to internship (1 week)"
-      ]
     },
     {
       "key": "6ec1a041844a",
@@ -849,71 +813,108 @@
       "action_plan": []
     },
     {
-      "key": "74711298bc7f",
-      "title": "All Things Agentic Hackathon",
-      "url": "https://allthingsagentichackathon.devpost.com/",
-      "source": "devpost",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AI/ML theme, hackathon experience",
-      "action_plan": [
-        "Research hackathon rules (2h)",
-        "Form a team (1 week)",
-        "Develop a project (3 weeks)"
-      ]
-    },
-    {
-      "key": "d3f741dee40f",
-      "title": "ZYRORA - 24-Hour National Level Inter-College Hackathon",
-      "url": "https://unstop.com/hackathons/zyrora-24-hour-national-level-inter-college-hackathon-aaa-college-of-engineering-and-technology-aaacet-sivaka-1734489",
+      "key": "7b22e30ede0a",
+      "title": "Data Annotation Internship - Physical AI",
+      "url": "https://unstop.com/internships/data-annotation-internship-praxis-robotics-1743039",
       "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "College hackathon offers fast portfolio piece and teamwork",
-      "action_plan": [
-        "Check registration deadline (15m)",
-        "Form team with peers (2d)",
-        "Build prototype (1w)"
-      ]
-    },
-    {
-      "key": "d299f86f4d15",
-      "title": "Thingtrax — Vision AI Intern - Vision AI",
-      "url": "https://apply.workable.com/thingtrax/j/5D09B73294/apply",
-      "source": "internships",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "International AI internship aligns with career and exposure goals",
-      "action_plan": [
-        "Find application portal (30m)",
-        "Update CV for vision AI (2h)",
-        "Submit application (1h)"
-      ]
+      "ai_summary": "",
+      "action_plan": []
     },
     {
-      "key": "dd7e5a0c6996",
-      "title": "ByteDance — Visual Generation & Multimodal Evaluation Machine Learning Engineer Intern - Aml-Ark",
-      "url": "https://jobs.bytedance.com/en/position/7671105026009925893/detail",
-      "source": "internships",
-      "score": 7,
+      "key": "2638112ed7a7",
+      "title": "Founding Growth & Ecosystem Internship",
+      "url": "https://unstop.com/internships/founding-growth-ecosystem-internship-praman-network-1743038",
+      "source": "unstop",
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "Visual generation internship",
-      "action_plan": [
-        "Review visual generation basics (2 weeks)",
-        "Apply to internship (1 week)"
-      ]
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0565502c3b14",
+      "title": "Operations Internship",
+      "url": "https://unstop.com/internships/solar-execution-and-operation-intern-greenmile-energies-1742992",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "efc0e5faad81",
+      "title": "Business Development Executive Internship",
+      "url": "https://unstop.com/internships/business-development-executive-bde-cubegraph-technologies-1742977",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f570809c6113",
+      "title": "Lead Generation & Business Development Internship",
+      "url": "https://unstop.com/internships/lead-generation-business-development-intern-cogniza-private-limited-1742931",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "fb19b093ee34",
+      "title": "Business Development & Management Internship",
+      "url": "https://unstop.com/internships/business-development-management-intern-highgrowth-tradecom-pvt-ltd-1742941",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "ec4ba0bb2f95",
+      "title": "Graphic Design Internship",
+      "url": "https://unstop.com/internships/graphic-design-internship-prolino-1742918",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "5f1baf67db05",
+      "title": "Content Creator Internship",
+      "url": "https://unstop.com/internships/content-creator-internship-rare-side-innovation-private-limited-1742891",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "89644923da27",
@@ -1112,105 +1113,30 @@
       "action_plan": []
     },
     {
-      "key": "e1db0b8baf92",
-      "title": "Washing App Debug Challenge",
-      "url": "https://unstop.com/hackathons/washing-app-debug-challenge-national-institute-of-technology-nit-delhi-1734301",
+      "key": "c96275d9f811",
+      "title": "Full Stack Python with Gen-AI",
+      "url": "https://unstop.com/hackathons/full-stack-python-with-gen-ai-quality-thought-info-systems-1742888",
       "source": "unstop",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "Online hackathon adds a quick coding win to resume",
-      "action_plan": [
-        "Register for challenge (15m)",
-        "Set up dev environment (1h)",
-        "Implement debug solution (2d)"
-      ]
+      "ai_summary": "",
+      "action_plan": []
     },
     {
-      "key": "da1a248f62e7",
-      "title": "Full Stack Developer Internship",
-      "url": "https://unstop.com/internships/full-stack-developer-internship-the-rojgaar-1734954",
+      "key": "e718441dfab1",
+      "title": "Agentic AI Hackathon",
+      "url": "https://unstop.com/hackathons/agentic-ai-hackathon-tech-zephyr-40-indian-institute-of-technology-bhubaneswar-1742838",
       "source": "unstop",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
+        "hackathon"
       ],
-      "ai_summary": "Full stack development experience",
-      "action_plan": [
-        "Review internship description (1h)",
-        "Apply if interested (2h)"
-      ]
-    },
-    {
-      "key": "dfc597f6de78",
-      "title": "Startup Premier League",
-      "url": "https://unstop.com/competitions/startup-premier-league-udyam26-the-business-fest-jindal-global-business-school-jgbs-sonipat-1730647",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "competition"
-      ],
-      "ai_summary": "could boost entrepreneurship résumé with AI focus · ⚠ verify eligibility: requires startup/team formation",
-      "action_plan": [
-        "Check competition website for team rules (1 day)",
-        "Identify potential co‑founders on campus (2 days)",
-        "Draft a prototype concept aligned with AI agents (1 week)",
-        "Prepare pitch deck and submit before deadline"
-      ]
-    },
-    {
-      "key": "f1f59abddae1",
-      "title": "OpusClip — AI Product Management Intern",
-      "url": "https://jobs.ashbyhq.com/opusclip/501d374d-7d4f-4889-bc53-0a1fd16253ea/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI product management aligns with his AI building goals, visa barrier · ⚠ verify eligibility: US work authorization required",
-      "action_plan": [
-        "Check if OpusClip accepts remote interns from India (1 day)",
-        "Prepare a product case study using Nova (2 days)",
-        "Reach out to recruiter about visa sponsorship (2 days)",
-        "Submit tailored application before deadline"
-      ]
-    },
-    {
-      "key": "25d36d625c62",
-      "title": "ByteDance — Machine Learning Engineer Intern",
-      "url": "https://jobs.bytedance.com/en/position/7671291260529821957/detail",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Machine learning internship",
-      "action_plan": [
-        "Review machine learning basics (2 weeks)",
-        "Apply to internship (1 week)"
-      ]
-    },
-    {
-      "key": "b83952bb32fd",
-      "title": "ByteDance — Data Lake Infrastructure and Data Analytics Research Engineer Intern - Applied Machine Learning Ark",
-      "url": "https://jobs.bytedance.com/en/position/7671109787509213445/detail",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Data analytics internship",
-      "action_plan": [
-        "Review data analytics basics (2 weeks)",
-        "Apply to internship (1 week)"
-      ]
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "65e965190856",
@@ -1503,6 +1429,40 @@
         "review contest format (30m)",
         "practice coding (2h)",
         "participate in contest (2h)"
+      ]
+    },
+    {
+      "key": "6d39200a7f03",
+      "title": "Gameathon 2026",
+      "url": "https://unstop.com/hackathons/gameathon-2026-amrita-vishwa-vidyapeetham-chennai-1736083",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "builds real-world solutions",
+      "action_plan": [
+        "research hackathon rules (1h)",
+        "form a team (2h)",
+        "start building (4h)"
+      ]
+    },
+    {
+      "key": "253ce0d2fd43",
+      "title": "Nerds Room: Launch Hacks",
+      "url": "https://unstop.com/hackathons/nerds-room-launch-hacks-nerds-room-launch-hacks-ambalika-institute-of-management-and-technology-aimt-uttaar-g-1737146",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "builds real-world solutions",
+      "action_plan": [
+        "research hackathon rules (1h)",
+        "form a team (2h)",
+        "start building (4h)"
       ]
     }
   ]
