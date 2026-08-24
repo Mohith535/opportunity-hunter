@@ -37,3 +37,6 @@ linkedin post/
 # Gmail OAuth secrets (Inbox Scout) — never commit
 credentials.json
 token.json
+
+# Inbox Scout opportunities (from your email) — personal, local only
+data/inbox_items.json

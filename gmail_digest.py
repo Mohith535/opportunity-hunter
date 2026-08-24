@@ -45,12 +45,15 @@ from __future__ import annotations
 
 import argparse
 import email
+import hashlib
 import imaplib
+import json
 import os
 import re
 import sys
 from datetime import date
 from email.header import decode_header
+from pathlib import Path
 
 IMAP_HOST = "imap.gmail.com"
 _MAX_EMAILS = 40          # cap the LLM call
@@ -274,6 +277,57 @@ def format_digest(rows: list[dict], highlights: str, total: int) -> str:
     return "\n".join(lines)
 
 
+# ─── Inbox → Feed: make growth-worthy emails first-class OPHunter opportunities ──
+_FEED_PATH = Path(__file__).resolve().parent / "data" / "inbox_items.json"
+_URL_RE = re.compile(r"https?://[^\s)>\]]+")
+
+
+def to_feed_items(rows: list[dict], min_interest: int = 4) -> list[dict]:
+    """Growth-worthy inbox opportunities (PROGRAM/EVENT ≥ min_interest) in OPHunter feed schema —
+    so `python -m resume.fit` ranks them next to the scraped opportunities."""
+    out = []
+    for r in rows:
+        if r["category"] not in ("PROGRAM", "EVENT") or r["interest"] < min_interest:
+            continue
+        e = r["email"]
+        link = _URL_RE.search(e.get("snippet", "") or "")
+        out.append({
+            "key": hashlib.md5(f"{e['from']}|{e['subject']}".encode()).hexdigest()[:12],
+            "title": (e.get("subject") or "(no subject)")[:140],
+            "url": link.group(0) if link else "",
+            "source": "inbox",
+            "deadline": r["deadline"] if r["deadline"] and r["deadline"] != "-" else "",
+            "tags": [r["category"].lower(), "inbox"],
+            "ai_score": r["interest"],
+            "ai_summary": r["summary"],
+            "description": e.get("snippet", ""),
+            "from": e.get("from", ""),
+        })
+    return out
+
+
+def save_feed_items(items: list[dict], path: Path = _FEED_PATH) -> tuple[int, int]:
+    """Merge into data/inbox_items.json, deduped by key (so re-runs don't duplicate). (added, total)."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    existing: dict[str, dict] = {}
+    try:
+        for it in json.loads(path.read_text(encoding="utf-8")).get("items", []):
+            existing[it.get("key")] = it
+    except Exception:
+        pass
+    today, added = date.today().isoformat(), 0
+    for it in items:
+        if it["key"] in existing:  # refresh the live fields in case it was re-triaged
+            existing[it["key"]].update({k: it[k] for k in ("ai_score", "ai_summary", "deadline")})
+        else:
+            it["first_seen"] = today
+            existing[it["key"]] = it
+            added += 1
+    path.write_text(json.dumps({"updated_at": today, "items": list(existing.values())},
+                               indent=2, ensure_ascii=False), encoding="utf-8")
+    return added, len(existing)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Inbox Scout — an opportunity digest of today's Gmail.")
     ap.add_argument("--imap", action="store_true",
@@ -283,6 +337,8 @@ def main() -> int:
     ap.add_argument("--user", default=os.environ.get("GMAIL_USER", ""),
                     help="Gmail address (IMAP mode only)")
     ap.add_argument("--host", default=IMAP_HOST, help="IMAP host (IMAP mode only)")
+    ap.add_argument("--no-feed", action="store_true",
+                    help="just print the digest; don't save opportunities to data/inbox_items.json")
     args = ap.parse_args()
 
     try:
@@ -320,6 +376,12 @@ def main() -> int:
               "(GROQ_API_KEY / CEREBRAS_API_KEY / OPENROUTER_API_KEY).")
         return 1
     print(format_digest(rows, highlights, len(emails)))
+
+    if not args.no_feed:
+        added, total = save_feed_items(to_feed_items(rows))
+        if total:
+            print(f"\n📥 {added} new opportunit(y/ies) saved to data/inbox_items.json "
+                  f"({total} tracked). Rank them with your scraped feed:  python -m resume.fit")
     return 0
 
 

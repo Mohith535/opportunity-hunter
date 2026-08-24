@@ -26,8 +26,21 @@ from __future__ import annotations
 import re
 from datetime import date, datetime
 
+import json
+from pathlib import Path
+
 from filters.llm_scorer import complete
 from .simulate import load_feed
+
+_INBOX_PATH = Path(__file__).resolve().parent.parent / "data" / "inbox_items.json"
+
+
+def load_inbox_items() -> list[dict]:
+    """Opportunities the Inbox Scout (gmail_digest.py) saved from your email — [] if none yet."""
+    try:
+        return json.loads(_INBOX_PATH.read_text(encoding="utf-8")).get("items", [])
+    except Exception:
+        return []
 
 _VERDICTS = ("STRONG FIT", "STRETCH", "NOT YET")
 
@@ -187,6 +200,8 @@ def main() -> int:
     ap.add_argument("--min-score", type=int, default=1, help="ignore items below this relevance")
     ap.add_argument("--include-expired", action="store_true", help="also consider passed deadlines")
     ap.add_argument("--no-verdict", action="store_true", help="skip the LLM verdicts (offline/fast)")
+    ap.add_argument("--no-inbox", action="store_true",
+                    help="exclude opportunities saved from your Gmail by the Inbox Scout")
     args = ap.parse_args()
 
     profile = load_profile_json()
@@ -196,15 +211,33 @@ def main() -> int:
         return 1
 
     feed = load_feed()
+    inbox = [] if args.no_inbox else load_inbox_items()
+    feed = feed + inbox  # inbox opportunities compete in the same honest shortlist
     if not feed:
-        print("No feed found (data/feed.json or data/history.json). Run a hunt first: "
-              "python main.py --now")
+        print("No opportunities found (data/feed.json, data/history.json, or data/inbox_items.json). "
+              "Run a hunt (python main.py --now) or the Inbox Scout (python gmail_digest.py).")
         return 1
+    if inbox:
+        print(f"(including {len(inbox)} opportunit(y/ies) from your inbox)")
 
     rows = shortlist(feed, profile, args.top, args.min_score, args.include_expired)
     if not args.no_verdict:
         rows = add_verdicts(rows, profile)
     print(format_fit(rows, profile, len(feed)))
+
+    # Inbox opportunities came directly TO you — never let them get buried under 100 scraped items
+    # just because their email snippet is short. Always surface any that didn't make the shortlist.
+    if inbox:
+        shown = {r["item"].get("key") for r in rows}
+        missed = sorted((it for it in inbox if it.get("key") not in shown),
+                        key=lambda x: -(x.get("ai_score") or 0))
+        if missed:
+            print("\n📥 ALSO IN YOUR INBOX (came straight to you — don't miss these):")
+            for it in missed:
+                dl = it.get("deadline") or "—"
+                print(f"   [{it.get('ai_score', '?')}/10] {str(it.get('title', ''))[:72]}  (deadline {dl})")
+                if it.get("url"):
+                    print(f"          {it['url']}")
     return 0
 
 
