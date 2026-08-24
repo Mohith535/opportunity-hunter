@@ -66373,6 +66373,632 @@
           "key": "8a59e8142b20"
         }
       ]
+    },
+    {
+      "date": "2026-08-24",
+      "items": [
+        {
+          "title": "VIALS: A Benchmark for Visual Interpretation of Artifacts in the Life Sciences",
+          "url": "https://arxiv.org/abs/2608.21357v1",
+          "source": "arxiv",
+          "description": "In professional life sciences workflows, scientists routinely interpret visual artifacts (gel blots, microscopy images, plasmid maps, flow cytometry plots, molecular structures, ...) to inform research decisions. We introduce VIALS, a visual question-answering benchmark with 161 such interpretation tasks, spanning the types of artifacts examined throughout experimental workflows in the biotech industry (rather than polished figures from publications and textbooks). While frontier vision-language models can now fluently describe natural images, we find that they are unable to accurately interpret these scientific images, reflecting limitations in domain knowledge and domain-specific visual reasoning capabilities. In contrast, scientists with relevant domain expertise find these visual interpretation tasks straightforward. AI that cannot similarly interpret such images will have limited utility in professional life sciences workflows, where such artifacts are central to how scientists reason, communicate, and make decisions.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.21357",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0a3aadc20a39"
+        },
+        {
+          "title": "Asymmetric Capacity Allocation in Self-Refinement Pipelines",
+          "url": "https://arxiv.org/abs/2608.21345v1",
+          "source": "arxiv",
+          "description": "Self-refinement, typically structured as generation, critique, and revision, is a widely adopted paradigm for improving LLM generation and serves as a core mechanism in many LLM agents. While the three stages involve different cognitive demands, most existing approaches conveniently treat the model size as an implementation detail rather than a subject of study, which may lead to a waste of resources. Little work has systematically examined how model size affects each stage or whether effective self-refinement requires equally capable models for generation, critique, and revision. We present the first stage-wise model size study of the self-refinement pipeline on 5 benchmarks from different domains using 6 model sizes of Qwen3 and 4 model sizes of Gemma 3. We conclude that larger generators and refiners generally improve the pipeline, whereas an undersized refiner can even harm performance. Second, performance is highly insensitive to the size of the critic, although including even a small critic consistently outperforms omitting critique altogether. Our findings demonstrate that model capacity should not be allocated uniformly across self-refinement pipelines. Instead, different stages exhibit distinct size scaling characteristics, providing practical guidance for designing more computationally efficient multi-stage language model systems.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.21345",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "45edb5269337"
+        },
+        {
+          "title": "Move by Move: Measuring and Steering How LLMs Conduct Psychotherapy",
+          "url": "https://arxiv.org/abs/2608.21325v1",
+          "source": "arxiv",
+          "description": "Users increasingly turn to large language models for emotional support, yet little is known about how these models actually conduct a psychotherapy interaction. We introduce an ontology of ten therapeutic moves: compact, function-based categories grounded in the MULTI-60 inventory, validated through an annotation campaign with five licensed psychologists, and scaled with a judge-based approach that matches expert agreement. Applying it to real counseling transcripts and model-led sessions, we compare the move distributions between human clinicians and a panel of frontier models. Models over-use inquiry at up to three times the human rate, neglect psychoeducation, and are strongly context-anchored: they carry forward strategies initiated by a human clinician but rarely initiate them themselves. Exposing the ontology as a set of tools roughly halves the mean deviation from the human move distribution and improves turn-level alignment with human therapist by 7-9 percentage points, without any fine-tuning.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.21325",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "00af26e1f810"
+        },
+        {
+          "title": "Leonxlnx/unlazy — ★1,771",
+          "url": "https://github.com/Leonxlnx/unlazy",
+          "source": "github",
+          "description": "Anti-laziness skill for AI agents. Core: the Depth Tree method, which splits a task N layers deep and gives every leaf the full time budget of the whole task, so effort multiplies with depth. Grounded in 2025-2026 research on model laziness, underthinking and premature completion. (topics: ai agents, claude, claude code, llm, productivity, prompt engineering, skill)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "Leonxlnx/unlazy",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4fc45b4b9f49"
+        },
+        {
+          "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
+          "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49411102",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "28202f5597c1"
+        },
+        {
+          "title": "Google Workspace thinks my domain is an email provider (2025)",
+          "url": "https://blog.elis.cc/articles/google-workspace-thinks-my-domain-is-an-email-provider/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49411717",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "814e25377e7c"
+        },
+        {
+          "title": "My agent.md to improve LLM-assisted code quality",
+          "url": "https://fabiensanglard.net/agent.md/index.html",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49410932",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cd9f04597106"
+        },
+        {
+          "title": "A website for debloated open source alternatives",
+          "url": "https://debloat.dev/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49410362",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a30f28820dfb"
+        },
+        {
+          "title": "Over 170k Nonprofits Lost All Their Data. Is Microsoft to Blame?",
+          "url": "https://slate.com/technology/2026/08/microsoft-software-nonprofit-data-delete.html",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49411395",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2a595ebb640c"
+        },
+        {
+          "title": "Implementing Watermarking for Language Models [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vw18ys/implementing_watermarking_for_language_models_p/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vw18ys",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "04a34f9d534f"
+        },
+        {
+          "title": "Archival vs non archival workshop [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vwb18q/archival_vs_non_archival_workshop_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vwb18q",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "164ffc69eede"
+        },
+        {
+          "title": "How to cite/talk about preprint-subsequent works for a camera-ready version? [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vwg5br/how_to_citetalk_about_preprintsubsequent_works/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vwg5br",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "aa9628e1502e"
+        },
+        {
+          "title": "COLM 2026 registration sold out as an author [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vwfccx/colm_2026_registration_sold_out_as_an_author_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vwfccx",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4b66f0f0cd44"
+        },
+        {
+          "title": "[N] EACL 2027 Industry Track - Deadline 11 September [N]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vw4un3/n_eacl_2027_industry_track_deadline_11_september_n/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vw4un3",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bd5728d4e5cb"
+        },
+        {
+          "title": "28 TPS on Qwen2.5-7B across two separate cloud regions over public WAN using speculative decoding + CUDA Graphs [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vw5ysj/28_tps_on_qwen257b_across_two_separate_cloud/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vw5ysj",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8c602769e9ad"
+        },
+        {
+          "title": "When an AI agent says “done” how do you know it actually happened? [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vwa9ap/when_an_ai_agent_says_done_how_do_you_know_it/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vwa9ap",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4dd3ccc27cb8"
+        },
+        {
+          "title": "MUBA Blockchain Hackathon",
+          "url": "https://muba-hackathon.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | online | themes: Blockchain, FinTech, AI",
+          "deadline": "2026-08-26",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "c9616c07274742db8c57310b5d61adc7",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e0b90e9b87a5"
+        },
+        {
+          "title": "Hackrit",
+          "url": "https://hackrit2026.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | Kolkata, India | themes: No Restrictions",
+          "deadline": "2026-09-11",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "64767263c57d44529fcb18316f94b705",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "17f476ef32f8"
+        },
+        {
+          "title": "Cognition - GameJam '26",
+          "url": "https://cognition-gamejam-1.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | Navi Mumbai, India | themes: No Restrictions",
+          "deadline": "2026-09-25",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "e6cecc553fb949c5a0b24ee56659b100",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "65fc2805c2ec"
+        },
+        {
+          "title": "AtCoder Regular Contest++ 230 (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/arc230",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-09-20T12:00:00",
+          "deadline": "2026-09-20",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69816770",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3ac8460b829b"
+        },
+        {
+          "title": "The Minute - LV8 Tech Video Editor Hackathon",
+          "url": "https://unstop.com/hackathons/the-minute-lv8-tech-video-editor-hackathon-lv8-tech-1743164",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743164",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1002a77671b6"
+        },
+        {
+          "title": "Anveshan'26 - 24 Hr Hackathon",
+          "url": "https://unstop.com/hackathons/anveshan26-24-hr-hackathon-amrita-vishwa-vidyapeetham-avv-chennai-1736358",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1736358",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d5798591e0d1"
+        },
+        {
+          "title": "FUSION X 1.0 – 24-Hour Hackathon",
+          "url": "https://unstop.com/hackathons/fusion-x-10-24-hour-hackathon-paavai-engineering-college-pec-namakkal-1743196",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743196",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "afa6cc6456f0"
+        },
+        {
+          "title": "Slay CTF",
+          "url": "https://unstop.com/hackathons/slay-ctf-jalpaiguri-government-engineering-college-jgec-west-bengal-1743206",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743206",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0b6424a7428f"
+        },
+        {
+          "title": "St.Jude's Code Arena",
+          "url": "https://unstop.com/hackathons/stjudes-code-arena-st-judes-public-schoolsjps-nilgiris-1743110",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743110",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bb2c50fe4c7a"
+        },
+        {
+          "title": "INIT'26 - Hackathon",
+          "url": "https://unstop.com/hackathons/init26-hackathon-mukesh-patel-college-of-engineering-and-management-mpstme-1743123",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743123",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "53877cde82a1"
+        },
+        {
+          "title": "CodeArena 2026",
+          "url": "https://unstop.com/hackathons/codearena-2026-quizcred-1742930",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742930",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a118a868e0ab"
+        },
+        {
+          "title": "Code2Create 7.0",
+          "url": "https://unstop.com/hackathons/code2create-70-gravitas26-vit-vellore-1736086",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1736086",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b012becf0697"
+        },
+        {
+          "title": "UI/UX Internship",
+          "url": "https://unstop.com/internships/uiux-internship-algoryx-technologies-1743312",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743312",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bb8f60a2d8cc"
+        },
+        {
+          "title": "Graphic Designer Internship",
+          "url": "https://unstop.com/internships/graphic-designer-internship-cubegraph-technologies-1743218",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743218",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bca5c8e07b5d"
+        },
+        {
+          "title": "Social Media Marketing Internship",
+          "url": "https://unstop.com/internships/social-media-marketing-internship-cubegraph-technologies-1743212",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743212",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c7e48d9076a2"
+        },
+        {
+          "title": "SaaS / Tech Solutions Internship",
+          "url": "https://unstop.com/internships/saas-tech-solutions-internship-revino-solutions-private-limited-1743285",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743285",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b2411e39b36f"
+        },
+        {
+          "title": "Founder's Office Internship",
+          "url": "https://unstop.com/internships/founders-office-internship-tevoxo-ventures-1743230",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743230",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a5cb971c944b"
+        },
+        {
+          "title": "Campus Ambassador Internship",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-smarted-innovations-1743208",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743208",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cdc0b64bd889"
+        },
+        {
+          "title": "Business Development Internship (Sales)",
+          "url": "https://unstop.com/internships/business-development-internship-sales-yodha-foods-1743202",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743202",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5894f7db450f"
+        },
+        {
+          "title": "Research and Development Internship",
+          "url": "https://unstop.com/internships/research-and-development-internship-encrypta-in-1743200",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743200",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6137ac815ec0"
+        }
+      ]
     }
   ]
 }
