@@ -51,7 +51,7 @@ import json
 import os
 import re
 import sys
-from datetime import date
+from datetime import date, timedelta
 from email.header import decode_header
 from pathlib import Path
 
@@ -95,8 +95,10 @@ def _snippet(msg: email.message.Message) -> str:
     return re.sub(r"\s+", " ", (plain or htmls)).strip()[:_SNIPPET]
 
 
-def fetch_today(user: str, password: str, host: str = IMAP_HOST) -> list[dict]:
-    """Today's inbox messages as {from, subject, snippet}. Raises on auth/connection failure."""
+def fetch_today(user: str, password: str, host: str = IMAP_HOST,
+                days: int = 1, unread: bool = False) -> list[dict]:
+    """Inbox messages as {from, subject, snippet}. `days` = look-back window (1 = today).
+    Raises on auth/connection failure. (IMAP path — Gmail search operators aren't available here.)"""
     box = imaplib.IMAP4_SSL(host)
     try:
         box.login(user, password)
@@ -107,7 +109,9 @@ def fetch_today(user: str, password: str, host: str = IMAP_HOST) -> list[dict]:
             "or app-passwords disabled by its admin — then we need the Gmail API (OAuth) instead.") from e
     try:
         box.select("INBOX")
-        _, data = box.search(None, f'(SINCE "{date.today().strftime("%d-%b-%Y")}")')
+        since = (date.today() - timedelta(days=max(0, days - 1))).strftime("%d-%b-%Y")
+        criteria = f'SINCE "{since}"' + (" UNSEEN" if unread else "")
+        _, data = box.search(None, f"({criteria})")
         ids = data[0].split()
         out = []
         for mid in ids[-_MAX_EMAILS:]:
@@ -127,8 +131,16 @@ def fetch_today(user: str, password: str, host: str = IMAP_HOST) -> list[dict]:
 _SCOPES = ["https://www.googleapis.com/auth/gmail.readonly"]
 
 
+def build_gmail_query(days: int = 1, unread: bool = False, raw: str = "") -> str:
+    """A Gmail search query from the scan flags. `raw` overrides everything (full Gmail operators)."""
+    if raw:
+        return raw
+    base = f"after:{date.today():%Y/%m/%d}" if days <= 1 else f"newer_than:{days}d"
+    return f"{base} is:unread" if unread else base
+
+
 def fetch_today_oauth(credentials_path: str = "credentials.json",
-                      token_path: str = "token.json") -> list[dict]:
+                      token_path: str = "token.json", query: str = "") -> list[dict]:
     """Today's inbox via the Gmail API over OAuth (read-only). No app password, no 2SV.
 
     First run opens a browser for one-time consent; the token is cached in token_path. Kept in
@@ -166,7 +178,8 @@ def fetch_today_oauth(credentials_path: str = "credentials.json",
 
     service = build("gmail", "v1", credentials=creds)
     listing = service.users().messages().list(
-        userId="me", q=f"after:{date.today():%Y/%m/%d}", maxResults=_MAX_EMAILS).execute()
+        userId="me", q=query or f"after:{date.today():%Y/%m/%d}",
+        maxResults=_MAX_EMAILS).execute()
     out = []
     for ref in listing.get("messages", []):
         msg = service.users().messages().get(
@@ -225,8 +238,11 @@ def summarize(emails: list[dict]) -> tuple[list[dict], str]:
     listing = "\n".join(
         f"{i}. FROM: {e['from'][:70]} | SUBJECT: {e['subject'][:110]} | {e['snippet'][:400]}"
         for i, e in enumerate(emails, 1))
+    # gpt-oss-120b is a reasoning model — it spends tokens "thinking" before the visible answer, so a
+    # tight ceiling truncates the per-email lines (1600 handled only ~8 of 38 emails). Headroom for the
+    # 40-email cap. It only generates what it needs, so this costs nothing extra on small inboxes.
     out = complete(_PROMPT.format(profile=_profile_block(), emails=listing),
-                   max_tokens=1600, temperature=0.2)
+                   max_tokens=5000, temperature=0.2)
     rows, highlights = [], ""
     for line in (out or "").splitlines():
         if line.upper().startswith("HIGHLIGHTS:"):
@@ -248,10 +264,10 @@ def summarize(emails: list[dict]) -> tuple[list[dict], str]:
     return rows, highlights
 
 
-def format_digest(rows: list[dict], highlights: str, total: int) -> str:
+def format_digest(rows: list[dict], highlights: str, total: int, window: str = "today") -> str:
     scanned = len(rows)
     lines = ["=" * 68, f"INBOX SCOUT — {date.today():%A, %d %B %Y}", "=" * 68,
-             f"{total} emails today · {scanned} triaged", ""]
+             f"{total} emails ({window}) · {scanned} triaged", ""]
     shown = False
     for cat in ("PROGRAM", "EVENT", "LEARNING", "ADMIN"):
         group = sorted([r for r in rows if r["category"] == cat],
@@ -337,9 +353,24 @@ def main() -> int:
     ap.add_argument("--user", default=os.environ.get("GMAIL_USER", ""),
                     help="Gmail address (IMAP mode only)")
     ap.add_argument("--host", default=IMAP_HOST, help="IMAP host (IMAP mode only)")
+    ap.add_argument("--days", type=int, default=1,
+                    help="look back this many days (default 1 = today). Use if you run it irregularly "
+                         "so opportunities from in-between days aren't missed.")
+    ap.add_argument("--unread", action="store_true", help="scan only UNREAD mail (cuts through a busy inbox)")
+    ap.add_argument("--query", default="",
+                    help="raw Gmail search query, full control (OAuth only), e.g. "
+                         "\"is:unread -category:promotions newer_than:3d\" — overrides --days/--unread")
     ap.add_argument("--no-feed", action="store_true",
                     help="just print the digest; don't save opportunities to data/inbox_items.json")
     args = ap.parse_args()
+
+    # A human-readable label for what we scanned (shown in the digest header).
+    if args.query:
+        window = "custom query"
+    else:
+        window = "today" if args.days <= 1 else f"last {args.days} days"
+        if args.unread:
+            window += " · unread only"
 
     try:
         import config  # loads .env  # noqa: F401, PLC0415
@@ -348,15 +379,19 @@ def main() -> int:
 
     try:
         if args.imap:
+            if args.query:
+                print("Note: --query uses Gmail search syntax and is OAuth-only; ignoring it for IMAP "
+                      "(--days and --unread still apply).")
             user = args.user or os.environ.get("GMAIL_USER", "")
             password = os.environ.get("GMAIL_APP_PASSWORD", "")
             if not user or not password:
                 print("IMAP mode needs credentials in .env:\n"
                       "   GMAIL_USER=you@example.com\n   GMAIL_APP_PASSWORD=your-16-char-app-password")
                 return 1
-            emails = fetch_today(user, password, args.host)
+            emails = fetch_today(user, password, args.host, days=args.days, unread=args.unread)
         else:
-            emails = fetch_today_oauth(args.credentials)
+            emails = fetch_today_oauth(
+                args.credentials, query=build_gmail_query(args.days, args.unread, args.query))
     except RuntimeError as e:
         print(f"Error: {e}")
         return 1
@@ -367,7 +402,7 @@ def main() -> int:
         return 1
 
     if not emails:
-        print(f"No emails today ({date.today():%d %b %Y}). Nothing to summarise.")
+        print(f"No emails matched ({window}). Nothing to summarise.")
         return 0
 
     rows, highlights = summarize(emails)
@@ -375,7 +410,7 @@ def main() -> int:
         print("Fetched mail but the LLM digest is unavailable — set an LLM key in .env "
               "(GROQ_API_KEY / CEREBRAS_API_KEY / OPENROUTER_API_KEY).")
         return 1
-    print(format_digest(rows, highlights, len(emails)))
+    print(format_digest(rows, highlights, len(emails), window))
 
     if not args.no_feed:
         added, total = save_feed_items(to_feed_items(rows))
