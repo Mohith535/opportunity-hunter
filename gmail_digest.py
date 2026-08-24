@@ -13,18 +13,32 @@ or attachments — but it IS third-party. Don't point this at an inbox with secr
 into an API. It never sends, deletes, or modifies anything; read-only.
 ────────────────────────────────────────────────────────────────────────────────────────────────
 
-SETUP (you must do this — I cannot):
-  1. Turn on 2-Step Verification for the account.
-  2. Google Account → Security → App passwords → generate one (16 chars).
-  3. Put it in this project's gitignored .env:
-        GMAIL_USER=mk2184@srmist.edu.in
-        GMAIL_APP_PASSWORD=xxxxxxxxxxxxxxxx
-  4. Run:  python gmail_digest.py
-     (or override per run:  python gmail_digest.py --user other@gmail.com )
+DEFAULT AUTH = OAuth (Gmail API, READ-ONLY) — no 2-Step Verification, no password shared. Chosen
+because enabling 2SV would force phone OTP on your normal lab logins (phones aren't allowed in the
+lab). OAuth authorises ONCE in a browser (no phone if 2SV is off) and caches a token locally.
 
-Note on the SRM account: it's a Google Workspace account, so SRM's admin may have DISABLED IMAP or
-app passwords. If login fails with that, the app password route is blocked and you'd need the Gmail
-API (OAuth) instead — tell me and I'll add that path. Personal Gmail with 2FA works with app passwords.
+SETUP (you must do this in Google Cloud Console — I cannot):
+  1. console.cloud.google.com → create a project (e.g. "OPHunter").
+  2. APIs & Services → Library → enable "Gmail API".
+  3. APIs & Services → OAuth consent screen → External → app name + your email →
+     add your SRM email as a Test user → keep publishing status "Testing".
+  4. Credentials → Create credentials → OAuth client ID → "Desktop app" → download the JSON →
+     save it as  credentials.json  in this project folder.
+  5. Run:  python gmail_digest.py
+     A browser opens → sign in (no phone if 2SV is off) → "Advanced → Go to OPHunter (unsafe)" past
+     the unverified-app warning → grant READ-ONLY Gmail. Token cached in token.json (gitignored).
+  Needs:  pip install google-auth-oauthlib google-api-python-client google-auth-httplib2
+
+TWO honest caveats (verified, not guessed):
+  • FREE/personal OAuth stays in "Testing" mode, so the refresh token EXPIRES EVERY 7 DAYS — re-run
+    step 5's browser click about weekly (still no phone). Permanent tokens need Google's paid
+    verification for the restricted Gmail scope — not worth it for personal use.
+  • SRM is Google Workspace FOR EDUCATION; its admin can BLOCK third-party apps from Gmail. If you see
+    "Access blocked: … your admin", OAuth is walled off (same as IMAP) — no free workaround short of
+    SRM IT or using personal Gmail.
+
+Alternative (ONLY if you already have 2-Step Verification): run with  --imap  and set GMAIL_USER +
+GMAIL_APP_PASSWORD in .env.
 """
 
 from __future__ import annotations
@@ -104,6 +118,62 @@ def fetch_today(user: str, password: str, host: str = IMAP_HOST) -> list[dict]:
             box.logout()
         except Exception:
             pass
+
+
+# ─── OAuth / Gmail API path (default — no 2-Step Verification needed) ────────────
+_SCOPES = ["https://www.googleapis.com/auth/gmail.readonly"]
+
+
+def fetch_today_oauth(credentials_path: str = "credentials.json",
+                      token_path: str = "token.json") -> list[dict]:
+    """Today's inbox via the Gmail API over OAuth (read-only). No app password, no 2SV.
+
+    First run opens a browser for one-time consent; the token is cached in token_path. Kept in
+    'Testing' publishing status the refresh token expires ~weekly, so you re-consent with a browser
+    click (no phone). Uses the Gmail-provided ~200-char snippet only — never decodes full bodies.
+    """
+    try:
+        from google.auth.transport.requests import Request  # noqa: PLC0415
+        from google.oauth2.credentials import Credentials  # noqa: PLC0415
+        from google_auth_oauthlib.flow import InstalledAppFlow  # noqa: PLC0415
+        from googleapiclient.discovery import build  # noqa: PLC0415
+    except ImportError as e:
+        raise RuntimeError(
+            "Gmail API libraries aren't installed. Run:\n"
+            "   pip install google-auth-oauthlib google-api-python-client google-auth-httplib2") from e
+
+    from pathlib import Path as _P  # noqa: PLC0415
+    creds = None
+    if _P(token_path).exists():
+        creds = Credentials.from_authorized_user_file(token_path, _SCOPES)
+    if not creds or not creds.valid:
+        if creds and creds.expired and creds.refresh_token:
+            try:
+                creds.refresh(Request())
+            except Exception:
+                creds = None
+        if not creds:
+            if not _P(credentials_path).exists():
+                raise RuntimeError(
+                    f"No '{credentials_path}' found. Create a Google Cloud OAuth 'Desktop app' client "
+                    "and download it here as credentials.json (see the setup notes at the top).")
+            creds = InstalledAppFlow.from_client_secrets_file(
+                credentials_path, _SCOPES).run_local_server(port=0)
+        _P(token_path).write_text(creds.to_json(), encoding="utf-8")
+
+    service = build("gmail", "v1", credentials=creds)
+    listing = service.users().messages().list(
+        userId="me", q=f"after:{date.today():%Y/%m/%d}", maxResults=_MAX_EMAILS).execute()
+    out = []
+    for ref in listing.get("messages", []):
+        msg = service.users().messages().get(
+            userId="me", id=ref["id"], format="metadata",
+            metadataHeaders=["From", "Subject"]).execute()
+        headers = {h["name"].lower(): h["value"]
+                   for h in msg.get("payload", {}).get("headers", [])}
+        out.append({"from": headers.get("from", ""), "subject": headers.get("subject", ""),
+                    "snippet": (msg.get("snippet", "") or "")[:_SNIPPET]})
+    return out
 
 
 _PROMPT = """You are Mohith's personal opportunity scout, triaging his email inbox. Here is who he is
@@ -206,33 +276,42 @@ def format_digest(rows: list[dict], highlights: str, total: int) -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Inbox Scout — an opportunity digest of today's Gmail.")
+    ap.add_argument("--imap", action="store_true",
+                    help="use IMAP + app password instead of OAuth (needs 2-Step Verification)")
+    ap.add_argument("--credentials", default="credentials.json",
+                    help="OAuth client JSON from Google Cloud (OAuth mode, default)")
     ap.add_argument("--user", default=os.environ.get("GMAIL_USER", ""),
-                    help="Gmail address (or set GMAIL_USER in .env)")
-    ap.add_argument("--host", default=IMAP_HOST, help="IMAP host (default imap.gmail.com)")
+                    help="Gmail address (IMAP mode only)")
+    ap.add_argument("--host", default=IMAP_HOST, help="IMAP host (IMAP mode only)")
     args = ap.parse_args()
 
     try:
         import config  # loads .env  # noqa: F401, PLC0415
     except Exception:
         pass
-    user = args.user or os.environ.get("GMAIL_USER", "")
-    password = os.environ.get("GMAIL_APP_PASSWORD", "")
-    if not user or not password:
-        print("Missing credentials. Set these in .env (see the setup notes at the top of this file):\n"
-              "   GMAIL_USER=you@example.com\n   GMAIL_APP_PASSWORD=your-16-char-app-password")
-        return 1
 
     try:
-        emails = fetch_today(user, password, args.host)
+        if args.imap:
+            user = args.user or os.environ.get("GMAIL_USER", "")
+            password = os.environ.get("GMAIL_APP_PASSWORD", "")
+            if not user or not password:
+                print("IMAP mode needs credentials in .env:\n"
+                      "   GMAIL_USER=you@example.com\n   GMAIL_APP_PASSWORD=your-16-char-app-password")
+                return 1
+            emails = fetch_today(user, password, args.host)
+        else:
+            emails = fetch_today_oauth(args.credentials)
     except RuntimeError as e:
         print(f"Error: {e}")
         return 1
     except Exception as e:  # noqa: BLE001
-        print(f"Could not reach the mailbox: {e}")
+        print(f"Could not reach the mailbox: {e}\n"
+              "(If this says the app is blocked by your admin, SRM's Workspace has disabled "
+              "third-party Gmail access — see the caveats at the top of this file.)")
         return 1
 
     if not emails:
-        print(f"No emails today ({date.today():%d %b %Y}) in {user}. Nothing to summarise.")
+        print(f"No emails today ({date.today():%d %b %Y}). Nothing to summarise.")
         return 0
 
     rows, highlights = summarize(emails)

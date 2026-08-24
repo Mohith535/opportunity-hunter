@@ -33,3 +33,7 @@ CLAUDE.md
 
 # Personal marketing drafts — never public
 linkedin post/
+
+# Gmail OAuth secrets (Inbox Scout) — never commit
+credentials.json
+token.json
