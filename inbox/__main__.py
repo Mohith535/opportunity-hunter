@@ -109,8 +109,11 @@ def main() -> int:
     if args.calendar:
         from .gcal import to_calendar
         r = to_calendar(summary, args.credentials)
-        print(f"📅 Calendar: added {r['created']} reminder(s)." if r["created"]
-              else f"📅 Calendar: {r['error']}")
+        if r.get("error"):
+            print(f"📅 Calendar: {r['error']}")
+        else:
+            extra = f" ({r['skipped']} already on your calendar)" if r.get("skipped") else ""
+            print(f"📅 Calendar: added {r['created']} reminder(s){extra}.")
     return 0
 
 

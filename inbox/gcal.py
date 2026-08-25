@@ -32,6 +32,25 @@ _SETUP = ("Calendar needs one more permission. Add the scope "
           "(Your tap-to-add links keep working meanwhile.)")
 
 
+def _already_there(svc, title: str, d: str) -> bool:
+    """True if an all-day event with this exact title already exists on day `d` (YYYY-MM-DD).
+
+    Checks the REAL calendar rather than a local log, so re-runs never duplicate — and the events you
+    added on earlier runs are recognised too. On any lookup error it returns False (safer to risk a
+    rare duplicate than to skip a genuinely-new reminder)."""
+    try:
+        day = datetime.strptime(d, "%Y-%m-%d").date()
+        res = svc.events().list(
+            calendarId="primary",
+            timeMin=(day - timedelta(days=1)).isoformat() + "T00:00:00Z",
+            timeMax=(day + timedelta(days=2)).isoformat() + "T00:00:00Z",
+            singleEvents=True, maxResults=100).execute()
+        return any((e.get("summary") or "") == title and (e.get("start") or {}).get("date") == d
+                   for e in res.get("items", []))
+    except Exception:
+        return False
+
+
 def to_calendar(summary: dict, credentials: str = "credentials.json",
                 token: str = "token.json") -> dict:
     """Add an all-day reminder for each deadline item. Returns {created, error}. Never raises."""
@@ -72,12 +91,16 @@ def to_calendar(summary: dict, credentials: str = "credentials.json",
 
     try:
         svc = build("calendar", "v3", credentials=creds)
-        created = 0
+        created, skipped = 0, 0
         for it in items:
             d = it["deadline"]
+            title = f"⏰ {it['subject'][:80]}"
+            if _already_there(svc, title, d):   # check the REAL calendar → never duplicate
+                skipped += 1
+                continue
             end = (datetime.strptime(d, "%Y-%m-%d") + timedelta(days=1)).strftime("%Y-%m-%d")
             svc.events().insert(calendarId="primary", body={
-                "summary": f"⏰ {it['subject'][:80]}",
+                "summary": title,
                 "description": (it["summary"][:300] + "\n\n(added by your Inbox Assistant)"),
                 "start": {"date": d}, "end": {"date": end},
                 # The actual "reminder": notifications a day before (popup on phone + email).
@@ -86,7 +109,7 @@ def to_calendar(summary: dict, credentials: str = "credentials.json",
                     {"method": "email", "minutes": 1440}]},
             }).execute()
             created += 1
-        return {"created": created, "error": ""}
+        return {"created": created, "skipped": skipped, "error": ""}
     except Exception as e:
         msg = str(e)
         if "insufficient" in msg.lower() or "scope" in msg.lower() or "403" in msg:
