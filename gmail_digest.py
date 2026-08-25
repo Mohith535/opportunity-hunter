@@ -198,7 +198,7 @@ def fetch_today_oauth(credentials_path: str = "credentials.json",
                    for h in msg.get("payload", {}).get("headers", [])}
         out.append({"from": headers.get("from", ""), "subject": headers.get("subject", ""),
                     "snippet": (msg.get("snippet", "") or "")[:_SNIPPET],
-                    "labels": msg.get("labelIds", [])})
+                    "labels": msg.get("labelIds", []), "id": ref["id"]})
     return out
 
 

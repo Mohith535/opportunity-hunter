@@ -114,7 +114,7 @@ def scan(days: int = 1, unread: bool = False, credentials: str = "credentials.js
             if p["category"] == "NOISE":
                 hidden["low value"] = hidden.get("low value", 0) + 1
                 continue
-            shown.append({"from": e["from"], "subject": e["subject"], **p})
+            shown.append({"from": e["from"], "subject": e["subject"], "id": e.get("id", ""), **p})
         shown.sort(key=lambda x: -x["importance"])
 
     return {"shown": shown, "hidden": hidden, "total": len(emails), "window": window}

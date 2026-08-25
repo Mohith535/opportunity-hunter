@@ -58,12 +58,19 @@ def render_html(summary: dict) -> str:
         emoji, label = _CAT.get(it["category"], ("✉️", it["category"].title()))
         imp = it["importance"]
         dl = it.get("deadline") or ""
-        cal = gcal_link(it["subject"], dl) if dl else ""
-        deadline_html = ""
+        actions = []
+        gid = it.get("id") or ""
+        if gid:  # jump straight to the real email in Gmail
+            actions.append(
+                '<a class="btn open" target="_blank" rel="noopener" '
+                f'href="https://mail.google.com/mail/u/0/#all/{_e(gid)}">✉️ Open email</a>')
         if dl:
-            btn = (f'<a class="cal" href="{_e(cal)}" target="_blank" rel="noopener">＋ Calendar</a>'
-                   if cal else "")
-            deadline_html = f'<div class="deadline">⏰ Due {_e(dl)} {btn}</div>'
+            cal = gcal_link(it["subject"], dl)
+            if cal:
+                actions.append('<a class="btn cal" target="_blank" rel="noopener" '
+                               f'href="{_e(cal)}">＋ Calendar</a>')
+            actions.append(f'<span class="due">⏰ {_e(dl)}</span>')
+        actions_html = f'<div class="actions">{"".join(actions)}</div>' if actions else ""
         cards.append(f"""
         <article class="card imp{min(imp,10)//4}">
           <div class="row1">
@@ -73,7 +80,7 @@ def render_html(summary: dict) -> str:
           <div class="who">{_e(_sender_name(it["from"]))}</div>
           <div class="subj">{_e(it["subject"][:120])}</div>
           <div class="sum">{_e(it["summary"])}</div>
-          {deadline_html}
+          {actions_html}
         </article>""")
 
     if not shown:
@@ -116,11 +123,13 @@ def render_html(summary: dict) -> str:
   .who{{font-weight:800;font-size:.98rem}}
   .subj{{color:var(--soft);font-size:.86rem;margin:1px 0 6px}}
   .sum{{font-size:.95rem}}
-  .deadline{{margin-top:9px;font-size:.86rem;font-weight:700;color:var(--gold);
-    display:flex;align-items:center;gap:10px;flex-wrap:wrap}}
-  .cal{{background:var(--gold-soft);color:var(--gold);text-decoration:none;font-weight:800;
-    padding:5px 11px;border-radius:999px;font-size:.82rem}}
-  .cal:active{{transform:scale(.97)}}
+  .actions{{margin-top:11px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}}
+  .btn{{text-decoration:none;font-weight:800;padding:6px 12px;border-radius:999px;font-size:.82rem;
+    -webkit-tap-highlight-color:transparent}}
+  .btn:active{{transform:scale(.97)}}
+  .btn.open{{background:var(--accent-soft);color:var(--accent)}}
+  .btn.cal{{background:var(--gold-soft);color:var(--gold)}}
+  .due{{font-size:.82rem;font-weight:800;color:var(--gold)}}
   .empty{{color:var(--soft);text-align:center;padding:40px 0}}
   footer{{margin-top:26px;color:var(--soft);font-size:.8rem;text-align:center}}
 </style></head><body>
