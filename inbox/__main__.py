@@ -48,8 +48,14 @@ def main() -> int:
     except Exception:
         pass
 
+    # When adding to Calendar, ask for the Calendar permission in the SAME Gmail login — otherwise the
+    # Gmail read creates a Gmail-only token first and the calendar step is left without permission.
+    scan_scopes = None
+    if args.calendar:
+        scan_scopes = ["https://www.googleapis.com/auth/gmail.readonly",
+                       "https://www.googleapis.com/auth/calendar"]
     try:
-        summary = scan(args.days, args.unread, args.credentials)
+        summary = scan(args.days, args.unread, args.credentials, scopes=scan_scopes)
     except RuntimeError as e:
         print(f"Error: {e}")
         return 1

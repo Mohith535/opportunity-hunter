@@ -140,7 +140,8 @@ def build_gmail_query(days: int = 1, unread: bool = False, raw: str = "") -> str
 
 
 def fetch_today_oauth(credentials_path: str = "credentials.json",
-                      token_path: str = "token.json", query: str = "") -> list[dict]:
+                      token_path: str = "token.json", query: str = "",
+                      scopes: list | None = None) -> list[dict]:
     """Today's inbox via the Gmail API over OAuth (read-only). No app password, no 2SV.
 
     First run opens a browser for one-time consent; the token is cached in token_path. Kept in
@@ -158,9 +159,17 @@ def fetch_today_oauth(credentials_path: str = "credentials.json",
             "   pip install google-auth-oauthlib google-api-python-client google-auth-httplib2") from e
 
     from pathlib import Path as _P  # noqa: PLC0415
+    scopes = scopes or _SCOPES
     creds = None
     if _P(token_path).exists():
-        creds = Credentials.from_authorized_user_file(token_path, _SCOPES)
+        try:
+            creds = Credentials.from_authorized_user_file(token_path, scopes)
+        except Exception:
+            creds = None
+    # A newly-requested scope (e.g. Calendar) won't be in an older Gmail-only token — force a fresh
+    # consent so ONE login covers everything, instead of silently failing later with "insufficient scope".
+    if creds and not set(scopes).issubset(set(creds.scopes or [])):
+        creds = None
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             try:
@@ -173,7 +182,7 @@ def fetch_today_oauth(credentials_path: str = "credentials.json",
                     f"No '{credentials_path}' found. Create a Google Cloud OAuth 'Desktop app' client "
                     "and download it here as credentials.json (see the setup notes at the top).")
             creds = InstalledAppFlow.from_client_secrets_file(
-                credentials_path, _SCOPES).run_local_server(port=0)
+                credentials_path, scopes).run_local_server(port=0)
         _P(token_path).write_text(creds.to_json(), encoding="utf-8")
 
     service = build("gmail", "v1", credentials=creds)

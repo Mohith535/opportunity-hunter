@@ -81,10 +81,14 @@ def _parse(out: str, n: int) -> dict[int, dict]:
     return rows
 
 
-def scan(days: int = 1, unread: bool = False, credentials: str = "credentials.json") -> dict:
+def scan(days: int = 1, unread: bool = False, credentials: str = "credentials.json",
+         scopes: list | None = None) -> dict:
     """Read the inbox and return {shown, hidden, total, window}. `shown` is the important mail, sorted
-    most-important first; `hidden` is a {reason: count} tally of what was filtered out."""
-    emails = fetch_today_oauth(credentials, query=build_gmail_query(days, unread))
+    most-important first; `hidden` is a {reason: count} tally of what was filtered out.
+
+    `scopes` lets a caller ask for extra permission in the SAME login (e.g. Calendar), so we don't end
+    up with a Gmail-only token that later blocks calendar writes."""
+    emails = fetch_today_oauth(credentials, query=build_gmail_query(days, unread), scopes=scopes)
     window = "today" if days <= 1 else f"last {days} days"
     if unread:
         window += " · unread"
