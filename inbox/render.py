@@ -47,6 +47,67 @@ def _e(s) -> str:
     return html.escape(str(s or ""))
 
 
+def _priority_class(p: str) -> str:
+    """Red stripe for the do-it-now tier, gold for the strategic/long-game tier."""
+    return "crit" if str(p or "").strip().lower() in ("critical", "urgent", "high", "important") \
+        else "strat"
+
+
+def _late_label(days: int) -> str:
+    return "1 day late" if days == 1 else f"{days} days late"
+
+
+def _task_row(t: dict, tag_html: str) -> str:
+    ptag = f'<span class="ptag">{_e(t["priority"])}</span>' if t.get("priority") else ""
+    return f"""
+      <div class="task {_priority_class(t.get("priority"))}">
+        <div class="tbody">
+          <div class="t">{_e(t["title"][:140])}</div>
+          <div class="meta">{tag_html}{ptag}</div>
+        </div>
+      </div>"""
+
+
+def _render_day(day: dict | None) -> str:
+    """The 'Today' section: TaskFlow tasks due today or overdue, read-only. '' if there's nothing worth
+    showing (or TaskFlow isn't present)."""
+    if not day or not day.get("available"):
+        return ""
+    overdue = day.get("overdue", [])
+    due_today = day.get("due_today", [])
+    backlog = day.get("backlog_count", 0)
+    upcoming = day.get("upcoming_count", 0)
+    active_now = len(overdue) + len(due_today)
+    if active_now == 0 and backlog == 0 and upcoming == 0:
+        return ""  # no TaskFlow tasks at all — stay quiet
+
+    rows = []
+    for t in due_today:
+        rows.append(_task_row(t, '<span class="today-tag">due today</span>'))
+    shown_over = overdue[:12]
+    for t in shown_over:
+        rows.append(_task_row(t, f'<span class="late">{_e(_late_label(t["days_over"]))}</span>'))
+
+    extra = []
+    if len(overdue) > len(shown_over):
+        extra.append(f"+{len(overdue) - len(shown_over)} more overdue")
+    if backlog:
+        extra.append(f"{backlog} on your list")
+    if upcoming:
+        extra.append(f"{upcoming} upcoming")
+    note = f'<div class="day-note">{_e(" · ".join(extra))}</div>' if extra else ""
+
+    pill = f"{active_now} to handle" if active_now else "all clear"
+    if active_now == 0:
+        rows = ['<div class="day-note calm">Nothing due today. 🌿</div>']
+    return f"""
+    <section class="day">
+      <div class="day-head"><h2>Today</h2><span class="pill">{_e(pill)}</span></div>
+      {''.join(rows)}
+      {note}
+    </section>"""
+
+
 def render_html(summary: dict) -> str:
     shown = summary.get("shown", [])
     hidden = summary.get("hidden", {})
@@ -91,6 +152,9 @@ def render_html(summary: dict) -> str:
         bits = " · ".join(f"{v} {_e(k)}" for k, v in hidden.items())
         hidden_line = f'<div class="hidden">🗂️ Hid {hidden_total} junk email(s): {bits}</div>'
 
+    day_html = _render_day(summary.get("day"))
+    inbox_head = '<h2 class="sec">Inbox</h2>' if day_html else ""
+
     return f"""<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -113,6 +177,23 @@ def render_html(summary: dict) -> str:
   .pill{{background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:.82rem;
     padding:5px 11px;border-radius:999px}}
   .hidden{{color:var(--soft);font-size:.85rem;margin:6px 0 18px}}
+  .sec{{font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;
+    color:var(--soft);margin:22px 2px 10px}}
+  .day{{margin:14px 0 8px}}
+  .day-head{{display:flex;align-items:center;gap:9px;margin:2px 2px 11px}}
+  .day-head h2{{font-size:1.08rem;margin:0;letter-spacing:-.01em}}
+  .task{{display:flex;background:var(--surface);border:1px solid var(--line);
+    border-left:4px solid var(--line);border-radius:14px;padding:11px 13px;margin-bottom:8px;
+    box-shadow:var(--sh)}}
+  .task.crit{{border-left-color:var(--hi)}} .task.strat{{border-left-color:var(--gold)}}
+  .task .t{{font-weight:700;font-size:.95rem;line-height:1.34}}
+  .meta{{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-top:5px}}
+  .late{{color:var(--hi);font-weight:800;font-size:.76rem;font-variant-numeric:tabular-nums}}
+  .today-tag{{color:var(--gold);font-weight:800;font-size:.76rem}}
+  .ptag{{color:var(--soft);font-size:.7rem;font-weight:700;text-transform:uppercase;
+    letter-spacing:.04em}}
+  .day-note{{color:var(--soft);font-size:.85rem;margin:6px 2px 0}}
+  .day-note.calm{{margin:2px 2px 8px}}
   .card{{background:var(--surface);border:1px solid var(--line);border-radius:16px;
     padding:14px 15px;margin-bottom:11px;box-shadow:var(--sh);border-left:4px solid var(--line)}}
   .card.imp2{{border-left-color:var(--accent)}} .card.imp3{{border-left-color:var(--hi)}}
@@ -135,7 +216,7 @@ def render_html(summary: dict) -> str:
 </style></head><body>
 <div class="wrap">
   <header>
-    <h1>Your inbox, sorted</h1>
+    <h1>Your day, sorted</h1>
     <div class="built">{_e(summary.get('window','today')).capitalize()} · built {_e(built)}</div>
     <div class="counts">
       <span class="pill">{len(shown)} worth your time</span>
@@ -143,8 +224,10 @@ def render_html(summary: dict) -> str:
     </div>
     {hidden_line}
   </header>
+  {day_html}
+  {inbox_head}
   {''.join(cards)}
-  <footer>Only reads your mail · junk (codes, security, promos) filtered out before summarising ·
-  nothing sent, deleted, or changed. 🌱</footer>
+  <footer>Reads your mail and your TaskFlow list · junk (codes, security, promos) filtered out before
+  summarising · nothing sent, deleted, completed, or changed. 🌱</footer>
 </div>
 </body></html>"""

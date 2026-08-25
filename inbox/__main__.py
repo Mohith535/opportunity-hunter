@@ -63,6 +63,15 @@ def main() -> int:
         print(f"Could not read the mailbox: {e}")
         return 1
 
+    # Bring in today's TaskFlow tasks (due today + overdue) — READ-ONLY; the phone dashboard is the
+    # thing that actually comes to you, so the tasks ride along with the inbox. Silent if TaskFlow
+    # isn't present.
+    try:
+        from .taskflow_read import read_day_tasks
+        summary["day"] = read_day_tasks()
+    except Exception:  # noqa: BLE001
+        summary["day"] = {"available": False}
+
     # Save the data + the page (both local, gitignored — personal).
     (_BASE / "data").mkdir(exist_ok=True)
     (_BASE / "data" / "inbox_summary.json").write_text(
