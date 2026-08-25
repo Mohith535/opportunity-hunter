@@ -44,3 +44,4 @@ data/inbox_items.json
 # Inbox Assistant outputs (your real email) — personal, local only
 data/inbox_summary.json
 inbox_dashboard.html
+data/inbox_tasks_done.json

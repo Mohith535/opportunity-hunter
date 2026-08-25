@@ -16,5 +16,9 @@ logic here is entirely its own.
 
 from .scan import scan, is_junk
 from .render import render_html, gcal_link
+from .notify import to_telegram
+from .tasks import to_taskflow
+from .gcal import to_calendar
 
-__all__ = ["scan", "is_junk", "render_html", "gcal_link"]
+__all__ = ["scan", "is_junk", "render_html", "gcal_link",
+           "to_telegram", "to_taskflow", "to_calendar"]

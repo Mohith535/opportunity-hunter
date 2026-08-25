@@ -28,6 +28,12 @@ def main() -> int:
     ap.add_argument("--credentials", default="credentials.json", help="OAuth client JSON")
     ap.add_argument("--out", default=str(_BASE / "inbox_dashboard.html"),
                     help="where to write the mobile web page")
+    ap.add_argument("--phone", action="store_true",
+                    help="send the summary to your private Telegram (safest way to see it on your phone)")
+    ap.add_argument("--taskflow", action="store_true",
+                    help="turn important deadlines/actions into TaskFlow tasks (tagged #mail)")
+    ap.add_argument("--calendar", action="store_true",
+                    help="add deadline reminders to your Google Calendar (needs a one-time permission)")
     args = ap.parse_args()
 
     try:
@@ -63,6 +69,29 @@ def main() -> int:
         print(f"  [{it['importance']}/10] {it['category']:11} {it['summary'][:74]}{dl}")
     print(f"\n📱 Open on your phone → {out}")
     print("   (Deadlines have a one-tap 'Add to Calendar' button inside.)")
+
+    # ── deliveries (opt-in) ──
+    if args.phone:
+        from .notify import to_telegram
+        ok = to_telegram(summary)
+        print("📨 Telegram: " + ("sent to your private chat ✓" if ok
+                                  else "not configured (set TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID in .env)"))
+    if args.taskflow:
+        from .tasks import to_taskflow
+        r = to_taskflow(summary)
+        if not r["planned"]:
+            print("✅ TaskFlow: nothing important enough to turn into a task today.")
+        elif r["available"]:
+            print(f"✅ TaskFlow: created {r['created']} task(s) (tagged #mail).")
+        else:
+            print(f"✅ TaskFlow: would create {len(r['planned'])} task(s), but the `taskflow` command "
+                  "isn't on PATH here. Install your TaskFlow CLI "
+                  "(pip install git+https://github.com/Mohith535/TaskFlow.git) or run this where it works.")
+    if args.calendar:
+        from .gcal import to_calendar
+        r = to_calendar(summary, args.credentials)
+        print(f"📅 Calendar: added {r['created']} reminder(s)." if r["created"]
+              else f"📅 Calendar: {r['error']}")
     return 0
 
 
