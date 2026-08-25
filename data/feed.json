@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24",
+  "updated_at": "2026-08-25",
   "items": [
     {
       "key": "bd5c9c376843",
@@ -39,23 +39,6 @@
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "af4f397a39e8",
-      "title": "VAKRA: Evaluating Multi-Hop Reasoning Across APIs and Retrieval Under Tool-Use Policies",
-      "url": "https://arxiv.org/abs/2608.12282v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Research paper on Multi-Hop Reasoning",
-      "action_plan": [
-        "Read the paper (4 hours)",
-        "Analyze the methodology (4 hours)",
-        "Implement the approach (16 hours)"
-      ]
     },
     {
       "key": "f1b78b16f136",
@@ -970,21 +953,134 @@
       "action_plan": []
     },
     {
-      "key": "5447b34fc634",
-      "title": "Constructing Dynamic Master Logic Models as Knowledge Graphs for Complex System Diagnostics Using Retrieval-Augmented Large Language Models",
-      "url": "https://arxiv.org/abs/2608.12304v1",
-      "source": "arxiv",
-      "score": 7,
+      "key": "410597fcafc3",
+      "title": "Co-Founder's Office Internship",
+      "url": "https://unstop.com/internships/co-founders-office-internship-the-funding-story-1743679",
+      "source": "unstop",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "research"
+        "internship"
       ],
-      "ai_summary": "Research paper on LLMs and Knowledge Graphs",
-      "action_plan": [
-        "Read the paper (4 hours)",
-        "Analyze the methodology (4 hours)",
-        "Implement the approach (16 hours)"
-      ]
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "aff35160fca3",
+      "title": "Founder's Office – Presales & Solution Engineer Internship",
+      "url": "https://unstop.com/internships/founders-office-presales-solution-engineer-internship-privacyledger-1743787",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "ead5a82e1062",
+      "title": "Social Media & Brand Internship",
+      "url": "https://unstop.com/internships/social-media-brand-internship-bookdio-1743792",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f2d867b53f8a",
+      "title": "Digital Marketing Internship",
+      "url": "https://unstop.com/internships/digital-marketing-internship-domin8-labs-1743793",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f05f8ea6b644",
+      "title": "Business Development Executive Internship",
+      "url": "https://unstop.com/internships/business-development-executive-internship-gokboru-tech-private-limited-1743767",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2d9bbbdb50fc",
+      "title": "Software Engineering Internship | Apply on internship.vidbow.in",
+      "url": "https://unstop.com/internships/software-engineering-intern-vidbow-1743709",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "aa57d4ddb36d",
+      "title": "Long Form Editor Internship",
+      "url": "https://unstop.com/internships/long-form-editor-divergent-classes-1743705",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "af697d6179a0",
+      "title": "Tech Support Internship",
+      "url": "https://unstop.com/internships/head-tech-support-the-funding-story-1743703",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "02b54071e396",
+      "title": "Google — Software Engineer Intern",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/91436104816698054",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "95c959e516c7",
+      "title": "Google — Software Developer Intern",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/112518690523488966",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "bc000b57087b",
@@ -1151,91 +1247,17 @@
       "action_plan": []
     },
     {
-      "key": "c991103bb810",
-      "title": "Class Activation Mapping in Explainable Computer Vision: A Method-Centered Review of CNN, Transformer, and Foundation-Model-Era Visual Explanations",
-      "url": "https://arxiv.org/abs/2608.12299v1",
-      "source": "arxiv",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Research paper on Explainable AI",
-      "action_plan": [
-        "Read the paper (4 hours)",
-        "Analyze the methodology (4 hours)",
-        "Implement the approach (12 hours)"
-      ]
-    },
-    {
-      "key": "a26709d13c21",
-      "title": "AhmadJeddi/Plant-Disease-Classification — ★55",
-      "url": "https://github.com/AhmadJeddi/Plant-Disease-Classification",
-      "source": "github",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "github",
-        "learning"
-      ],
-      "ai_summary": "Project deepens DL skills and yields a showcase for AI builder profile.",
-      "action_plan": [
-        "Fork repo (0.5h)",
-        "Run baseline training (2h)",
-        "Add improvement (1w)"
-      ]
-    },
-    {
-      "key": "4f2fad463fe5",
-      "title": "InfiniX'26 – National Level 32-Hour Hackathon",
-      "url": "https://unstop.com/hackathons/infinix26-national-level-32-hour-hackathon-ramco-institute-of-technology-1730876",
+      "key": "6737f37fd577",
+      "title": "Agentic AI Hackathon",
+      "url": "https://unstop.com/hackathons/agentic-ai-hackathon-sarcathon-2026-iit-bombay-1743750",
       "source": "unstop",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "National hackathon, relevant to AI/ML",
-      "action_plan": [
-        "Research hackathon rules (1 hour)",
-        "Form a team (2 hours)",
-        "Brainstorm project ideas (2 hours)"
-      ]
-    },
-    {
-      "key": "12ea9b60c0ce",
-      "title": "Hack Forge-Ai Powered Vibe Coding Hackathon",
-      "url": "https://unstop.com/hackathons/hack-forge-ai-powered-vibe-coding-hackathon-c-abdul-hakeem-college-of-engineering-and-technology-cahcet-veppu-1735862",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "AI‑focused hackathon aligns with interests, adds portfolio",
-      "action_plan": [
-        "Read hackathon brief (15m)",
-        "Sketch project plan (1h)",
-        "Develop MVP (1‑2 weeks)",
-        "Present demo"
-      ]
-    },
-    {
-      "key": "6dbaa5b79d2d",
-      "title": "Schweitzer Engineering Laboratories — Software Engineer Intern - AI Focus",
-      "url": "https://selinc.wd1.myworkdayjobs.com/SEL/job/Washington---Pullman/Software-Engineering-Intern--AI-Focus-_2026-22601",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI‑focused internship aligns with his goals and adds strong portfolio piece. · ⚠ verify eligibility: Visa/work authorization not specified",
-      "action_plan": [
-        "Polish resume highlighting AI projects (1d)",
-        "Draft AI‑specific cover letter (2d)",
-        "Submit application when posting opens"
-      ]
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "49163596c76e",
@@ -1356,73 +1378,6 @@
         "research hackathon rules (1h)",
         "form a team (2h)",
         "start building (4h)"
-      ]
-    },
-    {
-      "key": "253ce0d2fd43",
-      "title": "Nerds Room: Launch Hacks",
-      "url": "https://unstop.com/hackathons/nerds-room-launch-hacks-nerds-room-launch-hacks-ambalika-institute-of-management-and-technology-aimt-uttaar-g-1737146",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "builds real-world solutions",
-      "action_plan": [
-        "research hackathon rules (1h)",
-        "form a team (2h)",
-        "start building (4h)"
-      ]
-    },
-    {
-      "key": "b13418c84022",
-      "title": "Replit — Software Engineer Intern - Summer 2027",
-      "url": "https://jobs.ashbyhq.com/replit/7e0dafe8-3eec-442e-aa76-a4d84d779fb1/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Replit internship offers real‑world engineering, decent signal for builders.",
-      "action_plan": [
-        "Visit Replit careers page (5 min)",
-        "Prepare resume focusing on AI projects (2 h)",
-        "Submit application"
-      ]
-    },
-    {
-      "key": "784425448e58",
-      "title": "Abridge — Software Engineer Intern",
-      "url": "https://jobs.ashbyhq.com/abridge/3f07a457-dc14-4238-bf4e-5c33b5c1f883/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Abridge works on AI‑driven health tech; aligns with AI engineering goals.",
-      "action_plan": [
-        "Read Abridge product page (5 min)",
-        "Update portfolio with relevant AI projects (2 h)",
-        "Submit application"
-      ]
-    },
-    {
-      "key": "103f8e4c293e",
-      "title": "EUREKA! 2026 – Startup Pitching Competition",
-      "url": "https://unstop.com/competitions/eureka-2026-startup-pitching-competition-shah-and-anchor-kutchhi-engineering-college-sakec-mumbai-maharasht-1737729",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "competition"
-      ],
-      "ai_summary": "Startup pitching and entrepreneurship experience",
-      "action_plan": [
-        "Prepare a startup pitch",
-        "Attend the competition"
       ]
     }
   ]

@@ -66999,6 +66999,991 @@
           "key": "6137ac815ec0"
         }
       ]
+    },
+    {
+      "date": "2026-08-25",
+      "items": [
+        {
+          "title": "How to Train a Critic Stably and Efficiently",
+          "url": "https://arxiv.org/abs/2608.23566v1",
+          "source": "arxiv",
+          "description": "Group-based reinforcement learning methods such as GRPO for large language models avoid training a critic by sampling multiple responses for each prompt. A reliable critic could instead estimate token-level advantages from one response, but standard critic-based training recipes are often unstable. We study this instability and develop \\textbf{Best-Practice Critic Optimization (BPCO)}, a recipe that combines DPPO, value predictions bounded to the reward range, Monte Carlo value targets, unnormalized policy advantages, and length-adaptive generalized advantage estimation. Because the critic is used only during training, BPCO can also condition it on reward-defining information, such as a reference answer or grading rubric, that is hidden from the policy. Controlled experiments isolate the effect of each design choice. Across mathematical reasoning tasks with models ranging from 1.5B parameters to 30B-A3B mixtures of experts, BPCO improves a strong critic-based baseline consistently, and matches or exceeds a group-based baseline while sampling one response per prompt. The same recipe also improves learning with rubric-based rewards. These results show that a carefully designed critic provides a reliable alternative to group-relative advantage estimation. Code is available at https://github.com/QPHutu/golden_critic",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.23566",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "233f18d6db4d"
+        },
+        {
+          "title": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
+          "url": "https://arxiv.org/abs/2608.23563v1",
+          "source": "arxiv",
+          "description": "Road traffic injuries remain a major challenge in low- and middle-income countries, where proactive road safety auditing is limited by incomplete crash records, shortages of qualified auditors, and the high cost of large-scale field inspections. To address this problem, we propose Expert-Grounded Distillation (EGD), a novel artificial intelligence framework that transfers institutional road safety expertise into a compact vision-language model for scalable visual road safety auditing. The key innovation is a quantified expert-grounding stage in which the teacher vision-language model is calibrated against authoritative field audits. Large-scale annotation is permitted only after the teacher reaches substantial agreement with expert risk assessments (Cohen's kappa = 0.74). The calibrated teacher then generates structured supervision that is distilled into an 8-billion-parameter student vision-language model using Low-Rank Adaptation and a single leakage-free prompt. We also introduce Bangladesh Road Safety Audit (BD-ARSA), the first open, expert-grounded Bangladeshi visual road safety audit dataset containing 21,947 image-audit records with near-national coverage, and Expert-Grounded Road Safety Auditor (EG-ARSA), the first vision-language model developed specifically for this task. Experimental results show that grounded fine-tuning substantially improves ordinal risk assessment over the zero-shot baseline, while blind expert evaluation demonstrates that the compact student outperforms both its 31 billion-parameter teacher and Gemini-2.5-Flash. These findings demonstrate that EGD provides an effective and scalable engineering solution for proactive road safety auditing in resource-constrained environments.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.23563",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3c1dd6f34052"
+        },
+        {
+          "title": "Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography",
+          "url": "https://arxiv.org/abs/2608.23562v1",
+          "source": "arxiv",
+          "description": "Ballistocardiography (BCG) is promising for unobtrusive long-term blood pressure (BP) monitoring in laboratory settings, but traditional BCG signals are vulnerable to the variations in body-bed interaction with shifted fiducial points in temporal or amplitude axis, and BP varies with personal hemodynamic changes, causing misaligned representations that affect model generalizability and robustness. In this work, we propose a non-invasive BP estimation framework, Phy-BP, based on triaxial bodyseismography (BSG) as an extension of BCG. Firstly, an adaptive quality-control algorithm is designed to select BSG segments enriched with cardiogenic components by jointly considering neighboring beat patterns and universal cardiogenic templates. Furthermore, a physical model is established to describe 3D wave propagation in the body-bed system and is subsequently embedded into the deep learning model to characterize the intrinsic coupling among triaxial BSG signals driven by a single cardiogenic excitation. Thus, multi-axis features are aligned during model training, improving robustness against distortions in real scenarios. Experiments on a 162-hour hospital dataset collected from 21 subjects reveal that the proposed Phy-BP can dynamically filter out low-quality measurements, and the deep learning model training is constrained by physical consistency across different axes to provide faithful BP monitoring, especially when training samples are limited.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.23562",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "55b4205913cd"
+        },
+        {
+          "title": "0xzkleo/polymarket-5min-crypto-trading-bot — ★137",
+          "url": "https://github.com/0xzkleo/polymarket-5min-crypto-trading-bot",
+          "source": "github",
+          "description": "polymarket bot polymarket trading bot polymarket bot polymarket trading bot polymarket bot polymarket trading bot polymarket bot polymarket trading bot polymarket bot polymarket trading bot polymarket bot polymarket trading bot polymarket bot polymarket trading bot polymarket bot polymarket trading bot polymarket bot polymarket trading bot (topics: bot, crypto, machine learning, polymarket, trading)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "0xzkleo/polymarket-5min-crypto-trading-bot",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ea7ad7bc8ac1"
+        },
+        {
+          "title": "Vintage Artificial Intelligence: Before It Got Awkward",
+          "url": "https://blog.archive.org/2026/08/16/vintage-artificial-intelligence-before-it-got-awkward/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49425800",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "04611208678b"
+        },
+        {
+          "title": "Bart- A vintage llm [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vx94er/bart_a_vintage_llm_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vx94er",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e2dff9fe63fb"
+        },
+        {
+          "title": "AAAI 2027 Reviewer Bidding and Assignment Integrity [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vwujcy/aaai_2027_reviewer_bidding_and_assignment/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vwujcy",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "959b7bfa7d2e"
+        },
+        {
+          "title": "[R] Using AI as a spatial software generator to create 3D objects that are inherently programmable",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vxcc1h/r_using_ai_as_a_spatial_software_generator_to/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vxcc1h",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "32b7f80f90c3"
+        },
+        {
+          "title": "Hyperparameters fine tuning for MARL comparative study [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vxfmms/hyperparameters_fine_tuning_for_marl_comparative/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vxfmms",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d193d31de414"
+        },
+        {
+          "title": "BMVC 2026 IJCV recommendation? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vwtzix/bmvc_2026_ijcv_recommendation_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vwtzix",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3622a68bdf4d"
+        },
+        {
+          "title": "Is EMNLP not going to Provide a MetaReview [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vxc1nw/is_emnlp_not_going_to_provide_a_metareview_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vxc1nw",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e37d95290cb2"
+        },
+        {
+          "title": "Delay-corrected Bellman operator + causal attribution for constrained RL contraction proof under unknown stochastic delay [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vx11hz/delaycorrected_bellman_operator_causal/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vx11hz",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b1c905c5ac2e"
+        },
+        {
+          "title": "Does registering an abstract, not the full submission yet, count as a double submission? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vx3why/does_registering_an_abstract_not_the_full/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vx3why",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0a7fe006cbbf"
+        },
+        {
+          "title": "MUBA Blockchain Hackathon",
+          "url": "https://muba-hackathon.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | online | themes: Blockchain, FinTech, AI",
+          "deadline": "2026-08-26",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "c9616c07274742db8c57310b5d61adc7",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e0b90e9b87a5"
+        },
+        {
+          "title": "AtCoder 企業対抗リーグ 2026 第2戦 (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/c-league2026-2",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-09-18T11:00:00",
+          "deadline": "2026-09-18",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69860271",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "eed5aa4e3d3a"
+        },
+        {
+          "title": "AtCoder 企業対抗リーグ 2026 第2戦(オープンコンテスト) (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/c-league2026-2-open",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-09-18T11:00:00",
+          "deadline": "2026-09-18",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69860983",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4bff1e410f13"
+        },
+        {
+          "title": "Geeks2Code",
+          "url": "https://unstop.com/hackathons/geeks2code-geeksforgeeks-campus-body-miet-1740788",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1740788",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2d7a4306eaac"
+        },
+        {
+          "title": "KNSIT Tech Community",
+          "url": "https://unstop.com/hackathons/knsit-tech-community-kns-institute-of-technology-karnataka-1743721",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743721",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "19673fce5853"
+        },
+        {
+          "title": "Iridescence 1.0",
+          "url": "https://unstop.com/hackathons/iridescence-10-srm-insitute-of-science-and-technology-1739836",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1739836",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "987d8d90ec5a"
+        },
+        {
+          "title": "Agentic AI Hackathon",
+          "url": "https://unstop.com/hackathons/agentic-ai-hackathon-sarcathon-2026-iit-bombay-1743750",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743750",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6737f37fd577"
+        },
+        {
+          "title": "YC Fall 2026 x Moss: The Zero Latency Builder Sprint",
+          "url": "https://unstop.com/hackathons/yc-fall-2026-x-moss-the-zero-latency-builder-sprint-hidevs-1743636",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743636",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ef50b9f16c75"
+        },
+        {
+          "title": "BuildSprint",
+          "url": "https://unstop.com/hackathons/buildsprint-latentforceai-1742504",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742504",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4fec9c9134e4"
+        },
+        {
+          "title": "Code Quest 2026 – 21-Day Competitive Coding Challenge",
+          "url": "https://unstop.com/hackathons/code-quest-2026-21-day-competitive-coding-challenge-k-j-somaiya-institute-of-technology-kjsit-1743505",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743505",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "20617b9da228"
+        },
+        {
+          "title": "Hack The Horizon 2.0 – 24-Hour Hackathon",
+          "url": "https://unstop.com/hackathons/hack-the-horizon-20-24-hour-hackathon-hack-the-horizon-20-24-hour-hackathon-kpr-institute-of-engineering-and--1742320",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742320",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "79b8c60c90cf"
+        },
+        {
+          "title": "Co-Founder's Office Internship",
+          "url": "https://unstop.com/internships/co-founders-office-internship-the-funding-story-1743679",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743679",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "410597fcafc3"
+        },
+        {
+          "title": "Founder's Office – Presales & Solution Engineer Internship",
+          "url": "https://unstop.com/internships/founders-office-presales-solution-engineer-internship-privacyledger-1743787",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743787",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "aff35160fca3"
+        },
+        {
+          "title": "Social Media & Brand Internship",
+          "url": "https://unstop.com/internships/social-media-brand-internship-bookdio-1743792",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743792",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ead5a82e1062"
+        },
+        {
+          "title": "Digital Marketing Internship",
+          "url": "https://unstop.com/internships/digital-marketing-internship-domin8-labs-1743793",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743793",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f2d867b53f8a"
+        },
+        {
+          "title": "Business Development Executive Internship",
+          "url": "https://unstop.com/internships/business-development-executive-internship-gokboru-tech-private-limited-1743767",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743767",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f05f8ea6b644"
+        },
+        {
+          "title": "Software Engineering Internship | Apply on internship.vidbow.in",
+          "url": "https://unstop.com/internships/software-engineering-intern-vidbow-1743709",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743709",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2d9bbbdb50fc"
+        },
+        {
+          "title": "Long Form Editor Internship",
+          "url": "https://unstop.com/internships/long-form-editor-divergent-classes-1743705",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743705",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "aa57d4ddb36d"
+        },
+        {
+          "title": "Tech Support Internship",
+          "url": "https://unstop.com/internships/head-tech-support-the-funding-story-1743703",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743703",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "af697d6179a0"
+        },
+        {
+          "title": "Meridian Partners — Flight Software Engineer Co-op",
+          "url": "https://job-boards.greenhouse.io/morsecorpcoop/jobs/7967400003",
+          "source": "internships",
+          "description": "internship | Meridian Partners | Cambridge, MA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ce5ce805-2b7c-460d-a010-28c5e413b7f6",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ca463c0dbde8"
+        },
+        {
+          "title": "Rivet Industries — Software Engineer Intern - XR Team - Fall 2026",
+          "url": "https://jobs.ashbyhq.com/rivet/4e02461a-9f6c-4d3c-a511-6d54f31999bc/application?embed=true",
+          "source": "internships",
+          "description": "internship | Rivet Industries | Bellevue, WA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "39309c17-e806-4ea4-ba0d-0d69cfaca27f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d376cbbaa1ce"
+        },
+        {
+          "title": "Intuitive Surgical — Computer Vision Engineer Intern - Fall 2026",
+          "url": "https://jobs.smartrecruiters.com/Intuitive/744000145329669",
+          "source": "internships",
+          "description": "internship | Intuitive Surgical | Sunnyvale, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b1eb0fff-6852-49b0-a60f-334931313442",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ee5bc1551e47"
+        },
+        {
+          "title": "BTI360 — Software Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/bti36021/jobs/8155152",
+          "source": "internships",
+          "description": "internship | BTI360 | Herndon, VA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d1ce5eca-7313-4eee-b01a-088c01f2a85a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d8dcf1e59db3"
+        },
+        {
+          "title": "Atoms — Robotics Software Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/cssmerge/jobs/8695475002",
+          "source": "internships",
+          "description": "internship | Atoms | LA, Pittsburgh, PA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3d9f6139-bedb-4b94-9e84-1b542b3250ac",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0b65fe9c5e0e"
+        },
+        {
+          "title": "Kodiak Robotics — AI/ML Intern - Artificial Intelligence/Machine Learning",
+          "url": "https://job-boards.greenhouse.io/kodiak/jobs/4377407009",
+          "source": "internships",
+          "description": "internship | Kodiak Robotics | Mountain View, CA | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "21abe7e3-285d-4817-a48a-557228cb2228",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d06a54a53483"
+        },
+        {
+          "title": "MSA Safety — Software Engineer Intern - Product Development - Summer 2027",
+          "url": "https://careers.msasafety.com/jobs/9993?icims=1",
+          "source": "internships",
+          "description": "internship | MSA Safety | Cranberry Township, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "90a62333-1a88-4334-9894-32435465205b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0040ac3b6490"
+        },
+        {
+          "title": "Springs Window Fashions — Software Engineering Intern - Summer 2027",
+          "url": "https://careers-springswindowfashions.icims.com/jobs/12891/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Springs Window Fashions | Long Island City, Queens, NY | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cb063395-698b-47f5-9fe1-4b86a1b0dee5",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5468d5512c91"
+        },
+        {
+          "title": "Sage — Software Engineer Intern - Full Stack",
+          "url": "https://job-boards.greenhouse.io/sage49/jobs/6131185004",
+          "source": "internships",
+          "description": "internship | Sage | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "bc4407ea-452d-4ef5-b173-3260a4f7db7b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2da9149d3805"
+        },
+        {
+          "title": "Sage — Software Engineer Intern - Edge - Summer 2027",
+          "url": "https://job-boards.greenhouse.io/sage49/jobs/6131191004",
+          "source": "internships",
+          "description": "internship | Sage | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0aa38a85-7be2-4d60-8ec3-0002a9643512",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b17a20a3f535"
+        },
+        {
+          "title": "Westinghouse Electric Company — Computer Engineering / Software Engineering Intern",
+          "url": "https://careers.westinghousenuclear.com/job/Cranberry-Township-Summer-Intern-Computer-Engineering-Software-Engineering-NC/1422595200/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Westinghouse Electric Company | Cranberry Township, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1ab8cb0f-fa13-4edb-a06c-1fb333f93ad9",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6ca1ea78a792"
+        },
+        {
+          "title": "L3Harris Technologies — Software Engineer Intern",
+          "url": "https://jobs.l3harris.com/job/Wilmington-Intern-D,-Software-Engineer-MA-01887/1422529400/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Wilmington, MA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3761b187-d0d2-438d-9b56-f3853671880e",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2a8c533b2bf3"
+        },
+        {
+          "title": "Garmin — Software Engineer Intern",
+          "url": "https://careers.garmin.com/jobs/19693?icims=1",
+          "source": "internships",
+          "description": "internship | Garmin | Olathe, KS | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "afa7917f-eec9-411a-9a5c-e3aad5839ae6",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1bd04f510a95"
+        },
+        {
+          "title": "Audax Group — AI Engineer Co-op",
+          "url": "https://job-boards.greenhouse.io/audaxgroup/jobs/4722801005",
+          "source": "internships",
+          "description": "internship | Audax Group | Boston, MA | Winter 2027, Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2b1cb4ad-439e-499f-95a2-d30ea699fb24",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5b7cdd63b6ee"
+        },
+        {
+          "title": "InfiniteQuant — Quantitative Developer Internship - Summer 2027",
+          "url": "https://jobs.smartrecruiters.com/InfiniteQuant/744000145263134",
+          "source": "internships",
+          "description": "internship | InfiniteQuant | Dubai - United Arab Emirates, NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d55a832d-489f-468a-8688-f419fb8b1b38",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "43b0c4c9a0c0"
+        },
+        {
+          "title": "Google — Software Engineer Intern",
+          "url": "https://www.google.com/about/careers/applications/jobs/results/91436104816698054",
+          "source": "internships",
+          "description": "internship | Google | Palo Alto, CA, Cambridge, MA, Madison, WI, Seattle, WA, Washington, DC, SF, Austin, TX, LA, San Jose, CA, Irvine, CA, South SF, Redwood City, CA, Raleigh, NC, San Bruno, CA, Redmond, WA, Durham, NC, Santa Cruz, CA, Chicago, IL, Goleta, CA, Pittsburgh, PA, Kirkland, WA, Reston, VA, NYC, Bellevue, WA, Sunnyvale, CA, Mountain View, CA, Portland, OR, Boulder, CO, Atlanta, GA, San Diego, CA | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cd7682b8-7722-4a26-9813-42ece290a387",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "02b54071e396"
+        },
+        {
+          "title": "Google — Software Developer Intern",
+          "url": "https://www.google.com/about/careers/applications/jobs/results/112518690523488966",
+          "source": "internships",
+          "description": "internship | Google | Montreal, QC, Canada, Toronto, ON, Canada, Waterloo, ON, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "eb72a87e-f9d7-457b-8448-ae0bcdd0872b",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "95c959e516c7"
+        },
+        {
+          "title": "BNY — Data Science Intern - Engineering",
+          "url": "https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/81241",
+          "source": "internships",
+          "description": "internship | BNY | Pittsburgh, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "44076521-67dd-416f-8928-86fbe0b496b9",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7c9656a6bd24"
+        },
+        {
+          "title": "BNY — Software Engineer Intern - Engineering - Developer",
+          "url": "https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/81251",
+          "source": "internships",
+          "description": "internship | BNY | Jersey City, NJ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4c8703e4-e538-4a55-ac8c-5d9b8e0eec12",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4886c6dc606b"
+        },
+        {
+          "title": "BNY — Data Science Intern - Engineering",
+          "url": "https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/81238",
+          "source": "internships",
+          "description": "internship | BNY | Jersey City, NJ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2f4c5900-989e-4b19-afdd-c5d973e9b552",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1040a21db128"
+        },
+        {
+          "title": "BNY — Engineering Intern - Data Science",
+          "url": "https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/81322",
+          "source": "internships",
+          "description": "internship | BNY | Manchester, UK | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c3f214ad-fe6d-4020-9530-249687a4089d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "587a54a302ca"
+        },
+        {
+          "title": "BNY — Engineering Developer Intern - Engineering",
+          "url": "https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/81252",
+          "source": "internships",
+          "description": "internship | BNY | Lake Mary, FL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "660c8cf6-3acf-4729-a74a-18a72115dfa5",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "57e61a4db1e5"
+        },
+        {
+          "title": "BNY — Engineering Intern - Engineering - Developer",
+          "url": "https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/81254",
+          "source": "internships",
+          "description": "internship | BNY | Pittsburgh, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b0b20473-ab96-400f-adc1-7e807c7e6e46",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3783446bb3df"
+        },
+        {
+          "title": "BNY — Engineering Intern - Developer",
+          "url": "https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/81318",
+          "source": "internships",
+          "description": "internship | BNY | Greater Manchester, UK | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "23e12460-dde2-43ba-9921-b229626b3d25",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6f113a333a72"
+        },
+        {
+          "title": "BNY — Data Science Intern - Engineering",
+          "url": "https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/81240",
+          "source": "internships",
+          "description": "internship | BNY | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "bf4a4705-55c7-4d3d-8696-12a63e66879a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8d49ff1d5b41"
+        }
+      ]
     }
   ]
 }
