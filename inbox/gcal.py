@@ -21,12 +21,15 @@ from __future__ import annotations
 from datetime import datetime, timedelta
 from pathlib import Path
 
+# Full calendar scope (not just events) so OPH can operate every calendar function. Standalone Google
+# "Reminders" were retired in 2023 (folded into Tasks), so the modern "reminder" is an EVENT with
+# notifications — which we attach below.
 _SCOPES = ["https://www.googleapis.com/auth/gmail.readonly",
-           "https://www.googleapis.com/auth/calendar.events"]
+           "https://www.googleapis.com/auth/calendar"]
 _SETUP = ("Calendar needs one more permission. Add the scope "
-          "https://www.googleapis.com/auth/calendar.events in Google Cloud Console (Google Auth "
-          "Platform → Data Access), delete token.json, then run `python -m inbox --calendar` and "
-          "allow Calendar. (Your tap-to-add links keep working meanwhile.)")
+          "https://www.googleapis.com/auth/calendar in Google Cloud Console (Google Auth Platform → "
+          "Data Access), delete token.json, then run `python -m inbox --calendar` and allow Calendar. "
+          "(Your tap-to-add links keep working meanwhile.)")
 
 
 def to_calendar(summary: dict, credentials: str = "credentials.json",
@@ -77,6 +80,10 @@ def to_calendar(summary: dict, credentials: str = "credentials.json",
                 "summary": f"⏰ {it['subject'][:80]}",
                 "description": (it["summary"][:300] + "\n\n(added by your Inbox Assistant)"),
                 "start": {"date": d}, "end": {"date": end},
+                # The actual "reminder": notifications a day before (popup on phone + email).
+                "reminders": {"useDefault": False, "overrides": [
+                    {"method": "popup", "minutes": 1440},
+                    {"method": "email", "minutes": 1440}]},
             }).execute()
             created += 1
         return {"created": created, "error": ""}

@@ -1,0 +1,13 @@
+# Private Inbox dashboard worker. Deploy steps are in README.md.
+name = "inbox-dashboard"
+main = "src/index.js"
+compatibility_date = "2026-08-01"
+
+# Create the KV store with:  npx wrangler kv namespace create INBOX_KV
+# then paste the printed id below (replace PASTE_KV_ID_HERE).
+kv_namespaces = [
+  { binding = "INBOX_KV", id = "PASTE_KV_ID_HERE" }
+]
+
+# INBOX_SECRET is NOT written here — set it as a secret so it never lands in git:
+#   npx wrangler secret put INBOX_SECRET

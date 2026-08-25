@@ -22,6 +22,11 @@ _BASE = Path(__file__).resolve().parent.parent
 
 
 def main() -> int:
+    # Windows consoles default to cp1252 and crash on the odd unicode char in an email. Force UTF-8.
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
     ap = argparse.ArgumentParser(description="Inbox Assistant — a clean summary of what matters in Gmail.")
     ap.add_argument("--days", type=int, default=1, help="look back this many days (default 1 = today)")
     ap.add_argument("--unread", action="store_true", help="only unread mail")
@@ -30,6 +35,8 @@ def main() -> int:
                     help="where to write the mobile web page")
     ap.add_argument("--phone", action="store_true",
                     help="send the summary to your private Telegram (safest way to see it on your phone)")
+    ap.add_argument("--publish", action="store_true",
+                    help="push the web page to your private Cloudflare URL (installable as a phone app)")
     ap.add_argument("--taskflow", action="store_true",
                     help="turn important deadlines/actions into TaskFlow tasks (tagged #mail)")
     ap.add_argument("--calendar", action="store_true",
@@ -55,7 +62,8 @@ def main() -> int:
     (_BASE / "data" / "inbox_summary.json").write_text(
         json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8")
     out = Path(args.out)
-    out.write_text(render_html(summary), encoding="utf-8")
+    dashboard = render_html(summary)
+    out.write_text(dashboard, encoding="utf-8")
 
     # Terminal preview.
     shown, hidden = summary["shown"], summary["hidden"]
@@ -71,6 +79,11 @@ def main() -> int:
     print("   (Deadlines have a one-tap 'Add to Calendar' button inside.)")
 
     # ── deliveries (opt-in) ──
+    if args.publish:
+        from .publish import publish
+        ok, msg = publish(dashboard)
+        print("🌐 Private page: " + (f"live → {msg}  (open on your phone → Add to Home Screen)" if ok
+                                     else msg))
     if args.phone:
         from .notify import to_telegram
         ok = to_telegram(summary)
