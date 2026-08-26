@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25",
+  "updated_at": "2026-08-26",
   "items": [
     {
       "key": "bd5c9c376843",
@@ -39,57 +39,6 @@
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "f1b78b16f136",
-      "title": "Calpion/Plutus Health — AI Engineering Intern - Python & Agentic AI",
-      "url": "https://calpionplutus.bamboohr.com/careers/310/",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI engineering internship",
-      "action_plan": [
-        "update resume (2h)",
-        "apply for the internship (1h)",
-        "prepare for interviews (5h)"
-      ]
-    },
-    {
-      "key": "ac1760b9da3c",
-      "title": "ByteDance — Student Researcher - AI Foundation Model Infrastructure - Seed",
-      "url": "https://jobs.bytedance.com/en/position/7673274910202988805/detail",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "ByteDance AI foundation model research, high AI relevance and rare slot",
-      "action_plan": [
-        "Read recent ByteDance AI papers (2d)",
-        "Prepare short research proposal (2d)",
-        "Submit application (1d)"
-      ]
-    },
-    {
-      "key": "912c8441226d",
-      "title": "ByteDance — Student Researcher - AI Foundation Model Infrastructure - Seed",
-      "url": "https://jobs.bytedance.com/en/position/7673274430383032629/detail",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Same as i6 – missing this would lose a top AI research experience",
-      "action_plan": [
-        "Gather relevant ML code samples (2d)",
-        "Draft motivation letter (2d)",
-        "Apply before cutoff (1d)"
-      ]
     },
     {
       "key": "f4ca119cd361",
@@ -1083,6 +1032,110 @@
       "action_plan": []
     },
     {
+      "key": "6ae32b7aa26b",
+      "title": "Graphic Designer and Video Editor Internship",
+      "url": "https://unstop.com/internships/graphic-designer-and-video-editor-internship-rambhau-mhalgi-prabodhini-pune-1744264",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2f1434e87104",
+      "title": "Campus Ambassador Internship",
+      "url": "https://unstop.com/internships/campus-ambassador-internship-indian-institute-of-technology-iit-patna-1736098",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "caf890005705",
+      "title": "Digital Marketing Internship",
+      "url": "https://unstop.com/internships/digital-marketing-intern-growth-india-1744245",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1aad2935d0f2",
+      "title": "Marketing Internship",
+      "url": "https://unstop.com/internships/marketing-internship-market-orbit-agency-llp-1744246",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b7d99a9d07d5",
+      "title": "Campus Ambassador Internship- Architecture Domain",
+      "url": "https://unstop.com/internships/architecture-domain-campus-ambassador-internship-mycaptain-1744200",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "eb2d3d1a46a2",
+      "title": "Campus Ambassador Internship- Design Domain",
+      "url": "https://unstop.com/internships/design-domain-campus-ambassador-internship-mycaptain-1744199",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "796b319bf846",
+      "title": "Social Media Manager Internship",
+      "url": "https://unstop.com/internships/social-media-manager-internship-godstockss-1744247",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b5c3a320b482",
+      "title": "Mobile App Engineer Internship",
+      "url": "https://unstop.com/internships/mobile-app-engineer-internship-vyntage-1744251",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "bc000b57087b",
       "title": "YouCam API Skin AI & Apparel VTO Hackathon",
       "url": "https://youcam-api.devpost.com/",
@@ -1097,23 +1150,6 @@
         "Research Skin AI (2 hours)",
         "Brainstorm project ideas (1 day)",
         "Start building (2 days)"
-      ]
-    },
-    {
-      "key": "2461f2286147",
-      "title": "Analytical Mechanics Associates — Research Scientist Intern",
-      "url": "https://amainc.wd12.myworkdayjobs.com/ama_careers/job/Remote---New-Jersey/Graduate-Research-Scientist-intern_R-100717-1",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "research scientist internship",
-      "action_plan": [
-        "research the company (1h)",
-        "apply for the internship (1h)",
-        "prepare for interviews (5h)"
       ]
     },
     {
@@ -1260,73 +1296,17 @@
       "action_plan": []
     },
     {
-      "key": "49163596c76e",
-      "title": "UrgenT Help Detecting Performance Regressions Using Machine Learning and Hardware Counters [P]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1vngjmv/urgent_help_detecting_performance_regressions/",
-      "source": "reddit",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "machine learning research",
-      "action_plan": [
-        "read the research paper (2h)",
-        "try out the code (2h)",
-        "apply the knowledge (5h)"
-      ]
-    },
-    {
-      "key": "b1902e87dfa1",
-      "title": "Signal Quest – IEEE SPS Hackathon 2026",
-      "url": "https://unstop.com/hackathons/signal-quest-ieee-sps-hackathon-2026-cmr-institute-of-technology-1736521",
+      "key": "89a1cfbb06cf",
+      "title": "Anakin Forge Hackathon",
+      "url": "https://unstop.com/hackathons/anakin-forge-hackathon-anakin-skywalker-pvt-ltd-1742485",
       "source": "unstop",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "IEEE SPS hackathon",
-      "action_plan": [
-        "research the hackathon (1h)",
-        "form a team (2h)",
-        "prepare for the hackathon (10h)"
-      ]
-    },
-    {
-      "key": "953b2eb74626",
-      "title": "Breakpoint Hackathon 2026",
-      "url": "https://unstop.com/hackathons/breakpoint-hackathon-2026-invoqe-1734966",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "building experience",
-      "action_plan": [
-        "research hackathon rules (1h)",
-        "form a team (2h)",
-        "prepare for the hackathon (10h)"
-      ]
-    },
-    {
-      "key": "570b26177cb6",
-      "title": "Crowe — AI Engineering Intern",
-      "url": "https://crowe.wd12.myworkdayjobs.com/en-US/external_careers/job/Chicago-IL-USA/AI-Engineering-Intern_R-51782",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI engineering intern aligns with his AI‑agent focus. · ⚠ verify eligibility: requires US work authorization",
-      "action_plan": [
-        "1. Verify Crowe’s visa policy for Indian interns (≈1h).",
-        "2. Highlight AI agent projects in resume (≈2h).",
-        "3. Submit application promptly."
-      ]
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "ad15961909e2",
@@ -1361,23 +1341,6 @@
         "review contest format (30m)",
         "practice coding (2h)",
         "participate in contest (2h)"
-      ]
-    },
-    {
-      "key": "6d39200a7f03",
-      "title": "Gameathon 2026",
-      "url": "https://unstop.com/hackathons/gameathon-2026-amrita-vishwa-vidyapeetham-chennai-1736083",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "builds real-world solutions",
-      "action_plan": [
-        "research hackathon rules (1h)",
-        "form a team (2h)",
-        "start building (4h)"
       ]
     }
   ]

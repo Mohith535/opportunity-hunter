@@ -67984,6 +67984,903 @@
           "key": "8d49ff1d5b41"
         }
       ]
+    },
+    {
+      "date": "2026-08-26",
+      "items": [
+        {
+          "title": "Parameterized Complexity of $L_p$-Lipschitz Constants for Input Convex Neural Networks and $L_p$-Norm Maximization over Zonotopes",
+          "url": "https://arxiv.org/abs/2608.24865v1",
+          "source": "arxiv",
+          "description": "Lipschitz constants are a standard way to quantify the sensitivity of neural networks to small input perturbations, but computing them is difficult even for shallow ReLU networks. We study this problem for two-layer input-convex neural networks (ICNNs), a restricted architecture where nonnegative output weights enforce convexity. Computing the $L_p$-Lipschitz constant for these networks is equivalent to maximizing the dual norm over a zonotope. While $L_1$- and $L_\\infty$-norm maximization on zonotopes admit fixed-parameter and polynomial-time algorithms, respectively, the parameterized complexity of the remaining $L_p$-norms was open. We prove that, for every fixed $p\\in (1,\\infty)\\cap \\mathbb{Q}$, maximizing the $L_p$-norm over a zonotope in $\\mathbb{R}^d$ is W[1]-hard with respect to the dimension $d$. Moreover, our hardness results imply that brute-force enumeration algorithms are essentially optimal for this problem under the Exponential Time Hypothesis. By duality, the same hardness results hold for computing the $L_p$-Lipschitz constant of two-layer ReLU ICNNs. Our proof first establishes the result for the $L_2$-norm and then transfers the construction to arbitrary fixed $p\\in (1,\\infty)\\cap\\mathbb{Q}$ using a suitable Taylor approximation. These results resolve the corresponding questions regarding the parameterized complexity status for zonotope norm maximization and two-layer ICNN Lipschitz constants. Our paper resolves an open problem posted at COLT'25. There are several independent concurrent papers resolving the same problem. Our paper prioritizes a clear exposition of the underlying mathematics and conceptual intuitions behind the proof. Additionally, we explicitly describe our research process including the use of LLMs.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.24865",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "07d2ba2e4493"
+        },
+        {
+          "title": "LAION-BVD: A 10-Million-Hour Open Video Dataset for Multimodal Pre-training",
+          "url": "https://arxiv.org/abs/2608.24845v1",
+          "source": "arxiv",
+          "description": "We present LAION-BVD, a large-scale open video dataset for multimodal learning, which contains 1.3B platform-specific video URLs collected from CommonCrawl. From these, we download 80M videos with a total duration of 10 million hours. The dataset is designed for multimodal pre-training across the video, audio, and image modalities. Using content-aware scene detection, we extract clips for which we synthetically generate video and audio captions. Models trained on these data achieve competitive performance on standard video-text and audio-text benchmarks, with consistent improvements as training or model scale increases. Additionally, we explore video frames as an alternative source of image-text data by extracting scene-changing frames. These frames exhibit a visual distribution distinct from standard web image corpora, and models trained on this dataset achieve strong image-text retrieval performance. We release LAION-BVD to the research community. It significantly expands open access to multimodal videos at an unprecedented scale.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.24845",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a78cfb5ddd19"
+        },
+        {
+          "title": "Reading Is Not Using: Retrieval, Judgment, and the Design of AI Financial Research Workflows",
+          "url": "https://arxiv.org/abs/2608.24842v1",
+          "source": "arxiv",
+          "description": "Large language models (LLMs) are increasingly deployed as AI analysts to process financial disclosures and support AI-assisted investment decisions. Yet such systems are usually evaluated by what they can retrieve, not whether retrieved information affects their judgments. We identify a retrieval-integration gap in long-context financial analysis. Holding focal-firm information fixed and varying only unrelated context from 2,000 to 128,000 tokens, we find that a risk disclosure's influence on investment judgments falls to the experimental noise floor even as direct retrieval remains accurate. The pattern replicates across model families and judgment tasks and in experiments removing real disclosures from actual 10-K filings. More capable models postpone but do not eliminate the gap. Causal memory interventions show that compressed summaries and source-text lookup jointly transmit disclosures into judgments. Workflow architecture determines whether this transmission succeeds: chunk-and-summarize pipelines evict relevant information, whereas a targeted, structured restatement adjacent to the decision restores its influence. AI analyst performance is therefore jointly determined by model capability and workflow architecture. Retrieval-based evaluations can certify systems whose investment judgments ignore information they demonstrably retrieved.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.24842",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5e9df79e6d88"
+        },
+        {
+          "title": "NiluK/worldmodels101 — ★67",
+          "url": "https://github.com/NiluK/worldmodels101",
+          "source": "github",
+          "description": "Free interactive course on world models in AI. Nine visual chapters on prediction, latent dynamics, planning, JEPA, video models, and failure modes. (topics: artificial intelligence, deep learning, education, interactive learning, jepa, machine learning, model based reinforcement learning, reinforcement learning, representation learning, self supervised learning, video generation, world models)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "NiluK/worldmodels101",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5f85dacdceb5"
+        },
+        {
+          "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
+          "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49434378",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ca33c4fa872f"
+        },
+        {
+          "title": "When str.lower() is a security vulnerability in Python – Seth Larson",
+          "url": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49440410",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9f4fe32b779d"
+        },
+        {
+          "title": "The WebMCP Challenge",
+          "url": "https://webmcp.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Aug 25 - Sep 03, 2026 | prize $ 35,000 | themes: Machine Learning/AI, E-commerce/Retail, Web",
+          "deadline": "2026-09-03",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "31011",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a8901e3e891e"
+        },
+        {
+          "title": "Reviewing 4 papers for AAAI 2027 and none have code, Reject? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vxryws/reviewing_4_papers_for_aaai_2027_and_none_have/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vxryws",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "843b4d1618ae"
+        },
+        {
+          "title": "Continual Learning of Frontier Models for SovereignAI. Tech Report + Open Weights Model [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vxvzju/continual_learning_of_frontier_models_for/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vxvzju",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fadd60f147d0"
+        },
+        {
+          "title": "[D] Looking for advice: Modelling a medicine-reminder agent that must decide “remind / wait / notify” under incomplete information[D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vy8a9g/d_looking_for_advice_modelling_a_medicinereminder/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vy8a9g",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a40d2ebd0138"
+        },
+        {
+          "title": "What would a fair benchmark for agent architecture look like? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vy0ki7/what_would_a_fair_benchmark_for_agent/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vy0ki7",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ea7828bc02a8"
+        },
+        {
+          "title": "How we built a SOTA search engine using PostgreSQL, pgvector, and Qwen3 embeddings [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vxyrsr/how_we_built_a_sota_search_engine_using/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vxyrsr",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9dff3df27e6f"
+        },
+        {
+          "title": "MUBA Blockchain Hackathon",
+          "url": "https://muba-hackathon.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | online | themes: Blockchain, FinTech, AI",
+          "deadline": "2026-08-26",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "c9616c07274742db8c57310b5d61adc7",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e0b90e9b87a5"
+        },
+        {
+          "title": "Starters 254 (codechef.com)",
+          "url": "https://www.codechef.com/START254",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-09-02T14:30:00",
+          "deadline": "2026-09-02",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69889683",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "db3c2de53618"
+        },
+        {
+          "title": "Codeforces Round (Div. 3) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2259",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-09-05T14:35:00",
+          "deadline": "2026-09-05",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69899174",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "701c14c69757"
+        },
+        {
+          "title": "Bit N Build - Around the World 2026",
+          "url": "https://unstop.com/hackathons/bit-n-build-around-the-world-2026-fr-conceicao-rodrigues-college-of-engineering-frcrce-bandra-1743581",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743581",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bb7344bae919"
+        },
+        {
+          "title": "Decarbonix 1.0",
+          "url": "https://unstop.com/hackathons/decarbonix-10-dr-ss-bhatnagar-university-institute-of-chemical-engineering-technology-panjab-university-chand-1743102",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743102",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "af18baaf6023"
+        },
+        {
+          "title": "Hack the Hardware India 2.0 (HTH India 2.0) — Build. Innovate. Win.",
+          "url": "https://unstop.com/hackathons/hack-the-hardware-india-20-hth-india-20-build-innovate-win-suryodaya-college-of-engineering-technology-nagpur-1730720",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1730720",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cc26b9fb3187"
+        },
+        {
+          "title": "Hackbattle",
+          "url": "https://unstop.com/hackathons/hackbattle-gravitas26-vit-vellore-1744064",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1744064",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d20cd4ddabcc"
+        },
+        {
+          "title": "CodeSlayer 2.0 2k26",
+          "url": "https://unstop.com/hackathons/codeslayer-20-2k26-national-institute-of-technology-nit-delhi-1743965",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743965",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9451b4681c55"
+        },
+        {
+          "title": "Anakin Forge Hackathon",
+          "url": "https://unstop.com/hackathons/anakin-forge-hackathon-anakin-skywalker-pvt-ltd-1742485",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742485",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "89a1cfbb06cf"
+        },
+        {
+          "title": "Graphic Designer and Video Editor Internship",
+          "url": "https://unstop.com/internships/graphic-designer-and-video-editor-internship-rambhau-mhalgi-prabodhini-pune-1744264",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1744264",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6ae32b7aa26b"
+        },
+        {
+          "title": "Campus Ambassador Internship",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-indian-institute-of-technology-iit-patna-1736098",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1736098",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2f1434e87104"
+        },
+        {
+          "title": "Digital Marketing Internship",
+          "url": "https://unstop.com/internships/digital-marketing-intern-growth-india-1744245",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1744245",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "caf890005705"
+        },
+        {
+          "title": "Marketing Internship",
+          "url": "https://unstop.com/internships/marketing-internship-market-orbit-agency-llp-1744246",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1744246",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1aad2935d0f2"
+        },
+        {
+          "title": "Campus Ambassador Internship- Architecture Domain",
+          "url": "https://unstop.com/internships/architecture-domain-campus-ambassador-internship-mycaptain-1744200",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1744200",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b7d99a9d07d5"
+        },
+        {
+          "title": "Campus Ambassador Internship- Design Domain",
+          "url": "https://unstop.com/internships/design-domain-campus-ambassador-internship-mycaptain-1744199",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1744199",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "eb2d3d1a46a2"
+        },
+        {
+          "title": "Social Media Manager Internship",
+          "url": "https://unstop.com/internships/social-media-manager-internship-godstockss-1744247",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1744247",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "796b319bf846"
+        },
+        {
+          "title": "Mobile App Engineer Internship",
+          "url": "https://unstop.com/internships/mobile-app-engineer-internship-vyntage-1744251",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1744251",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b5c3a320b482"
+        },
+        {
+          "title": "Steven's Capital Management — Software Engineer",
+          "url": "https://grnh.se/abfli75k1us",
+          "source": "internships",
+          "description": "internship | Steven's Capital Management | Radnor, PA | Summer 2027 | Offers Sponsorship",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3350268b-7da8-41ee-bcc6-c85f795975ac",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ba74817ecb5b"
+        },
+        {
+          "title": "AbbVie — Business Technology Solutions Intern - Data & Software Engineering",
+          "url": "https://jobs.smartrecruiters.com/AbbVie/3743990014860306",
+          "source": "internships",
+          "description": "internship | AbbVie | Irvine, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "41047974-7321-45cf-b910-ac9710ae6e39",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3cb98a99f973"
+        },
+        {
+          "title": "AbbVie — Business Technology Solutions Intern - Data & Software Engineering - Undergraduate",
+          "url": "https://jobs.smartrecruiters.com/AbbVie/3743990014860391",
+          "source": "internships",
+          "description": "internship | AbbVie | South SF | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8172b446-22d1-4377-b335-6f5fd54371aa",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "13aeffcd6fc0"
+        },
+        {
+          "title": "TikTok — AI Infrastructure Engineer Intern - Recommendation & LLM",
+          "url": "https://lifeattiktok.com/search/7672671220798818613",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "76570b32-69dc-4557-ad0d-dfd2480f1605",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "98474fd2f478"
+        },
+        {
+          "title": "The Browser Company — AI Prototyper Resident",
+          "url": "https://jobs.ashbyhq.com/the%20browser%20company/abaefc4c-b229-431c-bec3-dd3e07ae0e09/application?embed=true",
+          "source": "internships",
+          "description": "internship | The Browser Company | Remote in USA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "120b5dc5-005a-459d-848c-a05d3a0eba5e",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c7fd634a8cf8"
+        },
+        {
+          "title": "Zipline — Embedded Software Engineer Intern - Spring 2027",
+          "url": "https://www.zipline.com/open-roles?gh_jid=7974897003",
+          "source": "internships",
+          "description": "internship | Zipline | South SF | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a687b7a4-e59f-46fc-81d2-72d37d677ffb",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c0ebb844575d"
+        },
+        {
+          "title": "Maximor AI — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/maximor/3ff6e57d-5430-4836-b6f0-19044d8ee6d8/application?embed=true",
+          "source": "internships",
+          "description": "internship | Maximor AI | NYC | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a9b6e0e0-7d76-45b2-8d3b-c8a40a8342cd",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "95fe2c7f27a6"
+        },
+        {
+          "title": "Honeywell — Software Engineer Intern - Computer Science",
+          "url": "https://ibqbjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Honeywell/job/155557",
+          "source": "internships",
+          "description": "internship | Honeywell | United States | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e4a107a2-a0eb-4ef1-9ce9-2f1dfc6ea0f6",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "151d8a85cd90"
+        },
+        {
+          "title": "Honeywell — Software Engineer Intern - Computer Science",
+          "url": "https://ibqbjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Honeywell/job/155558",
+          "source": "internships",
+          "description": "internship | Honeywell | United States | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d77e63b8-e4b0-42ca-a8b6-6ed707e7d4ac",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0a9cd1730dca"
+        },
+        {
+          "title": "L3Harris Technologies — Software Engineer Intern",
+          "url": "https://jobs.l3harris.com/job/Palm-Bay-Intern,-Software-Engineer-FL-32905/1423105900/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Palm Bay, FL | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "06594313-d737-4fef-9c0a-70ab3323d980",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "17c1fb7dda2e"
+        },
+        {
+          "title": "L3Harris Technologies — Software Engineer Intern",
+          "url": "https://jobs.l3harris.com/job/Palm-Bay-Intern,-Software-Engineer-FL-32905/1423100800/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Palm Bay, FL | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c0c19994-1b06-4cf8-83db-99b47c5c44f1",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "82b05c07501e"
+        },
+        {
+          "title": "L3Harris Technologies — Software Engineer Intern",
+          "url": "https://jobs.l3harris.com/job/Palm-Bay-Intern,-Software-Engineer-FL-32905/1423104800/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Palm Bay, FL | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d66736fe-805c-456b-8e9c-afe4109cf1c4",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "142ba5a0d242"
+        },
+        {
+          "title": "L3Harris Technologies — Software Engineer Intern",
+          "url": "https://jobs.l3harris.com/job/Palm-Bay-Intern,-Software-Engineer-FL-32905/1423104500/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Palm Bay, FL | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "885b2281-cca9-4d35-a38f-2b727bb14848",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "226712f5c542"
+        },
+        {
+          "title": "L3Harris Technologies — Software Engineer Intern",
+          "url": "https://jobs.l3harris.com/job/Palm-Bay-Intern,-Software-Engineer-FL-32905/1423102100/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Palm Bay, FL | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d52a13a3-1624-4695-b00f-1073f8e8c13b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0c44af2c3415"
+        },
+        {
+          "title": "L3Harris Technologies — Software Engineer Intern",
+          "url": "https://jobs.l3harris.com/job/Palm-Bay-Intern,-Software-Engineer-FL-32905/1423103100/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Palm Bay, FL | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4477a5e7-d130-4a26-a1be-0be7c655bab0",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "df7623c41b53"
+        },
+        {
+          "title": "DTCC — Application Developer Intern",
+          "url": "https://ebxr.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/214459",
+          "source": "internships",
+          "description": "internship | DTCC | Tampa, FL, Dallas, TX, Jersey City, NJ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a1eb1e2b-bd12-4ee2-b019-34e40010a803",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5d9a7c5d7871"
+        },
+        {
+          "title": "Zip — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/zip/249837b3-106f-4751-a4f2-03a2c5df5faf/application?embed=true",
+          "source": "internships",
+          "description": "internship | Zip | SF | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9ab1c4b6-7573-49a7-80b3-d93982ec29dd",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "968ee92aae43"
+        },
+        {
+          "title": "Zip — Software Engineer Intern - Winter 2027",
+          "url": "https://jobs.ashbyhq.com/zip/2bc7327b-1c06-418a-beeb-bec1dd70480e/application?embed=true",
+          "source": "internships",
+          "description": "internship | Zip | Toronto, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "82583da7-e72f-4b4f-aabb-0066a8951ba5",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "aa1195b97994"
+        },
+        {
+          "title": "The Voleon Group — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/voleon/57f1b666-2f4b-4bad-aac0-fa42a1c8fdf6/application?embed=true",
+          "source": "internships",
+          "description": "internship | The Voleon Group | Berkeley, CA, NYC | Summer 2027, Fall 2027, Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a767329d-41e2-4902-a15c-d28cb21ad5e1",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6423e54617ca"
+        },
+        {
+          "title": "Honeywell — Artificial Intelligence/Machine Learning Intern",
+          "url": "https://ibqbjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Honeywell/job/155522",
+          "source": "internships",
+          "description": "internship | Honeywell | United States | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d449be3f-76e4-4a23-907f-0c7e8bcd8582",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2c88c7b9d687"
+        },
+        {
+          "title": "Honeywell — Information Systems Intern - IT - Cyber Engineer & Data Science",
+          "url": "https://ibqbjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Honeywell/job/155554",
+          "source": "internships",
+          "description": "internship | Honeywell | United States | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f68967a4-f885-4449-89e6-b22c60cedbf9",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a8c086bbecbe"
+        },
+        {
+          "title": "Empirical Foods — Software Engineer Intern - Summer 2027",
+          "url": "https://careers-empiricalfoods.icims.com/jobs/4161/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Empirical Foods | Dakota Dunes, SD | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f8139c71-b2b0-4405-8d3c-7468022996e2",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "77eedcea046f"
+        },
+        {
+          "title": "Xpansiv — Product Management Intern - AI Products",
+          "url": "https://jobs.lever.co/Xpansiv%20/8a1649ec-ef5f-425d-8a36-34f28d67e8a7/apply",
+          "source": "internships",
+          "description": "internship | Xpansiv | NYC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8cf244f2-f67a-4786-b968-74bd6c7aec38",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8b5b62c9a485"
+        }
+      ]
     }
   ]
 }
