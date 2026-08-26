@@ -165,6 +165,11 @@ USE_LLM_SCORING = _env_bool("OH_LLM", True)
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 CEREBRAS_API_KEY = os.environ.get("CEREBRAS_API_KEY", "")
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
+# NVIDIA's build.nvidia.com free API (OpenAI-compatible, no card, ~40 RPM/model, 100+ models incl.
+# GLM-5.1, DeepSeek-V4, Nemotron). Get a key at https://build.nvidia.com → activates automatically.
+# Pick any model from the catalog via OH_NVIDIA_MODEL (e.g. z-ai/glm-5.1, deepseek-ai/deepseek-v4-pro,
+# nvidia/nemotron-3-nano-omni-30b-a3b-reasoning).
+NVIDIA_API_KEY = os.environ.get("NVIDIA_API_KEY", "")
 
 # Tried in order; a provider is used only when its key is present. Each entry is
 # OpenAI-compatible (POST {base_url}/chat/completions), so ONE code path serves all.
@@ -172,6 +177,10 @@ LLM_PROVIDERS = [
     {"name": "groq", "base_url": "https://api.groq.com/openai/v1",
      "api_key": GROQ_API_KEY,
      "model": os.environ.get("OH_GROQ_MODEL", "llama-3.3-70b-versatile")},
+    # NVIDIA sits right after Groq so it catches Groq's rate-limits with a strong, reliable free model.
+    {"name": "nvidia", "base_url": "https://integrate.api.nvidia.com/v1",
+     "api_key": NVIDIA_API_KEY,
+     "model": os.environ.get("OH_NVIDIA_MODEL", "z-ai/glm-5.1")},
     {"name": "cerebras", "base_url": "https://api.cerebras.ai/v1",
      "api_key": CEREBRAS_API_KEY,
      "model": os.environ.get("OH_CEREBRAS_MODEL", "gpt-oss-120b")},

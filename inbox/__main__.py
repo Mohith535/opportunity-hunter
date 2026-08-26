@@ -100,6 +100,14 @@ def _run_once(args) -> int:
     except Exception:  # noqa: BLE001
         summary["day"] = {"available": False}
 
+    # Step 3 — the "do this first today" line at the top of the plan (grounded in the real items;
+    # deterministic fallback if the LLM is flaky). Skips the LLM call entirely if nothing is dated.
+    try:
+        from .plan import first_thing
+        summary["lead"] = first_thing(summary["day"], summary["shown"])
+    except Exception:  # noqa: BLE001
+        summary["lead"] = ""
+
     # Save the data + the page (both local, gitignored — personal).
     (_BASE / "data").mkdir(exist_ok=True)
     (_BASE / "data" / "inbox_summary.json").write_text(

@@ -115,9 +115,9 @@ def _email_card(it: dict) -> str:
         </article>"""
 
 
-def _render_day(day: dict | None, emails: list | None, today) -> str:
+def _render_day(day: dict | None, emails: list | None, today, lead: str = "") -> str:
     """The 'Today' plan: your TaskFlow tasks and your email deadlines woven into ONE agenda —
-    Overdue → Today → Coming up (7 days). Read-only. '' when there's nothing dated to show."""
+    Overdue → Today → Coming up (7 days), led by a 'do this first' line. Read-only. '' when nothing."""
     day = day or {}
     emails = emails or []
     overdue = day.get("overdue", [])
@@ -192,9 +192,11 @@ def _render_day(day: dict | None, emails: list | None, today) -> str:
         blocks = ['<div class="day-note calm">Nothing due today. 🌿</div>']
 
     pill = f"{act_now} to handle" if act_now else ("planned" if has_soon else "all clear")
+    lead_html = f'<div class="lead">▶ {_e(lead)}</div>' if lead else ""
     return f"""
     <section class="day">
       <div class="day-head"><h2>Today</h2><span class="pill">{_e(pill)}</span></div>
+      {lead_html}
       {''.join(blocks)}
       {note}
     </section>"""
@@ -236,7 +238,7 @@ def render_html(summary: dict) -> str:
         bits = " · ".join(f"{v} {_e(k)}" for k, v in hidden.items())
         hidden_line = f'<div class="hidden">🔒 Hid {hidden_total} code/security email(s): {bits}</div>'
 
-    day_html = _render_day(summary.get("day"), shown, today)
+    day_html = _render_day(summary.get("day"), shown, today, summary.get("lead", ""))
     inbox_head = '<h2 class="sec">Inbox</h2>' if day_html else ""
     other_pill = f'<span class="pill soft">{len(other)} more</span>' if other else ""
 
@@ -268,6 +270,8 @@ def render_html(summary: dict) -> str:
   .day{{margin:14px 0 8px}}
   .day-head{{display:flex;align-items:center;gap:9px;margin:2px 2px 11px}}
   .day-head h2{{font-size:1.08rem;margin:0;letter-spacing:-.01em}}
+  .lead{{background:var(--accent-soft);color:var(--accent);font-weight:800;font-size:1rem;
+    line-height:1.4;padding:13px 15px;border-radius:14px;margin:0 0 14px;letter-spacing:-.005em}}
   .task{{display:flex;background:var(--surface);border:1px solid var(--line);
     border-left:4px solid var(--line);border-radius:14px;padding:11px 13px;margin-bottom:8px;
     box-shadow:var(--sh)}}
