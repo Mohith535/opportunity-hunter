@@ -132,16 +132,19 @@ _SCOPES = ["https://www.googleapis.com/auth/gmail.readonly"]
 
 
 def build_gmail_query(days: int = 1, unread: bool = False, raw: str = "") -> str:
-    """A Gmail search query from the scan flags. `raw` overrides everything (full Gmail operators)."""
+    """A Gmail search query from the scan flags. `raw` overrides everything (full Gmail operators).
+
+    'today' means the last 24 hours (`newer_than:1d`), not 'since midnight' — otherwise a run early in
+    the day (e.g. 12:28 AM) matches only the few minutes since midnight and the page looks empty."""
     if raw:
         return raw
-    base = f"after:{date.today():%Y/%m/%d}" if days <= 1 else f"newer_than:{days}d"
+    base = f"newer_than:{max(1, days)}d"
     return f"{base} is:unread" if unread else base
 
 
 def fetch_today_oauth(credentials_path: str = "credentials.json",
                       token_path: str = "token.json", query: str = "",
-                      scopes: list | None = None) -> list[dict]:
+                      scopes: list | None = None, allow_consent: bool = True) -> list[dict]:
     """Today's inbox via the Gmail API over OAuth (read-only). No app password, no 2SV.
 
     First run opens a browser for one-time consent; the token is cached in token_path. Kept in
@@ -177,6 +180,13 @@ def fetch_today_oauth(credentials_path: str = "credentials.json",
             except Exception:
                 creds = None
         if not creds:
+            # Headless callers (a scheduled auto-refresh) must NOT block on a browser consent that no
+            # one is there to click — fail fast instead so the task exits cleanly and the page just
+            # stays as-is until the next manual re-consent.
+            if not allow_consent:
+                raise RuntimeError(
+                    "Gmail sign-in expired (free OAuth re-consents ~weekly). Run `python -m inbox` "
+                    "once in a terminal to sign in again; auto-refresh will resume after that.")
             if not _P(credentials_path).exists():
                 raise RuntimeError(
                     f"No '{credentials_path}' found. Create a Google Cloud OAuth 'Desktop app' client "

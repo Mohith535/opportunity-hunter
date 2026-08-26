@@ -53,57 +53,149 @@ def _priority_class(p: str) -> str:
         else "strat"
 
 
+_IMPORTANT = 4  # importance 0-10: at/above this an email is a "worth your time" card; below → collapsed
+
+
 def _late_label(days: int) -> str:
     return "1 day late" if days == 1 else f"{days} days late"
 
 
-def _task_row(t: dict, tag_html: str) -> str:
-    ptag = f'<span class="ptag">{_e(t["priority"])}</span>' if t.get("priority") else ""
+def _soon_label(days: int) -> str:
+    return "tomorrow" if days == 1 else f"in {days} days"
+
+
+def _parse_dl(s: str):
+    try:
+        return datetime.strptime(str(s), "%Y-%m-%d").date()
+    except (ValueError, TypeError):
+        return None
+
+
+def _plan_row(title: str, stripe: str, when_html: str, badge_html: str = "", href: str = "") -> str:
+    """One line in the day plan. Task or email, same shape. `title` links to Gmail when href is given."""
+    title = title[:140]
+    t = (f'<a class="t" target="_blank" rel="noopener" href="{_e(href)}">{_e(title)}</a>'
+         if href else f'<div class="t">{_e(title)}</div>')
     return f"""
-      <div class="task {_priority_class(t.get("priority"))}">
-        <div class="tbody">
-          <div class="t">{_e(t["title"][:140])}</div>
-          <div class="meta">{tag_html}{ptag}</div>
-        </div>
-      </div>"""
+      <div class="task {stripe}"><div class="tbody">{t}
+        <div class="meta">{when_html}{badge_html}</div></div></div>"""
 
 
-def _render_day(day: dict | None) -> str:
-    """The 'Today' section: TaskFlow tasks due today or overdue, read-only. '' if there's nothing worth
-    showing (or TaskFlow isn't present)."""
-    if not day or not day.get("available"):
-        return ""
+def _mail_link(gid: str) -> str:
+    return f"https://mail.google.com/mail/u/0/#all/{gid}" if gid else ""
+
+
+def _email_card(it: dict) -> str:
+    """A full 'worth your time' email card: category, importance, sender, one-line summary, actions."""
+    emoji, label = _CAT.get(it["category"], ("✉️", it["category"].title()))
+    imp = it["importance"]
+    dl = it.get("deadline") or ""
+    actions = []
+    href = _mail_link(it.get("id") or "")
+    if href:  # jump straight to the real email in Gmail
+        actions.append('<a class="btn open" target="_blank" rel="noopener" '
+                       f'href="{_e(href)}">✉️ Open email</a>')
+    if dl:
+        cal = gcal_link(it["subject"], dl)
+        if cal:
+            actions.append('<a class="btn cal" target="_blank" rel="noopener" '
+                           f'href="{_e(cal)}">＋ Calendar</a>')
+        actions.append(f'<span class="due">⏰ {_e(dl)}</span>')
+    actions_html = f'<div class="actions">{"".join(actions)}</div>' if actions else ""
+    return f"""
+        <article class="card imp{min(imp, 10) // 4}">
+          <div class="row1">
+            <span class="chip">{emoji} {_e(label)}</span>
+            <span class="imp" title="importance">{imp}/10</span>
+          </div>
+          <div class="who">{_e(_sender_name(it["from"]))}</div>
+          <div class="subj">{_e(it["subject"][:120])}</div>
+          <div class="sum">{_e(it["summary"])}</div>
+          {actions_html}
+        </article>"""
+
+
+def _render_day(day: dict | None, emails: list | None, today) -> str:
+    """The 'Today' plan: your TaskFlow tasks and your email deadlines woven into ONE agenda —
+    Overdue → Today → Coming up (7 days). Read-only. '' when there's nothing dated to show."""
+    day = day or {}
+    emails = emails or []
     overdue = day.get("overdue", [])
-    due_today = day.get("due_today", [])
+    due_tasks = day.get("due_today", [])
+    up_tasks = day.get("upcoming", [])
     backlog = day.get("backlog_count", 0)
-    upcoming = day.get("upcoming_count", 0)
-    active_now = len(overdue) + len(due_today)
-    if active_now == 0 and backlog == 0 and upcoming == 0:
-        return ""  # no TaskFlow tasks at all — stay quiet
 
-    rows = []
-    for t in due_today:
-        rows.append(_task_row(t, '<span class="today-tag">due today</span>'))
+    # Email deadlines within the next week, split into today vs later.
+    mail_today, mail_soon = [], []
+    for e in emails:
+        d = _parse_dl(e.get("deadline") or "")
+        if not d or d < today or (d - today).days > 7:
+            continue
+        row = {"title": e.get("subject", ""), "date": d, "href": _mail_link(e.get("id") or "")}
+        (mail_today if d == today else mail_soon).append(row)
+
+    act_now = len(overdue) + len(due_tasks) + len(mail_today)
+    has_soon = bool(up_tasks or mail_soon)
+    if act_now == 0 and not has_soon and backlog == 0:
+        return ""  # nothing dated and nothing on the list — stay quiet
+
+    blocks = []
+
+    # ── Overdue (tasks) ──
     shown_over = overdue[:12]
-    for t in shown_over:
-        rows.append(_task_row(t, f'<span class="late">{_e(_late_label(t["days_over"]))}</span>'))
+    if shown_over:
+        rows = [_plan_row(t["title"], _priority_class(t["priority"]),
+                          f'<span class="late">{_e(_late_label(t["days_over"]))}</span>',
+                          f'<span class="ptag">{_e(t["priority"])}</span>' if t.get("priority") else "")
+                for t in shown_over]
+        blocks.append(f'<div class="tier-lbl over">Overdue</div>{"".join(rows)}')
+
+    # ── Today (tasks + email deadlines dated today) ──
+    today_rows = []
+    for t in due_tasks:
+        today_rows.append(_plan_row(
+            t["title"], _priority_class(t["priority"]), '<span class="today-tag">due today</span>',
+            f'<span class="ptag">{_e(t["priority"])}</span>' if t.get("priority") else ""))
+    for m in mail_today:
+        today_rows.append(_plan_row(m["title"], "mail", '<span class="today-tag">due today</span>',
+                                    '<span class="src">✉ mail</span>', m["href"]))
+    if today_rows:
+        blocks.append(f'<div class="tier-lbl today">Today</div>{"".join(today_rows)}')
+
+    # ── Coming up (next 7 days: email deadlines + upcoming tasks, soonest first) ──
+    soon = [(m["date"], "mail", m) for m in mail_soon]
+    for t in up_tasks:
+        d = _parse_dl(t["date"])
+        if d:
+            soon.append((d, "task", t))
+    soon.sort(key=lambda x: x[0])
+    if soon:
+        rows = []
+        for d, kind, obj in soon:
+            when = f'<span class="soon">{_e(_soon_label((d - today).days))}</span>'
+            if kind == "mail":
+                rows.append(_plan_row(obj["title"], "mail", when,
+                                      '<span class="src">✉ mail</span>', obj["href"]))
+            else:
+                rows.append(_plan_row(
+                    obj["title"], _priority_class(obj["priority"]), when,
+                    f'<span class="ptag">{_e(obj["priority"])}</span>' if obj.get("priority") else ""))
+        blocks.append(f'<div class="tier-lbl">Coming up</div>{"".join(rows)}')
 
     extra = []
     if len(overdue) > len(shown_over):
         extra.append(f"+{len(overdue) - len(shown_over)} more overdue")
     if backlog:
         extra.append(f"{backlog} on your list")
-    if upcoming:
-        extra.append(f"{upcoming} upcoming")
     note = f'<div class="day-note">{_e(" · ".join(extra))}</div>' if extra else ""
+    if act_now == 0 and not blocks:
+        blocks = ['<div class="day-note calm">Nothing due today. 🌿</div>']
 
-    pill = f"{active_now} to handle" if active_now else "all clear"
-    if active_now == 0:
-        rows = ['<div class="day-note calm">Nothing due today. 🌿</div>']
+    pill = f"{act_now} to handle" if act_now else ("planned" if has_soon else "all clear")
     return f"""
     <section class="day">
       <div class="day-head"><h2>Today</h2><span class="pill">{_e(pill)}</span></div>
-      {''.join(rows)}
+      {''.join(blocks)}
       {note}
     </section>"""
 
@@ -114,46 +206,39 @@ def render_html(summary: dict) -> str:
     hidden_total = sum(hidden.values())
     built = datetime.now().strftime("%A, %d %B %Y · %I:%M %p")
 
-    cards = []
-    for it in shown:
-        emoji, label = _CAT.get(it["category"], ("✉️", it["category"].title()))
-        imp = it["importance"]
-        dl = it.get("deadline") or ""
-        actions = []
-        gid = it.get("id") or ""
-        if gid:  # jump straight to the real email in Gmail
-            actions.append(
-                '<a class="btn open" target="_blank" rel="noopener" '
-                f'href="https://mail.google.com/mail/u/0/#all/{_e(gid)}">✉️ Open email</a>')
-        if dl:
-            cal = gcal_link(it["subject"], dl)
-            if cal:
-                actions.append('<a class="btn cal" target="_blank" rel="noopener" '
-                               f'href="{_e(cal)}">＋ Calendar</a>')
-            actions.append(f'<span class="due">⏰ {_e(dl)}</span>')
-        actions_html = f'<div class="actions">{"".join(actions)}</div>' if actions else ""
-        cards.append(f"""
-        <article class="card imp{min(imp,10)//4}">
-          <div class="row1">
-            <span class="chip">{emoji} {_e(label)}</span>
-            <span class="imp" title="importance">{imp}/10</span>
-          </div>
-          <div class="who">{_e(_sender_name(it["from"]))}</div>
-          <div class="subj">{_e(it["subject"][:120])}</div>
-          <div class="sum">{_e(it["summary"])}</div>
-          {actions_html}
-        </article>""")
+    today = datetime.now().date()
+    important = [it for it in shown if it.get("importance", 0) >= _IMPORTANT]
+    other = [it for it in shown if it.get("importance", 0) < _IMPORTANT]
 
-    if not shown:
-        cards.append('<p class="empty">Nothing important right now. A quiet inbox is a good inbox. 🌿</p>')
+    cards = [_email_card(it) for it in important]
+    if not important:
+        msg = ("Nothing urgent right now — a quiet inbox is a good inbox. 🌿" if other
+               else "Nothing important right now. A quiet inbox is a good inbox. 🌿")
+        cards.append(f'<p class="empty">{msg}</p>')
+
+    # Everything else: lower-priority mail (promos, newsletters, FYIs) — visible, just tucked away so
+    # it never buries the signal. The user asked to see every email except OTP/security.
+    more_html = ""
+    if other:
+        rows = []
+        for it in other:
+            href = _mail_link(it.get("id") or "")
+            who = _e(_sender_name(it["from"]))
+            subj = _e(it["subject"][:110])
+            inner = f'<span class="mwho">{who}</span> — {subj}'
+            rows.append(f'<a class="mrow" target="_blank" rel="noopener" href="{_e(href)}">{inner}</a>'
+                        if href else f'<div class="mrow">{inner}</div>')
+        more_html = (f'<details class="more"><summary>Everything else ({len(other)})</summary>'
+                     f'{"".join(rows)}</details>')
 
     hidden_line = ""
     if hidden_total:
         bits = " · ".join(f"{v} {_e(k)}" for k, v in hidden.items())
-        hidden_line = f'<div class="hidden">🗂️ Hid {hidden_total} junk email(s): {bits}</div>'
+        hidden_line = f'<div class="hidden">🔒 Hid {hidden_total} code/security email(s): {bits}</div>'
 
-    day_html = _render_day(summary.get("day"))
+    day_html = _render_day(summary.get("day"), shown, today)
     inbox_head = '<h2 class="sec">Inbox</h2>' if day_html else ""
+    other_pill = f'<span class="pill soft">{len(other)} more</span>' if other else ""
 
     return f"""<!doctype html>
 <html lang="en"><head>
@@ -176,6 +261,7 @@ def render_html(summary: dict) -> str:
   .counts{{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}}
   .pill{{background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:.82rem;
     padding:5px 11px;border-radius:999px}}
+  .pill.soft{{background:var(--line);color:var(--soft)}}
   .hidden{{color:var(--soft);font-size:.85rem;margin:6px 0 18px}}
   .sec{{font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;
     color:var(--soft);margin:22px 2px 10px}}
@@ -186,14 +272,33 @@ def render_html(summary: dict) -> str:
     border-left:4px solid var(--line);border-radius:14px;padding:11px 13px;margin-bottom:8px;
     box-shadow:var(--sh)}}
   .task.crit{{border-left-color:var(--hi)}} .task.strat{{border-left-color:var(--gold)}}
-  .task .t{{font-weight:700;font-size:.95rem;line-height:1.34}}
+  .task.mail{{border-left-color:var(--accent)}}
+  .task .t{{font-weight:700;font-size:.95rem;line-height:1.34;color:var(--ink);
+    text-decoration:none;display:block}}
+  a.t:active{{opacity:.7}}
   .meta{{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-top:5px}}
   .late{{color:var(--hi);font-weight:800;font-size:.76rem;font-variant-numeric:tabular-nums}}
   .today-tag{{color:var(--gold);font-weight:800;font-size:.76rem}}
+  .soon{{color:var(--accent);font-weight:800;font-size:.76rem}}
+  .src{{color:var(--soft);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em}}
   .ptag{{color:var(--soft);font-size:.7rem;font-weight:700;text-transform:uppercase;
     letter-spacing:.04em}}
-  .day-note{{color:var(--soft);font-size:.85rem;margin:6px 2px 0}}
+  .tier-lbl{{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;
+    color:var(--soft);margin:12px 2px 7px}}
+  .tier-lbl.over{{color:var(--hi)}} .tier-lbl.today{{color:var(--gold)}}
+  .day-note{{color:var(--soft);font-size:.85rem;margin:8px 2px 0}}
   .day-note.calm{{margin:2px 2px 8px}}
+  .more{{margin:2px 0 4px;border:1px solid var(--line);border-radius:14px;background:var(--surface);
+    box-shadow:var(--sh);overflow:hidden}}
+  .more>summary{{cursor:pointer;padding:12px 15px;font-weight:800;font-size:.9rem;color:var(--soft);
+    list-style:none;-webkit-tap-highlight-color:transparent}}
+  .more>summary::-webkit-details-marker{{display:none}}
+  .more>summary::after{{content:"▾";float:right;color:var(--soft)}}
+  .more[open]>summary::after{{content:"▴"}}
+  .mrow{{display:block;padding:10px 15px;border-top:1px solid var(--line);font-size:.9rem;
+    color:var(--ink);text-decoration:none}}
+  .mrow:active{{background:var(--accent-soft)}}
+  .mwho{{font-weight:700}}
   .card{{background:var(--surface);border:1px solid var(--line);border-radius:16px;
     padding:14px 15px;margin-bottom:11px;box-shadow:var(--sh);border-left:4px solid var(--line)}}
   .card.imp2{{border-left-color:var(--accent)}} .card.imp3{{border-left-color:var(--hi)}}
@@ -219,15 +324,17 @@ def render_html(summary: dict) -> str:
     <h1>Your day, sorted</h1>
     <div class="built">{_e(summary.get('window','today')).capitalize()} · built {_e(built)}</div>
     <div class="counts">
-      <span class="pill">{len(shown)} worth your time</span>
-      <span class="pill">{hidden_total} junk hidden</span>
+      <span class="pill">{len(important)} worth your time</span>
+      {other_pill}
+      <span class="pill soft">{hidden_total} codes hidden</span>
     </div>
     {hidden_line}
   </header>
   {day_html}
   {inbox_head}
   {''.join(cards)}
-  <footer>Reads your mail and your TaskFlow list · junk (codes, security, promos) filtered out before
-  summarising · nothing sent, deleted, completed, or changed. 🌱</footer>
+  {more_html}
+  <footer>Reads your mail and your TaskFlow list · only one-time codes & security mail are hidden ·
+  nothing sent, deleted, completed, or changed. 🌱</footer>
 </div>
 </body></html>"""

@@ -16,9 +16,6 @@ import re
 from filters.llm_scorer import complete
 from gmail_digest import build_gmail_query, fetch_today_oauth
 
-# Gmail's own buckets we hide by default — this is where OTP/promo/social noise lives.
-_HIDE_LABELS = {"CATEGORY_PROMOTIONS", "CATEGORY_SOCIAL"}
-
 # Subjects/senders that are one-time codes, sign-in/security, verification — never useful to read.
 _JUNK_RE = re.compile(
     r"(one[- ]?time|verification code|verify your|confirm your (e?mail|account)|"
@@ -54,9 +51,12 @@ EMAILS:
 
 
 def is_junk(email: dict) -> tuple[bool, str]:
-    """(hide?, reason). Local rules only — no network, no LLM. Reason is a short bucket name."""
-    if set(email.get("labels") or []) & _HIDE_LABELS:
-        return True, "promotions & social"
+    """(hide?, reason). Local rules only — no network, no LLM. Reason is a short bucket name.
+
+    We hide ONLY one-time codes / security / verification mail — the stuff that's genuinely never worth
+    reading and that must never leave the machine. Everything else (promotions, social, newsletters)
+    stays visible; the summariser just sorts it low so it lands in 'Everything else' instead of on top.
+    """
     if _JUNK_RE.search(f"{email.get('subject', '')} {email.get('from', '')}"):
         return True, "codes & security"
     return False, ""
@@ -81,15 +81,35 @@ def _parse(out: str, n: int) -> dict[int, dict]:
     return rows
 
 
+def _triage(keep: list, chunk: int = 12) -> dict[int, dict]:
+    """LLM-triage every kept email, in small batches. One giant prompt (a big inbox has 30-40 mails
+    once promos are no longer pre-hidden) overflows the provider's request size — Groq returns 413 and
+    the whole digest silently falls back to defaults. Batching keeps each call small and reliable.
+    Returns {global 1-based index: {category, importance, deadline, summary}}."""
+    result: dict[int, dict] = {}
+    for start in range(0, len(keep), chunk):
+        batch = keep[start:start + chunk]
+        listing = "\n".join(
+            f"{i}. FROM: {e['from'][:70]} | SUBJECT: {e['subject'][:110]} | {e['snippet'][:250]}"
+            for i, e in enumerate(batch, 1))
+        out = complete(_PROMPT.format(emails=listing), max_tokens=3500, temperature=0.2)
+        for local_i, row in _parse(out, len(batch)).items():
+            result[start + local_i] = row
+    return result
+
+
 def scan(days: int = 1, unread: bool = False, credentials: str = "credentials.json",
-         scopes: list | None = None) -> dict:
-    """Read the inbox and return {shown, hidden, total, window}. `shown` is the important mail, sorted
-    most-important first; `hidden` is a {reason: count} tally of what was filtered out.
+         scopes: list | None = None, allow_consent: bool = True) -> dict:
+    """Read the inbox and return {shown, hidden, total, window}. `shown` is EVERY email except hidden
+    OTP/security, each triaged and sorted most-important first (the caller/render tiers them into
+    'worth your time' vs 'everything else'); `hidden` is a {reason: count} tally of what was filtered.
 
     `scopes` lets a caller ask for extra permission in the SAME login (e.g. Calendar), so we don't end
-    up with a Gmail-only token that later blocks calendar writes."""
-    emails = fetch_today_oauth(credentials, query=build_gmail_query(days, unread), scopes=scopes)
-    window = "today" if days <= 1 else f"last {days} days"
+    up with a Gmail-only token that later blocks calendar writes. `allow_consent=False` makes a headless
+    auto-refresh fail fast instead of blocking on a browser sign-in."""
+    emails = fetch_today_oauth(credentials, query=build_gmail_query(days, unread), scopes=scopes,
+                               allow_consent=allow_consent)
+    window = "last 24 hours" if days <= 1 else f"last {days} days"
     if unread:
         window += " · unread"
 
@@ -103,17 +123,14 @@ def scan(days: int = 1, unread: bool = False, credentials: str = "credentials.js
 
     shown = []
     if keep:
-        listing = "\n".join(
-            f"{i}. FROM: {e['from'][:70]} | SUBJECT: {e['subject'][:110]} | {e['snippet'][:300]}"
-            for i, e in enumerate(keep, 1))
-        parsed = _parse(complete(_PROMPT.format(emails=listing), max_tokens=4000, temperature=0.2),
-                        len(keep))
+        parsed = _triage(keep)
         for i, e in enumerate(keep, 1):
             p = parsed.get(i, {"category": "INFO", "importance": 3, "deadline": "",
                                "summary": e["subject"][:90]})
+            # We no longer DROP anything the model calls NOISE — the user wants every non-OTP email
+            # visible. A NOISE verdict just means low importance, so it sinks into 'Everything else'.
             if p["category"] == "NOISE":
-                hidden["low value"] = hidden.get("low value", 0) + 1
-                continue
+                p["importance"] = min(p["importance"], 2)
             shown.append({"from": e["from"], "subject": e["subject"], "id": e.get("id", ""), **p})
         shown.sort(key=lambda x: -x["importance"])
 

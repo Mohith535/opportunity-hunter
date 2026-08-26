@@ -41,6 +41,11 @@ def main() -> int:
                     help="turn important deadlines/actions into TaskFlow tasks (tagged #mail)")
     ap.add_argument("--calendar", action="store_true",
                     help="add deadline reminders to your Google Calendar (needs a one-time permission)")
+    ap.add_argument("--watch", type=int, default=0, metavar="MIN",
+                    help="keep refreshing every MIN minutes (Ctrl+C to stop) — page stays current")
+    ap.add_argument("--headless", action="store_true",
+                    help="never open a browser for sign-in (for a scheduled auto-refresh); if the login "
+                         "has expired, exit cleanly instead of hanging")
     args = ap.parse_args()
 
     try:
@@ -48,6 +53,28 @@ def main() -> int:
     except Exception:
         pass
 
+    # --watch keeps the page current on its own: re-run every N minutes until Ctrl+C. This is the honest
+    # "it updates" answer — the page is a snapshot, so something has to regenerate it.
+    if args.watch and args.watch > 0:
+        import time
+        print(f"⏳ Auto-refresh every {args.watch} min — your phone page stays current. Ctrl+C to stop.")
+        while True:
+            try:
+                _run_once(args)
+            except KeyboardInterrupt:
+                print("\n👋 Stopped watching.")
+                return 0
+            except Exception as e:  # noqa: BLE001
+                print(f"(this refresh failed, will try again: {e})")
+            try:
+                time.sleep(args.watch * 60)
+            except KeyboardInterrupt:
+                print("\n👋 Stopped watching.")
+                return 0
+    return _run_once(args)
+
+
+def _run_once(args) -> int:
     # When adding to Calendar, ask for the Calendar permission in the SAME Gmail login — otherwise the
     # Gmail read creates a Gmail-only token first and the calendar step is left without permission.
     scan_scopes = None
@@ -55,7 +82,8 @@ def main() -> int:
         scan_scopes = ["https://www.googleapis.com/auth/gmail.readonly",
                        "https://www.googleapis.com/auth/calendar"]
     try:
-        summary = scan(args.days, args.unread, args.credentials, scopes=scan_scopes)
+        summary = scan(args.days, args.unread, args.credentials, scopes=scan_scopes,
+                       allow_consent=not args.headless)
     except RuntimeError as e:
         print(f"Error: {e}")
         return 1
@@ -85,7 +113,7 @@ def main() -> int:
     print("=" * 60)
     print(f"INBOX ASSISTANT — {summary['window']}")
     print("=" * 60)
-    print(f"{len(shown)} worth your time · {sum(hidden.values())} junk hidden "
+    print(f"{len(shown)} shown · {sum(hidden.values())} codes/security hidden "
           f"({', '.join(f'{v} {k}' for k, v in hidden.items()) or 'none'})\n")
     for it in shown:
         dl = f"  ⏰ {it['deadline']}" if it.get("deadline") else ""

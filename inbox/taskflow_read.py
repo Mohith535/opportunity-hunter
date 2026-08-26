@@ -81,15 +81,16 @@ def _slim(t: dict, today: datetime.date) -> dict:
     }
 
 
-def read_day_tasks(today: datetime.date | None = None) -> dict:
+def read_day_tasks(today: datetime.date | None = None, upcoming_days: int = 7) -> dict:
     """Return the day's actionable TaskFlow tasks, READ-ONLY:
 
-        {available, overdue: [...], due_today: [...], backlog_count, upcoming_count}
+        {available, overdue: [...], due_today: [...], upcoming: [...], backlog_count, upcoming_count}
 
-    `overdue` and `due_today` are sorted most-urgent first (priority, then most-overdue). `backlog_count`
-    is open tasks with no date; `upcoming_count` is open tasks dated in the future. On any read/parse
-    failure: {available: False, ...zeros} so callers can just skip the section."""
-    empty = {"available": False, "overdue": [], "due_today": [],
+    `overdue`/`due_today` are sorted most-urgent first (priority, then most-overdue). `upcoming` is open
+    tasks dated within the next `upcoming_days` (soonest first), for the day plan; `upcoming_count` is
+    every open future-dated task; `backlog_count` is open tasks with no date. On any read/parse failure:
+    {available: False, ...empty} so callers can just skip the section."""
+    empty = {"available": False, "overdue": [], "due_today": [], "upcoming": [],
              "backlog_count": 0, "upcoming_count": 0}
     today = today or datetime.date.today()
     path = _taskflow_file()
@@ -100,7 +101,8 @@ def read_day_tasks(today: datetime.date | None = None) -> dict:
     if not isinstance(tasks, list):
         return empty
 
-    overdue, due_today, backlog, upcoming = [], [], 0, 0
+    overdue, due_today, upcoming, backlog, upcoming_count = [], [], [], 0, 0
+    horizon = today + datetime.timedelta(days=upcoming_days)
     for t in tasks:
         if not isinstance(t, dict) or not _is_active(t):
             continue
@@ -112,10 +114,13 @@ def read_day_tasks(today: datetime.date | None = None) -> dict:
         elif d == today:
             due_today.append(_slim(t, today))
         else:
-            upcoming += 1
+            upcoming_count += 1
+            if d <= horizon:
+                upcoming.append(_slim(t, today))
 
     # Most urgent first: higher priority, then longer overdue.
     overdue.sort(key=lambda x: (_priority_rank(x["priority"]), -x["days_over"]))
     due_today.sort(key=lambda x: _priority_rank(x["priority"]))
-    return {"available": True, "overdue": overdue, "due_today": due_today,
-            "backlog_count": backlog, "upcoming_count": upcoming}
+    upcoming.sort(key=lambda x: (x["date"], _priority_rank(x["priority"])))
+    return {"available": True, "overdue": overdue, "due_today": due_today, "upcoming": upcoming,
+            "backlog_count": backlog, "upcoming_count": upcoming_count}
