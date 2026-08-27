@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26",
+  "updated_at": "2026-08-27",
   "items": [
     {
       "key": "bd5c9c376843",
@@ -39,23 +39,6 @@
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "f4ca119cd361",
-      "title": "Road to Devcon - NITK Surathkal",
-      "url": "https://road-to-devcon-nitk-surathkal.devfolio.co",
-      "source": "devfolio",
-      "score": 8,
-      "deadline": "2026-08-17",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "Road to Devcon hackathon involves AI and blockchain",
-      "action_plan": [
-        "Form a team and choose a theme (2 hours)",
-        "Develop a project idea and plan (4 hours)",
-        "Participate in the hackathon (24 hours)"
-      ]
     },
     {
       "key": "77bca2d90e3a",
@@ -1136,38 +1119,108 @@
       "action_plan": []
     },
     {
-      "key": "bc000b57087b",
-      "title": "YouCam API Skin AI & Apparel VTO Hackathon",
-      "url": "https://youcam-api.devpost.com/",
-      "source": "devpost",
-      "score": 7,
-      "deadline": "2026-08-17",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "ML/AI hackathon with Skin AI",
-      "action_plan": [
-        "Research Skin AI (2 hours)",
-        "Brainstorm project ideas (1 day)",
-        "Start building (2 days)"
-      ]
-    },
-    {
-      "key": "77134757c482",
-      "title": "Dmg Media — AI Engineer Intern - Innovation Team",
-      "url": "https://www.dmgmedia.co.uk/careers/jobs/id/8130352?gh_jid=8130352",
-      "source": "internships",
-      "score": 7,
+      "key": "030f4cd6d649",
+      "title": "Data Analyst Internship",
+      "url": "https://unstop.com/internships/data-analyst-internship-unstop-tech-fair-20-learntricks-edutech-1743489",
+      "source": "unstop",
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "AI engineer role in London aligns with his AI focus and international exposure.",
-      "action_plan": [
-        "Read Dmg Media internship page (1h)",
-        "Create a portfolio piece on generative AI (3h)",
-        "Submit tailored application (30m)"
-      ]
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "cd4dfa60ca82",
+      "title": "AI/ML Internship",
+      "url": "https://unstop.com/internships/aiml-internship-kukbit-sl-1741846",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "bb21b087182a",
+      "title": "VLSI Design Internship",
+      "url": "https://unstop.com/internships/vlsi-design-internship-kukbit-sl-1737771",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f4fba7f87ea9",
+      "title": "Sales Executive Internship",
+      "url": "https://unstop.com/internships/sales-executive-internship-zeepty-technologies-private-limited-1744841",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "19f6891fdb40",
+      "title": "Video Editing Internship",
+      "url": "https://unstop.com/internships/video-editing-internship-socialaddress-1744853",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "df36314b9098",
+      "title": "Video Editing Internship",
+      "url": "https://unstop.com/internships/video-editing-internship-karostartup-technology-india-pvt-ltd-1744852",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "db15da36746d",
+      "title": "Creative Content Designer Internship",
+      "url": "https://unstop.com/internships/creative-content-designer-the-crumb-1745003",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "83484a795d2d",
+      "title": "IBSAT Scholarship",
+      "url": "https://unstop.com/scholarships/ibsat-scholarship-icfai-business-school-ibs-1744551",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "scholarship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "a45a5966b472",
@@ -1185,6 +1238,23 @@
         "Clone the repo (2 min)",
         "Read the first checkpoint guide (30 min)",
         "Implement a small improvement and submit PR"
+      ]
+    },
+    {
+      "key": "bc000b57087b",
+      "title": "YouCam API Skin AI & Apparel VTO Hackathon",
+      "url": "https://youcam-api.devpost.com/",
+      "source": "devpost",
+      "score": 7,
+      "deadline": "2026-08-17",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "ML/AI hackathon with Skin AI",
+      "action_plan": [
+        "Research Skin AI (2 hours)",
+        "Brainstorm project ideas (1 day)",
+        "Start building (2 days)"
       ]
     },
     {
@@ -1255,93 +1325,6 @@
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "1002a77671b6",
-      "title": "The Minute - LV8 Tech Video Editor Hackathon",
-      "url": "https://unstop.com/hackathons/the-minute-lv8-tech-video-editor-hackathon-lv8-tech-1743164",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "53877cde82a1",
-      "title": "INIT'26 - Hackathon",
-      "url": "https://unstop.com/hackathons/init26-hackathon-mukesh-patel-college-of-engineering-and-management-mpstme-1743123",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "6737f37fd577",
-      "title": "Agentic AI Hackathon",
-      "url": "https://unstop.com/hackathons/agentic-ai-hackathon-sarcathon-2026-iit-bombay-1743750",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "89a1cfbb06cf",
-      "title": "Anakin Forge Hackathon",
-      "url": "https://unstop.com/hackathons/anakin-forge-hackathon-anakin-skywalker-pvt-ltd-1742485",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ad15961909e2",
-      "title": "Data Science Internship",
-      "url": "https://unstop.com/internships/data-science-intern-zenotalent-1736972",
-      "source": "unstop",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Data Science Internship aligns with AI/ML interests",
-      "action_plan": [
-        "Research company and role (1 hour)",
-        "Update resume and portfolio (2 hours)",
-        "Apply for internship (1 hour)"
-      ]
-    },
-    {
-      "key": "0d2935315d2f",
-      "title": "Weekly Contest 516 (leetcode.com)",
-      "url": "https://leetcode.com/contest/weekly-contest-516",
-      "source": "clist",
-      "score": 6,
-      "deadline": "2026-08-23",
-      "tags": [
-        "contest",
-        "competitive programming"
-      ],
-      "ai_summary": "improves coding skills",
-      "action_plan": [
-        "review contest format (30m)",
-        "practice coding (2h)",
-        "participate in contest (2h)"
-      ]
     }
   ]
 }

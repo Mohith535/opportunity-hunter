@@ -68881,6 +68881,970 @@
           "key": "8b5b62c9a485"
         }
       ]
+    },
+    {
+      "date": "2026-08-27",
+      "items": [
+        {
+          "title": "MyoMechanix: Biomechanically-Grounded Compositional Skilled Activity Understanding and Coaching",
+          "url": "https://arxiv.org/abs/2608.26094v1",
+          "source": "arxiv",
+          "description": "Existing action quality assessment (AQA) datasets and methods rely primarily on visual inputs such as RGB and pose, overlooking physiological dynamics such as muscle mechanics and often modeling actions as monolithic patterns. These limitations hinder fine-grained, biomechanically grounded feedback. We introduce MyoMechanix, a multimodal ecosystem for weight-loaded actions that aligns motion with muscle activity. Expert-annotated, it contains 7,500+ samples of 20 actions from 38 subjects, with synchronized multiview RGB video, 3D pose, sEMG, and additional physiological signals, forming the largest multimodal AQA benchmark to date. We further construct the Fitness Knowledge Graph (FKG), which organizes expert annotations into structured relationships among actions, phases, key steps, errors, and corrective feedback, enabling compositional scoring and interpretable assessment. Building on these representations, we develop CUBIST (Compositional Ontological Reasoning Engine), which performs decomposition-analysis-recomposition for fine-grained error attribution and feedback generation. We also establish MyoMechanix-AQA, MyoMechanix-VideoQA, and a novel MyoMechanix-Video2EMG task. Experiments show that multimodal sensing and structured representations improve performance, interpretability, and error attribution, with CUBIST achieving state-of-the-art results; VideoQA enhances language-grounded action understanding; and Video2EMG suggests video-based alternatives to costly EMG sensing. MyoMechanix advances skilled activity understanding toward biomechanically grounded, multimodal, and compositional reasoning for Physical AI applications in fitness, rehabilitation, healthcare, and machine learning. Project page: https://haoyin116.github.io/MyoMechanix/",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.26094",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "910f74563eb3"
+        },
+        {
+          "title": "Agentic Autoresearch for Cell-Edge Power Control: Radically Redefining the Researcher's Role",
+          "url": "https://arxiv.org/abs/2608.26093v1",
+          "source": "arxiv",
+          "description": "Designing machine learning algorithms for wireless resource management is labour-intensive: the architecture, the loss function and the training recipe are all specified by hand. We demonstrate that this design layer can be surrendered to an autonomous agent in its entirety. We adopt the autoresearch protocol, in which an AI coding agent edits a training script, runs a fixed-budget experiment, and retains or discards the change according to a single immutable metric. We grant the agent authority over the architecture family, the input representation, the output parameterization, the loss function and the task-sampling law, and set it a target chosen for its difficulty: sum-least-percentile-rate power control across a multicell network. The formulation targets cell-edge throughput and is non-convex, non-smooth and strongly NP-hard away from its max-min vertex. Safeguards render the results trustworthy: a hash-pinned evaluator, an enforced inference contract and a pre-registered falsifier per experiment. In eighty-one unattended experiments over twenty-six hours, the agent reached $99.5\\%$ of a converged minorization-maximization reference in one fixed-cost inference pass, at roughly $600\\times$ lower inference cost, closing $94\\%$ of the gap from its first working architecture, with one parameter set serving every network size and percentile target. It recovered provable structure rather than tuned constants: the output parameterization it discovered reproduces the exact max-min-optimal allocation at the minimum percentile, for every value of the trained weights.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.26093",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "132c7fa8540d"
+        },
+        {
+          "title": "Planetary Prediction Engine: Autonomous Geospatial Prediction via Intelligent Data Selection and Foundation Model Embeddings",
+          "url": "https://arxiv.org/abs/2608.26088v1",
+          "source": "arxiv",
+          "description": "Addressing critical global challenges, from food security and disaster risk to disease outbreaks and socio-economic vulnerability, demands high-fidelity geospatial modeling. However, building predictive planetary models remains bottlenecked by a fragmented data ecosystem, requiring manual data retrieval, multimodal data curation and fusion along with iterative model selection. We present the Planetary Prediction Engine (PPE), an autonomous AI system that executes this end-to-end workflow directly from natural-language queries. PPE synthesizes multimodal datasets on the fly, retrieving spatiotemporally relevant covariates across open-web and Earth observation platforms (Data Commons, Google Earth Engine) and fusing them with geospatial foundation model embeddings (PDFM, AlphaEarth). Simultaneously, it searches over task-tailored model architecture families with automated overfitting guards. Across diverse tasks, geographies, and scientific domains, PPE consistently outperforms state-of-the-art or manually tuned expert baselines. For US spatial regression, PPE improves mean $R^2$ across 21 CDC health indicators (76.8% vs. 60.0%), FEMA national risk indices (64.9% vs. 60.0%), and the Social Vulnerability Index (66.2% vs. 58.6%). For spatial downscaling in data-scarce settings, PPE integrates localized proxies to double baseline accuracy in Nigerian food security indicators ($R^2$ of 66.1% vs. 31.5%). For epidemiological nowcasting of the 2026 DRC Bundibugyo Ebola outbreak, PPE achieves a Recall@10 of 83.3% (identifying 15 of 18 newly invaded health zones across five weekly forecasts), a +10.3 percentage-point improvement over the public state-of-the-art modeling (~73%). By combining autonomous multimodal planetary data discovery with targeted model optimization, PPE lowers the technical barrier to planetary-scale analytics, enabling rapid, customized, expert-level deployment.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.26088",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fccf42d240b8"
+        },
+        {
+          "title": "TraceML: An Empirical Analysis of Human-Agent Planning in Machine Learning Development",
+          "url": "https://arxiv.org/abs/2608.26086v1",
+          "source": "arxiv",
+          "description": "Large language models write correct code for isolated problems but remain far weaker at autonomous machine-learning development, where an agent must revise data pipelines, models, and validation over hours of feedback, and on most competitions still finishes below strong human competitors. Outcome-based benchmarks record this gap but not its cause, because they grade the final submission and discard the development process behind it. We introduce TraceML, which pairs human and agent work on the same competitions under one version-level schema: 4,465 human Kaggle trajectories across 134 competitions, seven of which are also worked by two agent scaffolds, giving 430 paired human and 207 agent trajectories. Every code version carries its score, its timestamp, and labels for the action taken, its intent, the edit size, and the score effect. Read this way, the gap becomes concrete. Experts alternate data work, validation, model changes, and ensembling, and return to approaches they had set aside. Each agent scaffold instead collapses into a narrow loop: Codex spends its steps re-weighting ensembles and tuning submissions, MLEvolve mutates its model in place, and neither pivots at the human rate nor reopens abandoned work. A short planning prompt distilled from human practice moves the behaviors it names toward the human profile and lifts scores, but the effort profile stays agent-shaped: instruction closes only the part of the gap that reduces to instructions. We release the corpus, the schema, the labelers, and the extraction pipeline at https://huggingface.co/datasets/jerryyan/TraceML.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.26086",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a01817715aef"
+        },
+        {
+          "title": "SwarmWorld: Stigmergic technological evolution in societies of language-model agents",
+          "url": "https://arxiv.org/abs/2608.26081v1",
+          "source": "arxiv",
+          "description": "Collective intelligence can emerge when individuals coordinate through a shared environment, allowing local actions to accumulate into durable social organization. Language-model agents offer a new substrate for this process, yet most multi-agent systems rely on direct conversation, predefined roles, or centralized workflows. It remains unclear whether decentralized agents can build functional technologies and outperform independent search. Here, initially homogeneous LLM agents in SwarmWorld self-organize without assigned roles or recipes into evolving technological societies. Agents explore a spatial environment, process resources, test materials, construct persistent artifacts, and write executable controllers evaluated by a deterministic simulator under unseen disturbances after the agents are removed. SwarmWorld splits cognition from consequence: agents propose architectures and controllers within fixed action and material schemas, while the simulated world determines function. Shared societies develop broader, more resilient technological portfolios than a strong best-of-N isolated-search baseline, although isolated search remains competitive for the strongest artifact. Agents differentiate into exploration, construction, maintenance, and coordination behaviors, transitioning as the world matures. Technologies accumulate through collaborative construction, executable inheritance, and persistent agent-artifact networks, with most reuse beginning through physical observation rather than communication. Explicit cultural mechanisms amplify collaboration and organization, but functional benefits depend on outcome and timescale. Physical stigmergy alone supports capable societies, while interaction drives persistent technological ecologies rather than universally superior individual inventions.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.26081",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9dd5317247ff"
+        },
+        {
+          "title": "Nvidia agrees to acquire Hugging Face for $13B",
+          "url": "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49458161",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b80551aedd05"
+        },
+        {
+          "title": "CEO fired developers to make room for AI. Developers create open source AI CEO",
+          "url": "https://github.com/SenteLabsAI/OpenExecutive",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49458418",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6e8aa75bc242"
+        },
+        {
+          "title": "Actinide is first startup to produce high-assay low-enriched uranium (HALEU)",
+          "url": "https://www.actinideinc.com/press/actinide-becomes-first-startup-to-ever-enrich-natural-uranium-to-produce-haleu",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49454419",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "899fe6e8d49c"
+        },
+        {
+          "title": "We recovered 575k crop labels from a decade of manual Photoshop work to automate book digitization - more data, ResNet-50, and higher resolution all failed; ten operator clicks per book beat them [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vz2ojw/we_recovered_575k_crop_labels_from_a_decade_of/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vz2ojw",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "faac90e26d59"
+        },
+        {
+          "title": "A dataset with 52 Text to image model evaluation [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1vz9x9c/a_dataset_with_52_text_to_image_model_evaluation_p/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1vz9x9c",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2a51ee35641c"
+        },
+        {
+          "title": "Placement Prep Weekends - 05 (codechef.com)",
+          "url": "https://www.codechef.com/PLACEPREP05",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-08-28T18:30:26",
+          "deadline": "2026-08-28",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69912849",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d92c2711ab2b"
+        },
+        {
+          "title": "Monday Munch - DSA Challenge 018 (Rated) (codechef.com)",
+          "url": "https://www.codechef.com/DSAMONDAY018",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-08-31T13:30:00",
+          "deadline": "2026-08-31",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69915261",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0814633eb55c"
+        },
+        {
+          "title": "Educational Codeforces Round 194 (Rated for Div. 2) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2260",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-09-08T14:35:00",
+          "deadline": "2026-09-08",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69930176",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4bd9cbff5584"
+        },
+        {
+          "title": "Starters 255 (codechef.com)",
+          "url": "https://www.codechef.com/START255",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-09-09T14:30:00",
+          "deadline": "2026-09-09",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69937674",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "dca4a592191b"
+        },
+        {
+          "title": "Starters 256 (codechef.com)",
+          "url": "https://www.codechef.com/START256",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-09-16T14:30:00",
+          "deadline": "2026-09-16",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69937673",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cc05777bb5ff"
+        },
+        {
+          "title": "Navachar - Code Fest 2026",
+          "url": "https://unstop.com/hackathons/navachar-code-fest-2026-meerut-institute-of-technology-mit-meerut-uttar-pradesh-1635968",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1635968",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c7502f6f9aa3"
+        },
+        {
+          "title": "SemiCon Hackathon - Explore, Innovate & Build with Semiconductors | IIT Bombay",
+          "url": "https://unstop.com/hackathons/semicon-hackathon-explore-innovate-build-with-semiconductors-sarcathon-2026-iit-bombay-1744747",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1744747",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9b74945ef6a7"
+        },
+        {
+          "title": "2nd Washington Hackathon 2026",
+          "url": "https://unstop.com/hackathons/2nd-washington-hackathon-2026-washington-university-of-science-and-technology-1743516",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743516",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f8dbf606f180"
+        },
+        {
+          "title": "Caspian AI Agent",
+          "url": "https://unstop.com/hackathons/caspian-ai-agent-caspian-1744069",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1744069",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "25a39f51c6b3"
+        },
+        {
+          "title": "VJ Hackathon 2026",
+          "url": "https://unstop.com/hackathons/vj-hackathon-2026-vallurupalli-nageswara-rao-vignana-jyothi-institute-of-engineering-technology-telangana-1744669",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1744669",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8c4faec7f7b6"
+        },
+        {
+          "title": "Engineers 2047",
+          "url": "https://unstop.com/hackathons/engineers-2047-vishva-tech-26-samrat-ashok-technological-institute-1744263",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1744263",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "38ae29359971"
+        },
+        {
+          "title": "PROMPTOTHON 2026: AI Edition | 24-Hour Hackathon",
+          "url": "https://unstop.com/hackathons/promptothon-2026-ai-edition-24-hour-hackathon-avn-institute-of-engineering-and-technology-avn-iet-ramdaspally-1744294",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1744294",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "666f55b145b1"
+        },
+        {
+          "title": "Campus Ambassador Intermship",
+          "url": "https://unstop.com/internships/campus-ambassador-intermship-yhills-1743193",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743193",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "05b8e50f9101"
+        },
+        {
+          "title": "Data Analyst Internship",
+          "url": "https://unstop.com/internships/data-analyst-internship-unstop-tech-fair-20-learntricks-edutech-1743489",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1743489",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "030f4cd6d649"
+        },
+        {
+          "title": "AI/ML Internship",
+          "url": "https://unstop.com/internships/aiml-internship-kukbit-sl-1741846",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1741846",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cd4dfa60ca82"
+        },
+        {
+          "title": "VLSI Design Internship",
+          "url": "https://unstop.com/internships/vlsi-design-internship-kukbit-sl-1737771",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1737771",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bb21b087182a"
+        },
+        {
+          "title": "Sales Executive Internship",
+          "url": "https://unstop.com/internships/sales-executive-internship-zeepty-technologies-private-limited-1744841",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1744841",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f4fba7f87ea9"
+        },
+        {
+          "title": "Video Editing Internship",
+          "url": "https://unstop.com/internships/video-editing-internship-socialaddress-1744853",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1744853",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "19f6891fdb40"
+        },
+        {
+          "title": "Video Editing Internship",
+          "url": "https://unstop.com/internships/video-editing-internship-karostartup-technology-india-pvt-ltd-1744852",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1744852",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "df36314b9098"
+        },
+        {
+          "title": "Creative Content Designer Internship",
+          "url": "https://unstop.com/internships/creative-content-designer-the-crumb-1745003",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1745003",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "db15da36746d"
+        },
+        {
+          "title": "IBSAT Scholarship",
+          "url": "https://unstop.com/scholarships/ibsat-scholarship-icfai-business-school-ibs-1744551",
+          "source": "unstop",
+          "description": "scholarship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "scholarship"
+          ],
+          "native_id": "1744551",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "83484a795d2d"
+        },
+        {
+          "title": "L3Harris Technologies — Software Engineer Intern",
+          "url": "https://jobs.l3harris.com/job/Colorado-Springs-Intern-C,-Software-Engineer-CO-80916/1423787000/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Colorado Springs, CO | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8ec2e0cc-9193-4d77-9021-5dd3029b637c",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "52c1878bfffc"
+        },
+        {
+          "title": "L3Harris Technologies — Artificial Intelligence Intern",
+          "url": "https://jobs.l3harris.com/job/Melbourne-Intern-,-Artificial-Intelligence-FL-32919/1423790400/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Rochester, NY, Melbourne, FL | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1f1c1fff-7634-4750-9468-b5b805ceb862",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a2ff956ddcb2"
+        },
+        {
+          "title": "Auto-Owners Insurance — Software Developer Intern - Summer 2027",
+          "url": "https://aoins.wd5.myworkdayjobs.com/AutoOwners/job/Lansing-MI/Software-Developer-Internship_R_2121",
+          "source": "internships",
+          "description": "internship | Auto-Owners Insurance | Lansing, MI | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "89458fa4-671a-4f16-80d0-b17bfb3af74d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "48faca0a4c0a"
+        },
+        {
+          "title": "Conduent — Applied AI Engineer Intern - Government Healthcare Solutions",
+          "url": "https://egua.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/25529",
+          "source": "internships",
+          "description": "internship | Conduent | Remote in USA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4b41cc6a-c7ca-4364-bf7c-41f6ca98409e",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "947f1b0d0cc6"
+        },
+        {
+          "title": "Lightcast — Software Engineer Intern - API Development",
+          "url": "https://jobs.lever.co/economicmodeling/a6d45716-c743-4013-a1d8-310850c115f9/apply",
+          "source": "internships",
+          "description": "internship | Lightcast | Moscow, ID | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0b926dfc-d03c-4a6d-9ed1-fb53005cb7a4",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4551468dff94"
+        },
+        {
+          "title": "American Institutes for Research — Data Science Intern",
+          "url": "https://job-boards.greenhouse.io/americaninstitutesforresearch/jobs/5404816008",
+          "source": "internships",
+          "description": "internship | American Institutes for Research | Arlington County, Arlington, VA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6f50d3bd-2b11-4d7a-aec6-d9ccd2482305",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5ca52582e440"
+        },
+        {
+          "title": "Realm — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/realmalliance/a8a2f78e-1c28-4b52-a77a-c2b2ad9b7a8a/application?embed=true",
+          "source": "internships",
+          "description": "internship | Realm | Remote in USA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3c0eb87e-dc03-4ec2-a2f7-754825edf8ce",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8475d6186567"
+        },
+        {
+          "title": "Mackenzie Investments — Platform Developer Intern - Platform Developer",
+          "url": "https://careersen-mackenzieinvestments.icims.com/jobs/5992/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Mackenzie Investments | Toronto, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "22da6961-acb7-4c21-b55b-05a5a8ee6bde",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "375e89e4c48e"
+        },
+        {
+          "title": "Zipline — Embedded Software Engineer Intern - Spring 2027",
+          "url": "https://www.zipline.com/open-roles?gh_jid=7974890003",
+          "source": "internships",
+          "description": "internship | Zipline | South SF | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b462e075-bb56-4c03-96a0-66b92898fc03",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c5bb47389cd5"
+        },
+        {
+          "title": "L3Harris Technologies — Software Engineer Intern",
+          "url": "https://jobs.l3harris.com/job/Northampton-Intern,-Software-Engineer-MA-01060/1423747400/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Northampton, MA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0113b8ff-9c81-4a2c-9914-397567a8f13f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a29c411fd67c"
+        },
+        {
+          "title": "L3Harris Technologies — Software Engineer Intern",
+          "url": "https://jobs.l3harris.com/job/Northampton-Intern,-Software-Engineer-MA-01060/1423745000/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Northampton, MA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "36060455-fa17-493d-b8ef-d2cd49b8d6fa",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c85289221f7c"
+        },
+        {
+          "title": "L3Harris Technologies — Software Engineer Intern",
+          "url": "https://jobs.l3harris.com/job/Colorado-Springs-Intern-C,-Software-Engineer-CO-80916/1423742600/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Colorado Springs, CO | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "15f5617b-df43-41d3-b529-d1458277c5cd",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8b32b5bcc297"
+        },
+        {
+          "title": "Netflix — Machine Learning Scientist Intern - AI",
+          "url": "https://explore.jobs.netflix.net/careers/job/790317916733",
+          "source": "internships",
+          "description": "internship | Netflix | Los Gatos, CA | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "17482259-9e95-4558-adef-daf45ff85e78",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4a2c8a5a3cbd"
+        },
+        {
+          "title": "Netflix — Machine Learning/AI Infrastructure Engineering Intern - AI Platform",
+          "url": "https://explore.jobs.netflix.net/careers/job/790317917022",
+          "source": "internships",
+          "description": "internship | Netflix | Los Gatos, CA | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5a9ddf5e-7efd-444f-9eb2-f4e5c80da75c",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2015fdc6dce1"
+        },
+        {
+          "title": "Tesla — Software Engineer Intern - Maps & Navigation Validation",
+          "url": "https://www.tesla.com/careers/search/job/281271",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a96f8f9b-926d-483b-ba4f-ab46b0e78ac2",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "09b7148cf8cc"
+        },
+        {
+          "title": "Tesla — Embedded Software Engineer Intern - Firmware Platforms",
+          "url": "https://www.tesla.com/careers/search/job/281102",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cb4c69f2-62ef-46ff-b70a-352ab1e61af2",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "72457285bf0d"
+        },
+        {
+          "title": "Tesla — Fullstack Software Engineer Intern - Fleetnet - Fullstack Software Engineering",
+          "url": "https://www.tesla.com/careers/search/job/281099",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0ebaa63f-d5e3-410a-82b7-0234eb9a8e1a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cf8ec0ebb406"
+        },
+        {
+          "title": "Tesla — Software Engineer Intern - Maps & Navigation - Robotaxi",
+          "url": "https://www.tesla.com/careers/search/job/280960",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6f67b1f9-a488-41fb-81ab-1c90fbd557d4",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "566156117902"
+        },
+        {
+          "title": "Tesla — Android Engineer Intern - Mobile Software",
+          "url": "https://www.tesla.com/careers/search/job/280605",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0b09ad76-6210-4b87-94c9-b662b170d268",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f9f54e7a1096"
+        },
+        {
+          "title": "Tesla — Fullstack C++ Engineer Intern - Vehicle User Interface",
+          "url": "https://www.tesla.com/careers/search/job/280604",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "de753ad7-a941-4751-85c8-ff3d1b697b54",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "41fc55bc5db9"
+        },
+        {
+          "title": "Verisk — AI Intern - Summer Internship Program",
+          "url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/4682",
+          "source": "internships",
+          "description": "internship | Verisk | Jersey City, NJ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "11d79971-ac6a-48a4-aea8-bb00009860a9",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3d3819b255f3"
+        },
+        {
+          "title": "WhiteWater Midstream — Data Science Intern - Summer 2027",
+          "url": "https://job-boards.greenhouse.io/whitewatermidstream/jobs/5217853007",
+          "source": "internships",
+          "description": "internship | WhiteWater Midstream | Austin, TX | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0421e841-beed-4315-83cf-cbc7ffc68617",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "79a779c41108"
+        },
+        {
+          "title": "Sabre Systems — AI Intern",
+          "url": "https://careers.sabresystems.com/jobs/4759?icims=1",
+          "source": "internships",
+          "description": "internship | Sabre Systems | Lexington Park, MD | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d32abe7f-a579-49b8-9d71-10a16fdf5fc6",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e44b7ad7433d"
+        },
+        {
+          "title": "Tesla — AI Hardware Physical Design Engineer Intern - AI Hardware",
+          "url": "https://www.tesla.com/careers/search/job/281233",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA, Austin, TX, Fort Collins, CO | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ffc80c46-0710-4acb-82cc-c1e1d640674c",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "33af41d54eb7"
+        },
+        {
+          "title": "GrayMatter Robotics — AI Research Intern - Foundation Models",
+          "url": "https://jobs.ashbyhq.com/graymatter-robotics/dea0f08d-ebf5-4e55-b9cb-e6302014f429/application?embed=true",
+          "source": "internships",
+          "description": "internship | GrayMatter Robotics | LA, Carson, CA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "27a6ad01-fe1e-43d5-b073-0910ba54f479",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7021df1aa389"
+        }
+      ]
     }
   ]
 }
