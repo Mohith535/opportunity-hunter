@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27",
+  "updated_at": "2026-08-28",
   "items": [
     {
       "key": "bd5c9c376843",
@@ -28,6 +28,37 @@
       "action_plan": []
     },
     {
+      "key": "3dc64ec0221e",
+      "title": "3D Websites Hackathon",
+      "url": "https://3d-websites-hackathon.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-08-31",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4fec7b2bae9b",
+      "title": "MLH Fellowship",
+      "url": "https://fellowship.mlh.io/",
+      "source": "programs",
+      "score": 10,
+      "deadline": "2026-08-31",
+      "tags": [
+        "program",
+        "fellowship",
+        "open source",
+        "remote",
+        "mlh",
+        "in-season"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "148a255e8453",
       "title": "AI Builders Hackathon",
       "url": "https://ai-builders-hackathon-2026.devpost.com/",
@@ -39,23 +70,6 @@
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "77bca2d90e3a",
-      "title": "Photon — Software Engineering Intern - AI",
-      "url": "https://fa-ertb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/job/26738",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "AI software engineering",
-      "action_plan": [
-        "review internship description (1h)",
-        "update resume (2h)",
-        "apply for internship (2h)"
-      ]
     },
     {
       "key": "650f5d73b840",
@@ -1223,22 +1237,56 @@
       "action_plan": []
     },
     {
-      "key": "a45a5966b472",
-      "title": "hahhforest/pi-textbook — ★1,047",
-      "url": "https://github.com/hahhforest/pi-textbook",
-      "source": "github",
-      "score": 7,
+      "key": "2431fad9d797",
+      "title": "Web Designing Internship",
+      "url": "https://unstop.com/internships/web-designing-internship-learntricks-edutech-1745501",
+      "source": "unstop",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "github",
-        "learning"
+        "internship"
       ],
-      "ai_summary": "Contributing to pi‑textbook showcases agent engineering, high portfolio value.",
-      "action_plan": [
-        "Clone the repo (2 min)",
-        "Read the first checkpoint guide (30 min)",
-        "Implement a small improvement and submit PR"
-      ]
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "47ea9344b3cb",
+      "title": "Video Editor Internship",
+      "url": "https://unstop.com/internships/video-editor-internship-fr8-1745518",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4193076c9cda",
+      "title": "Marketing Internship",
+      "url": "https://unstop.com/internships/marketing-internship-groovyintern-1745512",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0becdb73f586",
+      "title": "Software Engineering Internship",
+      "url": "https://unstop.com/internships/software-engineering-internship-codesharks-technologies-private-limited-1745484",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "bc000b57087b",
@@ -1258,65 +1306,9 @@
       ]
     },
     {
-      "key": "7eb6dfe7f007",
-      "title": "AI Innovation Hackathon 2026 – Build Real-World AI Solutions",
-      "url": "https://unstop.com/hackathons/ai-innovation-hackathon-2026-build-real-world-ai-solutions-bharat-academix-1737263",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "builds AI solutions",
-      "action_plan": [
-        "research hackathon rules (1h)",
-        "form a team (2h)",
-        "start building (4h)"
-      ]
-    },
-    {
       "key": "cb610885911e",
       "title": "Hackathon 4.0",
       "url": "https://unstop.com/hackathons/hackathon-40-indian-education-society-management-college-research-mumbai-1739792",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "793ef36a1064",
-      "title": "Code-X-Novas Innovathon 2026 – National Software, AI Hackathon",
-      "url": "https://unstop.com/hackathons/code-x-novas-innovathon-2026-national-software-ai-hackathon-code-x-novas-1737822",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "c96275d9f811",
-      "title": "Full Stack Python with Gen-AI",
-      "url": "https://unstop.com/hackathons/full-stack-python-with-gen-ai-quality-thought-info-systems-1742888",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "e718441dfab1",
-      "title": "Agentic AI Hackathon",
-      "url": "https://unstop.com/hackathons/agentic-ai-hackathon-tech-zephyr-40-indian-institute-of-technology-bhubaneswar-1742838",
       "source": "unstop",
       "score": 7,
       "deadline": null,

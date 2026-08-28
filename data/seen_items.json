@@ -2343,8 +2343,8 @@
     "4fec7b2bae9b": {
       "title": "MLH Fellowship",
       "first_seen": "2026-06-29",
-      "last_seen": "2026-07-31",
-      "times_seen": 6
+      "last_seen": "2026-08-28",
+      "times_seen": 7
     },
     "fd996a68ef23": {
       "title": "Microsoft Learn Student Ambassadors",
@@ -7929,8 +7929,8 @@
     "3dc64ec0221e": {
       "title": "3D Websites Hackathon",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-07-22",
-      "times_seen": 1
+      "last_seen": "2026-08-28",
+      "times_seen": 2
     },
     "0829eb8aa528": {
       "title": "Number of Submissions @ AAAI [D]",
@@ -17272,6 +17272,300 @@
       "title": "GrayMatter Robotics — AI Research Intern - Foundation Models",
       "first_seen": "2026-08-27",
       "last_seen": "2026-08-27",
+      "times_seen": 1
+    },
+    "cd87a00d4720": {
+      "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "f853610c1158": {
+      "title": "SWE-Prime: Fewer Trajectories, Better Performance",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "5bae4087450b": {
+      "title": "TTPO: Test-Time Policy Optimization",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "502929b165e7": {
+      "title": "From Static to Dynamic: Benchmarking Real-World Code Review with MCR-Bench",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "0d4e35c9e7fc": {
+      "title": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "7621b5e1350c": {
+      "title": "Mechanistic Reaction Prediction via Discrete Flow Matching on Graph-Structured Electron Occupation",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "04b59fb52add": {
+      "title": "Persona-Execution Separation: An Architecture Pattern for Evolving LLM Agents under Execution Audit",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "fe122db5b3d9": {
+      "title": "I Used AWS Cognito for a Startup. I Wouldn't Do It Again",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "efce869ed235": {
+      "title": "Pentagon's blacklisting of Anthropic was unlawful, US judge rules",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "193c2da11657": {
+      "title": "Luanti removed from Google Play due to baseless AI copyright notice",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "b9f6254dde37": {
+      "title": "NeurIPS 2026 Acceptance Calculator [P]",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "532578e537c4": {
+      "title": "Best ML papers to pick up writing skills [D]",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "6ce0ece856a6": {
+      "title": "Where to submit stat/prob ML [D]",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "c10a13a1cd53": {
+      "title": "py-evoFE: Automated Evolutionary Feature Engineering for Tabular ML in Python (Genetic Algorithms + Scikit-Learn + Polars) [P]",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "d21a60867f16": {
+      "title": "Google CS PhD Fellowship 2026 [R]",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "43c22f987c33": {
+      "title": "Can AI Improve Itself? RSI Might Be the Answer [R]",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "9965c07891b8": {
+      "title": "ForgeX AI 2026",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "9a0b48152517": {
+      "title": "Lun4R CTF 2026",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "883e9091ce67": {
+      "title": "PromptCraft 1.0 – 24-Hour National-Level Hackathon",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "038e6f145608": {
+      "title": "GopwnIt CTF",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "5482c9d19fe6": {
+      "title": "GAME-ATHON",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "06c826a3cc97": {
+      "title": "Void Hacks() 8.0",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "b7ee8243d0bb": {
+      "title": "MARKATHON 2.0 – India's Biggest Marketing Innovation Challenge",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "2431fad9d797": {
+      "title": "Web Designing Internship",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "47ea9344b3cb": {
+      "title": "Video Editor Internship",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "4193076c9cda": {
+      "title": "Marketing Internship",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "0becdb73f586": {
+      "title": "Software Engineering Internship",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "e4089969b833": {
+      "title": "Fab2 — Software Engineering Intern - Winter",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "6334c6acc714": {
+      "title": "Tesla — Backend Engineer Intern - Infrastructure Engineering",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "1c8792f012ac": {
+      "title": "Blockhouse — Applied AI Engineer Intern",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "451543790881": {
+      "title": "Fab2 — Embedded Software Engineer Intern - Winter",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "c416b416f6ae": {
+      "title": "Fab2 — Automation Software Engineer Intern - Winter",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "8a5cbe91fa72": {
+      "title": "Fab2 — Rust Software Engineer Intern - Chip Design Tools - Winter",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "216c8cda4042": {
+      "title": "Analog Devices — AI/ML Engineer Intern",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "c0735e43397b": {
+      "title": "Deloitte — AI Innovation Summer Scholar Intern - AI Innovation",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "a3512ff8b07c": {
+      "title": "Bland AI — Machine Learning Research Intern - Audio",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "6ca2e6afdf1d": {
+      "title": "TELUS Digital — Software Engineer Intern - US - Summer 2027",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "1ae99be778a5": {
+      "title": "RJ Lee Group — Artificial Intelligence Software Modernization Intern",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "1e456a26555d": {
+      "title": "Tesla — Software Engineer Intern - Vehicle Software - Summer 2027",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "1ba11a8718fd": {
+      "title": "Tesla — Software Engineer Intern - Information Security - Spring 2027",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "9c18865d1c49": {
+      "title": "Tesla — Automated Diagnostics Intern - Software Engineer",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "4215aa5d73c5": {
+      "title": "Amazon — Software Development Engineer Intern - Annapurna Labs",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "f0e0c86e16a0": {
+      "title": "CesiumAstro — Software Engineering Intern - Advanced Projects Group",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "21c0f2406bd0": {
+      "title": "CesiumAstro — Embedded Software Engineer Intern",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "5e09805465a8": {
+      "title": "Grant Thornton — AI, Data & Technology Intern - Summer 2027",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "e575c09f84d6": {
+      "title": "Deloitte — Software Engineering Summer Scholar Intern",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "7b3b7bb8f545": {
+      "title": "Phoenix Contact — Data Science & Analytics Intern",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "0dee9164bad2": {
+      "title": "AMI — Computer Vision Scientist Intern - Geometry and 3D Vision",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "6213dfb38017": {
+      "title": "RTX — Software Engineer Intern - Summer 2027",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
       "times_seen": 1
     }
   }
