@@ -70728,6 +70728,548 @@
           "key": "6213dfb38017"
         }
       ]
+    },
+    {
+      "date": "2026-08-29",
+      "items": [
+        {
+          "title": "I accidentally turned LLM memory into program analysis",
+          "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49485416",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "df584323d6c8"
+        },
+        {
+          "title": "TikTok TechJam 2026",
+          "url": "https://tiktoktechjam2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Aug 29 - Sep 01, 2026 | prize $ 34,500 | themes: Machine Learning/AI, Cybersecurity, E-commerce/Retail",
+          "deadline": "2026-09-01",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30686",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "24065ae04d78"
+        },
+        {
+          "title": "I implemented a very tiny image generation model (latent flow transformer) on a RP2350 microcontroller - it can generate 128x128 images of faces [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w10tax/i_implemented_a_very_tiny_image_generation_model/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w10tax",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b3e694aafc75"
+        },
+        {
+          "title": "WTF is a World Model? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w16jwj/wtf_is_a_world_model_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w16jwj",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6115282e7991"
+        },
+        {
+          "title": "How important is having an internship to get a good job for ML PhD in USA? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w19tav/how_important_is_having_an_internship_to_get_a/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w19tav",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4f5844a01f03"
+        },
+        {
+          "title": "Weekly Contest 518 (leetcode.com)",
+          "url": "https://leetcode.com/contest/weekly-contest-518",
+          "source": "clist",
+          "description": "competitive programming contest on leetcode.com; starts 2026-09-06T02:30:00",
+          "deadline": "2026-09-06",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69990449",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e415fd69ddb8"
+        },
+        {
+          "title": "Biweekly Contest 191 (leetcode.com)",
+          "url": "https://leetcode.com/contest/biweekly-contest-191",
+          "source": "clist",
+          "description": "competitive programming contest on leetcode.com; starts 2026-09-12T14:30:00",
+          "deadline": "2026-09-12",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69990448",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9e7a314b5105"
+        },
+        {
+          "title": "ET AI Hackathon: Agentic Edition | Presented by Accenture",
+          "url": "https://unstop.com/hackathons/crp-et-ai-hackathon-agentic-edition-presented-by-accenture-economic-times-1744885",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1744885",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6ae5b0537a30"
+        },
+        {
+          "title": "Video Editing Internship",
+          "url": "https://unstop.com/internships/video-editing-internship-szn2-1745632",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1745632",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "223fb6a00a9d"
+        },
+        {
+          "title": "Business Development Executive (BDE)",
+          "url": "https://unstop.com/internships/business-development-executive-bde-internvision-technology-pvt-ltd-1745585",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1745585",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "932bbfc9c936"
+        },
+        {
+          "title": "Video Editing Internship",
+          "url": "https://unstop.com/internships/video-editing-internship-bolt-academy-1745560",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1745560",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4992b61019da"
+        },
+        {
+          "title": "MLH Fellowship",
+          "url": "https://fellowship.mlh.io/",
+          "source": "programs",
+          "description": "[WINDOW OPEN] 12-week remote software-engineering / open-source fellowship with a stipend, run in batches across the year. Project-based, portfolio-building, strong peer network. (Typical window: Multiple batches per year (Spring/Summer/Fall))",
+          "deadline": "2026-08-31",
+          "tags": [
+            "program",
+            "fellowship",
+            "open source",
+            "remote",
+            "mlh",
+            "in-season"
+          ],
+          "native_id": "mlh-fellowship-2026",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4fec7b2bae9b"
+        },
+        {
+          "title": "Northwood Space — Software Engineer Intern - Multiple Teams",
+          "url": "https://jobs.ashbyhq.com/NorthwoodSpace/ce3d4b73-461e-4128-a6f1-f933897e8119/application?embed=true",
+          "source": "internships",
+          "description": "internship | Northwood Space | LA, Torrance, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b887b47d-3ded-45eb-8d5a-268813a2e75d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ce91033fae5f"
+        },
+        {
+          "title": "Northwood Space — Embedded Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/NorthwoodSpace/d0cca9dd-ea90-4c3b-94b4-17761932d11c/application?embed=true",
+          "source": "internships",
+          "description": "internship | Northwood Space | LA, Torrance, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c81468d7-5674-4da5-8022-1abb69535db7",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3a4e87571029"
+        },
+        {
+          "title": "Clerkie — Software Engineer Intern",
+          "url": "http://getfiber.ai/careers?gh_jid=5225258007",
+          "source": "internships",
+          "description": "internship | Clerkie | Remote in USA | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0cac198d-5b59-411b-8ddf-3138668da722",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fd54bedc6a6e"
+        },
+        {
+          "title": "Intuit — Software Engineer Intern - Full Stack",
+          "url": "https://jobs.intuit.com/job/mountain-view/summer-2027-software-engineering-intern-full-stack/27595/99856180864",
+          "source": "internships",
+          "description": "internship | Intuit | Charlotte, NC, NYC, Mountain View, CA, Atlanta, GA, San Diego, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1795d6df-fcca-45dc-836d-41a82dc36894",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "59f4ab856f23"
+        },
+        {
+          "title": "Persona AI — Robotics Software Intern - Manipulation",
+          "url": "https://jobs.ashbyhq.com/persona.ai/1e8d195c-e28e-423d-a06a-9eeb401ed4fc/application?embed=true",
+          "source": "internships",
+          "description": "internship | Persona AI | Houston, TX | Fall 2026, Spring 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "88ee222e-f092-4c2a-ad37-b63eb0445010",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d1fad865e572"
+        },
+        {
+          "title": "Bland AI — Machine Learning Research Intern - Audio",
+          "url": "https://jobs.ashbyhq.com/bland/c8a5c0de-935d-4f76-bc7d-237cbfb2cf55/application?embed=true",
+          "source": "internships",
+          "description": "internship | Bland AI | SF | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "25daa740-61f1-4b2b-b16f-ef6798135d16",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f0c57db416c2"
+        },
+        {
+          "title": "Charles Schwab — Software Engineering Intern - Technology",
+          "url": "https://career-schwab.icims.com/jobs/126228/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Charles Schwab | Austin, TX, Westlake, TX, Ann Arbor, MI, Southlake, TX, Omaha, NE, Phoenix, AZ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "09239b96-d26a-4691-b9ab-9b8b442caa9f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "93b625bab480"
+        },
+        {
+          "title": "Tesla — Optimus Technician Intern - Tesla AI",
+          "url": "https://www.tesla.com/careers/search/job/281634",
+          "source": "internships",
+          "description": "internship | Tesla | Fremont, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4132a5dd-ff75-427d-90b2-c4ea6238574f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c0cfa821c961"
+        },
+        {
+          "title": "CCC Intelligent Solutions — AI Enablement Intern",
+          "url": "https://cccis.wd1.myworkdayjobs.com/broadbean_external/job/Chicago-Green-St-IL/AI-Enablement-Intern_0014872",
+          "source": "internships",
+          "description": "internship | CCC Intelligent Solutions | Chicago, IL | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "dce9cb27-bc9d-45a0-bfcb-5a40930be095",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "59aa5ef84c0b"
+        },
+        {
+          "title": "Motorola — Mission Critical Networks Software Engineer Co-op",
+          "url": "https://motorolasolutions.wd5.myworkdayjobs.com/Careers/job/Schaumburg-IL/Mission-Critical-Networks-Software-Engineer---2027-Co-op_R67782",
+          "source": "internships",
+          "description": "internship | Motorola | Chicago, IL, Schaumburg, IL | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4dc4645e-2c89-45a4-96ba-afcf66131bb7",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2bbd6b494963"
+        },
+        {
+          "title": "Mastercard — Data Scientist Intern - Summer 2027",
+          "url": "https://mastercard.wd1.myworkdayjobs.com/Campus/job/OFallon-Missouri/Data-Scientist-Intern--Summer-2027---St-Louis--MO--US_R-284869",
+          "source": "internships",
+          "description": "internship | Mastercard | O'Fallon, MO | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "466b932d-3cf0-4669-af9f-fa3d799a5a18",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d44228b7e801"
+        },
+        {
+          "title": "Booz Allen — Data Scientist Intern - Summer Games",
+          "url": "https://bah.wd1.myworkdayjobs.com/bah_jobs/job/Rome-NY/University--2027-Summer-Games-Data-Scientist-Intern_R0248143",
+          "source": "internships",
+          "description": "internship | Booz Allen | Rome, NY | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f12db905-e4bc-477c-b339-4c9306913d42",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "dc1dcdb841d2"
+        },
+        {
+          "title": "Booz Allen — Data Scientist Intern - Summer Games",
+          "url": "https://bah.wd1.myworkdayjobs.com/bah_jobs/job/Colorado-Springs-CO/University--2027-Summer-Games-Data-Scientist-Intern_R0248132",
+          "source": "internships",
+          "description": "internship | Booz Allen | Colorado Springs, CO | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9388e6b1-f360-486e-b324-4bde10bf52a9",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "948ad4061ae2"
+        },
+        {
+          "title": "Booz Allen — AI Software Developer Intern",
+          "url": "https://bah.wd1.myworkdayjobs.com/bah_jobs/job/San-Diego-CA/AI-Software-Developer-Intern_R0248115",
+          "source": "internships",
+          "description": "internship | Booz Allen | San Diego, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7cef83de-ff10-493e-abfb-9def6ada06d0",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9a5643cd671b"
+        },
+        {
+          "title": "Booz Allen — Software Developer Intern - University - 2027 Summer Games",
+          "url": "https://bah.wd1.myworkdayjobs.com/bah_jobs/job/Colorado-Springs-CO/University--2027-Summer-Games-Software-Developer-Intern_R0248130",
+          "source": "internships",
+          "description": "internship | Booz Allen | Colorado Springs, CO | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c36ab777-30bb-4843-9f8e-eb51269d6083",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "748e33e4f71e"
+        },
+        {
+          "title": "The Walt Disney Company — Software Engineer Intern",
+          "url": "https://disney.wd5.myworkdayjobs.com/disneycareerdc/job/Orlando-FL-USA/Software-Engineering-Intern--Spring-2027_10158599-1",
+          "source": "internships",
+          "description": "internship | The Walt Disney Company | Orlando, FL | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2988cc76-e6a5-4e83-83b9-4b0ea07da23a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ccea75a1d2e9"
+        },
+        {
+          "title": "Brunswick — Software Engineer Intern",
+          "url": "https://brunswick.wd1.myworkdayjobs.com/en-US/search/job/Menomonee-Falls-WI/Software-Engineer-Intern_JR-051426-1",
+          "source": "internships",
+          "description": "internship | Brunswick | Menomonee Falls, WI | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7fd82049-4a30-48f9-ab6c-519e8c2b11fd",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ee4f27af5114"
+        },
+        {
+          "title": "Booz Allen — Data Scientist Intern - University",
+          "url": "https://bah.wd1.myworkdayjobs.com/bah_jobs/job/Charleston-SC/University---2027-Summer-Games-Data-Scientist-Intern_R0248137",
+          "source": "internships",
+          "description": "internship | Booz Allen | Charleston, SC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "de4cd0c6-05b6-4e77-9479-486a018a8683",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bc6007f8e545"
+        },
+        {
+          "title": "Booz Allen — Software Developer Intern - Summer Games",
+          "url": "https://bah.wd1.myworkdayjobs.com/bah_jobs/job/Rome-NY/University--2027-Summer-Games-Software-Developer-Intern_R0248141",
+          "source": "internships",
+          "description": "internship | Booz Allen | Rome, NY | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c7d3b494-6183-4201-ae92-c7ddbae1ae27",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "58c9dd3e4e41"
+        }
+      ]
     }
   ]
 }

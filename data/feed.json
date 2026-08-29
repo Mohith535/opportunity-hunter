@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28",
+  "updated_at": "2026-08-29",
   "items": [
     {
       "key": "bd5c9c376843",
@@ -70,40 +70,6 @@
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "650f5d73b840",
-      "title": "Decoding the Past: An Uncertainty-Aware Deep Learning Framework for Sex Attribution in Prehistoric Hand Stencils",
-      "url": "https://arxiv.org/abs/2608.14539v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Deep learning research experience",
-      "action_plan": [
-        "Read the research paper",
-        "Implement the framework",
-        "Publish results"
-      ]
-    },
-    {
-      "key": "bc41609c5134",
-      "title": "Handover of In-Context Learning State Across Session Boundaries",
-      "url": "https://arxiv.org/abs/2608.14528v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "Research experience in in-context learning",
-      "action_plan": [
-        "Read the research paper",
-        "Implement the framework",
-        "Publish results"
-      ]
     },
     {
       "key": "8cc4cb02b4bd",
@@ -1289,21 +1255,43 @@
       "action_plan": []
     },
     {
-      "key": "bc000b57087b",
-      "title": "YouCam API Skin AI & Apparel VTO Hackathon",
-      "url": "https://youcam-api.devpost.com/",
+      "key": "24065ae04d78",
+      "title": "TikTok TechJam 2026",
+      "url": "https://tiktoktechjam2026.devpost.com/",
       "source": "devpost",
-      "score": 7,
-      "deadline": "2026-08-17",
+      "score": 8,
+      "deadline": "2026-09-01",
       "tags": [
         "hackathon"
       ],
-      "ai_summary": "ML/AI hackathon with Skin AI",
-      "action_plan": [
-        "Research Skin AI (2 hours)",
-        "Brainstorm project ideas (1 day)",
-        "Start building (2 days)"
-      ]
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "223fb6a00a9d",
+      "title": "Video Editing Internship",
+      "url": "https://unstop.com/internships/video-editing-internship-szn2-1745632",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4992b61019da",
+      "title": "Video Editing Internship",
+      "url": "https://unstop.com/internships/video-editing-internship-bolt-academy-1745560",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "cb610885911e",

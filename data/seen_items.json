@@ -2343,8 +2343,8 @@
     "4fec7b2bae9b": {
       "title": "MLH Fellowship",
       "first_seen": "2026-06-29",
-      "last_seen": "2026-08-28",
-      "times_seen": 7
+      "last_seen": "2026-08-29",
+      "times_seen": 8
     },
     "fd996a68ef23": {
       "title": "Microsoft Learn Student Ambassadors",
@@ -17566,6 +17566,186 @@
       "title": "RTX — Software Engineer Intern - Summer 2027",
       "first_seen": "2026-08-28",
       "last_seen": "2026-08-28",
+      "times_seen": 1
+    },
+    "df584323d6c8": {
+      "title": "I accidentally turned LLM memory into program analysis",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "24065ae04d78": {
+      "title": "TikTok TechJam 2026",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "b3e694aafc75": {
+      "title": "I implemented a very tiny image generation model (latent flow transformer) on a RP2350 microcontroller - it can generate 128x128 images of faces [P]",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "6115282e7991": {
+      "title": "WTF is a World Model? [D]",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "4f5844a01f03": {
+      "title": "How important is having an internship to get a good job for ML PhD in USA? [D]",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "e415fd69ddb8": {
+      "title": "Weekly Contest 518 (leetcode.com)",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "9e7a314b5105": {
+      "title": "Biweekly Contest 191 (leetcode.com)",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "6ae5b0537a30": {
+      "title": "ET AI Hackathon: Agentic Edition | Presented by Accenture",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "223fb6a00a9d": {
+      "title": "Video Editing Internship",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "932bbfc9c936": {
+      "title": "Business Development Executive (BDE)",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "4992b61019da": {
+      "title": "Video Editing Internship",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "ce91033fae5f": {
+      "title": "Northwood Space — Software Engineer Intern - Multiple Teams",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "3a4e87571029": {
+      "title": "Northwood Space — Embedded Software Engineer Intern",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "fd54bedc6a6e": {
+      "title": "Clerkie — Software Engineer Intern",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "59f4ab856f23": {
+      "title": "Intuit — Software Engineer Intern - Full Stack",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "d1fad865e572": {
+      "title": "Persona AI — Robotics Software Intern - Manipulation",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "f0c57db416c2": {
+      "title": "Bland AI — Machine Learning Research Intern - Audio",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "93b625bab480": {
+      "title": "Charles Schwab — Software Engineering Intern - Technology",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "c0cfa821c961": {
+      "title": "Tesla — Optimus Technician Intern - Tesla AI",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "59aa5ef84c0b": {
+      "title": "CCC Intelligent Solutions — AI Enablement Intern",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "2bbd6b494963": {
+      "title": "Motorola — Mission Critical Networks Software Engineer Co-op",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "d44228b7e801": {
+      "title": "Mastercard — Data Scientist Intern - Summer 2027",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "dc1dcdb841d2": {
+      "title": "Booz Allen — Data Scientist Intern - Summer Games",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "948ad4061ae2": {
+      "title": "Booz Allen — Data Scientist Intern - Summer Games",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "9a5643cd671b": {
+      "title": "Booz Allen — AI Software Developer Intern",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "748e33e4f71e": {
+      "title": "Booz Allen — Software Developer Intern - University - 2027 Summer Games",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "ccea75a1d2e9": {
+      "title": "The Walt Disney Company — Software Engineer Intern",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "ee4f27af5114": {
+      "title": "Brunswick — Software Engineer Intern",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "bc6007f8e545": {
+      "title": "Booz Allen — Data Scientist Intern - University",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "times_seen": 1
+    },
+    "58c9dd3e4e41": {
+      "title": "Booz Allen — Software Developer Intern - Summer Games",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
       "times_seen": 1
     }
   }
