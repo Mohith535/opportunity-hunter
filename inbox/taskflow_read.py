@@ -73,6 +73,7 @@ def _priority_rank(p) -> int:
 def _slim(t: dict, today: datetime.date) -> dict:
     d = _task_date(t)
     return {
+        "id": t.get("id"),  # TaskFlow's CLI id — lets the phone act on this task (complete/snooze)
         "title": str(t.get("title", "")).strip(),
         "priority": str(t.get("priority", "") or "").strip(),
         "tags": [str(x) for x in (t.get("tags") or []) if x],

@@ -75,6 +75,16 @@ def main() -> int:
 
 
 def _run_once(args) -> int:
+    # Apply anything tapped on the phone (✓ done / ⏰ snooze) FIRST, so the freshly-read plan reflects
+    # it. This writes to TaskFlow through its own CLI, and only when the worker + secret are configured.
+    try:
+        from .actions import apply_pending
+        r = apply_pending()
+        if r.get("done") or r.get("snoozed") or r.get("failed"):
+            print(f"📲 Phone actions: {r['message']}.")
+    except Exception:  # noqa: BLE001
+        pass
+
     # When adding to Calendar, ask for the Calendar permission in the SAME Gmail login — otherwise the
     # Gmail read creates a Gmail-only token first and the calendar step is left without permission.
     scan_scopes = None

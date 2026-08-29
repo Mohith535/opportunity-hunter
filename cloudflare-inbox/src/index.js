@@ -58,6 +58,32 @@ export default {
       await env.INBOX_KV.put('updated', new Date().toISOString());
       return new Response('ok');
     }
+
+    // Phone → local action bridge. The dashboard POSTs a tap here ({id, act}); it's queued in KV until
+    // your computer drains it and applies it through the TaskFlow CLI on the next sync. The phone can't
+    // reach your machine directly, so this is the free, no-server way to act on a task from your pocket.
+    if (req.method === 'POST' && rest === '/action') {
+      let body = {};
+      try { body = await req.json(); } catch (e) {}
+      const id = String(body.id == null ? '' : body.id).slice(0, 32);
+      const act = body.act === 'snooze' ? 'snooze' : 'done';
+      if (id) {
+        let q;
+        try { q = JSON.parse((await env.INBOX_KV.get('actions')) || '[]'); } catch (e) { q = []; }
+        if (!Array.isArray(q)) q = [];
+        q.push({ id, act, at: new Date().toISOString() });
+        if (q.length > 200) q = q.slice(-200);
+        await env.INBOX_KV.put('actions', JSON.stringify(q));
+      }
+      return new Response('ok');
+    }
+    if (req.method === 'POST' && rest === '/drain') {
+      let q;
+      try { q = JSON.parse((await env.INBOX_KV.get('actions')) || '[]'); } catch (e) { q = []; }
+      await env.INBOX_KV.put('actions', '[]');
+      return new Response(JSON.stringify(Array.isArray(q) ? q : []),
+        { headers: { 'content-type': 'application/json' } });
+    }
     if (rest === '/manifest.webmanifest') {
       return new Response(manifest(base), { headers: { 'content-type': 'application/manifest+json' } });
     }

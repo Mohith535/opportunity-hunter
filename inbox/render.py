@@ -19,6 +19,53 @@ _CAT = {
     "PERSONAL": ("👤", "Personal"), "ACTION": ("✅", "To do"), "INFO": ("ℹ️", "Info"),
 }
 
+# The tap-to-act script (kept OUT of the f-string template so its { } don't need escaping). Each ✓/⏰
+# tap POSTs {id, act} to the worker's /action route (relative to this page's own secret path), hides
+# the row optimistically, and remembers it in localStorage so a reload stays consistent until the page
+# republishes without that task. On a local file (no worker) the POST just fails and the row comes back.
+_ACTION_JS = """<script>
+(function(){
+  var base = location.pathname.replace(/\\/?$/, '/');   // -> /<secret>/
+  var KEY = 'inbox_acted';
+  function load(){ try{ return JSON.parse(localStorage.getItem(KEY)||'{}'); }catch(e){ return {}; } }
+  function save(m){ try{ localStorage.setItem(KEY, JSON.stringify(m)); }catch(e){} }
+  var acted = load(), seen = {};
+  document.querySelectorAll('.act').forEach(function(b){
+    seen[b.dataset.id] = 1;
+    if(acted[b.dataset.id]){ var r = b.closest('.task'); if(r) r.style.display='none'; }
+  });
+  // forget ids the republished page no longer lists (task really gone) so the store can't grow forever
+  var changed = false;
+  Object.keys(acted).forEach(function(k){ if(!seen[k]){ delete acted[k]; changed = true; } });
+  if(changed) save(acted);
+  var toast;
+  function showToast(msg){
+    if(!toast){ toast = document.createElement('div'); toast.className='toast'; document.body.appendChild(toast); }
+    toast.textContent = msg; toast.classList.add('show');
+    clearTimeout(toast._t); toast._t = setTimeout(function(){ toast.classList.remove('show'); }, 2600);
+  }
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('.act'); if(!btn) return;
+    var row = btn.closest('.task'); if(!row || row.classList.contains('acting')) return;
+    var id = btn.dataset.id, act = btn.dataset.act;
+    row.classList.add('acting');
+    fetch(base + 'action', { method:'POST', headers:{'content-type':'application/json'},
+      body: JSON.stringify({ id:id, act:act }) })
+      .then(function(r){ if(!r.ok) throw new Error(r.status); return r; })
+      .then(function(){
+        acted[id] = act; save(acted);
+        row.classList.add('gone');
+        setTimeout(function(){ row.style.display='none'; }, 260);
+        showToast(act === 'done' ? 'Done \\u2713 \\u2014 applies on next sync' : 'Snoozed to tomorrow \\u23f0');
+      })
+      .catch(function(){
+        row.classList.remove('acting');
+        showToast('Couldn\\'t reach your computer \\u2014 try again');
+      });
+  });
+})();
+</script>"""
+
 
 def gcal_link(title: str, deadline: str) -> str:
     """A Google Calendar 'add event' URL for an all-day event on `deadline` (YYYY-MM-DD). '' if bad."""
@@ -71,14 +118,28 @@ def _parse_dl(s: str):
         return None
 
 
-def _plan_row(title: str, stripe: str, when_html: str, badge_html: str = "", href: str = "") -> str:
-    """One line in the day plan. Task or email, same shape. `title` links to Gmail when href is given."""
+def _plan_row(title: str, stripe: str, when_html: str, badge_html: str = "", href: str = "",
+              actions_html: str = "") -> str:
+    """One line in the day plan. Task or email, same shape. `title` links to Gmail when href is given;
+    `actions_html` (for TaskFlow tasks) adds the tap-to-act buttons on the right."""
     title = title[:140]
     t = (f'<a class="t" target="_blank" rel="noopener" href="{_e(href)}">{_e(title)}</a>'
          if href else f'<div class="t">{_e(title)}</div>')
     return f"""
       <div class="task {stripe}"><div class="tbody">{t}
-        <div class="meta">{when_html}{badge_html}</div></div></div>"""
+        <div class="meta">{when_html}{badge_html}</div></div>{actions_html}</div>"""
+
+
+def _task_actions(tid) -> str:
+    """The ✓ done / ⏰ snooze buttons for a TaskFlow task row (acts via the phone→local bridge)."""
+    if tid is None:
+        return ""
+    i = _e(tid)
+    return (f'<div class="rowacts">'
+            f'<button class="act done" data-id="{i}" data-act="done" aria-label="Mark done" '
+            f'title="Mark done">✓</button>'
+            f'<button class="act snooze" data-id="{i}" data-act="snooze" '
+            f'aria-label="Snooze to tomorrow" title="Snooze to tomorrow">⏰</button></div>')
 
 
 def _mail_link(gid: str) -> str:
@@ -149,7 +210,8 @@ def _render_day(day: dict | None, emails: list | None, today, lead: str = "",
     if shown_over:
         rows = [_plan_row(t["title"], _priority_class(t["priority"]),
                           f'<span class="late">{_e(_late_label(t["days_over"]))}</span>',
-                          f'<span class="ptag">{_e(t["priority"])}</span>' if t.get("priority") else "")
+                          f'<span class="ptag">{_e(t["priority"])}</span>' if t.get("priority") else "",
+                          actions_html=_task_actions(t.get("id")))
                 for t in shown_over]
         blocks.append(f'<div class="tier-lbl over">Overdue</div>{"".join(rows)}')
 
@@ -158,7 +220,8 @@ def _render_day(day: dict | None, emails: list | None, today, lead: str = "",
     for t in due_tasks:
         today_rows.append(_plan_row(
             t["title"], _priority_class(t["priority"]), '<span class="today-tag">due today</span>',
-            f'<span class="ptag">{_e(t["priority"])}</span>' if t.get("priority") else ""))
+            f'<span class="ptag">{_e(t["priority"])}</span>' if t.get("priority") else "",
+            actions_html=_task_actions(t.get("id"))))
     for m in mail_today:
         today_rows.append(_plan_row(m["title"], "mail", '<span class="today-tag">due today</span>',
                                     '<span class="src">✉ mail</span>', m["href"]))
@@ -182,7 +245,8 @@ def _render_day(day: dict | None, emails: list | None, today, lead: str = "",
             else:
                 rows.append(_plan_row(
                     obj["title"], _priority_class(obj["priority"]), when,
-                    f'<span class="ptag">{_e(obj["priority"])}</span>' if obj.get("priority") else ""))
+                    f'<span class="ptag">{_e(obj["priority"])}</span>' if obj.get("priority") else "",
+                    actions_html=_task_actions(obj.get("id"))))
         blocks.append(f'<div class="tier-lbl">Coming up</div>{"".join(rows)}')
 
     # ── Opportunities closing (OPHunter's radar: ranked opportunities with a deadline soon) ──
@@ -288,9 +352,26 @@ def render_html(summary: dict) -> str:
   .day-head h2{{font-size:1.08rem;margin:0;letter-spacing:-.01em}}
   .lead{{background:var(--accent-soft);color:var(--accent);font-weight:800;font-size:1rem;
     line-height:1.4;padding:13px 15px;border-radius:14px;margin:0 0 14px;letter-spacing:-.005em}}
-  .task{{display:flex;background:var(--surface);border:1px solid var(--line);
+  .task{{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);
     border-left:4px solid var(--line);border-radius:14px;padding:11px 13px;margin-bottom:8px;
     box-shadow:var(--sh)}}
+  .task .tbody{{flex:1;min-width:0}}
+  .rowacts{{display:flex;gap:6px;flex-shrink:0}}
+  .act{{width:42px;height:42px;border-radius:12px;border:0;font-size:1.05rem;cursor:pointer;padding:0;
+    line-height:1;display:flex;align-items:center;justify-content:center;
+    -webkit-tap-highlight-color:transparent;transition:transform .12s ease}}
+  .act:active{{transform:scale(.88)}}
+  .act:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
+  .act.done{{background:var(--accent-soft);color:var(--accent)}}
+  .act.snooze{{background:var(--gold-soft);color:var(--gold)}}
+  .task.acting{{opacity:.45}}
+  .task.gone{{opacity:0;transform:translateX(10px);transition:opacity .25s ease,transform .25s ease}}
+  @media(prefers-reduced-motion:reduce){{.act,.task.gone{{transition:none}}}}
+  .toast{{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:60;
+    background:var(--ink);color:var(--bg);font-size:.86rem;font-weight:600;padding:10px 16px;
+    border-radius:999px;box-shadow:var(--sh);opacity:0;transition:opacity .2s ease;pointer-events:none;
+    max-width:88vw;text-align:center}}
+  .toast.show{{opacity:.96}}
   .task.crit{{border-left-color:var(--hi)}} .task.strat{{border-left-color:var(--gold)}}
   .task.mail{{border-left-color:var(--accent)}} .task.opp{{border-left-color:var(--gold)}}
   .task .t{{font-weight:700;font-size:.95rem;line-height:1.34;color:var(--ink);
@@ -357,6 +438,7 @@ def render_html(summary: dict) -> str:
   {''.join(cards)}
   {more_html}
   <footer>Reads your mail and your TaskFlow list · only one-time codes & security mail are hidden ·
-  nothing sent, deleted, completed, or changed. 🌱</footer>
+  actions you tap are the only thing sent back, applied through TaskFlow on the next sync. 🌱</footer>
 </div>
+{_ACTION_JS}
 </body></html>"""
