@@ -100,6 +100,13 @@ def _run_once(args) -> int:
     except Exception:  # noqa: BLE001
         summary["day"] = {"available": False}
 
+    # Deadline Radar — fold OPHunter's closing opportunities into the day plan (READ-ONLY on its feed).
+    try:
+        from .opportunities_read import read_opportunity_deadlines
+        summary["opps"] = read_opportunity_deadlines()
+    except Exception:  # noqa: BLE001
+        summary["opps"] = []
+
     # Step 3 — the "do this first today" line at the top of the plan (grounded in the real items;
     # deterministic fallback if the LLM is flaky). Skips the LLM call entirely if nothing is dated.
     try:

@@ -115,11 +115,14 @@ def _email_card(it: dict) -> str:
         </article>"""
 
 
-def _render_day(day: dict | None, emails: list | None, today, lead: str = "") -> str:
-    """The 'Today' plan: your TaskFlow tasks and your email deadlines woven into ONE agenda —
-    Overdue → Today → Coming up (7 days), led by a 'do this first' line. Read-only. '' when nothing."""
+def _render_day(day: dict | None, emails: list | None, today, lead: str = "",
+                opps: list | None = None) -> str:
+    """The 'Today' plan: your TaskFlow tasks, your email deadlines, and OPHunter's closing
+    opportunities woven into ONE agenda — Overdue → Today → Coming up → Opportunities closing, led by a
+    'do this first' line. Read-only. '' when there's nothing to show."""
     day = day or {}
     emails = emails or []
+    opps = opps or []
     overdue = day.get("overdue", [])
     due_tasks = day.get("due_today", [])
     up_tasks = day.get("upcoming", [])
@@ -135,7 +138,7 @@ def _render_day(day: dict | None, emails: list | None, today, lead: str = "") ->
         (mail_today if d == today else mail_soon).append(row)
 
     act_now = len(overdue) + len(due_tasks) + len(mail_today)
-    has_soon = bool(up_tasks or mail_soon)
+    has_soon = bool(up_tasks or mail_soon or opps)
     if act_now == 0 and not has_soon and backlog == 0:
         return ""  # nothing dated and nothing on the list — stay quiet
 
@@ -181,6 +184,18 @@ def _render_day(day: dict | None, emails: list | None, today, lead: str = "") ->
                     obj["title"], _priority_class(obj["priority"]), when,
                     f'<span class="ptag">{_e(obj["priority"])}</span>' if obj.get("priority") else ""))
         blocks.append(f'<div class="tier-lbl">Coming up</div>{"".join(rows)}')
+
+    # ── Opportunities closing (OPHunter's radar: ranked opportunities with a deadline soon) ──
+    if opps:
+        opps = sorted(opps, key=lambda o: str(o.get("date") or "9999"))
+        rows = []
+        for o in opps[:8]:
+            d = _parse_dl(o.get("date"))
+            when = (f'<span class="soon">{_e(_soon_label((d - today).days))}</span>'
+                    if d else "")
+            rows.append(_plan_row(o.get("title", ""), "opp", when,
+                                  '<span class="src opp">🎯 opportunity</span>', o.get("url", "")))
+        blocks.append(f'<div class="tier-lbl opp">Opportunities closing</div>{"".join(rows)}')
 
     extra = []
     if len(overdue) > len(shown_over):
@@ -238,7 +253,8 @@ def render_html(summary: dict) -> str:
         bits = " · ".join(f"{v} {_e(k)}" for k, v in hidden.items())
         hidden_line = f'<div class="hidden">🔒 Hid {hidden_total} code/security email(s): {bits}</div>'
 
-    day_html = _render_day(summary.get("day"), shown, today, summary.get("lead", ""))
+    day_html = _render_day(summary.get("day"), shown, today, summary.get("lead", ""),
+                           summary.get("opps"))
     inbox_head = '<h2 class="sec">Inbox</h2>' if day_html else ""
     other_pill = f'<span class="pill soft">{len(other)} more</span>' if other else ""
 
@@ -276,7 +292,7 @@ def render_html(summary: dict) -> str:
     border-left:4px solid var(--line);border-radius:14px;padding:11px 13px;margin-bottom:8px;
     box-shadow:var(--sh)}}
   .task.crit{{border-left-color:var(--hi)}} .task.strat{{border-left-color:var(--gold)}}
-  .task.mail{{border-left-color:var(--accent)}}
+  .task.mail{{border-left-color:var(--accent)}} .task.opp{{border-left-color:var(--gold)}}
   .task .t{{font-weight:700;font-size:.95rem;line-height:1.34;color:var(--ink);
     text-decoration:none;display:block}}
   a.t:active{{opacity:.7}}
@@ -285,11 +301,13 @@ def render_html(summary: dict) -> str:
   .today-tag{{color:var(--gold);font-weight:800;font-size:.76rem}}
   .soon{{color:var(--accent);font-weight:800;font-size:.76rem}}
   .src{{color:var(--soft);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em}}
+  .src.opp{{color:var(--gold)}}
   .ptag{{color:var(--soft);font-size:.7rem;font-weight:700;text-transform:uppercase;
     letter-spacing:.04em}}
   .tier-lbl{{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;
     color:var(--soft);margin:12px 2px 7px}}
   .tier-lbl.over{{color:var(--hi)}} .tier-lbl.today{{color:var(--gold)}}
+  .tier-lbl.opp{{color:var(--gold)}}
   .day-note{{color:var(--soft);font-size:.85rem;margin:8px 2px 0}}
   .day-note.calm{{margin:2px 2px 8px}}
   .more{{margin:2px 0 4px;border:1px solid var(--line);border-radius:14px;background:var(--surface);
