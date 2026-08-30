@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-08-29",
+  "updated_at": "2026-08-30",
   "items": [
-    {
-      "key": "bd5c9c376843",
-      "title": "CockroachDB × AWS Hackathon - Build with Agentic Memory",
-      "url": "https://cockroachdb-ai.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-08-18",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "e0b90e9b87a5",
       "title": "MUBA Blockchain Hackathon",
@@ -67,123 +54,6 @@
       "deadline": "2026-09-15",
       "tags": [
         "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "8cc4cb02b4bd",
-      "title": "Graphic Designer Internship",
-      "url": "https://unstop.com/internships/graphic-designer-internship-aarthik-ai-1739424",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b67a1caad41d",
-      "title": "Sales Internship",
-      "url": "https://unstop.com/internships/sales-intern-internship-aarthik-ai-1739420",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d4539c9fad34",
-      "title": "Video Editor Internship",
-      "url": "https://unstop.com/internships/video-editor-internship-aarthik-ai-1739426",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "2d875020c4d8",
-      "title": "Influencer Marketing Internship",
-      "url": "https://unstop.com/internships/influencer-marketing-internship-songartcraft-1739459",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1f5b6d7713d7",
-      "title": "Hardware & Firmware Engineering Trainee Internship",
-      "url": "https://unstop.com/internships/hardware-firmware-engineering-trainee-internship-jobtrix-1739448",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "66f697a820b8",
-      "title": "Web Development Internship",
-      "url": "https://unstop.com/internships/web-development-internship-intelleqacademy-1739432",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "004aaf4d0152",
-      "title": "AI Generalist Internship",
-      "url": "https://unstop.com/internships/ai-generalist-internship-rupeevyze-1739377",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "8084928e90e4",
-      "title": "Data Analyst Internship",
-      "url": "https://unstop.com/internships/data-analyst-internship-fortune-analytics-1739413",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b2e8104a9a21",
-      "title": "Google — Research Scientist PhD Intern",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/134795423167455942",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1294,9 +1164,139 @@
       "action_plan": []
     },
     {
+      "key": "55fc6459fb63",
+      "title": "Business Development Internship",
+      "url": "https://unstop.com/internships/business-development-internship-visiontech-pvt-ltd-1746085",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "cb610885911e",
       "title": "Hackathon 4.0",
       "url": "https://unstop.com/hackathons/hackathon-40-indian-education-society-management-college-research-mumbai-1739792",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "793ef36a1064",
+      "title": "Code-X-Novas Innovathon 2026 – National Software, AI Hackathon",
+      "url": "https://unstop.com/hackathons/code-x-novas-innovathon-2026-national-software-ai-hackathon-code-x-novas-1737822",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c96275d9f811",
+      "title": "Full Stack Python with Gen-AI",
+      "url": "https://unstop.com/hackathons/full-stack-python-with-gen-ai-quality-thought-info-systems-1742888",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e718441dfab1",
+      "title": "Agentic AI Hackathon",
+      "url": "https://unstop.com/hackathons/agentic-ai-hackathon-tech-zephyr-40-indian-institute-of-technology-bhubaneswar-1742838",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1002a77671b6",
+      "title": "The Minute - LV8 Tech Video Editor Hackathon",
+      "url": "https://unstop.com/hackathons/the-minute-lv8-tech-video-editor-hackathon-lv8-tech-1743164",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "53877cde82a1",
+      "title": "INIT'26 - Hackathon",
+      "url": "https://unstop.com/hackathons/init26-hackathon-mukesh-patel-college-of-engineering-and-management-mpstme-1743123",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6737f37fd577",
+      "title": "Agentic AI Hackathon",
+      "url": "https://unstop.com/hackathons/agentic-ai-hackathon-sarcathon-2026-iit-bombay-1743750",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "89a1cfbb06cf",
+      "title": "Anakin Forge Hackathon",
+      "url": "https://unstop.com/hackathons/anakin-forge-hackathon-anakin-skywalker-pvt-ltd-1742485",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "9b74945ef6a7",
+      "title": "SemiCon Hackathon - Explore, Innovate & Build with Semiconductors | IIT Bombay",
+      "url": "https://unstop.com/hackathons/semicon-hackathon-explore-innovate-build-with-semiconductors-sarcathon-2026-iit-bombay-1744747",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f8dbf606f180",
+      "title": "2nd Washington Hackathon 2026",
+      "url": "https://unstop.com/hackathons/2nd-washington-hackathon-2026-washington-university-of-science-and-technology-1743516",
       "source": "unstop",
       "score": 7,
       "deadline": null,

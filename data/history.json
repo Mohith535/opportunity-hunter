@@ -71270,6 +71270,452 @@
           "key": "58c9dd3e4e41"
         }
       ]
+    },
+    {
+      "date": "2026-08-30",
+      "items": [
+        {
+          "title": "Is it safe to call print in a Python signal handler?",
+          "url": "https://iafisher.com/2026/08/sigprint",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49450248",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7e8b9a8fa741"
+        },
+        {
+          "title": "EVE Online moves to Python 3",
+          "url": "https://www.eveonline.com/news/view/the-move-to-python-3-begins",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49433328",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4966c17f3151"
+        },
+        {
+          "title": "You can beat SOTA Time Series Anomaly Detection methods with a 100 year old algorithm [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w1wt1s/you_can_beat_sota_time_series_anomaly_detection/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w1wt1s",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0cbfef22d6bc"
+        },
+        {
+          "title": "Do you use a whiteboard when thinking? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w1yv9b/do_you_use_a_whiteboard_when_thinking_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w1yv9b",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3ab2cc9fc11e"
+        },
+        {
+          "title": "*ACL Findings or TMLR? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w23w2l/acl_findings_or_tmlr_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w23w2l",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7d9add558241"
+        },
+        {
+          "title": "Implementing Kimi K3 from scratch in PyTorch [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w2aupi/implementing_kimi_k3_from_scratch_in_pytorch_p/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w2aupi",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6fd5feccbc40"
+        },
+        {
+          "title": "Open-source access-control checker for retrieval-based AI applications [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w1zm5m/opensource_accesscontrol_checker_for/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w1zm5m",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d2cbbb99371f"
+        },
+        {
+          "title": "I analyzed 31,352 hourly LLM benchmark scores: within-day variation was 2.8 points, while between-day variation was 8.4 [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w1jp1j/i_analyzed_31352_hourly_llm_benchmark_scores/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w1jp1j",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e96d79042b0b"
+        },
+        {
+          "title": "PhD Internship in smaller lab [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w1itzf/phd_internship_in_smaller_lab_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w1itzf",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7ce2a6afbad9"
+        },
+        {
+          "title": "Finished ML + DL — what should I do next? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w1tr86/finished_ml_dl_what_should_i_do_next_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w1tr86",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "072459cea4b2"
+        },
+        {
+          "title": "Starters 255 (codechef.com)",
+          "url": "https://www.codechef.com/START257",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-09-23T14:30:00",
+          "deadline": "2026-09-23",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69937672",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5574ff6d6b0e"
+        },
+        {
+          "title": "ALGO ARTIS Programming Contest 2026 September（AtCoder Heuristic Contest 072） (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/ahc072",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-09-25T10:00:00",
+          "deadline": "2026-09-25",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69907790",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b1f5792cda4a"
+        },
+        {
+          "title": "UNICORNProgramming Contest2026(AtCoder Beginner Contest 477) (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/abc477",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-09-26T12:00:00",
+          "deadline": "2026-09-26",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "69964019",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "02197bcbd9e8"
+        },
+        {
+          "title": "NASA Space Apps Challenge 2026",
+          "url": "https://unstop.com/hackathons/nasa-space-apps-challenge-2026-national-institute-of-technology-nit-raipur-1745979",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1745979",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "038ebb9719c3"
+        },
+        {
+          "title": "Forged In Fire 2026",
+          "url": "https://unstop.com/hackathons/forged-in-fire-2026-bhagwan-parshuram-institute-of-technology-bpit-delhi-1746026",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1746026",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "dfb65af959d0"
+        },
+        {
+          "title": "AI Quest: Beyond the Wrapper",
+          "url": "https://unstop.com/hackathons/ai-quest-beyond-the-wrapper-hidevs-1745933",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1745933",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c076200409c6"
+        },
+        {
+          "title": "Quantexa",
+          "url": "https://unstop.com/hackathons/quantexa-hackhere-1745790",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1745790",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8a76da197704"
+        },
+        {
+          "title": "Powernext-AI",
+          "url": "https://unstop.com/hackathons/powernext-ai-manipal-institute-of-technology-bengaluru-1745296",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1745296",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "26f23041cb92"
+        },
+        {
+          "title": "Escape the Server",
+          "url": "https://unstop.com/hackathons/escape-the-server-anviksha-the-epoch-2026-narsee-monjee-institute-of-management-studies-nmims-chandigarh-1745480",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1745480",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ab2d1cd0ca70"
+        },
+        {
+          "title": "Software Engineering Assessment",
+          "url": "https://unstop.com/hackathons/software-engineering-assessment-mkssss-cummins-college-of-engineering-for-women-ccoew-pune-1745852",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1745852",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "99ebf93f8e9b"
+        },
+        {
+          "title": "Student Ambassador",
+          "url": "https://unstop.com/internships/student-ambassador-internz-learn-1746262",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1746262",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "99e3a5620173"
+        },
+        {
+          "title": "Production Engineer Trainee",
+          "url": "https://unstop.com/internships/production-engineer-trainee-agrolt-solutions-pvt-ltd-1746167",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1746167",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "17c2433d5312"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-visiontech-pvt-ltd-1746085",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1746085",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "55fc6459fb63"
+        },
+        {
+          "title": "MLH Fellowship",
+          "url": "https://fellowship.mlh.io/",
+          "source": "programs",
+          "description": "[WINDOW OPEN] 12-week remote software-engineering / open-source fellowship with a stipend, run in batches across the year. Project-based, portfolio-building, strong peer network. (Typical window: Multiple batches per year (Spring/Summer/Fall))",
+          "deadline": "2026-08-31",
+          "tags": [
+            "program",
+            "fellowship",
+            "open source",
+            "remote",
+            "mlh",
+            "in-season"
+          ],
+          "native_id": "mlh-fellowship-2026",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4fec7b2bae9b"
+        },
+        {
+          "title": "Koch Industries — Data Developer Co-op",
+          "url": "https://koch.avature.net/en_US/careers/JobDetail/193377",
+          "source": "internships",
+          "description": "internship | Koch Industries | North Vancouver, BC, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d7653110-4f3d-4eb3-87d9-02a024571973",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "50ac6b07bba6"
+        }
+      ]
     }
   ]
 }
