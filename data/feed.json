@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30",
+  "updated_at": "2026-08-31",
   "items": [
     {
       "key": "e0b90e9b87a5",
@@ -54,110 +54,6 @@
       "deadline": "2026-09-15",
       "tags": [
         "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "60d67be1baef",
-      "title": "UI/UX & Frontend Development Internship",
-      "url": "https://unstop.com/internships/uiux-frontend-development-internship-zyoris-technology-1740016",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "7d50a8c8c13a",
-      "title": "Architecture Design Internship",
-      "url": "https://unstop.com/internships/architecture-design-internship-meltplan-india-1739990",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "cc19cc0f1477",
-      "title": "Content & Growth Internship",
-      "url": "https://unstop.com/internships/content-growth-internship-innovate-io-1740003",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "78acbcb3bf15",
-      "title": "Sales and Marketing Internship",
-      "url": "https://unstop.com/internships/sales-and-marketing-internship-yetimarketing-1739952",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b17aa7b0fe0c",
-      "title": "AI Micro-Internship",
-      "url": "https://unstop.com/internships/ai-micro-internship-greyalpha-technologies-pvt-ltd-1739945",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "8a26bef591e5",
-      "title": "Digital Marketing Internship",
-      "url": "https://unstop.com/internships/digital-marketing-internship-cornixe-edutech-pvt-ltd-1740019",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "3f6d89970a94",
-      "title": "Video Editor Internship",
-      "url": "https://unstop.com/internships/video-editor-internship-bragright-technologies-1739973",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "67980ba34298",
-      "title": "Software Developer Internship",
-      "url": "https://unstop.com/internships/software-developer-internship-aalteon-1740005",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1177,14 +1073,53 @@
       "action_plan": []
     },
     {
-      "key": "cb610885911e",
-      "title": "Hackathon 4.0",
-      "url": "https://unstop.com/hackathons/hackathon-40-indian-education-society-management-college-research-mumbai-1739792",
+      "key": "8572ade4d3c7",
+      "title": "Content Writer Internship",
+      "url": "https://unstop.com/internships/content-writer-internship-marketing-makhni-1746597",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a49f82172b9d",
+      "title": "Web Development Trainer Internship",
+      "url": "https://unstop.com/internships/web-development-trainer-internship-learn-depth-1745599",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4030da64ed40",
+      "title": "Full Stack Developer Internship",
+      "url": "https://unstop.com/internships/full-stack-developer-internship-ruruverse-studio-pvt-ltd-peblo-1746621",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "abd780ccd54b",
+      "title": "Business Development Internship",
+      "url": "https://unstop.com/internships/business-development-internship-unstop-career-league-20-in2peta-1746534",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1302,6 +1237,72 @@
       "deadline": null,
       "tags": [
         "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d21a60867f16",
+      "title": "Google CS PhD Fellowship 2026 [R]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1w0qv95/google_cs_phd_fellowship_2026_r/",
+      "source": "reddit",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6ae5b0537a30",
+      "title": "ET AI Hackathon: Agentic Edition | Presented by Accenture",
+      "url": "https://unstop.com/hackathons/crp-et-ai-hackathon-agentic-edition-presented-by-accenture-economic-times-1744885",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6f7175888ea7",
+      "title": "Aven Coding Hackathon 2.0",
+      "url": "https://unstop.com/hackathons/aven-coding-hackathon-20-kartexa-1745830",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "9df611fa895d",
+      "title": "StudyFetch — AI Research Assistant - Machine Learning & AI",
+      "url": "https://ats.rippling.com/studyfetch/jobs/ae12be8f-32a4-469f-8d71-452c8409a92a",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "fd334ac439b4",
+      "title": "TikTok — Machine Learning MLOps Intern - Global Site Reliability Engineering",
+      "url": "https://lifeattiktok.com/search/7670875283026053381",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []

@@ -71716,6 +71716,839 @@
           "key": "50ac6b07bba6"
         }
       ]
+    },
+    {
+      "date": "2026-08-31",
+      "items": [
+        {
+          "title": "A Formal Limitation on Learning Human Language From Textual Corpora",
+          "url": "https://arxiv.org/abs/2608.28560v1",
+          "source": "arxiv",
+          "description": "Can a listener recover what a speaker means from the form of an utterance alone? We answer this question information-theoretically, and for a listener given by any featurizer of text, including the hidden states of contemporary large language models. Modeling language use as a joint distribution over meanings, contexts, and utterances, we derive upper bounds on the probability that a decoder recovers a speaker's intended meaning from a representation of the utterance. The bounds are governed by the uncertainty that form leaves about meaning, which splits into an irreducible part and a part that only (extralinguistic) context, but never the utterance alone, can resolve. Because these quantities are intrinsic to language, no representation, however much text or supervision produced it, can surpass them; the bounds hold whether the space of meanings is discrete or continuous. Experiments on artificial languages, Mandarin zero-pronoun resolution, and color reference provide empirical evidence in support of the theory.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.28560",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "dd73ba45d068"
+        },
+        {
+          "title": "Advancing Interaction-Sensitive Feature Selection: Novel Relief-Based Algorithms, Expanded Comparisons, and Recommendations for Biomedical Data Mining",
+          "url": "https://arxiv.org/abs/2608.28552v1",
+          "source": "arxiv",
+          "description": "As a precursor to high-dimensional biomedical data modeling, reliable feature selection can reduce computational expense, improve modeling performance, and yield simpler, more interpretable models. However, most filter-based feature selection methods struggle to detect feature interactions, while wrapper or embedded feature selection methods are computationally expensive. Relief-based algorithms (RBAs) are filter methods that are sensitive to feature interactions while mitigating these other limitations. This study (1) refactors, optimizes, and expands the scikit-rebate Python package with existing and newly proposed RBA variants and (2) conducts rigorous RBA benchmark comparisons across diverse genomic simulations. We expand scikit-rebate to include SWRF*, mu-Relief, and 5 novel RBA variants implementing alternative strategies for neighbor selection and feature scoring. All RBAs were evaluated to compare predictive feature ranking and runtime across simulated genomic datasets varying in sample size, number of features, heritability, and underlying association type (e.g. main effects and interactions). All RBAs, except mu-Relief, were proficient in detecting 2-way interactions in noisy data. RBAs utilizing 'far' scoring were best at detecting 2-way interactions - with MultiSWRFDB* top-performing - but were far less sensitive to main effects. SWRF, MultiSWRF, MultiSURF, and MultiSWRFDB yielded top performance across main effect and 2-way interaction datasets with MultiSWRFDB performing best when also considering 3-way interactions. Refactoring of scikit-rebate resulted in 10 to 35-fold reductions in RBA runtimes. The newly introduced RBAs were among the strongest performing, and by robustly retaining both main effects and 2-way epistatic interactions, these algorithms preserve predictive signals for downstream modeling.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.28552",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0fb2f0c60019"
+        },
+        {
+          "title": "mattn/tensai — ★87",
+          "url": "https://github.com/mattn/tensai",
+          "source": "github",
+          "description": "A tiny neural-network framework in pure Go with AVX2 SIMD kernels (GOEXPERIMENT=simd) (topics: autograd, avx2, deep learning, gguf, golang, llm, machine learning, neural networks, onnx, quantization, safetensors, simd, tflite, tokenizer, webgpu)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "mattn/tensai",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "efcfe37dd069"
+        },
+        {
+          "title": "Why open source rocks – a new SM750 (Silicon Motion GPU) HDMI Driver",
+          "url": "https://github.com/KodeMunkie/sm750hdmifb",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49501611",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2be812d5e45e"
+        },
+        {
+          "title": "Claude Code for Research Papers [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w2wqbm/claude_code_for_research_papers_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w2wqbm",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "355d4f7d5258"
+        },
+        {
+          "title": "NeurIPS accepted papers leaked? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w2r1f3/neurips_accepted_papers_leaked_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w2r1f3",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a2e5c6657099"
+        },
+        {
+          "title": "[R] Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w2fl67/r_autonomous_mathematical_discovery_in_an/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w2fl67",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d7a1fabbda4a"
+        },
+        {
+          "title": "Reconstructing 3D bone geometry from 2 X-ray silhouettes using a statistical shape model + differentiable rendering [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w2go6l/reconstructing_3d_bone_geometry_from_2_xray/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w2go6l",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "43b13a8fa964"
+        },
+        {
+          "title": "Is anyone esle going to ECCV and wants to get in a groupchat for socials? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w2xy7z/is_anyone_esle_going_to_eccv_and_wants_to_get_in/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w2xy7z",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e6508ffaabfc"
+        },
+        {
+          "title": "[D] Monthly Who's Hiring and Who wants to be Hired?",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w30ti8/d_monthly_whos_hiring_and_who_wants_to_be_hired/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w30ti8",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "51fbadce5197"
+        },
+        {
+          "title": "Codeutsava X.0",
+          "url": "https://codeutsava-x.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | Raipur, India | themes: No Restrictions",
+          "deadline": "2026-10-03",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "4d5b894df7164d34ae411f4b9c2d996c",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "94d6e2093aaf"
+        },
+        {
+          "title": "Think & Code",
+          "url": "https://unstop.com/hackathons/think-code-mkssss-cummins-college-of-engineering-for-women-ccoew-pune-1746057",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1746057",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fdfb497f55e6"
+        },
+        {
+          "title": "Aven Coding Hackathon 2.0",
+          "url": "https://unstop.com/hackathons/aven-coding-hackathon-20-kartexa-1745830",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1745830",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6f7175888ea7"
+        },
+        {
+          "title": "Prayas - Tech Hackathon",
+          "url": "https://unstop.com/hackathons/prayas-tech-hackathon-prayas-tech-fest-at-plaksha-university-plaksha-univeristy-1742156",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742156",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "da9649eccb69"
+        },
+        {
+          "title": "CodeRumble 4.0",
+          "url": "https://unstop.com/hackathons/coderumble-40-indian-institute-of-information-technology-design-and-manufacturing-iiitdm-jabalpur-1746239",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1746239",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "982d34dfc565"
+        },
+        {
+          "title": "DSA & Java Technical Online Assessment",
+          "url": "https://unstop.com/hackathons/dsa-java-technical-online-assessment-mkssss-cummins-college-of-engineering-for-women-ccoew-pune-1746491",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1746491",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3e06f667eed2"
+        },
+        {
+          "title": "Code Club Round 2 - Technical Online Assessment",
+          "url": "https://unstop.com/hackathons/code-club-round-2-technical-online-assessment-mkssss-cummins-college-of-engineering-for-women-ccoew-pune-1746479",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1746479",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9a15844bca18"
+        },
+        {
+          "title": "DSAverse by Elite Her",
+          "url": "https://unstop.com/hackathons/dsaverse-by-elite-her-elite-coders-1746461",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1746461",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2b6ff3116123"
+        },
+        {
+          "title": "Content Writer Internship",
+          "url": "https://unstop.com/internships/content-writer-internship-marketing-makhni-1746597",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1746597",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8572ade4d3c7"
+        },
+        {
+          "title": "Web Development Trainer Internship",
+          "url": "https://unstop.com/internships/web-development-trainer-internship-learn-depth-1745599",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1745599",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a49f82172b9d"
+        },
+        {
+          "title": "Full Stack Developer Internship",
+          "url": "https://unstop.com/internships/full-stack-developer-internship-ruruverse-studio-pvt-ltd-peblo-1746621",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1746621",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4030da64ed40"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-unstop-career-league-20-in2peta-1746534",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1746534",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "abd780ccd54b"
+        },
+        {
+          "title": "MLH Fellowship",
+          "url": "https://fellowship.mlh.io/",
+          "source": "programs",
+          "description": "[WINDOW OPEN] 12-week remote software-engineering / open-source fellowship with a stipend, run in batches across the year. Project-based, portfolio-building, strong peer network. (Typical window: Multiple batches per year (Spring/Summer/Fall))",
+          "deadline": "2026-08-31",
+          "tags": [
+            "program",
+            "fellowship",
+            "open source",
+            "remote",
+            "mlh",
+            "in-season"
+          ],
+          "native_id": "mlh-fellowship-2026",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4fec7b2bae9b"
+        },
+        {
+          "title": "Qorvo — Software Engineer Intern",
+          "url": "https://careers.qorvo.com/job/Richardson-Software-Engineer-Intern-TX-75080/1421457600/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Qorvo | Richardson, TX | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8decbc9f-51db-465d-82d6-b6dfca4baf0f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cdcaf8d7ddad"
+        },
+        {
+          "title": "Qorvo — Software Engineer Intern",
+          "url": "https://careers.qorvo.com/job/Greensboro-Software-Engineering-Intern-NC-27409/1421981000/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Qorvo | Greensboro, NC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "38c47e15-ffc2-4197-bebd-ca87a329a030",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "01d41c02006a"
+        },
+        {
+          "title": "Qorvo — Software Engineer Intern",
+          "url": "https://careers.qorvo.com/job/Richardson-Software-Engineer-Intern-TX-75080/1421453600/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Qorvo | Richardson, TX | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e50cfb4e-c4b2-47dc-b594-f28655f5499c",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "db5b9c382eab"
+        },
+        {
+          "title": "Qorvo — Software Engineer Intern - Software R&D",
+          "url": "https://careers.qorvo.com/job/Apopka-Software-Engineering-Intern,-SWR-FL-32703/1423577900/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Qorvo | Apopka, FL | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "161824d8-3c87-453c-8d11-76c3a054219a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f54f6151c6a0"
+        },
+        {
+          "title": "Qorvo — Research Scientist Intern",
+          "url": "https://careers.qorvo.com/job/Richardson-Research-Scientist-Intern-TX-75080/1424727000/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Qorvo | Richardson, TX | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "830e84f4-0792-4cbd-8d0f-d3ee22ff1b1e",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cb96813b52fe"
+        },
+        {
+          "title": "Qorvo — Software Engineer Intern - Information Technology Manufacturing Systems",
+          "url": "https://careers.qorvo.com/job/Bend-Software-Engineer-Intern-OR-97703/1421474800/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Qorvo | Bend, OR | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3bae1dbd-ee80-4fc7-b484-b609aef7ca84",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "16a1e0c3c831"
+        },
+        {
+          "title": "Qorvo — Software Engineer Intern",
+          "url": "https://careers.qorvo.com/job/Richardson-Software-Engineering-Intern-TX-75080/1424729800/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Qorvo | Richardson, TX | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e014595b-9375-4e86-8f94-c609938a1557",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "eac4daed82de"
+        },
+        {
+          "title": "Qorvo — Software Engineer Intern - SWR",
+          "url": "https://careers.qorvo.com/job/Greensboro-Software-Engineering-Intern,-SWR-NC-27409/1421982000/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Qorvo | Greensboro, NC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b875eded-292c-4e53-b3ed-4fbb1d957ae5",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d7509177e7e8"
+        },
+        {
+          "title": "Qorvo — Software Engineer Intern",
+          "url": "https://careers.qorvo.com/job/Greensboro-Software-Engineer-Intern-NC-27409/1421952100/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Qorvo | Greensboro, NC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a3f9cf12-ead2-4b32-9846-ee58ffd925f7",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4907a8d4cdaa"
+        },
+        {
+          "title": "Qorvo — Software Characterization Engineer Intern",
+          "url": "https://careers.qorvo.com/job/Greensboro-Software-Characterization-Eng-Intern-NC-27409/1420018600/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Qorvo | Greensboro, NC | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "bdb55724-c75a-4851-9cc0-5630913a4d94",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c4faaf8c8530"
+        },
+        {
+          "title": "Qorvo — Full-Stack Web Developer Intern",
+          "url": "https://careers.qorvo.com/job/Richardson-Full-Stack-Web-Developer-Intern-TX-75080/1424716200/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Qorvo | Richardson, TX | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "056e0096-9f6b-4c3a-844f-cd627807e7f6",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3dc01745bb0f"
+        },
+        {
+          "title": "Qorvo — Software/Firmware Engineering Intern",
+          "url": "https://careers.qorvo.com/job/Richardson-Software-Firmware-Engineering-Intern-TX-75081/1424727700/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Qorvo | Richardson, TX | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0dc73f06-ff58-4c88-a5ba-6e29d70a5dfe",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1b9e5a8c6d7a"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Knowledge Graph",
+          "url": "https://lifeattiktok.com/search/7676652813409552645",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4b81bd00-4b97-4ec4-954b-892368c48de0",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fbfa6589712c"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Knowledge Graph",
+          "url": "https://lifeattiktok.com/search/7676650607912601861",
+          "source": "internships",
+          "description": "internship | TikTok | Seattle, WA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "30c6e50a-a52b-4624-ad9a-bff649958700",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ce8965232dc5"
+        },
+        {
+          "title": "PIMCO — Software Engineering Intern - Technology Analyst",
+          "url": "https://pimco.wd1.myworkdayjobs.com/pimco-careers/job/London-GBR/XMLNAME-2027-Summer-Intern---Technology-Analyst--Software-Engineering--EMEA_R106800",
+          "source": "internships",
+          "description": "internship | PIMCO | London, UK | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5f396023-d3b0-4532-8632-b4b75e97bd2b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "95ad6e3a7ad0"
+        },
+        {
+          "title": "Intelcom | Dragonfly — Full-Stack Developer Intern - Route Optimization",
+          "url": "https://intelcomgroup.wd3.myworkdayjobs.com/Intelcom/job/Canada-Quebec-Montreal/Full-Stack-Developer-Intern---Route-Optimization_JR111570-1",
+          "source": "internships",
+          "description": "internship | Intelcom | Dragonfly | Montreal, QC, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e6281753-0fb1-4550-9c99-50836fadaf45",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7537233b16f3"
+        },
+        {
+          "title": "Intelcom | Dragonfly — Front-end Developer Intern - Mobile Application",
+          "url": "https://intelcomgroup.wd3.myworkdayjobs.com/Intelcom/job/Canada-Quebec-Montreal/Front-end-Developer-Intern---Mobile-Application_JR111571",
+          "source": "internships",
+          "description": "internship | Intelcom | Dragonfly | Montreal, QC, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7457d468-4ac9-4c0d-996a-a9bf28362a0f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7d1f7c8551a8"
+        },
+        {
+          "title": "Intelcom | Dragonfly — AI Data Analyst Intern",
+          "url": "https://intelcomgroup.wd3.myworkdayjobs.com/Intelcom/job/Canada-Quebec-Montreal/AI-Data-Analyst-Intern_JR111568",
+          "source": "internships",
+          "description": "internship | Intelcom | Dragonfly | Montreal, QC, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "26e16885-a4e8-43e1-ac89-7b311f26a461",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d0200be10ad8"
+        },
+        {
+          "title": "Intelcom | Dragonfly — Business Intelligence Developer Intern - BI",
+          "url": "https://intelcomgroup.wd3.myworkdayjobs.com/Intelcom/job/Canada-Quebec-Montreal/Business-Intelligence--BI--Developer-Intern_JR111555",
+          "source": "internships",
+          "description": "internship | Intelcom | Dragonfly | Montreal, QC, Canada | Fall 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "21ee91c4-6638-43e7-8e07-729fe3537d2f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "25c28ae4b7e1"
+        },
+        {
+          "title": "GE Aerospace — Applied AI Engineer Co-op",
+          "url": "https://geaerospace.wd5.myworkdayjobs.com/ge_externalsite/job/Evendale/Applied-AI-Engineer-Co-op---Spring-2027--January-Start-_R5039041-1",
+          "source": "internships",
+          "description": "internship | GE Aerospace | Evendale, OH, Atlanta, GA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "18b29304-73eb-4fb8-9b9a-8089fb12d1a7",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3bd267dcb620"
+        },
+        {
+          "title": "GE Aerospace — Applied AI Intern",
+          "url": "https://geaerospace.wd5.myworkdayjobs.com/ge_externalsite/job/Evendale/Applied-AI-Engineer-Intern---Summer-2027--May-June-Start-_R5039302-1",
+          "source": "internships",
+          "description": "internship | GE Aerospace | Evendale, OH, Atlanta, GA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2a44ecaf-3db5-46c2-97d7-1a3a123f6000",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "83869e4e676c"
+        },
+        {
+          "title": "Stryker — Software Engineering Intern - Software Engineering",
+          "url": "https://stryker.wd1.myworkdayjobs.com/StrykerCareers/job/Fort-Lauderdale-Florida/Summer-2027-Internship---Software-Engineering---Florida_R572629-1",
+          "source": "internships",
+          "description": "internship | Stryker | Fort Lauderdale, FL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8254bef8-0753-4347-9bd2-47e5536eab40",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "75d4980007eb"
+        },
+        {
+          "title": "Stryker — Software Engineering Intern - Multiple Teams",
+          "url": "https://stryker.wd1.myworkdayjobs.com/StrykerCareers/job/Fort-Wayne-Indiana/Summer-2027-Internship---Software-Engineering---Indiana_R572631",
+          "source": "internships",
+          "description": "internship | Stryker | Fort Wayne, IN | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3c6dc4c7-bd24-4215-a600-0d55a3952673",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "da944ffab932"
+        },
+        {
+          "title": "Stryker — Software Engineering Intern - Software Engineering",
+          "url": "https://stryker.wd1.myworkdayjobs.com/StrykerCareers/job/Portage-Michigan/Summer-2027-Internship---Software-Engineering---Michigan_R572632-1",
+          "source": "internships",
+          "description": "internship | Stryker | Portage, MI | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ca835172-bf35-4ed0-b110-8dec8dc954ea",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5dbaebc75c4d"
+        },
+        {
+          "title": "Johnson & Johnson — Quality Data Science Co-op - MD Q&C Digital Solutions",
+          "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Cincinnati-Ohio-United-States-of-America/Quality-Data-Science-Co-op--Spring-2027_R-095792",
+          "source": "internships",
+          "description": "internship | Johnson & Johnson | Cincinnati, OH | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "410fe293-036e-43d5-afdd-1139c15645f6",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2114581cd33e"
+        }
+      ]
     }
   ]
 }
