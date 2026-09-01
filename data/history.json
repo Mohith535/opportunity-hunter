@@ -72549,6 +72549,855 @@
           "key": "2114581cd33e"
         }
       ]
+    },
+    {
+      "date": "2026-09-01",
+      "items": [
+        {
+          "title": "OntoAligner-Ensemble: Voting-Based Fusion across Heterogeneous Ontology Alignment Techniques",
+          "url": "https://arxiv.org/abs/2608.31137v1",
+          "source": "arxiv",
+          "description": "Ontology alignment (OA) has evolved through several methodological paradigms, ranging from lexical and structural aligners to knowledge graph embedding (KGE) models and, more recently, Large Language Model (LLM)-based approaches. Although modern OA frameworks provide unified ecosystems for deploying these heterogeneous aligners, mechanisms for systematically reconciling their complementary and sometimes conflicting predictions remain relatively underexplored. We present OntoAligner-Ensemble, a modular and aligner-agnostic framework that combines candidate correspondences through a configurable two-stage process comprising voting-based fusion strategies followed by post-fusion selection policies. The framework supports any aligner implemented within OntoAligner that produces candidate correspondences, enabling diverse alignment paradigms to be integrated through a unified decision process. To demonstrate its effectiveness, we instantiate the framework using representative lightweight string-aligner, KGE-based, and Retrieval-Augmented Generation aligners powered by both open-weight and API-based LLMs. We evaluate individual aligners and ensemble configurations across eight benchmark tasks from five OAEI tracks spanning biomedical to beyond-equivalence. The results show that ensemble fusion consistently improves the balance between precision and recall and frequently outperforms standalone aligners across diverse domains. Furthermore, our analysis reveals that ensemble composition directly affects the precision-recall trade-off: heterogeneous cross-paradigm ensembles generally improve precision, whereas homogeneous LLM ensembles more often achieve higher overall F1-scores. These findings demonstrate that systematic ensemble learning offers a robust and reproducible strategy for OA while providing practical guidance for selecting ensemble compositions under different alignment scenarios.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.31137",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f2d981593ec0"
+        },
+        {
+          "title": "DIASENTINEL: An Auditable Multi-Agent System for Guideline-Grounded Diabetes Risk Screening",
+          "url": "https://arxiv.org/abs/2608.31128v1",
+          "source": "arxiv",
+          "description": "Large language models (LLMs) offer promising clinical decision support but remain vulnerable to hallucinated facts, unsupported recommendations, and citation errors. We present DIASENTINEL, a fully on-premise multi-agent system for one-year type 2 diabetes mellitus (T2DM) risk screening and guideline-grounded report generation from electronic health records (EHRs). The system integrates calibrated risk prediction, deterministic clinical signal extraction, Reciprocal Rank Fusion over American Diabetes Association (ADA) guidelines, and a hybrid verification layer combining rule-based checks with LLM entailment. The demonstration provides a real-time batch-screening dashboard and an interactive patient report interface with cited recommendations, verification results, and raw EHR comparison. DIASENTINEL demonstrates a practical framework for reliable, auditable, and privacy-preserving LLM-based clinical decision support.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.31128",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cab1d50c323a"
+        },
+        {
+          "title": "On the Complexity of the Compatibility Problem for Succinctly Encoded Conditional Distributions",
+          "url": "https://arxiv.org/abs/2608.31120v1",
+          "source": "arxiv",
+          "description": "The motivation for this paper is the investigation of the trade-offs implicit in probabilistic models used in machine learning. Models are often used to make predictions in the form of conditional probabilities. However, a pair of conditional distributions p(x|y) and p(y|x) may not be compatible with any joint distribution p(x,y). Given two such conditionals, determining if there exists a compatible joint is known as the compatibility problem. For discrete random variables, when the conditionals are encoded as probability tables, the compatibility problem has a known solution, which is computationally tractable. In this paper, we formalise and study a succinct version of the problem, encoding conditional distributions as arithmetic circuits. This is applicable to practical applications of probabilistic modelling in high-dimensional settings, including neural network models. We show that, for succinct circuit representations of conditionals, the compatibility problem is intractable. In the case that all probabilities are non-zero, the problem is co-NP-complete. In the case that probabilities can be zero, we give examples to demonstrate that several notions of compatibility can be distinguished, and we prove that multiple versions of the problem are PSPACE-complete. Furthermore, we show that, assuming the polynomial hierarchy does not collapse, there exist compatible succinct conditionals whose joint cannot be expressed succinctly. Implications of these results for probabilistic modelling and machine learning are discussed.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2608.31120",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d9324ac36326"
+        },
+        {
+          "title": "Nanako0129/sepia — ★1,288",
+          "url": "https://github.com/Nanako0129/sepia",
+          "source": "github",
+          "description": "De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and Antigravity. Narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136). (topics: agent skills, ai writing, antigravity, claude code, codex, developer tools, fiction, grok, humanizer, llm, prompt engineering, writing tools)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "Nanako0129/sepia",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f5fd2324d771"
+        },
+        {
+          "title": "Nebius x NVIDIA Global AI Hackathon",
+          "url": "https://nebiusglobalaihackathon.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Aug 26 - Oct 30, 2026 | prize $ 50,000 | themes: Machine Learning/AI, Beginner Friendly, Robotic Process Automation",
+          "deadline": "2026-10-30",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30790",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f082a8f66298"
+        },
+        {
+          "title": "3D Websites Hackathon",
+          "url": "https://3d-websites-hackathon.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 22 - Sep 02, 2026 | prize $ 55 | themes: Design, Web, Beginner Friendly",
+          "deadline": "2026-09-02",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30501",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3dc64ec0221e"
+        },
+        {
+          "title": "Cold emailing profs about PhD positions? Read this [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w3bwci/cold_emailing_profs_about_phd_positions_read_this/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w3bwci",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cc8a3ea1b294"
+        },
+        {
+          "title": "Sliding-window attention beats linear on long-context reasoning [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w3j1vw/slidingwindow_attention_beats_linear_on/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w3j1vw",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0cfbe40143d9"
+        },
+        {
+          "title": "Good Machine Learning Posters [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w39buv/good_machine_learning_posters_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w39buv",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "120fd1f1aa05"
+        },
+        {
+          "title": "ACML 2026 Journal Track Any update ?[D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w3n4ig/acml_2026_journal_track_any_update_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w3n4ig",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4347ce936de8"
+        },
+        {
+          "title": "How to assess if there is a strong signal in your dirty data [Project]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w3br9c/how_to_assess_if_there_is_a_strong_signal_in_your/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w3br9c",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "74f9bb82c49a"
+        },
+        {
+          "title": "Hack It On'26",
+          "url": "https://unstop.com/hackathons/hackiton26-kpr-institute-of-engineering-and-technology-kpriet-coimbatore-1746214",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1746214",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "213999c2e5c6"
+        },
+        {
+          "title": "Megathon'26 – Fusion For Future",
+          "url": "https://unstop.com/hackathons/megathon26-fusion-for-future-drestein-26-saveetha-engineering-college-sec-chennai-1743412",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743412",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "43d0c7baa4d0"
+        },
+        {
+          "title": "Glimpse Trading Hackathon 2026",
+          "url": "https://unstop.com/hackathons/glimpse-trading-hackathon-2026-glimpse-prediction-markets-hackathon-glimpse-trading-1745661",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1745661",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "394cc141ebe2"
+        },
+        {
+          "title": "Hack-O-Octo 4.0",
+          "url": "https://unstop.com/hackathons/hack-o-octo-40-chandigarh-university-cu-ajitgarh-punjab-1747159",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1747159",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a1e8aec3f5f2"
+        },
+        {
+          "title": "Technical Team Online Assessment",
+          "url": "https://unstop.com/hackathons/technical-team-online-assessment-mkssss-cummins-college-of-engineering-for-women-ccoew-pune-1747088",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1747088",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5fb072798f95"
+        },
+        {
+          "title": "36-Hour Hackathon",
+          "url": "https://unstop.com/hackathons/36-hour-hackathon-vibrant-2k26-gl-bajaj-institute-of-technology-and-management-delhi-ncr-uttar-pradesh-1747138",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1747138",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8771f8621861"
+        },
+        {
+          "title": "NeuraX Hackathon 3.0 – 24-Hour AI Innovation Hackathon 2026",
+          "url": "https://unstop.com/hackathons/neurax-hackathon-30-24-hour-ai-innovation-hackathon-2026-cmr-technical-campus-1746959",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1746959",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0bf0e26ff502"
+        },
+        {
+          "title": "Campus Ambassador Internship",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-yhills-1746994",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1746994",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0f1a68b002d3"
+        },
+        {
+          "title": "Growth & Content Ambassador Internship",
+          "url": "https://unstop.com/internships/growth-content-ambassador-internship-textify-ai-1747201",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1747201",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1fb9630c1d2b"
+        },
+        {
+          "title": "Human Resource Internship",
+          "url": "https://unstop.com/internships/human-resource-internship-skillorbit-private-limited-1747212",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1747212",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1330f0bc793d"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-learn-confident-1747331",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1747331",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "313d8da2dc6c"
+        },
+        {
+          "title": "Cybersecurity Internship",
+          "url": "https://unstop.com/internships/cybersecurity-internship-qveto-1747166",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1747166",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e96009f8317b"
+        },
+        {
+          "title": "Meta AI — University Programs & Internships",
+          "url": "https://www.metacareers.com/students",
+          "source": "programs",
+          "description": "[WINDOW OPEN] Meta's student AI/ML research and engineering internships and university programs (incl. PyTorch ecosystem). Top-tier lab exposure and a major resume signal. (Typical window: Internship cycles ~autumn for next year)",
+          "deadline": "2026-09-30",
+          "tags": [
+            "internship",
+            "research",
+            "meta",
+            "ai",
+            "global",
+            "in-season"
+          ],
+          "native_id": "meta-ai-programs-2026",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8a88c77f91cc"
+        },
+        {
+          "title": "K2 Space — Software Engineer Intern - Summer 2027",
+          "url": "https://job-boards.greenhouse.io/k2spacecorporation/jobs/5411920008",
+          "source": "internships",
+          "description": "internship | K2 Space | LA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c40c41e2-e8b4-43fe-96af-aa16d504b5e4",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1bf13bedafe3"
+        },
+        {
+          "title": "Tesla — Software Engineer Intern - Core AI Compiler & Runtime",
+          "url": "https://www.tesla.com/careers/search/job/281951",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "21d6e4f1-9a13-4078-8012-b3f6e65719ac",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a6f5b3c84234"
+        },
+        {
+          "title": "WhatNot — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/whatnot/928ffdca-b316-40ce-b82b-94b570919bcd/application?embed=true",
+          "source": "internships",
+          "description": "internship | WhatNot | Seattle, WA, SF, LA, NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "59b37959-7280-4f60-aad9-0c9a3265acc7",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "24e9b4adf999"
+        },
+        {
+          "title": "Pluralis Research — Research Scientist Intern",
+          "url": "https://jobs.ashbyhq.com/pluralis-research/c8f78978-a693-4863-bcc0-66af5c3fd0be/application?embed=true",
+          "source": "internships",
+          "description": "internship | Pluralis Research | Remote in USA, Remote in Australia | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c9d7a6a4-c813-465b-a38f-7316e0ba7b4d",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "219bf42a55a5"
+        },
+        {
+          "title": "Wealthsimple — Software Development Intern / Data Science Intern - Multiple Teams",
+          "url": "https://jobs.ashbyhq.com/wealthsimple/de09418a-8a12-46aa-a371-34bafaf5be26/application?embed=true",
+          "source": "internships",
+          "description": "internship | Wealthsimple | Toronto, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "67340ee9-6aab-4f03-995d-9c97cc144f15",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "30fc52345b31"
+        },
+        {
+          "title": "Sierra — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/Sierra/34b31b67-268c-4270-b48f-72e59064c96e/application?embed=true",
+          "source": "internships",
+          "description": "internship | Sierra | SF, NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "aad0cae7-225e-41d2-b416-7d42885da521",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "baaa92b57094"
+        },
+        {
+          "title": "Trane Technologies — AI Intern - AI Product Management - AI Controls Integration",
+          "url": "https://careers.tranetechnologies.com/global/en/job/JR-7608",
+          "source": "internships",
+          "description": "internship | Trane Technologies | Montreal, QC, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "98540e92-9f57-4fcc-9005-6dc6593e8205",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c1ee27828943"
+        },
+        {
+          "title": "Trane Technologies — AI & Analytics Intern",
+          "url": "https://careers.tranetechnologies.com/global/en/job/JR-7591",
+          "source": "internships",
+          "description": "internship | Trane Technologies | Minneapolis, MN, Davidson, NC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a3a30f46-fe3b-48db-8f94-28a5b0a06d39",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8b68e4799e97"
+        },
+        {
+          "title": "American Express — Data Science Intern - Finance",
+          "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26013190",
+          "source": "internships",
+          "description": "internship | American Express | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ac037a9c-f763-4262-beaf-c091d10bf894",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "36b305798403"
+        },
+        {
+          "title": "American Express — Data Science Intern - Finance",
+          "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26013191",
+          "source": "internships",
+          "description": "internship | American Express | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c117ba86-33e1-47f4-8f2d-47273cec8534",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7f24260ecfe3"
+        },
+        {
+          "title": "JP Morgan Chase — Software Engineer Intern - Immersion Program",
+          "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210774813",
+          "source": "internships",
+          "description": "internship | JP Morgan Chase | Glasgow, UK | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7ad48361-649c-4efe-abeb-2c80430792f5",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9ba265c59dca"
+        },
+        {
+          "title": "JP Morgan Chase — Software Engineer Intern",
+          "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210774738",
+          "source": "internships",
+          "description": "internship | JP Morgan Chase | London, UK, Glasgow, UK | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7b78b68a-dea7-4e76-8753-553fdfda1113",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f4ed7d7e2041"
+        },
+        {
+          "title": "JP Morgan Chase — Software Engineer Intern - Summer Internship",
+          "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210774716",
+          "source": "internships",
+          "description": "internship | JP Morgan Chase | London, UK, Glasgow, UK | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "85495d7e-4673-4650-8d26-bbe8301a8736",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1347d57ea691"
+        },
+        {
+          "title": "JP Morgan Chase — Data & AI Intern - Data & AI Program",
+          "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210774745",
+          "source": "internships",
+          "description": "internship | JP Morgan Chase | London, UK, Glasgow, UK | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1698a59d-5825-45cf-9f74-49aad6a83aaf",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0f32b857c97e"
+        },
+        {
+          "title": "Emerson Electric — Software Engineer Intern",
+          "url": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26009673",
+          "source": "internships",
+          "description": "internship | Emerson Electric | Shakopee, MN, Eden Prairie, MN, Chanhassen, MN | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2ea6ef00-ed8b-496c-a8ad-437191623ee4",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a6621c168716"
+        },
+        {
+          "title": "Emerson Electric — Software Engineer Intern",
+          "url": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26009500",
+          "source": "internships",
+          "description": "internship | Emerson Electric | Houston, TX | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a7830137-29dd-4741-9150-826eb53d47a4",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "001cc7d71f76"
+        },
+        {
+          "title": "Emerson Electric — Software Engineer Co-op - January 2027 - May 2027",
+          "url": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26009454",
+          "source": "internships",
+          "description": "internship | Emerson Electric | Shakopee, MN | Spring 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1039c116-f4d4-4ea6-b62b-f893dd21373b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fd43489d09e8"
+        },
+        {
+          "title": "Emerson Electric — Machine Learning Co-op",
+          "url": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26008762",
+          "source": "internships",
+          "description": "internship | Emerson Electric | Marshalltown, IA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1c2f0776-ffba-43df-b229-ca36d616f363",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0dd04b850959"
+        },
+        {
+          "title": "Emerson Electric — Data Science Engineering Intern",
+          "url": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26009488",
+          "source": "internships",
+          "description": "internship | Emerson Electric | Boulder, CO | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "528416aa-09e4-4f9c-a145-9747f978fe5d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "58c16aaa6904"
+        },
+        {
+          "title": "Emerson Electric — Software Engineering Co-op",
+          "url": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26008442",
+          "source": "internships",
+          "description": "internship | Emerson Electric | Marshalltown, IA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d00b3611-6ef4-4084-8f7e-0bcd89e90261",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "05369c8b1e5c"
+        },
+        {
+          "title": "Emerson Electric — Embedded Software Co-op",
+          "url": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26008443",
+          "source": "internships",
+          "description": "internship | Emerson Electric | Marshalltown, IA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "275f2fb7-98f5-49cb-a0fb-fbdc6925a2c6",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4bcf330da881"
+        },
+        {
+          "title": "Emerson Electric — AI Engineering Co-op",
+          "url": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26007510",
+          "source": "internships",
+          "description": "internship | Emerson Electric | Marshalltown, IA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "265926b4-8849-43af-b708-8d987f3dd528",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1971fa66edd9"
+        },
+        {
+          "title": "ISN Software — Software Developer Intern - Fall 2026",
+          "url": "https://isnetworld.com/en/about/careers/jobs?gh_jid=6176204004",
+          "source": "internships",
+          "description": "internship | ISN Software | Dallas, TX | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ea13638b-ec59-42b9-8392-35986da2c5ac",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "85abd90336b5"
+        },
+        {
+          "title": "IXL Learning — Software Engineer Intern",
+          "url": "https://www.ixl.com/company/jobs?gh_jid=8765770002",
+          "source": "internships",
+          "description": "internship | IXL Learning | San Mateo, CA | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cf74dc1d-9700-491b-82ee-092893eab8ad",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9a40bb92d054"
+        },
+        {
+          "title": "Southwest Airlines — Software Engineer Intern - Multiple Teams",
+          "url": "https://swa.wd1.myworkdayjobs.com/external/job/TX-Dallas/Spring-2027-Software-Engineering-Internships_R-2026-71386",
+          "source": "internships",
+          "description": "internship | Southwest Airlines | Dallas, TX | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "12b17910-1400-4c7f-8d78-7adcf8b6ad4a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "970e88ec9e9c"
+        }
+      ]
     }
   ]
 }

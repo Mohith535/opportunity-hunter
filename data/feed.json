@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31",
+  "updated_at": "2026-09-01",
   "items": [
     {
       "key": "e0b90e9b87a5",
@@ -20,7 +20,7 @@
       "url": "https://3d-websites-hackathon.devpost.com/",
       "source": "devpost",
       "score": 10,
-      "deadline": "2026-08-31",
+      "deadline": "2026-09-02",
       "tags": [
         "hackathon"
       ],
@@ -46,6 +46,19 @@
       "action_plan": []
     },
     {
+      "key": "f082a8f66298",
+      "title": "Nebius x NVIDIA Global AI Hackathon",
+      "url": "https://nebiusglobalaihackathon.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-10-30",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "148a255e8453",
       "title": "AI Builders Hackathon",
       "url": "https://ai-builders-hackathon-2026.devpost.com/",
@@ -54,149 +67,6 @@
       "deadline": "2026-09-15",
       "tags": [
         "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "7828cd97cb9b",
-      "title": "Content Writer Internship",
-      "url": "https://unstop.com/internships/content-writer-internship-accesco-living-1740502",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a11cb32420e9",
-      "title": "Campus Ambassador Internship",
-      "url": "https://unstop.com/internships/campus-ambassador-internship-the-helping-society-1740526",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "91e815699be2",
-      "title": "Marketing Sales Internship",
-      "url": "https://unstop.com/internships/marketing-sales-internship-clapingocom-1740508",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f1287e404899",
-      "title": "Technical Lead Qualifier Internship",
-      "url": "https://unstop.com/internships/technical-lead-qualifier-internship-flyyourtech-1740522",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4cc8edc69510",
-      "title": "Telecalling Internship",
-      "url": "https://unstop.com/internships/telecalling-internship-spellzee-1740523",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "54fbe9abadc6",
-      "title": "Campus Marketing Internship",
-      "url": "https://unstop.com/internships/campus-marketing-internship-internsforge-private-limited-1740539",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "bd9f3e1e9324",
-      "title": "Outreach Internship",
-      "url": "https://unstop.com/internships/outreach-internship-prepzo-1737028",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "fab31c91bf45",
-      "title": "Microsoft — AI for Science Resident - Machine Learning",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556871066",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a09d83736095",
-      "title": "Microsoft — AI Software Engineer Intern",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556962891",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "306e75618925",
-      "title": "NVIDIA — Generative AI Ph.D. Research Intern",
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--PhD-Research-Generative-AI_JR2023475",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ffaff76c19b6",
-      "title": "NVIDIA — Systems Software Engineering Intern",
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Systems-Software-Engineering_JR2023492",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1125,14 +995,79 @@
       "action_plan": []
     },
     {
-      "key": "793ef36a1064",
-      "title": "Code-X-Novas Innovathon 2026 – National Software, AI Hackathon",
-      "url": "https://unstop.com/hackathons/code-x-novas-innovathon-2026-national-software-ai-hackathon-code-x-novas-1737822",
+      "key": "0f1a68b002d3",
+      "title": "Campus Ambassador Internship",
+      "url": "https://unstop.com/internships/campus-ambassador-internship-yhills-1746994",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1fb9630c1d2b",
+      "title": "Growth & Content Ambassador Internship",
+      "url": "https://unstop.com/internships/growth-content-ambassador-internship-textify-ai-1747201",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1330f0bc793d",
+      "title": "Human Resource Internship",
+      "url": "https://unstop.com/internships/human-resource-internship-skillorbit-private-limited-1747212",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "313d8da2dc6c",
+      "title": "Business Development Internship",
+      "url": "https://unstop.com/internships/business-development-internship-learn-confident-1747331",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e96009f8317b",
+      "title": "Cybersecurity Internship",
+      "url": "https://unstop.com/internships/cybersecurity-internship-qveto-1747166",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "219bf42a55a5",
+      "title": "Pluralis Research — Research Scientist Intern",
+      "url": "https://jobs.ashbyhq.com/pluralis-research/c8f78978-a693-4863-bcc0-66af5c3fd0be/application?embed=true",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1282,9 +1217,35 @@
       "action_plan": []
     },
     {
-      "key": "9df611fa895d",
-      "title": "StudyFetch — AI Research Assistant - Machine Learning & AI",
-      "url": "https://ats.rippling.com/studyfetch/jobs/ae12be8f-32a4-469f-8d71-452c8409a92a",
+      "key": "394cc141ebe2",
+      "title": "Glimpse Trading Hackathon 2026",
+      "url": "https://unstop.com/hackathons/glimpse-trading-hackathon-2026-glimpse-prediction-markets-hackathon-glimpse-trading-1745661",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b774c1956b5f",
+      "title": "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement",
+      "url": "https://arxiv.org/abs/2608.20318v1",
+      "source": "arxiv",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7e9d9b393628",
+      "title": "Tesla — Internship - Fullstack Engineer - Applications Engineering - Winter/Spring 2027",
+      "url": "https://www.tesla.com/careers/search/job/280820",
       "source": "internships",
       "score": 6,
       "deadline": null,
@@ -1295,9 +1256,49 @@
       "action_plan": []
     },
     {
-      "key": "fd334ac439b4",
-      "title": "TikTok — Machine Learning MLOps Intern - Global Site Reliability Engineering",
-      "url": "https://lifeattiktok.com/search/7670875283026053381",
+      "key": "5a18a07c4cee",
+      "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Supply Chain & Logistics-LLM/Agent - PhD",
+      "url": "https://lifeattiktok.com/search/7675845333947812149",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "5e22b22045da",
+      "title": "TikTok — Machine Learning Engineer Intern",
+      "url": "https://lifeattiktok.com/search/7675847556668295429",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "25feae6c6e5d",
+      "title": "Research internship at MSR [D]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1vuloyq/research_internship_at_msr_d/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a81fdeadf9a8",
+      "title": "SimIS — Artificial Intelligence Developer Intern - Aerospace/Aviation",
+      "url": "https://simisinc.applytojob.com/apply/U1yOSyvkvH/AerospaceAviation-Artificial-Intelligence-Developer-Intern",
       "source": "internships",
       "score": 6,
       "deadline": null,
