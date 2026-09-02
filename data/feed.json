@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01",
+  "updated_at": "2026-09-02",
   "items": [
     {
       "key": "e0b90e9b87a5",
@@ -7,7 +7,7 @@
       "url": "https://muba-hackathon.devfolio.co",
       "source": "devfolio",
       "score": 10,
-      "deadline": "2026-08-26",
+      "deadline": "2026-09-05",
       "tags": [
         "hackathon"
       ],
@@ -59,6 +59,19 @@
       "action_plan": []
     },
     {
+      "key": "3d582e60a034",
+      "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
+      "url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-09-03",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "148a255e8453",
       "title": "AI Builders Hackathon",
       "url": "https://ai-builders-hackathon-2026.devpost.com/",
@@ -67,110 +80,6 @@
       "deadline": "2026-09-15",
       "tags": [
         "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ef46ad1aea89",
-      "title": "AI/ML Internship",
-      "url": "https://unstop.com/internships/aiml-internship-pgagi-consultancy-private-limited-1742212",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "26539fa6190e",
-      "title": "Social Media Internship",
-      "url": "https://unstop.com/internships/social-media-internship-talapatramai-1742233",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1f9a853cb7d1",
-      "title": "Market Research Analyst Internship",
-      "url": "https://unstop.com/internships/market-research-analyst-internship-estatus-official-1742227",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5b7d8541346a",
-      "title": "Human Resources Internship",
-      "url": "https://unstop.com/internships/human-resources-internship-estatus-official-1742220",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "9e4a97bf4add",
-      "title": "HR Recruiter Internship",
-      "url": "https://unstop.com/internships/hr-recruiter-internship-twiite-1742142",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5ae576101068",
-      "title": "Video Content Creator Internship",
-      "url": "https://unstop.com/internships/video-content-creator-internship-flauntbiz-1742157",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d1815181e018",
-      "title": "Full Stack Developer Internship",
-      "url": "https://unstop.com/internships/full-stack-developer-internship-aalteon-1742172",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0694c1d78340",
-      "title": "Social Media Internship",
-      "url": "https://unstop.com/internships/social-media-internship-rigi-1742121",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1073,6 +982,97 @@
       "action_plan": []
     },
     {
+      "key": "179c78209345",
+      "title": "StudentSim: Training LLM-based Student Simulators",
+      "url": "https://arxiv.org/abs/2609.01591v1",
+      "source": "arxiv",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "78d224273a5e",
+      "title": "BOSS $1000 Contributor Hackathon",
+      "url": "https://unstop.com/hackathons/boss-1000-contributor-hackathon-boss-console-1747592",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d2e702530020",
+      "title": "Growth & Marketing Internship",
+      "url": "https://unstop.com/internships/growth-marketing-intern-recruiv-1747873",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "823792e16504",
+      "title": "Campus Ambassador Internship",
+      "url": "https://unstop.com/internships/campus-ambassador-internship-ashna-ai-1747862",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f7029e9ff5f1",
+      "title": "HR Internship",
+      "url": "https://unstop.com/internships/hr-intern-zynvixs-pvt-ltd-1747837",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7cd325e8ee7d",
+      "title": "Microsoft — Data Science Intern",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556982897",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0cf8510ed49c",
+      "title": "Microsoft — Data Scientist Intern",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556982928",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "c96275d9f811",
       "title": "Full Stack Python with Gen-AI",
       "url": "https://unstop.com/hackathons/full-stack-python-with-gen-ai-quality-thought-info-systems-1742888",
@@ -1230,53 +1230,14 @@
       "action_plan": []
     },
     {
-      "key": "b774c1956b5f",
-      "title": "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement",
-      "url": "https://arxiv.org/abs/2608.20318v1",
-      "source": "arxiv",
-      "score": 6,
+      "key": "1c2ff51a9f89",
+      "title": "BuildForge Hackathon",
+      "url": "https://unstop.com/hackathons/buildforge-hackathon-invoqe-1746404",
+      "source": "unstop",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "research"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "7e9d9b393628",
-      "title": "Tesla — Internship - Fullstack Engineer - Applications Engineering - Winter/Spring 2027",
-      "url": "https://www.tesla.com/careers/search/job/280820",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5a18a07c4cee",
-      "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Supply Chain & Logistics-LLM/Agent - PhD",
-      "url": "https://lifeattiktok.com/search/7675845333947812149",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5e22b22045da",
-      "title": "TikTok — Machine Learning Engineer Intern",
-      "url": "https://lifeattiktok.com/search/7675847556668295429",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1299,6 +1260,45 @@
       "key": "a81fdeadf9a8",
       "title": "SimIS — Artificial Intelligence Developer Intern - Aerospace/Aviation",
       "url": "https://simisinc.applytojob.com/apply/U1yOSyvkvH/AerospaceAviation-Artificial-Intelligence-Developer-Intern",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f32dd7f99bda",
+      "title": "AMD — Machine Learning Intern/Co-op - Multiple Teams",
+      "url": "https://careers.amd.com/jobs/91170?icims=1",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3ddde8f15ed1",
+      "title": "AMD — Machine Learning Intern/Co-op - Machine Learning - Artificial Intelligence",
+      "url": "https://careers.amd.com/jobs/90892?icims=1",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "34f30bc24436",
+      "title": "AMD — Machine Learning Intern/Co-op - Artificial Intelligence",
+      "url": "https://careers.amd.com/jobs/91181?icims=1",
       "source": "internships",
       "score": 6,
       "deadline": null,

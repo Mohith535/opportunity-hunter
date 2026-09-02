@@ -73398,6 +73398,889 @@
           "key": "970e88ec9e9c"
         }
       ]
+    },
+    {
+      "date": "2026-09-02",
+      "items": [
+        {
+          "title": "Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation",
+          "url": "https://arxiv.org/abs/2609.01604v1",
+          "source": "arxiv",
+          "description": "LLM-based evaluators of natural language generation (NLG) quality are widely deployed as scoring tools and as automated training signals, yet the internal procedure by which they assign a rating remains poorly understood. We investigate this procedure mechanistically through an eight-attack perturbation taxonomy across the Readability and Adequacy dimensions of NLG quality, a generation pipeline that produces paired clean and corrupt summaries with controlled error intensity and explicit token-level modification maps, and a four-experiment battery of causal tracing, logit-lens vocabulary projection, and attention-head knockout applied to Themis (Llama-3-8B) and Prometheus (Mistral-7B). Both evaluators implement a structured, coherent evaluation pipeline operating in two stages: below layer 15, attention performs local error comparison and routes the result to the final input position; above it, the MLP cascade integrates the signal and writes the rating, with the decision crystallizing in the residual stream at a sharp late layer (L = 26 on Themis, L = 25 on Prometheus). Furthermore, a base-model control at the same scale (Llama-3-8B) reproduces the routing architecture and crystallization but not the stage separation, isolating the two mechanisms that fine-tuning specifically installs, suppression of below-L15 MLP contribution at the last position and a two-layer advance of the crystallization depth, indicating that fine-tuning sculpts an existing substrate rather than building the pipeline from scratch. We release the source code and data at https://github.com/himil-v/judge-mech",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.01604",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "881a5af695a3"
+        },
+        {
+          "title": "StudentSim: Training LLM-based Student Simulators",
+          "url": "https://arxiv.org/abs/2609.01591v1",
+          "source": "arxiv",
+          "description": "AI tutors are most useful when they adapt to each student's strengths, weaknesses, and preferred guidance, but evidence about which guidance works for which student is sparse, slow, and costly to collect from real learners. Student simulators can provide this signal as a proxy, yet existing approaches are limited: state-tracking models fit student behavior but struggle to process explanations or corrections, while LLM role-play follows guidance fluently but does not reliably match the competence of the student being imitated. We present StudentSim, a training framework that turns sparse per-student data into individualized simulators through pooled training followed by per-student specialization. The resulting simulators both mirror a student's own responses and update them under tutor guidance. We also introduce StudentSimEval, a standardized protocol covering 60 students across chess, second-language English writing, and mathematics, using public learner datasets with de-identified records shared for research. StudentSimEval measures behavioral fidelity (F), or how well a simulator matches a student's responses, and guidance responsiveness (R), or how readily it updates under tutor guidance, with all methods fit and evaluated on the same records. Across all three domains, StudentSim outperforms GPT-5.4 on both metrics. In chess, StudentSim reaches F=0.51 and R=0.91, compared with 0.23 and 0.72 for GPT-5.4 and 0.45 and 0.27 for Maia2. As a proof of concept, using StudentSim as a reward model for tutor reinforcement learning produces a chess tutor that expert humans rate as more accurate, better-guided, and more personalized than a no-RL baseline and a tutor trained against a GPT-5.4 simulator reward. Code is available at https://github.com/microsoft/StudentSim.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.01591",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "179c78209345"
+        },
+        {
+          "title": "The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally",
+          "url": "https://arxiv.org/abs/2609.01587v1",
+          "source": "arxiv",
+          "description": "Post-training quantization (PTQ) is widely used to reduce the cost of serving large language models (LLMs), but its accuracy cost is uneven and is often tuned per model. We study where quantization damage occurs and how to allocate a small additional precision budget. Using causal mixed-precision intervention as ground truth (raise each layer to 8-bit in turn and measure the accuracy it recovers) across 9 open-weight models in 4 architecture families, we test 3 intuitive hypotheses: that quantization damage lives in task circuits, where the model computes, or in weight statistics. None of them predicts which layers benefit from restored precision. Recovery is instead diffuse: for 8 of 9 models, recovering 75% of the gap takes roughly half the layers; the lone exception, Qwen3-8B, is sharply concentrated. At a matched precision budget, spending it globally on finer quantization granularity beats locally repairing the most recoverable layers for all 8 group-128-compatible models (all but OpenLLaMA, whose width rules out group-128), by 21-52 points, including the concentrated Qwen3-8B. We report 2 secondary findings: the residual is budget-limited (8-bit is near-lossless in our evaluation across RTN, GPTQ, and AWQ), and the location of peak recovery correlates with architecture within a family, though not across families. Within this budget setting, global granularity is a better default than selectively protecting critical layers. More broadly, cheap signals that correlate with quantization damage do not necessarily identify where restoring precision improves accuracy; this must be tested with causal intervention.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.01587",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4ab183c3e6ab"
+        },
+        {
+          "title": "deeplethe/utopia — ★1,842",
+          "url": "https://github.com/deeplethe/utopia",
+          "source": "github",
+          "description": "World's first open-source enterprise world model. (topics: agent memory, bitemporal, graphrag, knowledge base, knowledge graph, llm, ontology, pgvector, postgresql, rag, rust, self hosted, semantic search, temporal knowledge graph, world model)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "deeplethe/utopia",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "736ab90b75f7"
+        },
+        {
+          "title": "The efficient frontier of LLM inference",
+          "url": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49529898",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4d6d59f6c895"
+        },
+        {
+          "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
+          "url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Santa Clara Convention Center and Online | Aug 17 - Sep 03, 2026 | prize $ 39,500 | themes: IoT, Low/No Code, Machine Learning/AI",
+          "deadline": "2026-09-03",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29242",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3d582e60a034"
+        },
+        {
+          "title": "YOLO26-RGB: repurposing YOLO26's depth-trained backbone for image deraining [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w4fxln/yolo26rgb_repurposing_yolo26s_depthtrained/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w4fxln",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ed331a6af969"
+        },
+        {
+          "title": "Are HMMs still used for unsupervised tasks? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w45lej/are_hmms_still_used_for_unsupervised_tasks_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w45lej",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8d861c7541f5"
+        },
+        {
+          "title": "Latent Reasoning Landscape in 2026: Mapping BDH-CQ, HRM/TRM, Coconut [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w4evwo/latent_reasoning_landscape_in_2026_mapping_bdhcq/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w4evwo",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e48e00b2da3c"
+        },
+        {
+          "title": "I regret reviewing for AAAI [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w4z75i/i_regret_reviewing_for_aaai_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w4z75i",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "03af9df2fde7"
+        },
+        {
+          "title": "First A submission (AAMAS): how much theory is enough when your experiments went sideways? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w4lj1j/first_a_submission_aamas_how_much_theory_is/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w4lj1j",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "03009b666ecf"
+        },
+        {
+          "title": "[D] Self-Promotion Thread",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w4xaes/d_selfpromotion_thread/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w4xaes",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "22336cf8c13f"
+        },
+        {
+          "title": "We released TontaubeV1, a character-level TTS model for long-form generation [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w4afjn/we_released_tontaubev1_a_characterlevel_tts_model/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w4afjn",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "38230fef6bef"
+        },
+        {
+          "title": "[D] Simple Questions Thread",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w4egqq/d_simple_questions_thread/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w4egqq",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "36bf2a1a8a5b"
+        },
+        {
+          "title": "EvoUndo: Recoverability-Constrained Self-Evolution for LLM Agent Harnesses [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w4m0hq/evoundo_recoverabilityconstrained_selfevolution/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w4m0hq",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ae28e291e2b4"
+        },
+        {
+          "title": "MUBA Blockchain Hackathon",
+          "url": "https://muba-hackathon.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | online | themes: Blockchain, FinTech, AI",
+          "deadline": "2026-09-05",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "c9616c07274742db8c57310b5d61adc7",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e0b90e9b87a5"
+        },
+        {
+          "title": "Avalon OpenHack",
+          "url": "https://avalon-openhack.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | online | themes: No Restrictions",
+          "deadline": "2026-09-12",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "b8c49162403f4201a910247ef89b9c8e",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f3a84e2cfe81"
+        },
+        {
+          "title": "Placement Prep Weekends - 06 (codechef.com)",
+          "url": "https://www.codechef.com/PLACEPREP06",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-09-04T18:30:15",
+          "deadline": "2026-09-04",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "70090677",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6b0abfe3f845"
+        },
+        {
+          "title": "BuildForge Hackathon",
+          "url": "https://unstop.com/hackathons/buildforge-hackathon-invoqe-1746404",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1746404",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1c2ff51a9f89"
+        },
+        {
+          "title": "BOSS $1000 Contributor Hackathon",
+          "url": "https://unstop.com/hackathons/boss-1000-contributor-hackathon-boss-console-1747592",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1747592",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "78d224273a5e"
+        },
+        {
+          "title": "HACKDAY 1.0",
+          "url": "https://unstop.com/hackathons/hackday-10-decodep-community-1737351",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1737351",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "057f419689d2"
+        },
+        {
+          "title": "Prysm'26",
+          "url": "https://unstop.com/hackathons/prysm26-eshan-group-of-institutions-uttar-pradesh-1747181",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1747181",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5078a34be5c2"
+        },
+        {
+          "title": "Social Media Marketing",
+          "url": "https://unstop.com/internships/social-media-marketing-internship-wfh-part-time-servyo-1747880",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1747880",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2af51ba1a98c"
+        },
+        {
+          "title": "Growth & Marketing Internship",
+          "url": "https://unstop.com/internships/growth-marketing-intern-recruiv-1747873",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1747873",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d2e702530020"
+        },
+        {
+          "title": "Campus Ambassador Internship",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-ashna-ai-1747862",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1747862",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "823792e16504"
+        },
+        {
+          "title": "HR Internship",
+          "url": "https://unstop.com/internships/hr-intern-zynvixs-pvt-ltd-1747837",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1747837",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f7029e9ff5f1"
+        },
+        {
+          "title": "Boston Scientific — Research Algorithm & Data Science Intern - Interns/Graduates",
+          "url": "https://bostonscientific.eightfold.ai/careers/job/563602813483110",
+          "source": "internships",
+          "description": "internship | Boston Scientific | Arden Hills, MN | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1660f3b8-719e-4c50-ab5b-b793e4f1da1f",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "445f0fadacf8"
+        },
+        {
+          "title": "Boston Scientific — Research Data Science Intern - Active Implantable Systems",
+          "url": "https://bostonscientific.eightfold.ai/careers/job/563602813483103",
+          "source": "internships",
+          "description": "internship | Boston Scientific | Arden Hills, MN | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e70a1d3f-de57-4ecd-8e8b-810c43a7f615",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9ad43cfb90ba"
+        },
+        {
+          "title": "Remarcable — Full Stack Developer Co-op",
+          "url": "https://jobs.ashbyhq.com/remarcable-inc/a4f3aaaa-9469-42e8-a610-450d25eb5da7/application?embed=true",
+          "source": "internships",
+          "description": "internship | Remarcable | Vancouver, BC, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "adbdd3a7-59ab-4743-bdb8-8132c142b07b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2e384409e637"
+        },
+        {
+          "title": "Textron — Software Engineer Intern",
+          "url": "https://textron.taleo.net/careersection/textron/jobdetail.ftl?job=343299",
+          "source": "internships",
+          "description": "internship | Textron | Augusta, GA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1f33dede-1d64-4aeb-8345-18c5ceabdf28",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "36b662dc3888"
+        },
+        {
+          "title": "Microsoft — Data Science Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556982897",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "82439bea-9fea-4025-9a8d-d40ce8cac43b",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7cd325e8ee7d"
+        },
+        {
+          "title": "Tesla — Machine Learning Engineer Intern - Charging Data Modeling",
+          "url": "https://www.tesla.com/careers/search/job/281940",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Winter 2027, Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "84d2832d-f2be-4040-a7c8-6624a43f50fc",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b7129f57f2c3"
+        },
+        {
+          "title": "Tesla — Vehicle Software Engineer Intern - Diagnostic User Interface",
+          "url": "https://www.tesla.com/careers/search/job/281921",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cbbf5921-5565-4f8b-9599-adde9125fde0",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2fc344369d3c"
+        },
+        {
+          "title": "L3Harris Technologies — Application Developer Intern",
+          "url": "https://jobs.l3harris.com/job/Melbourne-Application-Developer-Intern-FL-32919/1425610400/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Melbourne, FL | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "556a9f83-e9ef-4df2-af50-03818c084d87",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d97b9d5dd5de"
+        },
+        {
+          "title": "L3Harris Technologies — Application Developer Intern",
+          "url": "https://jobs.l3harris.com/job/Greenville-Application-Developer-Intern-TX-75402/1425609500/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Greenville, TX | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "941463b7-732f-40bc-8932-531a347a7611",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "127fcb218dbe"
+        },
+        {
+          "title": "L3Harris Technologies — Application Developer Intern",
+          "url": "https://jobs.l3harris.com/job/Rochester-Application-Developer-Intern-NY-14606/1425604500/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Rochester, NY | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "16853d18-2909-41d9-9162-4cc792f0ea17",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8710a5d9a041"
+        },
+        {
+          "title": "L3Harris Technologies — Application Developer Intern",
+          "url": "https://jobs.l3harris.com/job/Canoga-Park-Application-Developer-Intern-CA-91311/1425609200/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Canoga Park, LA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5cdccc6d-3f48-476f-a0e7-576b4158a76b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d4c4bcf4660a"
+        },
+        {
+          "title": "L3Harris Technologies — Application Developer Intern",
+          "url": "https://jobs.l3harris.com/job/Melbourne-Application-Developer-Intern-FL-32919/1425611200/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Melbourne, FL | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5f51df85-f362-425b-811e-958c07266b8e",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "87bc2b6f5f62"
+        },
+        {
+          "title": "Microsoft — Data Scientist Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556982928",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8df7539c-d0c7-4783-8d10-a19510da93da",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0cf8510ed49c"
+        },
+        {
+          "title": "Valon — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/Valon/b5a62c0c-823c-42dd-8cb5-e4b1455bcc64/application?embed=true",
+          "source": "internships",
+          "description": "internship | Valon | SF, NYC | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ca0eac8e-e88d-40b0-a5a1-1f9cdff78ba1",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9c978928a972"
+        },
+        {
+          "title": "Berkshire Grey — Software Co-op",
+          "url": "https://berkshiregrey.bamboohr.com/careers/763/",
+          "source": "internships",
+          "description": "internship | Berkshire Grey | Bedford, MA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "328e0c60-a7b7-4d0e-b8d1-c2ce66574592",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4521e5e4c31d"
+        },
+        {
+          "title": "Corning — Artificial Intelligence and Machine Learning Intern",
+          "url": "https://corningjobs.corning.com/job/Wilmington-Artificial-Intelligence-and-Machine-Learning-Intern-Summer-2027-NC-28405/1425596800/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Corning | Wilmington, NC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1dbe18fc-509e-4b10-b1b9-61c1a3ef5c04",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cdf492f79b8b"
+        },
+        {
+          "title": "TWG Global — Data Science Intern - MAQR",
+          "url": "https://apply.workable.com/twgai/j/AC536E5EE2/apply",
+          "source": "internships",
+          "description": "internship | TWG Global | Santa Monica, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "41911f17-07a7-48d7-851e-c45ea9dc2e89",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "076af6c0c782"
+        },
+        {
+          "title": "TWG Global — AI Engineer Intern - Summer 2027",
+          "url": "https://apply.workable.com/twgai/j/772CD136FF/apply",
+          "source": "internships",
+          "description": "internship | TWG Global | Santa Monica, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1e0ac563-c8ac-4d94-a5c6-f43115f22027",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "23f85e27c7a3"
+        },
+        {
+          "title": "TWG Global — AI Data Science Intern - AI/ML Center of Excellence",
+          "url": "https://apply.workable.com/twgai/j/1206BF981C/apply",
+          "source": "internships",
+          "description": "internship | TWG Global | London, UK, Remote in UK | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9c26a485-d943-4b6b-af9f-3c1abadde094",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5d915ced6682"
+        },
+        {
+          "title": "TWG Global — Data Science Intern - SOLT",
+          "url": "https://apply.workable.com/twgai/j/263B34D737/apply",
+          "source": "internships",
+          "description": "internship | TWG Global | Santa Monica, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "249dfb65-9e20-4363-a0e2-63f60ee6ee41",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2ceafecdbc39"
+        },
+        {
+          "title": "General Dynamics UK — Software Engineering Co-op - 8 Months",
+          "url": "https://jobs.smartrecruiters.com/GDMSI/744000146822449",
+          "source": "internships",
+          "description": "internship | General Dynamics UK | Ottawa, ON, Canada | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "128a31c3-d894-45ac-91aa-5e9c19b785ef",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "273d0415b69e"
+        },
+        {
+          "title": "HP IQ — Software Engineer Intern - Connectivity",
+          "url": "https://job-boards.greenhouse.io/hpiq/jobs/6176783004",
+          "source": "internships",
+          "description": "internship | HP IQ | SF | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3553803a-56d9-4ad7-8751-531339bd2644",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "089b53439a22"
+        },
+        {
+          "title": "Eulerity — Backend Developer Intern",
+          "url": "https://job-boards.greenhouse.io/eulerity/jobs/4709040006",
+          "source": "internships",
+          "description": "internship | Eulerity | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7ae95eff-55e0-4665-83d8-efac629ebe48",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7bfd3e57d6ef"
+        },
+        {
+          "title": "Hermeus — Software Engineer Intern - Hardware in the Loop",
+          "url": "https://jobs.lever.co/hermeus/d87ed913-affc-475e-b721-c5b5f11c3c7b/apply",
+          "source": "internships",
+          "description": "internship | Hermeus | Atlanta, GA | Spring 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f512dec5-b0ee-47f8-81e9-9104b2690937",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9a672e3923ef"
+        },
+        {
+          "title": "Hermeus — Software Engineer Intern - Modeling & Simulation - Multiple Teams",
+          "url": "https://jobs.lever.co/hermeus/445db430-6f81-41cf-847a-56a947afb936/apply",
+          "source": "internships",
+          "description": "internship | Hermeus | LA | Spring 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "768502d1-3bb6-48fe-8605-2c02c23d8e9e",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "efa00855f928"
+        }
+      ]
     }
   ]
 }
