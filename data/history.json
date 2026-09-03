@@ -74281,6 +74281,1069 @@
           "key": "efa00855f928"
         }
       ]
+    },
+    {
+      "date": "2026-09-03",
+      "items": [
+        {
+          "title": "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs",
+          "url": "https://arxiv.org/abs/2609.02876v1",
+          "source": "arxiv",
+          "description": "Ordinary differential equations (ODEs) underlie models in science and engineering, and many applications need derivatives of their solutions with respect to parameters. Ensembles of independent trajectories suit graphics processing units (GPUs), but current GPU software forces a trade-off: the fastest ensemble solvers cannot be differentiated in reverse mode at the speed they solve, and the solvers built for differentiation solve more slowly. No single tool has yet offered a reverse-mode gradient at the speed of a fused-kernel solve. We present GRADSOLVE, an open-source JAX library for solving and reverse-mode differentiating low-dimensional ODE ensembles on NVIDIA GPUs. It records the steps an adaptive solver accepts and differentiates a fixed-step replay of them; the returned gradient is the exact discrete adjoint of those steps, the same derivative Diffrax returns by default, obtained more cheaply from a fixed-length chain than from an adaptive loop. It targets ensembles differentiated many times against one recorded mesh, keeps Diffrax as a fallback, and supports explicit and Rosenbrock integrators. Used as a solver, GRADSOLVE's forward-only kernel ran 2.8x faster than DiffEqGPU.jl; used for gradients, once a record exists, it computed them 5.6-14.1x faster than Diffrax's checkpointed adjoint at matched forward-state accuracy across three GPU generations, the advantage narrowing on large ensembles and, on stiff systems, down to parity at tight accuracy. GRADSOLVE is released at https://github.com/ECLIPSE-AI4Science/gradsolve.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.02876",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9a942a792013"
+        },
+        {
+          "title": "Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework",
+          "url": "https://arxiv.org/abs/2609.02861v1",
+          "source": "arxiv",
+          "description": "Autonomous robots powered by deep learning face a fundamental auditability challenge: when incidents occur, investigators cannot reconstruct why the system made specific decisions. This paper presents TRACE (Transparent Reasoning Architecture for Credible Execution), a decision framework that ensures every autonomous action can be traced back to sensor evidence through documented causal chains. The framework organizes decision-making into four auditable layers: Semantic Perception for evidence-grounded entity recognition, Belief Reasoning for probabilistic state estimation with causal graphs, Action Synthesis for constraint-aware planning with counterfactual documentation, and Execution Verification for compliance monitoring. TRACE is model-agnostic yet designed to integrate learning-based perception modules (CNNs, transformers) while preserving decision-level auditability. We evaluate the framework using three objective metrics: Evidence Traceability (sensor-to-decision linkage), Decision Reconstructability (post-hoc analysis capability), and Temporal Continuity (audit trail completeness). Experimental evaluation on warehouse robot navigation demonstrates that TRACE achieves 98.6% evidence traceability, 99.0% temporal continuity, and 98.1% decision reconstructability across 500 simulated decision cycles. Post-hoc methods like LIME provide feature attributions but lack the artifact structure needed for decision-level reconstruction. The framework addresses EU AI Act requirements for high-risk system transparency and contributes to Explainable AI for safety-critical autonomous systems.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.02861",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "35860cf84f7c"
+        },
+        {
+          "title": "User Feedback Provides a Unique Signal that LLMs Can not Detect",
+          "url": "https://arxiv.org/abs/2609.02859v1",
+          "source": "arxiv",
+          "description": "Harnessing naturally occurring feedback from user interactions offers a promising learning signal for Large Language Models (LLMs). However, recent studies suggest this feedback is inherently noisy and difficult to leverage effectively. We challenge this conception by demonstrating that user feedback is a highly actionable signal for improvement, and that its perceived ineffectiveness stems from a systematic bias in current evaluation paradigms. To isolate the usefulness of feedback, we construct synthetic data with a definitive ground truth, alongside naturalistic data to validate that our findings hold in real-world scenarios. By comparing model revisions generated with and without access to feedback across both settings, we show that feedback-informed revisions resolve targeted issues at significantly higher rates than baseline revisions. Finally, we expose the root of the evaluation bias: when a model successfully fixes an issue exclusively due to feedback, LLM judges frequently fail to identify the genuinely corrected response, systematically preferring inferior baseline outputs instead.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.02859",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b71889fb452f"
+        },
+        {
+          "title": "The Implications of Linguistic Illegibility for LLM Security",
+          "url": "https://arxiv.org/abs/2609.02852v1",
+          "source": "arxiv",
+          "description": "LLMs are trained to generate natural language. However, various strands of evidence indicate that an LLM's externalized linguistic outputs and mechanistically-extracted linguistic features can be an unreliable lens for understanding internal model computation. We introduce the term ``linguistic illegibility'' to broadly refer to scenarios in which an LLM's externalized or mechanistically-probed language artifacts fail to represent how the model actually thinks. We argue that the specter of linguistic illegibility is unavoidable for LLMs whose internal computations are not directly expressed via language, but rather math over activation spaces (with lossy translations between activation spaces and natural language happening at the bookends). If linguistic illegibility is always possible, then security mechanisms that rely on a model's linguistic self-reporting (e.g., chain-of-thought monitoring, constitutional self-critique, activation probing for linguistically-defined feature vectors) can never be completely sound; the model sandbox will always need isolation techniques whose guarantees do not depend on reading a model's linguistic state at all. We argue that observing a model's outputs using taint tracking is a promising approach for an effective sandbox: regardless of how a model linguistically self-reports, a taint tracking policy can define, a priori, various pieces of system state that should never be influenced by model-produced data. We also discuss several additional sandboxing mechanisms (e.g., robust virtualization, third-party auditing of sandboxing configurations) which collectively provide a critical floor beneath linguistic monitoring, and would have mitigated recent sandbox exploits by frontier models.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.02852",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4d3feca001ca"
+        },
+        {
+          "title": "Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
+          "url": "https://arxiv.org/abs/2609.02849v1",
+          "source": "arxiv",
+          "description": "Competitive programming has become a key test of large language model reasoning, with international competitions such as IOI and ICPC representing its most challenging settings. We present an end-to-end specialization pipeline combining large-scale problem curation, synthetic reasoning traces, supervised fine-tuning (SFT), and reinforcement learning (RL). Using 22,000 curated problems, we train Nemotron-3-Nano-CC (30B-A3B) with SFT and RL and Nemotron-3-Ultra-CC (550B-A55B) with SFT alone. We further introduce GenCorrect, a feedback-driven test-time compute strategy that iteratively generates, evaluates, and refines diverse solutions. On IOI 2025, Nano-CC improves from 130 points to 291 after post-training and to 468 with GenCorrect, exceeding the gold threshold of 438.3 while Ultra-CC reaches 502. Guided by these results, we develop a competition-specific Ultra-CC system and evaluate it prospectively during IOI 2026. Under the same time, internet-access, and submission constraints as human contestants, it scores 535.4 out of 600, exceeding both the gold threshold of 361.12 and the top human score of 498.27. To our knowledge, this is the first AI system to outscore the highest-scoring human contestant on an IOI problem set.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.02849",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "45909db09126"
+        },
+        {
+          "title": "UE5M3 FP4 Block Scaling for Stable Language Model Pretraining",
+          "url": "https://arxiv.org/abs/2609.02846v1",
+          "source": "arxiv",
+          "description": "Stable 4-bit floating-point (FP4) pretraining is difficult because the E2M1 payload represents only a narrow range of magnitudes. NVIDIA's Transformer Engine \\nv{} recipe addresses this with current-tensor scaling, a randomized Hadamard transform (RHT), and bfloat16 (BF16) final layers, adding work outside the FP4 matrix multiplications. We instead pair E2M1 payloads with unsigned E5M3 (\\ue{}) block scales. Their wider range permits periodic tensor scaling, while our recipe applies selective stochastic rounding to backward gradients, omits RHT, and uses FP4 in all eligible internal linears. We pretrain a Nemotron-H 8B model for nearly 190 billion tokens. Compared with Transformer Engine \\nv{}, the proposed block-16 recipe finishes with lower final-window training loss and, under their respective quantized-inference policies, lower validation loss measured as held-out negative log-likelihood. Its quantized-inference downstream point estimates are also higher on all three reported aggregates. A native \\nv{} execution ablation that jointly removes RHT and the BF16 final-block exemption increases measured model-body token throughput by 21.2\\%. These results demonstrate end-to-end software-emulated \\uefp{} pretraining with a simpler recipe and motivate native support for \\ue{} block scaling.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.02846",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "18f4ada6a3dc"
+        },
+        {
+          "title": "jochi2018/Soup — ★115",
+          "url": "https://github.com/jochi2018/Soup",
+          "source": "github",
+          "description": "Fine-tune and post-train LLMs with one command—no SSH, no config hell. (topics: api, extract, go, html, llmops, local ai, low vram, machine learning, ollama, qlora, selector, sft, swift, swiftsoup, twilio, webscraping)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "jochi2018/Soup",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d5383e131d5e"
+        },
+        {
+          "title": "ZekunCheng/novoweave — ★101",
+          "url": "https://github.com/ZekunCheng/novoweave",
+          "source": "github",
+          "description": "NovoWeave — a conceptual generative protein-design framework (non-functional pseudocode). (topics: deep learning, diffusion models, protein design, pseudocode, research software, structural biology)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "ZekunCheng/novoweave",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "605600bd2c66"
+        },
+        {
+          "title": "Google avoids a breakup of its ad tech business",
+          "url": "https://www.nytimes.com/2026/09/02/technology/google-ad-tech-remedies.html",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49537131",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "06a394d9e2ac"
+        },
+        {
+          "title": "Build, Ship, Shape: Amazon Developer Hackathon",
+          "url": "https://amazonappdev2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Aug 31 - Oct 23, 2026 | prize $ 138,000 | themes: Machine Learning/AI, Open Ended, Productivity",
+          "deadline": "2026-10-23",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30992",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "885eeaaff9df"
+        },
+        {
+          "title": "I scraped 5.94 billion TikTok videos and 3.23 billion profiles in 3 weeks. Uploaded full dataset to Hugging Face for free. Step by step tutorial and code below. [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w5h9se/i_scraped_594_billion_tiktok_videos_and_323/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w5h9se",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "116435474753"
+        },
+        {
+          "title": "Deepity: A C++ library showing Predictive Coding Networks can match Backprop (97.73% on MNIST in 60s) [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w5fuhm/deepity_a_c_library_showing_predictive_coding/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w5fuhm",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ddff9f820b64"
+        },
+        {
+          "title": "Most open-source AI detectors can't hold a 0.5% false-positive rate [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w58erw/most_opensource_ai_detectors_cant_hold_a_05/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w58erw",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cf64cd068b5a"
+        },
+        {
+          "title": "Detailed explanation of how to create a text-to-image model from scratch. [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w5c9rd/detailed_explanation_of_how_to_create_a/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w5c9rd",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0b591fa0a85c"
+        },
+        {
+          "title": "MIR with AudioMuse-AI-SAE [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w54qkk/mir_with_audiomuseaisae_p/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w54qkk",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "61086349ed26"
+        },
+        {
+          "title": "CABiNet (ICRA 2021) vs YOLO26-sem on UAVid: accuracy, compute, and GPU latency [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w5cfv1/cabinet_icra_2021_vs_yolo26sem_on_uavid_accuracy/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w5cfv1",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "050d40ca924f"
+        },
+        {
+          "title": "What kinds of ML bottlenecks are a good fit for Triton? [Manning giveaway] [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w58dib/what_kinds_of_ml_bottlenecks_are_a_good_fit_for/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w58dib",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "beb0ca9df41d"
+        },
+        {
+          "title": "MUBA Blockchain Hackathon",
+          "url": "https://muba-hackathon.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | online | themes: Blockchain, FinTech, AI",
+          "deadline": "2026-09-05",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "c9616c07274742db8c57310b5d61adc7",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e0b90e9b87a5"
+        },
+        {
+          "title": "HACK WITH GDG S4",
+          "url": "https://hack-with-gdg-s4.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | KSR Kalvi Nagar, India | themes: No Restrictions",
+          "deadline": "2026-10-08",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "c163f2c5e7bb4c7bb7acbdb3c572bfa3",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b62e1ff59626"
+        },
+        {
+          "title": "Monday Munch - DSA Challenge 019 (Rated) (codechef.com)",
+          "url": "https://www.codechef.com/DSAMONDAY019",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-09-07T13:30:06",
+          "deadline": "2026-09-07",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "70096097",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "63f9bb947431"
+        },
+        {
+          "title": "Data Analytics Challenge",
+          "url": "https://unstop.com/hackathons/data-analytics-challenge-national-students-space-challenge-2026-iit-kharagpur-1747275",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1747275",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a3d1aa40d5f9"
+        },
+        {
+          "title": "Vibeathon 2026",
+          "url": "https://unstop.com/hackathons/vibeathon-2026-ac-patil-college-of-engineering-department-of-information-technology-1747384",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1747384",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "73523e17e2e5"
+        },
+        {
+          "title": "Seize da Flaq",
+          "url": "https://unstop.com/hackathons/seize-da-flaq-cyberonites-club-1724723",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1724723",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bd72c18a4303"
+        },
+        {
+          "title": "The Pareidolia Paradox",
+          "url": "https://unstop.com/hackathons/the-pareidolia-paradox-sies-gst-nerul-1743714",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743714",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "25c0cfe89e30"
+        },
+        {
+          "title": "Global Innovation Hackathon 2026 – Build for a Better Future",
+          "url": "https://unstop.com/hackathons/global-innovation-hackathon-2026-build-for-a-better-future-bharat-academix-1748404",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1748404",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b2d93921f9a6"
+        },
+        {
+          "title": "VINHACK",
+          "url": "https://unstop.com/hackathons/vinhack-vit-vellore-1748351",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1748351",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fb6dd357e03d"
+        },
+        {
+          "title": "Campusathon 2026",
+          "url": "https://unstop.com/hackathons/campusathon-2026-simply-updify-1748322",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1748322",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a2bf4c068fa5"
+        },
+        {
+          "title": "Content Writing Internship",
+          "url": "https://unstop.com/internships/content-writing-internship-brightrays-1748505",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1748505",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e73bebe15c46"
+        },
+        {
+          "title": "SEO, AIO & GEO Internship",
+          "url": "https://unstop.com/internships/seo-aio-geo-internship-proweblook-1748531",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1748531",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8321e1171e4b"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-budhana-tech-llp-1748518",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1748518",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "13450340364e"
+        },
+        {
+          "title": "Career Counsellor Internship",
+          "url": "https://unstop.com/internships/career-counsellor-internship-beyond-mentor-1748542",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1748542",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2ada27022fe3"
+        },
+        {
+          "title": "Reflect Orbital — Flight Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/reflect-orbital/d2ad1427-89aa-404d-8678-7b8e6dace5e2/application?embed=true",
+          "source": "internships",
+          "description": "internship | Reflect Orbital | Hawthorne, CA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f4b5ad30-b50a-410a-bf80-36fad0275497",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fae78f505a63"
+        },
+        {
+          "title": "Hermeus — Software Engineer Intern - Command & Control",
+          "url": "https://jobs.lever.co/hermeus/5b08e2df-c9db-4831-aece-67d89e744796/apply",
+          "source": "internships",
+          "description": "internship | Hermeus | Atlanta, GA | Spring 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7509a79d-1085-4918-bdcc-6c82b44b486b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "398285fe71ce"
+        },
+        {
+          "title": "TikTok — AI Governance Strategy Product Manager Intern - Platform Trust and Ecosystem",
+          "url": "https://lifeattiktok.com/search/7677493272788683013",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "82b82765-ac44-4015-94fc-97d512495e37",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ea673726c49c"
+        },
+        {
+          "title": "Geotab — Software Developer Intern",
+          "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5361630008",
+          "source": "internships",
+          "description": "internship | Geotab | Oakville, ON, Canada, Waterloo, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "26b72751-3337-4610-8455-0f92877b6a03",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9e30c61155f7"
+        },
+        {
+          "title": "Geotab — Software Developer Intern - Months",
+          "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5389341008",
+          "source": "internships",
+          "description": "internship | Geotab | Oakville, ON, Canada | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "49a0917b-97ea-4ff8-809e-87ace1070b2f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7994e45d4328"
+        },
+        {
+          "title": "Geotab — Hardware Developer Intern",
+          "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5380567008",
+          "source": "internships",
+          "description": "internship | Geotab | Oakville, ON, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b72ec140-4c21-4b53-a33b-15a7c285e043",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e47f75bff827"
+        },
+        {
+          "title": "Geotab — Data Scientist Intern",
+          "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5383409008",
+          "source": "internships",
+          "description": "internship | Geotab | Atlanta, GA | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2cb65ac8-fbb4-488a-909b-a5fc855c1be6",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f34800823b01"
+        },
+        {
+          "title": "Geotab — Data Scientist Intern",
+          "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5383410008",
+          "source": "internships",
+          "description": "internship | Geotab | Toronto, ON, Canada, Oakville, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d98ef6ba-ad9f-401e-bb05-30075fdf7a98",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "54bb2f8e8073"
+        },
+        {
+          "title": "General Dynamics UK — Software Engineer Co-op - 8 Months",
+          "url": "https://jobs.smartrecruiters.com/GDMSI/744000147019949",
+          "source": "internships",
+          "description": "internship | General Dynamics UK | Ottawa, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "fb43ca64-ac2c-4698-b2fe-f67d16fff11d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "17e82ebc2aff"
+        },
+        {
+          "title": "Lawrence Livermore National Laboratory (LLNL) — Protocol and Special Events AI and Digital Solutions Intern",
+          "url": "https://jobs.smartrecruiters.com/LLNL/3743990015035697",
+          "source": "internships",
+          "description": "internship | Lawrence Livermore National Laboratory (LLNL) | Livermore, CA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "72dee251-66c4-4635-bc10-acd70891dd4c",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d24db5d81c53"
+        },
+        {
+          "title": "Microsoft — Applied Science Intern - PhD",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556986140",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA, Mountain View, CA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "549cf0cc-9150-4b08-9120-b87fc4510590",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "774d946988ca"
+        },
+        {
+          "title": "Shure — Artificial Intelligence Engineer Intern",
+          "url": "https://careersus-shure.icims.com/jobs/4966/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Shure | Niles, IL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "eb02dd97-b6c6-4dbc-94d3-d7db278bf381",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b583ba3addbe"
+        },
+        {
+          "title": "Shure — Application Software Engineer Intern",
+          "url": "https://careersus-shure.icims.com/jobs/4955/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Shure | Niles, IL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "fa0384db-18b6-4394-a8d1-afd89c2d9fc4",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2b6c852b4910"
+        },
+        {
+          "title": "Shure — Artificial Intelligence Specialist Intern - Operations",
+          "url": "https://careersus-shure.icims.com/jobs/5029/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Shure | Niles, IL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ef6c3555-153d-485f-87cb-c2c72dcd51f1",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c3460f771767"
+        },
+        {
+          "title": "Shure — Applied Research Science Intern",
+          "url": "https://careersus-shure.icims.com/jobs/4967/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Shure | Niles, IL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d677575f-4784-434b-855b-91bd6c615a7c",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7cae9390b66b"
+        },
+        {
+          "title": "Shure — Audio Applied Research Science Intern",
+          "url": "https://careersus-shure.icims.com/jobs/4968/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Shure | Niles, IL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "31a9d3a5-6abe-49c9-95e9-6a7fc79eb810",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "530510238302"
+        },
+        {
+          "title": "Shure — Automated Test Software Engineering Intern",
+          "url": "https://careersus-shure.icims.com/jobs/4964/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Shure | Niles, IL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "052aae75-1cb8-41e7-9062-f49eac2a2fd6",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7d3dce344cb0"
+        },
+        {
+          "title": "Shure — Cloud Software Engineer Intern",
+          "url": "https://careersus-shure.icims.com/jobs/4976/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Shure | Niles, IL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d9dfbdc8-c094-4676-99ce-4f1cb9346b62",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Cloud engineering is useful, but Shure isn't a top-tier AI signal company. · ⚠ verify eligibility: US work authorization for Niles, IL likel",
+          "action_plan": [
+            "Check visa sponsorship (10m)",
+            "Tailor resume for cloud/backend (1h)",
+            "Apply via portal (15m)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 5,
+            "prestige": 5,
+            "deadline": 3,
+            "skill": 6,
+            "time": 7,
+            "eligible": "unclear",
+            "elig_note": "US work authorization for Niles, IL likely required"
+          },
+          "key": "f6a165ec4ece"
+        },
+        {
+          "title": "Shure — Software Engineer Intern",
+          "url": "https://careersus-shure.icims.com/jobs/4996/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Shure | Niles, IL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "80bc2f39-e660-4691-aa38-68acbd7b9e84",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Generic SWE role; lacks the AI/ML focus Mohith prioritizes. · ⚠ verify eligibility: US work authorization for Niles, IL likely required",
+          "action_plan": [
+            "Check visa sponsorship (10m)",
+            "Apply if eligible (15m)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 5,
+            "deadline": 3,
+            "skill": 5,
+            "time": 7,
+            "eligible": "unclear",
+            "elig_note": "US work authorization for Niles, IL likely required"
+          },
+          "key": "632f9d60d684"
+        },
+        {
+          "title": "Shure — Embedded Software Intern",
+          "url": "https://careersus-shure.icims.com/jobs/5018/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Shure | Niles, IL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5ea0f850-a40e-4b33-8998-b57f63ea8379",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Embedded software is too far from AI Agents/LLMs focus. · ⚠ verify eligibility: US work authorization for Niles, IL likely required",
+          "action_plan": [
+            "Skip unless seeking low-level hardware experience"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 3,
+            "skill": 6,
+            "time": 7,
+            "eligible": "unclear",
+            "elig_note": "US work authorization for Niles, IL likely required"
+          },
+          "key": "cdcc443cba17"
+        },
+        {
+          "title": "Shure — Application Software Development Intern",
+          "url": "https://careersus-shure.icims.com/jobs/5020/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Shure | Niles, IL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9a6bfc62-3b30-4eb9-ae60-710c5f62d722",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Application dev is generic; doesn't provide elite AI leverage. · ⚠ verify eligibility: US work authorization for Niles, IL likely required",
+          "action_plan": [
+            "Check visa sponsorship (10m)",
+            "Apply if eligible (15m)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 5,
+            "deadline": 3,
+            "skill": 5,
+            "time": 7,
+            "eligible": "unclear",
+            "elig_note": "US work authorization for Niles, IL likely required"
+          },
+          "key": "30a79c2b259a"
+        },
+        {
+          "title": "Atlassian — Software Engineer Intern",
+          "url": "https://campus-globalcareers-atlassian.icims.com/jobs/26275/software-engineer-intern%2c-2027-canada/job",
+          "source": "internships",
+          "description": "internship | Atlassian | Burnaby, BC, Canada, Vancouver, BC, Canada, Richmond, BC, Canada | Summer 2027, Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7442c66e-fba5-4b94-bb79-4a94282768f2",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Atlassian is a high-signal engineering company, though not AI-first. · ⚠ verify eligibility: Canadian work authorization likely required",
+          "action_plan": [
+            "Verify international student eligibility (10m)",
+            "Highlight 'Builder' projects like TaskFlow (1h)",
+            "Apply (15m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 6,
+            "prestige": 7,
+            "deadline": 4,
+            "skill": 7,
+            "time": 7,
+            "eligible": "unclear",
+            "elig_note": "Canadian work authorization likely required"
+          },
+          "key": "45f194ec1261"
+        },
+        {
+          "title": "Universal Health Services — Software Engineer Intern - Data Analytics",
+          "url": "https://jobs.uhsinc.com/jobs/367247?icims=1",
+          "source": "internships",
+          "description": "internship | Universal Health Services | King of Prussia, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "af65cbd5-11f8-4a7d-a45a-939597dd3471",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Data analytics matches ML interest, but company prestige is low. · ⚠ verify eligibility: US work authorization for PA likely required",
+          "action_plan": [
+            "Check visa sponsorship (10m)",
+            "Apply if eligible (15m)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 4,
+            "deadline": 3,
+            "skill": 6,
+            "time": 7,
+            "eligible": "unclear",
+            "elig_note": "US work authorization for PA likely required"
+          },
+          "key": "e70be111f6ff"
+        },
+        {
+          "title": "Nokia — Software Developer Co-op Intern",
+          "url": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/39435",
+          "source": "internships",
+          "description": "internship | Nokia | Ottawa, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0d05245d-d165-4d42-a9fa-9d27e9fcaaed",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Nokia is a known brand, but role is generic SWE, not AI engineering. · ⚠ verify eligibility: Canadian work authorization likely required",
+          "action_plan": [
+            "Verify eligibility for Canada (10m)",
+            "Apply if eligible (15m)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 6,
+            "deadline": 4,
+            "skill": 6,
+            "time": 7,
+            "eligible": "unclear",
+            "elig_note": "Canadian work authorization likely required"
+          },
+          "key": "b0edf6a9daed"
+        },
+        {
+          "title": "General Dynamics UK — Software Developer Co-op - 16-Months",
+          "url": "https://jobs.smartrecruiters.com/GDMSI/744000146985399",
+          "source": "internships",
+          "description": "internship | General Dynamics UK | Calgary, AB, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "87fa51f3-741b-402e-a1b4-f9d9b7d87222",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Defense contracting is low-interest for an AI entrepreneur/builder. · ⚠ verify eligibility: Canadian work authorization likely required",
+          "action_plan": [
+            "Skip unless desperate for any international experience"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 5,
+            "deadline": 4,
+            "skill": 6,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "Canadian work authorization likely required"
+          },
+          "key": "a7f65bd5fdf7"
+        }
+      ]
     }
   ]
 }

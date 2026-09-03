@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02",
+  "updated_at": "2026-09-03",
   "items": [
     {
       "key": "e0b90e9b87a5",
@@ -72,131 +72,14 @@
       "action_plan": []
     },
     {
-      "key": "148a255e8453",
-      "title": "AI Builders Hackathon",
-      "url": "https://ai-builders-hackathon-2026.devpost.com/",
+      "key": "885eeaaff9df",
+      "title": "Build, Ship, Shape: Amazon Developer Hackathon",
+      "url": "https://amazonappdev2026.devpost.com/",
       "source": "devpost",
-      "score": 9,
-      "deadline": "2026-09-15",
+      "score": 10,
+      "deadline": "2026-10-23",
       "tags": [
         "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0c48352ff1b2",
-      "title": "Video Content Creator Internship",
-      "url": "https://unstop.com/internships/video-content-creator-internship-delbon-ai-1742655",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "88a9a409e62c",
-      "title": "Frontend Web Developer Internship",
-      "url": "https://unstop.com/internships/frontend-web-developer-internship-accesco-living-1742166",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "cd9b8b4a9627",
-      "title": "Social Media Marketing Internship",
-      "url": "https://unstop.com/internships/social-media-marketing-internship-litspark-solutions-1742623",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b5a4a63f750f",
-      "title": "Business Development Internship",
-      "url": "https://unstop.com/internships/business-development-internship-know-your-careers-1742667",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "9a3a4d14a86d",
-      "title": "Research and Strategic Initiative Internship",
-      "url": "https://unstop.com/internships/research-and-strategic-initiative-internship-jobsupi-1742594",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d64cbb0bbbf3",
-      "title": "Strategic Planning Internship",
-      "url": "https://unstop.com/internships/strategic-planning-internship-accesco-living-1742664",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0f16472a5674",
-      "title": "UI/UX Internship",
-      "url": "https://unstop.com/internships/uiux-internship-my-indian-things-1742669",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5b1a8fef4855",
-      "title": "Software Development Internship",
-      "url": "https://unstop.com/internships/software-development-internship-vertawo-labs-private-limited-1742649",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "293e9f9088bd",
-      "title": "Microsoft — AI Software Engineer Intern - Edge",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556979054",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1073,6 +956,71 @@
       "action_plan": []
     },
     {
+      "key": "e73bebe15c46",
+      "title": "Content Writing Internship",
+      "url": "https://unstop.com/internships/content-writing-internship-brightrays-1748505",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8321e1171e4b",
+      "title": "SEO, AIO & GEO Internship",
+      "url": "https://unstop.com/internships/seo-aio-geo-internship-proweblook-1748531",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "13450340364e",
+      "title": "Business Development Internship",
+      "url": "https://unstop.com/internships/business-development-internship-budhana-tech-llp-1748518",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2ada27022fe3",
+      "title": "Career Counsellor Internship",
+      "url": "https://unstop.com/internships/career-counsellor-internship-beyond-mentor-1748542",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "774d946988ca",
+      "title": "Microsoft — Applied Science Intern - PhD",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556986140",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "c96275d9f811",
       "title": "Full Stack Python with Gen-AI",
       "url": "https://unstop.com/hackathons/full-stack-python-with-gen-ai-quality-thought-info-systems-1742888",
@@ -1243,23 +1191,22 @@
       "action_plan": []
     },
     {
-      "key": "25feae6c6e5d",
-      "title": "Research internship at MSR [D]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1vuloyq/research_internship_at_msr_d/",
-      "source": "reddit",
-      "score": 6,
+      "key": "b2d93921f9a6",
+      "title": "Global Innovation Hackathon 2026 – Build for a Better Future",
+      "url": "https://unstop.com/hackathons/global-innovation-hackathon-2026-build-for-a-better-future-bharat-academix-1748404",
+      "source": "unstop",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "news",
-        "r/MachineLearning"
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
     },
     {
-      "key": "a81fdeadf9a8",
-      "title": "SimIS — Artificial Intelligence Developer Intern - Aerospace/Aviation",
-      "url": "https://simisinc.applytojob.com/apply/U1yOSyvkvH/AerospaceAviation-Artificial-Intelligence-Developer-Intern",
+      "key": "ee5bc1551e47",
+      "title": "Intuitive Surgical — Computer Vision Engineer Intern - Fall 2026",
+      "url": "https://jobs.smartrecruiters.com/Intuitive/744000145329669",
       "source": "internships",
       "score": 6,
       "deadline": null,
@@ -1270,9 +1217,9 @@
       "action_plan": []
     },
     {
-      "key": "f32dd7f99bda",
-      "title": "AMD — Machine Learning Intern/Co-op - Multiple Teams",
-      "url": "https://careers.amd.com/jobs/91170?icims=1",
+      "key": "d06a54a53483",
+      "title": "Kodiak Robotics — AI/ML Intern - Artificial Intelligence/Machine Learning",
+      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4377407009",
       "source": "internships",
       "score": 6,
       "deadline": null,
@@ -1283,9 +1230,9 @@
       "action_plan": []
     },
     {
-      "key": "3ddde8f15ed1",
-      "title": "AMD — Machine Learning Intern/Co-op - Machine Learning - Artificial Intelligence",
-      "url": "https://careers.amd.com/jobs/90892?icims=1",
+      "key": "43b0c4c9a0c0",
+      "title": "InfiniteQuant — Quantitative Developer Internship - Summer 2027",
+      "url": "https://jobs.smartrecruiters.com/InfiniteQuant/744000145263134",
       "source": "internships",
       "score": 6,
       "deadline": null,
@@ -1296,9 +1243,61 @@
       "action_plan": []
     },
     {
-      "key": "34f30bc24436",
-      "title": "AMD — Machine Learning Intern/Co-op - Artificial Intelligence",
-      "url": "https://careers.amd.com/jobs/91181?icims=1",
+      "key": "a8901e3e891e",
+      "title": "The WebMCP Challenge",
+      "url": "https://webmcp.devpost.com/",
+      "source": "devpost",
+      "score": 6,
+      "deadline": "2026-09-03",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "98474fd2f478",
+      "title": "TikTok — AI Infrastructure Engineer Intern - Recommendation & LLM",
+      "url": "https://lifeattiktok.com/search/7672671220798818613",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2c88c7b9d687",
+      "title": "Honeywell — Artificial Intelligence/Machine Learning Intern",
+      "url": "https://ibqbjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Honeywell/job/155522",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b80551aedd05",
+      "title": "Nvidia agrees to acquire Hugging Face for $13B",
+      "url": "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
+      "source": "hackernews",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a2ff956ddcb2",
+      "title": "L3Harris Technologies — Artificial Intelligence Intern",
+      "url": "https://jobs.l3harris.com/job/Melbourne-Intern-,-Artificial-Intelligence-FL-32919/1423790400/?ats=successfactors",
       "source": "internships",
       "score": 6,
       "deadline": null,

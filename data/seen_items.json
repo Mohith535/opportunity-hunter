@@ -2925,8 +2925,8 @@
     "e0b90e9b87a5": {
       "title": "MUBA Blockchain Hackathon",
       "first_seen": "2026-07-01",
-      "last_seen": "2026-09-02",
-      "times_seen": 6
+      "last_seen": "2026-09-03",
+      "times_seen": 7
     },
     "cefeab139e04": {
       "title": "PEC HACKS 4.0",
@@ -18760,6 +18760,336 @@
       "title": "Hermeus — Software Engineer Intern - Modeling & Simulation - Multiple Teams",
       "first_seen": "2026-09-02",
       "last_seen": "2026-09-02",
+      "times_seen": 1
+    },
+    "9a942a792013": {
+      "title": "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "35860cf84f7c": {
+      "title": "Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "b71889fb452f": {
+      "title": "User Feedback Provides a Unique Signal that LLMs Can not Detect",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "4d3feca001ca": {
+      "title": "The Implications of Linguistic Illegibility for LLM Security",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "45909db09126": {
+      "title": "Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "18f4ada6a3dc": {
+      "title": "UE5M3 FP4 Block Scaling for Stable Language Model Pretraining",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "d5383e131d5e": {
+      "title": "jochi2018/Soup — ★115",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "605600bd2c66": {
+      "title": "ZekunCheng/novoweave — ★101",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "06a394d9e2ac": {
+      "title": "Google avoids a breakup of its ad tech business",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "885eeaaff9df": {
+      "title": "Build, Ship, Shape: Amazon Developer Hackathon",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "116435474753": {
+      "title": "I scraped 5.94 billion TikTok videos and 3.23 billion profiles in 3 weeks. Uploaded full dataset to Hugging Face for free. Step by step tutorial and code below. [P]",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "ddff9f820b64": {
+      "title": "Deepity: A C++ library showing Predictive Coding Networks can match Backprop (97.73% on MNIST in 60s) [P]",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "cf64cd068b5a": {
+      "title": "Most open-source AI detectors can't hold a 0.5% false-positive rate [P]",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "0b591fa0a85c": {
+      "title": "Detailed explanation of how to create a text-to-image model from scratch. [R]",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "61086349ed26": {
+      "title": "MIR with AudioMuse-AI-SAE [P]",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "050d40ca924f": {
+      "title": "CABiNet (ICRA 2021) vs YOLO26-sem on UAVid: accuracy, compute, and GPU latency [P]",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "beb0ca9df41d": {
+      "title": "What kinds of ML bottlenecks are a good fit for Triton? [Manning giveaway] [D]",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "b62e1ff59626": {
+      "title": "HACK WITH GDG S4",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "63f9bb947431": {
+      "title": "Monday Munch - DSA Challenge 019 (Rated) (codechef.com)",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "a3d1aa40d5f9": {
+      "title": "Data Analytics Challenge",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "73523e17e2e5": {
+      "title": "Vibeathon 2026",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "bd72c18a4303": {
+      "title": "Seize da Flaq",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "25c0cfe89e30": {
+      "title": "The Pareidolia Paradox",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "b2d93921f9a6": {
+      "title": "Global Innovation Hackathon 2026 – Build for a Better Future",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "fb6dd357e03d": {
+      "title": "VINHACK",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "a2bf4c068fa5": {
+      "title": "Campusathon 2026",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "e73bebe15c46": {
+      "title": "Content Writing Internship",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "8321e1171e4b": {
+      "title": "SEO, AIO & GEO Internship",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "13450340364e": {
+      "title": "Business Development Internship",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "2ada27022fe3": {
+      "title": "Career Counsellor Internship",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "fae78f505a63": {
+      "title": "Reflect Orbital — Flight Software Engineer Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "398285fe71ce": {
+      "title": "Hermeus — Software Engineer Intern - Command & Control",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "ea673726c49c": {
+      "title": "TikTok — AI Governance Strategy Product Manager Intern - Platform Trust and Ecosystem",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "9e30c61155f7": {
+      "title": "Geotab — Software Developer Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "7994e45d4328": {
+      "title": "Geotab — Software Developer Intern - Months",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "e47f75bff827": {
+      "title": "Geotab — Hardware Developer Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "f34800823b01": {
+      "title": "Geotab — Data Scientist Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "54bb2f8e8073": {
+      "title": "Geotab — Data Scientist Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "17e82ebc2aff": {
+      "title": "General Dynamics UK — Software Engineer Co-op - 8 Months",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "d24db5d81c53": {
+      "title": "Lawrence Livermore National Laboratory (LLNL) — Protocol and Special Events AI and Digital Solutions Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "774d946988ca": {
+      "title": "Microsoft — Applied Science Intern - PhD",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "b583ba3addbe": {
+      "title": "Shure — Artificial Intelligence Engineer Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "2b6c852b4910": {
+      "title": "Shure — Application Software Engineer Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "c3460f771767": {
+      "title": "Shure — Artificial Intelligence Specialist Intern - Operations",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "7cae9390b66b": {
+      "title": "Shure — Applied Research Science Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "530510238302": {
+      "title": "Shure — Audio Applied Research Science Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "7d3dce344cb0": {
+      "title": "Shure — Automated Test Software Engineering Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "f6a165ec4ece": {
+      "title": "Shure — Cloud Software Engineer Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "632f9d60d684": {
+      "title": "Shure — Software Engineer Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "cdcc443cba17": {
+      "title": "Shure — Embedded Software Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "30a79c2b259a": {
+      "title": "Shure — Application Software Development Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "45f194ec1261": {
+      "title": "Atlassian — Software Engineer Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "e70be111f6ff": {
+      "title": "Universal Health Services — Software Engineer Intern - Data Analytics",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "b0edf6a9daed": {
+      "title": "Nokia — Software Developer Co-op Intern",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "a7f65bd5fdf7": {
+      "title": "General Dynamics UK — Software Developer Co-op - 16-Months",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
       "times_seen": 1
     }
   }
