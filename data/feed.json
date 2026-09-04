@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03",
+  "updated_at": "2026-09-04",
   "items": [
     {
       "key": "e0b90e9b87a5",
@@ -80,110 +80,6 @@
       "deadline": "2026-10-23",
       "tags": [
         "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "7b22e30ede0a",
-      "title": "Data Annotation Internship - Physical AI",
-      "url": "https://unstop.com/internships/data-annotation-internship-praxis-robotics-1743039",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "2638112ed7a7",
-      "title": "Founding Growth & Ecosystem Internship",
-      "url": "https://unstop.com/internships/founding-growth-ecosystem-internship-praman-network-1743038",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0565502c3b14",
-      "title": "Operations Internship",
-      "url": "https://unstop.com/internships/solar-execution-and-operation-intern-greenmile-energies-1742992",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "efc0e5faad81",
-      "title": "Business Development Executive Internship",
-      "url": "https://unstop.com/internships/business-development-executive-bde-cubegraph-technologies-1742977",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f570809c6113",
-      "title": "Lead Generation & Business Development Internship",
-      "url": "https://unstop.com/internships/lead-generation-business-development-intern-cogniza-private-limited-1742931",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "fb19b093ee34",
-      "title": "Business Development & Management Internship",
-      "url": "https://unstop.com/internships/business-development-management-intern-highgrowth-tradecom-pvt-ltd-1742941",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ec4ba0bb2f95",
-      "title": "Graphic Design Internship",
-      "url": "https://unstop.com/internships/graphic-design-internship-prolino-1742918",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5f1baf67db05",
-      "title": "Content Creator Internship",
-      "url": "https://unstop.com/internships/content-creator-internship-rare-side-innovation-private-limited-1742891",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1021,27 +917,79 @@
       "action_plan": []
     },
     {
-      "key": "c96275d9f811",
-      "title": "Full Stack Python with Gen-AI",
-      "url": "https://unstop.com/hackathons/full-stack-python-with-gen-ai-quality-thought-info-systems-1742888",
+      "key": "2d3eb20c011e",
+      "title": "Backend Web Developer Internship",
+      "url": "https://unstop.com/internships/backend-web-developer-internship-accesco-living-1749077",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
     },
     {
-      "key": "e718441dfab1",
-      "title": "Agentic AI Hackathon",
-      "url": "https://unstop.com/hackathons/agentic-ai-hackathon-tech-zephyr-40-indian-institute-of-technology-bhubaneswar-1742838",
+      "key": "74e3ae5dce5e",
+      "title": "Marketing Internship",
+      "url": "https://unstop.com/internships/marketing-internship-skillsncr-1749060",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "eceba94d22fc",
+      "title": "SEO Internship",
+      "url": "https://unstop.com/internships/seo-internship-hrdyam-1749096",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "fc44e4a97587",
+      "title": "Social Media Internship",
+      "url": "https://unstop.com/internships/social-media-internship-hunaru-one-private-limited-1749007",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "5e3407c0476b",
+      "title": "Social Media Management Internship",
+      "url": "https://unstop.com/internships/social-media-management-internship-bellboy-residential-technologies-1748940",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "cb8174faa100",
+      "title": "Microsoft — Data Scientist PhD Intern",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556986137",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1204,6 +1152,19 @@
       "action_plan": []
     },
     {
+      "key": "f43219226aa3",
+      "title": "Dogfood | 72-Hour Hackathon",
+      "url": "https://unstop.com/hackathons/dogfood-72-hour-hackathon-hackathon-raptors-1748391",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "ee5bc1551e47",
       "title": "Intuitive Surgical — Computer Vision Engineer Intern - Fall 2026",
       "url": "https://jobs.smartrecruiters.com/Intuitive/744000145329669",
@@ -1298,6 +1259,45 @@
       "key": "a2ff956ddcb2",
       "title": "L3Harris Technologies — Artificial Intelligence Intern",
       "url": "https://jobs.l3harris.com/job/Melbourne-Intern-,-Artificial-Intelligence-FL-32919/1423790400/?ats=successfactors",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "5ca52582e440",
+      "title": "American Institutes for Research — Data Science Intern",
+      "url": "https://job-boards.greenhouse.io/americaninstitutesforresearch/jobs/5404816008",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4a2c8a5a3cbd",
+      "title": "Netflix — Machine Learning Scientist Intern - AI",
+      "url": "https://explore.jobs.netflix.net/careers/job/790317916733",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2015fdc6dce1",
+      "title": "Netflix — Machine Learning/AI Infrastructure Engineering Intern - AI Platform",
+      "url": "https://explore.jobs.netflix.net/careers/job/790317917022",
       "source": "internships",
       "score": 6,
       "deadline": null,

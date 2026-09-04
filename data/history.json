@@ -75344,6 +75344,919 @@
           "key": "a7f65bd5fdf7"
         }
       ]
+    },
+    {
+      "date": "2026-09-04",
+      "items": [
+        {
+          "title": "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
+          "url": "https://arxiv.org/abs/2609.04198v1",
+          "source": "arxiv",
+          "description": "Language-model judges now gate training data, score generations, and drive leaderboards. The judge is then a measurement instrument, resting on one rarely stated assumption: the same request, sent to the same model name, reads the same tomorrow. We audited that assumption in two preregistered campaigns with every threshold fixed in advance; neither got past validating its instrument. Across 52,988 audited request attempts, same-window repeat rankings agreed at Spearman 0.400 against a required 0.90, and byte-identical next-day replays agreed at 0.78 against a required 0.99, each time with the execution record at ceiling. Three mechanisms explain the gap: a label-to-meaning mapping that biased readouts as strongly as the signal; candidate gaps seven orders of magnitude below the instrument's own noise floor; and byte-identical inputs returning different rankings, a noise that exact-permutation readouts compound. Neither metric substitution nor sampling repaired it on the tested grid. Preregistered follow-ups bound the problem: waiting did not help on the days sampled (0.805 versus 0.800, replicated over five further days); switching providers did not help (four providers share the floor, medians 0.74 to 0.88, predicted by none of the metadata fields they expose); self-hosting on batch-invariant kernels helped only while the server was quiet; and on constructed errors with known gaps, the readout's separation tracks error type, not size. We distill the evidence into a three-level snapshot-identity ladder, eight design rules, and a reporting checklist; a pilot at roughly 2% of the study's call volume would have exposed both unreachable gates in advance. All results concern externally measured behaviour on shared serving infrastructure. On a shared endpoint, a model name is not a frozen instrument; a preregistered evaluation must measure its instrument before freezing any gate on it.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.04198",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8f12cbdad347"
+        },
+        {
+          "title": "ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize",
+          "url": "https://arxiv.org/abs/2609.04197v1",
+          "source": "arxiv",
+          "description": "Evolutionary prompt optimizers such as GEPA suffer from prompt bloat: each iteration appends rules and caveats, producing prompts up to 3$\\times$ longer yet no more accurate. We trace this to three deficiencies - incomplete error observation, limited search diversity, and unreliable selection - and propose ESPO (Error-Structured Prompt Optimization), which decomposes prompt optimization into three phases: Diagnose clusters all training errors into structural patterns in one round; Propose generates candidates via four complementary strategies with independent biases; Select applies bootstrap stability selection. On seven public NLP benchmarks - Tweet, MMLU, GSM8K, HotpotQA, ScoNe, HoVer, and PUPA - ESPO improves average accuracy by $+$3.76 pp over the state-of-the-art (74.67% vs 70.91% for GEPA), matching or exceeding GEPA on every dataset while producing prompts 47% shorter (1,004 vs 1,878 chars) and faster at inference. Cross-model experiments across four additional student models (Gemma 3 12B, Mistral 14B, Qwen3 32B, Claude Haiku 4.5) show ESPO yields the best average accuracy on every model tested, with the largest gap on Qwen3 GSM8K (15.00% $\\to$ 91.40%). A generalization bound (Appendix) grounds each phase in a corresponding term of the test-time gap, and the ablation confirms a key prediction: adding diversity without bootstrap selection actually hurts performance ($-$1.20%).",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.04197",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "52206c2cf7e2"
+        },
+        {
+          "title": "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning",
+          "url": "https://arxiv.org/abs/2609.04194v1",
+          "source": "arxiv",
+          "description": "Reasoning traces from chain-of-thought models appear to offer a legible window into how a model arrives at its answer. A growing body of work treats them as such, using LLM judges to diagnose errors, evaluate faithfulness, and provide step-level supervision via process reward models and generative critics. These practices rely on the text of a reasoning step carrying information about its functional role. But does the text actually encode information about which reasoning steps matter? We operationalize the importance of a reasoning step as its advantage: the change in expected reward, e.g., producing the correct final answer, from including that step, estimated via Monte Carlo rollouts. Basing ground truth on these estimates, we evaluate whether LLM judges can identify high-advantage steps and find that sufficiently capable LLMs can outperform a prevalence baseline but fall well short of a noise ceiling. Fine-tuning a model as a step-level critic yields strong improvement for incorrect responses but remains distant from ceiling for correct responses, suggesting that step importance is only partially recoverable from the text of the reasoning trace. Our findings contribute to a growing body of chain-of-thought faithfulness work that cautions against treating the legibility of reasoning traces as interpretability, especially with implications for process reward modeling.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.04194",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9b666333202c"
+        },
+        {
+          "title": "Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning",
+          "url": "https://arxiv.org/abs/2609.04183v1",
+          "source": "arxiv",
+          "description": "Weakly-Supervised Dense Video Captioning aims to localize and describe multiple events in untrimmed videos given only an ordered set of event-level captions per video. Recent work synthesizes auxiliary transition captions via LLM to provide additional vision-language alignment, but these captions lack visual grounding and are rigidly assigned to every inter-event gap at a fixed location and duration. To address these, we propose Seeing Before Synthesizing (SBS), a framework that adaptively provides visually grounded linguistic guidance only where warranted. Leveraging a VLM, we generate frame-level narratives for the inter-event gaps and detect transitions from the semantic variation across them. For identified transitions, we then refine inter-event temporal masks by blending the temporal midpoint with the semantic change point and selecting the width that maximizes vision-language alignment. Experiments on ActivityNet Captions and YouCook2 demonstrate state-of-the-art performance in both captioning and localization.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.04183",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c9f94d1a8e2c"
+        },
+        {
+          "title": "Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views",
+          "url": "https://arxiv.org/abs/2609.04180v1",
+          "source": "arxiv",
+          "description": "Gaps remain in our understanding of how large language models (LLMs) acquire knowledge during pre-training. We posit that auxiliary views, reformulations of knowledge, are causally helpful for learning. We design controlled experiments to isolate this. First, we confirm that repetition is necessary for acquisition and clarify that paraphrasing helps only at smaller batch sizes. Second, holding the token budget fixed, allocating tokens from document repetition to auxiliary views improves learning, counterintuitively, even for factual recall. Third, the effectiveness of auxiliary views is not contingent on the strength of the teacher model that generates them. Fourth, we identify forms of knowledge, contextual and foundational, that aid learning in the presence of prior knowledge gaps. Finally, we examine how these effects manifest mechanistically via layer-wise biases and compression. Together, our findings suggest that auxiliary representations of knowledge, which arise naturally in large pre-training corpora, are a key factor in the success of pre-training and offer a plausible explanation for why data diversity matters.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.04180",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "418bf8b0abd6"
+        },
+        {
+          "title": "A Computationally Feasible Framework for Causal Probabilistic Explanation",
+          "url": "https://arxiv.org/abs/2609.04177v1",
+          "source": "arxiv",
+          "description": "Explaining why a specific outcome occurred, and which inputs deserve the blame or credit, is central to philosophical, scientific, and policy analysis. Existing tools split into two camps. The theory of actual causality (AC) gives principled verdicts, but only for toy-sized models, because computing them requires enumerating counterfactual scenarios. Scalable attribution methods like SHAP (or even causal SHAP) at least partially ignore the causal structure that generated the data, and can give answers that conflict with a careful causal analysis. We close this gap with Probabilistic Causal Impact (PCI). PCI builds on actual causality and on Pearl's notions of probability of necessity and sufficiency, but recasts the question of explainability as an estimation problem on a probabilistic causal model that is easily approximated via Monte Carlo. By specifying a distribution over \"candidate explanations,\" a distribution over counterfactual values, and a scoring function, PCI provides tractable, causally grounded, graded explanations, generalizing AC and Pearl's probability of causation as degenerate cases. We evaluate PCI in synthetic and real-world examples, spanning consistency checks with AC, scaling experiments, complex continuous-valued dynamical systems, and a real-world deployed causal machine learning model trained on millions of datapoints.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.04177",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "82fad500de43"
+        },
+        {
+          "title": "How an MIT research project became the Julia programming language",
+          "url": "https://news.mit.edu/2026/how-mit-research-project-became-global-programming-language-0831",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49507072",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "12282db5520e"
+        },
+        {
+          "title": "Porting my 1993 Amiga game to Godot, with an LLM reading the 68000 assembly",
+          "url": "https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49550375",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "35cf632c0f33"
+        },
+        {
+          "title": "Grounding LLMs with JEPA-based world models trained in simulation — has this been tried? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w69gvd/grounding_llms_with_jepabased_world_models/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w69gvd",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2925b7db19f6"
+        },
+        {
+          "title": "GPT-6 is released [N]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w6v0ig/gpt6_is_released_n/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w6v0ig",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b55875981077"
+        },
+        {
+          "title": "NeurIPS Sydney SOLD OUT in minutes [N]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w6gwni/neurips_sydney_sold_out_in_minutes_n/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w6gwni",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "dbca0ae62745"
+        },
+        {
+          "title": "AAAI-27 desk rejection over incredibly minor abstract modifications [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w6kcp6/aaai27_desk_rejection_over_incredibly_minor/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w6kcp6",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6ade15afcd20"
+        },
+        {
+          "title": "Mol-JEPA - Multimodal molecular foundation model [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w6i8pr/moljepa_multimodal_molecular_foundation_model_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w6i8pr",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a6be05ee64b0"
+        },
+        {
+          "title": "How many repeated LLM queries are enough? Testing a pilot-based reliability protocol [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w6wtw7/how_many_repeated_llm_queries_are_enough_testing/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w6wtw7",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0c71770ccc20"
+        },
+        {
+          "title": "MUBA Blockchain Hackathon",
+          "url": "https://muba-hackathon.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | online | themes: Blockchain, FinTech, AI",
+          "deadline": "2026-09-05",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "c9616c07274742db8c57310b5d61adc7",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e0b90e9b87a5"
+        },
+        {
+          "title": "第七回日本最強プログラマー学生選手権～Advance～ (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/jsc2026advance-final",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-09-06T04:10:00",
+          "deadline": "2026-09-06",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "70140125",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d6869deb27f7"
+        },
+        {
+          "title": "SIT Flagship Hackathon 2026 | 8-Hour AI Hackathon",
+          "url": "https://unstop.com/hackathons/sit-flagship-hackathon-2026-8-hour-ai-hackathon-symbiosis-institute-of-technology-sit-pune-1746836",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1746836",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4d98ff7c3ec5"
+        },
+        {
+          "title": "StatNova – Minecraft AI Vibe Coding Challenge!",
+          "url": "https://unstop.com/hackathons/statnova-minecraft-ai-vibe-coding-challenge-vit-bhopal-university-vit-bhopal-1731974",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1731974",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "13b21258adff"
+        },
+        {
+          "title": "Innovators Day 2026",
+          "url": "https://unstop.com/hackathons/innovators-day-2026-sri-manakula-vinayagar-engineering-college-smvec-puducherry-1748928",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1748928",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "28acad7ead7b"
+        },
+        {
+          "title": "Dogfood | 72-Hour Hackathon",
+          "url": "https://unstop.com/hackathons/dogfood-72-hour-hackathon-hackathon-raptors-1748391",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1748391",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f43219226aa3"
+        },
+        {
+          "title": "Code Cortex 3.0",
+          "url": "https://unstop.com/hackathons/code-cortex-30-gravitas26-vit-vellore-1748822",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1748822",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "458c3d16b7c2"
+        },
+        {
+          "title": "AI/ML with Data Science - FREE Demo",
+          "url": "https://unstop.com/hackathons/aiml-with-data-science-free-demo-quality-thought-info-systems-1748700",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1748700",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "01b14886f022"
+        },
+        {
+          "title": "Kernel Prime'26 - 24 Hour Hackathon",
+          "url": "https://unstop.com/competitions/kernel-prime26-24-hour-hackathon-sa-engineering-college-1747854",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1747854",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "080ee8735902"
+        },
+        {
+          "title": "Backend Web Developer Internship",
+          "url": "https://unstop.com/internships/backend-web-developer-internship-accesco-living-1749077",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1749077",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2d3eb20c011e"
+        },
+        {
+          "title": "Marketing Internship",
+          "url": "https://unstop.com/internships/marketing-internship-skillsncr-1749060",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1749060",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "74e3ae5dce5e"
+        },
+        {
+          "title": "SEO Internship",
+          "url": "https://unstop.com/internships/seo-internship-hrdyam-1749096",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1749096",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "eceba94d22fc"
+        },
+        {
+          "title": "Social Media Internship",
+          "url": "https://unstop.com/internships/social-media-internship-hunaru-one-private-limited-1749007",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1749007",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fc44e4a97587"
+        },
+        {
+          "title": "Social Media Management Internship",
+          "url": "https://unstop.com/internships/social-media-management-internship-bellboy-residential-technologies-1748940",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1748940",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5e3407c0476b"
+        },
+        {
+          "title": "Ignite - eDC's Startup Discovery & Entrepreneurship Bootcamp",
+          "url": "https://unstop.com/competitions/ignite-edcs-startup-discovery-entrepreneurship-bootcamp-iit-delhi-1749051",
+          "source": "unstop",
+          "description": "competition | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "competition"
+          ],
+          "native_id": "1749051",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2bdd12356925"
+        },
+        {
+          "title": "Primer — Software Engineer Intern - Full Stack",
+          "url": "https://jobs.ashbyhq.com/primer/edd1667b-6323-444a-adc1-40bae5b9a3b0/application?embed=true",
+          "source": "internships",
+          "description": "internship | Primer | SF | Winter 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a5f886cf-d5b6-41ac-9bfc-98833aff9bb6",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "548f66b39415"
+        },
+        {
+          "title": "Skydio — Autonomy Engineer Intern - Computer Vision / Deep Learning - Summer 2027",
+          "url": "https://jobs.ashbyhq.com/skydio/ae4a6f7d-a240-4fa2-8c8e-04cc906e4ef9/application?embed=true",
+          "source": "internships",
+          "description": "internship | Skydio | San Mateo, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d3f54d58-9f89-4689-b91d-f9e03013c3ca",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6a0a9a20ef3b"
+        },
+        {
+          "title": "TikTok — Product Manager Intern - TikTok LIVE-AI & Ecosystem Governance",
+          "url": "https://lifeattiktok.com/search/7680555984532982069",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Spring 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "208ea4f5-0b19-40e2-bf82-27ba53a2e51c",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "249cdefc6eb3"
+        },
+        {
+          "title": "Amazon — Software Development Engineer Intern - Robotics",
+          "url": "https://amazon.jobs/en/jobs/10529525/software-development-engineer-intern-robotics-2027",
+          "source": "internships",
+          "description": "internship | Amazon | Seattle, WA, Nashville, TN, Austin, TX, North Reading, MA, Arlington County, Arlington, VA, Bellevue, WA, Westborough, MA | Summer 2027, Spring 2027, Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ea127849-c2ce-48a3-8ef5-8024831dc02e",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "87287b3cbe00"
+        },
+        {
+          "title": "Innovative Systems — Software Engineer Intern/Co-op",
+          "url": "http://innovativesystems.applytojob.com/apply/nPMqeNSQOo/InternCoop-Summer-2027-Software-Engineering",
+          "source": "internships",
+          "description": "internship | Innovative Systems | Pittsburgh, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d0242b0d-eda0-4a81-b130-d0719520e546",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7058d77e04c6"
+        },
+        {
+          "title": "Innovative Systems — Software Engineering Intern/Co-op",
+          "url": "http://innovativesystems.applytojob.com/apply/wJuSCjOOqx/InternCoopSpring-2027-Software-Engineering",
+          "source": "internships",
+          "description": "internship | Innovative Systems | Pittsburgh, PA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2583c13c-1003-4d90-a33c-cb634ef5ba6e",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3936c4952cf4"
+        },
+        {
+          "title": "Visionist — Software Engineer Intern",
+          "url": "https://jobs.jobvite.com/visionist/job/oTxGAfwq?nl=1&nl=1&fr=false",
+          "source": "internships",
+          "description": "internship | Visionist | Columbia, MD | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "77f4f856-b89f-4e69-ad68-3f38aeda2b04",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "014fb5282e3b"
+        },
+        {
+          "title": "The Exploration Company — Software Intern - Software",
+          "url": "https://jobs.ashbyhq.com/the-exploration-company/e23f19f1-b5fa-408a-822c-c6c37631a2fe/application?embed=true",
+          "source": "internships",
+          "description": "internship | The Exploration Company | LA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "fe505dad-df18-4c6b-8a7d-cd778621fc94",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4ecf91e63302"
+        },
+        {
+          "title": "The Exploration Company — Engineering Intern - Software",
+          "url": "https://jobs.ashbyhq.com/the-exploration-company/86270058-8eec-4692-b49d-97ce59fd54ac/application?embed=true",
+          "source": "internships",
+          "description": "internship | The Exploration Company | LA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b79c18c7-7a18-4a7f-93de-e12a6fa35e27",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "28c00fbf4e89"
+        },
+        {
+          "title": "Apex — Ground Software Intern - Spring or Summer 2027",
+          "url": "https://jobs.ashbyhq.com/apex-technology-inc/2d5ad921-241f-4e7a-b9ff-9d01763da88c/application?embed=true",
+          "source": "internships",
+          "description": "internship | Apex | LA | Spring 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d06c9bca-b6bb-4a9e-88dd-5dc6f0b1a038",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d54e11a37b20"
+        },
+        {
+          "title": "Boston Scientific — R&D Software Engineer Intern",
+          "url": "https://bostonscientific.eightfold.ai/careers/job/563602813483108",
+          "source": "internships",
+          "description": "internship | Boston Scientific | Arden Hills, MN | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8a34588c-c5ee-4a8a-a5a6-7002eb677f3f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2c9a40bae63f"
+        },
+        {
+          "title": "AstraZeneca — Biometrics AI Science Specialist - AI Science Specialist",
+          "url": "https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/UK---Macclesfield/XMLNAME-12-Month-University-Industrial-Placement-Student--Biometrics---AI-Science-Specialist_R-259210",
+          "source": "internships",
+          "description": "internship | AstraZeneca | Macclesfield, UK | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "95eacc77-f18e-4f11-80a1-de0d97b23164",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "76a8d163b15b"
+        },
+        {
+          "title": "Geotab — Software Developer Intern",
+          "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5376578008",
+          "source": "internships",
+          "description": "internship | Geotab | Toronto, ON, Canada, Oakville, ON, Canada, Waterloo, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "134ed341-2632-4ae3-b01a-9709b959fa20",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f99e54bb4e8a"
+        },
+        {
+          "title": "Microsoft — Data Scientist PhD Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556986137",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a4bb4181-58ef-45f8-8194-7e00cc47ab86",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cb8174faa100"
+        },
+        {
+          "title": "Symphony — Software Developer Placement",
+          "url": "https://symphony.com/company/apply?gh_jid=8121112",
+          "source": "internships",
+          "description": "internship | Symphony | Belfast, UK | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2067b1aa-897b-44a4-9358-1cdc8aefc9ef",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1075560495c7"
+        },
+        {
+          "title": "skillz — Software Engineer Co-op",
+          "url": "https://job-boards.greenhouse.io/skillzinc/jobs/8168006",
+          "source": "internships",
+          "description": "internship | skillz | Las Vegas, NV | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f6b5ff0d-148d-4780-a5c2-ce8d5f7bcec1",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e24a50c45558"
+        },
+        {
+          "title": "Tesla — Software Engineer Intern - Torque Path & Chassis Controls - Vehicle Software",
+          "url": "https://www.tesla.com/careers/search/job/282255",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Winter 2027, Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1215457c-e499-4e58-b72b-fb231b5eb754",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5af9d63a66d5"
+        },
+        {
+          "title": "Tesla — Embedded Systems Software Engineer Intern - AI Platforms",
+          "url": "https://www.tesla.com/careers/search/job/282331",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Winter 2027, Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d6bbc3f2-149a-4cb2-9752-3bcd80011975",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6497d1acf1d0"
+        },
+        {
+          "title": "Tesla — Embedded Software Engineer Intern - Optimus",
+          "url": "https://www.tesla.com/careers/search/job/282340",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Spring 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "596dd9f7-ec11-4d3b-99e8-bcce4bd4a605",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "be3c3677cb02"
+        },
+        {
+          "title": "Tesla — Software Integration Engineer Intern - Optimus",
+          "url": "https://www.tesla.com/careers/search/job/282342",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Winter 2027, Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "da56c477-505d-47e8-8a53-536887f0784e",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4340f028b7ac"
+        },
+        {
+          "title": "AltaML — Associate Software Developer - Multiple Teams",
+          "url": "https://jobs.lever.co/altaml/abed5ba5-8cbe-46b1-beae-25fe30bc4c91/apply",
+          "source": "internships",
+          "description": "internship | AltaML | Calgary, AB, Canada | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b439166e-c153-454d-b66a-94e95f6ca947",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8d9d9439a08a"
+        },
+        {
+          "title": "Skyward — Software Engineer Intern",
+          "url": "https://jobs.smartrecruiters.com/Skyward1/744000147320799",
+          "source": "internships",
+          "description": "internship | Skyward | Stevens Point, WI | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1ea4c927-ae9b-4c03-a0ae-cb2af5e5a8cb",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2f5985f04ac4"
+        },
+        {
+          "title": "Waymo — Software Engineering Intern - Behavior Test - MS",
+          "url": "https://careers.withwaymo.com/jobs?gh_jid=8174504",
+          "source": "internships",
+          "description": "internship | Waymo | SF | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "27f622fc-a5e9-4b35-bfb1-ac371473556a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f33ae3fcecaf"
+        },
+        {
+          "title": "Entergy — Artificial Intelligence Intern",
+          "url": "https://jobs.entergy.com/job/New-Orleans-Student-Intern-AI-Spring-2027-Loui/1426669200/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Entergy | New Orleans, LA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "428ad8d7-0146-40e6-a4a9-1478c8c9ec31",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4725e751583a"
+        }
+      ]
     }
   ]
 }

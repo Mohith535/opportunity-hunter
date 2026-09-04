@@ -2925,8 +2925,8 @@
     "e0b90e9b87a5": {
       "title": "MUBA Blockchain Hackathon",
       "first_seen": "2026-07-01",
-      "last_seen": "2026-09-03",
-      "times_seen": 7
+      "last_seen": "2026-09-04",
+      "times_seen": 8
     },
     "cefeab139e04": {
       "title": "PEC HACKS 4.0",
@@ -19090,6 +19090,318 @@
       "title": "General Dynamics UK — Software Developer Co-op - 16-Months",
       "first_seen": "2026-09-03",
       "last_seen": "2026-09-03",
+      "times_seen": 1
+    },
+    "8f12cbdad347": {
+      "title": "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "52206c2cf7e2": {
+      "title": "ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "9b666333202c": {
+      "title": "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "c9f94d1a8e2c": {
+      "title": "Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "418bf8b0abd6": {
+      "title": "Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "82fad500de43": {
+      "title": "A Computationally Feasible Framework for Causal Probabilistic Explanation",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "12282db5520e": {
+      "title": "How an MIT research project became the Julia programming language",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "35cf632c0f33": {
+      "title": "Porting my 1993 Amiga game to Godot, with an LLM reading the 68000 assembly",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "2925b7db19f6": {
+      "title": "Grounding LLMs with JEPA-based world models trained in simulation — has this been tried? [D]",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "b55875981077": {
+      "title": "GPT-6 is released [N]",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "dbca0ae62745": {
+      "title": "NeurIPS Sydney SOLD OUT in minutes [N]",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "6ade15afcd20": {
+      "title": "AAAI-27 desk rejection over incredibly minor abstract modifications [D]",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "a6be05ee64b0": {
+      "title": "Mol-JEPA - Multimodal molecular foundation model [R]",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "0c71770ccc20": {
+      "title": "How many repeated LLM queries are enough? Testing a pilot-based reliability protocol [R]",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "d6869deb27f7": {
+      "title": "第七回日本最強プログラマー学生選手権～Advance～ (atcoder.jp)",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "4d98ff7c3ec5": {
+      "title": "SIT Flagship Hackathon 2026 | 8-Hour AI Hackathon",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "13b21258adff": {
+      "title": "StatNova – Minecraft AI Vibe Coding Challenge!",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "28acad7ead7b": {
+      "title": "Innovators Day 2026",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "f43219226aa3": {
+      "title": "Dogfood | 72-Hour Hackathon",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "458c3d16b7c2": {
+      "title": "Code Cortex 3.0",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "01b14886f022": {
+      "title": "AI/ML with Data Science - FREE Demo",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "080ee8735902": {
+      "title": "Kernel Prime'26 - 24 Hour Hackathon",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "2d3eb20c011e": {
+      "title": "Backend Web Developer Internship",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "74e3ae5dce5e": {
+      "title": "Marketing Internship",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "eceba94d22fc": {
+      "title": "SEO Internship",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "fc44e4a97587": {
+      "title": "Social Media Internship",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "5e3407c0476b": {
+      "title": "Social Media Management Internship",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "2bdd12356925": {
+      "title": "Ignite - eDC's Startup Discovery & Entrepreneurship Bootcamp",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "548f66b39415": {
+      "title": "Primer — Software Engineer Intern - Full Stack",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "6a0a9a20ef3b": {
+      "title": "Skydio — Autonomy Engineer Intern - Computer Vision / Deep Learning - Summer 2027",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "249cdefc6eb3": {
+      "title": "TikTok — Product Manager Intern - TikTok LIVE-AI & Ecosystem Governance",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "87287b3cbe00": {
+      "title": "Amazon — Software Development Engineer Intern - Robotics",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "7058d77e04c6": {
+      "title": "Innovative Systems — Software Engineer Intern/Co-op",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "3936c4952cf4": {
+      "title": "Innovative Systems — Software Engineering Intern/Co-op",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "014fb5282e3b": {
+      "title": "Visionist — Software Engineer Intern",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "4ecf91e63302": {
+      "title": "The Exploration Company — Software Intern - Software",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "28c00fbf4e89": {
+      "title": "The Exploration Company — Engineering Intern - Software",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "d54e11a37b20": {
+      "title": "Apex — Ground Software Intern - Spring or Summer 2027",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "2c9a40bae63f": {
+      "title": "Boston Scientific — R&D Software Engineer Intern",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "76a8d163b15b": {
+      "title": "AstraZeneca — Biometrics AI Science Specialist - AI Science Specialist",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "f99e54bb4e8a": {
+      "title": "Geotab — Software Developer Intern",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "cb8174faa100": {
+      "title": "Microsoft — Data Scientist PhD Intern",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "1075560495c7": {
+      "title": "Symphony — Software Developer Placement",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "e24a50c45558": {
+      "title": "skillz — Software Engineer Co-op",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "5af9d63a66d5": {
+      "title": "Tesla — Software Engineer Intern - Torque Path & Chassis Controls - Vehicle Software",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "6497d1acf1d0": {
+      "title": "Tesla — Embedded Systems Software Engineer Intern - AI Platforms",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "be3c3677cb02": {
+      "title": "Tesla — Embedded Software Engineer Intern - Optimus",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "4340f028b7ac": {
+      "title": "Tesla — Software Integration Engineer Intern - Optimus",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "8d9d9439a08a": {
+      "title": "AltaML — Associate Software Developer - Multiple Teams",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "2f5985f04ac4": {
+      "title": "Skyward — Software Engineer Intern",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "f33ae3fcecaf": {
+      "title": "Waymo — Software Engineering Intern - Behavior Test - MS",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
+      "times_seen": 1
+    },
+    "4725e751583a": {
+      "title": "Entergy — Artificial Intelligence Intern",
+      "first_seen": "2026-09-04",
+      "last_seen": "2026-09-04",
       "times_seen": 1
     }
   }
