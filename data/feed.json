@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04",
+  "updated_at": "2026-09-05",
   "items": [
     {
       "key": "e0b90e9b87a5",
@@ -85,105 +85,14 @@
       "action_plan": []
     },
     {
-      "key": "bb8f60a2d8cc",
-      "title": "UI/UX Internship",
-      "url": "https://unstop.com/internships/uiux-internship-algoryx-technologies-1743312",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
+      "key": "ba4f2f0c672e",
+      "title": "OpenCV AI Competition 2026, powered by AWS",
+      "url": "https://opencv26.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-10-27",
       "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "bca5c8e07b5d",
-      "title": "Graphic Designer Internship",
-      "url": "https://unstop.com/internships/graphic-designer-internship-cubegraph-technologies-1743218",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "c7e48d9076a2",
-      "title": "Social Media Marketing Internship",
-      "url": "https://unstop.com/internships/social-media-marketing-internship-cubegraph-technologies-1743212",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b2411e39b36f",
-      "title": "SaaS / Tech Solutions Internship",
-      "url": "https://unstop.com/internships/saas-tech-solutions-internship-revino-solutions-private-limited-1743285",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a5cb971c944b",
-      "title": "Founder's Office Internship",
-      "url": "https://unstop.com/internships/founders-office-internship-tevoxo-ventures-1743230",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "cdc0b64bd889",
-      "title": "Campus Ambassador Internship",
-      "url": "https://unstop.com/internships/campus-ambassador-internship-smarted-innovations-1743208",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5894f7db450f",
-      "title": "Business Development Internship (Sales)",
-      "url": "https://unstop.com/internships/business-development-internship-sales-yodha-foods-1743202",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "6137ac815ec0",
-      "title": "Research and Development Internship",
-      "url": "https://unstop.com/internships/research-and-development-internship-encrypta-in-1743200",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -995,27 +904,53 @@
       "action_plan": []
     },
     {
-      "key": "1002a77671b6",
-      "title": "The Minute - LV8 Tech Video Editor Hackathon",
-      "url": "https://unstop.com/hackathons/the-minute-lv8-tech-video-editor-hackathon-lv8-tech-1743164",
+      "key": "c65400e7a742",
+      "title": "Mass Communication Internship",
+      "url": "https://unstop.com/internships/fashion-communication-mass-communication-internee-gift-1749264",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
     },
     {
-      "key": "53877cde82a1",
-      "title": "INIT'26 - Hackathon",
-      "url": "https://unstop.com/hackathons/init26-hackathon-mukesh-patel-college-of-engineering-and-management-mpstme-1743123",
+      "key": "291ce8165ec7",
+      "title": "Management Internship - Operations",
+      "url": "https://unstop.com/internships/management-internship-operations-regex-software-services-1749352",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "47a10b9c107f",
+      "title": "Inside Sales Internship",
+      "url": "https://unstop.com/internships/inside-sales-internship-internz-learn-1748012",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "32ab323c912b",
+      "title": "Brand & Creative Internship",
+      "url": "https://unstop.com/internships/brand-creative-internship-growth-falcon-1749377",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1165,6 +1100,40 @@
       "action_plan": []
     },
     {
+      "key": "a88fdc74eff9",
+      "title": "Solidigm — Software Engineering Intern - Firmware & AI Engineering",
+      "url": "https://jobs.smartrecruiters.com/Solidigm/744000147613769",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Combines AI Engineering with Firmware; aligns with builder mindset · ⚠ verify eligibility: US-based role; requires visa sponsorship for Indi",
+      "action_plan": [
+        "Check visa sponsorship policy (15m)",
+        "Tailor resume for AI/Firmware (1h)",
+        "Apply via portal (15m)"
+      ]
+    },
+    {
+      "key": "b3b31c521f10",
+      "title": "Schonfeld — Data Science Intern",
+      "url": "https://job-boards.greenhouse.io/schonfeld/jobs/8171692",
+      "source": "internships",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Data Science in NYC is prestigious, but not 'Elite AI' level · ⚠ verify eligibility: US-based role; requires visa sponsorship for Indian stu",
+      "action_plan": [
+        "Check visa sponsorship policy (15m)",
+        "Highlight ML projects in resume (1h)",
+        "Apply (15m)"
+      ]
+    },
+    {
       "key": "ee5bc1551e47",
       "title": "Intuitive Surgical — Computer Vision Engineer Intern - Fall 2026",
       "url": "https://jobs.smartrecruiters.com/Intuitive/744000145329669",
@@ -1298,6 +1267,45 @@
       "key": "2015fdc6dce1",
       "title": "Netflix — Machine Learning/AI Infrastructure Engineering Intern - AI Platform",
       "url": "https://explore.jobs.netflix.net/careers/job/790317917022",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3d3819b255f3",
+      "title": "Verisk — AI Intern - Summer Internship Program",
+      "url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/4682",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7021df1aa389",
+      "title": "GrayMatter Robotics — AI Research Intern - Foundation Models",
+      "url": "https://jobs.ashbyhq.com/graymatter-robotics/dea0f08d-ebf5-4e55-b9cb-e6302014f429/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a3512ff8b07c",
+      "title": "Bland AI — Machine Learning Research Intern - Audio",
+      "url": "https://jobs.ashbyhq.com/bland/bd8743ff-9e18-4f79-9c9a-288f384921f3/application?embed=true",
       "source": "internships",
       "score": 6,
       "deadline": null,
