@@ -77164,6 +77164,477 @@
           "key": "c18b9f2ec08b"
         }
       ]
+    },
+    {
+      "date": "2026-09-06",
+      "items": [
+        {
+          "title": "Player-YN/PawWork_ZhuaZhua — ★1,270",
+          "url": "https://github.com/Player-YN/PawWork_ZhuaZhua",
+          "source": "github",
+          "description": "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server. (topics: ai agent, browser agent, byok, chrome extension, llm, pptx, tldraw, univer)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "Player-YN/PawWork_ZhuaZhua",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0aa0850d1dd9"
+        },
+        {
+          "title": "Chrome again exempts Google from user site data settings",
+          "url": "https://lapcatsoftware.com/articles/2026/9/1.html",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49581870",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8fabb9998a82"
+        },
+        {
+          "title": "Agentic Cinema: The Blockbuster Hackathon",
+          "url": "https://agentic-cinema.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jul 27 - Sep 09, 2026 | prize $ 75,000 | themes: Databases, Machine Learning/AI, Open Ended",
+          "deadline": "2026-09-09",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30721",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6f4b2d0173c3"
+        },
+        {
+          "title": "GPT-6 reportedly jailbroken within 24 hours using an extended Task-in-Prompt (TIP) attack [N]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w89m36/gpt6_reportedly_jailbroken_within_24_hours_using/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w89m36",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7b9ce4bc5912"
+        },
+        {
+          "title": "Astra vs. Fable 5.1 on real ML tasks -- tradeoffs, strengths, shortcomings [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w8g1gk/astra_vs_fable_51_on_real_ml_tasks_tradeoffs/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w8g1gk",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "98484f84aaf5"
+        },
+        {
+          "title": "AIStats 2027 Questions [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w8l0hn/aistats_2027_questions_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w8l0hn",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cd1527c14027"
+        },
+        {
+          "title": "MUBA Blockchain Hackathon",
+          "url": "https://muba-hackathon.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | online | themes: Blockchain, FinTech, AI",
+          "deadline": "2026-09-06",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "c9616c07274742db8c57310b5d61adc7",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e0b90e9b87a5"
+        },
+        {
+          "title": "Weekly Contest 519 (leetcode.com)",
+          "url": "https://leetcode.com/contest/weekly-contest-519",
+          "source": "clist",
+          "description": "competitive programming contest on leetcode.com; starts 2026-09-13T02:30:00",
+          "deadline": "2026-09-13",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "70174411",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4e6abd3119c6"
+        },
+        {
+          "title": "Codeforces Round (Div. 2) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2264",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-09-13T17:05:00",
+          "deadline": "2026-09-13",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "70180161",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3dacc7fa68d7"
+        },
+        {
+          "title": "JIJ Programming Contest 2026（AtCoder Beginner Contest 476） (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/abc476",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-09-19T12:00:00",
+          "deadline": "2026-09-19",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "70142963",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0494dbea69e1"
+        },
+        {
+          "title": "Argonyx‘26",
+          "url": "https://unstop.com/hackathons/argonyx26-rv-university-1748836",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1748836",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8c5f98abaece"
+        },
+        {
+          "title": "Udbhav'26 – Idea. Build. Pitch.",
+          "url": "https://unstop.com/hackathons/udbhav26-idea-build-pitch-pimpri-chinchwad-college-of-engineering-research-1749090",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1749090",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "83303a0ae90b"
+        },
+        {
+          "title": "Startup Street 11",
+          "url": "https://unstop.com/hackathons/startup-street-11-gravitas26-vit-vellore-1749969",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1749969",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ea9372befc15"
+        },
+        {
+          "title": "Buildonomics",
+          "url": "https://unstop.com/hackathons/buildonomics-gravitas26-vit-vellore-1749938",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1749938",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7f5116b3c0b3"
+        },
+        {
+          "title": "InternHill Code Sprint",
+          "url": "https://unstop.com/hackathons/internhill-code-sprint-internhill-solutions-1749959",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1749959",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c5cc1036652e"
+        },
+        {
+          "title": "HackIndore 4.0 – 24‑Hour National Hackathon",
+          "url": "https://unstop.com/hackathons/hackindore-40-24hour-national-hackathon-shri-g-s-institute-of-technology-science-indore-1744202",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1744202",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a4bf886e9b76"
+        },
+        {
+          "title": "Content Creation Internship",
+          "url": "https://unstop.com/internships/content-creation-internship-closekart-private-limited-1750011",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1750011",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2b06f03d9190"
+        },
+        {
+          "title": "Digital Marketing Internship",
+          "url": "https://unstop.com/internships/digital-marketing-internship-weskill-1749835",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1749835",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1e6c75b9de4d"
+        },
+        {
+          "title": "Direct Sales Internship",
+          "url": "https://unstop.com/internships/direct-sales-internship-bitwise-branding-1749962",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1749962",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4d1ae7aacc39"
+        },
+        {
+          "title": "Growth Internship",
+          "url": "https://unstop.com/internships/growth-internship-savra-ai-1749924",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1749924",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a2e03bb65a9b"
+        },
+        {
+          "title": "Artemis 2026 | National Level Hardware Hackathon",
+          "url": "https://unstop.com/competitions/artemis-2026-national-level-hardware-hackathon-dy-patil-ramrao-adik-institute-of-technology-rait-navi-mumba-1749956",
+          "source": "unstop",
+          "description": "competition | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "competition"
+          ],
+          "native_id": "1749956",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e6e7f5cdf524"
+        },
+        {
+          "title": "GE Aerospace — Software Engineering Placement - Month Placement",
+          "url": "https://geaerospace.wd5.myworkdayjobs.com/ge_externalsite/job/Cheltenham/GE-Aerospace-Software-Engineering---12-Month-Placement_R5039374-2",
+          "source": "internships",
+          "description": "internship | GE Aerospace | Bristol, UK, Cheltenham, UK | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "37f5de8f-da79-4e88-801b-65f4b77bd4e5",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8747c758a742"
+        },
+        {
+          "title": "GE Aerospace — Data Science Placement - Month Placement",
+          "url": "https://geaerospace.wd5.myworkdayjobs.com/ge_externalsite/job/Eastleigh/GE-Aerospace-Data-Science---12-Month-Placement--Eastleigh_R5039365-1",
+          "source": "internships",
+          "description": "internship | GE Aerospace | Eastleigh, UK | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e50e21b7-95d2-497c-9bca-f25e90e4cfd7",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a32b142a9a04"
+        },
+        {
+          "title": "Fab2 — Automation Software Engineering Intern - Summer",
+          "url": "https://jobs.ashbyhq.com/fab2/602d73a8-d190-4fc1-97e9-99b7f5fa7475/application?embed=true",
+          "source": "internships",
+          "description": "internship | Fab2 | SF, Austin, TX | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5bd0d89c-2824-48b3-b41a-d61a035ae36f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a115c44fee5a"
+        },
+        {
+          "title": "Fab2 — Rust Software Engineer Intern - Chip Design Tools - Multiple Teams",
+          "url": "https://jobs.ashbyhq.com/fab2/2b0ab443-c7d8-4547-9766-111747f0b361/application?embed=true",
+          "source": "internships",
+          "description": "internship | Fab2 | SF, Austin, TX | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5388c1d5-9cfb-47cb-a19b-4772ec63a368",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8c29d0875475"
+        },
+        {
+          "title": "Fab2 — Embedded Software Engineer Intern - Summer",
+          "url": "https://jobs.ashbyhq.com/fab2/15020e6e-be1c-4455-95a3-aa798474cec4/application?embed=true",
+          "source": "internships",
+          "description": "internship | Fab2 | SF, Austin, TX | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1382cd76-4956-4de0-8d73-6880a4b56d5d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2e21bdd17cb0"
+        },
+        {
+          "title": "Fab2 — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/fab2/36ab33ab-82e7-4cc4-8137-f451fd6036a0/application?embed=true",
+          "source": "internships",
+          "description": "internship | Fab2 | SF, Austin, TX | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e435361a-f6e4-4d40-a169-9d5acffb23fb",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6c00bffe958c"
+        }
+      ]
     }
   ]
 }

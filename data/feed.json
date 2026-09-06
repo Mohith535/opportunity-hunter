@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05",
+  "updated_at": "2026-09-06",
   "items": [
     {
       "key": "e0b90e9b87a5",
@@ -7,7 +7,7 @@
       "url": "https://muba-hackathon.devfolio.co",
       "source": "devfolio",
       "score": 10,
-      "deadline": "2026-09-05",
+      "deadline": "2026-09-06",
       "tags": [
         "hackathon"
       ],
@@ -98,131 +98,14 @@
       "action_plan": []
     },
     {
-      "key": "410597fcafc3",
-      "title": "Co-Founder's Office Internship",
-      "url": "https://unstop.com/internships/co-founders-office-internship-the-funding-story-1743679",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
+      "key": "6f4b2d0173c3",
+      "title": "Agentic Cinema: The Blockbuster Hackathon",
+      "url": "https://agentic-cinema.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-09-09",
       "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "aff35160fca3",
-      "title": "Founder's Office – Presales & Solution Engineer Internship",
-      "url": "https://unstop.com/internships/founders-office-presales-solution-engineer-internship-privacyledger-1743787",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ead5a82e1062",
-      "title": "Social Media & Brand Internship",
-      "url": "https://unstop.com/internships/social-media-brand-internship-bookdio-1743792",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f2d867b53f8a",
-      "title": "Digital Marketing Internship",
-      "url": "https://unstop.com/internships/digital-marketing-internship-domin8-labs-1743793",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f05f8ea6b644",
-      "title": "Business Development Executive Internship",
-      "url": "https://unstop.com/internships/business-development-executive-internship-gokboru-tech-private-limited-1743767",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "2d9bbbdb50fc",
-      "title": "Software Engineering Internship | Apply on internship.vidbow.in",
-      "url": "https://unstop.com/internships/software-engineering-intern-vidbow-1743709",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "aa57d4ddb36d",
-      "title": "Long Form Editor Internship",
-      "url": "https://unstop.com/internships/long-form-editor-divergent-classes-1743705",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "af697d6179a0",
-      "title": "Tech Support Internship",
-      "url": "https://unstop.com/internships/head-tech-support-the-funding-story-1743703",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "02b54071e396",
-      "title": "Google — Software Engineer Intern",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/91436104816698054",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "95c959e516c7",
-      "title": "Google — Software Developer Intern",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/112518690523488966",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -956,14 +839,53 @@
       "action_plan": []
     },
     {
-      "key": "6737f37fd577",
-      "title": "Agentic AI Hackathon",
-      "url": "https://unstop.com/hackathons/agentic-ai-hackathon-sarcathon-2026-iit-bombay-1743750",
+      "key": "2b06f03d9190",
+      "title": "Content Creation Internship",
+      "url": "https://unstop.com/internships/content-creation-internship-closekart-private-limited-1750011",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1e6c75b9de4d",
+      "title": "Digital Marketing Internship",
+      "url": "https://unstop.com/internships/digital-marketing-internship-weskill-1749835",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4d1ae7aacc39",
+      "title": "Direct Sales Internship",
+      "url": "https://unstop.com/internships/direct-sales-internship-bitwise-branding-1749962",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a2e03bb65a9b",
+      "title": "Growth Internship",
+      "url": "https://unstop.com/internships/growth-internship-savra-ai-1749924",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1134,45 +1056,6 @@
       ]
     },
     {
-      "key": "ee5bc1551e47",
-      "title": "Intuitive Surgical — Computer Vision Engineer Intern - Fall 2026",
-      "url": "https://jobs.smartrecruiters.com/Intuitive/744000145329669",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d06a54a53483",
-      "title": "Kodiak Robotics — AI/ML Intern - Artificial Intelligence/Machine Learning",
-      "url": "https://job-boards.greenhouse.io/kodiak/jobs/4377407009",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "43b0c4c9a0c0",
-      "title": "InfiniteQuant — Quantitative Developer Internship - Summer 2027",
-      "url": "https://jobs.smartrecruiters.com/InfiniteQuant/744000145263134",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "a8901e3e891e",
       "title": "The WebMCP Challenge",
       "url": "https://webmcp.devpost.com/",
@@ -1311,6 +1194,130 @@
       "deadline": null,
       "tags": [
         "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1ae99be778a5",
+      "title": "RJ Lee Group — Artificial Intelligence Software Modernization Intern",
+      "url": "https://rjleegroupinc.applytojob.com/apply/vMYHU0VqAg/Internship-Artificial-Intelligence-Software-Modernization",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0dee9164bad2",
+      "title": "AMI — Computer Vision Scientist Intern - Geometry and 3D Vision",
+      "url": "https://jobs.ashbyhq.com/ami/0d7332d8-b8e7-40d3-89b6-dfc02b40bfa2/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4f5844a01f03",
+      "title": "How important is having an internship to get a good job for ML PhD in USA? [D]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1w19tav/how_important_is_having_an_internship_to_get_a/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f0c57db416c2",
+      "title": "Bland AI — Machine Learning Research Intern - Audio",
+      "url": "https://jobs.ashbyhq.com/bland/c8a5c0de-935d-4f76-bc7d-237cbfb2cf55/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7ce2a6afbad9",
+      "title": "PhD Internship in smaller lab [D]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1w1itzf/phd_internship_in_smaller_lab_d/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "cb96813b52fe",
+      "title": "Qorvo — Research Scientist Intern",
+      "url": "https://careers.qorvo.com/job/Richardson-Research-Scientist-Intern-TX-75080/1424727000/?ats=successfactors",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "fbfa6589712c",
+      "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Knowledge Graph",
+      "url": "https://lifeattiktok.com/search/7676652813409552645",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "ce8965232dc5",
+      "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Knowledge Graph",
+      "url": "https://lifeattiktok.com/search/7676650607912601861",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8a88c77f91cc",
+      "title": "Meta AI — University Programs & Internships",
+      "url": "https://www.metacareers.com/students",
+      "source": "programs",
+      "score": 6,
+      "deadline": "2026-09-30",
+      "tags": [
+        "internship",
+        "research",
+        "meta",
+        "ai",
+        "global",
+        "in-season"
       ],
       "ai_summary": "",
       "action_plan": []
