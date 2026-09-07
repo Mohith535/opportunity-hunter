@@ -9057,8 +9057,8 @@
     "6f4b2d0173c3": {
       "title": "Agentic Cinema: The Blockbuster Hackathon",
       "first_seen": "2026-07-28",
-      "last_seen": "2026-09-06",
-      "times_seen": 2
+      "last_seen": "2026-09-07",
+      "times_seen": 3
     },
     "231f4db9133c": {
       "title": "CALL-E: Your Code Is Calling",
@@ -19828,6 +19828,324 @@
       "title": "Fab2 — Software Engineer Intern",
       "first_seen": "2026-09-06",
       "last_seen": "2026-09-06",
+      "times_seen": 1
+    },
+    "b15b91ffd71f": {
+      "title": "WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "0adadabec9b2": {
+      "title": "A Deep Generative Model for Synthesizing Labeled Wireless Signals",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "cc6eca333ce2": {
+      "title": "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "305e6db6e1ac": {
+      "title": "Necessary or Sufficient? Evaluating LLM Explanations With Behavioural Evidence",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "4c7905eb47e8": {
+      "title": "Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "4643f7302f1a": {
+      "title": "TrenTorch/TrenTorch — ★123",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "ed6101343fbc": {
+      "title": "Making a Python interpreter in 1024 bytes",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "b088f910b837": {
+      "title": "Research acceleration: The view inside OpenAI",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "e2b2dd7f04d5": {
+      "title": "Switzerland's Federal Government Is Replacing Microsoft on 3k Computers",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "700bdec31684": {
+      "title": "Black Hole of Los Alamos: Seller of surplus nuclear research materials (2011)",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "d38a8a7c679c": {
+      "title": "Reproducibility seems to be headed towards irrelevance in ML research. Is it too late? [D]",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "f6ee90aa243d": {
+      "title": "[D] IJCNLP-AACL 2026: Paper Commitment Results (ARR May 2026 Cycle) [D]",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "3a6a43a43e12": {
+      "title": "PINNStudio: A free, open-source no-code GUI for setting up, training, and visualizing PINNs [P]",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "17c6d3f9f14b": {
+      "title": "Is designing a memory graph around known data structure “overfitting” if I never touch the questions? [D]",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "8d00f3faa1b0": {
+      "title": "Built a from-scratch TTS pipeline (FastSpeech2 + HiFi-GAN) on LJSpeech [P]",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "6d9fe189f6ee": {
+      "title": "Applying Sliding Window Attention to pretrained LLMs at inference time [P]",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "7f42471e2306": {
+      "title": "What is the correct way to vibe-code Machine Learning projects?[p]",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "ab7340d5a00a": {
+      "title": "Recursive",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "e31567818023": {
+      "title": "Innosprint2.0",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "faac9eb2701a": {
+      "title": "Weekly Contest 520 (leetcode.com)",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "1a905e97fd99": {
+      "title": "Hackwave 3.0",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "3efe6c61af81": {
+      "title": "Hack Devengers 2.0",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "1bfff58be27a": {
+      "title": "Seattle GiveCamp 2026",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "49d505b87939": {
+      "title": "DevHack 2026",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "878e54764e18": {
+      "title": "EIC VentureX: Idea To Impact Hackathon",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "850c0e416708": {
+      "title": "ZeroBreach 2.0 CTF 2026",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "94ef486632bd": {
+      "title": "CodeClash 1.0 – National Coding Competition",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "551d88b15bce": {
+      "title": "Campus Ambassador Internship",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "1e3cae38cd52": {
+      "title": "Mobile Application Developer Internship",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "19df7067d9fe": {
+      "title": "Meta Assistant Internship",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "b427a410e578": {
+      "title": "AI Engineer Internship",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "1c799e710fa0": {
+      "title": "Community Manager Internship",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "b6ac731d2740": {
+      "title": "Reliance Foundation Scholarships 2026-27",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "7bc984bd15dd": {
+      "title": "Royal Bank of Canada — Developer",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "ebd4e9ef2051": {
+      "title": "Airbus — Landing Gear Engineering AI & Data Analytics Placement",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "9d165a4809ac": {
+      "title": "Airbus — Airframe Data Scientist Placement",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "8f5594bdcdb9": {
+      "title": "Airbus — Full-Stack Software Developer Intern",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "74ed5f91fa6e": {
+      "title": "Airbus — Software Engineering Intern",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "d0c7518fca78": {
+      "title": "Airbus — Optical and Satellite Communications Software Engineering Placement",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "32ddb550f1cd": {
+      "title": "Airbus — Space Software Engineering Placement - Months",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "6431b97292e5": {
+      "title": "Airbus — Software Developer Placement",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "b0cc02841c50": {
+      "title": "Airbus — Flight Physics Data Science Engineer",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "164ce170e4c8": {
+      "title": "OMERS — AI/ML Engineer Student - Winter 2027 - 8 Months",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "ce46c4b238df": {
+      "title": "Xcel Energy — Data Science Intern",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "320d2e0a379c": {
+      "title": "Xcel Energy — AI & Automation Intern - Regulatory",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "6f679aa69f28": {
+      "title": "Xcel Energy — Data Scientist Intern",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "c1c185dcf49d": {
+      "title": "Xcel Energy — AI Solutions Development Intern",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "a7bb5f728f7f": {
+      "title": "ICF International — Software Developer Intern",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "f14979009918": {
+      "title": "Airbus — Artificial Intelligence Intern",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "041a7d1b7869": {
+      "title": "Tokyo Electron — Automation Developer/Analyst Intern",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "95a651430260": {
+      "title": "Royal Bank of Canada — Developer - Amplify",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "2c59b7f1811f": {
+      "title": "Royal Bank of Canada — Developer - Amplify",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
+      "times_seen": 1
+    },
+    "fab4d190036a": {
+      "title": "Royal Bank of Canada — Developer",
+      "first_seen": "2026-09-07",
+      "last_seen": "2026-09-07",
       "times_seen": 1
     }
   }

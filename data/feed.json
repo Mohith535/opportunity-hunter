@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-09-06",
+  "updated_at": "2026-09-07",
   "items": [
-    {
-      "key": "e0b90e9b87a5",
-      "title": "MUBA Blockchain Hackathon",
-      "url": "https://muba-hackathon.devfolio.co",
-      "source": "devfolio",
-      "score": 10,
-      "deadline": "2026-09-06",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "3dc64ec0221e",
       "title": "3D Websites Hackathon",
@@ -72,6 +59,19 @@
       "action_plan": []
     },
     {
+      "key": "e0b90e9b87a5",
+      "title": "MUBA Blockchain Hackathon",
+      "url": "https://muba-hackathon.devfolio.co",
+      "source": "devfolio",
+      "score": 10,
+      "deadline": "2026-09-06",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "885eeaaff9df",
       "title": "Build, Ship, Shape: Amazon Developer Hackathon",
       "url": "https://amazonappdev2026.devpost.com/",
@@ -111,102 +111,11 @@
       "action_plan": []
     },
     {
-      "key": "6ae32b7aa26b",
-      "title": "Graphic Designer and Video Editor Internship",
-      "url": "https://unstop.com/internships/graphic-designer-and-video-editor-internship-rambhau-mhalgi-prabodhini-pune-1744264",
+      "key": "19df7067d9fe",
+      "title": "Meta Assistant Internship",
+      "url": "https://unstop.com/internships/meta-assistant-internship-inspire-global-ventures-pvt-ltd-1750481",
       "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "2f1434e87104",
-      "title": "Campus Ambassador Internship",
-      "url": "https://unstop.com/internships/campus-ambassador-internship-indian-institute-of-technology-iit-patna-1736098",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "caf890005705",
-      "title": "Digital Marketing Internship",
-      "url": "https://unstop.com/internships/digital-marketing-intern-growth-india-1744245",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1aad2935d0f2",
-      "title": "Marketing Internship",
-      "url": "https://unstop.com/internships/marketing-internship-market-orbit-agency-llp-1744246",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b7d99a9d07d5",
-      "title": "Campus Ambassador Internship- Architecture Domain",
-      "url": "https://unstop.com/internships/architecture-domain-campus-ambassador-internship-mycaptain-1744200",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "eb2d3d1a46a2",
-      "title": "Campus Ambassador Internship- Design Domain",
-      "url": "https://unstop.com/internships/design-domain-campus-ambassador-internship-mycaptain-1744199",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "796b319bf846",
-      "title": "Social Media Manager Internship",
-      "url": "https://unstop.com/internships/social-media-manager-internship-godstockss-1744247",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b5c3a320b482",
-      "title": "Mobile App Engineer Internship",
-      "url": "https://unstop.com/internships/mobile-app-engineer-internship-vyntage-1744251",
-      "source": "unstop",
-      "score": 8,
+      "score": 10,
       "deadline": null,
       "tags": [
         "internship"
@@ -891,14 +800,53 @@
       "action_plan": []
     },
     {
-      "key": "89a1cfbb06cf",
-      "title": "Anakin Forge Hackathon",
-      "url": "https://unstop.com/hackathons/anakin-forge-hackathon-anakin-skywalker-pvt-ltd-1742485",
+      "key": "551d88b15bce",
+      "title": "Campus Ambassador Internship",
+      "url": "https://unstop.com/internships/campus-ambassador-internship-yhills-1750178",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1e3cae38cd52",
+      "title": "Mobile Application Developer Internship",
+      "url": "https://unstop.com/internships/mobile-application-developer-internship-maytrixtech-1750425",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b427a410e578",
+      "title": "AI Engineer Internship",
+      "url": "https://unstop.com/internships/ai-engineer-internship-aivi-intelligence-pvt-ltd-1750468",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1c799e710fa0",
+      "title": "Community Manager Internship",
+      "url": "https://unstop.com/internships/community-manager-internship-mycaptain-1750477",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1056,40 +1004,14 @@
       ]
     },
     {
-      "key": "a8901e3e891e",
-      "title": "The WebMCP Challenge",
-      "url": "https://webmcp.devpost.com/",
-      "source": "devpost",
-      "score": 6,
-      "deadline": "2026-09-03",
+      "key": "878e54764e18",
+      "title": "EIC VentureX: Idea To Impact Hackathon",
+      "url": "https://unstop.com/hackathons/eic-venturex-idea-to-impact-punjab-engineering-college-pec-chandigarh-1750271",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
       "tags": [
         "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "98474fd2f478",
-      "title": "TikTok — AI Infrastructure Engineer Intern - Recommendation & LLM",
-      "url": "https://lifeattiktok.com/search/7672671220798818613",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "2c88c7b9d687",
-      "title": "Honeywell — Artificial Intelligence/Machine Learning Intern",
-      "url": "https://ibqbjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Honeywell/job/155522",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1318,6 +1240,84 @@
         "ai",
         "global",
         "in-season"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1347d57ea691",
+      "title": "JP Morgan Chase — Software Engineer Intern - Summer Internship",
+      "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210774716",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0dd04b850959",
+      "title": "Emerson Electric — Machine Learning Co-op",
+      "url": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26008762",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "445f0fadacf8",
+      "title": "Boston Scientific — Research Algorithm & Data Science Intern - Interns/Graduates",
+      "url": "https://bostonscientific.eightfold.ai/careers/job/563602813483110",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "9ad43cfb90ba",
+      "title": "Boston Scientific — Research Data Science Intern - Active Implantable Systems",
+      "url": "https://bostonscientific.eightfold.ai/careers/job/563602813483103",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b7129f57f2c3",
+      "title": "Tesla — Machine Learning Engineer Intern - Charging Data Modeling",
+      "url": "https://www.tesla.com/careers/search/job/281940",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "cdf492f79b8b",
+      "title": "Corning — Artificial Intelligence and Machine Learning Intern",
+      "url": "https://corningjobs.corning.com/job/Wilmington-Artificial-Intelligence-and-Machine-Learning-Intern-Summer-2027-NC-28405/1425596800/?ats=successfactors",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
