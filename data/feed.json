@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07",
+  "updated_at": "2026-09-08",
   "items": [
     {
       "key": "3dc64ec0221e",
@@ -119,110 +119,6 @@
       "deadline": null,
       "tags": [
         "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "030f4cd6d649",
-      "title": "Data Analyst Internship",
-      "url": "https://unstop.com/internships/data-analyst-internship-unstop-tech-fair-20-learntricks-edutech-1743489",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "cd4dfa60ca82",
-      "title": "AI/ML Internship",
-      "url": "https://unstop.com/internships/aiml-internship-kukbit-sl-1741846",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "bb21b087182a",
-      "title": "VLSI Design Internship",
-      "url": "https://unstop.com/internships/vlsi-design-internship-kukbit-sl-1737771",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f4fba7f87ea9",
-      "title": "Sales Executive Internship",
-      "url": "https://unstop.com/internships/sales-executive-internship-zeepty-technologies-private-limited-1744841",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "19f6891fdb40",
-      "title": "Video Editing Internship",
-      "url": "https://unstop.com/internships/video-editing-internship-socialaddress-1744853",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "df36314b9098",
-      "title": "Video Editing Internship",
-      "url": "https://unstop.com/internships/video-editing-internship-karostartup-technology-india-pvt-ltd-1744852",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "db15da36746d",
-      "title": "Creative Content Designer Internship",
-      "url": "https://unstop.com/internships/creative-content-designer-the-crumb-1745003",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "83484a795d2d",
-      "title": "IBSAT Scholarship",
-      "url": "https://unstop.com/scholarships/ibsat-scholarship-icfai-business-school-ibs-1744551",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "scholarship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -852,27 +748,71 @@
       "action_plan": []
     },
     {
-      "key": "9b74945ef6a7",
-      "title": "SemiCon Hackathon - Explore, Innovate & Build with Semiconductors | IIT Bombay",
-      "url": "https://unstop.com/hackathons/semicon-hackathon-explore-innovate-build-with-semiconductors-sarcathon-2026-iit-bombay-1744747",
-      "source": "unstop",
-      "score": 7,
+      "key": "2301e8e94527",
+      "title": "2akouwu/reverify — ★1,023",
+      "url": "https://github.com/2akouwu/reverify",
+      "source": "github",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "github",
+        "learning"
+      ],
+      "ai_summary": "Directly hits AI Agents, MCP, and anti-hallucination. Pure builder value.",
+      "action_plan": [
+        "Star repo and read README (5m)",
+        "Run the CLI/MCP server locally (1h)",
+        "Contribute a fix or feature (3h)"
+      ]
+    },
+    {
+      "key": "264488527c3c",
+      "title": "Content Creation / Writer Internship",
+      "url": "https://unstop.com/internships/content-creation-writer-internship-quotethought-1750846",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
     },
     {
-      "key": "f8dbf606f180",
-      "title": "2nd Washington Hackathon 2026",
-      "url": "https://unstop.com/hackathons/2nd-washington-hackathon-2026-washington-university-of-science-and-technology-1743516",
+      "key": "f027377a782f",
+      "title": "Marketing Internship",
+      "url": "https://unstop.com/internships/marketing-internship-tringflow-private-limited-1750854",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b39fe704fc13",
+      "title": "Procurement Internship",
+      "url": "https://unstop.com/internships/procurement-internship-accesco-living-1750483",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3947aa589b55",
+      "title": "College Advisor — Founding Campus Growth Internship",
+      "url": "https://unstop.com/internships/college-advisor-founding-campus-growth-internship-orca-1750802",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1017,95 +957,33 @@
       "action_plan": []
     },
     {
-      "key": "b80551aedd05",
-      "title": "Nvidia agrees to acquire Hugging Face for $13B",
-      "url": "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
-      "source": "hackernews",
-      "score": 6,
+      "key": "a364be48ba3d",
+      "title": "Tejas India Hackathon 2026",
+      "url": "https://unstop.com/hackathons/tejas-india-hackathon-2026-government-engineering-college-gec-sheikhpura-1744276",
+      "source": "unstop",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "news"
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
     },
     {
-      "key": "a2ff956ddcb2",
-      "title": "L3Harris Technologies — Artificial Intelligence Intern",
-      "url": "https://jobs.l3harris.com/job/Melbourne-Intern-,-Artificial-Intelligence-FL-32919/1423790400/?ats=successfactors",
+      "key": "952af681d11f",
+      "title": "Merck — Computational Toxicology Intern - AI/ML Computational Toxicology",
+      "url": "https://msd.wd5.myworkdayjobs.com/searchjobs/job/USA---Pennsylvania---West-Point/XMLNAME-2027-Future-Talent-Program---AI-ML-Computational-Toxicology---Intern_R412871",
       "source": "internships",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5ca52582e440",
-      "title": "American Institutes for Research — Data Science Intern",
-      "url": "https://job-boards.greenhouse.io/americaninstitutesforresearch/jobs/5404816008",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4a2c8a5a3cbd",
-      "title": "Netflix — Machine Learning Scientist Intern - AI",
-      "url": "https://explore.jobs.netflix.net/careers/job/790317916733",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "2015fdc6dce1",
-      "title": "Netflix — Machine Learning/AI Infrastructure Engineering Intern - AI Platform",
-      "url": "https://explore.jobs.netflix.net/careers/job/790317917022",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "3d3819b255f3",
-      "title": "Verisk — AI Intern - Summer Internship Program",
-      "url": "https://fa-ewmy-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/4682",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "7021df1aa389",
-      "title": "GrayMatter Robotics — AI Research Intern - Foundation Models",
-      "url": "https://jobs.ashbyhq.com/graymatter-robotics/dea0f08d-ebf5-4e55-b9cb-e6302014f429/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "AI/ML focus is better, but still niche (toxicology) vs general AI engineering. · ⚠ verify eligibility: US work authorization for Summer 2027",
+      "action_plan": [
+        "Verify US internship visa rules (10m)",
+        "Apply if eligible (20m)"
+      ]
     },
     {
       "key": "a3512ff8b07c",
@@ -1321,6 +1199,149 @@
       ],
       "ai_summary": "",
       "action_plan": []
+    },
+    {
+      "key": "b583ba3addbe",
+      "title": "Shure — Artificial Intelligence Engineer Intern",
+      "url": "https://careersus-shure.icims.com/jobs/4966/job?mobile=true&needsRedirect=false",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c3460f771767",
+      "title": "Shure — Artificial Intelligence Specialist Intern - Operations",
+      "url": "https://careersus-shure.icims.com/jobs/5029/job?mobile=true&needsRedirect=false",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7cae9390b66b",
+      "title": "Shure — Applied Research Science Intern",
+      "url": "https://careersus-shure.icims.com/jobs/4967/job?mobile=true&needsRedirect=false",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "530510238302",
+      "title": "Shure — Audio Applied Research Science Intern",
+      "url": "https://careersus-shure.icims.com/jobs/4968/job?mobile=true&needsRedirect=false",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "45f194ec1261",
+      "title": "Atlassian — Software Engineer Intern",
+      "url": "https://campus-globalcareers-atlassian.icims.com/jobs/26275/software-engineer-intern%2c-2027-canada/job",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Atlassian is a high-signal engineering company, though not AI-first. · ⚠ verify eligibility: Canadian work authorization likely required",
+      "action_plan": [
+        "Verify international student eligibility (10m)",
+        "Highlight 'Builder' projects like TaskFlow (1h)",
+        "Apply (15m)"
+      ]
+    },
+    {
+      "key": "e70be111f6ff",
+      "title": "Universal Health Services — Software Engineer Intern - Data Analytics",
+      "url": "https://jobs.uhsinc.com/jobs/367247?icims=1",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Data analytics matches ML interest, but company prestige is low. · ⚠ verify eligibility: US work authorization for PA likely required",
+      "action_plan": [
+        "Check visa sponsorship (10m)",
+        "Apply if eligible (15m)"
+      ]
+    },
+    {
+      "key": "6a0a9a20ef3b",
+      "title": "Skydio — Autonomy Engineer Intern - Computer Vision / Deep Learning - Summer 2027",
+      "url": "https://jobs.ashbyhq.com/skydio/ae4a6f7d-a240-4fa2-8c8e-04cc906e4ef9/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4725e751583a",
+      "title": "Entergy — Artificial Intelligence Intern",
+      "url": "https://jobs.entergy.com/job/New-Orleans-Student-Intern-AI-Spring-2027-Loui/1426669200/?ats=successfactors",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "accbd1b470b2",
+      "title": "Solidigm — Software Development & Firmware Engineering Intern - Multiple Teams",
+      "url": "https://jobs.smartrecruiters.com/Solidigm/744000147613629",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "General SWE role; less AI-focused than opportunity 0 · ⚠ verify eligibility: US-based role; requires visa sponsorship for Indian student",
+      "action_plan": [
+        "Check visa sponsorship policy (15m)",
+        "Apply if sponsorship is available (15m)"
+      ]
+    },
+    {
+      "key": "5f753d777b34",
+      "title": "Schonfeld — Software Engineering Intern",
+      "url": "https://job-boards.greenhouse.io/schonfeld/jobs/8180089",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "High-paying finance sector, but lacks AI/LLM focus · ⚠ verify eligibility: US-based role; requires visa sponsorship for Indian student",
+      "action_plan": [
+        "Check visa sponsorship policy (15m)",
+        "Apply if sponsorship is available (15m)"
+      ]
     }
   ]
 }

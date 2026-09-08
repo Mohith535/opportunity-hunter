@@ -78567,6 +78567,781 @@
           "key": "fab4d190036a"
         }
       ]
+    },
+    {
+      "date": "2026-09-08",
+      "items": [
+        {
+          "title": "2akouwu/reverify — ★1,023",
+          "url": "https://github.com/2akouwu/reverify",
+          "source": "github",
+          "description": "Stop your AI from making things up — it proposes, deterministic tools decide, every claim checked against ground truth with evidence. Grounded facts and context survive resets. Reverse engineering is the proving ground. MCP server + CLI. (topics: ai, ai agents, ai coding, anti hallucination, binary analysis, context engineering, ctf, developer tools, disassembler, grounding, hallucination, hallucination detection, llm, malware analysis, mcp, mcp server, python, reverse engineering, security tools, verification)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "2akouwu/reverify",
+          "score": 2,
+          "ai_score": 8,
+          "ai_summary": "Directly hits AI Agents, MCP, and anti-hallucination. Pure builder value.",
+          "action_plan": [
+            "Star repo and read README (5m)",
+            "Run the CLI/MCP server locally (1h)",
+            "Contribute a fix or feature (3h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 10,
+            "prestige": 7,
+            "deadline": 5,
+            "skill": 9,
+            "time": 8,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "2301e8e94527"
+        },
+        {
+          "title": "seoan1024/Korean-llm-v3 — ★109",
+          "url": "https://github.com/seoan1024/Korean-llm-v3",
+          "source": "github",
+          "description": "PyTorch 기반 한국어 LLM 구현 및 학습 프로젝트 (topics: 1b, ai, deep learning, from scratch, korean, korean nlp, llm, pytorch)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "seoan1024/Korean-llm-v3",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "057734c6ce18"
+        },
+        {
+          "title": "Multi-Agents LLM Financial Trading Framework",
+          "url": "https://github.com/TauricResearch/TradingAgents",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49605822",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "48cefb2d5c24"
+        },
+        {
+          "title": "There's a new \"Google Jail\" for independent wikis",
+          "url": "https://weirdgloop.org/blog/google-jail",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49604870",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1766025fc345"
+        },
+        {
+          "title": "Agentic Cinema: The Blockbuster Hackathon",
+          "url": "https://agentic-cinema.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jul 27 - Sep 09, 2026 | prize $ 75,000 | themes: Databases, Machine Learning/AI, Open Ended",
+          "deadline": "2026-09-09",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30721",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6f4b2d0173c3"
+        },
+        {
+          "title": "Generating Bad Apple autonomously from a single initial state using a tiny recurrent dynamical system (417k params) [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wa8rub/generating_bad_apple_autonomously_from_a_single/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wa8rub",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "63216dd9265a"
+        },
+        {
+          "title": "Rustuna: A High-Performance Rust Implementation of Optuna [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w9nyhz/rustuna_a_highperformance_rust_implementation_of/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w9nyhz",
+          "score": 2,
+          "ai_score": 6,
+          "ai_summary": "High-perf ML infra is good, but it's a news item, not a tangible opportunity.",
+          "action_plan": [
+            "Skim the implementation details (10m)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 6,
+            "time": 9,
+            "eligible": "yes"
+          },
+          "key": "c7d4c9467f1f"
+        },
+        {
+          "title": "My lab found a way to migrate between embedding models with zero downtime. [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wabmm7/my_lab_found_a_way_to_migrate_between_embedding/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wabmm7",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "99c5c558d78c"
+        },
+        {
+          "title": "KV cache as an agent runtime [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w9myqc/kv_cache_as_an_agent_runtime_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w9myqc",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7003a4d33137"
+        },
+        {
+          "title": "Roboticists working in Learning-from-Demonstrations and Behavioral Cloning : What is going on in your field these days? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w9lt31/roboticists_working_in_learningfromdemonstrations/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w9lt31",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8e84e6a6b7f3"
+        },
+        {
+          "title": "LLM-guided program evolution improves 10 best-known circle-packing solutions (Packomania csqv, N=101-114) [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w9xlyi/llmguided_program_evolution_improves_10_bestknown/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w9xlyi",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e268ce9f11b4"
+        },
+        {
+          "title": "Automotive Radar Object Classification [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w9m26u/automotive_radar_object_classification_p/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w9m26u",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7aacf0f19af0"
+        },
+        {
+          "title": "when a run is wrong but nothing actually failed, where do you start? [D] [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1waewc3/when_a_run_is_wrong_but_nothing_actually_failed/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1waewc3",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a91d07361181"
+        },
+        {
+          "title": "Measuring LLM performance drift: observations and methodology from 31,352 repeated benchmark measurements [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1w9llr4/measuring_llm_performance_drift_observations_and/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1w9llr4",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "56ef96888c90"
+        },
+        {
+          "title": "I reduced image-processing token usage by ~95% compared with GPT-4o direct vision, while maintaining roughly the same accuracy.How significant is that?[P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wab7ui/i_reduced_imageprocessing_token_usage_by_95/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wab7ui",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "53d20fe43719"
+        },
+        {
+          "title": "Tejas India Hackathon 2026",
+          "url": "https://unstop.com/hackathons/tejas-india-hackathon-2026-government-engineering-college-gec-sheikhpura-1744276",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1744276",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a364be48ba3d"
+        },
+        {
+          "title": "CONVERGENCE 2k26: 24Hr Hardware Hackathon",
+          "url": "https://unstop.com/hackathons/convergence-2k26-24hr-hardware-hackathon-vallurupalli-nageswara-rao-vignana-jyothi-institute-of-engineering-t-1750727",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1750727",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "17d3eace48f5"
+        },
+        {
+          "title": "Agnitia 2026 : 36 Hours National Level Hackathon",
+          "url": "https://unstop.com/hackathons/agnitia-2026-36-hours-national-level-hackathon-prestige-institute-of-engineering-management-and-research-pimr-1750621",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1750621",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "56cbeafc79d8"
+        },
+        {
+          "title": "Amazon ML Challenge 2026",
+          "url": "https://unstop.com/hackathons/crp-amazon-ml-challenge-2026-amazon-1743604",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1743604",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "334fdc87c108"
+        },
+        {
+          "title": "Code Clash",
+          "url": "https://unstop.com/hackathons/code-clash-deenbandhu-chhotu-ram-university-of-science-and-technology-dcrust-murthal-haryana-1750453",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1750453",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1b609faeae11"
+        },
+        {
+          "title": "Content Creation / Writer Internship",
+          "url": "https://unstop.com/internships/content-creation-writer-internship-quotethought-1750846",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1750846",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "264488527c3c"
+        },
+        {
+          "title": "Marketing Internship",
+          "url": "https://unstop.com/internships/marketing-internship-tringflow-private-limited-1750854",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1750854",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f027377a782f"
+        },
+        {
+          "title": "Procurement Internship",
+          "url": "https://unstop.com/internships/procurement-internship-accesco-living-1750483",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1750483",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b39fe704fc13"
+        },
+        {
+          "title": "College Advisor — Founding Campus Growth Internship",
+          "url": "https://unstop.com/internships/college-advisor-founding-campus-growth-internship-orca-1750802",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1750802",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3947aa589b55"
+        },
+        {
+          "title": "Loblaw Companies — Applied Machine Learning Co-op",
+          "url": "https://myview.wd3.myworkdayjobs.com/paradox_careers/job/1-Presidents-Choice-Circle-Brampton-ON/Applied-Machine-Learning---Co-op-Student_R2000697038",
+          "source": "internships",
+          "description": "internship | Loblaw Companies | Brampton, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6b4267a2-3d11-46ed-b2d5-257cdbb8453a",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3fb7a1f28c04"
+        },
+        {
+          "title": "Loblaw Companies — Software Development Co-op",
+          "url": "https://myview.wd3.myworkdayjobs.com/paradox_careers/job/500-Lake-Shore-Blvd-W-Toronto-ON/Software-Development---Co-op-Student_R2000699845",
+          "source": "internships",
+          "description": "internship | Loblaw Companies | Toronto, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3d3b5a16-198d-4293-a320-09dfa9132045",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0934abcfc8e7"
+        },
+        {
+          "title": "Cox — Data Scientist Intern",
+          "url": "https://cox.wd1.myworkdayjobs.com/Cox_External_Career_Site_1/job/Atlanta-GA/Data-Scientist-Intern---Summer-2027--Atlanta--GA-_R202682164",
+          "source": "internships",
+          "description": "internship | Cox | Atlanta, GA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "97899cd4-de4e-4a30-88bb-d77f77c316cb",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0eb64029e5f3"
+        },
+        {
+          "title": "TD Bank — Applied Machine Learning Scientist Co-op - Winter 2027",
+          "url": "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers/job/Toronto-Ontario/AI2-Applied-Machine-Learning-Scientist-Co-op--WINTER-2027-_R_1506697-1",
+          "source": "internships",
+          "description": "internship | TD Bank | Toronto, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f0b88e82-318c-4d88-8b72-7b40d2d7847a",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "222bd8415a15"
+        },
+        {
+          "title": "TD Bank — Data Science Intern/Co-op",
+          "url": "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers/job/Toronto-Ontario/Enterprise-Real-Estate-Intern-Co-op_R_1504711",
+          "source": "internships",
+          "description": "internship | TD Bank | Toronto, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3045ae32-dfde-4b96-bc39-7e6c6eef2334",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c2ab0be44af5"
+        },
+        {
+          "title": "TD Bank — Portfolio Analytics Developer Intern/Co-op - Winter 2027",
+          "url": "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers/job/161-Bay-Street-Corporate-Toronto-Ontario/TD-Asset-Management-Portfolio-Analytics-Developer-Intern-Co-Op--Winter-2027-_R_1509223",
+          "source": "internships",
+          "description": "internship | TD Bank | Toronto, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "73d79b50-25b2-48bc-8d74-c95e069e68c8",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "864cb80252fc"
+        },
+        {
+          "title": "Gilead Sciences — AI Engineer Intern - IT",
+          "url": "https://gilead.wd1.myworkdayjobs.com/gileadcareers/job/United-States---North-Carolina---Raleigh/Intern---CFO---IT--AI-Engineer-_R0054744",
+          "source": "internships",
+          "description": "internship | Gilead Sciences | Raleigh, NC | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "57c6e96e-e10b-4f87-bf6b-6448a90ed532",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "77d192a9462e"
+        },
+        {
+          "title": "TD Bank — Summer Analyst - Software Engineering Rotational Program",
+          "url": "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers/job/Toronto-Ontario/XMLNAME-2027-Summer-Analyst---Software-Engineering-Rotational-Program--Toronto-_R_1509435",
+          "source": "internships",
+          "description": "internship | TD Bank | Toronto, ON, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "192e2d14-66ec-4599-b333-b1f244469d60",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Banking SE is far from AI/ML builder goals; low signal for elite AI labs. · ⚠ verify eligibility: Visa sponsorship for Canada not specified",
+          "action_plan": [
+            "Check visa eligibility (10m)",
+            "Apply if easy (15m)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 5,
+            "deadline": 3,
+            "skill": 5,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "Visa sponsorship for Canada not specified"
+          },
+          "key": "c5269bd28a54"
+        },
+        {
+          "title": "Merck — Medical Data Scientist Intern",
+          "url": "https://msd.wd5.myworkdayjobs.com/searchjobs/job/USA---Pennsylvania---North-Wales-Upper-Gwynedd/XMLNAME-2027-Future-Talent-Program---Medical-Data-Scientist---Intern_R412403",
+          "source": "internships",
+          "description": "internship | Merck | North Wales, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5f032af0-0aa0-447c-9b7e-576e955d9c70",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Medical DS is okay, but not the 'elite AI engineer' path he craves. · ⚠ verify eligibility: US work authorization for Summer 2027",
+          "action_plan": [
+            "Verify US internship visa rules (10m)",
+            "Apply if eligible (20m)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 6,
+            "deadline": 3,
+            "skill": 7,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization for Summer 2027"
+          },
+          "key": "3c67ad2c48cc"
+        },
+        {
+          "title": "Merck — Data Scientist Intern - Nonclinical Drug Safety",
+          "url": "https://msd.wd5.myworkdayjobs.com/searchjobs/job/USA---Massachusetts---Boston-MA-Parcel-B-Laboratory/XMLNAME-2027-Future-Talent-Program---Nonclinical-Drug-Safety-Data-Scientist---Intern_R412861",
+          "source": "internships",
+          "description": "internship | Merck | Boston, MA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "43b2eef4-f37f-4fe3-919b-08128239760c",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Similar to i=1; pharma DS is a detour from GenAI/Agents focus. · ⚠ verify eligibility: US work authorization for Summer 2027",
+          "action_plan": [
+            "Verify US internship visa rules (10m)",
+            "Apply if eligible (20m)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 6,
+            "prestige": 6,
+            "deadline": 3,
+            "skill": 7,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization for Summer 2027"
+          },
+          "key": "d87a574352e6"
+        },
+        {
+          "title": "Merck — Computational Toxicology Intern - AI/ML Computational Toxicology",
+          "url": "https://msd.wd5.myworkdayjobs.com/searchjobs/job/USA---Pennsylvania---West-Point/XMLNAME-2027-Future-Talent-Program---AI-ML-Computational-Toxicology---Intern_R412871",
+          "source": "internships",
+          "description": "internship | Merck | West Point, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f52421f1-2b11-4885-a968-c3cc90b2857f",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "AI/ML focus is better, but still niche (toxicology) vs general AI engineering. · ⚠ verify eligibility: US work authorization for Summer 2027",
+          "action_plan": [
+            "Verify US internship visa rules (10m)",
+            "Apply if eligible (20m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 3,
+            "skill": 8,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization for Summer 2027"
+          },
+          "key": "952af681d11f"
+        },
+        {
+          "title": "Micron Technology — Software Engineer Intern - Mask Technology Center",
+          "url": "https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---Main-Site/Intern---Software-Engineer_JR108550",
+          "source": "internships",
+          "description": "internship | Micron Technology | Boise, ID | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ec2d8499-9c16-4277-8aac-c8300d24f46f",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Hardware-adjacent SE; doesn't align with LLM/Agent builder identity. · ⚠ verify eligibility: US work authorization for Winter 2026",
+          "action_plan": [
+            "Verify US internship visa rules (10m)",
+            "Apply if eligible (20m)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 6,
+            "deadline": 3,
+            "skill": 6,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization for Winter 2026"
+          },
+          "key": "14daba078c60"
+        },
+        {
+          "title": "Dick's Sporting Goods — Software Engineer Intern - Corporate Internship",
+          "url": "https://dickssportinggoods.wd1.myworkdayjobs.com/en-US/DSG/job/Customer-Support-Center/Software-Engineering---Summer-2027-Corporate-Internship_202608792-1",
+          "source": "internships",
+          "description": "internship | Dick's Sporting Goods | Pittsburgh, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cd25d440-052a-4851-9715-cd9f0d4cc849",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1fea3da37572"
+        },
+        {
+          "title": "Merck — Optical Imaging Data Science Intern",
+          "url": "https://msd.wd5.myworkdayjobs.com/searchjobs/job/USA---Massachusetts---Boston-MA-Parcel-B-Laboratory/XMLNAME-2027-Future-Talent-Program---Optical-Imaging-Data-Science-Intern---Intern_R412885",
+          "source": "internships",
+          "description": "internship | Merck | Boston, MA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2504c78d-986a-40de-b1e5-49135a5f9043",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "Imaging DS is a strong skill, but not the core GenAI path. · ⚠ verify eligibility: US work authorization for Summer 2027",
+          "action_plan": [
+            "Verify US internship visa rules (10m)",
+            "Apply if eligible (20m)"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 6,
+            "deadline": 3,
+            "skill": 7,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization for Summer 2027"
+          },
+          "key": "0bbb0abef18e"
+        },
+        {
+          "title": "Dropbox — Software Engineer Intern - Summer 2027",
+          "url": "https://boards.greenhouse.io/embed/job_app?token=8106224",
+          "source": "internships",
+          "description": "internship | Dropbox | Remote in USA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "425aaabf-7af3-4cd6-b041-c9f26fe0e736",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "36c2859e50f4"
+        }
+      ]
     }
   ]
 }
