@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-09-08",
+  "updated_at": "2026-09-09",
   "items": [
-    {
-      "key": "3dc64ec0221e",
-      "title": "3D Websites Hackathon",
-      "url": "https://3d-websites-hackathon.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-09-02",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "4fec7b2bae9b",
       "title": "MLH Fellowship",
@@ -39,6 +26,19 @@
       "source": "devpost",
       "score": 10,
       "deadline": "2026-10-30",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3dc64ec0221e",
+      "title": "3D Websites Hackathon",
+      "url": "https://3d-websites-hackathon.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-09-02",
       "tags": [
         "hackathon"
       ],
@@ -116,58 +116,6 @@
       "url": "https://unstop.com/internships/meta-assistant-internship-inspire-global-ventures-pvt-ltd-1750481",
       "source": "unstop",
       "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "2431fad9d797",
-      "title": "Web Designing Internship",
-      "url": "https://unstop.com/internships/web-designing-internship-learntricks-edutech-1745501",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "47ea9344b3cb",
-      "title": "Video Editor Internship",
-      "url": "https://unstop.com/internships/video-editor-internship-fr8-1745518",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4193076c9cda",
-      "title": "Marketing Internship",
-      "url": "https://unstop.com/internships/marketing-internship-groovyintern-1745512",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0becdb73f586",
-      "title": "Software Engineering Internship",
-      "url": "https://unstop.com/internships/software-engineering-internship-codesharks-technologies-private-limited-1745484",
-      "source": "unstop",
-      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
@@ -818,15 +766,79 @@
       "action_plan": []
     },
     {
-      "key": "d21a60867f16",
-      "title": "Google CS PhD Fellowship 2026 [R]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1w0qv95/google_cs_phd_fellowship_2026_r/",
-      "source": "reddit",
-      "score": 7,
+      "key": "6328c32710fd",
+      "title": "Campus Ambassador Internship",
+      "url": "https://unstop.com/internships/campus-ambassador-internship-zenobuzz-solutions-1751527",
+      "source": "unstop",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "news",
-        "r/MachineLearning"
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "bd47d00fcccd",
+      "title": "Cyber Security Internship",
+      "url": "https://unstop.com/internships/cyber-security-internship-intelleqacademy-1751501",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c89ce088e84b",
+      "title": "Java Development Internship",
+      "url": "https://unstop.com/internships/java-development-internship-intelleqacademy-1751505",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "51a4cdf3c4ea",
+      "title": "HR Internship",
+      "url": "https://unstop.com/internships/hr-internship-humppl-1751631",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "bf520e654b99",
+      "title": "E-Commerce Internship",
+      "url": "https://unstop.com/internships/e-commerce-internship-avikarsh-pvt-ltd-1751466",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "45e6da0b9961",
+      "title": "ONE Finance — AI Research Intern",
+      "url": "https://jobs.ashbyhq.com/oneapp/7cc2fdfb-a186-4a58-af1b-8255c173244a/application?embed=true",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -986,40 +998,14 @@
       ]
     },
     {
-      "key": "a3512ff8b07c",
-      "title": "Bland AI — Machine Learning Research Intern - Audio",
-      "url": "https://jobs.ashbyhq.com/bland/bd8743ff-9e18-4f79-9c9a-288f384921f3/application?embed=true",
-      "source": "internships",
-      "score": 6,
+      "key": "42159c53665c",
+      "title": "Agentic AI Hackathon",
+      "url": "https://unstop.com/hackathons/agentic-ai-hackathon-product-space-1751529",
+      "source": "unstop",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1ae99be778a5",
-      "title": "RJ Lee Group — Artificial Intelligence Software Modernization Intern",
-      "url": "https://rjleegroupinc.applytojob.com/apply/vMYHU0VqAg/Internship-Artificial-Intelligence-Software-Modernization",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0dee9164bad2",
-      "title": "AMI — Computer Vision Scientist Intern - Geometry and 3D Vision",
-      "url": "https://jobs.ashbyhq.com/ami/0d7332d8-b8e7-40d3-89b6-dfc02b40bfa2/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1341,6 +1327,22 @@
       "action_plan": [
         "Check visa sponsorship policy (15m)",
         "Apply if sponsorship is available (15m)"
+      ]
+    },
+    {
+      "key": "2cf932a609e7",
+      "title": "Bree — Software Engineer Co-op - Product",
+      "url": "http://jobs.ashbyhq.com/bree/17d8dd15-5f97-4003-8d6c-170dca13ff88/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Product SWE experience is good for entrepreneurship goals · ⚠ verify eligibility: Canada-based role; requires visa sponsorship",
+      "action_plan": [
+        "Check visa sponsorship for Canada (15m)",
+        "Apply if possible (15m)"
       ]
     }
   ]
