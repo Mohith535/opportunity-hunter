@@ -26,6 +26,41 @@ _JUNK_RE = re.compile(
 
 _CATEGORIES = ("REPLY", "DEADLINE", "OPPORTUNITY", "PERSONAL", "ACTION", "INFO", "NOISE")
 
+# ─── deterministic safety net ────────────────────────────────────────────────────────────────────
+# The model is not allowed to be the only thing standing between Mohith and a real paid offer. These
+# rules run on EVERY email regardless of what the LLM said (or failed to say) and raise a FLOOR on
+# importance, so money, work offers and human replies can never be buried in "Low priority".
+_MONEY_RE = re.compile('(?:[\\u20b9$\\u20ac\\u00a3]\\s?\\d[\\d,]*|\\b\\d[\\d,]*\\s?(?:k|lakh|lpa|usd|eur|inr)\\b|\\b(?:usd|eur|inr|rs)\\.?\\s?\\d[\\d,]*)', re.I)
+_WORK_RE = re.compile(
+    '\\b(offer|hiring|freelance|contract(?:or)?|paid (?:work|gig|project|role)|collaborat\\w*|commission|would like to (?:hire|pay|work)|budget|compensation|stipend|proposal|work with (?:you|us)|shortlisted|selected for)\\b', re.I)
+# Marketing that merely *looks* like an offer. If this fires we do NOT raise the floor.
+_PROMO_RE = re.compile(
+    '(\\d+\\s?%\\s?off|\\bdiscount|\\bsale\\b|\\bsubscribe|\\bcoupon|limited[- ]time|save big|upgrade (?:now|today)|unsubscribe|newsletter|\\bwebinar\\b|\\bcourse\\b|\\bplan\\b[^.]{0,20}\\b(?:year|month)ly?)', re.I)
+_NOREPLY_RE = re.compile('no[-_.]?reply|donotreply|notifications?@|mailer|bounce', re.I)
+
+
+def high_signal(subject: str, sender: str, snippet: str = "") -> tuple[int, str]:
+    """(importance_floor, reason) — 0 when nothing fires.
+
+    Deliberately biased toward SHOWING: a missed paid offer costs far more than one extra email on
+    screen. Marketing that merely uses offer-words is excluded so this stays trustworthy."""
+    text = f"{subject} {sender} {snippet}"
+    if _PROMO_RE.search(text):
+        return 0, ""
+    money = bool(_MONEY_RE.search(text))
+    work = bool(_WORK_RE.search(text))
+    if money and work:
+        return 8, "a real amount of money plus work terms"
+    if money:
+        return 6, "a concrete amount of money"
+    if work:
+        return 5, "work/offer wording"
+    if re.match(r"\s*re\s*:", subject or "", re.I) and not _NOREPLY_RE.search(sender or ""):
+        return 6, "a reply from a real person"
+    return 0, ""
+
+
+
 _PROMPT = """You are triaging the IMPORTANT part of Mohith's email inbox — the obvious junk (one-time
 codes, security alerts, promotions) has ALREADY been removed. For EACH email below output ONE line,
 pipe-separated, and NOTHING else:
@@ -121,17 +156,37 @@ def scan(days: int = 1, unread: bool = False, credentials: str = "credentials.js
         else:
             keep.append(e)
 
-    shown = []
+    shown, untriaged, seen_keys = [], 0, set()
     if keep:
         parsed = _triage(keep)
         for i, e in enumerate(keep, 1):
-            p = parsed.get(i, {"category": "INFO", "importance": 3, "deadline": "",
-                               "summary": e["subject"][:90]})
-            # We no longer DROP anything the model calls NOISE — the user wants every non-OTP email
-            # visible. A NOISE verdict just means low importance, so it sinks into 'Everything else'.
+            # Same blast twice? Keep one, so a duplicate can never crowd out something real.
+            key = ((e.get("from") or "").strip().lower(), (e.get("subject") or "").strip().lower())
+            if key in seen_keys:
+                hidden["duplicates"] = hidden.get("duplicates", 0) + 1
+                continue
+            seen_keys.add(key)
+
+            p = parsed.get(i)
+            triaged = p is not None
+            if not triaged:
+                untriaged += 1
+                # FAIL VISIBLE, NOT INVISIBLE. The old default (3/10 INFO) silently buried every
+                # email whenever the LLM chain was down — that is how a real paid offer got missed.
+                # An unranked email now sits ABOVE the fold and is flagged as unranked.
+                p = {"category": "INFO", "importance": 5, "deadline": "",
+                     "summary": (e.get("subject") or "")[:90]}
             if p["category"] == "NOISE":
                 p["importance"] = min(p["importance"], 2)
-            shown.append({"from": e["from"], "subject": e["subject"], "id": e.get("id", ""), **p})
+
+            floor, why = high_signal(e.get("subject", ""), e.get("from", ""), e.get("snippet", ""))
+            signal = ""
+            if floor > p["importance"]:
+                p = {**p, "importance": floor}
+                signal = why
+            shown.append({"from": e["from"], "subject": e["subject"], "id": e.get("id", ""),
+                          "triaged": triaged, "signal": signal, **p})
         shown.sort(key=lambda x: -x["importance"])
 
-    return {"shown": shown, "hidden": hidden, "total": len(emails), "window": window}
+    return {"shown": shown, "hidden": hidden, "total": len(emails), "window": window,
+            "untriaged": untriaged}

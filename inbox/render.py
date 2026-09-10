@@ -122,7 +122,8 @@ def _email_item(uid, e, today):
     return {"id": uid, "kind": kind, "title": (e.get("subject") or "")[:140],
             "sender": _sender_name(e.get("from", "")), "source": "mail", "imp": imp,
             "effort": _effort(kind, imp), "due": due, "why": why[:3],
-            "tid": "", "href": href, "cal": cal}
+            "tid": "", "href": href, "cal": cal, "gid": e.get("id") or "",
+            "signal": e.get("signal", ""), "triaged": e.get("triaged", True)}
 
 
 def _opp_item(uid, o, today):
@@ -191,7 +192,8 @@ def _build_data(summary: dict) -> dict:
     up = sorted({x["lab"]: x for x in up}.values(), key=lambda x: x["date"])[:5]
 
     return {"items": items, "today": today_ev, "upcoming": up, "hiddenJunk": hidden_total,
-            "worthTime": len(important), "inboxTotal": len(shown)}
+            "worthTime": len(important), "inboxTotal": len(shown),
+            "untriaged": int(summary.get("untriaged", 0) or 0)}
 
 
 # ── the approved artifact front-end: CSS, body, JS (verbatim design; real actions) ──
@@ -298,6 +300,13 @@ _CSS = """
     font-size:.78rem;padding:6px 11px;border-radius:99px;margin-left:auto}
   .clearlow:hover{color:var(--ink);border-color:var(--soft)}
   .ring{flex:0 0 auto;text-align:center;line-height:1}
+  .srcseg{display:inline-flex;background:var(--panel);border:1px solid var(--line-2);border-radius:99px;padding:3px;gap:2px;margin-right:4px}
+  .sbtn{background:transparent;border:0;color:var(--soft);font-weight:700;font-size:.78rem;padding:5px 13px;border-radius:99px}
+  .sbtn[aria-current="true"]{background:var(--accent);color:var(--accent-ink)}
+  .warn{margin-top:14px;padding:11px 13px;border-radius:11px;background:var(--amber-dim);
+    border:1px solid #4a3a16;color:var(--amber);font-size:.85rem;font-weight:600;line-height:1.4}
+  .unranked{font-family:var(--mono);font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--amber);border:1px solid #4a3a16;border-radius:5px;padding:2px 6px}
   .item{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:12px 14px;
     display:flex;gap:12px;align-items:flex-start;position:relative;transition:border-color .15s,transform .12s,opacity .2s}
   .item:hover{border-color:var(--line-2)}
@@ -463,6 +472,38 @@ _JS = r"""
       body:JSON.stringify({id:String(tid),act:act})}).catch(function(){}); }catch(e){} }
   function byId(id){ return ITEMS.filter(function(i){return i.id===id;})[0]; }
 
+  // Open in the Gmail APP on Android (intent:// with a browser fallback). iOS Gmail has no
+  // per-message URL scheme, so there it stays a web link - that is a platform limit, not a choice.
+  function openMail(it){
+    if(!it || !it.href) return;
+    if(/Android/i.test(navigator.userAgent||"") && it.gid){
+      window.location.href='intent://mail.google.com/mail/u/0/#all/'+it.gid+
+        '#Intent;scheme=https;package=com.google.android.gm;S.browser_fallback_url='+
+        encodeURIComponent(it.href)+';end';
+      return;
+    }
+    window.open(it.href,"_blank","noopener");
+  }
+
+  // What actually deserves the top of your day. Importance alone let a 60-day-stale task hijack
+  // first place and let a promo that happened to say "today" outrank a real offer.
+  function urgency(i){
+    var s=(i.imp||0);
+    if(i.signal) s+=2;                       // deterministic real-money / real-person signal
+    if(i.triaged===false) s+=1;              // unranked: surface it, do not hide it
+    if(i.due){
+      // A deadline only earns a big boost if the thing itself matters. Otherwise a 3/10 promo
+      // that says "today" outranks a Critical task, which is exactly the wrong answer.
+      var w=(i.imp>=5)?1:0.34;
+      if(/due today/.test(i.due)) s+=3*w;
+      else if(/tomorrow/.test(i.due)) s+=2*w;
+      else if(/in [1-3] days/.test(i.due)) s+=1*w;
+      var m=/(\d+)\s*days? overdue/.exec(i.due);
+      if(m){ var d=+m[1]; s += (d<=7?2:(d<=30?0:-4)); }   // long-stale backlog stops dominating
+    }
+    return s;
+  }
+
   var KIND = {
     action:      {label:"Needs action", color:"var(--crit)",  dim:"var(--crit-dim)"},
     deadline:    {label:"Deadline",     color:"var(--amber)", dim:"var(--amber-dim)"},
@@ -478,12 +519,16 @@ _JS = r"""
   var UPCOMING=DATA.upcoming;
   var HIDDEN_JUNK=DATA.hiddenJunk;
 
-  var state={view:"today",done:{},later:{},expanded:{},collapsed:{},focusIdx:0,filter:null};
+  var state={view:"today",done:{},later:{},expanded:{},collapsed:{},focusIdx:0,filter:null,src:"all"};
   try{var s=JSON.parse(localStorage.getItem("aos")||"{}");
-    state.done=s.done||{};state.later=s.later||{};}catch(e){}
-  function persist(){try{localStorage.setItem("aos",JSON.stringify({done:state.done,later:state.later}));}catch(e){}}
+    state.done=s.done||{};state.later=s.later||{};state.src=s.src||"all";}catch(e){}
+  function persist(){try{localStorage.setItem("aos",JSON.stringify({done:state.done,later:state.later,src:state.src}));}catch(e){}}
 
-  function active(){return ITEMS.filter(function(i){return !state.done[i.id]&&!state.later[i.id];});}
+  function active(){return ITEMS.filter(function(i){
+    if(state.done[i.id]||state.later[i.id]) return false;
+    if(state.src==="mail") return i.source!=="task";   // inbox + opportunities
+    if(state.src==="task") return i.source==="task";
+    return true;});}
   function laterItems(){return ITEMS.filter(function(i){return state.later[i.id]&&!state.done[i.id];});}
   function doneItems(){return ITEMS.filter(function(i){return state.done[i.id];});}
   function greeting(){var h=new Date().getHours();return h<12?"Good morning":h<17?"Good afternoon":"Good evening";}
@@ -511,7 +556,8 @@ _JS = r"""
       '<span class="stripe" style="background:'+k.color+'"></span>'+
       '<div class="body">'+
         '<div class="r1"><span class="chip" style="background:'+k.dim+';color:'+k.color+'">'+k.label+'</span>'+
-          '<span class="effort">'+(EFFORT[it.effort]?EFFORT[it.effort].t:"Quick")+'</span></div>'+
+          '<span class="effort">'+(EFFORT[it.effort]?EFFORT[it.effort].t:"Quick")+'</span>'+
+          (it.triaged===false?'<span class="unranked">unranked</span>':'')+'</div>'+
         '<div class="title">'+esc(it.title)+'</div>'+
         '<div class="meta">'+esc(it.sender)+due+src+
           ' <button class="whybtn" data-why="'+it.id+'">'+(whyOpen?"Hide why":"Why?")+'</button></div>'+
@@ -528,7 +574,12 @@ _JS = r"""
   function pillsHTML(items){
     var counts={};GROUPS.forEach(function(g){counts[g.kind]=0;});
     items.forEach(function(i){counts[i.kind]=(counts[i.kind]||0)+1;});
-    var p='<button class="pill'+(state.filter===null?' on':'')+'" data-filter="all">All <b>'+items.length+'</b></button>';
+    var seg='<div class="srcseg">'+
+      ['all','mail','task'].map(function(k){
+        var lab={all:"All",mail:"Inbox",task:"Tasks"}[k];
+        return '<button class="sbtn" data-src="'+k+'" aria-current="'+(state.src===k)+'">'+lab+'</button>';
+      }).join('')+'</div>';
+    var p=seg+'<button class="pill'+(state.filter===null?' on':'')+'" data-filter="all">All <b>'+items.length+'</b></button>';
     GROUPS.forEach(function(g){if(!counts[g.kind])return;
       p+='<button class="pill'+(state.filter===g.kind?' on':'')+'" data-filter="'+g.kind+'">'+g.head+' <b>'+counts[g.kind]+'</b></button>';});
     if(counts.info)p+='<button class="clearlow" data-act="clearlow" title="Set low-priority aside">Clear '+counts.info+' low</button>';
@@ -568,7 +619,7 @@ _JS = r"""
     var dl=items.filter(function(i){return i.due&&/overdue|late|today|days/.test(i.due);}).length;
     var opp=items.filter(function(i){return i.kind==="opportunity";}).length;
     var overdue=items.filter(function(i){return i.due&&/overdue|late/.test(i.due);}).length;
-    var first=items.slice().sort(function(a,b){return b.imp-a.imp;})[0];
+    var first=items.slice().sort(function(a,b){return urgency(b)-urgency(a);})[0];
     var mins=items.reduce(function(s,i){return s+(EFFORT[i.effort]?EFFORT[i.effort].m:4);},0);
     var firstHTML=first?'<div class="first"><div><div class="lbl">Do this first</div>'+
       '<div class="txt">'+esc(first.title)+'</div></div>'+
@@ -584,6 +635,8 @@ _JS = r"""
       '<div style="flex:1;min-width:0"><div class="hi">'+greeting()+', Mohith.</div>'+
       '<div class="status"><b>'+items.length+'</b> worth your attention &middot; '+need+' need action &middot; '+
         opp+' opportunities &middot; '+overdue+' overdue</div></div>'+ring+'</div>'+
+      (DATA.untriaged?'<div class="warn">⚠ '+DATA.untriaged+' email(s) could not be ranked (the AI was unavailable). '+
+        'They are shown unranked instead of hidden — judge them yourself.</div>':'')+
       firstHTML+
       '<div class="briefline">'+
         '<div class="b"><span class="k mono">'+items.length+'</span><span class="v">to review</span></div>'+
@@ -641,7 +694,7 @@ _JS = r"""
   }
 
   function renderFocus(){
-    var items=active().slice().sort(function(a,b){return b.imp-a.imp;});
+    var items=active().slice().sort(function(a,b){return urgency(b)-urgency(a);});
     var wrap=$("#focusWrap");
     if(!items.length){wrap.innerHTML='<div class="focusdone"><div class="big">&#127881;</div>'+
       '<h2 style="margin:14px 0 6px">Inbox handled.</h2><p style="color:var(--soft)">You made every decision that mattered. Go build something.</p>'+
@@ -697,7 +750,7 @@ _JS = r"""
       } else if(act==="cal"){ if(it.cal) window.open(it.cal,"_blank"); }
       return;
     }
-    if(act==="open"){ if(it.href) window.open(it.href,"_blank","noopener"); return; }
+    if(act==="open"){ openMail(it); return; }
     if(act==="cal"){ if(it.cal) window.open(it.cal,"_blank","noopener"); else toast("No date on this one."); return; }
     if(act==="later"){ leave(id,function(){state.later[id]=1;persist();
       undoFn=function(){delete state.later[id];persist();};toast("Set aside for Later.");refresh();}); return; }
@@ -718,7 +771,7 @@ _JS = r"""
     undoFn=function(){ids.forEach(function(id){delete state.later[id];});persist();};
     toast("Set "+ids.length+" low-priority aside.");refresh();}
 
-  function doFocus(f){var items=active().slice().sort(function(a,b){return b.imp-a.imp;});var cur=items[state.focusIdx];
+  function doFocus(f){var items=active().slice().sort(function(a,b){return urgency(b)-urgency(a);});var cur=items[state.focusIdx];
     if(!cur)return;
     if(f==="done"){ if(cur.source==="task")postAction(cur.tid,"done"); state.done[cur.id]=1;persist();
       toast(cur.source==="task"?"Done ✓ applies on next sync":"Cleared."); }
@@ -739,6 +792,8 @@ _JS = r"""
       if(box){box.hidden=false;more.remove();}return;}
     var tog=e.target.closest("[data-toggle]");if(tog){var g=tog.getAttribute("data-toggle");
       state.collapsed[g]=!state.collapsed[g];tog.closest(".group").classList.toggle("collapsed");return;}
+    var sb=e.target.closest("[data-src]");if(sb){state.src=sb.getAttribute("data-src");persist();
+      state.filter=null;renderBrief();renderRail();renderQueue();renderContext();return;}
     var filt=e.target.closest("[data-filter]");if(filt){var fv=filt.getAttribute("data-filter");
       setFilter(fv==="all"?null:fv);return;}
     var fact=e.target.closest("[data-fact]");if(fact){doFocus(fact.getAttribute("data-fact"));if(state.view==="today")refresh();return;}
@@ -815,7 +870,9 @@ _JS = r"""
 
 def render_html(summary: dict) -> str:
     data = _build_data(summary)
-    data_json = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
+    # Escape "<" entirely: nothing in an email subject can then resemble markup inside
+    # the <script> block, so a hostile subject cannot break out or confuse the parser.
+    data_json = json.dumps(data, ensure_ascii=False).replace(chr(60), chr(92)+"u003c")
     js = _JS.replace("__DATA__", data_json)
     title = html.escape(str(summary.get("window", "today")))
     return ("<!doctype html>\n<html lang=\"en\"><head>\n"
