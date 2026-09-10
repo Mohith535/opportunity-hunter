@@ -34,8 +34,7 @@ _MONEY_RE = re.compile('(?:[\\u20b9$\\u20ac\\u00a3]\\s?\\d[\\d,]*|\\b\\d[\\d,]*\
 _WORK_RE = re.compile(
     '\\b(offer|hiring|freelance|contract(?:or)?|paid (?:work|gig|project|role)|collaborat\\w*|commission|would like to (?:hire|pay|work)|budget|compensation|stipend|proposal|work with (?:you|us)|shortlisted|selected for)\\b', re.I)
 # Marketing that merely *looks* like an offer. If this fires we do NOT raise the floor.
-_PROMO_RE = re.compile(
-    '(\\d+\\s?%\\s?off|\\bdiscount|\\bsale\\b|\\bsubscribe|\\bcoupon|limited[- ]time|save big|upgrade (?:now|today)|unsubscribe|newsletter|\\bwebinar\\b|\\bcourse\\b|\\bplan\\b[^.]{0,20}\\b(?:year|month)ly?)', re.I)
+_PROMO_RE = re.compile('(\\d+\\s?%\\s?off|\\bdiscount|\\bsale\\b|\\bsubscri(?:be|ption)|\\bcoupon|limited[- ]time|save big|\\bpromo(?:tion(?:al)?)?\\b|\\bdeals?\\b|upgrade (?:now|today)|unsubscribe|newsletter|\\bwebinar\\b|\\bcourse\\b|\\bplan\\b[^.]{0,20}\\b(?:year|month)ly?)', re.I)
 _NOREPLY_RE = re.compile('no[-_.]?reply|donotreply|notifications?@|mailer|bounce', re.I)
 
 
@@ -50,7 +49,7 @@ def high_signal(subject: str, sender: str, snippet: str = "") -> tuple[int, str]
     money = bool(_MONEY_RE.search(text))
     work = bool(_WORK_RE.search(text))
     if money and work:
-        return 8, "a real amount of money plus work terms"
+        return 7, "a real amount of money plus work terms"
     if money:
         return 6, "a concrete amount of money"
     if work:
@@ -179,7 +178,10 @@ def scan(days: int = 1, unread: bool = False, credentials: str = "credentials.js
             if p["category"] == "NOISE":
                 p["importance"] = min(p["importance"], 2)
 
-            floor, why = high_signal(e.get("subject", ""), e.get("from", ""), e.get("snippet", ""))
+            # The backstop exists to catch what the model MISSED or could not rank. When the model
+            # read the snippet and explicitly said NOISE, trust it - otherwise every promo that uses
+            # the word "offer" gets shoved to the top, which is the noise problem all over again.
+            floor, why = (0, "") if p["category"] == "NOISE" else                 high_signal(e.get("subject", ""), e.get("from", ""), e.get("snippet", ""))
             signal = ""
             if floor > p["importance"]:
                 p = {**p, "importance": floor}

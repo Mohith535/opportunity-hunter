@@ -115,6 +115,23 @@ d13 = _build_data({"shown": [mail("m", imp=6)], "hidden": {}, "day": {"overdue":
 srcs = sorted({i["source"] for i in d13["items"]})
 check("13. three distinct sources for the toggle", srcs == ["mail", "opp", "task"], str(srcs))
 
+
+# 14 - REGRESSION (caught in a LIVE run, not by the first tests): promo wording must not be boosted
+for _s in ["Coursera subscription promo", "HP promotional offers", "Today's best deals"]:
+    _f, _ = high_signal(_s, "no-reply@x.com")
+    check(f"14. promo wording not boosted [{_s[:26]}]", _f == 0, f"floor={_f}")
+
+# 15 - REGRESSION: an explicit NOISE verdict is never overridden by the backstop
+_noisy = {"from": "ads@x.com", "subject": "Special offer - EUR 999 laptop", "id": "n1",
+          "category": "NOISE", "importance": 1, "deadline": "", "summary": "ad"}
+_d15 = _build_data({"shown": [_noisy], "hidden": {}, "opps": [], "day": {}})
+check("15. NOISE stays low despite money+offer words", _d15["items"][0]["imp"] <= 2,
+      f'imp={_d15["items"][0]["imp"]}')
+
+# 16 - and after all that tightening, the genuine paid offer STILL surfaces
+_f16, _ = high_signal("Build an AI agent for us - EUR 300", "raj@startup.io")
+check("16. genuine paid offer still surfaces", _f16 >= 5, f"floor={_f16}")
+
 print("\n" + "=" * 68)
 print("REAL-WORLD SCENARIO TESTS")
 print("=" * 68)
