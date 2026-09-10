@@ -6,7 +6,7 @@ compatibility_date = "2026-08-01"
 # Create the KV store with:  npx wrangler kv namespace create INBOX_KV
 # then paste the printed id below (replace PASTE_KV_ID_HERE).
 kv_namespaces = [
-  { binding = "INBOX_KV", id = "PASTE_KV_ID_HERE" }
+  { binding = "INBOX_KV", id = "a09780482b7f4198a685634e177710de" }
 ]
 
 # INBOX_SECRET is NOT written here — set it as a secret so it never lands in git:
