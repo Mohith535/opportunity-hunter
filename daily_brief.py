@@ -14,6 +14,7 @@ from rich.text import Text
 
 import config
 from filters import policy
+from filters.explain import explain
 
 console = Console()
 
@@ -45,6 +46,9 @@ def _render_item(item, dumped: bool) -> Text:
     if item.url:
         meta.append(item.url)
     t.append(f"          {'  |  '.join(meta)}\n", style="dim")
+    why = explain(item)          # WHY it scored this, from dimensions already computed
+    if why:
+        t.append(f"          {why}\n", style="cyan")
     if dumped:
         t.append("          → Added to TaskFlow ✓\n", style="green")
     return t
