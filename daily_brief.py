@@ -15,6 +15,7 @@ from rich.text import Text
 import config
 from filters import policy
 from filters.explain import explain
+from filters import ledger
 
 console = Console()
 
@@ -49,6 +50,9 @@ def _render_item(item, dumped: bool) -> Text:
     why = explain(item)          # WHY it scored this, from dimensions already computed
     if why:
         t.append(f"          {why}\n", style="cyan")
+    src_note = ledger.note(getattr(item, "source", ""))   # why this source was nudged
+    if src_note:
+        t.append(f"          via {src_note}\n", style="dim")
     if dumped:
         t.append("          → Added to TaskFlow ✓\n", style="green")
     return t

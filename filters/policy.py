@@ -24,9 +24,13 @@ def effective_score(item) -> int:
     Phase 1: rule-based score. Phase 2: prefer item.ai_score when it's been
     computed (>= 0). This is the single switch-over point.
     """
-    if item.ai_score >= 0:
-        return item.ai_score
-    return item.score
+    base = item.ai_score if item.ai_score >= 0 else item.score
+    if not getattr(config, "LEDGER_ENABLED", False):
+        return base
+    # Phase 3: nudge by how useful this source has actually proven to be. Bounded to +/-1 so a
+    # noisy source is de-prioritised, never censored - a 10/10 from reddit still reaches you.
+    from filters import ledger
+    return max(0, min(10, round(base + ledger.adjustment(getattr(item, "source", "")))))
 
 
 def classify(score: int) -> str:

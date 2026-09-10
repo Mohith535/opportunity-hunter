@@ -162,6 +162,10 @@ TASKFLOW_SYNC_TOKEN = os.environ.get("TASKFLOW_SYNC_TOKEN", "")
 # runs; otherwise the system falls back to rule-based scoring (never crashes).
 USE_LLM_SCORING = _env_bool("OH_LLM", True)
 
+# Source Signal Ledger: nudge scores by how useful each source has actually proven to be
+# (filters/ledger.py). Bounded to +/-1 and never silences a source. OH_LEDGER=false to disable.
+LEDGER_ENABLED = _env_bool("OH_LEDGER", True)
+
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 CEREBRAS_API_KEY = os.environ.get("CEREBRAS_API_KEY", "")
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
