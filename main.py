@@ -13,6 +13,7 @@ CLI:
 """
 
 import argparse
+import sys
 import html
 import textwrap
 import time
@@ -390,6 +391,17 @@ def scheduler():
 
 
 def main():
+    # Windows consoles default to cp1252, and when stdout is REDIRECTED (Nova launches us as a
+    # detached subprocess, GitHub Actions captures logs, or you pipe us) Python falls back to the
+    # locale encoding. The daily brief contains emoji, so printing it would raise UnicodeEncodeError
+    # AFTER the whole hunt had already run - the work succeeded but we exited 1 and Nova saw a
+    # failed run. Force UTF-8 so the brief can always be written.
+    for _stream in (sys.stdout, sys.stderr):
+        try:
+            _stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
     parser = argparse.ArgumentParser(description="Opportunity Hunter")
     parser.add_argument("--now", action="store_true", help="run once immediately")
     parser.add_argument("--test", action="store_true",
