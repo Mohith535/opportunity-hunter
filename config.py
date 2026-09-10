@@ -167,10 +167,11 @@ CEREBRAS_API_KEY = os.environ.get("CEREBRAS_API_KEY", "")
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 # NVIDIA's build.nvidia.com free API (OpenAI-compatible, no card, ~40 RPM/model, 100+ models incl.
 # GLM-5.1, DeepSeek-V4, Nemotron). Get a key at https://build.nvidia.com → activates automatically.
-# Pick any model from the catalog via OH_NVIDIA_MODEL. Benchmarked on a real 12-email batch (2026-09):
-# nvidia/nemotron-3-nano-30b-a3b = 7.8s (default, fast + clean); nemotron-3-super-120b-a12b = 20s
-# (stronger but risks the 60s timeout under load); gemma-4-31b-it and the *-reasoning/*-lightning
-# variants either time out or emit a thinking preamble that breaks the pipe-format triage.
+# NOTE: NVIDIA's free catalog ROTATES - a model verified working can return 410 Gone weeks
+# later (nemotron-3-nano-30b-a3b did exactly that in 9 days). If NVIDIA starts failing, list
+# GET https://integrate.api.nvidia.com/v1/models and pick a live chat model, or set
+# OH_NVIDIA_MODEL in .env. Benchmarked 2026-09-10 on a real 12-email batch:
+# nemotron-3-nano-omni-30b-a3b-reasoning = 14.6s OK; deepseek-v4-*/gemma-4-31b = timeout.
 NVIDIA_API_KEY = os.environ.get("NVIDIA_API_KEY", "")
 
 # Tried in order; a provider is used only when its key is present. Each entry is
@@ -182,7 +183,7 @@ LLM_PROVIDERS = [
     # NVIDIA sits right after Groq so it catches Groq's rate-limits with a strong, reliable free model.
     {"name": "nvidia", "base_url": "https://integrate.api.nvidia.com/v1",
      "api_key": NVIDIA_API_KEY,
-     "model": os.environ.get("OH_NVIDIA_MODEL", "nvidia/nemotron-3-nano-30b-a3b")},
+     "model": os.environ.get("OH_NVIDIA_MODEL", "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning")},
     {"name": "cerebras", "base_url": "https://api.cerebras.ai/v1",
      "api_key": CEREBRAS_API_KEY,
      "model": os.environ.get("OH_CEREBRAS_MODEL", "gpt-oss-120b")},
