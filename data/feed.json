@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09",
+  "updated_at": "2026-09-10",
   "items": [
     {
       "key": "4fec7b2bae9b",
@@ -116,45 +116,6 @@
       "url": "https://unstop.com/internships/meta-assistant-internship-inspire-global-ventures-pvt-ltd-1750481",
       "source": "unstop",
       "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "24065ae04d78",
-      "title": "TikTok TechJam 2026",
-      "url": "https://tiktoktechjam2026.devpost.com/",
-      "source": "devpost",
-      "score": 8,
-      "deadline": "2026-09-01",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "223fb6a00a9d",
-      "title": "Video Editing Internship",
-      "url": "https://unstop.com/internships/video-editing-internship-szn2-1745632",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4992b61019da",
-      "title": "Video Editing Internship",
-      "url": "https://unstop.com/internships/video-editing-internship-bolt-academy-1745560",
-      "source": "unstop",
-      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
@@ -844,14 +805,66 @@
       "action_plan": []
     },
     {
-      "key": "6ae5b0537a30",
-      "title": "ET AI Hackathon: Agentic Edition | Presented by Accenture",
-      "url": "https://unstop.com/hackathons/crp-et-ai-hackathon-agentic-edition-presented-by-accenture-economic-times-1744885",
+      "key": "3725256228be",
+      "title": "Campus Ambassador Internship",
+      "url": "https://unstop.com/internships/campus-ambassador-internship-yhills-1751834",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2d7ed20606a9",
+      "title": "Marketing and Sales Internship",
+      "url": "https://unstop.com/internships/marketing-and-sales-internship-knownstate-1752037",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "01b7c92eafcf",
+      "title": "AI Business Operations Internship",
+      "url": "https://unstop.com/internships/ai-business-operations-internship-xentovia-tech-private-limited-1752046",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "fcdf186ebc1c",
+      "title": "QA and Project Management Internship",
+      "url": "https://unstop.com/internships/qa-and-project-management-internship-vishvena-techno-solutions-pvt-ltd-1752056",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "fbd89ee3eabd",
+      "title": "Content Writer Internship",
+      "url": "https://unstop.com/internships/content-writer-internship-brightchamps-1752062",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1006,33 +1019,6 @@
       "deadline": null,
       "tags": [
         "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4f5844a01f03",
-      "title": "How important is having an internship to get a good job for ML PhD in USA? [D]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1w19tav/how_important_is_having_an_internship_to_get_a/",
-      "source": "reddit",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f0c57db416c2",
-      "title": "Bland AI — Machine Learning Research Intern - Audio",
-      "url": "https://jobs.ashbyhq.com/bland/c8a5c0de-935d-4f76-bc7d-237cbfb2cf55/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1340,6 +1326,22 @@
         "internship"
       ],
       "ai_summary": "Product SWE experience is good for entrepreneurship goals · ⚠ verify eligibility: Canada-based role; requires visa sponsorship",
+      "action_plan": [
+        "Check visa sponsorship for Canada (15m)",
+        "Apply if possible (15m)"
+      ]
+    },
+    {
+      "key": "c68c7d223832",
+      "title": "Bree — Software Engineer Co-op - Backend",
+      "url": "http://jobs.ashbyhq.com/bree/42fe78c1-e73f-4918-bf71-776b8142112b/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Backend skills are essential for AI agent deployment · ⚠ verify eligibility: Canada-based role; requires visa sponsorship",
       "action_plan": [
         "Check visa sponsorship for Canada (15m)",
         "Apply if possible (15m)"

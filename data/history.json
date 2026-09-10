@@ -80203,6 +80203,836 @@
           "key": "32df74282e0d"
         }
       ]
+    },
+    {
+      "date": "2026-09-10",
+      "items": [
+        {
+          "title": "IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications",
+          "url": "https://arxiv.org/abs/2609.10539v1",
+          "source": "arxiv",
+          "description": "A research idea may be novel, coherent, and scientifically plausible, yet its proposed method may remain insufficiently specified for faithful implementation. We study the codification readiness of implementation-facing research-method specifications, defined by whether they provide sufficient methodological information for a competent implementer or coding agent to construct the intended method without unsupported assumptions. We construct evidence-grounded specifications and their supported resolutions from papers, codebases, issue threads, and reproduction artifacts. We introduce IdeaAMBIG, a benchmark of 660 evidence-grounded instances: 163 real-world gaps from reproducibility reports and GitHub issues, and 497 controlled synthetic gaps injected into codification-ready references. IdeaAMBIG evaluates three capabilities: codification-readiness assessment, defect localization, and clarification action generation. Defect localization receives only the specification, whereas clarification additionally receives the annotated defect. Across 13 LLMs, the best model achieves 9.6% Macro Defect Recovery Rate on real-world instances but 80.6% Macro Clarification Action Success Rate when given the defect. In an oracle study, supplying the gold resolution raises the downstream codification-ready rate from 14% to 98%. Across all evaluated models, defect localization is the main bottleneck, with stronger clarification given the defect.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.10539",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "68936641f2f1"
+        },
+        {
+          "title": "KaiWU5/Awesome-AI4AI — ★114",
+          "url": "https://github.com/KaiWU5/Awesome-AI4AI",
+          "source": "github",
+          "description": "AI4AI Survey: can AI reliably improve AI? 223 papers on long-horizon agents, benchmarks, harness design, and recursive self-improvement · updated weekly (topics: agent benchmarks, agent harness, agi, ai agents, ai research, ai4ai, automated ai research, autonomous agents, awesome list, benchmark, deep learning, llm, llm agents, long horizon agents, machine learning, paper list, recursive self improvement, research papers, self improvement, survey)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "KaiWU5/Awesome-AI4AI",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d45659f00f3f"
+        },
+        {
+          "title": "Tencent-Hunyuan/AuK — ★218",
+          "url": "https://github.com/Tencent-Hunyuan/AuK",
+          "source": "github",
+          "description": "AuK: An Open-Source Foundational Model for Speech Generation and Editing (topics: deep learning, foundation models, python, pytorch, separation, speaker extraction, speech, speech editing, speech enhancement, text to speech, zero shot tts)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "Tencent-Hunyuan/AuK",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "73d156c9c60a"
+        },
+        {
+          "title": "Training a 3.8B LLM to 0.384 CORE for $998 – Hugo Vergnes",
+          "url": "https://hugovergnes.github.io/little-lm-3-8b/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49637435",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "416c7e0c4850"
+        },
+        {
+          "title": "How I advertise malicious software on Google Ads",
+          "url": "https://xlii.space/eng/malicious-software-on-google-ads/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49624856",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7cdf85589d8a"
+        },
+        {
+          "title": "GatewayHacks 2026 | Software & AI",
+          "url": "https://gatewayhacks-2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Sep 01 - Oct 02, 2026 | prize $ 1,007,085 | themes: Beginner Friendly, Machine Learning/AI, Open Ended",
+          "deadline": "2026-10-02",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30767",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0e0807755309"
+        },
+        {
+          "title": "Teach ML! Community service project from Stanford [N]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wbf3ox/teach_ml_community_service_project_from_stanford_n/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wbf3ox",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "db3b4e0701ea"
+        },
+        {
+          "title": "ICDE Results [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wc5zak/icde_results_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wc5zak",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9f76cfec3ebc"
+        },
+        {
+          "title": "What Sante's 83.83 on DiagnosisArena-MCQ actually measures [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wbkxsa/what_santes_8383_on_diagnosisarenamcq_actually/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wbkxsa",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0e8fdc7c06b7"
+        },
+        {
+          "title": "I made a way to migrate between embedding models without re-embedding your entire corpus [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wc34d2/i_made_a_way_to_migrate_between_embedding_models/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wc34d2",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "92d37ffb3194"
+        },
+        {
+          "title": "I tried to make a real fly connectome learn to play Pong. It didn't — and auditing why turned out to be way more interesting than if it had worked [p]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wc67ci/i_tried_to_make_a_real_fly_connectome_learn_to/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wc67ci",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ea0b28d9b454"
+        },
+        {
+          "title": "I trained a 348M model trained from scratch on 22.7B tokens that does 14 digit arithmetic [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wc7hmu/i_trained_a_348m_model_trained_from_scratch_on/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wc7hmu",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "30c1b0dbfff1"
+        },
+        {
+          "title": "GlitchFiesta",
+          "url": "https://glitchfiesta2026.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | Kanpur, India | themes: No Restrictions",
+          "deadline": "2026-09-25",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "58eb83babe2c40f792dc99678b818c28",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a32ce497676f"
+        },
+        {
+          "title": "Monday Munch - DSA Challenge 020 (Rated) (codechef.com)",
+          "url": "https://www.codechef.com/DSAMONDAY020",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-09-14T13:30:00",
+          "deadline": "2026-09-14",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "70278456",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e93979f2e6fd"
+        },
+        {
+          "title": "WCC Launchpad 30",
+          "url": "https://unstop.com/hackathons/wcc-launchpad-30-wecodecoders-1751873",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1751873",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a3b0c7e96709"
+        },
+        {
+          "title": "HackMatrix 5.0",
+          "url": "https://unstop.com/hackathons/hackmatrix-50-pccoes-gfg-student-chapter-1750988",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1750988",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9496528f74e3"
+        },
+        {
+          "title": "Global SDG & AI Hackathon 2026",
+          "url": "https://unstop.com/hackathons/global-sdg-ai-hackathon-2026-bharati-vidyapeeth-college-of-engineering-pune-1748511",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1748511",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "35cca1cee0e3"
+        },
+        {
+          "title": "HackTheStack",
+          "url": "https://unstop.com/hackathons/hackthestack-bharati-vidyapeeth-university-institute-of-management-and-research-bvimr-new-delhi-1734963",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1734963",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "59246a72d82e"
+        },
+        {
+          "title": "Campus Ambassador Internship",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-yhills-1751834",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1751834",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3725256228be"
+        },
+        {
+          "title": "Marketing and Sales Internship",
+          "url": "https://unstop.com/internships/marketing-and-sales-internship-knownstate-1752037",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1752037",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2d7ed20606a9"
+        },
+        {
+          "title": "AI Business Operations Internship",
+          "url": "https://unstop.com/internships/ai-business-operations-internship-xentovia-tech-private-limited-1752046",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1752046",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "01b7c92eafcf"
+        },
+        {
+          "title": "QA and Project Management Internship",
+          "url": "https://unstop.com/internships/qa-and-project-management-internship-vishvena-techno-solutions-pvt-ltd-1752056",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1752056",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fcdf186ebc1c"
+        },
+        {
+          "title": "Content Writer Internship",
+          "url": "https://unstop.com/internships/content-writer-internship-brightchamps-1752062",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1752062",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fbd89ee3eabd"
+        },
+        {
+          "title": "Rocket Lab USA — Flight Software Intern",
+          "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7989724003",
+          "source": "internships",
+          "description": "internship | Rocket Lab USA | Littleton, CO | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "09f2ddca-c47a-4987-a1c6-12af07005663",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "60378bd9e161"
+        },
+        {
+          "title": "Rocket Lab USA — Flight Software Intern",
+          "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7989722003",
+          "source": "internships",
+          "description": "internship | Rocket Lab USA | Littleton, CO | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "310039a0-54be-43b7-b7cc-d9871cd3bcbe",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9bf6f8a0c2da"
+        },
+        {
+          "title": "CIM Group — Data Science Intern",
+          "url": "https://jobs.lever.co/cimgroup/06e2dc38-9e3c-4f08-996a-b3df6711ab0b/apply",
+          "source": "internships",
+          "description": "internship | CIM Group | LA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c1d81ffe-3660-4240-9c9b-dcb6db554850",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "eac9b3410d1f"
+        },
+        {
+          "title": "Epic Games — Backend Services Programmer Intern - Epic Games Services",
+          "url": "https://epicgames.com/careers/jobs/6183293004?gh_jid=6183293004",
+          "source": "internships",
+          "description": "internship | Epic Games | Cary, NC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "26b76573-439e-42cf-b4a5-f38f8408610c",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e2f73db67547"
+        },
+        {
+          "title": "Tradeweb — Credit Software Engineer Intern",
+          "url": "https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301915",
+          "source": "internships",
+          "description": "internship | Tradeweb | Jersey City, NJ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cfcf9dcd-330d-431b-8720-ccdbd7192fea",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2ca36f246942"
+        },
+        {
+          "title": "Tradeweb — Software Developer Intern - STP",
+          "url": "https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301914",
+          "source": "internships",
+          "description": "internship | Tradeweb | Jersey City, NJ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "650452ad-6e0f-4df6-856e-155fc576cd80",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6b68f7ec1166"
+        },
+        {
+          "title": "Tradeweb — Market Data Developer Intern",
+          "url": "https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301910",
+          "source": "internships",
+          "description": "internship | Tradeweb | Jersey City, NJ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d4e2aca7-ceb5-47c7-987d-ea15e4f31918",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "32abcad467c6"
+        },
+        {
+          "title": "Tradeweb — Java Software Engineer Intern",
+          "url": "https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301907",
+          "source": "internships",
+          "description": "internship | Tradeweb | Jersey City, NJ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "11d28ca0-2c46-4a29-b2c1-8a406ffbf8c9",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3816192d6857"
+        },
+        {
+          "title": "Tradeweb — Node.js Developer Intern",
+          "url": "https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301912",
+          "source": "internships",
+          "description": "internship | Tradeweb | Jersey City, NJ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a5dccfc9-2d23-4297-a215-bdd5dae4a022",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "268b38f0ac23"
+        },
+        {
+          "title": "Tradeweb — Application Software Engineering Internship - IFI Application",
+          "url": "https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301906",
+          "source": "internships",
+          "description": "internship | Tradeweb | Jersey City, NJ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "54620b79-626d-4450-bffd-b2749d556272",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8882d176a1ff"
+        },
+        {
+          "title": "Tradeweb — AI Software Engineer Intern",
+          "url": "https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301902",
+          "source": "internships",
+          "description": "internship | Tradeweb | Jersey City, NJ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ff7a5dc0-ac69-4d08-b776-4be6c49870fe",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3f9b5591d54b"
+        },
+        {
+          "title": "Tradeweb — C++ Distributed Systems Developer Intern - C++ Core Services",
+          "url": "https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301903",
+          "source": "internships",
+          "description": "internship | Tradeweb | Jersey City, NJ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d96d4e29-9756-428f-b59c-e62f8b941911",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "884f67f3d156"
+        },
+        {
+          "title": "Shield AI — Software Engineer Intern",
+          "url": "https://jobs.lever.co/shieldai/8c850c75-081d-4d09-bebf-096379a93010/apply",
+          "source": "internships",
+          "description": "internship | Shield AI | San Diego, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b7311fa1-4180-4d5a-8ce3-29a7c2703ea1",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8e74541037ba"
+        },
+        {
+          "title": "Dell Technologies — Software Engineer Intern - Client Solutions Group Engineering",
+          "url": "https://iawmqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/careers/job/298217",
+          "source": "internships",
+          "description": "internship | Dell Technologies | Austin, TX | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a7fc9580-0361-4ff0-9756-c14ebc75a0de",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0b4f38df8228"
+        },
+        {
+          "title": "Tesla — Software Engineer Intern - IT Apps",
+          "url": "https://www.tesla.com/careers/search/job/282774",
+          "source": "internships",
+          "description": "internship | Tesla | Fremont, CA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "50162e18-1bb9-44c1-94a0-0922daf6f38b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5941b13bfad9"
+        },
+        {
+          "title": "Tesla — Software Engineer Intern - Autonomy Systems Foundations",
+          "url": "https://www.tesla.com/careers/search/job/282825",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Winter 2027, Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "dac9504d-3656-4127-972c-fc70bc04666a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8e7a5fba0fd7"
+        },
+        {
+          "title": "General Dynamics Mission Systems — Payload Control System Software/Systems Engineering Intern - Summer 2027",
+          "url": "https://careers-gdms.icims.com/jobs/74848/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | General Dynamics Mission Systems | Middletown, RI, Manassas, VA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "054b254c-cc0b-47dd-a2c2-98cf50c0269f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "979c0c16a790"
+        },
+        {
+          "title": "Barnes & Thornburg — Information Technology AI Intern",
+          "url": "https://jobs.ashbyhq.com/barnes/af9258a6-b6e6-4714-92dc-a9952c0590a7/application?embed=true",
+          "source": "internships",
+          "description": "internship | Barnes & Thornburg | Indianapolis, IN | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0b0d53ec-cfd1-40c4-a293-87cab61a418d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "05a6c1375db9"
+        },
+        {
+          "title": "Saronic — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/saronic/60afb634-5515-4347-824a-3816735541c2/application?embed=true",
+          "source": "internships",
+          "description": "internship | Saronic | Austin, TX | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3c09c2bd-e95b-43e4-99d1-9e6b16a1a21d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1ed3e5265acd"
+        },
+        {
+          "title": "Collier Aerospace — Software Engineer Intern - Web Applications - Summer 2027",
+          "url": "https://ats.rippling.com/collieraerospace/jobs/4981b0ba-5b6f-4ebe-95c0-9d1cda036b77",
+          "source": "internships",
+          "description": "internship | Collier Aerospace | Newport News, VA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a023874d-88f4-4e6c-a29a-681d54bc45f9",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b08b779f29b3"
+        },
+        {
+          "title": "Collier Aerospace — Software Engineer Intern",
+          "url": "https://ats.rippling.com/collieraerospace/jobs/b666dbfe-34e5-422f-8879-4d53c0ae1f51",
+          "source": "internships",
+          "description": "internship | Collier Aerospace | Newport News, VA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3c16cf25-2344-4449-8c12-a8dd16ebdaf2",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e9fd18dc9b59"
+        },
+        {
+          "title": "Grass Valley — Software Development Intern - Core Platform",
+          "url": "https://grassvalley.applytojob.com/apply/r0V942NWEh/Stagiaire-Dveloppement-De-Logiciel-C-Intern-Software-Development-C",
+          "source": "internships",
+          "description": "internship | Grass Valley | Montreal, QC, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "21f9c4dc-c7c2-4e98-bff4-c5632ecddd7f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bda86e68cf1a"
+        },
+        {
+          "title": "Tesla — Machine Learning Engineer Intern - Factory Software",
+          "url": "https://www.tesla.com/careers/search/job/282916",
+          "source": "internships",
+          "description": "internship | Tesla | Fremont, CA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2f8a6e47-2880-4a56-b618-7acbfb79109d",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "04b4b371a83f"
+        },
+        {
+          "title": "Interplay — AI Intern - AI Labs",
+          "url": "https://jobs.ashbyhq.com/interplay/bdf67758-1f20-4a01-8bb3-ccebfa79e9ac/application?embed=true",
+          "source": "internships",
+          "description": "internship | Interplay | NYC | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ace4bb91-a641-435f-b523-586e54bc0c9f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bf76451f4271"
+        },
+        {
+          "title": "Nova-Tech — Software Development Co-op",
+          "url": "https://novatechengineering.applytojob.com/apply/prjzDfwzEE/Software-Development-CoOp-Located-Onsite-In-Willmar-MN",
+          "source": "internships",
+          "description": "internship | Nova-Tech | Willmar, MN | Winter 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "844f8a1f-7749-49a6-8afe-6eaed5ef5d3b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a2944fddcdf9"
+        }
+      ]
     }
   ]
 }
