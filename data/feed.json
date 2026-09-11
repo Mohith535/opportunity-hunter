@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10",
+  "updated_at": "2026-09-11",
   "items": [
     {
       "key": "4fec7b2bae9b",
@@ -124,14 +124,14 @@
       "action_plan": []
     },
     {
-      "key": "55fc6459fb63",
-      "title": "Business Development Internship",
-      "url": "https://unstop.com/internships/business-development-internship-visiontech-pvt-ltd-1746085",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
+      "key": "cdb9d90dd553",
+      "title": "Agents for Humans Hackathon",
+      "url": "https://agentsforhumans.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-09-14",
       "tags": [
-        "internship"
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -870,6 +870,71 @@
       "action_plan": []
     },
     {
+      "key": "2f41b010aa69",
+      "title": "Policy Research and Analytical Writing Internship",
+      "url": "https://unstop.com/internships/policy-research-and-analytical-writing-internship-the-insight-ledger-1753292",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "34aae1bf3446",
+      "title": "Student Engagement Trainee Internship",
+      "url": "https://unstop.com/internships/student-engagement-trainee-internship-deakin-university-1751767",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7325e6cdb951",
+      "title": "Business Growth Internship",
+      "url": "https://unstop.com/internships/business-growth-internship-orvionar-tech-pvt-ltd-1754012",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7159ae3a191d",
+      "title": "Marketing Sales Internship",
+      "url": "https://unstop.com/internships/marketing-sales-internship-clapingocom-1754025",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2ab3a228b69d",
+      "title": "Microsoft — Postdoctoral Researcher Intern - Foundational AI: Theory and Architectures",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556991730",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "6f7175888ea7",
       "title": "Aven Coding Hackathon 2.0",
       "url": "https://unstop.com/hackathons/aven-coding-hackathon-20-kartexa-1745830",
@@ -1024,15 +1089,14 @@
       "action_plan": []
     },
     {
-      "key": "7ce2a6afbad9",
-      "title": "PhD Internship in smaller lab [D]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1w1itzf/phd_internship_in_smaller_lab_d/",
-      "source": "reddit",
-      "score": 6,
+      "key": "7881b492dd1d",
+      "title": "AstroBit: Computational Astronomy Hackathon",
+      "url": "https://unstop.com/hackathons/astrobit-computational-astronomy-hackathon-indian-institute-of-technology-iit-tirupati-1752655",
+      "source": "unstop",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "news",
-        "r/MachineLearning"
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1269,83 +1333,6 @@
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "4725e751583a",
-      "title": "Entergy — Artificial Intelligence Intern",
-      "url": "https://jobs.entergy.com/job/New-Orleans-Student-Intern-AI-Spring-2027-Loui/1426669200/?ats=successfactors",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "accbd1b470b2",
-      "title": "Solidigm — Software Development & Firmware Engineering Intern - Multiple Teams",
-      "url": "https://jobs.smartrecruiters.com/Solidigm/744000147613629",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "General SWE role; less AI-focused than opportunity 0 · ⚠ verify eligibility: US-based role; requires visa sponsorship for Indian student",
-      "action_plan": [
-        "Check visa sponsorship policy (15m)",
-        "Apply if sponsorship is available (15m)"
-      ]
-    },
-    {
-      "key": "5f753d777b34",
-      "title": "Schonfeld — Software Engineering Intern",
-      "url": "https://job-boards.greenhouse.io/schonfeld/jobs/8180089",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "High-paying finance sector, but lacks AI/LLM focus · ⚠ verify eligibility: US-based role; requires visa sponsorship for Indian student",
-      "action_plan": [
-        "Check visa sponsorship policy (15m)",
-        "Apply if sponsorship is available (15m)"
-      ]
-    },
-    {
-      "key": "2cf932a609e7",
-      "title": "Bree — Software Engineer Co-op - Product",
-      "url": "http://jobs.ashbyhq.com/bree/17d8dd15-5f97-4003-8d6c-170dca13ff88/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Product SWE experience is good for entrepreneurship goals · ⚠ verify eligibility: Canada-based role; requires visa sponsorship",
-      "action_plan": [
-        "Check visa sponsorship for Canada (15m)",
-        "Apply if possible (15m)"
-      ]
-    },
-    {
-      "key": "c68c7d223832",
-      "title": "Bree — Software Engineer Co-op - Backend",
-      "url": "http://jobs.ashbyhq.com/bree/42fe78c1-e73f-4918-bf71-776b8142112b/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Backend skills are essential for AI agent deployment · ⚠ verify eligibility: Canada-based role; requires visa sponsorship",
-      "action_plan": [
-        "Check visa sponsorship for Canada (15m)",
-        "Apply if possible (15m)"
-      ]
     }
   ]
 }

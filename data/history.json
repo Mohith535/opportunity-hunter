@@ -81033,6 +81033,746 @@
           "key": "a2944fddcdf9"
         }
       ]
+    },
+    {
+      "date": "2026-09-11",
+      "items": [
+        {
+          "title": "General Quantification of Covariate and Concept Shifts",
+          "url": "https://arxiv.org/abs/2609.11918v1",
+          "source": "arxiv",
+          "description": "Generalization under distribution shift remains a core challenge in modern machine learning, yet existing learning bound theory is limited to narrow, idealized settings and is non-estimable from samples. In this paper, we bridge the gap between theory and practical applications. We first show that existing definition of concept shift breaks when the source and target supports mismatch. Leveraging entropic optimal transport, we propose a key notion: $γ^{*}\\!$-concept shifts, and derive a general error bound unifying covariate and $γ^{*}\\!$-concept shifts, which applies to broad loss functions, label spaces, and stochastic labeling. We further develop estimators for these shifts with concentration guarantees, and the DataShifts algorithm, which can quantify distribution shifts and estimate the error bound in most applications - a rigorous and general tool for analyzing learning error under distribution shift.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.11918",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2b288df2a50d"
+        },
+        {
+          "title": "Generative Marketing Mix Modeling: A Causal Inference Framework Linking GEO and GEM to Business Impact",
+          "url": "https://arxiv.org/abs/2609.11915v1",
+          "source": "arxiv",
+          "description": "Generative artificial intelligence changes how firms reach customers, but standard marketing data do not record how often users see and notice a firm's name in generated answers. We develop Generative Marketing Mix Modeling (GMMM) to estimate the causal effects of Generative Engine Optimization (GEO) and Generative Engine Marketing (GEM). For GEO, GMMM combines repeated generated answers with question counts, shares of use across generative systems, and notice probabilities. For GEM, it combines records of sponsored placements with notice probabilities. GMMM compares expected business responses under alternative treatment sequences and establishes sufficient conditions for identifying the resulting effects. We investigate the empirical performance of the proposed method using simulated answers to product recommendation in English and Japanese.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.11915",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3d461495519d"
+        },
+        {
+          "title": "From Protocols to Evidence: Bounded Claims for AI in Service of the Common Good",
+          "url": "https://arxiv.org/abs/2609.11910v1",
+          "source": "arxiv",
+          "description": "Artificial Intelligence does more than create a governance problem. It can also reveal where institutions have already failed to provide responsiveness, belonging, care, and accountability. Once deployed, AI becomes an intervention in those conditions. It can repair, compound, substitute for, or conceal the failures it encounters. Responsible AI must therefore evaluate both the system and the institutional rupture into which it is introduced. The move from principles to protocols is already underway. The EU AI Act, NIST AI RMF, ISO/IEC 42001, and assurance practices translate commitments into roles, requirements, records, oversight, and assessment. The harder questions are what these protocols actually establish, whose power they leave untouched, and where measurement must stop. Pope Leo XIV's Magnifica Humanitas provides a broader moral frame centered on dignity, technological power, and the common good. Drawing on that frame, we develop a rupture test that links institutional baselines to system evaluation. We distinguish evidence-bounded deployment, which limits claims to what has actually been evaluated, from measurement-bounded governance, which records constraints that favorable evidence cannot override. Within those limits, RISE AI provides an architecture for making bounded, evidence-based claims about Responsibility, Inclusivity, Safety, and Empowerment. Responsible AI requires better engineering, institutional repair, and continued moral and political judgment.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.11910",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d99830a3e848"
+        },
+        {
+          "title": "Proof of Capture: Apple Reference Image, but open source and using steganography",
+          "url": "https://merybenavente.me/blog/proof-of-capture",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49649222",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9ded269c39a4"
+        },
+        {
+          "title": "Rust is tier-1 language at Microsoft",
+          "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49643546",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "48c278c0a8e2"
+        },
+        {
+          "title": "Agents for Humans Hackathon",
+          "url": "https://agentsforhumans.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Aug 10 - Sep 14, 2026 | prize $ 40,000 | themes: Beginner Friendly, Machine Learning/AI, Open Ended",
+          "deadline": "2026-09-14",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30317",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cdb9d90dd553"
+        },
+        {
+          "title": "Why is TMLR so slow in recent times [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wd5mki/why_is_tmlr_so_slow_in_recent_times_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wd5mki",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8489eaa8de3a"
+        },
+        {
+          "title": "ACL Sustainable Reviewing Policy [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wd7b83/acl_sustainable_reviewing_policy_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wd7b83",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b239bc26e154"
+        },
+        {
+          "title": "Any tools to turn a codebase into a fine tuning dataset? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wd5zkk/any_tools_to_turn_a_codebase_into_a_fine_tuning/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wd5zkk",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9d521eae0e1b"
+        },
+        {
+          "title": "Anybody working on Test Time Training over here? Lemme work with u pls [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wcjn2b/anybody_working_on_test_time_training_over_here/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wcjn2b",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a9ab70d4692c"
+        },
+        {
+          "title": "AstroBit: Computational Astronomy Hackathon",
+          "url": "https://unstop.com/hackathons/astrobit-computational-astronomy-hackathon-indian-institute-of-technology-iit-tirupati-1752655",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1752655",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7881b492dd1d"
+        },
+        {
+          "title": "VJ Hackathon 2026",
+          "url": "https://unstop.com/hackathons/vj-hackathon-2026-vallurupalli-nageswara-rao-vignana-jyothi-institute-of-engineering-technology-telangana-1750281",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1750281",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f35d060cf716"
+        },
+        {
+          "title": "Hack in Hills ’26",
+          "url": "https://unstop.com/hackathons/hack-in-hills-26-galgotias-university-gu-greater-noida-1752595",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1752595",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "18269e6b4f51"
+        },
+        {
+          "title": "HerSpark Ideathon 2026",
+          "url": "https://unstop.com/hackathons/herspark-ideathon-2026-thakur-college-of-engineering-and-technology-tcet-mumbai-1752642",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1752642",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e4aa0c489ba3"
+        },
+        {
+          "title": "Ideathon 2026 – Innovation for Impact",
+          "url": "https://unstop.com/hackathons/ideathon-2026-innovation-for-impact-bharati-vidyapeeths-college-of-engineering-for-women-pune-1752869",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1752869",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9e559cf8ec68"
+        },
+        {
+          "title": "CodeClash 1.0",
+          "url": "https://unstop.com/hackathons/codeclash-10-hackkro-1751296",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1751296",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4bf2ef0ad647"
+        },
+        {
+          "title": "Policy Research and Analytical Writing Internship",
+          "url": "https://unstop.com/internships/policy-research-and-analytical-writing-internship-the-insight-ledger-1753292",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1753292",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2f41b010aa69"
+        },
+        {
+          "title": "Student Engagement Trainee Internship",
+          "url": "https://unstop.com/internships/student-engagement-trainee-internship-deakin-university-1751767",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1751767",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "34aae1bf3446"
+        },
+        {
+          "title": "Business Growth Internship",
+          "url": "https://unstop.com/internships/business-growth-internship-orvionar-tech-pvt-ltd-1754012",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1754012",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7325e6cdb951"
+        },
+        {
+          "title": "Marketing Sales Internship",
+          "url": "https://unstop.com/internships/marketing-sales-internship-clapingocom-1754025",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1754025",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7159ae3a191d"
+        },
+        {
+          "title": "Garmin — Software Engineer Intern",
+          "url": "https://careers.garmin.com/jobs/20135?icims=1",
+          "source": "internships",
+          "description": "internship | Garmin | Tulsa, OK | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5322aece-0e58-4f57-8a8a-26a75fa8f783",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7be5f01a72eb"
+        },
+        {
+          "title": "Kinaxis — Developer Intern - Clients - Front End Technologies",
+          "url": "https://careers-kinaxis.icims.com/jobs/35320/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Kinaxis | Ottawa, ON, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5b07d830-b50d-4cff-a64a-555dad0ea478",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c810c9d91a9b"
+        },
+        {
+          "title": "Wellmark — Software Engineer Intern",
+          "url": "https://jobs.smartrecruiters.com/WellmarkInc/744000148915793",
+          "source": "internships",
+          "description": "internship | Wellmark | Des Moines, IA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "127d20c7-244f-4630-9b44-e23957ff0d16",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "241e8dc190b4"
+        },
+        {
+          "title": "Tanium — Software Engineer Intern - Summer 2027",
+          "url": "https://job-boards.greenhouse.io/tanium/jobs/8181017",
+          "source": "internships",
+          "description": "internship | Tanium | Emeryville, CA, Durham, NC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9cd21651-921e-42a7-a95f-01b1f4bea964",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "69be440feec9"
+        },
+        {
+          "title": "Visier Solutions — Test Developer Co-op",
+          "url": "https://job-boards.greenhouse.io/visiersolutionsinc/jobs/4711073006",
+          "source": "internships",
+          "description": "internship | Visier Solutions | Vancouver, BC, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "22d56fc9-ccc4-4ffa-a3da-8e67f2c0df38",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "76c06038b518"
+        },
+        {
+          "title": "Visier Solutions — Software Developer Co-op",
+          "url": "https://job-boards.greenhouse.io/visiersolutionsinc/jobs/4711071006",
+          "source": "internships",
+          "description": "internship | Visier Solutions | Vancouver, BC, Canada | Winter 2027, Spring 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "abca08df-81cc-4033-8740-151c214e5686",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ab558451aa01"
+        },
+        {
+          "title": "Emerson Electric — Software Engineer Co-op",
+          "url": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26010738",
+          "source": "internships",
+          "description": "internship | Emerson Electric | Eden Prairie, MN | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "fce07d58-8d51-46a0-9ac2-6f8f9be4da7f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3f5f9ee22d45"
+        },
+        {
+          "title": "TD Bank — Software Engineer Co-op - Global Technology & Solutions",
+          "url": "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers/job/Mount-Laurel-New-Jersey/XMLNAME-2027-Spring-Co-op---Global-Technology---Solutions---Software-Engineer--SWE-_R_1509773",
+          "source": "internships",
+          "description": "internship | TD Bank | Mt Laurel Township, NJ | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "194a2192-6413-4ed0-9957-dfe5dc3f3f0c",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "86fcb3b1901d"
+        },
+        {
+          "title": "RF-SMART — Software Developer Intern - Product Engineering",
+          "url": "https://job-boards.greenhouse.io/rfsmart/jobs/5407206008",
+          "source": "internships",
+          "description": "internship | RF-SMART | Jacksonville, FL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d5b824b3-f478-49bb-8b20-9c1b283518f4",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "add55043a171"
+        },
+        {
+          "title": "Swarm Aero — Embedded Software Intern",
+          "url": "https://jobs.ashbyhq.com/swarmaero/7b82c290-036e-4444-8407-e7f6ce583c52/application?embed=true",
+          "source": "internships",
+          "description": "internship | Swarm Aero | Oxnard, CA | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "80e7f0b6-d4e0-42ce-bf04-602d8305702a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7319aa3574a6"
+        },
+        {
+          "title": "Hudl — Software Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/hudl/jobs/8114314",
+          "source": "internships",
+          "description": "internship | Hudl | Lincoln, NE | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "dec76f30-791b-4318-8022-f195f9709b43",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "51bf1c5f8060"
+        },
+        {
+          "title": "Bedrock Robotics — Onboard Infrastructure Engineer Intern - ML Inference",
+          "url": "https://jobs.ashbyhq.com/bedrock-robotics/0331551e-c18e-428a-8e91-e6cb25c9c2e8/application?embed=true",
+          "source": "internships",
+          "description": "internship | Bedrock Robotics | SF | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7530c688-5657-4159-baad-6d34c53ff482",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7b5d2cf82ca1"
+        },
+        {
+          "title": "Bedrock Robotics — Behavior Machine Learning Engineer Intern - World Models",
+          "url": "https://jobs.ashbyhq.com/bedrock-robotics/c51d682e-58ee-44de-886f-4cfacb56d2e1/application?embed=true",
+          "source": "internships",
+          "description": "internship | Bedrock Robotics | SF | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "66b1fe7b-a6c1-4da5-a7f1-d4789239afce",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4418a393266b"
+        },
+        {
+          "title": "Exegy — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/exegy/dc2b27b5-9569-4d86-9b30-456a4ccf29a5/application?embed=true",
+          "source": "internships",
+          "description": "internship | Exegy | St. Louis, MO | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ef30e941-c64e-46bc-958c-d29519f7d16d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cd92d640a404"
+        },
+        {
+          "title": "Exegy — Software Developer Intern",
+          "url": "https://jobs.ashbyhq.com/exegy/2a066cc1-ff4c-4d1c-9559-68f390b91afb/application?embed=true",
+          "source": "internships",
+          "description": "internship | Exegy | Montreal, QC, Canada | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "252897b6-0446-4e1f-b21e-c75ab688eea9",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d029c35ca3d1"
+        },
+        {
+          "title": "Johns Hopkins Applied Physics Laboratory — AI & Data Science Intern - Analytic Capabilities",
+          "url": "https://careers.jhuapl.edu/jobs/60008?icims=1",
+          "source": "internships",
+          "description": "internship | Johns Hopkins Applied Physics Laboratory | Laurel, MD | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ed605070-d6fd-49c3-a4f4-dc442d4fbc15",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "42eed2c8107d"
+        },
+        {
+          "title": "Johns Hopkins Applied Physics Laboratory — Software Engineer/Data Scientist/Ontologist Intern - Threat Analytic Systems",
+          "url": "https://careers.jhuapl.edu/jobs/59997?icims=1",
+          "source": "internships",
+          "description": "internship | Johns Hopkins Applied Physics Laboratory | Laurel, MD | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e1ff445a-9dad-4e51-8528-9a0779013170",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "eef26a99d6a2"
+        },
+        {
+          "title": "Paccar — Software Developer Intern",
+          "url": "https://jobs.paccar.com/job/Renton-2027-Winter-Internship-Software-Developer-Intern-WA-98057/1435928733/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Paccar | Renton, WA | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2e4dc4df-7a1c-4c36-93b6-5e3cdd8bf6dc",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9c4c1e5eda88"
+        },
+        {
+          "title": "Microsoft — Postdoctoral Researcher Intern - Foundational AI: Theory and Architectures",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556991730",
+          "source": "internships",
+          "description": "internship | Microsoft | Cambridge, UK | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4417e2fa-13a3-4601-ab35-e10e9459ca81",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2ab3a228b69d"
+        },
+        {
+          "title": "State Farm — Data Science Intern - Magnet Program - Online MS Analytics",
+          "url": "https://jobs.statefarm.com/jobs/46057?icims=1",
+          "source": "internships",
+          "description": "internship | State Farm | Athens, GA | Spring 2027, Summer 2027, Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e5d509b4-cf02-4596-b607-048396739370",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "46beb948fb9b"
+        },
+        {
+          "title": "Texas Instruments — Information Technology Intern - Software",
+          "url": "https://edbz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/25017625",
+          "source": "internships",
+          "description": "internship | Texas Instruments | Dallas, TX | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a0b3979a-1302-4a00-a2a4-0e86472d7a51",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e3ac122a5d7d"
+        },
+        {
+          "title": "L3Harris Technologies — Software Engineer Intern",
+          "url": "https://jobs.l3harris.com/job/Clifton-Intern,-Software-Engineer-NJ-07014/1428512900/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Clifton, NJ | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cc2a43c3-1ce7-4b42-9f92-236adb09d59e",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e4b40fb99f32"
+        },
+        {
+          "title": "L3Harris Technologies — Software Engineer Intern",
+          "url": "https://jobs.l3harris.com/job/Clifton-Intern,-Software-Engineer-NJ-07014/1428513900/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | L3Harris Technologies | Clifton, NJ | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "96cb7017-c8f1-4f02-92ae-1626a4d433b8",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e5663c034c06"
+        }
+      ]
     }
   ]
 }
