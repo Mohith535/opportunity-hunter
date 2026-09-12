@@ -81773,6 +81773,848 @@
           "key": "e5663c034c06"
         }
       ]
+    },
+    {
+      "date": "2026-09-12",
+      "items": [
+        {
+          "title": "google.com/goto: Google's anti-scraping update",
+          "url": "https://www.autom.dev/blog/google-search-goto-links",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49668386",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c5ee3ac2b58c"
+        },
+        {
+          "title": "I spent $220 on Google app ads and 60% of the installs were robots",
+          "url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49662990",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "686de1aa1d98"
+        },
+        {
+          "title": "Rune is now open source",
+          "url": "https://rune.build/blog/rune-is-now-open-source",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49660149",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0e04bc976145"
+        },
+        {
+          "title": "Google will buy half the electricity from one of Finland's nuclear power plants",
+          "url": "https://www.bbc.com/news/articles/c8r6y4me2g6o",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49652105",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "95ce1e332b6e"
+        },
+        {
+          "title": "Agents for Humans Hackathon",
+          "url": "https://agentsforhumans.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Aug 10 - Sep 14, 2026 | prize $ 40,000 | themes: Beginner Friendly, Machine Learning/AI, Open Ended",
+          "deadline": "2026-09-14",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30317",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cdb9d90dd553"
+        },
+        {
+          "title": "AI Builders Hackathon",
+          "url": "https://ai-builders-hackathon-2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Aug 21 - Sep 15, 2026 | prize $ 33,900 | themes: Machine Learning/AI, Open Ended, Beginner Friendly",
+          "deadline": "2026-09-15",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30452",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "148a255e8453"
+        },
+        {
+          "title": "Global Innovation Build Challenge V2",
+          "url": "https://gibc-v2.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jul 11 - Oct 01, 2026 | prize $ 156,525 | themes: Machine Learning/AI, Social Good, Beginner Friendly",
+          "deadline": "2026-10-01",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30408",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b523151bdcd6"
+        },
+        {
+          "title": "Training a 210M text-to-image DiT from scratch on one GPU: what I measured [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wdfmvq/training_a_210m_texttoimage_dit_from_scratch_on/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wdfmvq",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "db92a610decc"
+        },
+        {
+          "title": "Confusion regarding EMNLP registration [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wdw5o0/confusion_regarding_emnlp_registration_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wdw5o0",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ddabaaab5eac"
+        },
+        {
+          "title": "How to handle cofound variables? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wdpat4/how_to_handle_cofound_variables_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wdpat4",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ad3f2c5dac60"
+        },
+        {
+          "title": "Neurips 2026: site selection email [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wdaur9/neurips_2026_site_selection_email_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wdaur9",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1e199d7a29f7"
+        },
+        {
+          "title": "Grand Innovation Challenge",
+          "url": "https://grand-innovation-challenge.devfolio.co",
+          "source": "devfolio",
+          "description": "hackathon | Digdoh, India | themes: No Restrictions",
+          "deadline": "2026-10-03",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "8e2ad878ddd242cdac991a4c7a06af54",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "804659e62b50"
+        },
+        {
+          "title": "Data Analytics Hackathon",
+          "url": "https://unstop.com/hackathons/data-analytics-hackathon-gradient-learnings-1754636",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1754636",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d2a68f06f370"
+        },
+        {
+          "title": "Agenticthon 2026 – AI & Agentic Technology Hackathon",
+          "url": "https://unstop.com/hackathons/agenticthon-2026-ai-agentic-technology-hackathon-mahendra-engineering-college-mec-namakkal-1754530",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1754530",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "30e878c05d21"
+        },
+        {
+          "title": "Build for Billions",
+          "url": "https://unstop.com/hackathons/build-for-billions-nitk-surathkal-1754386",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1754386",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "57e7ecf6e1c9"
+        },
+        {
+          "title": "36-Hour Hackathon",
+          "url": "https://unstop.com/hackathons/36-hour-hackathon-vibrant-2026-gl-bajaj-institute-of-management-and-research-1754364",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1754364",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ce1e70d46c70"
+        },
+        {
+          "title": "PARANOVA",
+          "url": "https://unstop.com/hackathons/paranova-college-of-engineering-kidangoor-1750908",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1750908",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ee1374e9a3b7"
+        },
+        {
+          "title": "Navonmesh 26 - A National Level Hackathon (In Collaboration with Qualcomm)",
+          "url": "https://unstop.com/hackathons/navonmesh-26-a-national-level-hackathon-shri-shankaracharya-institute-of-professional-management-and-technolo-1748402",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1748402",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d53917d5c8e5"
+        },
+        {
+          "title": "National Level Hackathon",
+          "url": "https://unstop.com/hackathons/national-level-hackathon-shivalik-college-of-engineering-sce-dehradun-1753896",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1753896",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "da360e087ebb"
+        },
+        {
+          "title": "Business Acquisition Associate Internship",
+          "url": "https://unstop.com/internships/business-acquisition-associate-internship-intropedia-1754544",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1754544",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ff4871f5ddc8"
+        },
+        {
+          "title": "Fundraising Officer Internship",
+          "url": "https://unstop.com/internships/fundraising-officer-internship-amaanitvam-foundation-1754678",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1754678",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c514e43b8868"
+        },
+        {
+          "title": "Field Sales Internship",
+          "url": "https://unstop.com/internships/field-sales-internship-ketliai-1754395",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1754395",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7e44f0c9e326"
+        },
+        {
+          "title": "Growth & Sales Internship",
+          "url": "https://unstop.com/internships/growth-sales-internship-scratchly-1754200",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1754200",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b2d32b2a4f64"
+        },
+        {
+          "title": "Marketing Executive Internship",
+          "url": "https://unstop.com/internships/marketing-executive-internship-adm-business-partner-1754163",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1754163",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0f88ce35a45c"
+        },
+        {
+          "title": "Axon — Software Engineer Intern - R&D Program",
+          "url": "https://job-boards.greenhouse.io/axontalentcommunity/jobs/7993376003",
+          "source": "internships",
+          "description": "internship | Axon | Seattle, WA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f968b448-0edf-43ed-9f4c-8954bef0183b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ab2bff3e8f9a"
+        },
+        {
+          "title": "AfterQuery — AI/ML Research Intern",
+          "url": "https://jobs.ashbyhq.com/AfterQuery/00cd591f-6894-4259-83b6-36c999351dde/application?embed=true",
+          "source": "internships",
+          "description": "internship | AfterQuery | SF | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7c1ab0e2-c11d-4d40-b0a5-af075f866cec",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6a7eb0d72873"
+        },
+        {
+          "title": "Kulicke & Soffa — Software Engineering Intern",
+          "url": "https://etyy.fa.ap2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/11648",
+          "source": "internships",
+          "description": "internship | Kulicke & Soffa | Fort Washington, PA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7344bc6c-d776-41df-9b0b-4420cee62741",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8b18dff85ea2"
+        },
+        {
+          "title": "Kulicke & Soffa — Software Engineer Intern",
+          "url": "https://etyy.fa.ap2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/11649",
+          "source": "internships",
+          "description": "internship | Kulicke & Soffa | Fort Washington, PA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b8582a90-5a25-4eb5-94b2-aece6f5b9838",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8be556c91517"
+        },
+        {
+          "title": "Constellation Energy — Information Technology Software Development Intern",
+          "url": "https://jobs.constellationenergy.com/jobs/138708?icims=1",
+          "source": "internships",
+          "description": "internship | Constellation Energy | Baltimore, MD | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6f0ac1d2-020c-4403-bbe7-85b5e31d912d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "af3f920d8426"
+        },
+        {
+          "title": "NewsBreak — AI Intern - Engineering Track",
+          "url": "https://job-boards.greenhouse.io/newsbreak/jobs/4712896006",
+          "source": "internships",
+          "description": "internship | NewsBreak | Mountain View, CA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6f1652fb-4396-40dc-bf65-0aaf4c8db667",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a7bfa8a4981b"
+        },
+        {
+          "title": "Dialogue Health Technologies — Full Stack Developer Intern",
+          "url": "https://ats.rippling.com/dialogue-en/jobs/3c2341d5-604d-463c-8b79-5d1669d81e78",
+          "source": "internships",
+          "description": "internship | Dialogue Health Technologies | Montreal, QC, Canada | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c3e1b101-501d-47e1-b873-a26101c80c91",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c90b09166940"
+        },
+        {
+          "title": "Qualcomm — Machine Learning Compiler & Performance Engineering Intern - Systems",
+          "url": "https://qualcomm.eightfold.ai/careers/job/446721064018",
+          "source": "internships",
+          "description": "internship | Qualcomm | Markham, ON, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4f3b12a6-0ecd-425c-8959-5b8f1ce9d772",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f251fb3c1ce5"
+        },
+        {
+          "title": "MegazoneCloud — Software Engineer Co-op",
+          "url": "https://jobs.ashbyhq.com/megazone/e2889469-cf20-4227-bf24-2a6e885f8dca/application?embed=true",
+          "source": "internships",
+          "description": "internship | MegazoneCloud | Rochester, NY | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "27deb3b5-50a4-4bab-9656-57bb2dd34ead",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7072902d8b71"
+        },
+        {
+          "title": "Businessolver — Business Intelligence Intern - Innovation & Data Science",
+          "url": "https://job-boards.greenhouse.io/businessolverinvitationonly/jobs/8189738",
+          "source": "internships",
+          "description": "internship | Businessolver | United States | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "4cc8603a-045d-4506-b7d3-d174a4194ef0",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "72909cf49625"
+        },
+        {
+          "title": "Cone Health — Healthcare Innovation Intern - AI",
+          "url": "https://careers.conehealth.com/us/en/job/JR155166",
+          "source": "internships",
+          "description": "internship | Cone Health | Greensboro, NC | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "60bd3418-218f-4b15-8d31-ef859ef98887",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "50d17201357c"
+        },
+        {
+          "title": "Commure — Software Engineer Intern - Summer 2027",
+          "url": "https://jobs.ashbyhq.com/Commure/62841aa1-3ee5-4547-8380-637b737b2cb3/application?embed=true",
+          "source": "internships",
+          "description": "internship | Commure | Mountain View, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6a833744-e49d-4159-a168-e07ab82f981b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "93f0e30a4604"
+        },
+        {
+          "title": "ibotta — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/ibotta/3130669e-16aa-4f63-834d-b83571c8d269/application?embed=true",
+          "source": "internships",
+          "description": "internship | ibotta | Denver, CO | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "eb4588fd-1b28-4f95-b27c-2742b4ca906e",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "65c030cdf381"
+        },
+        {
+          "title": "Cozey — Data Science Intern",
+          "url": "https://ats.rippling.com/cozey-internships/jobs/d19a9f0b-e828-436b-890f-a6f2216c6888",
+          "source": "internships",
+          "description": "internship | Cozey | Mount Royal, QC, Canada | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9b456cb3-5f2b-4380-9ecc-9b0e2767ce3a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a34c9e8d8a57"
+        },
+        {
+          "title": "Cozey — Data Science Intern",
+          "url": "https://ats.rippling.com/cozey-internships/jobs/1e50d436-06c1-447c-b676-5e487b19433c",
+          "source": "internships",
+          "description": "internship | Cozey | Mount Royal, QC, Canada | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ff16852d-9fff-4f7a-818e-26728a2ad542",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "15e86824272a"
+        },
+        {
+          "title": "Dialogue — Full Stack Developer Intern - Euse",
+          "url": "https://ats.rippling.com/dialogue-fr/jobs/8b2f0f5d-c830-48ab-9b48-14e2bfdb91cd",
+          "source": "internships",
+          "description": "internship | Dialogue | Montreal, QC, Canada | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "54eb0c26-8ef9-4cbc-95de-a14051e13044",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d18edca94f61"
+        },
+        {
+          "title": "DV Trading — Software Developer Intern",
+          "url": "https://job-boards.greenhouse.io/dvtrading/jobs/4733138005",
+          "source": "internships",
+          "description": "internship | DV Trading | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b1d0db5d-2ecc-4ad8-8fdd-ad33cabd3059",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6da5a4ab056c"
+        },
+        {
+          "title": "Perpay — Data Science Intern",
+          "url": "https://job-boards.greenhouse.io/perpay/jobs/4076978007",
+          "source": "internships",
+          "description": "internship | Perpay | Philadelphia, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2eee6626-9257-4fab-b76a-0a8674d9aa8a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "61c90d5342b0"
+        },
+        {
+          "title": "Veeam Software — Software Engineer Intern - Summer 2027",
+          "url": "https://job-boards.eu.greenhouse.io/veeamsoftware/jobs/4955293101",
+          "source": "internships",
+          "description": "internship | Veeam Software | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cab02356-db9f-43a1-a400-e5fa53352e0b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "79cadf1f1289"
+        },
+        {
+          "title": "Veeam Software — Security & AI Engineer Intern",
+          "url": "https://job-boards.eu.greenhouse.io/veeamsoftware/jobs/4952609101",
+          "source": "internships",
+          "description": "internship | Veeam Software | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "12b58efe-8607-4280-a3c0-fb40a2a2232a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b722d02f2ecc"
+        },
+        {
+          "title": "Veeam Software — Customer Care AI Analyst Intern - Summer 2027",
+          "url": "https://job-boards.eu.greenhouse.io/veeamsoftware/jobs/4972324101",
+          "source": "internships",
+          "description": "internship | Veeam Software | Columbus, OH | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "14536234-60d9-4e3f-a4e0-395db39bd0ea",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "73c70510bdcb"
+        },
+        {
+          "title": "Veeam Software — Machine Learning Intern - AI",
+          "url": "https://job-boards.eu.greenhouse.io/veeamsoftware/jobs/4971207101",
+          "source": "internships",
+          "description": "internship | Veeam Software | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7b2cb969-df39-4029-8cdf-b12669432319",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "124c86357968"
+        },
+        {
+          "title": "Veeam Software — AI & Automation Engineering Intern - Summer 2027",
+          "url": "https://job-boards.eu.greenhouse.io/veeamsoftware/jobs/4955296101",
+          "source": "internships",
+          "description": "internship | Veeam Software | Georgia | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6db7a199-b2fc-411a-bc8e-960bd3c02f28",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "93b7e0112ace"
+        },
+        {
+          "title": "Amazon — Machine Learning Systems Software Development Engineer Intern - Annapurna Labs",
+          "url": "https://amazon.jobs/en/jobs/10538066/ml-systems-software-development-engineer-intern-annapurna-labs-2027",
+          "source": "internships",
+          "description": "internship | Amazon | Toronto, ON, Canada | Summer 2027, Winter 2027, Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c3a3cae1-f9a1-4c9b-bc38-1b3859ce6744",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "77ecd4b3038c"
+        },
+        {
+          "title": "Microsoft — Software Engineer Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556983221",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ebc7d1a1-b5b8-4837-b209-d99b4aa18795",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c9057a03a1f9"
+        }
+      ]
     }
   ]
 }

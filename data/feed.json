@@ -1,24 +1,6 @@
 {
-  "updated_at": "2026-09-11",
+  "updated_at": "2026-09-12",
   "items": [
-    {
-      "key": "4fec7b2bae9b",
-      "title": "MLH Fellowship",
-      "url": "https://fellowship.mlh.io/",
-      "source": "programs",
-      "score": 10,
-      "deadline": "2026-08-31",
-      "tags": [
-        "program",
-        "fellowship",
-        "open source",
-        "remote",
-        "mlh",
-        "in-season"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "f082a8f66298",
       "title": "Nebius x NVIDIA Global AI Hackathon",
@@ -137,53 +119,14 @@
       "action_plan": []
     },
     {
-      "key": "8572ade4d3c7",
-      "title": "Content Writer Internship",
-      "url": "https://unstop.com/internships/content-writer-internship-marketing-makhni-1746597",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
+      "key": "148a255e8453",
+      "title": "AI Builders Hackathon",
+      "url": "https://ai-builders-hackathon-2026.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-09-15",
       "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a49f82172b9d",
-      "title": "Web Development Trainer Internship",
-      "url": "https://unstop.com/internships/web-development-trainer-internship-learn-depth-1745599",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4030da64ed40",
-      "title": "Full Stack Developer Internship",
-      "url": "https://unstop.com/internships/full-stack-developer-internship-ruruverse-studio-pvt-ltd-peblo-1746621",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "abd780ccd54b",
-      "title": "Business Development Internship",
-      "url": "https://unstop.com/internships/business-development-internship-unstop-career-league-20-in2peta-1746534",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -935,14 +878,92 @@
       "action_plan": []
     },
     {
-      "key": "6f7175888ea7",
-      "title": "Aven Coding Hackathon 2.0",
-      "url": "https://unstop.com/hackathons/aven-coding-hackathon-20-kartexa-1745830",
+      "key": "ff4871f5ddc8",
+      "title": "Business Acquisition Associate Internship",
+      "url": "https://unstop.com/internships/business-acquisition-associate-internship-intropedia-1754544",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c514e43b8868",
+      "title": "Fundraising Officer Internship",
+      "url": "https://unstop.com/internships/fundraising-officer-internship-amaanitvam-foundation-1754678",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7e44f0c9e326",
+      "title": "Field Sales Internship",
+      "url": "https://unstop.com/internships/field-sales-internship-ketliai-1754395",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b2d32b2a4f64",
+      "title": "Growth & Sales Internship",
+      "url": "https://unstop.com/internships/growth-sales-internship-scratchly-1754200",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0f88ce35a45c",
+      "title": "Marketing Executive Internship",
+      "url": "https://unstop.com/internships/marketing-executive-internship-adm-business-partner-1754163",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "77ecd4b3038c",
+      "title": "Amazon — Machine Learning Systems Software Development Engineer Intern - Annapurna Labs",
+      "url": "https://amazon.jobs/en/jobs/10538066/ml-systems-software-development-engineer-intern-annapurna-labs-2027",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c9057a03a1f9",
+      "title": "Microsoft — Software Engineer Intern",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556983221",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1102,40 +1123,27 @@
       "action_plan": []
     },
     {
-      "key": "cb96813b52fe",
-      "title": "Qorvo — Research Scientist Intern",
-      "url": "https://careers.qorvo.com/job/Richardson-Research-Scientist-Intern-TX-75080/1424727000/?ats=successfactors",
-      "source": "internships",
-      "score": 6,
+      "key": "d2a68f06f370",
+      "title": "Data Analytics Hackathon",
+      "url": "https://unstop.com/hackathons/data-analytics-hackathon-gradient-learnings-1754636",
+      "source": "unstop",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
     },
     {
-      "key": "fbfa6589712c",
-      "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Knowledge Graph",
-      "url": "https://lifeattiktok.com/search/7676652813409552645",
-      "source": "internships",
-      "score": 6,
+      "key": "ce1e70d46c70",
+      "title": "36-Hour Hackathon",
+      "url": "https://unstop.com/hackathons/36-hour-hackathon-vibrant-2026-gl-bajaj-institute-of-management-and-research-1754364",
+      "source": "unstop",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ce8965232dc5",
-      "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Knowledge Graph",
-      "url": "https://lifeattiktok.com/search/7676650607912601861",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1320,19 +1328,6 @@
         "Check visa sponsorship (10m)",
         "Apply if eligible (15m)"
       ]
-    },
-    {
-      "key": "6a0a9a20ef3b",
-      "title": "Skydio — Autonomy Engineer Intern - Computer Vision / Deep Learning - Summer 2027",
-      "url": "https://jobs.ashbyhq.com/skydio/ae4a6f7d-a240-4fa2-8c8e-04cc906e4ef9/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
     }
   ]
 }
