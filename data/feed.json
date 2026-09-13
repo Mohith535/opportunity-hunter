@@ -1,32 +1,6 @@
 {
-  "updated_at": "2026-09-12",
+  "updated_at": "2026-09-13",
   "items": [
-    {
-      "key": "f082a8f66298",
-      "title": "Nebius x NVIDIA Global AI Hackathon",
-      "url": "https://nebiusglobalaihackathon.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-10-30",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "3dc64ec0221e",
-      "title": "3D Websites Hackathon",
-      "url": "https://3d-websites-hackathon.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-09-02",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "3d582e60a034",
       "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
@@ -127,84 +101,6 @@
       "deadline": "2026-09-15",
       "tags": [
         "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0f1a68b002d3",
-      "title": "Campus Ambassador Internship",
-      "url": "https://unstop.com/internships/campus-ambassador-internship-yhills-1746994",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1fb9630c1d2b",
-      "title": "Growth & Content Ambassador Internship",
-      "url": "https://unstop.com/internships/growth-content-ambassador-internship-textify-ai-1747201",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1330f0bc793d",
-      "title": "Human Resource Internship",
-      "url": "https://unstop.com/internships/human-resource-internship-skillorbit-private-limited-1747212",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "313d8da2dc6c",
-      "title": "Business Development Internship",
-      "url": "https://unstop.com/internships/business-development-internship-learn-confident-1747331",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "e96009f8317b",
-      "title": "Cybersecurity Internship",
-      "url": "https://unstop.com/internships/cybersecurity-internship-qveto-1747166",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "219bf42a55a5",
-      "title": "Pluralis Research — Research Scientist Intern",
-      "url": "https://jobs.ashbyhq.com/pluralis-research/c8f78978-a693-4863-bcc0-66af5c3fd0be/application?embed=true",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -969,14 +865,66 @@
       "action_plan": []
     },
     {
-      "key": "394cc141ebe2",
-      "title": "Glimpse Trading Hackathon 2026",
-      "url": "https://unstop.com/hackathons/glimpse-trading-hackathon-2026-glimpse-prediction-markets-hackathon-glimpse-trading-1745661",
+      "key": "498ab339a809",
+      "title": "Graphic Designer Internship",
+      "url": "https://unstop.com/internships/graphic-designer-internship-amaanitvam-foundation-1755072",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c9d3172fdf42",
+      "title": "Graphic Designer Internship",
+      "url": "https://unstop.com/internships/graphic-designer-internship-socialaddress-1754768",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c877cff700f3",
+      "title": "Marketing Internship",
+      "url": "https://unstop.com/internships/marketing-internship-ab-infotech-solutions-pvt-ltd-1749729",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "acbfc11b6b24",
+      "title": "Business Outreach & Growth Internship",
+      "url": "https://unstop.com/internships/business-outreach-growth-internship-taiyari24-1754971",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "65fec20ecc4a",
+      "title": "Artificial Intelligence Internship",
+      "url": "https://unstop.com/internships/artificial-intelligence-internship-xtragrad-technologie-private-limited-1754902",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1149,50 +1097,6 @@
       "action_plan": []
     },
     {
-      "key": "8a88c77f91cc",
-      "title": "Meta AI — University Programs & Internships",
-      "url": "https://www.metacareers.com/students",
-      "source": "programs",
-      "score": 6,
-      "deadline": "2026-09-30",
-      "tags": [
-        "internship",
-        "research",
-        "meta",
-        "ai",
-        "global",
-        "in-season"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1347d57ea691",
-      "title": "JP Morgan Chase — Software Engineer Intern - Summer Internship",
-      "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210774716",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0dd04b850959",
-      "title": "Emerson Electric — Machine Learning Co-op",
-      "url": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26008762",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "445f0fadacf8",
       "title": "Boston Scientific — Research Algorithm & Data Science Intern - Interns/Graduates",
       "url": "https://bostonscientific.eightfold.ai/careers/job/563602813483110",
@@ -1328,6 +1232,109 @@
         "Check visa sponsorship (10m)",
         "Apply if eligible (15m)"
       ]
+    },
+    {
+      "key": "6a0a9a20ef3b",
+      "title": "Skydio — Autonomy Engineer Intern - Computer Vision / Deep Learning - Summer 2027",
+      "url": "https://jobs.ashbyhq.com/skydio/ae4a6f7d-a240-4fa2-8c8e-04cc906e4ef9/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4725e751583a",
+      "title": "Entergy — Artificial Intelligence Intern",
+      "url": "https://jobs.entergy.com/job/New-Orleans-Student-Intern-AI-Spring-2027-Loui/1426669200/?ats=successfactors",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "accbd1b470b2",
+      "title": "Solidigm — Software Development & Firmware Engineering Intern - Multiple Teams",
+      "url": "https://jobs.smartrecruiters.com/Solidigm/744000147613629",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "General SWE role; less AI-focused than opportunity 0 · ⚠ verify eligibility: US-based role; requires visa sponsorship for Indian student",
+      "action_plan": [
+        "Check visa sponsorship policy (15m)",
+        "Apply if sponsorship is available (15m)"
+      ]
+    },
+    {
+      "key": "5f753d777b34",
+      "title": "Schonfeld — Software Engineering Intern",
+      "url": "https://job-boards.greenhouse.io/schonfeld/jobs/8180089",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "High-paying finance sector, but lacks AI/LLM focus · ⚠ verify eligibility: US-based role; requires visa sponsorship for Indian student",
+      "action_plan": [
+        "Check visa sponsorship policy (15m)",
+        "Apply if sponsorship is available (15m)"
+      ]
+    },
+    {
+      "key": "2cf932a609e7",
+      "title": "Bree — Software Engineer Co-op - Product",
+      "url": "http://jobs.ashbyhq.com/bree/17d8dd15-5f97-4003-8d6c-170dca13ff88/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Product SWE experience is good for entrepreneurship goals · ⚠ verify eligibility: Canada-based role; requires visa sponsorship",
+      "action_plan": [
+        "Check visa sponsorship for Canada (15m)",
+        "Apply if possible (15m)"
+      ]
+    },
+    {
+      "key": "c68c7d223832",
+      "title": "Bree — Software Engineer Co-op - Backend",
+      "url": "http://jobs.ashbyhq.com/bree/42fe78c1-e73f-4918-bf71-776b8142112b/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Backend skills are essential for AI agent deployment · ⚠ verify eligibility: Canada-based role; requires visa sponsorship",
+      "action_plan": [
+        "Check visa sponsorship for Canada (15m)",
+        "Apply if possible (15m)"
+      ]
+    },
+    {
+      "key": "c18b9f2ec08b",
+      "title": "Ernst & Young — Artificial Intelligence Intern - Tax - Tax Technology and Transformation",
+      "url": "https://eyglobal.yello.co/jobs/LGUG7W08QqkVXWnuqFB0TA?job_board_id=c1riT--B2O-KySgYWsZO1Q",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
     }
   ]
 }
