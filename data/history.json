@@ -83034,6 +83034,616 @@
           "key": "3b483342c4a2"
         }
       ]
+    },
+    {
+      "date": "2026-09-14",
+      "items": [
+        {
+          "title": "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language-Guided Neural-Kinematic MPC",
+          "url": "https://arxiv.org/abs/2609.13083v1",
+          "source": "arxiv",
+          "description": "In urban search and rescue, articulated tracked robots (ATRs) must traverse structured but contact-rich environments such as stairwells and cluttered building interiors. Reliable autonomy remains challenging because robot-terrain interaction (RTI) is hybrid and discontinuous, and effective flipper-track coordination is difficult to model analytically. We present ASTRIL-MPC, a language-guided neural kinematics model predictive control (MPC) framework for autonomous traversal. A learned kinematics model predicts short-horizon task-state increments from a height sequence and recent trajectories; NMPC plans with multi-objective costs and strict feasibility constraints; and a large language model (LLM) proposes bounded updates to selected weights and bounds through a safety-checked interface with range clipping, rate limiting, and consistency checks. The compiled predictor enables a full control cycle within 100 ms. Across three traversal tasks and a multi-height generalization setting, ASTRIL-MPC improves an aggregate traversal-quality score by up to 71% over a non-adaptive NMPC and by 67% over a PPO baseline, while eliminating measurable collision impacts during descent. These results indicate that combining learned kinematics, optimization-based planning, and language-guided retuning yields data-efficient and robust autonomy for articulated tracked robots.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.13083",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f675cbd6d9c3"
+        },
+        {
+          "title": "bojieli/ai-infra-book — ★1,420",
+          "url": "https://github.com/bojieli/ai-infra-book",
+          "source": "github",
+          "description": "《深入理解 AI Infra：量化分析与系统设计》（李博杰 著）开源书稿：从硬件约束和模型架构出发，量化推导 LLM 推理与训练系统设计。含全书正文、PDF、配套计算工具与实验 (topics: accelerator, ai infra, ai infrastructure, book, datacenter network, deepseek, distributed systems, gpu, kv cache, llm, llm inference, llm serving, llm training, mixture of experts, performance engineering)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "bojieli/ai-infra-book",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "121754a94487"
+        },
+        {
+          "title": "Why is Google still serving dodgy ads?",
+          "url": "https://www.atomic14.com/2026/09/13/why-is-google-still-serving-dodgy-ads",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49686445",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f57c08a67438"
+        },
+        {
+          "title": "The Malicious Use of Artificial Intelligence",
+          "url": "https://arxiv.org/abs/1802.07228",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49690678",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "376f618d471c"
+        },
+        {
+          "title": "Reverse-Engineering Claude Web's MicroVM: Uncovering Anthropic's Hidden Antspace",
+          "url": "https://aprilnea.me/en/blog/reverse-engineering-claude-code-antspace",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49653311",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "088ef1e18bd4"
+        },
+        {
+          "title": "Agents for Humans Hackathon",
+          "url": "https://agentsforhumans.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Aug 10 - Sep 14, 2026 | prize $ 40,000 | themes: Beginner Friendly, Machine Learning/AI, Open Ended",
+          "deadline": "2026-09-14",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30317",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cdb9d90dd553"
+        },
+        {
+          "title": "AI Builders Hackathon",
+          "url": "https://ai-builders-hackathon-2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Aug 21 - Sep 15, 2026 | prize $ 33,900 | themes: Machine Learning/AI, Open Ended, Beginner Friendly",
+          "deadline": "2026-09-15",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30452",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "148a255e8453"
+        },
+        {
+          "title": "NextStep Hacks 2026",
+          "url": "https://nextstep2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Aug 21 - Sep 20, 2026 | prize $ 1,750 | themes: Beginner Friendly, Machine Learning/AI, Social Good",
+          "deadline": "2026-09-20",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30878",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d76c528f88c8"
+        },
+        {
+          "title": "Zachery Lipton: \"CS academia broke the system...perhaps all that it takes for the system to rebuild is for it to burn to the ground\" [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wf4b5g/zachery_lipton_cs_academia_broke_the/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wf4b5g",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c0d35796b0d8"
+        },
+        {
+          "title": "[Upcoming AMA] Waymo AI Team AMA – Drop Your Questions Early! [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wfesc0/upcoming_ama_waymo_ai_team_ama_drop_your/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wfesc0",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "335456a33375"
+        },
+        {
+          "title": "I trained an 825k-parameter model to generate drawing programs that execute exactly on an RP2040 [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wf611v/i_trained_an_825kparameter_model_to_generate/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wf611v",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "533ea036e759"
+        },
+        {
+          "title": "ARR August Discussion [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wft2qd/arr_august_discussion_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wft2qd",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fb0cbec5c02e"
+        },
+        {
+          "title": "Horse racing as an ML ranking problem: 1.18M runners, walk-forward validation and a very strong market baseline [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wfivb2/horse_racing_as_an_ml_ranking_problem_118m/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wfivb2",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c6ea24d47a08"
+        },
+        {
+          "title": "Got scipy's KD-tree to handle inserts and deletes without rebuilding. Three things I learned [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wfg8e3/got_scipys_kdtree_to_handle_inserts_and_deletes/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wfg8e3",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "70a33e0f7c0c"
+        },
+        {
+          "title": "When NeurIPS'26 final decision release? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wf48kt/when_neurips26_final_decision_release_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wf48kt",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bda53e1065dd"
+        },
+        {
+          "title": "PhD branding question [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wfte3b/phd_branding_question_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wfte3b",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fb7998cb8b63"
+        },
+        {
+          "title": "AtCoder Grand Contest 078 (atcoder.jp)",
+          "url": "https://atcoder.jp/contests/agc078",
+          "source": "clist",
+          "description": "competitive programming contest on atcoder.jp; starts 2026-09-27T12:00:00",
+          "deadline": "2026-09-27",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "70146682",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cf3b860e264d"
+        },
+        {
+          "title": "EPINOIA : The Hackathon Event",
+          "url": "https://unstop.com/hackathons/epinoia-the-hackathon-event-atharv-ranbhoomi-2026-iim-indore-1755375",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1755375",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "dbfa26873f65"
+        },
+        {
+          "title": "Hack Era 1.0",
+          "url": "https://unstop.com/hackathons/hack-era-10-erazone-1755150",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1755150",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "713bdfaab3be"
+        },
+        {
+          "title": "SecLeaf Q4 CTF 2026",
+          "url": "https://unstop.com/hackathons/secleaf-q4-ctf-2026-secleaf-1755320",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1755320",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4120f9c1229c"
+        },
+        {
+          "title": "DataHeist",
+          "url": "https://unstop.com/hackathons/dataheist-ieee-day-2026-dtu-new-delhi-1755310",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1755310",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cdded90665a0"
+        },
+        {
+          "title": "Hack'em Hex",
+          "url": "https://unstop.com/hackathons/hackem-hex-galgotias-university-gu-greater-noida-1755121",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1755121",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d89ab9ddd2b9"
+        },
+        {
+          "title": "Codestorm - 2K26",
+          "url": "https://unstop.com/hackathons/codestorm-2k26-narsimha-reddy-engineering-college-hyderabad-1750877",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1750877",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "45ab8cccccbe"
+        },
+        {
+          "title": "WCPC 2K26",
+          "url": "https://unstop.com/hackathons/wcpc-2k26-codechef-wce-chapter-1750817",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1750817",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "83a60c874f2c"
+        },
+        {
+          "title": "Campus Ambassador Internship",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-yhills-1755267",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1755267",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e7633399546a"
+        },
+        {
+          "title": "Flutter Developer Internship",
+          "url": "https://unstop.com/internships/flutter-developer-intern-acriotech-pvt-ltd-1755422",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1755422",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6bc7c6b69ab4"
+        },
+        {
+          "title": "Technical Project Management Internship",
+          "url": "https://unstop.com/internships/technical-project-management-intern-vidbow-1755443",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1755443",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3e64508b21f0"
+        },
+        {
+          "title": "Social Impact & School Outreach Internship",
+          "url": "https://unstop.com/internships/social-impact-school-outreach-intern-befledge-global-pvt-ltd-1755446",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1755446",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e4c45fc8930c"
+        },
+        {
+          "title": "Lawyer Internship",
+          "url": "https://unstop.com/internships/lawyer-internship-bhaiar-1755186",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1755186",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "78f7fec33e4e"
+        },
+        {
+          "title": "Boston Scientific — Software Engineer Intern - Interns/Graduates",
+          "url": "https://bostonscientific.eightfold.ai/careers/job/563602813549535",
+          "source": "internships",
+          "description": "internship | Boston Scientific | Maple Grove, MN | Summer 2027, Summer 2028 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f9b5578c-e66c-4b11-a0e1-50809d9627eb",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "07ab6f9468dc"
+        },
+        {
+          "title": "Acron Aviation — Software Engineer Intern",
+          "url": "https://jobs.lever.co/acronaviation/34cf5ad0-840a-4c1b-8231-02a433d0479e/apply",
+          "source": "internships",
+          "description": "internship | Acron Aviation | Phoenix, AZ | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "dadef677-ca3e-4484-9f78-4a718f8c64f7",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ec76714adb6a"
+        },
+        {
+          "title": "Philips — Software Engineer Intern",
+          "url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Plymouth-Minnesota-United-States/Intern---Software-Engineering---Plymouth--MN---Summer-2027_590403",
+          "source": "internships",
+          "description": "internship | Philips | Plymouth, MN | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3dbc310b-10e9-42fe-b065-dd74747582e0",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "979724edf3e1"
+        },
+        {
+          "title": "Guardian Life — Summer Intern - Digital & Technology - AI & Machine Learning",
+          "url": "https://guardianlife.wd5.myworkdayjobs.com/guardian-life-careers/job/New-York/XMLNAME-2027-Guardian-Summer-Intern--Digital---Technology---AI---Machine-Learning_R000110205",
+          "source": "internships",
+          "description": "internship | Guardian Life | Holmdel, NJ, NYC, Bethlehem, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2e731a5d-c18c-446b-ab15-23f671730a6e",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a6202cfd989f"
+        },
+        {
+          "title": "Autostore — Software Engineering Co-op",
+          "url": "https://autostore.wd3.myworkdayjobs.com/autostore/job/Atlanta-GA-USA/Co-Op---Software-Engineering_JR102692",
+          "source": "internships",
+          "description": "internship | Autostore | Atlanta, GA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e0d5fa3b-7f59-44fd-a66e-2752562258b6",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "85da1833fa09"
+        },
+        {
+          "title": "TD Bank — Software Engineer Intern - Global Technology & Solutions",
+          "url": "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers/job/Mount-Laurel-New-Jersey/XMLNAME-2027-Summer-Internship-Program---Global-Technology---Solutions---Software-Engineer--SWE-_R_1510796-1",
+          "source": "internships",
+          "description": "internship | TD Bank | Mt Laurel Township, NJ | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "580171f7-4613-4a78-b99a-3b85b469f5d0",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7e050431cd18"
+        }
+      ]
     }
   ]
 }

@@ -12987,8 +12987,8 @@
     "cdb9d90dd553": {
       "title": "Agents for Humans Hackathon",
       "first_seen": "2026-08-12",
-      "last_seen": "2026-09-13",
-      "times_seen": 4
+      "last_seen": "2026-09-14",
+      "times_seen": 5
     },
     "7d1ff40b5872": {
       "title": "Prospects of Finding a ML Engineering Job [D]",
@@ -15591,8 +15591,8 @@
     "148a255e8453": {
       "title": "AI Builders Hackathon",
       "first_seen": "2026-08-22",
-      "last_seen": "2026-09-13",
-      "times_seen": 3
+      "last_seen": "2026-09-14",
+      "times_seen": 4
     },
     "af57c351f8f5": {
       "title": "Does telling an LLM to \"be concise\" actually save you money? We measured it across 9 models. Compressing the output can save you money and keep accuracy, compressing the input prompt does not. [R]",
@@ -21622,6 +21622,204 @@
       "title": "Klaviyo — Software Engineer Intern - Summer 2027",
       "first_seen": "2026-09-13",
       "last_seen": "2026-09-13",
+      "times_seen": 1
+    },
+    "f675cbd6d9c3": {
+      "title": "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language-Guided Neural-Kinematic MPC",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "121754a94487": {
+      "title": "bojieli/ai-infra-book — ★1,420",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "f57c08a67438": {
+      "title": "Why is Google still serving dodgy ads?",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "376f618d471c": {
+      "title": "The Malicious Use of Artificial Intelligence",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "088ef1e18bd4": {
+      "title": "Reverse-Engineering Claude Web's MicroVM: Uncovering Anthropic's Hidden Antspace",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "d76c528f88c8": {
+      "title": "NextStep Hacks 2026",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "c0d35796b0d8": {
+      "title": "Zachery Lipton: \"CS academia broke the system...perhaps all that it takes for the system to rebuild is for it to burn to the ground\" [D]",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "335456a33375": {
+      "title": "[Upcoming AMA] Waymo AI Team AMA – Drop Your Questions Early! [D]",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "533ea036e759": {
+      "title": "I trained an 825k-parameter model to generate drawing programs that execute exactly on an RP2040 [P]",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "fb0cbec5c02e": {
+      "title": "ARR August Discussion [D]",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "c6ea24d47a08": {
+      "title": "Horse racing as an ML ranking problem: 1.18M runners, walk-forward validation and a very strong market baseline [D]",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "70a33e0f7c0c": {
+      "title": "Got scipy's KD-tree to handle inserts and deletes without rebuilding. Three things I learned [P]",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "bda53e1065dd": {
+      "title": "When NeurIPS'26 final decision release? [D]",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "fb7998cb8b63": {
+      "title": "PhD branding question [R]",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "cf3b860e264d": {
+      "title": "AtCoder Grand Contest 078 (atcoder.jp)",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "dbfa26873f65": {
+      "title": "EPINOIA : The Hackathon Event",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "713bdfaab3be": {
+      "title": "Hack Era 1.0",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "4120f9c1229c": {
+      "title": "SecLeaf Q4 CTF 2026",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "cdded90665a0": {
+      "title": "DataHeist",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "d89ab9ddd2b9": {
+      "title": "Hack'em Hex",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "45ab8cccccbe": {
+      "title": "Codestorm - 2K26",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "83a60c874f2c": {
+      "title": "WCPC 2K26",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "e7633399546a": {
+      "title": "Campus Ambassador Internship",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "6bc7c6b69ab4": {
+      "title": "Flutter Developer Internship",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "3e64508b21f0": {
+      "title": "Technical Project Management Internship",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "e4c45fc8930c": {
+      "title": "Social Impact & School Outreach Internship",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "78f7fec33e4e": {
+      "title": "Lawyer Internship",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "07ab6f9468dc": {
+      "title": "Boston Scientific — Software Engineer Intern - Interns/Graduates",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "ec76714adb6a": {
+      "title": "Acron Aviation — Software Engineer Intern",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "979724edf3e1": {
+      "title": "Philips — Software Engineer Intern",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "a6202cfd989f": {
+      "title": "Guardian Life — Summer Intern - Digital & Technology - AI & Machine Learning",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "85da1833fa09": {
+      "title": "Autostore — Software Engineering Co-op",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "7e050431cd18": {
+      "title": "TD Bank — Software Engineer Intern - Global Technology & Solutions",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
       "times_seen": 1
     }
   }

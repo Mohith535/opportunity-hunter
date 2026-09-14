@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-13",
+  "updated_at": "2026-09-14",
   "items": [
     {
-      "key": "3d582e60a034",
-      "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
-      "url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+      "key": "885eeaaff9df",
+      "title": "Build, Ship, Shape: Amazon Developer Hackathon",
+      "url": "https://amazonappdev2026.devpost.com/",
       "source": "devpost",
       "score": 10,
-      "deadline": "2026-09-03",
+      "deadline": "2026-10-23",
       "tags": [
         "hackathon"
       ],
@@ -21,19 +21,6 @@
       "source": "devfolio",
       "score": 10,
       "deadline": "2026-09-06",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "885eeaaff9df",
-      "title": "Build, Ship, Shape: Amazon Developer Hackathon",
-      "url": "https://amazonappdev2026.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-10-23",
       "tags": [
         "hackathon"
       ],
@@ -101,97 +88,6 @@
       "deadline": "2026-09-15",
       "tags": [
         "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "179c78209345",
-      "title": "StudentSim: Training LLM-based Student Simulators",
-      "url": "https://arxiv.org/abs/2609.01591v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "78d224273a5e",
-      "title": "BOSS $1000 Contributor Hackathon",
-      "url": "https://unstop.com/hackathons/boss-1000-contributor-hackathon-boss-console-1747592",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d2e702530020",
-      "title": "Growth & Marketing Internship",
-      "url": "https://unstop.com/internships/growth-marketing-intern-recruiv-1747873",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "823792e16504",
-      "title": "Campus Ambassador Internship",
-      "url": "https://unstop.com/internships/campus-ambassador-internship-ashna-ai-1747862",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f7029e9ff5f1",
-      "title": "HR Internship",
-      "url": "https://unstop.com/internships/hr-intern-zynvixs-pvt-ltd-1747837",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "7cd325e8ee7d",
-      "title": "Microsoft — Data Science Intern",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556982897",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0cf8510ed49c",
-      "title": "Microsoft — Data Scientist Intern",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556982928",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -930,14 +826,79 @@
       "action_plan": []
     },
     {
-      "key": "1c2ff51a9f89",
-      "title": "BuildForge Hackathon",
-      "url": "https://unstop.com/hackathons/buildforge-hackathon-invoqe-1746404",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
+      "key": "d76c528f88c8",
+      "title": "NextStep Hacks 2026",
+      "url": "https://nextstep2026.devpost.com/",
+      "source": "devpost",
+      "score": 8,
+      "deadline": "2026-09-20",
       "tags": [
         "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e7633399546a",
+      "title": "Campus Ambassador Internship",
+      "url": "https://unstop.com/internships/campus-ambassador-internship-yhills-1755267",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6bc7c6b69ab4",
+      "title": "Flutter Developer Internship",
+      "url": "https://unstop.com/internships/flutter-developer-intern-acriotech-pvt-ltd-1755422",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3e64508b21f0",
+      "title": "Technical Project Management Internship",
+      "url": "https://unstop.com/internships/technical-project-management-intern-vidbow-1755443",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e4c45fc8930c",
+      "title": "Social Impact & School Outreach Internship",
+      "url": "https://unstop.com/internships/social-impact-school-outreach-intern-befledge-global-pvt-ltd-1755446",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "78f7fec33e4e",
+      "title": "Lawyer Internship",
+      "url": "https://unstop.com/internships/lawyer-internship-bhaiar-1755186",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1092,58 +1053,6 @@
       "deadline": null,
       "tags": [
         "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "445f0fadacf8",
-      "title": "Boston Scientific — Research Algorithm & Data Science Intern - Interns/Graduates",
-      "url": "https://bostonscientific.eightfold.ai/careers/job/563602813483110",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "9ad43cfb90ba",
-      "title": "Boston Scientific — Research Data Science Intern - Active Implantable Systems",
-      "url": "https://bostonscientific.eightfold.ai/careers/job/563602813483103",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b7129f57f2c3",
-      "title": "Tesla — Machine Learning Engineer Intern - Charging Data Modeling",
-      "url": "https://www.tesla.com/careers/search/job/281940",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "cdf492f79b8b",
-      "title": "Corning — Artificial Intelligence and Machine Learning Intern",
-      "url": "https://corningjobs.corning.com/job/Wilmington-Artificial-Intelligence-and-Machine-Learning-Intern-Summer-2027-NC-28405/1425596800/?ats=successfactors",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1335,6 +1244,106 @@
       ],
       "ai_summary": "",
       "action_plan": []
+    },
+    {
+      "key": "f14979009918",
+      "title": "Airbus — Artificial Intelligence Intern",
+      "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Filton/Artificial-Intelligence-Placement--125-months-_JR10424830",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c7d4c9467f1f",
+      "title": "Rustuna: A High-Performance Rust Implementation of Optuna [P]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1w9nyhz/rustuna_a_highperformance_rust_implementation_of/",
+      "source": "reddit",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "High-perf ML infra is good, but it's a news item, not a tangible opportunity.",
+      "action_plan": [
+        "Skim the implementation details (10m)"
+      ]
+    },
+    {
+      "key": "334fdc87c108",
+      "title": "Amazon ML Challenge 2026",
+      "url": "https://unstop.com/hackathons/crp-amazon-ml-challenge-2026-amazon-1743604",
+      "source": "unstop",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3fb7a1f28c04",
+      "title": "Loblaw Companies — Applied Machine Learning Co-op",
+      "url": "https://myview.wd3.myworkdayjobs.com/paradox_careers/job/1-Presidents-Choice-Circle-Brampton-ON/Applied-Machine-Learning---Co-op-Student_R2000697038",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "222bd8415a15",
+      "title": "TD Bank — Applied Machine Learning Scientist Co-op - Winter 2027",
+      "url": "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers/job/Toronto-Ontario/AI2-Applied-Machine-Learning-Scientist-Co-op--WINTER-2027-_R_1506697-1",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3c67ad2c48cc",
+      "title": "Merck — Medical Data Scientist Intern",
+      "url": "https://msd.wd5.myworkdayjobs.com/searchjobs/job/USA---Pennsylvania---North-Wales-Upper-Gwynedd/XMLNAME-2027-Future-Talent-Program---Medical-Data-Scientist---Intern_R412403",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Medical DS is okay, but not the 'elite AI engineer' path he craves. · ⚠ verify eligibility: US work authorization for Summer 2027",
+      "action_plan": [
+        "Verify US internship visa rules (10m)",
+        "Apply if eligible (20m)"
+      ]
+    },
+    {
+      "key": "d87a574352e6",
+      "title": "Merck — Data Scientist Intern - Nonclinical Drug Safety",
+      "url": "https://msd.wd5.myworkdayjobs.com/searchjobs/job/USA---Massachusetts---Boston-MA-Parcel-B-Laboratory/XMLNAME-2027-Future-Talent-Program---Nonclinical-Drug-Safety-Data-Scientist---Intern_R412861",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Similar to i=1; pharma DS is a detour from GenAI/Agents focus. · ⚠ verify eligibility: US work authorization for Summer 2027",
+      "action_plan": [
+        "Verify US internship visa rules (10m)",
+        "Apply if eligible (20m)"
+      ]
     }
   ]
 }
