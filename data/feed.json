@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-09-14",
+  "updated_at": "2026-09-15",
   "items": [
-    {
-      "key": "885eeaaff9df",
-      "title": "Build, Ship, Shape: Amazon Developer Hackathon",
-      "url": "https://amazonappdev2026.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-10-23",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "e0b90e9b87a5",
       "title": "MUBA Blockchain Hackathon",
@@ -93,66 +80,14 @@
       "action_plan": []
     },
     {
-      "key": "e73bebe15c46",
-      "title": "Content Writing Internship",
-      "url": "https://unstop.com/internships/content-writing-internship-brightrays-1748505",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
+      "key": "50ea250d2ce8",
+      "title": "OneAquaHealth IEEE Global Hackathon",
+      "url": "https://oneaquahealth-ieee-hackathon.devpost.com/",
+      "source": "devpost",
+      "score": 9,
+      "deadline": "2026-10-01",
       "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "8321e1171e4b",
-      "title": "SEO, AIO & GEO Internship",
-      "url": "https://unstop.com/internships/seo-aio-geo-internship-proweblook-1748531",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "13450340364e",
-      "title": "Business Development Internship",
-      "url": "https://unstop.com/internships/business-development-internship-budhana-tech-llp-1748518",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "2ada27022fe3",
-      "title": "Career Counsellor Internship",
-      "url": "https://unstop.com/internships/career-counsellor-internship-beyond-mentor-1748542",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "774d946988ca",
-      "title": "Microsoft — Applied Science Intern - PhD",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556986140",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -904,17 +839,86 @@
       "action_plan": []
     },
     {
-      "key": "b2d93921f9a6",
-      "title": "Global Innovation Hackathon 2026 – Build for a Better Future",
-      "url": "https://unstop.com/hackathons/global-innovation-hackathon-2026-build-for-a-better-future-bharat-academix-1748404",
+      "key": "9f8105494962",
+      "title": "Web Designer Internship",
+      "url": "https://unstop.com/internships/web-designer-internship-kisan-udyog-1755930",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
+    },
+    {
+      "key": "51a38804a71b",
+      "title": "Category Management Internship",
+      "url": "https://unstop.com/internships/category-management-internship-retailverse-technologies-private-limited-1755940",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "5eb017800250",
+      "title": "Flutter Developer Internship",
+      "url": "https://unstop.com/internships/flutter-developer-internship-fuel-flux-technology-1755801",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a0ed2dbd5747",
+      "title": "Marketing & Client Acquisition Internship",
+      "url": "https://unstop.com/internships/marketing-client-acquisition-internship-india-news-grid-1755788",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b1af96a4c5b9",
+      "title": "HR Recruiter Internship",
+      "url": "https://unstop.com/internships/hr-recruiter-internship-technobots-infotech-private-limited-1755591",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "61e008c79959",
+      "title": "Charta Health — Forward Deployed AI Engineer Intern",
+      "url": "https://jobs.ashbyhq.com/chartahealth/0c76d54d-0ca8-4ab6-b360-c2dbae7b17cf/application?embed=true",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Forward Deployed AI Engineer is a high-leverage builder role in AI hubs. · ⚠ verify eligibility: US work authorization likely required for S",
+      "action_plan": [
+        "Research Charta Health's AI stack (20m)",
+        "Draft 'builder' focused cover letter (45m)",
+        "Apply (10m)"
+      ]
     },
     {
       "key": "f43219226aa3",
@@ -1058,88 +1062,46 @@
       "action_plan": []
     },
     {
-      "key": "b583ba3addbe",
-      "title": "Shure — Artificial Intelligence Engineer Intern",
-      "url": "https://careersus-shure.icims.com/jobs/4966/job?mobile=true&needsRedirect=false",
-      "source": "internships",
-      "score": 6,
+      "key": "46371ab26b8a",
+      "title": "Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science",
+      "url": "https://arxiv.org/abs/2609.15983v1",
+      "source": "arxiv",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
+        "research"
       ],
       "ai_summary": "",
       "action_plan": []
     },
     {
-      "key": "c3460f771767",
-      "title": "Shure — Artificial Intelligence Specialist Intern - Operations",
-      "url": "https://careersus-shure.icims.com/jobs/5029/job?mobile=true&needsRedirect=false",
-      "source": "internships",
-      "score": 6,
+      "key": "34665bc62848",
+      "title": "WebRush — 6-Hour Frontend Hackathon",
+      "url": "https://unstop.com/hackathons/webrush-6-hour-frontend-hackathon-frontend-arena-1755768",
+      "source": "unstop",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
     },
     {
-      "key": "7cae9390b66b",
-      "title": "Shure — Applied Research Science Intern",
-      "url": "https://careersus-shure.icims.com/jobs/4967/job?mobile=true&needsRedirect=false",
+      "key": "3b581db0f270",
+      "title": "Western Digital — Systems Architecture Co-op - AI Systems Strategy",
+      "url": "https://jobs.smartrecruiters.com/WesternDigital/744000149367234",
       "source": "internships",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "530510238302",
-      "title": "Shure — Audio Applied Research Science Intern",
-      "url": "https://careersus-shure.icims.com/jobs/4968/job?mobile=true&needsRedirect=false",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "45f194ec1261",
-      "title": "Atlassian — Software Engineer Intern",
-      "url": "https://campus-globalcareers-atlassian.icims.com/jobs/26275/software-engineer-intern%2c-2027-canada/job",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Atlassian is a high-signal engineering company, though not AI-first. · ⚠ verify eligibility: Canadian work authorization likely required",
+      "ai_summary": "AI Systems Strategy aligns with AI engineering goals. · ⚠ verify eligibility: US work authorization likely required for Minnesota, US",
       "action_plan": [
-        "Verify international student eligibility (10m)",
-        "Highlight 'Builder' projects like TaskFlow (1h)",
-        "Apply (15m)"
-      ]
-    },
-    {
-      "key": "e70be111f6ff",
-      "title": "Universal Health Services — Software Engineer Intern - Data Analytics",
-      "url": "https://jobs.uhsinc.com/jobs/367247?icims=1",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Data analytics matches ML interest, but company prestige is low. · ⚠ verify eligibility: US work authorization for PA likely required",
-      "action_plan": [
-        "Check visa sponsorship (10m)",
-        "Apply if eligible (15m)"
+        "Verify eligibility for international students (10m)",
+        "Highlight AI architecture projects (45m)",
+        "Apply (10m)"
       ]
     },
     {
@@ -1344,6 +1306,48 @@
         "Verify US internship visa rules (10m)",
         "Apply if eligible (20m)"
       ]
+    },
+    {
+      "key": "1fea3da37572",
+      "title": "Dick's Sporting Goods — Software Engineer Intern - Corporate Internship",
+      "url": "https://dickssportinggoods.wd1.myworkdayjobs.com/en-US/DSG/job/Customer-Support-Center/Software-Engineering---Summer-2027-Corporate-Internship_202608792-1",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0bbb0abef18e",
+      "title": "Merck — Optical Imaging Data Science Intern",
+      "url": "https://msd.wd5.myworkdayjobs.com/searchjobs/job/USA---Massachusetts---Boston-MA-Parcel-B-Laboratory/XMLNAME-2027-Future-Talent-Program---Optical-Imaging-Data-Science-Intern---Intern_R412885",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "Imaging DS is a strong skill, but not the core GenAI path. · ⚠ verify eligibility: US work authorization for Summer 2027",
+      "action_plan": [
+        "Verify US internship visa rules (10m)",
+        "Apply if eligible (20m)"
+      ]
+    },
+    {
+      "key": "565597a86708",
+      "title": "Gallup — Artificial Intelligence/Machine Learning Research Intern",
+      "url": "https://job-boards.greenhouse.io/gallup/jobs/4395921009",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
     }
   ]
 }

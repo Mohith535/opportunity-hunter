@@ -83644,6 +83644,1071 @@
           "key": "7e050431cd18"
         }
       ]
+    },
+    {
+      "date": "2026-09-15",
+      "items": [
+        {
+          "title": "Bellman Policy Optimization",
+          "url": "https://arxiv.org/abs/2609.15987v1",
+          "source": "arxiv",
+          "description": "Reinforcement learning with verifiable rewards (RLVR) improves the reasoning capabilities of large language models (LLMs). We introduce Bellman Policy Optimization (BPO), a critic-free method derived from Policy Mirror Descent (PMD). For autoregressive generation with terminal rewards, BPO uses the Bellman equations to reformulate PMD as a trajectory-level objective. The reformulation avoids estimating state values at intermediate states. We prove that it has the same unique optimal solution as the original PMD objective. We derive the practical BPO loss by approximating this objective. Its mismatch-correction weight is a smoothed ratio of complementary token probabilities. Experiments on mathematical reasoning benchmarks demonstrate the effectiveness of BPO.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.15987",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e6bcb1d3c3c6"
+        },
+        {
+          "title": "Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science",
+          "url": "https://arxiv.org/abs/2609.15983v1",
+          "source": "arxiv",
+          "description": "Language models can produce plausible short proofs, but may still be unreliable on long-horizon research problems, where progress depends on a sequence of uncertain and interdependent decisions. We introduce Stellar Colosseum, a model-agnostic harness for allocating inference across research in mathematics and theoretical computer science. Colosseum explores alternative strategies before proof construction, uses a readiness gate to decide when a route is mature enough to decompose, represents the proof plan as interdependent section-level subproblems, and routes verifier findings back to the affected part of the argument. Across these stages, it generates candidates in parallel, attacks them with targeted falsification, and combines candidates and their critiques into a single research artifact through overlapping random-sample tree aggregation. The Colosseum workflow has also been integrated into Google Antigravity's Teamwork framework as the Long Proof pattern. We demonstrate the capabilities of Colosseum through open-ended research and evaluations on theorem-proving and competitive programming benchmarks. Using Colosseum with Gemini 3.1 Pro, we obtain several new results that address open problems arising from papers published at top venues such as FOCS and JMLR. On TCS-Bench, a benchmark of research-level theorem-proving tasks drawn from papers published at FOCS, STOC, and SODA, Colosseum achieves 71.0% accuracy using Gemini 3.1 Pro and Gemini 3.7 Flash. In a separate Codeforces evaluation using Gemini 3.1 Pro, the proof-oriented pipeline with execution feedback solves 218 of 222 problems.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.15983",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "46371ab26b8a"
+        },
+        {
+          "title": "The Router Within: Eliciting Native Skill Routing from a Frozen LLM",
+          "url": "https://arxiv.org/abs/2609.15982v1",
+          "source": "arxiv",
+          "description": "Skills extend an LLM agent beyond its parametric knowledge, and the gain they promise rests on picking the right one. Deployed harnesses route by preloading every skill's metadata into the context, which disperses the agent's attention and caps the library size. Retrieval pipelines move the selection out of the context, but also out of the agent's capability. We show that the frozen agent LLM already carries the routing signal in its own forward passes, and that two linear maps suffice to read it out with no skill text in the context. Gavel (Glance And Verdict from a frozen LLM) reads it in two steps. A glance projects the task's and each skill's mid-layer states through the two maps, the only parameters trained, and scores the full library against compact per-skill banks that one forward pass builds at installation. A verdict then resumes the shortlisted skills' forward passes and reads the model's own likelihood and yes/no judgment, fused with the glance as a product of experts. Trained once, Gavel transfers zero-shot to three public benchmarks and SkillTraj, our new benchmark of 372 simulated agent trajectories. On Qwen3-32B it outperforms progressive disclosure and retrieve-and-rerank pipelines that add 1.2B to 16B external parameters, by up to 13.4 points on written tasks and up to 21.9 when the need for a skill arises mid-rollout. Routing accuracy improves as the backbone does, and in a bash-agent harness the same 32B triggers the correct skill on Skill-Use more often than far larger frontier models running in Codex.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.15982",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4e0994cfcffc"
+        },
+        {
+          "title": "Discovery Foundation Models: Toward Open-Ended Discovery Intelligence",
+          "url": "https://arxiv.org/abs/2609.15973v1",
+          "source": "arxiv",
+          "description": "Foundation models have progressed from learning and reasoning over existing knowledge, to increasingly learning through action, tool use, and outcome feedback. We argue that the next frontier is a further transition: from solving and acting within problems specified by humans to participating in the process by which new problems, representations, explanations, and knowledge are created. We refer to this capability as Discovery Intelligence. We formulate Discovery Foundation Models (DFMs) as general-purpose model systems for open-ended discovery. A DFM operates over a revisable research state and supports seven coupled capabilities spanning problem discovery, formulation, representation construction, hypothesis formation, intervention, evidence-grounded revision, and continual discovery improvement. We instantiate this framework with Zetema, which couples explicit research-state dynamics, verification and experimental gating, external grounding, and cross-task Discovery Skill evolution. We further ground the framework with GALILEO, a real therapeutic-discovery system in which Dry-Lab reasoning, robotic and hands-on Wet-Lab experimentation, external biological evidence, and iterative hypothesis and design revision form a closed physical discovery loop. We then formulate a unified approach to capability formation and process-centered evaluation, enabling discovery behavior to be trained, improved, and measured beyond final-answer performance. Together, these components establish discovery as a learnable, executable, and evaluable capability of foundation-model systems. We view this shift as a broader progression in intelligence scaling: from learning over existing knowledge, to learning from action outcomes, and ultimately to participating in the construction, testing, and revision of the structures through which new knowledge is discovered. Code: https://github.com/Gen-Verse/DFM-Plans",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.15973",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "12accce8fe3f"
+        },
+        {
+          "title": "Mind2Dialogue: Training Human-Aware Language Models by Simulating User Mental States",
+          "url": "https://arxiv.org/abs/2609.15972v1",
+          "source": "arxiv",
+          "description": "As language models become more capable, long-term collaboration in learning, reasoning, and decision-making calls for a deeper understanding of the people they serve. Yet training such human-aware language models faces a fundamental supervision gap because current datasets for LLM assistant training contain few if any well-informed responses explicitly grounded in users' unspoken beliefs and goals. Scaling such supervision is inherently constrained, as users' underlying states are not directly observable. We thus propose the Mind2Dialogue framework to mitigate this gap by simulating users' mental states and turning them into privileged supervision for human-aware training. Specifically, we first propose a psychology-guided simulator that preserves personal characteristics while updating mental states through interaction to generate coherent conversations. The key idea is to enforce a shared evolving mental state that drives user behavior and guides an Oracle assistant's responses. Our privileged distillation then trains models on the Oracle's well-informed responses to assist users without direct access to their mental states at deployment. Moreover, we propose to evaluate human-aware learning by combining personalization and theory of mind, examining how models understand people and act on that understanding. Training on the full Mind2Dialogue corpus improves every reported personalization metric over the corresponding Qwen, Llama, and OLMo instruction-tuned baselines, including gains of 26.6 to 40.9 percentage points in preference-following generation. The gains extend to belief and action reasoning on Qwen and Llama, beyond personalized assistance. Looking forward, Mind2Dialogue makes user simulation a foundation for genuine AI collaborators that understand beliefs and intentions behind people's words and support their long-term goals across education, work, and everyday life.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.15972",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "979c5e69dfd4"
+        },
+        {
+          "title": "Verifiable by Construction: Claim-Level Evaluation of Verbatim Citation in Clinical Question Answering",
+          "url": "https://arxiv.org/abs/2609.15964v1",
+          "source": "arxiv",
+          "description": "Large language models (LLMs) have been widely adopted for clinical question answering (QA). Current systems can attach citations to their answers, but these often point to broad texts, leaving time-pressed clinicians unable to verify them efficiently. An alternative is to ensure that responses are verifiable by construction: providing fine-grained verbatim quotes from reference material that substantiate claims, so users can verify an answer without opening other documents. In this paper, we evaluate the ability of current models to perform this task end-to-end: from providing citations for every factual claim, to producing verbatim quotes, to ensuring that those quotes fully substantiate the claims. To do so, we build a standardized harness over four clinical practice guidelines and evaluate twelve LLMs on 222 synthetic clinical questions, measuring each of these stages separately. We find that most models can attach verbatim quotes to over 90% of their claims from prompting alone, apart from some lightweight models such as claude-haiku-4.5. Yet these quotes often fail to substantiate every detail of the claims they accompany. For instance, claude-opus-5 produces verbatim quotes for 98.0% of its claims, but fully substantiates only 37.1%. Our work provides insights into the current capability gap of LLMs in building verifiable clinical QA systems, along with artifacts for future research.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.15964",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b57e537e9ddc"
+        },
+        {
+          "title": "Why don't machine learning research agents overfit?",
+          "url": "https://www.amazon.science/blog/why-dont-machine-learning-research-agents-overfit",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49699648",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bf19b3a519af"
+        },
+        {
+          "title": "AI Builders Hackathon",
+          "url": "https://ai-builders-hackathon-2026.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Aug 21 - Sep 15, 2026 | prize $ 33,900 | themes: Machine Learning/AI, Open Ended, Beginner Friendly",
+          "deadline": "2026-09-15",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30452",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "148a255e8453"
+        },
+        {
+          "title": "OneAquaHealth IEEE Global Hackathon",
+          "url": "https://oneaquahealth-ieee-hackathon.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Sep 14 - Oct 01, 2026 | prize $ 3,500 | themes: Health, Machine Learning/AI, Social Good",
+          "deadline": "2026-10-01",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "29359",
+          "score": 9,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "50ea250d2ce8"
+        },
+        {
+          "title": "Beginner's Paradise - FirstCommit",
+          "url": "https://firstcommit.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Aug 21 - Sep 30, 2026 | prize $ 1,024 | themes: Beginner Friendly, Mobile, Web",
+          "deadline": "2026-09-30",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "30892",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7642f386f156"
+        },
+        {
+          "title": "RSI is not happening [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wgazy4/rsi_is_not_happening_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wgazy4",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "03998c5c50a7"
+        },
+        {
+          "title": "How to automatically find the batch size when using Accelerate with FSDP2? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wg9u62/how_to_automatically_find_the_batch_size_when/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wg9u62",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "04169a2bfdac"
+        },
+        {
+          "title": "[P] Wine synthesis using VAE [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wg5wxy/p_wine_synthesis_using_vae_p/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wg5wxy",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "62b015b64088"
+        },
+        {
+          "title": "MS MARCO click-translation expansion tables (\"poor man's\" DSSM) [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wg3g03/ms_marco_clicktranslation_expansion_tables_poor/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wg3g03",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "bb633e2addd7"
+        },
+        {
+          "title": "Duplicating baseline benchmarks [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wg1tdn/duplicating_baseline_benchmarks_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wg1tdn",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1422cf45c1a7"
+        },
+        {
+          "title": "[P] Built a 100% Client-Side Vision Pipeline for Real-Time Chessboard & Multi-Board Detection (Chrome/Firefox Extension) [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wfzzml/p_built_a_100_clientside_vision_pipeline_for/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wfzzml",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b46ad9c17eb0"
+        },
+        {
+          "title": "Codeforces Round (Div. 3) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2266",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-09-21T14:35:00",
+          "deadline": "2026-09-21",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "70415180",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9c4c7e4ecfbb"
+        },
+        {
+          "title": "Weekly Contest 521 (leetcode.com)",
+          "url": "https://leetcode.com/contest/weekly-contest-521",
+          "source": "clist",
+          "description": "competitive programming contest on leetcode.com; starts 2026-09-27T02:30:00",
+          "deadline": "2026-09-27",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "70404439",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c6df90c41b40"
+        },
+        {
+          "title": "BioBridge – Bio Innovation Hackathon 2026",
+          "url": "https://unstop.com/hackathons/biobridge-bio-innovation-hackathon-2026-ks-rangasamy-college-of-technology-ksrct-namakkal-1755864",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1755864",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5405d4d44b62"
+        },
+        {
+          "title": "Ride Hack-26",
+          "url": "https://unstop.com/hackathons/ride-hack-26-jaypee-institute-of-information-technology-jiit-noida-1755652",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1755652",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2d394058f3f5"
+        },
+        {
+          "title": "WebRush — 6-Hour Frontend Hackathon",
+          "url": "https://unstop.com/hackathons/webrush-6-hour-frontend-hackathon-frontend-arena-1755768",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1755768",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "34665bc62848"
+        },
+        {
+          "title": "Tech Eximius 2.0",
+          "url": "https://unstop.com/hackathons/tech-eximius-20-tech-circle-1755763",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1755763",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "948512f11368"
+        },
+        {
+          "title": "Singularity 2.0",
+          "url": "https://unstop.com/hackathons/singularity-20-kc-college-of-engineering-and-management-studies-and-research-1755564",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1755564",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "416ee9597293"
+        },
+        {
+          "title": "Bug Bounty",
+          "url": "https://unstop.com/hackathons/bug-bounty-cyber-carnival-srm-university-ramapuram-chennai-1755028",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1755028",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2571a3e2f4e4"
+        },
+        {
+          "title": "Red Team vs Blue Team",
+          "url": "https://unstop.com/hackathons/red-team-vs-blue-team-cyber-carnival-srm-university-ramapuram-chennai-1754914",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1754914",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4144c0b9f888"
+        },
+        {
+          "title": "AI Campus Ambassador",
+          "url": "https://unstop.com/internships/ai-campus-ambassador-campus-ambassador-carnival-masters-union-school-of-business-1755478",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1755478",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d72fe99c5a4b"
+        },
+        {
+          "title": "Web Designer Internship",
+          "url": "https://unstop.com/internships/web-designer-internship-kisan-udyog-1755930",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1755930",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9f8105494962"
+        },
+        {
+          "title": "Category Management Internship",
+          "url": "https://unstop.com/internships/category-management-internship-retailverse-technologies-private-limited-1755940",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1755940",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "51a38804a71b"
+        },
+        {
+          "title": "Flutter Developer Internship",
+          "url": "https://unstop.com/internships/flutter-developer-internship-fuel-flux-technology-1755801",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1755801",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5eb017800250"
+        },
+        {
+          "title": "Marketing & Client Acquisition Internship",
+          "url": "https://unstop.com/internships/marketing-client-acquisition-internship-india-news-grid-1755788",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1755788",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a0ed2dbd5747"
+        },
+        {
+          "title": "HR Recruiter Internship",
+          "url": "https://unstop.com/internships/hr-recruiter-internship-technobots-infotech-private-limited-1755591",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1755591",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b1af96a4c5b9"
+        },
+        {
+          "title": "Nexthop.ai — Software Engineer Intern",
+          "url": "https://nexthopai.bamboohr.com/careers/64/",
+          "source": "internships",
+          "description": "internship | Nexthop.ai | Burnaby, BC, Canada | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d95281cf-98b3-4a5a-95ed-2ad39d2197a1",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e634e22f26e5"
+        },
+        {
+          "title": "DoorDash — Software Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/doordashcanada/jobs/8170944",
+          "source": "internships",
+          "description": "internship | DoorDash | Toronto, ON, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ea0fba80-15e5-4a2e-829e-38a6fde13be8",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9a993011a469"
+        },
+        {
+          "title": "Superhuman — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/Superhuman%20Platform%20Inc/5f1f25ee-709d-4ae0-ada4-d1f243bde89c/application?embed=true",
+          "source": "internships",
+          "description": "internship | Superhuman | Toronto, ON, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "26b3de5f-72c0-4567-8e63-fac11ea93bff",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5f0046131466"
+        },
+        {
+          "title": "DoorDash — Software Engineer Intern - Summer 2027",
+          "url": "https://job-boards.greenhouse.io/doordashusa/jobs/8171041",
+          "source": "internships",
+          "description": "internship | DoorDash | Seattle, WA, SF, LA, NYC, Sunnyvale, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d3c0c779-480d-4810-9393-88d215aa5e7e",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f4c663e7784f"
+        },
+        {
+          "title": "Superhuman — Software Engineer Intern - Summer 2027",
+          "url": "https://jobs.ashbyhq.com/Superhuman%20Platform%20Inc/e6b917b1-325a-47d0-b267-b279b0efdad0/application?embed=true",
+          "source": "internships",
+          "description": "internship | Superhuman | Seattle, WA, SF, NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "18052ece-e9bc-41d6-bcd9-f20ab241dcc2",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "78a139df7291"
+        },
+        {
+          "title": "A Thinking Ape — Software Development Engineer Co-op",
+          "url": "https://job-boards.greenhouse.io/athinkingape/jobs/8203048",
+          "source": "internships",
+          "description": "internship | A Thinking Ape | Remote in Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9a439612-1739-419b-89c7-99b6cee64e2b",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0e209fbb1d3c"
+        },
+        {
+          "title": "Tesla — Computer Vision Engineer Intern - Cell Engineering",
+          "url": "https://www.tesla.com/careers/search/job/283290",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8d49edaf-5e5e-49b5-8b0e-1c75d2c04f76",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5348756cb477"
+        },
+        {
+          "title": "Tesla — Internship - Software Integration Engineer - Factory Firmware Team - Winter/Spring 2027",
+          "url": "https://www.tesla.com/careers/search/job/283447",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Winter 2027, Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f738e9df-005d-49b2-b408-266feeacf24b",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d15be5a34e0d"
+        },
+        {
+          "title": "CAI — Software Developer Intern",
+          "url": "https://cai.wd5.myworkdayjobs.com/computer_aid/job/PA-CLIENT-STATE/Software-Developer-Intern_R8462",
+          "source": "internships",
+          "description": "internship | CAI | Pennsylvania | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "593f743d-dbf9-4e74-97a9-3e11236aaddd",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "eb81bb3aef42"
+        },
+        {
+          "title": "CAI — Software Developer Intern",
+          "url": "https://cai.wd5.myworkdayjobs.com/computer_aid/job/PA-CLIENT-STATE/Software-Developer-Intern_R8451",
+          "source": "internships",
+          "description": "internship | CAI | Pennsylvania | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "11e0f3d7-616e-436c-898f-57bf2b115db5",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "835a2637adbb"
+        },
+        {
+          "title": "X Development — AI Resident - Machine Learning / Software Engineering - Early Stage Project",
+          "url": "https://x.company/careers/8802900002?gh_jid=8802900002",
+          "source": "internships",
+          "description": "internship | X Development | Mountain View, CA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b78a3dc5-6152-4ada-8d16-092bb5750261",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "44eedd3891a5"
+        },
+        {
+          "title": "Fanvue — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/fanvue.com/9ba53c5b-dcc7-4e6c-8ecc-0647a62761ce/application?embed=true",
+          "source": "internships",
+          "description": "internship | Fanvue | London, UK | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f3ab5e1d-3b6c-4e18-a64a-21903b9beeba",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6fb66a372b39"
+        },
+        {
+          "title": "Awardco — Front-End Software Engineer Intern",
+          "url": "https://award.co/position?gh_jid=4136562004",
+          "source": "internships",
+          "description": "internship | Awardco | Lindon, UT | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b7be327f-10fa-4775-8a1c-183ea4b062ce",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0b8824c7f23d"
+        },
+        {
+          "title": "Awardco — Back-End Software Engineer Intern",
+          "url": "https://award.co/position?gh_jid=4322220004",
+          "source": "internships",
+          "description": "internship | Awardco | Lindon, UT | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c64a512f-2622-44bb-9b61-40e707833008",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f28681d99f5c"
+        },
+        {
+          "title": "Garmin — Software Engineer Intern",
+          "url": "https://careers.garmin.com/jobs/20165?icims=1",
+          "source": "internships",
+          "description": "internship | Garmin | Yarmouth, ME | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "49b9153d-dd0a-4a39-8d08-d25c517c2417",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Generic SWE role; lacks specific AI/ML focus Mohith craves. · ⚠ verify eligibility: US work authorization likely required for Maine, US",
+          "action_plan": [
+            "Check visa sponsorship (10m)",
+            "Tailor resume for embedded/systems (30m)",
+            "Apply (10m)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 5,
+            "deadline": 3,
+            "skill": 6,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization likely required for Maine, US"
+          },
+          "key": "c48c760ea819"
+        },
+        {
+          "title": "Western Digital — Systems Architecture Co-op - AI Systems Strategy",
+          "url": "https://jobs.smartrecruiters.com/WesternDigital/744000149367234",
+          "source": "internships",
+          "description": "internship | Western Digital | Rochester, MN | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "83941e88-ca79-490f-8413-e36358109fa0",
+          "score": 3,
+          "ai_score": 7,
+          "ai_summary": "AI Systems Strategy aligns with AI engineering goals. · ⚠ verify eligibility: US work authorization likely required for Minnesota, US",
+          "action_plan": [
+            "Verify eligibility for international students (10m)",
+            "Highlight AI architecture projects (45m)",
+            "Apply (10m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 3,
+            "skill": 7,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization likely required for Minnesota, US"
+          },
+          "key": "3b581db0f270"
+        },
+        {
+          "title": "Workshop — Software Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/workshop/jobs/5237900007",
+          "source": "internships",
+          "description": "internship | Workshop | Omaha, NE | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "36e1c66a-1cae-4b36-b414-d74b38a44a7f",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Low prestige, generic SWE role in a non-hub location. · ⚠ verify eligibility: US work authorization likely required for Nebraska, US",
+          "action_plan": [
+            "Quick check on visa (5m)",
+            "Apply if effortless (10m)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 3,
+            "skill": 5,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization likely required for Nebraska, US"
+          },
+          "key": "165794770cba"
+        },
+        {
+          "title": "Dell Technologies — Global Marketing AI & Data Intern",
+          "url": "https://iawmqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/careers/job/299054",
+          "source": "internships",
+          "description": "internship | Dell Technologies | Round Rock, TX | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "83c0080c-09ec-4ac1-9207-e3ffcf016d2f",
+          "score": 3,
+          "ai_score": 5,
+          "ai_summary": "Marketing AI is too 'consumer/business' and not 'builder' enough. · ⚠ verify eligibility: US work authorization likely required for Texas, U",
+          "action_plan": [
+            "Verify eligibility (10m)",
+            "Apply only if other options are low (20m)"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 6,
+            "deadline": 3,
+            "skill": 4,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization likely required for Texas, US"
+          },
+          "key": "ef2a9dc22a95"
+        },
+        {
+          "title": "Charta Health — Forward Deployed AI Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/chartahealth/0c76d54d-0ca8-4ab6-b360-c2dbae7b17cf/application?embed=true",
+          "source": "internships",
+          "description": "internship | Charta Health | SF, NYC | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7f4d2358-707d-4cbf-83b4-694072fbba3e",
+          "score": 3,
+          "ai_score": 8,
+          "ai_summary": "Forward Deployed AI Engineer is a high-leverage builder role in AI hubs. · ⚠ verify eligibility: US work authorization likely required for S",
+          "action_plan": [
+            "Research Charta Health's AI stack (20m)",
+            "Draft 'builder' focused cover letter (45m)",
+            "Apply (10m)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 10,
+            "prestige": 7,
+            "deadline": 5,
+            "skill": 9,
+            "time": 7,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "US work authorization likely required for SF/NYC"
+          },
+          "key": "61e008c79959"
+        },
+        {
+          "title": "SPAICE Technology — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/spaice-tech/16468d27-11e9-498c-87b6-3469f5f4ee12/application?embed=true",
+          "source": "internships",
+          "description": "internship | SPAICE Technology | London, UK | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3c065fb8-c6a1-4e0c-b0e6-c63e24e4008b",
+          "score": 3,
+          "ai_score": 6,
+          "ai_summary": "International exposure in London is high value for Mohith. · ⚠ verify eligibility: UK work authorization likely required for London",
+          "action_plan": [
+            "Check UK visa sponsorship for interns (15m)",
+            "Update resume for UK market (30m)",
+            "Apply (10m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 6,
+            "prestige": 6,
+            "deadline": 4,
+            "skill": 7,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "UK work authorization likely required for London"
+          },
+          "key": "68fa41a9f26f"
+        },
+        {
+          "title": "DEKA Research & Development Corp. — Software Engineer Co-op",
+          "url": "https://deka.applytojob.com/apply/ulNhn2xOvG/Software-Engineering-CoOp-Spring-2027",
+          "source": "internships",
+          "description": "internship | DEKA Research & Development Corp. | Manchester, NH | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c3b80bc0-1511-438e-8199-f0f8dd88037a",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7f989a391ee2"
+        },
+        {
+          "title": "OpenGov — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/opengov/c31622c1-be01-4d4a-b7cf-d116be84cc08/application?embed=true",
+          "source": "internships",
+          "description": "internship | OpenGov | Boston, MA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e2f7c0c3-2949-4bbc-bd78-e4cc58de5884",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Generic SWE role, low alignment with AI/ML builder identity. · ⚠ verify eligibility: US work authorization likely required for Boston, US",
+          "action_plan": [
+            "Quick eligibility check (5m)",
+            "Apply if time permits (10m)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 3,
+            "skill": 5,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization likely required for Boston, US"
+          },
+          "key": "2352405f13f1"
+        },
+        {
+          "title": "OpenGov — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/opengov/d036cfd6-5a01-41ed-af73-78fc32854849/application?embed=true",
+          "source": "internships",
+          "description": "internship | OpenGov | Atlanta, GA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "763fd9b2-78aa-4699-9e02-a743253f10c1",
+          "score": 3,
+          "ai_score": 4,
+          "ai_summary": "Duplicate of i=6; low leverage for an AI specialist. · ⚠ verify eligibility: US work authorization likely required for Georgia, US",
+          "action_plan": [
+            "Skip if i=6 is applied (1m)"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 4,
+            "prestige": 4,
+            "deadline": 3,
+            "skill": 5,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization likely required for Georgia, US"
+          },
+          "key": "6696382b24be"
+        },
+        {
+          "title": "Cyvl — Engineering Intern - Software - Machine Learning",
+          "url": "https://jobs.ashbyhq.com/cyvl/8bfc4116-b0bb-47f8-bca1-7069a37db328/application?embed=true",
+          "source": "internships",
+          "description": "internship | Cyvl | Boston, MA, Somerville, MA | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "d3146da4-8730-438e-8338-d570b07ffa21",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0e63607aa4d5"
+        },
+        {
+          "title": "John Deere — Part-Time Student - Channel AI",
+          "url": "https://johndeere.eightfold.ai/careers/job/137483400279",
+          "source": "internships",
+          "description": "internship | John Deere | Ames, IL | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "59e9da30-b769-4343-a000-5de0a1145a16",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "671df1cc7b61"
+        }
+      ]
     }
   ]
 }

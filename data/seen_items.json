@@ -15591,8 +15591,8 @@
     "148a255e8453": {
       "title": "AI Builders Hackathon",
       "first_seen": "2026-08-22",
-      "last_seen": "2026-09-14",
-      "times_seen": 4
+      "last_seen": "2026-09-15",
+      "times_seen": 5
     },
     "af57c351f8f5": {
       "title": "Does telling an LLM to \"be concise\" actually save you money? We measured it across 9 models. Compressing the output can save you money and keep accuracy, compressing the input prompt does not. [R]",
@@ -21820,6 +21820,336 @@
       "title": "TD Bank — Software Engineer Intern - Global Technology & Solutions",
       "first_seen": "2026-09-14",
       "last_seen": "2026-09-14",
+      "times_seen": 1
+    },
+    "e6bcb1d3c3c6": {
+      "title": "Bellman Policy Optimization",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "46371ab26b8a": {
+      "title": "Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "4e0994cfcffc": {
+      "title": "The Router Within: Eliciting Native Skill Routing from a Frozen LLM",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "12accce8fe3f": {
+      "title": "Discovery Foundation Models: Toward Open-Ended Discovery Intelligence",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "979c5e69dfd4": {
+      "title": "Mind2Dialogue: Training Human-Aware Language Models by Simulating User Mental States",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "b57e537e9ddc": {
+      "title": "Verifiable by Construction: Claim-Level Evaluation of Verbatim Citation in Clinical Question Answering",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "bf19b3a519af": {
+      "title": "Why don't machine learning research agents overfit?",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "50ea250d2ce8": {
+      "title": "OneAquaHealth IEEE Global Hackathon",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "7642f386f156": {
+      "title": "Beginner's Paradise - FirstCommit",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "03998c5c50a7": {
+      "title": "RSI is not happening [R]",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "04169a2bfdac": {
+      "title": "How to automatically find the batch size when using Accelerate with FSDP2? [D]",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "62b015b64088": {
+      "title": "[P] Wine synthesis using VAE [P]",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "bb633e2addd7": {
+      "title": "MS MARCO click-translation expansion tables (\"poor man's\" DSSM) [P]",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "1422cf45c1a7": {
+      "title": "Duplicating baseline benchmarks [D]",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "b46ad9c17eb0": {
+      "title": "[P] Built a 100% Client-Side Vision Pipeline for Real-Time Chessboard & Multi-Board Detection (Chrome/Firefox Extension) [P]",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "9c4c7e4ecfbb": {
+      "title": "Codeforces Round (Div. 3) (codeforces.com)",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "c6df90c41b40": {
+      "title": "Weekly Contest 521 (leetcode.com)",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "5405d4d44b62": {
+      "title": "BioBridge – Bio Innovation Hackathon 2026",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "2d394058f3f5": {
+      "title": "Ride Hack-26",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "34665bc62848": {
+      "title": "WebRush — 6-Hour Frontend Hackathon",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "948512f11368": {
+      "title": "Tech Eximius 2.0",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "416ee9597293": {
+      "title": "Singularity 2.0",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "2571a3e2f4e4": {
+      "title": "Bug Bounty",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "4144c0b9f888": {
+      "title": "Red Team vs Blue Team",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "d72fe99c5a4b": {
+      "title": "AI Campus Ambassador",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "9f8105494962": {
+      "title": "Web Designer Internship",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "51a38804a71b": {
+      "title": "Category Management Internship",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "5eb017800250": {
+      "title": "Flutter Developer Internship",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "a0ed2dbd5747": {
+      "title": "Marketing & Client Acquisition Internship",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "b1af96a4c5b9": {
+      "title": "HR Recruiter Internship",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "e634e22f26e5": {
+      "title": "Nexthop.ai — Software Engineer Intern",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "9a993011a469": {
+      "title": "DoorDash — Software Engineer Intern",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "5f0046131466": {
+      "title": "Superhuman — Software Engineer Intern",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "f4c663e7784f": {
+      "title": "DoorDash — Software Engineer Intern - Summer 2027",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "78a139df7291": {
+      "title": "Superhuman — Software Engineer Intern - Summer 2027",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "0e209fbb1d3c": {
+      "title": "A Thinking Ape — Software Development Engineer Co-op",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "5348756cb477": {
+      "title": "Tesla — Computer Vision Engineer Intern - Cell Engineering",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "d15be5a34e0d": {
+      "title": "Tesla — Internship - Software Integration Engineer - Factory Firmware Team - Winter/Spring 2027",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "eb81bb3aef42": {
+      "title": "CAI — Software Developer Intern",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "835a2637adbb": {
+      "title": "CAI — Software Developer Intern",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "44eedd3891a5": {
+      "title": "X Development — AI Resident - Machine Learning / Software Engineering - Early Stage Project",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "6fb66a372b39": {
+      "title": "Fanvue — Software Engineer Intern",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "0b8824c7f23d": {
+      "title": "Awardco — Front-End Software Engineer Intern",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "f28681d99f5c": {
+      "title": "Awardco — Back-End Software Engineer Intern",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "c48c760ea819": {
+      "title": "Garmin — Software Engineer Intern",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "3b581db0f270": {
+      "title": "Western Digital — Systems Architecture Co-op - AI Systems Strategy",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "165794770cba": {
+      "title": "Workshop — Software Engineer Intern",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "ef2a9dc22a95": {
+      "title": "Dell Technologies — Global Marketing AI & Data Intern",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "61e008c79959": {
+      "title": "Charta Health — Forward Deployed AI Engineer Intern",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "68fa41a9f26f": {
+      "title": "SPAICE Technology — Software Engineer Intern",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "7f989a391ee2": {
+      "title": "DEKA Research & Development Corp. — Software Engineer Co-op",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "2352405f13f1": {
+      "title": "OpenGov — Software Engineer Intern",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "6696382b24be": {
+      "title": "OpenGov — Software Engineer Intern",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "0e63607aa4d5": {
+      "title": "Cyvl — Engineering Intern - Software - Machine Learning",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
+      "times_seen": 1
+    },
+    "671df1cc7b61": {
+      "title": "John Deere — Part-Time Student - Channel AI",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-15",
       "times_seen": 1
     }
   }
