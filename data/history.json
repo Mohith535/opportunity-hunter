@@ -84709,6 +84709,953 @@
           "key": "671df1cc7b61"
         }
       ]
+    },
+    {
+      "date": "2026-09-16",
+      "items": [
+        {
+          "title": "Agentic Societies Need a Social Harness",
+          "url": "https://arxiv.org/abs/2609.17527v1",
+          "source": "arxiv",
+          "description": "An agentic society is a collection of AI agents that coordinate autonomously across trust boundaries, on behalf of different principals whose objectives may only partially align. We show experimentally that in agentic societies even honest, competent agents often fail to reach satisfactory outcomes with existing harnesses and messaging primitives, and that faulty or malicious agents can stall collaboration, influence outcomes, and pursue other harmful goals by exploiting vulnerabilities in communication (``speech''). We argue that agentic societies need a \\emph{social harness} for inter-agent interactions, in addition to each agent's \\emph{personal harness}, which manages its private context and communication with its principal. We propose a layered architecture for social harnesses which (i) prevents classes of failures outright, (ii) enables agents to detect invalid messages at runtime, and (iii) supports post-facto investigation and consequences, and highlight directions for future research to realize these capabilities.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.17527",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "43984a8153d6"
+        },
+        {
+          "title": "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents",
+          "url": "https://arxiv.org/abs/2609.17523v1",
+          "source": "arxiv",
+          "description": "We introduce and release ScienceBuddy, an interactive scientific research workspace that brings continually improving scientific agents into researchers' everyday workflows. ScienceBuddy supports researchers in carrying out scientific tasks while transforming their requests, feedback, and execution evidence into tasks and evaluation rubrics for continual learning. At its core is recursive-in-recursive self-improvement, a paradigm that couples harness evolution with model reinforcement learning: the inner recursion improves the harness with the model fixed, while the outer recursion trains the model under the improved harness. Harness evolution shapes training experience, and model learning creates new opportunities for harness adaptation. We present case studies of researcher interaction, harness refinement, and model learning, with the benchmark cases spanning four scientific task families. By releasing ScienceBuddy as a research product, we make this paradigm available to the scientific community and take a step toward discovery intelligence: scientific AI that advances through sustained collaboration with researchers and evolves alongside the research it supports. Website: http://science-buddy.io",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.17523",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cc6fb00a0b26"
+        },
+        {
+          "title": "When Should LLMs Abstain? Chain-of-Self-Questioning for Selective Risk Control",
+          "url": "https://arxiv.org/abs/2609.17516v1",
+          "source": "arxiv",
+          "description": "Large language models can produce fluent answers when their factual support is weak. This paper introduces Chain-of-Self-Questioning (CoSQ), a prompt-only framework that makes answer commitment conditional on an explicit assessment of the information required to answer a question. We evaluate three CoSQ variants under seventeen conditions on the 817-item TruthfulQA multiple-choice validation set using eleven open-weight and hosted model families. In the final balanced-option protocol, Grounded-CoSQ at τ=0.90 reduces the mean unconditional wrong-commitment rate from 13.1% under chain-of-thought prompting to 8.9%, a 32.1% relative reduction, while increasing answered accuracy from 86.9% to 89.7% and answering 87.6% of questions. Both improvements hold for all eleven models and at every evaluated threshold. Critical-CoSQ and Adaptive-CoSQ provide neighboring operating points with 88.6% and 86.5% coverage, respectively, while remaining more reliable than the baseline. A secondary Natural Questions Short-Answer evaluation provides convergent open-form evidence. These findings show that self-assessment can support explicit, tunable answer-or-abstain decisions when an unsupported commitment is more costly than referral or review.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.17516",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b7ab93c53780"
+        },
+        {
+          "title": "What Breaks Under Pruning in Smart Homes, and When? Evaluating LLM Degradation Across Architectures and Task Complexity",
+          "url": "https://arxiv.org/abs/2609.17515v1",
+          "source": "arxiv",
+          "description": "Pruning can reduce the deployment cost of large language models (LLMs), but its impact on context-grounded tool calling remains poorly understood. We systematically study pruning-induced degradation in smart-home tool calling across four LLMs spanning dense Transformer, dense hybrid, and mixture-of-experts (MoE) architectures, together with depth, width, hybrid, and expert pruning methods. After post-pruning supervised fine-tuning (SFT), we evaluate more than 19,500 instances from three smart-home datasets. Beyond aggregate task accuracy, we characterize degradation along two dimensions: action components (i.e., operation, device, argument, and value) and task complexity. Our results show that dense models have narrow safe pruning regions followed by sharp degradation, while MoE models tolerate substantially more pruning. Pruning degrades grounded specificity before schema-level intent, and aggressive dense pruning can induce systematic over-refusal. These findings highlight the importance of evaluating pruning beyond aggregate accuracy when selecting pruned LLMs for reliable tool execution.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.17515",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b5091242f4fb"
+        },
+        {
+          "title": "Verifiable Social Reasoning for LLM Assistants",
+          "url": "https://arxiv.org/abs/2609.17496v1",
+          "source": "arxiv",
+          "description": "LLM assistants are widely used for daily social advice, yet evaluating their social reasoning in such consultation settings remains challenging since (i) it requires setups where the assistant learns about social situations from subjective user narratives, and (ii) social properties, such as others' intentions, typically lack verifiable ground truth. To address these challenges, we introduce Fuse, a multi-agent simulation framework for studying user-mediated social reasoning. In Fuse, a target agent with a hidden motive interacts with other agents including one representing the user, who then consults the evaluated assistant to infer the target's motive, providing verifiable ground truth by construction. Simulation faithfulness is validated through a human study with 24k annotations. We apply Fuse to 12 LLMs and demonstrate its analytical utility by systematically isolating key factors, showing that (i) user mediation compounds the inherent difficulty of social reasoning; (ii) LLMs exhibit systematic sensitivity to biased user framing; (iii) models can require more details than humans need to reach a correct prediction; and (iv) longer conversations do not always improve performance despite providing opportunities for clarifying questions. We open-source Fuse and a dataset with 21k examples.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.17496",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d38d0f9e4aef"
+        },
+        {
+          "title": "Human-Agent-Society/reef — ★2,113",
+          "url": "https://github.com/Human-Agent-Society/reef",
+          "source": "github",
+          "description": "Continual learning infra for self-improving agents (topics: agent infrastructure, ai agents, continual learning, inference, llm, llm training, reinforcement learning, self improving agents)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "Human-Agent-Society/reef",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "173ec89d974e"
+        },
+        {
+          "title": "A single firm is behind OpenAI, Anthropic, and Meta hacking scandals",
+          "url": "https://www.effort.news/irregular",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49704132",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "904d15e59de6"
+        },
+        {
+          "title": "Show HN: Pull every comment out of a Google Sheet, in the browser",
+          "url": "https://bensunter.com/commentpulse.html",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49702904",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "12aaab684dbc"
+        },
+        {
+          "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
+          "url": "https://aws-cds-partner.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Sep 14 - Oct 28, 2026 | prize $ 40,000 | themes: Communication, Mobile, Machine Learning/AI",
+          "deadline": "2026-10-28",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "31052",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d13c595d2745"
+        },
+        {
+          "title": "I trained a 44M parameter quantized LLM from scratch on 45B tokens. It ships in 19.8 MB and runs at ~1,900 tok/s on CPU. [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wgzpli/i_trained_a_44m_parameter_quantized_llm_from/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wgzpli",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6c678c5eec68"
+        },
+        {
+          "title": "NeurIPS 2026: handling of multiple venue locations seems bad [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wh0xaz/neurips_2026_handling_of_multiple_venue_locations/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wh0xaz",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "eff7aa98d708"
+        },
+        {
+          "title": "TabPFN-3.5 is released as the next SOTA tabular foundation model [N]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wh4xhy/tabpfn35_is_released_as_the_next_sota_tabular/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wh4xhy",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ff999fb50288"
+        },
+        {
+          "title": "How much work in progress can a workshop submission be [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wgv7hi/how_much_work_in_progress_can_a_workshop/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wgv7hi",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9ec7352cb78b"
+        },
+        {
+          "title": "[D] How do you get preprocessed dataset of a paper [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wgutx6/d_how_do_you_get_preprocessed_dataset_of_a_paper_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wgutx6",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b24f14073663"
+        },
+        {
+          "title": "Codeforces Round (Div. 2) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2267",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-09-25T14:35:00",
+          "deadline": "2026-09-25",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "70430873",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2ebddc60664e"
+        },
+        {
+          "title": "HACK.COMS 2026",
+          "url": "https://events.mlh.io/events/14418-hack-coms-2026",
+          "source": "mlh",
+          "description": "hackathon | MLH event | HACK.COMS 2026",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "mlh-14418",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9842d416e085"
+        },
+        {
+          "title": "HackDays 2.0",
+          "url": "https://unstop.com/hackathons/hackdays-20-galgotias-college-of-engineering-technology-gcet-greater-noida-1756226",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1756226",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0cdd8132725e"
+        },
+        {
+          "title": "KILN '26 — The Hybrid National Build Gauntlet",
+          "url": "https://unstop.com/hackathons/kiln-26-the-hybrid-national-build-gauntlet-cohere-live-1756306",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1756306",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1ebb89c892fb"
+        },
+        {
+          "title": "Win $500: Get an Agent Passport?",
+          "url": "https://unstop.com/hackathons/win-500-get-an-agent-passport-hidevs-1755808",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1755808",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "df4e8d17e1c5"
+        },
+        {
+          "title": "Parallax 2026 – Reality, Reimagined",
+          "url": "https://unstop.com/hackathons/parallax-2026-reality-reimagined-noida-institute-of-engineering-and-technology-niet-greater-noida-1754985",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1754985",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f2826c39ed7c"
+        },
+        {
+          "title": "Epoch 1.0",
+          "url": "https://unstop.com/hackathons/epoch-10-codeai-club-k-j-somaiya-institue-of-technology-1752020",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1752020",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "181faa950974"
+        },
+        {
+          "title": "Next Gen Hackathon 1.0",
+          "url": "https://unstop.com/hackathons/next-gen-hackathon-10-shivalik-college-of-engineering-1755936",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1755936",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5bcfab0684f1"
+        },
+        {
+          "title": "Build For Bharat 2.0",
+          "url": "https://unstop.com/hackathons/build-for-bharat-20-chandigarh-university-cu-ajitgarh-punjab-1742848",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1742848",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3e28e28023e9"
+        },
+        {
+          "title": "Python Internship",
+          "url": "https://unstop.com/internships/python-intern-zenotalent-1756492",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1756492",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f13d42dc4bb4"
+        },
+        {
+          "title": "Social Media Internship",
+          "url": "https://unstop.com/internships/social-media-intern-motohom-pvt-ltd-1756560",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1756560",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3391e56f5f52"
+        },
+        {
+          "title": "Data Analyst Internship",
+          "url": "https://unstop.com/internships/data-analyst-internship-skillorbit-private-limited-1756609",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1756609",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4267552bd332"
+        },
+        {
+          "title": "Digital Marketing Internship",
+          "url": "https://unstop.com/internships/digital-marketing-internship-springer-capital-investments-llc-usa-1756442",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1756442",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3715cd835e79"
+        },
+        {
+          "title": "B2B Sales and Marketing - Growth Operator Internship",
+          "url": "https://unstop.com/internships/b2b-sales-and-marketing-growth-operator-internship-techvire-1756335",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1756335",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2eb0f563a9c2"
+        },
+        {
+          "title": "Business & Executive Assistant Internship",
+          "url": "https://unstop.com/internships/business-executive-assistant-internship-obaol-supreme-1756137",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1756137",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2e6070f4e38b"
+        },
+        {
+          "title": "Agro Events & Expo Research Internship",
+          "url": "https://unstop.com/internships/agro-events-expo-research-internship-obaol-supreme-1756138",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1756138",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "86c2869aa528"
+        },
+        {
+          "title": "Johns Hopkins Applied Physics Laboratory — AI and Autonomous Systems Engineer Intern",
+          "url": "https://careers.jhuapl.edu/jobs/60021?icims=1",
+          "source": "internships",
+          "description": "internship | Johns Hopkins Applied Physics Laboratory | Laurel, MD | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "56083f58-d4ed-4ca0-8bd9-321b06f71acc",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b7763e4a76d3"
+        },
+        {
+          "title": "Apera AI — Software Developer Co-op - C++",
+          "url": "https://job-boards.greenhouse.io/aperaaiinc/jobs/5239394007",
+          "source": "internships",
+          "description": "internship | Apera AI | Vancouver, BC, Canada | Winter 2027, Spring 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "18d868f8-7386-496b-958c-2b060e136892",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a73f4722b216"
+        },
+        {
+          "title": "Apera AI — Machine Learning Applied Scientist Co-op",
+          "url": "https://job-boards.greenhouse.io/aperaaiinc/jobs/5239440007",
+          "source": "internships",
+          "description": "internship | Apera AI | Vancouver, BC, Canada | Winter 2027, Spring 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5e0e308e-26af-4533-a5fa-4c9ddae82a6b",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "776d35406fc4"
+        },
+        {
+          "title": "Brevium — Software Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/brevium/jobs/4713683006",
+          "source": "internships",
+          "description": "internship | Brevium | American Fork, UT | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9a1debfd-f76d-40d2-8f54-b93031f11a1c",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b2ef415a34c0"
+        },
+        {
+          "title": "CesiumAstro — Embedded Software Engineer Intern",
+          "url": "https://jobs.lever.co/CesiumAstro/d25bf640-2b2b-48d6-ab79-8a06b246caaa/apply",
+          "source": "internships",
+          "description": "internship | CesiumAstro | Austin, TX | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8cfa2d3f-ae04-4615-a8ca-4ebb1159bef8",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "aeabd5e6f11c"
+        },
+        {
+          "title": "CesiumAstro — Embedded Software Engineer Intern",
+          "url": "https://jobs.lever.co/CesiumAstro/96e97f22-a5b2-4e95-af84-b4f765343663/apply",
+          "source": "internships",
+          "description": "internship | CesiumAstro | Westminster, CO | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1f4b8669-695e-4ecc-970c-eaef0de39d99",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7e4ee2c4815c"
+        },
+        {
+          "title": "Nokia — Embedded Software Co-op",
+          "url": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/40172",
+          "source": "internships",
+          "description": "internship | Nokia | Sunnyvale, CA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b98cbe51-5745-4a8d-ae2d-e49da35b4c26",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "151fa896f63c"
+        },
+        {
+          "title": "Emerson Electric — Software Engineer Intern",
+          "url": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26010928",
+          "source": "internships",
+          "description": "internship | Emerson Electric | Austin, TX | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "2a0ab709-6ba1-48eb-93d7-a75ce0912c24",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b570a4380849"
+        },
+        {
+          "title": "Lawrence Livermore National Laboratory (LLNL) — Data Science Undergraduate Student Intern - Summer 2027",
+          "url": "https://jobs.smartrecruiters.com/LLNL/3743990015289136",
+          "source": "internships",
+          "description": "internship | Lawrence Livermore National Laboratory (LLNL) | Livermore, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5d9f6eaa-a78b-4ea6-adcb-8168b145206f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9e40fab059b6"
+        },
+        {
+          "title": "Amazon — Junior Software Engineer Intern - Jr. Developer Program",
+          "url": "https://amazon.jobs/en/jobs/10544071/jr-software-development-engineer-san-luis-obispo-ca-jr-developer-program",
+          "source": "internships",
+          "description": "internship | Amazon | San Luis Obispo, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "55d8baa9-e093-4cca-8967-9f7434bd9616",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "584b71216f80"
+        },
+        {
+          "title": "Live Oak Bank — Artificial Intelligence Enablement & Forward-Deployed Engineering Intern",
+          "url": "https://liveoakbancshares.wd1.myworkdayjobs.com/en-US/Live_Oak/job/Wilmington-NC/Summer-2027-Intern--AI-Enablement---Forward-Deployed-Engineering_R-002624",
+          "source": "internships",
+          "description": "internship | Live Oak Bank | Wilmington, NC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "32923ef5-9813-4720-ba0f-736ed5febb06",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ecf8e91efe5e"
+        },
+        {
+          "title": "Duolingo — Software Engineer Intern - Thrive",
+          "url": "https://job-boards.greenhouse.io/duolingounirecruitment/jobs/8806115002",
+          "source": "internships",
+          "description": "internship | Duolingo | Pittsburgh, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "99b19d5b-03dd-438a-91db-fbb3b10e7201",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9a071d3f028e"
+        },
+        {
+          "title": "Duolingo — Software Engineer Intern",
+          "url": "https://careers.duolingo.com/jobs/8805925002?gh_jid=8805925002",
+          "source": "internships",
+          "description": "internship | Duolingo | Seattle, WA, Pittsburgh, PA, NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "32b50162-20ab-42eb-9e0c-dcff21dd5c0c",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "df42828508d9"
+        },
+        {
+          "title": "Duolingo — Software Engineer Intern - Thrive",
+          "url": "https://careers.duolingo.com/jobs/8806114002?gh_jid=8806114002",
+          "source": "internships",
+          "description": "internship | Duolingo | Pittsburgh, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9a01359d-4d56-45ec-a90a-9d2f1d40cf52",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ee1df9fbc16b"
+        },
+        {
+          "title": "Duolingo — Software Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/duolingounirecruitment/jobs/8806878002",
+          "source": "internships",
+          "description": "internship | Duolingo | Seattle, WA, Pittsburgh, PA, NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "54d89b96-1ff8-49ce-99e9-b03c8d093745",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9e55069c6eb2"
+        },
+        {
+          "title": "Qualcomm — Sensors Subsystem Engineering Intern - Low-Power AI - Audio",
+          "url": "https://qualcomm.eightfold.ai/careers/job/446721109229",
+          "source": "internships",
+          "description": "internship | Qualcomm | Markham, ON, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "8777ea0a-5c8a-4362-a4a7-c0e0ef4ba570",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "531c638c06d1"
+        },
+        {
+          "title": "Zions Bank — Software Engineer Intern",
+          "url": "https://zionsbancorp.taleo.net/careersection/joinexternalmobile/jobdetail.ftl?job=071639",
+          "source": "internships",
+          "description": "internship | Zions Bank | United States | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e04fda0f-12a2-4117-aaa1-dc27e62a8cd0",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "88c94533a0dd"
+        },
+        {
+          "title": "Tyler Technologies — Software Development Intern - Summer 2027",
+          "url": "https://jobs.jobvite.com/tylertech/job/oqQJAfwj?nl=1&nl=1&fr=false",
+          "source": "internships",
+          "description": "internship | Tyler Technologies | Lakewood, CO | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e6d2ca10-47cc-492f-bfc3-51e1c414353b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0e7ee7cab29e"
+        },
+        {
+          "title": "Ambrook — Software Engineer Co-op",
+          "url": "https://jobs.ashbyhq.com/ambrook/29ffbcea-17c3-4488-9d57-a9f7249b49a5/application?embed=true",
+          "source": "internships",
+          "description": "internship | Ambrook | NYC | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e52bfb8f-f77b-4362-9f4f-53084b21df2e",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c99fff45a3b8"
+        },
+        {
+          "title": "APEX Analytix — Data Science Intern",
+          "url": "https://ats.rippling.com/apexanalytix-careers/jobs/0cfde729-9d23-4186-91a7-464a4b87af53",
+          "source": "internships",
+          "description": "internship | APEX Analytix | Greensboro, NC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ca1230ad-cc73-4cd9-a19a-9bfc1d42fb23",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9db8e49d1440"
+        },
+        {
+          "title": "Rilla — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/rilla/0e111ca4-3837-43d2-8507-6030a0dc32d9/application?embed=true",
+          "source": "internships",
+          "description": "internship | Rilla | NYC, Brooklyn, NY | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3faf0477-fc05-4170-8b33-0056a3a751f8",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4909921af75f"
+        },
+        {
+          "title": "APEX Analytix — Automation Developer Intern",
+          "url": "https://ats.rippling.com/apexanalytix-careers/jobs/40e4727d-e132-4de0-89ba-b4fdbd5860a7",
+          "source": "internships",
+          "description": "internship | APEX Analytix | Greensboro, NC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "81f7768f-10a0-4ecd-bed1-3e66d96f5cdb",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e41106b84c17"
+        },
+        {
+          "title": "Lunar Outpost — Ground Software Engineer Intern - Summer 2027",
+          "url": "https://lunaroutpost.bamboohr.com/careers/398/",
+          "source": "internships",
+          "description": "internship | Lunar Outpost | Golden, CO | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "97d67a9f-ceb5-40f2-9511-3c86c813689a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b03c227cc20b"
+        },
+        {
+          "title": "Lunar Outpost — Embedded Software Engineer Intern - Summer 2027",
+          "url": "https://lunaroutpost.bamboohr.com/careers/392/",
+          "source": "internships",
+          "description": "internship | Lunar Outpost | Golden, CO | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0c7e299c-ffc6-40e5-8fd6-e8e2e744740a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4a25556f8bf7"
+        },
+        {
+          "title": "Elire — AI Software Developer Intern - Multiple Teams",
+          "url": "https://jobs.jobvite.com/elire/job/oM5LAfwW?nl=1&nl=1&fr=false",
+          "source": "internships",
+          "description": "internship | Elire | Remote in USA, Minneapolis, MN | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "575cff72-551d-4520-b574-ee32f9252195",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a742d400bc6e"
+        }
+      ]
     }
   ]
 }

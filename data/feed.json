@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-09-15",
+  "updated_at": "2026-09-16",
   "items": [
-    {
-      "key": "e0b90e9b87a5",
-      "title": "MUBA Blockchain Hackathon",
-      "url": "https://muba-hackathon.devfolio.co",
-      "source": "devfolio",
-      "score": 10,
-      "deadline": "2026-09-06",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "ba4f2f0c672e",
       "title": "OpenCV AI Competition 2026, powered by AWS",
@@ -21,6 +8,19 @@
       "source": "devpost",
       "score": 10,
       "deadline": "2026-10-27",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e0b90e9b87a5",
+      "title": "MUBA Blockchain Hackathon",
+      "url": "https://muba-hackathon.devfolio.co",
+      "source": "devfolio",
+      "score": 10,
+      "deadline": "2026-09-06",
       "tags": [
         "hackathon"
       ],
@@ -80,6 +80,19 @@
       "action_plan": []
     },
     {
+      "key": "d13c595d2745",
+      "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
+      "url": "https://aws-cds-partner.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-10-28",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "50ea250d2ce8",
       "title": "OneAquaHealth IEEE Global Hackathon",
       "url": "https://oneaquahealth-ieee-hackathon.devpost.com/",
@@ -88,84 +101,6 @@
       "deadline": "2026-10-01",
       "tags": [
         "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "2d3eb20c011e",
-      "title": "Backend Web Developer Internship",
-      "url": "https://unstop.com/internships/backend-web-developer-internship-accesco-living-1749077",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "74e3ae5dce5e",
-      "title": "Marketing Internship",
-      "url": "https://unstop.com/internships/marketing-internship-skillsncr-1749060",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "eceba94d22fc",
-      "title": "SEO Internship",
-      "url": "https://unstop.com/internships/seo-internship-hrdyam-1749096",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "fc44e4a97587",
-      "title": "Social Media Internship",
-      "url": "https://unstop.com/internships/social-media-internship-hunaru-one-private-limited-1749007",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5e3407c0476b",
-      "title": "Social Media Management Internship",
-      "url": "https://unstop.com/internships/social-media-management-internship-bellboy-residential-technologies-1748940",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "cb8174faa100",
-      "title": "Microsoft — Data Scientist PhD Intern",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556986137",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -921,14 +856,92 @@
       ]
     },
     {
-      "key": "f43219226aa3",
-      "title": "Dogfood | 72-Hour Hackathon",
-      "url": "https://unstop.com/hackathons/dogfood-72-hour-hackathon-hackathon-raptors-1748391",
+      "key": "f13d42dc4bb4",
+      "title": "Python Internship",
+      "url": "https://unstop.com/internships/python-intern-zenotalent-1756492",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3391e56f5f52",
+      "title": "Social Media Internship",
+      "url": "https://unstop.com/internships/social-media-intern-motohom-pvt-ltd-1756560",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4267552bd332",
+      "title": "Data Analyst Internship",
+      "url": "https://unstop.com/internships/data-analyst-internship-skillorbit-private-limited-1756609",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3715cd835e79",
+      "title": "Digital Marketing Internship",
+      "url": "https://unstop.com/internships/digital-marketing-internship-springer-capital-investments-llc-usa-1756442",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2eb0f563a9c2",
+      "title": "B2B Sales and Marketing - Growth Operator Internship",
+      "url": "https://unstop.com/internships/b2b-sales-and-marketing-growth-operator-internship-techvire-1756335",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2e6070f4e38b",
+      "title": "Business & Executive Assistant Internship",
+      "url": "https://unstop.com/internships/business-executive-assistant-internship-obaol-supreme-1756137",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "86c2869aa528",
+      "title": "Agro Events & Expo Research Internship",
+      "url": "https://unstop.com/internships/agro-events-expo-research-internship-obaol-supreme-1756138",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1103,32 +1116,6 @@
         "Highlight AI architecture projects (45m)",
         "Apply (10m)"
       ]
-    },
-    {
-      "key": "6a0a9a20ef3b",
-      "title": "Skydio — Autonomy Engineer Intern - Computer Vision / Deep Learning - Summer 2027",
-      "url": "https://jobs.ashbyhq.com/skydio/ae4a6f7d-a240-4fa2-8c8e-04cc906e4ef9/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4725e751583a",
-      "title": "Entergy — Artificial Intelligence Intern",
-      "url": "https://jobs.entergy.com/job/New-Orleans-Student-Intern-AI-Spring-2027-Loui/1426669200/?ats=successfactors",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
     },
     {
       "key": "accbd1b470b2",
@@ -1340,6 +1327,19 @@
       "key": "565597a86708",
       "title": "Gallup — Artificial Intelligence/Machine Learning Research Intern",
       "url": "https://job-boards.greenhouse.io/gallup/jobs/4395921009",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "40a0bd6ded45",
+      "title": "Coinbase — Machine Learning Engineer Intern",
+      "url": "https://boards.greenhouse.io/embed/job_app?token=8175441",
       "source": "internships",
       "score": 6,
       "deadline": null,
