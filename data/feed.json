@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-16",
+  "updated_at": "2026-09-17",
   "items": [
     {
-      "key": "ba4f2f0c672e",
-      "title": "OpenCV AI Competition 2026, powered by AWS",
-      "url": "https://opencv26.devpost.com/",
+      "key": "6f4b2d0173c3",
+      "title": "Agentic Cinema: The Blockbuster Hackathon",
+      "url": "https://agentic-cinema.devpost.com/",
       "source": "devpost",
       "score": 10,
-      "deadline": "2026-10-27",
+      "deadline": "2026-09-09",
       "tags": [
         "hackathon"
       ],
@@ -21,19 +21,6 @@
       "source": "devfolio",
       "score": 10,
       "deadline": "2026-09-06",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "6f4b2d0173c3",
-      "title": "Agentic Cinema: The Blockbuster Hackathon",
-      "url": "https://agentic-cinema.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-09-09",
       "tags": [
         "hackathon"
       ],
@@ -101,58 +88,6 @@
       "deadline": "2026-10-01",
       "tags": [
         "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "c65400e7a742",
-      "title": "Mass Communication Internship",
-      "url": "https://unstop.com/internships/fashion-communication-mass-communication-internee-gift-1749264",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "291ce8165ec7",
-      "title": "Management Internship - Operations",
-      "url": "https://unstop.com/internships/management-internship-operations-regex-software-services-1749352",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "47a10b9c107f",
-      "title": "Inside Sales Internship",
-      "url": "https://unstop.com/internships/inside-sales-internship-internz-learn-1748012",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "32ab323c912b",
-      "title": "Brand & Creative Internship",
-      "url": "https://unstop.com/internships/brand-creative-internship-growth-falcon-1749377",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -947,37 +882,20 @@
       "action_plan": []
     },
     {
-      "key": "a88fdc74eff9",
-      "title": "Solidigm — Software Engineering Intern - Firmware & AI Engineering",
-      "url": "https://jobs.smartrecruiters.com/Solidigm/744000147613769",
-      "source": "internships",
-      "score": 7,
+      "key": "23336df7d478",
+      "title": "A Zeroth-Order Paradigm for LLM Preference Alignment",
+      "url": "https://arxiv.org/abs/2609.19144v1",
+      "source": "arxiv",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "internship"
+        "research"
       ],
-      "ai_summary": "Combines AI Engineering with Firmware; aligns with builder mindset · ⚠ verify eligibility: US-based role; requires visa sponsorship for Indi",
+      "ai_summary": "Directly aligns with LLM preference alignment and AI engineering.",
       "action_plan": [
-        "Check visa sponsorship policy (15m)",
-        "Tailor resume for AI/Firmware (1h)",
-        "Apply via portal (15m)"
-      ]
-    },
-    {
-      "key": "b3b31c521f10",
-      "title": "Schonfeld — Data Science Intern",
-      "url": "https://job-boards.greenhouse.io/schonfeld/jobs/8171692",
-      "source": "internships",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Data Science in NYC is prestigious, but not 'Elite AI' level · ⚠ verify eligibility: US-based role; requires visa sponsorship for Indian stu",
-      "action_plan": [
-        "Check visa sponsorship policy (15m)",
-        "Highlight ML projects in resume (1h)",
-        "Apply (15m)"
+        "Read abstract and intro (30m)",
+        "Implement a toy version of ComPO (4h)",
+        "Note key findings for future agent alignment"
       ]
     },
     {
@@ -1118,78 +1036,14 @@
       ]
     },
     {
-      "key": "accbd1b470b2",
-      "title": "Solidigm — Software Development & Firmware Engineering Intern - Multiple Teams",
-      "url": "https://jobs.smartrecruiters.com/Solidigm/744000147613629",
-      "source": "internships",
-      "score": 6,
+      "key": "9925af27a09c",
+      "title": "Cerebro Hackathon",
+      "url": "https://unstop.com/hackathons/cerebro-hackathon-institute-of-engineering-and-management-1757094",
+      "source": "unstop",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
-      ],
-      "ai_summary": "General SWE role; less AI-focused than opportunity 0 · ⚠ verify eligibility: US-based role; requires visa sponsorship for Indian student",
-      "action_plan": [
-        "Check visa sponsorship policy (15m)",
-        "Apply if sponsorship is available (15m)"
-      ]
-    },
-    {
-      "key": "5f753d777b34",
-      "title": "Schonfeld — Software Engineering Intern",
-      "url": "https://job-boards.greenhouse.io/schonfeld/jobs/8180089",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "High-paying finance sector, but lacks AI/LLM focus · ⚠ verify eligibility: US-based role; requires visa sponsorship for Indian student",
-      "action_plan": [
-        "Check visa sponsorship policy (15m)",
-        "Apply if sponsorship is available (15m)"
-      ]
-    },
-    {
-      "key": "2cf932a609e7",
-      "title": "Bree — Software Engineer Co-op - Product",
-      "url": "http://jobs.ashbyhq.com/bree/17d8dd15-5f97-4003-8d6c-170dca13ff88/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Product SWE experience is good for entrepreneurship goals · ⚠ verify eligibility: Canada-based role; requires visa sponsorship",
-      "action_plan": [
-        "Check visa sponsorship for Canada (15m)",
-        "Apply if possible (15m)"
-      ]
-    },
-    {
-      "key": "c68c7d223832",
-      "title": "Bree — Software Engineer Co-op - Backend",
-      "url": "http://jobs.ashbyhq.com/bree/42fe78c1-e73f-4918-bf71-776b8142112b/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Backend skills are essential for AI agent deployment · ⚠ verify eligibility: Canada-based role; requires visa sponsorship",
-      "action_plan": [
-        "Check visa sponsorship for Canada (15m)",
-        "Apply if possible (15m)"
-      ]
-    },
-    {
-      "key": "c18b9f2ec08b",
-      "title": "Ernst & Young — Artificial Intelligence Intern - Tax - Tax Technology and Transformation",
-      "url": "https://eyglobal.yello.co/jobs/LGUG7W08QqkVXWnuqFB0TA?job_board_id=c1riT--B2O-KySgYWsZO1Q",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1340,6 +1194,136 @@
       "key": "40a0bd6ded45",
       "title": "Coinbase — Machine Learning Engineer Intern",
       "url": "https://boards.greenhouse.io/embed/job_app?token=8175441",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7d5c8dcd942e",
+      "title": "Syntiant — Machine Learning Intern - KWS/AED",
+      "url": "https://apply.workable.com/syntiant/j/113F994B7B/apply",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3f48c09c7de6",
+      "title": "Allen Control Systems — Computer Vision Intern - Machine Learning",
+      "url": "https://jobs.ashbyhq.com/allen-control-systems/a7831fef-7125-4c03-b828-5f0472989037/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0e0807755309",
+      "title": "GatewayHacks 2026 | Software & AI",
+      "url": "https://gatewayhacks-2026.devpost.com/",
+      "source": "devpost",
+      "score": 6,
+      "deadline": "2026-10-02",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8882d176a1ff",
+      "title": "Tradeweb — Application Software Engineering Internship - IFI Application",
+      "url": "https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301906",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "04b4b371a83f",
+      "title": "Tesla — Machine Learning Engineer Intern - Factory Software",
+      "url": "https://www.tesla.com/careers/search/job/282916",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4418a393266b",
+      "title": "Bedrock Robotics — Behavior Machine Learning Engineer Intern - World Models",
+      "url": "https://jobs.ashbyhq.com/bedrock-robotics/c51d682e-58ee-44de-886f-4cfacb56d2e1/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "686de1aa1d98",
+      "title": "I spent $220 on Google app ads and 60% of the installs were robots",
+      "url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
+      "source": "hackernews",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "news"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b523151bdcd6",
+      "title": "Global Innovation Build Challenge V2",
+      "url": "https://gibc-v2.devpost.com/",
+      "source": "devpost",
+      "score": 6,
+      "deadline": "2026-10-01",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6a7eb0d72873",
+      "title": "AfterQuery — AI/ML Research Intern",
+      "url": "https://jobs.ashbyhq.com/AfterQuery/00cd591f-6894-4259-83b6-36c999351dde/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f251fb3c1ce5",
+      "title": "Qualcomm — Machine Learning Compiler & Performance Engineering Intern - Systems",
+      "url": "https://qualcomm.eightfold.ai/careers/job/446721064018",
       "source": "internships",
       "score": 6,
       "deadline": null,

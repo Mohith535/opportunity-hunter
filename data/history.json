@@ -85656,6 +85656,1057 @@
           "key": "a742d400bc6e"
         }
       ]
+    },
+    {
+      "date": "2026-09-17",
+      "items": [
+        {
+          "title": "A Zeroth-Order Paradigm for LLM Preference Alignment",
+          "url": "https://arxiv.org/abs/2609.19144v1",
+          "source": "arxiv",
+          "description": "Direct preference alignment methods are widely used to align large language models (LLMs) with human preferences because of their computational and memory efficiency. However, likelihood displacement motivates alternative ways to extract information from preference pairs with small likelihood margins. In this paper, we propose and analyze Comparison-based Preference Optimization (ComPO), a zeroth-order alignment method based on comparison oracles. ComPO extracts directional information from these pairs without directly optimizing a differentiable preference loss on them. We establish a convergence guarantee for its basic offline scheme under smoothness, gradient sparsity, and compatibility between the oracle and a latent objective. We further introduce online ComPO, which retains the offline comparison mechanism and uses unlabeled policy generations for reverse-KL control relative to a reference policy. Following the coverage perspective of preference fine-tuning, we establish a performance guarantee for a basic constrained scheme under local coverage and in-distribution pairwise reward accuracy. Experiments on Mistral, Llama, Gemma-2, Qwen3, and Gemma-3 models demonstrate improvements over existing direct alignment methods, including length-controlled win rates, with pair-level diagnostics providing evidence consistent with mitigating likelihood displacement.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.19144",
+          "score": 7,
+          "ai_score": 8,
+          "ai_summary": "Directly aligns with LLM preference alignment and AI engineering.",
+          "action_plan": [
+            "Read abstract and intro (30m)",
+            "Implement a toy version of ComPO (4h)",
+            "Note key findings for future agent alignment"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 10,
+            "prestige": 7,
+            "deadline": 3,
+            "skill": 9,
+            "time": 8,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "23336df7d478"
+        },
+        {
+          "title": "PANORAMA: Panoptic Grounded Captioning via Mask Proposal Selection",
+          "url": "https://arxiv.org/abs/2609.19143v1",
+          "source": "arxiv",
+          "description": "Intelligent systems that act in the world require image understanding that is both comprehensive and spatially grounded. Current vision-language models (VLMs) can generate fluent and detailed image captions, but reliably associating them with image pixels remains challenging. Existing methods that combine dense captioning with pixel-level grounding often produce either incomplete descriptions or inaccurate segmentation masks. We study this problem through panoptic grounded captioning, a task that requires a VLM to describe both foreground objects and background regions while grounding each referring phrase with pixel-level masks. We make three contributions. First, we introduce PanoCaps, a human-annotated benchmark constructed from panoptic segmentation datasets. It provides dense captions with near-complete pixel coverage and image-text alignments at the entity level, supporting both training and evaluation. We further propose a phrase-mask matching protocol and a generalized Panoptic Quality (gPQ) metric that jointly evaluates textual and mask agreement. Second, we formulate phrase grounding as selection from a phrase-conditioned pool of mask proposals and introduce PANORAMA, a VLM that conditions a pretrained segmenter on contextualized phrase representations to obtain candidate masks and learns to select those corresponding to each phrase. Training this interface jointly with caption generation enables PANORAMA to produce high-quality masks while allowing each phrase to refer to a single region or multiple instances. Third, PANORAMA achieves the best overall grounding on PanoCaps and matches or exceeds specialized models across several pixel-level grounding tasks. Experiments show that our method produces precise entity-level segmentations while maintaining detailed, mask-consistent captions. Code, data and models are available at https://www.di.ens.fr/willow/research/panorama/.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.19143",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fb3aaa916272"
+        },
+        {
+          "title": "Nvidia announces native GPU programming in Rust",
+          "url": "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49724881",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5c0ffc366e41"
+        },
+        {
+          "title": "AWS says it can't restore some data from mideast facilities struck by Iran",
+          "url": "https://www.wsj.com/world/middle-east/aws-says-it-cant-restore-some-data-from-mideast-facilities-struck-by-iran-ddcb7e5d",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49719249",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a150867233d1"
+        },
+        {
+          "title": "TMLR reached out to the authors of 10 papers slated for desk rejection, in an attempt to understand if the authors could explain the paper they submitted [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wid67h/tmlr_reached_out_to_the_authors_of_10_papers/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wid67h",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "265cb4df1dbf"
+        },
+        {
+          "title": "LARA: small, composable behaviours for frozen LLMs [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1whx9tr/lara_small_composable_behaviours_for_frozen_llms_p/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1whx9tr",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f73b5aa90224"
+        },
+        {
+          "title": "GoBench: Evaluating LLMs on the game of Go [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wi68jg/gobench_evaluating_llms_on_the_game_of_go_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wi68jg",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "23b4392c2cca"
+        },
+        {
+          "title": "Has anyone measured specification ambiguity as a predictor of correlated failure across model families? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wi8lla/has_anyone_measured_specification_ambiguity_as_a/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wi8lla",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7c9b483e691b"
+        },
+        {
+          "title": "Question about TMLR [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wiadm9/question_about_tmlr_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wiadm9",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f8ee847b7eae"
+        },
+        {
+          "title": "If you have leftover AI tokens/compute, there’s an open project working on the Twin Prime Conjecture [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wiggpg/if_you_have_leftover_ai_tokenscompute_theres_an/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wiggpg",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9e2b3851093c"
+        },
+        {
+          "title": "NeurIPS Reference Check Response[D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1whxvvf/neurips_reference_check_responsed/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1whxvvf",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2a10ebab0759"
+        },
+        {
+          "title": "Placement Prep Weekends - 08 (codechef.com)",
+          "url": "https://www.codechef.com/PLACEPREP08",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-09-18T18:30:03",
+          "deadline": "2026-09-18",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "70461321",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "627ffe95aa09"
+        },
+        {
+          "title": "Monday Munch - DSA Challenge 021 (Rated) (codechef.com)",
+          "url": "https://www.codechef.com/DSAMONDAY021",
+          "source": "clist",
+          "description": "competitive programming contest on codechef.com; starts 2026-09-21T13:30:00",
+          "deadline": "2026-09-21",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "70461696",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "edc755958101"
+        },
+        {
+          "title": "Codeforces Round (Div. 1) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2268",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-09-26T14:35:00",
+          "deadline": "2026-09-26",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "70467208",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "349e8f43be97"
+        },
+        {
+          "title": "Codeforces Round (Div. 2) (codeforces.com)",
+          "url": "https://codeforces.com/contests/2269",
+          "source": "clist",
+          "description": "competitive programming contest on codeforces.com; starts 2026-09-26T14:35:00",
+          "deadline": "2026-09-26",
+          "tags": [
+            "contest",
+            "competitive programming"
+          ],
+          "native_id": "70467209",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "262e55c6cfa2"
+        },
+        {
+          "title": "Cerebro Hackathon",
+          "url": "https://unstop.com/hackathons/cerebro-hackathon-institute-of-engineering-and-management-1757094",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1757094",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9925af27a09c"
+        },
+        {
+          "title": "ELUCode-4",
+          "url": "https://unstop.com/hackathons/elucode-4-edulinkup-1757082",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1757082",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "656331ff054b"
+        },
+        {
+          "title": "YUVA Megathon 2026",
+          "url": "https://unstop.com/hackathons/yuva-megathon-2026-yuva-srm-institute-of-science-technology-trichy-1754766",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1754766",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f473b6ae275f"
+        },
+        {
+          "title": "Students of Global Impact",
+          "url": "https://unstop.com/hackathons/students-of-global-impact-international-foundation-for-sustainable-peace-and-development-1751032",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1751032",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "93ab0574c2af"
+        },
+        {
+          "title": "QUAN 10 – Hack the Next Quantum Decade",
+          "url": "https://unstop.com/hackathons/quan-10-hack-the-next-quantum-decade-rajiv-gandhi-university-of-knowledge-technologies-rgukt-iiit-srikakulam-1757023",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1757023",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "65840084c593"
+        },
+        {
+          "title": "ORBION: 8-Hour Hackathon",
+          "url": "https://unstop.com/hackathons/orbion-8-hour-hackathon-institute-of-engineering-and-managemet-1756946",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1756946",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b531eff3f051"
+        },
+        {
+          "title": "TalentEdge Coding Assessment - 03",
+          "url": "https://unstop.com/hackathons/talentedge-coding-assessment-03-aditya-university-1757030",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1757030",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b12ef530af46"
+        },
+        {
+          "title": "QA and Project Management Internship",
+          "url": "https://unstop.com/internships/qa-and-project-management-internship-vishvena-techno-solutions-pvt-ltd-1757138",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1757138",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "QA/PM is too far from AI Engineering/Building goals.",
+          "action_plan": [
+            "Skip"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 3,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "e363513e67ba"
+        },
+        {
+          "title": "HR Internship",
+          "url": "https://unstop.com/internships/hr-internship-coneixement-india-opc-pvt-ltd-1752282",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1752282",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "HR is completely irrelevant to a B.Tech AI/ML builder.",
+          "action_plan": [
+            "Skip"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 2,
+            "skill": 1,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "9c4f25c17c61"
+        },
+        {
+          "title": "React Native Internship",
+          "url": "https://unstop.com/internships/react-native-internship-controlshift-1757129",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1757129",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Mobile dev is useful for builders, but not his core AI focus.",
+          "action_plan": [
+            "Skip unless no AI options available"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 4,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "6f5af4f65f81"
+        },
+        {
+          "title": "Campus Lead Gen Internship",
+          "url": "https://unstop.com/internships/campus-lead-gen-internship-skill-vedanth-1756972",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1756972",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Lead gen is sales, not engineering. Zero builder value.",
+          "action_plan": [
+            "Skip"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "ed953dc404f8"
+        },
+        {
+          "title": "HR Internship",
+          "url": "https://unstop.com/internships/hr-internship-edunext-technologies-pvt-ltd-1757175",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1757175",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "HR role provides zero leverage for AI engineering.",
+          "action_plan": [
+            "Skip"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 2,
+            "skill": 1,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "977b6e326180"
+        },
+        {
+          "title": "Lead Generation & Sales Internship",
+          "url": "https://unstop.com/internships/lead-generation-sales-internship-scrub-1757207",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1757207",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "Sales/Lead Gen is a distraction from technical mastery.",
+          "action_plan": [
+            "Skip"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 2,
+            "skill": 1,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "8486174cc846"
+        },
+        {
+          "title": "HR Internship",
+          "url": "https://unstop.com/internships/hr-internship-donepull-1755641",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1755641",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "HR role provides zero leverage for AI engineering.",
+          "action_plan": [
+            "Skip"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 2,
+            "skill": 1,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "key": "a6ba9ca9c3cb"
+        },
+        {
+          "title": "Smart Move Hackathon",
+          "url": "https://unstop.com/competitions/smart-move-hackathon-smart-move-hackathon-kalaignar-karunanidhi-institute-of-technology-kkit-coimbatore-1754608",
+          "source": "unstop",
+          "description": "competition | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "competition"
+          ],
+          "native_id": "1754608",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7f045ec949d9"
+        },
+        {
+          "title": "DrillBit Original Voices Challenge - 2026",
+          "url": "https://unstop.com/scholarships/drillbit-original-voices-challenge-2026-drillbit-softtech-india-pvt-ltd-1756592",
+          "source": "unstop",
+          "description": "scholarship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "scholarship"
+          ],
+          "native_id": "1756592",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ef63d4eba98f"
+        },
+        {
+          "title": "Waymo — Software Engineering Intern - Maneuvering Tech",
+          "url": "https://careers.withwaymo.com/jobs?gh_jid=8203200",
+          "source": "internships",
+          "description": "internship | Waymo | SF | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "ad26d172-59a3-4f93-9750-94d260cfb4e5",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "abc82caa63ad"
+        },
+        {
+          "title": "Amperesand — Software Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/amperesand/jobs/4409254009",
+          "source": "internships",
+          "description": "internship | Amperesand | Reno, NV | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0c0ace06-0c5c-415d-8ea4-7c6fedad6324",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "592690d342a5"
+        },
+        {
+          "title": "Smith+Nephew — Data Science Intern - AI Center of Excellence",
+          "url": "https://smithnephew.wd5.myworkdayjobs.com/External/job/US---Pittsburgh-PA/Intern-AI-Center-of-Excellence-Data-Science_R92480-1",
+          "source": "internships",
+          "description": "internship | Smith+Nephew | Pittsburgh, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "aacdb2a7-7399-4a61-a456-f1b8651ac552",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e770c8e32ae9"
+        },
+        {
+          "title": "Smith+Nephew — Robotics Software Engineer Intern",
+          "url": "https://smithnephew.wd5.myworkdayjobs.com/External/job/US---Pittsburgh-PA/Intern-Robotics-Software-Engineering_R92482",
+          "source": "internships",
+          "description": "internship | Smith+Nephew | Pittsburgh, PA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e89448c1-21ee-450a-85e8-84ad429d6f3e",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "fefb2bebebdc"
+        },
+        {
+          "title": "The Walt Disney Company — Show Control Software Intern",
+          "url": "https://disney.wd5.myworkdayjobs.com/disneycareer/job/Lake-Buena-Vista-FL-USA/WDI-Show-Control-Software-Internship--Spring-2027_10160946",
+          "source": "internships",
+          "description": "internship | The Walt Disney Company | Lake Buena Vista, FL, Glendale, CA | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "bad6cdd5-b63d-4320-a780-2ec8f140ff2d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2d0d69ca810f"
+        },
+        {
+          "title": "Koch Industries — Software Engineer Co-op - Information Technology",
+          "url": "https://koch.avature.net/en_US/careers/JobDetail/192476",
+          "source": "internships",
+          "description": "internship | Koch Industries | Wichita, KS | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c059887d-a7ce-40a1-bc58-605181078fb9",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4761e2aa3339"
+        },
+        {
+          "title": "Emergent Labs — Software Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/emergentlabsinc/jobs/4323651009",
+          "source": "internships",
+          "description": "internship | Emergent Labs | SF | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "bff4510b-7399-4839-ba08-b08b5f2b5538",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "17b5188ecd04"
+        },
+        {
+          "title": "Nanopath — Software Development Co-op",
+          "url": "https://job-boards.greenhouse.io/nanopathinc/jobs/4732881005",
+          "source": "internships",
+          "description": "internship | Nanopath | Cambridge, MA | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "db6132fd-fed0-4b00-a81b-82d5c312bd98",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "943a80fb4943"
+        },
+        {
+          "title": "Waymo — Software Engineer Intern - MS/PhD",
+          "url": "https://careers.withwaymo.com/jobs?gh_jid=8202801",
+          "source": "internships",
+          "description": "internship | Waymo | Mountain View, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3401f1fc-ebd7-4153-b9b5-359896f63953",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a054cc002d7d"
+        },
+        {
+          "title": "Waymo — Machine Learning Intern - Computer Vision",
+          "url": "https://careers.withwaymo.com/jobs?gh_jid=8202025",
+          "source": "internships",
+          "description": "internship | Waymo | Mountain View, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5efdb72a-819f-4637-a0fb-6f7ed73f2383",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d05540ad7937"
+        },
+        {
+          "title": "Waymo — Quantitative Software Engineer Intern",
+          "url": "https://careers.withwaymo.com/jobs?gh_jid=8197554",
+          "source": "internships",
+          "description": "internship | Waymo | SF, Mountain View, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e30c1cc5-e220-4fd3-acc3-db8af1dcd0f5",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4e65f351e104"
+        },
+        {
+          "title": "Schonfeld — Quant Developer Intern - Discretionary Macro Fixed Income",
+          "url": "https://job-boards.greenhouse.io/schonfeld/jobs/8207942",
+          "source": "internships",
+          "description": "internship | Schonfeld | London, UK | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "22788572-42f5-4949-95ac-5b883dbb7696",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6c7d4201b495"
+        },
+        {
+          "title": "Clockwork Systems — Software Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/clockworksystems/jobs/6174230004",
+          "source": "internships",
+          "description": "internship | Clockwork Systems | Palo Alto, CA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "87678940-271f-408b-bde3-11378558b132",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "89391f501896"
+        },
+        {
+          "title": "Apera AI — Software Developer Co-op - Full Stack",
+          "url": "https://job-boards.greenhouse.io/aperaaiinc/jobs/5240259007",
+          "source": "internships",
+          "description": "internship | Apera AI | Vancouver, BC, Canada | Winter 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0e6b54b7-af1e-4918-8224-6720703ec563",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "918d9101b1fc"
+        },
+        {
+          "title": "Persona — Software Engineer Intern",
+          "url": "https://jobs.ashbyhq.com/persona/eb77c97c-fa9d-4bf0-9566-e5ba4453b7d3/application?embed=true",
+          "source": "internships",
+          "description": "internship | Persona | SF | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b3b5a172-409f-4e54-9248-583177d1ac17",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4be7c6e31d41"
+        },
+        {
+          "title": "Collier Aerospace — AI Feature Development Intern - NCSG",
+          "url": "https://ats.rippling.com/collieraerospace/jobs/5a8bf9a3-c4f5-4c5a-ba9a-188979106827",
+          "source": "internships",
+          "description": "internship | Collier Aerospace | Raleigh, NC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b6b0bc09-5fc8-4d8e-ad3f-ffdd70e0315e",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b57653257205"
+        },
+        {
+          "title": "Mercor — Data Science Intern",
+          "url": "https://jobs.ashbyhq.com/mercor/11516609-e54b-4087-87c2-e84a8bafbb5a/application?embed=true",
+          "source": "internships",
+          "description": "internship | Mercor | SF | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "deb8d6fe-4590-448f-b1b0-387c585b3b65",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "044f6adaac0e"
+        },
+        {
+          "title": "D3 Embedded — Computer Vision / AI Co-op",
+          "url": "https://d3engineering.applytojob.com/apply/9Yw3SuZeX8/Computer-Vision-AI-Engineer-Coop",
+          "source": "internships",
+          "description": "internship | D3 Embedded | West Henrietta, NY | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3bb083e3-bf43-47f8-93e3-a775afddd966",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d4532764e4d1"
+        },
+        {
+          "title": "Ragle Inc — Software Engineer Intern",
+          "url": "https://ragleinc.applytojob.com/apply/lonTfWhOqm/Software-Engineer-Intern",
+          "source": "internships",
+          "description": "internship | Ragle Inc | North Richland Hills, TX | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7be2e4ed-d0ba-4c23-b8da-b92cee3f07f1",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "aa54c005121b"
+        },
+        {
+          "title": "GM financial — Data Science Intern",
+          "url": "https://fa-exvu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/260839",
+          "source": "internships",
+          "description": "internship | GM financial | Fort Worth, TX | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "eb82ac41-1fb4-421d-8394-eb85b32a2c8a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5a6d51698d44"
+        },
+        {
+          "title": "Kitware — AI Research Intern",
+          "url": "https://jobs.lever.co/kitware/ff25a349-a362-45d2-b1e4-2487c1df4f75/apply",
+          "source": "internships",
+          "description": "internship | Kitware | Clifton Park, NY | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "c5ee8357-17ae-4b7a-92ed-187f1d3bdb76",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "16e695068b5d"
+        },
+        {
+          "title": "Kitware — Software Developer Intern - Computer Vision",
+          "url": "https://jobs.lever.co/kitware/7b6ff8f9-34c6-4338-845d-4e1bbc142906/apply",
+          "source": "internships",
+          "description": "internship | Kitware | Clifton Park, NY | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "bdbc67e8-557b-4993-a71b-8d0d02417ad6",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3e2723663699"
+        },
+        {
+          "title": "AMD — AI Model Optimization & Software Engineer Intern/Co-op",
+          "url": "https://careers.amd.com/jobs/92522?icims=1",
+          "source": "internships",
+          "description": "internship | AMD | San Jose, CA, Santa Clara, CA | Winter 2027, Summer 2027, Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "18657dfc-cf96-4382-b7e9-95fdbede5696",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5d3877f5c551"
+        },
+        {
+          "title": "AMD — AI Model Optimization & Software Engineer Intern/Co-op",
+          "url": "https://careers.amd.com/jobs/92526?icims=1",
+          "source": "internships",
+          "description": "internship | AMD | Austin, TX | Winter 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3a8e2760-1a1a-4d40-ab39-93714d09030d",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "3cd1e1428ed3"
+        },
+        {
+          "title": "General Dynamics Mission Systems — Software Engineer Intern - Crypto and Cross Domain Solutions",
+          "url": "https://careers-gdms.icims.com/jobs/74785/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | General Dynamics Mission Systems | Scottsdale, AZ | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "0e98381f-67f0-44fd-989f-ede6ab83c56f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8996f3d71314"
+        }
+      ]
     }
   ]
 }

@@ -22481,6 +22481,342 @@
       "first_seen": "2026-09-16",
       "last_seen": "2026-09-16",
       "times_seen": 1
+    },
+    "23336df7d478": {
+      "title": "A Zeroth-Order Paradigm for LLM Preference Alignment",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "fb3aaa916272": {
+      "title": "PANORAMA: Panoptic Grounded Captioning via Mask Proposal Selection",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "5c0ffc366e41": {
+      "title": "Nvidia announces native GPU programming in Rust",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "a150867233d1": {
+      "title": "AWS says it can't restore some data from mideast facilities struck by Iran",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "265cb4df1dbf": {
+      "title": "TMLR reached out to the authors of 10 papers slated for desk rejection, in an attempt to understand if the authors could explain the paper they submitted [D]",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "f73b5aa90224": {
+      "title": "LARA: small, composable behaviours for frozen LLMs [P]",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "23b4392c2cca": {
+      "title": "GoBench: Evaluating LLMs on the game of Go [R]",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "7c9b483e691b": {
+      "title": "Has anyone measured specification ambiguity as a predictor of correlated failure across model families? [D]",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "f8ee847b7eae": {
+      "title": "Question about TMLR [D]",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "9e2b3851093c": {
+      "title": "If you have leftover AI tokens/compute, there’s an open project working on the Twin Prime Conjecture [P]",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "2a10ebab0759": {
+      "title": "NeurIPS Reference Check Response[D]",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "627ffe95aa09": {
+      "title": "Placement Prep Weekends - 08 (codechef.com)",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "edc755958101": {
+      "title": "Monday Munch - DSA Challenge 021 (Rated) (codechef.com)",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "349e8f43be97": {
+      "title": "Codeforces Round (Div. 1) (codeforces.com)",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "262e55c6cfa2": {
+      "title": "Codeforces Round (Div. 2) (codeforces.com)",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "9925af27a09c": {
+      "title": "Cerebro Hackathon",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "656331ff054b": {
+      "title": "ELUCode-4",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "f473b6ae275f": {
+      "title": "YUVA Megathon 2026",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "93ab0574c2af": {
+      "title": "Students of Global Impact",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "65840084c593": {
+      "title": "QUAN 10 – Hack the Next Quantum Decade",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "b531eff3f051": {
+      "title": "ORBION: 8-Hour Hackathon",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "b12ef530af46": {
+      "title": "TalentEdge Coding Assessment - 03",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "e363513e67ba": {
+      "title": "QA and Project Management Internship",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "9c4f25c17c61": {
+      "title": "HR Internship",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "6f5af4f65f81": {
+      "title": "React Native Internship",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "ed953dc404f8": {
+      "title": "Campus Lead Gen Internship",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "977b6e326180": {
+      "title": "HR Internship",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "8486174cc846": {
+      "title": "Lead Generation & Sales Internship",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "a6ba9ca9c3cb": {
+      "title": "HR Internship",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "7f045ec949d9": {
+      "title": "Smart Move Hackathon",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "ef63d4eba98f": {
+      "title": "DrillBit Original Voices Challenge - 2026",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "abc82caa63ad": {
+      "title": "Waymo — Software Engineering Intern - Maneuvering Tech",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "592690d342a5": {
+      "title": "Amperesand — Software Engineer Intern",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "e770c8e32ae9": {
+      "title": "Smith+Nephew — Data Science Intern - AI Center of Excellence",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "fefb2bebebdc": {
+      "title": "Smith+Nephew — Robotics Software Engineer Intern",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "2d0d69ca810f": {
+      "title": "The Walt Disney Company — Show Control Software Intern",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "4761e2aa3339": {
+      "title": "Koch Industries — Software Engineer Co-op - Information Technology",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "17b5188ecd04": {
+      "title": "Emergent Labs — Software Engineer Intern",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "943a80fb4943": {
+      "title": "Nanopath — Software Development Co-op",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "a054cc002d7d": {
+      "title": "Waymo — Software Engineer Intern - MS/PhD",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "d05540ad7937": {
+      "title": "Waymo — Machine Learning Intern - Computer Vision",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "4e65f351e104": {
+      "title": "Waymo — Quantitative Software Engineer Intern",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "6c7d4201b495": {
+      "title": "Schonfeld — Quant Developer Intern - Discretionary Macro Fixed Income",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "89391f501896": {
+      "title": "Clockwork Systems — Software Engineer Intern",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "918d9101b1fc": {
+      "title": "Apera AI — Software Developer Co-op - Full Stack",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "4be7c6e31d41": {
+      "title": "Persona — Software Engineer Intern",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "b57653257205": {
+      "title": "Collier Aerospace — AI Feature Development Intern - NCSG",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "044f6adaac0e": {
+      "title": "Mercor — Data Science Intern",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "d4532764e4d1": {
+      "title": "D3 Embedded — Computer Vision / AI Co-op",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "aa54c005121b": {
+      "title": "Ragle Inc — Software Engineer Intern",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "5a6d51698d44": {
+      "title": "GM financial — Data Science Intern",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "16e695068b5d": {
+      "title": "Kitware — AI Research Intern",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "3e2723663699": {
+      "title": "Kitware — Software Developer Intern - Computer Vision",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "5d3877f5c551": {
+      "title": "AMD — AI Model Optimization & Software Engineer Intern/Co-op",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "3cd1e1428ed3": {
+      "title": "AMD — AI Model Optimization & Software Engineer Intern/Co-op",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
+    },
+    "8996f3d71314": {
+      "title": "General Dynamics Mission Systems — Software Engineer Intern - Crypto and Cross Domain Solutions",
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "times_seen": 1
     }
   }
 }
