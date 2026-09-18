@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17",
+  "updated_at": "2026-09-18",
   "items": [
     {
       "key": "6f4b2d0173c3",
@@ -8,19 +8,6 @@
       "source": "devpost",
       "score": 10,
       "deadline": "2026-09-09",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "e0b90e9b87a5",
-      "title": "MUBA Blockchain Hackathon",
-      "url": "https://muba-hackathon.devfolio.co",
-      "source": "devfolio",
-      "score": 10,
-      "deadline": "2026-09-06",
       "tags": [
         "hackathon"
       ],
@@ -93,56 +80,21 @@
       "action_plan": []
     },
     {
-      "key": "2b06f03d9190",
-      "title": "Content Creation Internship",
-      "url": "https://unstop.com/internships/content-creation-internship-closekart-private-limited-1750011",
-      "source": "unstop",
-      "score": 8,
+      "key": "96ccaddfe7a7",
+      "title": "Microsoft — Software Engineer Intern",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556982258",
+      "source": "internships",
+      "score": 9,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1e6c75b9de4d",
-      "title": "Digital Marketing Internship",
-      "url": "https://unstop.com/internships/digital-marketing-internship-weskill-1749835",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4d1ae7aacc39",
-      "title": "Direct Sales Internship",
-      "url": "https://unstop.com/internships/direct-sales-internship-bitwise-branding-1749962",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a2e03bb65a9b",
-      "title": "Growth Internship",
-      "url": "https://unstop.com/internships/growth-internship-savra-ai-1749924",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
+      "ai_summary": "Elite company, US-based, high-signal for AI/ML career path.",
+      "action_plan": [
+        "Update resume with TaskFlow/Nova (1hr)",
+        "Apply via portal/referral (2hrs)",
+        "Prep LeetCode/System Design (Ongoing)"
+      ]
     },
     {
       "key": "551d88b15bce",
@@ -1324,6 +1276,58 @@
       "key": "f251fb3c1ce5",
       "title": "Qualcomm — Machine Learning Compiler & Performance Engineering Intern - Systems",
       "url": "https://qualcomm.eightfold.ai/careers/job/446721064018",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "124c86357968",
+      "title": "Veeam Software — Machine Learning Intern - AI",
+      "url": "https://job-boards.eu.greenhouse.io/veeamsoftware/jobs/4971207101",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a6202cfd989f",
+      "title": "Guardian Life — Summer Intern - Digital & Technology - AI & Machine Learning",
+      "url": "https://guardianlife.wd5.myworkdayjobs.com/guardian-life-careers/job/New-York/XMLNAME-2027-Guardian-Summer-Intern--Digital---Technology---AI---Machine-Learning_R000110205",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7642f386f156",
+      "title": "Beginner's Paradise - FirstCommit",
+      "url": "https://firstcommit.devpost.com/",
+      "source": "devpost",
+      "score": 6,
+      "deadline": "2026-09-30",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "5348756cb477",
+      "title": "Tesla — Computer Vision Engineer Intern - Cell Engineering",
+      "url": "https://www.tesla.com/careers/search/job/283290",
       "source": "internships",
       "score": 6,
       "deadline": null,

@@ -86707,6 +86707,987 @@
           "key": "8996f3d71314"
         }
       ]
+    },
+    {
+      "date": "2026-09-18",
+      "items": [
+        {
+          "title": "Paint-Anything: Unified Any-Color Control for Image Generation and Editing",
+          "url": "https://arxiv.org/abs/2609.20816v1",
+          "source": "arxiv",
+          "description": "Professional design requires any-color control: the ability to specify an object's target color with any 24-bit hex value for image generation and editing. Prior work has explored color generation, editing, and colorization, but often relies on dedicated color representations or specialized inference procedures. Advances in large language models offer a simpler starting point: even compact models can associate hex values with color semantics. We present Paint-Anything, which learns a shared hex-prompt interface for generation and editing through object-level color supervision. We develop a data pipeline that constructs Paint-500K from real images through object grounding, perceptual color labeling, and editing-pair synthesis. Since shadows make real-image labels only approximate colors, we complement this supervision with pure-color anchors whose pixels exactly match their paired hex values. These anchors are used only at high-noise timesteps, leaving low-noise training to natural images. We further introduce Any Color Benchmark (ACBench), comprising ACBench-T2I and ACBench-Edit, to measure object-level hex color fidelity across both tasks. On FLUX.2-4B, Paint-Anything improves ACBench-T2I and ACBench-Edit scores by 85.3% and 28.3%, respectively, relative to the base model, with ablations supporting the training recipe. It also achieves the highest average CompColor score among the compared methods.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.20816",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5ac6c74a88e5"
+        },
+        {
+          "title": "ERCPMP-Gx: Endoscopic Image and Video Dataset for Morphological, Histopathological, and Genomic Characterization of Colorectal Polyposis",
+          "url": "https://arxiv.org/abs/2609.20815v1",
+          "source": "arxiv",
+          "description": "Hereditary polyposis syndromes can be precursor lesions to colorectal cancer and are associated with a broad spectrum of extracolonic tumors. Early identification and accurate classification of these syndromes are essential for timely diagnosis, individualized patient management, and targeted surveillance strategies for affected families. However, public endoscopic datasets are largely organized around the individual sporadic polyp, and none links the polyposis phenotype to histopathology and germline findings at the patient level. Here, we present ERCPMP-Gx, an endoscopic, histopathological, and genomic dataset developed to support the application of artificial intelligence (AI) in the recognition, characterization, and classification of colorectal polyposis. Most procedures were performed using the Olympus EVIS X1 system with white-light endoscopy (WLE), narrow-band imaging (NBI), magnifying NBI (M-NBI), and NBI with near focus modes, yielding 160 images and accompanying video clips. Approximately eighty percent of cases represent clinically and/or genetically confirmed hereditary polyposis syndromes (PG), including familial adenomatous polyposis (FAP), Peutz-Jeghers syndrome (PJS), juvenile polyposis syndrome (JPS), and ganglioneuroma syndrome (GNS), while the remaining twenty percent comprise non-hereditary polyps and polyp-mimicking lesions with overlapping morphological features (Non-PG), included to support differential classification. Each released record is linked, where available, to standardized endoscopic annotations, representative histopathology, and clinically reported germline findings, forming an AI-ready, patient-level annotation framework. The dataset is publicly accessible at Mendeley (https://doi.org/10.17632/nzyfc544bx.2). For the latest updates and further information, readers are referred to the DataBioX website: https://databiox.com.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.20815",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a19d56f0d992"
+        },
+        {
+          "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
+          "url": "https://arxiv.org/abs/2609.20812v1",
+          "source": "arxiv",
+          "description": "Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \\emph{overclaim} task completion, a misrepresentation that can mislead the user. An agent overclaims when its final response contradicts information in its context. This definition requires no inference about intent and is independent of task success. We introduce \\emph{OverclaimBench}, an evaluation suite composed of five file-review scenarios, transcript-based coverage measurements, and registered planted defects. We evaluate eight proprietary frontier models in their own production command-line interfaces, and four open-weight models under a single fixed harness on OverclaimBench and find that 1) agents do not read all the files they were asked to review in 67.9\\% of runs; 2) among runs where not all files are read, agents are \\emph{misleading} 80.4\\% of the time (59--96\\% per model), either falsely claiming to have read all files or omitting that coverage is incomplete; 3) requiring delegation to subagents increased reading coverage, but among reviews that remained incomplete, a large majority were still misleading; and 4) agents that falsely claimed a complete review missed planted defects at about 1.8 times the rate of agents that read every file, showing that claims of completion can conceal substantive failures. Together, these results show that agents' final responses are not reliable accounts of their actions.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.20812",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "44b0602ab783"
+        },
+        {
+          "title": "Score Centering Stabilizes Off-policy Reinforcement Learning",
+          "url": "https://arxiv.org/abs/2609.20807v1",
+          "source": "arxiv",
+          "description": "Reinforcement learning (RL) of large language models is notoriously sensitive to small differences between training and inference engines, often referred to as the training-inference mismatch (TIM). However, completely eliminating TIM is impractical, as it would come at a major cost to rollout efficiency. In this paper, we show that the instability of RL under TIM is primarily caused by drift: a persistent bias between training and inference engines that accumulates with every training step. We derive an additive \"score centering\" correction term that stabilizes RL under TIM by canceling drift. When training models from 0.6B to 30B parameters, score centering alone matches or outperforms methods based on importance sampling under quantization, with the gap growing as the mismatch becomes more severe. Because the correction is additive, score centering also composes with importance sampling -- their composition outperforms pure importance-sampling baselines in our staleness experiments.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.20807",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "c433d7e2bd64"
+        },
+        {
+          "title": "AbdelStark/awesome-typesafe — ★96",
+          "url": "https://github.com/AbdelStark/awesome-typesafe",
+          "source": "github",
+          "description": "A curated list of official resources and community projects for TypeSafe, System One models, and Jev. (topics: ai agents, awesome list, jev, llm, machine learning, structured output, system one models, typesafe)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "AbdelStark/awesome-typesafe",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e5edf5679293"
+        },
+        {
+          "title": "DataFabric-Academy/ms-fabric-data-science — ★96",
+          "url": "https://github.com/DataFabric-Academy/ms-fabric-data-science",
+          "source": "github",
+          "description": "Hands-on Microsoft Fabric Data Science labs (FreshMart churn) with Thai study notes, PySpark/MLflow, and DP-604-aligned learning path. (topics: churn prediction, data science, machine learning, medallion architecture, microsoft fabric, microsoft learn, mlflow, pyspark)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "DataFabric-Academy/ms-fabric-data-science",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f0a0a2be503c"
+        },
+        {
+          "title": "AydinAdnan/PulseVAD — ★56",
+          "url": "https://github.com/AydinAdnan/PulseVAD",
+          "source": "github",
+          "description": "Ultra-tiny 2.1k streaming voice activity detector (2.1 KB INT8). 200 ms window for microcontrollers, edge devices, and DSPs. ships with ONNX, TorchScript, and standalone C header. (topics: audio processing, c header, deep learning, edge ai, microcontroller, onnx, speech processing, tinyml, vad, voice activity detection)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "AydinAdnan/PulseVAD",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "99af3a2ee4d7"
+        },
+        {
+          "title": "How to Write with an LLM",
+          "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49747070",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d4c75f06f7b5"
+        },
+        {
+          "title": "Flet 1.0 – Build cross-platform apps in Python",
+          "url": "https://flet.dev/",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49746290",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b03c5ee34c9b"
+        },
+        {
+          "title": "AAAI-27 Phase 1 Results [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wjhiyu/aaai27_phase_1_results_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wjhiyu",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "319d342e94c9"
+        },
+        {
+          "title": "Future of general LLM work (interp/inference/alignment) vs agentic/physical AI (VLA, multimodal) for career [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wj7ltg/future_of_general_llm_work/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wj7ltg",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4d395ac70024"
+        },
+        {
+          "title": "ICLR 2027 Edits Allowance [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wirav3/iclr_2027_edits_allowance_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wirav3",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "64f7b4716e25"
+        },
+        {
+          "title": "Seeking RA position in the US (Causal/Robust ML) [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wjg53e/seeking_ra_position_in_the_us_causalrobust_ml_r/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wjg53e",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4f5a1e2a582f"
+        },
+        {
+          "title": "XGBoost vs Human Markets [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wixzts/xgboost_vs_human_markets_p/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wixzts",
+          "score": 2,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "44975e3957ae"
+        },
+        {
+          "title": "EVOX 1.0",
+          "url": "https://unstop.com/hackathons/evox-10-detox-1757577",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1757577",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5cccb096a00a"
+        },
+        {
+          "title": "Build Your Fest Stall: Brand It, Pitch It, Launch It",
+          "url": "https://unstop.com/hackathons/build-your-fest-stall-brand-it-pitch-it-launch-it-skythink-tech-1757410",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1757410",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "14fb59ecda4b"
+        },
+        {
+          "title": "Solve - a - Thon | National Hackathon",
+          "url": "https://unstop.com/hackathons/solve-a-thon-national-hackathon-swami-rama-himalayan-university-srhu-baksar-wala-uttarakhand-1755466",
+          "source": "unstop",
+          "description": "hackathon | offline | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1755466",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "07bcbff7775c"
+        },
+        {
+          "title": "The Coding Challenge 2026",
+          "url": "https://unstop.com/hackathons/the-coding-challenge-2026-sagar-group-of-institutions-sistec-bhopal-1757461",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1757461",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5349ce2bd370"
+        },
+        {
+          "title": "Game Jam - TantraFiesta 2026",
+          "url": "https://unstop.com/hackathons/game-jam-tantrafiesta-2026-iiitn-1756367",
+          "source": "unstop",
+          "description": "hackathon | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1756367",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "e2fb79bf28e8"
+        },
+        {
+          "title": "Frontend Developer Internship",
+          "url": "https://unstop.com/internships/frontend-developer-internship-algoryx-technologies-1750443",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1750443",
+          "score": 8,
+          "ai_score": 4,
+          "ai_summary": "Generic frontend role; doesn't align with AI/ML builder goals.",
+          "action_plan": [
+            "Skip unless desperate for basic dev experience",
+            "Focus on AI engineering instead"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 3,
+            "prestige": 3,
+            "deadline": 2,
+            "skill": 5,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "key": "5b2f0e08c83a"
+        },
+        {
+          "title": "Business Development Internship",
+          "url": "https://unstop.com/internships/business-development-internship-internz-learn-1757823",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1757823",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "Non-technical role; zero alignment with AI engineer identity.",
+          "action_plan": [
+            "Ignore immediately"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 2,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "c21b228d1a83"
+        },
+        {
+          "title": "Science Communication & Creative Media Internship",
+          "url": "https://unstop.com/internships/science-communication-creative-media-internship-space-education-foundation-1757679",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1757679",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Creative media is irrelevant to B.Tech AI/ML goals.",
+          "action_plan": [
+            "Ignore immediately"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 3,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "f65d385b29d2"
+        },
+        {
+          "title": "Recruitment Executive Internship - Telecalling",
+          "url": "https://unstop.com/internships/recruitment-executive-internship-telecalling-acs-technologies-1757350",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1757350",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "Telecalling is a waste of a builder's time.",
+          "action_plan": [
+            "Ignore immediately"
+          ],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 1,
+            "deadline": 2,
+            "skill": 1,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "707cadba2ce3"
+        },
+        {
+          "title": "Operations Internship (Gaming & E-Commerce)",
+          "url": "https://unstop.com/internships/operations-internship-gaming-e-commerce-rainbox-media-pvt-ltd-1757260",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1757260",
+          "score": 8,
+          "ai_score": 2,
+          "ai_summary": "Operations is not engineering; low leverage for AI goals.",
+          "action_plan": [
+            "Ignore immediately"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 2,
+            "skill": 3,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "key": "043fd9b93058"
+        },
+        {
+          "title": "Human Resources (HR) Internship",
+          "url": "https://unstop.com/internships/human-resources-hr-internship-safalta-setu-1757307",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1757307",
+          "score": 8,
+          "ai_score": 1,
+          "ai_summary": "HR is completely unrelated to AI/ML and building.",
+          "action_plan": [
+            "Ignore immediately"
+          ],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 1,
+            "deadline": 2,
+            "skill": 1,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "key": "90d852054e96"
+        },
+        {
+          "title": "Campus Ambassador Internship - Kolkata",
+          "url": "https://unstop.com/internships/campus-ambassador-internship-kolkata-zenobuzz-solutions-1757407",
+          "source": "unstop",
+          "description": "internship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1757407",
+          "score": 8,
+          "ai_score": 3,
+          "ai_summary": "Local ambassador role; low signal, low skill growth.",
+          "action_plan": [
+            "Ignore; prioritize international/elite programs"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 3,
+            "skill": 2,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "key": "63492dd6f2bf"
+        },
+        {
+          "title": "Engineers' Ring of Honour 2026",
+          "url": "https://unstop.com/scholarships/engineers-ring-of-honour-2026-ies-university-bhopal-1757655",
+          "source": "unstop",
+          "description": "scholarship | online | India | tags: ",
+          "deadline": null,
+          "tags": [
+            "scholarship"
+          ],
+          "native_id": "1757655",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "280e51eb23d1"
+        },
+        {
+          "title": "Tesla — Software Engineer Intern - Energy Engineering",
+          "url": "https://www.tesla.com/careers/search/job/283950",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Winter 2027, Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "50aa2666-a2a3-4da7-8099-d77ee703ebd6",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6d377700a6e2"
+        },
+        {
+          "title": "Tesla — Site Controller Software Engineer Intern - Energy Engineering",
+          "url": "https://www.tesla.com/careers/search/job/283956",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Winter 2027, Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "a0411f20-98d8-4615-8a27-21bcd5d82808",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "efa5248b33a0"
+        },
+        {
+          "title": "XPENG Motors — AI Research Intern - Predictive World Model",
+          "url": "https://job-boards.greenhouse.io/xpengmotors/jobs/8819001002",
+          "source": "internships",
+          "description": "internship | XPENG Motors | Santa Clara, CA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e2411783-af3b-47bd-b838-8448c3dd37b9",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8b833d5db7cc"
+        },
+        {
+          "title": "Tesla — Internship - Software Engineering - People Products - Winter/Spring 2027",
+          "url": "https://www.tesla.com/careers/search/job/284003",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Winter 2027, Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "93ef662e-5551-44f1-b92f-7803ee8a3ea1",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d03eb9386001"
+        },
+        {
+          "title": "Tesla — Internship - Software Engineering - People Products - Summer 2027",
+          "url": "https://www.tesla.com/careers/search/job/284004",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5eeb71a2-4362-490d-91b2-80bec3bb466d",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0f06f46e6cab"
+        },
+        {
+          "title": "Microsoft — Software Engineer Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556982258",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA, Santa Clara, CA | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "f17e1a25-2872-42d0-90f6-3e3dbb14c8fa",
+          "score": 8,
+          "ai_score": 9,
+          "ai_summary": "Elite company, US-based, high-signal for AI/ML career path.",
+          "action_plan": [
+            "Update resume with TaskFlow/Nova (1hr)",
+            "Apply via portal/referral (2hrs)",
+            "Prep LeetCode/System Design (Ongoing)"
+          ],
+          "dimensions": {
+            "career": 10,
+            "interest": 9,
+            "prestige": 10,
+            "deadline": 8,
+            "skill": 9,
+            "time": 9,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "key": "96ccaddfe7a7"
+        },
+        {
+          "title": "Qualcomm — Low Power AI Software Development Intern - Interim Engineering Intern - Software",
+          "url": "https://qualcomm.eightfold.ai/careers/job/446721143440",
+          "source": "internships",
+          "description": "internship | Qualcomm | Markham, ON, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1a06ffe6-c658-4376-9126-92f68023b3b9",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "17fc86d9d06f"
+        },
+        {
+          "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Recommendation Mall",
+          "url": "https://lifeattiktok.com/search/7686283601340369205",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "7c51e306-a24c-4fac-b188-b36e0bc3f128",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6cdb1762226b"
+        },
+        {
+          "title": "Keysight Technologies — Software Engineering Intern - AI Solutions",
+          "url": "https://jobs.keysight.com/jobs/54322?icims=1",
+          "source": "internships",
+          "description": "internship | Keysight Technologies | Colorado Springs, CO | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "cf8d2b20-f6d6-4d82-a5e9-7a1e97484d23",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2b4f57408704"
+        },
+        {
+          "title": "TRC Companies — Software Engineer Intern",
+          "url": "https://careers.trccompanies.com/jobs/26840?icims=1",
+          "source": "internships",
+          "description": "internship | TRC Companies | Calgary, AB, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9e8ec50b-4857-4cc5-b158-8915ba1d6071",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7fc00d6721d0"
+        },
+        {
+          "title": "Amazon — Software Development Engineer Intern - Summer",
+          "url": "https://amazon.jobs/en/jobs/10552937/software-development-engineer-internship-summer-2027-usa",
+          "source": "internships",
+          "description": "internship | Amazon | Seattle, WA, Arlington County, Arlington, VA | Summer 2027, Winter 2027, Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1ab1a45d-f5cc-4187-9f03-f2e2c5c3e021",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d9fc642a9163"
+        },
+        {
+          "title": "Waymo — Software Engineering Intern - Multiple Teams",
+          "url": "https://careers.withwaymo.com/jobs?gh_jid=8208465",
+          "source": "internships",
+          "description": "internship | Waymo | London, UK | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1567fd06-d23c-423d-bdd7-1b3068d7257a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f62d00929ed3"
+        },
+        {
+          "title": "Geneva Trading — AI Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/genevatrading/jobs/5240107007",
+          "source": "internships",
+          "description": "internship | Geneva Trading | Chicago, IL | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b2cc2a88-efd8-4b00-b346-0f29ab47dc4f",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "298fbc904730"
+        },
+        {
+          "title": "Tower Research Capital — Software Developer Intern",
+          "url": "https://www.tower-research.com/open-positions/?gh_jid=8212179",
+          "source": "internships",
+          "description": "internship | Tower Research Capital | Montreal, QC, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "3fc82b32-e0d8-454e-9338-670f6758c02e",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "cd89c0f877ab"
+        },
+        {
+          "title": "Tower Research Capital — Software Engineer Intern - Summer 2027",
+          "url": "https://www.tower-research.com/open-positions/?gh_jid=8212158",
+          "source": "internships",
+          "description": "internship | Tower Research Capital | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1dba0295-866c-4e5d-9de1-ecbd8f036a9b",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4e458b9d2680"
+        },
+        {
+          "title": "American Equity — Solutions Architecture Intern - AI",
+          "url": "https://www.american-equity.com/about/careers/openings?gh_jid=5241102007",
+          "source": "internships",
+          "description": "internship | American Equity | West Des Moines, IA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "9e90a7af-8784-4ab2-8bf8-b0ecce10575b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "26572cff2e1c"
+        },
+        {
+          "title": "Lennox International — AI & Analytics Intern",
+          "url": "https://uscareers-lennox.icims.com/jobs/54804/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Lennox International | Richardson, TX | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "39f01228-39ab-4e88-b966-1d902f06e97b",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "223adebb82ae"
+        },
+        {
+          "title": "Lennox International — Full-Stack Software Engineering Intern",
+          "url": "https://uscareers-lennox.icims.com/jobs/54888/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Lennox International | Richardson, TX | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "e93487a3-6a04-4449-a6f6-eb2616b57c63",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "57210130929f"
+        },
+        {
+          "title": "Lennox International — AI Engineering Intern - Summer 2027",
+          "url": "https://uscareers-lennox.icims.com/jobs/54897/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | Lennox International | Richardson, TX | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "b19ed1eb-aa8f-4af1-a327-0008140019c7",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "422c508bba68"
+        },
+        {
+          "title": "Qualcomm — Firmware Engineer Intern - Embedded Software Engineering - Embedded Firmware and SDK Development",
+          "url": "https://qualcomm.eightfold.ai/careers/job/446721141411",
+          "source": "internships",
+          "description": "internship | Qualcomm | Toronto, ON, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5206048b-f392-4172-9f1c-bc86c12eabb3",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "abfad5feab46"
+        },
+        {
+          "title": "Allen Lund Company — Technology and AI Intern - Technology and AI",
+          "url": "https://allenlundcompany.applytojob.com/apply/keuBELmaXy/Internship-TechAI",
+          "source": "internships",
+          "description": "internship | Allen Lund Company | La Cañada Flintridge, CA | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "102ebd08-8653-46c4-9bad-79821d8067a8",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d8d9cc35b481"
+        },
+        {
+          "title": "4AG Robotics — AI Co-op Student",
+          "url": "https://ats.rippling.com/4ag/jobs/921801f5-ae83-4a49-a234-221a87d94fe7",
+          "source": "internships",
+          "description": "internship | 4AG Robotics | Salmon Arm, BC, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "5fb2e4f9-0eb7-43f3-8775-1fff0a8a0927",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "305fe0451ad7"
+        },
+        {
+          "title": "General Dynamics Mission Systems — Embedded Software Engineer Intern",
+          "url": "https://careers-gdms.icims.com/jobs/75013/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | General Dynamics Mission Systems | Salt Lake City, UT, Boise, ID | Winter 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "523ea0ed-2662-4d1c-ab24-7bec4b29dc22",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5a2fb6b78fea"
+        },
+        {
+          "title": "Boston Scientific — Data Science Co-op",
+          "url": "https://bostonscientific.eightfold.ai/careers/job/563602813600487",
+          "source": "internships",
+          "description": "internship | Boston Scientific | Maple Grove, MN | Summer 2027, Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "30a813fa-60dd-46e6-b380-c00124f3422a",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d38defe2f748"
+        },
+        {
+          "title": "Abridge — Software Engineer Intern - Spring",
+          "url": "https://jobs.ashbyhq.com/abridge/6569d8f7-bd0b-4bb0-a3af-37f83e19ec5e/application?embed=true",
+          "source": "internships",
+          "description": "internship | Abridge | SF | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship"
+          ],
+          "native_id": "6ed0b949-935d-4322-93b3-8acbe09cda9e",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b7225795564d"
+        }
+      ]
     }
   ]
 }
