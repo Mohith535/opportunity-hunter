@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18",
+  "updated_at": "2026-09-19",
   "items": [
     {
       "key": "6f4b2d0173c3",
@@ -10,19 +10,6 @@
       "deadline": "2026-09-09",
       "tags": [
         "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "19df7067d9fe",
-      "title": "Meta Assistant Internship",
-      "url": "https://unstop.com/internships/meta-assistant-internship-inspire-global-ventures-pvt-ltd-1750481",
-      "source": "unstop",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -95,58 +82,6 @@
         "Apply via portal/referral (2hrs)",
         "Prep LeetCode/System Design (Ongoing)"
       ]
-    },
-    {
-      "key": "551d88b15bce",
-      "title": "Campus Ambassador Internship",
-      "url": "https://unstop.com/internships/campus-ambassador-internship-yhills-1750178",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1e3cae38cd52",
-      "title": "Mobile Application Developer Internship",
-      "url": "https://unstop.com/internships/mobile-application-developer-internship-maytrixtech-1750425",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b427a410e578",
-      "title": "AI Engineer Internship",
-      "url": "https://unstop.com/internships/ai-engineer-internship-aivi-intelligence-pvt-ltd-1750468",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1c799e710fa0",
-      "title": "Community Manager Internship",
-      "url": "https://unstop.com/internships/community-manager-internship-mycaptain-1750477",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
     },
     {
       "key": "2301e8e94527",
@@ -851,14 +786,118 @@
       ]
     },
     {
-      "key": "878e54764e18",
-      "title": "EIC VentureX: Idea To Impact Hackathon",
-      "url": "https://unstop.com/hackathons/eic-venturex-idea-to-impact-punjab-engineering-college-pec-chandigarh-1750271",
+      "key": "321012c8ee67",
+      "title": "AI/ML Engineer Internship",
+      "url": "https://unstop.com/internships/aiml-engineer-internship-qurovo-1758281",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "12150b5ef4e9",
+      "title": "Software Developer Internship",
+      "url": "https://unstop.com/internships/software-developer-internship-closekart-private-limited-1758368",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c04e8db3d2c9",
+      "title": "HR Coordinator Internship",
+      "url": "https://unstop.com/internships/hr-coordinator-internship-garvihaan-health-pvt-ltd-1758179",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "feab51c8c639",
+      "title": "Operations Internship",
+      "url": "https://unstop.com/internships/operations-internship-newton-school-1758102",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "973fa393e55b",
+      "title": "Business Development Executive (BDE) Internship",
+      "url": "https://unstop.com/internships/business-development-executive-bde-internship-brillnex-technologies-1757912",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e1fc554e3f34",
+      "title": "LinkedIn Marketing Internship",
+      "url": "https://unstop.com/internships/linkedin-marketing-internship-scaleupally-1757880",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8eb225ba69da",
+      "title": "Mobile and Web App Development Internship",
+      "url": "https://unstop.com/internships/mobile-and-web-app-development-internship-aca-technologies-1757789",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e6f9c0ef14cc",
+      "title": "Healthesystems — Artificial Intelligence Engineer Intern",
+      "url": "https://www.healthesystems.com/unassigned/careers-list?gh_jid=7928315003",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "22cce8271052",
+      "title": "Cotiviti — Generative AI Research Engineer Intern",
+      "url": "https://careers-cotiviti.icims.com/jobs/20183/job?mobile=true&needsRedirect=false",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1001,14 +1040,54 @@
       "action_plan": []
     },
     {
-      "key": "f14979009918",
-      "title": "Airbus — Artificial Intelligence Intern",
-      "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Filton/Artificial-Intelligence-Placement--125-months-_JR10424830",
-      "source": "internships",
-      "score": 6,
+      "key": "56a63a1c4118",
+      "title": "I'm a Principal Applied Scientist at AWS who builds AI services like Amazon Bedrock and Lex. AMA! [D]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1wjuki0/im_a_principal_applied_scientist_at_aws_who/",
+      "source": "reddit",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1bae3c158019",
+      "title": "Free Full Stack Python with Gen-AI Demo",
+      "url": "https://unstop.com/hackathons/free-full-stack-python-with-gen-ai-demo-quality-thought-info-systems-1758360",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d05e71c92cb1",
+      "title": "Q Hackathon",
+      "url": "https://unstop.com/hackathons/q-hackathon-quantum-university-roorkee-1757858",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "cf1e68a05695",
+      "title": "Python Web Scraper Challenge",
+      "url": "https://unstop.com/hackathons/python-web-scraper-challenge-adoraxe-1758087",
+      "source": "unstop",
+      "score": 7,
+      "deadline": null,
+      "tags": [
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1255,84 +1334,6 @@
       "deadline": "2026-10-01",
       "tags": [
         "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "6a7eb0d72873",
-      "title": "AfterQuery — AI/ML Research Intern",
-      "url": "https://jobs.ashbyhq.com/AfterQuery/00cd591f-6894-4259-83b6-36c999351dde/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f251fb3c1ce5",
-      "title": "Qualcomm — Machine Learning Compiler & Performance Engineering Intern - Systems",
-      "url": "https://qualcomm.eightfold.ai/careers/job/446721064018",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "124c86357968",
-      "title": "Veeam Software — Machine Learning Intern - AI",
-      "url": "https://job-boards.eu.greenhouse.io/veeamsoftware/jobs/4971207101",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a6202cfd989f",
-      "title": "Guardian Life — Summer Intern - Digital & Technology - AI & Machine Learning",
-      "url": "https://guardianlife.wd5.myworkdayjobs.com/guardian-life-careers/job/New-York/XMLNAME-2027-Guardian-Summer-Intern--Digital---Technology---AI---Machine-Learning_R000110205",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "7642f386f156",
-      "title": "Beginner's Paradise - FirstCommit",
-      "url": "https://firstcommit.devpost.com/",
-      "source": "devpost",
-      "score": 6,
-      "deadline": "2026-09-30",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5348756cb477",
-      "title": "Tesla — Computer Vision Engineer Intern - Cell Engineering",
-      "url": "https://www.tesla.com/careers/search/job/283290",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
