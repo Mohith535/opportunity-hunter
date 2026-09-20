@@ -46,3 +46,8 @@ data/inbox_summary.json
 inbox_dashboard.html
 data/inbox_tasks_done.json
 inbox_secret.txt
+
+# Google OAuth client secrets — the download keeps its long generated filename,
+# so match the prefix rather than one exact name (a *_new.txt variant slipped past once).
+client_secret*.json
+inbox_secret*.txt

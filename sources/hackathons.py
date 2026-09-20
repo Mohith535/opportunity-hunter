@@ -216,7 +216,16 @@ def fetch_mlh() -> list[Opportunity]:
 # never kills the others; ids are deduped across categories.
 UNSTOP_API = "https://unstop.com/api/public/opportunity/search-result"
 UNSTOP_CATEGORIES = ("hackathons", "internships", "competitions", "scholarships")
-UNSTOP_PER_CATEGORY = 8
+# We used to take the top 8 per category, once. Measured against the live API that was 4% of
+# open hackathons and 1.3% of open competitions — which is exactly how "Fund My Crazy" (Google
+# Gemini, Rs 1 crore, listed on Unstop) was never seen: it sat in the other 98.7%.
+#
+# The API is paginated and free, so we now read several pages. This does NOT cost more LLM
+# quota — llm_scorer caps itself at LLM_MAX_ITEMS and picks the best of what it is given, so a
+# wider net only improves what that cap gets to choose from. config.INTAKE_BUDGET is the
+# downstream guard for everything else.
+UNSTOP_PER_CATEGORY = 30
+UNSTOP_PAGES = 3
 
 
 def _elig_text(raw) -> str:
@@ -313,20 +322,34 @@ def _unstop_description(o: dict, label: str, region: str, tag_text: str) -> str:
     return " | ".join(parts)
 
 
-def _fetch_unstop_category(category: str) -> list[Opportunity]:
+def _unstop_page(category: str, page: int) -> list:
+    """One page of listings, or [] when the page is past the end."""
     resp = requests.get(
         UNSTOP_API, headers={**_HEADERS, "Accept": "application/json"},
-        params={"opportunity": category, "page": 1,
+        params={"opportunity": category, "page": page,
                 "per_page": UNSTOP_PER_CATEGORY, "oppstatus": "open"},
         timeout=config.REQUEST_TIMEOUT,
     )
     resp.raise_for_status()
     data = resp.json().get("data", {})
     listings = data.get("data") if isinstance(data, dict) else data
+    return listings or []
+
+
+def _fetch_unstop_category(category: str) -> list[Opportunity]:
+    listings: list = []
+    for page in range(1, UNSTOP_PAGES + 1):
+        try:
+            batch = _unstop_page(category, page)
+        except requests.RequestException:
+            break  # keep whatever earlier pages gave us; a partial read beats none
+        if not batch:
+            break  # ran off the end of this category
+        listings.extend(batch)
 
     label = category.rstrip("s")  # hackathons -> hackathon, internships -> internship
     items: list[Opportunity] = []
-    for o in listings or []:
+    for o in listings:
         seo = o.get("seo_url") or ""
         url = seo if seo.startswith("http") else f"https://unstop.com/{o.get('public_url', '')}"
         region = o.get("region", "")

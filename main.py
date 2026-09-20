@@ -23,7 +23,7 @@ import daily_brief
 import store
 import verifier
 import config
-from filters import policy
+from filters import focus, policy
 from filters.relevance import is_relevant
 from filters.scorer import score_item
 from notifiers import telegram
@@ -258,6 +258,38 @@ def _notify(new_items, test):
         telegram.send_telegram(f"<b>{_tg_escape(stat_line)}</b>\n\n{text}", buttons=buttons)
 
 
+def _fill_budget(items: list, budget: int) -> list:
+    """Choose which `budget` items get the expensive treatment, WITHOUT letting one category
+    swallow the lot.
+
+    Ranking purely by score looked correct until we widened intake and watched it happen:
+    Unstop alone has ~594 open internships, so a straight top-60 came back as sixty sales and
+    marketing internships, and the two hackathons that mattered were 61st and 74th. That is
+    precisely the "I am drowning in internships and missing the good stuff" failure.
+
+    So the budget is shared. Each kind is sorted by score and we take one from each in turn,
+    strongest first. A category with depth still wins more slots overall — it just cannot take
+    every slot before another category gets its first."""
+    by_kind: dict[str, list] = {}
+    for it in items:
+        by_kind.setdefault(focus.kind_of(it), []).append(it)
+    for bucket in by_kind.values():
+        bucket.sort(key=lambda it: it.score, reverse=True)
+
+    # Round-robin: kinds offering the strongest item go first, so quality still leads.
+    queues = sorted(by_kind.values(), key=lambda b: b[0].score, reverse=True)
+    chosen: list = []
+    while len(chosen) < budget and any(queues):
+        for q in queues:
+            if not q:
+                continue
+            chosen.append(q.pop(0))
+            if len(chosen) >= budget:
+                break
+    chosen.sort(key=lambda it: it.score, reverse=True)
+    return chosen
+
+
 def run(source_names=None, test=False):
     """Execute one full hunt."""
     mode = "TEST (dry run)" if test else "LIVE"
@@ -277,6 +309,13 @@ def run(source_names=None, test=False):
     for it in relevant:
         it.score = score_item(it)
 
+    # 3a. Focus — "what am I hunting this week?". Re-ranks (and in "only" mode filters)
+    # the pool around the active kinds. No focus set = no-op. Applied BEFORE the intake
+    # budget so that when he says "hackathons", hackathons are what fill the budget.
+    relevant = focus.apply(relevant)
+    if focus.active():
+        log(f"[focus] {focus.describe()} — {len(relevant)} items after focus")
+
     # 4. Dedup (skip already-seen unless it qualifies to resurface)
     seen = store.load_seen()
     new_items = [
@@ -284,11 +323,23 @@ def run(source_names=None, test=False):
         if not store.is_seen(seen, it) or store.should_resurface(it)
     ]
 
-    # 4a. Verify aggregator items — drop clearly-dead application links before we
+    # 4a. INTAKE FUNNEL. Sources now fetch wide (hundreds of candidates), so the cheap
+    # local rule score decides who pays the expensive costs below. Items under the line
+    # are dropped WITHOUT being marked seen, so they return tomorrow re-ranked — closer
+    # deadlines climb on their own. See config.INTAKE_BUDGET.
+    budget = getattr(config, "INTAKE_BUDGET", 60)
+    if len(new_items) > budget:
+        before = len(new_items)
+        new_items = _fill_budget(new_items, budget)
+        log(f"[intake] {before} candidates -> kept {len(new_items)} across "
+            f"{len({focus.kind_of(i) for i in new_items})} kinds "
+            f"(the rest are not marked seen and return tomorrow)")
+
+    # 4b. Verify aggregator items — drop clearly-dead application links before we
     # spend LLM calls on them (trusted sources pass straight through).
     new_items = verifier.filter_dead(new_items)
 
-    # 4b. LLM scoring (Phase 2) — the "filter by Mohith" brain. Only the fresh,
+    # 4c. LLM scoring (Phase 2) — the "filter by Mohith" brain. Only the fresh,
     # deduped items are scored (quota-frugal); falls back to rule scores if the
     # LLM is unavailable. effective_score() then prefers ai_score automatically.
     if config.USE_LLM_SCORING and new_items:
@@ -299,7 +350,7 @@ def run(source_names=None, test=False):
         log(f"[profile] scoring against Mohith — layers: {', '.join(prof.sources)}")
         llm_scorer.score_items(new_items, prof)
 
-    # 4c. Offload-aware down-weighting — respect TaskFlow's ophunter_read permission
+    # 4d. Offload-aware down-weighting — respect TaskFlow's ophunter_read permission
     # and de-prioritise categories the user repeatedly drops/offloads. No-op when the
     # permission is off, tasks.json is unreadable, or no repeated pattern exists.
     if new_items:
@@ -409,7 +460,23 @@ def main():
     parser.add_argument("--recap", action="store_true", help="re-show last run's brief")
     parser.add_argument("--sources", type=str, default=None,
                         help=f"comma-separated subset of: {','.join(available_sources())}")
+    # Nova calls `main.py --now [--test] [--sources ...]`; these are additive, so that
+    # contract is untouched (see CLAUDE.md 4.1).
+    parser.add_argument("--focus", type=str, default=None,
+                        help=f"what to hunt this week: {','.join(focus.KINDS)}")
+    parser.add_argument("--focus-only", action="store_true",
+                        help="with --focus: hide off-topic items (anything scoring "
+                             f"{focus.KEEP_ANYWAY}+ is still shown)")
     args = parser.parse_args()
+
+    # Set focus before run() reads it. A CLI flag beats the .env default for this run only.
+    if args.focus:
+        config.FOCUS = [f.strip().lower() for f in args.focus.split(",") if f.strip()]
+        unknown = [f for f in config.FOCUS if f not in focus.KINDS]
+        if unknown:
+            parser.error(f"unknown focus {unknown} — pick from: {', '.join(focus.KINDS)}")
+    if args.focus_only:
+        config.FOCUS_MODE = "only"
 
     source_names = [s.strip() for s in args.sources.split(",")] if args.sources else None
 

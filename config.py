@@ -7,6 +7,7 @@ hardcoded), so this file is safe to commit.
 """
 
 import os
+import re
 from pathlib import Path
 
 # Load .env if python-dotenv is installed; silently skip if it isn't.
@@ -205,6 +206,32 @@ def active_llm_providers() -> list:
 LLM_TIMEOUT = 60       # seconds per LLM call (longer than the 10s web default)
 LLM_BATCH_SIZE = 8     # opportunities scored per call (quota-frugal)
 LLM_MAX_ITEMS = 40     # hard cap on items scored per run (protects daily quota)
+
+
+# ─── INTAKE FUNNEL ───────────────────────────────────────────────────
+# We used to fetch shallow because fetching wide looked expensive. It is not: the
+# LLM is capped at LLM_MAX_ITEMS and already picks the best of what it is handed
+# (llm_scorer sorts by rule score first). So the cost of a wider net is HTTP, not
+# quota — and a top-40 chosen out of 300 candidates beats a top-40 chosen out of 40.
+#
+# INTAKE_BUDGET is where the funnel narrows: after the cheap local rule scoring, only
+# this many items pay the expensive costs (dead-link verification, LLM scoring,
+# history). Everything below the line is simply NOT marked seen, so it comes back
+# tomorrow — a competition ranked 80th today can rank 3rd next week as its deadline
+# closes. Nothing is lost; it is deferred.
+INTAKE_BUDGET = int(os.environ.get("OH_INTAKE_BUDGET", "60"))
+
+
+# ─── FOCUS — "what am I hunting this week?" ──────────────────────────
+# Empty = hunt everything (the original behaviour). Otherwise a list of kinds from
+# filters.focus.KINDS: hackathon, research, internship, fellowship, grant, startup,
+# scholarship, contest, ambassador, learning.
+#   FOCUS_MODE "boost" — focus kinds rank higher, nothing is hidden.
+#   FOCUS_MODE "only"  — off-topic kinds are dropped, EXCEPT anything already
+#                        scoring >= focus.KEEP_ANYWAY, which is shown regardless.
+# Override per run with `--focus hackathon,fellowship [--focus-only]`.
+FOCUS = [f for f in re.split(r"[,\s]+", os.environ.get("OH_FOCUS", "")) if f]
+FOCUS_MODE = os.environ.get("OH_FOCUS_MODE", "boost")
 
 # Dimension weights (sum = 1.0). The model returns per-dimension scores; the final
 # 0-10 is recomputed HERE so the weighting stays under our control, not the model's.

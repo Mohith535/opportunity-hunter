@@ -15,7 +15,13 @@
       "url": "https://summerofcode.withgoogle.com/",
       "deadline": null,
       "window": "Org list ~Feb, applications ~Mar-Apr",
-      "tags": ["program", "internship", "open source", "google", "remote"],
+      "tags": [
+        "program",
+        "internship",
+        "open source",
+        "google",
+        "remote"
+      ],
       "description": "Global remote open-source program with a stipend. Contribute to a major org over the summer. Elite resume credential for an AI/ML builder. Applications typically open March-April; org list lands in February."
     },
     {
@@ -25,7 +31,13 @@
       "url": "https://www.outreachy.org/",
       "deadline": null,
       "window": "Two rounds a year (~Feb and ~Aug)",
-      "tags": ["program", "internship", "open source", "remote", "stipend"],
+      "tags": [
+        "program",
+        "internship",
+        "open source",
+        "remote",
+        "stipend"
+      ],
       "description": "Paid (~$7000), fully remote, 3-month open-source internships. Two cohorts per year (around February and August). Strong for international exposure and a real FOSS track record."
     },
     {
@@ -35,7 +47,13 @@
       "url": "https://fellowship.mlh.io/",
       "deadline": null,
       "window": "Multiple batches per year (Spring/Summer/Fall)",
-      "tags": ["program", "fellowship", "open source", "remote", "mlh"],
+      "tags": [
+        "program",
+        "fellowship",
+        "open source",
+        "remote",
+        "mlh"
+      ],
       "description": "12-week remote software-engineering / open-source fellowship with a stipend, run in batches across the year. Project-based, portfolio-building, strong peer network."
     },
     {
@@ -45,7 +63,13 @@
       "url": "https://mvp.microsoft.com/studentambassadors",
       "deadline": null,
       "window": "Rolling — apply anytime",
-      "tags": ["program", "student ambassador", "microsoft", "cloud", "global"],
+      "tags": [
+        "program",
+        "student ambassador",
+        "microsoft",
+        "cloud",
+        "global"
+      ],
       "description": "Rolling global student program: build community, earn Microsoft/Azure credentials and swag, climb tiers (Beta -> Gold). Direct Microsoft brand signal and a path into the Microsoft ecosystem."
     },
     {
@@ -55,7 +79,13 @@
       "url": "https://education.github.com/experts",
       "deadline": null,
       "window": "Rolling — apply anytime",
-      "tags": ["program", "github", "leadership", "open source", "global"],
+      "tags": [
+        "program",
+        "github",
+        "leadership",
+        "open source",
+        "global"
+      ],
       "description": "Rolling program training students to build technical communities on campus. GitHub credential, public speaking + leadership development, and a global network."
     },
     {
@@ -65,7 +95,13 @@
       "url": "https://www.nvidia.com/en-us/training/",
       "deadline": null,
       "window": "Self-paced; free credits via events (GTC) and Ambassador program",
-      "tags": ["certification", "deep learning", "nvidia", "ai", "free"],
+      "tags": [
+        "certification",
+        "deep learning",
+        "nvidia",
+        "ai",
+        "free"
+      ],
       "description": "Hands-on, certificate-bearing courses in deep learning, CUDA, LLMs and generative AI. Free seats frequently via GTC and the University Ambassador program. Recognized NVIDIA certificate."
     },
     {
@@ -75,7 +111,13 @@
       "url": "https://www.kaggle.com/competitions",
       "deadline": null,
       "window": "Always-on — new competitions launch continuously",
-      "tags": ["competition", "machine learning", "kaggle", "google", "data science"],
+      "tags": [
+        "competition",
+        "machine learning",
+        "kaggle",
+        "google",
+        "data science"
+      ],
       "description": "Ongoing ML competitions (incl. Google-partnered ones). Real leaderboard results, prizes, and a portfolio that AI employers recognize. Pick an active comp that matches your stack."
     },
     {
@@ -85,7 +127,13 @@
       "url": "https://developers.google.com/community/gdg",
       "deadline": null,
       "window": "Seasonal cohorts; APAC editions via GDG",
-      "tags": ["program", "generative ai", "google", "gemini", "apac"],
+      "tags": [
+        "program",
+        "generative ai",
+        "google",
+        "gemini",
+        "apac"
+      ],
       "description": "Google's generative-AI upskilling + hackathon programs (Gemini, Vertex AI), often run in APAC through Google Developer Groups. Hands-on GenAI building with a Google credential."
     },
     {
@@ -95,7 +143,13 @@
       "url": "https://learn.microsoft.com/en-us/training/",
       "deadline": null,
       "window": "Periodic time-boxed challenges",
-      "tags": ["certification", "microsoft", "ai", "azure", "free"],
+      "tags": [
+        "certification",
+        "microsoft",
+        "ai",
+        "azure",
+        "free"
+      ],
       "description": "Time-boxed Microsoft Learn challenges and AI skill events that award badges and discounted/free certification vouchers. Fast, free, resume-relevant AI/Azure credentials."
     },
     {
@@ -105,7 +159,12 @@
       "url": "https://skillsbuild.org/",
       "deadline": null,
       "window": "Self-paced; periodic cohorts/hackathons",
-      "tags": ["certification", "ibm", "ai", "free"],
+      "tags": [
+        "certification",
+        "ibm",
+        "ai",
+        "free"
+      ],
       "description": "Free IBM courses and digital credentials in AI, data, and cloud, with periodic student cohorts and hackathons. Recognized IBM badges at zero cost."
     },
     {
@@ -115,7 +174,13 @@
       "url": "https://huggingface.co/learn",
       "deadline": null,
       "window": "Always-on courses; periodic community events",
-      "tags": ["learning", "llm", "open source", "hugging face", "ai"],
+      "tags": [
+        "learning",
+        "llm",
+        "open source",
+        "hugging face",
+        "ai"
+      ],
       "description": "Free, high-quality courses (LLMs, agents, deep RL) plus frequent community sprints and events. The center of gravity for open-source AI — directly aligned with AI-agent/LLM work."
     },
     {
@@ -125,7 +190,12 @@
       "url": "https://aws.amazon.com/education/awseducate/",
       "deadline": null,
       "window": "Rolling enrollment; periodic challenges (DeepRacer)",
-      "tags": ["cloud", "aws", "certification", "free"],
+      "tags": [
+        "cloud",
+        "aws",
+        "certification",
+        "free"
+      ],
       "description": "Free AWS cloud + AI learning, labs, and credits, plus contests like DeepRacer Student. Cloud credentials that pair well with AI engineering and backend skills."
     },
     {
@@ -135,7 +205,13 @@
       "url": "https://www.anthropic.com/",
       "deadline": null,
       "window": "Periodic — watch their site/socials",
-      "tags": ["program", "llm", "anthropic", "ai safety", "research"],
+      "tags": [
+        "program",
+        "llm",
+        "anthropic",
+        "ai safety",
+        "research"
+      ],
       "description": "Anthropic's developer/builder programs, hackathons, and research/fellowship opportunities around Claude and AI safety. Frontier-lab credential; highly aligned with AI-agent ambitions."
     },
     {
@@ -145,7 +221,12 @@
       "url": "https://buildyourfuture.withgoogle.com/programs/step",
       "deadline": null,
       "window": "Applications typically open ~Oct-Dec",
-      "tags": ["internship", "google", "students", "software engineering"],
+      "tags": [
+        "internship",
+        "google",
+        "students",
+        "software engineering"
+      ],
       "description": "Google's software-engineering internship for 1st/2nd-year students — paid, mentored, and a direct line into Google. Applications usually open in the autumn for the following summer."
     },
     {
@@ -155,7 +236,14 @@
       "url": "https://www.amazon.science/academic-engagements/amazon-ml-summer-school",
       "deadline": null,
       "window": "Registration ~May-Jun, selection test ~Jun-Jul",
-      "tags": ["program", "machine learning", "amazon", "india", "free", "certification"],
+      "tags": [
+        "program",
+        "machine learning",
+        "amazon",
+        "india",
+        "free",
+        "certification"
+      ],
       "description": "Free, intensive ML training taught by Amazon scientists for B.Tech/M.Tech/PhD students at recognised Indian institutions (graduating 2026/2027). No prior ML needed; selection via SOP + online assessment. Amazon credential + SWAG, and a path toward Amazon roles."
     },
     {
@@ -165,7 +253,13 @@
       "url": "https://unstop.com/competitions?oppstatus=open&searchTerm=Flipkart%20GRiD",
       "deadline": null,
       "window": "Typically opens ~Aug-Oct",
-      "tags": ["competition", "hackathon", "flipkart", "india", "internship"],
+      "tags": [
+        "competition",
+        "hackathon",
+        "flipkart",
+        "india",
+        "internship"
+      ],
       "description": "Flagship national engineering challenge (software/ML/robotics tracks) with a high-stipend internship and strong full-time CTC for winners. One of India's most prestigious campus competitions — elite resume signal."
     },
     {
@@ -175,7 +269,12 @@
       "url": "https://unstop.com/hackathons?oppstatus=open&searchTerm=Amazon%20HackOn",
       "deadline": null,
       "window": "Seasonal — usually early year",
-      "tags": ["hackathon", "amazon", "india", "machine learning"],
+      "tags": [
+        "hackathon",
+        "amazon",
+        "india",
+        "machine learning"
+      ],
       "description": "Amazon's India machine-learning / software hackathon with cash prizes and interview fast-tracks. Strong AI-themed problem statements and a direct line into Amazon's hiring funnel."
     },
     {
@@ -185,7 +284,12 @@
       "url": "https://unstop.com/hackathons?oppstatus=open&searchTerm=Walmart",
       "deadline": null,
       "window": "Seasonal",
-      "tags": ["hackathon", "walmart", "india", "software engineering"],
+      "tags": [
+        "hackathon",
+        "walmart",
+        "india",
+        "software engineering"
+      ],
       "description": "Walmart Global Tech's India hackathons (Sparkathon; CodeHers for women) with real product problems, cash prizes, and internship/PPO opportunities."
     },
     {
@@ -195,7 +299,13 @@
       "url": "https://imaginecup.microsoft.com/",
       "deadline": null,
       "window": "Annual cycle, rounds through the academic year",
-      "tags": ["competition", "microsoft", "ai", "startup", "global"],
+      "tags": [
+        "competition",
+        "microsoft",
+        "ai",
+        "startup",
+        "global"
+      ],
       "description": "Microsoft's global student startup/tech competition with a strong AI track, Azure credits, mentorship, and a big prize. Perfect for a builder-with-startup-mindset — turn a project into a venture."
     },
     {
@@ -205,7 +315,12 @@
       "url": "https://careers.microsoft.com/students/",
       "deadline": null,
       "window": "When offered (watch Microsoft India student careers)",
-      "tags": ["internship", "program", "microsoft", "india"],
+      "tags": [
+        "internship",
+        "program",
+        "microsoft",
+        "india"
+      ],
       "description": "Microsoft India's mentorship-driven student engagement and internship pipeline. When a cohort is offered it's a direct mentored route into Microsoft; otherwise track the student careers page for openings."
     },
     {
@@ -215,7 +330,13 @@
       "url": "https://research.adobe.com/careers/",
       "deadline": null,
       "window": "Rolling; research internships seasonal",
-      "tags": ["internship", "research", "adobe", "india", "ai"],
+      "tags": [
+        "internship",
+        "research",
+        "adobe",
+        "india",
+        "ai"
+      ],
       "description": "Adobe India research internships and the Adobe India Hackathon — applied AI/ML on real creative-tech problems, strong mentorship, and a recognised brand for a portfolio."
     },
     {
@@ -225,7 +346,13 @@
       "url": "https://www.samsung.com/in/aboutsamsung/careers/prism/",
       "deadline": null,
       "window": "Rolling worklets through the year",
-      "tags": ["research", "program", "samsung", "india", "ai"],
+      "tags": [
+        "research",
+        "program",
+        "samsung",
+        "india",
+        "ai"
+      ],
       "description": "Samsung's Research Institute India student R&D program: real AI/ML/systems 'worklets' mentored by Samsung engineers, a stipend, certificate, and patent/publication potential — remote-friendly and resume-strong."
     },
     {
@@ -235,7 +362,13 @@
       "url": "https://lfx.linuxfoundation.org/tools/mentorship/",
       "deadline": null,
       "window": "Three cohorts a year (Spring/Summer/Fall)",
-      "tags": ["program", "fellowship", "open source", "remote", "stipend"],
+      "tags": [
+        "program",
+        "fellowship",
+        "open source",
+        "remote",
+        "stipend"
+      ],
       "description": "Paid, remote open-source mentorships across major CNCF/AI projects (Kubernetes, PyTorch, etc.). Like GSoC/Outreachy but year-round — elite OSS track record and a global maintainer network."
     },
     {
@@ -245,7 +378,13 @@
       "url": "https://openai.com/careers/",
       "deadline": null,
       "window": "Periodic — watch openai.com/careers + research",
-      "tags": ["program", "residency", "llm", "openai", "research"],
+      "tags": [
+        "program",
+        "residency",
+        "llm",
+        "openai",
+        "research"
+      ],
       "description": "OpenAI's Residency and research/engineering programs — a frontier-lab pathway for exceptional builders pivoting into AI research. Rare and elite; worth tracking even if a stretch today."
     },
     {
@@ -255,8 +394,275 @@
       "url": "https://www.metacareers.com/students",
       "deadline": null,
       "window": "Internship cycles ~autumn for next year",
-      "tags": ["internship", "research", "meta", "ai", "global"],
+      "tags": [
+        "internship",
+        "research",
+        "meta",
+        "ai",
+        "global"
+      ],
       "description": "Meta's student AI/ML research and engineering internships and university programs (incl. PyTorch ecosystem). Top-tier lab exposure and a major resume signal."
+    },
+    {
+      "id": "claude-campus-ambassador",
+      "title": "Claude Campus Ambassador Program",
+      "org": "Anthropic",
+      "url": "https://claude.com/programs/campus",
+      "deadline": null,
+      "window": "Applications ~Sep (2026 round: Sep 1-12)",
+      "round_closed": "2026-09-12",
+      "tags": [
+        "program",
+        "ambassador",
+        "anthropic",
+        "llm",
+        "paid",
+        "stipend"
+      ],
+      "description": "USD 3,600 stipend + Anthropic API credits + guest speakers, for a full school year (Sep-Jun). Tracks for undergrad, grad and PhD/postdoc. Open worldwide, 18+, needs work authorisation in your country of study. Reviewed on a rolling basis, so apply on day one."
+    },
+    {
+      "id": "startup-india-seed-fund",
+      "title": "Startup India Seed Fund Scheme (SISFS)",
+      "org": "DPIIT, Govt of India",
+      "url": "https://seedfund.startupindia.gov.in/",
+      "deadline": null,
+      "window": "Rolling - incubator-led cycles",
+      "tags": [
+        "grant",
+        "government",
+        "funding",
+        "startup",
+        "india"
+      ],
+      "description": "Up to Rs 20 lakh for proof-of-concept/prototype and up to Rs 50 lakh for commercialisation, disbursed through approved incubators. DPIIT-recognised startups under 2 years old."
+    },
+    {
+      "id": "nidhi-prayas",
+      "title": "NIDHI PRAYAS - Prototype Grant",
+      "org": "DST, Govt of India",
+      "url": "https://nidhi-prayas.org/",
+      "deadline": null,
+      "window": "Rolling - centre-wise calls",
+      "tags": [
+        "grant",
+        "government",
+        "funding",
+        "prototype",
+        "india",
+        "hardware"
+      ],
+      "description": "Up to Rs 10 lakh for an individual innovator to build a prototype - idea to prototype, no company required at entry. Run through PRAYAS centres across India."
+    },
+    {
+      "id": "birac-big",
+      "title": "BIRAC BIG (Biotechnology Ignition Grant)",
+      "org": "BIRAC, Govt of India",
+      "url": "https://birac.nic.in/big.php",
+      "deadline": null,
+      "window": "Two calls a year, ~Jan and ~Jul",
+      "tags": [
+        "grant",
+        "government",
+        "funding",
+        "biotech",
+        "india",
+        "deeptech"
+      ],
+      "description": "Up to Rs 50 lakh over 18 months for early-stage ideas with a biotech/health/AI-for-bio angle. Open to individual entrepreneurs and startups."
+    },
+    {
+      "id": "z-fellows",
+      "title": "Z Fellows",
+      "org": "Z Fellows",
+      "url": "https://www.zfellows.com/",
+      "deadline": null,
+      "window": "Rolling - cohorts roughly every quarter",
+      "tags": [
+        "fellowship",
+        "paid",
+        "startup",
+        "funding",
+        "remote"
+      ],
+      "description": "USD 10,000 for a one-week fellowship, open to young builders (students welcome). Investor network access; no company required to apply."
+    },
+    {
+      "id": "neo-scholars",
+      "title": "Neo Scholars",
+      "org": "Neo",
+      "url": "https://neo.com/scholars",
+      "deadline": null,
+      "window": "Applications ~Jan-Mar",
+      "tags": [
+        "fellowship",
+        "paid",
+        "students",
+        "cs",
+        "funding"
+      ],
+      "description": "USD 25,000 grant plus mentorship from senior engineers and founders, for exceptional CS students. Explicitly aimed at undergraduates."
+    },
+    {
+      "id": "thiel-fellowship",
+      "title": "Thiel Fellowship",
+      "org": "Thiel Foundation",
+      "url": "https://thielfellowship.org/",
+      "deadline": null,
+      "window": "Applications ~Dec-Jan",
+      "tags": [
+        "fellowship",
+        "paid",
+        "funding",
+        "startup",
+        "under-23"
+      ],
+      "description": "USD 200,000 over two years to build something instead of finishing a degree. Under 23. Extremely selective - worth tracking as a signal even if you never apply."
+    },
+    {
+      "id": "kp-fellows",
+      "title": "Kleiner Perkins Fellows",
+      "org": "Kleiner Perkins",
+      "url": "https://www.kleinerperkins.com/fellows/",
+      "deadline": null,
+      "window": "Applications ~Sep-Nov",
+      "tags": [
+        "fellowship",
+        "paid",
+        "internship",
+        "engineering",
+        "design"
+      ],
+      "description": "Paid summer fellowship placing students at top portfolio startups as engineering, design or product fellows, plus a mentorship programme."
+    },
+    {
+      "id": "contrary-fellowship",
+      "title": "Contrary Fellowship",
+      "org": "Contrary",
+      "url": "https://contrary.com/",
+      "deadline": null,
+      "window": "Rolling",
+      "tags": [
+        "fellowship",
+        "students",
+        "venture",
+        "community"
+      ],
+      "description": "Talent community for exceptional students and young builders; access to funding, recruiting and a strong peer network."
+    },
+    {
+      "id": "emergent-ventures",
+      "title": "Emergent Ventures",
+      "org": "Mercatus Center",
+      "url": "https://www.mercatus.org/emergent-ventures",
+      "deadline": null,
+      "window": "Rolling - applications always open",
+      "tags": [
+        "grant",
+        "fellowship",
+        "funding",
+        "research",
+        "india"
+      ],
+      "description": "Small fast grants (often USD 5k-50k) for high-upside projects from individuals, including an India-specific track. One short application, no institution needed."
+    },
+    {
+      "id": "y-combinator",
+      "title": "Y Combinator",
+      "org": "Y Combinator",
+      "url": "https://www.ycombinator.com/apply",
+      "deadline": null,
+      "window": "Two batches a year, deadlines ~Apr and ~Sep",
+      "tags": [
+        "startup",
+        "accelerator",
+        "funding",
+        "venture"
+      ],
+      "description": "USD 500,000 standard deal, three-month batch. Solo founders and student founders accepted; applying early with a working demo is the standard advice."
+    },
+    {
+      "id": "antler-india",
+      "title": "Antler India Residency",
+      "org": "Antler",
+      "url": "https://www.antler.co/location/india",
+      "deadline": null,
+      "window": "Cohorts ~2-3x a year",
+      "tags": [
+        "startup",
+        "accelerator",
+        "funding",
+        "india",
+        "residency"
+      ],
+      "description": "Day-zero programme - join without a co-founder or an idea, get a stipend during the residency and pre-seed investment if you are selected at the end."
+    },
+    {
+      "id": "buildspace",
+      "title": "buildspace",
+      "org": "buildspace",
+      "url": "https://buildspace.so/",
+      "deadline": null,
+      "window": "Seasons - roughly 2-3 a year",
+      "tags": [
+        "startup",
+        "learning",
+        "community",
+        "building",
+        "remote"
+      ],
+      "description": "Free cohort-based seasons where you ship a project in 6 weeks alongside thousands of others. Demo day, funding and network are the real payoff."
+    },
+    {
+      "id": "fund-my-crazy",
+      "title": "Fund My Crazy (Google Gemini)",
+      "org": "Google",
+      "url": "https://fundmycrazy.com/",
+      "deadline": null,
+      "window": "Applications ~Aug-Sep (2026 round closed Sep 15)",
+      "round_closed": "2026-09-15",
+      "tags": [
+        "grant",
+        "funding",
+        "competition",
+        "google",
+        "gemini",
+        "india",
+        "students"
+      ],
+      "description": "Share of Rs 1 crore across 10 winners for reimagining one part of your city. Open to any college student in India, solo or teams of 3. No company, prototype, co-founder or code required - one idea, four short answers, one Gemini-made image. You keep your IP."
+    },
+    {
+      "id": "gdg-on-campus",
+      "title": "Google Developer Groups on Campus (Lead)",
+      "org": "Google",
+      "url": "https://developers.google.com/community",
+      "deadline": null,
+      "window": "Lead applications ~Apr-Jun",
+      "tags": [
+        "ambassador",
+        "program",
+        "google",
+        "community",
+        "students"
+      ],
+      "description": "Run a Google developer community at your college. Google credentials, event support and direct access to Google Developer Experts; a strong resume line for a CSE student."
+    },
+    {
+      "id": "hack-club",
+      "title": "Hack Club (grants, YSWS, events)",
+      "org": "Hack Club",
+      "url": "https://hackclub.com/",
+      "deadline": null,
+      "window": "Rolling - frequent You-Ship-We-Ship offers",
+      "tags": [
+        "grant",
+        "community",
+        "hardware",
+        "students",
+        "funding"
+      ],
+      "description": "Runs a steady stream of You-Ship-We-Ship programmes: build and ship something, get hardware, travel or cash. Genuinely open to students worldwide and low-friction to enter."
     }
   ]
 }

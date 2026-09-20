@@ -108,17 +108,26 @@ def fetch() -> list[Opportunity]:
         desc = (p.get("description") or "").strip()
 
         # ── Deadline Radar ───────────────────────────────────────────
+        # `round_closed` (optional ISO date) is how a program says "this year's round is
+        # already over". Without it the radar would cheerfully announce WINDOW OPEN with a
+        # synthetic end-of-month deadline for a program that shut a week ago — which is the
+        # exact kind of false urgency that teaches you to ignore your own alerts.
         months = _window_months(window or "")
+        closed = _parse_deadline(p.get("round_closed"))
+        this_round_over = bool(closed and closed <= today and closed.year == today.year)
         status = ""
         if not deadline and months:
-            if today.month in months:
+            if today.month in months and not this_round_over:
                 status = "WINDOW OPEN"
                 deadline = _end_of_month(today)        # synthetic urgency
                 native_id = f"{native_id}-{today.year}"  # re-surface once per year
                 tags.append("in-season")
-            elif next_month in months:
+            elif next_month in months and not this_round_over:
                 status = "OPENS SOON"
                 tags.append("opening-soon")
+            elif this_round_over:
+                status = f"CLOSED {closed.isoformat()} — next round expected {closed.year + 1}"
+                tags.append("round-closed")
 
         if window:
             desc = f"{desc} (Typical window: {window})".strip()
