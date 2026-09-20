@@ -10,6 +10,8 @@ with a real, parseable deadline, which feeds the deadline-urgency scoring and
 makes items genuinely dump-worthy (TaskFlow path).
 """
 
+import html
+import json
 import re
 from datetime import date, datetime
 from urllib.parse import unquote
@@ -33,7 +35,9 @@ _HEADERS = {
 
 
 def _strip(text: str) -> str:
-    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", str(text or ""))).strip()
+    # unescape entities too - stripping tags but leaving "&ndash;" in the text is half a job,
+    # and that text goes straight to the ranker.
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", str(text or "")))).strip()
 
 
 def _parse_deadline(period: str):
@@ -215,6 +219,100 @@ UNSTOP_CATEGORIES = ("hackathons", "internships", "competitions", "scholarships"
 UNSTOP_PER_CATEGORY = 8
 
 
+def _elig_text(raw) -> str:
+    """Unstop returns eligibility as a JSON blob. Dumping it raw wastes tokens and reads like
+    noise; parsed, it is one of the most useful signals we have - it is what lets the scorer's
+    eligibility gate correctly reject school-only or PhD-only listings."""
+    if not raw:
+        return ""
+    data = raw
+    if isinstance(raw, str):
+        try:
+            data = json.loads(raw)
+        except (ValueError, TypeError):
+            return _strip(raw)[:200]
+    if not isinstance(data, dict):
+        return _strip(str(data))[:200]
+
+    bits = []
+    for key in ("sector", "others", "experience"):
+        vals = [str(v) for v in (data.get(key) or []) if v and str(v) != "all"]
+        if vals:
+            bits.append(", ".join(vals[:4]))
+    courses, years = set(), set()
+    for group in ("engineering", "bSchools", "arts", "medicine", "law"):
+        for entry in data.get(group) or []:
+            if not isinstance(entry, dict):
+                continue
+            if entry.get("course"):
+                courses.add(str(entry["course"]))
+            for y in entry.get("passoutYear") or []:
+                if str(y) != "all":
+                    years.add(str(y))
+    if courses:
+        bits.append("courses: " + ", ".join(sorted(courses)[:6]))
+    if years:
+        bits.append("passout: " + ", ".join(sorted(years)[:6]))
+    return "; ".join(bits)[:220]
+
+
+def _unstop_deadline(o: dict):
+    """The registration deadline Unstop hands us in every listing. The old parser ignored it,
+    which is why only 9% of the whole corpus ever had a deadline to score against."""
+    reg = o.get("regnRequirements") or {}
+    for raw in (reg.get("end_regn_dt"), o.get("end_date")):
+        if not raw:
+            continue
+        try:
+            return datetime.fromisoformat(str(raw)).date()
+        except (ValueError, TypeError):
+            continue
+    return None
+
+
+def _unstop_description(o: dict, label: str, region: str, tag_text: str) -> str:
+    """A real description built from fields the API already returns: event details, prize money,
+    eligibility and team size. The old code synthesised '<label> | <region> | India | tags: ' -
+    about 34 characters - so the ranker was effectively judging on the title alone."""
+    parts = [f"{label} | {region or 'India'}"]
+    if tag_text:
+        parts.append(f"tags: {tag_text}")
+
+    reg = o.get("regnRequirements") or {}
+    elig = _elig_text(reg.get("eligibility"))
+    if elig:
+        parts.append(f"Eligibility: {elig[:200]}")
+    lo, hi = reg.get("min_team_size"), reg.get("max_team_size")
+    if lo or hi:
+        parts.append(f"Team size: {lo or 1}-{hi or lo}")
+
+    cash = 0
+    for p in o.get("prizes") or []:
+        try:
+            cash = max(cash, int(p.get("cash") or 0))
+        except (TypeError, ValueError):
+            continue
+    if cash:
+        # Also feeds the rule scorer's "prize/stipend mentioned" point, which could never fire
+        # before because the synthetic description contained no money at all.
+        parts.append(f"Prize: cash {cash}")
+
+    skills = [s.get("name", "") if isinstance(s, dict) else str(s)
+              for s in (o.get("required_skills") or [])]
+    skills = [s for s in skills if s]
+    if skills:
+        parts.append("Skills: " + ", ".join(skills[:8]))
+
+    org = (o.get("organisation") or {}).get("name") if isinstance(o.get("organisation"), dict) else None
+    if org:
+        parts.append(f"By {org}")
+
+    details = _strip(o.get("details") or "")
+    if details:
+        parts.append(details[:700])
+    return " | ".join(parts)
+
+
 def _fetch_unstop_category(category: str) -> list[Opportunity]:
     resp = requests.get(
         UNSTOP_API, headers={**_HEADERS, "Accept": "application/json"},
@@ -239,10 +337,12 @@ def _fetch_unstop_category(category: str) -> list[Opportunity]:
                 title=_strip(o.get("title")),
                 url=url,
                 source="unstop",
-                description=f"{label} | {region} | India | tags: {tag_text}",
+                description=_unstop_description(o, label, region, tag_text),
+                deadline=_unstop_deadline(o),
                 native_id=str(o.get("id", "")),
                 tags=[label],
-                raw={"status": o.get("status"), "region": region, "category": category},
+                raw={"status": o.get("status"), "region": region, "category": category,
+                     "registrations": o.get("registerCount"), "views": o.get("viewsCount")},
             )
         )
     return items
