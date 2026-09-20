@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19",
+  "updated_at": "2026-09-20",
   "items": [
     {
       "key": "6f4b2d0173c3",
@@ -82,76 +82,6 @@
         "Apply via portal/referral (2hrs)",
         "Prep LeetCode/System Design (Ongoing)"
       ]
-    },
-    {
-      "key": "2301e8e94527",
-      "title": "2akouwu/reverify — ★1,023",
-      "url": "https://github.com/2akouwu/reverify",
-      "source": "github",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "github",
-        "learning"
-      ],
-      "ai_summary": "Directly hits AI Agents, MCP, and anti-hallucination. Pure builder value.",
-      "action_plan": [
-        "Star repo and read README (5m)",
-        "Run the CLI/MCP server locally (1h)",
-        "Contribute a fix or feature (3h)"
-      ]
-    },
-    {
-      "key": "264488527c3c",
-      "title": "Content Creation / Writer Internship",
-      "url": "https://unstop.com/internships/content-creation-writer-internship-quotethought-1750846",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f027377a782f",
-      "title": "Marketing Internship",
-      "url": "https://unstop.com/internships/marketing-internship-tringflow-private-limited-1750854",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b39fe704fc13",
-      "title": "Procurement Internship",
-      "url": "https://unstop.com/internships/procurement-internship-accesco-living-1750483",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "3947aa589b55",
-      "title": "College Advisor — Founding Campus Growth Internship",
-      "url": "https://unstop.com/internships/college-advisor-founding-campus-growth-internship-orca-1750802",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
     },
     {
       "key": "6328c32710fd",
@@ -903,33 +833,95 @@
       "action_plan": []
     },
     {
-      "key": "a364be48ba3d",
-      "title": "Tejas India Hackathon 2026",
-      "url": "https://unstop.com/hackathons/tejas-india-hackathon-2026-government-engineering-college-gec-sheikhpura-1744276",
+      "key": "81558cd146da",
+      "title": "Digital Marketing Internship",
+      "url": "https://unstop.com/internships/digital-marketer-quescol-1758788",
       "source": "unstop",
-      "score": 7,
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
     },
     {
-      "key": "952af681d11f",
-      "title": "Merck — Computational Toxicology Intern - AI/ML Computational Toxicology",
-      "url": "https://msd.wd5.myworkdayjobs.com/searchjobs/job/USA---Pennsylvania---West-Point/XMLNAME-2027-Future-Talent-Program---AI-ML-Computational-Toxicology---Intern_R412871",
-      "source": "internships",
-      "score": 7,
+      "key": "4caeebc8c22f",
+      "title": "Business Development Internship",
+      "url": "https://unstop.com/internships/business-development-internship-skillentrix-technologies-1758853",
+      "source": "unstop",
+      "score": 8,
       "deadline": null,
       "tags": [
         "internship"
       ],
-      "ai_summary": "AI/ML focus is better, but still niche (toxicology) vs general AI engineering. · ⚠ verify eligibility: US work authorization for Summer 2027",
-      "action_plan": [
-        "Verify US internship visa rules (10m)",
-        "Apply if eligible (20m)"
-      ]
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "eacfbef8ef30",
+      "title": "IT Support Internship",
+      "url": "https://unstop.com/internships/it-support-internship-kotak-education-foundation-1758667",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "26eba7299032",
+      "title": "Strategy, Research & Analytics Internship",
+      "url": "https://unstop.com/internships/strategy-research-analytics-internship-kotak-education-foundation-1757985",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "cb975b0376f8",
+      "title": "Business Development Internship",
+      "url": "https://unstop.com/internships/business-development-internship-spikeera-1758562",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e1e3bd33c9d1",
+      "title": "ERP Telemarketing & Support Internship",
+      "url": "https://unstop.com/internships/erp-telemarketing-support-internship-sansoft-infotech-1758533",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "58e7cc60fee5",
+      "title": "Campus Ambassador Internship",
+      "url": "https://unstop.com/internships/campus-ambassador-internship-wayeva-innovations-private-limited-1758474",
+      "source": "unstop",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "42159c53665c",
@@ -1093,27 +1085,11 @@
       "action_plan": []
     },
     {
-      "key": "c7d4c9467f1f",
-      "title": "Rustuna: A High-Performance Rust Implementation of Optuna [P]",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1w9nyhz/rustuna_a_highperformance_rust_implementation_of/",
-      "source": "reddit",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning"
-      ],
-      "ai_summary": "High-perf ML infra is good, but it's a news item, not a tangible opportunity.",
-      "action_plan": [
-        "Skim the implementation details (10m)"
-      ]
-    },
-    {
-      "key": "334fdc87c108",
-      "title": "Amazon ML Challenge 2026",
-      "url": "https://unstop.com/hackathons/crp-amazon-ml-challenge-2026-amazon-1743604",
+      "key": "81caabe84228",
+      "title": "PROJECT : ECLIPSE - AI & Automation Hackathon",
+      "url": "https://unstop.com/hackathons/project-eclipse-ai-automation-hackathon-agni-college-of-technology-act-chennai-1758549",
       "source": "unstop",
-      "score": 6,
+      "score": 7,
       "deadline": null,
       "tags": [
         "hackathon"
@@ -1122,91 +1098,17 @@
       "action_plan": []
     },
     {
-      "key": "3fb7a1f28c04",
-      "title": "Loblaw Companies — Applied Machine Learning Co-op",
-      "url": "https://myview.wd3.myworkdayjobs.com/paradox_careers/job/1-Presidents-Choice-Circle-Brampton-ON/Applied-Machine-Learning---Co-op-Student_R2000697038",
-      "source": "internships",
-      "score": 6,
+      "key": "624fd7c25b0b",
+      "title": "Baby's First Website Hackathon",
+      "url": "https://unstop.com/hackathons/babys-first-website-hackathon-hax-baby-1758510",
+      "source": "unstop",
+      "score": 7,
       "deadline": null,
       "tags": [
-        "internship"
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "222bd8415a15",
-      "title": "TD Bank — Applied Machine Learning Scientist Co-op - Winter 2027",
-      "url": "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers/job/Toronto-Ontario/AI2-Applied-Machine-Learning-Scientist-Co-op--WINTER-2027-_R_1506697-1",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "3c67ad2c48cc",
-      "title": "Merck — Medical Data Scientist Intern",
-      "url": "https://msd.wd5.myworkdayjobs.com/searchjobs/job/USA---Pennsylvania---North-Wales-Upper-Gwynedd/XMLNAME-2027-Future-Talent-Program---Medical-Data-Scientist---Intern_R412403",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Medical DS is okay, but not the 'elite AI engineer' path he craves. · ⚠ verify eligibility: US work authorization for Summer 2027",
-      "action_plan": [
-        "Verify US internship visa rules (10m)",
-        "Apply if eligible (20m)"
-      ]
-    },
-    {
-      "key": "d87a574352e6",
-      "title": "Merck — Data Scientist Intern - Nonclinical Drug Safety",
-      "url": "https://msd.wd5.myworkdayjobs.com/searchjobs/job/USA---Massachusetts---Boston-MA-Parcel-B-Laboratory/XMLNAME-2027-Future-Talent-Program---Nonclinical-Drug-Safety-Data-Scientist---Intern_R412861",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Similar to i=1; pharma DS is a detour from GenAI/Agents focus. · ⚠ verify eligibility: US work authorization for Summer 2027",
-      "action_plan": [
-        "Verify US internship visa rules (10m)",
-        "Apply if eligible (20m)"
-      ]
-    },
-    {
-      "key": "1fea3da37572",
-      "title": "Dick's Sporting Goods — Software Engineer Intern - Corporate Internship",
-      "url": "https://dickssportinggoods.wd1.myworkdayjobs.com/en-US/DSG/job/Customer-Support-Center/Software-Engineering---Summer-2027-Corporate-Internship_202608792-1",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0bbb0abef18e",
-      "title": "Merck — Optical Imaging Data Science Intern",
-      "url": "https://msd.wd5.myworkdayjobs.com/searchjobs/job/USA---Massachusetts---Boston-MA-Parcel-B-Laboratory/XMLNAME-2027-Future-Talent-Program---Optical-Imaging-Data-Science-Intern---Intern_R412885",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "Imaging DS is a strong skill, but not the core GenAI path. · ⚠ verify eligibility: US work authorization for Summer 2027",
-      "action_plan": [
-        "Verify US internship visa rules (10m)",
-        "Apply if eligible (20m)"
-      ]
     },
     {
       "key": "565597a86708",
@@ -1334,6 +1236,84 @@
       "deadline": "2026-10-01",
       "tags": [
         "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6a7eb0d72873",
+      "title": "AfterQuery — AI/ML Research Intern",
+      "url": "https://jobs.ashbyhq.com/AfterQuery/00cd591f-6894-4259-83b6-36c999351dde/application?embed=true",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f251fb3c1ce5",
+      "title": "Qualcomm — Machine Learning Compiler & Performance Engineering Intern - Systems",
+      "url": "https://qualcomm.eightfold.ai/careers/job/446721064018",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "124c86357968",
+      "title": "Veeam Software — Machine Learning Intern - AI",
+      "url": "https://job-boards.eu.greenhouse.io/veeamsoftware/jobs/4971207101",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a6202cfd989f",
+      "title": "Guardian Life — Summer Intern - Digital & Technology - AI & Machine Learning",
+      "url": "https://guardianlife.wd5.myworkdayjobs.com/guardian-life-careers/job/New-York/XMLNAME-2027-Guardian-Summer-Intern--Digital---Technology---AI---Machine-Learning_R000110205",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7642f386f156",
+      "title": "Beginner's Paradise - FirstCommit",
+      "url": "https://firstcommit.devpost.com/",
+      "source": "devpost",
+      "score": 6,
+      "deadline": "2026-09-30",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "5348756cb477",
+      "title": "Tesla — Computer Vision Engineer Intern - Cell Engineering",
+      "url": "https://www.tesla.com/careers/search/job/283290",
+      "source": "internships",
+      "score": 6,
+      "deadline": null,
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
