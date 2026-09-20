@@ -258,25 +258,25 @@ def _notify(new_items, test):
         telegram.send_telegram(f"<b>{_tg_escape(stat_line)}</b>\n\n{text}", buttons=buttons)
 
 
-def _fill_budget(items: list, budget: int) -> list:
-    """Choose which `budget` items get the expensive treatment, WITHOUT letting one category
-    swallow the lot.
+def _rotate_by_kind(items: list, budget: int) -> list:
+    """Take `budget` items without letting one category swallow the lot.
 
     Ranking purely by score looked correct until we widened intake and watched it happen:
-    Unstop alone has ~594 open internships, so a straight top-60 came back as sixty sales and
+    Unstop alone has ~687 open internships, so a straight top-60 came back as sixty sales and
     marketing internships, and the two hackathons that mattered were 61st and 74th. That is
     precisely the "I am drowning in internships and missing the good stuff" failure.
 
     So the budget is shared. Each kind is sorted by score and we take one from each in turn,
-    strongest first. A category with depth still wins more slots overall — it just cannot take
-    every slot before another category gets its first."""
+    strongest kind first. A category with depth still wins more slots overall — it just cannot
+    take every slot before another category gets its first."""
+    if budget <= 0:
+        return []
     by_kind: dict[str, list] = {}
     for it in items:
         by_kind.setdefault(focus.kind_of(it), []).append(it)
     for bucket in by_kind.values():
         bucket.sort(key=lambda it: it.score, reverse=True)
 
-    # Round-robin: kinds offering the strongest item go first, so quality still leads.
     queues = sorted(by_kind.values(), key=lambda b: b[0].score, reverse=True)
     chosen: list = []
     while len(chosen) < budget and any(queues):
@@ -286,8 +286,26 @@ def _fill_budget(items: list, budget: int) -> list:
             chosen.append(q.pop(0))
             if len(chosen) >= budget:
                 break
-    chosen.sort(key=lambda it: it.score, reverse=True)
     return chosen
+
+
+def _fill_budget(items: list, budget: int) -> list:
+    """Choose which `budget` items get the expensive treatment (verification, LLM, history).
+
+    With a focus set, most of the budget is RESERVED for what he asked to hunt — otherwise
+    "find me more interns" would still return an even spread across every kind, which is the
+    opposite of what he asked for. The remainder goes to everything else, still rotated by kind
+    so the "also worth your time" zone stays varied rather than being one category again.
+    Unused focus budget spills over, so asking for a niche with only three live items does not
+    waste fifty-seven slots."""
+    if not focus.active():
+        return sorted(_rotate_by_kind(items, budget), key=lambda it: it.score, reverse=True)
+
+    on_topic, other = focus.split(items)
+    share = max(1, round(budget * getattr(config, "FOCUS_SHARE", 0.70)))
+    picked_on = _rotate_by_kind(on_topic, share)
+    picked_other = _rotate_by_kind(other, budget - len(picked_on))
+    return sorted(picked_on + picked_other, key=lambda it: it.score, reverse=True)
 
 
 def run(source_names=None, test=False):
@@ -298,11 +316,13 @@ def run(source_names=None, test=False):
     # 1. Gather
     all_items, sources_ok, sources_total = _gather(source_names)
 
-    # 2. Relevance filter. The curated "programs" watchlist is pre-vetted (every
-    # entry was hand-picked as relevant), so it bypasses the keyword gate and goes
-    # straight to the LLM scorer — which then ranks it. Noisy sources still pass
-    # through the keyword filter as before.
-    trusted = {"programs"}
+    # 2. Relevance filter. Pre-vetted sources bypass the keyword gate and go straight to the
+    # scorer, which then ranks them. "programs" is a hand-picked watchlist; "ats" reads career
+    # boards from a hand-picked company list, so the curation already happened at the company
+    # level — the keyword gate was dropping 128 of 163 roles including "Data Science Intern",
+    # because "intern" is in INTERESTS but "Intern" (no -ship) is not the same word.
+    # Noisy sources still pass through the keyword filter as before.
+    trusted = {"programs", "ats"}
     relevant = [it for it in all_items if it.source in trusted or is_relevant(it)]
 
     # 3. Score
@@ -464,9 +484,12 @@ def main():
     # contract is untouched (see CLAUDE.md 4.1).
     parser.add_argument("--focus", type=str, default=None,
                         help=f"what to hunt this week: {','.join(focus.KINDS)}")
+    parser.add_argument("--focus-mode", choices=("first", "boost", "only"), default=None,
+                        help="first (default): focus kinds on top, everything else BELOW; "
+                             "boost: one blended list; "
+                             f"only: hide off-topic (anything scoring {focus.KEEP_ANYWAY}+ still shows)")
     parser.add_argument("--focus-only", action="store_true",
-                        help="with --focus: hide off-topic items (anything scoring "
-                             f"{focus.KEEP_ANYWAY}+ is still shown)")
+                        help="shorthand for --focus-mode only")
     args = parser.parse_args()
 
     # Set focus before run() reads it. A CLI flag beats the .env default for this run only.
@@ -475,6 +498,8 @@ def main():
         unknown = [f for f in config.FOCUS if f not in focus.KINDS]
         if unknown:
             parser.error(f"unknown focus {unknown} — pick from: {', '.join(focus.KINDS)}")
+    if args.focus_mode:
+        config.FOCUS_MODE = args.focus_mode
     if args.focus_only:
         config.FOCUS_MODE = "only"
 

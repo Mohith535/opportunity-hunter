@@ -1,0 +1,265 @@
+{
+  "_comment": "Company career boards to watch, via their applicant-tracking system's PUBLIC JSON API (no key, no auth, no scraping). Every slug here was probed live and returned HTTP 200 with real listings on 2026-09-21; slugs that 404d were left out rather than guessed at. Adding a company is one line. To find a slug, open the company's careers page and read the URL: boards.greenhouse.io/<slug>, jobs.ashbyhq.com/<slug>, or jobs.lever.co/<slug>. sources/ats.py keeps only student-relevant titles (intern, new grad, residency, research), so a board of 800 senior roles costs one HTTP call and adds nothing to the brief.",
+  "companies": [
+    {
+      "platform": "greenhouse",
+      "slug": "affirm",
+      "name": "Affirm"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "airtable",
+      "name": "Airtable"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "anthropic",
+      "name": "Anthropic"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "asana",
+      "name": "Asana"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "brex",
+      "name": "Brex"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "chime",
+      "name": "Chime"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "cloudflare",
+      "name": "Cloudflare"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "coinbase",
+      "name": "Coinbase"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "databricks",
+      "name": "Databricks"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "datadog",
+      "name": "Datadog"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "discord",
+      "name": "Discord"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "elastic",
+      "name": "Elastic"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "figma",
+      "name": "Figma"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "flexport",
+      "name": "Flexport"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "gitlab",
+      "name": "GitLab"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "gusto",
+      "name": "Gusto"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "instacart",
+      "name": "Instacart"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "lyft",
+      "name": "Lyft"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "mongodb",
+      "name": "MongoDB"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "pinterest",
+      "name": "Pinterest"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "reddit",
+      "name": "Reddit"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "robinhood",
+      "name": "Robinhood"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "samsara",
+      "name": "Samsara"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "scaleai",
+      "name": "Scale AI"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "sofi",
+      "name": "SoFi"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "stripe",
+      "name": "Stripe"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "twilio",
+      "name": "Twilio"
+    },
+    {
+      "platform": "ashby",
+      "slug": "anyscale",
+      "name": "Anyscale"
+    },
+    {
+      "platform": "ashby",
+      "slug": "clickhouse",
+      "name": "ClickHouse"
+    },
+    {
+      "platform": "ashby",
+      "slug": "deel",
+      "name": "Deel"
+    },
+    {
+      "platform": "ashby",
+      "slug": "elevenlabs",
+      "name": "ElevenLabs"
+    },
+    {
+      "platform": "ashby",
+      "slug": "harvey",
+      "name": "Harvey"
+    },
+    {
+      "platform": "ashby",
+      "slug": "linear",
+      "name": "Linear"
+    },
+    {
+      "platform": "ashby",
+      "slug": "mercor",
+      "name": "Mercor"
+    },
+    {
+      "platform": "ashby",
+      "slug": "modal",
+      "name": "Modal"
+    },
+    {
+      "platform": "ashby",
+      "slug": "openai",
+      "name": "OpenAI"
+    },
+    {
+      "platform": "ashby",
+      "slug": "openevidence",
+      "name": "OpenEvidence"
+    },
+    {
+      "platform": "ashby",
+      "slug": "posthog",
+      "name": "PostHog"
+    },
+    {
+      "platform": "ashby",
+      "slug": "ramp",
+      "name": "Ramp"
+    },
+    {
+      "platform": "ashby",
+      "slug": "replit",
+      "name": "Replit"
+    },
+    {
+      "platform": "ashby",
+      "slug": "sardine",
+      "name": "Sardine"
+    },
+    {
+      "platform": "ashby",
+      "slug": "sierra",
+      "name": "Sierra"
+    },
+    {
+      "platform": "ashby",
+      "slug": "supabase",
+      "name": "Supabase"
+    },
+    {
+      "platform": "ashby",
+      "slug": "vercel",
+      "name": "Vercel"
+    },
+    {
+      "platform": "lever",
+      "slug": "binance",
+      "name": "Binance"
+    },
+    {
+      "platform": "lever",
+      "slug": "kraken",
+      "name": "Kraken"
+    },
+    {
+      "platform": "lever",
+      "slug": "matchgroup",
+      "name": "Match Group"
+    },
+    {
+      "platform": "lever",
+      "slug": "nielsen",
+      "name": "Nielsen"
+    },
+    {
+      "platform": "lever",
+      "slug": "palantir",
+      "name": "Palantir"
+    },
+    {
+      "platform": "lever",
+      "slug": "shieldai",
+      "name": "Shield AI"
+    },
+    {
+      "platform": "lever",
+      "slug": "spotify",
+      "name": "Spotify"
+    },
+    {
+      "platform": "lever",
+      "slug": "voleon",
+      "name": "Voleon"
+    }
+  ]
+}

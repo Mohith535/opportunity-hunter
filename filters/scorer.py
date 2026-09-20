@@ -28,7 +28,7 @@ _MONEY_SYMBOLS = ("$", "₹", "€", "£")
 # So domain fit is scored SEPARATELY here. This does not touch config.INTERESTS, which the
 # relevance gate and the LLM profile still use as-is.
 _DOMAIN_RE = re.compile(
-    r"\b(a\.?i\.?|artificial intelligence|machine learning|deep learning|neural|computer vision|"
+    r"\b(a\.?i\.?|ml\b|artificial intelligence|machine learning|deep learning|neural|computer vision|"
     r"nlp|natural language|llm|large language|generative|data scien|data analy|python|java|c\+\+|"
     r"software|developer|engineer(?:ing)?|programming|backend|back-end|frontend|front-end|"
     r"full[- ]stack|web dev|app dev|android|ios\b|cloud|devops|cyber ?security|blockchain|"

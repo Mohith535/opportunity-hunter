@@ -226,12 +226,20 @@ INTAKE_BUDGET = int(os.environ.get("OH_INTAKE_BUDGET", "60"))
 # Empty = hunt everything (the original behaviour). Otherwise a list of kinds from
 # filters.focus.KINDS: hackathon, research, internship, fellowship, grant, startup,
 # scholarship, contest, ambassador, learning.
-#   FOCUS_MODE "boost" — focus kinds rank higher, nothing is hidden.
+#   FOCUS_MODE "first" — DEFAULT. Two zones: what you asked to hunt, then everything
+#                        else BELOW it, ranked on its own merit. Nothing hidden,
+#                        nothing silently mixed in.
+#   FOCUS_MODE "boost" — one blended list: focus kinds gain, others lose.
 #   FOCUS_MODE "only"  — off-topic kinds are dropped, EXCEPT anything already
 #                        scoring >= focus.KEEP_ANYWAY, which is shown regardless.
-# Override per run with `--focus hackathon,fellowship [--focus-only]`.
+# Override per run with `--focus internship [--focus-mode boost|only]`.
 FOCUS = [f for f in re.split(r"[,\s]+", os.environ.get("OH_FOCUS", "")) if f]
-FOCUS_MODE = os.environ.get("OH_FOCUS_MODE", "boost")
+FOCUS_MODE = os.environ.get("OH_FOCUS_MODE", "first")
+
+# Share of INTAKE_BUDGET reserved for the focus kinds. "Find me more interns" has to actually
+# return more interns — without a reservation the diversity rotation would hand back an even
+# spread across every kind. Unused focus budget spills over to everything else.
+FOCUS_SHARE = float(os.environ.get("OH_FOCUS_SHARE", "0.70"))
 
 # Dimension weights (sum = 1.0). The model returns per-dimension scores; the final
 # 0-10 is recomputed HERE so the weighting stays under our control, not the model's.

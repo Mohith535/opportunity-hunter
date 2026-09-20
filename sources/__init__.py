@@ -6,7 +6,7 @@ here by name. main.py iterates the registry; `--sources a,b` filters it; adding 
 new source later is "write the module + add one line here".
 """
 
-from . import contests, github, hackathons, internships, news, programs, research
+from . import ats, contests, github, hackathons, internships, news, programs, research
 
 # name -> fetch callable
 REGISTRY = {
@@ -21,6 +21,7 @@ REGISTRY = {
     "unstop": hackathons.fetch_unstop,
     "programs": programs.fetch,        # curated flagship-programs watchlist
     "internships": internships.fetch,  # SimplifyJobs aggregator (verified)
+    "ats": ats.fetch,                  # company career boards (Greenhouse/Ashby/Lever)
 }
 
 

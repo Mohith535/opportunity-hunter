@@ -113,6 +113,58 @@ with_focus(["hackathon", "fellowship"], "only")
 d = focus.describe()
 check("17. describe names mode and kinds", "only" in d and "hackathon" in d and "fellowship" in d, d)
 
+# ── the niches he named: jobs, meetups, news, programs ───────────────────────────────────
+# 22 - a full-time role is a job, not an internship
+with_focus([])
+check("22. full-time role is a job",
+      focus.kind_of(opp("Graduate Trainee Software Engineer", "unstop", "full-time", tags=["job"])) == "job")
+
+# 23 - workshops and conferences are meetups (the Unstop categories we just switched on)
+check("23. workshop tag is a meetup",
+      focus.kind_of(opp("QA in the Age of AI", "unstop", "hands-on", tags=["workshop"])) == "meetup")
+check("24. conference tag is a meetup",
+      focus.kind_of(opp("MECTROZ-26 Paper Presentation", "unstop", "", tags=["conference"])) == "meetup")
+
+# 25 - a conference about papers is an EVENT, not research
+check("25. paper-presentation conference is a meetup, not research",
+      focus.kind_of(opp("Technical Paper Presentation Conference", "unstop", "submit papers")) == "meetup")
+
+# 26 - reddit/HN default to news, not learning
+check("26. reddit falls back to news",
+      focus.kind_of(opp("What is everyone working on?", "reddit", "discussion")) == "news")
+
+# 27 - ...but reddit content about a hackathon is still a hackathon (item words beat the source)
+check("27. reddit hackathon post is a hackathon",
+      focus.kind_of(opp("New AI hackathon announced", "reddit", "hackathon next month")) == "hackathon")
+
+# 28 - a career-board role is a job
+check("28. ats source falls back to job",
+      focus.kind_of(opp("Software Engineer Intern - Coinbase", "ats", "Coinbase | via Greenhouse")) == "internship",
+      "intern in the title wins over the ats fallback, which is correct")
+
+# 29 - a curated program that is not a fellowship/grant lands in `program`
+check("29. curated program falls back to program",
+      focus.kind_of(opp("NVIDIA Deep Learning Institute", "programs", "free certification")) == "program")
+
+# ── "first" mode: the zone split he actually asked for ───────────────────────────────────
+# "find me more interns, but if something else is more important show it AFTER the interns"
+with_focus(["internship"], "first")
+intern = opp("AI Internship", tags=["internship"], score=6)
+gold2 = opp("Thiel Fellowship", "programs", "USD 200,000", score=10)
+out = focus.apply([intern, gold2])
+check("30. first mode hides nothing", len(out) == 2)
+check("31. first mode does NOT distort scores",
+      intern.score == 6 and gold2.score == 10,
+      f"intern={intern.score} other={gold2.score}")
+on, also = focus.split(out)
+check("32. focus kind goes in zone one", on == [intern])
+check("33. the important other thing goes BELOW, not away", also == [gold2])
+
+# 34 - split is a no-op with no focus set, so the normal brief is unaffected
+with_focus([])
+on, also = focus.split([intern, gold2])
+check("34. no focus = single zone", len(on) == 2 and also == [])
+
 restore()
 
 # ── the deadline radar must not invent urgency for a closed round ────────────────────────

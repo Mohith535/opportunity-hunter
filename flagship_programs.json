@@ -663,6 +663,189 @@
         "funding"
       ],
       "description": "Runs a steady stream of You-Ship-We-Ship programmes: build and ship something, get hardware, travel or cash. Genuinely open to students worldwide and low-friction to enter."
+    },
+    {
+      "id": "mitacs-globalink",
+      "title": "Mitacs Globalink Research Internship",
+      "org": "Mitacs (Canada)",
+      "url": "https://www.mitacs.ca/our-programs/globalink-research-internship-students/",
+      "deadline": null,
+      "window": "Applications ~Jul-Sep",
+      "tags": [
+        "internship",
+        "research",
+        "government",
+        "funded",
+        "canada",
+        "students"
+      ],
+      "description": "Fully funded 12-week summer research internship at a Canadian university for undergraduates, explicitly open to students in India. Travel, stipend and housing support. One of the very few paid international research internships an Indian undergrad can get."
+    },
+    {
+      "id": "chevening",
+      "title": "Chevening Scholarships",
+      "org": "UK Government",
+      "url": "https://www.chevening.org/",
+      "deadline": null,
+      "window": "Applications ~Aug-Nov",
+      "tags": [
+        "scholarship",
+        "government",
+        "funded",
+        "uk",
+        "masters"
+      ],
+      "description": "UK government fully funded masters scholarship - tuition, living costs, flights. Needs about 2 years work experience, so a target for after graduation rather than now."
+    },
+    {
+      "id": "erasmus-mundus",
+      "title": "Erasmus Mundus Joint Masters",
+      "org": "European Commission",
+      "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
+      "deadline": null,
+      "window": "Applications ~Oct-Jan",
+      "tags": [
+        "scholarship",
+        "government",
+        "funded",
+        "europe",
+        "masters",
+        "research"
+      ],
+      "description": "EU-funded masters across multiple European universities, fully funded including travel and monthly allowance. Many AI, data science and robotics tracks. Open to Indian students straight out of a bachelors."
+    },
+    {
+      "id": "fulbright-nehru",
+      "title": "Fulbright-Nehru Fellowships",
+      "org": "USIEF (US-India)",
+      "url": "https://www.usief.org.in/",
+      "deadline": null,
+      "window": "Applications ~Mar-Jul",
+      "tags": [
+        "fellowship",
+        "government",
+        "funded",
+        "usa",
+        "research",
+        "india"
+      ],
+      "description": "US government fellowships for Indian students and researchers - tuition, airfare, living costs and health insurance. 16 fellowship types; the Masters and Doctoral Research ones are the relevant tracks."
+    },
+    {
+      "id": "charpak-france",
+      "title": "Charpak Scholarships (Lab / Semester / Masters)",
+      "org": "Campus France",
+      "url": "https://www.inde.campusfrance.org/france-excellence-charpak-summer-scholarship",
+      "deadline": null,
+      "window": "Applications ~Jan-Mar",
+      "tags": [
+        "scholarship",
+        "internship",
+        "government",
+        "funded",
+        "france",
+        "research",
+        "india"
+      ],
+      "description": "French government scholarships for Indian students. The Lab track funds a 2-4 month research internship in a French laboratory during your bachelors - one of the few that fits an undergrad timeline."
+    },
+    {
+      "id": "swiss-excellence",
+      "title": "Swiss Government Excellence Scholarships",
+      "org": "Swiss Confederation",
+      "url": "https://www.sbfi.admin.ch/en/swiss-government-excellence-scholarships",
+      "deadline": null,
+      "window": "Applications ~Aug-Nov",
+      "tags": [
+        "scholarship",
+        "government",
+        "funded",
+        "switzerland",
+        "research"
+      ],
+      "description": "Research and PhD scholarships at ETH Zurich, EPFL and Swiss universities, fully funded. Strong for AI and systems research; apply through the Swiss embassy in India."
+    },
+    {
+      "id": "japan-mext",
+      "title": "MEXT Scholarship",
+      "org": "Government of Japan",
+      "url": "https://www.studyinjapan.go.jp/en/planning/scholarships/",
+      "deadline": null,
+      "window": "Applications ~Apr-Jun (embassy track)",
+      "tags": [
+        "scholarship",
+        "government",
+        "funded",
+        "japan",
+        "research"
+      ],
+      "description": "Japanese government scholarship covering tuition, monthly stipend and flights, for research students and undergraduates. Embassy-recommended track is the one open to Indian applicants."
+    },
+    {
+      "id": "astar-singapore",
+      "title": "A*STAR Scholarships & Attachments",
+      "org": "A*STAR (Singapore)",
+      "url": "https://www.a-star.edu.sg/scholarships",
+      "deadline": null,
+      "window": "Rolling / annual cycles",
+      "tags": [
+        "scholarship",
+        "research",
+        "government",
+        "funded",
+        "singapore",
+        "internship"
+      ],
+      "description": "Singapore national research agency scholarships and research attachments, including AI and computing labs. Some tracks are open to international undergraduates."
+    },
+    {
+      "id": "eu-horizon",
+      "title": "EU Funding & Tenders Portal (Horizon Europe)",
+      "org": "European Commission",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",
+      "deadline": null,
+      "window": "Rolling - continuous calls",
+      "tags": [
+        "grant",
+        "government",
+        "funding",
+        "europe",
+        "research"
+      ],
+      "description": "The single portal for every EU research and innovation call. Mostly institutional, but worth watching for student and early-researcher calls and for the projects that later hire interns."
+    },
+    {
+      "id": "google-research-programs",
+      "title": "Google Research Programs & Events",
+      "org": "Google",
+      "url": "https://research.google/programs-and-events/",
+      "deadline": null,
+      "window": "Rolling - multiple programmes a year",
+      "tags": [
+        "program",
+        "research",
+        "google",
+        "internship",
+        "funding"
+      ],
+      "description": "Google Research hub for PhD fellowships, research scholar awards, student programmes and events. The programmes page is the one that actually lists open calls rather than marketing."
+    },
+    {
+      "id": "msr-india",
+      "title": "Microsoft Research India - Internships & Fellowships",
+      "org": "Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/",
+      "deadline": null,
+      "window": "Research Fellow intake ~Jan-Mar",
+      "tags": [
+        "research",
+        "internship",
+        "fellowship",
+        "microsoft",
+        "india",
+        "paid"
+      ],
+      "description": "The MSR India Research Fellow programme takes fresh graduates for 1-2 years of paid full-time research, and is one of the strongest research credentials available in India without a PhD."
     }
   ]
 }

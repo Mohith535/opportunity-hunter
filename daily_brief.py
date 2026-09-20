@@ -13,7 +13,7 @@ from rich.panel import Panel
 from rich.text import Text
 
 import config
-from filters import policy
+from filters import focus, policy
 from filters.explain import explain
 from filters import ledger
 
@@ -58,21 +58,10 @@ def _render_item(item, dumped: bool) -> Text:
     return t
 
 
-def render(items: list, stats: dict, dumped_keys: set | None = None) -> None:
-    """Print the full daily brief.
-
-    items: scored Opportunity objects (already deduped/filtered).
-    stats: dict with keys scanned, relevant, high_priority, dumps, sources_ok, sources_total.
-    dumped_keys: dedup_keys that were dumped to TaskFlow (for the ✓ marker).
-    """
-    dumped_keys = dumped_keys or set()
-    now = datetime.now()
-
-    header = Text(f"🌅  OPPORTUNITY HUNTER — DAILY BRIEF\n", style="bold")
-    header.append(now.strftime("%A, %d %B %Y   |   %H:%M"), style="dim")
-    console.print(Panel(header, expand=False, border_style="blue"))
-
-    # Bucket by level.
+def _render_zone(items: list, dumped_keys: set) -> None:
+    """Render one zone of the brief, bucketed CRITICAL / HIGH / MEDIUM / LEARNING."""
+    if not items:
+        return
     buckets: dict[str, list] = {"CRITICAL": [], "HIGH": [], "MEDIUM": [], "LEARNING": []}
     for it in items:
         lvl = policy.classify(policy.effective_score(it))
@@ -96,6 +85,39 @@ def render(items: list, stats: dict, dumped_keys: set | None = None) -> None:
             # markup=False: titles/sources may contain '[' which rich would
             # otherwise parse as style tags.
             console.print(f"  • [{it.source}] {it.title}", style="dim", markup=False)
+
+
+def render(items: list, stats: dict, dumped_keys: set | None = None) -> None:
+    """Print the full daily brief.
+
+    items: scored Opportunity objects (already deduped/filtered).
+    stats: dict with keys scanned, relevant, high_priority, dumps, sources_ok, sources_total.
+    dumped_keys: dedup_keys that were dumped to TaskFlow (for the ✓ marker).
+    """
+    dumped_keys = dumped_keys or set()
+    now = datetime.now()
+
+    header = Text(f"🌅  OPPORTUNITY HUNTER — DAILY BRIEF\n", style="bold")
+    header.append(now.strftime("%A, %d %B %Y   |   %H:%M"), style="dim")
+    console.print(Panel(header, expand=False, border_style="blue"))
+
+    # With a focus set, the brief runs in TWO ZONES: what he asked to hunt, then everything
+    # else. "Find me more interns, but if something else is more important show it to me AFTER
+    # the interns" — so off-topic items are demoted to a second section, never hidden and never
+    # silently mixed in. Without a focus, `split` returns everything in the first zone and this
+    # renders exactly as it always did.
+    on_topic, also = focus.split(items)
+    if focus.active():
+        console.print(f"\n🎯 {focus.describe()}", style="bold magenta")
+
+    _render_zone(on_topic, dumped_keys)
+
+    if also:
+        console.print("\n" + "═" * 48, style="dim")
+        console.print("⭐ ALSO WORTH YOUR TIME — outside your focus", style="bold blue")
+        console.print("   ranked on their own merit, nothing hidden", style="dim")
+        console.print("═" * 48, style="dim")
+        _render_zone(also, dumped_keys)
 
     # Stats footer.
     console.print("\n📊 SCAN STATS", style="bold")

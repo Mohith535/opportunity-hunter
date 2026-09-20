@@ -215,7 +215,14 @@ def fetch_mlh() -> list[Opportunity]:
 # student programs and AI challenges are routinely posted). One category failing
 # never kills the others; ids are deduped across categories.
 UNSTOP_API = "https://unstop.com/api/public/opportunity/search-result"
-UNSTOP_CATEGORIES = ("hackathons", "internships", "competitions", "scholarships")
+# Probed against the live API (Sep 2026): these are the categories that actually return data.
+# workshops/conferences give him the MEETUPS he asked for and jobs gives full-time roles — all
+# through the adapter we already had, so neither needed a new scraper. Categories returning 0
+# (webinars, courses, mentorships, cultural-events) are left out rather than fetched pointlessly.
+UNSTOP_CATEGORIES = ("hackathons", "internships", "competitions", "scholarships",
+                     "jobs", "workshops", "conferences")
+# Singular labels for the ones whose plural does not simply lose an "s".
+UNSTOP_LABELS = {"conferences": "conference"}
 # We used to take the top 8 per category, once. Measured against the live API that was 4% of
 # open hackathons and 1.3% of open competitions — which is exactly how "Fund My Crazy" (Google
 # Gemini, Rs 1 crore, listed on Unstop) was never seen: it sat in the other 98.7%.
@@ -347,7 +354,8 @@ def _fetch_unstop_category(category: str) -> list[Opportunity]:
             break  # ran off the end of this category
         listings.extend(batch)
 
-    label = category.rstrip("s")  # hackathons -> hackathon, internships -> internship
+    # hackathons -> hackathon, internships -> internship, conferences -> conference
+    label = UNSTOP_LABELS.get(category, category.rstrip("s"))
     items: list[Opportunity] = []
     for o in listings:
         seo = o.get("seo_url") or ""
