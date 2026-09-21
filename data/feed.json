@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-09-20",
+  "updated_at": "2026-09-21",
   "items": [
-    {
-      "key": "6f4b2d0173c3",
-      "title": "Agentic Cinema: The Blockbuster Hackathon",
-      "url": "https://agentic-cinema.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-09-09",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "cdb9d90dd553",
       "title": "Agents for Humans Hackathon",
@@ -54,6 +41,283 @@
       "action_plan": []
     },
     {
+      "key": "af780f3e14ff",
+      "title": "An Interpretable Memory Decision Controller for LLM Agents Based on Three-Signal Complementarity: Decoupling Confidence and Consistency",
+      "url": "https://arxiv.org/abs/2609.22043v1",
+      "source": "arxiv",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6f1170a52c32",
+      "title": "MLAI Hackathon 2026",
+      "url": "https://mlai-hackathon.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-10-16",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "86075813d21a",
+      "title": "Cyber Security Internship",
+      "url": "https://unstop.com/internships/cyber-security-internship-skillorbit-private-limited-1758945",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-04",
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0d08f6ddeb36",
+      "title": "UpForge AI & Future Skills IQ Challenge 2026",
+      "url": "https://unstop.com/quiz/upforge-ai-future-skills-iq-challenge-2026-upforge-global-1758668",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-03",
+      "tags": [
+        "competition"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "807170e5d3c3",
+      "title": "AI Imagination Challenge - Build with Gemini",
+      "url": "https://unstop.com/workshops-webinars/ai-imagination-challenge-build-with-gemini-rajiv-gandhi-university-of-knowledge-technologies-rgukt-ii-1759193",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-25",
+      "tags": [
+        "workshop"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6484a53d32d6",
+      "title": "Google Developer Groups on Campus (Lead)",
+      "url": "https://developers.google.com/community",
+      "source": "programs",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "ambassador",
+        "program",
+        "google",
+        "community",
+        "students"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "afdc7383315c",
+      "title": "RRR-A Game Jam",
+      "url": "https://unstop.com/hackathons/rrr-a-game-jam-indian-institute-of-technology-indian-school-of-mines-iit-ism-dhanbad-1759129",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-28",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "5b5418d0776d",
+      "title": "Java Developer Internship",
+      "url": "https://unstop.com/internships/java-developer-internship-unstop-tech-fair-20-yugensoft-innovations-1759170",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-06",
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "86bc173ded4d",
+      "title": "Software Ideathon I",
+      "url": "https://unstop.com/competitions/software-ideathon-i-sai-ram-engineering-college-1758555",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-07",
+      "tags": [
+        "competition"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8def84690e3b",
+      "title": "Artificial Intelligence's Role in Current Tech Infrastructure",
+      "url": "https://unstop.com/workshops-webinars/artificial-intelligences-role-in-current-tech-infrastructure-techbairn-1758808",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-23",
+      "tags": [
+        "workshop"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0bb35b2585bd",
+      "title": "Amazon Selling Partner API Integration Challenge",
+      "url": "https://unstop.com/hackathons/amazon-selling-partner-api-integration-challenge-plantex-india-1759084",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-01",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f526fba2e34c",
+      "title": "React.js Developer Internship",
+      "url": "https://unstop.com/internships/reactjs-developer-internship-korvexia-technologies-1758940",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-04",
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "198311fe0ad8",
+      "title": "Beyond the Classroom: Exploring Android Development & Industry Trends",
+      "url": "https://unstop.com/workshops-webinars/beyond-the-classroom-exploring-android-development-industry-trends-techbairn-research-1758632",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-22",
+      "tags": [
+        "workshop"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "559352782952",
+      "title": "Technorazz 2026",
+      "url": "https://unstop.com/hackathons/technorazz-2026-jaipur-national-university-jnu-jaipur-1757968",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-28",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "ac683ea40a6d",
+      "title": "Software Developer Internship",
+      "url": "https://unstop.com/internships/software-developer-internship-aalteon-1758772",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-03",
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "9fc66803511d",
+      "title": "The AI Transformation of Work: Inside Modern Tech Teams",
+      "url": "https://unstop.com/workshops-webinars/the-ai-transformation-of-work-inside-modern-tech-teams-techbairn-1758613",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-22",
+      "tags": [
+        "workshop"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "69da41a379ad",
+      "title": "The Black-Box Protocol: Stage 02 - System Matrix",
+      "url": "https://unstop.com/hackathons/the-black-box-protocol-stage-02-system-matrix-techhelp4u-1758551",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-27",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f95f7a50fd9f",
+      "title": "Content Creation / Writer Internship",
+      "url": "https://unstop.com/internships/content-creation-writer-internship-ourselfstudy-1758136",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-02",
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "678d84a11f02",
+      "title": "Code Smarter with AI: Learning to Code in the Age of LLMs",
+      "url": "https://unstop.com/workshops-webinars/code-smarter-with-ai-learning-to-code-in-the-age-of-llms-techbairn-1758618",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-22",
+      "tags": [
+        "workshop"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "203986e55ba0",
+      "title": "Nakshatra - The Aerospace Hackathon 2026",
+      "url": "https://unstop.com/hackathons/nakshatra-the-aerospace-hackathon-2026-madhav-institute-of-technology-and-science-mits-gwalior-1751540",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-26",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0e6681d57a9d",
+      "title": "SaaS Development Internship",
+      "url": "https://unstop.com/internships/saas-development-internship-revino-solutions-private-limited-1758777",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-29",
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "50ea250d2ce8",
       "title": "OneAquaHealth IEEE Global Hackathon",
       "url": "https://oneaquahealth-ieee-hackathon.devpost.com/",
@@ -84,79 +348,27 @@
       ]
     },
     {
-      "key": "6328c32710fd",
-      "title": "Campus Ambassador Internship",
-      "url": "https://unstop.com/internships/campus-ambassador-internship-zenobuzz-solutions-1751527",
-      "source": "unstop",
-      "score": 8,
+      "key": "659fb3a80ed6",
+      "title": "Available Guardrails: Certifying Selective Prediction across ML Systems",
+      "url": "https://arxiv.org/abs/2609.22048v1",
+      "source": "arxiv",
+      "score": 9,
       "deadline": null,
       "tags": [
-        "internship"
+        "research"
       ],
       "ai_summary": "",
       "action_plan": []
     },
     {
-      "key": "bd47d00fcccd",
-      "title": "Cyber Security Internship",
-      "url": "https://unstop.com/internships/cyber-security-internship-intelleqacademy-1751501",
+      "key": "9580864e1347",
+      "title": "IdeaSpark",
+      "url": "https://unstop.com/competitions/ideaspark-st-joseph-engineering-college-vamanjoor-1757956",
       "source": "unstop",
-      "score": 8,
-      "deadline": null,
+      "score": 9,
+      "deadline": "2026-09-27",
       "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "c89ce088e84b",
-      "title": "Java Development Internship",
-      "url": "https://unstop.com/internships/java-development-internship-intelleqacademy-1751505",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "51a4cdf3c4ea",
-      "title": "HR Internship",
-      "url": "https://unstop.com/internships/hr-internship-humppl-1751631",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "bf520e654b99",
-      "title": "E-Commerce Internship",
-      "url": "https://unstop.com/internships/e-commerce-internship-avikarsh-pvt-ltd-1751466",
-      "source": "unstop",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "45e6da0b9961",
-      "title": "ONE Finance — AI Research Intern",
-      "url": "https://jobs.ashbyhq.com/oneapp/7cc2fdfb-a186-4a58-af1b-8255c173244a/application?embed=true",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship"
+        "competition"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -924,14 +1136,86 @@
       "action_plan": []
     },
     {
-      "key": "42159c53665c",
-      "title": "Agentic AI Hackathon",
-      "url": "https://unstop.com/hackathons/agentic-ai-hackathon-product-space-1751529",
-      "source": "unstop",
-      "score": 7,
+      "key": "0b39a2c11a09",
+      "title": "How is your experience with ICLR LLM Feedback? [D]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1wllbz0/how_is_your_experience_with_iclr_llm_feedback_d/",
+      "source": "reddit",
+      "score": 8,
       "deadline": null,
       "tags": [
-        "hackathon"
+        "news",
+        "r/MachineLearning"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "12dadff96fa6",
+      "title": "QA Engineer",
+      "url": "https://unstop.com/jobs/qa-engineer-bestq-software-private-limited-1758125",
+      "source": "unstop",
+      "score": 8,
+      "deadline": "2026-10-02",
+      "tags": [
+        "job"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4126e246bd62",
+      "title": "Claude Campus Ambassador Program",
+      "url": "https://claude.com/programs/campus",
+      "source": "programs",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "program",
+        "ambassador",
+        "anthropic",
+        "llm",
+        "paid",
+        "stipend",
+        "round-closed"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "ad6d55c255c8",
+      "title": "Value-Sensitive Delegation in Everyday AI Agent Use: Evidence from OpenClaw",
+      "url": "https://arxiv.org/abs/2609.22067v1",
+      "source": "arxiv",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "research"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d19463f3dc8b",
+      "title": "Envision'26",
+      "url": "https://unstop.com/competitions/envision26-hansraj-collegeuniversity-of-delhi-1758872",
+      "source": "unstop",
+      "score": 8,
+      "deadline": "2026-10-04",
+      "tags": [
+        "competition"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d4002027272b",
+      "title": "Would You Spot the Signal?",
+      "url": "https://unstop.com/quiz/would-you-spot-the-signal-upforge-quiz-2026-upforge-1758663",
+      "source": "unstop",
+      "score": 8,
+      "deadline": "2026-10-03",
+      "tags": [
+        "competition"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1041,279 +1325,6 @@
       "tags": [
         "news",
         "r/MachineLearning"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1bae3c158019",
-      "title": "Free Full Stack Python with Gen-AI Demo",
-      "url": "https://unstop.com/hackathons/free-full-stack-python-with-gen-ai-demo-quality-thought-info-systems-1758360",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d05e71c92cb1",
-      "title": "Q Hackathon",
-      "url": "https://unstop.com/hackathons/q-hackathon-quantum-university-roorkee-1757858",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "cf1e68a05695",
-      "title": "Python Web Scraper Challenge",
-      "url": "https://unstop.com/hackathons/python-web-scraper-challenge-adoraxe-1758087",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "81caabe84228",
-      "title": "PROJECT : ECLIPSE - AI & Automation Hackathon",
-      "url": "https://unstop.com/hackathons/project-eclipse-ai-automation-hackathon-agni-college-of-technology-act-chennai-1758549",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "624fd7c25b0b",
-      "title": "Baby's First Website Hackathon",
-      "url": "https://unstop.com/hackathons/babys-first-website-hackathon-hax-baby-1758510",
-      "source": "unstop",
-      "score": 7,
-      "deadline": null,
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "565597a86708",
-      "title": "Gallup — Artificial Intelligence/Machine Learning Research Intern",
-      "url": "https://job-boards.greenhouse.io/gallup/jobs/4395921009",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "40a0bd6ded45",
-      "title": "Coinbase — Machine Learning Engineer Intern",
-      "url": "https://boards.greenhouse.io/embed/job_app?token=8175441",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "7d5c8dcd942e",
-      "title": "Syntiant — Machine Learning Intern - KWS/AED",
-      "url": "https://apply.workable.com/syntiant/j/113F994B7B/apply",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "3f48c09c7de6",
-      "title": "Allen Control Systems — Computer Vision Intern - Machine Learning",
-      "url": "https://jobs.ashbyhq.com/allen-control-systems/a7831fef-7125-4c03-b828-5f0472989037/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0e0807755309",
-      "title": "GatewayHacks 2026 | Software & AI",
-      "url": "https://gatewayhacks-2026.devpost.com/",
-      "source": "devpost",
-      "score": 6,
-      "deadline": "2026-10-02",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "8882d176a1ff",
-      "title": "Tradeweb — Application Software Engineering Internship - IFI Application",
-      "url": "https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301906",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "04b4b371a83f",
-      "title": "Tesla — Machine Learning Engineer Intern - Factory Software",
-      "url": "https://www.tesla.com/careers/search/job/282916",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4418a393266b",
-      "title": "Bedrock Robotics — Behavior Machine Learning Engineer Intern - World Models",
-      "url": "https://jobs.ashbyhq.com/bedrock-robotics/c51d682e-58ee-44de-886f-4cfacb56d2e1/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "686de1aa1d98",
-      "title": "I spent $220 on Google app ads and 60% of the installs were robots",
-      "url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
-      "source": "hackernews",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "news"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b523151bdcd6",
-      "title": "Global Innovation Build Challenge V2",
-      "url": "https://gibc-v2.devpost.com/",
-      "source": "devpost",
-      "score": 6,
-      "deadline": "2026-10-01",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "6a7eb0d72873",
-      "title": "AfterQuery — AI/ML Research Intern",
-      "url": "https://jobs.ashbyhq.com/AfterQuery/00cd591f-6894-4259-83b6-36c999351dde/application?embed=true",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f251fb3c1ce5",
-      "title": "Qualcomm — Machine Learning Compiler & Performance Engineering Intern - Systems",
-      "url": "https://qualcomm.eightfold.ai/careers/job/446721064018",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "124c86357968",
-      "title": "Veeam Software — Machine Learning Intern - AI",
-      "url": "https://job-boards.eu.greenhouse.io/veeamsoftware/jobs/4971207101",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a6202cfd989f",
-      "title": "Guardian Life — Summer Intern - Digital & Technology - AI & Machine Learning",
-      "url": "https://guardianlife.wd5.myworkdayjobs.com/guardian-life-careers/job/New-York/XMLNAME-2027-Guardian-Summer-Intern--Digital---Technology---AI---Machine-Learning_R000110205",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "7642f386f156",
-      "title": "Beginner's Paradise - FirstCommit",
-      "url": "https://firstcommit.devpost.com/",
-      "source": "devpost",
-      "score": 6,
-      "deadline": "2026-09-30",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5348756cb477",
-      "title": "Tesla — Computer Vision Engineer Intern - Cell Engineering",
-      "url": "https://www.tesla.com/careers/search/job/283290",
-      "source": "internships",
-      "score": 6,
-      "deadline": null,
-      "tags": [
-        "internship"
       ],
       "ai_summary": "",
       "action_plan": []

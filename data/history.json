@@ -89114,6 +89114,1129 @@
           "key": "a8279e714cf9"
         }
       ]
+    },
+    {
+      "date": "2026-09-21",
+      "items": [
+        {
+          "title": "An Interpretable Memory Decision Controller for LLM Agents Based on Three-Signal Complementarity: Decoupling Confidence and Consistency",
+          "url": "https://arxiv.org/abs/2609.22043v1",
+          "source": "arxiv",
+          "description": "Memory systems for large language models have focused predominantly on efficient retrieval, whereas the decision of whether retrieved memories should be trusted has received comparatively little attention. When the memory store contains conflicting positions, standard retrieval-augmented generation (RAG) blindly injects memories and amplifies hallucinations: in models susceptible to memory injection, the RAG hallucination rate under conflicting memories is markedly higher than that of a memory-free baseline. Inspired by memory signaling mechanisms in the prefrontal cortex, we propose the Memory Decision Layer (MDL), a zero-parameter memory decision controller situated between the retrieval and generation stages. Its core is a three-signal complementary encoder that fuses relevance, reliability, and task risk through QR-based orthogonal subspace projection and a meta-working-memory signal into an interpretable decision representation that quantifies the trustworthiness of retrieved memories. Building on this encoder, MDL explicitly decouples confidence from consistency and introduces risk inversion and explicit abstention. Evaluations on mainstream large language models and multiple open-source datasets show that MDL reduces the hallucination rate under conflicting memories by about 56.04% in general scenarios and approaches zero hallucination in high-risk scenarios. The controller is fully white-box: it relies purely on geometric operations, requires no trained parameters, and adds only about 0.14 ms per decision -- roughly 50x faster than the embedding-retrieval step that precedes it and four to five orders of magnitude faster than an LLM self-evaluation call.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.22043",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "af780f3e14ff"
+        },
+        {
+          "title": "MLAI Hackathon 2026",
+          "url": "https://mlai-hackathon.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Sep 18 - Oct 16, 2026 | prize $ 0 | themes: Databases, Machine Learning/AI",
+          "deadline": "2026-10-16",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "31113",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6f1170a52c32"
+        },
+        {
+          "title": "Cyber Security Internship",
+          "url": "https://unstop.com/internships/cyber-security-internship-skillorbit-private-limited-1758945",
+          "source": "unstop",
+          "description": "internship | online | Eligibility: students, fresher; courses: artsOthers, ba, barch, bca, bdes, bed | Team size: 1-1 | By Skillorbit Private Limited | Roles and Responsibilities Assist in the identification and mitigation of security vulnerabilities. Support the monitoring of network traffic for suspicious activities. Help in the implementation and maintenance of security protocols and tools. Participate in security awareness training development and delivery. Conduct research on emerging cyber threats and security best practices. Assist in incident response activities under supervision. Document security procedures, activities, and findings. Collaborate with the security team on various cybersecurity projects. Learn and apply relevant cybersecurity frameworks and standards. Contribute to improving the overall security posture of the organ",
+          "deadline": "2026-10-04",
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1758945",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "86075813d21a"
+        },
+        {
+          "title": "UpForge AI & Future Skills IQ Challenge 2026",
+          "url": "https://unstop.com/quiz/upforge-ai-future-skills-iq-challenge-2026-upforge-global-1758668",
+          "source": "unstop",
+          "description": "competition | online | Team size: 1-1 | By UpForge Global | Know your strengths. Explore your options. Build your future. TAKE THE QUIZ → Quizzzzz Description: UpForge brings you the AI & Future Skills IQ Challenge 2026 — a short, scenario-based quiz designed to test how well you understand the technologies and skills shaping the AI-driven future. You’ll work through real-world situations involving AI tools, prompting, generative AI, machine learning, automation, and emerging technologies. It’s less about memorising definitions and more about understanding how these technologies are actually used in practical situations. Guidelines: Open to students, professionals, and founders Individual participation (no teams) Attempt honestly for an accurate resu",
+          "deadline": "2026-10-03",
+          "tags": [
+            "competition"
+          ],
+          "native_id": "1758668",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0d08f6ddeb36"
+        },
+        {
+          "title": "AI Imagination Challenge - Build with Gemini",
+          "url": "https://unstop.com/workshops-webinars/ai-imagination-challenge-build-with-gemini-rajiv-gandhi-university-of-knowledge-technologies-rgukt-ii-1759193",
+          "source": "unstop",
+          "description": "workshop | online | Team size: 1-1 | Prize: cash 50000 | By Rajiv Gandhi University of Knowledge Technologies (RGUKT)-IIIT Nuzvid | AI Imagination Challenge: Build. Imagine. Create with Gemini. What if your imagination could become a real, working creation? The Imagination Challenge invites students, developers, creators, and innovators to explore the possibilities of AI by building an innovative project using Google Gemini . Join us for an engaging webinar where you’ll learn about the challenge, understand how to participate, get ideas for your project, and discover how Gemini can help turn your concepts into reality. What You Can Build?: Your imagination is the limit. Build something that solves a problem, creates an experience, automates a task, or simply demonstrates an innovative use of AI. Prizes: Best Project: Get",
+          "deadline": "2026-09-25",
+          "tags": [
+            "workshop"
+          ],
+          "native_id": "1759193",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "807170e5d3c3"
+        },
+        {
+          "title": "Google Developer Groups on Campus (Lead)",
+          "url": "https://developers.google.com/community",
+          "source": "programs",
+          "description": "Run a Google developer community at your college. Google credentials, event support and direct access to Google Developer Experts; a strong resume line for a CSE student. (Typical window: Lead applications ~Apr-Jun)",
+          "deadline": null,
+          "tags": [
+            "ambassador",
+            "program",
+            "google",
+            "community",
+            "students"
+          ],
+          "native_id": "gdg-on-campus",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6484a53d32d6"
+        },
+        {
+          "title": "RRR-A Game Jam",
+          "url": "https://unstop.com/hackathons/rrr-a-game-jam-indian-institute-of-technology-indian-school-of-mines-iit-ism-dhanbad-1759129",
+          "source": "unstop",
+          "description": "hackathon | hybrid | Team size: 1-3 | Prize: cash 12000 | By Indian Institute of Technology, Indian School of Mines (IIT ISM), Dhanbad | Event Details Format: Hybrid — 9-day development period followed by presentations at Concetto. Registration deadline: 28 September 2026 Game Jam: 29 September – 7 October 2026 Submission deadline: 7 October 2026 Results: Concetto Day 3 Final presentation: 3-minute presentation + 2-minute Q&A at Concetto. Offline presentation is primary; an online option is available only if a team is unable to attend physically. Participation & Teams Each team may have a maximum of 3 members. Participants may use any game engine or framework, including Unity, Unreal, Godot, etc. Remote development is allowed during the development period. Game Development Rules The theme will be revealed on 29 September 2026",
+          "deadline": "2026-09-28",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1759129",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "afdc7383315c"
+        },
+        {
+          "title": "Java Developer Internship",
+          "url": "https://unstop.com/internships/java-developer-internship-unstop-tech-fair-20-yugensoft-innovations-1759170",
+          "source": "unstop",
+          "description": "internship | online | Eligibility: students; courses: bca, bsc, btech | Team size: 1-1 | By Yugensoft Innovations | Responsibilities of the Intern: Develop and maintain Java applications and web services Design and implement software solutions Troubleshoot and debug existing applications Write and maintain technical documentation Participate in code reviews Assist with the development of unit tests Assist with the development of automated tests Requirements: Bachelor’s degree in Computer Science or a related field Strong knowledge of Java, web services, and object-oriented programming Experience with databases and SQL Knowledge of software development best practices Excellent problem-solving and communication skills Ability to work independently and as part of a team Ability to work in a fast-paced enviro",
+          "deadline": "2026-10-06",
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1759170",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "5b5418d0776d"
+        },
+        {
+          "title": "Software Ideathon I",
+          "url": "https://unstop.com/competitions/software-ideathon-i-sai-ram-engineering-college-1758555",
+          "source": "unstop",
+          "description": "competition | online | Eligibility: students, fresher, corporates | Team size: 1-4 | By Sai Ram Engineering College | Eligibility: Open to all students and graduates. Individual and team participation allowed. Cross-college teams are allowed. Maximum 4 members per team. Competition Tracks: Artificial Intelligence & Machine Learning. Web Development. Mobile App Development. UI/UX Design. Cybersecurity. Cloud Computing. Startup Innovation. Software Product Development. Round 1: Registration Register through Unstop. Complete your profile and submit the registration form before the deadline. Round 2: Idea Submission Submit the following: Project Title. Problem Statement. Proposed Solution. Technology Stack. Expected Outcome. PPT Presentation (Optional but Recommended). Round 3: Final Evaluation Projects will be",
+          "deadline": "2026-10-07",
+          "tags": [
+            "competition"
+          ],
+          "native_id": "1758555",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "86bc173ded4d"
+        },
+        {
+          "title": "Artificial Intelligence's Role in Current Tech Infrastructure",
+          "url": "https://unstop.com/workshops-webinars/artificial-intelligences-role-in-current-tech-infrastructure-techbairn-1758808",
+          "source": "unstop",
+          "description": "workshop | online | Team size: 1-1 | By TechBairn | Artificial Intelligence is becoming an important part of modern technology infrastructure, influencing how businesses build systems, solve problems, automate processes, and create new opportunities. Speaker: Abhisar Gautam Role:Senior AI Engineer, Credit Saison India Date: 29th november What You'll Explore: Understanding the role of AI in today's technology infrastructure Looking at AI beyond individual tools and applications How to develop the right way of thinking about AI Approaches to learning AI effectively Ways to identify opportunities to leverage AI in your career Practical career insights based on real industry experience Join the session to understand the broader impact of AI on to",
+          "deadline": "2026-09-23",
+          "tags": [
+            "workshop"
+          ],
+          "native_id": "1758808",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8def84690e3b"
+        },
+        {
+          "title": "Amazon Selling Partner API Integration Challenge",
+          "url": "https://unstop.com/hackathons/amazon-selling-partner-api-integration-challenge-plantex-india-1759084",
+          "source": "unstop",
+          "description": "hackathon | online | Eligibility: students; courses: btech, integrated, mba2, mca, mca1, mtech | Team size: 1-3 | By Plantex India | The Problem: On Amazon, the delivery promise a customer sees — “Get it by Tuesday” — is among the strongest drivers of conversion. It is not one national number. It varies by pincode, and follows directly from three things Plantex already controls: where stock sits, how much sits there, and order cutoffs. Plantex already plans stock placement against demand clusters and runs the rebalancing engine that acts on those plans. This project closes the loop — measuring the delivery promise those placement decisions actually produce, at pincode granularity, continuously. A working internal prototype already does the hard part: it queries the Selling Partner API (getFulfillmentPreview) for an estima",
+          "deadline": "2026-10-01",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1759084",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0bb35b2585bd"
+        },
+        {
+          "title": "React.js Developer Internship",
+          "url": "https://unstop.com/internships/reactjs-developer-internship-korvexia-technologies-1758940",
+          "source": "unstop",
+          "description": "internship | online | Eligibility: students, fresher; 1 year; courses: artsOthers, ba, barch, bca, bdes, bed | Team size: 1-1 | By Korvexia Technologies | About the Company Korvexia Technologies builds practical digital solutions for clients and internal business needs. The company offers aspiring developers an opportunity to learn through meaningful contributions to real client and company projects while receiving guidance in a collaborative remote environment. Responsibilities Assist in developing and improving responsive user interfaces using React.js, JavaScript, HTML, and CSS. Work with mentors and team members to understand requirements, implement features, and resolve development issues. Use Git and GitHub for version control, code collaboration, and maintaining project updates. Explore and work with REST APIs where relevant to assigned",
+          "deadline": "2026-10-04",
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1758940",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f526fba2e34c"
+        },
+        {
+          "title": "Beyond the Classroom: Exploring Android Development & Industry Trends",
+          "url": "https://unstop.com/workshops-webinars/beyond-the-classroom-exploring-android-development-industry-trends-techbairn-research-1758632",
+          "source": "unstop",
+          "description": "workshop | online | Team size: 1-1 | By TechBairn Research | Overview Android development continues to evolve with new technologies, tools, and changing expectations across the mobile industry. Building a career in this space requires more than learning to write applications—it involves understanding how products are designed, developed, tested, and improved for real users. Date: 21st November Mode: Online Session Session Highlights: Understanding the fundamentals of modern Android development Exploring the tools and technologies used in mobile application development Learning how industry practices differ from classroom projects Understanding current trends shaping the Android ecosystem Exploring the skills needed for a career in mobile development D",
+          "deadline": "2026-09-22",
+          "tags": [
+            "workshop"
+          ],
+          "native_id": "1758632",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "198311fe0ad8"
+        },
+        {
+          "title": "Technorazz 2026",
+          "url": "https://unstop.com/hackathons/technorazz-2026-jaipur-national-university-jnu-jaipur-1757968",
+          "source": "unstop",
+          "description": "hackathon | offline | Team size: 3-4 | By Jaipur National University (JNU), Jaipur | Overview: Step into a software development hackathon built to turn coding skill into bold solutions. About the Opportunity: Technorazz 2026 is an offline coding challenge by Jaipur National University (JNU), Jaipur, designed for participants interested in software development and hackathons. Working in teams, participants can take on a focused coding experience that puts their technical thinking into action. This opportunity offers a platform to showcase teamwork and collaboration, data structures and algorithms, problem solving, and critical thinking. Bring your ideas, sharpen your approach, and make your mark in an online software development challenge. Register for Technorazz 2026 and tak",
+          "deadline": "2026-09-28",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1757968",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "559352782952"
+        },
+        {
+          "title": "Software Developer Internship",
+          "url": "https://unstop.com/internships/software-developer-internship-aalteon-1758772",
+          "source": "unstop",
+          "description": "internship | online | Eligibility: students; courses: bca, btech, diploma, integrated | Team size: 1-1 | By Aalteon | Aalteon is hiring for Software Developer Intern! About the Company Aalteon is offering an opportunity for undergraduate students to gain practical software development experience in a collaborative technology environment. The internship is designed for students in their first through fourth year who want to strengthen their programming foundation and understand how software products are built and maintained. Responsibilities: Assist with designing, developing, testing, and improving software applications under the guidance of experienced developers. Write readable, maintainable code and contribute to debugging, documentation, and technical discussions. Work with team members to understand re",
+          "deadline": "2026-10-03",
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1758772",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ac683ea40a6d"
+        },
+        {
+          "title": "The AI Transformation of Work: Inside Modern Tech Teams",
+          "url": "https://unstop.com/workshops-webinars/the-ai-transformation-of-work-inside-modern-tech-teams-techbairn-1758613",
+          "source": "unstop",
+          "description": "workshop | online | Team size: 1-1 | By TechBairn | Speaker: Harkishan Singh Software Engineer 2 @ Microsoft Event Details: Date: 10th October 2026 Mode: Online Webinar What You'll Explore: How AI is being integrated into modern workplaces Changes in software development and engineering workflows AI tools that improve productivity and collaboration How professionals are adapting to AI-powered work environments Opportunities and challenges created by AI adoption Skills students should develop for the future workplace",
+          "deadline": "2026-09-22",
+          "tags": [
+            "workshop"
+          ],
+          "native_id": "1758613",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9fc66803511d"
+        },
+        {
+          "title": "The Black-Box Protocol: Stage 02 - System Matrix",
+          "url": "https://unstop.com/hackathons/the-black-box-protocol-stage-02-system-matrix-techhelp4u-1758551",
+          "source": "unstop",
+          "description": "hackathon | offline | Team size: 2-4 | By TECHhelp4U | Overview: 12-Hour Offline AI Hack Day in Indore About the Event: Most hackathons end the exact same way: you spend the weekend writing code, show a slide deck, and after the event, the project is abandoned and forgotten. We are here to change that. Organised by TECHhelp4U and backed by Major League Hacking (MLH), with Google Gemini as the official technology partner, Stage 02 // System Matrix is an action-packed, 12-hour offline building sprint in Indore. This isn't just a competition to win prizes—it’s a launchpad for your next venture. We want builders to step in with a founder mindset: pick a real problem, build a working AI product using code, and show a clear future roadmap for how you ",
+          "deadline": "2026-09-27",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1758551",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "69da41a379ad"
+        },
+        {
+          "title": "Content Creation / Writer Internship",
+          "url": "https://unstop.com/internships/content-creation-writer-internship-ourselfstudy-1758136",
+          "source": "unstop",
+          "description": "internship | online | Eligibility: students; courses: artsOthers, bSchoolOthers, ba, barch, bba, bcom | Team size: 1-1 | By OurSelfStudy | Roles Intern role for content writing on Education, AI Responsibility To write content on education & AI Daily update is mandatory Ideation on Content marketing Requirements Passion to read and write unique informative content. Graduate in any stream with strong narrating and writing skills. Candidate should have experience in publishing at least two write-ups online or offline.",
+          "deadline": "2026-10-02",
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1758136",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f95f7a50fd9f"
+        },
+        {
+          "title": "Code Smarter with AI: Learning to Code in the Age of LLMs",
+          "url": "https://unstop.com/workshops-webinars/code-smarter-with-ai-learning-to-code-in-the-age-of-llms-techbairn-1758618",
+          "source": "unstop",
+          "description": "workshop | online | Team size: 1-1 | By TechBairn | Overview Coding is evolving rapidly with the rise of Large Language Models. From understanding code to debugging and building applications, AI is becoming an important companion for modern developers. Speaker: Anuj Arora, Lead Engineer @ Samsung Mode: Online Webinar What You'll Explore: How LLMs are changing the software development process Using AI tools to improve coding productivity AI-assisted debugging and problem-solving Writing better code with intelligent tools Skills developers should build in the AI era Opportunities and challenges of AI-assisted development",
+          "deadline": "2026-09-22",
+          "tags": [
+            "workshop"
+          ],
+          "native_id": "1758618",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "678d84a11f02"
+        },
+        {
+          "title": "Nakshatra - The Aerospace Hackathon 2026",
+          "url": "https://unstop.com/hackathons/nakshatra-the-aerospace-hackathon-2026-madhav-institute-of-technology-and-science-mits-gwalior-1751540",
+          "source": "unstop",
+          "description": "hackathon | offline | Eligibility: students | Team size: 2-4 | Prize: cash 10000 | By Madhav Institute of Technology and Science (MITS), Gwalior | Overview: NAKSHATRA is an aerospace-focused hackathon organised by the Aerospace Club, Madhav Institute of Technology & Science (MITS), Gwalior, bringing together students to innovate and solve challenges across space, astronomy, aeronautics, and aerospace technology. The hackathon will provide participants with an opportunity to develop innovative solutions through two dedicated tracks — Software and Hardware. Competition Format: Round 1 — PPT Submission Round: The first round will evaluate participants based on their understanding of the selected aerospace problem statement and their proposed approach towards solving it. Teams will be required to submit a PPT presenting their proposed solu",
+          "deadline": "2026-09-26",
+          "tags": [
+            "hackathon"
+          ],
+          "native_id": "1751540",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "203986e55ba0"
+        },
+        {
+          "title": "SaaS Development Internship",
+          "url": "https://unstop.com/internships/saas-development-internship-revino-solutions-private-limited-1758777",
+          "source": "unstop",
+          "description": "internship | online | Eligibility: students; courses: artsOthers, bSchoolOthers, ba, barch, bba, bcom | Team size: 1-1 | By Revino Solutions Private Limited | This is our first technical hire — there's no senior engineer or tech lead in-house. You'll own the stack end-to-end from day one. High autonomy, high accountability. Not a mentorship-heavy setup. You will: Build and ship SaaS/web apps independently, with minimal to no senior support Work across frontend, backend, databases, APIs, integrations, and deployment Host, deploy, test, debug, and maintain production systems Own tasks fully: requirement → development → production Solve problems proactively, without waiting for direction Be accountable for bugs, deadlines, and deliverables You are: Self-driven, technically curious, and ready to become an independent builder — fast. Schedule: Mon–Sat,",
+          "deadline": "2026-09-29",
+          "tags": [
+            "internship"
+          ],
+          "native_id": "1758777",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0e6681d57a9d"
+        },
+        {
+          "title": "Available Guardrails: Certifying Selective Prediction across ML Systems",
+          "url": "https://arxiv.org/abs/2609.22048v1",
+          "source": "arxiv",
+          "description": "A selective predictor acts as a safety gate: it returns an output only when the prediction appears sufficiently trustworthy. Deployments increasingly require this reliability to be certified at a target precision for every reporting unit of interest, such as a tool, policy label, or patient subgroup. The main difficulty is often not whether a granted certificate is valid, but whether finite calibration data can produce one at all. As the gate becomes safer or more fine-grained, some units may receive too little evidence to certify. We make this notion of availability computable through classical exact-binomial inversion and formulate reporting-partition selection, under a fixed group order, as a dynamic program that exposes the trade-off among safety, granularity, and served traffic. The resulting frontier reveals a large population opportunity that finite-sample estimation nearly erases: a truth-informed planner gains $0.157$ mean coverage over support balancing, whereas a naive estimator recovers only $0.005$, making recovery from finite data the central challenge. Constructing candidate partitions on one planning split and selecting among them on another recovers part of this gap, improving mean coverage over support balancing by $0.060$, with the direction reproduced in $59$ of $60$ model effects across three intent-routing datasets and two architectures. A complementary validity-preserving lever, reallocating the familywise error budget across reporting units, recovers additional coverage both with population quantities and noisy estimates. The same frontier recurs, with predictor-specific ceilings, across LLM tool-calling, content moderation, lesion classification, and recommendation. Certified availability is therefore a plannable deployment resource that determines when a safety gate can be certified, at what granularity, and over how much traffic.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.22048",
+          "score": 9,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "659fb3a80ed6"
+        },
+        {
+          "title": "IdeaSpark",
+          "url": "https://unstop.com/competitions/ideaspark-st-joseph-engineering-college-vamanjoor-1757956",
+          "source": "unstop",
+          "description": "competition | offline | Eligibility: students | Team size: 2-4 | By St. Joseph Engineering College, Vamanjoor | IdeaSpark is a two-day inter-college entrepreneurship ideathon where students identify real-world problems and develop innovative, feasible, and scalable solutions with an entrepreneurial perspective. Registration: Free Eligibility: Students aged 18+ from any stream Team Size: 2–4 members from the same institution Format: Interdisciplinary teams allowed Theme: Open theme — software, hardware, products, services, business models, or hybrid solutions Focus Areas: Problem identification, innovation, market potential, business model, feasibility, scalability, and impact Submission: Teams must submit their idea using the provided PPT template, covering the problem, solution, target users, innovat",
+          "deadline": "2026-09-27",
+          "tags": [
+            "competition"
+          ],
+          "native_id": "1757956",
+          "score": 9,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9580864e1347"
+        },
+        {
+          "title": "How is your experience with ICLR LLM Feedback? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wllbz0/how_is_your_experience_with_iclr_llm_feedback_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wllbz0",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "0b39a2c11a09"
+        },
+        {
+          "title": "QA Engineer",
+          "url": "https://unstop.com/jobs/qa-engineer-bestq-software-private-limited-1758125",
+          "source": "unstop",
+          "description": "job | online | Eligibility: corporates; 3 years, 4 years, 5 years, 6 years | Team size: 1-1 | By BestQ Software Private Limited | Role: QA SDET Skills Required: Experience with tools like Selenium, Playwright, Rest API. Experience in API and UI Automation Postman. Programming in Java/Python. Familiar with CI/CD (GitHub Actions/Jenkins). Responsibilities Include: Lead automation strategy across Android, iOS & Web. Build robust test frameworks using Appium & other tools. Integrate test suites into CI/CD pipelines. Validate SDKs, IPA/APK builds, and environment-specific configurations. Monitor crash reports (Firebase), debug with Charles Proxy, Fiddler, etc. Contribute to release validation, A/B testing, and exploratory testing. Mentor junior testers and promote best QA practices. You’re A Great Fit If You: Have 3–7 years",
+          "deadline": "2026-10-02",
+          "tags": [
+            "job"
+          ],
+          "native_id": "1758125",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "12dadff96fa6"
+        },
+        {
+          "title": "Claude Campus Ambassador Program",
+          "url": "https://claude.com/programs/campus",
+          "source": "programs",
+          "description": "[CLOSED 2026-09-12 — next round expected 2027] USD 3,600 stipend + Anthropic API credits + guest speakers, for a full school year (Sep-Jun). Tracks for undergrad, grad and PhD/postdoc. Open worldwide, 18+, needs work authorisation in your country of study. Reviewed on a rolling basis, so apply on day one. (Typical window: Applications ~Sep (2026 round: Sep 1-12))",
+          "deadline": null,
+          "tags": [
+            "program",
+            "ambassador",
+            "anthropic",
+            "llm",
+            "paid",
+            "stipend",
+            "round-closed"
+          ],
+          "native_id": "claude-campus-ambassador",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4126e246bd62"
+        },
+        {
+          "title": "Value-Sensitive Delegation in Everyday AI Agent Use: Evidence from OpenClaw",
+          "url": "https://arxiv.org/abs/2609.22067v1",
+          "source": "arxiv",
+          "description": "Users increasingly delegate work to autonomous AI agents, yet evaluations typically measure task completion rather than the values users prioritize. Using Value Sensitive Design, we analyzed, with LLM assistance, 73,093 first-person Reddit posts about using OpenClaw, each for its human value, agent aspect, value fulfillment, and user outcome. The 21 values form six value groups, including Autonomous, Dependable, and Affordable Operation, Bounded Reach, Reviewability, and Equitable Access. Relative to each aspect's corpus share, values clustered not at the agent's outputs but at the operating conditions users set around a run. Values were usually met where users described what the agent delivered, in five of six groups, and mostly unmet where users described supervising it, in all six groups. We conceptualize this pattern as value-sensitive delegation. Supporting human values requires attention not only to what an agent accomplishes, but to the conditions users set around delegation, including cost, access, and oversight.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.22067",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ad6d55c255c8"
+        },
+        {
+          "title": "Envision'26",
+          "url": "https://unstop.com/competitions/envision26-hansraj-collegeuniversity-of-delhi-1758872",
+          "source": "unstop",
+          "description": "competition | online | Team size: 1-1 | By Hansraj College,University of Delhi | Envision is the flagship article writing and research competition for the 2026 edition of DeFacto , the annual magazine of the Department of Commerce, Hansraj College. More than a writing competition, it is a space to question ideas, explore contemporary business issues, and shape perspectives into meaningful arguments. The competition unfolds across TWO rounds; an original article submission, followed by an on-the-spot research and argumentation round that challenges participants to think critically, research efficiently, and articulate evidence-backed arguments under time constraints. Write with purpose. Research with curiosity. Debate with conviction. Eligibility: Students from all colleg",
+          "deadline": "2026-10-04",
+          "tags": [
+            "competition"
+          ],
+          "native_id": "1758872",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d19463f3dc8b"
+        },
+        {
+          "title": "Would You Spot the Signal?",
+          "url": "https://unstop.com/quiz/would-you-spot-the-signal-upforge-quiz-2026-upforge-1758663",
+          "source": "unstop",
+          "description": "competition | online | Team size: 1-1 | By UpForge | Description: UpForge brings you the Startup Intelligence IQ Challenge 2026 — a short, scenario-based assessment designed to test how well you can separate meaningful startup signals from noise. You’ll work through real-world startup situations involving traction, funding, market signals, customer evidence, due diligence, sources, and data quality. It’s less about memorising startup terminology and more about asking the right questions, evaluating evidence, and making sense of the information behind a startup. Guidelines: Open to students, professionals, founders, and startup enthusiasts Individual participation (no teams) Attempt honestly for an accurate result Completely free, with no hidde",
+          "deadline": "2026-10-03",
+          "tags": [
+            "competition"
+          ],
+          "native_id": "1758663",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "d4002027272b"
+        },
+        {
+          "title": "Swiss Government Excellence Scholarships",
+          "url": "https://www.sbfi.admin.ch/en/swiss-government-excellence-scholarships",
+          "source": "programs",
+          "description": "Research and PhD scholarships at ETH Zurich, EPFL and Swiss universities, fully funded. Strong for AI and systems research; apply through the Swiss embassy in India. (Typical window: Applications ~Aug-Nov)",
+          "deadline": null,
+          "tags": [
+            "scholarship",
+            "government",
+            "funded",
+            "switzerland",
+            "research"
+          ],
+          "native_id": "swiss-excellence",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "f3d5cd513c99"
+        },
+        {
+          "title": "Search & Content Performance Lead",
+          "url": "https://unstop.com/jobs/search-content-performance-lead-efy-group-1759178",
+          "source": "unstop",
+          "description": "job | online | Eligibility: corporates; 1 year, 2 years | Team size: 1-1 | By EFY Group | Company: EFY Group / Electronics For You Salary: Rs. 35,000–50,000 per month. Experience: 1–2 years. Location: Okhla, Delhi. Mode: WFO & WFH. About The Role: We are looking for a Search & Content Performance professional who can improve organic traffic and content performance across our digital platforms. The ideal candidate should have experience working with a digital publisher, education content site, or similar content-driven platform . Key Responsibilities: Manage organic search traffic and AEO performance. Analyze Google Search Console and Google Analytics data. Work on content clean-up and consolidation across large numbers of web pages. Improve on-page content standards and internal ",
+          "deadline": "2026-10-05",
+          "tags": [
+            "job"
+          ],
+          "native_id": "1759178",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "99d3c09d574f"
+        },
+        {
+          "title": "Community Development Manager",
+          "url": "https://unstop.com/jobs/community-development-manager-strategic-asset-management-school-1758571",
+          "source": "unstop",
+          "description": "job | online | Eligibility: corporates; 1 year, 2 years | Team size: 1-1 | By Strategic Asset Management School | Who we are? WealthVidya provides Financial Literacy for women, teachers and young adults. WealthVidya is backed by AIM-Niti Aayog, Startup India Seed Fund, and evaluated by Ministry of Education, AICTE and National Skill Developments Corporation. The mission is: Preparing India’s Youth and Teachers for a Digitally Atmanirbhar Bharat, using India-relevant content. Building financial confidence as a life skill for students, women and retired professionals. Providing a trusted platform for BFSI industry and users. CA Archit Lohia, and his concern CareerTopper, has grown from an e-learning platform to a group of companies providing Fund Management and Educational services. His brand, Strategic A",
+          "deadline": "2026-09-26",
+          "tags": [
+            "job"
+          ],
+          "native_id": "1758571",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ef62c8f8f58f"
+        },
+        {
+          "title": "Machine Learning Engineer Intern — Coinbase",
+          "url": "https://www.coinbase.com/careers/positions/8175441?gh_jid=8175441",
+          "source": "ats",
+          "description": "Coinbase | Hybrid - San Francisco, CA | via Greenhouse",
+          "deadline": null,
+          "tags": [
+            "job"
+          ],
+          "native_id": "gh:coinbase:8175441",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7cb9a60d5100"
+        },
+        {
+          "title": "Software Engineer Intern, Machine Learning (Summer 2027 - Toronto) — Lyft",
+          "url": "https://app.careerpuck.com/job-board/lyft/job/8802332002?gh_jid=8802332002",
+          "source": "ats",
+          "description": "Lyft | Toronto, Canada | via Greenhouse",
+          "deadline": null,
+          "tags": [
+            "job"
+          ],
+          "native_id": "gh:lyft:8802332002",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "ee6efe80b7dd"
+        },
+        {
+          "title": "Chevening Scholarships",
+          "url": "https://www.chevening.org/",
+          "source": "programs",
+          "description": "UK government fully funded masters scholarship - tuition, living costs, flights. Needs about 2 years work experience, so a target for after graduation rather than now. (Typical window: Applications ~Aug-Nov)",
+          "deadline": null,
+          "tags": [
+            "scholarship",
+            "government",
+            "funded",
+            "uk",
+            "masters"
+          ],
+          "native_id": "chevening",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6cab423ea7b9"
+        },
+        {
+          "title": "Charpak Scholarships (Lab / Semester / Masters)",
+          "url": "https://www.inde.campusfrance.org/france-excellence-charpak-summer-scholarship",
+          "source": "programs",
+          "description": "French government scholarships for Indian students. The Lab track funds a 2-4 month research internship in a French laboratory during your bachelors - one of the few that fits an undergrad timeline. (Typical window: Applications ~Jan-Mar)",
+          "deadline": null,
+          "tags": [
+            "scholarship",
+            "internship",
+            "government",
+            "funded",
+            "france",
+            "research",
+            "india"
+          ],
+          "native_id": "charpak-france",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8ec1735e2f29"
+        },
+        {
+          "title": "Predictable Failure in Multi-Hop Retrieval: Score-Distributional Confidence Scoring and Abstention",
+          "url": "https://arxiv.org/abs/2609.22056v1",
+          "source": "arxiv",
+          "description": "Multi-hop retrieval failures are not uniformly distributed across queries: they cluster in structurally predictable subpopulations. We prove two results formalizing this structure. First (CWAR Reducibility): confident-failure reduction is achievable if and only if retrieval features carry mutual information about success, a condition satisfied by LLM-judge pipelines but substantially weaker in dense-only settings, explaining the AUC-AC gap between regimes. Second (Feature Regime Complementarity): no single ANN score feature achieves best predictive performance across all failure regimes; the dominant feature differs between datasets (query length on MuSiQue, hop-1 concentration on HoVer), and a constructive witness pair shows each is necessary in one regime and non-contributory in the other. We instantiate these principles in RegimeAbstain, which computes a Retrieval Confidence Score (RCS), a logistic function of up to nine query-ANN structural features, all available without any additional LLM call, and uses it to implement a calibrated abstention policy. We define the Confident-Wrong-Answer Rate (CWAR) metric and evaluate across three multi-hop benchmarks (MuSiQue, 2WikiMultiHopQA, HoVer) and two retrieval architectures (LLM-judge and dense-only), covering five failure regimes with CWAR from 14.5% to 62.1%. RCS achieves best or co-best AUC-AC in all five conditions against eight confidence baselines. On MuSiQue (LLM-judge), RCS reduces CWAR from 39.5% to 20.6% at 50% coverage (47.8% relative reduction), with ECE=0.035. A model trained on MuSiQue transfers to 2WikiMultiHopQA with only -0.5pp AUC loss, confirming the domain-agnostic structure of regime features.",
+          "deadline": null,
+          "tags": [
+            "research"
+          ],
+          "native_id": "2609.22056",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4c54beb31623"
+        },
+        {
+          "title": "MEXT Scholarship",
+          "url": "https://www.studyinjapan.go.jp/en/planning/scholarships/",
+          "source": "programs",
+          "description": "Japanese government scholarship covering tuition, monthly stipend and flights, for research students and undergraduates. Embassy-recommended track is the one open to Indian applicants. (Typical window: Applications ~Apr-Jun (embassy track))",
+          "deadline": null,
+          "tags": [
+            "scholarship",
+            "government",
+            "funded",
+            "japan",
+            "research"
+          ],
+          "native_id": "japan-mext",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6bdb9e9a695d"
+        },
+        {
+          "title": "qwdwqfwq/topconf-paper-figure-gallery — ★165",
+          "url": "https://github.com/qwdwqfwq/topconf-paper-figure-gallery",
+          "source": "github",
+          "description": "A searchable gallery of well-designed Figure 1 / teaser figures from ICLR, ICML, NeurIPS, CVPR, ACL, AAAI (2023-2025) — 2,298 curated figures for paper-overview inspiration. Pure static site. (topics: aaai, academic writing, acl, awesome list, computer vision, cvpr, data visualization, deep learning, figure, gallery, iclr, icml, inspiration, machine learning, neurips, nlp, paper figures, paper writing, research, scientific figures)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "qwdwqfwq/topconf-paper-figure-gallery",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "089e1d84e105"
+        },
+        {
+          "title": "A*STAR Scholarships & Attachments",
+          "url": "https://www.a-star.edu.sg/scholarships",
+          "source": "programs",
+          "description": "Singapore national research agency scholarships and research attachments, including AI and computing labs. Some tracks are open to international undergraduates. (Typical window: Rolling / annual cycles)",
+          "deadline": null,
+          "tags": [
+            "scholarship",
+            "research",
+            "government",
+            "funded",
+            "singapore",
+            "internship"
+          ],
+          "native_id": "astar-singapore",
+          "score": 6,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "dcf67f8f737f"
+        },
+        {
+          "title": "Y Combinator",
+          "url": "https://www.ycombinator.com/apply",
+          "source": "programs",
+          "description": "[WINDOW OPEN] USD 500,000 standard deal, three-month batch. Solo founders and student founders accepted; applying early with a working demo is the standard advice. (Typical window: Two batches a year, deadlines ~Apr and ~Sep)",
+          "deadline": "2026-09-30",
+          "tags": [
+            "startup",
+            "accelerator",
+            "funding",
+            "venture",
+            "in-season"
+          ],
+          "native_id": "y-combinator-2026",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "551718b31bf7"
+        },
+        {
+          "title": "BIRAC BIG (Biotechnology Ignition Grant)",
+          "url": "https://birac.nic.in/big.php",
+          "source": "programs",
+          "description": "Up to Rs 50 lakh over 18 months for early-stage ideas with a biotech/health/AI-for-bio angle. Open to individual entrepreneurs and startups. (Typical window: Two calls a year, ~Jan and ~Jul)",
+          "deadline": null,
+          "tags": [
+            "grant",
+            "government",
+            "funding",
+            "biotech",
+            "india",
+            "deeptech"
+          ],
+          "native_id": "birac-big",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "81c3d5655e5e"
+        },
+        {
+          "title": "Z Fellows",
+          "url": "https://www.zfellows.com/",
+          "source": "programs",
+          "description": "USD 10,000 for a one-week fellowship, open to young builders (students welcome). Investor network access; no company required to apply. (Typical window: Rolling - cohorts roughly every quarter)",
+          "deadline": null,
+          "tags": [
+            "fellowship",
+            "paid",
+            "startup",
+            "funding",
+            "remote"
+          ],
+          "native_id": "z-fellows",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6d651858097c"
+        },
+        {
+          "title": "AX – Google’s Open Agentic Orchestrator",
+          "url": "https://agentexecutor.io",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news"
+          ],
+          "native_id": "49780797",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4c5e2e4bea05"
+        },
+        {
+          "title": "Fulbright-Nehru Fellowships",
+          "url": "https://www.usief.org.in/",
+          "source": "programs",
+          "description": "US government fellowships for Indian students and researchers - tuition, airfare, living costs and health insurance. 16 fellowship types; the Masters and Doctoral Research ones are the relevant tracks. (Typical window: Applications ~Mar-Jul)",
+          "deadline": null,
+          "tags": [
+            "fellowship",
+            "government",
+            "funded",
+            "usa",
+            "research",
+            "india"
+          ],
+          "native_id": "fulbright-nehru",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "a177b5f5e382"
+        },
+        {
+          "title": "Antler India Residency",
+          "url": "https://www.antler.co/location/india",
+          "source": "programs",
+          "description": "Day-zero programme - join without a co-founder or an idea, get a stipend during the residency and pre-seed investment if you are selected at the end. (Typical window: Cohorts ~2-3x a year)",
+          "deadline": null,
+          "tags": [
+            "startup",
+            "accelerator",
+            "funding",
+            "india",
+            "residency"
+          ],
+          "native_id": "antler-india",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "9ee96c03ddb1"
+        },
+        {
+          "title": "NIDHI PRAYAS - Prototype Grant",
+          "url": "https://nidhi-prayas.org/",
+          "source": "programs",
+          "description": "Up to Rs 10 lakh for an individual innovator to build a prototype - idea to prototype, no company required at entry. Run through PRAYAS centres across India. (Typical window: Rolling - centre-wise calls)",
+          "deadline": null,
+          "tags": [
+            "grant",
+            "government",
+            "funding",
+            "prototype",
+            "india",
+            "hardware"
+          ],
+          "native_id": "nidhi-prayas",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "b15a3bc6da61"
+        },
+        {
+          "title": "Neo Scholars",
+          "url": "https://neo.com/scholars",
+          "source": "programs",
+          "description": "USD 25,000 grant plus mentorship from senior engineers and founders, for exceptional CS students. Explicitly aimed at undergraduates. (Typical window: Applications ~Jan-Mar)",
+          "deadline": null,
+          "tags": [
+            "fellowship",
+            "paid",
+            "students",
+            "cs",
+            "funding"
+          ],
+          "native_id": "neo-scholars",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "1d067e772515"
+        },
+        {
+          "title": "wfzyx/von — ★284",
+          "url": "https://github.com/wfzyx/von",
+          "source": "github",
+          "description": "The open-source System One decision model. Sub-15ms, non-autoregressive, local drop-in alternative to TypeSafe Jev. (topics: decision model, jev, machine learning, python, rlcd, system one, typesafe)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "wfzyx/von",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "850d0e3dcea6"
+        },
+        {
+          "title": "EU Funding & Tenders Portal (Horizon Europe)",
+          "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",
+          "source": "programs",
+          "description": "The single portal for every EU research and innovation call. Mostly institutional, but worth watching for student and early-researcher calls and for the projects that later hire interns. (Typical window: Rolling - continuous calls)",
+          "deadline": null,
+          "tags": [
+            "grant",
+            "government",
+            "funding",
+            "europe",
+            "research"
+          ],
+          "native_id": "eu-horizon",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "edfadf17afdd"
+        },
+        {
+          "title": "Player-YN/BrowserKitten — ★2,906",
+          "url": "https://github.com/Player-YN/BrowserKitten",
+          "source": "github",
+          "description": "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server. (topics: ai agent, browser agent, byok, chrome extension, llm, pptx, tldraw, univer)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning"
+          ],
+          "native_id": "Player-YN/BrowserKitten",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "2314be4e75a6"
+        },
+        {
+          "title": "Concerns about the ICLR review policy [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wm1crj/concerns_about_the_iclr_review_policy_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wm1crj",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6f1f34ec9fb8"
+        },
+        {
+          "title": "Startup India Seed Fund Scheme (SISFS)",
+          "url": "https://seedfund.startupindia.gov.in/",
+          "source": "programs",
+          "description": "Up to Rs 20 lakh for proof-of-concept/prototype and up to Rs 50 lakh for commercialisation, disbursed through approved incubators. DPIIT-recognised startups under 2 years old. (Typical window: Rolling - incubator-led cycles)",
+          "deadline": null,
+          "tags": [
+            "grant",
+            "government",
+            "funding",
+            "startup",
+            "india"
+          ],
+          "native_id": "startup-india-seed-fund",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "eb96570eeaee"
+        },
+        {
+          "title": "Thiel Fellowship",
+          "url": "https://thielfellowship.org/",
+          "source": "programs",
+          "description": "USD 200,000 over two years to build something instead of finishing a degree. Under 23. Extremely selective - worth tracking as a signal even if you never apply. (Typical window: Applications ~Dec-Jan)",
+          "deadline": null,
+          "tags": [
+            "fellowship",
+            "paid",
+            "funding",
+            "startup",
+            "under-23"
+          ],
+          "native_id": "thiel-fellowship",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "843de1d2edbd"
+        },
+        {
+          "title": "Inside sanoTTS — a 294,279-parameter TTS system [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wlbhw8/inside_sanotts_a_294279parameter_tts_system_p/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wlbhw8",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "4e4d6023b85b"
+        },
+        {
+          "title": "buildspace",
+          "url": "https://buildspace.so/",
+          "source": "programs",
+          "description": "Free cohort-based seasons where you ship a project in 6 weeks alongside thousands of others. Demo day, funding and network are the real payoff. (Typical window: Seasons - roughly 2-3 a year)",
+          "deadline": null,
+          "tags": [
+            "startup",
+            "learning",
+            "community",
+            "building",
+            "remote"
+          ],
+          "native_id": "buildspace",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "7b3c8b002d3c"
+        },
+        {
+          "title": "Contrary Fellowship",
+          "url": "https://contrary.com/",
+          "source": "programs",
+          "description": "Talent community for exceptional students and young builders; access to funding, recruiting and a strong peer network. (Typical window: Rolling)",
+          "deadline": null,
+          "tags": [
+            "fellowship",
+            "students",
+            "venture",
+            "community"
+          ],
+          "native_id": "contrary-fellowship",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "28ccbbd4cccc"
+        },
+        {
+          "title": "Hemmingway-1, an Apache-2.0 27B creative-writing fine-tune (Qwen3.8-27B base, EQ-Bench 4 1330)[R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1wlr1w5/hemmingway1_an_apache20_27b_creativewriting/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning"
+          ],
+          "native_id": "1wlr1w5",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "8b5a872f9ea2"
+        },
+        {
+          "title": "Emergent Ventures",
+          "url": "https://www.mercatus.org/emergent-ventures",
+          "source": "programs",
+          "description": "Small fast grants (often USD 5k-50k) for high-upside projects from individuals, including an India-specific track. One short application, no institution needed. (Typical window: Rolling - applications always open)",
+          "deadline": null,
+          "tags": [
+            "grant",
+            "fellowship",
+            "funding",
+            "research",
+            "india"
+          ],
+          "native_id": "emergent-ventures",
+          "score": 0,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6ccc2d539411"
+        },
+        {
+          "title": "Hack Club (grants, YSWS, events)",
+          "url": "https://hackclub.com/",
+          "source": "programs",
+          "description": "Runs a steady stream of You-Ship-We-Ship programmes: build and ship something, get hardware, travel or cash. Genuinely open to students worldwide and low-friction to enter. (Typical window: Rolling - frequent You-Ship-We-Ship offers)",
+          "deadline": null,
+          "tags": [
+            "grant",
+            "community",
+            "hardware",
+            "students",
+            "funding"
+          ],
+          "native_id": "hack-club",
+          "score": 0,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "key": "6ee92a598367"
+        }
+      ]
     }
   ]
 }
