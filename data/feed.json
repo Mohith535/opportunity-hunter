@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24",
+  "updated_at": "2026-09-25",
   "items": [
     {
       "key": "cdb9d90dd553",
@@ -1073,19 +1073,6 @@
       "action_plan": []
     },
     {
-      "key": "c3d0b617342f",
-      "title": "HackCelestial 3.0",
-      "url": "https://unstop.com/hackathons/hackcelestial-30-pillai-university-navi-mumbai-1737808",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-09-27",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "4d9f34c5ff9a",
       "title": "AI Data Annotation Internship (Fixed Term)",
       "url": "https://unstop.com/internships/ai-data-annotation-internship-fixed-term-perit-ai-1760773",
@@ -1302,6 +1289,19 @@
       "deadline": "2026-10-04",
       "tags": [
         "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6ee42a5a3d74",
+      "title": "Full-Stack Developer Internship",
+      "url": "https://unstop.com/internships/full-stack-developer-internship-preplinc-ai-1760959",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-08",
+      "tags": [
+        "internship"
       ],
       "ai_summary": "",
       "action_plan": []
