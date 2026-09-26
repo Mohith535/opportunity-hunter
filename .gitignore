@@ -55,3 +55,6 @@ inbox_secret*.txt
 # Your standing hunt target — personal goal, money floor, why you need it. Public repo:
 # the example template is committed, your real copy is not.
 hunt_target.json
+
+# Application packs — tailored resumes and the jobs you are going after. Yours, not GitHub's.
+applications/
