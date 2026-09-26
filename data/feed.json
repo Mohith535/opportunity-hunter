@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-09-25",
+  "updated_at": "2026-09-26",
   "items": [
-    {
-      "key": "cdb9d90dd553",
-      "title": "Agents for Humans Hackathon",
-      "url": "https://agentsforhumans.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-09-14",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "148a255e8453",
       "title": "AI Builders Hackathon",
@@ -336,7 +323,7 @@
       "url": "https://the-great-agent-hackathon.devfolio.co",
       "source": "devfolio",
       "score": 10,
-      "deadline": "2026-09-25",
+      "deadline": "2026-09-26",
       "tags": [
         "hackathon"
       ],
@@ -1068,6 +1055,19 @@
       "deadline": "2026-10-07",
       "tags": [
         "job"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c3d0b617342f",
+      "title": "HackCelestial 3.0",
+      "url": "https://unstop.com/hackathons/hackcelestial-30-pillai-university-navi-mumbai-1737808",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-27",
+      "tags": [
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
