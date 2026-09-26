@@ -336,19 +336,80 @@ def _tailor_line(profile: dict, x: dict, projects: list[dict], jd_text: str, rol
     return m.group(1).strip().strip('"') if m else ""
 
 
+_ROLE_SECTION = """{voice}
+
+Write at most 3 bullets for a resume section titled "What I would bring to {company}".
+Each bullet connects ONE thing this job asks for (in the job's own words) to ONE specific real
+project or fact from FACTS, with its real number if it has one. Shape: "<what the job needs> — <the
+real project that shows it, and what it did>".
+Only facts from FACTS. Never claim a skill, tool or experience that is not in FACTS, even to match the
+job. No "passionate", no "excited", no "seeking", no "I am".
+Output only the bullets, one per line, each starting with "- ".
+
+--- JOB ---
+{role}
+{jd}
+
+--- FACTS ---
+{facts}
+"""
+
+
+def _role_section(profile: dict, x: dict, projects: list[dict], jd_text: str, role: str,
+                  company: str, report: dict) -> list[str]:
+    """Up to 3 bullets mapping what THIS job asks for to his real work — his Claude Ambassador resume
+    had exactly this ("What I would do as a Claude Campus Ambassador"), and it is the one section that
+    says "I want this job" rather than "I want a job".
+
+    It is also the riskiest text a model writes here, so every bullet must pass the verifier and the
+    voice linter individually, and the section appears only if at least TWO survive. One lonely
+    bullet reads as padding; none is better than that."""
+    if len((jd_text or "").strip()) < 300:
+        return []                     # a job blurb is not enough to map requirements honestly
+    facts = "\n".join(
+        [x.get("summary_core", "")] +
+        [f"- {p.get('x_resume_name')}: {p.get('x_tagline')}. " + " ".join(p.get("highlights") or [])[:420]
+         for p in projects])
+    out = complete(_ROLE_SECTION.format(voice=VOICE_RULES, company=company or "this role",
+                                        role=role or "", jd=jd_text[:2200], facts=facts),
+                   max_tokens=420, temperature=0.3)
+    kept = []
+    for line in (out or "").splitlines():
+        b = line.strip().lstrip("-*• ").strip()
+        if len(b) < 25:
+            continue
+        b, banned = drop_banned(b)
+        v = verify(b, profile)
+        report["removed"] += v.removed
+        report["unverified_terms"] += v.unverified_terms
+        report["unverified_numbers"] += v.unverified_numbers
+        report["banned"] += banned
+        if v.text:
+            kept.append(v.text)
+    return kept[:3] if len(kept) >= 2 else []
+
+
 def _skills_block(groups: dict, jd_low: str) -> list[str]:
     """His four skill groups, in his order, with the items this job mentions moved to the front
     of each group — the first words of a line are what the F-pattern reader actually sees."""
     lines = []
     for name, items in (groups or {}).items():
-        hit = [i for i in items if any(_present(t, jd_low) and _present(t, i.lower()) for t in LEXICON)
-               or re.sub(r"\s*\(.*\)", "", i).lower() in jd_low]
+        # Whole-word matches only, and never a one-letter item: a plain substring test promoted "C"
+        # above "Python (advanced)" because every job ad contains the letter c.
+        def asked(i: str) -> bool:
+            core = re.sub(r"\s*\(.*\)", "", i).strip().lower()
+            if len(core) < 2:
+                return False
+            return _present(core, jd_low) or any(
+                _present(t, jd_low) and _present(t, i.lower()) for t in LEXICON if len(t) > 1)
+        hit = [i for i in items if asked(i)]
         rest = [i for i in items if i not in hit]
         lines.append(f"**{name}:** " + " · ".join(hit + rest))
     return lines
 
 
-def _from_resume_layer(profile: dict, jd_text: str | None, role: str, report: dict) -> str:
+def _from_resume_layer(profile: dict, jd_text: str | None, role: str, report: dict,
+                       company: str = "") -> str:
     x = profile["x_resume"]
     basics = profile.get("basics", {})
     jd_low = _jd_low(jd_text, role)
@@ -381,8 +442,10 @@ def _from_resume_layer(profile: dict, jd_text: str | None, role: str, report: di
                 report["tailor_line"] = v.text
     L += ["", "## Summary", summary]
 
-    # ── selected work: most relevant first; his bullets verbatim; one emphasis per project ─
-    L += ["", "## Selected Work"]
+    # ── projects: most relevant first; his bullets verbatim; one emphasis per project ──────
+    # Headed "Projects", not his "Selected Work": older parsers classify sections by heading
+    # words, and resume.ats flagged the creative label on our own output. Content unchanged.
+    L += ["", "## Projects"]
     for p in featured:
         L.append(f"**{p.get('x_resume_name')}** — {p.get('x_tagline','')} · *{p.get('x_when','')}*")
         block = "\n".join(f"- {h}" for h in p.get("highlights") or [])
@@ -391,6 +454,13 @@ def _from_resume_layer(profile: dict, jd_text: str | None, role: str, report: di
             link = (p.get("url") or "").replace("https://", "")
             L.append(f"*{p['x_techline']}*" + (f" · {link}" if link and "github" in link else ""))
         L.append("")
+
+    if jd_text:
+        role_bullets = _role_section(profile, x, featured, jd_text, role, company, report)
+        if role_bullets:
+            L += [f"## What I would bring to {company or 'this role'}",
+                  *[f"- {b}" for b in role_bullets], ""]
+            report["role_section"] = role_bullets
 
     if x.get("community"):
         L += ["## Campus & Community", *[f"- {c}" for c in x["community"]], ""]
@@ -405,7 +475,10 @@ def _from_resume_layer(profile: dict, jd_text: str | None, role: str, report: di
     for e in profile.get("education", []):
         when = "–".join(v for v in [e.get("startDate"), e.get("endDate")] if v)
         extra = " · ".join(v for v in [when, e.get("note")] if v)
-        L.append(f"- **{e.get('institution','')}** — {e.get('studyType','')}" + (f" · {extra}" if extra else ""))
+        # "(SRMIST) — B.Tech — Computer Science…" stacked two dashes; his own resume writes
+        # "B.Tech, CSE (…)". One dash separates the school from the degree, nothing else.
+        study = re.sub(r"\s+—\s+", ", ", e.get("studyType", "") or "")
+        L.append(f"- **{e.get('institution','')}** — {study}" + (f" · {extra}" if extra else ""))
 
     if x.get("closing"):
         L += ["", f"*{x['closing']}*"]
@@ -413,12 +486,13 @@ def _from_resume_layer(profile: dict, jd_text: str | None, role: str, report: di
 
 
 # ─── assemble ────────────────────────────────────────────────────────
-def generate_resume(profile: dict, jd_text: str | None = None, role: str = "") -> str:
+def generate_resume(profile: dict, jd_text: str | None = None, role: str = "", company: str = "") -> str:
     """Backwards-compatible: just the Markdown. Use generate_resume_ex() for the report."""
-    return generate_resume_ex(profile, jd_text, role)[0]
+    return generate_resume_ex(profile, jd_text, role, company)[0]
 
 
-def generate_resume_ex(profile: dict, jd_text: str | None = None, role: str = "") -> tuple[str, dict]:
+def generate_resume_ex(profile: dict, jd_text: str | None = None, role: str = "",
+                       company: str = "") -> tuple[str, dict]:
     """(markdown, report). The report says what the verifier removed, which job skills you do not
     have yet, voice problems, and where facts.yml has moved on from the profile.
 
@@ -426,9 +500,9 @@ def generate_resume_ex(profile: dict, jd_text: str | None = None, role: str = ""
     writes a single verified sentence. Without one, the older path runs — now also verified."""
     report = {"removed": [], "unverified_terms": [], "unverified_numbers": [], "banned": [],
               "gaps": jd_gaps(f"{role} {jd_text or ''}", profile) if (jd_text or role) else [],
-              "drift": facts_drift(profile), "lint": [], "tailor_line": ""}
+              "drift": facts_drift(profile), "lint": [], "tailor_line": "", "role_section": []}
     if profile.get("x_resume"):
-        md = _from_resume_layer(profile, jd_text, role, report)
+        md = _from_resume_layer(profile, jd_text, role, report, company)
     else:
         md = _legacy_resume(profile, jd_text, report)
     report["lint"] = lint(md)

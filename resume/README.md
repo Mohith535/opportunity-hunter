@@ -70,6 +70,27 @@ checklist. `resume.md` is built from **your own resume words** (the transcribed 
 relevant project first, with one model-written tailoring sentence that must pass the verifier and the
 voice linter (`resume/voice.py`) or it is dropped. If every model is down, you still get a complete resume.
 
+The same command also writes **`K_Mohith_Kannan_Resume_<Company>.pdf`** and **`.docx`** into the pack —
+but the PDF only exists if reading it back proves the text is really in it (name first, every heading,
+every project, the skills as searchable words, fonts embedded, no ligature glyphs, no inserted hyphens).
+Install the renderer once: `pip install -r requirements-resume.txt` (kept out of `requirements.txt` so
+the daily cloud hunt never depends on a PDF engine).
+
+```bash
+python -m resume.render path/to/resume.md          # re-render after you edit resume.md by hand
+python -m resume.ats  any_resume.pdf --jd job.txt  # will an ATS read it? works on ANY pdf/docx
+```
+
+**Page 1 is the whole story; page 2 is the reward.** The layout is rendered, read back, and re-rendered
+until page 1 carries the most it can: header with graduation year, summary, the most relevant projects,
+and the skills block — then one line naming what page 2 holds, in your own tagline. That line exists
+because curiosity peaks when you know a little but not all (Loewenstein, 1994). The page ends on your
+closing line (peak-end rule).
+
+> `resume.ats` fails any PDF whose text cannot be extracted — the exact problem with a resume printed
+> through *Microsoft Print to PDF*, which draws every letter as a shape. It will not print a "match
+> score": the "75% of resumes are rejected by ATS" figure traces to an unsourced sales pitch.
+
 ## 2. Check + tailor an existing resume against a job
 
 ```bash

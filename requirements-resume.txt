@@ -1,0 +1,11 @@
+# Opportunity Hunter — the resume / application-pack tools (resume/).
+#
+# Kept SEPARATE from requirements.txt on purpose: the daily cloud hunt must stay error-free, and it does
+# not need a PDF engine. Install these where you build packs:
+#
+#     pip install -r requirements.txt -r requirements-resume.txt
+#
+typst>=0.15.0        # PDF rendering — one wheel with the compiler inside; no LaTeX, no browser
+python-docx>=1.1.0   # the DOCX copy (Taleo / iCIMS read Word most reliably)
+pymupdf>=1.24.0      # reads every PDF back to PROVE the text layer exists (and powers resume.ats)
+pyyaml>=6.0          # reads facts.yml live to catch a stale profile

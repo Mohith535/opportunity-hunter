@@ -380,7 +380,7 @@ def corruption_warnings(text: str) -> list[str]:
     return out
 
 
-def build_resume(item: dict, full: dict) -> tuple[str, dict]:
+def build_resume(item: dict, full: dict, company: str = "") -> tuple[str, dict]:
     """(resume.md, report) — this job's resume from career_profile.json, every claim verified.
 
     The report comes back to build() so job.md can list the job's skills you do not have yet as
@@ -397,7 +397,7 @@ def build_resume(item: dict, full: dict) -> tuple[str, dict]:
                 "    py -m resume.profile --github Mohith535 --certs \"E:/certificates\" "
                 "--linkedin \"E:/linkedin-agent/data/linkedin-export\"\n"), {}
 
-    body, report = generate_resume_ex(profile, jd, role=item.get("title", ""))
+    body, report = generate_resume_ex(profile, jd, role=item.get("title", ""), company=company)
 
     problems = corruption_warnings(body)
     placeholders = len(re.findall(r"\[add [^\]]+\]", body))
@@ -451,22 +451,60 @@ def build(ref: str) -> Path | None:
         return None
 
     full = fetch_full_jd(item)
-    company = (full.get("company") or (item.get("raw") or {}).get("company") or "")
-    out = APPLICATIONS_DIR / _slug(company, item.get("title", ""), date.today().isoformat())
+    company = company_of(item, full)
+    title = item.get("title", "")
+    prefix = "" if company and company.lower() in title.lower() else company   # no "microsoft-microsoft-…"
+    out = APPLICATIONS_DIR / _slug(prefix, title, date.today().isoformat())
     out.mkdir(parents=True, exist_ok=True)
 
-    resume_md, report = build_resume(item, full)
+    resume_md, report = build_resume(item, full, company)
     (out / "job.md").write_text(build_job_md(item, full, report), encoding="utf-8")
-    (out / "resume.md").write_text(resume_md, encoding="utf-8")
+    md_path = out / "resume.md"
+    md_path.write_text(resume_md, encoding="utf-8")
 
     got = "full posting from the employer API" if full.get("description") else "listing text only"
     print(f"\n  {item.get('title','')[:70]}")
     print(f"  {out}")
     print(f"    job.md     {got}")
     print(f"    resume.md  tailored from career_profile.json")
+
+    # The files a recruiter actually receives. The PDF exists only if reading it back proves the text
+    # is really in it — the check his hand-made PDF would have failed.
+    try:
+        from .render import write  # noqa: PLC0415
+        r = write(md_path, company=company)
+        if r["pdf"]:
+            print(f"    {r['pdf'].name:<34} {r['pages']} page(s), text layer verified"
+                  + (f", {r['page1_projects']} projects on page 1" if r["page1_projects"] else ""))
+        else:
+            print("    PDF NOT WRITTEN — failed the read-back gate: " + "; ".join(r["problems"][:3]))
+        if r["docx"]:
+            print(f"    {r['docx'].name:<34} read back clean")
+    except ImportError as e:
+        print(f"    (PDF/DOCX skipped — install the renderer: pip install typst python-docx pymupdf; {e.name})")
+    if report.get("role_section"):
+        print(f"    + 'What I would bring to {company or 'this role'}' ({len(report['role_section'])} verified bullets)")
+
     print(f"\n  Read job.md first — the verification checklist at the bottom is the part "
           f"OPHunter cannot do for you.\n")
     return out
+
+
+def company_of(item: dict, full: dict) -> str:
+    """The employer's name, for the file name and the role section. ATS APIs give it directly;
+    otherwise it is read from the title, which the sources write as "Role — Company" (ATS) or
+    "Company — Role" (the internships feed) — the side without a job word is the company."""
+    c = full.get("company") or (item.get("raw") or {}).get("company") or ""
+    if c:
+        return c
+    parts = [p.strip() for p in (item.get("title") or "").split(" — ") if p.strip()]
+    if len(parts) == 2:
+        job = re.compile(r"intern|engineer|developer|analyst|scientist|associate|trainee|fellow|"
+                         r"manager|designer|research|role|position|graduate", re.I)
+        others = [p for p in parts if not job.search(p)]
+        if len(others) == 1:
+            return others[0]
+    return ""
 
 
 def main() -> int:

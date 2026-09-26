@@ -123,7 +123,7 @@ def gen(model_reply, role="Software Engineer Intern", jd="Python, MCP, agents.")
 
 md, rep = gen("LINE: Skilled in SEO and content creation, I built NitroWatch.")
 check("14. a lying tailor line is removed and reported",
-      "SEO" not in md.split("## Selected Work")[0] and rep["removed"] and "seo" in rep["unverified_terms"],
+      "SEO" not in md.split("## Projects")[0] and rep["removed"] and "seo" in rep["unverified_terms"],
       str(rep["removed"]))
 
 md, rep = gen("LINE: The same question — can an agent be trusted with real permissions — is what this role is about.")
@@ -134,8 +134,10 @@ md, rep = gen("LINE: Passionate about building trustworthy agents in Python.")
 check("16. a banned-phrase tailor line is dropped", not rep["tailor_line"] and "passionate" in rep["banned"])
 
 md, rep = gen("")                                  # the chain is DOWN
+# "Projects", not his "Selected Work": renamed in Phase 2 after resume.ats flagged the creative heading —
+# older parsers classify sections by heading words. Deliberate; the content under it is unchanged.
 check("17. with the model down the resume is still complete",
-      all(s in md for s in ("## Summary", "## Selected Work", "## Technical Skills", "## Education"))
+      all(s in md for s in ("## Summary", "## Projects", "## Technical Skills", "## Education"))
       and "Second-year CSE" in md and not rep["tailor_line"])
 
 check("18. the 3-second zone: headline and graduation year sit above the summary",
