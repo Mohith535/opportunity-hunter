@@ -3,6 +3,19 @@
 Free, human-in-the-loop, and deliberately honest: no fake ATS score, no invented experience,
 no auto-submit. See analyzer.py. CLI: `python -m resume --resume <file> --jd <file-or-text>`.
 """
+import sys as _sys
+
+# Windows consoles default to cp1252. A resume legitimately contains "→", "—" and "×", so
+# `py -m resume.profile` crashed with UnicodeEncodeError the moment the repaired profile held a
+# real arrow, and `resume.apply` printed every em-dash as "?". There are eleven entry points in
+# this package and every one of them imports this file first, so the fix lives here once rather
+# than in eleven main()s. Same fix, same reason, as main.py.
+for _stream in (_sys.stdout, _sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
 from .analyzer import (
     analyze,
     ats_format_check,

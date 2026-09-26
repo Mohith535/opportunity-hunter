@@ -40,6 +40,20 @@ STYLE (how strong technical resumes read):
   Never "responsible for" or "helped with".
 - Plain text, single-column friendly, reverse-chronological order preserved.
 
+HIS VOICE — derived from his own resume and repo descriptions, and confirmed by him. This is not
+decoration: generic prose is what gets a fresher's resume binned, and specificity is the only thing
+that reads as a real person rather than a template.
+- Open on the PROBLEM, never on himself. "Connecting an agent to an MCP server is all-or-nothing"
+  beats "Passionate about AI safety".
+- State the turn flatly, no build-up: "That is not a permission model, it is a light switch."
+- Always a measured number. He has real ones — 3200+ lines, 17 typed tools, 190 tests, ~12 ms
+  against 250 ms, ~92% accuracy at a quarter of the calls. Use his, never invent one.
+- Name what broke, including his own work. A benchmark that refuted his own thesis is a STRENGTH
+  here and he has explicitly sanctioned saying so; an honest technical negative result is the
+  rarest thing on a student resume.
+- Plain first person by implication. No hedging, no "I'm excited to", no "seeking to leverage".
+- Em-dash asides are his. No emoji. No exclamation marks. No buzzword stacking.
+
 Output EXACTLY these three sections, plain text, nothing else:
 
 SUMMARY:
