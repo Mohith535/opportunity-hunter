@@ -27,7 +27,8 @@ worse outcome than a plain one, and it is the kind of thing that ends a career r
 starting one.
 
 Usage:
-    py -m resume.apply --list           # the top opportunities OPHunter currently has
+    py -m resume.apply --list           # open opportunities, re-scored today, ⛔ not-eligible hidden
+    py -m resume.apply --list --all     # ...including the ones you cannot apply to (same numbers)
     py -m resume.apply 3                # build the pack for #3 in that list
     py -m resume.apply <url>            # ...or for a specific opportunity URL
 """
@@ -139,6 +140,57 @@ def _lever_detail(slug: str, job_id: str) -> dict:
 
 _ATS = {"gh": _greenhouse_detail, "ashby": _ashby_detail, "lever": _lever_detail}
 
+_UNSTOP_DETAIL = "https://unstop.com/api/public/competition/{id}"
+
+
+def _unstop_detail(oid: str) -> dict:
+    """The full Unstop listing. The search API gives a truncated blurb — job.md used to cut a
+    hackathon's rules off mid-word ("ROUND 0 — Ideation & Screening: R") — while this endpoint returns
+    the complete description AND eligibility as data: allowed courses with their passout years, team
+    size, gender and city restrictions, region, pay and the registration deadline."""
+    from sources.hackathons import _unstop_pay_location  # noqa: PLC0415
+    r = requests.get(_UNSTOP_DETAIL.format(id=oid),
+                     headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                              "Accept": "application/json"}, timeout=_FETCH_TIMEOUT)
+    r.raise_for_status()
+    data = r.json().get("data") or {}
+    c = data.get("competition") or data
+    pl = _unstop_pay_location({"jobDetail": c.get("job_detail") or c.get("jobDetail"),
+                               "locations": c.get("locations"), "region": c.get("region")})
+    reg = c.get("regnRequirements") or {}
+    org = c.get("organisation") if isinstance(c.get("organisation"), dict) else {}
+    jd = c.get("job_detail") or {}
+    pay = ""
+    if pl["pay_max"]:
+        pay = (f"Rs {pl['pay_min']:,}–{pl['pay_max']:,}/month" if pl["pay_min"] and pl["pay_min"] != pl["pay_max"]
+               else f"Rs {pl['pay_max']:,}/month")
+    elif str(jd.get("paid_unpaid", "")).lower() == "unpaid":
+        pay = "unpaid"
+    # An offline hackathon keeps its city in the venue address, not in `locations` — the Elevate
+    # hackathon is in MUMBAI, and job.md said "not stated" for exactly the city he is aiming for.
+    addr = c.get("address_with_country_logo") or {}
+    city = ", ".join(x for x in [addr.get("city"), addr.get("state")] if x) if isinstance(addr, dict) else ""
+    kind = " · ".join(x for x in [str(jd.get("timing") or "").replace("_", " "),
+                                  str(jd.get("internship_duration") or "")] if x)
+    perks = [p.get("text") for p in jd.get("perks") or [] if isinstance(p, dict) and p.get("value") and p.get("text")]
+    return {
+        "description": _text(c.get("details")),
+        "company": (org or {}).get("name", ""),
+        "location": ", ".join(pl["cities"]) or city or ("Online" if pl["remote"] else ""),
+        "remote": pl["remote"],
+        # jobDetail.type is where the work happens; `region` is only how you register ("Online" on
+        # every job), so it describes the workplace only for events that have no type.
+        "workplace": {"wfh": "Work from home", "in_office": "In office", "hybrid": "Hybrid",
+                      "on_field": "On field"}.get(str(jd.get("type") or "").lower())
+                     or (c.get("region") or "").title(),
+        "employment_type": kind,
+        "perks": perks,
+        "openings": jd.get("openings"),
+        "pay_note": pay,
+        "closes": reg.get("end_regn_dt") or c.get("end_date"),
+        "unstop": {"regnRequirements": reg, "filters": c.get("filters") or []},
+    }
+
 
 def fetch_full_jd(item: dict) -> dict:
     """Everything the employer publishes about this role, or {} when we cannot get more.
@@ -146,6 +198,14 @@ def fetch_full_jd(item: dict) -> dict:
     Never raises: a pack built from the listing alone is worth far more than a crash, and the
     pack says plainly which of the two it got."""
     native = str(item.get("native_id") or "")
+    if item.get("source") == "unstop" and native.isdigit():
+        try:
+            got = _unstop_detail(native)
+            if got.get("description"):
+                return got
+        except (requests.RequestException, ValueError, KeyError, TypeError) as e:
+            log(f"[apply] could not fetch the Unstop listing {native}: {type(e).__name__}")
+        return {}
     parts = native.split(":", 2)
     if len(parts) == 3 and parts[0] in _ATS:
         try:
@@ -187,13 +247,52 @@ def recent_items(limit: int = 40) -> list[dict]:
     return out[:limit]
 
 
+_ELIG_ORDER = {"YES": 0, "NOT_STATED": 1, "CHECK": 2, "NO": 3}
+
+
+def ranked_items(pool: int = 150, today: date | None = None) -> list[tuple]:
+    """(number, item, today's score, eligibility verdict, off_focus), best first — the ONE ranking behind both
+    `--list` and `py -m resume.apply <number>`.
+
+    Numbers are given over the whole list, ineligible jobs included, and `--list` merely hides the ⛔
+    rows. So "#5" is the same job whether or not you passed --all; a list that renumbered itself after
+    filtering would build the pack for a job you never picked. Past deadlines are dropped outright —
+    a pack for a closed opportunity is a wasted evening."""
+    from filters import focus, target  # noqa: PLC0415
+    today = today or date.today()
+    cand = _candidate()
+    wanted = set(focus.active())
+    rows = []
+    for i in recent_items(pool):
+        dl = str(i.get("deadline") or "")[:10]
+        if dl:
+            try:
+                if date.fromisoformat(dl) < today:
+                    continue
+            except ValueError:
+                pass
+        o = _as_opp(i)
+        rows.append((i, rescore(i), eligibility_of(i, None, cand), {
+            "off": bool(wanted) and focus.kind_of(o) not in wanted,
+            "nudge": target.adjustment(o),
+            "ai": i.get("ai_score", -1) if isinstance(i.get("ai_score"), int) else -1,
+            "dl": dl or "9999"}))
+    # The score is capped at 10 and the day's best items all reach it, so a straight sort by score
+    # put a Tuesday meetup above an internship. Same zones as the brief's "first" mode — the kinds
+    # your target hunts on top — and the ties broken by YOUR target's nudge (Mumbai, pay) before
+    # anything else, then the LLM's judgement where it exists, then who can apply, then urgency.
+    rows.sort(key=lambda r: (r[3]["off"], -r[1], -r[3]["nudge"], -r[3]["ai"],
+                             _ELIG_ORDER.get(r[2].level, 9), r[3]["dl"]))
+    return [(n, i, s, v, x["off"]) for n, (i, s, v, x) in enumerate(rows, 1)]
+
+
 def resolve(ref: str) -> dict | None:
     """An opportunity by list position, dedup key, URL, or a distinctive bit of its title."""
-    items = recent_items(60)
     ref = (ref or "").strip()
     if ref.isdigit():
         n = int(ref)
-        return items[n - 1] if 1 <= n <= len(items) else None
+        return next((r[1] for r in ranked_items() if r[0] == n), None)
+    items = recent_items(150)
     low = ref.lower()
     for i in items:
         if ref in (i.get("key", ""), i.get("native_id", "")) or low == (i.get("url", "") or "").lower():
@@ -220,20 +319,98 @@ def _fmt(v) -> str:
     return str(v)
 
 
-def build_job_md(item: dict, full: dict, report: dict | None = None) -> str:
-    """job.md — everything known, and honest about what is missing."""
-    from filters import focus, target
+def _profile() -> dict:
+    try:
+        return json.loads((config.DATA_DIR / "career_profile.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
 
+
+def _candidate(profile: dict | None = None):
+    from filters import target  # noqa: PLC0415
+    from .eligibility import candidate_from  # noqa: PLC0415
+    return candidate_from(profile if profile is not None else _profile(), target.load())
+
+
+def _as_opp(d: dict):
+    """A history dict back as a real Opportunity, carrying its saved facts as `raw` — so today's
+    scorer, target and focus can judge it exactly as they judge a fresh item."""
+    from models import Opportunity  # noqa: PLC0415
+    dl = None
+    if d.get("deadline"):
+        try:
+            dl = date.fromisoformat(str(d["deadline"])[:10])
+        except ValueError:
+            pass
+    return Opportunity(title=d.get("title", ""), url=d.get("url", ""), source=d.get("source", ""),
+                       description=d.get("description", "") or "", deadline=dl, tags=list(d.get("tags") or []),
+                       native_id=d.get("native_id"), raw=dict(d.get("facts") or d.get("raw") or {}))
+
+
+def rescore(d: dict) -> int:
+    """Score an item with TODAY's rules. History stores the score from the day it was found — before
+    the off-domain penalty, the domain credit and the standing target existed — which is why the list
+    once showed "Software Sales Internship" and "SEO Trainee" at 10/10. He picked one."""
+    from filters import target  # noqa: PLC0415
+    from filters.scorer import score_item  # noqa: PLC0415
+    o = _as_opp(d)
+    return max(0, min(10, score_item(o) + target.adjustment(o)))
+
+
+def eligibility_of(d: dict, full: dict | None = None, cand=None):
+    """The eligibility verdict: from the full posting when we have it, else from what history stored."""
+    from .eligibility import assess, from_description, location_rules, title_rules, _verdict  # noqa: PLC0415
+    cand = cand or _candidate()
+    senior = title_rules(d.get("title", ""), cand)
+    if full and full.get("description"):
+        v = assess(cand, full.get("description", ""), full.get("location", ""),
+                   full.get("remote"), full.get("unstop"))
+        return _verdict(senior + list(v.reasons)) if senior else v
+    v = from_description(d.get("description", "") or "", cand)
+    facts = d.get("facts") or {}
+    loc = facts.get("location") or ", ".join(facts.get("cities") or [])
+    extra = location_rules(loc or "Online", facts.get("remote"), cand) if (loc or facts.get("remote")) else []
+    return _verdict(senior + list(v.reasons) + extra) if (senior or extra) else v
+
+
+def build_job_md(item: dict, full: dict, report: dict | None = None) -> str:
+    """job.md — everything known, and honest about what is missing.
+
+    It opens with its own three-second read, because the first question about a job is not "what
+    is it" but "can I even apply, and do I fit" — and OPHunter used to rank roles highly that a
+    stated rule excluded him from (graduation year, year of study, a country he cannot work in)."""
+    from filters import focus, target
+    from .eligibility import team_note
+    from .fit import BUILT, GAP, LEARNED, skill_evidence
+
+    profile = _profile()
     title = item.get("title", "Untitled")
     src = item.get("source", "?")
     listing_url = item.get("url", "")
     apply_url = full.get("apply_url") or listing_url
-    score = item.get("ai_score", -1)
-    score = score if score >= 0 else item.get("score", 0)
+    facts = item.get("facts") or {}
+    jd_text = full.get("description") or item.get("description", "")
+    verdict = eligibility_of(item, full, _candidate(profile))
+    rows_fit = skill_evidence(jd_text, profile)
+    built = sum(1 for r in rows_fit if r[1] == BUILT)
+    learned = sum(1 for r in rows_fit if r[1] == LEARNED)
+    team = team_note(full.get("unstop") or {})
+    location = full.get("location") or facts.get("location") or ", ".join(facts.get("cities") or [])
+    pay = full.get("pay_note") or _pay_line(item)
 
     L = [f"# {title}", ""]
-    L += [f"> Pack built {date.today().isoformat()} by Opportunity Hunter. "
-          f"**Nothing here was submitted anywhere** — you apply by hand.", ""]
+    # ── the three-second read ──
+    L.append(f"> **{verdict.icon} {verdict.label}**")
+    for lvl, why in verdict.reasons[:4]:
+        L.append(f"> {'⛔' if lvl == 'NO' else '⚠' if lvl == 'CHECK' else '✓'} {why}")
+    if rows_fit:
+        L.append(f"> **Fit:** {built + learned} of {len(rows_fit)} skills this posting names are backed "
+                 f"— {built} you have built with, {learned} you have studied.")
+    at = " · ".join(x for x in [location, pay, team] if x)
+    if at:
+        L.append(f"> {at}")
+    L += ["", f"_Pack built {date.today().isoformat()} by Opportunity Hunter. **Nothing here was "
+              f"submitted anywhere** — you apply by hand._", ""]
 
     L += ["## Apply", "",
           f"- **Apply link** — {apply_url or '_none found_'}",
@@ -243,13 +420,15 @@ def build_job_md(item: dict, full: dict, report: dict | None = None) -> str:
 
     L += ["## The facts", "", "| | |", "|---|---|"]
     rows = [
-        ("Kind", focus.kind_of(_Obj(item))),
-        ("Location", full.get("location") or _fmt(item.get("raw", {}).get("cities"))),
+        ("Kind", focus.kind_of(_as_opp(item))),
+        ("Location", location),
         ("Other locations", full.get("other_locations")),
-        ("Remote", full.get("remote") if full.get("remote") is not None else full.get("workplace")),
+        ("Remote", full.get("remote") if full.get("remote") is not None else facts.get("remote")),
         ("Employment type", full.get("employment_type")),
-        ("Team / department", full.get("team") or full.get("departments")),
-        ("Pay", full.get("pay_note") or _pay_line(item)),
+        ("Team", team or full.get("team") or full.get("departments")),
+        ("Pay", pay),
+        ("Perks", full.get("perks")),
+        ("Openings", full.get("openings")),
         ("Deadline", item.get("deadline") or full.get("closes")),
         ("Posted", full.get("posted")),
         ("Tags", item.get("tags")),
@@ -257,8 +436,18 @@ def build_job_md(item: dict, full: dict, report: dict | None = None) -> str:
     L += [f"| {k} | {_fmt(v)} |" for k, v in rows]
     L.append("")
 
+    if rows_fit:
+        mark = {BUILT: "✓ built", LEARNED: "◐ studied", GAP: "✗ gap"}
+        L += ["## Do you fit?", "",
+              "Every skill this posting names, and how you can back it. **Built** means code that "
+              "uses it; **studied** means a certificate or course but no project — say so honestly in "
+              "an interview rather than overclaiming.", "",
+              "| The job asks for | You | Your evidence |", "|---|---|---|"]
+        L += [f"| {t} | {mark[lvl]} | {ev or '—'} |" for t, lvl, ev in rows_fit]
+        L.append("")
+
     L += ["## Why OPHunter surfaced this", "",
-          f"- Score **{score}/10**"]
+          f"- Score today **{rescore(item)}/10** (re-scored with the current rules)"]
     if item.get("ai_summary"):
         L.append(f"- {item['ai_summary']}")
     for why, delta in target.reasons(_Obj(item)):
@@ -318,7 +507,8 @@ class _Obj:
         self.description = d.get("description", "") or d.get("ai_summary", "")
         self.source = d.get("source", "")
         self.tags = d.get("tags") or []
-        self.raw = d.get("raw") or {}
+        # History items carry their pay / place / remote in `facts` (raw itself is never saved).
+        self.raw = d.get("raw") or d.get("facts") or {}
         self.score = d.get("score", 0)
         self.ai_score = d.get("ai_score", -1)
         dl = d.get("deadline")
@@ -451,7 +641,8 @@ def build(ref: str) -> Path | None:
         return None
 
     full = fetch_full_jd(item)
-    company = company_of(item, full)
+    from .render import short_company  # noqa: PLC0415
+    company = short_company(company_of(item, full))   # "DJSCE", not the organiser's full legal name
     title = item.get("title", "")
     prefix = "" if company and company.lower() in title.lower() else company   # no "microsoft-microsoft-…"
     out = APPLICATIONS_DIR / _slug(prefix, title, date.today().isoformat())
@@ -507,26 +698,50 @@ def company_of(item: dict, full: dict) -> str:
     return ""
 
 
+def _arg_int(args: list[str], flag: str, default: int) -> int:
+    try:
+        return int(args[args.index(flag) + 1])
+    except (ValueError, IndexError):
+        return default
+
+
+def show_list(show_all: bool = False, limit: int = 25) -> int:
+    rows = ranked_items()
+    if not rows:
+        print("No open opportunities in history — run `py main.py --now` first.")
+        return 1
+    from filters import focus, target  # noqa: PLC0415
+    shown = [r for r in rows if show_all or r[3].level != "NO"]
+    hidden = len(rows) - len(shown)
+    kinds = ", ".join(focus.active())
+    print(f"\n{len(shown)} open opportunities, scored with today's rules and your target"
+          + (f" — showing {limit}" if len(shown) > limit else "") + ":")
+    zone = None
+    for n, i, s, v, off in shown[:limit]:
+        if kinds and off != zone:
+            zone = off
+            print("\n  ⭐ ALSO WORTH YOUR TIME\n" if off else f"\n  🎯 YOUR FOCUS: {kinds}\n")
+        o = _as_opp(i)
+        # A warning beats a compliment: for ⚠/⛔ say what to check; otherwise say why it ranks here.
+        warn = next((w for lvl, w in v.reasons if lvl in ("NO", "CHECK")), "")
+        why = warn or target.note(o) or (v.reasons[0][1] if v.reasons else "")
+        print(f"  {n:>3}. [{s:>2}/10] {v.icon} {(i.get('title') or '')[:62]}")
+        print(f"       {focus.kind_of(o):10} {i.get('source', ''):11} {i.get('deadline') or 'no deadline':11}"
+              + (f"  {why[:72]}" if why else ""))
+    print("\n  ✅ eligible  ❔ rules not stated  ⚠ check yourself  ⛔ not eligible")
+    if hidden and not show_all:
+        print(f"  {hidden} not-eligible job(s) hidden — `--list --all` shows them. Numbers stay the same.")
+    print("  py -m resume.apply <number>\n")
+    return 0
+
+
 def main() -> int:
     args = sys.argv[1:]
     if not args or args[0] in ("-h", "--help"):
         print(__doc__)
         return 0
     if args[0] == "--list":
-        items = recent_items(25)
-        if not items:
-            print("No opportunities yet — run `py main.py --now` first.")
-            return 1
-        from filters import focus
-        print(f"\nTop {len(items)} from the latest hunt:\n")
-        for n, i in enumerate(items, 1):
-            s = i.get("ai_score", -1)
-            s = s if s >= 0 else i.get("score", 0)
-            print(f"  {n:>2}. [{s}/10] {(i.get('title') or '')[:64]}")
-            print(f"      {focus.kind_of(_Obj(i)):10} {i.get('source',''):11} "
-                  f"{i.get('deadline') or ''}")
-        print(f"\n  py -m resume.apply <number>\n")
-        return 0
+        return show_list(show_all="--all" in args, limit=_arg_int(args, "--top", 25))
     return 0 if build(args[0]) else 1
 
 

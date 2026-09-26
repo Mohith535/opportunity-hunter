@@ -251,24 +251,37 @@ def _elig_text(raw) -> str:
         return _strip(str(data))[:200]
 
     bits = []
-    for key in ("sector", "others", "experience"):
+    for key, label in (("sector", "open to: "), ("others", ""), ("experience", "experience: ")):
         vals = [str(v) for v in (data.get(key) or []) if v and str(v) != "all"]
         if vals:
-            bits.append(", ".join(vals[:4]))
-    courses, years = set(), set()
-    for group in ("engineering", "bSchools", "arts", "medicine", "law"):
+            bits.append(label + ", ".join(vals[:4]))
+    courses, years = [], set()
+    if "allCourses" in (data.get("engineering") or []):
+        courses.append("allEngineering")           # every engineering course, B.Tech included
+    for group in ("engineering", "bSchools", "arts", "medicine", "law", "others"):
         for entry in data.get(group) or []:
             if not isinstance(entry, dict):
                 continue
-            if entry.get("course"):
-                courses.add(str(entry["course"]))
+            c = str(entry.get("course") or "")
+            if c and c not in courses:
+                courses.append(c)                  # engineering first: it is the group that decides
             for y in entry.get("passoutYear") or []:
                 if str(y) != "all":
                     years.add(str(y))
-    if courses:
-        bits.append("courses: " + ", ".join(sorted(courses)[:6]))
+    for y in data.get("studentPassoutYearsSelected") or []:     # e.g. [2027, 2028, 2029, 2030]
+        if str(y).isdigit():
+            years.add(str(y))
+    # This line used to be `sorted(courses)[:6]`. Alphabetically, btech comes after artsOthers, ba,
+    # barch, bba, bca and bdes — so it was cut from nearly every list, and the eligibility check
+    # read "courses: artsOthers, ba, barch, bba, bca, bdes" as "not open to B.Tech" and hid 33 real
+    # internships and hackathons from him. Engineering first now, and a cut list SAYS it was cut.
+    # Short, decisive fields first — who, experience, passout — and the long course list last, so the
+    # 200-character cap in the description never cuts "open to: fresher" down to "open to: fr" again.
     if years:
-        bits.append("passout: " + ", ".join(sorted(years)[:6]))
+        bits.append("passout: " + ", ".join(sorted(years)))
+    if courses:
+        more = len(courses) - 6
+        bits.append("courses: " + ", ".join(courses[:6]) + (f" (+{more} more)" if more > 0 else ""))
     return "; ".join(bits)[:220]
 
 
@@ -314,10 +327,16 @@ def _unstop_pay_location(o: dict) -> dict:
             return 0
         return round(n / 12) if n >= 100_000 else n
 
+    # `region` is "online" on every internship and job (60 of 60 live, Sep 2026) — it is how you
+    # register. Where the work happens is `jobDetail.type`: wfh, in_office, hybrid or on_field. Reading
+    # region made 33 in-office roles "remote", so the Mumbai lever never fired on a Mumbai job. Region
+    # only decides for listings with no jobDetail type: hackathons and other events.
+    jtype = str(jd.get("type") or "").lower()
+    remote = jtype == "wfh" if jtype else str(o.get("region", "")).lower() == "online"
     return {
         "pay_min": per_month(jd.get("min_salary")),
         "pay_max": per_month(jd.get("max_salary")),
-        "remote": str(jd.get("type", "")).lower() == "wfh" or str(o.get("region", "")).lower() == "online",
+        "remote": remote,
         "cities": [c for c in cities if c],
     }
 

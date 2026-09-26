@@ -52,7 +52,10 @@ _OFF_DOMAIN_RE = re.compile(
     r"content writ(?:er|ing)?|copywrit(?:er|ing)?|social media|graphic design(?:er|ing)?|"
     r"video edit(?:or|ing)?|photograph(?:er|y)?|account(?:s|ing|ant)|finance executive|"
     r"customer (?:support|service|success)|insurance|real estate|hospitality|"
-    r"fashion|interior design(?:er)?)\b",
+    r"fashion|interior design(?:er)?|"
+    # Found 2026-09-27 at 10/10 in `resume.apply --list`: "SEO Internship", "Caller Internship",
+    # "Public Relations Internship". None is a CSE role; none was on this list.
+    r"seo|search engine optimi[sz]ation|caller|public relations|data entry)\b",
     re.I)
 
 # Titles where a technical word is the INDUSTRY, not the job. "Software Sales Internship" has

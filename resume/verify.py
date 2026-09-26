@@ -56,6 +56,11 @@ LEXICON = [
     "aws", "azure", "gcp", "google cloud", "docker", "kubernetes", "terraform", "ansible",
     "jenkins", "ci/cd", "linux", "bash", "graphql", "rest api", "microservices", "mongodb",
     "postgresql", "mysql", "redis", "elasticsearch", "cockroachdb", "cloudflare",
+    # AI engineering — his own domain. Missing at first, so a job asking for "MCP" produced a fit
+    # table without the one skill he is strongest in.
+    "mcp", "model context protocol", "ai agents", "multi-agent", "prompt engineering",
+    "generative ai", "gemini", "google adk", "claude", "aws lambda", "aws bedrock",
+    "cloudflare workers", "benchmarking", "distributed systems", "system design",
     # other domains
     "cybersecurity", "penetration testing", "blockchain", "solidity", "web3", "embedded",
     "verilog", "vlsi", "iot", "arduino", "autocad", "solidworks", "blender", "figma",
@@ -75,6 +80,7 @@ ALIASES = {
     "data analysis": "data analytics", "analytics": "data analytics", "eda": "data analytics",
     "exploratory data analysis": "data analytics", "ml engineering": "machine learning",
     "genai": "generative ai", "prompt design": "prompt engineering",
+    "model context protocol": "mcp", "agentic ai": "ai agents", "llm agents": "ai agents",
 }
 
 # A claim phrase, then a list. "skilled in HTML, meta tags, content creation, and SEO fundamentals"

@@ -470,12 +470,34 @@ def render_docx(md: str, out: Path) -> list[str]:
     return problems
 
 
+def short_company(company: str) -> str:
+    """The name a recruiter would say out loud. Unstop returns an organiser's full legal name —
+    "Shri Vile Parle Kelavani Mandal's Dwarkadas J. Sanghvi College of Engineering (DJSCE), Mumbai" —
+    which produced K_Mohith_Kannan_Resume_ShriVileParleKelavaniMandalSDw.pdf. Prefer the acronym in
+    brackets, drop legal suffixes and a trailing city, else keep the first few words."""
+    c = (company or "").strip()
+    m = re.search(r"\(([A-Z][A-Z0-9&.\-]{1,11})\)", c)
+    if m:
+        return m.group(1).replace(".", "")
+    c = re.sub(r",\s*[A-Z][a-z]+(?:\s[A-Z][a-z]+)?$", "", c)                     # ", Mumbai"
+    c = re.sub(r"\b(private limited|pvt\.? ltd\.?|limited|ltd\.?|inc\.?|llp|llc|corp\.?|"
+               r"technologies|solutions|services)\b", "", c, flags=re.I)
+    words = re.findall(r"[A-Za-z0-9&]+", c)
+    out = []
+    for w in words:
+        if len(" ".join(out + [w])) > 22:
+            break
+        out.append(w)
+    return " ".join(out)
+
+
 def file_stem(md: str, company: str = "") -> str:
     """K_Mohith_Kannan_Resume[_Company] — recruiters see the filename before they see the page, and
     'mohith_claude_campous_ambasidor1.pdf' carried two typos and a version number."""
     name = parse(md).name or "Resume"
     who = "_".join(w.capitalize() if len(w) > 1 else w.upper() for w in re.findall(r"[A-Za-z]+", name))
-    co = re.sub(r"[^A-Za-z0-9]+", "", company.title())[:30]
+    short = short_company(company)
+    co = re.sub(r"[^A-Za-z0-9]+", "", short if short.isupper() else short.title())
     return f"{who}_Resume" + (f"_{co}" if co else "")
 
 

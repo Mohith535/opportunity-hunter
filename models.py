@@ -49,6 +49,10 @@ def dedup_key_from_dict(d: dict) -> str:
     return hashlib.md5(base.encode("utf-8")).hexdigest()[:12]
 
 
+_FACT_KEYS = ("pay_min", "pay_max", "remote", "cities", "company", "location", "platform",
+              "category", "region")
+
+
 @dataclass
 class Opportunity:
     """One opportunity, normalized across all sources."""
@@ -90,6 +94,12 @@ class Opportunity:
         d = asdict(self)
         if isinstance(self.deadline, (date, datetime)):
             d["deadline"] = self.deadline.isoformat()
-        d.pop("raw", None)
+        raw = d.pop("raw", None) or {}
+        # Keep the few facts that decide whether a job is worth reading — pay, place, remote, who.
+        # Dropping ALL of raw made job.md say "Location: not stated" for a hackathon in Mumbai, the
+        # city he is aiming for. Additive field: Nova ignores unknown keys (CLAUDE.md 4.1).
+        facts = {k: raw[k] for k in _FACT_KEYS if raw.get(k) not in (None, "", [], 0)}
+        if facts:
+            d["facts"] = facts
         d["key"] = self.dedup_key()
         return d

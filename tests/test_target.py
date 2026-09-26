@@ -188,6 +188,33 @@ for t2 in ("Tech Sales Internship", "IT Sales Internship", "Digital Marketing In
     check(f"25.{t2.split()[0].lower()} penalised despite a tech word", score_item(o2) <= 5,
           f"{t2}={score_item(o2)}")
 
+# ── roles and avoid (2026-09-27: "SEO Internship" sat at 10/10 in the list he picks packs from) ─
+set_target(roles={"tier1": ["full stack", "machine learning", "ai agents"], "tier2": ["data analyst"]},
+           avoid=["sales", "seo", "hr"], require_pay=False)
+fs = intern("Full-Stack Developer Internship")
+check("26. a tier-1 role is lifted, hyphen or not",
+      target.role_of(fs) == ("tier1", "full stack") and target.adjustment(fs) > 0, str(target.reasons(fs)))
+seo = intern("SEO Internship")
+check("27. an avoid-list role is pushed down", target.role_of(seo) == ("avoid", "seo")
+      and target.adjustment(seo) < 0, str(target.reasons(seo)))
+both = intern("Sales Engineer, AI Agents")
+check("28. naming a role you want beats the avoid word", target.role_of(both)[0] == "tier1", str(target.role_of(both)))
+check("29. 'hr' does not match inside a word", target.role_of(intern("Three.js Chrome Extension Intern")) is None)
+t1, t2, t0 = (target.adjustment(intern(t, desc="remote")) for t in
+              ("Machine Learning Internship", "Data Analyst Internship", "Operations Internship"))
+check("30. tier 1 > tier 2 > no role (same place, same pay)", t1 > t2 > t0, f"{t1} {t2} {t0}")
+hack_seo = opp("SEO Hackathon", tags=["hackathon"])
+check("31. the role lever leaves hackathons alone",
+      not any("avoid" in why for why, _ in target.reasons(hack_seo)), str(target.reasons(hack_seo)))
+
+# ── "online" is how you register on Unstop, not where you work ────────────────────────────────
+mum = intern("Backend Intern", desc="internship | online | Location: Mumbai",
+             raw={"cities": ["Mumbai"], "remote": False})
+check("32. a Mumbai office job with 'online' in its text is in Mumbai, not remote",
+      not target.is_remote(mum) and any("Mumbai" in why for why, _ in target.reasons(mum)), str(target.reasons(mum)))
+check("33. with no structured city, the text still decides",
+      target.is_remote(intern("Backend Intern", desc="Work from home")))
+
 clear_target()
 for p in _TMP:
     try:

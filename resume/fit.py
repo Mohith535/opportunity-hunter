@@ -244,3 +244,51 @@ def main() -> int:
 if __name__ == "__main__":
     import sys
     sys.exit(main())
+
+
+# ─── skill evidence for job.md (deterministic — no LLM) ─────────────────────────────────────────
+BUILT, LEARNED, GAP = "BUILT", "LEARNED", "GAP"
+
+
+def skill_evidence(jd_text: str, profile: dict) -> list[tuple[str, str, str]]:
+    """Every skill the posting names, and how you can back it: (skill, level, evidence).
+
+    Three levels, because a certificate is not the same claim as shipped code and a recruiter knows
+    the difference:
+        BUILT    you have code that uses it — one of your featured projects, or a GitHub repo
+        LEARNED  a certificate, course or listed skill, but no project that uses it
+        GAP      nothing — this is what job.md lists as a gap you could close
+    Featured projects are named first, because "nova-cortex" means something in an interview and
+    "repo:week3and4-controlflow-practice" does not."""
+    from .verify import LEXICON, _norm, _present  # noqa: PLC0415
+
+    jd_low = (jd_text or "").lower()
+    asked, seen = [], set()
+    for t in LEXICON:                 # one row per skill: "model context protocol" IS "mcp"
+        if _present(t, jd_low) and _norm(t) not in seen:
+            seen.add(_norm(t))
+            asked.append(t)
+    featured = [p for p in profile.get("projects", []) if p.get("x_source") == "resume-2026-09"]
+    skills = {s.get("name", "").lower(): s for s in profile.get("skills", [])}
+    rows = []
+    for term in asked:
+        built = [p.get("x_resume_name") for p in featured
+                 if _present(term, " ".join([p.get("x_tagline") or "", p.get("x_techline") or "",
+                                             *(p.get("highlights") or [])]).lower())]
+        s = next((v for k, v in skills.items() if _present(term, k) or _present(k, term)), None)
+        ev = (s or {}).get("evidence") or []
+        repos = [e.split(":", 1)[1] for e in ev if e.startswith("repo:")]
+        if built or repos:
+            rows.append((term, BUILT, ", ".join((built or repos)[:3])))
+            continue
+        certs = [e.split(":", 1)[1] for e in ev if e.startswith("cert:")]
+        if certs or s:
+            rows.append((term, LEARNED, (certs[0] if certs else "listed skill")[:60]))
+            continue
+        groups = " ".join(i for v in (profile.get("x_resume", {}).get("skill_groups") or {}).values() for i in v)
+        if _present(term, groups.lower()):
+            rows.append((term, LEARNED, "your skills section"))
+        else:
+            rows.append((term, GAP, ""))
+    order = {BUILT: 0, LEARNED: 1, GAP: 2}
+    return sorted(rows, key=lambda r: order[r[1]])

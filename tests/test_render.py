@@ -125,7 +125,20 @@ wrong = compile_pdf('#' + _lit("Somebody Else. " * 60))
 check("17. read-back gate refuses a PDF missing the name and sections", any("name" in p for p in readback(wrong, doc)))
 
 # ── files, names, DOCX ───────────────────────────────────────────────────────────────────
-check("18. file name is recruiter-safe", file_stem(MD, "Coinbase Inc.") == "K_Mohith_Kannan_Resume_CoinbaseInc")
+check("18. file name is recruiter-safe", file_stem(MD, "Coinbase Inc.") == "K_Mohith_Kannan_Resume_Coinbase",
+      file_stem(MD, "Coinbase Inc."))
+# The organiser's full legal name produced K_Mohith_Kannan_Resume_ShriVileParleKelavaniMandalSDw.pdf.
+_DJ = "Shri Vile Parle Kelavani Mandal's Dwarkadas J. Sanghvi College of Engineering (DJSCE), Mumbai"
+check("18b. a bracketed acronym is the short name", file_stem(MD, _DJ) == "K_Mohith_Kannan_Resume_DJSCE",
+      file_stem(MD, _DJ))
+from resume.render import short_company
+check("18c. legal suffixes and a trailing city go",
+      short_company("Mellow Vault Technologies Private Limited") == "Mellow Vault"
+      and short_company("Seoczar IT Services Pvt. Ltd.") == "Seoczar IT"
+      and short_company("Acme Labs, Mumbai") == "Acme Labs",
+      [short_company(x) for x in ("Mellow Vault Technologies Private Limited", "Seoczar IT Services Pvt. Ltd.",
+                                  "Acme Labs, Mumbai")])
+check("18d. a short name is left alone", short_company("Scale AI") == "Scale AI" and short_company("") == "")
 tmp = Path(tempfile.mkdtemp())
 mdp = tmp / "resume.md"
 mdp.write_text(MD, encoding="utf-8")

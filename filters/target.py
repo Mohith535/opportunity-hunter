@@ -7,12 +7,14 @@ request behind this module was exact — *"I don't want to ask you every time, c
 feature?"* — so nothing here needs a flag. You edit `hunt_target.json` once; every hunt after
 that is tuned to it.
 
-A target carries four levers, and each one maps to a fact the sources already give us:
+A target carries these levers, and each one maps to a fact the sources already give us:
 
   focus      -> the kinds to hunt, so --focus becomes unnecessary
   locations   -> cities you could actually take ("remote" is a valid entry)
   min_pay     -> a floor in rupees per month
   by          -> the date you need it resolved by, which makes a late deadline a MINUS
+  roles       -> tier1 / tier2 role words, matched on the title (employment kinds only)
+  avoid       -> role words to sink ("sales", "seo"), unless the title also names a tier1/2 role
 
 What this deliberately does NOT do is filter. Every adjustment is a score nudge, so a target
 can never hide a once-in-a-year opportunity just because it pays nothing or sits in the wrong
@@ -39,6 +41,9 @@ _DEFAULT_WEIGHTS = {
     "pay_below": -2,       # states pay, and it is under your floor
     "pay_unknown": -3,     # says nothing about money, and money is the point (require_pay)
     "too_late": -3,        # deadline falls after the date you need this by
+    "role_tier1": 3,       # the title names a role you put in roles.tier1
+    "role_tier2": 1,       # ...in roles.tier2 — your study, wider than your first choice
+    "role_avoid": -5,      # the title names a role on your avoid list, and nothing from tier1/2
 }
 
 # Kinds where "which city" and "how much does it pay" are meaningful questions. A hackathon has
@@ -167,8 +172,40 @@ def is_remote(item) -> bool:
     raw = getattr(item, "raw", None) or {}
     if raw.get("remote"):
         return True
+    # A structured office list outranks the prose. Unstop writes "job | online |" into EVERY
+    # description — that is how you register, not where you work — so the word "online" made all
+    # ten Mumbai jobs in a live sample read "remote, which you accept" and the Mumbai lever, the
+    # whole point of this target, never fired for them.
+    if raw.get("cities"):
+        return False
     text = f"{getattr(item, 'title', '')} {getattr(item, 'description', '')}".lower()
     return any(w in text for w in ("remote", "work from home", "wfh", "online"))
+
+
+def _phrase(term: str) -> re.Pattern:
+    """Whole-word, hyphen-tolerant: "full stack" matches "Full-Stack", "hr" does not match "three"."""
+    words = [re.escape(w) for w in re.split(r"[\s\-]+", term.strip().lower()) if w]
+    return re.compile(r"\b" + r"[\s\-]+".join(words) + r"\b")
+
+
+def role_of(item) -> tuple[str, str] | None:
+    """("tier1" | "tier2" | "avoid", the matching term) for this item's TITLE, or None.
+
+    Tier 1 wins over tier 2, and either wins over avoid — "Sales Engineer, AI Agents" names a role
+    he wants, and the avoid list exists to sink jobs that are ONLY the thing he does not want."""
+    t = load()
+    title = str(getattr(item, "title", "") or "").lower()
+    if not t or not title:
+        return None
+    roles = t.get("roles") or {}
+    for level in ("tier1", "tier2"):
+        for term in roles.get(level) or []:
+            if str(term).strip() and _phrase(str(term)).search(title):
+                return level, str(term)
+    for term in t.get("avoid") or []:
+        if str(term).strip() and _phrase(str(term)).search(title):
+            return "avoid", str(term)
+    return None
 
 
 def reasons(item) -> list[tuple[str, int]]:
@@ -181,6 +218,18 @@ def reasons(item) -> list[tuple[str, int]]:
 
     from filters import focus
     employment = focus.kind_of(item) in EMPLOYMENT_KINDS
+
+    # ── role ── what the job IS, judged on the title, where the role is named. He asked for this
+    # in so many words: "OPH is getting me sales internships, not my track". The scorer's own
+    # off-domain list never had SEO, PR or "caller", so an "SEO Internship" reached 10/10 in the
+    # list he picks packs from. His own lists, not ours — he edits them in hunt_target.json.
+    if employment:
+        hit = role_of(item)
+        if hit:
+            level, term = hit
+            out.append({"tier1": (f"a tier-1 role for you ({term})", w["role_tier1"]),
+                        "tier2": (f"in your wider field ({term})", w["role_tier2"]),
+                        "avoid": (f"on your avoid list ({term})", w["role_avoid"])}[level])
 
     # ── place ── only where an office is a real concept ───────────────────────────────────
     wanted = [str(c).strip().lower() for c in (t.get("locations") or []) if str(c).strip()]

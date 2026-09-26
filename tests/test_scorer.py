@@ -102,6 +102,14 @@ later = opp("Q Hackathon", "hackathon | online", tags=["hackathon"],
 check("11. nearer deadline still ranks higher", score_item(urgent) > score_item(later),
       f"{score_item(urgent)} vs {score_item(later)}")
 
+# 12 - three titles found at 10/10 in `resume.apply --list` on 2026-09-27, none of them a CSE role
+for t in ("SEO Internship", "Caller Internship", "Public Relations Internship"):
+    o = opp(t, "internship | online | Eligibility: students | stipend", tags=["internship"])
+    check(f"12. '{t}' no longer reaches the top", score_item(o) <= 6, f"{t}={score_item(o)}")
+check("12b. ...while a technical title is untouched",
+      score_item(opp("Backend Developer Internship", "internship | online | Eligibility: students | stipend",
+                     tags=["internship"])) >= 9)
+
 print("=" * 70)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))
