@@ -51,3 +51,7 @@ inbox_secret.txt
 # so match the prefix rather than one exact name (a *_new.txt variant slipped past once).
 client_secret*.json
 inbox_secret*.txt
+
+# Your standing hunt target — personal goal, money floor, why you need it. Public repo:
+# the example template is committed, your real copy is not.
+hunt_target.json

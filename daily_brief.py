@@ -13,7 +13,7 @@ from rich.panel import Panel
 from rich.text import Text
 
 import config
-from filters import focus, policy
+from filters import focus, policy, target
 from filters.explain import explain
 from filters import ledger
 
@@ -50,6 +50,9 @@ def _render_item(item, dumped: bool) -> Text:
     why = explain(item)          # WHY it scored this, from dimensions already computed
     if why:
         t.append(f"          {why}\n", style="cyan")
+    tgt = target.note(item)      # how the standing target moved this item, and why
+    if tgt:
+        t.append(f"          {tgt}\n", style="magenta")
     src_note = ledger.note(getattr(item, "source", ""))   # why this source was nudged
     if src_note:
         t.append(f"          via {src_note}\n", style="dim")
@@ -106,6 +109,9 @@ def render(items: list, stats: dict, dumped_keys: set | None = None) -> None:
     # the interns" — so off-topic items are demoted to a second section, never hidden and never
     # silently mixed in. Without a focus, `split` returns everything in the first zone and this
     # renders exactly as it always did.
+    if target.active():
+        console.print(f"\n🎯 TARGET: {target.describe()}", style="bold magenta")
+
     on_topic, also = focus.split(items)
     if focus.active():
         console.print(f"\n🎯 {focus.describe()}", style="bold magenta")

@@ -286,6 +286,42 @@ def _unstop_deadline(o: dict):
     return None
 
 
+def _unstop_pay_location(o: dict) -> dict:
+    """Pull PAY and PLACE out of the listing — the two facts that decide whether a paid role in a
+    specific city is even worth reading. Both were being discarded, same as the deadline was.
+
+    `jobDetail` carries min_salary / max_salary / currency / locations / type (wfh|in_office).
+    Returns {pay_min, pay_max, remote, cities} with pay normalised to RUPEES PER MONTH.
+
+    NOTE on `isPaid`: do not use it. Measured across 235 live listings it was false/absent on
+    every single one, including listings quoting a 25,000/month stipend. A filter built on it
+    would reject everything. `max_salary > 0` is the honest signal.
+
+    ponytail: annual-vs-monthly is a threshold heuristic (>= 100000 means annual CTC), because
+    the API does not say which unit it used. Internship stipends are monthly and job salaries
+    are usually annual, so the split is right for the common case and wrong for a 1.2L/yr job.
+    Upgrade path: read `subtype` per listing if that ever matters more than it does now."""
+    jd = o.get("jobDetail") or {}
+    cities = [str(c).strip() for c in (jd.get("locations") or []) if c]
+    if not cities:
+        cities = [str(l.get("city", "")).strip() for l in (o.get("locations") or [])
+                  if isinstance(l, dict) and l.get("city")]
+
+    def per_month(v):
+        try:
+            n = int(v or 0)
+        except (TypeError, ValueError):
+            return 0
+        return round(n / 12) if n >= 100_000 else n
+
+    return {
+        "pay_min": per_month(jd.get("min_salary")),
+        "pay_max": per_month(jd.get("max_salary")),
+        "remote": str(jd.get("type", "")).lower() == "wfh" or str(o.get("region", "")).lower() == "online",
+        "cities": [c for c in cities if c],
+    }
+
+
 def _unstop_description(o: dict, label: str, region: str, tag_text: str) -> str:
     """A real description built from fields the API already returns: event details, prize money,
     eligibility and team size. The old code synthesised '<label> | <region> | India | tags: ' -
@@ -293,6 +329,17 @@ def _unstop_description(o: dict, label: str, region: str, tag_text: str) -> str:
     parts = [f"{label} | {region or 'India'}"]
     if tag_text:
         parts.append(f"tags: {tag_text}")
+
+    # Pay and place, stated plainly. In the text as well as in `raw` so the LLM scorer and the
+    # brief can both see it, not just the target filter.
+    pl = _unstop_pay_location(o)
+    if pl["pay_max"]:
+        lo, hi = pl["pay_min"], pl["pay_max"]
+        parts.append(f"Pay: Rs {lo:,}-{hi:,}/month" if lo and lo != hi else f"Pay: Rs {hi:,}/month")
+    if pl["cities"]:
+        parts.append("Location: " + ", ".join(pl["cities"][:4]))
+    if pl["remote"]:
+        parts.append("Remote/WFH")
 
     reg = o.get("regnRequirements") or {}
     elig = _elig_text(reg.get("eligibility"))
@@ -373,7 +420,8 @@ def _fetch_unstop_category(category: str) -> list[Opportunity]:
                 native_id=str(o.get("id", "")),
                 tags=[label],
                 raw={"status": o.get("status"), "region": region, "category": category,
-                     "registrations": o.get("registerCount"), "views": o.get("viewsCount")},
+                     "registrations": o.get("registerCount"), "views": o.get("viewsCount"),
+                     **_unstop_pay_location(o)},
             )
         )
     return items

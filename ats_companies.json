@@ -1,5 +1,5 @@
 {
-  "_comment": "Company career boards to watch, via their applicant-tracking system's PUBLIC JSON API (no key, no auth, no scraping). Every slug here was probed live and returned HTTP 200 with real listings on 2026-09-21; slugs that 404d were left out rather than guessed at. Adding a company is one line. To find a slug, open the company's careers page and read the URL: boards.greenhouse.io/<slug>, jobs.ashbyhq.com/<slug>, or jobs.lever.co/<slug>. sources/ats.py keeps only student-relevant titles (intern, new grad, residency, research), so a board of 800 senior roles costs one HTTP call and adds nothing to the brief.",
+  "_comment": "Company career boards to watch, via their applicant-tracking system's PUBLIC JSON API (no key, no auth, no scraping). Every slug here was probed live and returned HTTP 200 with real listings on 2026-09-21; slugs that 404d were left out rather than guessed at. Adding a company is one line. To find a slug, open the company's careers page and read the URL: boards.greenhouse.io/<slug>, jobs.ashbyhq.com/<slug>, or jobs.lever.co/<slug>. sources/ats.py keeps only student-relevant titles (intern, new grad, residency, research), so a board of 800 senior roles costs one HTTP call and adds nothing to the brief. INDIAN companies were added 2026-09-26 for the Mumbai/India goal — these are where an India-based paid internship actually comes from, since the US boards list almost nothing in India.",
   "companies": [
     {
       "platform": "greenhouse",
@@ -260,6 +260,72 @@
       "platform": "lever",
       "slug": "voleon",
       "name": "Voleon"
+    },
+    {
+      "platform": "lever",
+      "slug": "paytm",
+      "name": "Paytm",
+      "budget": 120
+    },
+    {
+      "platform": "ashby",
+      "slug": "sarvam",
+      "name": "Sarvam AI"
+    },
+    {
+      "platform": "lever",
+      "slug": "meesho",
+      "name": "Meesho"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "glance",
+      "name": "Glance"
+    },
+    {
+      "platform": "lever",
+      "slug": "mindtickle",
+      "name": "Mindtickle"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "groww",
+      "name": "Groww"
+    },
+    {
+      "platform": "ashby",
+      "slug": "atlan",
+      "name": "Atlan"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "turing",
+      "name": "Turing"
+    },
+    {
+      "platform": "lever",
+      "slug": "cred",
+      "name": "CRED"
+    },
+    {
+      "platform": "ashby",
+      "slug": "navi",
+      "name": "Navi"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "slice",
+      "name": "slice"
+    },
+    {
+      "platform": "lever",
+      "slug": "fi",
+      "name": "Fi Money"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "bluestone",
+      "name": "BlueStone"
     }
   ]
 }

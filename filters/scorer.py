@@ -54,6 +54,16 @@ _OFF_DOMAIN_RE = re.compile(
     r"customer (?:support|service|success)|insurance|real estate|hospitality|"
     r"fashion|interior design(?:er)?)\b",
     re.I)
+
+# Titles where a technical word is the INDUSTRY, not the job. "Software Sales Internship" has
+# "software" in it, which was enough to grant immunity from the off-domain penalty and let a
+# sales role score 10/10 under a paid-internship target. These phrases always penalise.
+_OFF_DOMAIN_STRONG = re.compile(
+    r"\b((?:software|tech(?:nical)?|it|saas|product|digital|b2b|enterprise|inside)\s+"
+    r"(?:sales|marketing|recruit\w*)"
+    r"|sales\s+(?:engineer|development\s+represent\w*|executive|associate|intern\w*)"
+    r"|(?:pre)?sales\s+consultant)\b", re.I)
+
 # Big enough to sink a non-technical role that has banked every generic bonus (deadline,
 # remote, student, stipend). At 4 a Video Editor internship still outranked a real hackathon.
 OFF_DOMAIN_PENALTY = 6
@@ -110,12 +120,15 @@ def score_item(item) -> int:
     # Domain fit — the difference between an opportunity and an opportunity FOR HIM.
     # Both judgements are made on the TITLE: it is where the role is named, and it is the one
     # field no source pads with boilerplate.
-    title_domain = bool(_DOMAIN_RE.search(title))
+    # A "software sales" title is a sales job whose industry happens to be software, so the
+    # strong pattern overrides the domain word rather than being excused by it.
+    forced_off = bool(_OFF_DOMAIN_STRONG.search(title))
+    title_domain = bool(_DOMAIN_RE.search(title)) and not forced_off
     if title_domain:
         score += 3
-    elif _DOMAIN_RE.search(desc):
+    elif not forced_off and _DOMAIN_RE.search(desc):
         score += 1   # domain only in the body: weaker evidence, smaller credit
-    if _OFF_DOMAIN_RE.search(title) and not title_domain:
+    if forced_off or (_OFF_DOMAIN_RE.search(title) and not title_domain):
         score -= OFF_DOMAIN_PENALTY
 
     return max(0, min(score, 10))

@@ -258,6 +258,28 @@ def _notify(new_items, test):
         telegram.send_telegram(f"<b>{_tg_escape(stat_line)}</b>\n\n{text}", buttons=buttons)
 
 
+def _show_target(target) -> None:
+    """`--target`: what is currently being aimed at, and where to change it."""
+    t = target.load()
+    if not t:
+        print("No standing target.\n")
+        print(f"  Create one:  copy hunt_target.example.json -> hunt_target.json")
+        print(f"  Location:    {target.TARGET_FILE}")
+        print("  That file is gitignored, so your goal stays off GitHub.")
+        return
+    print(f"\nSTANDING TARGET — every hunt applies this, no flags needed\n{'=' * 60}")
+    print(f"  Goal      {t.get('goal') or '(none written)'}")
+    print(f"  By        {target.describe().split('[')[-1].rstrip(']') if t.get('by') else '(open-ended)'}")
+    print(f"  Hunting   {', '.join(target.focus_kinds()) or '(everything)'}")
+    print(f"  Locations {', '.join(str(c) for c in (t.get('locations') or [])) or '(anywhere)'}")
+    floor = t.get("min_pay_per_month")
+    print(f"  Pay floor {f'Rs {int(floor):,}/month' if floor else '(none)'}"
+          + ("  (unpaid listings pushed down)" if t.get("require_pay") else ""))
+    print(f"\n  Edit      {target.TARGET_FILE}")
+    print(f"  Skip once py main.py --now --no-target")
+    print(f"  Turn off  set \"active\": false\n")
+
+
 def _rotate_by_kind(items: list, budget: int) -> list:
     """Take `budget` items without letting one category swallow the lot.
 
@@ -329,7 +351,16 @@ def run(source_names=None, test=False):
     for it in relevant:
         it.score = score_item(it)
 
-    # 3a. Focus — "what am I hunting this week?". Re-ranks (and in "only" mode filters)
+    # 3a. TARGET — the standing goal from hunt_target.json (city, pay floor, by-date). Runs
+    # BEFORE focus so the target's own focus kinds are in play, and before the intake budget so
+    # a Mumbai role paying above the floor actually competes for a slot. Nudges scores only;
+    # nothing is ever dropped for missing the target.
+    from filters import target
+    if target.active():
+        moved = target.apply(relevant)
+        log(f"[target] {target.describe()} — adjusted {moved}/{len(relevant)} items")
+
+    # 3b. Focus — "what am I hunting this week?". Re-ranks (and in "only" mode filters)
     # the pool around the active kinds. No focus set = no-op. Applied BEFORE the intake
     # budget so that when he says "hackathons", hackathons are what fill the budget.
     relevant = focus.apply(relevant)
@@ -490,7 +521,19 @@ def main():
                              f"only: hide off-topic (anything scoring {focus.KEEP_ANYWAY}+ still shows)")
     parser.add_argument("--focus-only", action="store_true",
                         help="shorthand for --focus-mode only")
+    parser.add_argument("--target", action="store_true",
+                        help="show the standing target from hunt_target.json and exit")
+    parser.add_argument("--no-target", action="store_true",
+                        help="ignore hunt_target.json for this run")
     args = parser.parse_args()
+
+    from filters import target
+    if args.no_target:
+        target.TARGET_FILE = config.BASE_DIR / "_disabled_"
+        target.reset_cache()
+    if args.target:
+        _show_target(target)
+        return
 
     # Set focus before run() reads it. A CLI flag beats the .env default for this run only.
     if args.focus:

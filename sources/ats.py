@@ -24,7 +24,9 @@ ever reach the scorer. That filter is the whole reason this source is usable.
 
 from __future__ import annotations
 
+import json as _json
 import re
+import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 
@@ -37,6 +39,39 @@ from util import log
 COMPANIES_FILE = config.BASE_DIR / "ats_companies.json"
 
 _HEADERS = {"User-Agent": config.USER_AGENT, "Accept": "application/json"}
+
+# Wall-clock budget per board, and a hard size cap.
+#
+# requests' `timeout` is NOT a total-time limit — it bounds the connect and the gap BETWEEN
+# bytes. A board that streams a huge body slowly never trips it: measured on live boards,
+# lever/shieldai took 236s and lever/paytm 105s against a 10s REQUEST_TIMEOUT, and those two
+# alone turned a 65-board fetch into 3.5 minutes. So we stream and enforce our own deadline.
+# A board that cannot answer inside the budget is skipped and named in the log, never silently.
+BOARD_BUDGET_SEC = 25
+BOARD_MAX_BYTES = 8 * 1024 * 1024
+
+
+def _get_json(url: str, budget: float = BOARD_BUDGET_SEC):
+    """GET JSON under a real wall-clock budget. Raises on timeout/oversize like any fetch error,
+    so one slow board is handled by the same path as one broken board.
+
+    Boards fetch in parallel, so total run time is the SLOWEST board, not the sum. That is why a
+    company worth waiting for can raise its own budget (`"budget": 120` in ats_companies.json)
+    without every other board paying for it."""
+    r = requests.get(url, headers=_HEADERS, timeout=config.REQUEST_TIMEOUT, stream=True)
+    try:
+        r.raise_for_status()
+        started, size, chunks = time.monotonic(), 0, []
+        for chunk in r.iter_content(64 * 1024):
+            chunks.append(chunk)
+            size += len(chunk)
+            if time.monotonic() - started > budget:
+                raise requests.Timeout(f"exceeded {budget}s budget")
+            if size > BOARD_MAX_BYTES:
+                raise requests.RequestException(f"body over {BOARD_MAX_BYTES} bytes")
+        return _json.loads(b"".join(chunks).decode("utf-8", "replace"))
+    finally:
+        r.close()
 
 # Roles a student can actually take. Checked against the TITLE, where the level is named.
 # "research engineer" / "research scientist" are deliberately absent: at these companies they
@@ -75,12 +110,10 @@ def _opp(title, url, company, platform, location="", posted=None, native_id=None
     )
 
 
-def _greenhouse(slug: str, company: str) -> list[Opportunity]:
-    r = requests.get(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs",
-                     headers=_HEADERS, timeout=config.REQUEST_TIMEOUT)
-    r.raise_for_status()
+def _greenhouse(slug: str, company: str, budget=BOARD_BUDGET_SEC) -> list[Opportunity]:
+    data = _get_json(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs", budget)
     out = []
-    for j in r.json().get("jobs", []):
+    for j in data.get("jobs", []):
         title = (j.get("title") or "").strip()
         if not _is_student_role(title):
             continue
@@ -90,12 +123,10 @@ def _greenhouse(slug: str, company: str) -> list[Opportunity]:
     return out
 
 
-def _ashby(slug: str, company: str) -> list[Opportunity]:
-    r = requests.get(f"https://api.ashbyhq.com/posting-api/job-board/{slug}",
-                     headers=_HEADERS, timeout=config.REQUEST_TIMEOUT)
-    r.raise_for_status()
+def _ashby(slug: str, company: str, budget=BOARD_BUDGET_SEC) -> list[Opportunity]:
+    data = _get_json(f"https://api.ashbyhq.com/posting-api/job-board/{slug}", budget)
     out = []
-    for j in r.json().get("jobs", []):
+    for j in data.get("jobs", []):
         title = (j.get("title") or "").strip()
         if not _is_student_role(title):
             continue
@@ -105,12 +136,9 @@ def _ashby(slug: str, company: str) -> list[Opportunity]:
     return out
 
 
-def _lever(slug: str, company: str) -> list[Opportunity]:
-    r = requests.get(f"https://api.lever.co/v0/postings/{slug}?mode=json",
-                     headers=_HEADERS, timeout=config.REQUEST_TIMEOUT)
-    r.raise_for_status()
+def _lever(slug: str, company: str, budget=BOARD_BUDGET_SEC) -> list[Opportunity]:
     out = []
-    for j in r.json():
+    for j in _get_json(f"https://api.lever.co/v0/postings/{slug}?mode=json", budget):
         title = (j.get("text") or "").strip()
         if not _is_student_role(title):
             continue
@@ -144,7 +172,8 @@ def _fetch_one(c: dict) -> list[Opportunity]:
     if not adapter:
         return []
     try:
-        return adapter(c["slug"], c.get("name") or c["slug"])
+        return adapter(c["slug"], c.get("name") or c["slug"],
+                       float(c.get("budget") or BOARD_BUDGET_SEC))
     except (requests.RequestException, ValueError, KeyError, TypeError):
         # A renamed slug or a moved board must not take the other companies down. Logged at
         # the end as a count, so a board that quietly dies is visible rather than silent.
@@ -157,7 +186,10 @@ def fetch() -> list[Opportunity]:
     if not companies:
         return []
 
-    with ThreadPoolExecutor(max_workers=8) as ex:
+    # 8 workers took 5 minutes across 65 boards, which is too long for the daily cloud run.
+    # These are 65 independent hosts, not one server being hammered, so the concurrency is
+    # polite as well as faster — each board still sees exactly one request.
+    with ThreadPoolExecutor(max_workers=min(24, len(companies))) as ex:
         results = list(ex.map(_fetch_one, companies))
 
     dead = [c["slug"] for c, r in zip(companies, results) if not r]

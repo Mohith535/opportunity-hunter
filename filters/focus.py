@@ -128,11 +128,20 @@ def kind_of(item) -> str:
 
 
 def active() -> list[str]:
-    """The focus kinds currently switched on. Empty list = hunting everything."""
+    """The focus kinds currently switched on. Empty list = hunting everything.
+
+    Precedence: an explicit config.FOCUS (the --focus flag, or OH_FOCUS) wins, then the standing
+    target's own `focus` list. That ordering is the point of a target — a long-running goal keeps
+    applying without anyone retyping a flag, while a flag still overrides it for one run."""
     raw = getattr(config, "FOCUS", None) or []
     if isinstance(raw, str):
         raw = [p for p in re.split(r"[,\s]+", raw) if p]
-    return [k for k in (str(x).strip().lower() for x in raw) if k in KINDS]
+    kinds = [k for k in (str(x).strip().lower() for x in raw) if k in KINDS]
+    if kinds:
+        return kinds
+
+    from filters import target
+    return [k for k in target.focus_kinds() if k in KINDS]
 
 
 def is_on_topic(item) -> bool:

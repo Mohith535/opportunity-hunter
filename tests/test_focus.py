@@ -14,8 +14,17 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 import config
-from filters import focus
+from filters import focus, target
 from models import Opportunity
+
+# Isolate from the real hunt_target.json. focus.active() now falls back to the standing target
+# when no explicit focus is set - that is the point of a target - so a developer who happens to
+# have one configured would otherwise see "no focus" tests fail. The behaviour is correct; the
+# test just has to say which world it is testing.
+import tempfile
+from pathlib import Path
+target.TARGET_FILE = Path(tempfile.gettempdir()) / "__no_target_for_focus_tests__.json"
+target.reset_cache()
 
 R = []
 def check(name, cond, detail=""):
