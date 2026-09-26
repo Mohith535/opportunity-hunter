@@ -380,13 +380,22 @@ def carry_over(old: dict | None, new: dict) -> tuple[dict, list[str]]:
             nb[f] = ob[f]
             kept.append(f"basics.{f}")
 
-    notes = {(e.get("institution") or "").lower()[:20]: e.get("note")
-             for e in old.get("education", []) if e.get("note")}
+    old_edu = {(e.get("institution") or "").lower()[:20]: e for e in old.get("education", [])}
     for e in new.get("education", []):
-        n = notes.get((e.get("institution") or "").lower()[:20])
-        if n and not e.get("note"):
-            e["note"] = n
-            kept.append(f"education note: {n}")
+        prev = old_edu.get((e.get("institution") or "").lower()[:20])
+        if not prev:
+            continue
+        if prev.get("note") and not e.get("note"):
+            e["note"] = prev["note"]
+            kept.append(f"education note: {prev['note']}")
+        # Dates are a curated fact. The LinkedIn export and facts.yml both say SRM 2024-2028; he has
+        # said himself that it is 2025-2029 (a gap year after 12th for NDA). A rebuild re-imports the
+        # export, so without this it would silently put the wrong graduation year back — and a wrong
+        # graduation year decides internship eligibility outright.
+        for f in ("startDate", "endDate"):
+            if prev.get(f) and e.get(f) != prev[f]:
+                kept.append(f"{prev.get('institution','')[:24]} {f}: kept {prev[f]} over the export's {e.get(f)}")
+                e[f] = prev[f]
     return new, kept
 
 

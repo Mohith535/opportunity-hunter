@@ -389,6 +389,31 @@ def _role_section(profile: dict, x: dict, projects: list[dict], jd_text: str, ro
     return kept[:3] if len(kept) >= 2 else []
 
 
+def _names(text: str) -> set[str]:
+    """Distinctive named things in a line: acronym-ish or mixed-case tokens ("GSSoC", "SSoC", "NVIDIA",
+    "NitroStack"), which is what two bullets about the same thing share. Ordinary capitalised words
+    ("Open", "Campus") do not count."""
+    toks = re.findall(r"\b[A-Za-z][A-Za-z0-9]*[A-Z][A-Za-z0-9]*\b", re.sub(r"\*", "", text or ""))
+    return {t.lower() for t in toks if not t.istitle() or len(t) <= 3}
+
+
+def _drop_repeats(bullets: list[str], elsewhere: list[str]) -> list[str]:
+    """Remove a bullet that only repeats what another section already says.
+
+    His resume listed GSSoC and SSoC twice — once under Campus & Community, once under Programs &
+    Selections. A recruiter reads the second one as padding, and on a page he called congested it was
+    two lines of pure repetition. A bullet goes when two or more of its distinctive names already
+    appear together in one line elsewhere; the Programs line, being the selection itself, is kept."""
+    other = [_names(e) for e in elsewhere]
+    kept = []
+    for b in bullets:
+        mine = _names(b)
+        if len(mine) >= 2 and any(len(mine & o) >= 2 and len(mine & o) >= len(mine) - 1 for o in other):
+            continue
+        kept.append(b)
+    return kept
+
+
 def _skills_block(groups: dict, jd_low: str) -> list[str]:
     """His four skill groups, in his order, with the items this job mentions moved to the front
     of each group — the first words of a line are what the F-pattern reader actually sees."""
@@ -463,7 +488,8 @@ def _from_resume_layer(profile: dict, jd_text: str | None, role: str, report: di
             report["role_section"] = role_bullets
 
     if x.get("community"):
-        L += ["## Campus & Community", *[f"- {c}" for c in x["community"]], ""]
+        community = _drop_repeats(x["community"], x.get("programs") or [])
+        L += ["## Campus & Community", *[f"- {c}" for c in community], ""]
     if x.get("programs"):
         L += ["## Programs & Selections", *[f"- {c}" for c in x["programs"]], ""]
     if x.get("certifications_line"):

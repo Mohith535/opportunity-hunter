@@ -38,7 +38,7 @@ PROFILE = {
     "basics": {"name": "K MOHITH KANNAN", "email": "promohith535@gmail.com"},
     "skills": [{"name": "python"}, {"name": "typescript"}, {"name": "mcp"}],
     "education": [{"institution": "SRM Institute of Science and Technology",
-                   "studyType": "B.Tech — Computer Science Engineering", "startDate": "2024", "endDate": "2028"},
+                   "studyType": "B.Tech — Computer Science Engineering", "startDate": "2025", "endDate": "2029"},
                   {"institution": "Sainik School Amaravathinagar", "studyType": "Senior Secondary",
                    "startDate": "2017", "endDate": "2024", "note": "Ranked 2nd in class"}],
     "projects": [
@@ -88,7 +88,7 @@ except Exception as e:  # noqa: BLE001
 doc = parse(MD)
 check("2. header parsed (name, headline, links, education line)",
       doc.name == "K MOHITH KANNAN" and "MCP servers" in doc.headline and len(doc.links) == 3
-      and any("2024–2028" in e for e in doc.eduline), f"{doc.name!r} {doc.headline!r} {doc.links}")
+      and any("2025–2029" in e for e in doc.eduline), f"{doc.name!r} {doc.headline!r} {doc.links}")
 ps = doc.projects()
 check("3. all five projects parsed with tagline, date, bullets and tech line",
       len(ps) == 5 and all(p.tagline and p.when and p.bullets and p.techline for p in ps),
@@ -103,7 +103,7 @@ p1 = res and pdf_text(res.pdf)[0]
 check("6. a PDF is produced and passes its own read-back gate", res.pdf and not res.problems, str(res.problems))
 check("7. the name is the first thing extracted", p1.strip().splitlines()[0].strip() == "K MOHITH KANNAN",
       p1.strip().splitlines()[0])
-check("8. graduation year is on page 1 (knockout answered in 3 s)", "2024–2028" in p1)
+check("8. graduation year is on page 1 (knockout answered in 3 s)", "2025–2029" in p1)
 check("9. the teaser sits on page 1 and names what page 2 holds",
       res.teaser and res.teaser[:30] in " ".join(p1.split()), res.teaser)
 check("10. the skills block is lifted onto page 1", "TECHNICAL SKILLS" in p1)
@@ -178,6 +178,35 @@ md1, rep1 = build("- Permission systems — NitroWatch sorts tools into three ri
 check("32. one surviving bullet is not enough — section omitted", "What I would bring" not in md1)
 md0, rep0 = build(three, "Short blurb.", "X", "Y")
 check("33. a job blurb is too thin to map honestly — no section", "What I would bring" not in md0)
+
+# ── breathing room + header (his review: "the pdf is congested — a human is reading") ─────
+from resume.render import PAGE1_MAX_FILL, _teaser_fill
+if res.teaser:
+    fill = _teaser_fill(res.pdf, res.teaser)
+    check("34. page 1 ends with breathing room, not at the margin", fill <= PAGE1_MAX_FILL + 0.001,
+          f"fill={fill:.2f}")
+lines = [l.strip() for l in p1.splitlines() if l.strip()]
+check("35. header reads name → headline → education → contact, each on its own line",
+      lines[0] == "K MOHITH KANNAN" and "MCP servers" in lines[1] and "2025–2029" in lines[2]
+      and "promohith535@gmail.com" in lines[3], str(lines[:4]))
+check("36. the education line never runs into the links", not any("looplab.page B.Tech" in l for l in lines))
+
+G2 = sys.modules["resume.generate"]
+comm = ["**Four hackathons in 2026:** NitroStack × SRM · Ossome Hacks 3.0",
+        "**Open source:** selected contributor to GSSoC 2026 (AI/Agents track) and SSoC Season 5.",
+        "**Writing:** technical posts on LinkedIn."]
+progs = ["**GSSoC 2026** (AI/Agents track) and **SSoC Season 5** — selected open-source contributor, 2026."]
+kept = G2._drop_repeats(comm, progs)
+check("37. a bullet repeating another section (GSSoC/SSoC twice) is dropped",
+      len(kept) == 2 and not any("GSSoC" in k for k in kept), str(kept))
+check("38. distinct bullets are never dropped", G2._drop_repeats(comm[:1] + comm[2:], progs) == comm[:1] + comm[2:])
+
+from resume.profile import carry_over
+old = {"education": [{"institution": "SRM Institute of Science and Technology", "startDate": "2025", "endDate": "2029"}]}
+new = {"education": [{"institution": "SRM Institute of Science and Technology", "startDate": "2024", "endDate": "2028"}]}
+merged, _ = carry_over(old, new)
+check("39. a rebuild from the export cannot restore the wrong graduation year",
+      (merged["education"][0]["startDate"], merged["education"][0]["endDate"]) == ("2025", "2029"))
 
 print("=" * 76)
 for name, ok_, detail in R:

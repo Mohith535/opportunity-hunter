@@ -41,7 +41,10 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 # ─── palette + type (his PDF's look: serif name and rust section heads, clean sans body) ──────────
-INK, INK2, SOFT, ACCENT, RULE = "#1C1C1C", "#3A3A3A", "#6B6B6B", "#A8452E", "#D9D2CC"
+# Three tones, so hierarchy reads before a word is read: names darkest, prose a step lighter,
+# metadata lighter still. One flat colour for everything was part of why it read as a wall.
+INK, BODY, INK2, SOFT, ACCENT, RULE = ("#111111", "#2E2E2E", "#3A3A3A", "#6E6E6E",
+                                      "#A8452E", "#D9D2CC")
 BODY_FONTS = ("Calibri", "Carlito", "Segoe UI", "Liberation Sans", "DejaVu Sans", "Libertinus Serif")
 HEAD_FONTS = ("Georgia", "Gelasio", "Liberation Serif", "Libertinus Serif")
 
@@ -168,28 +171,33 @@ def to_typst(doc: Doc, page1_projects: int | None = None, skills_on_p1: bool = F
     title = f"{doc.name.title()} — Resume" if doc.name else "Resume"
     T = [
         f"#set document(title: {_lit(title)}, author: {_lit(doc.name.title())})",
-        '#set page(paper: "a4", margin: (x: 1.6cm, top: 1.35cm, bottom: 1.35cm))',
-        f"#set text(font: {fonts}, size: 10pt, fill: rgb({_lit(INK)}), lang: \"en\", "
+        '#set page(paper: "a4", margin: (x: 2.0cm, top: 1.7cm, bottom: 1.6cm))',
+        f"#set text(font: {fonts}, size: 10pt, fill: rgb({_lit(BODY)}), lang: \"en\", "
         f"ligatures: false, hyphenate: false)",
-        "#set par(justify: false, leading: 0.52em, spacing: 0.62em)",
-        "#set list(marker: [•], indent: 0.15em, body-indent: 0.5em, spacing: 0.42em)",
+        "#set par(justify: false, leading: 0.7em, spacing: 0.85em)",
+        "#set list(marker: [•], indent: 0.2em, body-indent: 0.55em, spacing: 0.62em)",
         f"#show link: set text(fill: rgb({_lit(INK2)}))",
-        f"#let sect(t) = block(above: 0.95em, below: 0.45em, breakable: false)["
+        f"#let sect(t) = block(above: 1.75em, below: 0.75em, breakable: false)["
         f"#text(font: {heads}, size: 10.5pt, weight: \"bold\", fill: rgb({_lit(ACCENT)}), "
         f"tracking: 0.07em)[#upper(t)] #v(-0.6em) "
         f"#line(length: 100%, stroke: 0.5pt + rgb({_lit(RULE)}))]",
     ]
 
     # ── the 3-second zone ──
-    T.append(f"#text(font: {heads}, size: 23pt, weight: \"bold\")[#{_lit(doc.name)}]")
-    T.append("#v(-0.25em)")
+    # Each header item is its OWN line, joined with Typst's explicit line break. In Typst markup a
+    # single newline between two calls is only a space, so these were silently one paragraph — once
+    # wider margins made the links wrap, "looplab.page" ran straight into the education line.
+    # Order follows TheLadders' six fixation points: name, then headline (the "title" slot), then
+    # education with the graduation year, and only then the contact links.
+    head = [f"#text(font: {heads}, size: 23pt, weight: \"bold\")[#{_lit(doc.name)}]"]
     if doc.headline:
-        T.append(f"#text(size: 10.5pt, weight: \"bold\")[#{_lit(doc.headline)}]")
+        head.append(f"#text(size: 10.5pt, weight: \"bold\", fill: rgb({_lit(INK)}))[#{_lit(doc.headline)}]")
+    for e in doc.eduline:
+        head.append(f"#text(size: 9.5pt, fill: rgb({_lit(INK2)}))[{_inline(e)}]")
     if doc.links:
         parts = [f"#link({_lit(_href(l))})[#{_lit(l)}]" for l in doc.links]
-        T.append(f"#text(size: 9pt, fill: rgb({_lit(SOFT)}))[" + " #\"  |  \" ".join(parts) + "]")
-    for e in doc.eduline:
-        T.append(f"#text(size: 9.5pt, fill: rgb({_lit(INK2)}))[{_inline(e)}]")
+        head.append(f"#text(size: 8.8pt, fill: rgb({_lit(SOFT)}))[" + " #\" · \" ".join(parts) + "]")
+    T.append("#block(below: 0.2em)[#set par(leading: 0.55em)\n" + " \\\n".join(head) + "\n]")
 
     teaser = ""
     shown = 0
@@ -209,7 +217,8 @@ def to_typst(doc: Doc, page1_projects: int | None = None, skills_on_p1: bool = F
         T.append(f"#sect({_lit(title_)})")
         for b in blocks:
             if isinstance(b, Project):
-                head = f"#strong({_lit(b.name)})" + (f"#{_lit(' — ' + b.tagline)}" if b.tagline else "")
+                head = (f"#text(size: 11.5pt, weight: \"bold\", fill: rgb({_lit(INK)}))[#{_lit(b.name)}]"
+                        + (f"#text(fill: rgb({_lit(INK2)}))[#{_lit(' — ' + b.tagline)}]" if b.tagline else ""))
                 if b.when:
                     head += f" #h(1fr) #text(size: 8.8pt, fill: rgb({_lit(SOFT)}), style: \"italic\")[#{_lit(b.when)}]"
                 # Proximity decides what belongs together. The first render joined these with forced
@@ -220,8 +229,8 @@ def to_typst(doc: Doc, page1_projects: int | None = None, skills_on_p1: bool = F
                 if b.bullets:
                     body.append("#list(" + ", ".join(f"[{_inline(x)}]" for x in b.bullets) + ")")
                 if b.techline:
-                    body.append(f"#v(-0.3em)#text(size: 8.6pt, fill: rgb({_lit(SOFT)}))[#{_lit(b.techline)}]")
-                T.append("#block(breakable: false, above: 1.05em, below: 0em)[\n" + "\n".join(body) + "\n]")
+                    body.append(f"#v(-0.15em)#text(size: 8.8pt, fill: rgb({_lit(SOFT)}))[#{_lit(b.techline)}]")
+                T.append("#block(breakable: false, above: 1.55em, below: 0em)[\n" + "\n".join(body) + "\n]")
                 shown += 1
                 rest = all_projects[shown:]
                 if page1_projects and shown == page1_projects and rest:
@@ -234,7 +243,7 @@ def to_typst(doc: Doc, page1_projects: int | None = None, skills_on_p1: bool = F
                     teaser = f"Continued on page 2 → {first.name}" + (f": {first.tagline}" if first.tagline else "")
                     if len(rest) > 1:
                         teaser += f", and {len(rest) - 1} more"
-                    T.append(f"#v(0.7em)#align(right)[#text(size: 9pt, fill: rgb({_lit(ACCENT)}), "
+                    T.append(f"#v(1.1em)#align(right)[#text(size: 9.5pt, fill: rgb({_lit(ACCENT)}), "
                              f"style: \"italic\")[#{_lit(teaser)}]]")
                     T.append("#pagebreak(weak: true)")
                     # Page 2 must not open mid-section with no label.
@@ -338,27 +347,46 @@ class Rendered:
     problems: list[str]
 
 
+# Page 1 must END by this share of its height. A human is reading, and TheLadders found resumes lost
+# attention to "cluttered layouts, a lack of white space". The first version maximised page-1 content
+# and filled it to the bottom margin; he looked at it and called it congested. He was right.
+PAGE1_MAX_FILL = 0.88
+
+
+def _teaser_fill(pdf: bytes, teaser: str) -> float:
+    """How far down page 1 the teaser line ends, as a share of page height (1.0 = off the page)."""
+    import fitz  # noqa: PLC0415
+    page = fitz.open(stream=pdf, filetype="pdf")[0]
+    hits = page.search_for(teaser[:28])
+    return (max(r.y1 for r in hits) / page.rect.height) if hits else 1.0
+
+
 def render(md: str) -> Rendered:
-    """Render, then prove it. Tries the MOST projects on page 1 first (n-1 down to 1) and keeps the
-    first layout whose teaser genuinely lands on page 1. The first version only tried 3, 2, 1 and left
-    page 1 a third empty when a fourth, shorter project would have fit. Plain flow if nothing fits."""
+    """Render, then prove it. Tries the most page-1 content first — k projects with the skills block,
+    then without, then k-1 — and keeps the first layout whose teaser lands on page 1 with breathing
+    room below it (PAGE1_MAX_FILL). Plain flow if nothing fits."""
     doc = parse(md)
     n = len(doc.projects())
     has_skills = any(_is_skills(t) for t, _ in doc.sections)
-    # Most content on page 1 first: k projects WITH the skills block, then without, then k-1…
     attempts = [(k, s) for k in range(n - 1, 0, -1) for s in ((True, False) if has_skills else (False,))]
-    best = None
-    for k, s in attempts + [(None, False)]:
+    best = fallback = None
+    for k, s in attempts:
         src, teaser = to_typst(doc, k, s)
         pdf = compile_pdf(src)
         pages = pdf_text(pdf)
-        if not teaser:
-            best = Rendered(pdf, len(pages), None, "", [])
+        if not teaser or _norm(teaser)[:40] not in _norm(pages[0]):
+            continue                                  # overflowed: the teaser fell onto page 2
+        cand = Rendered(pdf, len(pages), k, teaser, [])
+        fallback = fallback or cand                   # densest layout that fits at all
+        if _teaser_fill(pdf, teaser) <= PAGE1_MAX_FILL:
+            best = cand
             break
-        on_p1 = _norm(teaser)[:40] in _norm(pages[0])
-        if on_p1:
-            best = Rendered(pdf, len(pages), k, teaser, [])
-            break
+    # Preference: breathing room > densest fit with a teaser > plain flow with no teaser.
+    best = best or fallback
+    if best is None:
+        src, _ = to_typst(doc, None)
+        pdf = compile_pdf(src)
+        best = Rendered(pdf, len(pdf_text(pdf)), None, "", [])
     best.problems = readback(best.pdf, doc)
     return best
 

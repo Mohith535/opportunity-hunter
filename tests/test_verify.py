@@ -37,8 +37,8 @@ PROFILE = {
             "214 tests."]},
         {"name": "Nova", "highlights": ["Ten specialist agents reaching my data through 17 typed MCP tools."]},
     ],
-    "education": [{"institution": "SRM Institute of Science and Technology", "startDate": "2024",
-                   "endDate": "2028"},
+    "education": [{"institution": "SRM Institute of Science and Technology", "startDate": "2025",
+                   "endDate": "2029"},
                   {"institution": "Sainik School", "note": "Ranked 2nd in class"}],
     "x_resume": {"summary_core": "Second-year CSE (AI & ML) student. Five working systems so far."},
     "meta": {"known_stale_input": "claims SEO expert"},   # meta must NOT count as evidence
@@ -66,7 +66,7 @@ TRUE = [
     "Experience with data analysis and PostgreSQL.",              # alias: analysis -> analytics
     "Experienced in Postgres-backed services.",                   # alias: postgres -> postgresql
     "Ranked 2nd in class at Sainik School.",
-    "B.Tech at SRM, 2024 to 2028.",
+    "B.Tech at SRM, 2025 to 2029.",
     "Five working systems so far; 5 of them shipped.",            # number word backs a digit
 ]
 for s in TRUE:

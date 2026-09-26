@@ -86,7 +86,7 @@ PROFILE = {
     "basics": {"name": "K MOHITH KANNAN", "email": "promohith535@gmail.com"},
     "skills": [{"name": "python"}, {"name": "typescript"}, {"name": "mcp"}],
     "education": [{"institution": "SRM Institute of Science and Technology", "studyType": "B.Tech",
-                   "startDate": "2024", "endDate": "2028"},
+                   "startDate": "2025", "endDate": "2029"},
                   {"institution": "Sainik School Amaravathinagar", "studyType": "Senior Secondary",
                    "note": "Ranked 2nd in class"}],
     "projects": [
@@ -141,7 +141,7 @@ check("17. with the model down the resume is still complete",
       and "Second-year CSE" in md and not rep["tailor_line"])
 
 check("18. the 3-second zone: headline and graduation year sit above the summary",
-      md.index("MCP servers and clients") < md.index("## Summary") and md.index("2024–2028") < md.index("## Summary"))
+      md.index("MCP servers and clients") < md.index("## Summary") and md.index("2025–2029") < md.index("## Summary"))
 check("19. class rank stays on the resume", "Ranked 2nd in class" in md)
 check("20. the page ends on his closing line (peak-end)", md.rstrip().endswith("how to refuse.*"))
 check("21. one emphasis per project block (von Restorff)", "**more bold**" not in md and "**two bugs reported upstream**" in md)
