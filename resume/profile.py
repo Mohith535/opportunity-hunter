@@ -336,6 +336,106 @@ def format_summary(profile: dict) -> str:
 
 
 # ─── CLI ─────────────────────────────────────────────────────────────
+def carry_over(old: dict | None, new: dict) -> tuple[dict, list[str]]:
+    """Keep the hand-curated layers of an existing profile across a rebuild.
+
+    A rebuild exists to refresh evidence — GitHub repos, certificates, the LinkedIn export. It was
+    never meant to throw away what only a human could supply. It did: on 2026-09-26 a plain
+    `--github --linkedin --certs` rebuild deleted nova-cortex, LoopLab, his email, all 5 awards and
+    "Ranked 2nd in class", because those arrive only through the --resume merge. The README
+    instructed exactly that command. So now the curated layers are carried forward by default and
+    every carried item is reported; `--force` is the explicit way to accept losing them.
+
+    Carried: the transcribed resume layer (x_resume), every project that carries hand-written
+    highlights, awards, contact details, and education notes such as class rank."""
+    if not old:
+        return new, []
+    kept: list[str] = []
+
+    if old.get("x_resume") and not new.get("x_resume"):
+        new["x_resume"] = old["x_resume"]
+        kept.append("your transcribed resume layer (headline, summary, closing, skill groups)")
+
+    new_names = {(p.get("x_resume_name") or p.get("name") or "").lower(): p for p in new.get("projects", [])}
+    for p in old.get("projects", []):
+        if not p.get("highlights"):
+            continue
+        key = (p.get("x_resume_name") or p.get("name") or "").lower()
+        if key in new_names:
+            tgt = new_names[key]
+            for f in ("highlights", "x_resume_name", "x_tagline", "x_when", "x_techline", "x_source"):
+                if p.get(f) and not tgt.get(f):
+                    tgt[f] = p[f]
+        else:
+            new.setdefault("projects", []).append(p)
+            kept.append(f"project {p.get('x_resume_name') or p.get('name')}")
+
+    if old.get("awards") and not new.get("awards"):
+        new["awards"] = old["awards"]
+        kept.append(f"{len(old['awards'])} awards / selections")
+
+    ob, nb = old.get("basics") or {}, new.setdefault("basics", {})
+    for f in ("email", "phone", "label", "summary"):
+        if ob.get(f) and not nb.get(f):
+            nb[f] = ob[f]
+            kept.append(f"basics.{f}")
+
+    notes = {(e.get("institution") or "").lower()[:20]: e.get("note")
+             for e in old.get("education", []) if e.get("note")}
+    for e in new.get("education", []):
+        n = notes.get((e.get("institution") or "").lower()[:20])
+        if n and not e.get("note"):
+            e["note"] = n
+            kept.append(f"education note: {n}")
+    return new, kept
+
+
+FACTS_YML = Path("E:/linkedin-agent/data/profile/facts.yml")
+
+
+def facts_drift(profile: dict, facts_path: str | Path | None = None) -> list[str]:
+    """Where facts.yml (the hand-maintained source of truth) knows something the profile does not.
+
+    Read LIVE on every resume build, so a stale profile is caught the day it goes stale instead of
+    three months later. It is a warning, not an auto-merge: the profile holds his resume-shaped
+    bullets, facts.yml holds prose, and prose must never silently overwrite a curated bullet.
+    What it catches: a project facts.yml has that the profile lacks, and any version or number in a
+    facts.yml write-up that the profile's text for that project does not contain (TaskFlow v9.1.0
+    vs the v8.5 the profile held from a June PDF)."""
+    import os
+    path = Path(facts_path or os.environ.get("OH_FACTS_YML") or FACTS_YML)
+    if not path.exists():
+        return []          # the cloud run has no facts.yml; that is expected, not an error
+    try:
+        import yaml  # noqa: PLC0415
+        facts = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    except Exception as e:  # noqa: BLE001
+        return [f"could not read {path.name}: {type(e).__name__}"]
+
+    by_name = {}
+    for p in profile.get("projects", []):
+        for k in (p.get("x_resume_name"), p.get("name")):
+            if k:
+                by_name[k.lower()] = p
+
+    out = []
+    for d in facts.get("project_detail") or []:
+        name = str(d.get("name") or "")
+        proj = by_name.get(name.lower()) or by_name.get(str(d.get("repo") or "").lower())
+        if not proj:
+            out.append(f"facts.yml has project '{name}', your profile does not")
+            continue
+        have = " ".join([*(proj.get("highlights") or []), proj.get("x_when") or "",
+                         proj.get("description") or ""]).lower().replace(",", "")
+        text = str(d.get("text") or "")
+        missing = [t for t in re.findall(r"\bv\d+\.\d+(?:\.\d+)?\b|\b\d{2,}\b", text)
+                   if t.lower() not in have and not re.fullmatch(r"20\d\d", t)]
+        if missing:
+            out.append(f"{name}: facts.yml says {', '.join(sorted(set(missing))[:5])} — "
+                       f"your resume text for it does not")
+    return out
+
+
 def main() -> int:
     import argparse
     import os
@@ -350,6 +450,9 @@ def main() -> int:
                          "own: education, awards/programs, real project depth, contact details")
     ap.add_argument("--out", default=str(DEFAULT_PATH), help="where to write the profile JSON")
     ap.add_argument("--show", action="store_true", help="just show the cached profile, don't rebuild")
+    ap.add_argument("--force", action="store_true",
+                    help="rebuild from scratch and DISCARD hand-curated layers (resume bullets, awards, "
+                         "email, class rank). Without this they are carried forward automatically.")
     args = ap.parse_args()
 
     if args.show:
@@ -367,8 +470,21 @@ def main() -> int:
     profile = build_profile(args.github or None, args.certs or None, args.linkedin or None,
                             include_private=args.include_private, token=token,
                             resume_path=args.resume or None)
+    kept: list[str] = []
+    if not args.force:
+        profile, kept = carry_over(load_profile_json(args.out), profile)
     path = save_profile(profile, args.out)
     print(format_summary(profile))
+    if kept:
+        print("\nKept from your existing profile (a rebuild refreshes evidence, it does not erase "
+              "what you curated — pass --force to discard these):")
+        for k in kept:
+            print(f"  + {k}")
+    drift = facts_drift(profile)
+    if drift:
+        print("\nfacts.yml knows things this profile does not:")
+        for d in drift:
+            print(f"  ! {d}")
     print(f"\nSaved → {path}  (gitignored; your single source of truth from now on)")
     return 0
 

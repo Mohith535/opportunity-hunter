@@ -38,14 +38,37 @@ LinkedIn ┘                                                          ├─► 
 ## 1. Build your profile — **do this first**
 
 ```bash
-python -m resume.profile --github Mohith535 --include-private --certs "E:/certificates"
+python -m resume.profile --github Mohith535 --include-private --certs "E:/certificates"     --linkedin "E:/linkedin-agent/data/linkedin-export"
 ```
-Add `--linkedin "E:/LinkedInExport"` once your LinkedIn export arrives (Settings → Data Privacy →
-"Get a copy of your data"; folder **or** `.zip`). That fills in work history + education.
 
 - `--show` — display the cached profile without rebuilding
 - Writes `data/career_profile.json` (JSON-Resume standard, **gitignored** — it's your personal data)
-- **Re-run whenever your evidence changes** (new repo, new certificate, new export)
+- **Re-run whenever your evidence changes** (new repo, new certificate, new export). A rebuild now
+  **keeps your hand-curated layers** — resume bullets, awards, email, class rank — and lists what it
+  kept. Pass `--force` only if you really mean to discard them.
+
+> **Why that matters:** before this was fixed, the exact command above *deleted* nova-cortex, LoopLab,
+> the email, all five awards and "Ranked 2nd in class" from a real profile, because those only arrive
+> through the `--resume` merge. A rebuild refreshes evidence; it must never erase what a human curated.
+
+**Where the truth lives.** `E:/linkedin-agent/data/profile/facts.yml` is the hand-maintained source of
+truth, alongside the live GitHub API and the `E:/certificates` folder. `career_profile.json` is this
+package's working copy. Every resume build reads `facts.yml` live and warns when it knows something the
+profile does not (a newer version, a new number, a missing project) — so a stale profile is caught the
+day it goes stale, not months later.
+
+## Application packs — the fastest path (`resume.apply`)
+
+```bash
+python -m resume.apply --list      # the top opportunities from the latest hunt
+python -m resume.apply 3           # job.md + resume.md for #3
+```
+
+`job.md` carries the full posting from the employer's own ATS API, the real apply link, the job's skills
+you do not have yet (**gaps you could close** — never put on the resume), and a verify-before-applying
+checklist. `resume.md` is built from **your own resume words** (the transcribed `x_resume` layer), most
+relevant project first, with one model-written tailoring sentence that must pass the verifier and the
+voice linter (`resume/voice.py`) or it is dropped. If every model is down, you still get a complete resume.
 
 ## 2. Check + tailor an existing resume against a job
 
@@ -141,7 +164,7 @@ your own feed** (`data/feed.json`) at the phase where they fit. Honest about odd
 
 ## Guarantees
 
-- **No invented experience** — unproven skills are surfaced as questions, never added
+- **No invented experience — enforced, not promised.** `resume/verify.py` checks every sentence a model writes against your profile: each skill, tool and number must be backed by your evidence, or the sentence is removed and reported. The job's unbacked skills are listed in `job.md` as gaps you could close. (This used to be only a prompt instruction, and a model broke it — a real pack claimed SEO skills the profile never mentioned.)
 - **No fake ATS score** — real parse issues + a true keyword count instead
 - **No fabricated numbers** — `[add metric]` placeholders you fill
 - **No LinkedIn scraping** — only the export you download yourself

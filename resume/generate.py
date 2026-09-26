@@ -30,7 +30,9 @@ from __future__ import annotations
 import re
 
 from filters.llm_scorer import complete
-from .profile import load_profile_json, relevant_projects
+from .profile import facts_drift, load_profile_json, relevant_projects
+from .verify import LEXICON, _present, jd_gaps, verify
+from .voice import VOICE_RULES, bold_budget, drop_banned, lint
 
 _DISPLAY = {
     "aws": "AWS", "sql": "SQL", "llm": "LLM", "llms": "LLMs", "api": "API", "rest api": "REST APIs",
@@ -50,10 +52,32 @@ _PRACTICE = re.compile(r"(practice|week\s*\d|hello[-_ ]?(app|world)|tutorial|dem
 _CERT_NOISE = ("interview tip", "snippet", "application", "proof", "confirmation", "screenshot")
 
 
+_DISPLAY.update({
+    "adk": "ADK", "google adk": "Google ADK", "ai": "AI", "ai safety": "AI Safety", "api": "API",
+    "cloudflare": "Cloudflare", "cockroachdb": "CockroachDB", "gemini": "Gemini", "ux": "UX",
+    "ui": "UI", "hci": "HCI", "rag": "RAG", "iot": "IoT", "gpu": "GPU", "ci": "CI",
+    "telegram bot api": "Telegram Bot API", "multi-agent": "Multi-agent",
+})
+
+
 def _pretty(skill: str) -> str:
-    if skill in _DISPLAY:
-        return _DISPLAY[skill]
-    return " ".join(_DISPLAY.get(w, w.capitalize()) for w in skill.split())
+    """Display form of a skill. A recruiter reads "Cli, Nlp, Mcp, Typescript" as careless.
+
+    Two bugs, both from a live resume: the lookup was case-SENSITIVE, so an already-correct
+    "TypeScript" missed the table; and str.capitalize() lowercases everything after the first
+    letter, so it then became "Typescript". Now: case-insensitive lookup, and a word that already
+    carries internal capitals is left exactly as written."""
+    low = skill.lower().strip()
+    if low in _DISPLAY:
+        return _DISPLAY[low]
+
+    def word(w: str) -> str:
+        if w.lower() in _DISPLAY:
+            return _DISPLAY[w.lower()]
+        if any(c.isupper() for c in w[1:]):      # TypeScript, GitHub, iOS — already deliberate
+            return w
+        return w[:1].upper() + w[1:]
+    return " ".join(word(w) for w in skill.split())
 
 
 # ─── selection ───────────────────────────────────────────────────────
@@ -129,15 +153,20 @@ ABSOLUTE RULES:
 STYLE (what the evidence says works):
 - Each bullet: strong action verb + what you built + the tech + a measurable result (XYZ / STAR shape).
   No "responsible for", no "helped with".
-- Mirror the job description's exact terms wherever they are TRUE for this candidate — ATS match
-  literally, not by synonym.
+- Mirror the job description's exact terms ONLY where they already appear in the FACTS below. A term
+  that is in the job ad but not in the FACTS must not appear at all — not even as "familiar with".
+  Every skill you write is checked against the FACTS afterwards, and any sentence naming one the
+  FACTS do not contain is deleted.
 - Student/early-career framing: confident, never inflated.
+
+{voice}
 
 Output EXACTLY these two blocks and nothing else:
 
 SUMMARY:
-<3-4 lines, no pronouns. Lead with the identity + strongest proof (a real project or selection), then
-the skills that match this job, then the goal. Concrete, no adjective soup.>
+<3 lines, no pronouns. Open on the problem his work solves, then the strongest proof (a real project
+or selection, with one of his real numbers), then the skills from the FACTS that this job also asks
+for. Do NOT end with a goal or "seeking" line. Concrete, no adjective soup.>
 
 BULLETS:
 <one line per project listed under NEEDS A BULLET, formatted exactly:
@@ -173,6 +202,7 @@ def _enhance(profile: dict, featured: list[dict], bare: list[dict],
     awards = "; ".join(f"{a.get('title')} ({a.get('awarder','')})" for a in profile.get("awards", [])[:6])
 
     out = complete(_PROMPT.format(
+        voice=VOICE_RULES,
         name=basics.get("name", "Candidate"),
         about=" ".join(x for x in [declared.get("identity", ""), basics.get("summary", "")] if x)[:600],
         awards=awards or "(none)",
@@ -203,8 +233,211 @@ def _clean(text: str) -> str:
                      if not re.search(r"only the given tech|placeholder|<.*?>", ln, re.I)).strip()
 
 
+# ─── the 3-second resume ─────────────────────────────────────────────
+# Layout decisions below each trace to a finding, so none of them is taste:
+#
+#  * TheLadders eye-tracking (2018; 30 recruiters): 7.4 s on the first pass, 80% of it on six data
+#    points — name, current title/company, previous title/company, their dates, and education. A
+#    student has no current title, so that fixation slot gets his own HEADLINE, and the education
+#    line with the graduation year goes in the header, where a knockout check can answer it in one
+#    glance instead of hunting to the bottom.
+#  * Nielsen Norman Group: readers scan in an F / "layer-cake" pattern — headings, bold, and the
+#    first words of each line. So every project opens with its name and a one-line tagline, and the
+#    most relevant project goes FIRST, where the top bar of the F lands.
+#  * NN/g: numerals stop the scanning eye ("23" beats "twenty-three"). His bullets already carry real
+#    ones (190 tests, 12 ms vs 250 ms, 17 typed MCP tools); nothing is reworded away from them.
+#  * von Restorff (isolation) effect: the one item that differs is the one remembered. At most ONE
+#    emphasised phrase per project — bold everything and nothing stands out.
+#  * Oppenheimer (2006): plain words are judged MORE intelligent. His own words go in verbatim; the
+#    model writes one tailoring sentence and nothing else.
+#  * Peak-end rule: an experience is remembered by its peak and its end. The page ends on his own
+#    closing line rather than on a certification list.
+
+_TAILOR_LINE = """{voice}
+
+Write ONE sentence (at most 30 words) to end this candidate's resume summary. It connects his real
+work below to this specific role. It must use ONLY facts from FACTS. Do not name any skill, tool or
+domain that is not in FACTS. Do not claim any experience with the employer or its products. No
+"seeking", no "passionate", no "excited", no "I am". Plain words.
+
+Output exactly one line:
+LINE: <the sentence>
+
+--- ROLE ---
+{role}
+{jd}
+
+--- FACTS ---
+{facts}
+"""
+
+
+def _jd_low(jd_text: str | None, role: str) -> str:
+    return f"{role} {jd_text or ''}".lower()
+
+
+# Role family -> (words that identify it in a job ad, what a project shows when it fits).
+# Exact term overlap alone ranked NitroWatch first for a Data Science & ML role, because none of his
+# write-ups literally says "machine learning" — nova-cortex says "benchmarked", "model's accuracy",
+# "corpus". The F-pattern means the first project gets the most attention, so it has to be the one
+# this job would care about most. Psychology/UX is a family of its own because he asked for it:
+# TaskFlow is behavioural science, and for those roles it should lead.
+_AFFINITY = {
+    "ml": (r"machine learning|\bml\b|data scien|deep learning|\bai\b|artificial intelligence|llm|nlp"
+           r"|model",
+           ["benchmark", "accuracy", "model", "llm", "evaluation", "corpus", "escalation", "agents"]),
+    "backend": (r"backend|back-end|server|api|database|distributed|infrastructure|cloud",
+                ["always-on", "lambda", "database", "cockroachdb", "serializable", "server", "delete"]),
+    "web": (r"frontend|front-end|full[- ]stack|web|react|typescript|javascript",
+            ["typescript", "web app", "browser", "cloudflare", "extension", "live"]),
+    "security": (r"secur|governance|safety|trust|compliance|audit|permission",
+                 ["permission", "governance", "audit", "risk tier", "prompt-injection", "adversarial"]),
+    "psych": (r"ux|user research|hci|human.computer|psycholog|behavio|cognitive|product design",
+              ["behavioural", "behavioral", "research", "willpower", "judged", "zeigarnik",
+               "self-report", "anxiety"]),
+    "data": (r"data analy|analytics|dashboard|sql|statistic|insight",
+             ["benchmark", "accuracy", "corpus", "measures", "tests"]),
+}
+
+
+def _relevance(p: dict, jd_low: str) -> int:
+    """How much of this project the job asks about. Deterministic: role-family fit counts 4 per
+    matching signal, shared lexicon terms 3, other shared long words 1. His own ordering breaks
+    ties, since it is his own ranking of significance."""
+    text = " ".join([p.get("x_tagline") or "", p.get("x_techline") or "",
+                     *(p.get("highlights") or []), *(p.get("keywords") or [])]).lower()
+    score = 0
+    for pattern, signals in _AFFINITY.values():
+        if re.search(pattern, jd_low):
+            score += 4 * sum(1 for s in signals if s in text)
+    score += 3 * sum(1 for t in LEXICON if _present(t, text) and _present(t, jd_low))
+    words = {w for w in re.findall(r"[a-z][a-z+#.-]{4,}", jd_low)} - _STOP
+    score += sum(1 for w in words if w in text)
+    return score
+
+
+_STOP = {"about", "their", "there", "which", "would", "should", "could", "these", "those", "other",
+         "while", "where", "within", "without", "across", "using", "based", "strong", "ability",
+         "including", "working", "experience", "skills", "team", "teams", "years", "role",
+         "candidate", "candidates", "company", "opportunity", "please", "apply", "internship",
+         "intern", "student", "students", "looking", "join", "help", "build", "work"}
+
+
+def _tailor_line(profile: dict, x: dict, projects: list[dict], jd_text: str, role: str) -> str:
+    facts = "\n".join([x.get("summary_core", ""),
+                       *[f"- {p.get('x_resume_name')}: {p.get('x_tagline')} ({p.get('x_techline')})"
+                         for p in projects],
+                       "Skills: " + "; ".join(f"{g}: {', '.join(v)}"
+                                              for g, v in (x.get("skill_groups") or {}).items())])
+    out = complete(_TAILOR_LINE.format(voice=VOICE_RULES, role=role or "(not given)",
+                                       jd=(jd_text or "")[:1800], facts=facts),
+                   max_tokens=160, temperature=0.3)
+    m = re.search(r"LINE:\s*(.+)", out or "")
+    return m.group(1).strip().strip('"') if m else ""
+
+
+def _skills_block(groups: dict, jd_low: str) -> list[str]:
+    """His four skill groups, in his order, with the items this job mentions moved to the front
+    of each group — the first words of a line are what the F-pattern reader actually sees."""
+    lines = []
+    for name, items in (groups or {}).items():
+        hit = [i for i in items if any(_present(t, jd_low) and _present(t, i.lower()) for t in LEXICON)
+               or re.sub(r"\s*\(.*\)", "", i).lower() in jd_low]
+        rest = [i for i in items if i not in hit]
+        lines.append(f"**{name}:** " + " · ".join(hit + rest))
+    return lines
+
+
+def _from_resume_layer(profile: dict, jd_text: str | None, role: str, report: dict) -> str:
+    x = profile["x_resume"]
+    basics = profile.get("basics", {})
+    jd_low = _jd_low(jd_text, role)
+
+    featured = [p for p in profile.get("projects", []) if p.get("x_source") == "resume-2026-09"]
+    order = {id(p): n for n, p in enumerate(featured)}
+    featured.sort(key=lambda p: (-_relevance(p, jd_low), order[id(p)]))
+
+    # ── the 3-second zone: name, headline, links, the knockout line ──────────────────────
+    L = [f"# {basics.get('name') or 'K MOHITH KANNAN'}", f"**{x.get('headline','')}**"]
+    L.append(" · ".join(x.get("links") or []))
+    srm = next((e for e in profile.get("education", []) if "srm" in (e.get("institution") or "").lower()), None)
+    if srm:
+        L.append(f"B.Tech CSE (AI & ML) · SRM Institute of Science and Technology · "
+                 f"{srm.get('startDate')}–{srm.get('endDate')}")
+
+    # ── summary: his words, plus ONE verified tailoring sentence ─────────────────────────
+    summary = x.get("summary_core", "")
+    if jd_text or role:
+        line = _tailor_line(profile, x, featured, jd_text or "", role)
+        if line:
+            line, banned = drop_banned(line)
+            v = verify(line, profile)
+            report["removed"] += v.removed
+            report["unverified_terms"] += v.unverified_terms
+            report["unverified_numbers"] += v.unverified_numbers
+            report["banned"] += banned
+            if v.text:
+                summary = f"{summary} {v.text}"
+                report["tailor_line"] = v.text
+    L += ["", "## Summary", summary]
+
+    # ── selected work: most relevant first; his bullets verbatim; one emphasis per project ─
+    L += ["", "## Selected Work"]
+    for p in featured:
+        L.append(f"**{p.get('x_resume_name')}** — {p.get('x_tagline','')} · *{p.get('x_when','')}*")
+        block = "\n".join(f"- {h}" for h in p.get("highlights") or [])
+        L.append(bold_budget(block))
+        if p.get("x_techline"):
+            link = (p.get("url") or "").replace("https://", "")
+            L.append(f"*{p['x_techline']}*" + (f" · {link}" if link and "github" in link else ""))
+        L.append("")
+
+    if x.get("community"):
+        L += ["## Campus & Community", *[f"- {c}" for c in x["community"]], ""]
+    if x.get("programs"):
+        L += ["## Programs & Selections", *[f"- {c}" for c in x["programs"]], ""]
+    if x.get("certifications_line"):
+        L += ["## Certifications — 15+, selected", x["certifications_line"], ""]
+    if x.get("skill_groups"):
+        L += ["## Technical Skills", *_skills_block(x["skill_groups"], jd_low), ""]
+
+    L += ["## Education"]
+    for e in profile.get("education", []):
+        when = "–".join(v for v in [e.get("startDate"), e.get("endDate")] if v)
+        extra = " · ".join(v for v in [when, e.get("note")] if v)
+        L.append(f"- **{e.get('institution','')}** — {e.get('studyType','')}" + (f" · {extra}" if extra else ""))
+
+    if x.get("closing"):
+        L += ["", f"*{x['closing']}*"]
+    return "\n".join(L)
+
+
 # ─── assemble ────────────────────────────────────────────────────────
-def generate_resume(profile: dict, jd_text: str | None = None) -> str:
+def generate_resume(profile: dict, jd_text: str | None = None, role: str = "") -> str:
+    """Backwards-compatible: just the Markdown. Use generate_resume_ex() for the report."""
+    return generate_resume_ex(profile, jd_text, role)[0]
+
+
+def generate_resume_ex(profile: dict, jd_text: str | None = None, role: str = "") -> tuple[str, dict]:
+    """(markdown, report). The report says what the verifier removed, which job skills you do not
+    have yet, voice problems, and where facts.yml has moved on from the profile.
+
+    With a transcribed resume layer (x_resume) the resume is built from HIS words, and the model
+    writes a single verified sentence. Without one, the older path runs — now also verified."""
+    report = {"removed": [], "unverified_terms": [], "unverified_numbers": [], "banned": [],
+              "gaps": jd_gaps(f"{role} {jd_text or ''}", profile) if (jd_text or role) else [],
+              "drift": facts_drift(profile), "lint": [], "tailor_line": ""}
+    if profile.get("x_resume"):
+        md = _from_resume_layer(profile, jd_text, role, report)
+    else:
+        md = _legacy_resume(profile, jd_text, report)
+    report["lint"] = lint(md)
+    for k in ("unverified_terms", "unverified_numbers", "banned"):
+        report[k] = sorted(set(report[k]))
+    return md, report
+
+
+def _legacy_resume(profile: dict, jd_text: str | None, report: dict) -> str:
     from .analyzer import extract_jd_keywords  # noqa: PLC0415
     jd_keywords = extract_jd_keywords(jd_text) if jd_text else []
 
@@ -220,9 +453,18 @@ def generate_resume(profile: dict, jd_text: str | None = None) -> str:
     enh = _enhance(profile, featured, bare, jd_text)
 
     top_skills = _skills_ordered(profile, jd_keywords)
+    summary = ""
     if enh and enh["summary"]:
-        summary = enh["summary"]
-    else:
+        # The model's summary is a request, not a fact. Banned phrasing out, then every claim and
+        # number checked against the profile; unbacked sentences are dropped and reported.
+        cleaned, banned = drop_banned(enh["summary"])
+        v = verify(cleaned, profile, jd_keywords)
+        report["removed"] += v.removed
+        report["unverified_terms"] += v.unverified_terms
+        report["unverified_numbers"] += v.unverified_numbers
+        report["banned"] += banned
+        summary = v.text
+    if not summary:
         summary = ((profile.get("x_declared", {}).get("identity", "") or "") +
                    " Core skills: " + ", ".join(top_skills[:8]) + ".").strip()
 
@@ -234,7 +476,13 @@ def generate_resume(profile: dict, jd_text: str | None = None) -> str:
         if p.get("highlights"):
             parts += [f"- {h}" for h in p["highlights"]]
         else:
-            bullet = (enh or {}).get("bullets", {}).get(p["name"].lower()) or p.get("description")
+            bullet = (enh or {}).get("bullets", {}).get(p["name"].lower())
+            if bullet:
+                v = verify(drop_banned(bullet)[0], profile, jd_keywords)
+                report["removed"] += v.removed
+                report["unverified_terms"] += v.unverified_terms
+                bullet = v.text
+            bullet = bullet or p.get("description")   # the repo's own words beat an unbacked claim
             if bullet:
                 parts.append(f"- {bullet}")
     projects_md = "\n".join(parts)

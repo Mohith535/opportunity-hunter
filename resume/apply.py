@@ -220,7 +220,7 @@ def _fmt(v) -> str:
     return str(v)
 
 
-def build_job_md(item: dict, full: dict) -> str:
+def build_job_md(item: dict, full: dict, report: dict | None = None) -> str:
     """job.md — everything known, and honest about what is missing."""
     from filters import focus, target
 
@@ -277,6 +277,16 @@ def build_job_md(item: dict, full: dict) -> str:
         L += ["_The employer's API did not give us the full text, so this is what the listing "
               "carried. **Open the apply link and read the real posting before you write "
               "anything.**_", "", item.get("description") or "_no description_", ""]
+
+    gaps = sorted(set((report or {}).get("gaps") or []) | set((report or {}).get("unverified_terms") or []))
+    L += ["## Gaps you could close", ""]
+    if gaps:
+        L += ["This job asks for these, and your profile has no evidence of them. **They are not on "
+              "your resume** — putting them there is what gets caught in the first interview "
+              "question. Learn one, build something small with it, and it becomes true.", "",
+              *[f"- `{g}`" for g in gaps], ""]
+    else:
+        L += ["_None found — every skill this listing names is backed by your profile._", ""]
 
     L += ["## Before you apply — verify these yourself", "",
           "OPHunter reads feeds and APIs. It cannot tell you whether a listing is real, current, "
@@ -370,27 +380,43 @@ def corruption_warnings(text: str) -> list[str]:
     return out
 
 
-def build_resume_md(item: dict, full: dict) -> str:
-    """resume.md — this job's resume, from career_profile.json, nothing invented."""
-    from .generate import generate_resume
+def build_resume(item: dict, full: dict) -> tuple[str, dict]:
+    """(resume.md, report) — this job's resume from career_profile.json, every claim verified.
 
-    jd = "\n".join(x for x in [item.get("title", ""), full.get("description", ""),
-                               item.get("description", "")] if x)
+    The report comes back to build() so job.md can list the job's skills you do not have yet as
+    GAPS YOU COULD CLOSE. That is where those terms belong. The first version of this pipeline put
+    three of them on the resume as skills you already had."""
+    from .generate import generate_resume_ex
+
+    jd = "\n".join(x for x in [full.get("description", ""), item.get("description", "")] if x)
     try:
         profile = json.loads((config.DATA_DIR / "career_profile.json").read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return ("# Resume\n\n_No `data/career_profile.json` yet._\n\n"
-                "Build it first:\n\n    py -m resume --profile --github Mohith535 "
-                "--certs \"E:/certificates\"\n")
+                "Build it first (a rebuild now keeps your curated layers):\n\n"
+                "    py -m resume.profile --github Mohith535 --certs \"E:/certificates\" "
+                "--linkedin \"E:/linkedin-agent/data/linkedin-export\"\n"), {}
 
-    body = generate_resume(profile, jd)
+    body, report = generate_resume_ex(profile, jd, role=item.get("title", ""))
 
     problems = corruption_warnings(body)
-    gaps = len(re.findall(r"\[add [^\]]+\]", body))
+    placeholders = len(re.findall(r"\[add [^\]]+\]", body))
     notes = [f"Tailored for: {item.get('title','')} — {date.today().isoformat()}",
-             "Every line traces to data/career_profile.json. Nothing here was invented."]
-    if gaps:
-        notes.append(f"{gaps} [add ...] placeholder(s) to fill in — a real number beats a "
+             "Every claim was checked against data/career_profile.json before it got here."]
+    if report.get("removed"):
+        notes.append(f"VERIFIER removed {len(report['removed'])} model-written sentence(s) your "
+                     f"profile could not back:")
+        notes += [f"     - {s[:110]}" for s in report["removed"]]
+    if report.get("banned"):
+        notes.append("VOICE removed sentences using: " + ", ".join(report["banned"]))
+    if report.get("drift"):
+        notes.append("facts.yml has moved on from your profile — update it:")
+        notes += [f"     - {d}" for d in report["drift"]]
+    if report.get("lint"):
+        notes.append("Voice notes:")
+        notes += [f"     - {d}" for d in report["lint"]]
+    if placeholders:
+        notes.append(f"{placeholders} [add ...] placeholder(s) to fill in — a real number beats a "
                      f"vague claim, and an invented one ends the interview.")
     if problems:
         notes.append("!! TEXT PROBLEMS FOUND — fix these in data/career_profile.json before "
@@ -399,13 +425,23 @@ def build_resume_md(item: dict, full: dict) -> str:
     notes.append("Delete this comment before you send it.")
     head = "<!--\n" + "\n".join(f"  {n}" for n in notes) + "\n-->\n\n"
 
+    if report.get("removed"):
+        print(f"\n  verifier removed {len(report['removed'])} unbacked sentence(s): "
+              f"{', '.join(report.get('unverified_terms') or []) or 'numbers'}")
+    if report.get("drift"):
+        print(f"  facts.yml drift: {len(report['drift'])} item(s) — see resume.md header")
     if problems:
         print("\n  !! resume.md has text problems inherited from career_profile.json:")
         for p in problems:
             print(f"       - {p}")
-    if gaps:
-        print(f"  {gaps} [add ...] placeholder(s) in resume.md — fill them in, never invent them.")
-    return head + body
+    if placeholders:
+        print(f"  {placeholders} [add ...] placeholder(s) in resume.md — fill them in, never invent them.")
+    return head + body, report
+
+
+def build_resume_md(item: dict, full: dict) -> str:
+    """Backwards-compatible: only the Markdown."""
+    return build_resume(item, full)[0]
 
 
 def build(ref: str) -> Path | None:
@@ -419,8 +455,9 @@ def build(ref: str) -> Path | None:
     out = APPLICATIONS_DIR / _slug(company, item.get("title", ""), date.today().isoformat())
     out.mkdir(parents=True, exist_ok=True)
 
-    (out / "job.md").write_text(build_job_md(item, full), encoding="utf-8")
-    (out / "resume.md").write_text(build_resume_md(item, full), encoding="utf-8")
+    resume_md, report = build_resume(item, full)
+    (out / "job.md").write_text(build_job_md(item, full, report), encoding="utf-8")
+    (out / "resume.md").write_text(resume_md, encoding="utf-8")
 
     got = "full posting from the employer API" if full.get("description") else "listing text only"
     print(f"\n  {item.get('title','')[:70]}")

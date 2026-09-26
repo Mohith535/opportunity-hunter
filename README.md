@@ -5,18 +5,19 @@
 Every day, the best hackathons, internships, fellowships, research, and coding contests get posted across a dozen platforms — and the good ones get missed simply because nobody can check them all. **Opportunity Hunter flips that around:** it scans everything for you, filters the noise, scores what's left by relevance and urgency **with an LLM that judges against *your* profile**, and delivers only the signal — then lets you **act on it with one tap** from a chat bot that runs 24/7 in the cloud.
 
 ```
-   11 SOURCES               FILTER · LLM SCORE · TUNE            DELIVER + ACT
+   12 SOURCES               FILTER · LLM SCORE · TUNE            DELIVER + ACT
  ┌───────────────┐        ┌───────────────────────────┐      ┌──────────────────────┐
  │ ArXiv         │        │  relevance filter          │  ┌─▶│ 📱 Phone digest        │
  │ GitHub        │        │        ↓                   │  │  │   ntfy · Telegram      │
  │ Hacker News   │        │  LLM score (regret-aware,  │  │  └──────────────────────┘
  │ Devpost       │ ─────▶ │  model-agnostic) + rules   │──┤  ┌──────────────────────┐
- │ Devfolio      │  80–120│        ↓                   │  ├─▶│ 🤖 Telegram bot         │
+ │ Devfolio      │  ~700  │        ↓                   │  ├─▶│ 🤖 Telegram bot         │
  │ Reddit        │  items │  dedup · offload-aware tune │  │  │  tap · /ask · /coach   │
  │ clist · MLH   │  /run  │        ↓                   │  │  └──────────────────────┘
  │ Unstop        │        │  policy: notify / propose  │  │  ┌──────────────────────┐
  │ Programs ⭐   │        └───────────────────────────┘  └─▶│ ✅ TaskFlow (one tap)  │
  │ Internships ✓ │                                          └──────────────────────┘
+ │ Company boards│
  └───────────────┘
 ```
 
@@ -74,7 +75,47 @@ Discovery is only half the job; **acting** is the other half. Each opportunity i
 | 🧭 **/coach** | a career gap-analysis: what the elite programs you're seeing require that you don't have yet, and a concrete plan to close the gap — and it answers follow-up questions |
 | 📊 **/report** | a weekly "regret report": what you applied to, skipped, and what's closing soon that you haven't acted on |
 
-The bot is **deployed as an always-on [Cloudflare Worker](cloudflare-bot/)** (free, serverless, webhook-based) — so taps, drafts, and questions work **even when your computer is off**. It reads a compact `feed.json` from this repo and writes chosen tasks back through a file-based sync, keeping the whole loop laptop-independent. (It also runs locally via `telegram_listener.py`.)
+The bot is **deployed as an always-on [Cloudflare Worker](cloudflare-bot/)** (free, serverless, webhook-based) — so taps, drafts, and questions work **even when your computer is off**. It reads a compact `feed.json` from this repo and writes chosen tasks back through a file-based sync, keeping the whole loop laptop-independent. (`telegram_listener.py` is the older laptop version. Telegram delivers updates by webhook *or* by polling, never both, so it cannot receive anything while the Worker's webhook is set — the Worker is the live bot.)
+
+## Aim it — a standing target, and a focus for this week
+
+Interest is seasonal, and a goal outlasts a single run. Two layers, neither needs retyping:
+
+- **`hunt_target.json`** — a goal that stays true for weeks: the kinds to hunt, the cities you could
+  actually take (`"remote"` counts), a pay floor, and the date you need it by. Every run applies it by
+  itself. Copy `hunt_target.example.json` to start; your copy is **gitignored**. `py main.py --target`
+  shows what is active. It *ranks*, it never *hides* — a once-a-year opportunity that misses the target
+  still appears, lower down.
+- **`--focus`** — `py main.py --now --focus internship` hunts one kind this week. The brief then runs in
+  two zones: your focus on top, and **"also worth your time"** below it, ranked on its own merit.
+
+Wide intake, narrow spend: sources page deep (hundreds of items a run), cheap rule scoring ranks them, and
+only the top slice — shared across kinds so no single category can flood it — pays for LLM scoring.
+Company career boards come straight from their applicant-tracking systems' public APIs (Greenhouse,
+Ashby, Lever) — no scraping, no browser.
+
+## Apply — a pack per job, prepared, never submitted
+
+`py -m resume.apply --list`, then `py -m resume.apply <n>`, writes two files:
+
+- **`job.md`** — the full posting from the employer's own API, the real apply link, why it ranked where it
+  did, the job's skills you do **not** have yet (listed as *gaps you could close*, never put on the
+  resume), and a verify-before-applying checklist.
+- **`resume.md`** — that job's resume, built from your own words. Every sentence a model writes is
+  checked against your profile by a **deterministic claim verifier**; a skill or number your evidence
+  cannot back is removed and reported. A prompt that says "don't invent" is a request, not a guarantee.
+
+The layout follows the research, not taste: recruiters spend about 7.4 seconds on the first pass and 80%
+of it on six data points (TheLadders eye-tracking, 2018), so the headline and graduation year sit at the
+top; readers scan headings, bold and line openings (Nielsen Norman Group), so the most relevant project
+leads and each carries one emphasised phrase; and plain words read as *more* intelligent (Oppenheimer,
+2006), so model text is linted for the phrases recruiters flag as AI-written.
+
+> **Check your own PDFs.** A resume printed with *Microsoft Print to PDF* can come out with **no text in
+> it at all** — every letter drawn as a shape. It looks perfect and an ATS reads a blank page. Use your
+> browser's or Word's own *Save as PDF*, then confirm the text is really there:
+> `py -3.12 -c "import fitz; print(sum(len(p.get_text()) for p in fitz.open('resume.pdf')))"` must print
+> a number above zero.
 
 ## How an item is scored
 
@@ -90,6 +131,13 @@ The **rule-based scorer** (the always-available fallback, and the fast pre-filte
 | Mentions student / intern | +1 |
 | From a known company (Google, Microsoft, Anthropic, NVIDIA…) | +2 |
 | Prize / stipend mentioned | +1 |
+| Domain term in the **title** (AI, ML, Python, developer, security…) | +3 |
+| Off-domain **role** in the title (sales, marketing, HR, video editing…) with no domain term | −6 |
+| A recognised opportunity kind whose title has no interest keyword | +3 |
+
+The last three exist because of a measured regression: "internship" is itself an interest keyword, so every
+internship banked +5 for its own name while a hackathon called "YODHA 2.0" banked nothing — and a Video Editor
+internship outranked the NASA Space Apps Challenge. Judging on the **title** (where the role is named) fixed it.
 
 When an LLM key is present, the **multi-dimensional LLM score takes over** (the policy layer prefers it automatically); otherwise these rules run. Either way the scale is shared, so the tiers below always apply:
 
@@ -99,7 +147,7 @@ When an LLM key is present, the **multi-dimensional LLM score takes over** (the 
 
 ## Status & roadmap
 
-**Phase 1 — Collect & Rank ✅ (shipped):** 11 sources live and proven in the cloud, relevance filtering, urgency scoring, deduplication, dual desktop/phone notifications, and injection-safe task-manager integration — all end to end.
+**Phase 1 — Collect & Rank ✅ (shipped):** 12 sources live and proven in the cloud, relevance filtering, urgency scoring, deduplication, dual desktop/phone notifications, and injection-safe task-manager integration — all end to end.
 
 **Phase 2 — Intelligence & Control ✅ (shipped):** model-agnostic LLM scoring (with rule-based fallback), taste-learning, offload-aware tuning + a permission gate, and a full **two-way Telegram bot** — inline-button actions, the conversational `/ask`, the `/coach` gap-analysis, ✍️ tap-to-draft, and `/report` — running always-on as a **Cloudflare Worker**.
 
@@ -107,7 +155,7 @@ When an LLM key is present, the **multi-dimensional LLM score takes over** (the 
 
 ```mermaid
 flowchart LR
-    P1["✅ Phase 1 — Collect & Rank<br/>11 sources · filter · score · dedup<br/>notify · TaskFlow · cloud automation"]
+    P1["✅ Phase 1 — Collect & Rank<br/>12 sources · filter · score · dedup<br/>notify · TaskFlow · cloud automation"]
     P2["✅ Phase 2 — Intelligence & Control<br/>model-agnostic LLM scoring · taste-learning<br/>two-way Telegram bot · /ask · /coach · ✍️ draft<br/>always-on Cloudflare Worker"]
     P3["🔜 Phase 3 — Assistant<br/>unified assistant · visual Mini App"]
     P1 --> P2 --> P3
