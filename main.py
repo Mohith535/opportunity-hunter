@@ -193,6 +193,10 @@ def _telegram_digest(crit, high, cap=6):
                 row1.append({"text": "🔗 Open", "url": it.url})
             row1.append({"text": "➕ Plan", "callback_data": f"plan:{key}"})
             row1.append({"text": "✍️ Draft", "callback_data": f"draft:{key}"})
+            # One tap -> the Cloudflare bot starts the cloud build -> resume + job file arrive here.
+            from filters import target as _t
+            if focus.kind_of(it) in _t.EMPLOYMENT_KINDS:
+                row1.append({"text": "📦 Pack", "callback_data": f"pack:{key}"})
             buttons.append(row1)
             # Application-tracker row: act on it and the agent remembers.
             buttons.append([
@@ -260,6 +264,9 @@ def _notify(new_items, test):
 
 def _show_target(target) -> None:
     """`--target`: what is currently being aimed at, and where to change it."""
+    synced = target.sync_with_bot()
+    if synced:
+        print(f"  (phone copy: {synced})")
     t = target.load()
     if not t:
         print("No standing target.\n")
@@ -276,7 +283,8 @@ def _show_target(target) -> None:
     print(f"  Pay floor {f'Rs {int(floor):,}/month' if floor else '(none)'}"
           + ("  (unpaid listings pushed down)" if t.get("require_pay") else ""))
     print(f"\n  Edit      {target.TARGET_FILE}")
-    print("  Cloud     py sync_secrets.py   (the 08:00 cloud run reads a COPY — resync after editing)")
+    print("  Phone     /target in Telegram  (whichever copy changed last wins)")
+    print("  Cloud     py sync_secrets.py   (sends this file to the bot and the fallback secret)")
     print(f"  Skip once py main.py --now --no-target")
     print(f"  Turn off  set \"active\": false\n")
 
@@ -331,10 +339,44 @@ def _fill_budget(items: list, budget: int) -> list:
     return sorted(picked_on + picked_other, key=lambda it: it.score, reverse=True)
 
 
+def _drop_ineligible(items: list) -> tuple[list, dict]:
+    """(items he can apply to, {category: count} of the ones he cannot). A no-op without a career
+    profile: the verdict needs his graduation year and course, and in a fresh clone of this public
+    repo the only facts available would be somebody else's defaults."""
+    if not getattr(config, "HIDE_INELIGIBLE", True) or not items:
+        return items, {}
+    from collections import Counter
+    try:
+        from resume.apply import _candidate, _profile, eligibility_of
+        from resume.eligibility import reason_bucket
+    except ImportError:
+        return items, {}
+    prof = _profile()
+    if not prof.get("education"):
+        return items, {}
+    cand = _candidate(prof)
+    kept, why = [], Counter()
+    for it in items:
+        v = eligibility_of(it.to_dict(), None, cand)
+        if v.level == "NO":
+            why[reason_bucket(next(w for lvl, w in v.reasons if lvl == "NO"))] += 1
+        else:
+            kept.append(it)
+    return kept, dict(why)
+
+
 def run(source_names=None, test=False):
     """Execute one full hunt."""
     mode = "TEST (dry run)" if test else "LIVE"
     log(f"=== Opportunity Hunter run started [{mode}] ===")
+
+    # 0. A target changed from the phone (/target) reaches this run first; one changed here goes
+    # to the bot. No-op unless OH_WORKER_URL + OH_WORKER_TOKEN are set (they are not in the cloud,
+    # where the workflow already fetched the bot's copy).
+    from filters import target as _target
+    synced = _target.sync_with_bot()
+    if synced:
+        log(f"[target] {synced}")
 
     # 1. Gather
     all_items, sources_ok, sources_total = _gather(source_names)
@@ -367,6 +409,16 @@ def run(source_names=None, test=False):
     relevant = focus.apply(relevant)
     if focus.active():
         log(f"[focus] {focus.describe()} — {len(relevant)} items after focus")
+
+    # 3c. ELIGIBILITY — drop what a stated rule excludes him from (graduation year, "not students",
+    # years of experience, a senior title...). The morning digest was still showing a Mumbai
+    # "Commodity Advisor" job for graduates. Before the intake budget, so the 60 slots go to things
+    # he can actually apply to. Dropped items are not marked seen: if a listing's rules change, it
+    # comes back. Counts by category are logged — never the reasons' values (public cloud log).
+    relevant, hidden = _drop_ineligible(relevant)
+    if hidden:
+        log(f"[eligibility] hid {sum(hidden.values())} you cannot apply to — "
+            + ", ".join(f"{n} {k}" for k, n in sorted(hidden.items(), key=lambda kv: -kv[1])))
 
     # 4. Dedup (skip already-seen unless it qualifies to resurface)
     seen = store.load_seen()
@@ -436,6 +488,7 @@ def run(source_names=None, test=False):
     stats = {
         "scanned": len(all_items),
         "relevant": len(relevant),
+        "ineligible": sum(hidden.values()),
         "high_priority": high_priority,
         "dumps": dumps,
         "sources_ok": sources_ok,

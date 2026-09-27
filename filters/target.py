@@ -85,6 +85,71 @@ def load(path=None) -> dict:
     return out
 
 
+# ─── the phone copy (Cloudflare bot, /target) ──────────────────────────────────────────────
+# Since Phase 5B he can change the target from Telegram, so there are two copies: this file and
+# the bot's. Whichever changed LAST wins, both ways, every time the laptop hunts or syncs. A pulled
+# copy is stamped with the phone's edit time so the next sync sees them as equal, not as a new edit.
+def _bot() -> tuple[str, str]:
+    import os  # noqa: PLC0415
+    url = os.environ.get("OH_WORKER_URL", "").strip().rstrip("/")
+    tok = os.environ.get("OH_WORKER_TOKEN", "").strip()
+    return (url, tok) if url.startswith("https://") and tok else ("", "")
+
+
+def _iso_ts(s: str) -> float:
+    try:
+        return datetime.fromisoformat(str(s).replace("Z", "+00:00")).timestamp()
+    except ValueError:
+        return 0.0
+
+
+def sync_with_bot(path=None) -> str:
+    """Pull the phone's copy if it is newer, push this file if it is newer. Returns one line for the
+    log (no target content in it), or "" when no bot is configured. Never raises."""
+    import requests  # noqa: PLC0415
+    url, tok = _bot()
+    if not url:
+        return ""
+    f = path or TARGET_FILE
+    head = {"Authorization": f"Bearer {tok}", "User-Agent": config.USER_AGENT}
+    try:
+        r = requests.get(f"{url}/target", headers=head, timeout=config.REQUEST_TIMEOUT)
+        remote = r.json() if r.status_code == 200 else None
+        if r.status_code not in (200, 404):
+            return f"bot copy unavailable (HTTP {r.status_code})"
+    except (requests.RequestException, ValueError) as e:
+        return f"bot copy unavailable ({type(e).__name__})"
+    local_ts = f.stat().st_mtime if f.exists() else 0.0
+    remote_ts = _iso_ts((remote or {}).get("updated_at", ""))
+
+    def take(entry: dict) -> str:
+        import os  # noqa: PLC0415
+        ts = _iso_ts(entry.get("updated_at", ""))
+        f.write_text(json.dumps(entry["target"], indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        os.utime(f, (ts, ts))
+        if path is None:
+            reset_cache()
+        return f"updated from your {entry.get('source', 'phone')} (changed {str(entry.get('updated_at'))[:10]})"
+
+    if remote and isinstance(remote.get("target"), dict) and remote_ts > local_ts + 2:
+        return take(remote)
+    if f.exists() and local_ts > remote_ts + 2:
+        try:
+            body = {"target": json.loads(f.read_text(encoding="utf-8")),
+                    "updated_at": datetime.fromtimestamp(local_ts).astimezone().isoformat()}
+            r = requests.put(f"{url}/target", headers=head, json=body, timeout=config.REQUEST_TIMEOUT)
+            # 409: the bot holds a NEWER copy than the one we read (its storage can lag a phone edit by
+            # up to a minute). The phone edit wins — take it instead of overwriting it.
+            if r.status_code == 409:
+                held = r.json()
+                if isinstance(held.get("target"), dict):
+                    return take(held)
+        except (requests.RequestException, ValueError, OSError) as e:
+            return f"could not send it to the bot ({type(e).__name__})"
+        return "sent to the bot" if r.ok else f"the bot refused it (HTTP {r.status_code})"
+    return "in sync with the bot"
+
+
 def reset_cache() -> None:
     """Drop the memoised target — for tests, and for --no-target."""
     global _CACHE

@@ -244,6 +244,37 @@ check("9e. nothing backing it is a GAP", lvl.get("kubernetes") == GAP, ev)
 check("9f. rows are ordered built, learned, gap",
       [l for _, l, _ in ev] == sorted([l for _, l, _ in ev], key=[BUILT, LEARNED, GAP].index))
 
+# ── 10. the daily hunt's gate (main._drop_ineligible) ───────────────────────────────────────
+from resume.eligibility import reason_bucket
+check("10a. reasons become categories without his values",
+      reason_bucket("passout years 2025, 2026; you graduate 2029") == "graduation year"
+      and reason_bucket("open to corporates, not students") == "not for students"
+      and reason_bucket("a senior role (Senior) — it expects years of experience") == "senior role"
+      and reason_bucket("needs 2+ years of experience") == "experience")
+import main as M
+jobs = [Opportunity("Backend Developer Internship", "https://x/a", "unstop",
+                    "internship | Eligibility: open to: students; courses: btech", tags=["internship"]),
+        Opportunity("Commodity Advisor", "https://x/b", "unstop",
+                    "job | Location: Mumbai | Eligibility: open to: fresher, corporates", tags=["job"]),
+        Opportunity("Senior .Net Developer", "https://x/c", "unstop", "job", tags=["job"])]
+_old_profile, _old_cand = A._profile, A._candidate
+try:
+    A._profile = lambda: {}
+    kept, hid = M._drop_ineligible(list(jobs))
+    check("10b. no career profile → nothing hidden (never judge by someone else's facts)",
+          len(kept) == 3 and hid == {}, (len(kept), hid))
+    A._profile = lambda: {"education": [{"institution": "X Institute of Technology",
+                                          "startDate": "2025", "endDate": "2029"}]}
+    kept, hid = M._drop_ineligible(list(jobs))
+    check("10c. the graduates-only and senior jobs are dropped",
+          [k.title for k in kept] == ["Backend Developer Internship"], [k.title for k in kept])
+    check("10d. and counted by category", hid == {"not for students": 1, "senior role": 1}, hid)
+    _cfg.HIDE_INELIGIBLE = False
+    check("10e. OH_HIDE_INELIGIBLE=false turns it off", len(M._drop_ineligible(list(jobs))[0]) == 3)
+finally:
+    A._profile, A._candidate = _old_profile, _old_cand
+    _cfg.HIDE_INELIGIBLE = True
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))

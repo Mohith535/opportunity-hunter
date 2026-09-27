@@ -4,6 +4,9 @@ SYNC SECRETS — give the daily cloud run the two private files the public repo 
     hunt_target.json          -> secret OH_TARGET_JSON     what you are hunting for (goal, places, pay)
     data/career_profile.json  -> secret OH_CAREER_PROFILE  what every resume is built from
 
+The target also has a copy in the Cloudflare bot, which /target edits from the phone and the cloud
+run reads first. This syncs with it before anything else — whichever copy changed last wins.
+
 Both files are gitignored, so without this the 08:00 cloud run hunts with no target and cannot build a
 single pack. The profile is sent gzip+base64: raw it is ~43 KB and a GitHub secret is capped at 48 KB
 (docs.github.com → Actions → Secrets reference), so one more project would have broken it silently.
@@ -72,6 +75,13 @@ def prepare() -> list[tuple[str, str, str]]:
 
 def main() -> int:
     check = "--check" in sys.argv[1:]
+    if not check:
+        # Phone first: a /target edit made in Telegram must land in this file BEFORE the file is sent
+        # anywhere, or a stale laptop copy would overwrite it. Newer laptop edits go to the bot here too.
+        from filters import target  # noqa: PLC0415
+        synced = target.sync_with_bot()
+        if synced:
+            print(f"\nTarget and the bot: {synced}")
     print("\nSecrets for the daily cloud run:")
     ready = prepare()
     if check or not ready:

@@ -226,6 +226,10 @@ LLM_MAX_ITEMS = 40     # hard cap on items scored per run (protects daily quota)
 # closes. Nothing is lost; it is deferred.
 INTAKE_BUDGET = int(os.environ.get("OH_INTAKE_BUDGET", "60"))
 
+# Drop listings whose stated rules exclude him (graduation year, "not students", experience...)
+# before the intake budget. Needs data/career_profile.json; OH_HIDE_INELIGIBLE=false to see them.
+HIDE_INELIGIBLE = _env_bool("OH_HIDE_INELIGIBLE", True)
+
 
 # ─── FOCUS — "what am I hunting this week?" ──────────────────────────
 # Empty = hunt everything (the original behaviour). Otherwise a list of kinds from

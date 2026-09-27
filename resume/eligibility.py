@@ -351,6 +351,25 @@ def who_rules(sectors: list, experience: list) -> list[tuple[str, str]]:
     return out
 
 
+_BUCKETS = [
+    ("senior role", r"senior role"),
+    ("not for students", r"not students"),
+    ("graduation year", r"graduat|passout"),
+    ("course", r"courses|b\.tech"),
+    ("experience", r"experience"),
+    ("year of study", r"year \d|junior|final-year"),
+    ("PhD only", r"phd"),
+    ("work rights / country", r"authori[sz]|right to work|university in|based in"),
+]
+
+
+def reason_bucket(why: str) -> str:
+    """A NO reason as a category — "graduation year", never "you graduate 2029". The daily run logs
+    these counts, and in the cloud that log is public."""
+    low = (why or "").lower()
+    return next((name for name, pat in _BUCKETS if re.search(pat, low)), "other rule")
+
+
 def _verdict(reasons):
     order = {NO: 0, CHECK: 1, YES: 2}
     reasons = sorted(dict.fromkeys(reasons), key=lambda r: order.get(r[0], 3))

@@ -131,6 +131,8 @@ def render(items: list, stats: dict, dumped_keys: set | None = None) -> None:
     console.print("━" * 48)
     console.print(f"  Scanned:        {stats.get('scanned', 0)} items")
     console.print(f"  Relevant:       {stats.get('relevant', 0)} items")
+    if stats.get("ineligible"):
+        console.print(f"  Not eligible:   {stats['ineligible']} hidden (rules you don't meet)")
     console.print(f"  High priority:  {stats.get('high_priority', 0)} items")
     console.print(f"  TaskFlow dumps: {stats.get('dumps', 0)} tasks")
     console.print(f"  Sources OK:     {stats.get('sources_ok', 0)}/{stats.get('sources_total', 0)}")

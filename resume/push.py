@@ -26,6 +26,7 @@ exist only on the runner, which is thrown away when the job ends; they are never
     py -m resume.push                    # today's run, up to 3 packs, sent
     py -m resume.push --dry              # build them, send nothing
     py -m resume.push --n 1 --any-day    # use the latest run even if it is not today's (testing)
+    py -m resume.push --key 1a2b3c4d5e6f # one pack for one item — what a 📦 tap / `/pack 3` runs
 """
 
 from __future__ import annotations
@@ -200,12 +201,95 @@ def _fonts(pdf: Path | None) -> str:
 
 
 # ─── the run ──────────────────────────────────────────────────────────────────────────────
+
+def pack_one(item: dict, score: int, profile: dict, dry: bool = False, requested: bool = False) -> str:
+    """Build one pack and (unless dry) send it. Returns "sent", "built", "skipped" or "failed".
+    `requested` is a pack he asked for by tapping 📦 — it is built even when the full listing says ⛔,
+    because he asked; the card says so."""
+    from filters import target  # noqa: PLC0415
+    from .apply import _as_opp, build_pack, eligibility_of, fetch_full_jd  # noqa: PLC0415
+    from .fit import skill_evidence  # noqa: PLC0415
+    say = print
+    label = "" if config.PUBLIC_LOGS else f" {item.get('title', '')[:60]}"
+    full = fetch_full_jd(item)
+    verdict = eligibility_of(item, full)
+    if verdict.level == "NO" and not requested:
+        say(f"[push] skipped{label}: the full listing rules you out")
+        return "skipped"
+    try:
+        with contextlib.redirect_stdout(io.StringIO()):    # build_resume prints profile-derived notes
+            pack = build_pack(item, full)
+    except Exception as e:  # noqa: BLE001 — one broken pack must not stop the others
+        say(f"[push] build failed{label}: {type(e).__name__}")
+        return "failed"
+    if pack["missing"]:
+        say(f"[push] renderer not installed ({pack['missing']}) — pip install -r requirements-resume.txt")
+    pdf = pack["pdf"]
+    status = (f"{pack['pages']}-page PDF, fonts: {_fonts(pdf) or '?'}" if pdf
+              else "no PDF (read-back gate: " + "; ".join(pack["problems"][:2]) + ")" if not pack["missing"]
+              else "no PDF")
+    if dry:
+        say(f"[push] built{label}: {status}")
+        return "built"
+
+    caption = card(item, score, verdict, pack,
+                   skill_evidence(full.get("description") or item.get("description", ""), profile),
+                   target.note(_as_opp(item)))
+    slug = pack["out"].name
+    files = [(p, p.name) for p in (pdf, pack["docx"]) if p]
+    files.append((pack["out"] / "job.md", f"{slug}-job.md"))
+    if not pdf and not pack["docx"]:
+        files.append((pack["out"] / "resume.md", f"{slug}-resume.md"))
+    first = _send_document(files[0][0], files[0][1], caption, buttons(item, pack))
+    if first is None:
+        say(f"[push] could not send pack{label}")
+        return "failed"
+    for path, name in files[1:]:
+        _send_document(path, name, reply_to=first, silent=True)
+    say(f"[push] sent{label}: {status}")
+    return "sent"
+
+
+def find_by_key(key: str) -> dict | None:
+    """The newest history item with this dedup key. The bot's /top and digest buttons come from
+    feed.json — the last 12 runs — so a key can be older than the top-150 that resolve() ranks."""
+    from models import dedup_key_from_dict  # noqa: PLC0415
+    try:
+        data = json.loads(config.HISTORY_FILE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+    for run in reversed((data.get("runs") if isinstance(data, dict) else None) or []):
+        for d in run.get("items") or []:
+            if (d.get("key") or dedup_key_from_dict(d)) == key:
+                return d
+    return None
+
+
+def run_key(key: str, dry: bool = False) -> int:
+    """One pack for one item, by its dedup key — what a 📦 tap or `/pack 3` asks the cloud for."""
+    from .apply import _profile, rescore, resolve  # noqa: PLC0415
+    if not re.fullmatch(r"[0-9a-f]{12}", key or ""):
+        print("[push] --key must be a 12-character item key")
+        return 0
+    profile = _profile()
+    if not profile.get("basics"):
+        print("[push] no career_profile.json here — set OH_CAREER_PROFILE (py sync_secrets.py).")
+        return 0
+    if not dry and not config.telegram_configured():
+        print("[push] Telegram is not configured — nothing sent.")
+        return 0
+    item = find_by_key(key) or resolve(key)
+    if not item:
+        print("[push] that item is not in recent history")
+        if not dry:
+            _send_text("📦 Couldn't build that pack: the item is no longer in recent history.")
+        return 0
+    return 1 if pack_one(item, rescore(item), profile, dry, requested=True) in ("sent", "built") else 0
+
 def run(n: int = DEFAULT_N, min_score: int = DEFAULT_MIN_SCORE, dry: bool = False,
         any_day: bool = False) -> int:
     """Build and send up to n packs. Returns how many were sent (built, when dry)."""
-    from filters import target  # noqa: PLC0415
-    from .apply import _as_opp, _profile, build_pack, eligibility_of, fetch_full_jd, ranked_items  # noqa: PLC0415
-    from .fit import skill_evidence  # noqa: PLC0415
+    from .apply import _profile, ranked_items  # noqa: PLC0415
 
     say = print
     if n <= 0:
@@ -231,48 +315,8 @@ def run(n: int = DEFAULT_N, min_score: int = DEFAULT_MIN_SCORE, dry: bool = Fals
     for _, item, score, _, _ in chosen[: n * 3]:          # a few spares, for listings that fail the recheck
         if done >= n:
             break
-        label = "" if config.PUBLIC_LOGS else f" {item.get('title', '')[:60]}"
-        full = fetch_full_jd(item)
-        verdict = eligibility_of(item, full)
-        if verdict.level == "NO":
-            say(f"[push] skipped{label}: the full listing rules you out")
-            continue
-        quiet = io.StringIO()
-        try:
-            with contextlib.redirect_stdout(quiet):        # build_resume prints profile-derived notes
-                pack = build_pack(item, full)
-        except Exception as e:  # noqa: BLE001 — one broken pack must not stop the others
-            say(f"[push] build failed{label}: {type(e).__name__}")
-            continue
-        if pack["missing"]:
-            say(f"[push] renderer not installed ({pack['missing']}) — pip install -r requirements-resume.txt")
-        pdf = pack["pdf"]
-        status = (f"{pack['pages']}-page PDF, fonts: {_fonts(pdf) or '?'}" if pdf
-                  else "no PDF (read-back gate: " + "; ".join(pack["problems"][:2]) + ")" if not pack["missing"]
-                  else "no PDF")
-        if dry:
+        if pack_one(item, score, profile, dry) in ("sent", "built"):
             done += 1
-            say(f"[push] built {done}{label}: {status}")
-            continue
-
-        o = _as_opp(item)
-        caption = card(item, score, verdict, pack, skill_evidence(full.get("description") or
-                                                                  item.get("description", ""), profile),
-                       target.note(o))
-        slug = pack["out"].name
-        files = [(p, p.name) for p in (pdf, pack["docx"]) if p]
-        files.append((pack["out"] / "job.md", f"{slug}-job.md"))
-        if not pdf and not pack["docx"]:
-            files.append((pack["out"] / "resume.md", f"{slug}-resume.md"))
-        first = _send_document(files[0][0], files[0][1], caption, buttons(item, pack))
-        if first is None:
-            say(f"[push] could not send pack{label}")
-            continue
-        for path, name in files[1:]:
-            _send_document(path, name, reply_to=first, silent=True)
-        done += 1
-        say(f"[push] sent {done}{label}: {status}")
-
     if not dry and not done:
         _send_text(f"📦 No application pack today: none of today's {len(items)} new item(s) was an "
                    f"internship or job you are eligible for at {min_score}/10 or more.")
@@ -292,6 +336,10 @@ def main() -> int:
     args = sys.argv[1:]
     if "-h" in args or "--help" in args:
         print(__doc__)
+        return 0
+    if "--key" in args:
+        i = args.index("--key")
+        run_key(args[i + 1] if i + 1 < len(args) else "", dry="--dry" in args)
         return 0
     n = _arg(args, "--n", int(os.environ.get("OH_PACKS", DEFAULT_N) or DEFAULT_N))
     run(n=n, min_score=_arg(args, "--min-score", DEFAULT_MIN_SCORE), dry="--dry" in args,

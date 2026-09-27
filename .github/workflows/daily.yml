@@ -14,7 +14,9 @@ name: Opportunity Hunter (daily)
 # Dedup/history state is committed back to the repo so repeats aren't re-notified.
 #
 # Private inputs arrive as secrets and are written to gitignored files on the runner only:
-#   OH_TARGET_JSON     -> hunt_target.json          (py sync_secrets.py sets both from your laptop)
+#   bot /target        -> hunt_target.json          FIRST: the Cloudflare bot's copy, which /target
+#                                                   edits from the phone (OH_WORKER_URL + OH_WORKER_TOKEN)
+#   OH_TARGET_JSON     -> hunt_target.json          fallback (py sync_secrets.py sets both from your laptop)
 #   OH_CAREER_PROFILE  -> data/career_profile.json  (gzip+base64; raw would crowd the 48 KB limit)
 # The runner is discarded after the job; packs are sent to Telegram and never uploaded as artifacts.
 
@@ -27,6 +29,10 @@ on:
         description: "Only build + send application packs from the latest run (no hunt, no state commit)"
         type: boolean
         default: false
+      pack_key:
+        description: "One pack for this item key (what a 📦 tap / /pack N sends); implies packs_only"
+        type: string
+        default: ""
 
 permissions:
   contents: write          # needed to commit seen_items.json / history.json back
@@ -77,13 +83,26 @@ jobs:
         env:
           OH_TARGET_JSON: ${{ secrets.OH_TARGET_JSON }}
           OH_CAREER_PROFILE: ${{ secrets.OH_CAREER_PROFILE }}
+          OH_WORKER_URL: ${{ secrets.OH_WORKER_URL }}
+          OH_WORKER_TOKEN: ${{ secrets.OH_WORKER_TOKEN }}
         run: |
           # Both land in gitignored paths. Prove that first — if it were ever not true, the persist
           # step below would publish them.
           for f in hunt_target.json data/career_profile.json; do
             git check-ignore -q "$f" || { echo "::error::$f is not gitignored — refusing to write it"; exit 1; }
           done
-          if [ -n "$OH_TARGET_JSON" ]; then
+          # The bot's copy first — that is the one /target edits from the phone.
+          got=""
+          if [ -n "$OH_WORKER_URL" ] && [ -n "$OH_WORKER_TOKEN" ] \
+             && curl -fsS --max-time 20 -H "Authorization: Bearer $OH_WORKER_TOKEN" \
+                     "$OH_WORKER_URL/target" -o "$RUNNER_TEMP/t.json" 2>/dev/null \
+             && python .github/scripts/bot_target.py "$RUNNER_TEMP/t.json"; then
+            got=1
+          fi
+          rm -f "$RUNNER_TEMP/t.json"
+          if [ -n "$got" ]; then
+            :
+          elif [ -n "$OH_TARGET_JSON" ]; then
             printf '%s' "$OH_TARGET_JSON" > hunt_target.json
             python -c "import json; json.load(open('hunt_target.json', encoding='utf-8'))" \
               && echo "target: restored" || { echo "target: secret is not valid JSON, ignored"; rm -f hunt_target.json; }
@@ -102,11 +121,11 @@ jobs:
           fi
 
       - name: Run the hunt
-        if: ${{ !inputs.packs_only }}
+        if: ${{ !inputs.packs_only && !inputs.pack_key }}
         run: python main.py --now
 
       - name: Persist dedup + history
-        if: ${{ !inputs.packs_only }}
+        if: ${{ !inputs.packs_only && !inputs.pack_key }}
         run: |
           git config user.name "opportunity-hunter[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -139,4 +158,15 @@ jobs:
         timeout-minutes: 15
         env:
           OH_PACKS: "3"
-        run: python -m resume.push ${{ inputs.packs_only && '--n 1 --any-day' || '' }}
+          # Through env, never ${{ }} inside the script: an input pasted into a shell line is a
+          # script-injection hole (GitHub's own hardening guide). push.py also checks the key's shape.
+          PACK_KEY: ${{ inputs.pack_key }}
+          PACKS_ONLY: ${{ inputs.packs_only }}
+        run: |
+          if [ -n "$PACK_KEY" ]; then
+            python -m resume.push --key "$PACK_KEY"
+          elif [ "$PACKS_ONLY" = "true" ]; then
+            python -m resume.push --n 1 --any-day
+          else
+            python -m resume.push
+          fi

@@ -16,11 +16,19 @@
  *   KV:      BOT_KV
  *   vars:    TASKFLOW_SYNC_REPO, OPHUNTER_FEED_URL, REMIND_DAYS
  *   secrets: TELEGRAM_BOT_TOKEN, WEBHOOK_SECRET, TASKFLOW_SYNC_TOKEN,
- *            GROQ_API_KEY, CEREBRAS_API_KEY, OPENROUTER_API_KEY
+ *            GROQ_API_KEY, CEREBRAS_API_KEY, OPENROUTER_API_KEY,
+ *            OWNER_CHAT_ID    only this chat is answered — the bot is public on Telegram, and it
+ *                             answers with his profile, tracker and (now) edits his target
+ *            BOT_API_TOKEN    bearer token for GET/PUT /target (the laptop and the daily run)
+ *            GH_DISPATCH_TOKEN  fine-grained PAT, opportunity-hunter only, Actions: read & write —
+ *                             lets /pack start the cloud build. Optional; /pack explains if missing.
  */
+
+import { applyCommand, formatTarget, validTarget, HELP as TARGET_HELP } from "./target.js";
 
 export default {
   async fetch(request, env, ctx) {
+    if (new URL(request.url).pathname === "/target") return targetApi(request, env);
     if (request.method !== "POST") {
       return new Response("Opportunity Hunter bot is running. ✅");
     }
@@ -38,6 +46,17 @@ export default {
 // ─── routing ─────────────────────────────────────────────────────────
 async function handleUpdate(env, update) {
   try {
+    // Private bot. Anyone can find a Telegram bot and message it; without this, a stranger could read
+    // his tracker (/report), have questions answered from his profile, and — with /target — rewrite
+    // what his hunts look for. Unset OWNER_CHAT_ID keeps the old open behaviour for the old commands.
+    const chat = (update.message && update.message.chat) || (update.callback_query && update.callback_query.message
+      && update.callback_query.message.chat);
+    if (env.OWNER_CHAT_ID && chat && String(chat.id) !== String(env.OWNER_CHAT_ID)) {
+      if (update.callback_query) return await answerCallback(env, update.callback_query.id, "");
+      if ((update.message.text || "").startsWith("/start"))
+        return await sendMessage(env, chat.id, "This is a private bot.");
+      return;
+    }
     if (update.callback_query) return await handleCallback(env, update.callback_query);
     if (update.message) return await handleMessage(env, update.message);
   } catch (e) {
@@ -53,6 +72,7 @@ async function handleCallback(env, cb) {
   const chatId = cb.message && cb.message.chat && cb.message.chat.id;
   if (action === "plan") return handlePlan(env, key, cb, chatId);
   if (action === "draft") return handleDraft(env, key, cb, chatId);
+  if (action === "pack") return handlePack(env, key, chatId, cb);
   if (action === "applied" || action === "skip" || action === "remind")
     return handleStatus(env, action, key, cb);
   return answerCallback(env, cb.id, "");
@@ -66,13 +86,15 @@ async function handleMessage(env, msg) {
     return sendMessage(env, chatId,
       `👋 <b>Opportunity Hunter</b> is connected (cloud, always-on).\n` +
       `Your chat id is <code>${chatId}</code>.\n` +
-      `Commands: /top · /report · /taste · /coach — or just ask me anything.`);
+      `Commands: /top · /pack 2 · /target · /report · /taste · /coach — or just ask me anything.`);
   if (text.startsWith("/top")) return handleTop(env, chatId);
+  if (text.startsWith("/target")) return handleTarget(env, chatId, text.slice(7));
+  if (text.startsWith("/pack")) return handlePackCommand(env, chatId, text.slice(5).trim());
   if (text.startsWith("/report")) return handleReport(env, chatId);
   if (text.startsWith("/taste")) return handleTaste(env, chatId);
   if (text.startsWith("/coach")) return handleCoach(env, chatId, text.slice(6).trim());
   if (text.startsWith("/"))
-    return sendMessage(env, chatId, "Try /top · /report · /taste · /coach — or ask me a question.");
+    return sendMessage(env, chatId, "Try /top · /pack 2 · /target · /report · /taste · /coach — or ask me a question.");
   // freeform question -> grounded answer
   const feed = await getFeed(env);
   const ans = await llmComplete(env, askPrompt(await profileBlock(env), feed, text), 450);
@@ -119,9 +141,10 @@ async function handleTop(env, chatId) {
   const feed = await getFeed(env);
   const top = feed.slice(0, 7);
   if (!top.length) return sendMessage(env, chatId, "No opportunities yet — let the hunter run.");
-  // Monospace table = clean, aligned, "designed" look within Telegram's limits.
-  const rows = top.map((it) => `${String(it.score).padStart(2)}/10  ${it.title.slice(0, 40)}`).join("\n");
-  return sendMessage(env, chatId, `🏆 <b>Top opportunities</b>\n<pre>${esc(rows)}</pre>`);
+  // Numbered, and the numbers remembered, so "/pack 3" means exactly the third line shown here.
+  await kvPut(env, "last_top", top.map((it) => it.key));
+  const rows = top.map((it, i) => `${i + 1}. ${String(it.score).padStart(2)}/10  ${it.title.slice(0, 38)}`).join("\n");
+  return sendMessage(env, chatId, `🏆 <b>Top opportunities</b>\n<pre>${esc(rows)}</pre>\n📦 <code>/pack 2</code> builds a resume + job file for #2.`);
 }
 
 async function handleTaste(env, chatId) {
@@ -186,6 +209,82 @@ async function handleReport(env, chatId) {
     lines.push("🎉 Nothing high-value slipping through the cracks. Nice.");
   }
   return sendMessage(env, chatId, lines.join("\n"));
+}
+
+// ─── /target: the standing hunt target, editable from the phone ─────────
+async function handleTarget(env, chatId, argText) {
+  if (!env.OWNER_CHAT_ID) return sendMessage(env, chatId, "Set OWNER_CHAT_ID on the Worker first — /target edits your hunt.");
+  const entry = await kvGet(env, "target", null);
+  const r = applyCommand(entry && entry.target, argText);
+  if (r.help) return sendMessage(env, chatId, TARGET_HELP);
+  if (r.show) return sendMessage(env, chatId, formatTarget(entry));
+  if (r.error) return sendMessage(env, chatId, "⚠️ " + r.error);
+  await kvPut(env, "target", { target: r.target, updated_at: new Date().toISOString(), source: "phone" });
+  return sendMessage(env, chatId, `✅ ${esc(r.said)}\n<i>Used from the next 08:00 run; your laptop picks it up on its next hunt.</i>`);
+}
+
+async function targetApi(request, env) {
+  const auth = request.headers.get("Authorization") || "";
+  if (!env.BOT_API_TOKEN || !(await sameSecret(auth, "Bearer " + env.BOT_API_TOKEN)))
+    return new Response("unauthorized", { status: 401 });
+  if (request.method === "GET") {
+    const entry = await kvGet(env, "target", null);
+    return entry ? Response.json(entry) : new Response("no target", { status: 404 });
+  }
+  if (request.method === "PUT") {
+    const body = await request.json().catch(() => null);
+    const bad = !body ? "body must be JSON" : validTarget(body.target);
+    if (bad) return new Response(bad, { status: 400 });
+    const when = Date.parse(body.updated_at) ? new Date(body.updated_at).toISOString() : new Date().toISOString();
+    // Never let an older laptop copy replace a newer one (a /target edit from the phone). KV reads can
+    // lag a write by up to ~60 s across locations, which is exactly when a laptop sync might race it.
+    const held = await kvGet(env, "target", null);
+    if (held && Date.parse(held.updated_at) > Date.parse(when) + 2000)
+      return Response.json(held, { status: 409 });
+    await kvPut(env, "target", { target: body.target, updated_at: when, source: "laptop" });
+    return Response.json({ ok: true, updated_at: when });
+  }
+  return new Response("method not allowed", { status: 405 });
+}
+
+async function sameSecret(a, b) {             // constant-time compare, so the token can't be guessed by timing
+  const enc = new TextEncoder();
+  const [x, y] = await Promise.all([a, b].map((s) => crypto.subtle.digest("SHA-256", enc.encode(s))));
+  return crypto.subtle.timingSafeEqual(x, y);
+}
+
+// ─── /pack: build one application pack in the cloud ─────────────────────
+async function handlePackCommand(env, chatId, arg) {
+  const keys = await kvGet(env, "last_top", []);
+  const n = parseInt(arg, 10);
+  if (!n || n < 1 || n > keys.length)
+    return sendMessage(env, chatId, "Send /top first, then <code>/pack 2</code> for its #2 — or tap 📦 on a digest item.");
+  return handlePack(env, keys[n - 1], chatId, null);
+}
+
+async function handlePack(env, key, chatId, cb) {
+  const reply = (msg) => (cb ? answerCallback(env, cb.id, msg) : sendMessage(env, chatId, msg));
+  if (!/^[0-9a-f]{12}$/.test(key || "")) return reply("That item has no valid key.");
+  if (!env.OWNER_CHAT_ID) return reply("Set OWNER_CHAT_ID on the Worker first.");
+  if (!env.GH_DISPATCH_TOKEN) {
+    if (cb) await answerCallback(env, cb.id, "");
+    return sendMessage(env, chatId, "📦 /pack needs one GitHub token on the Worker (GH_DISPATCH_TOKEN) — " +
+      "see cloudflare-bot/README.md → “/pack”.");
+  }
+  const item = await findItem(env, key);
+  const r = await fetch(`https://api.github.com/repos/${env.OPHUNTER_REPO}/actions/workflows/daily.yml/dispatches`, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${env.GH_DISPATCH_TOKEN}`, Accept: "application/vnd.github+json",
+      "User-Agent": "ophunter-bot", "X-GitHub-Api-Version": "2022-11-28" },
+    body: JSON.stringify({ ref: "main", inputs: { packs_only: "true", pack_key: key } }),
+  });
+  if (r.status !== 204) {
+    console.log("dispatch failed:", r.status);
+    return reply(`Couldn't start the build (GitHub said ${r.status}).`);
+  }
+  if (cb) await answerCallback(env, cb.id, "📦 Building your pack…");
+  return sendMessage(env, chatId, `📦 Building the pack${item ? " for <b>" + esc(item.title.slice(0, 70)) + "</b>" : ""} — ` +
+    "resume PDF, DOCX and job file arrive here in about 2 minutes.");
 }
 
 // ─── opportunity feed (from the public repo) ─────────────────────────

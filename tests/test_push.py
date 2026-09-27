@@ -168,6 +168,98 @@ one = S.encode(pretty, False)
 check("8c. the target goes as ONE line (GitHub masks multi-line secrets line by line)",
       "\n" not in one and json.loads(one) == json.loads(pretty), one)
 
+# ── 9. the target: laptop and phone, whichever changed last wins ─────────────────────────────
+import time as _time
+class _Resp:
+    def __init__(self, status, body=None):
+        self.status_code, self._body, self.ok = status, body, 200 <= status < 300
+    def json(self):
+        if self._body is None:
+            raise ValueError("no body")
+        return self._body
+
+fd, tf = tempfile.mkstemp(suffix=".json"); os.close(fd)
+local = {"active": True, "goal": "laptop", "locations": ["mumbai"]}
+Path(tf).write_text(json.dumps(local), encoding="utf-8")
+now = _time.time()
+os.utime(tf, (now - 3600, now - 3600))                       # the laptop file is an hour old
+os.environ["OH_WORKER_URL"], os.environ["OH_WORKER_TOKEN"] = "https://bot.example.dev", "t0k"
+put_calls = []
+_old_get, _old_put = requests.get, requests.put
+try:
+    from datetime import datetime as _dt, timezone as _tz
+    phone_ts = _dt.fromtimestamp(now - 60, _tz.utc).isoformat()
+    requests.get = lambda url, **k: _Resp(200, {"target": {"active": True, "goal": "phone", "locations": ["pune"]},
+                                                "updated_at": phone_ts, "source": "phone"})
+    requests.put = lambda url, **k: put_calls.append(k.get("json")) or _Resp(200, {"ok": True})
+    msg = target.sync_with_bot(Path(tf))
+    got = json.loads(Path(tf).read_text(encoding="utf-8"))
+    check("9a. a newer phone edit is pulled into the laptop file",
+          got["goal"] == "phone" and "phone" in msg and not put_calls, (msg, got))
+    check("9b. the pulled file carries the phone's time, so the next sync is a no-op",
+          abs(os.path.getmtime(tf) - (now - 60)) < 2 and target.sync_with_bot(Path(tf)) == "in sync with the bot")
+
+    Path(tf).write_text(json.dumps(local), encoding="utf-8")      # edited on the laptop just now
+    msg = target.sync_with_bot(Path(tf))
+    check("9c. a newer laptop edit is sent to the bot",
+          msg == "sent to the bot" and put_calls and put_calls[-1]["target"]["goal"] == "laptop", (msg, put_calls[-1:]))
+
+    # A stale read (KV lags a phone edit by up to a minute) makes the laptop think it is newer; the bot
+    # answers 409 with its newer copy, and the laptop must TAKE it, not report a failure.
+    Path(tf).write_text(json.dumps(local), encoding="utf-8")
+    newer = _dt.fromtimestamp(_time.time() + 30, _tz.utc).isoformat()
+    requests.get = lambda url, **k: _Resp(404)
+    requests.put = lambda url, **k: _Resp(409, {"target": {"active": True, "goal": "phone-newest"},
+                                                "updated_at": newer, "source": "phone"})
+    msg = target.sync_with_bot(Path(tf))
+    check("9c2. a 409 means the phone's newer copy wins, and the laptop takes it",
+          json.loads(Path(tf).read_text(encoding="utf-8"))["goal"] == "phone-newest" and "phone" in msg, msg)
+    requests.put = lambda url, **k: put_calls.append(k.get("json")) or _Resp(200, {"ok": True})
+
+    requests.get = lambda url, **k: _Resp(401)
+    before = Path(tf).read_text(encoding="utf-8")
+    msg = target.sync_with_bot(Path(tf))
+    check("9d. a refused token changes nothing and says so",
+          "HTTP 401" in msg and Path(tf).read_text(encoding="utf-8") == before, msg)
+
+    requests.get = lambda url, **k: (_ for _ in ()).throw(requests.ConnectionError("down"))
+    check("9e. an unreachable bot never raises", "unavailable" in target.sync_with_bot(Path(tf)))
+
+    del os.environ["OH_WORKER_URL"]
+    check("9f. no bot configured → silent no-op", target.sync_with_bot(Path(tf)) == "")
+finally:
+    requests.get, requests.put = _old_get, _old_put
+    os.environ.pop("OH_WORKER_URL", None); os.environ.pop("OH_WORKER_TOKEN", None)
+    os.unlink(tf)
+
+# ── 10. one pack on request (📦 / /pack N) ───────────────────────────────────────────────────
+check("10a. --key refuses anything that is not a 12-hex item key",
+      P.run_key("../../etc", dry=True) == 0 and P.run_key("", dry=True) == 0)
+fd, hp = tempfile.mkstemp(suffix=".json"); os.close(fd)
+config.HISTORY_FILE = Path(hp)
+from models import dedup_key_from_dict
+old_item = {"title": "Backend Intern", "url": "https://x/old", "source": "unstop"}      # an old run: no "key"
+Path(hp).write_text(json.dumps({"runs": [{"date": "2026-09-01", "items": [old_item]},
+                                         {"date": "2026-09-27", "items": [{"title": "New", "url": "u", "key": "aaaaaaaaaaaa"}]}]}),
+                    encoding="utf-8")
+try:
+    check("10b. a key is found across ALL of history, even in runs saved before keys were stored",
+          (P.find_by_key(dedup_key_from_dict(old_item)) or {}).get("url") == "https://x/old")
+    check("10c. an unknown key is None", P.find_by_key("bbbbbbbbbbbb") is None)
+finally:
+    config.HISTORY_FILE = _old_hist
+    os.unlink(hp)
+
+# ── 11. the 📦 button on the digest ──────────────────────────────────────────────────────────
+import main as M
+intern = Opportunity("Backend Developer Internship", "https://x/i", "unstop", "internship", tags=["internship"])
+hack = Opportunity("AI Hackathon", "https://x/h", "devpost", "hackathon", tags=["hackathon"])
+intern.score = hack.score = 9
+_, kb = M._telegram_digest([intern, hack], [])
+cbs = [b.get("callback_data", "") for row in kb for b in row]
+check("11a. an internship gets a 📦 Pack button", f"pack:{intern.dedup_key()}" in cbs, cbs)
+check("11b. a hackathon does not", f"pack:{hack.dedup_key()}" not in cbs, cbs)
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))
