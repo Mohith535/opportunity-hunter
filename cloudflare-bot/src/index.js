@@ -51,7 +51,7 @@ async function handleUpdate(env, update) {
     // what his hunts look for. Unset OWNER_CHAT_ID keeps the old open behaviour for the old commands.
     const chat = (update.message && update.message.chat) || (update.callback_query && update.callback_query.message
       && update.callback_query.message.chat);
-    if (env.OWNER_CHAT_ID && chat && String(chat.id) !== String(env.OWNER_CHAT_ID)) {
+    if (env.OWNER_CHAT_ID && chat && String(chat.id).trim() !== String(env.OWNER_CHAT_ID).trim()) {
       if (update.callback_query) return await answerCallback(env, update.callback_query.id, "");
       if ((update.message.text || "").startsWith("/start"))
         return await sendMessage(env, chat.id, "This is a private bot.");
