@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-09-26",
+  "updated_at": "2026-09-27",
   "items": [
-    {
-      "key": "148a255e8453",
-      "title": "AI Builders Hackathon",
-      "url": "https://ai-builders-hackathon-2026.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-09-15",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "d13c595d2745",
       "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
@@ -23,6 +10,19 @@
       "deadline": "2026-10-28",
       "tags": [
         "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "ef63d4eba98f",
+      "title": "DrillBit Original Voices Challenge - 2026",
+      "url": "https://unstop.com/scholarships/drillbit-original-voices-challenge-2026-drillbit-softtech-india-pvt-ltd-1756592",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-30",
+      "tags": [
+        "scholarship"
       ],
       "ai_summary": "",
       "action_plan": []
