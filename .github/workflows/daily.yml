@@ -122,6 +122,10 @@ jobs:
 
       - name: Run the hunt
         if: ${{ !inputs.packs_only && !inputs.pack_key }}
+        env:
+          # Phase 6: the hunt reads his ✅/⏭ taps from the bot and hands back what it learned.
+          OH_WORKER_URL: ${{ secrets.OH_WORKER_URL }}
+          OH_WORKER_TOKEN: ${{ secrets.OH_WORKER_TOKEN }}
         run: python main.py --now
 
       - name: Persist dedup + history
@@ -158,6 +162,8 @@ jobs:
         timeout-minutes: 15
         env:
           OH_PACKS: "3"
+          OH_WORKER_URL: ${{ secrets.OH_WORKER_URL }}       # packs re-score with what his taps taught
+          OH_WORKER_TOKEN: ${{ secrets.OH_WORKER_TOKEN }}
           # Through env, never ${{ }} inside the script: an input pasted into a shell line is a
           # script-injection hole (GitHub's own hardening guide). push.py also checks the key's shape.
           PACK_KEY: ${{ inputs.pack_key }}

@@ -403,6 +403,18 @@ def run(source_names=None, test=False):
         moved = target.apply(relevant)
         log(f"[target] {target.describe()} — adjusted {moved}/{len(relevant)} items")
 
+    # 3a2. OUTCOMES — what his own ✅/⏭ taps taught (filters/outcomes.py): small nudges from title
+    # words he keeps planning or keeps skipping, only where the target doesn't already speak. The
+    # learned words go back to the bot so the app can offer them as rules. Counts only in the log.
+    from filters import outcomes
+    learned = outcomes.learned()
+    if learned["signals"]:
+        moved = outcomes.apply(relevant)
+        log(f"[outcomes] learned from {learned['signals']} taps: {len(learned['likes'])} liked, "
+            f"{len(learned['avoids'])} skipped words — nudged {moved} items")
+        if not test:
+            outcomes.publish(learned)
+
     # 3b. Focus — "what am I hunting this week?". Re-ranks (and in "only" mode filters)
     # the pool around the active kinds. No focus set = no-op. Applied BEFORE the intake
     # budget so that when he says "hackathons", hackathons are what fill the budget.

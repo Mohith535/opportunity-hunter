@@ -19,6 +19,11 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from resume.apply import _lost_arrow, _slug, _text, corruption_warnings
 
+
+# Never reach the live bot from a test: .env carries OH_WORKER_URL on his laptop.
+from filters import outcomes as _outcomes
+_outcomes.reset_cache({"likes": {}, "avoids": {}, "signals": 0})
+
 R = []
 def check(name, cond, detail=""):
     R.append((name, bool(cond), detail))

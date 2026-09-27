@@ -21,6 +21,11 @@ import config
 import resume.push as P
 from resume.eligibility import CHECK, NO, YES, Verdict
 
+
+# Never reach the live bot from a test: .env carries OH_WORKER_URL on his laptop.
+from filters import outcomes as _outcomes
+_outcomes.reset_cache({"likes": {}, "avoids": {}, "signals": 0})
+
 R = []
 def check(name, cond, detail=""):
     R.append((name, bool(cond), detail))

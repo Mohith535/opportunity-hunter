@@ -35,6 +35,7 @@ export default {
     const url = new URL(request.url);
     ORIGIN = url.origin;
     if (url.pathname === "/target") return targetApi(request, env);
+    if (url.pathname === "/tracker" || url.pathname === "/learned") return learnApi(request, env, url.pathname);
     if (url.pathname === "/app")
       return new Response(APP_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" } });
     if (url.pathname.startsWith("/app/api/")) return appApi(request, env, url.pathname.slice(9));
@@ -257,6 +258,30 @@ async function targetApi(request, env) {
   return new Response("method not allowed", { status: 405 });
 }
 
+// Phase 6: the hunt reads his taps (GET /tracker) and hands back what it learned (PUT /learned),
+// which the app shows with one-tap "+ Avoid" / "+ Tier 1". Same bearer token as /target.
+async function learnApi(request, env, path) {
+  const auth = request.headers.get("Authorization") || "";
+  if (!env.BOT_API_TOKEN || !(await sameSecret(auth, "Bearer " + env.BOT_API_TOKEN)))
+    return new Response("unauthorized", { status: 401 });
+  if (path === "/tracker" && request.method === "GET") {
+    const t = await kvGet(env, "tracker", {});
+    const out = {};
+    for (const [k, e] of Object.entries(t))
+      out[k] = { title: e.title || "", status: e.status || "", updated_at: e.updated_at || "", tags: e.tags || [] };
+    return Response.json(out);
+  }
+  if (path === "/learned" && request.method === "PUT") {
+    const body = await request.json().catch(() => null);
+    if (!body || typeof body.likes !== "object" || typeof body.avoids !== "object" || JSON.stringify(body).length > 20000)
+      return new Response("bad learned payload", { status: 400 });
+    await kvPut(env, "learned", { likes: body.likes, avoids: body.avoids, signals: Number(body.signals) || 0,
+      updated_at: new Date().toISOString() });
+    return Response.json({ ok: true });
+  }
+  return new Response("method not allowed", { status: 405 });
+}
+
 async function sameSecret(a, b) {             // constant-time compare, so the token can't be guessed by timing
   const enc = new TextEncoder();
   const [x, y] = await Promise.all([a, b].map((s) => crypto.subtle.digest("SHA-256", enc.encode(s))));
@@ -313,7 +338,8 @@ async function appApi(request, env, route) {
     const entry = (await kvGet(env, "target", null)) || {};
     const top = (await getFeed(env)).slice(0, 15).map((it) => ({
       key: it.key, title: it.title, score: it.score, source: it.source, deadline: it.deadline || "", url: it.url }));
-    return json({ target: entry.target || null, updated_at: entry.updated_at || "", source: entry.source || "", top });
+    const learned = await kvGet(env, "learned", null);
+    return json({ target: entry.target || null, updated_at: entry.updated_at || "", source: entry.source || "", top, learned });
   }
   if (route === "target" && request.method === "PUT") {
     const body = await request.json().catch(() => null);

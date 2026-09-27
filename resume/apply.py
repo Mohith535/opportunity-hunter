@@ -352,10 +352,10 @@ def rescore(d: dict) -> int:
     """Score an item with TODAY's rules. History stores the score from the day it was found — before
     the off-domain penalty, the domain credit and the standing target existed — which is why the list
     once showed "Software Sales Internship" and "SEO Trainee" at 10/10. He picked one."""
-    from filters import target  # noqa: PLC0415
+    from filters import outcomes, target  # noqa: PLC0415
     from filters.scorer import score_item  # noqa: PLC0415
     o = _as_opp(d)
-    return max(0, min(10, score_item(o) + target.adjustment(o)))
+    return max(0, min(10, score_item(o) + target.adjustment(o) + outcomes.adjustment(o)))
 
 
 def eligibility_of(d: dict, full: dict | None = None, cand=None):

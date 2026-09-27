@@ -52,6 +52,10 @@ def _render_item(item, dumped: bool) -> Text:
         t.append(f"          {why}\n", style="cyan")
     tgt = target.note(item)      # how the standing target moved this item, and why
     # "✓ in Mumbai · ✗ pays only Rs 25,000/month" spells out his target item by item — not in a public log.
+    from filters import outcomes
+    learned_note = "" if config.PUBLIC_LOGS else outcomes.note(item)   # what his taps taught, per item
+    if learned_note:
+        t.append(f"          {learned_note}\n", style="magenta")
     if tgt and not config.PUBLIC_LOGS:
         t.append(f"          {tgt}\n", style="magenta")
     src_note = ledger.note(getattr(item, "source", ""))   # why this source was nudged

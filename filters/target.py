@@ -106,9 +106,14 @@ def _iso_ts(s: str) -> float:
 def sync_with_bot(path=None) -> str:
     """Pull the phone's copy if it is newer, push this file if it is newer. Returns one line for the
     log (no target content in it), or "" when no bot is configured. Never raises."""
+    import os  # noqa: PLC0415
     import requests  # noqa: PLC0415
     url, tok = _bot()
     if not url:
+        return ""
+    # The cloud run already fetched the bot's copy in the workflow's restore step. Syncing again here
+    # would see a freshly written file, call it "newer", and push it back re-stamped as a laptop edit.
+    if os.environ.get("GITHUB_ACTIONS", "").lower() == "true" and path is None:
         return ""
     f = path or TARGET_FILE
     head = {"Authorization": f"Bearer {tok}", "User-Agent": config.USER_AGENT}
