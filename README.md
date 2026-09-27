@@ -212,6 +212,8 @@ python main.py --now
 
 **Run it in the cloud:** the included [GitHub Actions workflow](.github/workflows/daily.yml) runs the hunt daily at 08:00 IST, sends the digest, and commits dedup state back so it never repeats itself — fully laptop-independent. Add the keys above as **repository secrets**.
 
+**Application packs on your phone:** after the hunt, the same run sends the day's best new internships and jobs to Telegram as ready packs — the resume PDF with a card (eligibility, skill fit, place, pay, deadline) and ✅ Applied / ⏭ Skip / ⏰ Remind buttons, then the DOCX and `job.md`. It needs your two private files, which never enter the repo: `py sync_secrets.py` sends `hunt_target.json` and `data/career_profile.json` as secrets (`OH_TARGET_JSON`, `OH_CAREER_PROFILE`) through the `gh` CLI. Re-run it after editing either. Because this repo is public, its Action logs are public too, so the cloud run never prints your target or anything from your resume. Test it without a hunt from **Actions → Run workflow → packs_only**.
+
 **Deploy the always-on bot:** see [`cloudflare-bot/README.md`](cloudflare-bot/) — a free Cloudflare Worker that handles taps, `/ask`, `/coach`, and drafts 24/7 with no PC.
 
 ## Notifications
