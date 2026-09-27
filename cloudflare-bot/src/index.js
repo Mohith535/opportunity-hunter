@@ -25,10 +25,19 @@
  */
 
 import { applyCommand, formatTarget, validTarget, HELP as TARGET_HELP } from "./target.js";
+import { appUser } from "./webapp.js";
+import APP_HTML from "./app.html";
+
+let ORIGIN = "";   // this Worker's own https origin, learned from each request — for the Open-app buttons
 
 export default {
   async fetch(request, env, ctx) {
-    if (new URL(request.url).pathname === "/target") return targetApi(request, env);
+    const url = new URL(request.url);
+    ORIGIN = url.origin;
+    if (url.pathname === "/target") return targetApi(request, env);
+    if (url.pathname === "/app")
+      return new Response(APP_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" } });
+    if (url.pathname.startsWith("/app/api/")) return appApi(request, env, url.pathname.slice(9));
     if (request.method !== "POST") {
       return new Response("Opportunity Hunter bot is running. ✅");
     }
@@ -85,8 +94,9 @@ async function handleMessage(env, msg) {
   if (text.startsWith("/start"))
     return sendMessage(env, chatId,
       `👋 <b>Opportunity Hunter</b> is connected (cloud, always-on).\n` +
+      `Tap <b>Open OPH</b> for your target and today's packs — or use the ☰ menu.\n` +
       `Your chat id is <code>${chatId}</code>.\n` +
-      `Commands: /top · /pack 2 · /target · /report · /taste · /coach — or just ask me anything.`);
+      `Commands: /top · /pack 2 · /target · /report · /taste · /coach — or just ask me anything.`, appButton());
   if (text.startsWith("/top")) return handleTop(env, chatId);
   if (text.startsWith("/target")) return handleTarget(env, chatId, text.slice(7));
   if (text.startsWith("/pack")) return handlePackCommand(env, chatId, text.slice(5).trim());
@@ -217,7 +227,7 @@ async function handleTarget(env, chatId, argText) {
   const entry = await kvGet(env, "target", null);
   const r = applyCommand(entry && entry.target, argText);
   if (r.help) return sendMessage(env, chatId, TARGET_HELP);
-  if (r.show) return sendMessage(env, chatId, formatTarget(entry));
+  if (r.show) return sendMessage(env, chatId, formatTarget(entry), appButton());
   if (r.error) return sendMessage(env, chatId, "⚠️ " + r.error);
   await kvPut(env, "target", { target: r.target, updated_at: new Date().toISOString(), source: "phone" });
   return sendMessage(env, chatId, `✅ ${esc(r.said)}\n<i>Used from the next 08:00 run; your laptop picks it up on its next hunt.</i>`);
@@ -272,12 +282,7 @@ async function handlePack(env, key, chatId, cb) {
       "see cloudflare-bot/README.md → “/pack”.");
   }
   const item = await findItem(env, key);
-  const r = await fetch(`https://api.github.com/repos/${env.OPHUNTER_REPO}/actions/workflows/daily.yml/dispatches`, {
-    method: "POST",
-    headers: { Authorization: `Bearer ${env.GH_DISPATCH_TOKEN}`, Accept: "application/vnd.github+json",
-      "User-Agent": "ophunter-bot", "X-GitHub-Api-Version": "2022-11-28" },
-    body: JSON.stringify({ ref: "main", inputs: { packs_only: "true", pack_key: key } }),
-  });
+  const r = await startPack(env, key);
   if (r.status !== 204) {
     console.log("dispatch failed:", r.status);
     return reply(`Couldn't start the build (GitHub said ${r.status}).`);
@@ -285,6 +290,47 @@ async function handlePack(env, key, chatId, cb) {
   if (cb) await answerCallback(env, cb.id, "📦 Building your pack…");
   return sendMessage(env, chatId, `📦 Building the pack${item ? " for <b>" + esc(item.title.slice(0, 70)) + "</b>" : ""} — ` +
     "resume PDF, DOCX and job file arrive here in about 2 minutes.");
+}
+
+async function startPack(env, key) {
+  return fetch(`https://api.github.com/repos/${env.OPHUNTER_REPO}/actions/workflows/daily.yml/dispatches`, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${env.GH_DISPATCH_TOKEN}`, Accept: "application/vnd.github+json",
+      "User-Agent": "ophunter-bot", "X-GitHub-Api-Version": "2022-11-28" },
+    body: JSON.stringify({ ref: "main", inputs: { packs_only: "true", pack_key: key } }),
+  });
+}
+
+// ─── the Mini App's API (see src/webapp.js) ─────────────────────────────
+function appButton() {
+  return ORIGIN ? [[{ text: "📱 Open OPH", web_app: { url: ORIGIN + "/app" } }]] : undefined;
+}
+
+async function appApi(request, env, route) {
+  const json = (o, status = 200) => Response.json(o, { status, headers: { "Cache-Control": "no-store" } });
+  if (!(await appUser(request, env))) return json({ error: "This app only opens for its owner, from Telegram." }, 403);
+  if (route === "state" && request.method === "GET") {
+    const entry = (await kvGet(env, "target", null)) || {};
+    const top = (await getFeed(env)).slice(0, 15).map((it) => ({
+      key: it.key, title: it.title, score: it.score, source: it.source, deadline: it.deadline || "", url: it.url }));
+    return json({ target: entry.target || null, updated_at: entry.updated_at || "", source: entry.source || "", top });
+  }
+  if (route === "target" && request.method === "PUT") {
+    const body = await request.json().catch(() => null);
+    const bad = !body ? "body must be JSON" : validTarget(body.target);
+    if (bad) return json({ error: bad }, 400);
+    const when = new Date().toISOString();
+    await kvPut(env, "target", { target: body.target, updated_at: when, source: "phone" });
+    return json({ ok: true, updated_at: when });
+  }
+  if (route === "pack" && request.method === "POST") {
+    const body = await request.json().catch(() => ({}));
+    if (!/^[0-9a-f]{12}$/.test(body.key || "")) return json({ error: "That item has no valid key." }, 400);
+    if (!env.GH_DISPATCH_TOKEN) return json({ error: "Add GH_DISPATCH_TOKEN to the Worker first." }, 503);
+    const r = await startPack(env, body.key);
+    return r.status === 204 ? json({ ok: true }) : json({ error: `GitHub said ${r.status}` }, 502);
+  }
+  return json({ error: "not found" }, 404);
 }
 
 // ─── opportunity feed (from the public repo) ─────────────────────────

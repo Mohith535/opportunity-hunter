@@ -67,6 +67,15 @@ on the `opportunity-hunter` repo so the 8 AM run sends the digest to Telegram:
 
 ---
 
+## The app (Telegram Mini App)
+
+Tap the **☰ OPH** menu button in your chat with the bot (or **📱 Open OPH** under `/start` or `/target`).
+It opens a real screen inside Telegram: switches, chips and pickers for your target, a Save button, and a
+**Today** tab with a 📦 Pack button on each top job. No login — Telegram signs every launch with the bot
+token and `src/webapp.js` verifies that signature and that you are `OWNER_CHAT_ID` (tests:
+`node test/webapp.test.mjs`). The menu button is set once with Telegram's `setChatMenuButton`,
+`web_app.url = https://<worker>/app`.
+
 ## Private bot, `/target` and `/pack`
 
 Anyone can find a Telegram bot and message it. This one answers with your profile and tracker, and
