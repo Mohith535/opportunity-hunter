@@ -308,6 +308,10 @@ def describe() -> str:
     t = load()
     if not t:
         return ""
+    if getattr(config, "PUBLIC_LOGS", False):
+        # The cloud run's log is public. The goal says WHY he wants Mumbai; the levers say where and
+        # for how much. None of it belongs on a page anyone can open.
+        return "private target active (details kept out of public logs)"
     bits = []
     if t.get("locations"):
         bits.append("/".join(str(c) for c in t["locations"]))

@@ -276,6 +276,7 @@ def _show_target(target) -> None:
     print(f"  Pay floor {f'Rs {int(floor):,}/month' if floor else '(none)'}"
           + ("  (unpaid listings pushed down)" if t.get("require_pay") else ""))
     print(f"\n  Edit      {target.TARGET_FILE}")
+    print("  Cloud     py sync_secrets.py   (the 08:00 cloud run reads a COPY — resync after editing)")
     print(f"  Skip once py main.py --now --no-target")
     print(f"  Turn off  set \"active\": false\n")
 

@@ -250,7 +250,7 @@ def recent_items(limit: int = 40) -> list[dict]:
 _ELIG_ORDER = {"YES": 0, "NOT_STATED": 1, "CHECK": 2, "NO": 3}
 
 
-def ranked_items(pool: int = 150, today: date | None = None) -> list[tuple]:
+def ranked_items(pool: int = 150, today: date | None = None, items: list[dict] | None = None) -> list[tuple]:
     """(number, item, today's score, eligibility verdict, off_focus), best first — the ONE ranking behind both
     `--list` and `py -m resume.apply <number>`.
 
@@ -263,7 +263,8 @@ def ranked_items(pool: int = 150, today: date | None = None) -> list[tuple]:
     cand = _candidate()
     wanted = set(focus.active())
     rows = []
-    for i in recent_items(pool):
+    # `items` lets the daily push rank just today's run; the CLI ranks recent history.
+    for i in (recent_items(pool) if items is None else items):
         dl = str(i.get("deadline") or "")[:10]
         if dl:
             try:
@@ -634,13 +635,13 @@ def build_resume_md(item: dict, full: dict) -> str:
     return build_resume(item, full)[0]
 
 
-def build(ref: str) -> Path | None:
-    item = resolve(ref)
-    if not item:
-        print(f"No opportunity matching {ref!r}. Try `py -m resume.apply --list`.")
-        return None
+def build_pack(item: dict, full: dict | None = None) -> dict:
+    """Write the pack for one opportunity and say what was made. No printing of its own, so the
+    daily cloud run (resume/push.py) can use it without putting any of his profile into a public log.
 
-    full = fetch_full_jd(item)
+    Returns {"out", "full", "report", "company", "pdf", "docx", "pages", "page1_projects",
+    "problems", "missing"} — "missing" names the renderer module when PDF/DOCX could not be made."""
+    full = fetch_full_jd(item) if full is None else full
     from .render import short_company  # noqa: PLC0415
     company = short_company(company_of(item, full))   # "DJSCE", not the organiser's full legal name
     title = item.get("title", "")
@@ -653,26 +654,42 @@ def build(ref: str) -> Path | None:
     md_path = out / "resume.md"
     md_path.write_text(resume_md, encoding="utf-8")
 
-    got = "full posting from the employer API" if full.get("description") else "listing text only"
-    print(f"\n  {item.get('title','')[:70]}")
-    print(f"  {out}")
-    print(f"    job.md     {got}")
-    print(f"    resume.md  tailored from career_profile.json")
-
+    pack = {"out": out, "full": full, "report": report, "company": company, "pdf": None, "docx": None,
+            "pages": 0, "page1_projects": 0, "problems": [], "missing": ""}
     # The files a recruiter actually receives. The PDF exists only if reading it back proves the text
     # is really in it — the check his hand-made PDF would have failed.
     try:
         from .render import write  # noqa: PLC0415
         r = write(md_path, company=company)
-        if r["pdf"]:
-            print(f"    {r['pdf'].name:<34} {r['pages']} page(s), text layer verified"
-                  + (f", {r['page1_projects']} projects on page 1" if r["page1_projects"] else ""))
-        else:
-            print("    PDF NOT WRITTEN — failed the read-back gate: " + "; ".join(r["problems"][:3]))
-        if r["docx"]:
-            print(f"    {r['docx'].name:<34} read back clean")
+        pack.update({k: r[k] for k in ("pdf", "docx", "pages", "page1_projects", "problems")})
     except ImportError as e:
-        print(f"    (PDF/DOCX skipped — install the renderer: pip install typst python-docx pymupdf; {e.name})")
+        pack["missing"] = e.name or "renderer"
+    return pack
+
+
+def build(ref: str) -> Path | None:
+    item = resolve(ref)
+    if not item:
+        print(f"No opportunity matching {ref!r}. Try `py -m resume.apply --list`.")
+        return None
+
+    p = build_pack(item)
+    out, full, report, company = p["out"], p["full"], p["report"], p["company"]
+    got = "full posting from the employer API" if full.get("description") else "listing text only"
+    print(f"\n  {item.get('title','')[:70]}")
+    print(f"  {out}")
+    print(f"    job.md     {got}")
+    print("    resume.md  tailored from career_profile.json")
+    if p["missing"]:
+        print(f"    (PDF/DOCX skipped — install the renderer: pip install typst python-docx pymupdf; {p['missing']})")
+    else:
+        if p["pdf"]:
+            print(f"    {p['pdf'].name:<34} {p['pages']} page(s), text layer verified"
+                  + (f", {p['page1_projects']} projects on page 1" if p["page1_projects"] else ""))
+        else:
+            print("    PDF NOT WRITTEN — failed the read-back gate: " + "; ".join(p["problems"][:3]))
+        if p["docx"]:
+            print(f"    {p['docx'].name:<34} read back clean")
     if report.get("role_section"):
         print(f"    + 'What I would bring to {company or 'this role'}' ({len(report['role_section'])} verified bullets)")
 

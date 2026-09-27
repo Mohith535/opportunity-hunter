@@ -28,6 +28,11 @@ def _env_bool(name: str, default: bool) -> bool:
     return val.strip().lower() in ("1", "true", "yes", "on")
 
 
+# Logs anyone can read. The repo is public, so GitHub Actions run logs are public too. Anything
+# personal — the target's goal and the reason behind it, the places he would move to, his pay floor,
+# his resume — must never be printed while this is on. Defaults on inside GitHub Actions.
+PUBLIC_LOGS = _env_bool("OH_PUBLIC_LOGS", os.environ.get("GITHUB_ACTIONS", "").lower() == "true")
+
 # ─── DEVELOPER PROFILE ───────────────────────────────────────────────
 DEVELOPER_NAME = "Mohith"
 CAREER_STAGE = "student"

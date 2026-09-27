@@ -8,12 +8,25 @@ name: Opportunity Hunter (daily)
 #  * OH_PHONE=true     -> ntfy push to your phone (the cloud deliverable)
 #  * OH_DESKTOP=false  -> no GUI on a headless runner
 #  * OH_TASKFLOW=false -> TaskFlow is local-only (~/.taskflow); can't run here
+#  * OH_PUBLIC_LOGS    -> on automatically in Actions: this repo is public, so its run logs are
+#                         public. The target's goal, places, pay floor and anything from the resume
+#                         are never printed (config.PUBLIC_LOGS).
 # Dedup/history state is committed back to the repo so repeats aren't re-notified.
+#
+# Private inputs arrive as secrets and are written to gitignored files on the runner only:
+#   OH_TARGET_JSON     -> hunt_target.json          (py sync_secrets.py sets both from your laptop)
+#   OH_CAREER_PROFILE  -> data/career_profile.json  (gzip+base64; raw would crowd the 48 KB limit)
+# The runner is discarded after the job; packs are sent to Telegram and never uploaded as artifacts.
 
 on:
   schedule:
     - cron: "30 2 * * *"   # 08:00 Asia/Kolkata
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      packs_only:
+        description: "Only build + send application packs from the latest run (no hunt, no state commit)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write          # needed to commit seen_items.json / history.json back
@@ -60,17 +73,70 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Restore private files from secrets
+        env:
+          OH_TARGET_JSON: ${{ secrets.OH_TARGET_JSON }}
+          OH_CAREER_PROFILE: ${{ secrets.OH_CAREER_PROFILE }}
+        run: |
+          # Both land in gitignored paths. Prove that first — if it were ever not true, the persist
+          # step below would publish them.
+          for f in hunt_target.json data/career_profile.json; do
+            git check-ignore -q "$f" || { echo "::error::$f is not gitignored — refusing to write it"; exit 1; }
+          done
+          if [ -n "$OH_TARGET_JSON" ]; then
+            printf '%s' "$OH_TARGET_JSON" > hunt_target.json
+            python -c "import json; json.load(open('hunt_target.json', encoding='utf-8'))" \
+              && echo "target: restored" || { echo "target: secret is not valid JSON, ignored"; rm -f hunt_target.json; }
+          else
+            echo "target: none (set OH_TARGET_JSON with: py sync_secrets.py)"
+          fi
+          if [ -n "$OH_CAREER_PROFILE" ]; then
+            if printf '%s' "$OH_CAREER_PROFILE" | base64 -d | gunzip > data/career_profile.json \
+               && python -c "import json; json.load(open('data/career_profile.json', encoding='utf-8'))"; then
+              echo "career profile: restored"
+            else
+              echo "career profile: could not decode, packs will be skipped"; rm -f data/career_profile.json
+            fi
+          else
+            echo "career profile: none (set OH_CAREER_PROFILE with: py sync_secrets.py)"
+          fi
+
       - name: Run the hunt
+        if: ${{ !inputs.packs_only }}
         run: python main.py --now
 
       - name: Persist dedup + history
+        if: ${{ !inputs.packs_only }}
         run: |
           git config user.name "opportunity-hunter[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
+          # Belt and braces: the private files are gitignored, but never let one ride along.
+          if git diff --staged --name-only | grep -E '(career_profile|hunt_target)'; then
+            echo "::error::refusing to commit a private file"; git reset -q; exit 1
+          fi
           if git diff --staged --quiet; then
             echo "No state changes to commit."
           else
             git commit -m "chore: update hunt state [skip ci]"
             git push
           fi
+
+      # ── Phase 5A: today's best internships/jobs as ready packs on Telegram ─────────────────
+      # After the state commit, so the Cloudflare bot's feed.json already knows today's items when
+      # you tap ✅ Applied / ⏭ Skip on a pack. continue-on-error: the hunt and the digest have already
+      # succeeded; a pack problem must never turn the daily run red.
+      - name: Install the pack renderer
+        continue-on-error: true
+        run: |
+          pip install -r requirements-resume.txt
+          # Carlito is metric-compatible with Calibri, so page 1 fits the same as on the laptop.
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends fonts-crosextra-carlito fonts-liberation
+
+      - name: Send application packs
+        continue-on-error: true
+        timeout-minutes: 15
+        env:
+          OH_PACKS: "3"
+        run: python -m resume.push ${{ inputs.packs_only && '--n 1 --any-day' || '' }}

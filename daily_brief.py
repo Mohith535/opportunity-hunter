@@ -51,7 +51,8 @@ def _render_item(item, dumped: bool) -> Text:
     if why:
         t.append(f"          {why}\n", style="cyan")
     tgt = target.note(item)      # how the standing target moved this item, and why
-    if tgt:
+    # "✓ in Mumbai · ✗ pays only Rs 25,000/month" spells out his target item by item — not in a public log.
+    if tgt and not config.PUBLIC_LOGS:
         t.append(f"          {tgt}\n", style="magenta")
     src_note = ledger.note(getattr(item, "source", ""))   # why this source was nudged
     if src_note:
