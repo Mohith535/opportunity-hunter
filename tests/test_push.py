@@ -163,7 +163,10 @@ raw = json.dumps({"basics": {"name": "Ωmega é"}, "projects": [{"x": "y" * 400}
 packed = S.encode(raw, True)
 check("8a. gzip+base64 round-trips byte for byte", S.decode(packed, True) == raw)
 check("8b. packing shrinks a profile-shaped file", len(packed) < len(raw) / 2, f"{len(packed)} vs {len(raw)}")
-check("8c. the target goes as plain JSON", S.decode(S.encode(b'{"a": 1}', False), False) == b'{"a": 1}')
+pretty = json.dumps({"goal": "x", "roles": {"tier1": ["a", "b"]}}, indent=2).encode()
+one = S.encode(pretty, False)
+check("8c. the target goes as ONE line (GitHub masks multi-line secrets line by line)",
+      "\n" not in one and json.loads(one) == json.loads(pretty), one)
 
 print("=" * 72)
 for name, ok, detail in R:

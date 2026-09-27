@@ -34,7 +34,11 @@ FILES = [
 
 
 def encode(raw: bytes, packed: bool) -> str:
-    return base64.b64encode(gzip.compress(raw, 9)).decode("ascii") if packed else raw.decode("utf-8")
+    """One line either way. GitHub masks a multi-line secret LINE BY LINE, so a pretty-printed JSON
+    secret registered "{", "}" and "]" as secrets and every log line lost its brackets ("[push***")."""
+    if packed:
+        return base64.b64encode(gzip.compress(raw, 9)).decode("ascii")
+    return json.dumps(json.loads(raw), ensure_ascii=False, separators=(",", ":"))
 
 
 def decode(value: str, packed: bool) -> bytes:
@@ -59,7 +63,8 @@ def prepare() -> list[tuple[str, str, str]]:
         if len(value.encode()) > SECRET_MAX:
             print(f"  {name:<18} REFUSED — {len(value):,} bytes is over GitHub's 48 KB secret limit")
             continue
-        assert decode(value, packed) == raw
+        restored = decode(value, packed)
+        assert restored == raw if packed else json.loads(restored) == json.loads(raw)
         note = f"{len(raw):,} bytes" + (f" -> {len(value):,} packed" if packed else "")
         out.append((name, value, note))
     return out
