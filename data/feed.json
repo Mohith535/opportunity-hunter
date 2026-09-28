@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-09-27",
+  "updated_at": "2026-09-28",
   "items": [
-    {
-      "key": "d13c595d2745",
-      "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
-      "url": "https://aws-cds-partner.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-10-28",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "ef63d4eba98f",
       "title": "DrillBit Original Voices Challenge - 2026",
@@ -22,7 +9,8 @@
       "score": 10,
       "deadline": "2026-09-30",
       "tags": [
-        "scholarship"
+        "scholarship",
+        "focus:off-topic"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1302,6 +1290,19 @@
       "deadline": "2026-10-08",
       "tags": [
         "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c7ff32425b93",
+      "title": "ML Competition",
+      "url": "https://unstop.com/hackathons/ml-competition-qiskit-fall-fest-2026-srm-university-ap-1758822",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-04",
+      "tags": [
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
