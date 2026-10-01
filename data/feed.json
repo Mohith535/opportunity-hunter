@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-09-30",
+  "updated_at": "2026-10-01",
   "items": [
-    {
-      "key": "1bae3c158019",
-      "title": "Free Full Stack Python with Gen-AI Demo",
-      "url": "https://unstop.com/hackathons/free-full-stack-python-with-gen-ai-demo-quality-thought-info-systems-1758360",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-09-24",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "af780f3e14ff",
       "title": "An Interpretable Memory Decision Controller for LLM Agents Based on Three-Signal Complementarity: Decoupling Confidence and Consistency",
@@ -613,6 +600,19 @@
       "deadline": "2026-10-05",
       "tags": [
         "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1bae3c158019",
+      "title": "Free Full Stack Python with Gen-AI Demo",
+      "url": "https://unstop.com/hackathons/free-full-stack-python-with-gen-ai-demo-quality-thought-info-systems-1758360",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-24",
+      "tags": [
+        "hackathon"
       ],
       "ai_summary": "",
       "action_plan": []
