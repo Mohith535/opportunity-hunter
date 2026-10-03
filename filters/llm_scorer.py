@@ -175,8 +175,9 @@ def _apply(it, result: dict) -> bool:
 
 
 def _call(provider: dict, prompt: str, json_mode: bool = True,
-          max_tokens: int = 3000, temperature: float = 0.2) -> str:
-    """One OpenAI-compatible chat completion. Returns the message content string.
+          max_tokens: int = 3000, temperature: float = 0.2, info: dict | None = None) -> str:
+    """One OpenAI-compatible chat completion. Returns the message content string, and fills
+    `info["finish"]` with the provider's finish_reason when `info` is given.
     Raises on HTTP/network error (the caller handles fall-through)."""
     url = f"{provider['base_url']}/chat/completions"
     headers = {
@@ -191,6 +192,8 @@ def _call(provider: dict, prompt: str, json_mode: bool = True,
     }
     if json_mode:
         body["response_format"] = {"type": "json_object"}
+    if "gpt-oss" in str(provider.get("model", "")):
+        body["reasoning_effort"] = "low"        # Groq's documented knob for its gpt-oss models
     try:
         resp = requests.post(url, headers=headers, json=body, timeout=config.LLM_TIMEOUT)
         resp.raise_for_status()
@@ -200,22 +203,41 @@ def _call(provider: dict, prompt: str, json_mode: bool = True,
         resp = requests.post(url, headers=headers, json=body, timeout=config.LLM_TIMEOUT)
         resp.raise_for_status()
     data = resp.json()
-    return data["choices"][0]["message"]["content"]
+    choice = data["choices"][0]
+    if info is not None:
+        info["finish"] = choice.get("finish_reason") or ""
+    return choice["message"].get("content") or ""
+
+
+# A reasoning model (Groq's openai/gpt-oss-120b) spends tokens THINKING before it writes, and those
+# count against max_tokens. Measured 4 Oct 2026 on the resume's tailoring prompt: at max_tokens=160,
+# 158 went to reasoning and the answer was EMPTY (finish_reason "length"); with room it finished in
+# 239 tokens. So every free-text call gets thinking room on top of the answer it asks for.
+REASONING_HEADROOM = 1200
 
 
 def complete(prompt: str, max_tokens: int = 600, temperature: float = 0.5) -> str:
     """Run a FREE-TEXT prompt through the provider chain (no JSON mode). Returns the
     text response, or '' if every provider fails. Shared by the draft generator and
-    any other free-text feature — same Groq->Cerebras->OpenRouter fall-through."""
+    any other free-text feature — same Groq->Cerebras->OpenRouter fall-through.
+
+    An empty answer, or one cut off by the token limit, is a FAILURE, not an answer: the next
+    provider is tried. Before 4 Oct an empty reply from Groq was returned as success, so every
+    resume pack silently got no tailoring at all — and a cut-off sentence must never reach a resume."""
     if not config.USE_LLM_SCORING:
         return ""
     for provider in config.active_llm_providers():
+        info: dict = {}
         try:
-            return _call(provider, prompt, json_mode=False,
-                         max_tokens=max_tokens, temperature=temperature).strip()
+            out = _call(provider, prompt, json_mode=False, max_tokens=max_tokens + REASONING_HEADROOM,
+                        temperature=temperature, info=info).strip()
         except Exception as e:
-            log(f"[llm] complete via {provider['name']} failed: {e}")
+            log(f"[llm] complete via {provider['name']} failed: {type(e).__name__}: {str(e)[:120]}")
             continue
+        if out and info.get("finish", "stop") in ("stop", "", "eos", "end_turn"):
+            return out
+        log(f"[llm] complete via {provider['name']} gave "
+            f"{'an empty answer' if not out else 'a cut-off answer'} (finish={info.get('finish')}), trying next")
     return ""
 
 

@@ -49,6 +49,12 @@ HARD_BANNED = [
     "in today's", "ever-evolving", "fast-paced", "game-changer", "game changer", "spearheaded",
     "strong background in", "excellent communication skills", "testament to",
     "here is a resume", "here's a resume", "as an ai", "tailored to the role",
+    # 4 Oct 2026, the EA pack: "Delivered five production-grade AI-agent systems ... experience directly
+    # applicable to building mobile game features" passed the fact check and said nothing true-er for it.
+    "production-grade", "production-ready", "directly applicable", "highly applicable", "delivered",
+    "world-class", "industry-leading", "state-of-the-art",
+    "demonstrating the ability", "demonstrating rapid", "demonstrating ready", "ready-to-contribute",
+    "ready to contribute", "end-to-end game", "for mobile titles",
 ]
 
 # SOFT: reported as findings, never auto-removed. Each has a legitimate technical use ("a robust
@@ -71,6 +77,8 @@ DASH_SENTENCE_SHARE = 0.60   # warn when more than 60% of sentences carry an em-
 
 
 def _has(text_low: str, phrase: str) -> bool:
+    # Models write "production‑grade" with U+2011 (non-breaking hyphen) or U+2010; match them as "-".
+    text_low = text_low.replace("‑", "-").replace("‐", "-").replace("–", "-")
     p = phrase.lower()
     if p.endswith(" "):          # "seeking a " style — trailing space is part of the phrase
         return p in text_low

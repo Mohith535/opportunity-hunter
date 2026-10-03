@@ -437,6 +437,28 @@ def build_job_md(item: dict, full: dict, report: dict | None = None) -> str:
     L += [f"| {k} | {_fmt(v)} |" for k, v in rows]
     L.append("")
 
+    research = item.get("research") or {}
+    if research.get("answer"):
+        # EDI's research is about the COMPANY — read it before an interview; nothing in it is a fact
+        # about him, so none of it reaches the resume.
+        L += ["## What EDI found about the team", "", research["answer"].strip(), ""]
+        L += [f"- [{s.get('title') or s.get('url')}]({s.get('url')})" for s in research.get("sources") or []
+              if s.get("url")]
+        L.append("")
+
+    rows_ask = (report or {}).get("match_rows") or []
+    if rows_ask:
+        kind = {0: "must", 1: "bonus", 2: "duty"}
+        L += ["## What this posting asks for → what shows it", ""]
+        ch = (report or {}).get("changed")
+        if ch:
+            L += [f"_Changed for this job: **{ch[0]} of {ch[1]} lines** differ from your base resume._", ""]
+        L += ["| | The posting asks | What shows it |", "|---|---|---|"]
+        for prio, line, ev, proj in rows_ask:
+            shown = (f"**{proj}** — {ev}" if proj else ev) if ev else "**gap** — nothing in your profile shows this"
+            L.append(f"| {kind.get(prio, '')} | {line.replace('|', '/')} | {shown.replace('|', '/')} |")
+        L.append("")
+
     if rows_fit:
         mark = {BUILT: "✓ built", LEARNED: "◐ studied", GAP: "✗ gap"}
         L += ["## Do you fit?", "",
@@ -571,6 +593,19 @@ def corruption_warnings(text: str) -> list[str]:
     return out
 
 
+def tailoring_status(report: dict, jd: str) -> str:
+    """"evidence" (his verified sentences matched to the posting's asks), "model" (too few matches; one
+    verified model sentence), "failed" (nothing job-specific — this IS the base resume), or "none" (no
+    job given). Before 4 Oct a pack with no tailoring at all still said "Tailored for:" at the top."""
+    if not (jd or "").strip():
+        return "none"
+    if report.get("role_section"):
+        return "evidence"          # his own verified sentences matched to the posting — the real tailoring
+    if report.get("tailor_line"):
+        return "model"             # matches were thin; one model sentence, verified, is all that changed
+    return "failed"
+
+
 def build_resume(item: dict, full: dict, company: str = "") -> tuple[str, dict]:
     """(resume.md, report) — this job's resume from career_profile.json, every claim verified.
 
@@ -588,11 +623,25 @@ def build_resume(item: dict, full: dict, company: str = "") -> tuple[str, dict]:
                 "    py -m resume.profile --github Mohith535 --certs \"E:/certificates\" "
                 "--linkedin \"E:/linkedin-agent/data/linkedin-export\"\n"), {}
 
-    body, report = generate_resume_ex(profile, jd, role=item.get("title", ""), company=company)
+    body, report = generate_resume_ex(profile, jd, role=item.get("title", ""), company=company,
+                                      packet_req=item.get("requirements"))
+    from .match import changed_lines  # noqa: PLC0415
+    base, _ = generate_resume_ex(profile, None)       # his base resume: same profile, no job
+    report["changed"] = changed_lines(body, base)
+    report["tailoring"] = tailoring_status(report, jd)
 
     problems = corruption_warnings(body)
     placeholders = len(re.findall(r"\[add [^\]]+\]", body))
-    notes = [f"Tailored for: {item.get('title','')} — {date.today().isoformat()}",
+    ch, tot = report["changed"]
+    status = {"evidence": f"Tailored for: {item.get('title','')} — your own verified sentences matched to "
+                          f"{len(report.get('role_section') or [])} of the posting's asks (no model wrote any of it)",
+              "model": f"Thinly tailored for: {item.get('title','')} — few of the posting's asks matched your "
+                       f"profile; one model-written, verified sentence was added to the summary",
+              "failed": "TAILORING FAILED: this is your base resume — nothing in your profile matched this "
+                        "posting's asks, and no model sentence was written",
+              "none": "Your base resume (no job given)"}[report["tailoring"]]
+    notes = [f"{status} — {date.today().isoformat()}",
+             f"Changed for this job: {ch} of {tot} lines differ from your base resume.",
              "Every claim was checked against data/career_profile.json before it got here."]
     if report.get("removed"):
         notes.append(f"VERIFIER removed {len(report['removed'])} model-written sentence(s) your "

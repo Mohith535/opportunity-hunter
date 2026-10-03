@@ -26,15 +26,19 @@
 
 import { applyCommand, formatTarget, validTarget, HELP as TARGET_HELP } from "./target.js";
 import { appUser } from "./webapp.js";
+import { WorkerEntrypoint } from "cloudflare:workers";
+import { validatePacket, intakeKey, statusesFor, itemFromPacket, INTAKE_TTL } from "./intake.js";
 import APP_HTML from "./app.html";
 
 let ORIGIN = "";   // this Worker's own https origin, learned from each request — for the Open-app buttons
 
-export default {
-  async fetch(request, env, ctx) {
+export default class extends WorkerEntrypoint {
+  async fetch(request) {
+    const env = this.env, ctx = this.ctx;
     const url = new URL(request.url);
     ORIGIN = url.origin;
     if (url.pathname === "/target") return targetApi(request, env);
+    if (url.pathname.startsWith("/intake/")) return intakeApi(request, env, url.pathname.slice(8));
     if (url.pathname === "/tracker" || url.pathname === "/learned") return learnApi(request, env, url.pathname);
     if (url.pathname === "/app")
       return new Response(APP_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" } });
@@ -50,8 +54,38 @@ export default {
     const update = await request.json().catch(() => null);
     if (update) ctx.waitUntil(handleUpdate(env, update));
     return new Response("ok");  // ack immediately
-  },
-};
+  }
+}
+
+/**
+ * EDI's door into OPH (service binding `OPH`, entrypoint "Intake"; contract in EDI's worker/src/oph.ts).
+ * pack(): validate, keep the packet 30 days, start the cloud build, tell him. Never throws — EDI keeps
+ * the packet and offers "resend to OPH" when this says no.
+ */
+export class Intake extends WorkerEntrypoint {
+  async pack(p) {
+    try {
+      const bad = validatePacket(p);
+      if (bad) return { ok: false, why: bad };
+      if (!this.env.GH_DISPATCH_TOKEN) return { ok: false, why: "OPH has no GH_DISPATCH_TOKEN to start the build" };
+      const key = await intakeKey(p);
+      await this.env.BOT_KV.put(`intake:${key}`, JSON.stringify(p), { expirationTtl: INTAKE_TTL });
+      const r = await startPack(this.env, key, "intake_key");
+      if (r.status !== 204) return { ok: false, why: `GitHub refused the build (${r.status})` };
+      if (this.env.OWNER_CHAT_ID)
+        await sendMessage(this.env, this.env.OWNER_CHAT_ID,
+          `📦 Building your resume for <b>${esc(p.company)} — ${esc(p.title)}</b> (from EDI). It arrives here in about 5 minutes.`);
+      return { ok: true, key, eta_min: 5 };
+    } catch (e) {
+      return { ok: false, why: String(e && e.message || e).slice(0, 120) };
+    }
+  }
+
+  async statuses(keys) {
+    try { return statusesFor(await kvGet(this.env, "tracker", {}), keys); }
+    catch (e) { return {}; }
+  }
+}
 
 // ─── routing ─────────────────────────────────────────────────────────
 async function handleUpdate(env, update) {
@@ -317,13 +351,23 @@ async function handlePack(env, key, chatId, cb) {
     "resume PDF, DOCX and job file arrive here in about 2 minutes.");
 }
 
-async function startPack(env, key) {
+async function startPack(env, key, input = "pack_key") {
   return fetch(`https://api.github.com/repos/${env.OPHUNTER_REPO}/actions/workflows/daily.yml/dispatches`, {
     method: "POST",
     headers: { Authorization: `Bearer ${env.GH_DISPATCH_TOKEN}`, Accept: "application/vnd.github+json",
       "User-Agent": "ophunter-bot", "X-GitHub-Api-Version": "2022-11-28" },
-    body: JSON.stringify({ ref: "main", inputs: { packs_only: "true", pack_key: key } }),
+    body: JSON.stringify({ ref: "main", inputs: { packs_only: "true", [input]: key } }),
   });
+}
+
+// The packet, for the cloud build only. Never a workflow input: this repo is public, and run inputs show.
+async function intakeApi(request, env, key) {
+  const auth = request.headers.get("Authorization") || "";
+  if (!env.BOT_API_TOKEN || !(await sameSecret(auth, "Bearer " + env.BOT_API_TOKEN)))
+    return new Response("unauthorized", { status: 401 });
+  if (request.method !== "GET" || !/^[0-9a-f]{12}$/.test(key)) return new Response("not found", { status: 404 });
+  const p = await kvGet(env, `intake:${key}`, null);
+  return p ? Response.json(p, { headers: { "Cache-Control": "no-store" } }) : new Response("not found", { status: 404 });
 }
 
 // ─── the Mini App's API (see src/webapp.js) ─────────────────────────────
@@ -379,6 +423,10 @@ async function findItem(env, key) {
   if (!item) {                          // stale edge copy? force a fresh fetch and retry once
     feed = await getFeed(env, true);
     item = feed.find((x) => x.key === key);
+  }
+  if (!item && /^[0-9a-f]{12}$/.test(key || "")) {   // a job EDI handed over is not in the feed
+    const p = await kvGet(env, `intake:${key}`, null);
+    if (p) item = itemFromPacket(key, p);
   }
   return item;
 }

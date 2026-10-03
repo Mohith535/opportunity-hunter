@@ -319,7 +319,11 @@ def readback(pdf: bytes, doc: Doc) -> list[str]:
         problems.append("the name is not the first thing a parser reads")
     idx = lambda s: full.find(_norm(s)) if s else -1  # noqa: E731
     projs = doc.projects()
-    if projs and idx("summary") > idx(projs[0].name) >= 0:
+    # Find the project by its HEADING (its tagline), not its bare name: a project can share its name
+    # with a link in the header — "looplab.page" — and when LoopLab led the EA pack (4 Oct) the bare
+    # name matched the link above the summary and the gate refused a correctly ordered PDF.
+    first_proj = (projs[0].tagline[:30] or projs[0].name) if projs else ""
+    if projs and idx("summary") > idx(first_proj) >= 0:
         problems.append("reading order: a project is extracted before the summary")
 
     raw = "\n".join(pages)

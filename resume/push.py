@@ -27,6 +27,7 @@ exist only on the runner, which is thrown away when the job ends; they are never
     py -m resume.push --dry              # build them, send nothing
     py -m resume.push --n 1 --any-day    # use the latest run even if it is not today's (testing)
     py -m resume.push --key 1a2b3c4d5e6f # one pack for one item — what a 📦 tap / `/pack 3` runs
+    py -m resume.push --intake 1a2b3c4d5e6f  # a job EDI handed over (packet fetched from the bot)
 """
 
 from __future__ import annotations
@@ -123,6 +124,13 @@ def card(item: dict, score: int, verdict, pack: dict, fit_rows: list, note: str 
             lines.append(f"⏳ closes {e(dl)} ({left} day{'s' if left != 1 else ''})")
         except ValueError:
             lines.append(f"⏳ closes {e(dl)}")
+    rep = pack.get("report") or {}
+    how = {"evidence": f"Tailored: your own sentences answer {len(rep.get('role_section') or [])} of its asks",
+           "model": "Thinly tailored: few asks matched, one verified model sentence added",
+           "failed": "⚠ Tailoring failed: this is your base resume"}.get(rep.get("tailoring", ""), "")
+    if how:
+        ch = rep.get("changed")
+        lines.append(e(how + (f" · {ch[0]} of {ch[1]} lines changed for this job" if ch else "")))
     lines.append("<i>Resume PDF + DOCX + job.md attached. Read job.md's checklist, then apply by hand.</i>")
 
     text = "\n".join(lines)
@@ -202,7 +210,8 @@ def _fonts(pdf: Path | None) -> str:
 
 # ─── the run ──────────────────────────────────────────────────────────────────────────────
 
-def pack_one(item: dict, score: int, profile: dict, dry: bool = False, requested: bool = False) -> str:
+def pack_one(item: dict, score: int, profile: dict, dry: bool = False, requested: bool = False,
+             full: dict | None = None) -> str:
     """Build one pack and (unless dry) send it. Returns "sent", "built", "skipped" or "failed".
     `requested` is a pack he asked for by tapping 📦 — it is built even when the full listing says ⛔,
     because he asked; the card says so."""
@@ -211,7 +220,7 @@ def pack_one(item: dict, score: int, profile: dict, dry: bool = False, requested
     from .fit import skill_evidence  # noqa: PLC0415
     say = print
     label = "" if config.PUBLIC_LOGS else f" {item.get('title', '')[:60]}"
-    full = fetch_full_jd(item)
+    full = fetch_full_jd(item) if full is None else full
     verdict = eligibility_of(item, full)
     if verdict.level == "NO" and not requested:
         say(f"[push] skipped{label}: the full listing rules you out")
@@ -263,6 +272,59 @@ def find_by_key(key: str) -> dict | None:
             if (d.get("key") or dedup_key_from_dict(d)) == key:
                 return d
     return None
+
+
+def fetch_intake(key: str) -> dict | None:
+    """The packet EDI handed over, from the bot (GET /intake/<key>, bearer token). Never a workflow
+    input — this repo is public and run inputs are visible."""
+    from filters.target import _bot  # noqa: PLC0415
+    url, tok = _bot()
+    if not url or not re.fullmatch(r"[0-9a-f]{12}", key or ""):
+        return None
+    try:
+        r = requests.get(f"{url}/intake/{key}", headers={"Authorization": f"Bearer {tok}",
+                                                       "User-Agent": config.USER_AGENT}, timeout=config.REQUEST_TIMEOUT)
+        return r.json() if r.status_code == 200 else None
+    except (requests.RequestException, ValueError):
+        return None
+
+
+def intake_item(key: str, p: dict) -> tuple[dict, dict]:
+    """(item, full) from EDI's IntakePacket v1 — the shapes build_pack already takes."""
+    kind = "internship" if re.search(r"intern", f"{p.get('worker_type') or ''} {p.get('title') or ''}", re.I) else "job"
+    item = {"key": key, "title": f"{p.get('title', '')} — {p.get('company', '')}", "url": p.get("url") or "",
+            "source": "edi", "description": p.get("jd", ""), "tags": [kind, "edi"],
+            "requirements": p.get("requirements") or {}, "research": p.get("research"),
+            "facts": {k: v for k, v in {"company": p.get("company"), "location": p.get("location"),
+                                        "remote": (p.get("work_model") or "").lower() == "remote"}.items() if v}}
+    full = {"description": p.get("jd", ""), "company": p.get("company", ""), "location": p.get("location") or "",
+            "apply_url": p.get("url") or "", "team": p.get("team") or "",
+            "employment_type": " · ".join(x for x in [p.get("worker_type"), p.get("work_model")] if x),
+            "pay_note": "paid" if p.get("paid") is True else "unpaid" if p.get("paid") is False else "",
+            "closes": p.get("deadline") or "",
+            "remote": (p.get("work_model") or "").lower() == "remote"}
+    return item, full
+
+
+def run_intake(key: str, dry: bool = False) -> int:
+    """A job EDI handed over: fetch the packet, build its pack, send it to the OPH chat."""
+    from .apply import _profile, rescore  # noqa: PLC0415
+    profile = _profile()
+    if not profile.get("basics"):
+        print("[push] no career_profile.json here — set OH_CAREER_PROFILE (py sync_secrets.py).")
+        return 0
+    if not dry and not config.telegram_configured():
+        print("[push] Telegram is not configured — nothing sent.")
+        return 0
+    p = fetch_intake(key)
+    if not p:
+        print("[push] the bot has no packet for that key")
+        if not dry:
+            _send_text("📦 Couldn't build the resume EDI asked for: the job details were not found. "
+                       "Say \"resend to OPH\" in EDI.")
+        return 0
+    item, full = intake_item(key, p)
+    return 1 if pack_one(item, rescore(item), profile, dry, requested=True, full=full) in ("sent", "built") else 0
 
 
 def run_key(key: str, dry: bool = False) -> int:
@@ -336,6 +398,10 @@ def main() -> int:
     args = sys.argv[1:]
     if "-h" in args or "--help" in args:
         print(__doc__)
+        return 0
+    if "--intake" in args:
+        i = args.index("--intake")
+        run_intake(args[i + 1] if i + 1 < len(args) else "", dry="--dry" in args)
         return 0
     if "--key" in args:
         i = args.index("--key")

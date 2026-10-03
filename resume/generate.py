@@ -297,6 +297,10 @@ _AFFINITY = {
                "self-report", "anxiety"]),
     "data": (r"data analy|analytics|dashboard|sql|statistic|insight",
              ["benchmark", "accuracy", "corpus", "measures", "tests"]),
+    # Game studios ask about frame rates and load times: timing work. LoopLab's "lands within about
+    # 12 ms" is that problem, and before 4 Oct it fell to "also shipped" on EA's game-studio posting.
+    "games": (r"\bgames?\b|gaming|frame rates?|load times?|gameplay|real-time",
+              ["timing", " ms", "lap", "loop", "pygame", "→", "latency", "faster"]),
 }
 
 
@@ -308,7 +312,9 @@ def _relevance(p: dict, jd_low: str) -> int:
                      *(p.get("highlights") or []), *(p.get("keywords") or [])]).lower()
     score = 0
     for pattern, signals in _AFFINITY.values():
-        if re.search(pattern, jd_low):
+        # Twice, not once: EA's game-studio posting says "AI" once ("Agentic AI coding harnesses" — a
+        # tool), and that single word put an AI-memory project first on a game-studio resume.
+        if len(re.findall(pattern, jd_low)) >= 2:
             score += 4 * sum(1 for s in signals if s in text)
     score += 3 * sum(1 for t in LEXICON if _present(t, text) and _present(t, jd_low))
     words = {w for w in re.findall(r"[a-z][a-z+#.-]{4,}", jd_low)} - _STOP
@@ -323,70 +329,20 @@ _STOP = {"about", "their", "there", "which", "would", "should", "could", "these"
          "intern", "student", "students", "looking", "join", "help", "build", "work"}
 
 
-def _tailor_line(profile: dict, x: dict, projects: list[dict], jd_text: str, role: str) -> str:
-    facts = "\n".join([x.get("summary_core", ""),
+def _tailor_line(profile: dict, x: dict, projects: list[dict], jd_text: str, role: str,
+                 evidence: list[str] | None = None) -> str:
+    # The facts are the sentences that MATCHED this posting, not his Ambassador summary: fed "five
+    # working systems ... how do you make an AI agent you can trust?", the model wrote "Delivered five
+    # production-grade AI-agent systems" for a game studio (EA, 4 Oct).
+    facts = "\n".join([f"- {e}" for e in (evidence or [])[:6]] or
+                      [x.get("summary_core", ""),
                        *[f"- {p.get('x_resume_name')}: {p.get('x_tagline')} ({p.get('x_techline')})"
-                         for p in projects],
-                       "Skills: " + "; ".join(f"{g}: {', '.join(v)}"
-                                              for g, v in (x.get("skill_groups") or {}).items())])
+                         for p in projects]])
     out = complete(_TAILOR_LINE.format(voice=VOICE_RULES, role=role or "(not given)",
                                        jd=(jd_text or "")[:1800], facts=facts),
                    max_tokens=160, temperature=0.3)
     m = re.search(r"LINE:\s*(.+)", out or "")
     return m.group(1).strip().strip('"') if m else ""
-
-
-_ROLE_SECTION = """{voice}
-
-Write at most 3 bullets for a resume section titled "What I would bring to {company}".
-Each bullet connects ONE thing this job asks for (in the job's own words) to ONE specific real
-project or fact from FACTS, with its real number if it has one. Shape: "<what the job needs> — <the
-real project that shows it, and what it did>".
-Only facts from FACTS. Never claim a skill, tool or experience that is not in FACTS, even to match the
-job. No "passionate", no "excited", no "seeking", no "I am".
-Output only the bullets, one per line, each starting with "- ".
-
---- JOB ---
-{role}
-{jd}
-
---- FACTS ---
-{facts}
-"""
-
-
-def _role_section(profile: dict, x: dict, projects: list[dict], jd_text: str, role: str,
-                  company: str, report: dict) -> list[str]:
-    """Up to 3 bullets mapping what THIS job asks for to his real work — his Claude Ambassador resume
-    had exactly this ("What I would do as a Claude Campus Ambassador"), and it is the one section that
-    says "I want this job" rather than "I want a job".
-
-    It is also the riskiest text a model writes here, so every bullet must pass the verifier and the
-    voice linter individually, and the section appears only if at least TWO survive. One lonely
-    bullet reads as padding; none is better than that."""
-    if len((jd_text or "").strip()) < 300:
-        return []                     # a job blurb is not enough to map requirements honestly
-    facts = "\n".join(
-        [x.get("summary_core", "")] +
-        [f"- {p.get('x_resume_name')}: {p.get('x_tagline')}. " + " ".join(p.get("highlights") or [])[:420]
-         for p in projects])
-    out = complete(_ROLE_SECTION.format(voice=VOICE_RULES, company=company or "this role",
-                                        role=role or "", jd=jd_text[:2200], facts=facts),
-                   max_tokens=420, temperature=0.3)
-    kept = []
-    for line in (out or "").splitlines():
-        b = line.strip().lstrip("-*• ").strip()
-        if len(b) < 25:
-            continue
-        b, banned = drop_banned(b)
-        v = verify(b, profile)
-        report["removed"] += v.removed
-        report["unverified_terms"] += v.unverified_terms
-        report["unverified_numbers"] += v.unverified_numbers
-        report["banned"] += banned
-        if v.text:
-            kept.append(v.text)
-    return kept[:3] if len(kept) >= 2 else []
 
 
 def _names(text: str) -> set[str]:
@@ -427,34 +383,91 @@ def _skills_block(groups: dict, jd_low: str) -> list[str]:
                 return False
             return _present(core, jd_low) or any(
                 _present(t, jd_low) and _present(t, i.lower()) for t in LEXICON if len(t) > 1)
-        hit = [i for i in items if asked(i)]
+        # His strongest stays first: "Python (advanced)" is never pushed behind a language the job
+        # names that he has only coursework in (EA names C++; three .cpp files are not proficiency).
+        lead = [i for i in items if "(advanced)" in i]
+        hit = lead + [i for i in items if asked(i) and i not in lead]
         rest = [i for i in items if i not in hit]
         lines.append(f"**{name}:** " + " · ".join(hit + rest))
     return lines
 
 
+_AI_ROLE = r"\bai\b|\bml\b|machine learning|\bllms?\b|\bagents?\b|data scien|\bnlp\b|genai|generative"
+
+
+def _family(jd_text: str | None, role: str) -> str:
+    """"ai" or "default" — which of his headline/summary/closing variants this job gets. His base resume
+    was written for the Claude Campus Ambassador program, and before 4 Oct its "builds with Claude every
+    day… how do you make an AI agent you can trust?" went on EVERY pack, a game studio's included. AI
+    is the family when the role's title says so, or the posting keeps saying it; one mention of "Agentic
+    AI coding harnesses" in a game-studio posting is a tool, not the job. No job at all = his own resume."""
+    if not (jd_text or role):
+        return "ai"
+    if re.search(_AI_ROLE, (role or "").lower()):
+        return "ai"
+    return "ai" if len(re.findall(_AI_ROLE, (jd_text or "").lower())) >= 4 else "default"
+
+
+def _variant(x: dict, key: str, family: str) -> str:
+    return ((x.get(f"{key}_variants") or {}).get(family)
+            or {"headline": x.get("headline"), "summary": x.get("summary_core"), "closing": x.get("closing")}[key]
+            or "")
+
+
+# How many projects get full bullets; the rest fold into one "also shipped" line. Seven full projects
+# pushed the job's own section off page 1.
+FULL_PROJECTS = 5
+
+
 def _from_resume_layer(profile: dict, jd_text: str | None, role: str, report: dict,
-                       company: str = "") -> str:
+                       company: str = "", packet_req: dict | None = None) -> str:
+    from .match import match, order_highlights  # noqa: PLC0415
     x = profile["x_resume"]
     basics = profile.get("basics", {})
     jd_low = _jd_low(jd_text, role)
+    family = _family(jd_text, role)
+    report["family"] = family
+
+    # What this posting asks for, answered with his own verified sentences — no model involved, so it
+    # works when every free provider is down (they all were, for all 8 packs before 4 Oct).
+    m = match(jd_text or "", profile, packet_req) if jd_text else {"bullets": [], "rows": [], "caps": set()}
+    report["match_rows"] = m["rows"]
 
     featured = [p for p in profile.get("projects", []) if p.get("x_source") == "resume-2026-09"]
     order = {id(p): n for n, p in enumerate(featured)}
-    featured.sort(key=lambda p: (-_relevance(p, jd_low), order[id(p)]))
+    # A project that IS the evidence for one of this posting's asks leads: that is the recruiter's
+    # "does he have it?" answered twice, in the role section and again in the project itself.
+    proves = {}
+    for _, _, ev, proj in m["rows"]:
+        if proj and ev and not ev.startswith("(skills"):
+            proves[proj] = proves.get(proj, 0) + 1
+    featured.sort(key=lambda p: (-(_relevance(p, jd_low) + 15 * proves.get(p.get("x_resume_name"), 0)),
+                                 order[id(p)]))
 
     # ── the 3-second zone: name, headline, links, the knockout line ──────────────────────
-    L = [f"# {basics.get('name') or 'K MOHITH KANNAN'}", f"**{x.get('headline','')}**"]
+    L = [f"# {basics.get('name') or 'K MOHITH KANNAN'}", f"**{_variant(x, 'headline', family)}**"]
     L.append(" · ".join(x.get("links") or []))
     srm = next((e for e in profile.get("education", []) if "srm" in (e.get("institution") or "").lower()), None)
     if srm:
         L.append(f"B.Tech CSE (AI & ML) · SRM Institute of Science and Technology · "
                  f"{srm.get('startDate')}–{srm.get('endDate')}")
 
-    # ── summary: his words, plus ONE verified tailoring sentence ─────────────────────────
-    summary = x.get("summary_core", "")
-    if jd_text or role:
-        line = _tailor_line(profile, x, featured, jd_text or "", role)
+    # ── summary: his words for this kind of job, the agentic line when the job asks for AI coding
+    # tools, plus ONE verified model sentence when a free model is up ────────────────────────────
+    summary = _variant(x, "summary", family)
+    if "agentic" in m["caps"] and x.get("agentic_line") and family != "ai":
+        n = re.match(r"(\d+) commits", x["agentic_line"])
+        if n:
+            summary += (f" I build with Claude Code every day: {n.group(1)} commits co-authored with it "
+                        f"across six of my own repositories since June 2026.")
+    # The model writes only when the matcher found too little. Measured on EA (4 Oct): fed the matched
+    # evidence, four of four model sentences ended "demonstrating rapid feature delivery for mobile
+    # games"-style claims, one fused two facts into a false one ("a Flappy Bird clone with REST-API token
+    # sync") that the verifier cannot catch because each word is backed — and all of it repeated the
+    # role section. His own verified sentences ARE the tailoring; the model is the fallback.
+    if (jd_text or role) and len(m["bullets"]) < 2:
+        line = _tailor_line(profile, x, featured, jd_text or "", role,
+                            [ev for _, _, ev, _ in m["rows"] if ev and not ev.startswith("(skills")])
         if line:
             line, banned = drop_banned(line)
             v = verify(line, profile)
@@ -467,32 +480,56 @@ def _from_resume_layer(profile: dict, jd_text: str | None, role: str, report: di
                 report["tailor_line"] = v.text
     L += ["", "## Summary", summary]
 
-    # ── projects: most relevant first; his bullets verbatim; one emphasis per project ──────
+    # ── what this job asks for → what shows it (right under the summary: the recruiter's 3 s) ──
+    if len(m["bullets"]) >= 2:
+        L += ["", f"## What I would bring to {company or 'this role'}", *[f"- {b}" for b in m["bullets"]]]
+        report["role_section"] = m["bullets"]
+
+    # ── projects: most relevant first; within each, the bullet this job cares about first ──
     # Headed "Projects", not his "Selected Work": older parsers classify sections by heading
-    # words, and resume.ats flagged the creative label on our own output. Content unchanged.
+    # words, and resume.ats flagged the creative label on our own output.
+    full, rest = (featured[:FULL_PROJECTS], featured[FULL_PROJECTS:]) if jd_text else (featured, [])
     L += ["", "## Projects"]
-    for p in featured:
+    for n, p in enumerate(full):
         L.append(f"**{p.get('x_resume_name')}** — {p.get('x_tagline','')} · *{p.get('x_when','')}*")
-        block = "\n".join(f"- {h}" for h in p.get("highlights") or [])
-        L.append(bold_budget(block))
+        hl = order_highlights(p.get("highlights") or [], m["caps"], jd_low) if jd_text else (p.get("highlights") or [])
+        if jd_text:
+            # The two that matter most get three bullets, the next two, the rest one — the one this
+            # posting cares about, since order_highlights put it first. Keeps a tailored pack to 2 pages.
+            hl = hl[:3 if n < 2 else 2 if n < 3 else 1]
+        L.append(bold_budget("\n".join(f"- {h}" for h in hl)))
         if p.get("x_techline"):
             link = (p.get("url") or "").replace("https://", "")
             L.append(f"*{p['x_techline']}*" + (f" · {link}" if link and "github" in link else ""))
         L.append("")
+    if rest:
+        L += ["- **Also shipped:** " + " · ".join(f"**{p.get('x_resume_name')}**, {p.get('x_tagline','')}"
+                                                 for p in rest), ""]
 
-    if jd_text:
-        role_bullets = _role_section(profile, x, featured, jd_text, role, company, report)
-        if role_bullets:
-            L += [f"## What I would bring to {company or 'this role'}",
-                  *[f"- {b}" for b in role_bullets], ""]
-            report["role_section"] = role_bullets
+    def _closest(lines: list[str], keep: int) -> list[str]:
+        """For a tailored pack, the lines this posting would care about most, in his order. EA's pack
+        ran to 3 pages with all of them; the campus-events line says least to a game studio."""
+        if not jd_text or len(lines) <= keep:
+            return lines
+        words = {w for w in re.findall(r"[a-z][a-z+#-]{4,}", jd_low)} - _STOP
+        # A line that IS the evidence for one of the posting's asks outranks word overlap: EA asks
+        # for "good documentation", and "Writing and explaining" is the line that shows it.
+        evidence = " ".join(ev for _, _, ev, _ in m["rows"] if ev).lower()
+        score = {id(c): sum(1 for w in words if w in c.lower())
+                 + (20 if any(s[:60].lower() in evidence for s in re.split(r"(?<=[.!?])\s+",
+                                                                          re.sub(r"^\*\*[^*]+:\*\*\s*", "", c)))
+                    else 0) for c in lines}
+        best = set(map(id, sorted(lines, key=lambda c: -score[id(c)])[:keep]))
+        return [c for c in lines if id(c) in best]
 
     if x.get("community"):
-        community = _drop_repeats(x["community"], x.get("programs") or [])
+        community = _closest(_drop_repeats(x["community"], x.get("programs") or []), 2)
         L += ["## Campus & Community", *[f"- {c}" for c in community], ""]
     if x.get("programs"):
-        L += ["## Programs & Selections", *[f"- {c}" for c in x["programs"]], ""]
-    if x.get("certifications_line"):
+        L += ["## Programs & Selections", *[f"- {c}" for c in _closest(x["programs"], 3)], ""]
+    # The certificate list is all AI and cloud courses: proof for an AI role, a paragraph a game studio
+    # skips. Off the page for other roles — job.md still has everything.
+    if x.get("certifications_line") and family == "ai":
         L += ["## Certifications — 15+, selected", x["certifications_line"], ""]
     if x.get("skill_groups"):
         L += ["## Technical Skills", *_skills_block(x["skill_groups"], jd_low), ""]
@@ -506,8 +543,9 @@ def _from_resume_layer(profile: dict, jd_text: str | None, role: str, report: di
         study = re.sub(r"\s+—\s+", ", ", e.get("studyType", "") or "")
         L.append(f"- **{e.get('institution','')}** — {study}" + (f" · {extra}" if extra else ""))
 
-    if x.get("closing"):
-        L += ["", f"*{x['closing']}*"]
+    closing = _variant(x, "closing", family)
+    if closing:
+        L += ["", f"*{closing}*"]
     return "\n".join(L)
 
 
@@ -518,7 +556,7 @@ def generate_resume(profile: dict, jd_text: str | None = None, role: str = "", c
 
 
 def generate_resume_ex(profile: dict, jd_text: str | None = None, role: str = "",
-                       company: str = "") -> tuple[str, dict]:
+                       company: str = "", packet_req: dict | None = None) -> tuple[str, dict]:
     """(markdown, report). The report says what the verifier removed, which job skills you do not
     have yet, voice problems, and where facts.yml has moved on from the profile.
 
@@ -526,9 +564,10 @@ def generate_resume_ex(profile: dict, jd_text: str | None = None, role: str = ""
     writes a single verified sentence. Without one, the older path runs — now also verified."""
     report = {"removed": [], "unverified_terms": [], "unverified_numbers": [], "banned": [],
               "gaps": jd_gaps(f"{role} {jd_text or ''}", profile) if (jd_text or role) else [],
-              "drift": facts_drift(profile), "lint": [], "tailor_line": "", "role_section": []}
+              "drift": facts_drift(profile), "lint": [], "tailor_line": "", "role_section": [],
+              "match_rows": [], "family": ""}
     if profile.get("x_resume"):
-        md = _from_resume_layer(profile, jd_text, role, report, company)
+        md = _from_resume_layer(profile, jd_text, role, report, company, packet_req)
     else:
         md = _legacy_resume(profile, jd_text, report)
     report["lint"] = lint(md)

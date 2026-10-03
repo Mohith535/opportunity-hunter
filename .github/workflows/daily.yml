@@ -33,6 +33,10 @@ on:
         description: "One pack for this item key (what a 📦 tap / /pack N sends); implies packs_only"
         type: string
         default: ""
+      intake_key:
+        description: "One pack for a job EDI handed over (the packet itself stays in the bot's storage)"
+        type: string
+        default: ""
 
 permissions:
   contents: write          # needed to commit seen_items.json / history.json back
@@ -121,7 +125,7 @@ jobs:
           fi
 
       - name: Run the hunt
-        if: ${{ !inputs.packs_only && !inputs.pack_key }}
+        if: ${{ !inputs.packs_only && !inputs.pack_key && !inputs.intake_key }}
         env:
           # Phase 6: the hunt reads his ✅/⏭ taps from the bot and hands back what it learned.
           OH_WORKER_URL: ${{ secrets.OH_WORKER_URL }}
@@ -129,7 +133,7 @@ jobs:
         run: python main.py --now
 
       - name: Persist dedup + history
-        if: ${{ !inputs.packs_only && !inputs.pack_key }}
+        if: ${{ !inputs.packs_only && !inputs.pack_key && !inputs.intake_key }}
         run: |
           git config user.name "opportunity-hunter[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -167,9 +171,12 @@ jobs:
           # Through env, never ${{ }} inside the script: an input pasted into a shell line is a
           # script-injection hole (GitHub's own hardening guide). push.py also checks the key's shape.
           PACK_KEY: ${{ inputs.pack_key }}
+          INTAKE_KEY: ${{ inputs.intake_key }}
           PACKS_ONLY: ${{ inputs.packs_only }}
         run: |
-          if [ -n "$PACK_KEY" ]; then
+          if [ -n "$INTAKE_KEY" ]; then
+            python -m resume.push --intake "$INTAKE_KEY"
+          elif [ -n "$PACK_KEY" ]; then
             python -m resume.push --key "$PACK_KEY"
           elif [ "$PACKS_ONLY" = "true" ]; then
             python -m resume.push --n 1 --any-day

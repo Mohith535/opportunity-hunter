@@ -183,12 +183,17 @@ JD = ("We build developer tooling for AI agents. You will design governance and 
 three = ("- Permission systems for agents — NitroWatch sorts every MCP tool into three risk tiers.\n"
          "- Rigorous benchmarks — nova-cortex reached roughly 92% of the model's accuracy at a quarter of its calls.\n"
          "- SEO and content marketing — I grew organic traffic with meta tags.")
-md3, rep3 = build(three, JD, "AI Tooling Intern", "Anthropic")
-check("31. role section kept with the 2 true bullets; the lying one is removed",
-      "## What I would bring to Anthropic" in md3 and len(rep3["role_section"]) == 2
-      and "SEO" not in md3.split("## What I would bring")[1].split("##")[0], str(rep3["role_section"]))
-md1, rep1 = build("- Permission systems — NitroWatch sorts tools into three risk tiers.\n- SEO — meta tags.", JD, "X", "Y")
-check("32. one surviving bullet is not enough — section omitted", "What I would bring" not in md1)
+# Since 4 Oct the role section is NOT model-written: resume/match.py quotes each ask and answers it with
+# a sentence already in his profile. These replace the old "verifier strips the lying bullet" checks —
+# a model reply can no longer reach this section at all, which is the stronger guarantee.
+JD2 = JD + "You will improve performance and latency of the services. "
+md3, rep3 = build(three, JD2, "AI Tooling Intern", "Anthropic")
+sec3 = md3.split("## What I would bring to Anthropic")[1].split("##")[0] if "## What I would bring to Anthropic" in md3 else ""
+check("31. role section is built from his own sentences, quoting the posting — the model's lying "
+      "'SEO' bullet cannot reach it", sec3 and len(rep3["role_section"]) >= 2 and "SEO" not in md3
+      and "“" in sec3 and "quarter of its calls" in sec3, str(rep3["role_section"]))
+md1, rep1 = build(three, "We build tools. You care about safety and shipping. Experience with MCP is a plus. " * 3, "X", "Y")
+check("32. fewer than two matched asks — section omitted", "What I would bring" not in md1, str(rep1["role_section"]))
 md0, rep0 = build(three, "Short blurb.", "X", "Y")
 check("33. a job blurb is too thin to map honestly — no section", "What I would bring" not in md0)
 

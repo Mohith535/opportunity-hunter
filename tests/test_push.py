@@ -255,6 +255,25 @@ finally:
     config.HISTORY_FILE = _old_hist
     os.unlink(hp)
 
+# ── 10b. a job EDI handed over (IntakePacket v1) ─────────────────────────────────────────────
+pk = {"v": 1, "source": "edi", "title": "Software Engineer Intern", "company": "Electronic Arts",
+      "team": "EA Mobile - Slingshot Games (India)", "location": "Hyderabad, Telangana, India",
+      "work_model": "Hybrid", "worker_type": "Intern - Temporary Employee", "paid": True, "deadline": None,
+      "url": "https://jobs.ea.com/x/216034", "jd": "posting " * 60,
+      "requirements": {"must": ["Solid programming skills"], "bonus": [], "responsibilities": []},
+      "keywords": ["Java"], "research": {"answer": "They make mobile games.", "sources": []},
+      "his_words": "PRIVATE WORDS", "edi_ref": "apply-to-ea"}
+it, fl = P.intake_item("abcdef123456", pk)
+check("10d. packet → item: key, title, url, kind, EDI's exact requirements carried through",
+      it["key"] == "abcdef123456" and it["title"] == "Software Engineer Intern — Electronic Arts"
+      and it["tags"][0] == "internship" and it["requirements"]["must"] == ["Solid programming skills"])
+check("10e. packet → full: company, place, paid, hybrid is NOT remote",
+      fl["company"] == "Electronic Arts" and fl["location"].startswith("Hyderabad") and fl["pay_note"] == "paid"
+      and fl["remote"] is False and "Hybrid" in fl["employment_type"])
+check("10f. his private words never travel into the pack", "PRIVATE WORDS" not in json.dumps([it, fl]))
+check("10g. --intake refuses anything that is not a 12-hex key, without a network call",
+      P.fetch_intake("../etc/passwd") is None and P.fetch_intake("") is None)
+
 # ── 11. the 📦 button on the digest ──────────────────────────────────────────────────────────
 import main as M
 intern = Opportunity("Backend Developer Internship", "https://x/i", "unstop", "internship", tags=["internship"])
