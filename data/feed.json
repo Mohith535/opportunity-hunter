@@ -1,283 +1,6 @@
 {
-  "updated_at": "2026-10-02",
+  "updated_at": "2026-10-03",
   "items": [
-    {
-      "key": "af780f3e14ff",
-      "title": "An Interpretable Memory Decision Controller for LLM Agents Based on Three-Signal Complementarity: Decoupling Confidence and Consistency",
-      "url": "https://arxiv.org/abs/2609.22043v1",
-      "source": "arxiv",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "research"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "6f1170a52c32",
-      "title": "MLAI Hackathon 2026",
-      "url": "https://mlai-hackathon.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-10-16",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "86075813d21a",
-      "title": "Cyber Security Internship",
-      "url": "https://unstop.com/internships/cyber-security-internship-skillorbit-private-limited-1758945",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-04",
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0d08f6ddeb36",
-      "title": "UpForge AI & Future Skills IQ Challenge 2026",
-      "url": "https://unstop.com/quiz/upforge-ai-future-skills-iq-challenge-2026-upforge-global-1758668",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-03",
-      "tags": [
-        "competition"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "807170e5d3c3",
-      "title": "AI Imagination Challenge - Build with Gemini",
-      "url": "https://unstop.com/workshops-webinars/ai-imagination-challenge-build-with-gemini-rajiv-gandhi-university-of-knowledge-technologies-rgukt-ii-1759193",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-09-25",
-      "tags": [
-        "workshop"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "6484a53d32d6",
-      "title": "Google Developer Groups on Campus (Lead)",
-      "url": "https://developers.google.com/community",
-      "source": "programs",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "ambassador",
-        "program",
-        "google",
-        "community",
-        "students"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "afdc7383315c",
-      "title": "RRR-A Game Jam",
-      "url": "https://unstop.com/hackathons/rrr-a-game-jam-indian-institute-of-technology-indian-school-of-mines-iit-ism-dhanbad-1759129",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-09-28",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5b5418d0776d",
-      "title": "Java Developer Internship",
-      "url": "https://unstop.com/internships/java-developer-internship-unstop-tech-fair-20-yugensoft-innovations-1759170",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-06",
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "86bc173ded4d",
-      "title": "Software Ideathon I",
-      "url": "https://unstop.com/competitions/software-ideathon-i-sai-ram-engineering-college-1758555",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-07",
-      "tags": [
-        "competition"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "8def84690e3b",
-      "title": "Artificial Intelligence's Role in Current Tech Infrastructure",
-      "url": "https://unstop.com/workshops-webinars/artificial-intelligences-role-in-current-tech-infrastructure-techbairn-1758808",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-09-23",
-      "tags": [
-        "workshop"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0bb35b2585bd",
-      "title": "Amazon Selling Partner API Integration Challenge",
-      "url": "https://unstop.com/hackathons/amazon-selling-partner-api-integration-challenge-plantex-india-1759084",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-01",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f526fba2e34c",
-      "title": "React.js Developer Internship",
-      "url": "https://unstop.com/internships/reactjs-developer-internship-korvexia-technologies-1758940",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-04",
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "198311fe0ad8",
-      "title": "Beyond the Classroom: Exploring Android Development & Industry Trends",
-      "url": "https://unstop.com/workshops-webinars/beyond-the-classroom-exploring-android-development-industry-trends-techbairn-research-1758632",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-09-22",
-      "tags": [
-        "workshop"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "559352782952",
-      "title": "Technorazz 2026",
-      "url": "https://unstop.com/hackathons/technorazz-2026-jaipur-national-university-jnu-jaipur-1757968",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-09-28",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ac683ea40a6d",
-      "title": "Software Developer Internship",
-      "url": "https://unstop.com/internships/software-developer-internship-aalteon-1758772",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-03",
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "9fc66803511d",
-      "title": "The AI Transformation of Work: Inside Modern Tech Teams",
-      "url": "https://unstop.com/workshops-webinars/the-ai-transformation-of-work-inside-modern-tech-teams-techbairn-1758613",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-09-22",
-      "tags": [
-        "workshop"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "69da41a379ad",
-      "title": "The Black-Box Protocol: Stage 02 - System Matrix",
-      "url": "https://unstop.com/hackathons/the-black-box-protocol-stage-02-system-matrix-techhelp4u-1758551",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-09-27",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f95f7a50fd9f",
-      "title": "Content Creation / Writer Internship",
-      "url": "https://unstop.com/internships/content-creation-writer-internship-ourselfstudy-1758136",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-02",
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "678d84a11f02",
-      "title": "Code Smarter with AI: Learning to Code in the Age of LLMs",
-      "url": "https://unstop.com/workshops-webinars/code-smarter-with-ai-learning-to-code-in-the-age-of-llms-techbairn-1758618",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-09-22",
-      "tags": [
-        "workshop"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "203986e55ba0",
-      "title": "Nakshatra - The Aerospace Hackathon 2026",
-      "url": "https://unstop.com/hackathons/nakshatra-the-aerospace-hackathon-2026-madhav-institute-of-technology-and-science-mits-gwalior-1751540",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-09-26",
-      "tags": [
-        "hackathon"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0e6681d57a9d",
-      "title": "SaaS Development Internship",
-      "url": "https://unstop.com/internships/saas-development-internship-revino-solutions-private-limited-1758777",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-09-29",
-      "tags": [
-        "internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "526c9925142b",
       "title": "The Great Agent Hackathon",
@@ -488,6 +211,19 @@
       "action_plan": []
     },
     {
+      "key": "807170e5d3c3",
+      "title": "AI Imagination Challenge - Build with Gemini",
+      "url": "https://unstop.com/workshops-webinars/ai-imagination-challenge-build-with-gemini-rajiv-gandhi-university-of-knowledge-technologies-rgukt-ii-1759193",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-25",
+      "tags": [
+        "workshop"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "fa671718bf0b",
       "title": "Build Fast with AI: AI Build Challenge 2026",
       "url": "https://unstop.com/hackathons/build-fast-with-ai-ai-build-challenge-2026-build-fast-with-ai-1758453",
@@ -527,6 +263,19 @@
       "action_plan": []
     },
     {
+      "key": "8def84690e3b",
+      "title": "Artificial Intelligence's Role in Current Tech Infrastructure",
+      "url": "https://unstop.com/workshops-webinars/artificial-intelligences-role-in-current-tech-infrastructure-techbairn-1758808",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-23",
+      "tags": [
+        "workshop"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "1c3a2f4f65c3",
       "title": "Datathon 26",
       "url": "https://unstop.com/hackathons/datathon-26-symbiosis-university-of-applied-sciences-suas-indore-madhya-pradesh-1758550",
@@ -548,6 +297,19 @@
       "deadline": "2026-10-05",
       "tags": [
         "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "198311fe0ad8",
+      "title": "Beyond the Classroom: Exploring Android Development & Industry Trends",
+      "url": "https://unstop.com/workshops-webinars/beyond-the-classroom-exploring-android-development-industry-trends-techbairn-research-1758632",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-22",
+      "tags": [
+        "workshop"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -579,6 +341,19 @@
       "action_plan": []
     },
     {
+      "key": "9fc66803511d",
+      "title": "The AI Transformation of Work: Inside Modern Tech Teams",
+      "url": "https://unstop.com/workshops-webinars/the-ai-transformation-of-work-inside-modern-tech-teams-techbairn-1758613",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-22",
+      "tags": [
+        "workshop"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "fe4de1f233b0",
       "title": "IDEAForge 2026 – From Problems to Possibilities | Online Ideathon",
       "url": "https://unstop.com/hackathons/ideaforge-2026-from-problems-to-possibilities-online-ideathon-noida-institue-of-engineering-tecnology-1758463",
@@ -600,6 +375,19 @@
       "deadline": "2026-10-05",
       "tags": [
         "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "678d84a11f02",
+      "title": "Code Smarter with AI: Learning to Code in the Age of LLMs",
+      "url": "https://unstop.com/workshops-webinars/code-smarter-with-ai-learning-to-code-in-the-age-of-llms-techbairn-1758618",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-22",
+      "tags": [
+        "workshop"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1300,6 +1088,214 @@
       "source": "unstop",
       "score": 10,
       "deadline": "2026-10-07",
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4057702f5ae5",
+      "title": "Behind the Apps: Engineering for Scale",
+      "url": "https://unstop.com/workshops-webinars/behind-the-apps-engineering-for-scale-techbairn-research-1760255",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-25",
+      "tags": [
+        "workshop"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c22f5f148362",
+      "title": "Build With AI: Basics",
+      "url": "https://learn-ai-basics.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-10-26",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6b1794188847",
+      "title": "Operations Management Internship",
+      "url": "https://unstop.com/internships/operations-management-internship-educorn-learning-pvt-ltd-1761333",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-29",
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0f3755e561c3",
+      "title": "Free Demo on Azure Data Engineer",
+      "url": "https://unstop.com/workshops-webinars/free-demo-on-azure-data-engineer-quality-thought-info-systems-1761413",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-29",
+      "tags": [
+        "workshop"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f5cfc117e114",
+      "title": "Data Science Internship",
+      "url": "https://unstop.com/internships/data-science-internship-kukbit-sl-1761158",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-08",
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "785a073b73e3",
+      "title": "CRSU Hackathon 2026",
+      "url": "https://unstop.com/hackathons/crsu-hackathon-2026-romeo-juliet-ltd-1751879",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-02",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a37ba84b6b99",
+      "title": "AI Content Internship",
+      "url": "https://unstop.com/internships/ai-content-internship-reve-cult-tech-pvt-ltd-1761297",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-30",
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "663bef304f7f",
+      "title": "From College to Software Industry: Skills Every Engineer Should Build",
+      "url": "https://unstop.com/workshops-webinars/from-college-to-software-industry-skills-every-engineer-should-build-techbairn-1761237",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-27",
+      "tags": [
+        "workshop"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4ed69ca787c5",
+      "title": "Mozilla CHRIST Human Scale AI Buildathon 2026",
+      "url": "https://unstop.com/hackathons/mozilla-christ-human-scale-ai-buildathon-2026-christ-deemed-to-be-university-1759745",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-05",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "70c7e6fed11c",
+      "title": "Growth & Strategy Internship",
+      "url": "https://unstop.com/internships/content-creator-internship-offsyllabus-1761161",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-08",
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f88a7714fdd1",
+      "title": "AI in Modern Tech: Understanding the Bigger Picture",
+      "url": "https://unstop.com/workshops-webinars/ai-in-modern-tech-understanding-the-bigger-picture-techbairn-1761225",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-27",
+      "tags": [
+        "workshop"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "fb39c69d344a",
+      "title": "Byteathon",
+      "url": "https://unstop.com/hackathons/byteathon-noorul-islam-center-for-higher-education-1757504",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-02",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "75553ced7879",
+      "title": "Management Internship",
+      "url": "https://unstop.com/internships/management-intern-regex-software-services-1761195",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-09-30",
+      "tags": [
+        "internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0e9266d669cf",
+      "title": "The Software Engineering Career Map: Roles, Skills, Salaries & Growth",
+      "url": "https://unstop.com/workshops-webinars/the-software-engineering-career-map-roles-skills-salaries-growth-impacteers-1761218",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-25",
+      "tags": [
+        "workshop"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7af616ad604f",
+      "title": "Computer Vision AI Hackathon",
+      "url": "https://unstop.com/hackathons/computer-vision-ai-hackathon-e-cell-iit-bombay-1760776",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-11",
+      "tags": [
+        "hackathon"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2a68d357ef91",
+      "title": "Project Management Internship",
+      "url": "https://unstop.com/internships/project-management-internship-regex-software-services-1761149",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-08",
       "tags": [
         "internship"
       ],
