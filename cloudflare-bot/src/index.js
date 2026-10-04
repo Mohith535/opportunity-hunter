@@ -39,6 +39,7 @@ export default class extends WorkerEntrypoint {
     ORIGIN = url.origin;
     if (url.pathname === "/target") return targetApi(request, env);
     if (url.pathname.startsWith("/intake/")) return intakeApi(request, env, url.pathname.slice(8));
+    if (url.pathname === "/packs") return packsApi(request, env);
     if (url.pathname === "/tracker" || url.pathname === "/learned") return learnApi(request, env, url.pathname);
     if (url.pathname === "/app")
       return new Response(APP_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" } });
@@ -360,6 +361,28 @@ async function startPack(env, key, input = "pack_key") {
   });
 }
 
+// Which Telegram files make up each pack the cloud sent — the laptop's `py -m resume.sync` downloads
+// them into applications/<slug>/. PUT from the cloud build, GET from the laptop; newest first, 200 kept.
+async function packsApi(request, env) {
+  const auth = request.headers.get("Authorization") || "";
+  if (!env.BOT_API_TOKEN || !(await sameSecret(auth, "Bearer " + env.BOT_API_TOKEN)))
+    return new Response("unauthorized", { status: 401 });
+  const list = await kvGet(env, "packs", []);
+  if (request.method === "GET") return Response.json(list, { headers: { "Cache-Control": "no-store" } });
+  if (request.method === "PUT") {
+    const b = await request.json().catch(() => null);
+    const ok = b && typeof b.slug === "string" && /^[A-Za-z0-9._-]{1,120}$/.test(b.slug) && Array.isArray(b.files)
+      && b.files.length <= 6 && b.files.every((f) => f && typeof f.file_id === "string" && typeof f.name === "string"
+        && f.name.length <= 160 && f.file_id.length <= 300);
+    if (!ok) return new Response("bad pack", { status: 400 });
+    const entry = { slug: b.slug, key: String(b.key || "").slice(0, 12), title: String(b.title || "").slice(0, 140),
+      files: b.files.map((f) => ({ name: f.name, file_id: f.file_id })), at: new Date().toISOString() };
+    await kvPut(env, "packs", [entry, ...list.filter((x) => x.slug !== b.slug)].slice(0, 200));
+    return Response.json({ ok: true });
+  }
+  return new Response("method not allowed", { status: 405 });
+}
+
 // The packet, for the cloud build only. Never a workflow input: this repo is public, and run inputs show.
 async function intakeApi(request, env, key) {
   const auth = request.headers.get("Authorization") || "";
@@ -381,7 +404,8 @@ async function appApi(request, env, route) {
   if (route === "state" && request.method === "GET") {
     const entry = (await kvGet(env, "target", null)) || {};
     const top = (await getFeed(env)).slice(0, 15).map((it) => ({
-      key: it.key, title: it.title, score: it.score, source: it.source, deadline: it.deadline || "", url: it.url }));
+      key: it.key, title: it.title, score: it.score, source: it.source, deadline: it.deadline || "", url: it.url,
+      pitch: it.pitch || "" }));
     const learned = await kvGet(env, "learned", null);
     return json({ target: entry.target || null, updated_at: entry.updated_at || "", source: entry.source || "", top, learned });
   }

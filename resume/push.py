@@ -102,6 +102,13 @@ def card(item: dict, score: int, verdict, pack: dict, fit_rows: list, note: str 
     who = " · ".join(x for x in [pack.get("company") or "", where, pay] if x)
 
     lines = [f"📄 <b>{e((item.get('title') or 'Untitled')[:110])}</b>"]
+    try:
+        from filters.pitch import pitch  # noqa: PLC0415
+        hook = pitch(item, personal=True)
+        if hook:
+            lines.append(e(hook.replace("\n", " · ")[:220]))
+    except Exception:  # noqa: BLE001 — the card goes out without a pitch rather than not at all
+        pass
     if who:
         lines.append(e(who[:140]))
     head = f"{verdict.icon} <b>{e(verdict.label)}</b> · {score}/10"
@@ -157,7 +164,7 @@ def buttons(item: dict, pack: dict) -> list:
 
 # ─── sending ──────────────────────────────────────────────────────────────────────────────
 def _send_document(path: Path, name: str, caption: str = "", keyboard: list | None = None,
-                   reply_to: int | None = None, silent: bool = False) -> int | None:
+                   reply_to: int | None = None, silent: bool = False, record: list | None = None) -> int | None:
     """sendDocument; returns the message id, or None. Errors are logged by type and Telegram's own
     description only — a requests exception's text contains the URL, and the URL contains the token."""
     data = {"chat_id": config.TELEGRAM_CHAT_ID, "disable_notification": "true" if silent else "false"}
@@ -182,7 +189,10 @@ def _send_document(path: Path, name: str, caption: str = "", keyboard: list | No
         log(f"[push] Telegram refused a file: HTTP {r.status_code} {str(body.get('description', ''))[:120]}",
             level="WARN")
         return None
-    return (body.get("result") or {}).get("message_id")
+    res = body.get("result") or {}
+    if record is not None and (res.get("document") or {}).get("file_id"):
+        record.append({"name": name, "file_id": res["document"]["file_id"]})   # for the laptop sync
+    return res.get("message_id")
 
 
 def _send_text(text: str) -> None:
@@ -249,14 +259,33 @@ def pack_one(item: dict, score: int, profile: dict, dry: bool = False, requested
     files.append((pack["out"] / "job.md", f"{slug}-job.md"))
     if not pdf and not pack["docx"]:
         files.append((pack["out"] / "resume.md", f"{slug}-resume.md"))
-    first = _send_document(files[0][0], files[0][1], caption, buttons(item, pack))
+    sent: list = []
+    first = _send_document(files[0][0], files[0][1], caption, buttons(item, pack), record=sent)
     if first is None:
         say(f"[push] could not send pack{label}")
         return "failed"
     for path, name in files[1:]:
-        _send_document(path, name, reply_to=first, silent=True)
-    say(f"[push] sent{label}: {status}")
+        _send_document(path, name, reply_to=first, silent=True, record=sent)
+    synced = record_pack(item, slug, sent)
+    say(f"[push] sent{label}: {status}" + ("" if synced else " (not recorded for laptop sync)"))
     return "sent"
+
+
+def record_pack(item: dict, slug: str, files: list[dict]) -> bool:
+    """Tell the bot which Telegram files make up this pack, so `py -m resume.sync` on the laptop can
+    put them in applications/<slug>/. His words, 4 Oct: "when I went back to the application folders
+    to apply, there is no resume for the one I got a message for … everything should be in one folder"."""
+    from filters.target import _bot  # noqa: PLC0415
+    url, tok = _bot()
+    if not url or not files:
+        return False
+    try:
+        r = requests.put(f"{url}/packs", headers={"Authorization": f"Bearer {tok}", "User-Agent": config.USER_AGENT},
+                         json={"slug": slug, "key": item.get("key") or "", "title": (item.get("title") or "")[:140],
+                               "files": files}, timeout=config.REQUEST_TIMEOUT)
+        return r.ok
+    except requests.RequestException:
+        return False
 
 
 def find_by_key(key: str) -> dict | None:

@@ -459,6 +459,14 @@ def build_job_md(item: dict, full: dict, report: dict | None = None) -> str:
             L.append(f"| {kind.get(prio, '')} | {line.replace('|', '/')} | {shown.replace('|', '/')} |")
         L.append("")
 
+    # The form's screening questions, drafted from his evidence (resume/questions.py). A failure here
+    # costs the section, never the pack.
+    try:
+        from .questions import section as _questions  # noqa: PLC0415
+        L += _questions(item, profile, rows_ask)
+    except Exception as e:  # noqa: BLE001
+        log(f"[apply] screening questions skipped: {type(e).__name__}")
+
     if rows_fit:
         mark = {BUILT: "✓ built", LEARNED: "◐ studied", GAP: "✗ gap"}
         L += ["## Do you fit?", "",

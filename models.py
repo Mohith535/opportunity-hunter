@@ -71,6 +71,7 @@ class Opportunity:
     ai_summary: str = ""             # Phase 2: one-line "why this matters for Mohith"
     action_plan: list[str] = field(default_factory=list)  # Phase 2: suggested steps
     dimensions: dict = field(default_factory=dict)        # Phase 2: per-dimension scores
+    pitch: str = ""                  # 2-line hook from job facts only (filters/pitch.py) — never his floor
 
     raw: dict = field(default_factory=dict)  # source-specific extras
 

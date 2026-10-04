@@ -62,6 +62,7 @@
   .job .t{font-weight:600;line-height:1.3}
   .job .m{color:var(--soft);font-size:12.5px;margin-top:2px}
   .score{font-variant-numeric:tabular-nums;font-weight:700;color:var(--link)}
+  .job .hook{font-size:13px;margin-top:3px;line-height:1.35}
   .toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:var(--ink);color:var(--bg);
     padding:10px 16px;border-radius:99px;font-weight:600;font-size:13.5px;opacity:0;transition:opacity .2s;pointer-events:none;max-width:90vw}
   .toast.on{opacity:1}
@@ -285,7 +286,12 @@
       m.innerHTML = '<span class="score"></span>';
       m.firstChild.textContent = it.score + "/10";
       m.appendChild(document.createTextNode(" · " + (it.source || "") + (it.deadline ? " · closes " + it.deadline : "")));
-      info.appendChild(t); info.appendChild(m);
+      info.appendChild(t);
+      if (it.pitch) {                      // money · name · place · urgency — why this one is worth opening
+        var hk = document.createElement("div"); hk.className = "hook"; hk.textContent = it.pitch.split("\n").join(" · ");
+        info.appendChild(hk);
+      }
+      info.appendChild(m);
       var b = document.createElement("button"); b.className = "btn primary"; b.type = "button"; b.textContent = "📦 Pack";
       b.onclick = function () {
         b.disabled = true; b.textContent = "Starting…";

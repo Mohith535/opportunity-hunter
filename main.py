@@ -184,6 +184,13 @@ def _telegram_digest(crit, high, cap=6):
             dl = _deadline_phrase(it) or "rolling"
             title = _tg_escape(textwrap.shorten(it.title, width=60, placeholder="…"))
             seg = f"{_cat_emoji(it.source)} <b>{title}</b> — {dl}"
+            try:
+                from filters.pitch import pitch as _pitch
+                hook = _pitch(it, personal=True)      # his chat is private: his floor and fit belong here
+            except Exception:  # noqa: BLE001
+                hook = ""
+            if hook:
+                seg += "\n   " + _tg_escape(hook).replace("\n", " · ")
             if it.ai_summary:
                 seg += f"\n   <i>{_tg_escape(it.ai_summary)}</i>"
             parts.append(seg)
@@ -472,6 +479,15 @@ def run(source_names=None, test=False):
     if new_items:
         from taskflow import prefs
         prefs.apply_downweight(new_items)
+
+    # 4e. The public pitch (job facts only) travels with the item into history/feed — the Mini App's
+    # Today tab shows it. The personal one (vs his floor, his roles) is built only for Telegram.
+    from filters.pitch import pitch as _pitch
+    for it in new_items:
+        try:
+            it.pitch = _pitch(it)
+        except Exception:  # noqa: BLE001 — a pitch never breaks a run
+            it.pitch = ""
 
     # 5. Policy -> side effects
     taskflow_ready = (not test) and integration.is_available()
