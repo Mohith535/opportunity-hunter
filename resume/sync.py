@@ -71,7 +71,14 @@ def run() -> tuple[int, int]:
     for p in packs():
         folder = APPS / _safe(p.get("slug", ""))
         for f in p.get("files") or []:
-            dest = folder / _safe(f.get("name", ""))
+            name = _safe(f.get("name", ""))
+            # Telegram gets "<slug>-job.md" so the chat shows which job it is; on disk it is job.md, like
+            # every pack built here — unless this laptop already has its own job.md for that pack.
+            if name.endswith("-job.md") and not (folder / "job.md").exists():
+                name = "job.md"
+            elif name.endswith("-job.md"):
+                continue
+            dest = folder / name
             if dest.exists() or not f.get("file_id"):
                 continue
             if download(f["file_id"], dest):
