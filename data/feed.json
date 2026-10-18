@@ -1,566 +1,6 @@
 {
-  "updated_at": "2026-10-17",
+  "updated_at": "2026-10-18",
   "items": [
-    {
-      "key": "f5cfc117e114",
-      "title": "Data Science Internship",
-      "url": "https://unstop.com/internships/data-science-internship-kukbit-sl-1761158",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-08",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "11ff9a0c7dc9",
-      "title": "Lead Generation Internship",
-      "url": "https://unstop.com/internships/lead-generation-internship-cogniza-private-limited-1766537",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-20",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "dcfe42d89de3",
-      "title": "Creative & Branding Internship",
-      "url": "https://unstop.com/internships/creative-branding-internship-pehchan-1766642",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-20",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4f5c9e3717b0",
-      "title": "Campus Coordinator Internship",
-      "url": "https://unstop.com/internships/campus-coordinator-internship-gradus-1766572",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-20",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ae04e09899dd",
-      "title": "Campus Ambassedor",
-      "url": "https://unstop.com/internships/campus-ambassedor-internsforge-private-limited-1766562",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-20",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "08252c2443b7",
-      "title": "Campus Ambassador Internship",
-      "url": "https://unstop.com/internships/campus-ambassador-internship-cadworks-india-1766619",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-18",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b28d42204432",
-      "title": "Architecture & Design Campus Ambassador Internship",
-      "url": "https://unstop.com/internships/architecture-design-campus-ambassador-internship-mycaptain-1766199",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-19",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b1a693da3957",
-      "title": "Website Developer Internship",
-      "url": "https://unstop.com/internships/website-developer-intern-reve-cult-tech-pvt-ltd-1766329",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-19",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "e6ee8b255c95",
-      "title": "Volunteer: InteractUp (NGO): National Core Skill Development & Corporate Committee 26-27",
-      "url": "https://unstop.com/internships/ngo-volunteer-internship-interactup-1766060",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-04",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d9f3fffe3e80",
-      "title": "Full Stack Developer Internship",
-      "url": "https://unstop.com/internships/full-stack-developer-internship-btow-pvt-ltd-1766343",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-19",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b868a6d23973",
-      "title": "Campaign Manager Internship",
-      "url": "https://unstop.com/internships/campaign-manager-internship-skill-orbit-1766105",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-19",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "8786552ffee1",
-      "title": "Front End Developer Internship",
-      "url": "https://unstop.com/internships/front-end-developer-react-js-the-tann-mann-gaadi-1766350",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-19",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "8e88426497e9",
-      "title": "AI Engineer Internship - GenAI & ML",
-      "url": "https://unstop.com/internships/ai-engineer-internship-genai-ml-zyoris-technology-1766065",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-19",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "194823afe8cd",
-      "title": "Open Source Contributor & Community Internship",
-      "url": "https://unstop.com/internships/open-source-contributor-community-internship-unstop-career-league-20-alphashotsai-1766031",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-19",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "980cd4ac0d31",
-      "title": "Full Stack Developer Internship",
-      "url": "https://unstop.com/internships/full-stack-developer-internship-vijyapana-advertising-1766071",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-19",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4b41f768a0f3",
-      "title": "Founders' Office Internship",
-      "url": "https://unstop.com/internships/founders-office-galaxy-home-automations-llp-1765361",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-17",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "fa10fb5dd646",
-      "title": "Artificial Intelligence Developer Internship",
-      "url": "https://unstop.com/internships/artificial-intelligence-developer-internship-wikasta-business-and-technical-solutions-pvt-ltd-1760461",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-19",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "7ed625459a52",
-      "title": "West Monroe — Software Engineer Consulting Intern - AI Concentration",
-      "url": "https://westmonroe.com/careers/job-details-students?gh_jid=6172721004",
-      "source": "internships",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5a2a0ebe458e",
-      "title": "West Monroe — Software Engineer Consulting Intern - AI Concentration",
-      "url": "https://westmonroe.com/careers/job-details-students?gh_jid=6170231004",
-      "source": "internships",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b584a8acb61c",
-      "title": "West Monroe — Software Engineer Consulting Intern - AI Concentration",
-      "url": "https://westmonroe.com/careers/job-details-students?gh_jid=6173003004",
-      "source": "internships",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "91191a86d102",
-      "title": "Cadence Solutions — Software Engineer Intern",
-      "url": "https://job-boards.greenhouse.io/solutions/jobs/4711210006",
-      "source": "internships",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0d8954e2edf4",
-      "title": "Cloudflare — Software Engineer Intern",
-      "url": "https://boards.greenhouse.io/cloudflare/jobs/8245211",
-      "source": "internships",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "bf29122ba3d8",
-      "title": "StackAdapt — Software Engineer Backend Intern",
-      "url": "https://job-boards.greenhouse.io/stackadapt-confidential/jobs/4386552009",
-      "source": "internships",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b1bd22a8c172",
-      "title": "StackAdapt — Machine Learning Engineer Intern",
-      "url": "https://job-boards.greenhouse.io/stackadapt-confidential/jobs/4397976009",
-      "source": "internships",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "703438090dd1",
-      "title": "StackAdapt — Software Engineer Intern",
-      "url": "https://job-boards.greenhouse.io/stackadapt-confidential/jobs/4386549009",
-      "source": "internships",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "773b406b0817",
-      "title": "Boston Scientific — Equipment Engineering Software Engineer Intern",
-      "url": "https://bostonscientific.eightfold.ai/careers/job/563602813584306",
-      "source": "internships",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1acab6ccdcb5",
-      "title": "Atoms — Machine Learning Engineer Intern",
-      "url": "https://job-boards.greenhouse.io/atoms/jobs/8869105002",
-      "source": "internships",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b1a19a25d1c6",
-      "title": "Astera Labs — Applied AI Engineer Intern - Silicon Engineering",
-      "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4727602005",
-      "source": "internships",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "cb3ef419a634",
-      "title": "Astera Labs — Applied AI Intern - Non-Silicon",
-      "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4728357005",
-      "source": "internships",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "cfbf885dea0b",
-      "title": "Mayo Clinic — Research Fellow in Surgical AI",
-      "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/378185",
-      "source": "internships",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a16a60b9f46e",
-      "title": "Mayo Clinic — Artificial Intelligence and Informatics/Data Science Intern",
-      "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/384534",
-      "source": "internships",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4011d75bfe81",
-      "title": "Wild Bugs",
-      "url": "https://wild-bugs.devfolio.co",
-      "source": "devfolio",
-      "score": 10,
-      "deadline": "2026-10-15",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0a88dd6433e6",
-      "title": "IPL - Innovation Pitch League",
-      "url": "https://unstop.com/competitions/ipl-innovation-pitch-league-iet-on-campus-sies-graduate-school-of-technology-navi-mumbai-maharashtra-1758032",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-08",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "c5fa9d896d27",
-      "title": "AI Skills Every Student Needs in 2026 Webinar",
-      "url": "https://unstop.com/workshops-webinars/ai-skills-every-student-needs-in-2026-webinar-taskveda-1765985",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-10",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "74be6db29481",
-      "title": "National Machine Coding, LLD and Production Debugging Contest",
-      "url": "https://unstop.com/hackathons/national-machine-coding-lld-and-production-debugging-contest-gronex-1765656",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-31",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d649e1c7144e",
-      "title": "Engineering to Industry: Building Skills That Actually Matter",
-      "url": "https://unstop.com/workshops-webinars/engineering-to-industry-building-skills-that-actually-matter-techbairn-research-1766451",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-09",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "3b1eba9f122f",
-      "title": "Globathon",
-      "url": "https://unstop.com/hackathons/globathon-globatech-group-1762609",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-11",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "6f28825354e4",
-      "title": "From AI Concepts to Production: The Journey of Autonomous Agents",
-      "url": "https://unstop.com/workshops-webinars/from-ai-concepts-to-production-the-journey-of-autonomous-agents-techbairn-research-1766447",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-09",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ae24c24c28e7",
-      "title": "CodeTitans India 2026 - National Hackathon",
-      "url": "https://unstop.com/hackathons/codetitans-india-2026-national-hackathon-wecodecoders-1766190",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-04",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "72b8532640a3",
-      "title": "From Learning to Getting Hired: Preparing for the AI-Driven Tech Industry",
-      "url": "https://unstop.com/workshops-webinars/from-learning-to-getting-hired-preparing-for-the-ai-driven-tech-industry-techbairn-research-1766446",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-09",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "cc261343c448",
       "title": "VLSI Design Internship",
@@ -568,6 +8,20 @@
       "source": "unstop",
       "score": 10,
       "deadline": "2026-10-10",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f5cfc117e114",
+      "title": "Data Science Internship",
+      "url": "https://unstop.com/internships/data-science-internship-kukbit-sl-1761158",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-08",
       "tags": [
         "internship",
         "focus:internship"
@@ -1394,6 +848,554 @@
       "source": "unstop",
       "score": 10,
       "deadline": "2026-10-21",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "baf17f026d18",
+      "title": "AI Engineer Internship",
+      "url": "https://unstop.com/internships/ai-engineer-internship-flatuiux-1767602",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-22",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "550fff274a1d",
+      "title": "Full Stack Developer Internship",
+      "url": "https://unstop.com/internships/full-stack-developer-internship-b2world-1767267",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-20",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "43a4211e36a4",
+      "title": "Software Developer Internship",
+      "url": "https://unstop.com/internships/software-developer-internship-shortsqueeze-pvt-ltd-1757842",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-16",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d5f90162ac41",
+      "title": "Agentic AI Engineer Internship (Product Intelligence and AI Evaluation)",
+      "url": "https://unstop.com/internships/agentic-ai-engineer-internship-product-intelligence-and-ai-evaluation-veyra-ai-1767420",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-21",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "900241be5ab8",
+      "title": "TikTok — Machine Learning Engineer Intern - E-Commerce Recommendation Video",
+      "url": "https://lifeattiktok.com/search/7694040502082521397",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "572df32f5d07",
+      "title": "TikTok — Machine Learning Engineer Intern",
+      "url": "https://lifeattiktok.com/search/7694045969844209973",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c894896a40f9",
+      "title": "TikTok — Machine Learning Engineer Intern",
+      "url": "https://lifeattiktok.com/search/7694045967754889477",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6a458163c582",
+      "title": "TikTok — Machine Learning Engineer Intern",
+      "url": "https://lifeattiktok.com/search/7694045969156426037",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "58f8f8701126",
+      "title": "TikTok — Machine Learning Engineer Intern",
+      "url": "https://lifeattiktok.com/search/7694044547207268661",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "184535ec5aa9",
+      "title": "TikTok — Machine Learning Engineer Intern",
+      "url": "https://lifeattiktok.com/search/7694048048843147573",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "94bb7321a506",
+      "title": "IXL Learning — Software Engineer Intern",
+      "url": "https://www.ixl.com/company/jobs?gh_jid=8862214002",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "9bdfab4bafe2",
+      "title": "Illinois Tool Works — Software Engineer Intern - Application Software",
+      "url": "https://careers.itw.com/global/en/job/JR10491",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "768ec7db5084",
+      "title": "IDEMIA — Software Engineer Intern",
+      "url": "https://uscareers-idemia.icims.com/jobs/8657/job?mobile=true&needsRedirect=false",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "51f5c9c02b6b",
+      "title": "Strada — Software Engineer Intern",
+      "url": "https://jobs.ashbyhq.com/stradahq/d277be89-9d67-48cd-9e67-3b17bbab709e/application?embed=true",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a9cd0948ba36",
+      "title": "DocuSign — Software Engineer Intern",
+      "url": "https://careers.docusign.com/jobs/30481?icims=1",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2b003874a5f8",
+      "title": "DocuSign — Software Engineer Intern",
+      "url": "https://careers.docusign.com/jobs/30484?icims=1",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "97cbbb7d9217",
+      "title": "Microsoft — Applied Scientist Intern",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556986141",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b0df0da774b1",
+      "title": "Anduril — Software Engineer Intern",
+      "url": "https://boards.greenhouse.io/andurilindustries/jobs/5255902007",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b9f62cfb094e",
+      "title": "Microsoft — Software Engineer Intern",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393557025004",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1f10198b1342",
+      "title": "bogosort Programming Contest (Div. 1) (atcoder.jp)",
+      "url": "https://atcoder.jp/contests/bogosortcontest_div1",
+      "source": "clist",
+      "score": 10,
+      "deadline": "2026-10-11",
+      "tags": [
+        "contest",
+        "competitive programming",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "98b4bccbee26",
+      "title": "From Code to Connected Products: Understanding Systems Software",
+      "url": "https://unstop.com/workshops-webinars/from-code-to-connected-products-understanding-systems-software-techbairn-research-1767326",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-11",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f38b9be3e974",
+      "title": "CodeQuest Quiz India 2026",
+      "url": "https://unstop.com/hackathons/codequest-quiz-india-2026-wecodecoders-1767731",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-07",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4e4a49459bab",
+      "title": "bogosort Programming Contest (Div. 2) (atcoder.jp)",
+      "url": "https://atcoder.jp/contests/bogosortcontest_div2",
+      "source": "clist",
+      "score": 10,
+      "deadline": "2026-10-11",
+      "tags": [
+        "contest",
+        "competitive programming",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d2fd8f57e82b",
+      "title": "Beyond the Classroom: Exploring Android Development & Industry Trends",
+      "url": "https://unstop.com/workshops-webinars/beyond-the-classroom-exploring-android-development-industry-trends-techbairn-research-1767328",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-11",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "12b9fa56c210",
+      "title": "HackAaroh — Open Source Developer Sprint",
+      "url": "https://unstop.com/hackathons/hackaaroh-open-source-developer-sprint-iiit-kottayam-1767624",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-22",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "134bea1a84a6",
+      "title": "NextGen AI & Web Development Challenge",
+      "url": "https://unstop.com/quiz/nextgen-ai-web-development-challenge-inspire-leap-pvt-ltd-1767357",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-21",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "62589a9b3d41",
+      "title": "Learn, Think, Leverage: Building Your Career in the AI Era",
+      "url": "https://unstop.com/workshops-webinars/learn-think-leverage-building-your-career-in-the-ai-era-techbairn-research-1767330",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-11",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "714044b2a7b7",
+      "title": "Tech Mafia - Trust No One. Debug Everyone.",
+      "url": "https://unstop.com/hackathons/tech-mafia-trust-no-one-debug-everyone-netaji-subhas-university-of-technology-nsut-delhi-1767566",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-15",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e011ca07094c",
+      "title": "Software Testing Internship",
+      "url": "https://unstop.com/internships/software-testing-internship-coderoofs-it-solutions-1768240",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-23",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "ccef41c9ff48",
+      "title": "Student Campus Ambassador",
+      "url": "https://unstop.com/internships/student-campus-ambassador-internzvalley-1768098",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-23",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3b88e5b5829c",
+      "title": "Frontend Development Internship",
+      "url": "https://unstop.com/internships/frontend-development-internship-algoryx-technologies-1768107",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-23",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7a56631a839c",
+      "title": "Web Development Internship",
+      "url": "https://unstop.com/internships/web-development-internship-seemons-technologies-1768122",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-23",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "fa71d4a01350",
+      "title": "Campus Ambassador Internship",
+      "url": "https://unstop.com/internships/campus-ambassador-internship-cornixe-edutech-pvt-ltd-1768216",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-23",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f5eebc78dda4",
+      "title": "Campus Engagement Internship",
+      "url": "https://unstop.com/internships/campus-engagement-internship-techbairn-1767969",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-16",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "316aa0e66749",
+      "title": "Lead Generation Internship",
+      "url": "https://unstop.com/internships/lead-generation-internship-solvane-technologies-1768109",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-23",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "ae47168d82ad",
+      "title": "Campus Ambassador",
+      "url": "https://unstop.com/internships/campus-ambassador-srs-adyapan-private-limited-1768129",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-23",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e42b81909365",
+      "title": "Content Creator Internship",
+      "url": "https://unstop.com/internships/content-creator-internship-reve-cult-tech-pvt-ltd-1768076",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-22",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1e61c75a58f1",
+      "title": "Student Coordinator Internship",
+      "url": "https://unstop.com/internships/student-coordinator-internship-srs-adyapan-edutech-private-limited-adyapan-school-1768145",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-23",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "fb49a8c1bcaa",
+      "title": "Campus Community Manager Internship",
+      "url": "https://unstop.com/internships/campus-community-manager-mycaptain-1767898",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-22",
       "tags": [
         "internship",
         "focus:internship"
