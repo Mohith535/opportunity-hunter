@@ -142,7 +142,22 @@ def _lever_detail(slug: str, job_id: str) -> dict:
     }
 
 
-_ATS = {"gh": _greenhouse_detail, "ashby": _ashby_detail, "lever": _lever_detail}
+def _workday_detail(slug: str, path: str) -> dict:
+    """slug = "<host>/<tenant>/<site>" and path = the posting's externalPath (sources/ats.py, 21 Oct)."""
+    host, tenant, site = slug.split("/")
+    j = requests.get(f"https://{host}.myworkdayjobs.com/wday/cxs/{tenant}/{site}{path}",
+                     headers={**_HEADERS, "Accept": "application/json"},
+                     timeout=_FETCH_TIMEOUT).json().get("jobPostingInfo") or {}
+    return {
+        "description": _text(j.get("jobDescription")),
+        "apply_url": j.get("externalUrl", ""),
+        "location": j.get("location", ""),
+        "posted": j.get("postedOn"),
+        "employment_type": j.get("timeType", ""),
+    }
+
+
+_ATS = {"gh": _greenhouse_detail, "ashby": _ashby_detail, "lever": _lever_detail, "workday": _workday_detail}
 
 _UNSTOP_DETAIL = "https://unstop.com/api/public/competition/{id}"
 

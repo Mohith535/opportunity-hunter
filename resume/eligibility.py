@@ -297,6 +297,13 @@ def title_rules(title: str, c: Candidate) -> list[tuple[str, str]]:
     t = title or ""
     if _SENIOR.search(t) and not _STUDENT_TITLE.search(t):
         return [(NO, f"a senior role ({_SENIOR.search(t).group(1)}) — it expects years of experience")]
+    # The big-company boards (21 Oct) name the degree in the title: "Software Engineering PhD Intern"
+    # (Google), "AI/ML Software Engineer Intern (… - Masters - …)" (EA). He is in a bachelor's.
+    if c.degree == "bachelor" and not re.search(r"bachelor|undergrad|b\.?tech|b\.?s\.?\b|or master|/master", t, re.I):
+        if re.search(r"\bph\.?\s?d\b|doctoral", t, re.I):
+            return [(NO, "the title says PhD students")]
+        if re.search(r"\bmasters\b|\bmaster'?s (?:student|degree|program)|\bmsc\b", t, re.I):
+            return [(NO, "the title says master's students")]
     return []
 
 

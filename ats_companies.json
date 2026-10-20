@@ -1,5 +1,5 @@
 {
-  "_comment": "Company career boards to watch, via their applicant-tracking system's PUBLIC JSON API (no key, no auth, no scraping). Every slug here was probed live and returned HTTP 200 with real listings on 2026-09-21; slugs that 404d were left out rather than guessed at. Adding a company is one line. To find a slug, open the company's careers page and read the URL: boards.greenhouse.io/<slug>, jobs.ashbyhq.com/<slug>, or jobs.lever.co/<slug>. sources/ats.py keeps only student-relevant titles (intern, new grad, residency, research), so a board of 800 senior roles costs one HTTP call and adds nothing to the brief. INDIAN companies were added 2026-09-26 for the Mumbai/India goal — these are where an India-based paid internship actually comes from, since the US boards list almost nothing in India.",
+  "_comment": "Company career boards to watch, via their applicant-tracking system's PUBLIC JSON API (no key, no auth, no scraping). Every slug here was probed live and returned HTTP 200 with real listings on 2026-09-21; slugs that 404d were left out rather than guessed at. Adding a company is one line. To find a slug, open the company's careers page and read the URL: boards.greenhouse.io/<slug>, jobs.ashbyhq.com/<slug>, or jobs.lever.co/<slug>. sources/ats.py keeps only student-relevant titles (intern, new grad, residency, research), so a board of 800 senior roles costs one HTTP call and adds nothing to the brief. INDIAN companies were added 2026-09-26 for the Mumbai/India goal — these are where an India-based paid internship actually comes from, since the US boards list almost nothing in India. Since 21 Oct 2026 also big-company sites with their own platforms: workday (slug host/tenant/site, POST search), amazon (slug = ISO alpha-3 country), microsoft and google (slug = a location), avature (slug host/locale/careers, e.g. EA). Optional per entry: \"query\" (default \"intern\") and \"pages\". Each was called live and its robots.txt read first.",
   "companies": [
     {
       "platform": "greenhouse",
@@ -326,6 +326,56 @@
       "platform": "greenhouse",
       "slug": "bluestone",
       "name": "BlueStone"
+    },
+    {
+      "name": "NVIDIA",
+      "platform": "workday",
+      "slug": "nvidia.wd5/nvidia/NVIDIAExternalCareerSite",
+      "query": "intern India"
+    },
+    {
+      "name": "Adobe",
+      "platform": "workday",
+      "slug": "adobe.wd5/adobe/external_experienced",
+      "query": "intern"
+    },
+    {
+      "name": "Intel",
+      "platform": "workday",
+      "slug": "intel.wd1/intel/External",
+      "query": "intern India"
+    },
+    {
+      "name": "Salesforce",
+      "platform": "workday",
+      "slug": "salesforce.wd12/salesforce/External_Career_Site",
+      "query": "intern"
+    },
+    {
+      "name": "Amazon",
+      "platform": "amazon",
+      "slug": "IND",
+      "query": "intern"
+    },
+    {
+      "name": "Microsoft",
+      "platform": "microsoft",
+      "slug": "India",
+      "query": "intern"
+    },
+    {
+      "name": "Google",
+      "platform": "google",
+      "slug": "India",
+      "query": "intern"
+    },
+    {
+      "name": "Electronic Arts",
+      "platform": "avature",
+      "slug": "jobs.ea.com/en_US/careers",
+      "query": "intern",
+      "pages": 8,
+      "budget": 40
     }
   ]
 }

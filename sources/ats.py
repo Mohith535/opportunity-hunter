@@ -24,11 +24,13 @@ ever reach the scorer. That filter is the whole reason this source is usable.
 
 from __future__ import annotations
 
+import html
 import json as _json
 import re
 import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
+from urllib.parse import urlencode
 
 import requests
 
@@ -39,6 +41,9 @@ from util import log
 COMPANIES_FILE = config.BASE_DIR / "ats_companies.json"
 
 _HEADERS = {"User-Agent": config.USER_AGENT, "Accept": "application/json"}
+# Big-company career sites (Workday, Microsoft, Google, Avature) answer a browser-shaped agent; a bare
+# one came back empty from Microsoft on 20 Oct. It still names this program, so a log reader knows who called.
+_BROWSER = {"User-Agent": f"Mozilla/5.0 (compatible; {config.USER_AGENT})", "Accept": "application/json, text/html"}
 
 # Wall-clock budget per board, and a hard size cap.
 #
@@ -48,17 +53,19 @@ _HEADERS = {"User-Agent": config.USER_AGENT, "Accept": "application/json"}
 # alone turned a 65-board fetch into 3.5 minutes. So we stream and enforce our own deadline.
 # A board that cannot answer inside the budget is skipped and named in the log, never silently.
 BOARD_BUDGET_SEC = 25
-BOARD_MAX_BYTES = 8 * 1024 * 1024
+BOARD_MAX_BYTES = 16 * 1024 * 1024    # OpenAI's Ashby board was 13.5 MB on 21 Oct (3 s to fetch); 8 MB skipped it
 
 
-def _get_json(url: str, budget: float = BOARD_BUDGET_SEC):
+def _get_json(url: str, budget: float = BOARD_BUDGET_SEC, body: dict | None = None, text: bool = False):
     """GET JSON under a real wall-clock budget. Raises on timeout/oversize like any fetch error,
     so one slow board is handled by the same path as one broken board.
 
     Boards fetch in parallel, so total run time is the SLOWEST board, not the sum. That is why a
     company worth waiting for can raise its own budget (`"budget": 120` in ats_companies.json)
     without every other board paying for it."""
-    r = requests.get(url, headers=_HEADERS, timeout=config.REQUEST_TIMEOUT, stream=True)
+    hdr = _BROWSER if (body is not None or text or "careers.microsoft" in url) else _HEADERS
+    r = (requests.post(url, json=body, headers=hdr, timeout=config.REQUEST_TIMEOUT, stream=True) if body is not None
+         else requests.get(url, headers=hdr, timeout=config.REQUEST_TIMEOUT, stream=True))
     try:
         r.raise_for_status()
         started, size, chunks = time.monotonic(), 0, []
@@ -69,7 +76,8 @@ def _get_json(url: str, budget: float = BOARD_BUDGET_SEC):
                 raise requests.Timeout(f"exceeded {budget}s budget")
             if size > BOARD_MAX_BYTES:
                 raise requests.RequestException(f"body over {BOARD_MAX_BYTES} bytes")
-        return _json.loads(b"".join(chunks).decode("utf-8", "replace"))
+        raw = b"".join(chunks).decode("utf-8", "replace")
+        return raw if text else _json.loads(raw)
     finally:
         r.close()
 
@@ -110,7 +118,7 @@ def _opp(title, url, company, platform, location="", posted=None, native_id=None
     )
 
 
-def _greenhouse(slug: str, company: str, budget=BOARD_BUDGET_SEC) -> list[Opportunity]:
+def _greenhouse(slug: str, company: str, budget=BOARD_BUDGET_SEC, entry=None) -> list[Opportunity]:
     data = _get_json(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs", budget)
     out = []
     for j in data.get("jobs", []):
@@ -123,7 +131,7 @@ def _greenhouse(slug: str, company: str, budget=BOARD_BUDGET_SEC) -> list[Opport
     return out
 
 
-def _ashby(slug: str, company: str, budget=BOARD_BUDGET_SEC) -> list[Opportunity]:
+def _ashby(slug: str, company: str, budget=BOARD_BUDGET_SEC, entry=None) -> list[Opportunity]:
     data = _get_json(f"https://api.ashbyhq.com/posting-api/job-board/{slug}", budget)
     out = []
     for j in data.get("jobs", []):
@@ -136,7 +144,7 @@ def _ashby(slug: str, company: str, budget=BOARD_BUDGET_SEC) -> list[Opportunity
     return out
 
 
-def _lever(slug: str, company: str, budget=BOARD_BUDGET_SEC) -> list[Opportunity]:
+def _lever(slug: str, company: str, budget=BOARD_BUDGET_SEC, entry=None) -> list[Opportunity]:
     out = []
     for j in _get_json(f"https://api.lever.co/v0/postings/{slug}?mode=json", budget):
         title = (j.get("text") or "").strip()
@@ -149,7 +157,106 @@ def _lever(slug: str, company: str, budget=BOARD_BUDGET_SEC) -> list[Opportunity
     return out
 
 
-_ADAPTERS = {"greenhouse": _greenhouse, "ashby": _ashby, "lever": _lever}
+# ── The big companies (21 Oct 2026). They do not rent Greenhouse/Lever/Ashby, so 65 boards never saw
+# NVIDIA, Adobe, Microsoft, Google or EA — the EA internship he applied to on 4 Oct came from Instagram.
+# Each endpoint was called live and its robots.txt read on 20 Oct (docs/PLAN-opportunity-intelligence.md).
+# Endpoint shapes cross-checked against career-ops (MIT), providers/{workday,amazon,google,avature}.mjs.
+def _q(entry, default="intern"):
+    return str((entry or {}).get("query") or default)
+
+
+def _workday(slug: str, company: str, budget=BOARD_BUDGET_SEC, entry=None) -> list[Opportunity]:
+    """slug = "<host>/<tenant>/<site>", e.g. nvidia.wd5/nvidia/NVIDIAExternalCareerSite. Workday's CXS
+    search is a POST, 20 per page; its robots.txt leaves /wday/cxs open."""
+    host, tenant, site = slug.split("/")
+    base = f"https://{host}.myworkdayjobs.com"
+    out = []
+    for page in range(int((entry or {}).get("pages") or 3)):
+        data = _get_json(f"{base}/wday/cxs/{tenant}/{site}/jobs", budget,
+                         body={"searchText": _q(entry), "limit": 20, "offset": page * 20, "appliedFacets": {}})
+        posts = data.get("jobPostings") or []
+        for j in posts:
+            title, path = (j.get("title") or "").strip(), j.get("externalPath") or ""
+            if path and _is_student_role(title):
+                out.append(_opp(title, f"{base}/{site}{path}", company, "Workday",
+                                j.get("locationsText", ""), j.get("postedOn"), f"workday:{slug}:{path}"))
+        if len(posts) < 20:
+            break
+    return out
+
+
+# Amazon's "intern" search in India is mostly fulfilment and admin roles (120 + 73 of 444 on 20 Oct).
+_AMAZON_TECH = {"Software Development", "Applied Science", "Machine Learning Science", "Data Science",
+                "Research Science", "Business Intelligence", "Hardware Development",
+                "Systems, Quality, & Security Engineering", "Solutions Architect",
+                "Operations, IT, & Support Engineering"}
+
+
+def _amazon(slug: str, company: str, budget=BOARD_BUDGET_SEC, entry=None) -> list[Opportunity]:
+    """slug = ISO alpha-3 country (IND). `loc_query` is NOT a filter — 1 of 100 "India" results was in
+    India on 20 Oct — so the country goes in normalized_country_code[] and is checked again per job."""
+    data = _get_json("https://www.amazon.jobs/en/search.json?" + urlencode(
+        {"base_query": _q(entry), "normalized_country_code[]": slug, "result_limit": 100}), budget)
+    out = []
+    for j in data.get("jobs", []):
+        title = (j.get("title") or "").strip()
+        if j.get("country_code") == slug and j.get("job_category") in _AMAZON_TECH and _is_student_role(title):
+            out.append(_opp(title, "https://www.amazon.jobs" + (j.get("job_path") or ""), company, "Amazon",
+                            j.get("normalized_location") or j.get("location", ""), j.get("posted_date"),
+                            f"amazon:{slug}:{j.get('id_icims')}"))
+    return out
+
+
+def _microsoft(slug: str, company: str, budget=BOARD_BUDGET_SEC, entry=None) -> list[Opportunity]:
+    """slug = a location ("India"). apply.careers.microsoft.com robots.txt: Disallow / but Allow /api/pcsx."""
+    data = _get_json("https://apply.careers.microsoft.com/api/pcsx/search?" + urlencode(
+        {"domain": "microsoft.com", "query": _q(entry), "location": slug, "start": 0}), budget)
+    out = []
+    for j in (data.get("data") or {}).get("positions") or []:
+        title = (j.get("name") or "").strip()
+        if _is_student_role(title):
+            out.append(_opp(title, f"https://apply.careers.microsoft.com/careers/job/{j.get('id')}", company,
+                            "Microsoft Careers", "; ".join(j.get("locations") or []), j.get("postedTs"),
+                            f"msft:{j.get('id')}"))
+    return out
+
+
+def _google(slug: str, company: str, budget=BOARD_BUDGET_SEC, entry=None) -> list[Opportunity]:
+    """slug = a location. Server-rendered HTML; FIRST PAGE ONLY, because google.com/robots.txt disallows
+    every ?page= results URL. Each card's link carries the title in its aria-label."""
+    page = _get_json("https://www.google.com/about/careers/applications/jobs/results/?" + urlencode(
+        {"q": _q(entry), "location": slug}), budget, text=True)
+    out, seen = [], set()
+    for m in re.finditer(r'href="jobs/results/(\d+)-([^"?]+)[^"]*"\s+aria-label="Learn more about ([^"]+)"', page):
+        jid, path, title = m.group(1), m.group(2), html.unescape(m.group(3)).strip()
+        if jid not in seen and _is_student_role(title):
+            seen.add(jid)
+            out.append(_opp(title, f"https://www.google.com/about/careers/applications/jobs/results/{jid}-{path}",
+                            company, "Google Careers", slug, None, f"google:{jid}"))
+    return out
+
+
+def _avature(slug: str, company: str, budget=BOARD_BUDGET_SEC, entry=None) -> list[Opportunity]:
+    """slug = "<host>/<locale>/careers", e.g. jobs.ea.com/en_US/careers (EA). 20 cards a page, paged
+    with jobOffset; its robots.txt allows /*/careers (only ?qtvc= links are disallowed)."""
+    out = []
+    for page in range(int((entry or {}).get("pages") or 4)):
+        body = _get_json(f"https://{slug}/SearchJobs/{_q(entry)}?jobOffset={page * 20}", budget, text=True)
+        cards = re.findall(r'<article class="article article--result.*?</article>', body, re.S)
+        for c in cards:
+            link = re.search(r'href="(https://[^"]+/JobDetail/[^"]+)"[^>]*>\s*([^<]+?)\s*</a>', c)
+            where = re.search(r'class="list-item-location"[^>]*>\s*([^<]+?)\s*<', c)
+            if link and _is_student_role(html.unescape(link.group(2))):
+                rid = link.group(1).rstrip("/").rsplit("/", 1)[-1]
+                out.append(_opp(html.unescape(link.group(2)), link.group(1), company, "Avature",
+                                html.unescape(where.group(1)) if where else "", None, f"avature:{slug}:{rid}"))
+        if len(cards) < 20:
+            break
+    return out
+
+
+_ADAPTERS = {"greenhouse": _greenhouse, "ashby": _ashby, "lever": _lever, "workday": _workday,
+             "amazon": _amazon, "microsoft": _microsoft, "google": _google, "avature": _avature}
 
 
 def _load_companies() -> list[dict]:
@@ -167,16 +274,22 @@ def _load_companies() -> list[dict]:
     return [c for c in (companies or []) if isinstance(c, dict) and c.get("slug")]
 
 
+_ERRORS: dict[str, str] = {}
+
+
 def _fetch_one(c: dict) -> list[Opportunity]:
     adapter = _ADAPTERS.get(str(c.get("platform", "")).lower())
     if not adapter:
         return []
     try:
         return adapter(c["slug"], c.get("name") or c["slug"],
-                       float(c.get("budget") or BOARD_BUDGET_SEC))
-    except (requests.RequestException, ValueError, KeyError, TypeError):
-        # A renamed slug or a moved board must not take the other companies down. Logged at
-        # the end as a count, so a board that quietly dies is visible rather than silent.
+                       float(c.get("budget") or BOARD_BUDGET_SEC), c)
+    except (requests.RequestException, ValueError, KeyError, TypeError) as e:
+        # A renamed slug or a moved board must not take the other companies down. Logged at the
+        # end BY NAME AND REASON: "nothing from" used to mix a board with no student roles today
+        # and a board that answered 429, and the two need opposite responses.
+        code = getattr(getattr(e, "response", None), "status_code", None)
+        _ERRORS[c.get("name") or c["slug"]] = str(code or type(e).__name__)
         return []
 
 
@@ -185,14 +298,17 @@ def fetch() -> list[Opportunity]:
     companies = _load_companies()
     if not companies:
         return []
+    _ERRORS.clear()
 
-    # 8 workers took 5 minutes across 65 boards, which is too long for the daily cloud run.
-    # These are 65 independent hosts, not one server being hammered, so the concurrency is
-    # polite as well as faster — each board still sees exactly one request.
-    with ThreadPoolExecutor(max_workers=min(24, len(companies))) as ex:
+    # 8, not 24. The boards are NOT independent hosts: every Ashby board is api.ashbyhq.com, every
+    # Greenhouse board boards-api.greenhouse.io. Measured 21 Oct on 73 boards: 24 workers → 27 SSL
+    # handshake failures (every Ashby board, OpenAI included) and 299 roles in 108 s; 8 workers → 0 SSL
+    # failures and 348 roles in 119 s. The 5-minute runs that once made 8 look slow came from boards
+    # streaming without a deadline, which BOARD_BUDGET_SEC fixed since.
+    with ThreadPoolExecutor(max_workers=min(8, len(companies))) as ex:
         results = list(ex.map(_fetch_one, companies))
 
-    dead = [c["slug"] for c, r in zip(companies, results) if not r]
+    dead = [c["slug"] for c, r in zip(companies, results) if not r and (c.get("name") or c["slug"]) not in _ERRORS]
     # Dedupe on (company, title), not URL: the same role posted in four cities is four URLs
     # and one opportunity, and four copies of it in the brief is just noise.
     items, seen = [], set()
@@ -204,8 +320,9 @@ def fetch() -> list[Opportunity]:
                 items.append(it)
 
     log(f"[ats] {len(items)} student-relevant roles from "
-        f"{len(companies) - len(dead)}/{len(companies)} boards"
-        + (f" — nothing from: {', '.join(dead[:6])}" if dead else ""))
+        f"{len(companies) - len(dead) - len(_ERRORS)}/{len(companies)} boards"
+        + (f" — no student roles today: {len(dead)}" if dead else "")
+        + (" — FAILED: " + ", ".join(f"{k} ({v})" for k, v in list(_ERRORS.items())[:8]) if _ERRORS else ""))
     return items
 
 
