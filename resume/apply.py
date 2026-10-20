@@ -427,6 +427,9 @@ def build_job_md(item: dict, full: dict, report: dict | None = None) -> str:
 
     L = [f"# {title}", ""]
     # ── the three-second read ──
+    word, why = recommendation(verdict, (report or {}).get("match_rows"))
+    L.append(f"> **→ {word}** — {why}")
+    L.append(">")
     L.append(f"> **{verdict.icon} {verdict.label}**")
     for lvl, why in verdict.reasons[:4]:
         L.append(f"> {'⛔' if lvl == 'NO' else '⚠' if lvl == 'CHECK' else '✓'} {why}")
@@ -627,6 +630,39 @@ def corruption_warnings(text: str) -> list[str]:
     return out
 
 
+def fit_of(match_rows: list | None) -> tuple[int, int, list[str]]:
+    """(stated requirements his work answers, stated requirements, the unanswered ones). A row is
+    (priority, ask, evidence, project); priority 0 is a requirement section. Duties are NOT counted:
+    "take features from idea to production" has no keyword to match, so counting duties called a
+    duty-only Unstop posting a weak fit (4 of 17) on nothing but the matcher's blind spot."""
+    must = [r for r in match_rows or [] if r[0] == 0]
+    answered = sum(1 for r in must if r[2])
+    return answered, len(must), [r[1] for r in must if not r[2]]
+
+
+def _clip(s: str, n: int = 45) -> str:
+    s = " ".join(str(s).split())
+    return s if len(s) <= n else s[:n].rsplit(" ", 1)[0].rstrip(",;:") + "…"
+
+
+def recommendation(verdict, match_rows: list | None) -> tuple[str, str]:
+    """("APPLY" | "VERIFY" | "STRETCH" | "SKIP", one reason) — eligibility and fit judged apart, then
+    combined. StackAdapt was a "tier-1 (backend)" title match whose Go/Kafka asks his work did not
+    answer, and whose rules nobody had read; one 10/10 hid both facts."""
+    if verdict.level == "NO":
+        return "SKIP", next((w for lvl, w in verdict.reasons if lvl == "NO"), "a stated rule excludes you")
+    if verdict.level in ("CHECK", "NOT_STATED"):
+        return "VERIFY", next((w for lvl, w in verdict.reasons if lvl == "CHECK"),
+                              "the posting states no rules about who may apply — read them before you spend an evening")
+    done, total, gaps = fit_of(match_rows)
+    if not total:
+        return "APPLY", "nothing it states rules you out, and it lists no hard requirements"
+    why = f"your work answers {done} of its {total} stated requirements"
+    if done * 2 >= total:
+        return "APPLY", why
+    return "STRETCH", why + " — gaps: " + "; ".join(_clip(g) for g in gaps[:2])
+
+
 def tailoring_status(report: dict, jd: str) -> str:
     """"evidence" (his verified sentences matched to the posting's asks), "model" (too few matches; one
     verified model sentence), "failed" (nothing job-specific — this IS the base resume), or "none" (no
@@ -671,8 +707,10 @@ def build_resume(item: dict, full: dict, company: str = "") -> tuple[str, dict]:
                           f"{len(report.get('role_section') or [])} of the posting's asks (no model wrote any of it)",
               "model": f"Thinly tailored for: {item.get('title','')} — few of the posting's asks matched your "
                        f"profile; one model-written, verified sentence was added to the summary",
-              "failed": "TAILORING FAILED: this is your base resume — nothing in your profile matched this "
-                        "posting's asks, and no model sentence was written",
+              "failed": ("TAILORING PARTIAL: your profile does not answer this posting's main asks, so only "
+                         "the ordering changed — no model sentence was written" if ch else
+                         "TAILORING FAILED: this is your base resume — nothing in your profile matched this "
+                         "posting's asks, and no model sentence was written"),
               "none": "Your base resume (no job given)"}[report["tailoring"]]
     notes = [f"{status} — {date.today().isoformat()}",
              f"Changed for this job: {ch} of {tot} lines differ from your base resume.",

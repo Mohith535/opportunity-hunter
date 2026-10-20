@@ -83,6 +83,30 @@ huge = dict(item, title="T" * 500)
 big = P.card(huge, 8, Verdict(YES, []), dict(pack, company="C" * 900), fit, "N" * 900)
 check("3f. never over Telegram's 1024-character caption limit", P._visible_len(big) <= 1024, P._visible_len(big))
 
+# 3g–3l. Two judgements, one word (21 Oct). StackAdapt's card read "tier-1 · RULES NOT STATED · 10/10 ·
+# Tailoring failed: this is your base resume · 4 of 43 lines changed" — four signals, no decision, and
+# two of them contradicting each other.
+from resume.apply import fit_of, recommendation
+go_rows = [(0, "Python and REST APIs", "Its web dashboard runs on a JSON REST API…", "TaskFlow"),
+           (0, "Experience with LLMs", "Ten specialist agents (Google ADK)…", "Nova"),
+           (0, "Go and Kafka", "", ""), (1, "Nice: Rust", "", "")]
+check("3g. fit counts the must-haves his work answers", fit_of(go_rows) == (2, 3, ["Go and Kafka"]), fit_of(go_rows))
+check("3h. eligible + half the must-haves → APPLY", recommendation(Verdict(YES, []), go_rows)[0] == "APPLY")
+sa_rows = [(0, "Go", "", ""), (0, "Kafka, SQS or Kinesis", "", ""), (0, "Distributed systems", "(skills: SQL)", "")]
+w, why = recommendation(Verdict(YES, []), sa_rows)
+check("3i. eligible but a weak fit → STRETCH, naming the gaps", w == "STRETCH" and "1 of its 3" in why and "Go" in why, (w, why))
+w, why = recommendation(Verdict(CHECK, [(CHECK, "remote only from inside Canada — needs them to hire from abroad")]), go_rows)
+check("3j. eligibility unknown → VERIFY with the reason, whatever the fit", w == "VERIFY" and "Canada" in why, (w, why))
+check("3k. a stated rule → SKIP", recommendation(Verdict(NO, [(NO, "needs citizenship")]), go_rows) == ("SKIP", "needs citizenship"))
+sa = P.card(item, 8, Verdict(CHECK, [(CHECK, "remote only from inside Canada — needs them to hire from abroad")]),
+            dict(pack, report={"tailoring": "failed", "changed": (4, 43), "match_rows": sa_rows}), fit)
+check("3l. the card leads with the decision, and 4-of-43 is PARTIAL, not 'your base resume'",
+      "→ <b>VERIFY</b>" in sa and "PARTIAL" in sa and "base resume" not in sa, sa)
+duties = [(2, "Take features or small products from idea to production", "", "")] * 13 + \
+         [(2, "Build REST APIs", "Its web dashboard runs on a JSON REST API…", "TaskFlow")] * 4
+check("3m. duties are not requirements: a duty-only posting is not a STRETCH (the dry run said 4 of 17)",
+      recommendation(Verdict(YES, []), duties)[0] == "APPLY")
+
 # ── 4. buttons reuse the Worker's existing actions ───────────────────────────────────────────
 kb = P.buttons(item, pack)
 cbs = [b["callback_data"] for r in kb for b in r if "callback_data" in b]

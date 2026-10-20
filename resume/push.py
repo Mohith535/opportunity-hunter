@@ -111,9 +111,11 @@ def card(item: dict, score: int, verdict, pack: dict, fit_rows: list, note: str 
         pass
     if who:
         lines.append(e(who[:140]))
-    head = f"{verdict.icon} <b>{e(verdict.label)}</b> · {score}/10"
-    warn = next((w for lvl, w in verdict.reasons if lvl in ("NO", "CHECK")), "")
-    lines.append(head + (f" — {e(warn[:120])}" if warn else ""))
+    from .apply import recommendation  # noqa: PLC0415
+    rep = pack.get("report") or {}
+    word, why = recommendation(verdict, rep.get("match_rows"))
+    lines.append(f"→ <b>{word}</b> — {e(why[:150])}")
+    lines.append(f"{verdict.icon} <b>{e(verdict.label)}</b> · {score}/10")
     if fit_rows:
         b = sum(1 for r in fit_rows if r[1] == BUILT)
         s = sum(1 for r in fit_rows if r[1] == LEARNED)
@@ -131,12 +133,14 @@ def card(item: dict, score: int, verdict, pack: dict, fit_rows: list, note: str 
             lines.append(f"⏳ closes {e(dl)} ({left} day{'s' if left != 1 else ''})")
         except ValueError:
             lines.append(f"⏳ closes {e(dl)}")
-    rep = pack.get("report") or {}
+    ch = rep.get("changed")
     how = {"evidence": f"Tailored: your own sentences answer {len(rep.get('role_section') or [])} of its asks",
            "model": "Thinly tailored: few asks matched, one verified model sentence added",
-           "failed": "⚠ Tailoring failed: this is your base resume"}.get(rep.get("tailoring", ""), "")
+           # "failed" with lines changed is not a base resume — the card said both at once (StackAdapt:
+           # "this is your base resume · 4 of 43 lines changed"). Partial, and say what is missing.
+           "failed": ("⚠ Tailoring PARTIAL: your evidence does not answer its main asks" if ch and ch[0]
+                      else "⚠ Tailoring failed: this is your base resume")}.get(rep.get("tailoring", ""), "")
     if how:
-        ch = rep.get("changed")
         lines.append(e(how + (f" · {ch[0]} of {ch[1]} lines changed for this job" if ch else "")))
     lines.append("<i>Resume PDF + DOCX + job.md attached. Read job.md's checklist, then apply by hand.</i>")
 
@@ -247,13 +251,18 @@ def pack_one(item: dict, score: int, profile: dict, dry: bool = False, requested
     status = (f"{pack['pages']}-page PDF, fonts: {_fonts(pdf) or '?'}" if pdf
               else "no PDF (read-back gate: " + "; ".join(pack["problems"][:2]) + ")" if not pack["missing"]
               else "no PDF")
-    if dry:
-        say(f"[push] built{label}: {status}")
-        return "built"
-
+    # The list's score came from the stored summary; the full listing can turn ✅ into ⚠ (Unstop's
+    # "registration limited to specific cities"), and a ⚠ never shows as 10/10.
+    from .eligibility import capped  # noqa: PLC0415
+    score = capped(score, verdict, True)
     caption = card(item, score, verdict, pack,
                    skill_evidence(full.get("description") or item.get("description", ""), profile),
                    target.note(_as_opp(item)))
+    if dry:
+        say(f"[push] built{label}: {status}")
+        if not config.PUBLIC_LOGS:              # the card carries his floor and target — never in a public log
+            print(re.sub(r"<[^>]+>", "", html.unescape(caption)) + "\n")
+        return "built"
     slug = pack["out"].name
     files = [(p, p.name) for p in (pdf, pack["docx"]) if p]
     files.append((pack["out"] / "job.md", f"{slug}-job.md"))
