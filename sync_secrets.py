@@ -23,6 +23,7 @@ from __future__ import annotations
 import base64
 import gzip
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -92,9 +93,13 @@ def main() -> int:
         print("  gh (GitHub CLI) is not installed — https://cli.github.com, then `gh auth login`.")
         return 1
     failed = 0
+    # config loads .env, so GITHUB_TOKEN (the repo-reading token for the profile harvest) sits in our
+    # environment — and gh prefers it over its own login. When it expired (21 Oct) every secret failed
+    # with "Bad credentials" while `gh auth status` said logged in. Setting secrets is gh's own job.
+    env = {k: v for k, v in os.environ.items() if k not in ("GITHUB_TOKEN", "GH_TOKEN")}
     for name, value, note in ready:
         r = subprocess.run(["gh", "secret", "set", name], input=value, text=True,
-                           capture_output=True, cwd=config.BASE_DIR)
+                           capture_output=True, cwd=config.BASE_DIR, env=env)
         if r.returncode == 0:
             print(f"  {name:<18} set ({note})")
         else:
