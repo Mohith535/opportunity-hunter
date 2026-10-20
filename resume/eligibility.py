@@ -31,10 +31,16 @@ from datetime import date
 
 NO, CHECK, YES, NOT_STATED = "NO", "CHECK", "YES", "NOT_STATED"
 
-# Where a role can be held from India without a visa, in the listing's own words.
-_HOME = re.compile(r"\b(india|mumbai|bombay|bengaluru|bangalore|chennai|hyderabad|pune|delhi|new delhi|"
-                   r"noida|gurgaon|gurugram|kolkata|ahmedabad|jaipur|kochi|chandigarh|remote|anywhere|"
-                   r"work from home|wfh|online)\b", re.I)
+# Where a role can be held from India without a visa, in the listing's own words. "Remote" is NOT in
+# here: until 21 Oct it was, so "Remote in Canada" read as "works from India" and a Canadian co-op
+# (StackAdapt) reached him as a 10/10 — remote only means "from home" for someone allowed to work there.
+_INDIA = re.compile(r"\b(india|mumbai|bombay|bengaluru|bangalore|chennai|hyderabad|pune|delhi|new delhi|"
+                    r"noida|gurgaon|gurugram|kolkata|ahmedabad|jaipur|kochi|chandigarh|coimbatore|indore|"
+                    r"thiruvananthapuram|trivandrum|visakhapatnam|bhubaneswar|nagpur|lucknow|mysuru|mysore|"
+                    r"mangaluru|madurai|vellore)\b", re.I)
+_WORLD = re.compile(r"\b(worldwide|anywhere|global(?:ly)?|any country|all countries)\b", re.I)
+_REMOTE = re.compile(r"\b(remote|work from home|wfh|online|distributed)\b", re.I)
+_CODES = re.compile(r"\b(US|USA|UK|EU|EMEA|UAE|NYC)\b")      # case-sensitive, location strings only
 # Places that need a right to work he does not have. US state codes are matched as ", XX" to avoid
 # eating ordinary two-letter words.
 _ABROAD = re.compile(
@@ -62,6 +68,10 @@ class Candidate:
     degree: str = "bachelor"            # bachelor | master | phd
     course: str = "btech"               # Unstop's course key
     country: str = "India"
+    # His rule (21 Oct): "I am really okay to work in other countries and states, if they accept."
+    # So a place abroad is a CHECK for him, never a NO by itself — only a stated restriction is.
+    open_to_relocate: bool = False
+    work_rights: tuple = ("India",)
 
     @property
     def study_year(self) -> int:
@@ -82,7 +92,7 @@ class Verdict:
     @property
     def label(self) -> str:
         return {NO: "NOT ELIGIBLE", CHECK: "CHECK BEFORE APPLYING", YES: "ELIGIBLE",
-                NOT_STATED: "RULES NOT STATED"}[self.level]
+                NOT_STATED: "RULES NOT STATED — VERIFY"}[self.level]
 
     def line(self) -> str:
         head = f"{self.icon} {self.label}"
@@ -105,6 +115,10 @@ def candidate_from(profile: dict | None, target: dict | None = None) -> Candidat
         break
     if target and target.get("country"):
         c.country = str(target["country"])
+    if target and target.get("open_to_relocate") is not None:
+        c.open_to_relocate = bool(target["open_to_relocate"])
+    if target and target.get("work_rights"):
+        c.work_rights = tuple(str(x) for x in target["work_rights"])
     return c
 
 
@@ -139,9 +153,26 @@ def text_rules(text: str, c: Candidate) -> list[tuple[str, str]]:
             not re.search(r"bachelor|undergraduate|b\.?tech|master", low):
         out.append((NO, "PhD students only"))
 
-    if re.search(r"authori[sz]ed to work in the (united states|us|u\.s\.)|us work authori[sz]ation", low) and \
-            re.search(r"sponsorship is not|no (visa )?sponsorship|not (be )?able to sponsor|without sponsorship", low):
+    no_sponsor = _NO_SPONSOR.search(low)
+    if re.search(r"authori[sz]ed to work in the (united states|us|u\.s\.)|us work authori[sz]ation", low) and no_sponsor:
         out.append((NO, "needs US work authorisation, and sponsorship is not offered"))
+    else:
+        a = _AUTH.search(text or "")
+        place = (a.group(1).strip(" .") if a else "")
+        if a and no_sponsor and not _INDIA.search(place) and place.lower() not in [w.lower() for w in c.work_rights]:
+            out.append((NO, f"needs the right to work in {place[:30]}, and it does not sponsor visas"))
+        elif no_sponsor:
+            out.append((CHECK, "says it does not sponsor visas — fine only if the role is in India or remote from India"))
+    if not no_sponsor and _SPONSOR.search(low):
+        out.append((YES, "offers visa sponsorship or relocation support"))
+    for rx, why in ((_CITIZEN, "needs citizenship or a security clearance"),
+                    (_COOP, "needs enrolment in a co-op program at a university in that country")):
+        hit = rx.search(text or "")
+        if hit:
+            out.append((NO, f"{why} (\"{hit.group(0)[:40]}\")"))
+    r = _RESIDE.search(text or "")
+    if r and (_ABROAD.search(r.group(1)) or _CODES.search(r.group(1))) and not _INDIA.search(r.group(1)):
+        out.append((NO, f"you must live in {r.group(1).strip()[:30]}"))
     m = re.search(r"from a university in ([a-z ]+?)\s*\(required\)", low)
     if m and m.group(1).strip() != c.country.lower():
         out.append((NO, f"must be enrolled at a university in {m.group(1).strip().title()}"))
@@ -154,14 +185,105 @@ def text_rules(text: str, c: Candidate) -> list[tuple[str, str]]:
 
 
 def location_rules(location: str, remote: bool | None, c: Candidate) -> list[tuple[str, str]]:
+    """Where the job is, against where he can work. A listing may name several places ("Bengaluru;
+    Remote in USA"): the best one decides, because he only needs one he can take.
+
+    Abroad is a NO only for someone who would not move. He would (21 Oct), so for him it is a CHECK
+    that says what to look for — the restriction that hides a job is a STATED one (text_rules)."""
     loc = (location or "").strip()
     if not loc:
         return []
-    if remote or _HOME.search(loc):
-        return [(YES, f"location works from {c.country}: {loc[:40]}")]
-    if _ABROAD.search(loc):
-        return [(NO, f"based in {loc[:40]} — you would need the right to work there")]
-    return [(CHECK, f"location: {loc[:40]}")]
+    found: list[tuple[str, str]] = []
+    for p in [x.strip() for x in re.split(r"[;|]|\s+or\s+|\s+/\s+", loc) if x.strip()] or [loc]:
+        far = _ABROAD.search(p) or _CODES.search(p)
+        if _INDIA.search(p) or _WORLD.search(p):
+            return [(YES, f"location works from {c.country}: {p[:40]}")]
+        if far and _REMOTE.search(p):
+            where = far.group(0).strip(" ,")
+            found.append((CHECK, f"remote only from inside {where} — needs them to hire from abroad")
+                         if c.open_to_relocate else
+                         (NO, f"remote only from inside {where} — you would need to live there with the right to work"))
+        elif far:
+            found.append((CHECK, f"abroad ({p[:40]}) — you are open to moving; check they accept international applicants")
+                         if c.open_to_relocate else
+                         (NO, f"based in {p[:40]} — you would need the right to work there"))
+        elif _REMOTE.search(p) or remote:
+            # A structured remote flag comes from Unstop's work-from-home field (an India-only site);
+            # the bare word in prose does not say from where.
+            found.append((YES, f"location works from {c.country}: {p[:40]}") if remote else
+                         (CHECK, f"remote, country not stated: {p[:40]} — check you may work from {c.country}"))
+        else:
+            found.append((CHECK, f"location: {p[:40]}"))
+    best = min((_RANK[lvl] for lvl, _ in found), default=None)
+    return [r for r in found if _RANK[r[0]] == best]
+
+
+_RANK = {YES: 0, CHECK: 1, NO: 2}
+
+
+def remote_abroad(text: str) -> str:
+    """The foreign place a "remote" is tied to — "Remote in Canada", "Remote - US", "USA (Remote)" — or
+    "". A window around the word, not the whole text: "offices in London and Bengaluru, remote OK"
+    must not turn into remote-only-from-London."""
+    for m in _REMOTE.finditer(text or ""):
+        window = text[max(0, m.start() - 25): m.end() + 30]
+        far = _ABROAD.search(window) or _CODES.search(window)
+        if far and not _INDIA.search(window) and not _WORLD.search(window):
+            return far.group(0).strip(" ,")
+    return ""
+
+# Stated restrictions. Asking "are you authorised to work here / do you need sponsorship?" is on nearly
+# every form and is NOT a restriction by itself (career-ops draws the same line); refusing to sponsor,
+# demanding citizenship, a clearance, a local co-op or local residence is.
+_NO_SPONSOR = re.compile(
+    r"sponsorship is not (?:available|offered|provided)|\bno (?:visa |immigration |employment )?sponsorship|"
+    r"\b(?:unable|not able) to (?:offer |provide )?(?:visa |immigration )?sponsor|"
+    r"\b(?:do|does|will|can) not (?:offer |provide )?(?:visa |immigration |employment )?sponsor|"
+    r"\bcannot (?:offer |provide )?(?:visa |immigration )?sponsor|"
+    r"without (?:the need for |requiring |needing )?(?:current or future )?(?:visa |employer |employment )?sponsorship",
+    re.I)
+_SPONSOR = re.compile(r"(?:visa |immigration )?sponsorship (?:is )?(?:available|provided|offered)|"
+                      r"\b(?:we|will|can) sponsor\b|\boffers? (?:visa )?sponsorship|"
+                      r"relocation (?:assistance|support|package|bonus|stipend)", re.I)
+_AUTH = re.compile(r"(?:authori[sz]ed|eligible|permitted) to work (?:in|for) (?:the )?([A-Za-z .]{2,30}?)"
+                   r"(?=[.;,)\n]| without| on | and | for |$)", re.I)
+_CITIZEN = re.compile(r"u\.?s\.? citizenship (?:is )?required|citizenship (?:is )?required|\bcitizens only\b|"
+                      r"must be an? (?:u\.?s\.?|us|american|canadian|uk|british|australian|eu) citizen|"
+                      r"security clearance|\bitar\b|u\.?s\.? persons? only", re.I)
+_COOP = re.compile(r"(?:enrolled|registered|participating) in (?:an? )?(?:accredited |recognized |recognised |"
+                   r"post-secondary )?co-?op(?:erative)?(?: education)? program|accredited co-?op|"
+                   r"(?:official|mandatory|required) co-?op (?:work )?term", re.I)
+_RESIDE = re.compile(r"must (?:currently )?(?:be (?:based|located|residing)|reside|live) in (?:the )?"
+                     r"([A-Za-z .]{2,40}?)(?=[.;,)\n]|$| to | and | for | with )", re.I)
+
+
+def form_rules(questions: list[str], c: Candidate) -> list[tuple[str, str]]:
+    """Rules hidden in the application form, which Greenhouse publishes with `?questions=true`. The
+    StackAdapt form asked about an accredited co-op and the province he would work from — none of it in
+    the posting text, all of it visible to a program that reads the form."""
+    out: list[tuple[str, str]] = []
+    for q in questions or []:
+        low = q.lower()
+        if re.search(r"co-?op", low) and re.search(r"enrol|accredit|program|term", low):
+            out.append((NO, "its application form asks if you are in a local co-op program"))
+        elif re.search(r"province|territory", low) and re.search(r"work|reside|live|located", low):
+            out.append((CHECK, "its form asks which province/territory you will work from — it expects you inside that country"))
+        elif re.search(r"citizen|security clearance|\bitar\b", low):
+            out.append((CHECK, "its form asks about citizenship or a security clearance"))
+    return list(dict.fromkeys(out))
+
+
+def _escalate(reasons: list[tuple[str, str]]) -> list[tuple[str, str]]:
+    """Two soft signals that together are a hard one: abroad + "we do not sponsor" is a closed door,
+    and abroad + "we sponsor / relocate" is an open one."""
+    abroad = [r for r in reasons if r[1].startswith(("abroad (", "remote only from inside"))]
+    if abroad and any("does not sponsor" in w for _, w in reasons):
+        return reasons + [(NO, "abroad, and it does not sponsor visas")]
+    if abroad and any(w.startswith("offers visa sponsorship") for _, w in reasons):
+        return [r for r in reasons if (r not in abroad or r[1].startswith("remote only"))
+                and not r[1].startswith("offers visa sponsorship")] + \
+               [(YES, "abroad, and it offers sponsorship or relocation")]
+    return reasons
 
 
 _SENIOR = re.compile(r"\b(senior|sr\.?|principal|staff engineer|director|head of|vice president|vp)\b", re.I)
@@ -256,6 +378,7 @@ def assess(c: Candidate, text: str = "", location: str = "", remote: bool | None
     reasons = text_rules(text, c) + location_rules(location, remote, c)
     if unstop:
         reasons += unstop_rules(unstop, c)
+    reasons = _escalate(reasons)
     seen, uniq = set(), []
     for lvl, why in reasons:
         if why not in seen:
@@ -359,7 +482,8 @@ _BUCKETS = [
     ("experience", r"experience"),
     ("year of study", r"year \d|junior|final-year"),
     ("PhD only", r"phd"),
-    ("work rights / country", r"authori[sz]|right to work|university in|based in"),
+    ("work rights / country", r"authori[sz]|right to work|university in|based in|citizen|clearance|"
+                              r"co-op|sponsor|live in|inside|abroad"),
 ]
 
 
@@ -372,7 +496,17 @@ def reason_bucket(why: str) -> str:
 
 def _verdict(reasons):
     order = {NO: 0, CHECK: 1, YES: 2}
-    reasons = sorted(dict.fromkeys(reasons), key=lambda r: order.get(r[0], 3))
+    reasons = sorted(dict.fromkeys(_escalate(list(reasons))), key=lambda r: order.get(r[0], 3))
     level = NO if any(l == NO for l, _ in reasons) else CHECK if any(l == CHECK for l, _ in reasons) \
         else YES if reasons else NOT_STATED
     return Verdict(level, list(reasons))
+
+
+VERIFY_CAP = 8
+
+
+def capped(score: int, verdict: Verdict, employment: bool) -> int:
+    """A 9–10 says "go". For a job that needs a verdict saying he can apply: "rules not stated" and
+    "check before applying" stay visible, at most an 8. StackAdapt reached him as a 10/10 with
+    "RULES NOT STATED" printed right beside the score."""
+    return min(score, VERIFY_CAP) if employment and verdict.level in (CHECK, NOT_STATED) else score

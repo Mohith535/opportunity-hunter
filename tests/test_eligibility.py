@@ -280,6 +280,83 @@ finally:
     A._profile, A._candidate = _old_profile, _old_cand
     _cfg.HIDE_INELIGIBLE = True
 
+# ── 11. 21 Oct — he will move abroad; only a STATED restriction hides a job ─────────────────
+# StackAdapt (Canadian co-op, "Remote in Canada") reached him as a 10/10 with "RULES NOT STATED", and
+# 182 of 433 jobs kept in two weeks were abroad, every one judged "not stated". Then he said: "I am
+# really okay to work in other countries and states, if they accept — just filter real restrictions."
+from resume.eligibility import VERIFY_CAP, capped, form_rules, remote_abroad
+STAY, GO = Candidate(), Candidate(open_to_relocate=True)
+check("11a. 'Remote in Canada' is not work-from-India (it was YES — '_HOME' held the word remote)",
+      levels(location_rules("Remote in Canada", None, STAY)) == [NO], location_rules("Remote in Canada", None, STAY))
+r = location_rules("Remote in Canada", None, GO)
+check("11b. ...for someone open to moving it is a CHECK that names the catch",
+      levels(r) == [CHECK] and "remote only from inside Canada" in r[0][1], r)
+check("11c. abroad alone never hides a job from him (it was NO)",
+      levels(location_rules("Mountain View, CA", None, GO)) == [CHECK])
+check("11d. ...but still does for a candidate who will not move",
+      levels(location_rules("Mountain View, CA", None, STAY)) == [NO])
+check("11e. several places: the best one decides",
+      levels(location_rules("Bengaluru, India; Remote in USA", None, STAY)) == [YES])
+check("11f. Unstop's work-from-home flag still means India", levels(location_rules("Online", True, GO)) == [YES])
+check("11g. citizenship / clearance is a stated restriction",
+      NO in levels(text_rules("U.S. citizenship is required for this role due to ITAR.", GO)))
+check("11h. a local co-op program is a stated restriction",
+      NO in levels(text_rules("You must be currently enrolled in an accredited co-op program.", GO)))
+check("11i. Canada work rights + no sponsorship (only the US was caught before)",
+      NO in levels(text_rules("Must be legally authorized to work in Canada. We are unable to sponsor.", GO)))
+check("11j. abroad + 'Does Not Offer Sponsorship' (SimplifyJobs) is a closed door",
+      assess(GO, "internship | Foo | Austin, TX | Summer 2027 | Does Not Offer Sponsorship", "Austin, TX").level == NO)
+check("11k. abroad + 'Offers Sponsorship' is an open one",
+      assess(GO, "internship | Foo | Austin, TX | Summer 2027 | Offers Sponsorship", "Austin, TX").level == YES)
+check("11l. the form's co-op question is a rule (StackAdapt's real rule lived only in its form)",
+      levels(form_rules(["Are you currently enrolled in an accredited co-op program?"], GO)) == [NO])
+check("11m. 'are you authorised / do you need sponsorship' is on every form — never a rule by itself",
+      form_rules(["Are you legally authorized to work in the country where the job is located?",
+                  "Will you now or in the future require sponsorship?"], GO) == [])
+check("11n. remote tied to a foreign place is found; offices named elsewhere in prose are not",
+      remote_abroad("internship | StackAdapt | Remote in Canada | Winter 2027") == "Canada"
+      and remote_abroad("Offices in London and Bengaluru; remote OK") == "")
+v_check = assess(GO, "", "Remote in Canada")
+check("11o. a job he must verify is at most an 8; an eligible one keeps its 10; a hackathon is not capped",
+      capped(10, v_check, True) == VERIFY_CAP == 8 and capped(10, assess(GO, "", "Mumbai"), True) == 10
+      and capped(10, v_check, False) == 10)
+
+# 11p. End to end, through the source as it really writes the item.
+import sources.internships as SI
+class _Resp:
+    def raise_for_status(self): pass
+    def json(self):
+        return [{"active": True, "is_visible": True, "title": "Software Engineer Backend Intern",
+                 "company_name": "StackAdapt", "locations": ["Remote in Canada"], "terms": ["Winter 2027"],
+                 "sponsorship": "Other", "url": "https://job-boards.greenhouse.io/stackadapt-confidential/jobs/4386552009",
+                 "id": "e8a1", "date_posted": 1}]
+_get = SI.requests.get
+SI.requests.get = lambda *a, **k: _Resp()
+try:
+    sa = SI.fetch()[0]
+finally:
+    SI.requests.get = _get
+d = sa.to_dict()
+check("11p. the SimplifyJobs place survives into history (it was dropped: raw 'locations' is not a fact key)",
+      (d.get("facts") or {}).get("location") == "Remote in Canada", d.get("facts"))
+check("11q. ...so StackAdapt is judged, not 'rules not stated'",
+      A.eligibility_of(d, None, GO).level == CHECK and A.eligibility_of(d, None, STAY).level == NO)
+from filters import target as T
+check("11r. and it no longer earns 'remote, which you accept'", T.is_remote(sa) is False)
+check("11s. the employer's own posting is found from an aggregator URL",
+      A.ats_native(d) == "gh:stackadapt-confidential:4386552009")
+_old_profile, _old_cand = A._profile, A._candidate
+try:
+    A._profile = lambda: {"education": [{"institution": "X Institute of Technology",
+                                          "startDate": "2025", "endDate": "2029"}]}
+    A._candidate = lambda prof=None: Candidate(grad_year=2029, start_year=2025, open_to_relocate=True)
+    sa.score = 10
+    kept, hid = M._drop_ineligible([sa])
+    check("11t. the daily gate keeps it, capped at 8 and tagged — visible, never a 10/10 'go'",
+          kept and kept[0].score == 8 and "eligibility:verify" in kept[0].tags, (kept and kept[0].score, hid))
+finally:
+    A._profile, A._candidate = _old_profile, _old_cand
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))

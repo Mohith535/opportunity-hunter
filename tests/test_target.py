@@ -227,6 +227,25 @@ for p in _TMP:
     except OSError:
         pass
 
+# ── 21 Oct: open to other states and countries ────────────────────────────────────────────
+# "I am really okay to work in other countries and states, if they accept." A city off his list stops
+# costing points; his own cities still earn the bonus. And "Remote in Canada" is not his remote.
+set_target(locations=["mumbai", "remote"], open_to_relocate=True)
+pune = intern(raw={"cities": ["Pune"]})
+check("42. open_to_relocate: a city off the list loses nothing (it was −3)",
+      not any("not on your list" in w for w, _ in target.reasons(pune)), target.reasons(pune))
+check("43. ...while his own city still wins",
+      any(w.startswith("in Mumbai") for w, _ in target.reasons(intern(raw={"cities": ["Mumbai"]}))))
+canada = intern("Software Engineer Backend Intern", source="internships",
+                desc="internship | StackAdapt | Remote in Canada | Winter 2027 | Other",
+                raw={"location": "Remote in Canada"})
+check("44. 'Remote in Canada' does not earn 'remote, which you accept' (StackAdapt did)",
+      not any("remote, which you accept" in w for w, _ in target.reasons(canada)), target.reasons(canada))
+set_target(locations=["mumbai", "remote"])
+check("45. without open_to_relocate the old miss still applies",
+      any("not on your list" in w for w, _ in target.reasons(pune)))
+clear_target()
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))

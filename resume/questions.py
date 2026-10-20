@@ -72,8 +72,22 @@ def _first(pool, pattern: str, n: int = 2) -> list[tuple[str, str]]:
     return hits
 
 
+MAX_ANSWER_CHARS = 480  # Unstop-style boxes reject long pastes; he hit this 4 Oct. Well under any form's cap.
+
+
 def _join(hits) -> str:
-    return " ".join(f"{p}: {s}" if p else s for s, p in hits)
+    """One or two evidence sentences, trimmed to fit a form's answer box (never cuts mid-sentence)."""
+    parts = [f"{p}: {s}" if p else s for s, p in hits]
+    full = " ".join(parts)
+    if len(full) <= MAX_ANSWER_CHARS or not parts:
+        return full
+    kept, total = [], 0
+    for part in parts:
+        if total + len(part) + 1 > MAX_ANSWER_CHARS and kept:
+            break
+        kept.append(part)
+        total += len(part) + 1
+    return " ".join(kept)
 
 
 def _level(lang: str, profile: dict) -> tuple[str, str]:
@@ -136,7 +150,8 @@ def answer(q: str, profile: dict, match_rows: list | None = None, options: list 
 
 def section(item: dict, profile: dict, match_rows: list | None) -> list[str]:
     """job.md lines: the form's questions with drafted answers."""
-    real = greenhouse_questions(str(item.get("native_id") or ""))
+    from .apply import ats_native  # noqa: PLC0415
+    real = greenhouse_questions(ats_native(item))
     qs = real or [{"q": q, "required": True, "options": []} for q in COMMON]
     head = ("These are this employer's own form questions (from its job-board API), basics removed."
             if real else

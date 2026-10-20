@@ -26,14 +26,30 @@
     "  require_pay true means an explicitly unpaid or pay-unknown listing loses ground too. Leave",
     "              it false unless the money is the whole point.",
     "",
+    "  open_to_relocate  true = you would move to another state or country if they accept you.",
+    "              A job abroad is then a CHECK ('check they accept international applicants'),",
+    "              never hidden for being abroad, and a city off your list loses no points. Only a",
+    "              STATED restriction hides a job: local work rights + no sponsorship, citizenship",
+    "              or clearance, a local co-op program, 'must live in X', remote only from inside X.",
+    "  work_rights Countries you can already work in without a visa. Default ['India'].",
+    "",
     "Weights live in config.TARGET_WEIGHTS if you ever want to tune how hard each one pulls."
   ],
-
   "active": true,
   "goal": "Paid internship I can do from Mumbai — offer letter in hand before 5 Dec 2026",
   "by": "2026-12-05",
-  "focus": ["internship", "job"],
-  "locations": ["mumbai", "remote"],
+  "focus": [
+    "internship",
+    "job"
+  ],
+  "locations": [
+    "mumbai",
+    "remote"
+  ],
   "min_pay_per_month": 15000,
-  "require_pay": true
+  "require_pay": true,
+  "open_to_relocate": true,
+  "work_rights": [
+    "India"
+  ]
 }

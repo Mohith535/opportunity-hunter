@@ -78,9 +78,13 @@ def _text(raw: str) -> str:
 
 # ─── the full posting, from the employer's own API ────────────────────────────────────────
 def _greenhouse_detail(slug: str, job_id: str) -> dict:
-    url = f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs/{job_id}?questions=false"
+    # questions=true costs nothing extra and carries the form, where StackAdapt kept its real rules
+    # (an accredited Canadian co-op, the province you work from) — none of them in the posting text.
+    url = f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs/{job_id}?questions=true"
     j = requests.get(url, headers=_HEADERS, timeout=_FETCH_TIMEOUT).json()
     return {
+        "form_questions": [re.sub(r"<[^>]+>", "", q.get("label") or "").strip()
+                           for q in j.get("questions") or [] if q.get("label")],
         "description": _text(j.get("content")),
         "apply_url": j.get("absolute_url", ""),
         "company": j.get("company_name", ""),
@@ -192,6 +196,25 @@ def _unstop_detail(oid: str) -> dict:
     }
 
 
+_ATS_URL = [(re.compile(r"(?:job-boards|boards)\.greenhouse\.io/([^/?#]+)/jobs/(\d+)"), "gh"),
+            (re.compile(r"jobs\.lever\.co/([^/?#]+)/([0-9a-f-]{36})"), "lever"),
+            (re.compile(r"jobs\.ashbyhq\.com/([^/?#]+)/([0-9a-f-]{36})"), "ashby")]
+
+
+def ats_native(item: dict) -> str:
+    """The employer-ATS id ("gh:<board>:<id>") for an item, read from its URL when the source gave its
+    own id. An aggregator (SimplifyJobs) points at the employer's Greenhouse page, and the employer's
+    page is the authority on who may apply — the aggregator's summary said only "Remote in Canada"."""
+    native = str(item.get("native_id") or "")
+    if native.split(":", 1)[0] in _ATS:
+        return native
+    for rx, kind in _ATS_URL:
+        m = rx.search(str(item.get("url") or ""))
+        if m:
+            return f"{kind}:{m.group(1)}:{m.group(2)}"
+    return native
+
+
 def fetch_full_jd(item: dict) -> dict:
     """Everything the employer publishes about this role, or {} when we cannot get more.
 
@@ -206,7 +229,7 @@ def fetch_full_jd(item: dict) -> dict:
         except (requests.RequestException, ValueError, KeyError, TypeError) as e:
             log(f"[apply] could not fetch the Unstop listing {native}: {type(e).__name__}")
         return {}
-    parts = native.split(":", 2)
+    parts = ats_native(item).split(":", 2)
     if len(parts) == 3 and parts[0] in _ATS:
         try:
             got = _ATS[parts[0]](parts[1], parts[2])
@@ -259,6 +282,7 @@ def ranked_items(pool: int = 150, today: date | None = None, items: list[dict] |
     filtering would build the pack for a job you never picked. Past deadlines are dropped outright —
     a pack for a closed opportunity is a wasted evening."""
     from filters import focus, target  # noqa: PLC0415
+    from .eligibility import capped  # noqa: PLC0415
     today = today or date.today()
     cand = _candidate()
     wanted = set(focus.active())
@@ -273,7 +297,8 @@ def ranked_items(pool: int = 150, today: date | None = None, items: list[dict] |
             except ValueError:
                 pass
         o = _as_opp(i)
-        rows.append((i, rescore(i), eligibility_of(i, None, cand), {
+        v = eligibility_of(i, None, cand)
+        rows.append((i, capped(rescore(i), v, focus.kind_of(o) in target.EMPLOYMENT_KINDS), v, {
             "off": bool(wanted) and focus.kind_of(o) not in wanted,
             "nudge": target.adjustment(o),
             "ai": i.get("ai_score", -1) if isinstance(i.get("ai_score"), int) else -1,
@@ -360,13 +385,14 @@ def rescore(d: dict) -> int:
 
 def eligibility_of(d: dict, full: dict | None = None, cand=None):
     """The eligibility verdict: from the full posting when we have it, else from what history stored."""
-    from .eligibility import assess, from_description, location_rules, title_rules, _verdict  # noqa: PLC0415
+    from .eligibility import assess, form_rules, from_description, location_rules, title_rules, _verdict  # noqa: PLC0415
     cand = cand or _candidate()
     senior = title_rules(d.get("title", ""), cand)
     if full and full.get("description"):
         v = assess(cand, full.get("description", ""), full.get("location", ""),
                    full.get("remote"), full.get("unstop"))
-        return _verdict(senior + list(v.reasons)) if senior else v
+        extra = senior + form_rules(full.get("form_questions") or [], cand)
+        return _verdict(extra + list(v.reasons)) if extra else v
     v = from_description(d.get("description", "") or "", cand)
     facts = d.get("facts") or {}
     loc = facts.get("location") or ", ".join(facts.get("cities") or [])

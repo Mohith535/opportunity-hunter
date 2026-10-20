@@ -69,7 +69,10 @@ def fetch() -> list[Opportunity]:
                 description=desc,
                 native_id=str(x.get("id") or url),
                 tags=["internship"],
-                raw={"company": company, "locations": x.get("locations"),
+                # "location", not "locations": models._FACT_KEYS keeps the former. Until 21 Oct the list
+                # was dropped before history was written, so 182 jobs abroad in two weeks were judged
+                # "rules not stated" and the ⛔ gate never saw one of them.
+                raw={"company": company, "location": "; ".join(x.get("locations") or []),
                      "aggregator": x.get("source")},
             )
         )

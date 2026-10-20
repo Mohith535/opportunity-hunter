@@ -249,7 +249,12 @@ def is_remote(item) -> bool:
     if raw.get("cities"):
         return False
     text = f"{getattr(item, 'title', '')} {getattr(item, 'description', '')}".lower()
-    return any(w in text for w in ("remote", "work from home", "wfh", "online"))
+    if not any(w in text for w in ("remote", "work from home", "wfh", "online")):
+        return False
+    # "Remote in Canada" is working from home for someone allowed to work in Canada — StackAdapt got
+    # "remote, which you accept" for exactly that.
+    from resume.eligibility import remote_abroad  # noqa: PLC0415
+    return not remote_abroad(str(raw.get("location") or "") or text)
 
 
 def _phrase(term: str) -> re.Pattern:
@@ -312,8 +317,10 @@ def reasons(item) -> list[tuple[str, int]]:
         elif cities and any(any(n in c for n in named) for c in cities):
             hit = next(c for c in cities if any(n in c for n in named))
             out.append((f"in {hit.title()}", w["location_hit"]))
-        elif cities and named:
-            # It states a city, and it is not one of yours. That is a real mismatch, not a gap.
+        elif cities and named and not t.get("open_to_relocate"):
+            # It states a city, and it is not one of yours. That is a real mismatch, not a gap —
+            # unless he has said other places are fine (open_to_relocate, 21 Oct: "I am really okay to
+            # work in other countries and states"). Then his cities still win a bonus; others lose nothing.
             out.append((f"in {cities[0].title()}, not on your list", w["location_miss"]))
 
     # ── money ── likewise: a hackathon has no salary to be under your floor ───────────────

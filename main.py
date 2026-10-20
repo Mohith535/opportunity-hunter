@@ -362,13 +362,22 @@ def _drop_ineligible(items: list) -> tuple[list, dict]:
     if not prof.get("education"):
         return items, {}
     cand = _candidate(prof)
+    from filters import focus, target
+    from resume.eligibility import capped
     kept, why = [], Counter()
     for it in items:
         v = eligibility_of(it.to_dict(), None, cand)
         if v.level == "NO":
             why[reason_bucket(next(w for lvl, w in v.reasons if lvl == "NO"))] += 1
-        else:
-            kept.append(it)
+            continue
+        # A 9-10 means "go": for a job that needs a verdict saying he can apply. StackAdapt reached
+        # him as 10/10 beside "RULES NOT STATED". Unknown stays visible, at most an 8, and says so.
+        new = capped(it.score, v, focus.kind_of(it) in target.EMPLOYMENT_KINDS)
+        if new < it.score:
+            it.score = new
+            if "eligibility:verify" not in it.tags:
+                it.tags.append("eligibility:verify")
+        kept.append(it)
     return kept, dict(why)
 
 
