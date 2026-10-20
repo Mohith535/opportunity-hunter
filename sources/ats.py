@@ -113,7 +113,10 @@ def _opp(title, url, company, platform, location="", posted=None, native_id=None
         description=" | ".join(bits),
         deadline=None,          # career boards rarely publish one; absence beats a guess
         native_id=native_id or url,
-        tags=["job"],
+        # The board knows an "Intern" title is an internship. Tagged "job", it lost the kind credit
+        # AND the "internship" interest ("Intern" is a different word): Adobe's Software Engineer Intern
+        # scored 4 where the same role on Unstop, titled "…Internship", scored 9 (21 Oct).
+        tags=["internship"] if re.search(r"\b(intern(?:ship)?|co-?op)\b", title, re.I) else ["job"],
         raw={"company": company, "platform": platform, "location": location, "posted": posted},
     )
 

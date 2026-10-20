@@ -63,6 +63,8 @@ LOCATION_PREFERENCE = ["remote", "online", "india", "worldwide", "global"]
 KNOWN_COMPANIES = [
     "google", "microsoft", "anthropic", "nvidia", "aws", "amazon",
     "openai", "meta", "deepmind", "apple", "ibm",
+    # read directly since 21 Oct (sources/ats.py big-company radar)
+    "adobe", "intel", "electronic arts", "salesforce",
 ]
 
 

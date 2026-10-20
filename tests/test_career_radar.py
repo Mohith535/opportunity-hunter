@@ -106,6 +106,18 @@ check("7d. a Workday item's pack reads the employer's own posting",
       A.ats_native({"native_id": "workday:adobe.wd5/adobe/external_experienced:/job/Bangalore/X_R1"}).startswith("workday:")
       and "workday" in A._ATS)
 
+# ── the same role must not score 5 points lower because a board says "Intern" (21 Oct)
+from filters import focus
+from filters.scorer import score_item
+from models import Opportunity
+board = ats._opp("Software Engineer Intern", "https://x", "Adobe", "Workday", "Bangalore")
+unstop = Opportunity("Software Engineer Internship", "https://y", "unstop",
+                     "internship | Adobe | Bangalore", tags=["internship"])
+check("8a. a board's 'Intern' title is an internship (it was tagged 'job')", focus.kind_of(board) == "internship")
+check("8b. ...and scores within a point of the same role titled 'Internship' (it was 4 vs 9)",
+      abs(score_item(board) - score_item(unstop)) <= 1, (score_item(board), score_item(unstop)))
+check("8c. a board role without 'intern' stays a job", focus.kind_of(ats._opp("New Grad Engineer", "u", "S", "Lever")) == "job")
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))
