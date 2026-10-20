@@ -163,8 +163,16 @@ async function handlePlan(env, key, cb, chatId) {
   }
 }
 
+// A pack is usually built for a job outside the digest's feed, so findItem missed it and the tap was
+// saved with no title — 9 of his taps by 21 Oct, his most recent applications. The hunt learns from
+// tap TITLES (filters/outcomes.py), so it learned nothing from them. The pack record has the title.
+async function packItem(env, key) {
+  const p = (await kvGet(env, "packs", [])).find((x) => x.key === key);
+  return p ? { key, title: p.title, url: "", tags: [], score: 0 } : null;
+}
+
 async function handleStatus(env, action, key, cb) {
-  const item = await findItem(env, key);
+  const item = (await findItem(env, key)) || (await packItem(env, key));
   const status = action === "applied" ? "applied" : action === "skip" ? "skipped" : "remind";
   await setStatus(env, key, status, item);
   const msg = action === "applied" ? "Marked as applied ✅ — nice one!"
@@ -301,9 +309,11 @@ async function learnApi(request, env, path) {
     return new Response("unauthorized", { status: 401 });
   if (path === "/tracker" && request.method === "GET") {
     const t = await kvGet(env, "tracker", {});
+    const packs = await kvGet(env, "packs", []);
     const out = {};
     for (const [k, e] of Object.entries(t))
-      out[k] = { title: e.title || "", status: e.status || "", updated_at: e.updated_at || "", tags: e.tags || [] };
+      out[k] = { title: e.title || (packs.find((p) => p.key === k) || {}).title || "", status: e.status || "",
+                 updated_at: e.updated_at || "", tags: e.tags || [] };
     return Response.json(out);
   }
   if (path === "/learned" && request.method === "PUT") {
