@@ -76,6 +76,21 @@ check("19. a site that hides its form gets the common questions, labelled as suc
       any("behind login" in l for l in L) and any("How comfortable are you with Python?" in l for l in L))
 check("20. Greenhouse ids only — anything else makes no network call", Q.greenhouse_questions("lever:x:1") == [])
 
+# ── Unstop's 200-character box (7 Oct: "200 characters exceeded") ────────────────────────────
+long = ("Not with FastAPI, Flask or Django — TaskFlow: Its web dashboard runs on a JSON REST API I wrote on "
+        "Python's standard-library http.server (ThreadingHTTPServer), with GET and POST endpoints such as "
+        "/api/tasks and /api/path, no framework. OPHunter: The bot and my laptop share one setting.")
+short = Q.fit_box(long)
+check("22. the short version fits the box", len(short) <= Q.UNSTOP_BOX, len(short))
+check("23. ...and keeps the yes, not only the no (the first cut kept just 'Not with FastAPI, Flask or Django.')",
+      "TaskFlow" in short and "http.server" in short and not short.endswith("…"), short)
+check("24. an answer that already fits is untouched", Q.fit_box("Yes. Bedrock.") == "Yes. Bedrock.")
+Lu = Q.section({"native_id": "unstop-1", "source": "unstop"}, P, [])
+Lg = Q.section({"native_id": "lever:x:1", "source": "ats"}, P, [])
+check("25. Unstop packs carry the 200-character version; other sites do not",
+      any("200-character box" in l for l in Lu) == any(len(Q.answer(q, P)[0]) > 200 for q in Q.COMMON)
+      and not any("200-character box" in l for l in Lg))
+
 # ── sync ─────────────────────────────────────────────────────────────────────────────────────
 check("21. a folder or file name from the bot can never escape applications/",
       S._safe("../../etc/passwd") == "etc-passwd" and "/" not in S._safe("a/b\\c") and S._safe("") == "file")

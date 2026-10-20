@@ -148,6 +148,31 @@ def answer(q: str, profile: dict, match_rows: list | None = None, options: list 
     return "YOU ANSWER — nothing in your verified profile fits this question.", "no evidence"
 
 
+UNSTOP_BOX = 200   # Unstop's free-text box rejected a 562-character answer on 7 Oct: "200 characters exceeded"
+
+
+def fit_box(text: str, limit: int = UNSTOP_BOX) -> str:
+    """The longest prefix of whole sentences that fits — or one sentence cut at its last clause break,
+    never mid-word. A form that refuses a long paste should get his words shortened, not new ones."""
+    from .match import _sentences  # noqa: PLC0415
+    if len(text) <= limit:
+        return text
+    out = ""
+    for sent in _sentences(text):
+        if len(f"{out} {sent}".strip()) <= limit:
+            out = f"{out} {sent}".strip()
+        elif not out:
+            cut = sent[:limit - 1]
+            # The LAST clause break that fits: the first-found kind cut "Not with FastAPI, Flask or
+            # Django — TaskFlow: …" down to "Not with FastAPI, Flask or Django." — all of the no, none of the yes.
+            pos = max(cut.rfind(m) for m in (" — ", "; ", ", ", ": "))
+            out = (cut[:pos].rstrip(" ,;:—") + ".") if pos > limit // 3 else cut.rsplit(" ", 1)[0] + "…"
+            break
+        else:
+            break
+    return out
+
+
 def section(item: dict, profile: dict, match_rows: list | None) -> list[str]:
     """job.md lines: the form's questions with drafted answers."""
     from .apply import ats_native  # noqa: PLC0415
@@ -161,5 +186,9 @@ def section(item: dict, profile: dict, match_rows: list | None) -> list[str]:
     for q in qs[:20]:
         ans, why = answer(q["q"], profile, match_rows, q.get("options"))
         L += [f"**{q['q']}**{' *(required)*' if q.get('required') and real else ''}", "",
-              f"> {ans}", "", f"<sub>{why}</sub>", ""]
+              f"> {ans}", ""]
+        if item.get("source") == "unstop" and len(ans) > UNSTOP_BOX and not ans.startswith("YOU"):
+            short = fit_box(ans)
+            L += [f"> **Fits Unstop's {UNSTOP_BOX}-character box ({len(short)}):** {short}", ""]
+        L += [f"<sub>{why}</sub>", ""]
     return L
