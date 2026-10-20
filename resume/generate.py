@@ -393,6 +393,8 @@ def _skills_block(groups: dict, jd_low: str) -> list[str]:
 
 
 _AI_ROLE = r"\bai\b|\bml\b|machine learning|\bllms?\b|\bagents?\b|data scien|\bnlp\b|genai|generative"
+_BACKEND_ROLE = (r"\bback-?end\b|\bserver[- ]side\b|\brest(?:ful)? apis?\b|\bapis?\b|microservices?|\bnode\.?js\b|"
+                 r"\bexpress(?:\.js)?\b|\bdjango\b|\bflask\b|\bfastapi\b|spring boot|\bdatabases?\b")
 
 
 def _family(jd_text: str | None, role: str) -> str:
@@ -405,11 +407,21 @@ def _family(jd_text: str | None, role: str) -> str:
         return "ai"
     if re.search(_AI_ROLE, (role or "").lower()):
         return "ai"
-    return "ai" if len(re.findall(_AI_ROLE, (jd_text or "").lower())) >= 4 else "default"
+    if len(re.findall(_AI_ROLE, (jd_text or "").lower())) >= 4:
+        return "ai"
+    # A backend job got the "video looper that lands within 12 ms" summary (21 Oct). The server side
+    # has its own evidence — two REST APIs and a 218 s -> 69 s fetch — and its own variant.
+    if re.search(_BACKEND_ROLE, (role or "").lower()) or len(re.findall(_BACKEND_ROLE, (jd_text or "").lower())) >= 5:
+        return "backend"
+    return "default"
 
 
 def _variant(x: dict, key: str, family: str) -> str:
-    return ((x.get(f"{key}_variants") or {}).get(family)
+    """His words for this kind of job. A newer family without its own variant (backend) falls back to
+    "default", never to the AI base resume (the Claude Ambassador one) by accident; "ai" itself falls
+    back to that base resume, which is what it is."""
+    v = x.get(f"{key}_variants") or {}
+    return (v.get(family) or (v.get("default") if family != "ai" else None)
             or {"headline": x.get("headline"), "summary": x.get("summary_core"), "closing": x.get("closing")}[key]
             or "")
 
@@ -421,7 +433,7 @@ FULL_PROJECTS = 5
 
 def _from_resume_layer(profile: dict, jd_text: str | None, role: str, report: dict,
                        company: str = "", packet_req: dict | None = None) -> str:
-    from .match import match, order_highlights  # noqa: PLC0415
+    from .match import _sentences, match, order_highlights  # noqa: PLC0415
     x = profile["x_resume"]
     basics = profile.get("basics", {})
     jd_low = _jd_low(jd_text, role)
@@ -446,7 +458,12 @@ def _from_resume_layer(profile: dict, jd_text: str | None, role: str, report: di
 
     # ── the 3-second zone: name, headline, links, the knockout line ──────────────────────
     L = [f"# {basics.get('name') or 'K MOHITH KANNAN'}", f"**{_variant(x, 'headline', family)}**"]
-    L.append(" · ".join(x.get("links") or []))
+    links = list(x.get("links") or [])
+    # The phone lives in basics (added 5 Oct), and this header read only his resume's link list — so it
+    # never printed, though he was told it would. Every application form asks for it; so does a recruiter.
+    if basics.get("phone") and basics["phone"] not in links:
+        links.insert(1 if links and "@" in links[0] else 0, basics["phone"])
+    L.append(" · ".join(links))
     srm = next((e for e in profile.get("education", []) if "srm" in (e.get("institution") or "").lower()), None)
     if srm:
         L.append(f"B.Tech CSE (AI & ML) · SRM Institute of Science and Technology · "
@@ -489,10 +506,16 @@ def _from_resume_layer(profile: dict, jd_text: str | None, role: str, report: di
     # Headed "Projects", not his "Selected Work": older parsers classify sections by heading
     # words, and resume.ats flagged the creative label on our own output.
     full, rest = (featured[:FULL_PROJECTS], featured[FULL_PROJECTS:]) if jd_text else (featured, [])
+    shown = ({ev for _, _, ev, proj in m["rows"] if proj and ev and any(ev in b for b in m["bullets"])}
+             if len(m["bullets"]) >= 2 else set())
     L += ["", "## Projects"]
     for n, p in enumerate(full):
         L.append(f"**{p.get('x_resume_name')}** — {p.get('x_tagline','')} · *{p.get('x_when','')}*")
         hl = order_highlights(p.get("highlights") or [], m["caps"], jd_low) if jd_text else (p.get("highlights") or [])
+        if shown:
+            # A sentence already quoted under "What I would bring" is not printed again here: the
+            # 21 Oct backend pack carried two sentences twice, word for word — the "copy" he felt.
+            hl = [h for h in (" ".join(s for s in _sentences(h) if s not in shown) for h in hl) if h]
         if jd_text:
             # The two that matter most get three bullets, the next two, the rest one — the one this
             # posting cares about, since order_highlights put it first. Keeps a tailored pack to 2 pages.

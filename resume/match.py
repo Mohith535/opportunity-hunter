@@ -140,16 +140,25 @@ def _score(sentence: str) -> int:
     return (0 if re.search(r"\d", sentence) else 1) * 1000 + len(sentence)
 
 
-def best_evidence(capability: str, pool: list[tuple[str, str]], used: set[str]) -> tuple[str, str] | None:
+def best_evidence(capability: str, pool: list[tuple[str, str]], used: set[str],
+                  avoid: set[str] | frozenset = frozenset()) -> tuple[str, str] | None:
     """The evidence pattern's alternatives are in order of fit; an earlier one wins, length breaks ties.
     By length alone, "load times and frame rates" was answered with nova-cortex's "a quarter of its
-    calls" (a cost saving, not a speed-up) instead of "218 s → 69 s", because it was shorter."""
+    calls" (a cost saving, not a speed-up) instead of "218 s → 69 s", because it was shorter.
+    `avoid` = projects that already answered this capability: a second ask about REST APIs is better
+    answered by a second project than by a second sentence from the same one."""
     ev = next(e for n, _, e in CAPABILITIES if n == capability)
     for alt in ev.split("|"):
         hits = [(s, p) for s, p in pool if s not in used and re.search(alt, s.lower())]
         if hits:
-            return min(hits, key=lambda sp: _score(sp[0]))
+            return min([h for h in hits if h[1] not in avoid] or hits, key=lambda sp: _score(sp[0]))
     return None
+
+
+# An ask for a feeling, not for evidence. "Strong interest in backend web development" was answered on
+# 21 Oct with nova-cortex's infrastructure line — a non-answer that cost a bullet.
+_SOFT = re.compile(r"\b(?:interest(?:ed)? in|willing(?:ness)?|passion(?:ate)?|eager|enthusias\w*|curious|"
+                   r"curiosity|motivated|self-starter|team player)\b", re.I)
 
 
 def _quote(line: str, limit: int = 95) -> str:
@@ -183,15 +192,24 @@ def match(jd: str, profile: dict, packet_req: dict | None = None, limit: int = 4
     jd_low = (jd or "").lower()
     used: set[str] = set()
     rows, cands, caps_done = [], [], set()
+    answered: dict[str, set[str]] = {}         # capability -> projects that answered it
+    uses: dict[str, int] = {}
     for prio, line in sorted(requirement_lines(jd, packet_req), key=lambda r: r[0]):
+        if _SOFT.search(line):
+            continue
         found, cap = None, ""
         for c in capabilities_in(line):
-            if c in caps_done:
+            # Twice per capability, from different projects where possible. Once, the second REST-API
+            # ask ("Build … REST APIs using Node.js and Express.js") fell through to "testing" and was
+            # answered "LoopLab: 108 commits, 214 tests" — while TaskFlow's REST API went unused.
+            if uses.get(c, 0) >= 2:
                 continue
-            found = best_evidence(c, pool, used)
+            found = best_evidence(c, pool, used, answered.get(c, set()))
             if found:
                 cap = c
                 caps_done.add(c)
+                uses[c] = uses.get(c, 0) + 1
+                answered.setdefault(c, set()).add(found[1])
                 break
         if not found:
             cover = _skill_cover(line, profile)

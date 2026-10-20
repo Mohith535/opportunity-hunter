@@ -130,6 +130,42 @@ check("22. status: model only", tailoring_status({"tailor_line": "x"}, "jd") == 
 check("23. status: FAILED says so", tailoring_status({}, "jd") == "failed")
 check("24. status: no job", tailoring_status({}, "") == "none")
 
+# ── 21 Oct: a backend posting, from the live Accesco Living pack ───────────────────────────────
+import copy
+BACKEND = """Requirements
+Familiarity with REST API development, databases, and backend architecture is useful.
+Strong interest in backend web development and willingness to learn through practical work.
+Build, integrate, and test REST APIs using Node.js and Express.js."""
+P2 = copy.deepcopy(PROFILE)
+P2["basics"]["phone"] = "+91 90000 00000"
+P2["projects"] += [
+    {"x_resume_name": "TaskFlow", "x_source": "resume-2026-09", "x_tagline": "an execution engine", "x_when": "2026",
+     "highlights": ["Its web dashboard runs on a JSON REST API I wrote on Python's standard-library http.server."]},
+    {"x_resume_name": "LoopLab", "x_source": "resume-2026-09", "x_tagline": "a video looper", "x_when": "2026",
+     "highlights": ["Lands within about 12 ms. 108 commits, 214 tests, live and in use."]}]
+P2["x_resume"]["headline_variants"]["backend"] = "BACKEND HEADLINE | REST APIs"
+P2["x_resume"]["summary_variants"]["backend"] = "BACKEND SUMMARY: builds the server side."
+mb = M.match(BACKEND, P2)
+rb = {l: (ev, proj) for _, l, ev, proj in mb["rows"]}
+node = rb.get("Build, integrate, and test REST APIs using Node.js and Express.js.", ("", ""))
+check("25. the second REST ask gets a second project's REST API — not LoopLab's test count",
+      node[1] == "TaskFlow" and "REST API" in node[0], node)
+check("26. 'strong interest in…' asks for a feeling: no row, no bullet",
+      not any("Strong interest" in l for l in rb) and not any("Strong interest" in b for b in mb["bullets"]))
+md2, rep2 = GEN.generate_resume_ex(P2, BACKEND, "Backend Web Development Internship", "Accesco Living")
+quoted = [ev for _, _, ev, p in rep2["match_rows"] if p and ev and any(ev in b for b in rep2["role_section"])]
+check("27. a sentence quoted under 'What I would bring' is not printed again under Projects (3 of 4 were)",
+      quoted and all(md2.count(e) == 1 for e in quoted), [(e[:40], md2.count(e)) for e in quoted])
+check("28. the phone is in the header (it lived in basics and was never printed)",
+      "+91 90000 00000" in md2.split("## Summary")[0])
+check("29. a backend job gets the backend headline and summary",
+      rep2["family"] == "backend" and "BACKEND HEADLINE" in md2 and "BACKEND SUMMARY" in md2)
+P3 = copy.deepcopy(P2)
+del P3["x_resume"]["summary_variants"]["backend"]
+md3, _ = GEN.generate_resume_ex(P3, BACKEND, "Backend Web Development Internship", "Accesco Living")
+check("30. a family without its own variant falls back to default, never the Ambassador summary",
+      "DEFAULT SUMMARY" in md3 and "AMBASSADOR SUMMARY" not in md3)
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))

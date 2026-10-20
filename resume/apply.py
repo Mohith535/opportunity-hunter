@@ -650,9 +650,22 @@ def fit_of(match_rows: list | None) -> tuple[int, int, list[str]]:
     (priority, ask, evidence, project); priority 0 is a requirement section. Duties are NOT counted:
     "take features from idea to production" has no keyword to match, so counting duties called a
     duty-only Unstop posting a weak fit (4 of 17) on nothing but the matcher's blind spot."""
-    must = [r for r in match_rows or [] if r[0] == 0]
+    from .match import capabilities_in  # noqa: PLC0415
+    # Only a requirement that names something checkable counts. "Fresher-level candidates are welcome"
+    # and "ability to contribute responsibly" sit under Requirements too; no evidence answers them, and
+    # counting them turned an eligible backend posting into a STRETCH (2 of 5, 21 Oct).
+    must = [r for r in match_rows or [] if r[0] == 0
+            and (r[2] or capabilities_in(r[1]) or _TECH.search(r[1]) or re.search(r"\bGo\b", r[1]))]
     answered = sum(1 for r in must if r[2])
     return answered, len(must), [r[1] for r in must if not r[2]]
+
+
+_TECH = re.compile(
+    r"\b(python|java|c\+\+|c#|golang|rust|kotlin|swift|javascript|typescript|node(?:\.?js)?|express|react|"
+    r"next\.?js|angular|vue|django|flask|fastapi|spring|sql|nosql|postgres\w*|mysql|mongo\w*|redis|kafka|"
+    r"kinesis|sqs|elasticsearch|docker|kubernetes|aws|gcp|azure|cloud|linux|git|apis?|rest|graphql|"
+    r"microservices?|distributed|databases?|machine learning|deep learning|nlp|llms?|pytorch|tensorflow|"
+    r"data structures?|algorithms?|statistics|excel|tableau|power bi|figma|unity|unreal|html|css)\b", re.I)
 
 
 def _clip(s: str, n: int = 45) -> str:

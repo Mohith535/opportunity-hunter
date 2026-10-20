@@ -106,6 +106,12 @@ duties = [(2, "Take features or small products from idea to production", "", "")
          [(2, "Build REST APIs", "Its web dashboard runs on a JSON REST API…", "TaskFlow")] * 4
 check("3m. duties are not requirements: a duty-only posting is not a STRETCH (the dry run said 4 of 17)",
       recommendation(Verdict(YES, []), duties)[0] == "APPLY")
+noise = [(0, "Familiarity with REST API development", "token-protected GET/PUT REST API…", "OPHunter"),
+         (0, "Fresher-level candidates, including students and recent graduates, are welcome.", "", ""),
+         (0, "Ability to contribute responsibly in a fast-paced environment.", "", ""),
+         (0, "Proficiency in Go and Kafka", "", "")]
+check("3n. only checkable requirements count: 'freshers welcome' is not a gap, 'Go and Kafka' is",
+      fit_of(noise) == (1, 2, ["Proficiency in Go and Kafka"]), fit_of(noise))
 
 # ── 4. buttons reuse the Worker's existing actions ───────────────────────────────────────────
 kb = P.buttons(item, pack)
