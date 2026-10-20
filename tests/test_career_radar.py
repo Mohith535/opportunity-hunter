@@ -118,6 +118,34 @@ check("8b. ...and scores within a point of the same role titled 'Internship' (it
       abs(score_item(board) - score_item(unstop)) <= 1, (score_item(board), score_item(unstop)))
 check("8c. a board role without 'intern' stays a job", focus.kind_of(ats._opp("New Grad Engineer", "u", "S", "Lever")) == "job")
 
+# ── EA's full posting: the job description, not the company blurb or the page footer (21 Oct)
+from resume.eligibility import text_rules, CHECK
+FIELD = '<div class="article__content__view__field__value">'
+page = (f'<article>{FIELD}Electronic Arts creates next-level entertainment experiences.</div></article>'
+        f'<article>{FIELD}<p>Project Management Intern – JD</p><p>Key Responsibilities</p><p>Support project tracking.</p>'
+        f'<p>Skills &amp; Experience</p><p>Currently pursuing an MBA with a specialization in Operations, IT Project '
+        f'Management, or a closely related field with undergrad degree in B. Tech/B.Sc</p></div></article>'
+        f'<article>{FIELD}1449 - Back to Role List - Apply - Share this role - LinkedIn - X - WhatsApp - Email - '
+        f'Facebook - Copy link - Privacy - Terms - Cookies - Accessibility - Careers home - Students - Teams</article>'
+        + "<footer>" + "x " * 400 + "</footer>")
+real_req = A.requests.get
+class _P:
+    def __init__(self, t): self.text = t
+A.requests.get = lambda *a, **k: _P(page)
+try:
+    full = A._avature_detail("jobs.ea.com/en_US/careers", "216036")
+finally:
+    A.requests.get = real_req
+check("9a. EA: the job description is taken, not the company blurb or the page footer",
+      full["description"].startswith("Project Management Intern") and "MBA" in full["description"], full["description"][:60])
+check("9b. 'currently pursuing an MBA' rules out a bachelor's student (the EA Hyderabad intern)",
+      [l for l, _ in text_rules(full["description"], C)] == [NO])
+check("9c. ...but 'a Master's or Bachelor's degree' does not",
+      text_rules("Currently pursuing a Master's or Bachelor's degree in Computer Science.", C) == []
+      and text_rules("Students pursuing B.Tech or M.Tech are welcome.", C) == [])
+check("9d. EA packs read EA's own posting", "avature" in A._ATS
+      and A.ats_native({"native_id": "avature:jobs.ea.com/en_US/careers:216036"}).startswith("avature:"))
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))

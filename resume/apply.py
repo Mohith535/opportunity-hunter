@@ -157,7 +157,24 @@ def _workday_detail(slug: str, path: str) -> dict:
     }
 
 
-_ATS = {"gh": _greenhouse_detail, "ashby": _ashby_detail, "lever": _lever_detail, "workday": _workday_detail}
+def _avature_detail(slug: str, rid: str) -> dict:
+    """slug = "<host>/<locale>/careers" (EA), rid = the role id. The page is server-rendered; the job
+    description is the longest of its field-value blocks. EA's Hyderabad "Project Management Intern"
+    said only "Hyderabad · Intern" in the listing — its description says "currently pursuing an MBA"."""
+    page = requests.get(f"https://{slug}/JobDetail/x/{rid}", headers={**_HEADERS, "Accept": "text/html"},
+                        timeout=_FETCH_TIMEOUT).text
+    marks = [m.start() for m in re.finditer(r'class="article__content__view__field__value', page)] + [len(page)]
+    # Each block ends at its article: the last field otherwise ran on to the page footer ("Back to Role
+    # List · Share this role…") and, being longest, was taken for the job description.
+    blocks = [_text(page[a:b].split(">", 1)[-1].split("</article>")[0]) for a, b in zip(marks, marks[1:])]
+    desc = max(blocks, key=len, default="")
+    loc = re.search(r'class="list-item-location"[^>]*>\s*([^<]+?)\s*<', page)
+    return {"description": desc[:12000], "apply_url": f"https://{slug}/JobDetail/x/{rid}",
+            "location": html.unescape(loc.group(1)) if loc else ""}
+
+
+_ATS = {"gh": _greenhouse_detail, "ashby": _ashby_detail, "lever": _lever_detail, "workday": _workday_detail,
+        "avature": _avature_detail}
 
 _UNSTOP_DETAIL = "https://unstop.com/api/public/competition/{id}"
 

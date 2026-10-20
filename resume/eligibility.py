@@ -153,6 +153,18 @@ def text_rules(text: str, c: Candidate) -> list[tuple[str, str]]:
             not re.search(r"bachelor|undergraduate|b\.?tech|master", low):
         out.append((NO, "PhD students only"))
 
+    # "Currently pursuing an MBA with a specialization in Operations…" (EA Hyderabad, 21 Oct) — the
+    # listing said "Intern", the posting says MBA. A bachelor's student is out unless it says "or".
+    if c.degree == "bachelor":
+        for s in _sentences(text):
+            sl = s.lower()
+            g = re.search(r"\b(?:pursuing|enrolled in|studying)\s+(?:an?\s+)?(mba|master'?s(?: degree)?|masters|"
+                          r"m\.?\s?tech|ph\.?\s?d)\b", sl)
+            if g and not re.search(r"\bor\s+(?:an?\s+)?(?:bachelor|undergrad|b\.?\s?tech)|"
+                                   r"(?:bachelor'?s?|undergraduate|b\.?\s?tech)\s+or\b", sl):
+                out.append((NO, f"for students pursuing {'an MBA' if g.group(1) == 'mba' else 'a ' + g.group(1)}"))
+                break
+
     no_sponsor = _NO_SPONSOR.search(low)
     if re.search(r"authori[sz]ed to work in the (united states|us|u\.s\.)|us work authori[sz]ation", low) and no_sponsor:
         out.append((NO, "needs US work authorisation, and sponsorship is not offered"))
