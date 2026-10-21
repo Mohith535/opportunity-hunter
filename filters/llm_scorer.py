@@ -216,6 +216,23 @@ def _call(provider: dict, prompt: str, json_mode: bool = True,
 REASONING_HEADROOM = 1200
 
 
+# A provider that answered 401/402/403/404 has a key or model problem, not a blip. The 21 Oct cloud
+# log tried groq (404: its default model was retired), cerebras (402) and openrouter (429) again on
+# EVERY call; a dead one is now skipped for the rest of the run.
+_DEAD: set[str] = set()
+
+
+def _live_providers() -> list:
+    return [p for p in config.active_llm_providers() if p["name"] not in _DEAD]
+
+
+def _note_failure(provider: dict, e: Exception) -> None:
+    code = getattr(getattr(e, "response", None), "status_code", None)
+    if code in (401, 402, 403, 404) and provider["name"] not in _DEAD:
+        _DEAD.add(provider["name"])
+        log(f"[llm] {provider['name']} answered {code} — skipped for the rest of this run (key or model problem)")
+
+
 def complete(prompt: str, max_tokens: int = 600, temperature: float = 0.5) -> str:
     """Run a FREE-TEXT prompt through the provider chain (no JSON mode). Returns the
     text response, or '' if every provider fails. Shared by the draft generator and
@@ -226,13 +243,14 @@ def complete(prompt: str, max_tokens: int = 600, temperature: float = 0.5) -> st
     resume pack silently got no tailoring at all — and a cut-off sentence must never reach a resume."""
     if not config.USE_LLM_SCORING:
         return ""
-    for provider in config.active_llm_providers():
+    for provider in _live_providers():
         info: dict = {}
         try:
             out = _call(provider, prompt, json_mode=False, max_tokens=max_tokens + REASONING_HEADROOM,
                         temperature=temperature, info=info).strip()
         except Exception as e:
             log(f"[llm] complete via {provider['name']} failed: {type(e).__name__}: {str(e)[:120]}")
+            _note_failure(provider, e)
             continue
         if out and info.get("finish", "stop") in ("stop", "", "eos", "end_turn"):
             return out
@@ -250,7 +268,7 @@ def _score_chunk(chunk, profile) -> tuple[list[dict], str]:
         profile=profile.to_prompt_block(),
         items=json.dumps(payload, ensure_ascii=False),
     )
-    for provider in config.active_llm_providers():
+    for provider in _live_providers():
         try:
             content = _call(provider, prompt)
             results = _parse_results(content)
@@ -259,6 +277,7 @@ def _score_chunk(chunk, profile) -> tuple[list[dict], str]:
             log(f"[llm] {provider['name']} returned no parseable results, trying next.")
         except Exception as e:
             log(f"[llm] {provider['name']} failed: {e}")
+            _note_failure(provider, e)
             continue
     return [], ""
 

@@ -188,10 +188,13 @@ NVIDIA_API_KEY = os.environ.get("NVIDIA_API_KEY", "")
 
 # Tried in order; a provider is used only when its key is present. Each entry is
 # OpenAI-compatible (POST {base_url}/chat/completions), so ONE code path serves all.
+# Defaults are what the CLOUD runs: it has no .env. On 21 Oct Groq had retired llama-3.3-70b-versatile
+# (404 on every cloud call for days, while the laptop's .env override worked) and OpenRouter's
+# gemma-4-31b-it:free answered 429. Both defaults below were called live that day and answered.
 LLM_PROVIDERS = [
     {"name": "groq", "base_url": "https://api.groq.com/openai/v1",
      "api_key": GROQ_API_KEY,
-     "model": os.environ.get("OH_GROQ_MODEL", "llama-3.3-70b-versatile")},
+     "model": os.environ.get("OH_GROQ_MODEL", "openai/gpt-oss-120b")},
     # NVIDIA sits right after Groq so it catches Groq's rate-limits with a strong, reliable free model.
     {"name": "nvidia", "base_url": "https://integrate.api.nvidia.com/v1",
      "api_key": NVIDIA_API_KEY,
@@ -201,7 +204,7 @@ LLM_PROVIDERS = [
      "model": os.environ.get("OH_CEREBRAS_MODEL", "gpt-oss-120b")},
     {"name": "openrouter", "base_url": "https://openrouter.ai/api/v1",
      "api_key": OPENROUTER_API_KEY,
-     "model": os.environ.get("OH_OPENROUTER_MODEL", "google/gemma-4-31b-it:free")},
+     "model": os.environ.get("OH_OPENROUTER_MODEL", "nvidia/nemotron-3.5-lightning:free")},
 ]
 
 

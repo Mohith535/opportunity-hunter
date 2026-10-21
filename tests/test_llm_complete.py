@@ -70,6 +70,25 @@ try:
     config.active_llm_providers = lambda: PROVIDERS
     L.requests.post = chain(("", "length"), ("", "stop"))
     check("7. every provider empty -> '' (the caller then says tailoring failed)", L.complete("p") == "")
+
+    # 21 Oct: Groq's default model was retired, and the cloud asked it again on every call.
+    class _Err(Exception):
+        def __init__(self, code):
+            self.response = type("R", (), {"status_code": code})()
+    calls = []
+    def post404(url, headers=None, json=None, timeout=None):
+        calls.append(url)
+        if url.startswith("https://g"):
+            r = _Resp("", "stop")
+            r.raise_for_status = lambda: (_ for _ in ()).throw(_Err(404))
+            return r
+        return _Resp("LINE: from openrouter.", "stop")
+    L._DEAD.clear()
+    L.requests.post = post404
+    first, second = L.complete("p"), L.complete("p")
+    check("8. a provider answering 404 (retired model) is skipped for the rest of the run",
+          first == second == "LINE: from openrouter." and sum(u.startswith("https://g") for u in calls) == 1, calls)
+    L._DEAD.clear()
 finally:
     L.requests.post, config.active_llm_providers, config.USE_LLM_SCORING = _old_post, _old_prov, _old_use
 
