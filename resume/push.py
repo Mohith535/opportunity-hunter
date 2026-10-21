@@ -266,6 +266,8 @@ def pack_one(item: dict, score: int, profile: dict, dry: bool = False, requested
     slug = pack["out"].name
     files = [(p, p.name) for p in (pdf, pack["docx"]) if p]
     files.append((pack["out"] / "job.md", f"{slug}-job.md"))
+    if (pack["out"] / "cover.md").exists():
+        files.append((pack["out"] / "cover.md", f"{slug}-cover.md"))
     if not pdf and not pack["docx"]:
         files.append((pack["out"] / "resume.md", f"{slug}-resume.md"))
     sent: list = []

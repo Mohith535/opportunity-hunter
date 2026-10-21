@@ -137,6 +137,25 @@ check("3s. one 📦 Pack button per pick, wired to the bot's existing pack:<key>
       and all(len(b["callback_data"].encode()) <= 64 for r in kb for b in r))
 check("3t. nothing clears the bar → nothing is sent", P.weekly_message(wk[1:4], {"k3"}) == ("", []))
 
+# ── the cover letter, from the same rows as the resume (21 Oct) ──────────────────────────────────
+from resume.cover import letter_from_rows
+crow = [(0, "Familiarity with REST API development is useful.", "Its API is a FastAPI service: POST /remember.", "nova-cortex"),
+        (2, "Write clean, efficient code", "I put each download under its own deadline: 218 s → 69 s.", "OPHunter"),
+        (2, "Ship features", "Runs always-on (AWS Lambda + Bedrock).", "nova-cortex"),
+        (0, "Go and Kafka", "", "")]
+cl = letter_from_rows({"basics": {"name": "K MOHITH KANNAN", "email": "a@b.c", "phone": "+91 1"},
+                       "education": [{"institution": "SRM", "endDate": "2029"}]}, crow, "Acme", "SWE Intern")
+check("3u. the letter quotes the posting and answers with his verified sentences, joined as they start",
+      "nova-cortex's API is a FastAPI service" in cl and "in OPHunter, I put each download" in cl
+      and "nova-cortex runs always-on" in cl, cl)
+check("3v. 'why this company' is his to write — a marked line, never an invented reason",
+      "YOUR REASON" in cl and "admire" not in cl.lower() and "passion" not in cl.lower())
+check("3w. no gap is written into the letter, and 'is useful' is not quoted back",
+      "Kafka" not in cl and "is useful" not in cl)
+check("3x. short enough to be read: under 250 words, his name and phone at the end",
+      len(cl.split()) < 250 and cl.rstrip().splitlines()[-2] == "K Mohith Kannan" and "+91 1" in cl)
+check("3y. no evidence → no letter", letter_from_rows({}, [(0, "Go", "", "")], "Acme", "SWE") == "")
+
 # ── 4. buttons reuse the Worker's existing actions ───────────────────────────────────────────
 kb = P.buttons(item, pack)
 cbs = [b["callback_data"] for r in kb for b in r if "callback_data" in b]

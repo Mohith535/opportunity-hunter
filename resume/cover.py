@@ -74,6 +74,60 @@ Genuine reason for this company (from the candidate): {why}
 """
 
 
+YOUR_REASON = "YOUR REASON (one line, only if true): what about {company} specifically made you apply?"
+
+
+def letter_from_rows(profile: dict, match_rows: list | None, company: str, role: str) -> str:
+    """The pack's cover letter (21 Oct): built from the SAME requirement -> evidence rows as the resume's
+    "What I would bring", so the two can never disagree, and with no model — every sentence of evidence is
+    one he has already verified. Three short paragraphs, the posting's own words quoted. "Why this company"
+    is his to write (see the module docstring): an empty line marked YOUR REASON, never a made-up one."""
+    import re  # noqa: PLC0415
+    basics = profile.get("basics") or {}
+    x = profile.get("x_resume") or {}
+    rows = [(line, ev, proj) for _, line, ev, proj in match_rows or [] if proj and ev]
+    if not rows:
+        return ""
+    co = company or "your team"
+
+    def ask(line: str) -> str:
+        s = re.sub(r"^(you will|you'll|have an?|have|be able to|you have|experience with|familiarity with|"
+                   r"strong|solid)\s+", "", line.strip().rstrip("."), flags=re.I)
+        return re.sub(r",?\s+(?:is|are|would be)\s+(?:useful|a plus|preferred|nice to have|a bonus)$", "", s, flags=re.I)
+
+    def joined(proj: str, ev: str) -> str:
+        """His sentence, joined to its project the way the sentence starts. 'In nova-cortex, runs always-on'
+        and 'i put each download' are what a single rule produced; "I" and names are never lowercased."""
+        w = ev.split(" ", 1)[0]
+        low = ev[:1].lower() + ev[1:]
+        if w == "Its":
+            return f"{proj}'s {ev[4:]}"
+        if w in ("A", "An"):
+            return f"{proj} is {low}"
+        if re.fullmatch(r"[A-Z][a-z]+s", w) and w not in ("This", "Its", "Was", "Has"):
+            return f"{proj} {low}"                              # Runs / Scans / Lands …
+        if w in ("The", "Every", "My", "Our", "Each", "Its"):
+            return f"in {proj}, {low}"
+        if w == "I":
+            return f"in {proj}, {ev}"                           # "in OPHunter, I put each download…"
+        return f"{proj}: {ev}"                                  # "LoopLab: 108 commits…", names, numbers
+    first, rest = rows[0], rows[1:3]
+    srm = next((e for e in profile.get("education", []) if "srm" in (e.get("institution") or "").lower()), {})
+    contact = " · ".join(v for v in [basics.get("email"), basics.get("phone")] +
+                         [l for l in (x.get("links") or []) if "@" not in l][:2] if v)
+    lead = joined(first[2], first[1])
+    L = ["Dear Hiring Team,", "",
+         f"I'm applying for the {role or 'internship'} at {co}. You ask for “{ask(first[0])}” — "
+         f"{lead}", ""]
+    if rest:
+        L += [" ".join(f"For “{ask(line)}”, {joined(proj, ev)}" for line, ev, proj in rest), ""]
+    L += [f"I'm a second-year B.Tech CSE (AI & ML) student at SRM Institute of Science and Technology"
+          + (f", graduating {srm.get('endDate')}" if srm.get("endDate") else "") + ". "
+          + YOUR_REASON.format(company=co) + " I'd be glad to walk you through any of this code.", "",
+          "Regards,", basics.get("name", "").title() or "K Mohith Kannan", contact]
+    return "\n".join(L).replace("**", "")
+
+
 def generate_cover_letter(profile: dict, jd_text: str, company: str = "", role: str = "",
                           why: str = "") -> str:
     """An honest, JD-grounded cover letter drafted from the candidate's verified profile.

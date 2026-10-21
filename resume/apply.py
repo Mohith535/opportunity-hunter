@@ -847,6 +847,12 @@ def build_pack(item: dict, full: dict | None = None) -> dict:
 
     resume_md, report = build_resume(item, full, company)
     (out / "job.md").write_text(build_job_md(item, full, report), encoding="utf-8")
+    # The cover letter from the same rows as the resume's "What I would bring" (resume/cover.py): one
+    # evidence base, so the letter and the resume never disagree. Absent when nothing matched.
+    from .cover import letter_from_rows  # noqa: PLC0415
+    letter = letter_from_rows(_profile(), report.get("match_rows"), company, item.get("title", ""))
+    if letter:
+        (out / "cover.md").write_text(letter, encoding="utf-8")
     md_path = out / "resume.md"
     md_path.write_text(resume_md, encoding="utf-8")
 
