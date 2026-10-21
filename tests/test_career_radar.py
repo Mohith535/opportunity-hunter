@@ -168,6 +168,59 @@ check("10e. only tech roles: a co-founder / CMO 'internship' and sales are left 
       RM.to_opportunity({**job, "title": "AI Research Lab Co-Founder / CMO (100 % remote)"}) is None
       and RM.to_opportunity({**job, "title": "Inside Sales Intern"}) is None)
 
+# ── HackerEarth challenges (22 Oct): hackathons, and hiring tests filed as jobs ───────────────
+import sources.hackathons as HK
+from datetime import date as _d, timedelta as _td
+soon = (_d.today() + _td(days=20)).isoformat() + " 18:29:00+00:00"
+past = (_d.today() - _td(days=2)).isoformat() + " 18:29:00+00:00"
+feed = {"response": [
+    {"title": "Agentic Banking Hackathon", "url": "https://www.hackerearth.com/challenges/hackathon/agentic-banking-hackathon-2/",
+     "challenge_type": "Monthly Challenges", "end_utc_tz": soon, "status": "ONGOING", "college": "False", "description": "<p>Build agents</p>"},
+    {"title": "Acme Backend Hiring Challenge", "url": "https://www.hackerearth.com/challenges/hiring/acme/",
+     "challenge_type": "Hiring Challenges", "end_utc_tz": soon, "status": "UPCOMING", "college": "False", "description": ""},
+    {"title": "Old one", "url": "u3", "challenge_type": "Hackathon", "end_utc_tz": past, "status": "ONGOING", "college": "False"},
+    {"title": "One college only", "url": "u4", "challenge_type": "Hackathon", "end_utc_tz": soon, "status": "UPCOMING", "college": "True"},
+    {"title": "Finished", "url": "u5", "challenge_type": "Hackathon", "end_utc_tz": soon, "status": "FINISHED", "college": "False"}]}
+class _HR:
+    def raise_for_status(self): pass
+    def json(self): return feed
+_g = HK.requests.get
+HK.requests.get = lambda *a, **k: _HR()
+try:
+    he = HK.fetch_hackerearth()
+finally:
+    HK.requests.get = _g
+check("11a. HackerEarth: live hackathons in, with the end date as the deadline",
+      [o.title for o in he][:1] == ["Agentic Banking Hackathon"] and he[0].deadline and he[0].tags == ["hackathon"])
+check("11b. a hiring challenge is a company recruiting by test — filed as a job",
+      any(o.title == "Acme Backend Hiring Challenge" and o.tags == ["job"] for o in he))
+check("11c. ended, finished, and one-college-only events are left out",
+      not any(o.title in ("Old one", "One college only", "Finished") for o in he))
+
+# ── Hack2Skill (22 Oct): open registrations only; a bootcamp is learning, a paid ticket is said ──
+h2s = {"data": {
+    "flagshipEvents": [
+        {"title": "Build with AI: PromptWars", "eventUrl": "promptwars", "customEventUrl": "https://promptwars.in/promptwars.html?ref=x",
+         "registrationEnd": soon, "tags": {"mode": {"value": "Online"}, "ticket": {"value": "FREE"}}},
+        {"title": "Closed Challenge", "eventUrl": "closed", "registrationEnd": past, "tags": {}}],
+    "communityEvents": [
+        {"title": "Build with AI: Bootcamps", "eventUrl": "bootcamps", "registrationEnd": soon,
+         "tags": {"mode": {"value": "Offline"}, "ticket": {"value": "PAID"}}}]}}
+class _H2:
+    def raise_for_status(self): pass
+    def json(self): return h2s
+HK.requests.get = lambda *a, **k: _H2()
+try:
+    hs = HK.fetch_hack2skill()
+finally:
+    HK.requests.get = _g
+check("11d. Hack2Skill: an open build is a hackathon, online, linked without tracking params",
+      [o.title for o in hs] == ["Build with AI: PromptWars", "Build with AI: Bootcamps"]
+      and hs[0].tags == ["hackathon"] and hs[0].raw["remote"] and hs[0].url == "https://promptwars.in/promptwars.html", hs)
+check("11e. a bootcamp is learning, a paid ticket is said, a closed registration is left out",
+      hs[1].tags == ["learning"] and "paid ticket" in hs[1].description
+      and hs[1].url == "https://hack2skill.com/event/bootcamps" and not hs[1].raw["remote"])
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))

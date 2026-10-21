@@ -16,6 +16,8 @@ REGISTRY = {
     "devpost": hackathons.fetch_devpost,
     "reddit": news.fetch_reddit,
     "devfolio": hackathons.fetch_devfolio,
+    "hackerearth": hackathons.fetch_hackerearth,  # HackerEarth hackathons + hiring challenges
+    "hack2skill": hackathons.fetch_hack2skill,    # Hack2Skill (many Google-backed builds in India)
     "clist": contests.fetch_clist,
     "mlh": hackathons.fetch_mlh,
     "unstop": hackathons.fetch_unstop,

@@ -106,6 +106,79 @@ def _parse_iso(ts: str):
         return None
 
 
+HACKEREARTH_EVENTS = "https://www.hackerearth.com/chrome-extension/events/"
+
+
+def fetch_hackerearth() -> list[Opportunity]:
+    """HackerEarth's live and upcoming challenges (22 Oct 2026) — the public JSON its own browser
+    extension reads; robots.txt leaves it open. None of the three it listed that day (an "Agentic Banking
+    Hackathon", an AI & Data hackathon, GoDaddy's) was anywhere in OPH's history: clist only carries
+    HackerEarth's competitive-programming contests. A "Hiring" challenge is a company recruiting by test,
+    so it is filed as a job, not a hackathon."""
+    resp = requests.get(HACKEREARTH_EVENTS, headers=_HEADERS, timeout=config.REQUEST_TIMEOUT)
+    resp.raise_for_status()
+    today = date.today()
+    items: list[Opportunity] = []
+    for e in resp.json().get("response") or []:
+        if str(e.get("status", "")).upper() not in ("ONGOING", "UPCOMING") or str(e.get("college")) == "True":
+            continue                                   # finished, or a single college's private event
+        ends = _parse_iso(str(e.get("end_utc_tz") or "").replace(" ", "T"))
+        if ends and ends.date() < today:
+            continue
+        ctype = str(e.get("challenge_type") or "")
+        kind = "job" if "hiring" in ctype.lower() else "contest" if "competitive" in ctype.lower() else "hackathon"
+        desc = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", e.get("description") or ""))).strip()
+        items.append(Opportunity(
+            title=(e.get("title") or "").strip(),
+            url=e.get("url") or "",
+            source="hackerearth",
+            description=f"{kind} | online | HackerEarth {ctype} | ends {str(e.get('end_utc_tz') or '')[:10]} | {desc[:300]}",
+            deadline=ends.date() if ends else None,
+            native_id=e.get("url") or e.get("title"),
+            tags=[kind],
+            raw={"platform": "HackerEarth", "challenge_type": ctype, "remote": True},
+        ))
+    return items
+
+
+HACK2SKILL_EVENTS = "https://hack2skill.com/api/v1/innovator/public/event/list"
+
+
+def fetch_hack2skill() -> list[Opportunity]:
+    """Hack2Skill's events with registration still open (22 Oct 2026): the public list its homepage
+    reads (robots.txt disallows only dashboards). It runs many Google-backed builds in India — "Build
+    with AI: PromptWars" was open that day, as was a health-innovation challenge. A bootcamp is learning,
+    not a hackathon; a paid ticket is said on the card, never hidden."""
+    resp = requests.get(HACK2SKILL_EVENTS, headers={**_HEADERS, "Accept": "application/json"},
+                        timeout=max(config.REQUEST_TIMEOUT, 25))
+    resp.raise_for_status()
+    data = resp.json().get("data") or {}
+    today = date.today().isoformat()
+    items: list[Opportunity] = []
+    for e in (data.get("flagshipEvents") or []) + (data.get("communityEvents") or []):
+        reg_end = str(e.get("registrationEnd") or "")[:10]
+        if not reg_end or reg_end < today or not e.get("title"):
+            continue
+        tags = e.get("tags") or {}
+        mode = str((tags.get("mode") or {}).get("value") or "").lower()
+        ticket = str((tags.get("ticket") or {}).get("value") or "").upper()
+        title = e["title"].strip()
+        kind = "learning" if re.search(r"bootcamp|workshop|masterclass|webinar", title, re.I) else "hackathon"
+        url = (e.get("customEventUrl") or f"https://hack2skill.com/event/{e.get('eventUrl', '')}").split("?")[0]
+        items.append(Opportunity(
+            title=title,
+            url=url,
+            source="hack2skill",
+            description=(f"{kind} | {mode or 'mode not stated'} | Hack2Skill | registration closes {reg_end}"
+                         + (" | paid ticket" if ticket == "PAID" else "")),
+            deadline=date.fromisoformat(reg_end),
+            native_id=f"h2s:{e.get('eventUrl') or title}",
+            tags=[kind],
+            raw={"platform": "Hack2Skill", "remote": mode == "online"},
+        ))
+    return items
+
+
 def fetch_devfolio() -> list[Opportunity]:
     """Upcoming/ongoing hackathons from Devfolio's JSON API, soonest first.
 
