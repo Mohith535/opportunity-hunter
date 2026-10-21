@@ -29,14 +29,22 @@ import { appUser } from "./webapp.js";
 import { WorkerEntrypoint } from "cloudflare:workers";
 import { validatePacket, intakeKey, statusesFor, itemFromPacket, INTAKE_TTL } from "./intake.js";
 import APP_HTML from "./app.html";
+import { duePlan, markFollowed, recordOutcome, followupButtons, followupText, reminderText, outcomeReply,
+         OUTCOMES, MAX_PER_DAY } from "./followup.js";
 
 let ORIGIN = "";   // this Worker's own https origin, learned from each request — for the Open-app buttons
 
 export default class extends WorkerEntrypoint {
+  // Daily, 03:30 UTC = 09:00 IST (wrangler.toml [triggers]): due reminders + "heard back?" follow-ups.
+  async scheduled() {
+    return runDaily(this.env);   // the summary shows in wrangler's local scheduled test
+  }
+
   async fetch(request) {
     const env = this.env, ctx = this.ctx;
     const url = new URL(request.url);
     ORIGIN = url.origin;
+    if (url.pathname === "/cron") return cronApi(request, env);
     if (url.pathname === "/target") return targetApi(request, env);
     if (url.pathname.startsWith("/intake/")) return intakeApi(request, env, url.pathname.slice(8));
     if (url.pathname === "/packs") return packsApi(request, env);
@@ -120,6 +128,10 @@ async function handleCallback(env, cb) {
   if (action === "pack") return handlePack(env, key, chatId, cb);
   if (action === "applied" || action === "skip" || action === "remind")
     return handleStatus(env, action, key, cb);
+  if (action === "out") {                                    // out:<interview|rejected|noreply>:<key>
+    const j = key.indexOf(":");
+    return handleOutcome(env, key.slice(0, j), key.slice(j + 1), cb, chatId);
+  }
   return answerCallback(env, cb.id, "");
 }
 
@@ -252,6 +264,11 @@ async function handleReport(env, chatId) {
   applied.slice(0, 5).forEach((e) => lines.push(`   • ${esc((e.title || "").slice(0, 50))}`));
   lines.push(`⏭ Skipped this week: <b>${skipped.length}</b>`);
   lines.push(`⏰ Reminders pending: <b>${reminders.length}</b>`);
+  const outs = Object.values(t).map((e) => e.outcome).filter(Boolean);
+  if (outs.length) {
+    const n = (k) => outs.filter((o) => o === k).length;
+    lines.push(`📮 Heard back: 🎉 ${n("interview")} interview · ❌ ${n("rejected")} rejected · 🔇 ${n("no_reply")} no reply`);
+  }
   lines.push("─────────────────");
   if (regret.length) {
     lines.push("⚠️ <b>Closing soon — you haven't acted on these:</b>");
@@ -313,7 +330,7 @@ async function learnApi(request, env, path) {
     const out = {};
     for (const [k, e] of Object.entries(t))
       out[k] = { title: e.title || (packs.find((p) => p.key === k) || {}).title || "", status: e.status || "",
-                 updated_at: e.updated_at || "", tags: e.tags || [] };
+                 updated_at: e.updated_at || "", tags: e.tags || [], outcome: e.outcome || "" };
     return Response.json(out);
   }
   if (path === "/learned" && request.method === "PUT") {
@@ -465,6 +482,58 @@ async function findItem(env, key) {
   return item;
 }
 
+// ─── the daily job: reminders he asked for, and "heard back?" a week after he applies ──────────
+async function runDaily(env) {
+  const chat = env.OWNER_CHAT_ID;
+  if (!chat) return { error: "OWNER_CHAT_ID is not set" };
+  const today = new Date().toISOString().slice(0, 10);
+  const t = await kvGet(env, "tracker", {});
+  // Titles a pack tap never stored (before packItem) come from the pack record — and are kept, so the
+  // tracker itself is repaired, not only what GET /tracker shows.
+  const packs = await kvGet(env, "packs", []);
+  let filled = 0;
+  for (const [k, e] of Object.entries(t)) {
+    const p = !e.title && packs.find((x) => x.key === k);
+    if (p && p.title) { e.title = p.title; filled++; }
+  }
+  // Three a DAY, not three a run: a manual /cron and the 09:00 trigger on the same day share the budget.
+  const already = Object.values(t).filter((e) => e && e.followed_at === today).length;
+  const plan = duePlan(t, today, Math.max(0, MAX_PER_DAY - already));
+  let sent = 0;
+  for (const [key, e] of plan.reminders) {
+    const r = await sendMessage(env, chat, reminderText(e), [[
+      { text: "✅ Applied", callback_data: `applied:${key}` }, { text: "⏭ Skip", callback_data: `skip:${key}` },
+      { text: "⏰ Again", callback_data: `remind:${key}` }]]);
+    if (r.ok) { t[key] = { ...e, reminded_at: today }; delete t[key].remind_at; sent++; }
+  }
+  for (const [key, e, day] of plan.followups) {
+    const r = await sendMessage(env, chat, followupText(e, day), followupButtons(key));
+    if (r.ok) { t[key] = markFollowed(e, day, today); sent++; }
+  }
+  if (sent || filled) await kvPut(env, "tracker", t);
+  return { reminders: plan.reminders.length, followups: plan.followups.length, sent, titles_repaired: filled };
+}
+
+// The same job on demand (bearer token): to verify it live, or run it from the laptop.
+async function cronApi(request, env) {
+  const auth = request.headers.get("Authorization") || "";
+  if (!env.BOT_API_TOKEN || !(await sameSecret(auth, "Bearer " + env.BOT_API_TOKEN)))
+    return new Response("unauthorized", { status: 401 });
+  if (request.method !== "POST") return new Response("method not allowed", { status: 405 });
+  return Response.json(await runDaily(env));
+}
+
+async function handleOutcome(env, kind, key, cb, chatId) {
+  const t = await kvGet(env, "tracker", {});
+  const e = t[key];
+  if (!e || !OUTCOMES[kind]) return answerCallback(env, cb.id, "Couldn't find that application.");
+  const today = new Date().toISOString().slice(0, 10);
+  t[key] = recordOutcome(e, kind, today);
+  await kvPut(env, "tracker", t);
+  await answerCallback(env, cb.id, "Logged ✅");
+  return sendMessage(env, chatId, outcomeReply(e, kind, today));
+}
+
 // ─── KV state: tracker + taste ───────────────────────────────────────
 async function kvGet(env, k, def) {
   const v = await env.BOT_KV.get(k);
@@ -477,6 +546,7 @@ async function setStatus(env, key, status, item) {
   const e = t[key] || {};
   e.status = status;
   e.updated_at = new Date().toISOString().slice(0, 10);
+  if (status === "applied" && !e.applied_at) e.applied_at = e.updated_at;
   if (item) {
     e.title = item.title; e.url = item.url; e.score = item.score;
     e.deadline = item.deadline; e.tags = item.tags || [];

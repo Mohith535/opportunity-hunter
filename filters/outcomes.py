@@ -59,7 +59,12 @@ def learn(tracker: dict) -> dict:
             continue
         st = e.get("status")
         if st in POSITIVE:
-            pos.update(words(e.get("title", ""))); n += 1
+            w = words(e.get("title", ""))
+            pos.update(w); n += 1
+            # An interview is what every tap is a guess at (bot follow-ups, 21 Oct): it counts three
+            # times. A rejection is NOT an avoid — he still wants that kind of role; it was one employer.
+            if e.get("outcome") == "interview":
+                pos.update({x: 2 for x in w})
         elif st in NEGATIVE:
             neg.update(words(e.get("title", ""))); n += 1
     likes = {w: [pos[w], neg[w]] for w in pos if pos[w] - neg[w] >= MIN_LIKE}

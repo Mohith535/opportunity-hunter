@@ -47,6 +47,13 @@ check("1e. packaging words never learn ('internship', 'intern')",
 mixed = O.learn(tr(("Sales Engineer", "skipped"), ("Sales Engineer", "skipped"), ("Sales Engineer", "planned"),
                    ("Sales Engineer", "planned"), ("Sales Engineer", "planned")))
 check("1f. more plans than skips is never an avoid", "sales" not in mixed["avoids"], mixed)
+# 21 Oct: the bot now asks "heard back?" a week after he applies, and the answer reaches GET /tracker.
+iv = O.learn({"a": {"status": "applied", "title": "Backend Engineer Intern", "outcome": "interview"}})
+check("1g. one interview teaches what one tap cannot (it counts three times)",
+      "backend" in iv["likes"] and "engineer" in iv["likes"], iv)
+rj = O.learn({"a": {"status": "applied", "title": "Backend Engineer Intern", "outcome": "rejected"},
+              "b": {"status": "applied", "title": "Backend Engineer Intern", "outcome": "rejected"}})
+check("1h. a rejection is never an avoid — it was one employer, not the kind of role", not rj["avoids"], rj)
 
 # ── nudges ───────────────────────────────────────────────────────────────────────────────────
 fd, tp = tempfile.mkstemp(suffix=".json"); os.close(fd)

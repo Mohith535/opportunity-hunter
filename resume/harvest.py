@@ -77,6 +77,11 @@ _CERT_CONNECTORS = {"to", "from", "by", "on"}
 
 
 # ─── GitHub ──────────────────────────────────────────────────────────
+# His private journal. The token (21 Oct) has "All repositories", so it can see this one — and a career
+# profile never reads it: not its name, not its description, nothing.
+NEVER_READ = {"edi-vault"}
+
+
 def _github_repos(username: str, token: str | None, include_private: bool = False) -> list[dict]:
     """Non-fork repos as raw dicts, all pages. [] on any failure (network, bad user, rate limit).
 
@@ -116,7 +121,8 @@ def _github_repos(username: str, token: str | None, include_private: bool = Fals
             batch = r.json()
             if not isinstance(batch, list) or not batch:
                 break
-            repos.extend(b for b in batch if isinstance(b, dict) and not b.get("fork"))
+            repos.extend(b for b in batch if isinstance(b, dict) and not b.get("fork")
+                         and str(b.get("name", "")).lower() not in NEVER_READ)
             if len(batch) < 100:
                 break
             page += 1

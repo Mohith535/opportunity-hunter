@@ -21,3 +21,7 @@ id = "22c274eb2b75484fad6a1717f25a5c2f"
 #   TELEGRAM_BOT_TOKEN  WEBHOOK_SECRET  TASKFLOW_SYNC_TOKEN
 #   GROQ_API_KEY  CEREBRAS_API_KEY  OPENROUTER_API_KEY
 #   OWNER_CHAT_ID  BOT_API_TOKEN  GH_DISPATCH_TOKEN   (see README → "Private bot, /target and /pack")
+
+# Daily at 03:30 UTC = 09:00 IST: due reminders + 'heard back?' follow-ups (src/followup.js).
+[triggers]
+crons = ["30 3 * * *"]
