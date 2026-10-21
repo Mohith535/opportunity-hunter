@@ -357,6 +357,20 @@ try:
 finally:
     A._profile, A._candidate = _old_profile, _old_cand
 
+# ── 11u. one posting, one entry (21 Oct: 20 of 481 job items in 14 runs were copies) ──────────
+def _o(t, src, co, loc, s=7):
+    x = Opportunity(t, f"https://x/{src}/{t}/{loc}", src, "", tags=["internship"], raw={"company": co, "location": loc})
+    x.score = s
+    return x
+folded, n = M._fold_copies([_o("Cloudflare — Software Engineer Intern", "internships", "Cloudflare", "Austin, TX", 9),
+                            _o("Software Engineer Intern — Cloudflare", "ats", "Cloudflare", "Austin, TX", 8),
+                            _o("TikTok — ML Engineer Intern (Ads)", "internships", "TikTok", "San Jose, CA"),
+                            _o("TikTok — ML Engineer Intern (Search)", "internships", "TikTok", "San Jose, CA"),
+                            _o("West Monroe — SWE Intern", "internships", "West Monroe", "Seattle, WA")])
+check("11u. the same posting from two sources folds to one, keeping the company's own board",
+      n == 1 and [x.source for x in folded if "Cloudflare" in x.title] == ["ats"], [(x.title, x.source) for x in folded])
+check("11v. different teams (TikTok Ads vs Search) and different places stay apart", len(folded) == 4)
+
 # ── 12. listed as remote, posted as office (career-ops' geo-mismatch, 21 Oct) ──────────────────
 from resume.eligibility import attendance_rule
 check("12a. a remote listing whose posting says 'hybrid role' / 'work onsite' / 'must relocate' is a CHECK",

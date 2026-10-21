@@ -346,6 +346,41 @@ def _fill_budget(items: list, budget: int) -> list:
     return sorted(picked_on + picked_other, key=lambda it: it.score, reverse=True)
 
 
+def _fold_copies(items: list) -> tuple[list, int]:
+    """One posting, one entry. The same job arrives through two sources (Cloudflare's intern via
+    SimplifyJobs AND its own Greenhouse board), or twice from one (West Monroe x3): 20 of 481 job items
+    in 14 runs (21 Oct), each eating an intake slot. Folded only when company, exact title AND place
+    match — TikTok's five "ML Engineer Intern" postings are different teams and stay apart. The
+    company's own board (source "ats") is kept over an aggregator; then the higher score."""
+    import re as _re
+    def key(it):
+        raw = getattr(it, "raw", None) or {}
+        co = str(raw.get("company") or "").strip().lower()
+        if not co:
+            return None
+        # The boards write "Software Engineer Intern — Cloudflare", SimplifyJobs "Cloudflare — Software
+        # Engineer Intern": the company is dropped from whichever side carries it.
+        parts = [p for p in _re.split(r"\s+—\s+", it.title or "") if p.strip().lower() != co]
+        title = _re.sub(r"[^a-z0-9]+", " ", " ".join(parts).lower()).strip()
+        where = _re.sub(r"[^a-z0-9]+", " ", str(raw.get("location") or "").lower()).strip()
+        return co, title, where
+    best: dict = {}
+    order = []
+    for it in items:
+        k = key(it)
+        if k is None:
+            order.append(it)
+            continue
+        cur = best.get(k)
+        if cur is None:
+            best[k] = it
+            order.append(k)
+        elif (it.source == "ats", it.score) > (cur.source == "ats", cur.score):
+            best[k] = it
+    out = [best[x] if isinstance(x, tuple) else x for x in order]
+    return out, len(items) - len(out)
+
+
 def _drop_ineligible(items: list) -> tuple[list, dict]:
     """(items he can apply to, {category: count} of the ones he cannot). A no-op without a career
     profile: the verdict needs his graduation year and course, and in a fresh clone of this public
@@ -447,6 +482,9 @@ def run(source_names=None, test=False):
     if hidden:
         log(f"[eligibility] hid {sum(hidden.values())} you cannot apply to — "
             + ", ".join(f"{n} {k}" for k, n in sorted(hidden.items(), key=lambda kv: -kv[1])))
+    relevant, folded = _fold_copies(relevant)
+    if folded:
+        log(f"[dedupe] folded {folded} copies of a posting already in this run")
 
     # 4. Dedup (skip already-seen unless it qualifies to resurface)
     seen = store.load_seen()
