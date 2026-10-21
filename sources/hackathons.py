@@ -174,7 +174,7 @@ def fetch_hack2skill() -> list[Opportunity]:
             deadline=date.fromisoformat(reg_end),
             native_id=f"h2s:{e.get('eventUrl') or title}",
             tags=[kind],
-            raw={"platform": "Hack2Skill", "remote": mode == "online"},
+            raw={"platform": "Hack2Skill", "remote": mode in ("online", "virtual")},   # live data says "virtual"
         ))
     return items
 

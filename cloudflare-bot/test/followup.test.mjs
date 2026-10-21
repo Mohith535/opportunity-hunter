@@ -1,5 +1,6 @@
 // node test/followup.test.mjs
 import { duePlan, markFollowed, recordOutcome, followupButtons, outcomeReply, daysBetween, appliedOn,
+         reminderEntry, afterReminder, reminderText, reminderButtons,
          MAX_PER_DAY } from "../src/followup.js";
 
 const R = [];
@@ -53,6 +54,33 @@ check("13. a week of silence gets a follow-up he can send, in his name, HTML-esc
 check("14. a job it cannot name is never asked about (5 of his oldest taps have no title)",
   !duePlan({ x: { status: "applied", updated_at: "2026-09-30" } }, TODAY).followups.length
   && duePlan({ x: { status: "applied", updated_at: "2026-09-30", title: "T" } }, TODAY).followups.length === 1);
+
+// ── staged reminders (22 Oct): SRFP — ask a teacher, write, submit, check — one entry, several dates ──
+const body = { key: "srfp-2027", title: "IAS Summer Research Fellowship", url: "https://webjapps.ias.ac.in/fellowship2027/",
+  deadline: "2026-11-30", steps: [{ at: "2026-11-01", note: "write it" }, { at: "2026-10-26", note: "ask a teacher" },
+    { at: "2026-11-27", note: "last call" }] };
+const [rk, re] = reminderEntry(body, TODAY);
+check("15. a plan is stored as its first date + the rest, in date order, never chased as an application",
+  rk === "srfp-2027" && re.remind_at === "2026-10-26" && re.note === "ask a teacher"
+  && re.steps.map((s) => s.at).join() === "2026-11-01,2026-11-27" && re.followup === false, re);
+const s1 = afterReminder(re, "2026-10-26"), s2 = afterReminder(s1, "2026-11-01"), s3 = afterReminder(s2, "2026-11-27");
+check("16. after each send it moves to the next step; after the last there is nothing left to fire",
+  s1.remind_at === "2026-11-01" && s1.note === "write it" && s2.remind_at === "2026-11-27" && !s2.steps
+  && !s3.remind_at && !s3.note && s3.reminded_at === "2026-11-27", [s1, s2, s3]);
+check("17. an ⏰ Again that overshoots a step skips it, not fires twice",
+  afterReminder({ ...re, remind_at: "2026-11-03" }, "2026-11-03").remind_at === "2026-11-27");
+check("18. the step's note is in the message, escaped",
+  /ask a teacher/.test(reminderText(re)) && /&lt;b&gt;/.test(reminderText({ ...re, note: "<b>" })));
+const tb = reminderButtons("todo-x", { todo: true }).flat().map((b) => b.callback_data);
+check("19. a to-do gets Done + Again; an opportunity keeps Applied / Skip / Again",
+  tb.join() === "done:todo-x,remind:todo-x" && reminderButtons("k", {}).flat().length === 3);
+check("20. bad input is refused: a feed-style key, no steps, past-only dates, a long note",
+  reminderEntry({ ...body, key: "abcdef123456" }, TODAY).error && reminderEntry({ ...body, steps: [] }, TODAY).error
+  && reminderEntry({ ...body, steps: [{ at: "2026-01-01" }] }, TODAY).error
+  && reminderEntry({ ...body, steps: [{ at: "2026-11-01", note: "x".repeat(601) }] }, TODAY).error
+  && reminderEntry(null, TODAY).error);
+check("21. an applied SRFP is not asked 'heard back?' a week on — results come in March",
+  !duePlan({ s: { status: "applied", applied_at: "2026-10-10", title: "SRFP", followup: false } }, TODAY).followups.length);
 
 let ok = 0;
 for (const [n, pass, d] of R) { console.log(`  ${pass ? "PASS" : "FAIL"}  ${n}${!pass && d ? `   [${JSON.stringify(d)}]` : ""}`); if (pass) ok++; }

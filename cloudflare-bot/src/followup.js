@@ -38,7 +38,8 @@ export function duePlan(tracker, todayISO, maxPerDay = MAX_PER_DAY) {
     if (e.status === "remind" && e.remind_at && String(e.remind_at) <= todayISO) reminders.push([key, e]);
     // A job it cannot name is not asked about: "21 days ago you applied to an application — heard
     // back?" is a question he cannot answer. Five of his taps (before 4 Oct) have no title anywhere.
-    if (e.status !== "applied" || e.outcome || !e.title) continue;
+    // followup:false — something whose answer comes months later (SRFP results are Mar–Apr).
+    if (e.status !== "applied" || e.outcome || !e.title || e.followup === false) continue;
     const age = daysBetween(appliedOn(e), todayISO);
     if (!(age >= FOLLOW_DAYS[0]) || age > MAX_AGE) continue;
     const sent = new Set(e.followups || []);
@@ -81,7 +82,55 @@ export function followupText(e, day) {
 
 export function reminderText(e) {
   const t = esc((e.title || "something you saved").slice(0, 120));
-  return `⏰ <b>Reminder</b> — you asked me to bring this back:\n${t}` + (e.url ? `\n${esc(e.url)}` : "");
+  return `⏰ <b>Reminder</b> — you asked me to bring this back:\n${t}` + (e.note ? `\n\n${esc(e.note)}` : "")
+    + (e.url ? `\n${esc(e.url)}` : "");
+}
+
+/** A to-do gets Done; an opportunity gets the usual Applied / Skip. Both can come back again. */
+export function reminderButtons(key, e) {
+  const again = { text: "⏰ Again", callback_data: `remind:${key}` };
+  return e && e.todo ? [[{ text: "✅ Done", callback_data: `done:${key}` }, again]]
+    : [[{ text: "✅ Applied", callback_data: `applied:${key}` }, { text: "⏭ Skip", callback_data: `skip:${key}` }, again]];
+}
+
+/**
+ * Staged reminders (22 Oct): "remember me" for something with steps, like SRFP — ask a teacher,
+ * write the 150–250 words, submit, check the letter went in. The entry carries the current step
+ * (remind_at + note) and the rest in `steps`; after each send it moves to the next step still ahead.
+ */
+export function afterReminder(e, todayISO) {
+  const out = { ...e, reminded_at: todayISO };
+  delete out.remind_at; delete out.note; delete out.steps;
+  const rest = (e.steps || []).filter((s) => s && String(s.at) > todayISO);
+  if (rest.length) {
+    out.remind_at = rest[0].at;
+    if (rest[0].note) out.note = rest[0].note;
+    if (rest.length > 1) out.steps = rest.slice(1);
+  }
+  return out;
+}
+
+const ISO = /^\d{4}-\d{2}-\d{2}$/;
+/** POST /remind body → [key, tracker entry], or { error }. Keys are slugs, never a 12-hex feed key. */
+export function reminderEntry(b, todayISO) {
+  if (!b || typeof b !== "object") return { error: "body must be JSON" };
+  if (!/^[a-z0-9][a-z0-9-]{2,39}$/.test(b.key || "") || /^[0-9a-f]{12}$/.test(b.key))
+    return { error: "key: 3–40 lowercase letters, digits or dashes" };
+  if (typeof b.title !== "string" || !b.title.trim() || b.title.length > 120) return { error: "title: 1–120 chars" };
+  const steps = Array.isArray(b.steps) ? b.steps : [];
+  if (!steps.length || steps.length > 10) return { error: "steps: 1–10 of {at, note}" };
+  for (const s of steps)
+    if (!s || !ISO.test(s.at || "") || (s.note && (typeof s.note !== "string" || s.note.length > 600)))
+      return { error: "each step: at = YYYY-MM-DD, note ≤ 600 chars" };
+  const ahead = steps.filter((s) => s.at >= todayISO).sort((x, y) => (x.at < y.at ? -1 : 1));
+  if (!ahead.length) return { error: "every step is in the past" };
+  const e = { status: "remind", title: b.title.trim(), updated_at: todayISO, remind_at: ahead[0].at, followup: false };
+  if (ahead[0].note) e.note = ahead[0].note;
+  if (ahead.length > 1) e.steps = ahead.slice(1);
+  if (typeof b.url === "string" && /^https:\/\//.test(b.url)) e.url = b.url;
+  if (ISO.test(b.deadline || "")) e.deadline = b.deadline;
+  if (b.todo) e.todo = true;
+  return [b.key, e];
 }
 
 /** What the bot says after an outcome tap. A "no reply" a week in gets a follow-up he can send. */

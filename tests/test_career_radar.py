@@ -201,7 +201,7 @@ check("11c. ended, finished, and one-college-only events are left out",
 h2s = {"data": {
     "flagshipEvents": [
         {"title": "Build with AI: PromptWars", "eventUrl": "promptwars", "customEventUrl": "https://promptwars.in/promptwars.html?ref=x",
-         "registrationEnd": soon, "tags": {"mode": {"value": "Online"}, "ticket": {"value": "FREE"}}},
+         "registrationEnd": soon, "tags": {"mode": {"value": "virtual"}, "ticket": {"value": "FREE"}}},
         {"title": "Closed Challenge", "eventUrl": "closed", "registrationEnd": past, "tags": {}}],
     "communityEvents": [
         {"title": "Build with AI: Bootcamps", "eventUrl": "bootcamps", "registrationEnd": soon,

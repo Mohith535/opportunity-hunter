@@ -30,7 +30,7 @@ import { WorkerEntrypoint } from "cloudflare:workers";
 import { validatePacket, intakeKey, statusesFor, itemFromPacket, INTAKE_TTL } from "./intake.js";
 import APP_HTML from "./app.html";
 import { duePlan, markFollowed, recordOutcome, followupButtons, followupText, reminderText, outcomeReply,
-         OUTCOMES, MAX_PER_DAY } from "./followup.js";
+         reminderButtons, afterReminder, reminderEntry, OUTCOMES, MAX_PER_DAY } from "./followup.js";
 
 let ORIGIN = "";   // this Worker's own https origin, learned from each request — for the Open-app buttons
 
@@ -45,6 +45,7 @@ export default class extends WorkerEntrypoint {
     const url = new URL(request.url);
     ORIGIN = url.origin;
     if (url.pathname === "/cron") return cronApi(request, env);
+    if (url.pathname === "/remind") return remindApi(request, env);
     if (url.pathname === "/target") return targetApi(request, env);
     if (url.pathname.startsWith("/intake/")) return intakeApi(request, env, url.pathname.slice(8));
     if (url.pathname === "/packs") return packsApi(request, env);
@@ -126,7 +127,7 @@ async function handleCallback(env, cb) {
   if (action === "plan") return handlePlan(env, key, cb, chatId);
   if (action === "draft") return handleDraft(env, key, cb, chatId);
   if (action === "pack") return handlePack(env, key, chatId, cb);
-  if (action === "applied" || action === "skip" || action === "remind")
+  if (action === "applied" || action === "skip" || action === "remind" || action === "done")
     return handleStatus(env, action, key, cb);
   if (action === "out") {                                    // out:<interview|rejected|noreply>:<key>
     const j = key.indexOf(":");
@@ -185,9 +186,10 @@ async function packItem(env, key) {
 
 async function handleStatus(env, action, key, cb) {
   const item = (await findItem(env, key)) || (await packItem(env, key));
-  const status = action === "applied" ? "applied" : action === "skip" ? "skipped" : "remind";
+  const status = action === "applied" ? "applied" : action === "skip" ? "skipped" : action === "done" ? "done" : "remind";
   await setStatus(env, key, status, item);
   const msg = action === "applied" ? "Marked as applied ✅ — nice one!"
+    : action === "done" ? "Done ✅ — crossed off."
     : action === "skip" ? "Skipped — I won't nag you about this."
       : `I'll remind you in ${env.REMIND_DAYS || 3} days ⏰`;
   return answerCallback(env, cb.id, msg);
@@ -501,10 +503,8 @@ async function runDaily(env) {
   const plan = duePlan(t, today, Math.max(0, MAX_PER_DAY - already));
   let sent = 0;
   for (const [key, e] of plan.reminders) {
-    const r = await sendMessage(env, chat, reminderText(e), [[
-      { text: "✅ Applied", callback_data: `applied:${key}` }, { text: "⏭ Skip", callback_data: `skip:${key}` },
-      { text: "⏰ Again", callback_data: `remind:${key}` }]]);
-    if (r.ok) { t[key] = { ...e, reminded_at: today }; delete t[key].remind_at; sent++; }
+    const r = await sendMessage(env, chat, reminderText(e), reminderButtons(key, e));
+    if (r.ok) { t[key] = afterReminder(e, today); sent++; }
   }
   for (const [key, e, day] of plan.followups) {
     const r = await sendMessage(env, chat, followupText(e, day), followupButtons(key));
@@ -521,6 +521,24 @@ async function cronApi(request, env) {
     return new Response("unauthorized", { status: 401 });
   if (request.method !== "POST") return new Response("method not allowed", { status: 405 });
   return Response.json(await runDaily(env));
+}
+
+// "Remember this for me": a reminder, or a staged plan of them, set from the laptop (bearer token).
+// notifiers/remind.py is the caller. The entry lives in the tracker, so ⏰ Again / Done / Applied work.
+async function remindApi(request, env) {
+  const auth = request.headers.get("Authorization") || "";
+  if (!env.BOT_API_TOKEN || !(await sameSecret(auth, "Bearer " + env.BOT_API_TOKEN)))
+    return new Response("unauthorized", { status: 401 });
+  if (request.method !== "POST") return new Response("method not allowed", { status: 405 });
+  const r = reminderEntry(await request.json().catch(() => null), new Date().toISOString().slice(0, 10));
+  if (!Array.isArray(r)) return Response.json(r, { status: 400 });
+  const [key, e] = r;
+  const t = await kvGet(env, "tracker", {});
+  t[key] = { ...(t[key] || {}), ...e };
+  if (!e.steps) delete t[key].steps;
+  if (!e.note) delete t[key].note;
+  await kvPut(env, "tracker", t);
+  return Response.json({ ok: true, key, next: e.remind_at, steps: 1 + (e.steps || []).length });
 }
 
 async function handleOutcome(env, kind, key, cb, chatId) {
