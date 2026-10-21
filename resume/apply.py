@@ -173,8 +173,22 @@ def _avature_detail(slug: str, rid: str) -> dict:
             "location": html.unescape(loc.group(1)) if loc else ""}
 
 
+def _himalayas_detail(company: str, slug: str) -> dict:
+    """The full Himalayas posting (sources/remote.py). Its apply link is kept unchanged and Himalayas is
+    named as the source — its API terms, read 22 Oct."""
+    from sources.remote import place  # noqa: PLC0415
+    j = requests.get(f"https://himalayas.app/jobs/api/companies/{company}/jobs/{slug}",
+                     headers={**_HEADERS, "User-Agent": f"{config.USER_AGENT} (source credited: Himalayas)"},
+                     timeout=_FETCH_TIMEOUT).json()
+    j = j.get("job", j) if isinstance(j, dict) else {}
+    return {"description": _text(j.get("description")), "apply_url": j.get("applicationLink", ""),
+            "company": j.get("companyName", ""), "location": place(j),
+            "remote": not j.get("locationRestrictions") or "India" in (j.get("locationRestrictions") or []),
+            "employment_type": j.get("employmentType", ""), "workplace": "Remote (via Himalayas)"}
+
+
 _ATS = {"gh": _greenhouse_detail, "ashby": _ashby_detail, "lever": _lever_detail, "workday": _workday_detail,
-        "avature": _avature_detail}
+        "avature": _avature_detail, "himalayas": _himalayas_detail}
 
 _UNSTOP_DETAIL = "https://unstop.com/api/public/competition/{id}"
 

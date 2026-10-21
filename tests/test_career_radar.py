@@ -146,6 +146,28 @@ check("9c. ...but 'a Master's or Bachelor's degree' does not",
 check("9d. EA packs read EA's own posting", "avature" in A._ATS
       and A.ats_native({"native_id": "avature:jobs.ea.com/en_US/careers:216036"}).startswith("avature:"))
 
+# ── remote jobs open to India (Himalayas, 22 Oct) ──────────────────────────────────────────────
+import sources.remote as RM
+job = {"title": "Machine Learning (ML) Engineer Intern - (Paid - India/Remote)", "companyName": "Peakflo",
+       "guid": "https://himalayas.app/companies/peakflo/jobs/ml-engineer-intern", "employmentType": "Intern",
+       "applicationLink": "https://himalayas.app/companies/peakflo/jobs/ml-engineer-intern?utm_source=x",
+       "locationRestrictions": ["India"], "excerpt": "Build ML models."}
+o = RM.to_opportunity(job)
+check("10a. Himalayas: an internship, its apply link UNCHANGED (their terms), credited as the source",
+      o and o.tags == ["internship"] and o.url == job["applicationLink"] and "via Himalayas" in o.description)
+check("10b. ...and a native id the pack can refetch the full posting with",
+      o.native_id == "himalayas:peakflo:ml-engineer-intern" and "himalayas" in A._ATS)
+check("10c. where a candidate may be: no restriction = worldwide; else the countries",
+      RM.place({"locationRestrictions": []}) == "Remote (worldwide)"
+      and RM.place({"locationRestrictions": ["Canada", "Germany"]}) == "Remote — Canada, Germany")
+from resume.eligibility import location_rules, YES as _Y, CHECK as _C
+check("10d. which the eligibility rules read: worldwide/India ✅, Canada+Germany only ⚠ for him",
+      location_rules("Remote (worldwide)", None, C)[0][0] == _Y and location_rules("Remote — India", None, C)[0][0] == _Y
+      and location_rules("Remote — Canada, Germany", None, Candidate(open_to_relocate=True))[0][0] == _C)
+check("10e. only tech roles: a co-founder / CMO 'internship' and sales are left out",
+      RM.to_opportunity({**job, "title": "AI Research Lab Co-Founder / CMO (100 % remote)"}) is None
+      and RM.to_opportunity({**job, "title": "Inside Sales Intern"}) is None)
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))

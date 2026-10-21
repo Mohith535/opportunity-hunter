@@ -438,7 +438,7 @@ def run(source_names=None, test=False):
     # level — the keyword gate was dropping 128 of 163 roles including "Data Science Intern",
     # because "intern" is in INTERESTS but "Intern" (no -ship) is not the same word.
     # Noisy sources still pass through the keyword filter as before.
-    trusted = {"programs", "ats"}
+    trusted = {"programs", "ats", "remote"}   # remote: tech titles only, filtered at the source
     relevant = [it for it in all_items if it.source in trusted or is_relevant(it)]
 
     # 3. Score
