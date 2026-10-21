@@ -123,6 +123,20 @@ check("3p. interview prep: the story, the measured number — never a status cod
 check("3q. ...and gaps are real requirements only, with the honest line instead of a bluff",
       "Go and Kafka" in prep and "Fresher-level" not in prep and "Never claim it" in prep)
 
+# ── the Sunday shortlist: "the RIGHT 5–10 opportunities every week" ─────────────────────────────
+wk = [(1, {"title": "ML <Intern>", "key": "k1", "tags": ["internship"]}, 10, Verdict(YES, []), False),
+      (2, {"title": "Ruled out", "key": "k2", "tags": ["internship"]}, 10, Verdict(NO, [(NO, "x")]), False),
+      (3, {"title": "Already applied", "key": "k3", "tags": ["internship"]}, 10, Verdict(YES, []), False),
+      (4, {"title": "Weak", "key": "k4", "tags": ["internship"]}, 6, Verdict(YES, []), False),
+      (5, {"title": "Check this", "key": "k5", "tags": ["internship"]}, 8, Verdict(CHECK, [(CHECK, "c")]), False)]
+text, kb = P.weekly_message(wk, {"k3"}, n=8)
+check("3r. shortlist: eligible-or-check, 8+, not acted on — ruled out / applied / weak are left out",
+      "ML &lt;Intern&gt;" in text and "Check this" in text and not any(t in text for t in ("Ruled out", "Already applied", "Weak")), text)
+check("3s. one 📦 Pack button per pick, wired to the bot's existing pack:<key> handler, within 64 bytes",
+      [b["callback_data"] for r in kb for b in r] == ["pack:k1", "pack:k5"]
+      and all(len(b["callback_data"].encode()) <= 64 for r in kb for b in r))
+check("3t. nothing clears the bar → nothing is sent", P.weekly_message(wk[1:4], {"k3"}) == ("", []))
+
 # ── 4. buttons reuse the Worker's existing actions ───────────────────────────────────────────
 kb = P.buttons(item, pack)
 cbs = [b["callback_data"] for r in kb for b in r if "callback_data" in b]

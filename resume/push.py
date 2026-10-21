@@ -431,9 +431,115 @@ def _arg(args: list[str], flag: str, default: int) -> int:
         return default
 
 
+# ─── the weekly "right 5–10" ────────────────────────────────────────────────────────────────
+# GPT's plan ended on it, and it is his goal in one line: "find the RIGHT 5–10 opportunities every week
+# and actually have a realistic chance of winning them." The daily digest is the firehose; on Sundays
+# this is the shortlist: the week's best he is not ruled out of and has not acted on yet.
+WEEKLY_N, WEEKLY_MIN = 8, 8
+
+
+def week_items(days: int = 7, today: date | None = None) -> list[dict]:
+    """Every item from the last `days` days of runs (newest copy of each)."""
+    from datetime import timedelta  # noqa: PLC0415
+    try:
+        runs = json.loads(config.HISTORY_FILE.read_text(encoding="utf-8")).get("runs") or []
+    except (OSError, ValueError, AttributeError):
+        return []
+    since = ((today or date.today()) - timedelta(days=days)).isoformat()
+    out, seen = [], set()
+    for r in reversed(runs):
+        if str(r.get("date") or "")[:10] < since:
+            break
+        for it in r.get("items") or []:
+            k = it.get("url") or it.get("title")
+            if k not in seen:
+                seen.add(k)
+                out.append(it)
+    return out
+
+
+def weekly_message(rows: list[tuple], acted: set[str], today: date | None = None,
+                   n: int = WEEKLY_N) -> tuple[str, list]:
+    """(HTML text, inline keyboard) — the week's best he can apply to, with a 📦 Pack button each."""
+    from models import dedup_key_from_dict  # noqa: PLC0415
+    from filters.pitch import pitch  # noqa: PLC0415
+    today = today or date.today()
+    e = html.escape
+    picks = []
+    for _, item, score, verdict, _off in rows:
+        key = item.get("key") or dedup_key_from_dict(item)
+        if verdict.level == "NO" or score < WEEKLY_MIN or key in acted:
+            continue
+        picks.append((item, score, verdict, key))
+        if len(picks) == n:
+            break
+    if not picks:
+        return "", []
+    lines = [f"🎯 <b>Your best {len(picks)} this week</b> — not ruled out, not acted on yet", ""]
+    kb, row = [], []
+    for i, (item, score, verdict, key) in enumerate(picks, 1):
+        dl = str(item.get("deadline") or "")[:10]
+        left = ""
+        if dl:
+            try:
+                d = (date.fromisoformat(dl) - today).days
+                left = f" · ⏳ {d} day{'s' if d != 1 else ''}"
+            except ValueError:
+                pass
+        try:
+            hook = pitch(item, personal=True)
+        except Exception:  # noqa: BLE001 — a missing hook never drops a pick
+            hook = ""
+        if "⏳" in hook.splitlines()[0] if hook else False:
+            left = ""                              # the pitch already counts the days
+        lines.append(f"{i}. <b>{e((item.get('title') or '')[:80])}</b> · {score}/10 {verdict.icon}{left}")
+        if hook:
+            lines.append(f"   {e(hook.splitlines()[0][:110])}")
+        row.append({"text": f"📦 Pack {i}", "callback_data": f"pack:{key}"})
+        if len(row) == 4:
+            kb.append(row)
+            row = []
+    if row:
+        kb.append(row)
+    lines += ["", "<i>⚠ = check before applying. A pack arrives here in about 2 minutes.</i>"]
+    return "\n".join(lines), kb
+
+
+def weekly(dry: bool = False) -> int:
+    """Send the Sunday shortlist. Returns how many it listed. Logs counts only — the list is his."""
+    from filters import outcomes  # noqa: PLC0415
+    from .apply import ranked_items  # noqa: PLC0415
+    items = week_items()
+    t = outcomes.fetch_tracker() or {}
+    acted = {k for k, v in t.items() if isinstance(v, dict) and v.get("status") in ("applied", "skipped")}
+    text, kb = weekly_message(ranked_items(items=items), acted)
+    say = print
+    if not text:
+        say("[weekly] nothing this week clears the bar")
+        return 0
+    n = sum(len(r) for r in kb)
+    if dry:
+        say(f"[weekly] {n} pick(s) from {len(items)} item(s) this week (dry run, not sent)")
+        if not config.PUBLIC_LOGS:
+            print(re.sub(r"<[^>]+>", "", html.unescape(text)))
+        return n
+    try:
+        requests.post(f"https://api.telegram.org/bot{config.TELEGRAM_BOT_TOKEN}/sendMessage",
+                      json={"chat_id": config.TELEGRAM_CHAT_ID, "text": text, "parse_mode": "HTML",
+                            "disable_web_page_preview": True, "reply_markup": {"inline_keyboard": kb}},
+                      timeout=config.REQUEST_TIMEOUT)
+        say(f"[weekly] sent {n} pick(s) from {len(items)} item(s) this week")
+    except requests.RequestException as ex:
+        log(f"[weekly] send failed: {type(ex).__name__}", level="WARN")
+    return n
+
+
 def main() -> int:
     import os  # noqa: PLC0415
     args = sys.argv[1:]
+    if "--weekly" in args:
+        weekly(dry="--dry" in args)
+        return 0
     if "-h" in args or "--help" in args:
         print(__doc__)
         return 0
@@ -448,6 +554,13 @@ def main() -> int:
     n = _arg(args, "--n", int(os.environ.get("OH_PACKS", DEFAULT_N) or DEFAULT_N))
     run(n=n, min_score=_arg(args, "--min-score", DEFAULT_MIN_SCORE), dry="--dry" in args,
         any_day="--any-day" in args)
+    # Sundays, on the scheduled cloud run only — a pack he dispatches by hand on a Sunday must not
+    # send the shortlist a second time.
+    if date.today().weekday() == 6 and os.environ.get("GITHUB_EVENT_NAME") == "schedule":
+        try:
+            weekly()
+        except Exception as e:  # noqa: BLE001 — the packs already went out; the shortlist is a bonus
+            log(f"[weekly] failed: {type(e).__name__}", level="WARN")
     return 0          # never fail the workflow: the hunt and the digest already succeeded
 
 
