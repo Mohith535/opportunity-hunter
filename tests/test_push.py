@@ -112,6 +112,16 @@ noise = [(0, "Familiarity with REST API development", "token-protected GET/PUT R
          (0, "Proficiency in Go and Kafka", "", "")]
 check("3n. only checkable requirements count: 'freshers welcome' is not a gap, 'Go and Kafka' is",
       fit_of(noise) == (1, 2, ["Proficiency in Go and Kafka"]), fit_of(noise))
+from resume.apply import interview_prep
+twice = [(0, "Strong understanding of data structures and algorithms", "34 LeetCode problems solved in C", "LeetCode solutions"),
+         (0, "Excellent problem-solving skills and attention to detail.", "", "")]
+check("3o. a skill shown elsewhere on the page is not a gap (the matcher only caps repetition)",
+      fit_of(twice)[2] == [] or "problem-solving" not in " ".join(fit_of(twice)[2]), fit_of(twice))
+prep = "\n".join(interview_prep(noise + [(0, "Improve performance", "Each download under its own deadline: **218 s → 69 s**.", "OPHunter")]))
+check("3p. interview prep: the story, the measured number — never a status code like 401",
+      "218 s → 69 s" in prep and "number ready:** 401" not in prep and "Your story:** OPHunter" in prep, prep)
+check("3q. ...and gaps are real requirements only, with the honest line instead of a bluff",
+      "Go and Kafka" in prep and "Fresher-level" not in prep and "Never claim it" in prep)
 
 # ── 4. buttons reuse the Worker's existing actions ───────────────────────────────────────────
 kb = P.buttons(item, pack)

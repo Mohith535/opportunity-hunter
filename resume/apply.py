@@ -519,6 +519,7 @@ def build_job_md(item: dict, full: dict, report: dict | None = None) -> str:
             shown = (f"**{proj}** — {ev}" if proj else ev) if ev else "**gap** — nothing in your profile shows this"
             L.append(f"| {kind.get(prio, '')} | {line.replace('|', '/')} | {shown.replace('|', '/')} |")
         L.append("")
+        L += interview_prep(rows_ask)
 
     # The form's screening questions, drafted from his evidence (resume/questions.py). A failure here
     # costs the section, never the pack.
@@ -662,6 +663,31 @@ def corruption_warnings(text: str) -> list[str]:
     return out
 
 
+def interview_prep(match_rows: list | None, limit: int = 4) -> list[str]:
+    """job.md's "If they call you" — from the same rows as the asks table, so prep and resume agree.
+    Each answered ask becomes the story to tell and the number to have ready; each stated requirement
+    with no evidence becomes the honest line to say instead of a bluff. Built 21 Oct, when the bot began
+    asking "heard back?" and pointing an 🎉 Interview tap here."""
+    rows = list(match_rows or [])
+    stories = [(line, ev, proj) for prio, line, ev, proj in rows if proj and ev][:limit]
+    gaps = fit_of(rows)[2][:3]          # the same "checkable requirement" filter as the fit count
+    if not stories and not gaps:
+        return []
+    L = ["## If they call you — interview prep", "",
+         "_Every row above is something they can ask about. Tell it as: the problem, what you did, the "
+         "number, what you learned._", ""]
+    for line, ev, proj in stories:
+        # A measured result, not any digit: "401 without the token" is a status code, not a number to quote.
+        num = re.search(r"(\d[\d,.]*\s*(?:ms|s)?\s*→\s*\d[\d,.]*\s*(?:ms|s|%)?|\d[\d,.]*\s*(?:ms|%|×)"
+                        r"|\d[\d,.]*\s+(?:tests|commits|problems|stars|users))", ev.replace("**", ""))
+        L += [f"- **They may ask about:** “{_clip(line, 110)}”",
+              f"  **Your story:** {proj} — {ev}" + (f"  \n  **Have the number ready:** {num.group(1).strip()}" if num else "")]
+    for g in gaps:
+        L += [f"- **Gap they may probe:** “{_clip(g, 110)}” — say plainly you have not used it yet, name the "
+              "closest thing you have built, and what you would learn first. Never claim it."]
+    return L + [""]
+
+
 def fit_of(match_rows: list | None) -> tuple[int, int, list[str]]:
     """(stated requirements his work answers, stated requirements, the unanswered ones). A row is
     (priority, ask, evidence, project); priority 0 is a requirement section. Duties are NOT counted:
@@ -673,8 +699,12 @@ def fit_of(match_rows: list | None) -> tuple[int, int, list[str]]:
     # counting them turned an eligible backend posting into a STRETCH (2 of 5, 21 Oct).
     must = [r for r in match_rows or [] if r[0] == 0
             and (r[2] or capabilities_in(r[1]) or _TECH.search(r[1]) or re.search(r"\bGo\b", r[1]))]
-    answered = sum(1 for r in must if r[2])
-    return answered, len(must), [r[1] for r in must if not r[2]]
+    # The matcher uses a capability for two asks at most, so a bullet list does not repeat itself. A
+    # third "problem-solving" ask then has no evidence of its own — but the skill is shown, and calling
+    # it a gap told him to admit he had never done what his LeetCode line proves (21 Oct).
+    shown = {c for r in match_rows or [] if r[2] and r[3] for c in capabilities_in(r[1])}
+    covered = [r for r in must if r[2] or set(capabilities_in(r[1])) & shown]
+    return len(covered), len(must), [r[1] for r in must if r not in covered]
 
 
 _TECH = re.compile(
