@@ -357,6 +357,18 @@ try:
 finally:
     A._profile, A._candidate = _old_profile, _old_cand
 
+# ── 12. listed as remote, posted as office (career-ops' geo-mismatch, 21 Oct) ──────────────────
+from resume.eligibility import attendance_rule
+check("12a. a remote listing whose posting says 'hybrid role' / 'work onsite' / 'must relocate' is a CHECK",
+      all(attendance_rule(t, "Remote", None) and attendance_rule(t, "Remote", None)[0][0] == CHECK
+          for t in ("This is a hybrid role: 3 days a week in the office.", "You will work onsite in Pune.",
+                    "Candidates must be willing to relocate to Hyderabad.")))
+check("12b. ...quoting the posting's own words", "hybrid role" in attendance_rule("A hybrid role.", "Remote", None)[0][1])
+check("12c. 'onsite interviews' and 'our office is in Mumbai' are not attendance rules",
+      not attendance_rule("Onsite interviews happen in our Pune office.", "Remote", None)
+      and not attendance_rule("Fully remote. Our office is in Mumbai.", "Remote", None))
+check("12d. an office job saying 'hybrid' is not a mismatch", not attendance_rule("A hybrid role.", "Mumbai", None))
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))

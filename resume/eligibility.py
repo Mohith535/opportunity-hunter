@@ -392,9 +392,25 @@ def team_note(detail: dict) -> str:
 
 
 # ─── the verdict ──────────────────────────────────────────────────────────────────────────────
+# A listing that says remote while its own posting says otherwise (career-ops' geo-mismatch check). Only
+# binding attendance counts: "onsite interviews" or "our office in Pune" alone is not.
+_ATTEND = re.compile(
+    r"\b(?:\d|one|two|three|four|five)\s+days?\s+(?:a|per|each)\s+week\s+(?:in|at|from)\s+(?:the\s+|our\s+)?office\b"
+    r"|\bhybrid\s+(?:role|position|work|model|schedule|setup|arrangement|internship)\b"
+    r"|\b(?:work|working|based)\s+(?:from\s+)?on-?site\b|\bin-office\s+(?:role|position|work|internship)\b"
+    r"|\bmust\s+(?:be\s+(?:willing|able)\s+to\s+)?relocate\b", re.I)
+
+
+def attendance_rule(text: str, location: str, remote: bool | None) -> list[tuple[str, str]]:
+    if not (remote or _REMOTE.search(location or "")):
+        return []
+    m = _ATTEND.search(text or "")
+    return [(CHECK, f"listed as remote, but the posting says \"{m.group(0)}\"")] if m else []
+
+
 def assess(c: Candidate, text: str = "", location: str = "", remote: bool | None = None,
            unstop: dict | None = None) -> Verdict:
-    reasons = text_rules(text, c) + location_rules(location, remote, c)
+    reasons = text_rules(text, c) + location_rules(location, remote, c) + attendance_rule(text, location, remote)
     if unstop:
         reasons += unstop_rules(unstop, c)
     reasons = _escalate(reasons)
