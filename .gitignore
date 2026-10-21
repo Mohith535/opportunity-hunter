@@ -63,3 +63,5 @@ applications/
 # Local plan with personal context (his situation, in his words) - never public
 docs/PLAN-opportunity-intelligence.md
 docs/HANDOFF-linkedin-agent-2026-10-18.md
+# the cloud copy's ETag, so resume.sync downloads history only when it changed
+data/.cloud_etag

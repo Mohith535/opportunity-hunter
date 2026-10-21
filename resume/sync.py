@@ -93,6 +93,8 @@ def main() -> int:
     got, n = run()
     print(f"[sync] {got} new file(s) in {n} pack folder(s) under applications/" if got
           else "[sync] applications/ is up to date")
+    import store  # noqa: PLC0415 — the laptop's history follows the cloud's (Nova and --list read it)
+    print(store.pull_cloud())
     return 0
 
 
