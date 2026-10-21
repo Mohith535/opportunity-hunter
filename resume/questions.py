@@ -123,10 +123,13 @@ def answer(q: str, profile: dict, match_rows: list | None = None, options: list 
         if hits:
             return "Yes. " + _join(hits), "your verified project sentences"
     if re.search(r"backend|\bapi\b|fastapi|flask|django|server|endpoint", low):
-        hits = _first(pool, [r"http\.server|/api/", r"rest api|get/put"], 2)
+        # A sentence naming the framework the form asks about comes first: once he confirms nova-cortex's
+        # FastAPI service (resume.evidence, 21 Oct), "Not with FastAPI…" stops being true.
+        hits = _first(pool, [r"\bfastapi\b|\bflask\b|\bdjango\b", r"http\.server|/api/", r"rest api|get/put"], 2)
         if hits:
-            lead = "Not with FastAPI, Flask or Django — " if re.search(r"fastapi|flask|django", low) and \
-                not re.search(r"fastapi|flask|django", _join(hits).lower()) else ""
+            named = re.search(r"fastapi|flask|django", _join(hits).lower())
+            lead = ("Yes. " if named else "Not with FastAPI, Flask or Django — ") \
+                if re.search(r"fastapi|flask|django", low) else ""
             return lead + _join(hits), "your verified project sentences (honest about which framework)"
     if re.search(r"\bstart\b|join|availab|notice period|earliest", low):
         return "YOU DECIDE — e.g. a date after your semester exams; you are in 2nd year, 3rd semester at SRM.", \
