@@ -1,5 +1,5 @@
 {
-  "_comment": "Company career boards to watch, via their applicant-tracking system's PUBLIC JSON API (no key, no auth, no scraping). Every slug here was probed live and returned HTTP 200 with real listings on 2026-09-21; slugs that 404d were left out rather than guessed at. Adding a company is one line. To find a slug, open the company's careers page and read the URL: boards.greenhouse.io/<slug>, jobs.ashbyhq.com/<slug>, or jobs.lever.co/<slug>. sources/ats.py keeps only student-relevant titles (intern, new grad, residency, research), so a board of 800 senior roles costs one HTTP call and adds nothing to the brief. INDIAN companies were added 2026-09-26 for the Mumbai/India goal — these are where an India-based paid internship actually comes from, since the US boards list almost nothing in India. Since 21 Oct 2026 also big-company sites with their own platforms: workday (slug host/tenant/site, POST search), amazon (slug = ISO alpha-3 country), microsoft and google (slug = a location), avature (slug host/locale/careers, e.g. EA). Optional per entry: \"query\" (default \"intern\") and \"pages\". Each was called live and its robots.txt read first.",
+  "_comment": "Company career boards to watch, via their applicant-tracking system's PUBLIC JSON API (no key, no auth, no scraping). Every slug here was probed live and returned HTTP 200 with real listings on 2026-09-21; slugs that 404d were left out rather than guessed at. Adding a company is one line. To find a slug, open the company's careers page and read the URL: boards.greenhouse.io/<slug>, jobs.ashbyhq.com/<slug>, or jobs.lever.co/<slug>. sources/ats.py keeps only student-relevant titles (intern, new grad, residency, research), so a board of 800 senior roles costs one HTTP call and adds nothing to the brief. INDIAN companies were added 2026-09-26 for the Mumbai/India goal — these are where an India-based paid internship actually comes from, since the US boards list almost nothing in India. Since 21 Oct 2026 also big-company sites with their own platforms: workday (slug host/tenant/site, POST search), amazon (slug = ISO alpha-3 country), microsoft and google (slug = a location), avature (slug host/locale/careers, e.g. EA). Optional per entry: \"query\" (default \"intern\") and \"pages\". Each was called live and its robots.txt read first. 22 Oct 2026: ~115 more Indian tech companies were probed on Greenhouse/Lever/Ashby; 17 have a board, holding 9 India student roles between them. The 10 with the most India jobs were added.",
   "companies": [
     {
       "platform": "greenhouse",
@@ -326,6 +326,56 @@
       "platform": "greenhouse",
       "slug": "bluestone",
       "name": "BlueStone"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "rubrik",
+      "name": "Rubrik"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "hackerrank",
+      "name": "HackerRank"
+    },
+    {
+      "platform": "lever",
+      "slug": "fampay",
+      "name": "FamPay"
+    },
+    {
+      "platform": "lever",
+      "slug": "hevodata",
+      "name": "Hevo Data"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "inmobi",
+      "name": "InMobi"
+    },
+    {
+      "platform": "ashby",
+      "slug": "tekion",
+      "name": "Tekion"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "highradius",
+      "name": "HighRadius"
+    },
+    {
+      "platform": "lever",
+      "slug": "zeta",
+      "name": "Zeta"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "druva",
+      "name": "Druva"
+    },
+    {
+      "platform": "greenhouse",
+      "slug": "sigmoid",
+      "name": "Sigmoid"
     },
     {
       "name": "NVIDIA",
