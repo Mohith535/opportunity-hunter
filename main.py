@@ -420,22 +420,24 @@ FULL_CHECK = ("msft:", "google:", "avature:", "workday:")   # boards whose listi
 FULL_CHECK_MAX = 10                                          # calls a run: these sites rate-limit
 
 
-def _check_full_postings(items: list) -> tuple[list, int]:
+def _check_full_postings(items: list) -> tuple[list, list]:
     """NEW big-company roles: the posting decides, not the title. Microsoft's "Research Sciences
     INTERN" reached him at 9/10 (21 Oct) — its posting says "pursuing a Master's or a Doctorate".
-    Only new items pay for this, at most FULL_CHECK_MAX calls; a failed fetch keeps the item."""
+    Only new items pay for this, at most FULL_CHECK_MAX calls; a failed fetch keeps the item.
+    Returns (kept, dropped). The caller marks the dropped ones seen: re-read daily, the same Adobe
+    roles would take the 10 calls every morning and no newer role would ever be checked."""
     if not any(str(it.native_id or "").startswith(FULL_CHECK) for it in items):
-        return items, 0
+        return items, []
     import time
     try:
         from resume.apply import _candidate, _profile, eligibility_of, fetch_full_jd
     except ImportError:
-        return items, 0
+        return items, []
     prof = _profile()
     if not prof.get("education"):
-        return items, 0
+        return items, []
     cand = _candidate(prof)
-    kept, hidden, calls = [], 0, 0
+    kept, dropped, calls = [], [], 0
     for it in items:
         native = str(it.native_id or "")
         if native.startswith(FULL_CHECK) and calls < FULL_CHECK_MAX:
@@ -444,10 +446,10 @@ def _check_full_postings(items: list) -> tuple[list, int]:
             calls += 1
             full = fetch_full_jd(it.to_dict())
             if full and eligibility_of(it.to_dict(), full, cand).level == "NO":
-                hidden += 1
+                dropped.append(it)
                 continue
         kept.append(it)
-    return kept, hidden
+    return kept, dropped
 
 
 def run(source_names=None, test=False):
@@ -527,8 +529,10 @@ def run(source_names=None, test=False):
         if not store.is_seen(seen, it) or store.should_resurface(it)
     ]
     new_items, deep = _check_full_postings(new_items)
+    for it in deep:                  # the posting said no: settled, so it is not read again tomorrow
+        store.mark_seen(seen, it)
     if deep:
-        log(f"[eligibility] hid {deep} more after reading the full posting")
+        log(f"[eligibility] hid {len(deep)} more after reading the full posting")
 
     # 4a. INTAKE FUNNEL. Sources now fetch wide (hundreds of candidates), so the cheap
     # local rule score decides who pays the expensive costs below. Items under the line

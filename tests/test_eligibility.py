@@ -296,7 +296,7 @@ try:
     check("10f. a new big-company role is read in full: the Master's/PhD one goes, a failed fetch keeps its item, "
           "an Unstop item costs no call",
           [k.title for k in kept] == ["Software Engineering Intern — Google", "Backend Developer Internship"]
-          and deep == 1 and asked == ["msft:1", "google:2"], ([k.title for k in kept], deep, asked))
+          and [d.native_id for d in deep] == ["msft:1"] and asked == ["msft:1", "google:2"], ([k.title for k in kept], deep, asked))
 finally:
     A._profile, A._candidate = _old_profile, _old_cand
     _cfg.HIDE_INELIGIBLE = True
