@@ -90,6 +90,8 @@ check("no literal entities survive", "&nbsp;" not in out and "&amp;" not in out,
 check("list structure is kept", "- Ship code" in out, out[:60])
 check("heading text survives", "About" in out, out[:60])
 check("empty input is safe", _text("") == "" and _text(None) == "")
+check("a heading is bold on both sides (job.md showed '**Minimum qualifications:' with no close)",
+      _text("<h3>Minimum qualifications:</h3><ul><li>Pursuing a BS</li></ul>").startswith("**Minimum qualifications:**"))
 
 # ── slugs ─────────────────────────────────────────────────────────────────────────────────
 check("slug is filesystem-safe",

@@ -140,6 +140,36 @@ check("9a. EA: the job description is taken, not the company blurb or the page f
       full["description"].startswith("Project Management Intern") and "MBA" in full["description"], full["description"][:60])
 check("9b. 'currently pursuing an MBA' rules out a bachelor's student (the EA Hyderabad intern)",
       [l for l, _ in text_rules(full["description"], C)] == [NO])
+gpage = ('<div>header ' * 50 + 'preferred working location from the following: <b>Bengaluru, Karnataka, India; '
+         'Pune, Maharashtra, India</b>.</span><br/><h3>Minimum qualifications:</h3><ul><li>Pursuing a PhD program in '
+         'computer science.</li></ul><h3>About the job</h3><p>A 12+ week paid internship.</p><h3>Responsibilities</h3>'
+         '<ul><li>Build things.</li></ul><footer>' + "x " * 400 + '</footer>')
+A.requests.get = lambda *a, **k: _P(gpage)
+try:
+    gfull = A.fetch_full_jd({"native_id": "google:109976286780105414", "source": "ats", "url": ""})
+finally:
+    A.requests.get = real_req
+check("9f. Google: the qualifications through Responsibilities, its cities, none of the footer (22 Oct)",
+      gfull["description"].startswith("**Minimum qualifications:**") and "Build things" in gfull["description"]
+      and "x x" not in gfull["description"] and gfull["location"].startswith("Bengaluru"), gfull)
+check("9g. ...and 'Pursuing a PhD program' there rules a bachelor's student out",
+      {l for l, _ in text_rules(gfull["description"], C)} == {NO}, text_rules(gfull["description"], C))
+import json as _json
+_ms = _json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures", "msft_position_details.json"),
+                      encoding="utf-8"))   # the real reply for "Research Sciences INTERN", 22 Oct
+class _J:
+    def json(self): return _ms
+A.requests.get = lambda *a, **k: _J()
+try:
+    mfull = A.fetch_full_jd({"native_id": "msft:1970393556641091", "source": "ats", "url": ""})
+finally:
+    A.requests.get = real_req
+check("9h. Microsoft: the full posting, on-site, its India location (title alone scored it 9/10)",
+      "Required Qualifications" in mfull["description"] and mfull["workplace"] == "Fully on-site"
+      and mfull["location"].startswith("India"), {k: v for k, v in mfull.items() if k != "description"})
+mr = text_rules(mfull["description"], C)
+check("9i. ...and its 'pursuing a Master's or a Doctorate' rules a bachelor's student out, with one-line reasons",
+      NO in {l for l, _ in mr} and all("\n" not in why for _, why in mr), mr)
 check("9c. ...but 'a Master's or Bachelor's degree' does not",
       text_rules("Currently pursuing a Master's or Bachelor's degree in Computer Science.", C) == []
       and text_rules("Students pursuing B.Tech or M.Tech are welcome.", C) == [])

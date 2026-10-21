@@ -62,7 +62,7 @@ def _text(raw: str) -> str:
     s = html.unescape(str(raw))
     if "&lt;" in s or "&gt;" in s:      # Greenhouse double-escapes its content
         s = html.unescape(s)
-    s = re.sub(r"(?i)<\s*(br|/p|/div|/h[1-6]|/li)\s*/?>", "\n", s)
+    s = re.sub(r"(?i)<\s*(br|/p|/div|/li)\s*/?>", "\n", s)   # not /h: it ate the closing ** below
     s = re.sub(r"(?i)<\s*li[^>]*>", "\n- ", s)
     s = re.sub(r"(?i)<\s*(h[1-6])[^>]*>", "\n\n**", s)
     s = re.sub(r"(?i)</\s*h[1-6]\s*>", "**\n", s)
@@ -187,8 +187,42 @@ def _himalayas_detail(company: str, slug: str) -> dict:
             "employment_type": j.get("employmentType", ""), "workplace": "Remote (via Himalayas)"}
 
 
+def _google_detail(jid: str) -> dict:
+    """Google's job page (server-rendered; the id alone is enough, 22 Oct). The qualifications are what
+    eligibility needs — "Pursuing a PhD program" was only in the title before; a BS/STEP role's year of
+    study and graduation date are only here."""
+    page = requests.get(f"https://www.google.com/about/careers/applications/jobs/results/{jid}",
+                        headers={**_HEADERS, "Accept": "text/html"}, timeout=_FETCH_TIMEOUT).text
+    a = page.find("<h3>Minimum qualifications")
+    if a < 0:
+        return {}
+    r = page.find("<h3>Responsibilities", a)
+    b = page.find("</ul>", r) + 5 if r > 0 else a + 8000
+    where = re.search(r"preferred working location from the following: <b>(.*?)</b>", page)
+    return {"description": _text(page[a:b])[:12000],
+            "apply_url": f"https://www.google.com/about/careers/applications/jobs/results/{jid}",
+            "location": html.unescape(where.group(1)) if where else ""}
+
+
+def _microsoft_detail(pid: str) -> dict:
+    """Microsoft's posting (Eightfold pcsx — the path robots.txt allows; verified 22 Oct). Its "Research
+    Sciences INTERN" reached him at 9/10 from the title alone; the posting says "Currently pursuing a
+    Master's or a Doctorate". Microsoft rate-limits hard: one call per pack, never in a loop."""
+    from sources.ats import _BROWSER  # noqa: PLC0415 — the headers its search call already needs
+    d = requests.get("https://apply.careers.microsoft.com/api/pcsx/position_details",
+                     params={"position_id": pid, "domain": "microsoft.com", "hl": "en"},
+                     headers=_BROWSER, timeout=_FETCH_TIMEOUT).json()   # a bare bot UA came back empty
+    d = d.get("data") or {}
+    return {"description": _text(d.get("jobDescription"))[:12000],
+            "apply_url": d.get("publicUrl", ""),
+            "location": "; ".join(d.get("locations") or []),
+            "workplace": "; ".join(d.get("efcustomTextWorkSite") or []) or d.get("workLocationOption", ""),
+            "employment_type": "; ".join(d.get("efcustomTextEmploymentType") or [])}
+
+
 _ATS = {"gh": _greenhouse_detail, "ashby": _ashby_detail, "lever": _lever_detail, "workday": _workday_detail,
-        "avature": _avature_detail, "himalayas": _himalayas_detail}
+        "avature": _avature_detail, "himalayas": _himalayas_detail, "google": _google_detail,
+        "msft": _microsoft_detail}
 
 _UNSTOP_DETAIL = "https://unstop.com/api/public/competition/{id}"
 
@@ -276,9 +310,9 @@ def fetch_full_jd(item: dict) -> dict:
             log(f"[apply] could not fetch the Unstop listing {native}: {type(e).__name__}")
         return {}
     parts = ats_native(item).split(":", 2)
-    if len(parts) == 3 and parts[0] in _ATS:
+    if len(parts) >= 2 and parts[0] in _ATS:           # "google:<id>" has one part, the rest have two
         try:
-            got = _ATS[parts[0]](parts[1], parts[2])
+            got = _ATS[parts[0]](*parts[1:])
             if got.get("description"):
                 return got
         except (requests.RequestException, ValueError, KeyError, TypeError) as e:

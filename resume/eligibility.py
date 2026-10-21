@@ -189,9 +189,10 @@ def text_rules(text: str, c: Candidate) -> list[tuple[str, str]]:
     if m and m.group(1).strip() != c.country.lower():
         out.append((NO, f"must be enrolled at a university in {m.group(1).strip().title()}"))
 
-    fm = re.search(r"degree in ([^.;]{5,160})", low)
+    # One line only: Microsoft's "…Degree in a relevant field" ran on into the next bullet (22 Oct).
+    fm = re.search(r"degree in ([^.;\n]{5,160})", low)
     if fm and not re.search(r"computer|software|engineering|informatics|information|data|math|"
-                            r"electr|stem|technical|related field|equivalent", fm.group(1)):
+                            r"electr|stem|technical|related field|relevant field|equivalent", fm.group(1)):
         out.append((CHECK, f"asks for a degree in {fm.group(1).strip()[:70]}"))
     return out
 
