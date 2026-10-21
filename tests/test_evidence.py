@@ -82,6 +82,14 @@ new3, _ = E.apply_to(PROFILE, props, {proj_id}, "2026-10-21")
 ed = next(p for p in new3["projects"] if p.get("x_resume_name") == "edupresence")
 check("16. a ticked repo becomes a confirmed project (evidence), with the date he confirmed it",
       ed["x_confirmed"] == "2026-10-21" and ed["highlights"])
+sl = E.study_list(props, {p["id"] for p in props if p["kind"] == "skill"},
+                  ["React developer intern, React and Next.js", "React Native", "FastAPI backend"])
+check("18. the study list puts the most-asked skill first, with the file to open",
+      sl.index("## React") < sl.index("## FastAPI") if "## React" in sl else sl.index("## FastAPI") >= 0)
+check("19. a capitalised sentence keeps its acronyms (str.capitalize() made 'a flask rest api')",
+      E._cap("a Flask REST API") == "A Flask REST API")
+check("20. a route with a <param> is left out (the resume linter read '<tracking_id>' as a placeholder)",
+      E._no_params([("route", "/api/a"), ("route", "/api/t/<id>")]) == [("route", "/api/a")])
 check("17. edi-vault is never read", "edi-vault" in __import__("resume.harvest", fromlist=["NEVER_READ"]).NEVER_READ)
 
 print("=" * 72)

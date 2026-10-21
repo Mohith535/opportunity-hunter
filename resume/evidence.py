@@ -100,6 +100,11 @@ def _gh():
     return requests, tok, h
 
 
+def _no_params(routes):
+    """Routes without a <param> or {param}: on a resume "<tracking_id>" reads as template text left in."""
+    return [(v, r) for v, r in routes if not re.search(r"[<{]", r)]
+
+
 def collect(repo: dict) -> dict:
     """Facts about one repo, each with where it came from. Never raises: a repo that fails is skipped."""
     requests, _, H = _gh()
@@ -138,8 +143,8 @@ def collect(repo: dict) -> dict:
             if used:
                 f["skills"][s] = f"{used} imports it"
                 if s in ("fastapi", "flask"):
-                    f["routes"] = [(r if v == "route" else f"{v.upper()} {r}") for v, r in re.findall(
-                        r'@\w+\.(get|post|put|delete|patch|route)\(\s*["\']([^"\']+)', get(used))][:8]
+                    f["routes"] = [(r if v == "route" else f"{v.upper()} {r}") for v, r in _no_params(re.findall(
+                        r'@\w+\.(get|post|put|delete|patch|route)\(\s*["\']([^"\']+)', get(used)))][:8]
             else:
                 del f["skills"][s]                    # listed, never imported: not evidence
     tests = [p for p in paths if re.search(r"(^|/)tests?/|(^|/)test_[^/]+\.py$|\.(test|spec)\.(m?[jt]s)$", p)]
@@ -156,6 +161,14 @@ def _project_for(profile: dict, repo: str) -> dict | None:
             if p.get("x_source") == "resume-2026-09" or p.get("x_confirmed"):
                 return p
     return None
+
+
+SHOW = {"next.js": "Next.js", "react": "React", "tailwind": "Tailwind CSS", "three.js": "three.js", "typescript": "TypeScript", "framer motion": "Framer Motion", "cloudflare workers": "Cloudflare Workers", "flask": "Flask", "jwt": "JWT", "sqlalchemy": "SQLAlchemy", "zod": "Zod", "fastapi": "FastAPI", "postgresql": "PostgreSQL", "aws": "AWS", "aws lambda": "AWS Lambda", "mcp": "MCP", "google adk": "Google ADK", "vite": "Vite", "pytest": "pytest", "playwright": "Playwright", "pygame": "pygame", "express": "Express", "django": "Django", "hono": "Hono"}   # how a skill is written in a sentence
+
+
+def _cap(s: str) -> str:
+    """First letter up, the rest untouched — str.capitalize() turned "Flask REST API" into "flask rest api"."""
+    return s[:1].upper() + s[1:]
 
 
 def proposals(facts: list[dict], profile: dict) -> list[dict]:
@@ -208,14 +221,17 @@ def proposals(facts: list[dict], profile: dict) -> list[dict]:
                 fw = "FastAPI" if "fastapi" in f["skills"] else "Flask"
                 bits.append(f"a {fw} REST API: " + ", ".join(f["routes"][:6]))
             if f["skills"]:
-                bits.append("built with " + ", ".join(sorted(f["skills"])))
+                main = (f.get("languages") or [("", 0)])[0][0]
+                shown = [SHOW.get(k, k) for k in sorted(f["skills"])]
+                lead = f"{main}, with " if main and main not in shown and main not in ("HTML", "CSS") else "built with "
+                bits.append(lead + ", ".join(shown))
             if f.get("homepage"):
                 bits.append(f"live at {f['homepage'].replace('https://', '')}")
             if f.get("tests"):
                 bits.append(f"{f['tests']} tests")
             if f["skills"] or f.get("homepage") or f.get("tests"):
                 out.append({"kind": "project", "repo": repo, "text": f"**{repo}** — " + "; ".join(bits)
-                            + (f" ({langs})" if langs else ""), "sentence": "; ".join(bits[1:]).capitalize() + "."})
+                            + (f" ({langs})" if langs else ""), "sentence": _cap("; ".join(bits[1:])) + "."})
     for n, p in enumerate(out, 1):
         p["id"] = n
     return out
@@ -284,8 +300,51 @@ def apply_to(profile: dict, props: list[dict], ids: set[int], today: str) -> tup
     return prof, done
 
 
+STUDY = APPS / "KNOW-YOUR-CODE.md"
+
+
+def study_list(props: list[dict], ids: set[int], job_texts: list[str]) -> str:
+    """What to be able to explain, for every skill he confirmed — most-asked first. He chose to claim them
+    all on 21 Oct ("imagine I can explain everything — I will learn them"), so the bridge from "it is in my
+    repo" to "I can explain it in an interview" is a reading list from his own code, not a course."""
+    blob = " ".join(job_texts).lower()
+    rows: dict[str, list[str]] = {}
+    for p in props:
+        if p["id"] in ids and p["kind"] == "skill":
+            how = re.sub(r"^.*\((.*)\)$", r"\1", p["text"])
+            rows.setdefault(p["skill"], []).append(f"`{p['repo']}` — {how}")
+    for p in props:
+        if p["id"] in ids and p["kind"] in ("fact", "project") and re.search(r"FastAPI|Flask", p["text"]):
+            fw = "fastapi" if "FastAPI" in p["text"] else "flask"
+            rows.setdefault(fw, []).append(f"`{p['repo']}` — routes: " + (p.get("sentence") or "").split(":", 1)[-1].strip())
+    demand = {s: len(re.findall(r"\b" + re.escape(s.replace(".js", "")) + r"(?:\.js)?\b", blob)) for s in rows}
+    L = ["# Know your own code", "",
+         "_Every skill below is now on your BUILT list because a repo of yours uses it. Before an interview "
+         "for a job that names one, open the file and be able to say three things out loud._", "",
+         "**For each:** (1) what it does in your project, (2) why you chose it over the obvious "
+         "alternative, (3) one problem you hit with it and how you fixed it — with a number if you have one.", ""]
+    for s in sorted(rows, key=lambda k: (-demand[k], k)):
+        asked = f"asked in {demand[s]} of the job texts OPH saw" if demand[s] else "not asked yet in your jobs"
+        L += [f"## {SHOW.get(s, s)} — {asked}", *[f"- {r}" for r in dict.fromkeys(rows[s])], ""]
+    return "\n".join(L)
+
+
+def _job_texts() -> list[str]:
+    try:
+        runs = json.loads(config.HISTORY_FILE.read_text(encoding="utf-8")).get("runs") or []
+    except (OSError, ValueError, AttributeError):
+        return []
+    return [f"{i.get('title', '')} {i.get('description', '')}" for r in runs[-30:] for i in r.get("items") or []
+            if any(t in (i.get("tags") or []) for t in ("internship", "job"))]
+
+
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    if "--study" in sys.argv[1:]:
+        props = json.loads(STORE.read_text(encoding="utf-8"))
+        STUDY.write_text(study_list(props, ticked(CHECKLIST.read_text(encoding="utf-8")), _job_texts()), encoding="utf-8")
+        print(f"Wrote applications/{STUDY.name}")
+        return 0
     if "--apply" in sys.argv[1:]:
         if not (CHECKLIST.exists() and STORE.exists()):
             print("Run `py -m resume.evidence` first — there is no checklist to apply.")
@@ -303,7 +362,9 @@ def main() -> int:
         print(f"Added {len(done)} line(s) to your profile (backup: data/{backup.name}):")
         for d in done:
             print("  +", d)
-        print("\nThe cloud uses a copy — run `py sync_secrets.py` so tomorrow's packs have it too.")
+        STUDY.write_text(study_list(props, ids, _job_texts()), encoding="utf-8")
+        print(f"\nWhat to be able to explain, most-asked first: applications/{STUDY.name}")
+        print("The cloud uses a copy — run `py sync_secrets.py` so tomorrow's packs have it too.")
         return 0
     from .harvest import _github_repos  # noqa: PLC0415
     _, tok, _ = _gh()
