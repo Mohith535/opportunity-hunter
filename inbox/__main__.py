@@ -101,6 +101,16 @@ def _run_once(args) -> int:
         print(f"Could not read the mailbox: {e}")
         return 1
 
+    # Replies about jobs he applied to (inbox/replies.py): one Telegram message each, with the same
+    # Interview / Rejected buttons as the bot's follow-ups — he confirms, nothing is recorded on a guess.
+    try:
+        from .replies import ask as ask_about_replies
+        n = ask_about_replies(summary.get("shown") or [])
+        if n:
+            print(f"📬 {n} email(s) look like replies about your applications — sent to Telegram.")
+    except Exception:  # noqa: BLE001 — the inbox summary still goes out
+        pass
+
     # Bring in today's TaskFlow tasks (due today + overdue) — READ-ONLY; the phone dashboard is the
     # thing that actually comes to you, so the tasks ride along with the inbox. Silent if TaskFlow
     # isn't present.
