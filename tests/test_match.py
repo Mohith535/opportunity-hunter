@@ -165,6 +165,10 @@ del P3["x_resume"]["summary_variants"]["backend"]
 md3, _ = GEN.generate_resume_ex(P3, BACKEND, "Backend Web Development Internship", "Accesco Living")
 check("30. a family without its own variant falls back to default, never the Ambassador summary",
       "DEFAULT SUMMARY" in md3 and "AMBASSADOR SUMMARY" not in md3)
+check("31. full-stack titles get the full-stack family — 'Backend Focus' included (he applied to two in Oct)",
+      GEN._family("", "Full Stack Developer Internship - Backend Focus") == "fullstack"
+      and GEN._family("", "Backend Web Development Internship") == "backend"
+      and GEN._family("", "Software Engineer Intern") == "default")
 
 print("=" * 72)
 for name, ok, detail in R:

@@ -393,6 +393,7 @@ def _skills_block(groups: dict, jd_low: str) -> list[str]:
 
 
 _AI_ROLE = r"\bai\b|\bml\b|machine learning|\bllms?\b|\bagents?\b|data scien|\bnlp\b|genai|generative"
+_FULLSTACK_ROLE = r"\bfull[- ]?stack\b|\bfront[- ]?end\b|\breact(?:\.js)?\b|\bnext\.js\b|\bmern\b|\bweb developer\b"
 _BACKEND_ROLE = (r"\bback-?end\b|\bserver[- ]side\b|\brest(?:ful)? apis?\b|\bapis?\b|microservices?|\bnode\.?js\b|"
                  r"\bexpress(?:\.js)?\b|\bdjango\b|\bflask\b|\bfastapi\b|spring boot|\bdatabases?\b")
 
@@ -409,6 +410,10 @@ def _family(jd_text: str | None, role: str) -> str:
         return "ai"
     if len(re.findall(_AI_ROLE, (jd_text or "").lower())) >= 4:
         return "ai"
+    # Before backend: "Full Stack Developer Internship - Backend Focus" is a full-stack job (he applied to
+    # it, and to another full-stack internship, in October). React is the skill his jobs ask for most.
+    if re.search(_FULLSTACK_ROLE, (role or "").lower()) or len(re.findall(_FULLSTACK_ROLE, (jd_text or "").lower())) >= 5:
+        return "fullstack"
     # A backend job got the "video looper that lands within 12 ms" summary (21 Oct). The server side
     # has its own evidence — two REST APIs and a 218 s -> 69 s fetch — and its own variant.
     if re.search(_BACKEND_ROLE, (role or "").lower()) or len(re.findall(_BACKEND_ROLE, (jd_text or "").lower())) >= 5:
