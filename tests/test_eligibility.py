@@ -276,6 +276,27 @@ try:
     check("10d. and counted by category", hid == {"not for students": 1, "senior role": 1}, hid)
     _cfg.HIDE_INELIGIBLE = False
     check("10e. OH_HIDE_INELIGIBLE=false turns it off", len(M._drop_ineligible(list(jobs))[0]) == 3)
+    _cfg.HIDE_INELIGIBLE = True
+    # 22 Oct: Microsoft's "Research Sciences INTERN" passed on its title and reached him at 9/10.
+    big = [Opportunity("Research Sciences INTERN — Microsoft", "https://x/m", "ats", "Microsoft | India",
+                       native_id="msft:1", tags=["internship"]),
+           Opportunity("Software Engineering Intern — Google", "https://x/g", "ats", "Google | India",
+                       native_id="google:2", tags=["internship"]),
+           Opportunity("Backend Developer Internship", "https://x/a", "unstop", "internship", tags=["internship"])]
+    asked, _fj = [], A.fetch_full_jd
+    def _fake_full(d):
+        asked.append(d["native_id"])
+        return ({"description": "Currently pursuing a Master's or a Doctorate Degree in a relevant field"}
+                if d["native_id"].startswith("msft:") else {})       # Google's fetch "fails"
+    A.fetch_full_jd = _fake_full
+    try:
+        kept, deep = M._check_full_postings(list(big))
+    finally:
+        A.fetch_full_jd = _fj
+    check("10f. a new big-company role is read in full: the Master's/PhD one goes, a failed fetch keeps its item, "
+          "an Unstop item costs no call",
+          [k.title for k in kept] == ["Software Engineering Intern — Google", "Backend Developer Internship"]
+          and deep == 1 and asked == ["msft:1", "google:2"], ([k.title for k in kept], deep, asked))
 finally:
     A._profile, A._candidate = _old_profile, _old_cand
     _cfg.HIDE_INELIGIBLE = True

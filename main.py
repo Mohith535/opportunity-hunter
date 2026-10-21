@@ -416,6 +416,40 @@ def _drop_ineligible(items: list) -> tuple[list, dict]:
     return kept, dict(why)
 
 
+FULL_CHECK = ("msft:", "google:", "avature:", "workday:")   # boards whose listing is only a title
+FULL_CHECK_MAX = 10                                          # calls a run: these sites rate-limit
+
+
+def _check_full_postings(items: list) -> tuple[list, int]:
+    """NEW big-company roles: the posting decides, not the title. Microsoft's "Research Sciences
+    INTERN" reached him at 9/10 (21 Oct) — its posting says "pursuing a Master's or a Doctorate".
+    Only new items pay for this, at most FULL_CHECK_MAX calls; a failed fetch keeps the item."""
+    if not any(str(it.native_id or "").startswith(FULL_CHECK) for it in items):
+        return items, 0
+    import time
+    try:
+        from resume.apply import _candidate, _profile, eligibility_of, fetch_full_jd
+    except ImportError:
+        return items, 0
+    prof = _profile()
+    if not prof.get("education"):
+        return items, 0
+    cand = _candidate(prof)
+    kept, hidden, calls = [], 0, 0
+    for it in items:
+        native = str(it.native_id or "")
+        if native.startswith(FULL_CHECK) and calls < FULL_CHECK_MAX:
+            if native.startswith("msft:") and calls:
+                time.sleep(3)                    # two quick calls got "Please try again later" (22 Oct)
+            calls += 1
+            full = fetch_full_jd(it.to_dict())
+            if full and eligibility_of(it.to_dict(), full, cand).level == "NO":
+                hidden += 1
+                continue
+        kept.append(it)
+    return kept, hidden
+
+
 def run(source_names=None, test=False):
     """Execute one full hunt."""
     mode = "TEST (dry run)" if test else "LIVE"
@@ -492,6 +526,9 @@ def run(source_names=None, test=False):
         it for it in relevant
         if not store.is_seen(seen, it) or store.should_resurface(it)
     ]
+    new_items, deep = _check_full_postings(new_items)
+    if deep:
+        log(f"[eligibility] hid {deep} more after reading the full posting")
 
     # 4a. INTAKE FUNNEL. Sources now fetch wide (hundreds of candidates), so the cheap
     # local rule score decides who pays the expensive costs below. Items under the line
