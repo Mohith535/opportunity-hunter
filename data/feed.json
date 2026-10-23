@@ -1,230 +1,6 @@
 {
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-23",
   "items": [
-    {
-      "key": "c77f2cbc9f02",
-      "title": "UI/UX Design Internship",
-      "url": "https://unstop.com/internships/uiux-design-internship-codeatrix-1768868",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-09",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "efd1b117b3e3",
-      "title": "Backend Development Internship",
-      "url": "https://unstop.com/internships/backend-development-internship-codeatrix-1768873",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-09",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4f36dd8659eb",
-      "title": "Multimodal AI Hackathon 2026",
-      "url": "https://multimodal-ai-hackathon-2026-7.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-10-14",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "2cd325476874",
-      "title": "CODESTROAM 2026",
-      "url": "https://unstop.com/competitions/codestroam-2026-panimalar-engineering-college-pec-chennai-1768931",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-14",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "cffd564b7415",
-      "title": "From AI Concepts to Production: The Journey of Autonomous Agents",
-      "url": "https://unstop.com/workshops-webinars/from-ai-concepts-to-production-the-journey-of-autonomous-agents-techbairn-research-1768467",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-12",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "0f9f1a411203",
-      "title": "WarriorHacks 2.0",
-      "url": "https://warriorhacks-2-0.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-10-14",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "be3ca511e5d7",
-      "title": "The AI Directive",
-      "url": "https://unstop.com/competitions/the-ai-directive-shaheed-rajguru-college-of-applied-sciences-for-women-delhi-university-1768479",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-14",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a8165cf3a37f",
-      "title": "Beyond Application Development: Exploring System Programming",
-      "url": "https://unstop.com/workshops-webinars/beyond-application-development-exploring-system-programming-techbairn-research-1768475",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-12",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4011d75bfe81",
-      "title": "Wild Bugs",
-      "url": "https://wild-bugs.devfolio.co",
-      "source": "devfolio",
-      "score": 10,
-      "deadline": "2026-10-15",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "e2da77cadcf6",
-      "title": "Call for Articles: Catena Aurea - Resilient by Design",
-      "url": "https://unstop.com/competitions/call-for-articles-catena-aurea-resilient-by-design-narsee-monjee-institute-of-management-studies-nmims-mumb-1768847",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-18",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "357bae2f242d",
-      "title": "Engineering to Industry: Building Skills That Actually Matter",
-      "url": "https://unstop.com/workshops-webinars/engineering-to-industry-building-skills-that-actually-matter-techbairn-research-1768473",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-12",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "16f6623db92f",
-      "title": "Winter of Code 2026",
-      "url": "https://winter-of-code-4.devfolio.co",
-      "source": "devfolio",
-      "score": 10,
-      "deadline": "2026-10-14",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5121e0f5409e",
-      "title": "Scrub Creator Economy Challenge 2026",
-      "url": "https://unstop.com/competitions/scrub-creator-economy-challenge-2026-scrub-1768779",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-31",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1ce311681b2c",
-      "title": "How AI Is Reshaping the Modern Workplace",
-      "url": "https://unstop.com/workshops-webinars/how-ai-is-reshaping-the-modern-workplace-techbairn-research-1768326",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-12",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "38e494d7eac1",
-      "title": "HACK ATTACK — 8-Hour Inter-College Hackathon",
-      "url": "https://unstop.com/hackathons/hack-attack-8-hour-inter-college-hackathon-amc-engineering-college-amcec-bengaluru-1766831",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-13",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "53d4dbb37a52",
-      "title": "IndiaStox Nifty Midcap 100 Predictions Challenge",
-      "url": "https://unstop.com/competitions/indiastox-nifty-midcap-100-predictions-challenge-indiastox-1768781",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-17",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "e4da29ea7bef",
       "title": "Bioinformatics with AI & Machine Learning Internship",
@@ -352,6 +128,20 @@
       "action_plan": []
     },
     {
+      "key": "4f36dd8659eb",
+      "title": "Multimodal AI Hackathon 2026",
+      "url": "https://multimodal-ai-hackathon-2026-7.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-10-14",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "c8c1010d26a3",
       "title": "AI in Architecture Quiz",
       "url": "https://unstop.com/quiz/ai-in-architecture-quiz-noobsync-innovations-1767837",
@@ -374,6 +164,20 @@
       "deadline": "2026-10-15",
       "tags": [
         "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0f9f1a411203",
+      "title": "WarriorHacks 2.0",
+      "url": "https://warriorhacks-2-0.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-10-14",
+      "tags": [
+        "hackathon",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -422,6 +226,20 @@
       "action_plan": []
     },
     {
+      "key": "be3ca511e5d7",
+      "title": "The AI Directive",
+      "url": "https://unstop.com/competitions/the-ai-directive-shaheed-rajguru-college-of-applied-sciences-for-women-delhi-university-1768479",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-14",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "529e12b8bd95",
       "title": "Inside Today's Technology Industry: Data, Software & AI",
       "url": "https://unstop.com/workshops-webinars/inside-todays-technology-industry-data-software-ai-techbairn-1769065",
@@ -436,6 +254,34 @@
       "action_plan": []
     },
     {
+      "key": "4011d75bfe81",
+      "title": "Wild Bugs",
+      "url": "https://wild-bugs.devfolio.co",
+      "source": "devfolio",
+      "score": 10,
+      "deadline": "2026-10-15",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2cd325476874",
+      "title": "CODESTROAM 2026",
+      "url": "https://unstop.com/competitions/codestroam-2026-panimalar-engineering-college-pec-chennai-1768931",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-14",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "592538cca437",
       "title": "Building a Career in Technology When AI Is Everywhere",
       "url": "https://unstop.com/workshops-webinars/building-a-career-in-technology-when-ai-is-everywhere-techbairn-1769054",
@@ -444,6 +290,20 @@
       "deadline": "2026-10-15",
       "tags": [
         "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "16f6623db92f",
+      "title": "Winter of Code 2026",
+      "url": "https://winter-of-code-4.devfolio.co",
+      "source": "devfolio",
+      "score": 10,
+      "deadline": "2026-10-14",
+      "tags": [
+        "hackathon",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -1394,6 +1254,146 @@
       "source": "internships",
       "score": 10,
       "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "07276723771c",
+      "title": "Rhombus — Software Engineer Intern",
+      "url": "https://jobs.lever.co/rhombus-systems/59e7a5f3-b457-491d-af08-b629ad35e380/apply",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8fc503ad22e2",
+      "title": "Microsoft — Research Intern - Machine Learning for Biology and Healthcare",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393557040333",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3a8594cc7b6c",
+      "title": "Waymo — Machine Learning Intern - Planning/Prediction",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=8279620",
+      "source": "internships",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "9bfc327868f9",
+      "title": "ChunkAct: Action Chunking for Agentic Robotics",
+      "url": "https://arxiv.org/abs/2610.18874v1",
+      "source": "arxiv",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "research",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a3b1697ae587",
+      "title": "Campus Capital 2026 — Build. Demonstrate. Pitch.",
+      "url": "https://unstop.com/competitions/campus-capital-2026-build-demonstrate-pitch-symbiosis-institute-of-technology-sit-pune-1770114",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-15",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "144ba39c0cd6",
+      "title": "BuildNext Open Source Awareness & Practical Bug-Fixing Challenge",
+      "url": "https://unstop.com/workshops-webinars/buildnext-open-source-awareness-practical-bug-fixing-challenge-buildnext-community-1769731",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-21",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "fe99d7a4981c",
+      "title": "Infographics Competition 2026",
+      "url": "https://unstop.com/competitions/infographics-competition-2026-narsee-monjee-institute-of-management-studies-nmims-mumbai-1767403",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-20",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "22d62148d02e",
+      "title": "Building a Generative AI App Using AWS PartyRock",
+      "url": "https://unstop.com/workshops-webinars/building-a-generative-ai-app-using-aws-partyrock-ssm-institute-of-engineering-and-technology-1770138",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-18",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e706bd0b4f76",
+      "title": "Innovation Challenge - ConvergeX 2026 AI Solution Sprint",
+      "url": "https://unstop.com/competitions/innovation-challenge-convergex-2026-ai-solution-sprint-vit-vellore-1769859",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-15",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "31e3d04fc83d",
+      "title": "Campus Ambassador Internship",
+      "url": "https://unstop.com/internships/campus-ambassador-internship-datai2i-1770214",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-20",
       "tags": [
         "internship",
         "focus:internship"
