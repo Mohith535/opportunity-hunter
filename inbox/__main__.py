@@ -19,6 +19,22 @@ from .render import render_html
 from .scan import scan
 
 _BASE = Path(__file__).resolve().parent.parent
+STATUS = _BASE / "data" / "inbox_status.json"
+
+
+def write_status(ok: bool, error: str, total: int = 0) -> None:
+    """Whether the last scan read the mailbox. A failed scheduled refresh used to leave only a line in
+    logs/inbox_refresh.log, so an expired Gmail sign-in went unnoticed while mail piled up (30 Oct).
+    EDI reads this file (E:/edi scripts/sync.py, publish_mail) and tells him on Telegram."""
+    import datetime as _dt  # noqa: PLC0415
+    try:
+        STATUS.parent.mkdir(exist_ok=True)
+        STATUS.write_text(json.dumps({
+            "ok": ok, "at": _dt.datetime.now(_dt.timezone.utc).isoformat(timespec="seconds"),
+            "signin_expired": "sign-in expired" in error.lower(), "error": error[:300],
+            "total": total}, indent=2), encoding="utf-8")
+    except OSError:
+        pass                                    # a status file must never fail the scan itself
 
 
 def main() -> int:
@@ -96,10 +112,13 @@ def _run_once(args) -> int:
                        allow_consent=not args.headless)
     except RuntimeError as e:
         print(f"Error: {e}")
+        write_status(False, str(e))
         return 1
     except Exception as e:  # noqa: BLE001
         print(f"Could not read the mailbox: {e}")
+        write_status(False, f"Could not read the mailbox: {e}")
         return 1
+    write_status(True, "", total=summary.get("total", 0))
 
     # Replies about jobs he applied to (inbox/replies.py): one Telegram message each, with the same
     # Interview / Rejected buttons as the bot's follow-ups — he confirms, nothing is recorded on a guess.

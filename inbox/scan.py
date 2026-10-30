@@ -79,9 +79,19 @@ importance 0-10 = how much it matters to HIM (10 = handle today; 0 = ignore). Be
 deadline: only a REAL date found in the email, formatted YYYY-MM-DD, else "-". Assume the year is the
 current or next one so the date is in the future.
 
+An email marked [IN SPAM] was put in Spam by Gmail. Judge it on what it says, not on where it landed:
+a real recruiter, interview or offer in Spam is ranked like any other and its summary starts "In Spam:".
+Anything asking him to pay to get a job, an "offer" he never applied for that wants money or ID
+documents, or a too-good-to-be-true prize is a scam: NOISE, importance 0.
+
 EMAILS:
 {emails}
 """
+
+
+def in_spam(email: dict) -> bool:
+    """Gmail put it in Spam. Read, never trusted blindly, never hidden for it either."""
+    return "SPAM" in (email.get("labels") or [])
 
 
 def is_junk(email: dict) -> tuple[bool, str]:
@@ -124,7 +134,8 @@ def _triage(keep: list, chunk: int = 12) -> dict[int, dict]:
     for start in range(0, len(keep), chunk):
         batch = keep[start:start + chunk]
         listing = "\n".join(
-            f"{i}. FROM: {e['from'][:70]} | SUBJECT: {e['subject'][:110]} | {e['snippet'][:250]}"
+            f"{i}. {'[IN SPAM] ' if in_spam(e) else ''}FROM: {e['from'][:70]} | "
+            f"SUBJECT: {e['subject'][:110]} | {e['snippet'][:250]}"
             for i, e in enumerate(batch, 1))
         out = complete(_PROMPT.format(emails=listing), max_tokens=3500, temperature=0.2)
         for local_i, row in _parse(out, len(batch)).items():
@@ -187,7 +198,7 @@ def scan(days: int = 1, unread: bool = False, credentials: str = "credentials.js
                 p = {**p, "importance": floor}
                 signal = why
             shown.append({"from": e["from"], "subject": e["subject"], "id": e.get("id", ""),
-                          "triaged": triaged, "signal": signal, **p})
+                          "triaged": triaged, "signal": signal, "spam": in_spam(e), **p})
         shown.sort(key=lambda x: -x["importance"])
 
     return {"shown": shown, "hidden": hidden, "total": len(emails), "window": window,

@@ -116,6 +116,8 @@ def _email_item(uid, e, today):
     lab = {"action": "Needs a response", "deadline": "Has a deadline", "opportunity": "An opportunity",
            "personal": "From a person", "info": "Low priority"}[kind]
     why = [f"{lab} · {imp}/10 to you"]
+    if e.get("spam"):
+        why.insert(0, "Gmail put this in Spam - check it is real before you act")
     if dl:
         why.append(f"Deadline {dl}")
     why.append(f"From {_sender_name(e.get('from', ''))}")
@@ -123,7 +125,8 @@ def _email_item(uid, e, today):
             "sender": _sender_name(e.get("from", "")), "source": "mail", "imp": imp,
             "effort": _effort(kind, imp), "due": due, "why": why[:3],
             "tid": "", "href": href, "cal": cal, "gid": e.get("id") or "",
-            "signal": e.get("signal", ""), "triaged": e.get("triaged", True)}
+            "signal": e.get("signal", ""), "triaged": e.get("triaged", True),
+            "spam": bool(e.get("spam"))}
 
 
 def _opp_item(uid, o, today):
@@ -557,7 +560,8 @@ _JS = r"""
       '<div class="body">'+
         '<div class="r1"><span class="chip" style="background:'+k.dim+';color:'+k.color+'">'+k.label+'</span>'+
           '<span class="effort">'+(EFFORT[it.effort]?EFFORT[it.effort].t:"Quick")+'</span>'+
-          (it.triaged===false?'<span class="unranked">unranked</span>':'')+'</div>'+
+          (it.triaged===false?'<span class="unranked">unranked</span>':'')+
+          (it.spam?'<span class="unranked">in spam</span>':'')+'</div>'+
         '<div class="title">'+esc(it.title)+'</div>'+
         '<div class="meta">'+esc(it.sender)+due+src+
           ' <button class="whybtn" data-why="'+it.id+'">'+(whyOpen?"Hide why":"Why?")+'</button></div>'+

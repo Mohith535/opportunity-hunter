@@ -57,6 +57,9 @@ from pathlib import Path
 
 IMAP_HOST = "imap.gmail.com"
 _MAX_EMAILS = 40          # cap the LLM call
+# Spam is read too (30 Oct: "some important mails jump straight to spam... may be a job offer"), on
+# its own small cap, so a spam-heavy day can never push real inbox mail out of the 40 above.
+_MAX_SPAM = 15
 _SNIPPET = 500            # chars of body sent per email (privacy + token budget)
 
 
@@ -184,9 +187,14 @@ def fetch_today_oauth(credentials_path: str = "credentials.json",
             # one is there to click — fail fast instead so the task exits cleanly and the page just
             # stays as-is until the next manual re-consent.
             if not allow_consent:
+                # Google issues a 7-day refresh token to any app left in "Testing" (developers.google.
+                # com/identity/protocols/oauth2, read 30 Oct). Publishing it to "In production" ends
+                # the weekly expiry; for one user it needs no review, only a one-time warning screen.
                 raise RuntimeError(
                     "Gmail sign-in expired (free OAuth re-consents ~weekly). Run `python -m inbox` "
-                    "once in a terminal to sign in again; auto-refresh will resume after that.")
+                    "once in a terminal to sign in again; auto-refresh will resume after that. To stop "
+                    "it expiring every 7 days: console.cloud.google.com -> Google Auth Platform -> "
+                    "Audience -> Publish app.")
             if not _P(credentials_path).exists():
                 raise RuntimeError(
                     f"No '{credentials_path}' found. Create a Google Cloud OAuth 'Desktop app' client "
@@ -196,11 +204,17 @@ def fetch_today_oauth(credentials_path: str = "credentials.json",
         _P(token_path).write_text(creds.to_json(), encoding="utf-8")
 
     service = build("gmail", "v1", credentials=creds)
-    listing = service.users().messages().list(
-        userId="me", q=query or f"after:{date.today():%Y/%m/%d}",
-        maxResults=_MAX_EMAILS).execute()
-    out = []
-    for ref in listing.get("messages", []):
+    q = query or f"after:{date.today():%Y/%m/%d}"
+    refs = service.users().messages().list(userId="me", q=q, maxResults=_MAX_EMAILS).execute()
+    # messages.list leaves SPAM and TRASH out unless includeSpamTrash is set, so a real recruiter Gmail
+    # filtered was never read at all. Spam only - trash is what he threw away himself.
+    spam = service.users().messages().list(userId="me", q=f"({q}) in:spam", includeSpamTrash=True,
+                                           maxResults=_MAX_SPAM).execute()
+    out, seen = [], set()
+    for ref in refs.get("messages", []) + spam.get("messages", []):
+        if ref["id"] in seen:
+            continue
+        seen.add(ref["id"])
         msg = service.users().messages().get(
             userId="me", id=ref["id"], format="metadata",
             metadataHeaders=["From", "Subject"]).execute()
