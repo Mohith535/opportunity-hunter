@@ -21,6 +21,7 @@ import re
 from collections import Counter
 
 import config
+from filters.focus import KINDS
 from util import log
 
 
@@ -52,9 +53,10 @@ def can_read() -> bool:
     return bool(_permissions().get("ophunter_read", True))
 
 
-# ─── offload-aware "not interested" signals ──────────────────────────
+# ─── "not interested" signals: what he keeps DROPPING ────────────────
 # Structural tags that carry no taste meaning — never a down-weight signal.
-_STOP_TAGS = {"ophunter", "inbox", "opportunity", "career", "misc", "general", "todo"}
+_STOP_TAGS = {"ophunter", "inbox", "opportunity", "career", "misc", "general", "todo",
+              "edi"}   # EDI stamps #edi on the tasks it creates, as OPH stamps #ophunter
 # Generic title words that shouldn't count as a category keyword.
 _STOP_WORDS = {
     "apply", "your", "this", "that", "from", "with", "program", "summer", "winter",
@@ -65,15 +67,12 @@ _STOP_WORDS = {
 
 
 def _is_set_down(task: dict) -> bool:
-    """True if the user dropped or offloaded this task (a negative signal)."""
-    if task.get("dropped_at") or task.get("offloaded_at"):
-        return True
-    if task.get("status") in ("dropped", "offloaded"):
-        return True
-    for e in (task.get("edit_history") or []):
-        if e.get("field") == "status" and e.get("new_value") in ("dropped", "offloaded"):
-            return True
-    return False
+    """True only if he DROPPED it and it is still dropped — "I will not do this".
+
+    An offload is TaskFlow's "not now". On 4 Nov 42 of the 59 tasks this counted were offloads, many
+    back in todo since ("study egd", "study eee"), and their #internship / #hackathon / #research tags
+    pushed 58 of 60 opportunities in a laptop hunt down by 2–4: his own goals, read as dislikes."""
+    return task.get("status") == "dropped"
 
 
 def offload_signals(min_count: int = 2) -> dict:
@@ -96,7 +95,7 @@ def offload_signals(min_count: int = 2) -> dict:
             continue
         for tag in (t.get("tags") or []):
             tl = str(tag).lower().lstrip("#").strip()
-            if tl and tl not in _STOP_TAGS:
+            if tl and tl not in _STOP_TAGS and tl not in KINDS:   # a kind is what he hunts, not a taste
                 tag_c[tl] += 1
         for w in re.findall(r"[a-z][a-z]{3,}", (t.get("title") or "").lower()):
             if w not in _STOP_WORDS:
