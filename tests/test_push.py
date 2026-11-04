@@ -102,6 +102,10 @@ sa = P.card(item, 8, Verdict(CHECK, [(CHECK, "remote only from inside Canada —
             dict(pack, report={"tailoring": "failed", "changed": (4, 43), "match_rows": sa_rows}), fit)
 check("3l. the card leads with the decision, and 4-of-43 is PARTIAL, not 'your base resume'",
       "→ <b>VERIFY</b>" in sa and "PARTIAL" in sa and "base resume" not in sa, sa)
+gc = P.card(item, 8, Verdict(YES, []), dict(pack, report={"tailoring": "evidence", "match_rows": go_rows}), fit)
+check("3l2. the card says WHICH of its asks his projects answer (4 Nov: the plan's 'why you match')",
+      "Why you:" in gc and "← TaskFlow" in gc and "← Nova" in gc and gc.index("Why you") < gc.index("Fit:"), gc)
+check("3l3. ...and says nothing when no ask is answered", "Why you" not in sa, sa)
 duties = [(2, "Take features or small products from idea to production", "", "")] * 13 + \
          [(2, "Build REST APIs", "Its web dashboard runs on a JSON REST API…", "TaskFlow")] * 4
 check("3m. duties are not requirements: a duty-only posting is not a STRETCH (the dry run said 4 of 17)",

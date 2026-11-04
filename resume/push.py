@@ -115,6 +115,11 @@ def card(item: dict, score: int, verdict, pack: dict, fit_rows: list, note: str 
     rep = pack.get("report") or {}
     word, why = recommendation(verdict, rep.get("match_rows"))
     lines.append(f"→ <b>{word}</b> — {e(why[:150])}")
+    # Which of its asks his own projects answer — the decision in one glance (plan: WHY_MOHITH_MATCHES).
+    from .apply import _clip  # noqa: PLC0415
+    hits = [(ask, proj) for _, ask, ev, proj in rep.get("match_rows") or [] if proj and ev][:2]
+    if hits:
+        lines.append(e("Why you: " + "; ".join(f"“{_clip(a, 50)}” ← {p}" for a, p in hits)))
     lines.append(f"{verdict.icon} <b>{e(verdict.label)}</b> · {score}/10")
     if fit_rows:
         b = sum(1 for r in fit_rows if r[1] == BUILT)

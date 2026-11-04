@@ -170,6 +170,14 @@ check("31. full-stack titles get the full-stack family — 'Backend Focus' inclu
       and GEN._family("", "Backend Web Development Internship") == "backend"
       and GEN._family("", "Software Engineer Intern") == "default")
 
+from resume.match import capabilities_in
+check("32. 'machine learning concepts and algorithms' is an ML ask — it was answered with his LeetCode count "
+      "(Vortizo AI, 3 Nov)", capabilities_in("Understanding of machine learning concepts and algorithms.") == ["ml"],
+      capabilities_in("Understanding of machine learning concepts and algorithms."))
+check("33. ...while data structures and algorithms stays DSA, beside ML when both are asked",
+      capabilities_in("Strong data structures and algorithms") == ["dsa"]
+      and set(capabilities_in("Data structures, algorithms and machine learning")) == {"dsa", "ml"})
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))

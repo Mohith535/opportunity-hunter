@@ -105,7 +105,13 @@ def _prose_asks(jd: str) -> list[tuple[int, str]]:
 
 def capabilities_in(line: str) -> list[str]:
     low = line.lower()
-    return [name for name, req, _ in CAPABILITIES if re.search(req, low)]
+    caps = [name for name, req, _ in CAPABILITIES if re.search(req, low)]
+    # "Machine learning concepts and algorithms" means ML algorithms: dsa came first in the list and it
+    # was answered with his LeetCode count (Vortizo AI, 3 Nov). Only a DSA-specific word keeps dsa.
+    if "ml" in caps and "dsa" in caps and not re.search(
+            r"data structures|problem[- ]solving|leetcode|competitive programming", low):
+        caps.remove("dsa")
+    return caps
 
 
 def _sentences(text: str) -> list[str]:
