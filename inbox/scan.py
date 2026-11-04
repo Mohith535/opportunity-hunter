@@ -60,6 +60,29 @@ def high_signal(subject: str, sender: str, snippet: str = "") -> tuple[int, str]
 
 
 
+# The reverse net (4 Nov): a fee-funnel "internship" must not reach him as an opportunity. The free model
+# scored Zaalima's "your email has been successfully shortlisted" 5-8/10 "reply to confirm" for 7 scans,
+# then 0/10 "scam" for 3. These tells are the posting's own words, so they hold whatever the model says.
+_INTERN_RE = re.compile(r"\b(internships?|interns?|offer letter|job offer|selected|shortlisted|placement)\b", re.I)
+_SCAM_TELLS = (
+    (re.compile(r"\byour e-?mail(?: id| address)? (?:has been|is|was) (?:successfully )?(?:shortlisted|selected)",
+                re.I), "it shortlisted an email address, not an application", False),
+    (re.compile(r"\b(?:training|registration|enrol?l?ment|security|joining|processing|certificat\w*|onboarding)"
+                r" (?:fees?|deposit|charges?)\b|\brefundable\b", re.I), "it charges a fee", True),
+    (re.compile(r"\bcomment [\"'“‘]?interested\b", re.I), "it asks you to comment \"Interested\"", True),
+)
+
+
+def scam_tell(subject: str, snippet: str = "") -> str:
+    """Why this looks like a paid-training scam, or "". A fee or an "Interested" comment counts only
+    beside internship/offer words: a hackathon's ₹250 entry fee is real (filters/pitch.py says it)."""
+    text = f"{subject} {snippet}"
+    for rx, why, needs_offer in _SCAM_TELLS:
+        if rx.search(text) and (not needs_offer or _INTERN_RE.search(text)):
+            return why
+    return ""
+
+
 _PROMPT = """You are triaging the IMPORTANT part of Mohith's email inbox — the obvious junk (one-time
 codes, security alerts, promotions) has ALREADY been removed. For EACH email below output ONE line,
 pipe-separated, and NOTHING else:
@@ -197,6 +220,11 @@ def scan(days: int = 1, unread: bool = False, credentials: str = "credentials.js
             if floor > p["importance"]:
                 p = {**p, "importance": floor}
                 signal = why
+            scam = scam_tell(e.get("subject", ""), e.get("snippet", ""))
+            if scam:
+                # signal stays "": the page ranks any signal +2 (render.urgency), and EDI drops NOISE.
+                p = {**p, "category": "NOISE", "importance": 0, "summary": f"Likely scam: {scam}. {p['summary']}"}
+                signal = ""
             shown.append({"from": e["from"], "subject": e["subject"], "id": e.get("id", ""),
                           "triaged": triaged, "signal": signal, "spam": in_spam(e), **p})
         shown.sort(key=lambda x: -x["importance"])

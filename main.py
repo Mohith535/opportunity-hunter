@@ -266,7 +266,20 @@ def _notify(new_items, test):
     # "Plan in TaskFlow" is handled by telegram_listener.py running locally.
     if telegram.is_configured() and (crit or high):
         text, buttons = _telegram_digest(crit, high)
-        telegram.send_telegram(f"<b>{_tg_escape(stat_line)}</b>\n\n{text}", buttons=buttons)
+        head = f"<b>{_tg_escape(stat_line)}</b>\n\n{text}"
+        # Telegram refuses a whole message over one bad tag; the digest must never be lost to the extra line.
+        if not telegram.send_telegram(f"{head}\n\n{_posts_line()}", buttons=buttons):
+            telegram.send_telegram(head, buttons=buttons)
+
+
+def _posts_line() -> str:
+    """Today's "hiring intern" posts, as links (4 Nov). His first non-remote target city joins them;
+    the message goes to his private chat only, never to a log."""
+    from filters import target as _t
+    from resume.outreach import hiring_posts
+    city = next((c for c in (_t.load().get("locations") or []) if c and c.lower() != "remote"), "")
+    links = " · ".join(f'<a href="{_tg_escape(u)}">{_tg_escape(lbl)}</a>' for lbl, u in hiring_posts(city.title()))
+    return f"🔎 Hiring posts, last 24 h: {links}"
 
 
 def _show_target(target) -> None:

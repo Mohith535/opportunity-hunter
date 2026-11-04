@@ -80,6 +80,19 @@ def links(words: str, google: str) -> dict[str, str]:
             "Google": "https://www.google.com/search?q=" + quote_plus(f"site:linkedin.com/in {google}")}
 
 
+def hiring_posts(city: str = "") -> list[tuple[str, str]]:
+    """(label, url) — the last 24 h of "hiring intern" POSTS, newest first (4 Nov). Many startups post a
+    role before, or instead of, a listing; the tip is to search Posts, not the Jobs tab, and comment or
+    DM the poster. Links he opens on his phone; OPH never fetches them."""
+    li = lambda q: ("https://www.linkedin.com/search/results/content/?keywords=" + quote_plus(q)
+                    + "&datePosted=%22past-24h%22&sortBy=%22date_posted%22")
+    out = [("AI/ML", li("hiring intern AI ML")), ("software", li("hiring software intern India")),
+           ("remote", li("hiring remote intern developer"))]
+    if city:
+        out.append((city, li(f"hiring intern {city}")))
+    return out + [("on X", "https://x.com/search?f=live&q=" + quote_plus("hiring intern (AI OR ML OR developer) India"))]
+
+
 def jobs_link(company: str, job_title: str) -> str:
     """The same role on LinkedIn Jobs, where the posting may show "Meet the hiring team"."""
     return "https://www.linkedin.com/jobs/search/?keywords=" + quote_plus(f"{company} {plain_title(job_title)}")

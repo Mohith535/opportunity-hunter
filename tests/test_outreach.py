@@ -98,6 +98,22 @@ check("15. the blurb is about him throughout: his descriptions turn third-person
 md0 = O.outreach_md({"title": title, "url": "https://x/job"}, {}, profile, rows, "Vortizo AI")
 check("11. no published address → no email section", "To:" not in md0 and "Contacts the employer" not in md0)
 
+hp = dict(O.hiring_posts("Mumbai"))
+check("16. hiring posts: LinkedIn POST search (not Jobs), last 24 h, newest first; his city added; X live",
+      all("/search/results/content/" in hp[k] and "past-24h" in hp[k] and "date_posted" in hp[k]
+          for k in ("AI/ML", "software", "remote", "Mumbai"))
+      and "Mumbai" in hp["Mumbai"] and hp["on X"].startswith("https://x.com/search?f=live") and "Mumbai" not in dict(O.hiring_posts()))
+import main as M  # noqa: E402
+from filters import target as T  # noqa: E402
+_load = T.load
+T.load = lambda path=None: {"locations": ["remote", "mumbai"]}
+try:
+    pl = M._posts_line()
+finally:
+    T.load = _load
+check("17. the digest line: Telegram-safe links (& escaped), remote skipped, the city named",
+      pl.startswith("🔎 Hiring posts") and "&amp;datePosted" in pl and ">Mumbai</a>" in pl and "&datePosted" not in pl, pl)
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))

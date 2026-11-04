@@ -118,6 +118,27 @@ check("3b. the Spam item is flagged spam", by_id["s1"]["spam"] is True)
 check("3c. the inbox item is not", by_id["i1"]["spam"] is False)
 check("3d. a real offer in Spam still ranks at the top", out["shown"][0]["id"] == "s1")
 
+# 3e - 4 Nov: the real Zaalima mail (his Spam, 30 Oct). The model said 8/10 "reply to confirm"; the posting's
+# own words decide instead. A real shortlist and a hackathon's entry fee are left alone.
+ZAALIMA = ("Exciting News: Internship Offer from Zaalima Development! Dear Mohith Kannan K, Greetings from Zaalima "
+           "Development! We are pleased to inform you that your email has been successfully shortlisted for "
+           "further consideration. STEP 1 Fill the application form")
+scan_mod.fetch_today_oauth = lambda *a, **k: [
+    {"from": "Zaalima <hr@zaalima.in>", "subject": "Internship Offer", "snippet": ZAALIMA, "labels": ["SPAM"], "id": "z1"},
+    {"from": "careers@loreal.com", "subject": "You have been shortlisted for the L'Oréal internship",
+     "snippet": "Please confirm your slot for the next round.", "labels": ["INBOX"], "id": "l1"}]
+scan_mod.complete = lambda prompt, **kw: ("1 | OPPORTUNITY | 8 | - | Zaalima internship shortlisted, reply to confirm\n"
+                                          "2 | OPPORTUNITY | 8 | - | L'Oréal shortlist, confirm your slot")
+z = {s["id"]: s for s in scan_mod.scan(days=1)["shown"]}
+check("3e. a fee-funnel 'offer' is NOISE 0 whatever the model said, and says why",
+      z["z1"]["category"] == "NOISE" and z["z1"]["importance"] == 0 and z["z1"]["summary"].startswith("Likely scam")
+      and z["z1"]["signal"] == "", z["z1"])
+check("3f. a real shortlist keeps the model's 8/10", z["l1"]["importance"] == 8 and z["l1"]["category"] == "OPPORTUNITY")
+check("3g. fee words alone don't fire (a hackathon entry fee is real); beside 'internship' they do",
+      scan_mod.scam_tell("Hackathon 2026", "registration fee: ₹250 per team") == ""
+      and scan_mod.scam_tell("Internship selection", "pay the refundable training fee of ₹399") == "it charges a fee"
+      and "Interested" in scan_mod.scam_tell("Internship", "drop \"Interested\" — comment Interested on our post"))
+
 # 4 - the page says it out loud
 from inbox.render import _build_data, render_html  # noqa: E402
 
