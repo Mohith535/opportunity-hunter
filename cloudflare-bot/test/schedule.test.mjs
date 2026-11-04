@@ -40,11 +40,14 @@ t("the alert says what broke and how to fix it", () => {
   assert.match(clockAlert("hunt", 401), /this morning's hunt: GitHub said 401[\s\S]*GH_DISPATCH_TOKEN/);
   assert.match(clockAlert("fresh", 502), /fresh-postings check: GitHub said 502[\s\S]*next slot/);
 });
-t("both workflows accept what the bot sends (daily.yml declares `scheduled`; neither keeps GitHub's schedule)", () => {
+t("both workflows accept what the bot sends; GitHub's late schedule survives only behind daily.yml's gate", () => {
   const read = (f) => readFileSync(new URL(`../../.github/workflows/${f}`, import.meta.url), "utf8").split("\r").join("");
   const daily = read("daily.yml"), fresh = read("fresh.yml");
   assert.match(daily, /\n      scheduled:\n/);
-  assert.doesNotMatch(daily, /\n  schedule:/);
+  // The fallback skips itself when today has the commit the hunt's persist step makes: the same words.
+  const msg = daily.match(/git commit -m "(chore: update hunt state)[^"]*"/)[1];
+  assert.ok(daily.includes(`grep -q "^${msg}"`) && daily.includes("needs: gate")
+            && daily.includes("if: ${{ needs.gate.outputs.go == 'true' }}"), "the gate must grep the hunt's commit");
   assert.doesNotMatch(fresh, /\n  schedule:/);
   assert.match(fresh, /workflow_dispatch:/);
 });

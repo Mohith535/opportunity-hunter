@@ -3,7 +3,8 @@ name: Opportunity Hunter (daily)
 # Runs in the cloud, laptop-independent.
 #  - Schedule: every day at 08:00 IST (02:30 UTC), started by the Cloudflare bot's cron
 #              (cloudflare-bot/src/schedule.js). GitHub's own `schedule:` started it 4 h 38 min to
-#              7 h 26 min late on all 20 days measured (16 Oct – 4 Nov), so it is gone.
+#              7 h 26 min late on all 20 days measured (16 Oct – 4 Nov), so it is only a fallback now:
+#              the `gate` job skips it when today's hunt already committed (the bot's run did).
 #  - Manual:   "Run workflow" button (workflow_dispatch) — use this to prove it works.
 #
 # Cloud mode differs from local:
@@ -23,6 +24,8 @@ name: Opportunity Hunter (daily)
 # The runner is discarded after the job; packs are sent to Telegram and never uploaded as artifacts.
 
 on:
+  schedule:
+    - cron: "30 2 * * *"   # fallback only — see `gate`
   workflow_dispatch:
     inputs:
       scheduled:
@@ -50,7 +53,31 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # GitHub's schedule arrives hours late. If the bot already started today's hunt on time, its commit is
+  # there, and this late copy stops here instead of sending a second digest. Anything else always runs.
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.g.outputs.go }}
+    steps:
+      - id: g
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EVENT: ${{ github.event_name }}
+          REPO: ${{ github.repository }}
+        run: |
+          go=true
+          since="$(date -u +%F)T00:00:00Z"
+          if [ "$EVENT" = "schedule" ] && gh api "repos/$REPO/commits?since=$since&per_page=100" --jq '.[].commit.message' \
+               | grep -q "^chore: update hunt state"; then
+            echo "Today's hunt already ran (the bot started it on time); skipping GitHub's late copy."
+            go=false
+          fi
+          echo "go=$go" >> "$GITHUB_OUTPUT"
+
   hunt:
+    needs: gate
+    if: ${{ needs.gate.outputs.go == 'true' }}
     runs-on: ubuntu-latest
     env:
       NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
