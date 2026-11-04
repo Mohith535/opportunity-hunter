@@ -110,6 +110,26 @@ check("12b. ...while a technical title is untouched",
       score_item(opp("Backend Developer Internship", "internship | online | Eligibility: students | stipend",
                      tags=["internship"])) >= 9)
 
+# 13 - six of the 45 packs sent 20 Oct – 3 Nov (3 a day) went to roles outside his field
+for t in ("Strategic Partner Management Internship", "Account Management Operations Internship",
+          "Outreach Internship", "Founder’s Office Internship – Growth Management & Perception Building",
+          "Product and Brand Designer Internship", "Corporate Partnership Internship"):
+    o = opp(t, "internship | online | Eligibility: students | stipend", tags=["internship"])
+    check(f"13. '{t[:40]}' no longer takes a pack slot", score_item(o) <= 6, f"{t}={score_item(o)}")
+from filters.scorer import _DOMAIN_RE
+check("13c. 'data scien' / 'data analy' / 'web dev' / 'app dev' were prefixes behind a closing \\b — "
+      "they never matched Data Scientist, Data Analyst, Web Development, App Development",
+      all(_DOMAIN_RE.search(t) for t in ("Data Scientist Intern", "Data Analyst Internship",
+                                          "Web Development Internship", "App Development Internship")))
+for t in ("Data Scientist Intern — Ensemble Health Partners", "Amazon Selling Partner API Integration Challenge"):
+    o = opp(t, "internship | online | Eligibility: students | stipend", tags=["internship"])
+    check(f"13d. '{t[:40]}' is a tech role whatever its company or API is called", score_item(o) >= 9,
+          f"{t}={score_item(o)}")
+for t in ("Developer Advocate Internship: AI Observability", "Full Stack Developer Internship",
+          "AI Product & Technology Operations Internship", "Software Testing / QA Internship"):
+    o = opp(t, "internship | online | Eligibility: students | stipend", tags=["internship"])
+    check(f"13b. '{t[:40]}' keeps its place", score_item(o) >= 9, f"{t}={score_item(o)}")
+
 print("=" * 70)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))

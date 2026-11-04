@@ -29,9 +29,10 @@ _MONEY_SYMBOLS = ("$", "₹", "€", "£")
 # relevance gate and the LLM profile still use as-is.
 _DOMAIN_RE = re.compile(
     r"\b(a\.?i\.?|ml\b|artificial intelligence|machine learning|deep learning|neural|computer vision|"
-    r"nlp|natural language|llm|large language|generative|data scien|data analy|python|java|c\+\+|"
-    r"software|developer|engineer(?:ing)?|programming|backend|back-end|frontend|front-end|"
-    r"full[- ]stack|web dev|app dev|android|ios\b|cloud|devops|cyber ?security|blockchain|"
+    # data scien\w* etc.: a bare prefix before the closing \b never matched "Data Scientist" (4 Nov)
+    r"nlp|natural language|llm|large language|generative|data scien\w*|data analy\w*|python|java|c\+\+|"
+    r"software|developer|engineer(?:ing)?|programming|backend|back-end|frontend|front-end|apis?|"
+    r"full[- ]stack|web dev\w*|app dev\w*|android|ios\b|cloud|devops|cyber ?security|blockchain|"
     r"robotics|iot\b|embedded|algorithm|open source|kaggle|competitive programming|"
     r"react|node|django|flask|sql|quantum|ctf|bug bounty|red team)\b",
     re.I)
@@ -55,7 +56,10 @@ _OFF_DOMAIN_RE = re.compile(
     r"fashion|interior design(?:er)?|"
     # Found 2026-09-27 at 10/10 in `resume.apply --list`: "SEO Internship", "Caller Internship",
     # "Public Relations Internship". None is a CSE role; none was on this list.
-    r"seo|search engine optimi[sz]ation|caller|public relations|data entry)\b",
+    r"seo|search engine optimi[sz]ation|caller|public relations|data entry|"
+    # 4 Nov: six of the 45 packs sent 20 Oct – 3 Nov (3 a day) went to these, each at 10/10.
+    r"partner(?:ship)?s?(?: management)?|account (?:management|manager|executive)|outreach|"
+    r"founder['’]?s office|growth management|brand (?:design(?:er|ing)?|manager|management|strategy))\b",
     re.I)
 
 # Titles where a technical word is the INDUSTRY, not the job. "Software Sales Internship" has
