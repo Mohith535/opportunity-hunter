@@ -1,6 +1,6 @@
 // node test/followup.test.mjs
 import { duePlan, markFollowed, recordOutcome, followupButtons, outcomeReply, daysBetween, appliedOn,
-         reminderEntry, afterReminder, reminderText, reminderButtons,
+         reminderEntry, afterReminder, reminderText, reminderButtons, outsideEntry,
          MAX_PER_DAY } from "../src/followup.js";
 
 const R = [];
@@ -81,6 +81,17 @@ check("20. bad input is refused: a feed-style key, no steps, past-only dates, a 
   && reminderEntry(null, TODAY).error);
 check("21. an applied SRFP is not asked 'heard back?' a week on — results come in March",
   !duePlan({ s: { status: "applied", applied_at: "2026-10-10", title: "SRFP", followup: false } }, TODAY).followups.length);
+
+// ── /applied (4 Nov): Internshala applications on 30–31 Oct, no tap after 22 Oct ─────────────────
+const [ok1, oe] = outsideEntry("  Zomato —  Backend   intern ", TODAY);
+check("22. an outside application is a tracker 'applied' with today's date, tidy title, a non-feed key",
+  ok1 === "ext-zomato-backend-intern" && oe.status === "applied" && oe.applied_at === TODAY
+  && oe.title === "Zomato — Backend intern" && !/^[0-9a-f]{12}$/.test(ok1), [ok1, oe]);
+const later = new Date(Date.parse(TODAY) + 7 * 864e5).toISOString().slice(0, 10);
+check("23. ...so a week on it gets the same 'heard back?' as a tapped one",
+  duePlan({ [ok1]: oe }, later).followups.map(([k, , d]) => `${k}@${d}`).join() === `${ok1}@7`);
+check("24. nothing, or a pasted essay, is refused with an example",
+  outsideEntry("", TODAY).error && outsideEntry("x".repeat(121), TODAY).error && outsideEntry(" -- ", TODAY).error);
 
 let ok = 0;
 for (const [n, pass, d] of R) { console.log(`  ${pass ? "PASS" : "FAIL"}  ${n}${!pass && d ? `   [${JSON.stringify(d)}]` : ""}`); if (pass) ok++; }

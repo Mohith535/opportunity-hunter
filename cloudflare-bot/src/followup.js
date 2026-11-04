@@ -110,6 +110,19 @@ export function afterReminder(e, todayISO) {
   return out;
 }
 
+/**
+ * "/applied Zomato — Backend intern" (4 Nov): an application he made somewhere OPH cannot see.
+ * His mail showed Internshala applications on 30–31 Oct while the tracker had no tap after 22 Oct,
+ * so they got no "heard back?" a week on and taught the learner nothing. Same entry shape as a tap.
+ */
+export function outsideEntry(text, todayISO) {
+  const title = String(text || "").replace(/\s+/g, " ").trim();
+  if (title.length < 3 || title.length > 120) return { error: "Tell me what you applied to, e.g. /applied Zomato — Backend intern" };
+  const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 36);
+  if (!slug) return { error: "Tell me what you applied to, e.g. /applied Zomato — Backend intern" };
+  return [`ext-${slug}`, { status: "applied", title, applied_at: todayISO, updated_at: todayISO, source: "outside" }];
+}
+
 const ISO = /^\d{4}-\d{2}-\d{2}$/;
 /** POST /remind body → [key, tracker entry], or { error }. Keys are slugs, never a 12-hex feed key. */
 export function reminderEntry(b, todayISO) {

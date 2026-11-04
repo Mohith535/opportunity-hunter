@@ -30,7 +30,7 @@ import { WorkerEntrypoint } from "cloudflare:workers";
 import { validatePacket, intakeKey, statusesFor, itemFromPacket, INTAKE_TTL } from "./intake.js";
 import APP_HTML from "./app.html";
 import { duePlan, markFollowed, recordOutcome, followupButtons, followupText, reminderText, outcomeReply,
-         reminderButtons, afterReminder, reminderEntry, OUTCOMES, MAX_PER_DAY } from "./followup.js";
+         reminderButtons, afterReminder, reminderEntry, outsideEntry, OUTCOMES, MAX_PER_DAY } from "./followup.js";
 
 let ORIGIN = "";   // this Worker's own https origin, learned from each request — for the Open-app buttons
 
@@ -145,15 +145,16 @@ async function handleMessage(env, msg) {
       `👋 <b>Opportunity Hunter</b> is connected (cloud, always-on).\n` +
       `Tap <b>Open OPH</b> for your target and today's packs — or use the ☰ menu.\n` +
       `Your chat id is <code>${chatId}</code>.\n` +
-      `Commands: /top · /pack 2 · /target · /report · /taste · /coach — or just ask me anything.`, appButton());
+      `Commands: /top · /pack 2 · /target · /report · /taste · /coach · /applied <what> — or just ask me anything.`, appButton());
   if (text.startsWith("/top")) return handleTop(env, chatId);
   if (text.startsWith("/target")) return handleTarget(env, chatId, text.slice(7));
   if (text.startsWith("/pack")) return handlePackCommand(env, chatId, text.slice(5).trim());
   if (text.startsWith("/report")) return handleReport(env, chatId);
+  if (text.startsWith("/applied")) return handleAppliedOutside(env, chatId, text.slice(8));
   if (text.startsWith("/taste")) return handleTaste(env, chatId);
   if (text.startsWith("/coach")) return handleCoach(env, chatId, text.slice(6).trim());
   if (text.startsWith("/"))
-    return sendMessage(env, chatId, "Try /top · /pack 2 · /target · /report · /taste · /coach — or ask me a question.");
+    return sendMessage(env, chatId, "Try /top · /pack 2 · /target · /report · /taste · /coach · /applied <what> — or ask me a question.");
   // freeform question -> grounded answer
   const feed = await getFeed(env);
   const ans = await llmComplete(env, askPrompt(await profileBlock(env), feed, text), 450);
@@ -539,6 +540,20 @@ async function remindApi(request, env) {
   if (!e.note) delete t[key].note;
   await kvPut(env, "tracker", t);
   return Response.json({ ok: true, key, next: e.remind_at, steps: 1 + (e.steps || []).length });
+}
+
+// An application made outside OPH (Internshala, a company site): logged like a ✅ Applied tap, so the
+// 7- and 14-day "heard back?" and the outcome learning see it too.
+async function handleAppliedOutside(env, chatId, rest) {
+  const today = new Date().toISOString().slice(0, 10);
+  const r = outsideEntry(rest, today);
+  if (!Array.isArray(r)) return sendMessage(env, chatId, r.error);
+  const [key, e] = r;
+  const t = await kvGet(env, "tracker", {});
+  t[key] = { ...(t[key] || {}), ...e };
+  await kvPut(env, "tracker", t);
+  return sendMessage(env, chatId,
+    `✅ Logged: <b>${esc(e.title)}</b>\nI'll ask in 7 days if you heard back — with a follow-up you can send.`);
 }
 
 async function handleOutcome(env, kind, key, cb, chatId) {
