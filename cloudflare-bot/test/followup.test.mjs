@@ -92,6 +92,9 @@ check("23. ...so a week on it gets the same 'heard back?' as a tapped one",
   duePlan({ [ok1]: oe }, later).followups.map(([k, , d]) => `${k}@${d}`).join() === `${ok1}@7`);
 check("24. nothing, or a pasted essay, is refused with an example",
   outsideEntry("", TODAY).error && outsideEntry("x".repeat(121), TODAY).error && outsideEntry(" -- ", TODAY).error);
+const [ek, ee] = outsideEntry("Zomato — Backend intern", TODAY, "edi");
+check("25. told to EDI instead of the bot: the same row and key, marked source 'edi'; /applied stays 'outside'",
+  ek === ok1 && ee.source === "edi" && oe.source === "outside" && ee.status === "applied", [ek, ee]);
 
 let ok = 0;
 for (const [n, pass, d] of R) { console.log(`  ${pass ? "PASS" : "FAIL"}  ${n}${!pass && d ? `   [${JSON.stringify(d)}]` : ""}`); if (pass) ok++; }

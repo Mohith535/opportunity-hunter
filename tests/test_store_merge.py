@@ -48,6 +48,9 @@ before, after = store.merge_in(cloud, {"items": {}})
 feed = json.loads(config.FEED_FILE.read_text(encoding="utf-8"))
 check("5. merge_in writes the union and refreshes the feed — the cloud's 9/10 is on top",
       (before, after) == (2, 3) and feed["items"][0]["key"] == "m", (before, after, feed["items"][:1]))
+import re
+check("5b. the feed's updated_at is a full UTC time, so EDI's 'hunted N hours ago' is not a guess",
+      re.fullmatch(r"\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ", feed["updated_at"]), feed["updated_at"])
 
 class _Resp:
     def __init__(self, code, body=None, etag=""):

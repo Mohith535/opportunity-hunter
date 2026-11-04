@@ -27,7 +27,7 @@
 import { applyCommand, formatTarget, validTarget, HELP as TARGET_HELP } from "./target.js";
 import { appUser } from "./webapp.js";
 import { WorkerEntrypoint } from "cloudflare:workers";
-import { validatePacket, intakeKey, statusesFor, itemFromPacket, INTAKE_TTL } from "./intake.js";
+import { validatePacket, intakeKey, statusesFor, applicationsList, itemFromPacket, INTAKE_TTL } from "./intake.js";
 import APP_HTML from "./app.html";
 import { duePlan, markFollowed, recordOutcome, followupButtons, followupText, reminderText, outcomeReply,
          reminderButtons, afterReminder, reminderEntry, outsideEntry, OUTCOMES, MAX_PER_DAY } from "./followup.js";
@@ -94,6 +94,21 @@ export class Intake extends WorkerEntrypoint {
   async statuses(keys) {
     try { return statusesFor(await kvGet(this.env, "tracker", {}), keys); }
     catch (e) { return {}; }
+  }
+
+  // null, never [], when the tracker can't be read: EDI reads [] as "you applied to nothing".
+  async applications() {
+    try { return applicationsList(await kvGet(this.env, "tracker", {})); }
+    catch (e) { return null; }
+  }
+
+  async applied(title) {
+    try {
+      const r = await logOutside(this.env, title, "edi");
+      return Array.isArray(r) ? { ok: true, key: r[0] } : { ok: false, why: r.error };
+    } catch (e) {
+      return { ok: false, why: String(e && e.message || e).slice(0, 120) };
+    }
   }
 }
 
@@ -545,15 +560,21 @@ async function remindApi(request, env) {
 // An application made outside OPH (Internshala, a company site): logged like a ✅ Applied tap, so the
 // 7- and 14-day "heard back?" and the outcome learning see it too.
 async function handleAppliedOutside(env, chatId, rest) {
-  const today = new Date().toISOString().slice(0, 10);
-  const r = outsideEntry(rest, today);
+  const r = await logOutside(env, rest, "outside");
   if (!Array.isArray(r)) return sendMessage(env, chatId, r.error);
-  const [key, e] = r;
-  const t = await kvGet(env, "tracker", {});
-  t[key] = { ...(t[key] || {}), ...e };
-  await kvPut(env, "tracker", t);
+  const [, e] = r;
   return sendMessage(env, chatId,
     `✅ Logged: <b>${esc(e.title)}</b>\nI'll ask in 7 days if you heard back — with a follow-up you can send.`);
+}
+
+// /applied here and Intake.applied() from EDI write the same row. → [key, entry] or { error }.
+async function logOutside(env, text, source) {
+  const r = outsideEntry(text, new Date().toISOString().slice(0, 10), source);
+  if (!Array.isArray(r)) return r;
+  const t = await kvGet(env, "tracker", {});
+  t[r[0]] = { ...(t[r[0]] || {}), ...r[1] };
+  await kvPut(env, "tracker", t);
+  return r;
 }
 
 async function handleOutcome(env, kind, key, cb, chatId) {

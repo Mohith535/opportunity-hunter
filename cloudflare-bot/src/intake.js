@@ -8,6 +8,8 @@
  * Pure functions here so `node test/intake.test.mjs` can check them without a Worker.
  */
 
+import { appliedOn } from "./followup.js";
+
 export const JD_MIN = 200;          // the contract: the posting, whole — a sentence is not a posting
 export const JD_MAX = 15_000;
 export const INTAKE_TTL = 60 * 60 * 24 * 30;   // 30 days in KV
@@ -54,6 +56,17 @@ export function statusesFor(tracker, keys) {
     out[k] = s && map[s] ? map[s] : null;
   }
   return out;
+}
+
+/** Intake.applications() (4 Nov): every "applied" row, newest first, for EDI's "did I apply to X?".
+ *  Field names are EDI's contract (worker/src/applied.ts): add freely, never rename. */
+export function applicationsList(tracker) {
+  return Object.entries(tracker || {})
+    .filter(([, e]) => e && e.status === "applied")
+    .map(([key, e]) => ({ key, title: e.title || "", status: "applied", applied_at: appliedOn(e),
+                         outcome: e.outcome || null, source: e.source || ((e.tags || []).includes("edi") ? "edi" : "oph"),
+                         url: e.url || "" }))
+    .sort((a, b) => (a.applied_at < b.applied_at ? 1 : a.applied_at > b.applied_at ? -1 : 0));
 }
 
 /** What his tracker and the 📦 card need from a packet — the same fields a feed item has. */

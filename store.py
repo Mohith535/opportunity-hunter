@@ -7,7 +7,7 @@ already canonicalizes URLs and prefers source-native IDs.
 """
 
 import json
-from datetime import date
+from datetime import date, datetime, timezone
 
 import config
 
@@ -116,7 +116,9 @@ def write_feed(limit: int = 100) -> None:
             "ai_summary": d.get("ai_summary", ""),
             "action_plan": d.get("action_plan", []),
         })
-    _save(config.FEED_FILE, {"updated_at": date.today().isoformat(), "items": feed})
+    # Full UTC time (4 Nov): EDI says "hunted N hours ago" from it; a bare date made that a guess.
+    _save(config.FEED_FILE, {"updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                             "items": feed})
 
 
 # ─── THE CLOUD'S COPY (22 Oct 2026) ──────────────────────────────────────────────────────────
