@@ -98,6 +98,20 @@ check("15. the blurb is about him throughout: his descriptions turn third-person
 md0 = O.outreach_md({"title": title, "url": "https://x/job"}, {}, profile, rows, "Vortizo AI")
 check("11. no published address → no email section", "To:" not in md0 and "Contacts the employer" not in md0)
 
+# The linkedin-agent's handoff (4 Nov): connect.py's file has "## Who", "## Why reach out" and "## The note (send
+# this by hand)" with the note in a code block, read by its NOTE_RE. Same headings here = a straight copy.
+blk = md0[md0.index("~~~markdown"):md0.index("~~~", md0.index("~~~markdown") + 3)]
+NOTE_RE = re.compile(r"## The note.*?```(.*?)```", re.S)       # connect.py, line 31
+check("18. the three blocks copy straight into connect.py's file: its headings, its note block, none of its "
+      "template text", all(f"\n{h}\n" in blk for h in ("## Who", "## Why reach out", "## The note (send this by hand)"))
+      and NOTE_RE.search(blk).group(1).strip() == O.note(profile, rows, "Vortizo AI", title)
+      and "No guesses" not in blk and "is not a reason" not in blk, blk)
+pub = dict(profile, projects=[dict(profile["projects"][0], url="https://github.com/x/nova-cortex", private=False)])
+priv = dict(profile, projects=[dict(profile["projects"][0], url="https://github.com/x/nova-cortex", private=True)])
+check("19. 'the code is on his GitHub' only when a stranger can open it: nova-cortex is private (5 Nov)",
+      "on his GitHub" in O.blurb(pub, rows[:1], title) and "on his GitHub" not in O.blurb(priv, rows[:1], title)
+      and "on his GitHub" not in O.blurb(profile, rows[:1], title) and "nova-cortex" in O.blurb(priv, rows[:1], title))
+
 hp = dict(O.hiring_posts("Mumbai"))
 check("16. hiring posts: LinkedIn POST search (not Jobs), last 24 h, newest first; his city added; X live",
       all("/search/results/content/" in hp[k] and "past-24h" in hp[k] and "date_posted" in hp[k]

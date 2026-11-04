@@ -178,6 +178,15 @@ check("33. ...while data structures and algorithms stays DSA, beside ML when bot
       capabilities_in("Strong data structures and algorithms") == ["dsa"]
       and set(capabilities_in("Data structures, algorithms and machine learning")) == {"dsa", "ml"})
 
+P3 = copy.deepcopy(PROFILE)
+for p, url, private in zip(P3["projects"][:2], ("https://github.com/x/oph", "https://github.com/x/nova-cortex"),
+                           (False, True)):
+    p.update(x_techline="Python", url=url, private=private)
+links_md = GEN.generate_resume_ex(P3, None)[0]
+check("34. a private repo is never linked — a recruiter gets a 404 (nova-cortex, in 15 packs until 5 Nov) — "
+      "but the project still shows, and a public repo keeps its link",
+      "github.com/x/nova-cortex" not in links_md and "**nova-cortex**" in links_md and "github.com/x/oph" in links_md)
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))

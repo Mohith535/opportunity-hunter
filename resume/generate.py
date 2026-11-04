@@ -528,7 +528,10 @@ def _from_resume_layer(profile: dict, jd_text: str | None, role: str, report: di
         L.append(bold_budget("\n".join(f"- {h}" for h in hl)))
         if p.get("x_techline"):
             link = (p.get("url") or "").replace("https://", "")
-            L.append(f"*{p['x_techline']}*" + (f" · {link}" if link and "github" in link else ""))
+            # A private repo's link is a 404 for the recruiter who clicks it: 15 packs linked nova-cortex
+            # (private) until 5 Nov. The project still shows; its link waits until the repo is public.
+            L.append(f"*{p['x_techline']}*" + (f" · {link}" if link and "github" in link and not p.get("private")
+                                               else ""))
         L.append("")
     if rest:
         L += ["- **Also shipped:** " + " · ".join(f"**{p.get('x_resume_name')}**, {p.get('x_tagline','')}"

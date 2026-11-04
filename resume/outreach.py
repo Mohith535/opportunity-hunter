@@ -20,7 +20,7 @@ from urllib.parse import quote_plus
 
 from .apply import _clip
 
-NOTE_LIMIT = 200            # LinkedIn, free account (300 on Premium)
+NOTE_LIMIT = 200            # LinkedIn help, answer 46662: "up to 200 characters" (it names no Premium length)
 NOTES_A_MONTH = 3
 # Phrases that make a note read as a mass invite — the same list as the linkedin-agent's connect.py.
 FILLER = re.compile(r"\b(I'd love to connect|love to connect|expand my network|touch base|reach out to you|"
@@ -123,6 +123,14 @@ def _lead(profile: dict, rows: list) -> tuple[str, str]:
     return p.get("name", ""), desc.get((p.get("name") or "").lower(), "")
 
 
+def _on_github(profile: dict, names: list[str]) -> bool:
+    """Every named project has a GitHub repo a stranger can open. nova-cortex is private: "the code is on
+    his GitHub" was a 404 for the referrer who checked (5 Nov)."""
+    by = {(p.get(k) or "").lower(): p for p in profile.get("projects") or [] for k in ("name", "x_resume_name")}
+    return bool(names) and all("github.com/" in (by.get(n.lower()) or {}).get("url", "")
+                               and not by[n.lower()].get("private") for n in names)
+
+
 def _short(ev: str, n: int = 130) -> str:
     """His sentence up to its first clause break, when that leaves enough to stand on its own; a long
     list is cut at its last comma, never mid-item ("…Merge k…")."""
@@ -188,7 +196,7 @@ def blurb(profile: dict, rows: list, job_title: str) -> str:
     rest = [p for _, _, ev, p in rows or [] if p and ev and p != proj and desc.get(p.lower())
             and not _NOT_BUILT.search(p)][:1]
     built = (f"Built {proj}" + (f", {d}" if d else "") + (f", and {rest[0]}, {desc[rest[0].lower()]}" if rest else "")
-             + ". The code is on his GitHub.") if proj else ""
+             + "." + (" The code is on his GitHub." if _on_github(profile, [proj, *rest]) else "")) if proj else ""
     # The referrer writes about him, so his own descriptions ("finds internships … for me") turn third-person.
     built = re.sub(r"\bmy\b", "his", re.sub(r"\bme\b", "him", re.sub(r"\bI\b", "he", built)))
     return (f"K Mohith Kannan, second-year B.Tech CSE (AI & ML) at SRM Institute of Science and Technology"
@@ -246,9 +254,18 @@ def outreach_md(item: dict, full: dict | None, profile: dict, rows: list | None,
         L += ["### Email, to the address the posting gave", "", "```", email(profile, rows, co, title, mails[0]),
               "```", ""]
     slug_title = plain_title(title).replace('"', "'")
+    # connect.py's own three headings (linkedin-agent, 4 Nov), so the blocks below are a straight copy over
+    # its template; `connect.py check` refuses a file that still has the template's text.
     L += ["## Track it (in the linkedin-agent)", "", "```",
           f'python connect.py add "[Their name]" --role "[their role]" --org "{co}" '
           f'--why "OPH pack: {slug_title}, {date.today().isoformat()}"', "```",
+          "In the file it makes, replace everything under `## Who` with these three blocks, fill the brackets "
+          "with what you can check on their profile, then `python connect.py check <slug>`.", "",
+          "~~~markdown", "## Who", "",
+          f"[Their name], [their role] at {co}. [One thing from their profile or posts you can check.]", "",
+          "## Why reach out", "",
+          f"I'm applying for the {plain_title(title)} at {co}. [The part of their work this role touches.]", "",
+          "## The note (send this by hand)", "", "```", n, "```", "~~~", "",
           "Then `python connect.py status <slug> sent` when you send, `replied` when they answer.", "",
           "## Never", "",
           "- Never pay anyone for a referral. Paid \"referrals\" are a known scam.",
