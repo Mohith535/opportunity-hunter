@@ -25,7 +25,12 @@ REGISTRY = {
     "internships": internships.fetch,  # SimplifyJobs aggregator (verified)
     "ats": ats.fetch,                  # company career boards (Greenhouse/Ashby/Lever)
     "remote": remote.fetch,            # remote jobs open to India/worldwide (Himalayas, credited)
+    "unstop_jobs": hackathons.fetch_unstop_jobs,  # hourly watcher only: "unstop" already covers these daily
 }
+
+
+# Not in the default (daily) set: the daily already reads these through a wider source.
+FRESH_ONLY = {"unstop_jobs"}
 
 
 def available_sources() -> list[str]:
@@ -38,5 +43,5 @@ def get_sources(names: list[str] | None = None) -> dict:
     `names=None` -> all registered sources. Unknown names are ignored.
     """
     if not names:
-        return dict(REGISTRY)
+        return {n: f for n, f in REGISTRY.items() if n not in FRESH_ONLY}
     return {n: REGISTRY[n] for n in names if n in REGISTRY}

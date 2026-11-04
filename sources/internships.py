@@ -73,7 +73,7 @@ def fetch() -> list[Opportunity]:
                 # was dropped before history was written, so 182 jobs abroad in two weeks were judged
                 # "rules not stated" and the ⛔ gate never saw one of them.
                 raw={"company": company, "location": "; ".join(x.get("locations") or []),
-                     "aggregator": x.get("source")},
+                     "aggregator": x.get("source"), "posted": x.get("date_posted")},
             )
         )
     return items

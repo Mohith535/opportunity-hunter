@@ -74,7 +74,7 @@ await t("tell: OPH's keyboard becomes EDI's [[{label, data}]]; link buttons and 
   assert.deepEqual(toEdi(kb), [[{ label: "🎉 Interview", data: "out:interview:abc123abc123" }],
                                [{ label: "⏰ Again", data: "remind:srfp-2027" }]]);
   assert.deepEqual(toEdi(undefined), []);
-  assert.ok(TELL_KINDS.includes("reply_alert") && TELL_KINDS.length === 6);
+  assert.ok(TELL_KINDS.includes("reply_alert") && TELL_KINDS.includes("fresh") && TELL_KINDS.length === 7);
 });
 await t("applications: reply_seen_at travels to EDI ('' until a reply is spotted)", () => {
   const got = applicationsList({ a: { status: "applied", applied_at: "2026-10-05", reply_seen_at: "2026-11-03" },

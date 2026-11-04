@@ -130,7 +130,8 @@ def _greenhouse(slug: str, company: str, budget=BOARD_BUDGET_SEC, entry=None) ->
             continue
         out.append(_opp(title, j.get("absolute_url", ""), company, "Greenhouse",
                         (j.get("location") or {}).get("name", ""),
-                        j.get("updated_at"), f"gh:{slug}:{j.get('id')}"))
+                        # first_published, not updated_at: an edit is not a new posting (filters/fresh.py)
+                        j.get("first_published") or j.get("updated_at"), f"gh:{slug}:{j.get('id')}"))
     return out
 
 

@@ -183,7 +183,9 @@ def _telegram_digest(crit, high, cap=6):
         for it in items:
             dl = _deadline_phrase(it) or "rolling"
             title = _tg_escape(textwrap.shorten(it.title, width=60, placeholder="…"))
-            seg = f"{_cat_emoji(it.source)} <b>{title}</b> — {dl}"
+            from filters.fresh import badge as _badge
+            new = _badge(it)
+            seg = f"{_cat_emoji(it.source)} <b>{title}</b> — {dl}" + (f" · <b>{new}</b>" if new else "")
             try:
                 from filters.pitch import pitch as _pitch
                 hook = _pitch(it, personal=True)      # his chat is private: his floor and fit belong here
@@ -274,6 +276,38 @@ def _notify(new_items, test):
         top = max(crit + high, key=policy.effective_score)
         telegram.tell("digest", f"🌅 OPH found {_tg_escape(stat_line)} today. Top: <b>{_tg_escape(top.title[:90])}</b>. "
                                 "The full list is in OPH's chat.", fallback=False)
+
+
+def fresh_alert(it) -> tuple[str, list]:
+    """One loud message for one just-posted role: when, what, why him, and the buttons to act now."""
+    from filters import fresh as _fresh
+    from filters.pitch import pitch as _pitch
+    try:
+        hook = _pitch(it, personal=True)
+    except Exception:  # noqa: BLE001 — a pitch never blocks an alert
+        hook = ""
+    when = _fresh.badge(it).replace("🆕 ", "") or "just now"
+    name = f"<b>{_tg_escape(it.title[:110])}</b>"
+    if it.url:   # the title is the link too: EDI's chat keeps tap buttons only, not 🔗 Open
+        name = f'<a href="{_tg_escape(it.url)}">{name}</a>'
+    text = (f"🚨🆕 <b>FRESH — {_tg_escape(when.upper())}</b>\n{name}"
+            + (f"\n{_tg_escape(hook).replace(chr(10), ' · ')}" if hook else "")
+            + (f"\n<i>{_tg_escape(it.ai_summary)}</i>" if it.ai_summary else "")
+            + "\n\n⏱ Apply today: early applications are read first.")
+    key = it.dedup_key()
+    row = ([{"text": "🔗 Open", "url": it.url}] if it.url else []) + [{"text": "📦 Pack", "callback_data": f"pack:{key}"}]
+    return text, [row, [{"text": "✅ Applied", "callback_data": f"applied:{key}"},
+                        {"text": "⏭ Skip", "callback_data": f"skip:{key}"}]]
+
+
+def _notify_fresh(items, test):
+    """Each fresh role is its own message, so a just-posted one never hides inside a list."""
+    for it in items:
+        text, buttons = fresh_alert(it)
+        if test:
+            log(f"[fresh] would alert: {it.title[:60]}" if not config.PUBLIC_LOGS else "[fresh] would alert 1")
+        else:
+            telegram.tell("fresh", text, buttons)
 
 
 def _posts_line() -> str:
@@ -469,10 +503,18 @@ def _check_full_postings(items: list) -> tuple[list, list]:
     return kept, dropped
 
 
-def run(source_names=None, test=False):
-    """Execute one full hunt."""
-    mode = "TEST (dry run)" if test else "LIVE"
+# The hourly watcher (--fresh, 4 Nov): the sources whose boards say WHEN a role was posted.
+FRESH_SOURCES = ["ats", "internships", "remote", "unstop_jobs"]
+FRESH_MAX = 5                    # alerts a run; each is its own loud message
+
+
+def run(source_names=None, test=False, fresh=False):
+    """Execute one full hunt. fresh=True is the hourly watcher: only roles the employer posted in the
+    last filters.fresh.FRESH_HOURS, that he can apply to and that score HIGH, each sent as its own alert."""
+    mode = ("TEST (dry run)" if test else "LIVE") + (" · fresh watcher" if fresh else "")
     log(f"=== Opportunity Hunter run started [{mode}] ===")
+    if fresh and not source_names:
+        source_names = FRESH_SOURCES
 
     # 0. A target changed from the phone (/target) reaches this run first; one changed here goes
     # to the bot. No-op unless OH_WORKER_URL + OH_WORKER_TOKEN are set (they are not in the cloud,
@@ -516,7 +558,7 @@ def run(source_names=None, test=False):
         moved = outcomes.apply(relevant)
         log(f"[outcomes] learned from {learned['signals']} taps: {len(learned['likes'])} liked, "
             f"{len(learned['avoids'])} skipped words — nudged {moved} items")
-        if not test:
+        if not test and not fresh:
             outcomes.publish(learned)
 
     # 3b. Focus — "what am I hunting this week?". Re-ranks (and in "only" mode filters)
@@ -550,6 +592,18 @@ def run(source_names=None, test=False):
         store.mark_seen(seen, it)
     if deep:
         log(f"[eligibility] hid {len(deep)} more after reading the full posting")
+
+    # 4-fresh. The watcher keeps only what the EMPLOYER posted recently, that he can apply to, and that
+    # already scores HIGH. Everything else is left exactly as it was (not seen), for the daily run.
+    if fresh:
+        from filters import fresh as _fresh
+        from filters import target as _t
+        before = len(new_items)
+        new_items = sorted((i for i in new_items if focus.kind_of(i) in _t.EMPLOYMENT_KINDS and _fresh.is_fresh(i)
+                            and policy.effective_score(i) >= config.HIGH_SCORE),
+                           key=policy.effective_score, reverse=True)[:FRESH_MAX + 3]   # the model may drop some
+        log(f"[fresh] {len(new_items)} of {before} new items were posted in the last {_fresh.FRESH_HOURS} h "
+            "and score HIGH")
 
     # 4a. INTAKE FUNNEL. Sources now fetch wide (hundreds of candidates), so the cheap
     # local rule score decides who pays the expensive costs below. Items under the line
@@ -585,6 +639,15 @@ def run(source_names=None, test=False):
         from taskflow import prefs
         prefs.apply_downweight(new_items)
 
+    # 4d-fresh. The model has now read them: a role it scores below HIGH is no alert (4 Nov dry run: all five
+    # rule-score picks came back 6/10 or lower). Not marked seen, so the daily run still ranks them.
+    if fresh:
+        before = len(new_items)
+        new_items = sorted((i for i in new_items if policy.effective_score(i) >= config.HIGH_SCORE),
+                           key=policy.effective_score, reverse=True)[:FRESH_MAX]
+        if before != len(new_items):
+            log(f"[fresh] {before - len(new_items)} dropped after the model scored them below HIGH")
+
     # 4e. The public pitch (job facts only) travels with the item into history/feed — the Mini App's
     # Today tab shows it. The personal one (vs his floor, his roles) is built only for Telegram.
     from filters.pitch import pitch as _pitch
@@ -608,14 +671,18 @@ def run(source_names=None, test=False):
         store.mark_seen(seen, it)
     # A dry run must not persist state, or a later real run would treat
     # everything as already-seen and show nothing.
-    if not test:
+    # The hourly watcher writes only when it alerted (or settled a ⛔), so a quiet hour commits nothing.
+    if not test and (not fresh or new_items or deep):
         store.save_seen(seen)
         if new_items:  # don't record empty runs (keeps --recap meaningful)
             store.append_history(new_items)
-        store.write_feed()   # refresh the compact feed the cloud bot reads
+        store.write_feed()   # refresh the compact feed the cloud bot reads (its taps find titles here)
 
     # 6. Notify
-    _notify(new_items, test)
+    if fresh:
+        _notify_fresh(new_items, test)
+    else:
+        _notify(new_items, test)
 
     # 7. Brief
     stats = {
@@ -712,6 +779,8 @@ def main():
                         help="show the standing target from hunt_target.json and exit")
     parser.add_argument("--no-target", action="store_true",
                         help="ignore hunt_target.json for this run")
+    parser.add_argument("--fresh", action="store_true",
+                        help="the hourly watcher: alert only on roles posted in the last 48 h (with --now)")
     args = parser.parse_args()
 
     from filters import target
@@ -738,7 +807,7 @@ def main():
     if args.recap:
         recap()
     elif args.now or args.test:
-        run(source_names=source_names, test=args.test)
+        run(source_names=source_names, test=args.test, fresh=args.fresh)
     else:
         scheduler()
 

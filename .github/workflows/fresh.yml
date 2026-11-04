@@ -1,0 +1,94 @@
+name: Opportunity Hunter (fresh postings, hourly)
+
+# "Someone always looking" (4 Nov): every hour from 07:20 to 23:20 IST, read the boards that say WHEN a
+# role was posted (company ATS boards, SimplifyJobs, Himalayas, Unstop internships + jobs) and send one
+# loud Telegram alert per role posted in the last 48 h that he can apply to and that scores HIGH.
+# Overnight postings are caught at 07:20 — still fresh, and he is awake for them.
+# Free: GitHub-hosted runners cost nothing on a public repo. A quiet hour commits nothing.
+# Same concurrency group as daily.yml, so the two never write data/ at the same time.
+
+on:
+  schedule:
+    - cron: "50 1-17 * * *"   # 07:20–23:20 Asia/Kolkata, hourly
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: opportunity-hunter
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+      CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      OH_PROFILE_JSON: ${{ secrets.OH_PROFILE_JSON }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      OH_WORKER_URL: ${{ secrets.OH_WORKER_URL }}
+      OH_WORKER_TOKEN: ${{ secrets.OH_WORKER_TOKEN }}
+      OH_PHONE: "false"        # Telegram only: one loud message per role, no ntfy echo
+      OH_DESKTOP: "false"
+      OH_TASKFLOW: "false"
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - run: pip install -r requirements.txt
+
+      - name: Restore private files from secrets
+        env:
+          OH_TARGET_JSON: ${{ secrets.OH_TARGET_JSON }}
+          OH_CAREER_PROFILE: ${{ secrets.OH_CAREER_PROFILE }}
+        run: |
+          for f in hunt_target.json data/career_profile.json; do
+            git check-ignore -q "$f" || { echo "::error::$f is not gitignored — refusing to write it"; exit 1; }
+          done
+          got=""
+          if [ -n "$OH_WORKER_URL" ] && [ -n "$OH_WORKER_TOKEN" ] \
+             && curl -fsS --max-time 20 -H "Authorization: Bearer $OH_WORKER_TOKEN" \
+                     "$OH_WORKER_URL/target" -o "$RUNNER_TEMP/t.json" 2>/dev/null \
+             && python .github/scripts/bot_target.py "$RUNNER_TEMP/t.json"; then
+            got=1
+          fi
+          rm -f "$RUNNER_TEMP/t.json"
+          if [ -z "$got" ] && [ -n "$OH_TARGET_JSON" ]; then
+            printf '%s' "$OH_TARGET_JSON" > hunt_target.json
+            python -c "import json; json.load(open('hunt_target.json', encoding='utf-8'))" \
+              || { echo "target: secret is not valid JSON, ignored"; rm -f hunt_target.json; }
+          fi
+          # The eligibility gate needs his profile: without it a fresh alert could be a job he can't take.
+          if [ -n "$OH_CAREER_PROFILE" ]; then
+            printf '%s' "$OH_CAREER_PROFILE" | base64 -d | gunzip > data/career_profile.json \
+              && python -c "import json; json.load(open('data/career_profile.json', encoding='utf-8'))" \
+              && echo "career profile: restored" || { echo "career profile: could not decode"; rm -f data/career_profile.json; }
+          fi
+
+      - name: Watch for fresh postings
+        run: python main.py --now --fresh
+
+      - name: Persist what was alerted
+        run: |
+          git config user.name "opportunity-hunter[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --name-only | grep -E '(career_profile|hunt_target)'; then
+            echo "::error::refusing to commit a private file"; git reset -q; exit 1
+          fi
+          if git diff --staged --quiet; then
+            echo "Nothing fresh this hour."
+          else
+            git commit -m "chore: fresh postings [skip ci]"
+            git pull -q --rebase origin main && git push
+          fi

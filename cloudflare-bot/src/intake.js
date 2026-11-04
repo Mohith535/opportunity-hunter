@@ -70,7 +70,9 @@ export function applicationsList(tracker) {
 }
 
 /** EDI's Tell.tell() contract (4 Nov, EDI worker/src/main.ts): his one chat. */
-export const TELL_KINDS = ["followup", "reply_alert", "reminder", "weekly", "pack_ready", "digest"];
+// "fresh" (4 Nov, the hourly watcher) is OPH's own until EDI knows it: say() keeps any kind not in
+// EDI_KINDS in OPH's chat.
+export const TELL_KINDS = ["followup", "reply_alert", "reminder", "weekly", "pack_ready", "digest", "fresh"];
 
 /** The kinds EDI_KINDS (a wrangler var, "followup,reminder") sends to EDI; anything else stays here. */
 export function ediKinds(s) {

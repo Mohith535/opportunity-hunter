@@ -62,7 +62,7 @@ def to_opportunity(job: dict) -> Opportunity | None:
                      f"| via Himalayas | {_text(job.get('excerpt') or job.get('description'))[:500]}"),
         native_id=f"himalayas:{m.group(1)}:{m.group(2)}" if m else (job.get("guid") or title),
         tags=[kind],
-        raw={"company": job.get("companyName", ""), "location": loc, "platform": "Himalayas",
+        raw={"company": job.get("companyName", ""), "location": loc, "platform": "Himalayas", "posted": job.get("pubDate"),
              "remote": not job.get("locationRestrictions") or "India" in (job.get("locationRestrictions") or [])},
     )
 

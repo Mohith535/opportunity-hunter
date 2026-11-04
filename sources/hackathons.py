@@ -518,11 +518,17 @@ def _fetch_unstop_category(category: str) -> list[Opportunity]:
                 # company → facts.company in history (4 Nov): Unstop titles rarely name the employer, so
                 # EDI's "did I apply to Zenotalent?" had only the URL slug to match.
                 raw={"status": o.get("status"), "region": region, "category": category, "company": _unstop_org(o),
+                     "posted": o.get("approved_date"),     # when Unstop published it; updated_at moves on edits
                      "registrations": o.get("registerCount"), "views": o.get("viewsCount"),
                      **_unstop_pay_location(o)},
             )
         )
     return items
+
+
+def fetch_unstop_jobs() -> list[Opportunity]:
+    """Internships and jobs only: the hourly fresh watcher's slice of Unstop (2 categories, not 8)."""
+    return [it for c in ("internships", "jobs") for it in _fetch_unstop_category(c)]
 
 
 def fetch_unstop() -> list[Opportunity]:
