@@ -293,6 +293,8 @@ def fresh_alert(it) -> tuple[str, list]:
     text = (f"🚨🆕 <b>FRESH — {_tg_escape(when.upper())}</b>\n{name}"
             + (f"\n{_tg_escape(hook).replace(chr(10), ' · ')}" if hook else "")
             + (f"\n<i>{_tg_escape(it.ai_summary)}</i>" if it.ai_summary else "")
+            + ("\n⚠ Check first: its rules aren't stated, or it's abroad. Ask if they take students from India."
+               if "eligibility:verify" in it.tags else "")
             + "\n\n⏱ Apply today: early applications are read first.")
     key = it.dedup_key()
     row = ([{"text": "🔗 Open", "url": it.url}] if it.url else []) + [{"text": "📦 Pack", "callback_data": f"pack:{key}"}]
@@ -459,10 +461,12 @@ def _drop_ineligible(items: list) -> tuple[list, dict]:
         # A 9-10 means "go": for a job that needs a verdict saying he can apply. StackAdapt reached
         # him as 10/10 beside "RULES NOT STATED". Unknown stays visible, at most an 8, and says so.
         new = capped(it.score, v, focus.kind_of(it) in target.EMPLOYMENT_KINDS)
-        if new < it.score:
-            it.score = new
-            if "eligibility:verify" not in it.tags:
-                it.tags.append("eligibility:verify")
+        it.score = min(it.score, new)
+        # Tagged whenever its rules need checking, capped or not: Shield AI's 7/10 Dallas internship
+        # (4 Nov) went out as a fresh alert with no word that abroad means "ask if they take you".
+        if v.level in ("CHECK", "NOT_STATED") and focus.kind_of(it) in target.EMPLOYMENT_KINDS \
+                and "eligibility:verify" not in it.tags:
+            it.tags.append("eligibility:verify")
         kept.append(it)
     return kept, dict(why)
 

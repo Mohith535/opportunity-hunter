@@ -50,6 +50,10 @@ check("8. its buttons: Open, Pack, Applied, Skip — all ≤ 60 bytes, so they a
       == [f"pack:{key}", f"applied:{key}", f"skip:{key}"]
       and all(len(b["callback_data"]) <= 60 for row in kb for b in row if "callback_data" in b), kb)
 
+it.tags.append("eligibility:verify")
+check("8b. a role whose rules need checking says so in the alert (Shield AI, Dallas, 4 Nov)",
+      "⚠ Check first" in M.fresh_alert(it)[0] and "⚠" not in text)
+
 import sources  # noqa: E402
 check("9. the watcher's Unstop slice never joins the daily run (it reads all of Unstop already)",
       "unstop_jobs" not in sources.get_sources(None) and list(sources.get_sources(["unstop_jobs"])) == ["unstop_jobs"]
