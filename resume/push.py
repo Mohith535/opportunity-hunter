@@ -147,7 +147,8 @@ def card(item: dict, score: int, verdict, pack: dict, fit_rows: list, note: str 
                       else "⚠ Tailoring failed: this is your base resume")}.get(rep.get("tailoring", ""), "")
     if how:
         lines.append(e(how + (f" · {ch[0]} of {ch[1]} lines changed for this job" if ch else "")))
-    lines.append("<i>Resume PDF + DOCX + job.md attached. Read job.md's checklist, then apply by hand.</i>")
+    lines.append("<i>Resume PDF + DOCX + job.md attached. Read job.md's checklist, then apply by hand. "
+                 "outreach.md: who to ask for a referral, and what to say.</i>")
 
     text = "\n".join(lines)
     while _visible_len(text) > _CAPTION_MAX and len(lines) > 3:     # drop the least important lines
@@ -271,8 +272,9 @@ def pack_one(item: dict, score: int, profile: dict, dry: bool = False, requested
     slug = pack["out"].name
     files = [(p, p.name) for p in (pdf, pack["docx"]) if p]
     files.append((pack["out"] / "job.md", f"{slug}-job.md"))
-    if (pack["out"] / "cover.md").exists():
-        files.append((pack["out"] / "cover.md", f"{slug}-cover.md"))
+    for extra in ("cover.md", "outreach.md"):
+        if (pack["out"] / extra).exists():
+            files.append((pack["out"] / extra, f"{slug}-{extra}"))
     if not pdf and not pack["docx"]:
         files.append((pack["out"] / "resume.md", f"{slug}-resume.md"))
     sent: list = []

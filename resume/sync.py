@@ -74,7 +74,7 @@ def run() -> tuple[int, int]:
             name = _safe(f.get("name", ""))
             # Telegram gets "<slug>-job.md" so the chat shows which job it is; on disk it is job.md, like
             # every pack built here — unless this laptop already has its own job.md for that pack.
-            plain = next((s for s in ("job.md", "cover.md") if name.endswith("-" + s)), "")
+            plain = next((s for s in ("job.md", "cover.md", "outreach.md") if name.endswith("-" + s)), "")
             if plain and (folder / plain).exists():
                 continue
             if plain:

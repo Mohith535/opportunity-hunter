@@ -901,6 +901,10 @@ def build_pack(item: dict, full: dict | None = None) -> dict:
     letter = letter_from_rows(_profile(), report.get("match_rows"), company, item.get("title", ""))
     if letter:
         (out / "cover.md").write_text(letter, encoding="utf-8")
+    # Who to ask for a referral and what to say, from the same rows (resume/outreach.py, 4 Nov).
+    from .outreach import outreach_md  # noqa: PLC0415
+    (out / "outreach.md").write_text(outreach_md(item, full, _profile(), report.get("match_rows"), company),
+                                     encoding="utf-8")
     md_path = out / "resume.md"
     md_path.write_text(resume_md, encoding="utf-8")
 

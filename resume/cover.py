@@ -77,6 +77,25 @@ Genuine reason for this company (from the candidate): {why}
 YOUR_REASON = "YOUR REASON (one line, only if true): what about {company} specifically made you apply?"
 
 
+def joined(proj: str, ev: str) -> str:
+    """His sentence, joined to its project the way the sentence starts. 'In nova-cortex, runs always-on'
+    and 'i put each download' are what a single rule produced; "I" and names are never lowercased."""
+    import re  # noqa: PLC0415
+    w = ev.split(" ", 1)[0]
+    low = ev[:1].lower() + ev[1:]
+    if w == "Its":
+        return f"{proj}'s {ev[4:]}"
+    if w in ("A", "An"):
+        return f"{proj} is {low}"
+    if re.fullmatch(r"[A-Z][a-z]+s", w) and w not in ("This", "Its", "Was", "Has"):
+        return f"{proj} {low}"                              # Runs / Scans / Lands …
+    if w in ("The", "Every", "My", "Our", "Each", "Its"):
+        return f"in {proj}, {low}"
+    if w == "I":
+        return f"in {proj}, {ev}"                           # "in OPHunter, I put each download…"
+    return f"{proj}: {ev}"                                  # "LoopLab: 108 commits…", names, numbers
+
+
 def letter_from_rows(profile: dict, match_rows: list | None, company: str, role: str) -> str:
     """The pack's cover letter (21 Oct): built from the SAME requirement -> evidence rows as the resume's
     "What I would bring", so the two can never disagree, and with no model — every sentence of evidence is
@@ -95,22 +114,6 @@ def letter_from_rows(profile: dict, match_rows: list | None, company: str, role:
                    r"strong|solid)\s+", "", line.strip().rstrip("."), flags=re.I)
         return re.sub(r",?\s+(?:is|are|would be)\s+(?:useful|a plus|preferred|nice to have|a bonus)$", "", s, flags=re.I)
 
-    def joined(proj: str, ev: str) -> str:
-        """His sentence, joined to its project the way the sentence starts. 'In nova-cortex, runs always-on'
-        and 'i put each download' are what a single rule produced; "I" and names are never lowercased."""
-        w = ev.split(" ", 1)[0]
-        low = ev[:1].lower() + ev[1:]
-        if w == "Its":
-            return f"{proj}'s {ev[4:]}"
-        if w in ("A", "An"):
-            return f"{proj} is {low}"
-        if re.fullmatch(r"[A-Z][a-z]+s", w) and w not in ("This", "Its", "Was", "Has"):
-            return f"{proj} {low}"                              # Runs / Scans / Lands …
-        if w in ("The", "Every", "My", "Our", "Each", "Its"):
-            return f"in {proj}, {low}"
-        if w == "I":
-            return f"in {proj}, {ev}"                           # "in OPHunter, I put each download…"
-        return f"{proj}: {ev}"                                  # "LoopLab: 108 commits…", names, numbers
     first, rest = rows[0], rows[1:3]
     srm = next((e for e in profile.get("education", []) if "srm" in (e.get("institution") or "").lower()), {})
     contact = " · ".join(v for v in [basics.get("email"), basics.get("phone")] +
