@@ -10,7 +10,7 @@ OPHUNTER_FEED_URL = "https://raw.githubusercontent.com/Mohith535/opportunity-hun
 OPHUNTER_REPO = "Mohith535/opportunity-hunter"   # /pack starts this repo's daily.yml with pack_key
 REMIND_DAYS = "3"
 # His one chat (4 Nov, his yes): these go to EDI; a refusal falls back here. "" sends everything back here.
-EDI_KINDS = "followup,reminder,reply_alert,weekly,pack_ready,digest"
+EDI_KINDS = "followup,reminder,reply_alert,weekly,pack_ready,digest,fresh"
 
 # KV namespace for bot state (tracker + taste). Create it with:
 #   wrangler kv namespace create BOT_KV
