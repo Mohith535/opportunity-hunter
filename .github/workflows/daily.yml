@@ -1,7 +1,9 @@
 name: Opportunity Hunter (daily)
 
 # Runs in the cloud, laptop-independent.
-#  - Schedule: every day at 08:00 IST (02:30 UTC).
+#  - Schedule: every day at 08:00 IST (02:30 UTC), started by the Cloudflare bot's cron
+#              (cloudflare-bot/src/schedule.js). GitHub's own `schedule:` started it 4 h 38 min to
+#              7 h 26 min late on all 20 days measured (16 Oct – 4 Nov), so it is gone.
 #  - Manual:   "Run workflow" button (workflow_dispatch) — use this to prove it works.
 #
 # Cloud mode differs from local:
@@ -21,10 +23,12 @@ name: Opportunity Hunter (daily)
 # The runner is discarded after the job; packs are sent to Telegram and never uploaded as artifacts.
 
 on:
-  schedule:
-    - cron: "30 2 * * *"   # 08:00 Asia/Kolkata
   workflow_dispatch:
     inputs:
+      scheduled:
+        description: "The bot's 08:00 IST start (the Sunday shortlist goes out only on this run)"
+        type: boolean
+        default: false
       packs_only:
         description: "Only build + send application packs from the latest run (no hunt, no state commit)"
         type: boolean
@@ -175,6 +179,7 @@ jobs:
           PACK_KEY: ${{ inputs.pack_key }}
           INTAKE_KEY: ${{ inputs.intake_key }}
           PACKS_ONLY: ${{ inputs.packs_only }}
+          OH_SCHEDULED: ${{ inputs.scheduled }}
         run: |
           if [ -n "$INTAKE_KEY" ]; then
             python -m resume.push --intake "$INTAKE_KEY"

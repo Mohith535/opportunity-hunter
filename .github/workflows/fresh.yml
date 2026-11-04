@@ -5,11 +5,11 @@ name: Opportunity Hunter (fresh postings, hourly)
 # loud Telegram alert per role posted in the last 48 h that he can apply to and that scores HIGH.
 # Overnight postings are caught at 07:20 — still fresh, and he is awake for them.
 # Free: GitHub-hosted runners cost nothing on a public repo. A quiet hour commits nothing.
+# Started hourly at :50 UTC, 01:50–17:50, by the Cloudflare bot's cron (cloudflare-bot/src/schedule.js):
+# GitHub's own `schedule:` never started it in its first five hours, and ran daily.yml 5–7 h late.
 # Same concurrency group as daily.yml, so the two never write data/ at the same time.
 
 on:
-  schedule:
-    - cron: "50 1-17 * * *"   # 07:20–23:20 Asia/Kolkata, hourly
   workflow_dispatch:
 
 permissions:

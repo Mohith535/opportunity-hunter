@@ -8,8 +8,9 @@
  *   - Applied/Skip/Remind -> tracker state in Workers KV; taste re-learned
  *   - Draft / Coach / Ask -> the same Groq->Cerebras->OpenRouter LLM chain
  *
- * The daily DIGEST is still sent by GitHub Actions (Python). This Worker only
- * handles incoming taps/commands. Every update is acknowledged immediately and the
+ * The daily DIGEST is still sent by GitHub Actions (Python), but this Worker's cron
+ * STARTS it, and the hourly fresh watcher (src/schedule.js): GitHub's own schedule ran
+ * 5–7 h late. Every update is acknowledged immediately and the
  * real work runs in ctx.waitUntil(), so Telegram never times out.
  *
  * Bindings (wrangler.toml + secrets):
@@ -21,7 +22,8 @@
  *                             answers with his profile, tracker and (now) edits his target
  *            BOT_API_TOKEN    bearer token for GET/PUT /target (the laptop and the daily run)
  *            GH_DISPATCH_TOKEN  fine-grained PAT, opportunity-hunter only, Actions: read & write —
- *                             lets /pack start the cloud build. Optional; /pack explains if missing.
+ *                             lets /pack start the cloud build, and the cron start the hunt and the
+ *                             fresh watcher. If GitHub refuses it, he gets one message a day.
  */
 
 import { applyCommand, formatTarget, validTarget, HELP as TARGET_HELP } from "./target.js";
@@ -30,15 +32,17 @@ import { WorkerEntrypoint } from "cloudflare:workers";
 import { validatePacket, intakeKey, statusesFor, applicationsList, itemFromPacket, INTAKE_TTL,
          TELL_KINDS, ediKinds, toEdi } from "./intake.js";
 import APP_HTML from "./app.html";
+import { jobsAt, WORKFLOWS, alertDue, clockAlert } from "./schedule.js";
 import { duePlan, markFollowed, recordOutcome, followupButtons, followupText, reminderText, outcomeReply,
          reminderButtons, afterReminder, reminderEntry, outsideEntry, OUTCOMES, MAX_PER_DAY } from "./followup.js";
 
 let ORIGIN = "";   // this Worker's own https origin, learned from each request — for the Open-app buttons
 
 export default class extends WorkerEntrypoint {
-  // Daily, 03:30 UTC = 09:00 IST (wrangler.toml [triggers]): due reminders + "heard back?" follow-ups.
-  async scheduled() {
-    return runDaily(this.env);   // the summary shows in wrangler's local scheduled test
+  // wrangler.toml [triggers] "30,50 1-17 * * *": the hunt at 08:00 IST, follow-ups at 09:00 IST, the fresh
+  // watcher hourly at :20 IST (src/schedule.js decides which, from the minute it was scheduled for).
+  async scheduled(controller) {
+    return runJobs(this.env, jobsAt(new Date(controller?.scheduledTime || Date.now())));
   }
 
   async fetch(request) {
@@ -453,12 +457,37 @@ async function handlePack(env, key, chatId, cb) {
 }
 
 async function startPack(env, key, input = "pack_key") {
-  return fetch(`https://api.github.com/repos/${env.OPHUNTER_REPO}/actions/workflows/daily.yml/dispatches`, {
+  return dispatch(env, "daily.yml", { packs_only: "true", [input]: key });
+}
+
+function dispatch(env, workflow, inputs) {
+  return fetch(`https://api.github.com/repos/${env.OPHUNTER_REPO}/actions/workflows/${workflow}/dispatches`, {
     method: "POST",
     headers: { Authorization: `Bearer ${env.GH_DISPATCH_TOKEN}`, Accept: "application/vnd.github+json",
       "User-Agent": "ophunter-bot", "X-GitHub-Api-Version": "2022-11-28" },
-    body: JSON.stringify({ ref: "main", inputs: { packs_only: "true", [input]: key } }),
+    body: JSON.stringify({ ref: "main", inputs }),
   });
+}
+
+// The cron's jobs (and POST /cron {jobs}): start a workflow, or run the follow-ups here.
+async function runJobs(env, jobs) {
+  const out = {};
+  for (const job of jobs) {
+    if (job === "followups") { out[job] = await runDaily(env); continue; }
+    const w = WORKFLOWS[job];
+    if (!w) { out[job] = { ok: false, why: "unknown job" }; continue; }
+    const status = env.GH_DISPATCH_TOKEN ? (await dispatch(env, w.file, w.inputs)).status : 0;
+    out[job] = { ok: status === 204, status };
+    if (status === 204 || !env.OWNER_CHAT_ID) continue;
+    console.log("clock: couldn't start", job, status);
+    const today = new Date().toISOString().slice(0, 10), sent = await kvGet(env, "clock_alerts", {});
+    if (alertDue(sent, job, today)) {
+      await sendMessage(env, env.OWNER_CHAT_ID, status ? clockAlert(job, status)
+        : `⚠ Couldn't start ${w.label}: the bot has no GH_DISPATCH_TOKEN.`);
+      await kvPut(env, "clock_alerts", { ...sent, [job]: today });
+    }
+  }
+  return out;
 }
 
 // Which Telegram files make up each pack the cloud sent — the laptop's `py -m resume.sync` downloads
@@ -591,7 +620,10 @@ async function cronApi(request, env) {
   if (!env.BOT_API_TOKEN || !(await sameSecret(auth, "Bearer " + env.BOT_API_TOKEN)))
     return new Response("unauthorized", { status: 401 });
   if (request.method !== "POST") return new Response("method not allowed", { status: 405 });
-  return Response.json(await runDaily(env));
+  // {"jobs": ["fresh"]} starts that job now, as the cron would; no body = the follow-ups, as before.
+  const body = await request.json().catch(() => ({}));
+  const jobs = Array.isArray(body?.jobs) ? body.jobs.filter((j) => typeof j === "string").slice(0, 3) : [];
+  return Response.json(jobs.length ? await runJobs(env, jobs) : await runDaily(env));
 }
 
 // The laptop and the GitHub Action can't call a service binding, so their messages come through here

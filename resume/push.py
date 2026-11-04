@@ -565,8 +565,9 @@ def main() -> int:
     run(n=n, min_score=_arg(args, "--min-score", DEFAULT_MIN_SCORE), dry="--dry" in args,
         any_day="--any-day" in args)
     # Sundays, on the scheduled cloud run only — a pack he dispatches by hand on a Sunday must not
-    # send the shortlist a second time.
-    if date.today().weekday() == 6 and os.environ.get("GITHUB_EVENT_NAME") == "schedule":
+    # send the shortlist a second time. The bot's cron starts that run with scheduled=true (5 Nov).
+    if date.today().weekday() == 6 and (os.environ.get("GITHUB_EVENT_NAME") == "schedule"
+                                        or os.environ.get("OH_SCHEDULED") == "true"):
         try:
             weekly()
         except Exception as e:  # noqa: BLE001 — the packs already went out; the shortlist is a bonus
