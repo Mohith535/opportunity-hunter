@@ -270,6 +270,10 @@ def _notify(new_items, test):
         # Telegram refuses a whole message over one bad tag; the digest must never be lost to the extra line.
         if not telegram.send_telegram(f"{head}\n\n{_posts_line()}", buttons=buttons):
             telegram.send_telegram(head, buttons=buttons)
+        # EDI, his one chat, gets one line; the list and its buttons stay here.
+        top = max(crit + high, key=policy.effective_score)
+        telegram.tell("digest", f"🌅 OPH found {_tg_escape(stat_line)} today. Top: <b>{_tg_escape(top.title[:90])}</b>. "
+                                "The full list is in OPH's chat.", fallback=False)
 
 
 def _posts_line() -> str:

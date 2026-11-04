@@ -65,8 +65,23 @@ export function applicationsList(tracker) {
     .filter(([, e]) => e && e.status === "applied")
     .map(([key, e]) => ({ key, title: e.title || "", status: "applied", applied_at: appliedOn(e),
                          outcome: e.outcome || null, source: e.source || ((e.tags || []).includes("edi") ? "edi" : "oph"),
-                         url: e.url || "", company: e.company || "" }))
+                         url: e.url || "", company: e.company || "", reply_seen_at: e.reply_seen_at || "" }))
     .sort((a, b) => (a.applied_at < b.applied_at ? 1 : a.applied_at > b.applied_at ? -1 : 0));
+}
+
+/** EDI's Tell.tell() contract (4 Nov, EDI worker/src/main.ts): his one chat. */
+export const TELL_KINDS = ["followup", "reply_alert", "reminder", "weekly", "pack_ready", "digest"];
+
+/** The kinds EDI_KINDS (a wrangler var, "followup,reminder") sends to EDI; anything else stays here. */
+export function ediKinds(s) {
+  return new Set(String(s || "").split(",").map((k) => k.trim()).filter((k) => TELL_KINDS.includes(k)));
+}
+
+/** OPH's Telegram keyboard → EDI's [[{label, data}]]. Only tap buttons travel (EDI relays the tap back
+ *  through Intake.tap); a link button has no data. EDI adds "oph:", so data must be ≤ 60 bytes. */
+export function toEdi(buttons) {
+  return (buttons || []).map((row) => row.filter((b) => b && b.callback_data && b.callback_data.length <= 60)
+    .map((b) => ({ label: b.text, data: b.callback_data }))).filter((row) => row.length).slice(0, 8);
 }
 
 /** What his tracker and the 📦 card need from a packet — the same fields a feed item has. */

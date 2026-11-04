@@ -286,6 +286,10 @@ def pack_one(item: dict, score: int, profile: dict, dry: bool = False, requested
         _send_document(path, name, reply_to=first, silent=True, record=sent)
     synced = record_pack(item, slug, sent)
     say(f"[push] sent{label}: {status}" + ("" if synced else " (not recorded for laptop sync)"))
+    # EDI, his one chat, hears that it came; the files stay in OPH's chat (a file id belongs to one bot).
+    from notifiers.telegram import tell  # noqa: PLC0415
+    tell("pack_ready", f"📦 Your resume pack for <b>{html.escape(item.get('title', '')[:90])}</b> is in OPH's chat.",
+         fallback=False)
     return "sent"
 
 
@@ -532,14 +536,11 @@ def weekly(dry: bool = False) -> int:
         if not config.PUBLIC_LOGS:
             print(re.sub(r"<[^>]+>", "", html.unescape(text)))
         return n
-    try:
-        requests.post(f"https://api.telegram.org/bot{config.TELEGRAM_BOT_TOKEN}/sendMessage",
-                      json={"chat_id": config.TELEGRAM_CHAT_ID, "text": text, "parse_mode": "HTML",
-                            "disable_web_page_preview": True, "reply_markup": {"inline_keyboard": kb}},
-                      timeout=config.REQUEST_TIMEOUT)
+    from notifiers.telegram import tell  # noqa: PLC0415
+    if tell("weekly", text, kb):          # EDI's chat once switched over; OPH's otherwise, or if EDI refuses
         say(f"[weekly] sent {n} pick(s) from {len(items)} item(s) this week")
-    except requests.RequestException as ex:
-        log(f"[weekly] send failed: {type(ex).__name__}", level="WARN")
+    else:
+        log("[weekly] send failed", level="WARN")
     return n
 
 

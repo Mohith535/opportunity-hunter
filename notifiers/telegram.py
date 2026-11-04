@@ -30,6 +30,25 @@ def is_configured() -> bool:
     return config.telegram_configured()
 
 
+def tell(kind: str, text: str, buttons: list | None = None, fallback: bool = True) -> bool:
+    """His one chat (4 Nov): through the bot's POST /tell, which sends a kind switched over to EDI there and
+    anything else to OPH's chat. If the bot can't be reached, straight to OPH's chat (unless fallback is
+    False: a one-liner EDI gets on top of a message OPH's chat already has). Never raises."""
+    from filters.target import _bot  # noqa: PLC0415
+    url, tok = _bot()
+    if url:
+        try:
+            r = requests.post(f"{url}/tell", json={"kind": kind, "text": text, "buttons": buttons or [],
+                                                   "fallback": fallback},
+                              headers={"Authorization": f"Bearer {tok}"}, timeout=config.REQUEST_TIMEOUT)
+            if r.ok and r.json().get("ok"):
+                return True
+            log(f"[telegram] /tell {kind}: {r.status_code}", level="WARN")
+        except (requests.RequestException, ValueError) as e:
+            log(f"[telegram] /tell {kind} failed: {type(e).__name__}", level="WARN")
+    return send_telegram(text, buttons) if fallback else False
+
+
 def send_telegram(text: str, buttons: list | None = None,
                   parse_mode: str = "HTML") -> bool:
     """Send a message to the configured chat.

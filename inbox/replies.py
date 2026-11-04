@@ -22,6 +22,7 @@ from datetime import date, timedelta
 import requests
 
 import config
+from notifiers.telegram import tell
 from util import log
 
 STATE = config.DATA_DIR / "inbox_replies_asked.json"
@@ -83,6 +84,21 @@ def message(hit: dict) -> tuple[str, list]:
     return text, kb
 
 
+def seen(key: str) -> bool:
+    """Mark on the tracker row that a reply landed (reply_seen_at, today), so EDI's "did I apply to X?" can
+    say "a reply came on 3 Nov; you haven't said what it was". The outcome stays his tap. Never raises."""
+    from filters.target import _bot  # noqa: PLC0415
+    url, tok = _bot()
+    if not url:
+        return False
+    try:
+        return requests.post(f"{url}/reply-seen", json={"key": key}, headers={"Authorization": f"Bearer {tok}"},
+                             timeout=config.REQUEST_TIMEOUT).ok
+    except requests.RequestException as e:
+        log(f"[replies] reply-seen failed: {type(e).__name__}", level="WARN")
+        return False
+
+
 def ask(emails: list[dict]) -> int:
     """Send one message per new matching email. Returns how many were sent. Never raises."""
     from filters.outcomes import fetch_tracker  # noqa: PLC0415
@@ -98,15 +114,10 @@ def ask(emails: list[dict]) -> int:
         if not hit["email_id"] or hit["email_id"] in asked:
             continue
         text, kb = message(hit)
-        try:
-            r = requests.post(f"https://api.telegram.org/bot{config.TELEGRAM_BOT_TOKEN}/sendMessage",
-                              json={"chat_id": config.TELEGRAM_CHAT_ID, "text": text, "parse_mode": "HTML",
-                                    "reply_markup": {"inline_keyboard": kb}}, timeout=config.REQUEST_TIMEOUT)
-            if r.ok:
-                asked.add(hit["email_id"])
-                sent += 1
-        except requests.RequestException as e:
-            log(f"[replies] send failed: {type(e).__name__}", level="WARN")
+        if tell("reply_alert", text, kb):
+            asked.add(hit["email_id"])
+            sent += 1
+            seen(hit["key"])
     if sent:
         STATE.parent.mkdir(exist_ok=True)
         STATE.write_text(json.dumps(sorted(asked)[-500:]), encoding="utf-8")

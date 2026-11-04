@@ -50,6 +50,38 @@ check("7. the message is HTML-escaped (an email subject is not trusted markup)",
 check("8. an old application (over 60 days) is not matched",
       not RP.matches(emails[:1], {"k1": {**tracker["k1"], "applied_at": "2026-07-01"}}, TODAY))
 
+# 4 Nov: his one chat. Alerts go through the bot's /tell (EDI when switched over); a refusal falls back to
+# OPH's chat; the reply date is marked on the row. The network is faked: .env carries the live bot URL.
+import requests  # noqa: E402
+from notifiers import telegram as TG  # noqa: E402
+
+class _R:
+    def __init__(self, code, body): self.status_code, self.ok, self._b = code, code < 400, body
+    def json(self): return self._b
+posts, direct = [], []
+_post, _send = requests.post, TG.send_telegram
+os.environ["OH_WORKER_URL"], os.environ["OH_WORKER_TOKEN"] = "https://bot.example.dev", "t0k"
+TG.send_telegram = lambda text, buttons=None, **k: direct.append(text) or True
+try:
+    requests.post = lambda url, **k: posts.append((url, k.get("json"))) or _R(200, {"ok": True, "via": "edi"})
+    ok1 = TG.tell("reply_alert", "hi", [[{"text": "x", "callback_data": "out:interview:k1"}]])
+    requests.post = lambda url, **k: posts.append((url, k.get("json"))) or _R(200, {"ok": False, "via": "none"})
+    ok2 = TG.tell("digest", "one line", fallback=False)
+    requests.post = lambda url, **k: (_ for _ in ()).throw(requests.ConnectionError("down"))
+    ok3 = TG.tell("weekly", "picks")
+    requests.post = lambda url, **k: posts.append((url, k.get("json"))) or _R(200, {"ok": True})
+    seen_ok = RP.seen("k1")
+finally:
+    requests.post, TG.send_telegram = _post, _send
+    os.environ.pop("OH_WORKER_URL", None); os.environ.pop("OH_WORKER_TOKEN", None)
+check("5. a reply alert goes through the bot's /tell with its kind and buttons, nothing sent directly",
+      ok1 and posts[0][0] == "https://bot.example.dev/tell" and posts[0][1]["kind"] == "reply_alert"
+      and posts[0][1]["buttons"][0][0]["callback_data"] == "out:interview:k1" and "hi" not in direct, posts[:1])
+check("6. a one-liner with no fallback is not re-sent to OPH's chat when EDI says no",
+      ok2 is False and "one line" not in direct)
+check("7. the bot unreachable → straight to OPH's chat, so the message is not lost", ok3 and "picks" in direct)
+check("8. the reply date is marked on that row, by key only", seen_ok and posts[-1] == ("https://bot.example.dev/reply-seen", {"key": "k1"}))
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))

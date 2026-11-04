@@ -27,7 +27,8 @@
 import { applyCommand, formatTarget, validTarget, HELP as TARGET_HELP } from "./target.js";
 import { appUser } from "./webapp.js";
 import { WorkerEntrypoint } from "cloudflare:workers";
-import { validatePacket, intakeKey, statusesFor, applicationsList, itemFromPacket, INTAKE_TTL } from "./intake.js";
+import { validatePacket, intakeKey, statusesFor, applicationsList, itemFromPacket, INTAKE_TTL,
+         TELL_KINDS, ediKinds, toEdi } from "./intake.js";
 import APP_HTML from "./app.html";
 import { duePlan, markFollowed, recordOutcome, followupButtons, followupText, reminderText, outcomeReply,
          reminderButtons, afterReminder, reminderEntry, outsideEntry, OUTCOMES, MAX_PER_DAY } from "./followup.js";
@@ -46,6 +47,7 @@ export default class extends WorkerEntrypoint {
     ORIGIN = url.origin;
     if (url.pathname === "/cron") return cronApi(request, env);
     if (url.pathname === "/remind") return remindApi(request, env);
+    if (url.pathname === "/tell" || url.pathname === "/reply-seen") return tellApi(request, env, url.pathname);
     if (url.pathname === "/target") return targetApi(request, env);
     if (url.pathname.startsWith("/intake/")) return intakeApi(request, env, url.pathname.slice(8));
     if (url.pathname === "/packs") return packsApi(request, env);
@@ -102,6 +104,17 @@ export class Intake extends WorkerEntrypoint {
     catch (e) { return null; }
   }
 
+  // A button he tapped in EDI's chat (EDI strips its "oph:" prefix). The tracker changes exactly as for a
+  // tap here. {ok, reply} — EDI shows reply and removes the buttons only when ok.
+  async tap(data) {
+    try {
+      const r = await applyTap(this.env, String(data || ""), true);
+      return r.ok ? { ok: true, reply: r.reply } : { ok: false, why: r.why };
+    } catch (e) {
+      return { ok: false, why: String(e && e.message || e).slice(0, 120) };
+    }
+  }
+
   async applied(title) {
     try {
       const r = await logOutside(this.env, title, "edi");
@@ -142,11 +155,12 @@ async function handleCallback(env, cb) {
   if (action === "plan") return handlePlan(env, key, cb, chatId);
   if (action === "draft") return handleDraft(env, key, cb, chatId);
   if (action === "pack") return handlePack(env, key, chatId, cb);
-  if (action === "applied" || action === "skip" || action === "remind" || action === "done")
-    return handleStatus(env, action, key, cb);
-  if (action === "out") {                                    // out:<interview|rejected|noreply>:<key>
-    const j = key.indexOf(":");
-    return handleOutcome(env, key.slice(0, j), key.slice(j + 1), cb, chatId);
+  if (["applied", "skip", "remind", "done", "out"].includes(action)) {
+    const r = await applyTap(env, data, false);
+    if (!r.ok) return answerCallback(env, cb.id, r.why);
+    if (action !== "out") return answerCallback(env, cb.id, r.reply);
+    await answerCallback(env, cb.id, "Logged ✅");
+    return sendMessage(env, chatId, r.reply);
   }
   return answerCallback(env, cb.id, "");
 }
@@ -200,15 +214,56 @@ async function packItem(env, key) {
   return p ? { key, title: p.title, url: "", tags: [], score: 0 } : null;
 }
 
-async function handleStatus(env, action, key, cb) {
-  const item = (await findItem(env, key)) || (await packItem(env, key));
-  const status = action === "applied" ? "applied" : action === "skip" ? "skipped" : action === "done" ? "done" : "remind";
-  await setStatus(env, key, status, item);
-  const msg = action === "applied" ? "Marked as applied ✅ — nice one!"
-    : action === "done" ? "Done ✅ — crossed off."
-    : action === "skip" ? "Skipped — I won't nag you about this."
-      : `I'll remind you in ${env.REMIND_DAYS || 3} days ⏰`;
-  return answerCallback(env, cb.id, msg);
+// One tap, wherever he made it: here (handleCallback) or in EDI's chat (Intake.tap, fromEdi). → {ok, reply} or
+// {ok: false, why}. A 📦 from EDI starts the build; the pack itself still arrives in OPH's chat (its files
+// are sent with this bot's token).
+async function applyTap(env, data, fromEdi) {
+  const i = data.indexOf(":");
+  const action = i === -1 ? data : data.slice(0, i), key = i === -1 ? "" : data.slice(i + 1);
+  if (action === "out") {                                    // out:<interview|rejected|noreply>:<key>
+    const j = key.indexOf(":"), kind = key.slice(0, j), k = key.slice(j + 1);
+    const t = await kvGet(env, "tracker", {});
+    if (!t[k] || !OUTCOMES[kind]) return { ok: false, why: "Couldn't find that application." };
+    const today = new Date().toISOString().slice(0, 10);
+    const e = t[k];
+    t[k] = recordOutcome(e, kind, today);
+    await kvPut(env, "tracker", t);
+    return { ok: true, reply: outcomeReply(e, kind, today) };
+  }
+  if (["applied", "skip", "remind", "done"].includes(action)) {
+    const item = (await findItem(env, key)) || (await packItem(env, key));
+    const status = action === "applied" ? "applied" : action === "skip" ? "skipped" : action === "done" ? "done" : "remind";
+    await setStatus(env, key, status, item);
+    return { ok: true, reply: action === "applied" ? "Marked as applied ✅ — nice one!"
+      : action === "done" ? "Done ✅ — crossed off."
+      : action === "skip" ? "Skipped — I won't nag you about this."
+        : `I'll remind you in ${env.REMIND_DAYS || 3} days ⏰` };
+  }
+  if (action === "pack" && fromEdi) {
+    if (!/^[0-9a-f]{12}$/.test(key) || !env.GH_DISPATCH_TOKEN) return { ok: false, why: "That item can't be packed." };
+    const r = await startPack(env, key);
+    return r.status === 204 ? { ok: true, reply: "📦 Building the pack — the resume and job file arrive in OPH's chat in about 2 minutes." }
+      : { ok: false, why: `GitHub refused the build (${r.status}).` };
+  }
+  return { ok: false, why: "OPH can't take that tap." };
+}
+
+// His one chat (4 Nov): a kind named in EDI_KINDS goes to EDI's Tell.tell(); if EDI refuses or throws, or the
+// kind isn't switched over, it comes here, so nothing is lost. fallback=false is for a one-liner EDI gets
+// on top of a message OPH's chat already has (digest, pack_ready).
+async function say(env, kind, text, buttons, fallback = true) {
+  if (env.EDI && ediKinds(env.EDI_KINDS).has(kind)) {
+    try {
+      const r = await env.EDI.tell({ kind, text, buttons: toEdi(buttons) });
+      if (r && r.ok) return { ok: true, via: "edi" };
+      console.log("EDI refused", kind, r && r.why);
+    } catch (e) {
+      console.log("EDI tell threw", kind, e && e.message);
+    }
+  }
+  if (!fallback) return { ok: false, via: "none" };
+  const r = await sendMessage(env, env.OWNER_CHAT_ID, text, buttons);
+  return { ok: r.ok, via: "oph" };
 }
 
 async function handleDraft(env, key, cb, chatId) {
@@ -519,11 +574,11 @@ async function runDaily(env) {
   const plan = duePlan(t, today, Math.max(0, MAX_PER_DAY - already));
   let sent = 0;
   for (const [key, e] of plan.reminders) {
-    const r = await sendMessage(env, chat, reminderText(e), reminderButtons(key, e));
+    const r = await say(env, "reminder", reminderText(e), reminderButtons(key, e));
     if (r.ok) { t[key] = afterReminder(e, today); sent++; }
   }
   for (const [key, e, day] of plan.followups) {
-    const r = await sendMessage(env, chat, followupText(e, day), followupButtons(key));
+    const r = await say(env, "followup", followupText(e, day), followupButtons(key));
     if (r.ok) { t[key] = markFollowed(e, day, today); sent++; }
   }
   if (sent || filled) await kvPut(env, "tracker", t);
@@ -537,6 +592,28 @@ async function cronApi(request, env) {
     return new Response("unauthorized", { status: 401 });
   if (request.method !== "POST") return new Response("method not allowed", { status: 405 });
   return Response.json(await runDaily(env));
+}
+
+// The laptop and the GitHub Action can't call a service binding, so their messages come through here
+// (bearer token): POST /tell {kind, text, buttons?, fallback?} → say(); POST /reply-seen {key} marks that
+// a reply to that application landed in Gmail (inbox/replies.py). Only his tap sets the outcome.
+async function tellApi(request, env, path) {
+  const auth = request.headers.get("Authorization") || "";
+  if (!env.BOT_API_TOKEN || !(await sameSecret(auth, "Bearer " + env.BOT_API_TOKEN)))
+    return new Response("unauthorized", { status: 401 });
+  if (request.method !== "POST") return new Response("method not allowed", { status: 405 });
+  const b = await request.json().catch(() => null);
+  if (path === "/reply-seen") {
+    const t = await kvGet(env, "tracker", {});
+    if (!b || typeof b.key !== "string" || !t[b.key]) return Response.json({ ok: false, why: "no such application" }, { status: 404 });
+    t[b.key].reply_seen_at = new Date().toISOString().slice(0, 10);
+    await kvPut(env, "tracker", t);
+    return Response.json({ ok: true });
+  }
+  if (!b || !TELL_KINDS.includes(b.kind) || typeof b.text !== "string" || !b.text || b.text.length > 4096
+      || (b.buttons !== undefined && !Array.isArray(b.buttons)))
+    return Response.json({ ok: false, why: `kind (${TELL_KINDS.join("/")}), text ≤ 4096, buttons a list` }, { status: 400 });
+  return Response.json(await say(env, b.kind, b.text, b.buttons, b.fallback !== false));
 }
 
 // "Remember this for me": a reminder, or a staged plan of them, set from the laptop (bearer token).
@@ -575,17 +652,6 @@ async function logOutside(env, text, source) {
   t[r[0]] = { ...(t[r[0]] || {}), ...r[1] };
   await kvPut(env, "tracker", t);
   return r;
-}
-
-async function handleOutcome(env, kind, key, cb, chatId) {
-  const t = await kvGet(env, "tracker", {});
-  const e = t[key];
-  if (!e || !OUTCOMES[kind]) return answerCallback(env, cb.id, "Couldn't find that application.");
-  const today = new Date().toISOString().slice(0, 10);
-  t[key] = recordOutcome(e, kind, today);
-  await kvPut(env, "tracker", t);
-  await answerCallback(env, cb.id, "Logged ✅");
-  return sendMessage(env, chatId, outcomeReply(e, kind, today));
 }
 
 // ─── KV state: tracker + taste ───────────────────────────────────────

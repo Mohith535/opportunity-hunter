@@ -1,6 +1,7 @@
 // Tests for src/intake.js — run: node test/intake.test.mjs
 import assert from "node:assert/strict";
-import { validatePacket, intakeKey, statusesFor, applicationsList, itemFromPacket, JD_MIN } from "../src/intake.js";
+import { validatePacket, intakeKey, statusesFor, applicationsList, itemFromPacket, JD_MIN,
+         TELL_KINDS, ediKinds, toEdi } from "../src/intake.js";
 
 const P = {
   v: 1, source: "edi", at: "2026-10-04T10:00:00Z",
@@ -49,7 +50,7 @@ await t("applications: only 'applied' rows, newest first, in EDI's field names",
   const got = applicationsList(tr);
   assert.deepEqual(got.map((a) => a.key), ["ext-zomato", "new", "old"]);
   assert.deepEqual(got[1], { key: "new", title: "EA SWE", status: "applied", applied_at: "2026-10-04",
-                             outcome: "rejected", source: "edi", url: "", company: "" });
+                             outcome: "rejected", source: "edi", url: "", company: "", reply_seen_at: "" });
   tr.new.company = "Electronic Arts";
   assert.equal(applicationsList(tr)[1].company, "Electronic Arts");
   assert.equal(got[2].applied_at, "2026-09-01");          // appliedOn: updated_at for older taps
@@ -60,6 +61,26 @@ await t("applications: only 'applied' rows, newest first, in EDI's field names",
 await t("applications: an empty tracker is [] (applied to nothing), never null", () => {
   assert.deepEqual(applicationsList({}), []);
   assert.deepEqual(applicationsList(undefined), []);
+});
+await t("tell: only the switched-over kinds go to EDI; an unknown kind never does", () => {
+  assert.deepEqual([...ediKinds(" followup, reminder ,bogus,")], ["followup", "reminder"]);
+  assert.equal(ediKinds("").size, 0);
+  assert.equal(ediKinds(undefined).size, 0);
+});
+await t("tell: OPH's keyboard becomes EDI's [[{label, data}]]; link buttons and over-long data are dropped", () => {
+  const kb = [[{ text: "🎉 Interview", callback_data: "out:interview:abc123abc123" }, { text: "Open", url: "https://x" }],
+              [{ text: "Open only", url: "https://y" }],
+              [{ text: "Too long", callback_data: "x".repeat(61) }, { text: "⏰ Again", callback_data: "remind:srfp-2027" }]];
+  assert.deepEqual(toEdi(kb), [[{ label: "🎉 Interview", data: "out:interview:abc123abc123" }],
+                               [{ label: "⏰ Again", data: "remind:srfp-2027" }]]);
+  assert.deepEqual(toEdi(undefined), []);
+  assert.ok(TELL_KINDS.includes("reply_alert") && TELL_KINDS.length === 6);
+});
+await t("applications: reply_seen_at travels to EDI ('' until a reply is spotted)", () => {
+  const got = applicationsList({ a: { status: "applied", applied_at: "2026-10-05", reply_seen_at: "2026-11-03" },
+                                 b: { status: "applied", applied_at: "2026-10-04" } });
+  assert.equal(got[0].reply_seen_at, "2026-11-03");
+  assert.equal(got[1].reply_seen_at, "");
 });
 await t("the tracker item carries title, url and key", () => {
   const it = itemFromPacket("abc123abc123", P);
