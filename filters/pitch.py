@@ -75,6 +75,12 @@ def _prize(text: str) -> int:
     return int(m.group(1)) if m else 0
 
 
+def _fee(text: str) -> int:
+    """What it costs to take part, in rupees ("Registration Fee: ₹250- per person"); 0 when free/unsaid."""
+    m = re.search(r"(?:registration|entry|participation)\s+fees?\s*:?\s*(?:rs\.?|₹|inr)\s*([\d,]{2,})", text.lower())
+    return int(m.group(1).replace(",", "")) if m else 0
+
+
 def pitch(item, personal: bool = False) -> str:
     """Up to two lines: money · name, then fit · urgency. '' when there is nothing true to say."""
     from filters import focus, target  # noqa: PLC0415
@@ -96,6 +102,9 @@ def pitch(item, personal: bool = False) -> str:
     prize = _prize(desc)
     if prize and kind in ("hackathon", "contest"):
         first.append(f"🏆 {_money(prize)} in prizes")
+    fee = _fee(desc)
+    if fee:                       # said up front: with little money, ₹250 decides whether he can go
+        first.append(f"💸 entry fee {_money(fee)}")
 
     # Only on a real opportunity, and only from its title and company: a NEWS story about NVIDIA is not
     # an NVIDIA opportunity, and the first preview said "🏢 NVIDIA" on one.

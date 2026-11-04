@@ -45,6 +45,13 @@ try:
     hack = Opportunity("Some Hack", "https://h", "unstop", "hackathon | Prize: cash 150000", tags=["hackathon"])
     check("7. hackathon prize in lakh grouping", "₹1,50,000 in prizes" in pitch(hack), pitch(hack))
     check("8. nothing true to say → empty", pitch(Opportunity("Random", "https://r", "reddit", "", tags=["news"])) == "")
+    # 4 Nov: 2 of 862 listings since 20 Oct charge an entry fee (TIET Patiala's Kaggle Wars: ₹250 per person)
+    paid = Opportunity("Kaggle Wars", "https://k", "unstop",
+                       "competition | Date of Event: 21st November 2026 Registration Fee: ₹250- per person", tags=["contest"])
+    free = Opportunity("CODE SHIFT 2026", "https://c", "unstop", "hackathon | Registration Fee: Free Mode: Online",
+                       tags=["hackathon"])
+    check("8b. an entry fee is said up front; 'Registration Fee: Free' says nothing",
+          "💸 entry fee ₹250" in pitch(paid) and "fee" not in pitch(free), (pitch(paid), pitch(free)))
     check("9. ₹ grouping", _money(70000) == "₹70,000" and _money(1500000) == "₹15,00,000", _money(1500000))
 finally:
     target.TARGET_FILE = _old; target.reset_cache(); os.unlink(tp)
