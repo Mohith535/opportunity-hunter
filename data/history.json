@@ -155567,6 +155567,87 @@
           "key": "1f3aa3088fa6"
         }
       ]
+    },
+    {
+      "date": "2026-11-04",
+      "items": [
+        {
+          "title": "2027 Intern - Research Intern — Adobe",
+          "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Bangalore/XMLNAME-2027-Intern---Research-Intern_R172424",
+          "source": "ats",
+          "description": "Adobe | Bangalore | via Workday",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "workday:adobe.wd5/adobe/external_experienced:/job/Bangalore/XMLNAME-2027-Intern---Research-Intern_R172424",
+          "score": 7,
+          "ai_score": 9,
+          "ai_summary": "Adobe research internship aligns perfectly with AI research goals, elite signal.",
+          "action_plan": [
+            "Gather recent AI research work (2d)",
+            "Write focused cover letter (4h)",
+            "Submit application (30m)",
+            "Prepare for interview (2d)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 10,
+            "prestige": 10,
+            "deadline": 3,
+            "skill": 9,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Adobe\n📍 Bangalore",
+          "facts": {
+            "company": "Adobe",
+            "location": "Bangalore",
+            "platform": "Workday"
+          },
+          "key": "7d4da8224bb9"
+        },
+        {
+          "title": "Summer 2027 Intern - Embedded Firmware - 5810 — Shield AI",
+          "url": "https://jobs.lever.co/shieldai/ac38d092-f435-4301-880b-48d0e92679a4",
+          "source": "ats",
+          "description": "Shield AI | Dallas, Texas | via Lever",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "lever:shieldai:ac38d092-f435-4301-880b-48d0e92679a4",
+          "score": 7,
+          "ai_score": 8,
+          "ai_summary": "Shield AI is top‑tier AI robotics, high prestige, strong skill boost. · ⚠ verify eligibility: US work‑authorization may be required",
+          "action_plan": [
+            "Check visa/work eligibility (2h)",
+            "Tailor resume to embedded AI (1d)",
+            "Contact recruiter for details (1h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 3,
+            "skill": 8,
+            "time": 7,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "US work‑authorization may be required"
+          },
+          "pitch": "📍 Dallas, Texas",
+          "facts": {
+            "company": "Shield AI",
+            "location": "Dallas, Texas",
+            "platform": "Lever"
+          },
+          "key": "5dbb5711222a"
+        }
+      ]
     }
   ]
 }
