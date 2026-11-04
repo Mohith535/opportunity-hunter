@@ -183,9 +183,13 @@ for p, url, private in zip(P3["projects"][:2], ("https://github.com/x/oph", "htt
                            (False, True)):
     p.update(x_techline="Python", url=url, private=private)
 links_md = GEN.generate_resume_ex(P3, None)[0]
+P4 = copy.deepcopy(P3); P4["projects"][0]["private"] = None             # added by hand: visibility unknown
+unknown_md = GEN.generate_resume_ex(P4, None)[0]
 check("34. a private repo is never linked — a recruiter gets a 404 (nova-cortex, in 15 packs until 5 Nov) — "
       "but the project still shows, and a public repo keeps its link",
       "github.com/x/nova-cortex" not in links_md and "**nova-cortex**" in links_md and "github.com/x/oph" in links_md)
+check("35. a repo whose visibility the profile doesn't know is not linked either (linkedin-agent: None, private)",
+      "github.com/x/oph" not in unknown_md and "**OPHunter**" in unknown_md and "*Python*" in unknown_md)
 
 print("=" * 72)
 for name, ok, detail in R:

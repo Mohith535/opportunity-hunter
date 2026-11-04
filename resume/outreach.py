@@ -124,11 +124,11 @@ def _lead(profile: dict, rows: list) -> tuple[str, str]:
 
 
 def _on_github(profile: dict, names: list[str]) -> bool:
-    """Every named project has a GitHub repo a stranger can open. nova-cortex is private: "the code is on
-    his GitHub" was a 404 for the referrer who checked (5 Nov)."""
+    """Every named project has a GitHub repo the profile says is public. nova-cortex is private: "the code
+    is on his GitHub" was a 404 for the referrer who checked (5 Nov). Unknown (None) counts as private."""
     by = {(p.get(k) or "").lower(): p for p in profile.get("projects") or [] for k in ("name", "x_resume_name")}
     return bool(names) and all("github.com/" in (by.get(n.lower()) or {}).get("url", "")
-                               and not by[n.lower()].get("private") for n in names)
+                               and by[n.lower()].get("private") is False for n in names)
 
 
 def _short(ev: str, n: int = 130) -> str:

@@ -110,7 +110,8 @@ pub = dict(profile, projects=[dict(profile["projects"][0], url="https://github.c
 priv = dict(profile, projects=[dict(profile["projects"][0], url="https://github.com/x/nova-cortex", private=True)])
 check("19. 'the code is on his GitHub' only when a stranger can open it: nova-cortex is private (5 Nov)",
       "on his GitHub" in O.blurb(pub, rows[:1], title) and "on his GitHub" not in O.blurb(priv, rows[:1], title)
-      and "on his GitHub" not in O.blurb(profile, rows[:1], title) and "nova-cortex" in O.blurb(priv, rows[:1], title))
+      and "on his GitHub" not in O.blurb(profile, rows[:1], title) and "nova-cortex" in O.blurb(priv, rows[:1], title)
+      and "on his GitHub" not in O.blurb(dict(profile, projects=[dict(pub["projects"][0], private=None)]), rows[:1], title))
 
 hp = dict(O.hiring_posts("Mumbai"))
 check("16. hiring posts: LinkedIn POST search (not Jobs), last 24 h, newest first; his city added; X live",
