@@ -65,12 +65,12 @@ export function applicationsList(tracker) {
     .filter(([, e]) => e && e.status === "applied")
     .map(([key, e]) => ({ key, title: e.title || "", status: "applied", applied_at: appliedOn(e),
                          outcome: e.outcome || null, source: e.source || ((e.tags || []).includes("edi") ? "edi" : "oph"),
-                         url: e.url || "" }))
+                         url: e.url || "", company: e.company || "" }))
     .sort((a, b) => (a.applied_at < b.applied_at ? 1 : a.applied_at > b.applied_at ? -1 : 0));
 }
 
 /** What his tracker and the 📦 card need from a packet — the same fields a feed item has. */
 export function itemFromPacket(key, p) {
-  return { key, title: `${p.title} — ${p.company}`, url: p.url || "", score: 10, deadline: p.deadline || "",
+  return { key, title: `${p.title} — ${p.company}`, company: p.company || "", url: p.url || "", score: 10, deadline: p.deadline || "",
            tags: ["internship", "edi"], source: "edi" };
 }

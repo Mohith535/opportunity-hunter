@@ -251,6 +251,21 @@ check("11e. a bootcamp is learning, a paid ticket is said, a closed registration
       hs[1].tags == ["learning"] and "paid ticket" in hs[1].description
       and hs[1].url == "https://hack2skill.com/event/bootcamps" and not hs[1].raw["remote"])
 
+# 4 Nov: EDI matches "did I apply to Zenotalent?" — Unstop's title is "Data Analyst Internship"; only the
+# organiser names the employer, and it reached the description but never a field.
+_pg = HK._unstop_page
+HK._unstop_page = lambda cat, page: ([{"id": 1, "title": "Data Analyst Internship", "public_url": "x",
+                                       "organisation": {"name": " Zenotalent "}}, {"id": 2, "title": "Quiz"}]
+                                     if page == 1 else [])
+try:
+    us = HK._fetch_unstop_category("internships")
+finally:
+    HK._unstop_page = _pg
+from models import Opportunity as _O  # noqa: E402
+check("11f. Unstop: the organiser is the item's company, and lands in history's facts; none → no company",
+      us[0].raw["company"] == "Zenotalent" and us[0].to_dict()["facts"]["company"] == "Zenotalent"
+      and "company" not in (us[1].to_dict().get("facts") or {}), [u.raw.get("company") for u in us])
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))

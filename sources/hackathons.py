@@ -458,7 +458,7 @@ def _unstop_description(o: dict, label: str, region: str, tag_text: str) -> str:
     if skills:
         parts.append("Skills: " + ", ".join(skills[:8]))
 
-    org = (o.get("organisation") or {}).get("name") if isinstance(o.get("organisation"), dict) else None
+    org = _unstop_org(o)
     if org:
         parts.append(f"By {org}")
 
@@ -466,6 +466,10 @@ def _unstop_description(o: dict, label: str, region: str, tag_text: str) -> str:
     if details:
         parts.append(details[:700])
     return " | ".join(parts)
+
+
+def _unstop_org(o: dict) -> str:
+    return ((o.get("organisation") or {}).get("name") or "").strip() if isinstance(o.get("organisation"), dict) else ""
 
 
 def _unstop_page(category: str, page: int) -> list:
@@ -511,7 +515,9 @@ def _fetch_unstop_category(category: str) -> list[Opportunity]:
                 deadline=_unstop_deadline(o),
                 native_id=str(o.get("id", "")),
                 tags=[label],
-                raw={"status": o.get("status"), "region": region, "category": category,
+                # company → facts.company in history (4 Nov): Unstop titles rarely name the employer, so
+                # EDI's "did I apply to Zenotalent?" had only the URL slug to match.
+                raw={"status": o.get("status"), "region": region, "category": category, "company": _unstop_org(o),
                      "registrations": o.get("registerCount"), "views": o.get("viewsCount"),
                      **_unstop_pay_location(o)},
             )

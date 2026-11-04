@@ -108,6 +108,7 @@ def write_feed(limit: int = 100) -> None:
         feed.append({
             "key": d.get("key") or dedup_key_from_dict(d),
             "title": d.get("title", ""),
+            "company": (d.get("facts") or {}).get("company", ""),   # the bot keeps it on a tap, for EDI
             "url": d.get("url", ""),
             "source": d.get("source", ""),
             "score": _score(d),

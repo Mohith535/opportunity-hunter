@@ -26,7 +26,8 @@ store.ETAG_FILE = tmp / ".cloud_etag"
 def item(k, score=5):
     return {"key": k, "title": f"T{k}", "url": f"https://x/{k}", "source": "s", "score": score, "tags": []}
 
-cloud = {"runs": [{"date": "2026-10-19", "items": [item("a")]}, {"date": "2026-10-21", "items": [item("m", 9)]}]}
+cloud = {"runs": [{"date": "2026-10-19", "items": [item("a")]},
+                  {"date": "2026-10-21", "items": [dict(item("m", 9), facts={"company": "Zenotalent"})]}]}
 laptop = {"runs": [{"date": "2026-10-19", "items": [item("a")]}, {"date": "2026-10-20", "items": [item("l")]}]}
 m = store.merge_history(laptop, cloud)
 check("1. both copies' runs, a shared run once, in date order",
@@ -51,6 +52,8 @@ check("5. merge_in writes the union and refreshes the feed — the cloud's 9/10 
 import re
 check("5b. the feed's updated_at is a full UTC time, so EDI's 'hunted N hours ago' is not a guess",
       re.fullmatch(r"\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ", feed["updated_at"]), feed["updated_at"])
+check("5c. the feed carries the company, so a tap stores it for EDI; unknown is ''",
+      feed["items"][0]["company"] == "Zenotalent" and feed["items"][1]["company"] == "", feed["items"][:2])
 
 class _Resp:
     def __init__(self, code, body=None, etag=""):

@@ -604,6 +604,7 @@ async function setStatus(env, key, status, item) {
   if (item) {
     e.title = item.title; e.url = item.url; e.score = item.score;
     e.deadline = item.deadline; e.tags = item.tags || [];
+    if (item.company) e.company = item.company;
   }
   if (status === "remind") {
     const days = Number(env.REMIND_DAYS || 3);

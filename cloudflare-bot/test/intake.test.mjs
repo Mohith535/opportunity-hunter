@@ -49,7 +49,9 @@ await t("applications: only 'applied' rows, newest first, in EDI's field names",
   const got = applicationsList(tr);
   assert.deepEqual(got.map((a) => a.key), ["ext-zomato", "new", "old"]);
   assert.deepEqual(got[1], { key: "new", title: "EA SWE", status: "applied", applied_at: "2026-10-04",
-                             outcome: "rejected", source: "edi", url: "" });
+                             outcome: "rejected", source: "edi", url: "", company: "" });
+  tr.new.company = "Electronic Arts";
+  assert.equal(applicationsList(tr)[1].company, "Electronic Arts");
   assert.equal(got[2].applied_at, "2026-09-01");          // appliedOn: updated_at for older taps
   assert.equal(got[2].outcome, null);
   assert.equal(got[2].source, "oph");
@@ -64,5 +66,6 @@ await t("the tracker item carries title, url and key", () => {
   assert.equal(it.key, "abc123abc123");
   assert.match(it.title, /Software Engineer Intern — Electronic Arts/);
   assert.equal(it.url, P.url);
+  assert.equal(it.company, "Electronic Arts");          // kept on the tap, for "did I apply to EA?"
 });
 console.log(`${n}/${n} passed`);
