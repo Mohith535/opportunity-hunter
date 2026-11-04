@@ -1,119 +1,6 @@
 {
-  "updated_at": "2026-11-03",
+  "updated_at": "2026-11-04",
   "items": [
-    {
-      "key": "20832ee9b29c",
-      "title": "DevSecOps Engineer Internship — Metasys",
-      "url": "https://himalayas.app/companies/metasys/jobs/devsecops-engineer-internship?utm_source=api",
-      "source": "remote",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "165c2c37b8de",
-      "title": "Reliable AI-Assisted Decisions via Selective Auditing",
-      "url": "https://arxiv.org/abs/2610.31662v1",
-      "source": "arxiv",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "research",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "885eeaaff9df",
-      "title": "Build, Ship, Shape: Amazon Developer Hackathon",
-      "url": "https://amazonappdev2026.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-10-23",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "82d68b4a8577",
-      "title": "SMBC Programming Contest #2 (AtCoder Beginner Contest 481） (atcoder.jp)",
-      "url": "https://atcoder.jp/contests/abc481",
-      "source": "clist",
-      "score": 10,
-      "deadline": "2026-10-24",
-      "tags": [
-        "contest",
-        "competitive programming",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "280e51eb23d1",
-      "title": "Engineers' Ring of Honour 2026",
-      "url": "https://unstop.com/scholarships/engineers-ring-of-honour-2026-ies-university-bhopal-1757655",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-25",
-      "tags": [
-        "scholarship",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "c22f5f148362",
-      "title": "Build With AI: Basics",
-      "url": "https://learn-ai-basics.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-10-26",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "572ad524a948",
-      "title": "Samvad: Call For Article",
-      "url": "https://unstop.com/competitions/samvad-call-for-article-sp-mandalis-prin-l-n-welingkar-institute-of-management-development-research-mumbai--1771544",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-23",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "acb67832564b",
-      "title": "Hefty-Hacks",
-      "url": "https://hefty-hacks.devfolio.co",
-      "source": "devfolio",
-      "score": 10,
-      "deadline": "2026-10-31",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "540fdbf17e92",
       "title": "Support Engineer Internship — Metasys",
@@ -180,6 +67,49 @@
       "tags": [
         "internship",
         "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "82d68b4a8577",
+      "title": "SMBC Programming Contest #2 (AtCoder Beginner Contest 481） (atcoder.jp)",
+      "url": "https://atcoder.jp/contests/abc481",
+      "source": "clist",
+      "score": 10,
+      "deadline": "2026-10-24",
+      "tags": [
+        "contest",
+        "competitive programming",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "280e51eb23d1",
+      "title": "Engineers' Ring of Honour 2026",
+      "url": "https://unstop.com/scholarships/engineers-ring-of-honour-2026-ies-university-bhopal-1757655",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-25",
+      "tags": [
+        "scholarship",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c22f5f148362",
+      "title": "Build With AI: Basics",
+      "url": "https://learn-ai-basics.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-10-26",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -577,6 +507,20 @@
       "action_plan": []
     },
     {
+      "key": "acb67832564b",
+      "title": "Hefty-Hacks",
+      "url": "https://hefty-hacks.devfolio.co",
+      "source": "devfolio",
+      "score": 10,
+      "deadline": "2026-10-31",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "19fb4e3432a7",
       "title": "Automate your 99% work and build software without code workshop",
       "url": "https://unstop.com/workshops-webinars/how-to-become-full-stack-developer-using-ai-upsc-zone-ai-1772077",
@@ -904,6 +848,90 @@
       "action_plan": []
     },
     {
+      "key": "a432125806d5",
+      "title": "Samvad: Call For Article",
+      "url": "https://unstop.com/competitions/samvad-call-for-article-sp-mandalis-prin-l-n-welingkar-institute-of-management-development-research-mumbai--1791236",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-09",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3ee1be4035d8",
+      "title": "Free Scholarship Test on Quantum Computing in Hyderabad | 15 November 2026",
+      "url": "https://unstop.com/scholarships/free-scholarship-test-on-quantum-computing-in-hyderabad-15-november-2026-quality-thought-info-systems-1791407",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-13",
+      "tags": [
+        "scholarship",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "838219fffa98",
+      "title": "Beyond Software Development: Exploring Higher Studies and Research in AI/ML",
+      "url": "https://unstop.com/workshops-webinars/beyond-software-development-exploring-higher-studies-and-research-in-aiml-techbairn-research-1792786",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-12",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "14ba8ae76b06",
+      "title": "MassX CTF 2026",
+      "url": "https://unstop.com/hackathons/massx-ctf-2026-panipat-institute-of-engineering-technology-piet-panipat-1791573",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-14",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8aa0cf2b9338",
+      "title": "FMA Gargi X FIC DDUC Finance Case Competition",
+      "url": "https://unstop.com/competitions/fma-gargi-x-fic-dduc-finance-case-competition-finance-management-association-gargi-and-finance-and-investme-1791164",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-10",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "39ae805c092a",
+      "title": "Agentic AI Hackathon",
+      "url": "https://unstop.com/hackathons/agentic-ai-hackathon-product-space-1792269",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-14",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "2e6755ba4b69",
       "title": "AI Engineering & Open-Source Development Internship",
       "url": "https://unstop.com/internships/ai-engineering-open-source-development-internship-alphashotsai-1774132",
@@ -1144,21 +1172,22 @@
       ]
     },
     {
-      "key": "d3afe25bccd9",
-      "title": "MLOps Engineer Internship — Metasys",
-      "url": "https://himalayas.app/companies/metasys/jobs/mlops-engineer-internship?utm_source=api",
-      "source": "remote",
-      "score": 8,
+      "key": "4c5000e96828",
+      "title": "Meta — Research Scientist Intern - GenAI Safety",
+      "url": "https://www.metacareers.com/jobs/993713283787464",
+      "source": "internships",
+      "score": 9,
       "deadline": null,
       "tags": [
         "internship",
-        "focus:internship"
+        "focus:internship",
+        "eligibility:verify"
       ],
-      "ai_summary": "MLOps aligns with AI engineering, high‑impact, resume‑worthy for top labs.",
+      "ai_summary": "Meta GenAI Safety research is elite, directly matches AI safety interest.",
       "action_plan": [
-        "Read Metasys MLOps description (15m)",
-        "Prepare portfolio of deployed models (2h)",
-        "Apply (20m)"
+        "Read recent Meta safety publications (2h)",
+        "Prepare a short research proposal (3h)",
+        "Apply with detailed CV and statement (2h)"
       ]
     },
     {
@@ -1457,36 +1486,6 @@
       "key": "9c1600f730d3",
       "title": "Amperesand — AI/ML Engineer Intern",
       "url": "https://job-boards.greenhouse.io/amperesand/jobs/4465899009",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "27baff781eab",
-      "title": "Meta — Research Scientist Intern - AI Core Machine Learning",
-      "url": "https://www.metacareers.com/jobs/1648122343381284",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "33eb2aeeac5a",
-      "title": "Meta — Research Scientist Intern - Wearable Sensing & Human Motion Analysis",
-      "url": "https://www.metacareers.com/jobs/1137225375529389",
       "source": "internships",
       "score": 8,
       "deadline": null,
