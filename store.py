@@ -84,16 +84,20 @@ def append_history(items: list) -> None:
     _save(config.HISTORY_FILE, {"runs": runs})
 
 
-def write_feed(limit: int = 100) -> None:
+def write_feed(limit: int = 100, hunted: bool = False) -> None:
     """Write a compact, key-bearing feed of the top opportunities for the cloud bot
     (Cloudflare Worker) to consume — so it never has to parse the whole history or
-    re-derive dedup keys. Union of recent runs, deduped by key, sorted by score."""
+    re-derive dedup keys. Union of recent runs, deduped by key, sorted by score.
+    hunted=True only for the full hunt: it stamps hunted_at, which every other write carries over."""
     from models import dedup_key_from_dict
 
     data = _load(config.HISTORY_FILE)
     runs = data.get("runs", [])
+    # The last 12 DAYS of runs, not the last 12 runs: since 4 Nov the hourly watcher appends a small run
+    # each time it alerts (4 on 5 Nov), and 12 runs had started to mean 3 days of the feed, not 12.
+    days = set(sorted({r.get("date", "") for r in runs})[-12:])
     by_key: dict = {}
-    for run in runs[-12:]:                 # recent runs cover what's in live digests
+    for run in (r for r in runs if r.get("date", "") in days):    # recent runs cover what's in live digests
         for d in run.get("items", []):
             key = d.get("key") or dedup_key_from_dict(d)
             by_key[key] = d                # latest wins
@@ -117,9 +121,12 @@ def write_feed(limit: int = 100) -> None:
             "ai_summary": d.get("ai_summary", ""),
             "action_plan": d.get("action_plan", []),
         })
-    # Full UTC time (4 Nov): EDI says "hunted N hours ago" from it; a bare date made that a guess.
-    _save(config.FEED_FILE, {"updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                             "items": feed})
+    # Full UTC times (4 Nov). updated_at = this write, by any run; hunted_at = the last full hunt (5 Nov):
+    # the hourly fresh watcher rewrites the feed too, and EDI's "hunted N hours ago" read 17:20 IST for a
+    # hunt that ran at 08:02. EDI reads hunted_at first (its a6d0b72).
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    hunted_at = now if hunted else _load(config.FEED_FILE).get("hunted_at")
+    _save(config.FEED_FILE, {"updated_at": now, **({"hunted_at": hunted_at} if hunted_at else {}), "items": feed})
 
 
 # ─── THE CLOUD'S COPY (22 Oct 2026) ──────────────────────────────────────────────────────────

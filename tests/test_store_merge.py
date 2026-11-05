@@ -55,6 +55,29 @@ check("5b. the feed's updated_at is a full UTC time, so EDI's 'hunted N hours ag
 check("5c. the feed carries the company, so a tap stores it for EDI; unknown is ''",
       feed["items"][0]["company"] == "Zenotalent" and feed["items"][1]["company"] == "", feed["items"][:2])
 
+_kept = {f: f.read_text(encoding="utf-8") for f in (config.HISTORY_FILE, config.FEED_FILE)}   # 6–7 build on these
+# 5 Nov: the hunt committed at 02:32Z, but the hourly fresh watcher rewrote the feed at 11:50Z, and EDI's
+# "hunted N hours ago" read the watcher's time. hunted_at is the hunt's; every other write carries it.
+config.FEED_FILE.write_text(json.dumps({"updated_at": "2026-11-05T02:32:31Z", "hunted_at": "2026-11-05T02:32:31Z",
+                                        "items": []}), encoding="utf-8")
+store.write_feed()                                   # the fresh watcher (or a laptop merge): not a hunt
+f1 = json.loads(config.FEED_FILE.read_text(encoding="utf-8"))
+store.write_feed(hunted=True)                        # the next morning's hunt
+f2 = json.loads(config.FEED_FILE.read_text(encoding="utf-8"))
+check("5d. hunted_at moves only with a hunt: a fresh write keeps 02:32Z while updated_at moves on",
+      f1["hunted_at"] == "2026-11-05T02:32:31Z" and f1["updated_at"] != "2026-11-05T02:32:31Z"
+      and f2["hunted_at"] == f2["updated_at"], (f1.get("hunted_at"), f2.get("hunted_at")))
+
+# 13 small watcher runs today must not push yesterday's whole hunt out of the feed (runs[-12:] did).
+config.HISTORY_FILE.write_text(json.dumps({"runs": [{"date": "2026-11-04", "items": [item("hunt")]}]
+                                          + [{"date": "2026-11-05", "items": [item(f"f{n}")]} for n in range(13)]}),
+                               encoding="utf-8")
+store.write_feed()
+keys = {d["key"] for d in json.loads(config.FEED_FILE.read_text(encoding="utf-8"))["items"]}
+check("5e. the feed covers the last 12 days of runs, not the last 12 runs", "hunt" in keys and len(keys) == 14, keys)
+for f, text in _kept.items():
+    f.write_text(text, encoding="utf-8")
+
 class _Resp:
     def __init__(self, code, body=None, etag=""):
         self.status_code, self._b, self.headers = code, body, ({"ETag": etag} if etag else {})

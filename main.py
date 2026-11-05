@@ -694,7 +694,7 @@ def run(source_names=None, test=False, fresh=False):
         store.save_seen(seen)
         if new_items:  # don't record empty runs (keeps --recap meaningful)
             store.append_history(new_items)
-        store.write_feed()   # refresh the compact feed the cloud bot reads (its taps find titles here)
+        store.write_feed(hunted=not fresh)   # the compact feed the cloud bot reads (its taps find titles here)
 
     # 6. Notify
     if fresh:
