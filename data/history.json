@@ -158114,6 +158114,125 @@
           "key": "4de211809843"
         }
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "items": [
+        {
+          "title": "PA Consulting — Digital Apprentice - Software Development",
+          "url": "https://jobs.smartrecruiters.com/PAConsulting/744000159817990",
+          "source": "internships",
+          "description": "internship | PA Consulting | Belfast, UK | Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "c0036d75-16b6-4624-bba3-ee8ff5d0f90d",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "PA Consulting apprenticeship offers elite exposure, AI‑adjacent projects · ⚠ verify eligibility: UK location may require work visa/residency",
+          "action_plan": [
+            "Research visa eligibility (2h)",
+            "Contact recruiter for remote options (1h)",
+            "Prepare application (3d)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 8,
+            "deadline": 4,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "UK location may require work visa/residency"
+          },
+          "pitch": "📍 Belfast, Uk",
+          "facts": {
+            "company": "PA Consulting",
+            "location": "Belfast, UK"
+          },
+          "key": "c258e06637e6"
+        },
+        {
+          "title": "PA Consulting — Digital Apprentice - Digital - Software Development",
+          "url": "https://jobs.smartrecruiters.com/PAConsulting/744000159818139",
+          "source": "internships",
+          "description": "internship | PA Consulting | Manchester, UK | Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "8cd2e960-a8c8-4158-a3df-5beb0da1dbf3",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Same as above, strong brand, potential AI‑focused digital work · ⚠ verify eligibility: UK location may require work visa/residency",
+          "action_plan": [
+            "Check remote eligibility (2h)",
+            "Reach out to alumni for guidance (1h)",
+            "Prepare portfolio (3d)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 8,
+            "deadline": 4,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "UK location may require work visa/residency"
+          },
+          "pitch": "📍 Manchester, Uk",
+          "facts": {
+            "company": "PA Consulting",
+            "location": "Manchester, UK"
+          },
+          "key": "d36707e9e5d9"
+        },
+        {
+          "title": "General Dynamics Mission Systems — Software Engineering Intern",
+          "url": "https://careers-gdms.icims.com/jobs/75131/job?mobile=true&needsRedirect=false",
+          "source": "internships",
+          "description": "internship | General Dynamics Mission Systems | Lakewood, OH | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "59e8bcfa-d272-4908-b44c-ffb7fa90719a",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "General Dynamics mission systems internship is high‑prestige, AI‑related defense tech · ⚠ verify eligibility: US location may need visa; eli",
+          "action_plan": [
+            "Verify visa/work permit options (2h)",
+            "Network with current interns (1d)",
+            "Submit tailored application (3d)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 3,
+            "skill": 9,
+            "time": 7,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "US location may need visa; eligibility unclear for Indian st"
+          },
+          "pitch": "📍 Lakewood, Oh",
+          "facts": {
+            "company": "General Dynamics Mission Systems",
+            "location": "Lakewood, OH"
+          },
+          "key": "2cf7465baee6"
+        }
+      ]
     }
   ]
 }
