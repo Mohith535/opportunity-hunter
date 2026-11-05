@@ -12,10 +12,18 @@ No timestamp, no fresh alert; the daily digest still has them.
 """
 from __future__ import annotations
 
+import json
+import os
 import re
 from datetime import datetime, timedelta, timezone
 
 FRESH_HOURS = 48
+# Roles the model already turned down for an alert (5 Nov). They are NOT marked seen, so the daily run
+# still ranks them, and before this they came back every hour: the same 8 rejects filled all 8 model
+# slots from 12:20 to 17:20 IST, and a newer posting ranked under them was never read. Keys and times
+# only (this repo is public); kept for FRESH_HOURS, after which the role isn't fresh anyway.
+CHECKED_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data",
+                            "fresh_checked.json")
 _MONTHS = "january february march april may june july august september october november december".split()
 
 
@@ -75,6 +83,38 @@ def badge(item, now: datetime | None = None) -> str:
 def is_fresh(item, now: datetime | None = None, max_hours: float = FRESH_HOURS) -> bool:
     h = hours_old(item, now)
     return h is not None and h <= max_hours
+
+
+def load_checked(path: str = CHECKED_FILE, now: datetime | None = None) -> dict[str, str]:
+    """{dedup key: when the model turned it down}, without the ones older than FRESH_HOURS."""
+    cut = (now or datetime.now(timezone.utc)) - timedelta(hours=FRESH_HOURS)
+    try:
+        with open(path, encoding="utf-8") as f:
+            d = json.load(f)
+    except (OSError, ValueError):
+        return {}
+    out = {}
+    for k, v in (d.items() if isinstance(d, dict) else ()):
+        try:
+            if datetime.fromisoformat(str(v).replace("Z", "+00:00")) >= cut:
+                out[str(k)] = str(v)
+        except ValueError:
+            continue
+    return out
+
+
+def remember(checked: dict[str, str], keys, now: datetime | None = None) -> int:
+    """Adds the turned-down keys; returns how many are new."""
+    stamp = (now or datetime.now(timezone.utc)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    new = [k for k in keys if k not in checked]
+    checked.update({k: stamp for k in new})
+    return len(new)
+
+
+def save_checked(checked: dict[str, str], path: str = CHECKED_FILE) -> None:
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(dict(sorted(checked.items())), f, indent=1)
+        f.write("\n")
 
 
 if __name__ == "__main__":

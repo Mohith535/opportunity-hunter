@@ -304,12 +304,25 @@ def fresh_alert(it) -> tuple[str, list]:
 
 def _notify_fresh(items, test):
     """Each fresh role is its own message, so a just-posted one never hides inside a list."""
+    sent = 0
     for it in items:
         text, buttons = fresh_alert(it)
         if test:
             log(f"[fresh] would alert: {it.title[:60]}" if not config.PUBLIC_LOGS else "[fresh] would alert 1")
-        else:
-            telegram.tell("fresh", text, buttons)
+        elif telegram.tell("fresh", text, buttons):
+            sent += 1
+    if items and not test:
+        log(f"[fresh] sent {sent} of {len(items)} alerts")     # a count, never a title: the log is public
+
+
+def fresh_pick(items, checked: dict) -> list:
+    """The watcher's candidates for the model: employment roles the employer posted in the last
+    FRESH_HOURS that already score HIGH, best first, and not one the model turned down this window."""
+    from filters import fresh as _fresh
+    from filters import target as _t
+    return sorted((i for i in items if focus.kind_of(i) in _t.EMPLOYMENT_KINDS and _fresh.is_fresh(i)
+                   and policy.effective_score(i) >= config.HIGH_SCORE and i.dedup_key() not in checked),
+                  key=policy.effective_score, reverse=True)[:FRESH_MAX + 3]   # the model may drop some
 
 
 def _posts_line() -> str:
@@ -601,13 +614,10 @@ def run(source_names=None, test=False, fresh=False):
     # already scores HIGH. Everything else is left exactly as it was (not seen), for the daily run.
     if fresh:
         from filters import fresh as _fresh
-        from filters import target as _t
-        before = len(new_items)
-        new_items = sorted((i for i in new_items if focus.kind_of(i) in _t.EMPLOYMENT_KINDS and _fresh.is_fresh(i)
-                            and policy.effective_score(i) >= config.HIGH_SCORE),
-                           key=policy.effective_score, reverse=True)[:FRESH_MAX + 3]   # the model may drop some
+        before, checked = len(new_items), _fresh.load_checked()
+        new_items = fresh_pick(new_items, checked)
         log(f"[fresh] {len(new_items)} of {before} new items were posted in the last {_fresh.FRESH_HOURS} h "
-            "and score HIGH")
+            f"and score HIGH" + (f" ({len(checked)} the model turned down are not read again)" if checked else ""))
 
     # 4a. INTAKE FUNNEL. Sources now fetch wide (hundreds of candidates), so the cheap
     # local rule score decides who pays the expensive costs below. Items under the line
@@ -647,10 +657,14 @@ def run(source_names=None, test=False, fresh=False):
     # rule-score picks came back 6/10 or lower). Not marked seen, so the daily run still ranks them.
     if fresh:
         before = len(new_items)
+        down = [i.dedup_key() for i in new_items if policy.effective_score(i) < config.HIGH_SCORE]
         new_items = sorted((i for i in new_items if policy.effective_score(i) >= config.HIGH_SCORE),
                            key=policy.effective_score, reverse=True)[:FRESH_MAX]
         if before != len(new_items):
             log(f"[fresh] {before - len(new_items)} dropped after the model scored them below HIGH")
+        # Remembered for this window only; never marked seen, so the daily run still ranks them.
+        if _fresh.remember(checked, down) and not test:
+            _fresh.save_checked(checked)
 
     # 4e. The public pitch (job facts only) travels with the item into history/feed — the Mini App's
     # Today tab shows it. The personal one (vs his floor, his roles) is built only for Telegram.

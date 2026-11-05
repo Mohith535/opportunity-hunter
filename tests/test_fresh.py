@@ -59,6 +59,31 @@ check("9. the watcher's Unstop slice never joins the daily run (it reads all of 
       "unstop_jobs" not in sources.get_sources(None) and list(sources.get_sources(["unstop_jobs"])) == ["unstop_jobs"]
       and set(M.FRESH_SOURCES) <= set(sources.available_sources()))
 
+# 5 Nov, live: "[llm] scored 8/8 … 8 dropped after the model scored them below HIGH" every hour from 12:20 to
+# 17:20 IST. Those 8 are never marked seen (the daily run still ranks them), so they came straight back and
+# filled all 8 model slots, and a newer posting ranked under them was never read.
+import tempfile  # noqa: E402
+tmp = os.path.join(tempfile.mkdtemp(), "fresh_checked.json")
+ck = {}
+added = F.remember(ck, ["a", "b"], NOW) + F.remember(ck, ["b", "c"], NOW)
+ck["old"] = "2026-11-01T00:00:00Z"
+F.save_checked(ck, tmp)
+back = F.load_checked(tmp, NOW)
+open(tmp + ".bad", "w").write("{not json")
+check("10. turned-down roles are remembered for 48 h and then forgotten; a broken file means none",
+      added == 3 and set(back) == {"a", "b", "c"} and F.load_checked(tmp + ".bad", NOW) == {}
+      and F.load_checked(tmp + ".missing", NOW) == {})
+
+posted = datetime.now(timezone.utc).isoformat()
+roles = [Opportunity(title=f"Backend Engineer Intern {n} — Acme", url=f"https://acme.dev/jobs/{n}", source="ats",
+                     description="internship", native_id=f"gh:acme:{n}", tags=["internship"], score=10 - n // 5,
+                     raw={"company": "Acme", "posted": posted}) for n in range(9)]
+turned_down = {r.dedup_key(): "x" for r in roles[:8]}
+picked = M.fresh_pick(roles, turned_down)
+check("11. the 8 the model turned down no longer fill every slot: the 9th, ranked under them, is read",
+      [r.native_id for r in picked] == ["gh:acme:8"] and len(M.fresh_pick(roles, {})) == M.FRESH_MAX + 3,
+      [r.native_id for r in picked])
+
 print("=" * 72)
 for name, ok, detail in R:
     print(f"  {'PASS' if ok else 'FAIL'}  {name}" + (f"   [{detail}]" if detail and not ok else ""))
