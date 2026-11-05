@@ -1,111 +1,6 @@
 {
-  "updated_at": "2026-11-05T01:50:56Z",
+  "updated_at": "2026-11-05T02:32:28Z",
   "items": [
-    {
-      "key": "37ea91bcb88a",
-      "title": "Python Developer Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/python-developer-internship-vortizo-ai-1775204",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-07",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "cb6bb3792551",
-      "title": "AI & Machine Learning Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/ai-machine-learning-internship-nexvia-technologies-1774793",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-07",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "202a7b637efa",
-      "title": "Software Engineer Intern — Electronic Arts",
-      "company": "Electronic Arts",
-      "url": "https://jobs.ea.com/en_US/careers/JobDetail/Software-Engineer-Intern/215941",
-      "source": "ats",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5306afebb858",
-      "title": "DevOps Engineer Internship — Metasys",
-      "company": "Metasys",
-      "url": "https://himalayas.app/companies/metasys/jobs/devops-engineer-internship?utm_source=api",
-      "source": "remote",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "14b49c7eb9f1",
-      "title": "Data Scientist Internship — Metasys",
-      "company": "Metasys",
-      "url": "https://himalayas.app/companies/metasys/jobs/data-scientist-internship?utm_source=api",
-      "source": "remote",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "e3062628db1a",
-      "title": "Automation QA Engineer Internship — Metasys",
-      "company": "Metasys",
-      "url": "https://himalayas.app/companies/metasys/jobs/automation-qa-engineer-internship?utm_source=api",
-      "source": "remote",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "72be4bc6d185",
-      "title": "Think Out Loud 5.0",
-      "company": "",
-      "url": "https://unstop.com/competitions/think-out-loud-50-vivekananda-institute-of-professional-studies-vips-delhi-1768983",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-18",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "c22f5f148362",
       "title": "Build With AI: Basics",
@@ -114,21 +9,6 @@
       "source": "devpost",
       "score": 10,
       "deadline": "2026-10-26",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d13c595d2745",
-      "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
-      "company": "",
-      "url": "https://aws-cds-partner.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-10-28",
       "tags": [
         "hackathon",
         "focus:off-topic"
@@ -146,6 +26,21 @@
       "deadline": "2026-10-31",
       "tags": [
         "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d13c595d2745",
+      "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
+      "company": "",
+      "url": "https://aws-cds-partner.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-10-28",
+      "tags": [
+        "hackathon",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -772,21 +667,6 @@
       "action_plan": []
     },
     {
-      "key": "22721c6db917",
-      "title": "Aspiring Women Leaders Scholarship Programme",
-      "company": "",
-      "url": "https://unstop.com/scholarships/crp-aspiring-women-leaders-scholarship-programme-pwc-india-1770348",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-06",
-      "tags": [
-        "scholarship",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "644823033c18",
       "title": "CodeZen India 2026 - National Hackathon",
       "company": "",
@@ -886,6 +766,96 @@
       "deadline": "2026-11-14",
       "tags": [
         "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f5cf9b040795",
+      "title": "Quality Thought Scholarship Test 2026 – Gen AI, Agentic AI, Cyber Security, Python Full Stack & Quantum Computing",
+      "company": "Quality Thought",
+      "url": "https://unstop.com/workshops-webinars/quality-thought-scholarship-test-2026-gen-ai-agentic-ai-cyber-security-python-full-stack-quantum-comp-1794648",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-14",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b9f79684e72f",
+      "title": "Software Track – NITS Hacks 9.0",
+      "company": "National Institute of Technology (NIT), Silchar",
+      "url": "https://unstop.com/hackathons/software-track-nits-hacks-90-national-institute-of-technology-nit-silchar-1794955",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-09",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "739e982f9cad",
+      "title": "Disquisition 9.0",
+      "company": "Indian Institute of Management (IIM), Kashipur",
+      "url": "https://unstop.com/competitions/disquisition-90-iim-kashipur-1791696",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-11",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "19ff7ae7ba2a",
+      "title": "From Developer to Researcher: Navigating Your Future in Technology",
+      "company": "TechBairn Research",
+      "url": "https://unstop.com/workshops-webinars/from-developer-to-researcher-navigating-your-future-in-technology-techbairn-research-1792782",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-12",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d116774f3025",
+      "title": "Db2Hack 2026 | Build AI Applications on IBM Db2",
+      "company": "GL Bajaj Group of Institutions, Mathura, Uttar Pradesh",
+      "url": "https://unstop.com/hackathons/db2hack-2026-build-ai-applications-on-ibm-db2-gl-bajaj-group-of-institutions-mathura-uttar-pradesh-1795047",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-08",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f4ce79c9afd5",
+      "title": "Beyond the AI Hype: The Changing Landscape of Full Stack Development",
+      "company": "TechBairn Research",
+      "url": "https://unstop.com/workshops-webinars/beyond-the-ai-hype-the-changing-landscape-of-full-stack-development-techbairn-research-1792767",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-12",
+      "tags": [
+        "workshop",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -1107,6 +1077,22 @@
       ]
     },
     {
+      "key": "3959b6cb9099",
+      "title": "Codeforces Round 1132 (Div. 2) (codeforces.com)",
+      "company": "",
+      "url": "https://codeforces.com/contests/2284",
+      "source": "clist",
+      "score": 9,
+      "deadline": "2026-11-06",
+      "tags": [
+        "contest",
+        "competitive programming",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "5f5880d8b2b8",
       "title": "Meta — Research Scientist Intern - PAR Safety Evals and Red Teaming",
       "company": "Meta",
@@ -1167,67 +1153,16 @@
       ]
     },
     {
-      "key": "b49f34a312b3",
-      "title": "Security Research INTERN — Microsoft",
-      "company": "Microsoft",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393557043380",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
+      "key": "1f2db15a849b",
+      "title": "College Outreach Internship",
+      "company": "Consivox Solutions Private Limited",
+      "url": "https://unstop.com/internships/college-outreach-intern-consivox-solutions-private-limited-1794966",
+      "source": "unstop",
+      "score": 9,
+      "deadline": "2026-11-18",
       "tags": [
         "internship",
         "focus:internship"
-      ],
-      "ai_summary": "Microsoft security research aligns with AI engineering and high‑prestige resume",
-      "action_plan": [
-        "Update CV (2h)",
-        "Apply via portal (30m)",
-        "Prepare security project demo (1w)",
-        "Follow‑up email (after 2w)"
-      ]
-    },
-    {
-      "key": "8aded8aac3b1",
-      "title": "Draftsman Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/draftsman-internship-automent-1773451",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-05",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "e2a861d468e5",
-      "title": "Campus Outreach & Growth Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/campus-outreach-growth-internship-airkrit-india-pvt-ltd-1773953",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-06",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d94e707de330",
-      "title": "Office of the CEO Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/office-of-ceo-internship-encrypta-in-1773507",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-06",
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1591,6 +1526,69 @@
       "source": "unstop",
       "score": 8,
       "deadline": "2026-10-29",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7e655d063bac",
+      "title": "Founder’s Office Internship",
+      "company": "",
+      "url": "https://unstop.com/internships/founders-office-internship-visanix-global-1779010",
+      "source": "unstop",
+      "score": 8,
+      "deadline": "2026-11-09",
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a12ff53d22ad",
+      "title": "L3Harris Technologies — Associate – Software Engineering Intern",
+      "company": "L3Harris Technologies",
+      "url": "https://jobs.l3harris.com/job/Greenville-Associate,-Software-Engineering-TX-75402/1443908200/?ats=successfactors",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "ca590c6c9d39",
+      "title": "L3Harris Technologies — Software Engineer Intern",
+      "company": "L3Harris Technologies",
+      "url": "https://jobs.l3harris.com/job/Rochester-Intern,-Software-Engineer-NY-14624/1443908600/?ats=successfactors",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c4be4cdbc8bc",
+      "title": "Saviynt — Research Scientist Intern",
+      "company": "Saviynt",
+      "url": "https://jobs.lever.co/saviynt/183188c3-c043-4f91-b3f0-30ec4961f4c7/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
       "tags": [
         "internship",
         "focus:internship"
