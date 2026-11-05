@@ -157961,6 +157961,159 @@
           "key": "e6d686763383"
         }
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "items": [
+        {
+          "title": "Meta — Research Scientist Intern - Generative AI & Computational Photography",
+          "url": "https://www.metacareers.com/jobs/2572072169967580",
+          "source": "internships",
+          "description": "internship | Meta | Cambridge, MA, Burlingame, CA, Redmond, WA, Sunnyvale, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "df8b9abb-bf4b-429e-bea4-1f4446146ba3",
+          "score": 8,
+          "ai_score": 9,
+          "ai_summary": "Meta generative AI research intern, elite signal, aligns with top interests, hard deadline.",
+          "action_plan": [
+            "Read recent Meta GenAI papers (3h)",
+            "Prepare research statement (2h)",
+            "Apply (1h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 10,
+            "deadline": 8,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Meta\n📍 Cambridge, Ma; Burlingame, Ca; Redmond, Wa; Sunnyvale, Ca",
+          "facts": {
+            "company": "Meta",
+            "location": "Cambridge, MA; Burlingame, CA; Redmond, WA; Sunnyvale, CA"
+          },
+          "key": "429cbbf60c2d"
+        },
+        {
+          "title": "Meta — Research Scientist Intern - Spatial Reasoning & Localization",
+          "url": "https://www.metacareers.com/jobs/1218542847568705",
+          "source": "internships",
+          "description": "internship | Meta | Boston, MA, Redmond, WA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "2829786f-ab16-4e99-ae3e-e89a46653381",
+          "score": 8,
+          "ai_score": 9,
+          "ai_summary": "Meta Spatial Reasoning intern, top-tier research, matches AI agents interest.",
+          "action_plan": [
+            "Review spatial reasoning papers (3h)",
+            "Prepare portfolio demo (2h)",
+            "Apply (1h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 10,
+            "deadline": 8,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Meta\n📍 Boston, Ma; Redmond, Wa",
+          "facts": {
+            "company": "Meta",
+            "location": "Boston, MA; Redmond, WA"
+          },
+          "key": "97dbf4336f17"
+        },
+        {
+          "title": "Meta — Research Scientist Intern - Generative AI",
+          "url": "https://www.metacareers.com/jobs/1139996808441103",
+          "source": "internships",
+          "description": "internship | Meta | London, UK, Zürich, Switzerland | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "22d552c2-2ca2-491c-bcbd-f6c23cb08d84",
+          "score": 8,
+          "ai_score": 9,
+          "ai_summary": "Meta Generative AI intern in Europe, elite credential, aligns with core goals.",
+          "action_plan": [
+            "Gather Meta GenAI project examples (2h)",
+            "Write research impact essay (2h)",
+            "Submit (1h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 10,
+            "deadline": 8,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Meta\n📍 London, Uk; Zürich, Switzerland",
+          "facts": {
+            "company": "Meta",
+            "location": "London, UK; Zürich, Switzerland"
+          },
+          "key": "48345a22f35f"
+        },
+        {
+          "title": "Meta — Research Scientist Intern - AI Maps",
+          "url": "https://www.metacareers.com/jobs/2439439363131036",
+          "source": "internships",
+          "description": "internship | Meta | Seattle, WA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "acc1d10c-9e3b-4cd5-a018-7fba5b2fe664",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Meta AI Maps research, high prestige, strong AI relevance, limited slots.",
+          "action_plan": [
+            "Study AI Maps literature (2h)",
+            "Draft project ideas (2h)",
+            "Submit application (1h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 8,
+            "prestige": 9,
+            "deadline": 7,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Meta\n📍 Seattle, Wa",
+          "facts": {
+            "company": "Meta",
+            "location": "Seattle, WA"
+          },
+          "key": "4de211809843"
+        }
+      ]
     }
   ]
 }
