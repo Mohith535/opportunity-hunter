@@ -157619,6 +157619,196 @@
           "key": "64ecc7dca373"
         }
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "items": [
+        {
+          "title": "Toyota Research Institute — Human-Centered AI Research Intern - Human Language Models",
+          "url": "https://jobs.lever.co/tri/d4184c04-b963-489a-9a0b-91bc57d6267e/apply",
+          "source": "internships",
+          "description": "internship | Toyota Research Institute | Los Altos, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "60ae9031-138a-419b-bd54-f4237a95f0ea",
+          "score": 8,
+          "ai_score": 9,
+          "ai_summary": "Top AI lab, aligns with agents/LLMs, strong resume signal.",
+          "action_plan": [
+            "Check visa/eligibility (1h)",
+            "Tailor cover letter to HCAI (2h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 10,
+            "deadline": 6,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Los Altos, Ca",
+          "facts": {
+            "company": "Toyota Research Institute",
+            "location": "Los Altos, CA"
+          },
+          "key": "84b8460de3f5"
+        },
+        {
+          "title": "Toyota Research Institute — Automated Driving Advanced Development Intern - Machine Learning Research",
+          "url": "https://jobs.lever.co/tri/e7cc38d2-2b08-4349-b322-4d56cac9fb1b/apply",
+          "source": "internships",
+          "description": "internship | Toyota Research Institute | Los Altos, CA | Summer 2027, Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "3aceb4c9-14ad-4757-a002-02295684f0ec",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Machine learning focus, high prestige, builds core ML skills.",
+          "action_plan": [
+            "Gather ML project portfolio (2d)",
+            "Write research statement (3h)",
+            "Apply (30m)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 8,
+            "prestige": 10,
+            "deadline": 6,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Los Altos, Ca",
+          "facts": {
+            "company": "Toyota Research Institute",
+            "location": "Los Altos, CA"
+          },
+          "key": "974364af37f0"
+        },
+        {
+          "title": "TikTok — Research Scientist Intern - Monetization Technology - Ads Core",
+          "url": "https://lifeattiktok.com/search/7703777085291415813",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "34d5b977-2661-420f-8b7b-cd912b8eecb7",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "TikTok research intern, good AI exposure, strong brand.",
+          "action_plan": [
+            "Research TikTok AI papers (2h)",
+            "Craft tailored CV (1h)",
+            "Apply (30m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 6,
+            "prestige": 8,
+            "deadline": 5,
+            "skill": 7,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 San Jose, Ca",
+          "facts": {
+            "company": "TikTok",
+            "location": "San Jose, CA"
+          },
+          "key": "6d6377fc713f"
+        },
+        {
+          "title": "Qualcomm — Machine Learning Engineering Intern",
+          "url": "https://qualcomm.eightfold.ai/careers/job/446721969461",
+          "source": "internships",
+          "description": "internship | Qualcomm | Markham, ON, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "c7d8c2f2-7484-461a-acdb-a0a8efece281",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Qualcomm ML internship, high industry prestige, relevant tech.",
+          "action_plan": [
+            "Highlight ML projects (1h)",
+            "Prepare system design prep (2h)",
+            "Submit (30m)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 7,
+            "prestige": 9,
+            "deadline": 5,
+            "skill": 8,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Markham, On, Canada",
+          "facts": {
+            "company": "Qualcomm",
+            "location": "Markham, ON, Canada"
+          },
+          "key": "d83ad64e94e5"
+        },
+        {
+          "title": "PayPal — Machine Learning Engineer Intern",
+          "url": "https://paypal.eightfold.ai/careers/job/274922983149",
+          "source": "internships",
+          "description": "internship | PayPal | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "e60dfb39-6279-46ca-9802-7328d053355a",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "PayPal ML intern, strong brand, solid AI work, good resume boost.",
+          "action_plan": [
+            "Map PayPal ML projects to your work (1h)",
+            "Update CV (1h)",
+            "Apply (30m)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 7,
+            "prestige": 9,
+            "deadline": 5,
+            "skill": 8,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 San Jose, Ca",
+          "facts": {
+            "company": "PayPal",
+            "location": "San Jose, CA"
+          },
+          "key": "6b9ca541ac96"
+        }
+      ]
     }
   ]
 }
