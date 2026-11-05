@@ -158233,6 +158233,49 @@
           "key": "2cf7465baee6"
         }
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "items": [
+        {
+          "title": "June 2027 Co-Op - Software Engineer Intern — Shield AI",
+          "url": "https://jobs.lever.co/shieldai/db8fc063-8856-4404-991c-f287712de949",
+          "source": "ats",
+          "description": "Shield AI | Dallas, Texas | via Lever",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "lever:shieldai:db8fc063-8856-4404-991c-f287712de949",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI‑focused intern at Shield AI, strong relevance but visa uncertainty. · ⚠ verify eligibility: US work authorization may be required",
+          "action_plan": [
+            "1. Verify visa eligibility (2h)",
+            "2. Prepare tailored resume (4h)",
+            "3. Apply via Lever (1d)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 7,
+            "deadline": 3,
+            "skill": 7,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US work authorization may be required"
+          },
+          "pitch": "📍 Dallas, Texas",
+          "facts": {
+            "company": "Shield AI",
+            "location": "Dallas, Texas",
+            "platform": "Lever"
+          },
+          "key": "33fc47b9d5cc"
+        }
+      ]
     }
   ]
 }
