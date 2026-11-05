@@ -1,96 +1,6 @@
 {
-  "updated_at": "2026-11-05T02:32:28Z",
+  "updated_at": "2026-11-05T02:50:54Z",
   "items": [
-    {
-      "key": "c22f5f148362",
-      "title": "Build With AI: Basics",
-      "company": "",
-      "url": "https://learn-ai-basics.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-10-26",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "3f2ca52de870",
-      "title": "Green Forge",
-      "company": "",
-      "url": "https://unstop.com/competitions/green-forge-indian-institute-of-technology-iit-patna-1777333",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-31",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d13c595d2745",
-      "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
-      "company": "",
-      "url": "https://aws-cds-partner.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-10-28",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b42699dc9a89",
-      "title": "IndiaStox Nifty Midcap 100 Predictions Challenge",
-      "company": "",
-      "url": "https://unstop.com/competitions/indiastox-nifty-midcap-100-predictions-challenge-indiastox-1775302",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-31",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a6bcb8f3325d",
-      "title": "Learn, Think, Leverage: Building Your Career in the AI Era",
-      "company": "",
-      "url": "https://unstop.com/workshops-webinars/learn-think-leverage-building-your-career-in-the-ai-era-techbairn-research-1776774",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-29",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "c43e201fe007",
-      "title": "GoDaddy Inclusive Innovation Hackathon 2026",
-      "company": "",
-      "url": "https://www.hackerearth.com/challenges/competitive/godaddy-inclusive-innovation-challenge-2026/",
-      "source": "hackerearth",
-      "score": 10,
-      "deadline": "2026-11-01",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "69e177705dcb",
       "title": "Qloo Agentic Hackathon",
@@ -122,6 +32,36 @@
       "action_plan": []
     },
     {
+      "key": "d13c595d2745",
+      "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
+      "company": "",
+      "url": "https://aws-cds-partner.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-10-28",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a6bcb8f3325d",
+      "title": "Learn, Think, Leverage: Building Your Career in the AI Era",
+      "company": "",
+      "url": "https://unstop.com/workshops-webinars/learn-think-leverage-building-your-career-in-the-ai-era-techbairn-research-1776774",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-29",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "9f8b9879d740",
       "title": "Pitch Tank 6.0",
       "company": "",
@@ -146,6 +86,21 @@
       "deadline": "2026-10-31",
       "tags": [
         "scholarship",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3f2ca52de870",
+      "title": "Green Forge",
+      "company": "",
+      "url": "https://unstop.com/competitions/green-forge-indian-institute-of-technology-iit-patna-1777333",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-31",
+      "tags": [
+        "competition",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -862,25 +817,6 @@
       "action_plan": []
     },
     {
-      "key": "7a8c8f971604",
-      "title": "Applied Sciences INTERN — Microsoft",
-      "company": "Microsoft",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556917519",
-      "source": "ats",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "Microsoft Applied Sciences internship aligns with AI engineer goal",
-      "action_plan": [
-        "Update resume (2h)",
-        "Draft cover letter (1h)",
-        "Submit application (30m)"
-      ]
-    },
-    {
       "key": "ae8edc8dab73",
       "title": "HACK TO THE FUTURE 2027 (AtCoder Heuristic Contest 074) (atcoder.jp)",
       "company": "",
@@ -1168,25 +1104,6 @@
       "action_plan": []
     },
     {
-      "key": "7fd8f84a5826",
-      "title": "AI/ML Engineer Internship — Metasys",
-      "company": "Metasys",
-      "url": "https://himalayas.app/companies/metasys/jobs/ai-ml-engineer-internship?utm_source=api",
-      "source": "remote",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "Direct AI agent work aligns with top interests and career goal, rare remote AI role",
-      "action_plan": [
-        "Study Metasys AI agent stack (2h)",
-        "Create mini agent demo (5h)",
-        "Submit application (30m)"
-      ]
-    },
-    {
       "key": "b6e159e9ebc8",
       "title": "From AI Concepts to Production: The Journey of Autonomous Agents",
       "company": "",
@@ -1204,304 +1121,6 @@
         "Watch session recordings (2h)",
         "Implement a simple autonomous agent (4h)"
       ]
-    },
-    {
-      "key": "ebca42fe4e41",
-      "title": "Science Academies Summer Research Fellowship 2027 (IAS–INSA–NASI)",
-      "company": "",
-      "url": "https://webjapps.ias.ac.in/fellowship2027/",
-      "source": "programs",
-      "score": 8,
-      "deadline": "2026-11-30",
-      "tags": [
-        "research",
-        "internship",
-        "fellowship",
-        "india",
-        "paid",
-        "stipend",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Strong AI research exposure, national prestige, tight deadline",
-      "action_plan": [
-        "Draft 150‑word proposal (2h)",
-        "Contact recommender (1d)",
-        "Submit application (30m)"
-      ]
-    },
-    {
-      "key": "1e6e1d2dff6b",
-      "title": "Microsoft — Software Engineer Intern - Security & Identity",
-      "company": "Microsoft",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393557044771",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Microsoft internship offers elite credential and AI exposure",
-      "action_plan": [
-        "Polish resume for Microsoft (2h)",
-        "Prepare STAR stories (1h)",
-        "Submit application (30m)"
-      ]
-    },
-    {
-      "key": "9881a3d5eb0e",
-      "title": "Siemens — Python Backend Developer Intern - Energy Flexibility Platform",
-      "company": "Siemens",
-      "url": "https://siemens.avature.net/en_US/externaljobs/JobDetail/526984",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4caa2777ad87",
-      "title": "Mayo Clinic — Undergraduate Intern - Neurology AI",
-      "company": "Mayo Clinic",
-      "url": "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/391876",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "dcbf43353bec",
-      "title": "American Express — AI Engineer Intern - Enterprise Technology Services",
-      "company": "American Express",
-      "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26015552",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b7dd8326f764",
-      "title": "Amazon — Software Engineer Intern",
-      "company": "Amazon",
-      "url": "https://amazon.jobs/en/jobs/10587999/software-development-engineer-intern-amazon-leo-summer-2027-usa",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "bb292cba2551",
-      "title": "Simbe Robotics — Data Analytics & Data Science Intern",
-      "company": "Simbe Robotics",
-      "url": "https://jobs.lever.co/SimbeRobotics/96ee45fb-f094-4751-a43d-3e376f32667f/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "2fcb816b0306",
-      "title": "Simbe Robotics — Computer Vision / Applied AI Intern",
-      "company": "Simbe Robotics",
-      "url": "https://jobs.lever.co/SimbeRobotics/d8e862ca-212d-4a88-af74-de400b0c6bf8/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "aa8922b48d26",
-      "title": "Simbe Robotics — Robot Software Engineer Intern",
-      "company": "Simbe Robotics",
-      "url": "https://jobs.lever.co/SimbeRobotics/d91f42b9-50b8-4b5f-8daf-00281d7dd61c/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "37f60663237b",
-      "title": "Multiply Labs — Software Intern",
-      "company": "Multiply Labs",
-      "url": "https://jobs.lever.co/multiplylabs/8203fbb3-4d42-4f6a-ae64-f05c3dcf0e9b/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "152f718b75c4",
-      "title": "Multiply Labs — Robotics Software Engineer Intern",
-      "company": "Multiply Labs",
-      "url": "https://jobs.lever.co/multiplylabs/acca98ab-c206-4f71-b7a5-6977e4828586/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "9c1600f730d3",
-      "title": "Amperesand — AI/ML Engineer Intern",
-      "company": "Amperesand",
-      "url": "https://job-boards.greenhouse.io/amperesand/jobs/4465899009",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "27baff781eab",
-      "title": "Meta — Research Scientist Intern - AI Core Machine Learning",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1648122343381284",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "33eb2aeeac5a",
-      "title": "Meta — Research Scientist Intern - Wearable Sensing & Human Motion Analysis",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1137225375529389",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "dd433d42572e",
-      "title": "Meta — Research Scientist Intern - Meta Recommendation Systems - Core ML",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1023154190171838",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ee04be44a6b8",
-      "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
-      "company": "",
-      "url": "https://minimaxir.com/2026/10/cheap-llms/",
-      "source": "hackernews",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "news",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "bc1faf749913",
-      "title": "Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox",
-      "company": "",
-      "url": "https://arxiv.org/abs/2610.32955v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "89011e22600f",
-      "title": "Where Rounding Happens Matters: Rounding-Location Alignment Stabilizes LLM Reinforcement Learning",
-      "company": "",
-      "url": "https://arxiv.org/abs/2610.32951v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
     },
     {
       "key": "4e43d2038747",
@@ -1592,6 +1211,383 @@
       "tags": [
         "internship",
         "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3d43bfde230c",
+      "title": "Meta — Research Scientist Intern - Generative Recommendation Systems",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/3265378000517806",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Meta research internship aligns with generative AI and top‑lab prestige.",
+      "action_plan": [
+        "Gather publications/Project links (2h)",
+        "Write focused cover letter (1h)",
+        "Submit via Meta portal (30m)"
+      ]
+    },
+    {
+      "key": "4410880f2837",
+      "title": "Meta — Research Scientist Intern - Generative AI",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1694337262064234",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Generative AI focus at Meta is high‑leverage for his goals.",
+      "action_plan": [
+        "Compile relevant GitHub repos (1h)",
+        "Draft tailored cover letter (1h)",
+        "Submit application (30m)"
+      ]
+    },
+    {
+      "key": "b4408edee022",
+      "title": "Amazon — Software Developer Intern - Machine Learning",
+      "company": "Amazon",
+      "url": "https://amazon.jobs/en/jobs/10588762/2027-software-dev-engineer-intern-machine-learning-uk",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "74908255289b",
+      "title": "onsemi — AI & Data Science Intern",
+      "company": "onsemi",
+      "url": "https://hctz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/2506468",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1aca4e549839",
+      "title": "Parallel Systems — Software Engineer Intern - Multiple Teams",
+      "company": "Parallel Systems",
+      "url": "https://boards.greenhouse.io/parallel/jobs/5275690007",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6fc277b986b3",
+      "title": "Glean — Software Engineer Intern",
+      "company": "Glean",
+      "url": "https://job-boards.greenhouse.io/gleanwork/jobs/4747670005",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8d8ad9928ece",
+      "title": "Software Engineer Intern (Summer 2027) — Affirm",
+      "company": "Affirm",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8011590003",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1c239a2d690d",
+      "title": "Software Engineer (Machine Learning) Intern (Summer 2027) — Affirm",
+      "company": "Affirm",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/8008645003",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "86b431c2cff6",
+      "title": "Software Engineer Intern — Coinbase",
+      "company": "Coinbase",
+      "url": "https://www.coinbase.com/careers/positions/8175873?gh_jid=8175873",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "41dea1d0765b",
+      "title": "Software Engineer Intern, Backend (Summer 2027 - Mexico) — Lyft",
+      "company": "Lyft",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8767715002?gh_jid=8767715002",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "29856700080f",
+      "title": "Software Engineer Intern, Backend (Summer 2027 - Montreal) — Lyft",
+      "company": "Lyft",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8796054002?gh_jid=8796054002",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b75ec4cfe3be",
+      "title": "Software Engineer Intern, Backend (Summer 2027 - SF) — Lyft",
+      "company": "Lyft",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8767726002?gh_jid=8767726002",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c528ff3ae5f1",
+      "title": "Software Engineer Intern, Backend (Summer 2027 - Toronto) — Lyft",
+      "company": "Lyft",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8767710002?gh_jid=8767710002",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6c2956419102",
+      "title": "Software Engineer Intern, Frontend (Summer 2027) — Lyft",
+      "company": "Lyft",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8797819002?gh_jid=8797819002",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a51343d62a6d",
+      "title": "Software Engineer Intern, Fullstack (Summer 2027 - Toronto) — Lyft",
+      "company": "Lyft",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8797859002?gh_jid=8797859002",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7cba551ced11",
+      "title": "Patient-specific rubric-based evaluation of large language models across longitudinal cancer care",
+      "company": "",
+      "url": "https://arxiv.org/abs/2610.35847v1",
+      "source": "arxiv",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "research",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4c36ef7b9668",
+      "title": "Founder’s Office Internship",
+      "company": "",
+      "url": "https://unstop.com/internships/founders-office-internship-mskard-business-solutions-1781368",
+      "source": "unstop",
+      "score": 8,
+      "deadline": "2026-11-10",
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "250edff2b071",
+      "title": "Community Growth Internship",
+      "company": "",
+      "url": "https://unstop.com/internships/community-growth-internship-bharat-code-1781723",
+      "source": "unstop",
+      "score": 8,
+      "deadline": "2026-11-11",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3052ab530ffe",
+      "title": "Product and Brand Designer Internship",
+      "company": "",
+      "url": "https://unstop.com/internships/product-and-brand-designer-internship-avro-helmets-1780742",
+      "source": "unstop",
+      "score": 8,
+      "deadline": "2026-11-10",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2430719dd9f8",
+      "title": "Meta — Research Scientist Intern - Video Generation Self-Improvement",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/29358420983776961",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Video generation aligns with generative AI interest; high‑impact project",
+      "action_plan": [
+        "Build a quick video‑gen prototype (2d)",
+        "Link to portfolio (1d)",
+        "Apply with tailored essay (1d)"
+      ]
+    },
+    {
+      "key": "ef27a1a41277",
+      "title": "Meta — Research Scientist Intern - AI Research - Speech & Audio",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1567168005156007",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Speech & audio research matches deep learning goals; elite Meta brand",
+      "action_plan": [
+        "Create a small speech‑to‑text model (2d)",
+        "Document results (1d)",
+        "Submit application (1d)"
+      ]
+    },
+    {
+      "key": "ffe9729e565c",
+      "title": "Meta — Research Scientist Intern - User Modeling and Reinforcement Learning",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1751935042548465",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "533383adea8c",
+      "title": "Meta — Research Scientist Intern - Computer Vision - Video Intelligence",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1789380188995838",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
       ],
       "ai_summary": "",
       "action_plan": []

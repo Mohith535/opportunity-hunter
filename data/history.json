@@ -157540,6 +157540,85 @@
           "key": "fa29b3d0532d"
         }
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "items": [
+        {
+          "title": "ASML — Machine Learning and Image-Based Metrics for EUV System Setup Intern",
+          "url": "https://asml.wd3.myworkdayjobs.com/asmlext1/job/San-Diego-CA-USA/Internship----Machine-Learning-and-image-based-EUV-system-setup_J-00356567",
+          "source": "internships",
+          "description": "internship | ASML | San Diego, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "b90babbc-5fa6-4414-b46f-911f2e400a97",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "ASML ML role aligns with AI focus, high‑profile company, rare chance",
+          "action_plan": [
+            "Gather transcript & CV (1h)",
+            "Tailor cover letter to ML for EUV (2h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 9,
+            "deadline": 3,
+            "skill": 7,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 San Diego, Ca",
+          "facts": {
+            "company": "ASML",
+            "location": "San Diego, CA"
+          },
+          "key": "f72fc5932f4e"
+        },
+        {
+          "title": "Tokyo Electron — Research Scientist Intern - Summer 2027",
+          "url": "https://tel.wd3.myworkdayjobs.com/tel-careers/job/Austin-RiverSouth/Research-Scientist---ATG-Optical-Sensor-Development-Intern--Summer-2027-_R26-02311",
+          "source": "internships",
+          "description": "internship | Tokyo Electron | Austin, TX | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "9bf07bc4-4118-4283-b715-d53f7129e10f",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Tokyo Electron research internship is elite, international exposure, research‑oriented",
+          "action_plan": [
+            "Identify a relevant research topic (2h)",
+            "Draft a brief research proposal (3h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 7,
+            "prestige": 9,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Austin, Tx",
+          "facts": {
+            "company": "Tokyo Electron",
+            "location": "Austin, TX"
+          },
+          "key": "64ecc7dca373"
+        }
+      ]
     }
   ]
 }
