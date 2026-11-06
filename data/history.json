@@ -160185,6 +160185,53 @@
           "key": "341f3204c8d1"
         }
       ]
+    },
+    {
+      "date": "2026-11-06",
+      "items": [
+        {
+          "title": "Generative AI Internship",
+          "url": "https://unstop.com/internships/generative-ai-internship-bleep-education-llp-1798604",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 5,000-12,000/month | Remote/WFH | Eligibility: open to: students; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+27 more) | Team size: 1-1 | By Bleep Education LLP | Kickstart Your AI Journey with Bleep Education. Are you curious about Artificial Intelligence and want to explore how Generative AI is transforming the world? Bleep Education invites enthusiastic and curious 1st and 2nd-year undergraduate students to join our Generative AI Internship Program. This internship is designed for students who want to understand emerging AI technologies, explore practical applications, and develop skills that can help them prepare for the future. What You Will Explore - Fundamentals of Artificial Intelligence and Generative AI. Understanding and working with AI-powered tools. Prompt Engineering and effective AI interactions. Real-world applications of Generative AI",
+          "deadline": "2026-11-20",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1798604",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "Fits his AI focus, builds portfolio, deadline tight, but low brand signal.",
+          "action_plan": [
+            "Day 1: Review internship page, note required docs (1h).",
+            "Day 2: Update resume with TaskFlow/Nova projects (2h).",
+            "Day 3: Draft cover letter linking generative AI interest (1h).",
+            "Day 4: Submit application before deadline (30m).",
+            "Post‑acceptance: Allocate 10 h/week for project work (2 months)."
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 10,
+            "prestige": 4,
+            "deadline": 8,
+            "skill": 7,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "💰 ₹12,000/month\n🏠 remote",
+          "facts": {
+            "pay_min": 5000,
+            "pay_max": 12000,
+            "remote": true,
+            "company": "Bleep Education LLP",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "a9e7a8b332ce"
+        }
+      ]
     }
   ]
 }
