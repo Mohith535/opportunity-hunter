@@ -158276,6 +158276,120 @@
           "key": "33fc47b9d5cc"
         }
       ]
+    },
+    {
+      "date": "2026-11-06",
+      "items": [
+        {
+          "title": "Software Engineer, Internship - Sovereign AI Systems — Palantir",
+          "url": "https://jobs.lever.co/palantir/40840cef-bbd7-4557-bb21-cbdcf4be616e",
+          "source": "ats",
+          "description": "Palantir | London, United Kingdom | via Lever",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "lever:palantir:40840cef-bbd7-4557-bb21-cbdcf4be616e",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Palantir AI role boosts resume and aligns with his AI building focus",
+          "action_plan": [
+            "Update resume (1h)",
+            "Craft cover letter highlighting sovereign AI work (2h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "📍 London, United Kingdom",
+          "facts": {
+            "company": "Palantir",
+            "location": "London, United Kingdom",
+            "platform": "Lever"
+          },
+          "key": "b10f9ac5daef"
+        },
+        {
+          "title": "Palantir — Software Engineer Intern - Sovereign AI Systems",
+          "url": "https://jobs.lever.co/palantir/40840cef-bbd7-4557-bb21-cbdcf4be616e/apply",
+          "source": "internships",
+          "description": "internship | Palantir | London, UK | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "b5c0bed3-38a6-477b-a2cc-dd7efbfd587d",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Same as i0, London location adds international exposure",
+          "action_plan": [
+            "Refresh GitHub portfolio (1h)",
+            "Highlight sovereign AI work in cover letter (2h)",
+            "Submit (30m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "📍 London, Uk",
+          "facts": {
+            "company": "Palantir",
+            "location": "London, UK"
+          },
+          "key": "fc2ce46ab192"
+        },
+        {
+          "title": "Palantir — Software Engineer Intern - Sovereign AI Systems",
+          "url": "https://jobs.lever.co/palantir/cd64bcd4-50bb-4aeb-a135-4e0487ffd312/apply",
+          "source": "internships",
+          "description": "internship | Palantir | NYC | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "911a94f7-eed7-475d-8816-a0b3b9dbfb40",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "NYC Palantir internship offers strong signal and US exposure",
+          "action_plan": [
+            "Update resume for US market (1h)",
+            "Write targeted cover letter (2h)",
+            "Apply (30m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Nyc",
+          "facts": {
+            "company": "Palantir",
+            "location": "NYC"
+          },
+          "key": "4d5c09c8c613"
+        }
+      ]
     }
   ]
 }

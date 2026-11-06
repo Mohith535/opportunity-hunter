@@ -1,111 +1,6 @@
 {
-  "updated_at": "2026-11-05T17:50:57Z",
+  "updated_at": "2026-11-06T01:50:48Z",
   "items": [
-    {
-      "key": "37ea91bcb88a",
-      "title": "Python Developer Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/python-developer-internship-vortizo-ai-1775204",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-07",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "cb6bb3792551",
-      "title": "AI & Machine Learning Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/ai-machine-learning-internship-nexvia-technologies-1774793",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-07",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "202a7b637efa",
-      "title": "Software Engineer Intern — Electronic Arts",
-      "company": "Electronic Arts",
-      "url": "https://jobs.ea.com/en_US/careers/JobDetail/Software-Engineer-Intern/215941",
-      "source": "ats",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5306afebb858",
-      "title": "DevOps Engineer Internship — Metasys",
-      "company": "Metasys",
-      "url": "https://himalayas.app/companies/metasys/jobs/devops-engineer-internship?utm_source=api",
-      "source": "remote",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "14b49c7eb9f1",
-      "title": "Data Scientist Internship — Metasys",
-      "company": "Metasys",
-      "url": "https://himalayas.app/companies/metasys/jobs/data-scientist-internship?utm_source=api",
-      "source": "remote",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "e3062628db1a",
-      "title": "Automation QA Engineer Internship — Metasys",
-      "company": "Metasys",
-      "url": "https://himalayas.app/companies/metasys/jobs/automation-qa-engineer-internship?utm_source=api",
-      "source": "remote",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "72be4bc6d185",
-      "title": "Think Out Loud 5.0",
-      "company": "",
-      "url": "https://unstop.com/competitions/think-out-loud-50-vivekananda-institute-of-professional-studies-vips-delhi-1768983",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-18",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "c22f5f148362",
       "title": "Build With AI: Basics",
@@ -114,21 +9,6 @@
       "source": "devpost",
       "score": 10,
       "deadline": "2026-10-26",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d13c595d2745",
-      "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
-      "company": "",
-      "url": "https://aws-cds-partner.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-10-28",
       "tags": [
         "hackathon",
         "focus:off-topic"
@@ -146,6 +26,21 @@
       "deadline": "2026-10-31",
       "tags": [
         "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d13c595d2745",
+      "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
+      "company": "",
+      "url": "https://aws-cds-partner.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-10-28",
+      "tags": [
+        "hackathon",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -1393,72 +1288,6 @@
       ]
     },
     {
-      "key": "b49f34a312b3",
-      "title": "Security Research INTERN — Microsoft",
-      "company": "Microsoft",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393557043380",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "Microsoft security research aligns with AI engineering and high‑prestige resume",
-      "action_plan": [
-        "Update CV (2h)",
-        "Apply via portal (30m)",
-        "Prepare security project demo (1w)",
-        "Follow‑up email (after 2w)"
-      ]
-    },
-    {
-      "key": "8aded8aac3b1",
-      "title": "Draftsman Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/draftsman-internship-automent-1773451",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-05",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "e2a861d468e5",
-      "title": "Campus Outreach & Growth Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/campus-outreach-growth-internship-airkrit-india-pvt-ltd-1773953",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-06",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d94e707de330",
-      "title": "Office of the CEO Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/office-of-ceo-internship-encrypta-in-1773507",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-06",
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "7fd8f84a5826",
       "title": "AI/ML Engineer Internship — Metasys",
       "company": "Metasys",
@@ -1617,6 +1446,179 @@
         "internship",
         "focus:internship",
         "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2fcb816b0306",
+      "title": "Simbe Robotics — Computer Vision / Applied AI Intern",
+      "company": "Simbe Robotics",
+      "url": "https://jobs.lever.co/SimbeRobotics/d8e862ca-212d-4a88-af74-de400b0c6bf8/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "aa8922b48d26",
+      "title": "Simbe Robotics — Robot Software Engineer Intern",
+      "company": "Simbe Robotics",
+      "url": "https://jobs.lever.co/SimbeRobotics/d91f42b9-50b8-4b5f-8daf-00281d7dd61c/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "37f60663237b",
+      "title": "Multiply Labs — Software Intern",
+      "company": "Multiply Labs",
+      "url": "https://jobs.lever.co/multiplylabs/8203fbb3-4d42-4f6a-ae64-f05c3dcf0e9b/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "152f718b75c4",
+      "title": "Multiply Labs — Robotics Software Engineer Intern",
+      "company": "Multiply Labs",
+      "url": "https://jobs.lever.co/multiplylabs/acca98ab-c206-4f71-b7a5-6977e4828586/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "9c1600f730d3",
+      "title": "Amperesand — AI/ML Engineer Intern",
+      "company": "Amperesand",
+      "url": "https://job-boards.greenhouse.io/amperesand/jobs/4465899009",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "27baff781eab",
+      "title": "Meta — Research Scientist Intern - AI Core Machine Learning",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1648122343381284",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "33eb2aeeac5a",
+      "title": "Meta — Research Scientist Intern - Wearable Sensing & Human Motion Analysis",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1137225375529389",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "dd433d42572e",
+      "title": "Meta — Research Scientist Intern - Meta Recommendation Systems - Core ML",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1023154190171838",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "ee04be44a6b8",
+      "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+      "company": "",
+      "url": "https://minimaxir.com/2026/10/cheap-llms/",
+      "source": "hackernews",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "news",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "bc1faf749913",
+      "title": "Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox",
+      "company": "",
+      "url": "https://arxiv.org/abs/2610.32955v1",
+      "source": "arxiv",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "research",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "89011e22600f",
+      "title": "Where Rounding Happens Matters: Rounding-Location Alignment Stabilizes LLM Reinforcement Learning",
+      "company": "",
+      "url": "https://arxiv.org/abs/2610.32951v1",
+      "source": "arxiv",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "research",
+        "focus:off-topic"
       ],
       "ai_summary": "",
       "action_plan": []
