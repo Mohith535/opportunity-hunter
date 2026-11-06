@@ -1,5 +1,6 @@
 {
-  "updated_at": "2026-11-06T01:50:48Z",
+  "updated_at": "2026-11-06T02:32:59Z",
+  "hunted_at": "2026-11-06T02:32:59Z",
   "items": [
     {
       "key": "c22f5f148362",
@@ -146,21 +147,6 @@
       "deadline": "2026-10-31",
       "tags": [
         "scholarship",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "223b5c077e67",
-      "title": "Learn AR with SPECS",
-      "company": "",
-      "url": "https://learn-specs.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-11-09",
-      "tags": [
-        "hackathon",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -682,21 +668,6 @@
       "action_plan": []
     },
     {
-      "key": "a432125806d5",
-      "title": "Samvad: Call For Article",
-      "company": "",
-      "url": "https://unstop.com/competitions/samvad-call-for-article-sp-mandalis-prin-l-n-welingkar-institute-of-management-development-research-mumbai--1791236",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-09",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "3ee1be4035d8",
       "title": "Free Scholarship Test on Quantum Computing in Hyderabad | 15 November 2026",
       "company": "",
@@ -856,6 +827,36 @@
       "deadline": "2026-11-12",
       "tags": [
         "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d182db2a3153",
+      "title": "Tech Careers in the Age of AI: What to Learn, How to Prepare & Get Hired",
+      "company": "TechBairn",
+      "url": "https://unstop.com/workshops-webinars/tech-careers-in-the-age-of-ai-what-to-learn-how-to-prepare-get-hired-techbairn-1787584",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-12",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "ec3f2ef3c1da",
+      "title": "VYTRON'26",
+      "company": "Droidecks",
+      "url": "https://unstop.com/hackathons/vytron26-droidecks-1786652",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-25",
+      "tags": [
+        "hackathon",
         "focus:off-topic"
       ],
       "ai_summary": "",
