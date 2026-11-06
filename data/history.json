@@ -160232,6 +160232,49 @@
           "key": "a9e7a8b332ce"
         }
       ]
+    },
+    {
+      "date": "2026-11-06",
+      "items": [
+        {
+          "title": "Machine Learning Engineer Intern — Match Group",
+          "url": "https://jobs.lever.co/matchgroup/860a839a-5be3-44dc-916f-eb2e71d67d72",
+          "source": "ats",
+          "description": "Match Group | Palo Alto, California | via Lever",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "lever:matchgroup:860a839a-5be3-44dc-916f-eb2e71d67d72",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "ML engineer role aligns directly with his AI‑agent & generative AI focus.",
+          "action_plan": [
+            "Day1: Pull posting, note required frameworks (TensorFlow/PyTorch) (0.5h).",
+            "Day2: Add relevant ML coursework & open‑source contributions to resume (1h).",
+            "Day3: Write a brief project summary linking TaskFlow to matchmaking (1h).",
+            "Day4: Submit; schedule weekly check‑in on application status (0.5h)."
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 8,
+            "time": 7,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Palo Alto, California",
+          "facts": {
+            "company": "Match Group",
+            "location": "Palo Alto, California",
+            "platform": "Lever"
+          },
+          "key": "6f5a93f2c4ef"
+        }
+      ]
     }
   ]
 }
