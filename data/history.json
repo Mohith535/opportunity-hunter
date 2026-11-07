@@ -160317,6 +160317,123 @@
           "key": "0f805b6c0ea2"
         }
       ]
+    },
+    {
+      "date": "2026-11-07",
+      "items": [
+        {
+          "title": "Meta — Research Scientist Intern - Synthetic Data for Computer Use Agents",
+          "url": "https://www.metacareers.com/jobs/1667187061776108",
+          "source": "internships",
+          "description": "internship | Meta | Menlo Park, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "87e1f5e6-e654-4a3e-9613-a3d4a907216b",
+          "score": 8,
+          "ai_score": 9,
+          "ai_summary": "Meta research on synthetic data for agents is elite, directly matches goals",
+          "action_plan": [
+            "Read recent Meta synthetic data papers (3h)",
+            "Craft research-focused CV (2h)",
+            "Submit application (1h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 10,
+            "prestige": 10,
+            "deadline": 2,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Meta\n📍 Menlo Park, Ca",
+          "facts": {
+            "company": "Meta",
+            "location": "Menlo Park, CA"
+          },
+          "key": "5e073bd8b298"
+        },
+        {
+          "title": "Tesla — Software Engineer Intern - SI Reinforcement Learning",
+          "url": "https://www.tesla.com/careers/search/job/289240",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Winter 2027, Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "8c8362c9-f137-4db2-bae1-421d4b24b60c",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Tesla RL aligns with AI agents, high prestige, but visa may block · ⚠ verify eligibility: US work authorization unclear for Indian student",
+          "action_plan": [
+            "Check visa eligibility (1h)",
+            "Contact recruiter (30m)",
+            "Tailor resume to RL (2d)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 3,
+            "skill": 8,
+            "time": 5,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "US work authorization unclear for Indian student"
+          },
+          "pitch": "📍 Palo Alto, Ca",
+          "facts": {
+            "company": "Tesla",
+            "location": "Palo Alto, CA"
+          },
+          "key": "fb274c7c3ef1"
+        },
+        {
+          "title": "Niural — AI Product Operator Intern",
+          "url": "https://jobs.ashbyhq.com/niural/0daacf58-a15d-4c6f-bfa0-0fc069e4956e/application?embed=true",
+          "source": "internships",
+          "description": "internship | Niural | NYC | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "7ba4164e-47fc-41ed-9683-2c3097e4252f",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI product ops at startup gives building experience, decent signal",
+          "action_plan": [
+            "Research Niural product (2h)",
+            "Align resume to product ops (1h)",
+            "Apply (30m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 7,
+            "deadline": 3,
+            "skill": 7,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Nyc",
+          "facts": {
+            "company": "Niural",
+            "location": "NYC"
+          },
+          "key": "39079afb92e6"
+        }
+      ]
     }
   ]
 }
