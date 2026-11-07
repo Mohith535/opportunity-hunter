@@ -162229,6 +162229,49 @@
           "key": "075a3d299de3"
         }
       ]
+    },
+    {
+      "date": "2026-11-07",
+      "items": [
+        {
+          "title": "MCP AI Engineer Internship",
+          "url": "https://unstop.com/internships/mcp-ai-engineer-internship-devtechaiorg-1795913",
+          "source": "unstop",
+          "description": "internship | online | Remote/WFH | Team size: 1-1 | By DevTechAi.org | About the Opportunity Work with industry professionals to build next-generation AI-powered software products and intelligent applications. Gain hands-on experience developing Model Context Protocol (MCP) servers, AI agents, and Agentic AI applications . Explore how AI models interact with external tools, APIs, databases, enterprise systems, and real-world applications. Contribute to building scalable AI solutions using modern AI/ML frameworks and technologies. Responsibilities of the Intern Design, develop, and implement MCP Servers and MCP Clients to enable AI models to interact with external tools, services, and data sources. Work on GenAI, Agentic AI, and LLM-based application development",
+          "deadline": "2026-11-18",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1795913",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "Remote AI agent internship aligns with his builder goal and elite AI focus.",
+          "action_plan": [
+            "Week1: Update resume with TaskFlow, apply via unstop.",
+            "Week2: Prepare a 5‑min demo of an agentic AI project.",
+            "Week3: Submit application and follow up email."
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 8,
+            "skill": 8,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏠 remote",
+          "facts": {
+            "remote": true,
+            "company": "DevTechAi.org",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "1b036ddbeda2"
+        }
+      ]
     }
   ]
 }
