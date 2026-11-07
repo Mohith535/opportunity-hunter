@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-07T01:50:58Z",
-  "hunted_at": "2026-11-06T02:32:59Z",
+  "updated_at": "2026-11-07T02:32:22Z",
+  "hunted_at": "2026-11-07T02:32:22Z",
   "items": [
     {
       "key": "69e177705dcb",
@@ -1245,6 +1245,46 @@
       ]
     },
     {
+      "key": "f79e099a0bfa",
+      "title": "Meta — Research Scientist Intern - AI Agents and Machine Learning",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1826604892017856",
+      "source": "internships",
+      "score": 9,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Meta AI agents internship directly hits career & prestige targets.",
+      "action_plan": [
+        "Check eligibility (student status) (1h)",
+        "Prepare resume & project portfolio (2d)",
+        "Submit application (1h)"
+      ]
+    },
+    {
+      "key": "7448114325a5",
+      "title": "Meta — Research Scientist Intern - Robotics Foundation Models - Agentic RL",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1414987577372371",
+      "source": "internships",
+      "score": 9,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Robotics foundation models + agentic RL matches top interests.",
+      "action_plan": [
+        "Research recent RL papers (2d)",
+        "Showcase RL project on GitHub (3d)",
+        "Apply (1h)"
+      ]
+    },
+    {
       "key": "b6e159e9ebc8",
       "title": "From AI Concepts to Production: The Journey of Autonomous Agents",
       "company": "",
@@ -1581,36 +1621,6 @@
       "tags": [
         "internship",
         "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a51343d62a6d",
-      "title": "Software Engineer Intern, Fullstack (Summer 2027 - Toronto) — Lyft",
-      "company": "Lyft",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8797859002?gh_jid=8797859002",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "7cba551ced11",
-      "title": "Patient-specific rubric-based evaluation of large language models across longitudinal cancer care",
-      "company": "",
-      "url": "https://arxiv.org/abs/2610.35847v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research",
-        "focus:off-topic"
       ],
       "ai_summary": "",
       "action_plan": []
