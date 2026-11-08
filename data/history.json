@@ -162272,6 +162272,1804 @@
           "key": "1b036ddbeda2"
         }
       ]
+    },
+    {
+      "date": "2026-11-08",
+      "items": [
+        {
+          "title": "AI Response Evaluator Internship",
+          "url": "https://unstop.com/internships/ai-response-evaluator-internship-cicada-1799920",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 2,400-24,000/month | Remote/WFH | Eligibility: open to: students; courses: mba1, mba2, bba, bSchoolOthers, bcom, mcom (+29 more) | Team size: 1-1 | By Cicada | AI Response Evaluator – Earn Up To ₹1,350 Per Hour Help us teach AI what good looks like, and earn ₹600 an hour doing it. About Cicada: Cicada (cicadaevals.com) checks AI answers for AI companies. We're adding AI response evaluators across India. What You'll Do: Read a question and two AI answers, decide which is better, and write a short reason. On some projects, score each answer against a checklist: Is it correct, complete, clear, and safe? What You Earn: About ₹600 an hour for general tasks, ₹900 for intermediate tasks, and up to ₹1,350 for expert tasks in medicine, law, finance, engineering, and coding. Paid per task, directly to your bank account. No fees. Work from home, at your own c",
+          "deadline": "2026-11-21",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1799920",
+          "score": 10,
+          "ai_score": 4,
+          "ai_summary": "AI eval fits interest but low prestige and short‑term cash focus",
+          "action_plan": [
+            "1d: Register on platform",
+            "2d: Complete first evaluation task",
+            "1w: Reach 10 evaluations"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 5,
+            "prestige": 2,
+            "deadline": 6,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "💰 ₹24,000/month\n🏠 remote",
+          "facts": {
+            "pay_min": 2400,
+            "pay_max": 24000,
+            "remote": true,
+            "company": "Cicada",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "d8a07d90dae6"
+        },
+        {
+          "title": "Software Development Internship",
+          "url": "https://unstop.com/internships/software-development-internship-skillme-1799439",
+          "source": "unstop",
+          "description": "internship | online | Remote/WFH | Eligibility: open to: students; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+5 more) | Team size: 1-1 | By SkillMe | Apply Now: skill-me-intern.in/apply Responsibility Complete one project task, following the guide on your intern dashboard Push your code to GitHub, or share a notebook or demo link, for each weekly milestone Use AI tools to build, debug, and improve your project, and explain what you built Act on reviewer feedback and resubmit if a task needs changes Requirements Students or freshers from any background Basic knowledge of Git and GitHub Comfortable using AI tools such as ChatGPT, Claude or Copilot for coding An active LinkedIn profile and willingness to post weekly",
+          "deadline": "2026-11-21",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1799439",
+          "score": 10,
+          "ai_score": 5,
+          "ai_summary": "General dev internship builds portfolio but not elite signal",
+          "action_plan": [
+            "1d: Submit application",
+            "1w: Set up repo and choose project",
+            "2w: Deliver first milestone"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 6,
+            "prestige": 3,
+            "deadline": 6,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "🏠 remote",
+          "facts": {
+            "remote": true,
+            "company": "SkillMe",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "fc9cc8d7476a"
+        },
+        {
+          "title": "Web Development Trainee",
+          "url": "https://unstop.com/internships/web-development-internship-cumidstore-1800394",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 32,000/month | Remote/WFH | Eligibility: open to: students; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+5 more) | Team size: 1-1 | By Cumid.store | Cumid.store is hiring for Web/Product Development Intern! About the Company cumid.store is building a clean, reliable digital storefront and is strengthening the systems behind its customer and commerce experience. This internship offers freshers an opportunity to work on production-oriented web development across the storefront, customer accounts, order workflows, analytics, and internal administration. Responsibilities Maintain and enhance the Astro website and its Cloudflare deployment. Connect Supabase to support customer accounts, favourites, enquiries, and orders. Build secure customer order-history pages and a protected admin dashboard for products, orders, and enquiries. Implement Go",
+          "deadline": "2026-11-21",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1800394",
+          "score": 10,
+          "ai_score": 4,
+          "ai_summary": "Web product work useful but outside core AI focus",
+          "action_plan": [
+            "1d: Apply",
+            "1w: Familiarize with Astro & Supabase",
+            "2w: Ship a small feature"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 6,
+            "skill": 5,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "💰 ₹32,000/month\n🏠 remote",
+          "facts": {
+            "pay_min": 32000,
+            "pay_max": 32000,
+            "remote": true,
+            "company": "Cumid.store",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "db5e4cf1012f"
+        },
+        {
+          "title": "Learn AR with SPECS",
+          "url": "https://learn-specs.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Oct 15 - Nov 09, 2026 | prize $ 2,500 | themes: AR/VR, Machine Learning/AI, Design",
+          "deadline": "2026-11-09",
+          "tags": [
+            "hackathon",
+            "focus:off-topic"
+          ],
+          "native_id": "31659",
+          "score": 10,
+          "ai_score": 3,
+          "ai_summary": "AR hackathon off‑topic, low career impact",
+          "action_plan": [
+            "1d: Register",
+            "1w: Prototype simple AR demo",
+            "2w: Submit entry"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 3,
+            "prestige": 2,
+            "deadline": 7,
+            "skill": 2,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "pitch": "⏳ closes in 1 day",
+          "key": "223b5c077e67"
+        },
+        {
+          "title": "Reel-o-feel-ia",
+          "url": "https://unstop.com/competitions/reel-o-feel-ia-university-school-of-management-and-entrepreneurship-usmedelhi-1799880",
+          "source": "unstop",
+          "description": "competition | online | Remote/WFH | Eligibility: open to: students | Team size: 1-6 | By University School of Management and Entrepreneurship (USME),Delhi | Overview: Reel-o-feel-ia is a competition hosted by Pradarshani: The Dramatics Society of USME, Delhi Technological University. Participants will be asked to make a reel of duration 2-5 minutes. There will be two rounds in totality for the competition, each round featuring a different theme for the reel entries. Round-1: The Campus Cut From chaotic lectures and unforgettable friendships to campus chaos, college crushes, and the little moments that make college life special capture college life through your lens. Round-2: Alter Ego (Final Round) “Are you really who you show the world?” Explore the contrast between your online persona and your real-life self. Show us the difference between who",
+          "deadline": "2026-11-13",
+          "tags": [
+            "competition",
+            "focus:off-topic"
+          ],
+          "native_id": "1799880",
+          "score": 10,
+          "ai_score": 2,
+          "ai_summary": "Reel competition unrelated to AI or engineering goals",
+          "action_plan": [
+            "1d: Decide to skip or form team",
+            "1w: If joining, storyboard reel"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 7,
+            "skill": 1,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "pitch": "⏳ 5 days left",
+          "facts": {
+            "remote": true,
+            "company": "University School of Management and Entrepreneurship (USME),Delhi",
+            "category": "competitions",
+            "region": "online"
+          },
+          "key": "2b239a892846"
+        },
+        {
+          "title": "Free Cyber Security with AI Workshop in Hyderabad | 11 November 2026",
+          "url": "https://unstop.com/workshops-webinars/free-cyber-security-with-ai-workshop-in-hyderabad-11-november-2026-quality-thought-info-systems-1799774",
+          "source": "unstop",
+          "description": "workshop | online | Remote/WFH | Team size: 1-1 | By Quality Thought Info Systems | Are you interested in Cyber Security and Artificial Intelligence? Want to explore how AI is transforming the cybersecurity industry? Join the FREE Cyber Security with AI Training Workshop conducted by Quality Thought on 11 November 2026 at 10:00 AM onwards. Participate conveniently through Online or Offline mode. This workshop is designed for students, freshers, graduates, job seekers, IT professionals and working professionals who want to understand modern cybersecurity concepts and explore the role of Artificial Intelligence in protecting digital systems, networks and applications. What Will You Explore in This Workshop? Cybersecurity is an important technology domain focused on protecting",
+          "deadline": "2026-11-11",
+          "tags": [
+            "workshop",
+            "focus:off-topic"
+          ],
+          "native_id": "1799774",
+          "score": 10,
+          "ai_score": 2,
+          "ai_summary": "Cyber‑security workshop low relevance to generative AI focus",
+          "action_plan": [
+            "1d: Register",
+            "2h: Attend live session",
+            "1d: Summarize key takeaways"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 1,
+            "deadline": 6,
+            "skill": 2,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "pitch": "⏳ closes in 3 days",
+          "facts": {
+            "remote": true,
+            "company": "Quality Thought Info Systems",
+            "category": "workshops",
+            "region": "online"
+          },
+          "key": "491055d54290"
+        },
+        {
+          "title": "DSH Hacks V2 ($100k+ in prizes!)",
+          "url": "https://dsh-hacks-v2.devpost.com/",
+          "source": "devpost",
+          "description": "hackathon | Online | Jun 24 - Nov 15, 2026 | prize $ 0 | themes: Beginner Friendly, Low/No Code, Open Ended",
+          "deadline": "2026-11-15",
+          "tags": [
+            "hackathon",
+            "focus:off-topic"
+          ],
+          "native_id": "30500",
+          "score": 10,
+          "ai_score": 3,
+          "ai_summary": "Open‑ended hackathon generic, minimal prestige",
+          "action_plan": [
+            "1d: Sign up",
+            "1w: Brainstorm low‑code AI demo",
+            "2w: Submit prototype"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 3,
+            "prestige": 2,
+            "deadline": 8,
+            "skill": 2,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "pitch": "⏳ 7 days left",
+          "key": "6b7b0d9709f5"
+        },
+        {
+          "title": "Off- Brand: B-Plan Competition (case Comp)",
+          "url": "https://unstop.com/competitions/off-brand-b-plan-competition-case-comp-lady-shri-ram-college-for-women-lsr-du-new-delhi-1799756",
+          "source": "unstop",
+          "description": "competition | offline | Eligibility: open to: students; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+40 more) | Team size: 1-4 | By Lady Shri Ram College for Women (LSR) University of Delhi (DU) | Business Plan Competition | Juxtapose'26 What if your favourite coffee brand started selling drinkware? What if a clothing label ventured into fitness technology? Or a footwear company decided to design furniture? Pitch Deck Submission Deadline: 14 November 2026, 11:59 PM. Submission link: https://docs.google.com/forms/d/e/1FAIpQLSfyun5hM_he3KERmSLyiEeWdIl7_Td_gNMxKSs6msjXkmUk3A/viewform?usp=sharing&ouid=103545350630338718015 (Please make sure that all your team members register on UnStop and then continue to the Google Form for Pitch deck submission) Juxtapose'26 presents Off-Brand , a business plan competition that challenges you to take an established, widely recognised brand beyond its u",
+          "deadline": "2026-11-14",
+          "tags": [
+            "competition",
+            "focus:off-topic"
+          ],
+          "native_id": "1799756",
+          "score": 10,
+          "ai_score": 2,
+          "ai_summary": "Business‑plan contest unrelated to AI engineering path",
+          "action_plan": [
+            "1d: Evaluate relevance",
+            "1d: Decline or form team if interested"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 7,
+            "skill": 1,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "pitch": "⏳ 6 days left",
+          "facts": {
+            "company": "Lady Shri Ram College for Women (LSR) University of Delhi (DU)",
+            "category": "competitions",
+            "region": "offline"
+          },
+          "key": "1bb6614a9c50"
+        },
+        {
+          "title": "Open Source in the Age of AI Workshop: From Code Generation to Real-World Impact",
+          "url": "https://unstop.com/workshops-webinars/open-source-in-the-age-of-ai-workshop-from-code-generation-to-real-world-impact-open-source-in-the-ag-1798740",
+          "source": "unstop",
+          "description": "workshop | online | Remote/WFH | Team size: 1-1 | By AI Geeks Chennai | Welcome to the Open Source in the Age of AI: From Code Generation to Real-World Impact - by AI Geeks Chennai! An online workshop exploring open source in the age of AI—from code generation to real-world impact. About the Opportunity: AI Geeks Chennai presents this online workshop on open source in the age of AI. Its focus is the journey from code generation to real-world impact, offering individual participants a chance to explore this theme. Consider how the title’s central ideas—AI, open source, and real-world impact—connect. Take part individually in a workshop centered on this timely intersection. Take the next step and explore “Open Source in the Age of AI: From Code Generation to Real-",
+          "deadline": "2026-11-10",
+          "tags": [
+            "workshop",
+            "focus:off-topic"
+          ],
+          "native_id": "1798740",
+          "score": 10,
+          "ai_score": 5,
+          "ai_summary": "AI open‑source workshop aligns with interests but low prestige and short‑term impact.",
+          "action_plan": [
+            "Allocate 2 hrs to register and review agenda",
+            "Attend live session, take notes",
+            "Add a short blog post to portfolio"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 6,
+            "prestige": 3,
+            "deadline": 5,
+            "skill": 5,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "pitch": "⏳ closes in 2 days",
+          "facts": {
+            "remote": true,
+            "company": "AI Geeks Chennai",
+            "category": "workshops",
+            "region": "online"
+          },
+          "key": "35a08f14e0b8"
+        },
+        {
+          "title": "Game of Codes",
+          "url": "https://unstop.com/hackathons/game-of-codes-national-institute-of-technology-nit-agartala-1797379",
+          "source": "unstop",
+          "description": "hackathon | offline | Eligibility: open to: students; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+5 more) | Team size: 1-3 | By National Institute of Technology (NIT), Agartala | Game of Codes Game of Codes is a flagship competitive programming contest organized by the Developers & Coders Club (DCC), NIT Agartala , as part of AAYAM XI — the annual techno-management fest of National Institute of Technology Agartala . The contest aims to bring together passionate programmers and problem solvers to challenge their algorithmic thinking, strengthen their coding skills, and compete against some of the brightest minds through an exciting battle of logic, speed, and precision. Competition Format & Rounds The competition will be conducted in two rounds: Round 1 — Online Coding Contest Date: 13 November 2026 Time: 08:00 PM – 11:00 PM IST Mode: Online Participants will solve al",
+          "deadline": "2026-11-12",
+          "tags": [
+            "hackathon",
+            "focus:off-topic"
+          ],
+          "native_id": "1797379",
+          "score": 10,
+          "ai_score": 6,
+          "ai_summary": "Competitive programming hackathon builds algorithmic skill useful for AI research.",
+          "action_plan": [
+            "Form a 2‑person team this week",
+            "Practice past problems 1 hr daily",
+            "Compete on 12 Nov"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 7,
+            "prestige": 4,
+            "deadline": 6,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "⏳ 4 days left",
+          "facts": {
+            "company": "National Institute of Technology (NIT), Agartala",
+            "category": "hackathons",
+            "region": "offline"
+          },
+          "key": "17c4fbedef52"
+        },
+        {
+          "title": "Filmy Kalakriti : Film Poster / Album redesign Competition",
+          "url": "https://unstop.com/competitions/filmy-kalakriti-film-poster-album-redesign-competition-juxtapose26-lady-shri-ram-college-for-women-lsr-du-n-1799676",
+          "source": "unstop",
+          "description": "competition | online | Remote/WFH | Eligibility: open to: students; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+40 more) | Team size: 1-1 | By Lady Shri Ram College for Women (LSR) University of Delhi (DU) | Filmy Kalaakriti: The Poster That Did Not Make It Movie Poster Redesign Competition | Juxtapose'26 Submission link: https://docs.google.com/forms/d/e/1FAIpQLScAMybakzMYp5BtC6wQfxnUx_erN2YfdWY_6F1IB4r4U3I6_A/viewform (For inspiration: https://www.instagram.com/reel/DfZTHU3t7Cn/?obrf=OHlncnptbmxxanA4 ) Picture toh ban gayi, par poster abhi baaki hai mere dost! What if you could capture your interpretation of a film through a poster? What if you could redesign its visual identity and bring to life the version that never made it to the original poster? Choose a film, explore its story, experiment with visual elements and create a poster that reflects what the film means to you. Any language. Any",
+          "deadline": "2026-11-14",
+          "tags": [
+            "competition",
+            "focus:off-topic"
+          ],
+          "native_id": "1799676",
+          "score": 10,
+          "ai_score": 2,
+          "ai_summary": "Film poster redesign unrelated to AI/ML career goals.",
+          "action_plan": [
+            "Skip unless free time remains after higher‑priority tasks"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 2,
+            "prestige": 2,
+            "deadline": 5,
+            "skill": 2,
+            "time": 3,
+            "eligible": "yes"
+          },
+          "pitch": "⏳ 6 days left",
+          "facts": {
+            "remote": true,
+            "company": "Lady Shri Ram College for Women (LSR) University of Delhi (DU)",
+            "category": "competitions",
+            "region": "online"
+          },
+          "key": "8c8c37e3d9d2"
+        },
+        {
+          "title": "Free Gen AI Testing Workshop in Hyderabad- 10 November 2026",
+          "url": "https://unstop.com/workshops-webinars/free-gen-ai-testing-workshop-in-hyderabad-10-november-2026-quality-thought-info-systems-1798299",
+          "source": "unstop",
+          "description": "workshop | online | Remote/WFH | Eligibility: open to: students, fresher, corporates | Team size: 1-1 | By Quality Thought Info Systems | Are you interested in Software Testing, Artificial Intelligence and the future of software quality engineering? Want to explore how Generative AI is changing the software testing industry? Join the FREE Gen AI Testing Training Workshop conducted by Quality Thought on 10 November 2026 at 09:00 AM onwards. Attend conveniently through Online or Offline mode. This workshop is designed for freshers, graduates, software testing professionals, job seekers and working professionals who want to understand the latest developments in AI-powered software testing and automation. What Will You Learn in Gen AI Testing? Generative AI is changing how software applications are developed, tested and maintained",
+          "deadline": "2026-11-09",
+          "tags": [
+            "workshop",
+            "focus:off-topic"
+          ],
+          "native_id": "1798299",
+          "score": 10,
+          "ai_score": 6,
+          "ai_summary": "Gen‑AI testing workshop touches AI but is testing‑focused, modest resume value.",
+          "action_plan": [
+            "Register now (deadline 9 Nov)",
+            "Attend 2‑hr session",
+            "Summarize key takeaways in personal notes"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 8,
+            "prestige": 3,
+            "deadline": 7,
+            "skill": 6,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "pitch": "⏳ closes in 1 day",
+          "facts": {
+            "remote": true,
+            "company": "Quality Thought Info Systems",
+            "category": "workshops",
+            "region": "online"
+          },
+          "key": "d286cf38cd96"
+        },
+        {
+          "title": "HackSphere - Build and learn (Aayam XI)",
+          "url": "https://unstop.com/hackathons/hacksphere-build-and-learn-aayam-xi-national-institute-of-technology-nit-agartala-1800147",
+          "source": "unstop",
+          "description": "hackathon | hybrid | Eligibility: open to: students | Team size: 2-3 | Prize: cash 4000 | By National Institute of Technology (NIT), Agartala | HackSphere Step into HackSphere , where bold ideas take shape and innovators come together to build what’s next . This hackathon challenges you to tackle real-world problems, experiment with technology, and turn your ideas into working prototypes. Bring your team, your skills, and your curiosity—let’s see what you can create! Event Date & Time 10th - 11th November 2026 Venue / Mode: ONLINE //Qualifying Round Venue / Mode: OFFLINE // Final Round Deadline to Register 10th November 2026, 11:59 PM Event Overview HackSphere, held under AAyam IX (The College Tech-Fest) and organised by the DSAI Club , brings curious minds together to turn ideas into working solutions. Take on real-world challenges",
+          "deadline": "2026-11-10",
+          "tags": [
+            "hackathon",
+            "focus:off-topic"
+          ],
+          "native_id": "1800147",
+          "score": 10,
+          "ai_score": 6,
+          "ai_summary": "Hackathon offers building prototype experience, decent signal for AI‑engineer resume.",
+          "action_plan": [
+            "Create a 2‑person team by 5 Nov",
+            "Brainstorm AI‑related project 1 day",
+            "Develop prototype over 2 days, submit"
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 7,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "🏆 ₹4,000 in prizes\n⏳ closes in 2 days",
+          "facts": {
+            "company": "National Institute of Technology (NIT), Agartala",
+            "category": "hackathons",
+            "region": "hybrid"
+          },
+          "key": "b8446beee669"
+        },
+        {
+          "title": "ZAAVIYA: Stories that break perspectives (Mute Film-making Competition)",
+          "url": "https://unstop.com/competitions/zaaviya-stories-that-break-perspectives-mute-film-making-competition-lady-shri-ram-college-for-women-lsr-du-1799712",
+          "source": "unstop",
+          "description": "competition | offline | Eligibility: open to: students; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+40 more) | Team size: 1-6 | By Lady Shri Ram College for Women (LSR) University of Delhi (DU) | Zaaviya: Stories That Break Perspective Mute Filmmaking Competition | Juxtapose'26 Submission link: https://docs.google.com/forms/d/e/1FAIpQLScgbzM3IEgOj0_nckRHsRfJ-zg2_W33JnmDcPCYFXIBiZ_RhA/viewform?usp=publish-editor Khamosh! Some stories are better left unsaid. But can you tell one without saying a word? A mute filmmaking competition that challenges you to explore the art of silent visual storytelling. Put your cinematic instincts to the test and transform an idea into a compelling film where every frame has a purpose and every visual tells a story. But there's a twist! Your film must revolve around a designated object , whose identity or significance must remain concealed until the very ",
+          "deadline": "2026-11-15",
+          "tags": [
+            "competition",
+            "focus:off-topic"
+          ],
+          "native_id": "1799712",
+          "score": 10,
+          "ai_score": 1,
+          "ai_summary": "Mute filmmaking competition unrelated to technical AI path.",
+          "action_plan": [
+            "Do not apply; focus on AI‑centric opportunities"
+          ],
+          "dimensions": {
+            "career": 1,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 5,
+            "skill": 1,
+            "time": 2,
+            "eligible": "yes"
+          },
+          "pitch": "⏳ 7 days left",
+          "facts": {
+            "company": "Lady Shri Ram College for Women (LSR) University of Delhi (DU)",
+            "category": "competitions",
+            "region": "offline"
+          },
+          "key": "8d8b1b8c93c6"
+        },
+        {
+          "title": "Hands-On Workshop on Self-Balancing Robot | Build, Code & Learn Robotics",
+          "url": "https://unstop.com/workshops-webinars/hands-on-workshop-on-self-balancing-robot-build-code-learn-robotics-hepelancer-1789224",
+          "source": "unstop",
+          "description": "workshop | online | Remote/WFH | Team size: 1-1 | By Hepelancer | Join Hepelancer’s Self-Balancing Robot Workshop to learn the basics of robotics, Arduino programming, sensors, motor drivers, and PID control. What you’ll get: Learn how self-balancing robots work. Understand basic circuits and programming. Get source code, circuit diagrams, and component links in PDF format. Receive a Certificate of Participation. Workshop Details: Date: 9 November 2026 Time: 7:00 PM – 9:00 PM IST Mode: Online via Google Meet Speaker: Divya, Embedded Systems Enthusiast",
+          "deadline": "2026-11-09",
+          "tags": [
+            "workshop",
+            "focus:off-topic"
+          ],
+          "native_id": "1789224",
+          "score": 10,
+          "ai_score": 4,
+          "ai_summary": "Robotics workshop offers hardware experience, modest relevance to AI agents.",
+          "action_plan": [
+            "Register, attend 2‑hr session, add robot demo to portfolio"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 4,
+            "prestige": 2,
+            "deadline": 6,
+            "skill": 4,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "pitch": "⏳ closes in 1 day",
+          "facts": {
+            "remote": true,
+            "company": "Hepelancer",
+            "category": "workshops",
+            "region": "online"
+          },
+          "key": "a313b00175ff"
+        },
+        {
+          "title": "Software Product Manager — RecruitingDash",
+          "url": "https://himalayas.app/companies/recruitingdash/jobs/software-product-manager?utm_source=api",
+          "source": "remote",
+          "description": "job | RecruitingDash | Remote (worldwide) | Full Time | via Himalayas | Job Overview:Work from home! We will teach you everything you need to know in this role.",
+          "deadline": null,
+          "tags": [
+            "job",
+            "focus:job"
+          ],
+          "native_id": "himalayas:recruitingdash:software-product-manager",
+          "score": 8,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Requires professional experience; Mohith is a student · Full‑time PM role unsuitable for a 2nd‑year student.",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Requires professional experience; Mohith is a student"
+          },
+          "pitch": "🏠 remote",
+          "facts": {
+            "remote": true,
+            "company": "RecruitingDash",
+            "location": "Remote (worldwide)",
+            "platform": "Himalayas"
+          },
+          "key": "dc523108818f"
+        },
+        {
+          "title": "Networking Internship",
+          "url": "https://unstop.com/internships/networking-internship-somentm-1800145",
+          "source": "unstop",
+          "description": "internship | online | Remote/WFH | Eligibility: open to: fresher, students; experience: 1 year; courses: mba1, mba2, bba, bSchoolOthers, bcom, mcom (+29 more) | Team size: 1-1 | By SOMENTM | SOMENTM is hiring for Networking Intern About the Company SOMENTM operates in the automotive industry and is expanding its network of service partners to support customers with dependable assistance. The Networking Intern will help identify and engage potential service providers, including mechanics, towing providers, workshops, and roadside assistance teams. This unpaid, four-month remote internship is suited to someone with 0–1 year of experience who communicates confidently, stays organized, and is motivated to build useful professional relationships. Responsibilities Identify potential mechanics, towing providers, workshops, and roadside assistance service providers in relevant coverage ",
+          "deadline": "2026-11-21",
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "1800145",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "🏠 remote",
+          "facts": {
+            "remote": true,
+            "company": "SOMENTM",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "e5f9b348365e"
+        },
+        {
+          "title": "Tesla — Software Engineer Intern - SI Reinforcement Learning",
+          "url": "https://www.tesla.com/careers/search/job/289241",
+          "source": "internships",
+          "description": "internship | Tesla | Palo Alto, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "60fd1301-4412-4891-b853-6eec26f242df",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Palo Alto, Ca",
+          "facts": {
+            "company": "Tesla",
+            "location": "Palo Alto, CA"
+          },
+          "key": "5dba0343d6ef"
+        },
+        {
+          "title": "Zoox — Data Scientist Intern",
+          "url": "https://jobs.lever.co/zoox/85c6aec7-8da2-445d-9c4d-812365dbce97/apply",
+          "source": "internships",
+          "description": "internship | Zoox | Boston, MA, Foster City, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "680cbf01-1662-4204-9638-55b49e07da7c",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Boston, Ma; Foster City, Ca",
+          "facts": {
+            "company": "Zoox",
+            "location": "Boston, MA; Foster City, CA"
+          },
+          "key": "345f4e126e23"
+        },
+        {
+          "title": "Zoox — AI Workflows & Safety Decision Making Intern",
+          "url": "https://jobs.lever.co/zoox/0168ad29-2fd8-4c91-865c-b9fff8aa30c1/apply",
+          "source": "internships",
+          "description": "internship | Zoox | Foster City, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "074c9d6a-c89d-49bf-b2ab-27d71b051a60",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Foster City, Ca",
+          "facts": {
+            "company": "Zoox",
+            "location": "Foster City, CA"
+          },
+          "key": "f16d59bde47f"
+        },
+        {
+          "title": "TikTok — Software Engineer Intern",
+          "url": "https://lifeattiktok.com/search/7705012688944810245",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "9c92be34-fc24-4149-8e94-eea572329c07",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 San Jose, Ca",
+          "facts": {
+            "company": "TikTok",
+            "location": "San Jose, CA"
+          },
+          "key": "01849a22dc6a"
+        },
+        {
+          "title": "Software Engineer, Intern (Summer or Winter) — Stripe",
+          "url": "https://stripe.com/jobs/search?gh_jid=8130805",
+          "source": "ats",
+          "description": "Stripe | Toronto | via Greenhouse",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "gh:stripe:8130805",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Toronto",
+          "facts": {
+            "company": "Stripe",
+            "location": "Toronto",
+            "platform": "Greenhouse"
+          },
+          "key": "4d2e7263a045"
+        },
+        {
+          "title": "The end of Microsoft Research's AI Frontiers group",
+          "url": "https://hunch.net/?p=13764006",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news",
+            "focus:off-topic"
+          ],
+          "native_id": "50406563",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "",
+          "key": "1a0a96bdb45c"
+        },
+        {
+          "title": "Architect Internship – Sustainable Design",
+          "url": "https://unstop.com/internships/architect-internship-sustainable-design-kheoni-ventures-pvt-ltd-1800073",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 10,000-15,000/month | Location: Indore | Team size: 1-1 | By Kheoni Ventures Pvt Ltd | We are working on a sustainability-led initiative where, over the past 8 years , we have planted and nurtured a forest of more than 35,000 trees . The site, located about an hour from Indore , has developed into a thriving ecosystem and has been recognized as a biodiversity-awarded site . We are planning to develop 8–10 cottages using sustainable construction methods with a premium design approach . We are looking for passionate architecture students or young designers who are interested in combining local materials, vernacular construction techniques, and contemporary design . We are looking for student architects with a strong flair for design and sustainability to assist in the planning a",
+          "deadline": "2026-11-21",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1800073",
+          "score": 7,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "💰 ₹15,000/month\n📍 Indore",
+          "facts": {
+            "pay_min": 10000,
+            "pay_max": 15000,
+            "cities": [
+              "Indore"
+            ],
+            "company": "Kheoni Ventures Pvt Ltd",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "5365b3dbe5a2"
+        },
+        {
+          "title": "Video Editor Internship",
+          "url": "https://unstop.com/internships/video-editor-internship-roberon-technologies-1799879",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 3,000-10,000/month | Remote/WFH | Eligibility: open to: fresher, students; experience: 1 year; courses: mba1, mba2, bba, bSchoolOthers, bcom, mcom (+29 more) | Team size: 1-1 | By Roberon Technologies | Roberon Technologies is hiring for Video Editor About the Company Roberon Technologies works in the robotics and drones industry and is seeking a remote Video Editor Intern to help create engaging social media content. The internship lasts four months and is suitable for candidates with 0–1 year of experience. The first two months are unpaid. For the remaining period, a monthly stipend of ₹3,000–₹10,000 may be offered depending on the quality of the intern’s work. Responsibilities Edit video footage for social media, following supplied scripts, briefs, and creative guidelines. Review scripts and instructions carefully, ask clarifying questions when needed, and shape footage into clear, engag",
+          "deadline": "2026-11-21",
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "1799879",
+          "score": 6,
+          "ai_score": 2,
+          "ai_summary": "Video editing unrelated to AI building; low career impact.",
+          "action_plan": [
+            "Allocate 2 hrs/week to review internship posting",
+            "Prepare a short video edit demo",
+            "Submit application before deadline"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 1,
+            "deadline": 5,
+            "skill": 2,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "pitch": "💰 ₹10,000/month\n🏠 remote",
+          "facts": {
+            "pay_min": 3000,
+            "pay_max": 10000,
+            "remote": true,
+            "company": "Roberon Technologies",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "923a31e35aac"
+        },
+        {
+          "title": "Campus Ambassador — Sales & Marketing for AI Products (Work from Home)",
+          "url": "https://unstop.com/internships/campus-ambassador-sales-marketing-for-ai-products-work-from-home-turtle-techsai-1791051",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 1,000/month | Remote/WFH | Eligibility: open to: students, fresher | Team size: 1-1 | By Turtle Techsai | Roles • Run go-to-market for three live AI products — NoteSathi, Geet and TurtleReel — on your own campus for two months. • About 5–6 hours a week, work from home. The only in-person part is one demo or activity on your own campus each month. • You work directly with the founder, not a manager. Responsibility • Share your own referral links in class groups and on your social accounts, with an honest line on what the product actually did for you. • Run one live demo a month on campus — a canteen or library desk-to-desk, a club session, or a fest stall. • Post 4+ stories or posts a month using the content kit we give you. • Send a short weekly update: what you posted, what worked, what flopped",
+          "deadline": "2026-11-16",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1791051",
+          "score": 6,
+          "ai_score": 3,
+          "ai_summary": "Campus ambassador for AI products gives modest exposure, but not core AI work.",
+          "action_plan": [
+            "Draft outreach plan for campus",
+            "Create demo script for AI product",
+            "Apply and schedule first demo"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 3,
+            "prestige": 2,
+            "deadline": 6,
+            "skill": 3,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "💰 ₹1,000/month\n🏠 remote · ⏳ 8 days left",
+          "facts": {
+            "pay_min": 1000,
+            "pay_max": 1000,
+            "remote": true,
+            "company": "Turtle Techsai",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "b6c41a0ce2e9"
+        },
+        {
+          "title": "Firmware Engineer Co-Op — Samsara",
+          "url": "https://www.samsara.com/company/careers/roles/8226602?gh_jid=8226602",
+          "source": "ats",
+          "description": "Samsara | San Francisco - SF9 | via Greenhouse",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "gh:samsara:8226602",
+          "score": 6,
+          "ai_score": 5,
+          "ai_summary": "Samsara co‑op at SF could boost resume and hardware‑AI skills if eligible. · ⚠ verify eligibility: Requires hardware/firmware focus; unclear",
+          "action_plan": [
+            "Check detailed role requirements on Greenhouse",
+            "Tailor resume to highlight embedded systems",
+            "Reach out to recruiter for clarification"
+          ],
+          "dimensions": {
+            "career": 5,
+            "interest": 4,
+            "prestige": 6,
+            "deadline": 3,
+            "skill": 6,
+            "time": 5,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "Requires hardware/firmware focus; unclear if CS AI fits"
+          },
+          "pitch": "📍 San Francisco - Sf9",
+          "facts": {
+            "company": "Samsara",
+            "location": "San Francisco - SF9",
+            "platform": "Greenhouse"
+          },
+          "key": "b02c87d9214a"
+        },
+        {
+          "title": "Applied Scientist Intern — Ramp",
+          "url": "https://jobs.ashbyhq.com/ramp/b39ceb08-a0a7-4f8b-a760-2fb88e209956",
+          "source": "ats",
+          "description": "Ramp | New York, NY (HQ) | via Ashby",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "ashby:ramp:b39ceb08-a0a7-4f8b-a760-2fb88e209956",
+          "score": 6,
+          "ai_score": 8,
+          "ai_summary": "Applied Scientist at Ramp aligns with AI research, strong signal, hard to replace.",
+          "action_plan": [
+            "Update CV with TaskFlow/Nova projects",
+            "Write a concise cover letter linking to AI work",
+            "Submit application and prepare for coding interview"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 4,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 New York, Ny (Hq)",
+          "facts": {
+            "company": "Ramp",
+            "location": "New York, NY (HQ)",
+            "platform": "Ashby"
+          },
+          "key": "c6d7e9261530"
+        },
+        {
+          "title": "Electrical Engineering Co-op - January 2027 — Shield AI",
+          "url": "https://jobs.lever.co/shieldai/87d982f2-8b2b-4c73-9a19-71e461c7b724",
+          "source": "ats",
+          "description": "Shield AI | Dallas, Texas | via Lever",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "lever:shieldai:87d982f2-8b2b-4c73-9a19-71e461c7b724",
+          "score": 6,
+          "ai_score": 4,
+          "ai_summary": "Shield AI co‑op could add AI‑robotics experience if eligible. · ⚠ verify eligibility: Electrical engineering focus may not match CS AI backg",
+          "action_plan": [
+            "Review job description for software vs hardware duties",
+            "Highlight relevant AI projects",
+            "Contact recruiter for eligibility clarification"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 5,
+            "deadline": 3,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "Electrical engineering focus may not match CS AI background"
+          },
+          "pitch": "📍 Dallas, Texas",
+          "facts": {
+            "company": "Shield AI",
+            "location": "Dallas, Texas",
+            "platform": "Lever"
+          },
+          "key": "ce5538a5491b"
+        },
+        {
+          "title": "June 2027 Co-op - Reliability Engineering #5953 — Shield AI",
+          "url": "https://jobs.lever.co/shieldai/bef440ce-0365-4de7-9b1e-b1288cdaf7f3",
+          "source": "ats",
+          "description": "Shield AI | Seattle, Washington | via Lever",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "lever:shieldai:bef440ce-0365-4de7-9b1e-b1288cdaf7f3",
+          "score": 6,
+          "ai_score": 4,
+          "ai_summary": "Shield AI reliability role offers industry exposure but limited AI relevance. · ⚠ verify eligibility: Reliability engineering may be periphe",
+          "action_plan": [
+            "Read full posting on Lever",
+            "Map reliability tasks to AI reliability interests",
+            "Apply if alignment is sufficient"
+          ],
+          "dimensions": {
+            "career": 4,
+            "interest": 2,
+            "prestige": 5,
+            "deadline": 3,
+            "skill": 5,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "Reliability engineering may be peripheral to AI focus"
+          },
+          "pitch": "📍 Seattle, Washington",
+          "facts": {
+            "company": "Shield AI",
+            "location": "Seattle, Washington",
+            "platform": "Lever"
+          },
+          "key": "fe4042cb8ae6"
+        },
+        {
+          "title": "Structures / Mechanical Test Co-op - January 2027 Co-op — Shield AI",
+          "url": "https://jobs.lever.co/shieldai/1be0e71a-cf7f-4966-8532-09e6f40bb9dc",
+          "source": "ats",
+          "description": "Shield AI | Dallas, Texas | via Lever",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "lever:shieldai:1be0e71a-cf7f-4966-8532-09e6f40bb9dc",
+          "score": 6,
+          "ai_score": 3,
+          "ai_summary": "Mechanical testing co‑op unlikely to advance AI engineering goals. · ⚠ verify eligibility: Mechanical test focus likely outside CS AI scope",
+          "action_plan": [
+            "Confirm if role involves AI‑driven testing",
+            "If not, skip; otherwise, prepare mechanical simulation portfolio"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 1,
+            "prestige": 5,
+            "deadline": 3,
+            "skill": 4,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "Mechanical test focus likely outside CS AI scope"
+          },
+          "pitch": "📍 Dallas, Texas",
+          "facts": {
+            "company": "Shield AI",
+            "location": "Dallas, Texas",
+            "platform": "Lever"
+          },
+          "key": "1d180d02cef7"
+        },
+        {
+          "title": "Summer 2027 Intern - Product Management — Salesforce",
+          "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/Summer-2027-Intern---Product-Management_JR367659-1",
+          "source": "ats",
+          "description": "Salesforce | 2 Locations | via Workday",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "workday:salesforce.wd12/salesforce/External_Career_Site:/job/California---San-Francisco/Summer-2027-Intern---Product-Management_JR367659-1",
+          "score": 6,
+          "ai_score": 6,
+          "ai_summary": "Product Management at Salesforce offers high‑prestige, cross‑functional AI product exposure.",
+          "action_plan": [
+            "Research Salesforce AI product line",
+            "Craft resume highlighting AI project leadership",
+            "Apply and prepare for PM interview"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 5,
+            "prestige": 8,
+            "deadline": 3,
+            "skill": 7,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 2 Locations",
+          "facts": {
+            "company": "Salesforce",
+            "location": "2 Locations",
+            "platform": "Workday"
+          },
+          "key": "883bda6d6499"
+        },
+        {
+          "title": "Credit & Collections Intern — Salesforce",
+          "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Singapore---Singapore/Credit---Collections-Intern_JR366260",
+          "source": "ats",
+          "description": "Salesforce | Singapore - Singapore | via Workday",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "workday:salesforce.wd12/salesforce/External_Career_Site:/job/Singapore---Singapore/Credit---Collections-Intern_JR366260",
+          "score": 6,
+          "ai_score": 6,
+          "ai_summary": "High‑profile AI‑adjacent internship, great resume signal · ⚠ verify eligibility: Requires Singapore location/visa",
+          "action_plan": [
+            "Research visa options (2d)",
+            "Prepare resume for Salesforce (1d)",
+            "Submit application (1d)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 5,
+            "prestige": 8,
+            "deadline": 3,
+            "skill": 6,
+            "time": 5,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "Requires Singapore location/visa"
+          },
+          "pitch": "📍 Singapore - Singapore",
+          "facts": {
+            "company": "Salesforce",
+            "location": "Singapore - Singapore",
+            "platform": "Workday"
+          },
+          "key": "e4b338fecc87"
+        },
+        {
+          "title": "Legal Specialist Intern, Approvals (JD) - Summer 2027 — Electronic Arts",
+          "url": "https://jobs.ea.com/en_US/careers/JobDetail/Legal-Specialist-Intern-Approvals-JD-Level/216328",
+          "source": "ats",
+          "description": "Electronic Arts | Los Angeles - Del Rey, United States of America | via Avature",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "avature:jobs.ea.com/en_US/careers:216328",
+          "score": 6,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Requires JD/legal degree · Not applicable to a CS student",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Requires JD/legal degree"
+          },
+          "pitch": "🏢 EA — the studio behind EA SPORTS FC, Need for Speed and The Sims\n📍 Los Angeles - Del Rey, United States Of America",
+          "facts": {
+            "company": "Electronic Arts",
+            "location": "Los Angeles - Del Rey, United States of America",
+            "platform": "Avature"
+          },
+          "key": "455d399ea018"
+        },
+        {
+          "title": "Environment Art Intern — Electronic Arts",
+          "url": "https://jobs.ea.com/en_US/careers/JobDetail/Environment-Art-Intern/216298",
+          "source": "ats",
+          "description": "Electronic Arts | Stockholm, Sweden | via Avature",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "avature:jobs.ea.com/en_US/careers:216298",
+          "score": 6,
+          "ai_score": 3,
+          "ai_summary": "Art‑focused role, low relevance to AI building goals",
+          "action_plan": [
+            "Check portfolio fit (1d)",
+            "Apply if time permits (1d)"
+          ],
+          "dimensions": {
+            "career": 3,
+            "interest": 2,
+            "prestige": 5,
+            "deadline": 3,
+            "skill": 4,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 EA — the studio behind EA SPORTS FC, Need for Speed and The Sims\n📍 Stockholm, Sweden",
+          "facts": {
+            "company": "Electronic Arts",
+            "location": "Stockholm, Sweden",
+            "platform": "Avature"
+          },
+          "key": "48dbaa885ad9"
+        },
+        {
+          "title": "ICLR27 math and stats paper review experience [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1xpvtxt/iclr27_math_and_stats_paper_review_experience_d/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning",
+            "focus:off-topic"
+          ],
+          "native_id": "1xpvtxt",
+          "score": 6,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Not an actual opportunity · Just a forum post, no action needed",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Not an actual opportunity"
+          },
+          "pitch": "",
+          "key": "957c134d5199"
+        },
+        {
+          "title": "Try my dang hardest to come up with novel research ideas, but everything feels clunky [R]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1xq06wu/try_my_dang_hardest_to_come_up_with_novel/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning",
+            "focus:off-topic"
+          ],
+          "native_id": "1xq06wu",
+          "score": 6,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Not an actual opportunity · Just a discussion thread",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Not an actual opportunity"
+          },
+          "pitch": "",
+          "key": "23d044f3b486"
+        },
+        {
+          "title": "ICLR27: Received a review that seems to be for an entirely different paper. Has anyone experienced this? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1xpzqjy/iclr27_received_a_review_that_seems_to_be_for_an/",
+          "source": "reddit",
+          "description": "r/MachineLearning | machine learning research | score 0",
+          "deadline": null,
+          "tags": [
+            "news",
+            "r/MachineLearning",
+            "focus:off-topic"
+          ],
+          "native_id": "1xpzqjy",
+          "score": 6,
+          "ai_score": 0,
+          "ai_summary": "⛔ Not eligible — Not an actual opportunity · Just a forum query",
+          "action_plan": [],
+          "dimensions": {
+            "career": 0,
+            "interest": 0,
+            "prestige": 0,
+            "deadline": 0,
+            "skill": 0,
+            "time": 0,
+            "eligible": "no",
+            "elig_note": "Not an actual opportunity"
+          },
+          "pitch": "",
+          "key": "aa72b4471ab5"
+        },
+        {
+          "title": "Video Editor and Reel Creator Internship",
+          "url": "https://unstop.com/internships/video-editor-and-reel-creator-internship-makers-muse-1799974",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 10,000/month | Remote/WFH | Eligibility: open to: students; courses: mba1, mba2, bba, bSchoolOthers, bcom, mcom (+29 more) | Team size: 1-1 | By Makers Muse | Makers Muse is hiring for Video Editor and Reel Creator About the Company Makers Muse is seeking a creative Video Editor and Reel Creator for its education technology content. This remote internship is centered on producing short-form videos that communicate ideas clearly and connect with online audiences. The internship lasts six months and provides a monthly stipend of ₹10,000, with a pre-placement opportunity (PPO) offered as a benefit. The role is suited to someone who enjoys shaping stories for social platforms and is comfortable appearing on camera. Responsibilities Create engaging reels and other short-form video content for digital platforms. Edit footage into polished videos, making",
+          "deadline": "2026-11-21",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1799974",
+          "score": 5,
+          "ai_score": 2,
+          "ai_summary": "Video editing unrelated to AI engineering goals",
+          "action_plan": [
+            "Review internship details (0.5d)",
+            "Decide if time worth (0.5d)"
+          ],
+          "dimensions": {
+            "career": 2,
+            "interest": 1,
+            "prestige": 3,
+            "deadline": 6,
+            "skill": 3,
+            "time": 4,
+            "eligible": "yes"
+          },
+          "pitch": "💰 ₹10,000/month\n🏠 remote",
+          "facts": {
+            "pay_min": 10000,
+            "pay_max": 10000,
+            "remote": true,
+            "company": "Makers Muse",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "f13268a8b7e0"
+        },
+        {
+          "title": "Applied Science Intern — Datadog",
+          "url": "https://careers.datadoghq.com/detail/8181440/?gh_jid=8181440",
+          "source": "ats",
+          "description": "Datadog | Paris, France | via Greenhouse",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "gh:datadog:8181440",
+          "score": 5,
+          "ai_score": 7,
+          "ai_summary": "Applied Science at Datadog aligns with AI engineering, strong resume boost",
+          "action_plan": [
+            "Update CV with AI projects (1d)",
+            "Craft cover letter targeting Datadog (1d)",
+            "Submit application (0.5d)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 7,
+            "prestige": 7,
+            "deadline": 4,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Paris, France",
+          "facts": {
+            "company": "Datadog",
+            "location": "Paris, France",
+            "platform": "Greenhouse"
+          },
+          "key": "4fd54581d2c4"
+        },
+        {
+          "title": "UX Research Intern (Summer 2027) — Lyft",
+          "url": "https://app.careerpuck.com/job-board/lyft/job/8797069002?gh_jid=8797069002",
+          "source": "ats",
+          "description": "Lyft | Toronto, Canada | via Greenhouse",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "gh:lyft:8797069002",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Toronto, Canada",
+          "facts": {
+            "company": "Lyft",
+            "location": "Toronto, Canada",
+            "platform": "Greenhouse"
+          },
+          "key": "e0beedd201c2"
+        },
+        {
+          "title": "Research Intern, ClickHouse Labs — ClickHouse",
+          "url": "https://jobs.ashbyhq.com/clickhouse/558c0c16-5fde-407a-966b-7a2255d3531b",
+          "source": "ats",
+          "description": "ClickHouse | United States | via Ashby",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "ashby:clickhouse:558c0c16-5fde-407a-966b-7a2255d3531b",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 United States",
+          "facts": {
+            "company": "ClickHouse",
+            "location": "United States",
+            "platform": "Ashby"
+          },
+          "key": "7112d55b60a0"
+        },
+        {
+          "title": "Research Intern — Mercor",
+          "url": "https://jobs.ashbyhq.com/mercor/e6502490-37c6-471a-9ffb-cf397764c518",
+          "source": "ats",
+          "description": "Mercor | San Francisco | via Ashby",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "ashby:mercor:e6502490-37c6-471a-9ffb-cf397764c518",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 San Francisco",
+          "facts": {
+            "company": "Mercor",
+            "location": "San Francisco",
+            "platform": "Ashby"
+          },
+          "key": "9d979da57d66"
+        },
+        {
+          "title": "Research Intern — Sierra",
+          "url": "https://jobs.ashbyhq.com/Sierra/ef896ee9-e903-4a1f-84c2-537373cb9081",
+          "source": "ats",
+          "description": "Sierra | San Francisco, CA | via Ashby",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "ashby:sierra:ef896ee9-e903-4a1f-84c2-537373cb9081",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 San Francisco, Ca",
+          "facts": {
+            "company": "Sierra",
+            "location": "San Francisco, CA",
+            "platform": "Ashby"
+          },
+          "key": "fab2de4d2fb6"
+        },
+        {
+          "title": "User Experience Research Intern — Match Group",
+          "url": "https://jobs.lever.co/matchgroup/e2747122-5e35-4230-9d54-8d274dd0a713",
+          "source": "ats",
+          "description": "Match Group | Los Angeles, California | via Lever",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "lever:matchgroup:e2747122-5e35-4230-9d54-8d274dd0a713",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Los Angeles, California",
+          "facts": {
+            "company": "Match Group",
+            "location": "Los Angeles, California",
+            "platform": "Lever"
+          },
+          "key": "5d19d7f9d060"
+        },
+        {
+          "title": "Marketing internship (brand & communication) — Sarvam AI",
+          "url": "https://jobs.ashbyhq.com/sarvam/bba82f34-1544-421e-a393-3edd8a5f4cb2",
+          "source": "ats",
+          "description": "Sarvam AI | Bengaluru | via Ashby",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "ashby:sarvam:bba82f34-1544-421e-a393-3edd8a5f4cb2",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Bengaluru",
+          "facts": {
+            "company": "Sarvam AI",
+            "location": "Bengaluru",
+            "platform": "Ashby"
+          },
+          "key": "255ea962514c"
+        },
+        {
+          "title": "GeoWorks, Microsoft Windows' Upstart '90s Competitor (2016)",
+          "url": "https://www.atlasobscura.com/articles/the-history-of-geoworks-microsoft-windows-upstart-90s-competitor",
+          "source": "hackernews",
+          "description": "",
+          "deadline": null,
+          "tags": [
+            "news",
+            "focus:off-topic"
+          ],
+          "native_id": "50406502",
+          "score": 5,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "",
+          "key": "8483ac831c74"
+        },
+        {
+          "title": "Marketing & Growth Internship - AI (Remote)",
+          "url": "https://unstop.com/internships/marketing-growth-internship-ai-remote-smartshopz-llp-1797681",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 3,000-5,000/month | Location: Bangalore | Remote/WFH | Eligibility: open to: students; courses: mba1, mba2, bba, bSchoolOthers, bcom, mcom (+29 more) | Team size: 1-1 | By Smartshopz LLP | About SmartShopz: We're a DPIIT-recognised Bengaluru startup that builds and runs its own consumer brands - StoryPop (storypop.in: personalised photo books, albums and magazines) and PrintPolaroid (printpolaroid.com: polaroid and photo prints). Real customers, real orders every day, and we build almost everything with AI. What you'll do: Run Instagram and Meta/Google ad experiments for PrintPolaroid and StoryPop SEO: write landing pages and blog content, track rankings Build WhatsApp/email campaigns and analyse what converts Use AI to research competitors and to generate and test ad copy at scale Skills: strong written English, curiosity about numbers, social-media native. Any prior ad, SEO ",
+          "deadline": "2026-11-20",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1797681",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "💰 ₹5,000/month\n🏠 remote",
+          "facts": {
+            "pay_min": 3000,
+            "pay_max": 5000,
+            "remote": true,
+            "cities": [
+              "Bangalore"
+            ],
+            "company": "Smartshopz LLP",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "ca6b8d17aeb4"
+        },
+        {
+          "title": "Customer Support & Website Onboarding Internship",
+          "url": "https://unstop.com/internships/customer-support-website-onboarding-internship-ownezzy-1796348",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 5,000/month | Remote/WFH | Eligibility: open to: students; courses: mba1, mba2, bba, bSchoolOthers, bcom, mcom (+29 more) | Team size: 1-1 | By OwnEzzy | OwnEzzy is hiring for Customer Support & Website Onboarding Intern About the Company OwnEzzy helps small businesses, home-based entrepreneurs, and retailers launch and manage online stores without the complexity of building a website from scratch. Its goal is to make online selling simple, accessible, and affordable. As a Customer Support and Website Onboarding Intern, you will help new and existing customers understand the platform and confidently operate their online businesses. Responsibilities Connect with prospective and existing customers through WhatsApp calls and messages to understand their needs, answer questions, and follow up with interested users. Conduct live demonstrations of ",
+          "deadline": "2026-11-19",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1796348",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "💰 ₹5,000/month\n🏠 remote",
+          "facts": {
+            "pay_min": 5000,
+            "pay_max": 5000,
+            "remote": true,
+            "company": "OwnEzzy",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "6ad309ecde2c"
+        },
+        {
+          "title": "Accounting & Bookkeeping Internship",
+          "url": "https://unstop.com/internships/accounting-bookkeeping-internship-consumer-culture-network-1793802",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 3,000-5,000/month | Remote/WFH | Eligibility: open to: students, fresher; courses: bba, bcom, mcom, ca | Team size: 1-1 | By Consumer Culture Network | Consumer Culture Network is hiring for Accounting & Bookkeeping Intern About the Company Consumer Culture Network is seeking an organised and trustworthy Accounting & Bookkeeping Intern to support accurate financial operations across its businesses. This remote, part-time opportunity is designed for a B.Com, M.Com or BBA student or recent graduate, or a CA Inter or CMA student, including women starting or restarting their careers. Responsibilities Record transactions from multiple bank accounts, cards and payment gateways in Zoho Books. Reconcile monthly bank statements and investigate unexplained entries. Match Razorpay, Shopify and marketplace payouts against orders and bank credits. Prepa",
+          "deadline": "2026-11-17",
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "1793802",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "💰 ₹5,000/month\n🏠 remote · ⏳ 9 days left",
+          "facts": {
+            "pay_min": 3000,
+            "pay_max": 5000,
+            "remote": true,
+            "company": "Consumer Culture Network",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "cb1ac796397a"
+        },
+        {
+          "title": "Video Editor Internship",
+          "url": "https://unstop.com/internships/video-editor-internship-diva-queen-1792115",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 4,000/month | Remote/WFH | Eligibility: open to: students | Team size: 1-1 | By Diva Queen | Intern's Responsibilities Selected interns will be responsible for: Managing the NGO's social media accounts, including uploading posts, scheduling content and responding to audience engagement. Editing provided raw footage into professional and engaging Instagram Reels and short-form videos, including transitions, subtitles, background music and effects. Editing existing photos, videos and promotional materials, maintaining consistency in the NGO's social media presence and ensuring timely delivery of edited content.",
+          "deadline": "2026-11-17",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1792115",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "💰 ₹4,000/month\n🏠 remote · ⏳ 9 days left",
+          "facts": {
+            "pay_min": 4000,
+            "pay_max": 4000,
+            "remote": true,
+            "company": "Diva Queen",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "59ef6c0f549c"
+        },
+        {
+          "title": "Acceleration Programs Intern — Coinbase",
+          "url": "https://www.coinbase.com/careers/positions/8175363?gh_jid=8175363",
+          "source": "ats",
+          "description": "Coinbase | Hybrid - New York, NY | via Greenhouse",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "gh:coinbase:8175363",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Hybrid - New York, Ny",
+          "facts": {
+            "company": "Coinbase",
+            "location": "Hybrid - New York, NY",
+            "platform": "Greenhouse"
+          },
+          "key": "01b334df233a"
+        },
+        {
+          "title": "Business Controller Intern — Coinbase",
+          "url": "https://www.coinbase.com/careers/positions/8175366?gh_jid=8175366",
+          "source": "ats",
+          "description": "Coinbase | Hybrid - New York, NY | via Greenhouse",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "gh:coinbase:8175366",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Hybrid - New York, Ny",
+          "facts": {
+            "company": "Coinbase",
+            "location": "Hybrid - New York, NY",
+            "platform": "Greenhouse"
+          },
+          "key": "a348e6ea1232"
+        },
+        {
+          "title": "Credit Risk Intern — Coinbase",
+          "url": "https://www.coinbase.com/careers/positions/8175369?gh_jid=8175369",
+          "source": "ats",
+          "description": "Coinbase | Hybrid - New York, NY | via Greenhouse",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "gh:coinbase:8175369",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Hybrid - New York, Ny",
+          "facts": {
+            "company": "Coinbase",
+            "location": "Hybrid - New York, NY",
+            "platform": "Greenhouse"
+          },
+          "key": "8296c92f1c52"
+        },
+        {
+          "title": "Crypto Inventory Operations Intern — Coinbase",
+          "url": "https://www.coinbase.com/careers/positions/8175435?gh_jid=8175435",
+          "source": "ats",
+          "description": "Coinbase | Hybrid - New York, NY | via Greenhouse",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "gh:coinbase:8175435",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Hybrid - New York, Ny",
+          "facts": {
+            "company": "Coinbase",
+            "location": "Hybrid - New York, NY",
+            "platform": "Greenhouse"
+          },
+          "key": "9078f83942a5"
+        },
+        {
+          "title": "Employee and Workplace Experience Intern — Coinbase",
+          "url": "https://www.coinbase.com/careers/positions/8175429?gh_jid=8175429",
+          "source": "ats",
+          "description": "Coinbase | Hybrid - New York, NY | via Greenhouse",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "gh:coinbase:8175429",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Hybrid - New York, Ny",
+          "facts": {
+            "company": "Coinbase",
+            "location": "Hybrid - New York, NY",
+            "platform": "Greenhouse"
+          },
+          "key": "8b4f8b10c9c2"
+        },
+        {
+          "title": "Institutional Operations Intern — Coinbase",
+          "url": "https://www.coinbase.com/careers/positions/8175569?gh_jid=8175569",
+          "source": "ats",
+          "description": "Coinbase | Hybrid - New York, NY | via Greenhouse",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "gh:coinbase:8175569",
+          "score": 4,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Hybrid - New York, Ny",
+          "facts": {
+            "company": "Coinbase",
+            "location": "Hybrid - New York, NY",
+            "platform": "Greenhouse"
+          },
+          "key": "bb33f6f983ef"
+        },
+        {
+          "title": "RainariesFire54079/cs2-resp-wallhack-2026 — ★62",
+          "url": "https://github.com/RainariesFire54079/cs2-resp-wallhack-2026",
+          "source": "github",
+          "description": "Reveal every enemy position in CS2 with real-time ESP wallhack and 2D radar, showing health, armor, C4, and dropped weapons. (topics: cs2 aim v2, cs2 aimbot v2 2026, cs2 silent aimbot, cs2 skin changer 2026, cs2 skins free, cs2 wall hack 2026, cs2 walls, deep learning, machine learning, vac bypass 2026, wifi)",
+          "deadline": null,
+          "tags": [
+            "github",
+            "learning",
+            "focus:off-topic"
+          ],
+          "native_id": "RainariesFire54079/cs2-resp-wallhack-2026",
+          "score": 3,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "",
+          "key": "a1cb5dd67789"
+        }
+      ]
     }
   ]
 }
