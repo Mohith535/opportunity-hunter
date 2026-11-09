@@ -1,97 +1,7 @@
 {
-  "updated_at": "2026-11-08T02:32:09Z",
-  "hunted_at": "2026-11-08T02:32:09Z",
+  "updated_at": "2026-11-09T02:32:27Z",
+  "hunted_at": "2026-11-09T02:32:27Z",
   "items": [
-    {
-      "key": "9f8b9879d740",
-      "title": "Pitch Tank 6.0",
-      "company": "",
-      "url": "https://unstop.com/competitions/pitch-tank-60-samriddhi-2026-goa-institute-of-management-gim-goa-1781785",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-31",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ef63d4eba98f",
-      "title": "DrillBit Original Voices Challenge - 2026",
-      "company": "",
-      "url": "https://unstop.com/scholarships/drillbit-original-voices-challenge-2026-drillbit-softtech-india-pvt-ltd-1756592",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-31",
-      "tags": [
-        "scholarship",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "69e177705dcb",
-      "title": "Qloo Agentic Hackathon",
-      "company": "",
-      "url": "https://qloo.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-10-30",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d13c595d2745",
-      "title": "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon",
-      "company": "",
-      "url": "https://aws-cds-partner.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-10-28",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "3f2ca52de870",
-      "title": "Green Forge",
-      "company": "",
-      "url": "https://unstop.com/competitions/green-forge-indian-institute-of-technology-iit-patna-1777333",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-31",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a6bcb8f3325d",
-      "title": "Learn, Think, Leverage: Building Your Career in the AI Era",
-      "company": "",
-      "url": "https://unstop.com/workshops-webinars/learn-think-leverage-building-your-career-in-the-ai-era-techbairn-research-1776774",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-10-29",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "f49df714ebb2",
       "title": "Campus Delegate Internship",
@@ -198,15 +108,60 @@
       "action_plan": []
     },
     {
-      "key": "c5b1c394b112",
-      "title": "Scholarship Test on Cyber Security with AI",
+      "key": "ef63d4eba98f",
+      "title": "DrillBit Original Voices Challenge - 2026",
       "company": "",
-      "url": "https://unstop.com/scholarships/scholarship-test-on-cyber-security-with-ai-quality-thought-info-systems-1785209",
+      "url": "https://unstop.com/scholarships/drillbit-original-voices-challenge-2026-drillbit-softtech-india-pvt-ltd-1756592",
       "source": "unstop",
       "score": 10,
-      "deadline": "2026-11-12",
+      "deadline": "2026-10-31",
       "tags": [
         "scholarship",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "69e177705dcb",
+      "title": "Qloo Agentic Hackathon",
+      "company": "",
+      "url": "https://qloo.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-10-30",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "9f8b9879d740",
+      "title": "Pitch Tank 6.0",
+      "company": "",
+      "url": "https://unstop.com/competitions/pitch-tank-60-samriddhi-2026-goa-institute-of-management-gim-goa-1781785",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-31",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a6bcb8f3325d",
+      "title": "Learn, Think, Leverage: Building Your Career in the AI Era",
+      "company": "",
+      "url": "https://unstop.com/workshops-webinars/learn-think-leverage-building-your-career-in-the-ai-era-techbairn-research-1776774",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-10-29",
+      "tags": [
+        "workshop",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -818,26 +773,6 @@
       "action_plan": []
     },
     {
-      "key": "bc6b6b440384",
-      "title": "Meta — Research Scientist Intern - Ads Recommendations",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1691709792593561",
-      "source": "internships",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Meta research internship in ads offers elite AI research exposure · ⚠ verify eligibility: US work visa needed for Meta internship",
-      "action_plan": [
-        "1d: Confirm CPT/visa eligibility",
-        "2d: Prepare research‑focused resume",
-        "1w: Apply with strong recommendation letters"
-      ]
-    },
-    {
       "key": "784d076e362d",
       "title": "Network Support Trainee/Internship",
       "company": "",
@@ -1269,138 +1204,17 @@
       ]
     },
     {
-      "key": "b6e159e9ebc8",
-      "title": "From AI Concepts to Production: The Journey of Autonomous Agents",
+      "key": "b83b949d82f9",
+      "title": "Starters 264 (codechef.com)",
       "company": "",
-      "url": "https://unstop.com/workshops-webinars/from-ai-concepts-to-production-the-journey-of-autonomous-agents-techbairn-research-1776769",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-10-28",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "Agent‑focused workshop aligns with core interests and future AI engineering",
-      "action_plan": [
-        "Register (10m)",
-        "Watch session recordings (2h)",
-        "Implement a simple autonomous agent (4h)"
-      ]
-    },
-    {
-      "key": "4c36ef7b9668",
-      "title": "Founder’s Office Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/founders-office-internship-mskard-business-solutions-1781368",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-10",
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "250edff2b071",
-      "title": "Community Growth Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/community-growth-internship-bharat-code-1781723",
-      "source": "unstop",
-      "score": 8,
+      "url": "https://www.codechef.com/START264",
+      "source": "clist",
+      "score": 9,
       "deadline": "2026-11-11",
       "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "3052ab530ffe",
-      "title": "Product and Brand Designer Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/product-and-brand-designer-internship-avro-helmets-1780742",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-10",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "2430719dd9f8",
-      "title": "Meta — Research Scientist Intern - Video Generation Self-Improvement",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/29358420983776961",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Video generation aligns with generative AI interest; high‑impact project",
-      "action_plan": [
-        "Build a quick video‑gen prototype (2d)",
-        "Link to portfolio (1d)",
-        "Apply with tailored essay (1d)"
-      ]
-    },
-    {
-      "key": "ef27a1a41277",
-      "title": "Meta — Research Scientist Intern - AI Research - Speech & Audio",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1567168005156007",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Speech & audio research matches deep learning goals; elite Meta brand",
-      "action_plan": [
-        "Create a small speech‑to‑text model (2d)",
-        "Document results (1d)",
-        "Submit application (1d)"
-      ]
-    },
-    {
-      "key": "ffe9729e565c",
-      "title": "Meta — Research Scientist Intern - User Modeling and Reinforcement Learning",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1751935042548465",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "533383adea8c",
-      "title": "Meta — Research Scientist Intern - Computer Vision - Video Intelligence",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1789380188995838",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
+        "contest",
+        "competitive programming",
+        "focus:off-topic"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1620,6 +1434,189 @@
       "tags": [
         "research",
         "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "95210cffcb48",
+      "title": "A harness that records where an LLM agent’s tool arguments came from, before the tool runs [P]",
+      "company": "",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1xhnoo2/a_harness_that_records_where_an_llm_agents_tool/",
+      "source": "reddit",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "5b0c82a2ad40",
+      "title": "Mochive IT Solutions - Hiring Drive",
+      "company": "",
+      "url": "https://unstop.com/internships/mochive-it-solutions-hiring-drive-internship-mela-20-2026-mochive-it-solutions-1783706",
+      "source": "unstop",
+      "score": 8,
+      "deadline": "2026-11-12",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "Cognitive AI intern hits core AI/LLM focus and offers tangible portfolio work",
+      "action_plan": [
+        "Read full role (20m)",
+        "Prepare brief project showcase (1h)",
+        "Submit application (10m)"
+      ]
+    },
+    {
+      "key": "9d5b8217e05a",
+      "title": "Overland AI — Software Engineering Intern",
+      "company": "Overland AI",
+      "url": "https://ats.rippling.com/overland-ai/jobs/37dd9f44-cdb1-4e2e-98c5-800b9b8cb40e",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Overland AI focuses on generative AI; strong signal for future AI roles",
+      "action_plan": [
+        "Week1: Tailor resume to AI engineering, highlight Nova (3h)",
+        "Week2: Build a small generative AI demo (5h)",
+        "Week3: Apply and prepare system design interview (5h)"
+      ]
+    },
+    {
+      "key": "8090f6faad44",
+      "title": "Microsoft — Applied Scientist Intern",
+      "company": "Microsoft",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393557050150",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "eb4867b23155",
+      "title": "Qualcomm — AI Software Engineering Co-op Intern",
+      "company": "Qualcomm",
+      "url": "https://qualcomm.eightfold.ai/careers/job/446721862429",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "97c3f7aefae3",
+      "title": "Qualcomm — AI Software Systems Co-op Intern",
+      "company": "Qualcomm",
+      "url": "https://qualcomm.eightfold.ai/careers/job/446721862430",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "724af13b05f7",
+      "title": "Qualcomm — Deep Learning Research Intern - Embodied AI - Interim Engineering Intern - Systems",
+      "company": "Qualcomm",
+      "url": "https://qualcomm.eightfold.ai/careers/job/446721858024",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "12ea5f2b00d3",
+      "title": "Meta — Research Scientist Intern - Scam and Trust",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/2355649268510104",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d980b70b7574",
+      "title": "Meta — Research Scientist Intern - AI Core Machine Learning",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1847186939636437",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f975bea0f8ef",
+      "title": "Meta — Research Scientist Intern - Multiple Teams",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1105933535765181",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "26e7acfd2a6a",
+      "title": "Meta — Research Scientist Intern - AI Infra",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/4603165899971826",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
       ],
       "ai_summary": "",
       "action_plan": []
