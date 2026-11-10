@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-10T01:50:54Z",
-  "hunted_at": "2026-11-09T02:32:27Z",
+  "updated_at": "2026-11-10T02:32:50Z",
+  "hunted_at": "2026-11-10T02:32:50Z",
   "items": [
     {
       "key": "a7f7ca291d82",
@@ -452,21 +452,6 @@
       "deadline": "2026-11-13",
       "tags": [
         "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "3ee1be4035d8",
-      "title": "Free Scholarship Test on Quantum Computing in Hyderabad | 15 November 2026",
-      "company": "",
-      "url": "https://unstop.com/scholarships/free-scholarship-test-on-quantum-computing-in-hyderabad-15-november-2026-quality-thought-info-systems-1791407",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-13",
-      "tags": [
-        "scholarship",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -1650,6 +1635,25 @@
         "Day1: Tailor CV for London role, emphasize Python & backend experience",
         "Day2: Submit via Greenhouse, request referral if possible",
         "Day3‑5: Review Stripe interview guides, mock coding rounds"
+      ]
+    },
+    {
+      "key": "62f44e6adbbe",
+      "title": "Software Engineer, Intern (Summer or Winter) — Stripe",
+      "company": "Stripe",
+      "url": "https://stripe.com/jobs/search?gh_jid=8128745",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "Summer/Winter Stripe SDE internship gives elite credential and AI‑related projects",
+      "action_plan": [
+        "Week1: Align project portfolio with Stripe’s tech stack",
+        "Week2: Apply for summer & winter tracks, note deadlines",
+        "Week3‑4: Practice system design, focus on scalability"
       ]
     }
   ]
