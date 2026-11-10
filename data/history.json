@@ -165857,6 +165857,85 @@
           "key": "20959717e722"
         }
       ]
+    },
+    {
+      "date": "2026-11-10",
+      "items": [
+        {
+          "title": "Toyota Research Institute — Automated Driving Advanced Development Intern - Machine Learning Research",
+          "url": "https://jobs.lever.co/tri/9c48b236-e6ad-4b97-9380-c675e5432415/apply",
+          "source": "internships",
+          "description": "internship | Toyota Research Institute | Los Altos, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "f8f1d3de-c885-4d0f-b2bb-5d806c23fd4d",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "TRI offers high‑prestige ML research in autonomous driving, relevant to AI agents.",
+          "action_plan": [
+            "Gather relevant ML research papers (1h)",
+            "Submit application with project links (45m)",
+            "Mock system‑design interview (3h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 7,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Los Altos, Ca",
+          "facts": {
+            "company": "Toyota Research Institute",
+            "location": "Los Altos, CA"
+          },
+          "key": "4be1a23d60a5"
+        },
+        {
+          "title": "Microsoft — Research Intern - Next-Generation AI Agents",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393557070079",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "cdd157c9-0e3a-4484-8da7-4b22e771dd2b",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Microsoft AI Agents research internship is elite, directly matches his top goals.",
+          "action_plan": [
+            "Finalize TaskFlow demo (2h)",
+            "Craft tailored cover letter (1h)",
+            "Apply to Microsoft (30m)",
+            "Prepare for deep‑learning interview (4h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 10,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Microsoft\n📍 Redmond, Wa",
+          "facts": {
+            "company": "Microsoft",
+            "location": "Redmond, WA"
+          },
+          "key": "f591f1a5a04f"
+        }
+      ]
     }
   ]
 }
