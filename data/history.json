@@ -167777,6 +167777,48 @@
           "key": "49b6dd50c2ab"
         }
       ]
+    },
+    {
+      "date": "2026-11-10",
+      "items": [
+        {
+          "title": "Pika — Applied AI Engineer Intern - Creative Experiences",
+          "url": "https://jobs.ashbyhq.com/pika/b075e6fb-df01-4eac-9437-1c1db97ea881/application?embed=true",
+          "source": "internships",
+          "description": "internship | Pika | Palo Alto, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "bdd3a0f8-3d9c-4fba-9550-fba440691018",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Good AI engineering fit, but no deadline reduces urgency.",
+          "action_plan": [
+            "Research Pika internship details (1h)",
+            "Update resume with AI projects (2h)",
+            "Draft application email (1h)",
+            "Submit application before next review cycle (1d)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 8,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 6,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Palo Alto, Ca",
+          "facts": {
+            "company": "Pika",
+            "location": "Palo Alto, CA"
+          },
+          "key": "17738b0f806b"
+        }
+      ]
     }
   ]
 }
