@@ -169872,6 +169872,52 @@
           "key": "354ac475b59d"
         }
       ]
+    },
+    {
+      "date": "2026-11-11",
+      "items": [
+        {
+          "title": "AI Developer Internship",
+          "url": "https://unstop.com/internships/ai-developer-internship-codeatrix-1805366",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 15,000/month | Remote/WFH | Eligibility: open to: students; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+5 more) | Team size: 1-1 | By Codeatrix | Codeatrix is a technology-driven company specializing in software development, digital solutions, and emerging technologies. We focus on developing innovative applications that combine modern programming practices with intelligent systems to address real-world challenges. Roles and Responsibilities Develop AI-powered applications and intelligent software solutions. Implement AI functionalities using Python and relevant libraries. Integrate AI models and APIs into web-based or software applications. Explore automation techniques using Artificial Intelligence. Work with data processing and AI-based decision-making systems. Develop chatbot functionalities and conversational interfaces. Test, de",
+          "deadline": "2026-11-25",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1805366",
+          "score": 10,
+          "ai_score": 7,
+          "ai_summary": "Direct AI building experience, boosts resume for top AI firms.",
+          "action_plan": [
+            "Day 1: Review internship posting, note required tech stack.",
+            "Day 2-3: Update CV with AI projects (TaskFlow, Nova).",
+            "Day 4: Draft cover letter linking AI interests to role.",
+            "Day 5: Submit application before deadline."
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 9,
+            "prestige": 5,
+            "deadline": 7,
+            "skill": 8,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "💰 ₹15,000/month\n🏠 remote",
+          "facts": {
+            "pay_min": 15000,
+            "pay_max": 15000,
+            "remote": true,
+            "company": "Codeatrix",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "a4fd7f32fd41"
+        }
+      ]
     }
   ]
 }
