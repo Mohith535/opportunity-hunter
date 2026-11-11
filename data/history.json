@@ -169743,6 +169743,48 @@
           "key": "bc5e22702de1"
         }
       ]
+    },
+    {
+      "date": "2026-11-11",
+      "items": [
+        {
+          "title": "Addepar — AI Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/addepar1/jobs/8927543002",
+          "source": "internships",
+          "description": "internship | Addepar | NYC | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "6f84906a-1c80-4e4e-9e1e-e9823c821842",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "AI engineer role directly matches his AI‑engineering goal and adds strong resume signal · ⚠ verify eligibility: US internship likely needs w",
+          "action_plan": [
+            "1. Confirm eligibility (visa/OPT) (1 h)",
+            "2. Update portfolio with AI projects (3 h)",
+            "3. Apply with tailored resume (1 h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "eligible": "unclear",
+            "elig_note": "US internship likely needs work‑auth for Indian student"
+          },
+          "pitch": "📍 Nyc",
+          "facts": {
+            "company": "Addepar",
+            "location": "NYC"
+          },
+          "key": "e02482d57a8d"
+        }
+      ]
     }
   ]
 }
