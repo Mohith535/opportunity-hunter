@@ -169918,6 +169918,53 @@
           "key": "a4fd7f32fd41"
         }
       ]
+    },
+    {
+      "date": "2026-11-11",
+      "items": [
+        {
+          "title": "Software Development Engineer Intern",
+          "url": "https://unstop.com/internships/software-development-engineer-internship-hoogwayai-1805800",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 15,000-40,000/month | Location: Bangalore | Eligibility: open to: students; courses: allEngineering, btech, mtech, integrated, bca, mca1 (+5 more) | Team size: 1-1 | By Hoogway.ai | Hoogway.ai is hiring for Software Development Engineer Intern About the Company Hoogway.ai builds AI-powered voice agents that help businesses automate customer interactions across sales, support, collections, verification, recruitment, and other workflows. Its agents operate in 45 languages and report outcomes that businesses can act on. Responsibilities Design, implement, test, and ship backend services, APIs, and internal tools from initial technical plans through production release. Build frontend features and user interfaces for internal tools and customer-facing workflows, connecting them to reliable backend APIs. Contribute across the product stack, considering usability, responsivene",
+          "deadline": "2026-11-15",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1805800",
+          "score": 10,
+          "ai_score": 7,
+          "ai_summary": "AI voice‑agent work aligns with generative AI interests and builds portfolio.",
+          "action_plan": [
+            "Allocate 2 h to review Hoogway.ai tech stack.",
+            "Prepare a mini project demo of an API endpoint (1 day).",
+            "Submit application with demo link before 2026‑11‑15."
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 8,
+            "skill": 7,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "💰 ₹40,000/month\n📍 Bangalore · ⏳ 4 days left",
+          "facts": {
+            "pay_min": 15000,
+            "pay_max": 40000,
+            "cities": [
+              "Bangalore"
+            ],
+            "company": "Hoogway.ai",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "4c33390a3c64"
+        }
+      ]
     }
   ]
 }
