@@ -169827,6 +169827,51 @@
           "key": "b8266502a242"
         }
       ]
+    },
+    {
+      "date": "2026-11-11",
+      "items": [
+        {
+          "title": "AI/ML Internship",
+          "url": "https://unstop.com/internships/aiml-internship-remote-404minds-technologies-1805355",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 12,000-18,000/month | Remote/WFH | Eligibility: open to: students; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+5 more) | Team size: 1-1 | By 404Minds Technologies | 404Minds Technologies is hiring for AI/ML Intern Responsibilities: Assist in the development and implementation of AI/ML models. Write and maintain Python code for various AI projects. Collaborate with the team on project requirements and solutions. Contribute to the entire lifecycle of AI projects, from conception to deployment. Requirements: Proficiency in Python programming. Understanding of Artificial Intelligence and Machine Learning concepts. Ability to work remotely for 4-6 hours a day. Flexible timings. Good exposure to AI projects is a plus.",
+          "deadline": "2026-11-25",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1805355",
+          "score": 10,
+          "ai_score": 7,
+          "ai_summary": "Hands‑on AI/ML work aligns with his builder goal and resume.",
+          "action_plan": [
+            "Update resume with AI projects (2h)",
+            "Apply via portal (30m)",
+            "Prepare Python code sample (3h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 6,
+            "skill": 7,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "💰 ₹18,000/month\n🏠 remote",
+          "facts": {
+            "pay_min": 12000,
+            "pay_max": 18000,
+            "remote": true,
+            "company": "404Minds Technologies",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "354ac475b59d"
+        }
+      ]
     }
   ]
 }
