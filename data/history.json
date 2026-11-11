@@ -169785,6 +169785,48 @@
           "key": "e02482d57a8d"
         }
       ]
+    },
+    {
+      "date": "2026-11-11",
+      "items": [
+        {
+          "title": "Astranis — Embedded Software Developer – Network/Payload Intern",
+          "url": "https://job-boards.greenhouse.io/astranis/jobs/4704569006",
+          "source": "internships",
+          "description": "internship | Astranis | SF | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "46b48762-e76f-4598-8440-e22bebf7a645",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Builds embedded AI systems, good portfolio boost",
+          "action_plan": [
+            "Week 1: Update resume with AI projects (2h)",
+            "Week 2: Draft cover letter highlighting embedded work (3h)",
+            "Week 3: Submit application (1h)",
+            "If selected: allocate 20h/week for summer intern tasks"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 7,
+            "prestige": 5,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Sf",
+          "facts": {
+            "company": "Astranis",
+            "location": "SF"
+          },
+          "key": "b8266502a242"
+        }
+      ]
     }
   ]
 }
