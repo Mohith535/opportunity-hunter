@@ -172167,6 +172167,47 @@
           "key": "454939d133a2"
         }
       ]
+    },
+    {
+      "date": "2026-11-12",
+      "items": [
+        {
+          "title": "Microsoft — Data Scientist Intern - CoreAI",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393557027390",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "6d3f5916-cf7c-49e6-a3dc-a48791bec4fd",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Top AI company internship aligns with his AI builder goals and resume.",
+          "action_plan": [
+            "Week 1: Update resume with AI projects (2h).",
+            "Week 2: Draft cover letter targeting CoreAI team (3h).",
+            "Week 3: Submit application via Microsoft portal (1h)."
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 10,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Microsoft\n📍 Redmond, Wa",
+          "facts": {
+            "company": "Microsoft",
+            "location": "Redmond, WA"
+          },
+          "key": "64f70a4da44b"
+        }
+      ]
     }
   ]
 }
