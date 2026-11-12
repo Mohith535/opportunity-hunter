@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-12T01:50:58Z",
-  "hunted_at": "2026-11-11T02:32:43Z",
+  "updated_at": "2026-11-12T02:32:30Z",
+  "hunted_at": "2026-11-12T02:32:30Z",
   "items": [
     {
       "key": "bc23445ea9b3",
@@ -528,6 +528,21 @@
       "action_plan": []
     },
     {
+      "key": "6b7b0d9709f5",
+      "title": "DSH Hacks V2 ($100k+ in prizes!)",
+      "company": "",
+      "url": "https://dsh-hacks-v2.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-11-15",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "556972bcf9c4",
       "title": "PayPal AI Hackathon",
       "company": "",
@@ -547,6 +562,21 @@
       "title": "Free Live Webinar on AI ML with Data Science | 12 November 2026",
       "company": "Quality Thought Info Systems",
       "url": "https://unstop.com/workshops-webinars/free-live-webinar-on-ai-ml-with-data-science-12-november-2026-quality-thought-info-systems-1802130",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-12",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "cc1b4de326b6",
+      "title": "Free Live Webinar on Data Analyst with AI",
+      "company": "Quality Thought Info Systems",
+      "url": "https://unstop.com/workshops-webinars/free-live-webinar-on-data-analyst-with-ai-quality-thought-info-systems-1803901",
       "source": "unstop",
       "score": 10,
       "deadline": "2026-11-12",
@@ -595,6 +625,36 @@
       "source": "unstop",
       "score": 10,
       "deadline": "2026-11-19",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "47c06b73a94d",
+      "title": "Game On Night: Imagine The Impossible",
+      "company": "Campus Unite",
+      "url": "https://unstop.com/competitions/game-on-night-imagine-the-impossible-campus-unite-1806057",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-20",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "ec27040203f9",
+      "title": "Rajagiri National Business Quiz 17th Edition- Offline Prelims",
+      "company": "Rajagiri Business School",
+      "url": "https://unstop.com/quiz/rajagiri-national-business-quiz-17th-edition-offline-prelims-rajagiri-business-school-1806001",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-21",
       "tags": [
         "competition",
         "focus:off-topic"
@@ -1597,70 +1657,6 @@
       "title": "Vatic Investments — AI Research Intern",
       "company": "Vatic Investments",
       "url": "https://job-boards.greenhouse.io/vaticlabs/jobs/7205954",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1f90262833cd",
-      "title": "Staples — Software Engineer Intern - SDS e-Commerce Team",
-      "company": "Staples",
-      "url": "https://fa-exhh-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/StaplesInc/job/77133",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "3e542e7013e3",
-      "title": "RoboForce — Machine Learning Engineer Intern - AI & Robotics",
-      "company": "RoboForce",
-      "url": "https://job-boards.greenhouse.io/roboforce/jobs/5470001008",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "8e3e0a4e2fbf",
-      "title": "Global Relay — Java Developer Co-op",
-      "company": "Global Relay",
-      "url": "https://www.globalrelay.com/careers/jobs?gh_jid=6241594004",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5e9c969c9693",
-      "title": "Global Relay — Java Developer Co-op",
-      "company": "Global Relay",
-      "url": "https://www.globalrelay.com/careers/jobs?gh_jid=6241593004",
       "source": "internships",
       "score": 8,
       "deadline": null,
