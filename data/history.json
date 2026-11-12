@@ -169965,6 +169965,205 @@
           "key": "4c33390a3c64"
         }
       ]
+    },
+    {
+      "date": "2026-11-12",
+      "items": [
+        {
+          "title": "Toyota Research Institute — Automated Driving Advanced Development Intern - Machine Learning Research",
+          "url": "https://jobs.lever.co/tri/da4b4832-36e7-4703-9841-c319efd6d495/apply",
+          "source": "internships",
+          "description": "internship | Toyota Research Institute | Los Altos, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "00e50906-bfe2-482d-b3ef-ed2e9d51a666",
+          "score": 8,
+          "ai_score": 9,
+          "ai_summary": "TRI ML research intern in automated driving, top‑tier prestige and skill growth. · ⚠ verify eligibility: US work authorization may be requir",
+          "action_plan": [
+            "Verify work‑auth requirements (30m)",
+            "Gather ML research samples (2h)",
+            "Submit application (1h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 10,
+            "prestige": 10,
+            "deadline": 2,
+            "skill": 10,
+            "time": 6,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "US work authorization may be required"
+          },
+          "pitch": "📍 Los Altos, Ca",
+          "facts": {
+            "company": "Toyota Research Institute",
+            "location": "Los Altos, CA"
+          },
+          "key": "9abdec0ef8bc"
+        },
+        {
+          "title": "Microsoft — AI Security Research Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393557070382",
+          "source": "internships",
+          "description": "internship | Microsoft | Cambridge, UK | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "a6234f78-0b50-4ba3-ba44-1c20ad489c40",
+          "score": 8,
+          "ai_score": 9,
+          "ai_summary": "Microsoft AI Security research intern, elite credential, directly relevant. · ⚠ verify eligibility: UK work visa likely needed",
+          "action_plan": [
+            "Check UK visa eligibility (30m)",
+            "Prepare security‑focused AI project (3h)",
+            "Apply with statement (1h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 10,
+            "prestige": 10,
+            "deadline": 2,
+            "skill": 10,
+            "time": 6,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "UK work visa likely needed"
+          },
+          "pitch": "🏢 Microsoft\n📍 Cambridge, Uk",
+          "facts": {
+            "company": "Microsoft",
+            "location": "Cambridge, UK"
+          },
+          "key": "d6709564dd99"
+        },
+        {
+          "title": "Software Engineer, New Grad – Remote (Worldwide) — RemoteJobsOne",
+          "url": "https://himalayas.app/companies/remotejobsone/jobs/software-engineer-new-grad-remote-worldwide?utm_source=api",
+          "source": "remote",
+          "description": "job | RemoteJobsOne | Remote — Canada, France, Germany, India, Netherlands, Singapore | Full Time | pays USD 180000–250000 (annual) | via Himalayas | IMPORTANT: after you apply, please check your email.",
+          "deadline": null,
+          "tags": [
+            "job",
+            "focus:job"
+          ],
+          "native_id": "himalayas:remotejobsone:software-engineer-new-grad-remote-worldwide",
+          "score": 9,
+          "ai_score": 8,
+          "ai_summary": "High‑pay remote new‑grad role at top companies, huge career leverage.",
+          "action_plan": [
+            "Update resume with AI projects (2h)",
+            "Tailor cover letter for remote role (1h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 8,
+            "prestige": 9,
+            "deadline": 1,
+            "skill": 9,
+            "time": 7,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏠 remote",
+          "facts": {
+            "remote": true,
+            "company": "RemoteJobsOne",
+            "location": "Remote — Canada, France, Germany, India, Netherlands, Singapore",
+            "platform": "Himalayas"
+          },
+          "key": "2cde9414fdf6"
+        },
+        {
+          "title": "Software Development Engineer Internship",
+          "url": "https://unstop.com/internships/software-development-engineer-internship-hoogwayai-1805800",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 15,000-40,000/month | Location: Bangalore | Eligibility: open to: students; courses: allEngineering, btech, mtech, integrated, bca, mca1 (+5 more) | Team size: 1-1 | By Hoogway.ai | Hoogway.ai is hiring for Software Development Engineer Intern About the Company Hoogway.ai builds AI-powered voice agents that help businesses automate customer interactions across sales, support, collections, verification, recruitment, and other workflows. Its agents operate in 45 languages and report outcomes that businesses can act on. Responsibilities Design, implement, test, and ship backend services, APIs, and internal tools from initial technical plans through production release. Build frontend features and user interfaces for internal tools and customer-facing workflows, connecting them to reliable backend APIs. Contribute across the product stack, considering usability, responsivene",
+          "deadline": "2026-11-15",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1805800",
+          "score": 10,
+          "ai_score": 7,
+          "ai_summary": "Builds AI voice agents, strong skill growth and relevant resume signal.",
+          "action_plan": [
+            "Read Hoogway.ai product docs (1h)",
+            "Draft a simple backend prototype (3h)",
+            "Apply with code sample (1h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 7,
+            "prestige": 6,
+            "deadline": 5,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "💰 ₹40,000/month\n📍 Bangalore · ⏳ closes in 3 days",
+          "facts": {
+            "pay_min": 15000,
+            "pay_max": 40000,
+            "cities": [
+              "Bangalore"
+            ],
+            "company": "Hoogway.ai",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "4c33390a3c64"
+        },
+        {
+          "title": "Toyota Research Institute — Future Product Innovation Research Intern - Human-AI Computational Design",
+          "url": "https://jobs.lever.co/tri/ad346610-e4a6-4cd2-a357-11d731b136a2/apply",
+          "source": "internships",
+          "description": "internship | Toyota Research Institute | Los Altos, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "866c4ff4-bf23-4584-8728-27a04027ccb1",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "TRI research intern on Human‑AI design, elite signal, aligns with interests. · ⚠ verify eligibility: US work authorization may be required",
+          "action_plan": [
+            "Check visa eligibility (30m)",
+            "Contact recruiter for clarification (1h)",
+            "Prepare research statement (2h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 2,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "US work authorization may be required"
+          },
+          "pitch": "📍 Los Altos, Ca",
+          "facts": {
+            "company": "Toyota Research Institute",
+            "location": "Los Altos, CA"
+          },
+          "key": "05c8b85c412e"
+        }
+      ]
     }
   ]
 }
