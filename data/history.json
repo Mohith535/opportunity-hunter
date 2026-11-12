@@ -171992,6 +171992,89 @@
           "key": "a92215e46877"
         }
       ]
+    },
+    {
+      "date": "2026-11-12",
+      "items": [
+        {
+          "title": "Software Development Engineer Internship",
+          "url": "https://unstop.com/internships/software-development-engineer-internship-hoogwayai-1805800",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 15,000-40,000/month | Location: Bangalore | Eligibility: open to: students; courses: allEngineering, btech, mtech, integrated, bca, mca1 (+5 more) | Team size: 1-1 | By Hoogway.ai | Hoogway.ai is hiring for Software Development Engineer Intern About the Company Hoogway.ai builds AI-powered voice agents that help businesses automate customer interactions across sales, support, collections, verification, recruitment, and other workflows. Its agents operate in 45 languages and report outcomes that businesses can act on. Responsibilities Design, implement, test, and ship backend services, APIs, and internal tools from initial technical plans through production release. Build frontend features and user interfaces for internal tools and customer-facing workflows, connecting them to reliable backend APIs. Contribute across the product stack, considering usability, responsivene",
+          "deadline": "2026-11-15",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1805800",
+          "score": 10,
+          "ai_score": 7,
+          "ai_summary": "Builds AI voice agents, good portfolio, but not top‑tier brand.",
+          "action_plan": [
+            "Day 1: Update resume with AI projects (2h).",
+            "Day 2: Draft cover letter highlighting TaskFlow (3h).",
+            "Day 3: Submit application before deadline (1h)."
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 9,
+            "skill": 7,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "pitch": "💰 ₹40,000/month\n📍 Bangalore · ⏳ closes in 3 days",
+          "facts": {
+            "pay_min": 15000,
+            "pay_max": 40000,
+            "cities": [
+              "Bangalore"
+            ],
+            "company": "Hoogway.ai",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "4c33390a3c64"
+        },
+        {
+          "title": "Meta — Research Scientist Intern",
+          "url": "https://www.metacareers.com/jobs/2690374264750493",
+          "source": "internships",
+          "description": "internship | Meta | Menlo Park, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "cfdccbd3-a69e-4b33-a025-344e263dac2d",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Meta research internship is elite signal and aligns with AI research goals.",
+          "action_plan": [
+            "Week 1: Gather research papers & metrics (4h).",
+            "Week 2: Write concise research‑focused resume (3h).",
+            "Week 3: Submit application & follow‑up email (2h)."
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 10,
+            "deadline": 2,
+            "skill": 9,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Meta\n📍 Menlo Park, Ca",
+          "facts": {
+            "company": "Meta",
+            "location": "Menlo Park, CA"
+          },
+          "key": "d88fcc45ff99"
+        }
+      ]
     }
   ]
 }
