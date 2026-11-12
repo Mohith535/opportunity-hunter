@@ -172124,6 +172124,49 @@
           "key": "4c33390a3c64"
         }
       ]
+    },
+    {
+      "date": "2026-11-12",
+      "items": [
+        {
+          "title": "Apple — Camera Software Intern",
+          "url": "https://jobs.apple.com/en-us/details/200694477",
+          "source": "internships",
+          "description": "internship | Apple | Cambridge, UK | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "f8b06033-a0d7-44b2-a883-7e962adb56c7",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Apple camera role is high‑prestige, CV‑boosting, and builds CV/vision skills",
+          "action_plan": [
+            "Day 1: Research Apple camera pipeline, note relevant ML topics (2 hrs)",
+            "Day 2: Tailor resume to highlight computer‑vision projects (3 hrs)",
+            "Day 3: Write concise cover letter linking to AI‑agent vision goals (2 hrs)",
+            "Day 4: Submit application; set reminder for follow‑up (1 hr)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 7,
+            "prestige": 9,
+            "deadline": 4,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Apple\n📍 Cambridge, Uk",
+          "facts": {
+            "company": "Apple",
+            "location": "Cambridge, UK"
+          },
+          "key": "454939d133a2"
+        }
+      ]
     }
   ]
 }
