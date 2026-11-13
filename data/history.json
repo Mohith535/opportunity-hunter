@@ -174252,6 +174252,50 @@
           "key": "6233efa56dcc"
         }
       ]
+    },
+    {
+      "date": "2026-11-13",
+      "items": [
+        {
+          "title": "2027 Summer Intern - Human Machine Teaming - 6532 — Shield AI",
+          "url": "https://jobs.lever.co/shieldai/a737063e-e831-49e1-98c3-25be44faac30",
+          "source": "ats",
+          "description": "Shield AI | Washington, D.C. | via Lever",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "lever:shieldai:a737063e-e831-49e1-98c3-25be44faac30",
+          "score": 7,
+          "ai_score": 7,
+          "ai_summary": "Directly aligns with AI agents & human‑machine teaming, strong resume signal · ⚠ verify eligibility: US work authorization not specified",
+          "action_plan": [
+            "Verify eligibility for international students (2 hrs)",
+            "Tailor cover letter to human‑machine teaming research (1 day)",
+            "Submit application and follow‑up (1‑2 days)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 3,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "US work authorization not specified"
+          },
+          "pitch": "📍 Washington, D.C.",
+          "facts": {
+            "company": "Shield AI",
+            "location": "Washington, D.C.",
+            "platform": "Lever"
+          },
+          "key": "d24592a93431"
+        }
+      ]
     }
   ]
 }
