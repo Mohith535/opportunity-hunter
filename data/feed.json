@@ -1,127 +1,7 @@
 {
-  "updated_at": "2026-11-12T16:50:56Z",
+  "updated_at": "2026-11-13T01:50:53Z",
   "hunted_at": "2026-11-12T02:32:30Z",
   "items": [
-    {
-      "key": "bc23445ea9b3",
-      "title": "Campus Ambassador",
-      "company": "",
-      "url": "https://unstop.com/internships/campus-ambassador-nexovate-private-limited-1787014",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-06",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "bd85295f6d7b",
-      "title": "Codex x TwitchCon Hackathon",
-      "company": "",
-      "url": "https://twitchcon-codex.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-11-02",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "e91b4f17969d",
-      "title": "Sommium",
-      "company": "",
-      "url": "https://unstop.com/competitions/sommium-saturnalia-2026-thapar-institute-of-engineering-and-technology-tiet-patiala-1773173",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-19",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "7654cee52a3c",
-      "title": "Artificial Intelligence's Role in Current Tech Infrastructure",
-      "company": "",
-      "url": "https://unstop.com/workshops-webinars/artificial-intelligences-role-in-current-tech-infrastructure-techbairn-1787583",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-12",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "406acab37e71",
-      "title": "ELUCode - 7",
-      "company": "",
-      "url": "https://unstop.com/hackathons/elucode-7-edulinkup-1783260",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-07",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "9012c3170673",
-      "title": "Live Project Opportunity: Equity Valuation, Quantitative Finance & Market Research & Analytics Roles",
-      "company": "",
-      "url": "https://unstop.com/competitions/national-finance-investment-challenge-2026-caplexus-capital-1788810",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-07",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "c53b02d028f4",
-      "title": "Career Guidance for Aspiring Developers: Exploring AI/ML Research & Higher Studies",
-      "company": "",
-      "url": "https://unstop.com/workshops-webinars/career-guidance-for-aspiring-developers-exploring-aiml-research-higher-studies-techbairn-research-1787577",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-12",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "24868737558a",
-      "title": "Synapase 3.0",
-      "company": "",
-      "url": "https://unstop.com/hackathons/synapase-30-kalindi-college-kc-university-of-delhi-du-delhi-1787967",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-10",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "089a458b241e",
       "title": "Software Engineer Intern - Arango Cookbooks — ArangoDB",
@@ -198,6 +78,21 @@
       "action_plan": []
     },
     {
+      "key": "bd85295f6d7b",
+      "title": "Codex x TwitchCon Hackathon",
+      "company": "",
+      "url": "https://twitchcon-codex.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-11-02",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "d10ce9d4b6b5",
       "title": "IndiaStox Nifty Midcap 100 Predictions Challenge",
       "company": "",
@@ -235,6 +130,21 @@
       "source": "unstop",
       "score": 10,
       "deadline": "2026-11-16",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "bc23445ea9b3",
+      "title": "Campus Ambassador",
+      "company": "",
+      "url": "https://unstop.com/internships/campus-ambassador-nexovate-private-limited-1787014",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-06",
       "tags": [
         "internship",
         "focus:internship"
@@ -663,26 +573,6 @@
       "action_plan": []
     },
     {
-      "key": "943debd29024",
-      "title": "Master's Machine Learning Engineer, Intern — Stripe",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8333074",
-      "source": "ats",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Stripe ML intern aligns with AI/ML goals, high‑impact, limited slots",
-      "action_plan": [
-        "Week1: Update resume with TaskFlow/Nova, highlight ML projects",
-        "Week2: Submit application via Greenhouse, attach portfolio link",
-        "Week3: Prepare for ML interview – practice system design & coding"
-      ]
-    },
-    {
       "key": "3959b6cb9099",
       "title": "Codeforces Round 1132 (Div. 2) (codeforces.com)",
       "company": "",
@@ -1008,336 +898,6 @@
         "Prepare security‑focused AI project (3h)",
         "Apply with statement (1h)"
       ]
-    },
-    {
-      "key": "843a96e9292e",
-      "title": "Cloud Engineer Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/cloud-engineer-internship-flatuiux-1788178",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-15",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "Combines cloud, AI agents, LLMs; high‑impact, hard‑to‑replace chance.",
-      "action_plan": [
-        "Read cloud stack requirements (1h)",
-        "Create mini AI‑agent demo (3h)",
-        "Tailor resume & cover (1h)",
-        "Apply before 11/15 (30m)"
-      ]
-    },
-    {
-      "key": "964868ff0f9e",
-      "title": "College Campus Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/college-campus-internship-asapnext-solutions-private-limited-1787404",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-14",
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "6ccb7bf535f7",
-      "title": "Software Engineer, Intern — Stripe",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8130867",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "Software engineer intern at Stripe London offers strong resume signal and AI‑adjacent work",
-      "action_plan": [
-        "Day1: Tailor CV for London role, emphasize Python & backend experience",
-        "Day2: Submit via Greenhouse, request referral if possible",
-        "Day3‑5: Review Stripe interview guides, mock coding rounds"
-      ]
-    },
-    {
-      "key": "62f44e6adbbe",
-      "title": "Software Engineer, Intern (Summer or Winter) — Stripe",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8128745",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "Summer/Winter Stripe SDE internship gives elite credential and AI‑related projects",
-      "action_plan": [
-        "Week1: Align project portfolio with Stripe’s tech stack",
-        "Week2: Apply for summer & winter tracks, note deadlines",
-        "Week3‑4: Practice system design, focus on scalability"
-      ]
-    },
-    {
-      "key": "e4f11ff5ac13",
-      "title": "Research Engineer Intern - Environments, Data and Post-Training — Mercor",
-      "company": "Mercor",
-      "url": "https://jobs.ashbyhq.com/mercor/049bd532-6fb7-4ae6-85a1-788dd31a14ca",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "Research engineer role matches his AI research ambition and builds strong portfolio",
-      "action_plan": [
-        "Week1: Draft research summary of prior ML work",
-        "Week2: Apply, attach paper‑style write‑up",
-        "Week3‑4: Prepare for research interview – discuss data pipelines"
-      ]
-    },
-    {
-      "key": "cafecb41030a",
-      "title": "Research Engineer, Intern – Benchmarking — Mercor",
-      "company": "Mercor",
-      "url": "https://jobs.ashbyhq.com/mercor/2b1a4fd9-300d-4ae9-b5c8-eacba99bf4ae",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "Benchmarking research internship aligns with AI engineering and adds publishable work",
-      "action_plan": [
-        "Day1: Identify relevant benchmarking papers",
-        "Day2: Submit application with code samples",
-        "Day3‑5: Review Mercor’s research focus, prep discussion points"
-      ]
-    },
-    {
-      "key": "6d939adc8f27",
-      "title": "2027 Intern - AI & Architecture — Adobe",
-      "company": "Adobe",
-      "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/XMLNAME-2027-Intern---AI---Architecture_R172998",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Adobe AI & Architecture internship hits core AI interests and top‑tier brand.",
-      "action_plan": [
-        "Read Adobe AI research blog (1h)",
-        "Prepare portfolio of architecture demos (2h)",
-        "Apply (30m)"
-      ]
-    },
-    {
-      "key": "fbafabc4a351",
-      "title": "2027 Intern - Applied and Research Scientist/Engineer — Adobe",
-      "company": "Adobe",
-      "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/XMLNAME-2027-Intern---Applied-and-Research-Scientist-Engineer_R172064",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Applied/Research Scientist role aligns perfectly with AI research goal; elite signal.",
-      "action_plan": [
-        "Identify Adobe research papers in AI (1h)",
-        "Draft research‑oriented resume (2h)",
-        "Submit application (30m)"
-      ]
-    },
-    {
-      "key": "3a6cdba14129",
-      "title": "Product Management INTERN — Microsoft",
-      "company": "Microsoft",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556978896",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1b18f38e152b",
-      "title": "Product Design INTERN — Microsoft",
-      "company": "Microsoft",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556992502",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "81a5062f844c",
-      "title": "Software Engineer Intern - Tools — Electronic Arts",
-      "company": "Electronic Arts",
-      "url": "https://jobs.ea.com/en_US/careers/JobDetail/Software-Engineer-Intern-Tools/216192",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "e232aaf359aa",
-      "title": "Client/AI Software Engineer Intern — Electronic Arts",
-      "company": "Electronic Arts",
-      "url": "https://jobs.ea.com/en_US/careers/JobDetail/Client-AI-Software-Engineer-Intern/216364",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "855561e8e4d1",
-      "title": "Software Engineer Co-op (Summer 2027 - 8-Months - Sports Technology - Undergraduate) — Electronic Arts",
-      "company": "Electronic Arts",
-      "url": "https://jobs.ea.com/en_US/careers/JobDetail/Software-Engineer-Co-op-Summer-2027-8-Months-Sports-Technology/216225",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f84b0a671789",
-      "title": "C++ Generalist Software Engineer Co-op (FC - Vancouver - Summer 2027 - 8-Months - Undergrad) — Electronic Arts",
-      "company": "Electronic Arts",
-      "url": "https://jobs.ea.com/en_US/careers/JobDetail/C-Generalist-Software-Engineer-Co-op-FC/216231",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "55d5177382c7",
-      "title": "C++ Gameplay Software Engineer Co-op (FC - Vancouver - Summer 2027 - 8-months - Undergrad) — Electronic Arts",
-      "company": "Electronic Arts",
-      "url": "https://jobs.ea.com/en_US/careers/JobDetail/Gameplay-Software-Engineer-Co-op-FC/216230",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1f10c222fbc7",
-      "title": "microsoft/TokenEconomizer — ★3,394",
-      "company": "",
-      "url": "https://github.com/microsoft/TokenEconomizer",
-      "source": "github",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "github",
-        "learning",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d75df97c0383",
-      "title": "Hierarchical detection of neonatal brain pathologies using a two-stage deep learning framework from magnetic resonance imaging [R]",
-      "company": "",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1xkcy83/hierarchical_detection_of_neonatal_brain/",
-      "source": "reddit",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "2f180747a6d0",
-      "title": "Swiss Government Excellence Scholarships",
-      "company": "",
-      "url": "https://www.sbfi.admin.ch/en/swiss-government-excellence-scholarships",
-      "source": "programs",
-      "score": 8,
-      "deadline": "2026-11-30",
-      "tags": [
-        "scholarship",
-        "government",
-        "funded",
-        "switzerland",
-        "research",
-        "in-season",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f2d83e3db382",
-      "title": "Is it okay to share my experiments implementing research papers on my own LLM here? [P]",
-      "company": "",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1xkgtly/is_it_okay_to_share_my_experiments_implementing/",
-      "source": "reddit",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
     },
     {
       "key": "d68a880433f7",
@@ -1667,6 +1227,434 @@
       ],
       "ai_summary": "",
       "action_plan": []
+    },
+    {
+      "key": "1f90262833cd",
+      "title": "Staples — Software Engineer Intern - SDS e-Commerce Team",
+      "company": "Staples",
+      "url": "https://fa-exhh-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/StaplesInc/job/77133",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3e542e7013e3",
+      "title": "RoboForce — Machine Learning Engineer Intern - AI & Robotics",
+      "company": "RoboForce",
+      "url": "https://job-boards.greenhouse.io/roboforce/jobs/5470001008",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8e3e0a4e2fbf",
+      "title": "Global Relay — Java Developer Co-op",
+      "company": "Global Relay",
+      "url": "https://www.globalrelay.com/careers/jobs?gh_jid=6241594004",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "5e9c969c9693",
+      "title": "Global Relay — Java Developer Co-op",
+      "company": "Global Relay",
+      "url": "https://www.globalrelay.com/careers/jobs?gh_jid=6241593004",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b20777998784",
+      "title": "USAFacts — AI Product Intern",
+      "company": "USAFacts",
+      "url": "https://job-boards.greenhouse.io/usafacts/jobs/4478239009",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "299653517d19",
+      "title": "Keysight Technologies — R&D Software Engineer Intern",
+      "company": "Keysight Technologies",
+      "url": "https://jobs.keysight.com/jobs/56415?icims=1",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e7367e0443dc",
+      "title": "Toshiba Global Commerce Solutions — AI Software Engineer Intern",
+      "company": "Toshiba Global Commerce Solutions",
+      "url": "https://job-boards.greenhouse.io/toshibaglobalcommercesolutions/jobs/5283178007",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d1def268461a",
+      "title": "Nex — Software Engineer Intern - Sports & Fitness - Game Development",
+      "company": "Nex",
+      "url": "https://job-boards.greenhouse.io/nex/jobs/5421056008",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "806db66c07f3",
+      "title": "Samsung Research America — Agentic AI Solutions Intern",
+      "company": "Samsung Research America",
+      "url": "https://job-boards.greenhouse.io/samsungresearchamericainternship/jobs/8926019002",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b9780e419b9e",
+      "title": "First Citizens BancShares — Applied AI Intern",
+      "company": "First Citizens BancShares",
+      "url": "https://firstcitizens.jibeapply.com/jobs/36413?icims=1",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8479c7c7ec55",
+      "title": "Hearst — Editorial AI Development Intern",
+      "company": "Hearst",
+      "url": "https://job-boards.greenhouse.io/hearst/jobs/4473043009",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "36716a6502e0",
+      "title": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
+      "company": "",
+      "url": "https://arxiv.org/abs/2611.05376v1",
+      "source": "arxiv",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "research",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "18ec6052c4ea",
+      "title": "Agnostic Learning by Imitating",
+      "company": "",
+      "url": "https://arxiv.org/abs/2611.05346v1",
+      "source": "arxiv",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "research",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "5dbb5711222a",
+      "title": "Summer 2027 Intern - Embedded Firmware - 5810 — Shield AI",
+      "company": "Shield AI",
+      "url": "https://jobs.lever.co/shieldai/ac38d092-f435-4301-880b-48d0e92679a4",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "Shield AI is top‑tier AI robotics, high prestige, strong skill boost. · ⚠ verify eligibility: US work‑authorization may be required",
+      "action_plan": [
+        "Check visa/work eligibility (2h)",
+        "Tailor resume to embedded AI (1d)",
+        "Contact recruiter for details (1h)"
+      ]
+    },
+    {
+      "key": "33571d08776f",
+      "title": "L3Harris Technologies — Software Engineer Intern",
+      "company": "L3Harris Technologies",
+      "url": "https://jobs.l3harris.com/job/Nashville-Intern,-Software-Engineer-TN-37203/1447640200/?ats=successfactors",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "L3Harris software role offers high prestige and AI relevance, hard to miss · ⚠ verify eligibility: US work visa likely needed, unclear eligi",
+      "action_plan": [
+        "2d: research visa requirements",
+        "3d: prepare US‑focused resume",
+        "1w: contact recruiter"
+      ]
+    },
+    {
+      "key": "85d77a2fee38",
+      "title": "Roku — Software Engineer Intern",
+      "company": "Roku",
+      "url": "https://www.weareroku.com/jobs/8345967?gh_jid=8345967",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Roku software internship is elite, international exposure, strong AI relevance · ⚠ verify eligibility: UK work eligibility unclear for India",
+      "action_plan": [
+        "2d: check UK visa options",
+        "3d: adapt CV for UK market",
+        "1w: submit application"
+      ]
+    },
+    {
+      "key": "c5af7ae1d5da",
+      "title": "Data Science Intern (2027 Start) — Databricks",
+      "company": "Databricks",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6866538002",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "815729d3cc12",
+      "title": "Data Science Intern, Algorithms (Summer 2027 - SF/NYC) — Lyft",
+      "company": "Lyft",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8767723002?gh_jid=8767723002",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "12f96b80c784",
+      "title": "Data Science Intern, Algorithms (Summer 2027 - Toronto) — Lyft",
+      "company": "Lyft",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8767697002?gh_jid=8767697002",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "37ea4c919165",
+      "title": "Master's Data Science Internship 2027 (USA) — Pinterest",
+      "company": "Pinterest",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8138097",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "fd5f1ce4d819",
+      "title": "Data Analyst, Intern — Stripe",
+      "company": "Stripe",
+      "url": "https://stripe.com/jobs/search?gh_jid=8194291",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "0eaf1a1fd396",
+      "title": "Financial Data Analyst Intern, Technical Operations — Stripe",
+      "company": "Stripe",
+      "url": "https://stripe.com/jobs/search?gh_jid=8186442",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "91933877db8f",
+      "title": "Data Science Intern — Mercor",
+      "company": "Mercor",
+      "url": "https://jobs.ashbyhq.com/mercor/11516609-e54b-4087-87c2-e84a8bafbb5a",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "48a98385c5a9",
+      "title": "Software Engineer (CPD) - Winter Intern — Rubrik",
+      "company": "Rubrik",
+      "url": "https://www.rubrik.com/company/careers/departments/job.8166537?gh_jid=8166537",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8adf086dff92",
+      "title": "[P] NKI layer megakernels for GLM-5.3-Flash on AWS Trainium2: where a decode step's time went, and what we changed [P]",
+      "company": "",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1xo0yuq/p_nki_layer_megakernels_for_glm53flash_on_aws/",
+      "source": "reddit",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "974364af37f0",
+      "title": "Toyota Research Institute — Automated Driving Advanced Development Intern - Machine Learning Research",
+      "company": "Toyota Research Institute",
+      "url": "https://jobs.lever.co/tri/e7cc38d2-2b08-4349-b322-4d56cac9fb1b/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Machine learning focus, high prestige, builds core ML skills.",
+      "action_plan": [
+        "Gather ML project portfolio (2d)",
+        "Write research statement (3h)",
+        "Apply (30m)"
+      ]
     }
   ]
 }

@@ -172208,6 +172208,84 @@
           "key": "64f70a4da44b"
         }
       ]
+    },
+    {
+      "date": "2026-11-13",
+      "items": [
+        {
+          "title": "2027 Summer Intern - Solution Systems Engineer (6537, 6540, 6541) — Shield AI",
+          "url": "https://jobs.lever.co/shieldai/1bcb2094-e52d-4af9-9eee-2bcd655536ca",
+          "source": "ats",
+          "description": "Shield AI | San Diego, California | via Lever",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "lever:shieldai:1bcb2094-e52d-4af9-9eee-2bcd655536ca",
+          "score": 7,
+          "ai_score": 7,
+          "ai_summary": "Shield AI is a top AI defense firm; strong prestige and direct AI engineering relevance.",
+          "action_plan": [
+            "Study Shield AI products (1h)",
+            "Align resume to autonomous systems (1h)",
+            "Submit application (15m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "📍 San Diego, California",
+          "facts": {
+            "company": "Shield AI",
+            "location": "San Diego, California",
+            "platform": "Lever"
+          },
+          "key": "86a038036e59"
+        },
+        {
+          "title": "Bask Health — AI Engineering Intern",
+          "url": "https://apply.workable.com/bask-health-1/j/F0E122E877/apply",
+          "source": "internships",
+          "description": "internship | Bask Health | Remote in USA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "f998d09f-9c9c-49be-93b6-49b526534bc4",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI Engineering intern directly matches his AI engineering goal and builds showcase projects.",
+          "action_plan": [
+            "Research Bask Health AI stack (1h)",
+            "Customize resume for AI role (1h)",
+            "Apply (15m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 9,
+            "prestige": 4,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Remote In Usa",
+          "facts": {
+            "company": "Bask Health",
+            "location": "Remote in USA"
+          },
+          "key": "9cc85fd175cd"
+        }
+      ]
     }
   ]
 }
