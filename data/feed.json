@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-13T01:50:53Z",
-  "hunted_at": "2026-11-12T02:32:30Z",
+  "updated_at": "2026-11-13T02:33:38Z",
+  "hunted_at": "2026-11-13T02:33:38Z",
   "items": [
     {
       "key": "089a458b241e",
@@ -213,6 +213,21 @@
       "action_plan": []
     },
     {
+      "key": "a432125806d5",
+      "title": "Samvad: Call For Article",
+      "company": "S.P. Mandali's, Prin. L. N. Welingkar Institute of Management Development & Research, Mumbai (WeSchool)",
+      "url": "https://unstop.com/competitions/samvad-call-for-article-sp-mandalis-prin-l-n-welingkar-institute-of-management-development-research-mumbai--1791236",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-15",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "3ee1be4035d8",
       "title": "Free Scholarship Test on Quantum Computing in Hyderabad | 15 November 2026",
       "company": "Quality Thought Info Systems",
@@ -282,21 +297,6 @@
       "deadline": "2026-11-14",
       "tags": [
         "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "841301a4ada2",
-      "title": "Scholarship Test | Get 100% Off on All Courses at Quality Thought Hyderabad",
-      "company": "Quality Thought",
-      "url": "https://unstop.com/scholarships/scholarship-test-get-100-off-on-all-courses-at-quality-thought-hyderabad-quality-thought-1794738",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-14",
-      "tags": [
-        "scholarship",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -438,21 +438,6 @@
       "action_plan": []
     },
     {
-      "key": "6b7b0d9709f5",
-      "title": "DSH Hacks V2 ($100k+ in prizes!)",
-      "company": "",
-      "url": "https://dsh-hacks-v2.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-11-15",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "556972bcf9c4",
       "title": "PayPal AI Hackathon",
       "company": "",
@@ -477,6 +462,21 @@
       "deadline": "2026-11-12",
       "tags": [
         "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a85f84739727",
+      "title": "Scholarship Test on Gen AI & Agentic AI",
+      "company": "Quality Thought Info Systems",
+      "url": "https://unstop.com/scholarships/scholarship-test-on-gen-ai-agentic-ai-quality-thought-info-systems-1788809",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-13",
+      "tags": [
+        "scholarship",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -567,6 +567,36 @@
       "deadline": "2026-11-21",
       "tags": [
         "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8734286e0c1f",
+      "title": "MKS AI/ML Hackathon",
+      "company": "",
+      "url": "https://www.hackerearth.com/challenges/competitive/mks-inc-hackathon/",
+      "source": "hackerearth",
+      "score": 10,
+      "deadline": "2026-11-15",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "9bc72527b114",
+      "title": "Tech Careers in the Age of AI: What to Learn, How to Prepare & Get Hired",
+      "company": "TechBairn",
+      "url": "https://unstop.com/workshops-webinars/tech-careers-in-the-age-of-ai-what-to-learn-how-to-prepare-get-hired-techbairn-1807610",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-17",
+      "tags": [
+        "workshop",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -897,6 +927,26 @@
         "Check UK visa eligibility (30m)",
         "Prepare security‑focused AI project (3h)",
         "Apply with statement (1h)"
+      ]
+    },
+    {
+      "key": "1130d8879407",
+      "title": "Meta — Research Scientist Intern - Audio",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1382697917119311",
+      "source": "internships",
+      "score": 9,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Meta research intern in audio AI, elite credential, hard to replace.",
+      "action_plan": [
+        "Read recent Meta audio papers (2h)",
+        "Prepare research proposal (3h)",
+        "Submit application (1h)"
       ]
     },
     {
@@ -1604,57 +1654,6 @@
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "48a98385c5a9",
-      "title": "Software Engineer (CPD) - Winter Intern — Rubrik",
-      "company": "Rubrik",
-      "url": "https://www.rubrik.com/company/careers/departments/job.8166537?gh_jid=8166537",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "8adf086dff92",
-      "title": "[P] NKI layer megakernels for GLM-5.3-Flash on AWS Trainium2: where a decode step's time went, and what we changed [P]",
-      "company": "",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1xo0yuq/p_nki_layer_megakernels_for_glm53flash_on_aws/",
-      "source": "reddit",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "974364af37f0",
-      "title": "Toyota Research Institute — Automated Driving Advanced Development Intern - Machine Learning Research",
-      "company": "Toyota Research Institute",
-      "url": "https://jobs.lever.co/tri/e7cc38d2-2b08-4349-b322-4d56cac9fb1b/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Machine learning focus, high prestige, builds core ML skills.",
-      "action_plan": [
-        "Gather ML project portfolio (2d)",
-        "Write research statement (3h)",
-        "Apply (30m)"
-      ]
     }
   ]
 }
