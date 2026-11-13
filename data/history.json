@@ -174136,6 +174136,122 @@
           "key": "d40c3332dc8b"
         }
       ]
+    },
+    {
+      "date": "2026-11-13",
+      "items": [
+        {
+          "title": "TikTok — Machine Learning Engineer Intern",
+          "url": "https://lifeattiktok.com/search/7698822572474583301",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "8f47d73c-faa0-4332-89e2-eebc74191786",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "TikTok ML role aligns with generative AI and high‑profile resume boost · ⚠ verify eligibility: US work visa likely required for summer inter",
+          "action_plan": [
+            "Check visa eligibility (1h)",
+            "Prepare ML project demo (6h)",
+            "Submit application (1h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 4,
+            "skill": 8,
+            "time": 7,
+            "eligible": "unclear",
+            "elig_note": "US work visa likely required for summer internship"
+          },
+          "pitch": "📍 San Jose, Ca",
+          "facts": {
+            "company": "TikTok",
+            "location": "San Jose, CA"
+          },
+          "key": "3eea2f97f352"
+        },
+        {
+          "title": "TikTok — Research Scientist Intern - Content Ecology - Local Services",
+          "url": "https://lifeattiktok.com/search/7707222170826623285",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "98dc807a-1c66-4aa7-be8a-e92415806904",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Research focus matches AI agents & ML, strong academic signal · ⚠ verify eligibility: US work visa likely required for research internship",
+          "action_plan": [
+            "Verify visa status (1h)",
+            "Write research abstract (4h)",
+            "Apply (1h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 3,
+            "skill": 9,
+            "time": 8,
+            "eligible": "unclear",
+            "elig_note": "US work visa likely required for research internship"
+          },
+          "pitch": "📍 San Jose, Ca",
+          "facts": {
+            "company": "TikTok",
+            "location": "San Jose, CA"
+          },
+          "key": "00d1ef31b4e4"
+        },
+        {
+          "title": "Huawei — Researcher Intern - Embodied AI",
+          "url": "https://huaweicanada.recruitee.com/o/intern-researcher-embodied-ai-3",
+          "source": "internships",
+          "description": "internship | Huawei | Edmonton, AB, Canada | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "4e1cfabf-de23-45ca-b706-8e2f202b62e8",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Embodied AI research fits his interests, adds international exposure · ⚠ verify eligibility: Canada work permit likely required for intern r",
+          "action_plan": [
+            "Check Canada permit options (1h)",
+            "Prepare portfolio of AI projects (5h)",
+            "Apply (1h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 8,
+            "deadline": 3,
+            "skill": 7,
+            "time": 7,
+            "eligible": "unclear",
+            "elig_note": "Canada work permit likely required for intern role"
+          },
+          "pitch": "📍 Edmonton, Ab, Canada",
+          "facts": {
+            "company": "Huawei",
+            "location": "Edmonton, AB, Canada"
+          },
+          "key": "6233efa56dcc"
+        }
+      ]
     }
   ]
 }
