@@ -1,127 +1,7 @@
 {
-  "updated_at": "2026-11-13T16:50:59Z",
+  "updated_at": "2026-11-14T01:50:49Z",
   "hunted_at": "2026-11-13T02:33:38Z",
   "items": [
-    {
-      "key": "089a458b241e",
-      "title": "Software Engineer Intern - Arango Cookbooks — ArangoDB",
-      "company": "ArangoDB",
-      "url": "https://himalayas.app/companies/arangodb/jobs/software-engineer-intern-arango-cookbooks?utm_source=api",
-      "source": "remote",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "2db05a625ebd",
-      "title": "Compliance Engineer Intern — CertiK",
-      "company": "CertiK",
-      "url": "https://himalayas.app/companies/certik/jobs/compliance-engineer-intern?utm_source=api",
-      "source": "remote",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4582e24168a6",
-      "title": "Remote Internship Program – Content, Research, Media & Business Operations — ITEN Media",
-      "company": "ITEN Media",
-      "url": "https://himalayas.app/companies/iten-media/jobs/remote-internship-program-content-research-media-business-operations?utm_source=api",
-      "source": "remote",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4e3d1c22800c",
-      "title": "Software Development Intern — Cloud & DevOps (AWS) — Vulcury",
-      "company": "Vulcury",
-      "url": "https://himalayas.app/companies/vulcury/jobs/software-development-intern-cloud-devops-aws?utm_source=api",
-      "source": "remote",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ec1d086994cd",
-      "title": "Binance Accelerator Program - QA Engineer, App testing (Java, SQL) — Binance",
-      "company": "Binance",
-      "url": "https://himalayas.app/companies/binance/jobs/binance-accelerator-program-qa-engineer-app-testing-java-sql?utm_source=api",
-      "source": "remote",
-      "score": 10,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "bd85295f6d7b",
-      "title": "Codex x TwitchCon Hackathon",
-      "company": "",
-      "url": "https://twitchcon-codex.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-11-02",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d10ce9d4b6b5",
-      "title": "IndiaStox Nifty Midcap 100 Predictions Challenge",
-      "company": "",
-      "url": "https://unstop.com/competitions/indiastox-nifty-midcap-100-predictions-challenge-indiastox-1787442",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-07",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a7f7ca291d82",
-      "title": "Inside Today's Technology Industry: Data, Software & AI",
-      "company": "",
-      "url": "https://unstop.com/workshops-webinars/inside-todays-technology-industry-data-software-ai-techbairn-1784270",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-05",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "ccd20307ba67",
       "title": "Full Stack Developer Internship",
@@ -192,6 +72,21 @@
       "deadline": "2026-11-11",
       "tags": [
         "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a7f7ca291d82",
+      "title": "Inside Today's Technology Industry: Data, Software & AI",
+      "company": "",
+      "url": "https://unstop.com/workshops-webinars/inside-todays-technology-industry-data-software-ai-techbairn-1784270",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-05",
+      "tags": [
+        "workshop",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -950,23 +845,23 @@
       ]
     },
     {
-      "key": "d68a880433f7",
-      "title": "Master's Machine Learning Engineer, Intern — Stripe",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8333122",
-      "source": "ats",
-      "score": 8,
+      "key": "f0a859edc290",
+      "title": "Microsoft — Research Intern - AI Coding Agents",
+      "company": "Microsoft",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393557073416",
+      "source": "internships",
+      "score": 9,
       "deadline": null,
       "tags": [
         "internship",
         "focus:internship",
         "eligibility:verify"
       ],
-      "ai_summary": "Stripe ML engineer intern offers strong ML exposure and a top fintech brand.",
+      "ai_summary": "AI Coding Agents directly matches his top interests and offers top-tier signal. · ⚠ verify eligibility: US work authorization may be require",
       "action_plan": [
-        "Study Stripe ML internship specs (1d)",
-        "Update ML project portfolio (2d)",
-        "Submit application (1d)"
+        "Verify eligibility (1h)",
+        "Build demo of coding agent (4h)",
+        "Submit application (30m)"
       ]
     },
     {
@@ -1647,6 +1542,133 @@
       "source": "ats",
       "score": 8,
       "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "48a98385c5a9",
+      "title": "Software Engineer (CPD) - Winter Intern — Rubrik",
+      "company": "Rubrik",
+      "url": "https://www.rubrik.com/company/careers/departments/job.8166537?gh_jid=8166537",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8adf086dff92",
+      "title": "[P] NKI layer megakernels for GLM-5.3-Flash on AWS Trainium2: where a decode step's time went, and what we changed [P]",
+      "company": "",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1xo0yuq/p_nki_layer_megakernels_for_glm53flash_on_aws/",
+      "source": "reddit",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "974364af37f0",
+      "title": "Toyota Research Institute — Automated Driving Advanced Development Intern - Machine Learning Research",
+      "company": "Toyota Research Institute",
+      "url": "https://jobs.lever.co/tri/e7cc38d2-2b08-4349-b322-4d56cac9fb1b/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Machine learning focus, high prestige, builds core ML skills.",
+      "action_plan": [
+        "Gather ML project portfolio (2d)",
+        "Write research statement (3h)",
+        "Apply (30m)"
+      ]
+    },
+    {
+      "key": "e6d686763383",
+      "title": "Meta — Research Scientist Intern - Monetization Ranking & AI Foundations",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1920724172670221",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Meta AI foundations role offers top‑tier AI research exposure",
+      "action_plan": [
+        "Review Meta AI publications (3h)",
+        "Highlight relevant ML work (1h)",
+        "Apply (30m)"
+      ]
+    },
+    {
+      "key": "4de211809843",
+      "title": "Meta — Research Scientist Intern - AI Maps",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/2439439363131036",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Meta AI Maps research, high prestige, strong AI relevance, limited slots.",
+      "action_plan": [
+        "Study AI Maps literature (2h)",
+        "Draft project ideas (2h)",
+        "Submit application (1h)"
+      ]
+    },
+    {
+      "key": "2cf7465baee6",
+      "title": "General Dynamics Mission Systems — Software Engineering Intern",
+      "company": "General Dynamics Mission Systems",
+      "url": "https://careers-gdms.icims.com/jobs/75131/job?mobile=true&needsRedirect=false",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "General Dynamics mission systems internship is high‑prestige, AI‑related defense tech · ⚠ verify eligibility: US location may need visa; eli",
+      "action_plan": [
+        "Verify visa/work permit options (2h)",
+        "Network with current interns (1d)",
+        "Submit tailored application (3d)"
+      ]
+    },
+    {
+      "key": "17d984c7a465",
+      "title": "Software Development Internship",
+      "company": "Lineatemporis Tech LLP",
+      "url": "https://unstop.com/internships/software-development-internship-lineatemporis-tech-llp-1797417",
+      "source": "unstop",
+      "score": 8,
+      "deadline": "2026-11-19",
       "tags": [
         "internship",
         "focus:internship",

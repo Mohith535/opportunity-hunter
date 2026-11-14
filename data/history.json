@@ -174296,6 +174296,162 @@
           "key": "d24592a93431"
         }
       ]
+    },
+    {
+      "date": "2026-11-14",
+      "items": [
+        {
+          "title": "Microsoft — Research Intern - AI Coding Agents",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393557073416",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "c68b88e0-4d45-43f7-b99f-cf02ddad18c3",
+          "score": 8,
+          "ai_score": 9,
+          "ai_summary": "AI Coding Agents directly matches his top interests and offers top-tier signal. · ⚠ verify eligibility: US work authorization may be require",
+          "action_plan": [
+            "Verify eligibility (1h)",
+            "Build demo of coding agent (4h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 10,
+            "interest": 10,
+            "prestige": 10,
+            "deadline": 7,
+            "skill": 10,
+            "time": 5,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "US work authorization may be required"
+          },
+          "pitch": "🏢 Microsoft\n📍 Redmond, Wa",
+          "facts": {
+            "company": "Microsoft",
+            "location": "Redmond, WA"
+          },
+          "key": "f0a859edc290"
+        },
+        {
+          "title": "Amazon — Robotics Applied Scientist 2 Intern - Robotics",
+          "url": "https://amazon.jobs/en/jobs/10604778/2027-applied-science-internship-robotics-united-states",
+          "source": "internships",
+          "description": "internship | Amazon | Seattle, WA, North Reading, MA, NYC, Bellevue, WA, Sunnyvale, CA, Westborough, MA | Winter 2027, Spring 2027, Summer 2027, Fall 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "47e607e8-bfa3-490f-9847-4eec64d1daf3",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Amazon robotics aligns with AI/ML and offers elite brand signal. · ⚠ verify eligibility: US work authorization may be required",
+          "action_plan": [
+            "Check visa eligibility (1h)",
+            "Tailor CV for robotics (2h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 7,
+            "prestige": 9,
+            "deadline": 6,
+            "skill": 8,
+            "time": 5,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "US work authorization may be required"
+          },
+          "pitch": "🏢 Amazon\n📍 Seattle, Wa; North Reading, Ma; Nyc; Bellevue, Wa; Sunnyvale, Ca; Westborough, Ma",
+          "facts": {
+            "company": "Amazon",
+            "location": "Seattle, WA; North Reading, MA; NYC; Bellevue, WA; Sunnyvale, CA; Westborough, MA"
+          },
+          "key": "2986c18b6bf2"
+        },
+        {
+          "title": "Microsoft — Research Intern - Microsoft Research Software-Hardware Co-design",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393557073455",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "6b73a3bf-eeb9-4318-84af-2f7f53519b89",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Microsoft Research co-design aligns with AI engineering and elite brand. · ⚠ verify eligibility: US work authorization may be required",
+          "action_plan": [
+            "Confirm visa status (1h)",
+            "Prepare research statement (3h)",
+            "Apply (30m)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 8,
+            "prestige": 10,
+            "deadline": 6,
+            "skill": 9,
+            "time": 5,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "US work authorization may be required"
+          },
+          "pitch": "🏢 Microsoft\n📍 Redmond, Wa",
+          "facts": {
+            "company": "Microsoft",
+            "location": "Redmond, WA"
+          },
+          "key": "2f922861addb"
+        },
+        {
+          "title": "Hiebing — AI Agent Developer Intern",
+          "url": "https://hiebing.applytojob.com/apply/yIhDpeWv4F/AI-Agent-Developer-Intern",
+          "source": "internships",
+          "description": "internship | Hiebing | Madison, WI | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "25d29951-f992-466b-8b3b-15611c4f89f3",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "AI Agent dev intern aligns tightly with his core AI agent interest.",
+          "action_plan": [
+            "Research Hiebing projects (1h)",
+            "Create simple agent demo (3h)",
+            "Apply (30m)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 10,
+            "prestige": 7,
+            "deadline": 6,
+            "skill": 8,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Madison, Wi",
+          "facts": {
+            "company": "Hiebing",
+            "location": "Madison, WI"
+          },
+          "key": "0b85044582dd"
+        }
+      ]
     }
   ]
 }
