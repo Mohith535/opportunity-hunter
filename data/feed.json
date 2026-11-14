@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-14T01:50:49Z",
-  "hunted_at": "2026-11-13T02:33:38Z",
+  "updated_at": "2026-11-14T02:32:54Z",
+  "hunted_at": "2026-11-14T02:32:54Z",
   "items": [
     {
       "key": "ccd20307ba67",
@@ -72,6 +72,21 @@
       "deadline": "2026-11-11",
       "tags": [
         "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "22721c6db917",
+      "title": "Aspiring Women Leaders Scholarship Programme",
+      "company": "PwC India",
+      "url": "https://unstop.com/scholarships/crp-aspiring-women-leaders-scholarship-programme-pwc-india-1770348",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-15",
+      "tags": [
+        "scholarship",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -483,6 +498,21 @@
       "action_plan": []
     },
     {
+      "key": "64c360c8d4c6",
+      "title": "Elite Coders Winter of Code",
+      "company": "JB Institute of Engineering and Technology",
+      "url": "https://unstop.com/competitions/elite-coders-winter-of-code-jb-institute-of-engineering-and-technology-1807152",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-15",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "9bc72527b114",
       "title": "Tech Careers in the Age of AI: What to Learn, How to Prepare & Get Hired",
       "company": "TechBairn",
@@ -490,6 +520,51 @@
       "source": "unstop",
       "score": 10,
       "deadline": "2026-11-17",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "c3f7ee3d2d86",
+      "title": "IIT Bombay E-Summit’26 Workshop: Generative AI Unleashed | Google Cloud × E-Cell IIT Bombay",
+      "company": "Indian Institute of Technology (IIT), Bombay",
+      "url": "https://unstop.com/workshops-webinars/generative-ai-unleashed-workshop-iit-bombay-1794318",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-12-01",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "5ad8b8317125",
+      "title": "Sage IT Scholarship India - November 2026",
+      "company": "Sage IT",
+      "url": "https://unstop.com/scholarships/sage-it-scholarship-india-november-2026-sage-it-1688111",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-15",
+      "tags": [
+        "scholarship",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "9f0c44aeb325",
+      "title": "Beyond Software Development: Exploring Higher Studies and Research in AI/ML",
+      "company": "TechBairn Research",
+      "url": "https://unstop.com/workshops-webinars/beyond-software-development-exploring-higher-studies-and-research-in-aiml-techbairn-research-1808042",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-27",
       "tags": [
         "workshop",
         "focus:off-topic"
@@ -863,6 +938,36 @@
         "Build demo of coding agent (4h)",
         "Submit application (30m)"
       ]
+    },
+    {
+      "key": "88b2644402ec",
+      "title": "Project Manager Internship",
+      "company": "Light of Volunteer",
+      "url": "https://unstop.com/internships/project-manager-internship-light-of-volunteer-1808033",
+      "source": "unstop",
+      "score": 9,
+      "deadline": "2026-11-27",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e4fce58996bd",
+      "title": "Brand Partnerships Internship",
+      "company": "Myrik",
+      "url": "https://unstop.com/internships/brand-partnerships-internship-myrik-1807885",
+      "source": "unstop",
+      "score": 9,
+      "deadline": "2026-11-27",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "28391308708c",
@@ -1542,133 +1647,6 @@
       "source": "ats",
       "score": 8,
       "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "48a98385c5a9",
-      "title": "Software Engineer (CPD) - Winter Intern — Rubrik",
-      "company": "Rubrik",
-      "url": "https://www.rubrik.com/company/careers/departments/job.8166537?gh_jid=8166537",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "8adf086dff92",
-      "title": "[P] NKI layer megakernels for GLM-5.3-Flash on AWS Trainium2: where a decode step's time went, and what we changed [P]",
-      "company": "",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1xo0yuq/p_nki_layer_megakernels_for_glm53flash_on_aws/",
-      "source": "reddit",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "974364af37f0",
-      "title": "Toyota Research Institute — Automated Driving Advanced Development Intern - Machine Learning Research",
-      "company": "Toyota Research Institute",
-      "url": "https://jobs.lever.co/tri/e7cc38d2-2b08-4349-b322-4d56cac9fb1b/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Machine learning focus, high prestige, builds core ML skills.",
-      "action_plan": [
-        "Gather ML project portfolio (2d)",
-        "Write research statement (3h)",
-        "Apply (30m)"
-      ]
-    },
-    {
-      "key": "e6d686763383",
-      "title": "Meta — Research Scientist Intern - Monetization Ranking & AI Foundations",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1920724172670221",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Meta AI foundations role offers top‑tier AI research exposure",
-      "action_plan": [
-        "Review Meta AI publications (3h)",
-        "Highlight relevant ML work (1h)",
-        "Apply (30m)"
-      ]
-    },
-    {
-      "key": "4de211809843",
-      "title": "Meta — Research Scientist Intern - AI Maps",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/2439439363131036",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Meta AI Maps research, high prestige, strong AI relevance, limited slots.",
-      "action_plan": [
-        "Study AI Maps literature (2h)",
-        "Draft project ideas (2h)",
-        "Submit application (1h)"
-      ]
-    },
-    {
-      "key": "2cf7465baee6",
-      "title": "General Dynamics Mission Systems — Software Engineering Intern",
-      "company": "General Dynamics Mission Systems",
-      "url": "https://careers-gdms.icims.com/jobs/75131/job?mobile=true&needsRedirect=false",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "General Dynamics mission systems internship is high‑prestige, AI‑related defense tech · ⚠ verify eligibility: US location may need visa; eli",
-      "action_plan": [
-        "Verify visa/work permit options (2h)",
-        "Network with current interns (1d)",
-        "Submit tailored application (3d)"
-      ]
-    },
-    {
-      "key": "17d984c7a465",
-      "title": "Software Development Internship",
-      "company": "Lineatemporis Tech LLP",
-      "url": "https://unstop.com/internships/software-development-internship-lineatemporis-tech-llp-1797417",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-19",
       "tags": [
         "internship",
         "focus:internship",
