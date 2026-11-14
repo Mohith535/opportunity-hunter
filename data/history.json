@@ -176345,6 +176345,49 @@
           "key": "f8969e5ab8b5"
         }
       ]
+    },
+    {
+      "date": "2026-11-14",
+      "items": [
+        {
+          "title": "AI Development Engineer Internship",
+          "url": "https://unstop.com/internships/ai-development-engineer-internship-nxtgensec-private-limited-1810541",
+          "source": "unstop",
+          "description": "internship | online | Remote/WFH | Eligibility: open to: students, fresher; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+27 more) | Team size: 1-1 | By NxtGenSec Private Limited | About NxtGenSec (Next Generation Security) NxtGenSec Private Limited is a technology company specializing in Artificial Intelligence, Cybersecurity, Automation, and SaaS development. Role Overview We are hiring AI Development Engineer Interns for a 3-month remote internship focused on practical AI development, problem-solving, and real-world projects. Key Responsibilities Develop, test, and improve AI-powered applications. Work with Python, AI/ML models, LLMs, and APIs. Explore AI agents, prompt engineering, and automation. Integrate AI capabilities into applications. Collaborate on assigned development projects. Required Skills Basic knowledge of Python programming. Fundamental understandin",
+          "deadline": "2026-11-28",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1810541",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "Direct AI/LLM work aligns with his builder goal and resume signal.",
+          "action_plan": [
+            "Week1: Update resume with TaskFlow, Nova; draft cover letter (2h).",
+            "Week2: Submit application; prepare Python/LLM project demo (4h).",
+            "Week3-4: Follow up, practice interview questions on AI agents (3h/week)."
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 5,
+            "deadline": 7,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏠 remote",
+          "facts": {
+            "remote": true,
+            "company": "NxtGenSec Private Limited",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "3269d9a64e88"
+        }
+      ]
     }
   ]
 }
