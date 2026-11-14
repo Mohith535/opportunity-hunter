@@ -176303,6 +176303,48 @@
           "key": "03d71ed25244"
         }
       ]
+    },
+    {
+      "date": "2026-11-14",
+      "items": [
+        {
+          "title": "Carnegie Mellon University — Cyber AI Engineer Intern",
+          "url": "https://cmu.wd115.myworkdayjobs.com/SEI/job/Pittsburgh-PA/Cyber-AI-Engineering-Intern--Spring-2027-_2025346-2",
+          "source": "internships",
+          "description": "internship | Carnegie Mellon University | Pittsburgh, PA | Spring 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "331732d6-2320-4e49-9426-29401912aba0",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Top AI lab internship aligns with AI engineer ambition",
+          "action_plan": [
+            "Week1: Update resume with AI projects (2h)",
+            "Week2: Draft cover letter highlighting research interest (3h)",
+            "Week3: Submit application via CMU portal (1h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 3,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Pittsburgh, Pa",
+          "facts": {
+            "company": "Carnegie Mellon University",
+            "location": "Pittsburgh, PA"
+          },
+          "key": "f8969e5ab8b5"
+        }
+      ]
     }
   ]
 }
