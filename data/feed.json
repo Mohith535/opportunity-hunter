@@ -1,127 +1,7 @@
 {
-  "updated_at": "2026-11-14T11:50:42Z",
-  "hunted_at": "2026-11-14T02:32:54Z",
+  "updated_at": "2026-11-15T02:34:21Z",
+  "hunted_at": "2026-11-15T02:34:21Z",
   "items": [
-    {
-      "key": "ccd20307ba67",
-      "title": "Full Stack Developer Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/full-stack-developer-internship-tyva-technologies-private-limited-1791388",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-16",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "bc23445ea9b3",
-      "title": "Campus Ambassador",
-      "company": "",
-      "url": "https://unstop.com/internships/campus-ambassador-nexovate-private-limited-1787014",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-06",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "466ab522f95f",
-      "title": "Full Stack Developer Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/full-stack-developer-internship-zenotalent-1791205",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-28",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "34e67bfa1f8b",
-      "title": "Machine Learning Engineer Internship",
-      "company": "",
-      "url": "https://unstop.com/internships/machine-learning-engineer-vortizo-ai-1791403",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-30",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "3ef9fa5cb4d8",
-      "title": "Cognition- AI Hackathon",
-      "company": "",
-      "url": "https://unstop.com/hackathons/cognition-ai-hackathon-techtonics-sri-guru-gobind-singh-college-of-commerce-sggscc-new-delhi-1790269",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-11",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "22721c6db917",
-      "title": "Aspiring Women Leaders Scholarship Programme",
-      "company": "PwC India",
-      "url": "https://unstop.com/scholarships/crp-aspiring-women-leaders-scholarship-programme-pwc-india-1770348",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-15",
-      "tags": [
-        "scholarship",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a7f7ca291d82",
-      "title": "Inside Today's Technology Industry: Data, Software & AI",
-      "company": "",
-      "url": "https://unstop.com/workshops-webinars/inside-todays-technology-industry-data-software-ai-techbairn-1784270",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-05",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "644823033c18",
-      "title": "CodeZen India 2026 - National Hackathon",
-      "company": "",
-      "url": "https://unstop.com/hackathons/codezen-india-2026-national-hackathon-wecodecoders-1783835",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-13",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "a432125806d5",
       "title": "Samvad: Call For Article",
@@ -192,6 +72,36 @@
       "deadline": "2026-11-10",
       "tags": [
         "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "22721c6db917",
+      "title": "Aspiring Women Leaders Scholarship Programme",
+      "company": "PwC India",
+      "url": "https://unstop.com/scholarships/crp-aspiring-women-leaders-scholarship-programme-pwc-india-1770348",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-15",
+      "tags": [
+        "scholarship",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a7f7ca291d82",
+      "title": "Inside Today's Technology Industry: Data, Software & AI",
+      "company": "",
+      "url": "https://unstop.com/workshops-webinars/inside-todays-technology-industry-data-software-ai-techbairn-1784270",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-05",
+      "tags": [
+        "workshop",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -348,6 +258,21 @@
       "action_plan": []
     },
     {
+      "key": "6b7b0d9709f5",
+      "title": "DSH Hacks V2 ($100k+ in prizes!)",
+      "company": "",
+      "url": "https://dsh-hacks-v2.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-11-15",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "556972bcf9c4",
       "title": "PayPal AI Hackathon",
       "company": "",
@@ -498,6 +423,21 @@
       "action_plan": []
     },
     {
+      "key": "a1bee3534f1f",
+      "title": "UGREEN Hackathon 2026 on AI NAS",
+      "company": "",
+      "url": "https://ugreenhackathon.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-11-16",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "64c360c8d4c6",
       "title": "Elite Coders Winter of Code",
       "company": "JB Institute of Engineering and Technology",
@@ -520,6 +460,21 @@
       "source": "unstop",
       "score": 10,
       "deadline": "2026-11-17",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a30a9b095fa3",
+      "title": "Webinar on Cyber Security with AI | 18 November 2026",
+      "company": "Quality Thought Info Systems",
+      "url": "https://unstop.com/workshops-webinars/webinar-on-cyber-security-with-ai-in-hyderabad-18-november-2026-quality-thought-info-systems-1808598",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-18",
       "tags": [
         "workshop",
         "focus:off-topic"
@@ -573,40 +528,109 @@
       "action_plan": []
     },
     {
-      "key": "3959b6cb9099",
-      "title": "Codeforces Round 1132 (Div. 2) (codeforces.com)",
+      "key": "bd5f1db74799",
+      "title": "Meta VR Start Developer Competition 2026",
       "company": "",
-      "url": "https://codeforces.com/contests/2284",
-      "source": "clist",
-      "score": 9,
-      "deadline": "2026-11-06",
+      "url": "https://start-developer-competition-26.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-11-18",
       "tags": [
-        "contest",
-        "competitive programming",
+        "hackathon",
         "focus:off-topic"
       ],
       "ai_summary": "",
       "action_plan": []
     },
     {
-      "key": "5f5880d8b2b8",
-      "title": "Meta — Research Scientist Intern - PAR Safety Evals and Red Teaming",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1903232531024141",
-      "source": "internships",
-      "score": 9,
-      "deadline": null,
+      "key": "241d8c9f6c18",
+      "title": "Live Webinar on AI ML with Data Science | 19 November 2026",
+      "company": "Quality Thought Info Systems",
+      "url": "https://unstop.com/workshops-webinars/live-webinar-on-ai-ml-with-data-science-19-november-2026-quality-thought-info-systems-1810208",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-19",
       "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
+        "workshop",
+        "focus:off-topic"
       ],
-      "ai_summary": "Meta research internship directly advances AI research credentials · ⚠ verify eligibility: Eligibility unclear (citizenship, work auth)",
-      "action_plan": [
-        "Verify citizenship/work‑auth requirements",
-        "Gather research portfolio",
-        "Apply before deadline"
-      ]
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "70b86fc67f22",
+      "title": "Vats Mobility – National Business & Innovation Challenge 2026",
+      "company": "Vats Mobility",
+      "url": "https://unstop.com/competitions/vats-mobility-national-business-innovation-challenge-2026-vats-mobility-1810863",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-28",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a618aadf8d0e",
+      "title": "IEEE CS Cyber Scape",
+      "company": "New Horizon College Of Engineering",
+      "url": "https://unstop.com/competitions/ieee-cs-cyber-scape-new-horizon-college-of-engineering-1807068",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-17",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "77a133f9804c",
+      "title": "Beyond the Classroom: Exploring Android Development & Industry Trends",
+      "company": "TechBairn Research",
+      "url": "https://unstop.com/workshops-webinars/beyond-the-classroom-exploring-android-development-industry-trends-techbairn-research-1808019",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-19",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3b4959579a82",
+      "title": "Gemini Play Arena- AI Image Generation challenge (Win smartphone and chance to meet MS Dhoni)",
+      "company": "Mumbai University (MU), Mumbai",
+      "url": "https://unstop.com/competitions/play-arena-imagine-the-impossible-mumbai-university-mu-mumbai-1810156",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-18",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "90b177dcd853",
+      "title": "IBM Z Day",
+      "company": "",
+      "url": "https://www.hackerearth.com/challenges/hackathon/ibm-z-day/",
+      "source": "hackerearth",
+      "score": 10,
+      "deadline": "2026-11-18",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "4c5000e96828",
@@ -659,6 +683,22 @@
       "tags": [
         "internship",
         "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "3959b6cb9099",
+      "title": "Codeforces Round 1132 (Div. 2) (codeforces.com)",
+      "company": "",
+      "url": "https://codeforces.com/contests/2284",
+      "source": "clist",
+      "score": 9,
+      "deadline": "2026-11-06",
+      "tags": [
+        "contest",
+        "competitive programming",
+        "focus:off-topic"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -965,185 +1005,6 @@
       "tags": [
         "internship",
         "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "28391308708c",
-      "title": "GenMD — Member of Technical Staff Intern - Applied AI",
-      "company": "GenMD",
-      "url": "https://jobs.ashbyhq.com/genmd/47c4fc76-f21f-402b-9d5c-45bafe30aa2c/application?embed=true",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "GenMD applied AI role aligns with building AI products, strong resume signal · ⚠ verify eligibility: Eligibility unclear (visa, seniority)",
-      "action_plan": [
-        "Confirm eligibility (visa/student status)",
-        "Tailor resume to applied AI",
-        "Submit application promptly"
-      ]
-    },
-    {
-      "key": "2dca454dd9de",
-      "title": "Lloyds Bank — Applied Data and AI Apprentice",
-      "company": "Lloyds Bank",
-      "url": "https://lbg.wd3.myworkdayjobs.com/LBG_Careers/job/Birmingham/Applied-Data-and-AI-Apprentice---Birmingham_165591",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "28db476a1659",
-      "title": "onepot — Machine Learning Researcher Intern - Machine Learning",
-      "company": "onepot",
-      "url": "https://jobs.ashbyhq.com/onepot/5116ee20-adfa-4177-b120-e3f48354e7e8/application?embed=true",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5db9003ea1e4",
-      "title": "Meta — Research Scientist Intern - FAIR - World Model Foundations",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1406585275871250",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "805a258dfe85",
-      "title": "Meta — Research Scientist Intern - Robotic Control Policy",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1872420890835857",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "86db23f38907",
-      "title": "Meta — Research Scientist Intern - Interactive Physics Simulation for Robotics",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1143164681833409",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "6ed77716c05a",
-      "title": "Microsoft — Software Engineer Intern",
-      "company": "Microsoft",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393557044764",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5937af29fbc1",
-      "title": "Costco — CDS Intern - Powerapps Developer - ECM Digital Workflow",
-      "company": "Costco",
-      "url": "https://phf.tbe.taleo.net/phf02/ats/careers/v2/viewRequisition?org=COSTCO&cws=41&rid=11001",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "89de0e6d3956",
-      "title": "Costco — Costco Digital Services Intern - Infosec AI/ML",
-      "company": "Costco",
-      "url": "https://phf.tbe.taleo.net/phf02/ats/careers/v2/viewRequisition?org=COSTCO&cws=41&rid=10994",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ebddc5eede3d",
-      "title": "Costco — CDS Intern - Software Engineer - IT Retail Media",
-      "company": "Costco",
-      "url": "https://phf.tbe.taleo.net/phf02/ats/careers/v2/viewRequisition?org=COSTCO&cws=41&rid=11013",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "fe4e61778a11",
-      "title": "From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles",
-      "company": "",
-      "url": "https://arxiv.org/abs/2611.03641v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research",
-        "focus:off-topic"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1645,6 +1506,149 @@
       "company": "Mercor",
       "url": "https://jobs.ashbyhq.com/mercor/11516609-e54b-4087-87c2-e84a8bafbb5a",
       "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "48a98385c5a9",
+      "title": "Software Engineer (CPD) - Winter Intern — Rubrik",
+      "company": "Rubrik",
+      "url": "https://www.rubrik.com/company/careers/departments/job.8166537?gh_jid=8166537",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8adf086dff92",
+      "title": "[P] NKI layer megakernels for GLM-5.3-Flash on AWS Trainium2: where a decode step's time went, and what we changed [P]",
+      "company": "",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1xo0yuq/p_nki_layer_megakernels_for_glm53flash_on_aws/",
+      "source": "reddit",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "974364af37f0",
+      "title": "Toyota Research Institute — Automated Driving Advanced Development Intern - Machine Learning Research",
+      "company": "Toyota Research Institute",
+      "url": "https://jobs.lever.co/tri/e7cc38d2-2b08-4349-b322-4d56cac9fb1b/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Machine learning focus, high prestige, builds core ML skills.",
+      "action_plan": [
+        "Gather ML project portfolio (2d)",
+        "Write research statement (3h)",
+        "Apply (30m)"
+      ]
+    },
+    {
+      "key": "e6d686763383",
+      "title": "Meta — Research Scientist Intern - Monetization Ranking & AI Foundations",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1920724172670221",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Meta AI foundations role offers top‑tier AI research exposure",
+      "action_plan": [
+        "Review Meta AI publications (3h)",
+        "Highlight relevant ML work (1h)",
+        "Apply (30m)"
+      ]
+    },
+    {
+      "key": "4de211809843",
+      "title": "Meta — Research Scientist Intern - AI Maps",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/2439439363131036",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Meta AI Maps research, high prestige, strong AI relevance, limited slots.",
+      "action_plan": [
+        "Study AI Maps literature (2h)",
+        "Draft project ideas (2h)",
+        "Submit application (1h)"
+      ]
+    },
+    {
+      "key": "2cf7465baee6",
+      "title": "General Dynamics Mission Systems — Software Engineering Intern",
+      "company": "General Dynamics Mission Systems",
+      "url": "https://careers-gdms.icims.com/jobs/75131/job?mobile=true&needsRedirect=false",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "General Dynamics mission systems internship is high‑prestige, AI‑related defense tech · ⚠ verify eligibility: US location may need visa; eli",
+      "action_plan": [
+        "Verify visa/work permit options (2h)",
+        "Network with current interns (1d)",
+        "Submit tailored application (3d)"
+      ]
+    },
+    {
+      "key": "17d984c7a465",
+      "title": "Software Development Internship",
+      "company": "Lineatemporis Tech LLP",
+      "url": "https://unstop.com/internships/software-development-internship-lineatemporis-tech-llp-1797417",
+      "source": "unstop",
+      "score": 8,
+      "deadline": "2026-11-19",
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "ab08a339afaf",
+      "title": "JP Morgan Chase — Machine Learning Intern - NLP",
+      "company": "JP Morgan Chase",
+      "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210806793",
+      "source": "internships",
       "score": 8,
       "deadline": null,
       "tags": [
