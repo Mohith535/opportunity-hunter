@@ -179945,6 +179945,48 @@
           "key": "3248dd2334ad"
         }
       ]
+    },
+    {
+      "date": "2026-11-16",
+      "items": [
+        {
+          "title": "Shopify — Applied Machine Learning Engineer Intern",
+          "url": "https://www.shopify.com/careers/applied-machine-learning-engineering-internships-summer-2027_1d6b9bb9-a132-4ad9-b33f-3e55d2cfc536",
+          "source": "internships",
+          "description": "internship | Shopify | Montreal, QC, Canada, Toronto, ON, Canada, Ottawa, ON, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "755894c6-bbb7-4372-812b-80685f05ca63",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Applied ML role directly matches his AI interests and adds strong resume signal.",
+          "action_plan": [
+            "Study Shopify ML internship details (30m)",
+            "Map his ML projects to role requirements (1h)",
+            "Craft tailored cover letter (45m)",
+            "Apply (15m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Montreal, Qc, Canada; Toronto, On, Canada; Ottawa, On, Canada",
+          "facts": {
+            "company": "Shopify",
+            "location": "Montreal, QC, Canada; Toronto, ON, Canada; Ottawa, ON, Canada"
+          },
+          "key": "71c2e31d2552"
+        }
+      ]
     }
   ]
 }
