@@ -179987,6 +179987,138 @@
           "key": "71c2e31d2552"
         }
       ]
+    },
+    {
+      "date": "2026-11-17",
+      "items": [
+        {
+          "title": "Campus Ambassador",
+          "url": "https://unstop.com/internships/campus-ambassador-nexovate-private-limited-1813519",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 5,000-10,000/month | Remote/WFH | Eligibility: open to: students | Team size: 1-1 | By Nexovate Private Limited | Campus Ambassador – Roles & Responsibilities Roles and Responsibilities Represent the organization as a Campus Ambassador and act as a communication link between the organization and the student community. Promote training programs, internship opportunities, workshops, webinars, and career development initiatives across the campus. Build and maintain a strong network of students through campus communities and social media platforms. Create awareness about industry-oriented programs, skill development initiatives, and placement preparation opportunities. Identify interested students and guide them through the program registration and enrollment process. Coordinate campus-level promotional act",
+          "deadline": "2026-11-23",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1813519",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "💰 ₹10,000/month\n🏠 remote · ⏳ 6 days left",
+          "facts": {
+            "pay_min": 5000,
+            "pay_max": 10000,
+            "remote": true,
+            "company": "Nexovate Private Limited",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "ff04f4836bf0"
+        },
+        {
+          "title": "Artificial Intelligence & Generative AI Internship - Maharashtra",
+          "url": "https://unstop.com/internships/artificial-intelligence-generative-ai-internship-maharashtra-cognirex-solutions-1808429",
+          "source": "unstop",
+          "description": "internship | online | Location: Achalpur | Remote/WFH | Eligibility: open to: students, fresher; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+27 more) | Team size: 1-1 | By Cognirex Solutions | Roles and Responsibilities Artificial Intelligence and Machine Learning Development Generative AI and Intelligent Application Development Assist in developing AI-powered applications, training ML models, and integrating AI APIs. Collaborate with the technical team on real-world AI/ML projects and automation solutions. Requirements B.Tech / B.E. (CSE, AI/ML, IT), BCA, MCA, or Computer Science students. Basic knowledge of Python, AI/ML, Generative AI, and data analysis. Freshers are welcome.",
+          "deadline": "2026-11-20",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1808429",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "🏠 remote · ⏳ closes in 3 days",
+          "facts": {
+            "remote": true,
+            "cities": [
+              "Achalpur"
+            ],
+            "company": "Cognirex Solutions",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "a4078ebb4cf2"
+        },
+        {
+          "title": "Toyota Research Institute — Automated Driving Advanced Development Intern - Machine Learning Research",
+          "url": "https://jobs.lever.co/tri/3a7510ff-7cef-4d6e-8c32-0b6e6b8a2476/apply",
+          "source": "internships",
+          "description": "internship | Toyota Research Institute | Los Altos, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "168ba909-6064-4747-bdff-92fe004850cd",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Los Altos, Ca",
+          "facts": {
+            "company": "Toyota Research Institute",
+            "location": "Los Altos, CA"
+          },
+          "key": "6865ff89c56f"
+        },
+        {
+          "title": "Zurich Insurance — Data Analytics & AI Intern",
+          "url": "https://www.careers.zurich.com/job/Toronto-Data-Analytics-&-AI-Intern-ON/1377641357/?ats=successfactors",
+          "source": "internships",
+          "description": "internship | Zurich Insurance | Toronto, ON, Canada | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "1c985c59-7b90-44d9-a78b-a64792dd2fd5",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Toronto, On, Canada",
+          "facts": {
+            "company": "Zurich Insurance",
+            "location": "Toronto, ON, Canada"
+          },
+          "key": "763d4fb98abc"
+        },
+        {
+          "title": "bioMérieux — Machine Learning Co-op",
+          "url": "https://jobs.jobvite.com/biofiredx/job/ol94AfwS?nl=1&nl=1&fr=false",
+          "source": "internships",
+          "description": "internship | bioMérieux | Durham, NC | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "749a0e9d-85b5-41f9-a4c6-8ae33659d412",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Durham, Nc",
+          "facts": {
+            "company": "bioMérieux",
+            "location": "Durham, NC"
+          },
+          "key": "1e43a2ab691e"
+        }
+      ]
     }
   ]
 }
