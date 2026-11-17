@@ -181764,6 +181764,137 @@
           "key": "905ab15672f8"
         }
       ]
+    },
+    {
+      "date": "2026-11-17",
+      "items": [
+        {
+          "title": "Junior Data Analyst Internship",
+          "url": "https://unstop.com/internships/junior-data-analyst-maa-software-solutions-1815484",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 15,000/month | Location: Hyderabad | Remote/WFH | Eligibility: open to: students, fresher; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+9 more) | Team size: 1-1 | By Maa Software Solutions | Key Responsibilities Complete assigned tasks within the given deadlines. Maintain punctuality and discipline throughout the work. Ensure quality, accuracy, and timely delivery of assigned work. Communicate effectively and provide regular progress updates. Work collaboratively with team members to achieve project goals. Technical Requirements Strong understanding of JavaScript. Knowledge of React.js and its core concepts. Familiarity with modern web development frameworks and libraries. Understanding of HTML, CSS, and responsive web design. Basic knowledge of data analysis and data interpretation (for Data Analyst roles). Good problem-solving and analytical skills.",
+          "deadline": "2026-12-01",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1815484",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "💰 ₹15,000/month\n🏠 remote",
+          "facts": {
+            "pay_min": 15000,
+            "pay_max": 15000,
+            "remote": true,
+            "cities": [
+              "Hyderabad"
+            ],
+            "company": "Maa Software Solutions",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "4412626e5756"
+        },
+        {
+          "title": "TikTok — Research Scientist Intern - Privacy Innovation Lab",
+          "url": "https://lifeattiktok.com/search/7703923326767483141",
+          "source": "internships",
+          "description": "internship | TikTok | San Jose, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "e9dbab50-28ba-4352-8794-b48f5a64b318",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 San Jose, Ca",
+          "facts": {
+            "company": "TikTok",
+            "location": "San Jose, CA"
+          },
+          "key": "28e00257fb92"
+        },
+        {
+          "title": "NorthStar Earth & Space — Research Intern - AI for Earth Observation",
+          "url": "https://northstarearthandspace.bamboohr.com/careers/117/",
+          "source": "internships",
+          "description": "internship | NorthStar Earth & Space | Montreal, QC, Canada | Winter 2028 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "fb8c19af-6f4e-4bce-8ee3-4b265a51000f",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Montreal, Qc, Canada",
+          "facts": {
+            "company": "NorthStar Earth & Space",
+            "location": "Montreal, QC, Canada"
+          },
+          "key": "9480a7bbfe12"
+        },
+        {
+          "title": "IPConfigure — Software Development for Video Surveillance Software Intern",
+          "url": "https://ipconfigure.bamboohr.com/careers/71/",
+          "source": "internships",
+          "description": "internship | IPConfigure | Norfolk, VA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "c445b1f7-56ed-41b7-adcf-488ff0ec20e5",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Norfolk, Va",
+          "facts": {
+            "company": "IPConfigure",
+            "location": "Norfolk, VA"
+          },
+          "key": "9ab37a71d5be"
+        },
+        {
+          "title": "Xradar — Software Engineer Co-op",
+          "url": "https://xradar.bamboohr.com/careers/203/",
+          "source": "internships",
+          "description": "internship | Xradar | Burnaby, BC, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "861f6527-4fbe-4536-a2b9-0ec1d95328fc",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Burnaby, Bc, Canada",
+          "facts": {
+            "company": "Xradar",
+            "location": "Burnaby, BC, Canada"
+          },
+          "key": "25612ced0cc4"
+        }
+      ]
     }
   ]
 }

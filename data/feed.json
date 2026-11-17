@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T07:50:41Z",
+  "updated_at": "2026-11-17T08:51:31Z",
   "hunted_at": "2026-11-17T02:34:19Z",
   "items": [
     {
@@ -598,6 +598,21 @@
       "tags": [
         "hackathon",
         "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4412626e5756",
+      "title": "Junior Data Analyst Internship",
+      "company": "Maa Software Solutions",
+      "url": "https://unstop.com/internships/junior-data-analyst-maa-software-solutions-1815484",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-12-01",
+      "tags": [
+        "internship",
+        "focus:internship"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1596,22 +1611,6 @@
       "company": "Apache Industrial",
       "url": "https://apacheip.wd1.myworkdayjobs.com/apache_careers/job/Houston-Headquarters/AI-Implementation-Intern_R115510",
       "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "479a78258635",
-      "title": "Software Engineer, Internship - 2027 — Brex",
-      "company": "Brex",
-      "url": "https://www.brex.com/careers/8935242002?gh_jid=8935242002",
-      "source": "ats",
       "score": 8,
       "deadline": null,
       "tags": [
