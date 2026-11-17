@@ -181895,6 +181895,48 @@
           "key": "25612ced0cc4"
         }
       ]
+    },
+    {
+      "date": "2026-11-17",
+      "items": [
+        {
+          "title": "Robert Bosch Venture Capital — AI Application Intern",
+          "url": "https://jobs.smartrecruiters.com/BoschGroup/744000162076254",
+          "source": "internships",
+          "description": "internship | Robert Bosch Venture Capital | Farmington Hills, MI | Winter 2027, Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "bee8e5de-03d0-4cf7-9457-e9ec51642c89",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "AI‑focused VC internship, strong signal, builds AI product experience.",
+          "action_plan": [
+            "Research Bosch VC portfolio & AI projects (1 day).",
+            "Tailor cover letter highlighting TaskFlow/Nova (1 day).",
+            "Apply and schedule interview prep (2 weeks)."
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 6,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Farmington Hills, Mi",
+          "facts": {
+            "company": "Robert Bosch Venture Capital",
+            "location": "Farmington Hills, MI"
+          },
+          "key": "134c53557421"
+        }
+      ]
     }
   ]
 }
