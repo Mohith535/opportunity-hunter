@@ -181687,6 +181687,83 @@
           "key": "e86d2aaa837f"
         }
       ]
+    },
+    {
+      "date": "2026-11-17",
+      "items": [
+        {
+          "title": "Birdseye Security Solutions — AI Systems Intern",
+          "url": "https://birdseyeaccount.bamboohr.com/careers/287/",
+          "source": "internships",
+          "description": "internship | Birdseye Security Solutions | Mississauga, ON, Canada | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "3c078c0f-8a73-45a7-8180-3cf64a2b15a7",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI systems role aligns with his AI engineering goals and adds prestige",
+          "action_plan": [
+            "Research Birdseye AI projects (2h)",
+            "Prepare AI-focused portfolio snippets (3h)",
+            "Apply (1h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 3,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Mississauga, On, Canada",
+          "facts": {
+            "company": "Birdseye Security Solutions",
+            "location": "Mississauga, ON, Canada"
+          },
+          "key": "3a22f9d6337d"
+        },
+        {
+          "title": "Birdseye Security Solutions — AI Systems Intern",
+          "url": "https://birdseyeaccount.bamboohr.com/careers/288/",
+          "source": "internships",
+          "description": "internship | Birdseye Security Solutions | Dallas, TX | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "05799004-d77a-4b48-b797-2b29a38c7087",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Same AI systems role, US location adds international exposure",
+          "action_plan": [
+            "Check US work eligibility (visa) (1h)",
+            "Tailor resume for US market (2h)",
+            "Submit application (1h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 6,
+            "deadline": 3,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Dallas, Tx",
+          "facts": {
+            "company": "Birdseye Security Solutions",
+            "location": "Dallas, TX"
+          },
+          "key": "905ab15672f8"
+        }
+      ]
     }
   ]
 }
