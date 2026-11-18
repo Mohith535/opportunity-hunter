@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-18T01:50:46Z",
-  "hunted_at": "2026-11-17T02:34:19Z",
+  "updated_at": "2026-11-18T02:34:27Z",
+  "hunted_at": "2026-11-18T02:34:27Z",
   "items": [
     {
       "key": "491055d54290",
@@ -378,6 +378,21 @@
       "action_plan": []
     },
     {
+      "key": "a618aadf8d0e",
+      "title": "IEEE CS Cyber Scape",
+      "company": "New Horizon College Of Engineering",
+      "url": "https://unstop.com/competitions/ieee-cs-cyber-scape-new-horizon-college-of-engineering-1807068",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-18",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "77a133f9804c",
       "title": "Beyond the Classroom: Exploring Android Development & Industry Trends",
       "company": "TechBairn Research",
@@ -447,6 +462,21 @@
       "deadline": "2026-11-19",
       "tags": [
         "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "43f5e93dc5c9",
+      "title": "CODEFESTTHON 2026",
+      "company": "",
+      "url": "https://codefestthon.devfolio.co",
+      "source": "devfolio",
+      "score": 10,
+      "deadline": "2026-11-21",
+      "tags": [
+        "hackathon",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -583,6 +613,66 @@
       "tags": [
         "internship",
         "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a9f9fe5f06d7",
+      "title": "Sample-efficient Personalization of Large Language Model Alignment with Multidimensional User Preference Data",
+      "company": "",
+      "url": "https://arxiv.org/abs/2611.22210v1",
+      "source": "arxiv",
+      "score": 10,
+      "deadline": null,
+      "tags": [
+        "research",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d593febe5ec5",
+      "title": "Free Live Webinar on Azure Data Engineer",
+      "company": "Quality Thought Info Systems",
+      "url": "https://unstop.com/workshops-webinars/free-live-webinar-on-azure-data-engineer-quality-thought-info-systems-1815894",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-19",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1b7bc707ed3b",
+      "title": "Policy Brief Competition | Aahwaan 2026",
+      "company": "TERI School of Advanced Studies (TERI SAS), Delhi",
+      "url": "https://unstop.com/competitions/policy-brief-competition-aahwaan-2026-teri-school-of-advanced-studies-teri-sas-delhi-1815266",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-21",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "91fd7223c932",
+      "title": "Game On Night: Imagine The Impossible",
+      "company": "GL Bajaj Group of Institutions, Mathura, Uttar Pradesh",
+      "url": "https://unstop.com/competitions/game-on-night-imagine-the-impossible-gl-bajaj-group-of-institutions-mathura-uttar-pradesh-1805697",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-30",
+      "tags": [
+        "competition",
+        "focus:off-topic"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -1512,102 +1602,6 @@
       "title": "McDonald's — Software Development Engineer Intern",
       "company": "McDonald's",
       "url": "https://jobs.mcdonalds.com/job/Chicago-Software-Development-Engineer-Intern-IL-60607/1449046600/?ats=successfactors",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "cb0422493500",
-      "title": "Meta — Research Intern - Neural Network Training and Hardware-Software Co-Design",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1560905132724186",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "b258b0ae270a",
-      "title": "Meta — Research Scientist Intern - Audio Systems",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1100150399514897",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "065528c9fccd",
-      "title": "Meta — Research Scientist Intern - Foundation Model Optimization",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/997597222780035",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a4cd31df826a",
-      "title": "Apple — Machine Learning Engineer Intern - Personal Agentic Search",
-      "company": "Apple",
-      "url": "https://jobs.apple.com/en-us/details/200694037",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "86ce9c7991df",
-      "title": "Apple — Virtualisation Software Engineer Intern - Core OS",
-      "company": "Apple",
-      "url": "https://jobs.apple.com/en-us/details/200694316",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "6a5b932959f0",
-      "title": "Palantir — Software Engineer Intern - Connectivity Platform and Product",
-      "company": "Palantir",
-      "url": "https://jobs.lever.co/palantir/130ee501-bd22-4d44-b651-39581ef97743/apply",
       "source": "internships",
       "score": 8,
       "deadline": null,
