@@ -1,67 +1,7 @@
 {
-  "updated_at": "2026-11-17T15:50:49Z",
+  "updated_at": "2026-11-18T01:50:46Z",
   "hunted_at": "2026-11-17T02:34:19Z",
   "items": [
-    {
-      "key": "22721c6db917",
-      "title": "Aspiring Women Leaders Scholarship Programme",
-      "company": "PwC India",
-      "url": "https://unstop.com/scholarships/crp-aspiring-women-leaders-scholarship-programme-pwc-india-1770348",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-15",
-      "tags": [
-        "scholarship",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a432125806d5",
-      "title": "Samvad: Call For Article",
-      "company": "S.P. Mandali's, Prin. L. N. Welingkar Institute of Management Development & Research, Mumbai (WeSchool)",
-      "url": "https://unstop.com/competitions/samvad-call-for-article-sp-mandalis-prin-l-n-welingkar-institute-of-management-development-research-mumbai--1791236",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-15",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d182db2a3153",
-      "title": "Tech Careers in the Age of AI: What to Learn, How to Prepare & Get Hired",
-      "company": "TechBairn",
-      "url": "https://unstop.com/workshops-webinars/tech-careers-in-the-age-of-ai-what-to-learn-how-to-prepare-get-hired-techbairn-1787584",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-12",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ec3f2ef3c1da",
-      "title": "VYTRON'26",
-      "company": "Droidecks",
-      "url": "https://unstop.com/hackathons/vytron26-droidecks-1786652",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-25",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
     {
       "key": "491055d54290",
       "title": "Free Cyber Security with AI Workshop in Hyderabad | 11 November 2026",
@@ -288,6 +228,21 @@
       "action_plan": []
     },
     {
+      "key": "a432125806d5",
+      "title": "Samvad: Call For Article",
+      "company": "S.P. Mandali's, Prin. L. N. Welingkar Institute of Management Development & Research, Mumbai (WeSchool)",
+      "url": "https://unstop.com/competitions/samvad-call-for-article-sp-mandalis-prin-l-n-welingkar-institute-of-management-development-research-mumbai--1791236",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-15",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "a30a9b095fa3",
       "title": "Webinar on Cyber Security with AI | 18 November 2026",
       "company": "Quality Thought Info Systems",
@@ -297,6 +252,21 @@
       "deadline": "2026-11-18",
       "tags": [
         "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "22721c6db917",
+      "title": "Aspiring Women Leaders Scholarship Programme",
+      "company": "PwC India",
+      "url": "https://unstop.com/scholarships/crp-aspiring-women-leaders-scholarship-programme-pwc-india-1770348",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-15",
+      "tags": [
+        "scholarship",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -618,22 +588,6 @@
       "action_plan": []
     },
     {
-      "key": "3959b6cb9099",
-      "title": "Codeforces Round 1132 (Div. 2) (codeforces.com)",
-      "company": "",
-      "url": "https://codeforces.com/contests/2284",
-      "source": "clist",
-      "score": 9,
-      "deadline": "2026-11-06",
-      "tags": [
-        "contest",
-        "competitive programming",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "5e073bd8b298",
       "title": "Meta — Research Scientist Intern - Synthetic Data for Computer Use Agents",
       "company": "Meta",
@@ -849,127 +803,6 @@
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "17d984c7a465",
-      "title": "Software Development Internship",
-      "company": "Lineatemporis Tech LLP",
-      "url": "https://unstop.com/internships/software-development-internship-lineatemporis-tech-llp-1797417",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-19",
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ab08a339afaf",
-      "title": "JP Morgan Chase — Machine Learning Intern - NLP",
-      "company": "JP Morgan Chase",
-      "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210806793",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4cd033492392",
-      "title": "Qualcomm — Driver and Tools Developer Intern - Telemetry Firmware",
-      "company": "Qualcomm",
-      "url": "https://qualcomm.eightfold.ai/careers/job/446721989047",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1282d8e90c18",
-      "title": "Shield AI — Software Engineer Co-op Intern",
-      "company": "Shield AI",
-      "url": "https://jobs.lever.co/shieldai/db8fc063-8856-4404-991c-f287712de949/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "c00760965ac6",
-      "title": "State Farm — P&C Actuarial & Underwriting Modeling Intern - Data Scientist",
-      "company": "State Farm",
-      "url": "https://jobs.statefarm.com/jobs/46227?icims=1&lang=en-us",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a9e7a8b332ce",
-      "title": "Generative AI Internship",
-      "company": "Bleep Education LLP",
-      "url": "https://unstop.com/internships/generative-ai-internship-bleep-education-llp-1798604",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-20",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "Fits his AI focus, builds portfolio, deadline tight, but low brand signal.",
-      "action_plan": [
-        "Day 1: Review internship page, note required docs (1h).",
-        "Day 2: Update resume with TaskFlow/Nova projects (2h).",
-        "Day 3: Draft cover letter linking generative AI interest (1h).",
-        "Day 4: Submit application before deadline (30m).",
-        "Post‑acceptance: Allocate 10 h/week for project work (2 months)."
-      ]
-    },
-    {
-      "key": "0f805b6c0ea2",
-      "title": "Pennsylvania State University — Research Assistant Intern - Large Language Models and AI for Data Analysis",
-      "company": "Pennsylvania State University",
-      "url": "https://psu.wd1.myworkdayjobs.com/PSU_Staff/job/Penn-State-University-Park/Research-Assistant-Positions---LLMs-and-AI-for-Data-Analysis--Spring-2027-_REQ_0000084012-1",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Research RA on LLMs directly matches top interests; strong academic prestige.",
-      "action_plan": [
-        "Draft research‑focused CV (1h)",
-        "Contact PI (30m)",
-        "Prepare LLM literature review (3d)"
-      ]
     },
     {
       "key": "fb274c7c3ef1",
@@ -1610,6 +1443,171 @@
       "title": "Apache Industrial — AI Implementation Intern",
       "company": "Apache Industrial",
       "url": "https://apacheip.wd1.myworkdayjobs.com/apache_careers/job/Houston-Headquarters/AI-Implementation-Intern_R115510",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "479a78258635",
+      "title": "Software Engineer, Internship - 2027 — Brex",
+      "company": "Brex",
+      "url": "https://www.brex.com/careers/8935242002?gh_jid=8935242002",
+      "source": "ats",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6c619884ac8a",
+      "title": "NVIDIA — AI Operations Intern - AI Clouds",
+      "company": "NVIDIA",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/AI-Operations-Intern--AI-Clouds---Summer-2027_JR2029119-1",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "NVIDIA AI Ops at AI Cloud is elite, high‑impact, strong signal for future AI roles.",
+      "action_plan": [
+        "Study NVIDIA AI Cloud services (2h)",
+        "Tailor resume to AI Ops (2h)",
+        "Reach out to recruiter (1h)",
+        "Apply (1h)"
+      ]
+    },
+    {
+      "key": "45abeb7c2b8c",
+      "title": "Altice USA — Developer Intern - Financial & People Systems",
+      "company": "Altice USA",
+      "url": "https://www.optimumcareers.com/job/Bethpage-Intern-Developer,-Financial-&-People-Systems-NY-11714/1449511200/?ats=successfactors",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "841fd16a95ce",
+      "title": "McDonald's — Software Development Engineer Intern",
+      "company": "McDonald's",
+      "url": "https://jobs.mcdonalds.com/job/Chicago-Software-Development-Engineer-Intern-IL-60607/1449046600/?ats=successfactors",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "cb0422493500",
+      "title": "Meta — Research Intern - Neural Network Training and Hardware-Software Co-Design",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1560905132724186",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b258b0ae270a",
+      "title": "Meta — Research Scientist Intern - Audio Systems",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1100150399514897",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "065528c9fccd",
+      "title": "Meta — Research Scientist Intern - Foundation Model Optimization",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/997597222780035",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a4cd31df826a",
+      "title": "Apple — Machine Learning Engineer Intern - Personal Agentic Search",
+      "company": "Apple",
+      "url": "https://jobs.apple.com/en-us/details/200694037",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "86ce9c7991df",
+      "title": "Apple — Virtualisation Software Engineer Intern - Core OS",
+      "company": "Apple",
+      "url": "https://jobs.apple.com/en-us/details/200694316",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6a5b932959f0",
+      "title": "Palantir — Software Engineer Intern - Connectivity Platform and Product",
+      "company": "Palantir",
+      "url": "https://jobs.lever.co/palantir/130ee501-bd22-4d44-b651-39581ef97743/apply",
       "source": "internships",
       "score": 8,
       "deadline": null,

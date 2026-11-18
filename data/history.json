@@ -181937,6 +181937,86 @@
           "key": "134c53557421"
         }
       ]
+    },
+    {
+      "date": "2026-11-18",
+      "items": [
+        {
+          "title": "AI & Automation Intern, Communications (Winter 2027) — Cloudflare",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8394342?gh_jid=8394342",
+          "source": "ats",
+          "description": "Cloudflare | In-Office | via Greenhouse",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "gh:cloudflare:8394342",
+          "score": 7,
+          "ai_score": 7,
+          "ai_summary": "Cloudflare AI & Automation intern gives high‑profile, international exposure.",
+          "action_plan": [
+            "Research Cloudflare AI team (1h)",
+            "Prepare AI project showcase (2h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 8,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 In-Office",
+          "facts": {
+            "company": "Cloudflare",
+            "location": "In-Office",
+            "platform": "Greenhouse"
+          },
+          "key": "23245f423f87"
+        },
+        {
+          "title": "Qualcomm — AI/Machine Learning Intern - Interim Engineering Intern - SW",
+          "url": "https://qualcomm.eightfold.ai/careers/job/446722176432",
+          "source": "internships",
+          "description": "internship | Qualcomm | Markham, ON, Canada | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "50475e1d-7406-45d1-aea1-4f1ed5575cea",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Qualcomm AI/ML internship at a top chip company, strong AI signal.",
+          "action_plan": [
+            "Gather project portfolio (2h)",
+            "Write tailored cover letter (2h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 3,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Markham, On, Canada",
+          "facts": {
+            "company": "Qualcomm",
+            "location": "Markham, ON, Canada"
+          },
+          "key": "3036c7819cd4"
+        }
+      ]
     }
   ]
 }
