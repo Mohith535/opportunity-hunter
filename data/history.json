@@ -185628,6 +185628,47 @@
           "key": "b6afa153969d"
         }
       ]
+    },
+    {
+      "date": "2026-11-19",
+      "items": [
+        {
+          "title": "Meta — Research Scientist Intern - Physics-Grounded Multimodal Robot Learning",
+          "url": "https://www.metacareers.com/jobs/994911809842621",
+          "source": "internships",
+          "description": "internship | Meta | Redmond, WA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "e8bbf313-db80-4a1b-b1fd-6c7cb8eb3583",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Top AI lab, strong resume signal, aligns with his AI interests",
+          "action_plan": [
+            "Week1: Update CV with TaskFlow/Nova, draft cover letter (2h)",
+            "Week2: Submit application via Meta portal (1h)",
+            "Week3: Prepare for potential interview; review multimodal robot papers (5h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 9,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Meta\n📍 Redmond, Wa",
+          "facts": {
+            "company": "Meta",
+            "location": "Redmond, WA"
+          },
+          "key": "681dc09425f7"
+        }
+      ]
     }
   ]
 }
