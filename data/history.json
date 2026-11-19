@@ -185669,6 +185669,48 @@
           "key": "681dc09425f7"
         }
       ]
+    },
+    {
+      "date": "2026-11-19",
+      "items": [
+        {
+          "title": "Summer 2027 Intern - AI Research — Salesforce",
+          "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/Singapore---Singapore/XMLNAME-2025-PhD-Intern---AI-Research--Singapore_JR267880-2",
+          "source": "ats",
+          "description": "Salesforce | Singapore - Singapore | via Workday",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "workday:salesforce.wd12/salesforce/External_Career_Site:/job/Singapore---Singapore/XMLNAME-2025-PhD-Intern---AI-Research--Singapore_JR267880-2",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI research aligns with his AI builder goals and adds strong resume signal.",
+          "action_plan": [
+            "Week 1: Update CV with AI projects (2h).",
+            "Week 2: Draft application email and cover letter (3h).",
+            "Week 3: Submit application via Workday (1h)."
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Singapore - Singapore",
+          "facts": {
+            "company": "Salesforce",
+            "location": "Singapore - Singapore",
+            "platform": "Workday"
+          },
+          "key": "269d42437fa1"
+        }
+      ]
     }
   ]
 }
