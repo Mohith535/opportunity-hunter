@@ -185711,6 +185711,49 @@
           "key": "269d42437fa1"
         }
       ]
+    },
+    {
+      "date": "2026-11-19",
+      "items": [
+        {
+          "title": "2027 - AI and People Transformation Intern, NYC — MongoDB",
+          "url": "https://www.mongodb.com/careers/job/?gh_jid=8346138",
+          "source": "ats",
+          "description": "MongoDB | New York City | via Greenhouse",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "gh:mongodb:8346138",
+          "score": 7,
+          "ai_score": 7,
+          "ai_summary": "Strong AI fit and MongoDB brand, but visa/relocation unclear. · ⚠ verify eligibility: US work authorization required for NYC internship",
+          "action_plan": [
+            "Step 1: Check MongoDB eligibility page for visa sponsorship (1h).",
+            "Step 2: If eligible, draft AI‑focused resume highlighting TaskFlow (2h).",
+            "Step 3: Submit application and request remote consideration (1h)."
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 8,
+            "deadline": 0,
+            "skill": 7,
+            "time": 6,
+            "eligible": "unclear",
+            "elig_note": "US work authorization required for NYC internship"
+          },
+          "pitch": "📍 New York City",
+          "facts": {
+            "company": "MongoDB",
+            "location": "New York City",
+            "platform": "Greenhouse"
+          },
+          "key": "f8f762819d3b"
+        }
+      ]
     }
   ]
 }
