@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-19T01:50:48Z",
-  "hunted_at": "2026-11-18T02:34:27Z",
+  "updated_at": "2026-11-19T02:32:25Z",
+  "hunted_at": "2026-11-19T02:32:25Z",
   "items": [
     {
       "key": "491055d54290",
@@ -462,21 +462,6 @@
       "deadline": "2026-11-19",
       "tags": [
         "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "43f5e93dc5c9",
-      "title": "CODEFESTTHON 2026",
-      "company": "",
-      "url": "https://codefestthon.devfolio.co",
-      "source": "devfolio",
-      "score": 10,
-      "deadline": "2026-11-21",
-      "tags": [
-        "hackathon",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -1593,6 +1578,22 @@
       "title": "Brex — Software Engineer Intern",
       "company": "Brex",
       "url": "https://www.brex.com/careers/8936403002?gh_jid=8936403002",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d90c7224a56f",
+      "title": "Formlabs — Manufacturing Test Software Intern - Manufacturing",
+      "company": "Formlabs",
+      "url": "https://careers.formlabs.com/job/8374598/apply/?gh_jid=8374598",
       "source": "internships",
       "score": 8,
       "deadline": null,
