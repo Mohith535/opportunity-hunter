@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T02:51:13Z",
+  "updated_at": "2026-11-19T01:50:48Z",
   "hunted_at": "2026-11-18T02:34:27Z",
   "items": [
     {
@@ -678,66 +678,6 @@
       "action_plan": []
     },
     {
-      "key": "5e073bd8b298",
-      "title": "Meta — Research Scientist Intern - Synthetic Data for Computer Use Agents",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1667187061776108",
-      "source": "internships",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Meta research on synthetic data for agents is elite, directly matches goals",
-      "action_plan": [
-        "Read recent Meta synthetic data papers (3h)",
-        "Craft research-focused CV (2h)",
-        "Submit application (1h)"
-      ]
-    },
-    {
-      "key": "f79e099a0bfa",
-      "title": "Meta — Research Scientist Intern - AI Agents and Machine Learning",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1826604892017856",
-      "source": "internships",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Meta AI agents internship directly hits career & prestige targets.",
-      "action_plan": [
-        "Check eligibility (student status) (1h)",
-        "Prepare resume & project portfolio (2d)",
-        "Submit application (1h)"
-      ]
-    },
-    {
-      "key": "7448114325a5",
-      "title": "Meta — Research Scientist Intern - Robotics Foundation Models - Agentic RL",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1414987577372371",
-      "source": "internships",
-      "score": 9,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Robotics foundation models + agentic RL matches top interests.",
-      "action_plan": [
-        "Research recent RL papers (2d)",
-        "Showcase RL project on GitHub (3d)",
-        "Apply (1h)"
-      ]
-    },
-    {
       "key": "b83b949d82f9",
       "title": "Starters 264 (codechef.com)",
       "company": "",
@@ -893,248 +833,6 @@
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "fb274c7c3ef1",
-      "title": "Tesla — Software Engineer Intern - SI Reinforcement Learning",
-      "company": "Tesla",
-      "url": "https://www.tesla.com/careers/search/job/289240",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Tesla RL aligns with AI agents, high prestige, but visa may block · ⚠ verify eligibility: US work authorization unclear for Indian student",
-      "action_plan": [
-        "Check visa eligibility (1h)",
-        "Contact recruiter (30m)",
-        "Tailor resume to RL (2d)"
-      ]
-    },
-    {
-      "key": "e6b49324c381",
-      "title": "XStack: A Benchmark for ML Repo Migration",
-      "company": "",
-      "url": "https://arxiv.org/abs/2611.08472v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research",
-        "focus:off-topic"
-      ],
-      "ai_summary": "Cutting‑edge research benchmark, high signal for top labs, aligns with core interests",
-      "action_plan": [
-        "Week 1: read XStack paper",
-        "Week 2: set up PyTorch & JAX env",
-        "Week 3-6: prototype migration agent",
-        "Week 7: submit results"
-      ]
-    },
-    {
-      "key": "6a8cdbfbc547",
-      "title": "Meta — Research Scientist Intern - AI Systems and Infrastructure",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1750797606003820",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "High‑impact Meta role, good for systems expertise.",
-      "action_plan": [
-        "Gather system‑related projects (1d)",
-        "Tailor resume for AI infra (1d)",
-        "Apply (1h)"
-      ]
-    },
-    {
-      "key": "36abb3f3aae2",
-      "title": "Meta — Research Scientist Intern - Generative AI & 3D Generation",
-      "company": "Meta",
-      "url": "https://www.metacareers.com/jobs/1406087328180524",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Generative AI & 3D aligns with his GenAI focus and adds prestige.",
-      "action_plan": [
-        "Create a small 3D‑GenAI demo (3d)",
-        "Update portfolio with demo (1d)",
-        "Submit application (1h)"
-      ]
-    },
-    {
-      "key": "ca7b390de36f",
-      "title": "Astranis — Embedded Software Developer – Network/Payload Software Intern",
-      "company": "Astranis",
-      "url": "https://job-boards.greenhouse.io/astranis/jobs/4704571006",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "bb6186f60249",
-      "title": "Docusign — Agentic AI Engineer Intern",
-      "company": "Docusign",
-      "url": "https://careers.docusign.com/jobs/30587?icims=1&lang=en-us",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d7215b45d744",
-      "title": "Waymo — Machine Learning Intern - Generative World Models & Controllable Simulation",
-      "company": "Waymo",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=8351210",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a19216a08314",
-      "title": "The New York Times — Backend Engineer Intern",
-      "company": "The New York Times",
-      "url": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4751973005",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a9a763af5ddf",
-      "title": "Hootsuite — Software Developer Co-op Intern",
-      "company": "Hootsuite",
-      "url": "https://job-boards.greenhouse.io/hootsuite/jobs/8360176",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "7efd2260645c",
-      "title": "SharkNinja — Applied AI & Analytics Co-op",
-      "company": "SharkNinja",
-      "url": "https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4725275006",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d5a203c14e36",
-      "title": "The New York Times — Full-Stack Engineer Intern",
-      "company": "The New York Times",
-      "url": "https://job-boards.greenhouse.io/thenewyorktimes/jobs/4751907005",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "eb6aa47ffdcd",
-      "title": "Brave — Software Engineer Intern",
-      "company": "Brave",
-      "url": "https://job-boards.greenhouse.io/brave/jobs/8360001",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "c75fc2844a80",
-      "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
-      "company": "",
-      "url": "https://arxiv.org/abs/2611.08452v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1b036ddbeda2",
-      "title": "MCP AI Engineer Internship",
-      "company": "DevTechAi.org",
-      "url": "https://unstop.com/internships/mcp-ai-engineer-internship-devtechaiorg-1795913",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-18",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "Remote AI agent internship aligns with his builder goal and elite AI focus.",
-      "action_plan": [
-        "Week1: Update resume with TaskFlow, apply via unstop.",
-        "Week2: Prepare a 5‑min demo of an agentic AI project.",
-        "Week3: Submit application and follow up email."
-      ]
     },
     {
       "key": "e5f9b348365e",
@@ -1602,6 +1300,299 @@
       "title": "McDonald's — Software Development Engineer Intern",
       "company": "McDonald's",
       "url": "https://jobs.mcdonalds.com/job/Chicago-Software-Development-Engineer-Intern-IL-60607/1449046600/?ats=successfactors",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "cb0422493500",
+      "title": "Meta — Research Intern - Neural Network Training and Hardware-Software Co-Design",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1560905132724186",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b258b0ae270a",
+      "title": "Meta — Research Scientist Intern - Audio Systems",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1100150399514897",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "065528c9fccd",
+      "title": "Meta — Research Scientist Intern - Foundation Model Optimization",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/997597222780035",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a4cd31df826a",
+      "title": "Apple — Machine Learning Engineer Intern - Personal Agentic Search",
+      "company": "Apple",
+      "url": "https://jobs.apple.com/en-us/details/200694037",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "86ce9c7991df",
+      "title": "Apple — Virtualisation Software Engineer Intern - Core OS",
+      "company": "Apple",
+      "url": "https://jobs.apple.com/en-us/details/200694316",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6a5b932959f0",
+      "title": "Palantir — Software Engineer Intern - Connectivity Platform and Product",
+      "company": "Palantir",
+      "url": "https://jobs.lever.co/palantir/130ee501-bd22-4d44-b651-39581ef97743/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7b3432182dda",
+      "title": "Palantir — Software Engineer Intern - Connectivity Platform - Product",
+      "company": "Palantir",
+      "url": "https://jobs.lever.co/palantir/eb496d6a-a960-43d3-a09b-e3843052f54e/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "fdc0ad9f3f5d",
+      "title": "Palantir — Software Engineer Intern - Data Connectors",
+      "company": "Palantir",
+      "url": "https://jobs.lever.co/palantir/45e4617d-d658-4b30-8dc9-378ca84a027a/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6698d308a283",
+      "title": "Toyota Research Institute — Human-Centered AI Research Intern - Causal Reasoning Models",
+      "company": "Toyota Research Institute",
+      "url": "https://jobs.lever.co/tri/be41a03c-460e-4ff7-b817-f012aa1c4b37/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "81db30d6be02",
+      "title": "International — Artificial Intelligence/Machine Learning Intern",
+      "company": "International",
+      "url": "https://careers.international.com/jobs/60456?icims=1&lang=en-us",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e02482d57a8d",
+      "title": "Addepar — AI Engineer Intern",
+      "company": "Addepar",
+      "url": "https://job-boards.greenhouse.io/addepar1/jobs/8927543002",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "AI engineer role directly matches his AI‑engineering goal and adds strong resume signal · ⚠ verify eligibility: US internship likely needs w",
+      "action_plan": [
+        "1. Confirm eligibility (visa/OPT) (1 h)",
+        "2. Update portfolio with AI projects (3 h)",
+        "3. Apply with tailored resume (1 h)"
+      ]
+    },
+    {
+      "key": "2cde9414fdf6",
+      "title": "Software Engineer, New Grad – Remote (Worldwide) — RemoteJobsOne",
+      "company": "RemoteJobsOne",
+      "url": "https://himalayas.app/companies/remotejobsone/jobs/software-engineer-new-grad-remote-worldwide?utm_source=api",
+      "source": "remote",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "job",
+        "focus:job"
+      ],
+      "ai_summary": "High‑pay remote new‑grad role at top companies, huge career leverage.",
+      "action_plan": [
+        "Update resume with AI projects (2h)",
+        "Tailor cover letter for remote role (1h)",
+        "Submit application (30m)"
+      ]
+    },
+    {
+      "key": "05c8b85c412e",
+      "title": "Toyota Research Institute — Future Product Innovation Research Intern - Human-AI Computational Design",
+      "company": "Toyota Research Institute",
+      "url": "https://jobs.lever.co/tri/ad346610-e4a6-4cd2-a357-11d731b136a2/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "TRI research intern on Human‑AI design, elite signal, aligns with interests. · ⚠ verify eligibility: US work authorization may be required",
+      "action_plan": [
+        "Check visa eligibility (30m)",
+        "Contact recruiter for clarification (1h)",
+        "Prepare research statement (2h)"
+      ]
+    },
+    {
+      "key": "0454c6648ecf",
+      "title": "Meta — Research Scientist Intern - LLM Memory and Skills",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/1676116714093186",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Meta LLM research aligns with top interests and elite signal",
+      "action_plan": [
+        "Gather relevant project work (2h)",
+        "Tailor cover letter to LLM focus (1h)",
+        "Submit application (30m)",
+        "Prep for technical interview (1w)"
+      ]
+    },
+    {
+      "key": "f51d314f5944",
+      "title": "Samsung — AI System Architecture Research Scientist Intern",
+      "company": "Samsung",
+      "url": "https://job-boards.greenhouse.io/samsungsemiconductor/jobs/8197305003",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Samsung AI architecture aligns with AI engineering goals, high prestige",
+      "action_plan": [
+        "Collect AI system design work (2h)",
+        "Write targeted cover letter (1h)",
+        "Submit (30m)",
+        "Study Samsung AI papers (1w)"
+      ]
+    },
+    {
+      "key": "f62deaf02d83",
+      "title": "Riot Games — Machine Learning Engineer Intern",
+      "company": "Riot Games",
+      "url": "https://www.riotgames.com/en/work-with-us/job/8356771?gh_jid=8356771",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6d9732748b6a",
+      "title": "Brex — Software Engineer Intern",
+      "company": "Brex",
+      "url": "https://www.brex.com/careers/8936403002?gh_jid=8936403002",
       "source": "internships",
       "score": 8,
       "deadline": null,

@@ -183594,6 +183594,159 @@
           "key": "af704f85393c"
         }
       ]
+    },
+    {
+      "date": "2026-11-19",
+      "items": [
+        {
+          "title": "Microsoft — Research Intern - Self-Improving & Secure AI Agents",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393557075136",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "ba01acfc-f330-48b0-a332-bdd38db24456",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Microsoft AI agents research aligns perfectly with his goals and prestige.",
+          "action_plan": [
+            "Gather research papers on AI agents (2h)",
+            "Tailor CV to research focus (1h)",
+            "Submit application (1h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Microsoft\n📍 Redmond, Wa",
+          "facts": {
+            "company": "Microsoft",
+            "location": "Redmond, WA"
+          },
+          "key": "74e6e65bce62"
+        },
+        {
+          "title": "Microsoft — Research Intern - AI Software Systems",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393557075527",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "eb52e15d-a3e3-4233-8b3c-d5b48aac5b3b",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI software systems internship at Microsoft offers strong resume value.",
+          "action_plan": [
+            "Identify relevant projects (1h)",
+            "Update CV with systems work (1h)",
+            "Apply (1h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 7,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Microsoft\n📍 Redmond, Wa",
+          "facts": {
+            "company": "Microsoft",
+            "location": "Redmond, WA"
+          },
+          "key": "1c198512408d"
+        },
+        {
+          "title": "Microsoft — Research Intern - Computer Vision and Deep Learning",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393557075490",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "d16f4e61-d921-404b-a8b6-2ab3cdad885e",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Computer vision focus matches deep learning interest, good prestige.",
+          "action_plan": [
+            "Curate CV with CV projects (1h)",
+            "Write brief cover note (30m)",
+            "Submit (30m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Microsoft\n📍 Redmond, Wa",
+          "facts": {
+            "company": "Microsoft",
+            "location": "Redmond, WA"
+          },
+          "key": "722b409f05c7"
+        },
+        {
+          "title": "Samsung — Architecture Research Engineer Intern - Agentic AI Workload Characterization",
+          "url": "https://job-boards.greenhouse.io/samsungsemiconductor/jobs/8208600003",
+          "source": "internships",
+          "description": "internship | Samsung | San Jose, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "da95f3d5-7184-4537-9adc-647349c0c2a4",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Agentic AI workload research fits his top interest in AI agents.",
+          "action_plan": [
+            "Gather papers on agentic AI (1h)",
+            "Highlight relevant work (1h)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 San Jose, Ca",
+          "facts": {
+            "company": "Samsung",
+            "location": "San Jose, CA"
+          },
+          "key": "13652b7f050a"
+        }
+      ]
     }
   ]
 }
