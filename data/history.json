@@ -188200,6 +188200,87 @@
           "key": "12d2ab32341a"
         }
       ]
+    },
+    {
+      "date": "2026-11-20",
+      "items": [
+        {
+          "title": "Flare — Software Developer Intern",
+          "url": "https://flare.bamboohr.com/careers/29/",
+          "source": "internships",
+          "description": "internship | Flare | Montreal, QC, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "ca3f8898-4242-437d-93c0-86e4161f061a",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI‑related dev role in Canada, high signal if visa cleared. · ⚠ verify eligibility: Visa/residence not specified for Canada",
+          "action_plan": [
+            "Check work‑permit eligibility (1h)",
+            "Contact recruiter for details (30m)",
+            "Prepare portfolio demo (3h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 7,
+            "deadline": 3,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "Visa/residence not specified for Canada"
+          },
+          "pitch": "📍 Montreal, Qc, Canada",
+          "facts": {
+            "company": "Flare",
+            "location": "Montreal, QC, Canada"
+          },
+          "key": "97e1fb61cfb0"
+        },
+        {
+          "title": "AON3D — Software Developer Intern",
+          "url": "https://job-boards.greenhouse.io/aon3d/jobs/4504702009",
+          "source": "internships",
+          "description": "internship | AON3D | Montreal, QC, Canada | Winter 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "36697ae4-2c1a-4649-82f5-c13159e97aad",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Similar to Flare; strong AI/3D tech exposure, high resume value. · ⚠ verify eligibility: Visa/residence not specified for Canada",
+          "action_plan": [
+            "Verify Canadian work eligibility (1h)",
+            "Reach out to hiring manager (30m)",
+            "Build relevant 3D‑AI demo (3h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 7,
+            "deadline": 3,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "Visa/residence not specified for Canada"
+          },
+          "pitch": "📍 Montreal, Qc, Canada",
+          "facts": {
+            "company": "AON3D",
+            "location": "Montreal, QC, Canada"
+          },
+          "key": "54046d5b0976"
+        }
+      ]
     }
   ]
 }
