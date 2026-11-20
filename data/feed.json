@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-20T01:50:53Z",
-  "hunted_at": "2026-11-19T02:32:25Z",
+  "updated_at": "2026-11-20T02:32:48Z",
+  "hunted_at": "2026-11-20T02:32:48Z",
   "items": [
     {
       "key": "491055d54290",
@@ -663,6 +663,111 @@
       "action_plan": []
     },
     {
+      "key": "152667e0111e",
+      "title": "Game On Night: Imagine The Impossible",
+      "company": "Babu Banarasi Das National Institute of Technology and Management (BBDNITM), Lucknow",
+      "url": "https://unstop.com/workshops-webinars/game-on-night-imagine-the-impossible-babu-banarasi-das-national-institute-of-technology-and-managemen-1817395",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-20",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "aadc944d9f82",
+      "title": "Full Stack Python with AI Engineering: Workshop in Hyderabad | Quality Thought",
+      "company": "Quality Thought",
+      "url": "https://unstop.com/workshops-webinars/full-stack-python-with-ai-engineering-workshop-in-hyderabad-quality-thought-quality-thought-1817411",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-21",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "22a2a61211bb",
+      "title": "Dataverse",
+      "company": "Indian Institute of Technology (IIT), Madras",
+      "url": "https://unstop.com/competitions/dataverse-iit-madras-1806030",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-30",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "437f4512a371",
+      "title": "MyOnne National Bug Bounty Challenge 2026",
+      "company": "MyOnne Amora Private Limited",
+      "url": "https://unstop.com/hackathons/myonne-national-bug-bounty-challenge-2026-myonne-amora-private-limited-1817686",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-26",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e738b4955d84",
+      "title": "Embers'26 - Project Expo & Paper Presentation | National Level Technical Fest, P.A. College of Engineering",
+      "company": "P.A. College of Engineering, Mangalore, Karnataka",
+      "url": "https://unstop.com/competitions/embers26-project-expo-paper-presentation-national-level-technical-fest-pa-college-of-engineering-pa-college-1818387",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-24",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2ab175f0a38f",
+      "title": "Campus to Cloud Hackathon",
+      "company": "Indian Institute of Technology (IIT), Bombay",
+      "url": "https://unstop.com/hackathons/campus-to-cloud-hackathon-iit-bombay-1818968",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-30",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f5e7a498fec2",
+      "title": "Shepreneurs Spotlight",
+      "company": "SheBuilds",
+      "url": "https://unstop.com/competitions/shepreneurs-spotlight-shebuilds-1818214",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-20",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "b83b949d82f9",
       "title": "Starters 264 (codechef.com)",
       "company": "",
@@ -837,6 +942,27 @@
         "Confirm visa eligibility (1h)",
         "Prepare cutting‑edge AI agents demo (4h)",
         "Submit application (30m)"
+      ]
+    },
+    {
+      "key": "afc943a5abb5",
+      "title": "Waymo — Agentic AI Intern",
+      "company": "Waymo",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=8401116",
+      "source": "internships",
+      "score": 9,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Waymo Agentic AI internship is top‑tier, matches agentic AI passion, hard to replace",
+      "action_plan": [
+        "Research Waymo agentic projects (2h)",
+        "Prepare a mini‑agent demo (4h)",
+        "Craft tailored cover letter (1h)",
+        "Apply (1h)"
       ]
     },
     {
@@ -1474,134 +1600,6 @@
         "internship",
         "focus:internship",
         "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d90c7224a56f",
-      "title": "Formlabs — Manufacturing Test Software Intern - Manufacturing",
-      "company": "Formlabs",
-      "url": "https://careers.formlabs.com/job/8374598/apply/?gh_jid=8374598",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "45a029024150",
-      "title": "The Marzetti Company — AI Solutions Intern - Human Resources",
-      "company": "The Marzetti Company",
-      "url": "https://careers.marzetticompany.com/jobs/8128?icims=1&lang=en-us",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f7812dbfcd89",
-      "title": "SHOPLINE — AI Skill Developer Intern",
-      "company": "SHOPLINE",
-      "url": "https://shopline.applytojob.com/apply/Ujgi4rGMS1/AI-Skill-Agent-Skill-Builder-Intern",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "fa4cb2c80dfe",
-      "title": "TikTok — Machine Learning Engineer Intern",
-      "company": "TikTok",
-      "url": "https://lifeattiktok.com/search/7706693387932633397",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "50c34d949a35",
-      "title": "Tesla — Software Developer Intern - IT Apps",
-      "company": "Tesla",
-      "url": "https://www.tesla.com/careers/search/job/289683",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "a91dc8d5ac34",
-      "title": "Bask Health — AI Product Intern",
-      "company": "Bask Health",
-      "url": "https://apply.workable.com/bask-health-1/j/9D7E69054E/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4fedbda56a95",
-      "title": "Rockwell Automation — Software Developer/Engineering Intern",
-      "company": "Rockwell Automation",
-      "url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation/job/Mequon-Wisconsin-United-States/Intern--Software-Developer-Engineering_R26-8666-2",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1b0d9c88bbdf",
-      "title": "Can we talk about the ML research coming from China? [D]",
-      "company": "",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1xteym8/can_we_talk_about_the_ml_research_coming_from/",
-      "source": "reddit",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning",
-        "focus:off-topic"
       ],
       "ai_summary": "",
       "action_plan": []
