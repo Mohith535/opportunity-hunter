@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T15:50:57Z",
+  "updated_at": "2026-11-20T01:50:53Z",
   "hunted_at": "2026-11-19T02:32:25Z",
   "items": [
     {
@@ -12,21 +12,6 @@
       "deadline": "2026-11-11",
       "tags": [
         "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "6b7b0d9709f5",
-      "title": "DSH Hacks V2 ($100k+ in prizes!)",
-      "company": "",
-      "url": "https://dsh-hacks-v2.devpost.com/",
-      "source": "devpost",
-      "score": 10,
-      "deadline": "2026-11-15",
-      "tags": [
-        "hackathon",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -177,6 +162,21 @@
       "deadline": "2026-11-21",
       "tags": [
         "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "6b7b0d9709f5",
+      "title": "DSH Hacks V2 ($100k+ in prizes!)",
+      "company": "",
+      "url": "https://dsh-hacks-v2.devpost.com/",
+      "source": "devpost",
+      "score": 10,
+      "deadline": "2026-11-15",
+      "tags": [
+        "hackathon",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -820,134 +820,23 @@
       "action_plan": []
     },
     {
-      "key": "e5f9b348365e",
-      "title": "Networking Internship",
-      "company": "SOMENTM",
-      "url": "https://unstop.com/internships/networking-internship-somentm-1800145",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-21",
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "5dba0343d6ef",
-      "title": "Tesla — Software Engineer Intern - SI Reinforcement Learning",
-      "company": "Tesla",
-      "url": "https://www.tesla.com/careers/search/job/289241",
+      "key": "5a5ad1545c6c",
+      "title": "Meta — Research Scientist Intern - AI Agents for Autonomous Laboratories",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/29481973694788756",
       "source": "internships",
-      "score": 8,
+      "score": 9,
       "deadline": null,
       "tags": [
         "internship",
         "focus:internship",
         "eligibility:verify"
       ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "345f4e126e23",
-      "title": "Zoox — Data Scientist Intern",
-      "company": "Zoox",
-      "url": "https://jobs.lever.co/zoox/85c6aec7-8da2-445d-9c4d-812365dbce97/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "f16d59bde47f",
-      "title": "Zoox — AI Workflows & Safety Decision Making Intern",
-      "company": "Zoox",
-      "url": "https://jobs.lever.co/zoox/0168ad29-2fd8-4c91-865c-b9fff8aa30c1/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "01849a22dc6a",
-      "title": "TikTok — Software Engineer Intern",
-      "company": "TikTok",
-      "url": "https://lifeattiktok.com/search/7705012688944810245",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4d2e7263a045",
-      "title": "Software Engineer, Intern (Summer or Winter) — Stripe",
-      "company": "Stripe",
-      "url": "https://stripe.com/jobs/search?gh_jid=8130805",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1a0a96bdb45c",
-      "title": "The end of Microsoft Research's AI Frontiers group",
-      "company": "",
-      "url": "https://hunch.net/?p=13764006",
-      "source": "hackernews",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "news",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "c6d7e9261530",
-      "title": "Applied Scientist Intern — Ramp",
-      "company": "Ramp",
-      "url": "https://jobs.ashbyhq.com/ramp/b39ceb08-a0a7-4f8b-a760-2fb88e209956",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Applied Scientist at Ramp aligns with AI research, strong signal, hard to replace.",
+      "ai_summary": "Meta AI Agents research is a dream‑fit, high‑prestige, career‑defining role. · ⚠ verify eligibility: US work visa likely needed",
       "action_plan": [
-        "Update CV with TaskFlow/Nova projects",
-        "Write a concise cover letter linking to AI work",
-        "Submit application and prepare for coding interview"
+        "Confirm visa eligibility (1h)",
+        "Prepare cutting‑edge AI agents demo (4h)",
+        "Submit application (30m)"
       ]
     },
     {
@@ -1601,6 +1490,118 @@
         "internship",
         "focus:internship",
         "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "45a029024150",
+      "title": "The Marzetti Company — AI Solutions Intern - Human Resources",
+      "company": "The Marzetti Company",
+      "url": "https://careers.marzetticompany.com/jobs/8128?icims=1&lang=en-us",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f7812dbfcd89",
+      "title": "SHOPLINE — AI Skill Developer Intern",
+      "company": "SHOPLINE",
+      "url": "https://shopline.applytojob.com/apply/Ujgi4rGMS1/AI-Skill-Agent-Skill-Builder-Intern",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "fa4cb2c80dfe",
+      "title": "TikTok — Machine Learning Engineer Intern",
+      "company": "TikTok",
+      "url": "https://lifeattiktok.com/search/7706693387932633397",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "50c34d949a35",
+      "title": "Tesla — Software Developer Intern - IT Apps",
+      "company": "Tesla",
+      "url": "https://www.tesla.com/careers/search/job/289683",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a91dc8d5ac34",
+      "title": "Bask Health — AI Product Intern",
+      "company": "Bask Health",
+      "url": "https://apply.workable.com/bask-health-1/j/9D7E69054E/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4fedbda56a95",
+      "title": "Rockwell Automation — Software Developer/Engineering Intern",
+      "company": "Rockwell Automation",
+      "url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation/job/Mequon-Wisconsin-United-States/Intern--Software-Developer-Engineering_R26-8666-2",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1b0d9c88bbdf",
+      "title": "Can we talk about the ML research coming from China? [D]",
+      "company": "",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1xteym8/can_we_talk_about_the_ml_research_coming_from/",
+      "source": "reddit",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning",
+        "focus:off-topic"
       ],
       "ai_summary": "",
       "action_plan": []
