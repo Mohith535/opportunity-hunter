@@ -188070,6 +188070,48 @@
           "key": "a3f299c9e6f7"
         }
       ]
+    },
+    {
+      "date": "2026-11-20",
+      "items": [
+        {
+          "title": "Honeywell Aerospace — Artificial Intelligence Engineer Intern",
+          "url": "https://icfcjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Aerospace/job/127878",
+          "source": "internships",
+          "description": "internship | Honeywell Aerospace | Kanata, Ottawa, ON, Canada | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "ad5d553c-6809-4373-b13f-13a97a7b1f95",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI Engineer intern at Honeywell Canada, strong AI focus, international exposure.",
+          "action_plan": [
+            "Research Honeywell AI initiatives (1d)",
+            "Polish AI project demos (2d)",
+            "Submit tailored application (1h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Kanata, Ottawa, On, Canada",
+          "facts": {
+            "company": "Honeywell Aerospace",
+            "location": "Kanata, Ottawa, ON, Canada"
+          },
+          "key": "fdbaa9ec3020"
+        }
+      ]
     }
   ]
 }
