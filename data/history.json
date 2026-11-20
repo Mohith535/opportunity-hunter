@@ -188112,6 +188112,49 @@
           "key": "fdbaa9ec3020"
         }
       ]
+    },
+    {
+      "date": "2026-11-20",
+      "items": [
+        {
+          "title": "AI/ML Engineer Intern",
+          "url": "https://unstop.com/internships/aiml-engineer-intern-meritixlabsai-1819896",
+          "source": "unstop",
+          "description": "internship | online | Remote/WFH | Eligibility: open to: students; passout: 2027, 2028, 2029 | Team size: 1-1 | By Meritixlabs.ai | About Us At MeritixLabs, we are building a next-generation platform for creating and orchestrating autonomous, multi-agent AI systems. Our mission is to replicate and augment the best decision-making processes for enterprises, moving beyond simple chatbots to create agents that are capable of complex, deterministic reasoning and action. These agents don't just chat—they execute workflows, call external APIs, reason over knowledge graphs, coordinate with each other, and resolve customer issues end-to-end. We are a team of engineers, researchers, and AI enthusiasts passionate about pushing the boundaries of what's possible with agentic AI. We are looking for a talented AI Engineer to join us i",
+          "deadline": "2026-12-03",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1819896",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "Fits AI agent focus, builds portfolio, remote elite‑signal, deadline soon",
+          "action_plan": [
+            "Week1: Update resume with TaskFlow, Nova; draft 1‑page cover letter (4h)",
+            "Week2: Submit application; prepare 2‑project demo of multi‑agent system (6h)",
+            "Week3: Follow‑up email; practice system design interview (5h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 10,
+            "prestige": 5,
+            "deadline": 8,
+            "skill": 8,
+            "time": 5,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏠 remote",
+          "facts": {
+            "remote": true,
+            "company": "Meritixlabs.ai",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "639e46f32c40"
+        }
+      ]
     }
   ]
 }
