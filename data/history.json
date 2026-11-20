@@ -187984,6 +187984,48 @@
           "key": "20a37d6b868c"
         }
       ]
+    },
+    {
+      "date": "2026-11-20",
+      "items": [
+        {
+          "title": "Amii — Machine Learning Resident",
+          "url": "https://amii.bamboohr.com/careers/254/",
+          "source": "internships",
+          "description": "internship | Amii | Edmonton, AB, Canada | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "30a91fba-b828-4176-a249-7439c077b383",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI research residency aligns with his AI engineer goal and adds strong resume signal.",
+          "action_plan": [
+            "1. Visit Amii website (30m) to confirm eligibility details.",
+            "2. Prepare CV focusing on TaskFlow, Nova, AI projects (2h).",
+            "3. Draft a concise cover letter linking his AI agent interest (1h).",
+            "4. Submit application before any hidden deadline (1h)."
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 7,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Edmonton, Ab, Canada",
+          "facts": {
+            "company": "Amii",
+            "location": "Edmonton, AB, Canada"
+          },
+          "key": "9dcd8f99b402"
+        }
+      ]
     }
   ]
 }
