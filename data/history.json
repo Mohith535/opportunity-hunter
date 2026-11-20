@@ -188155,6 +188155,51 @@
           "key": "639e46f32c40"
         }
       ]
+    },
+    {
+      "date": "2026-11-20",
+      "items": [
+        {
+          "title": "AI/ML Internship",
+          "url": "https://unstop.com/internships/aiml-internship-kukbit-sl-1820890",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 12,000-15,000/month | Remote/WFH | Eligibility: open to: students; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+40 more) | Team size: 1-1 | By Kukbit SL | Responsibilities of the Intern: Assist in the development and implementation of AI and ML models. Participate in data collection, cleaning, and preprocessing tasks. Conduct research on the latest trends and advancements in AI/ML. Collaborate with the team to analyze data and identify patterns. Contribute to the design and testing of AI-powered solutions. Assist in the preparation of reports and presentations. Participate in team meetings and contribute ideas. Gain hands-on experience with various AI/ML tools and technologies. Support the team in the development of innovative solutions. Document project progress and findings.",
+          "deadline": "2026-12-04",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1820890",
+          "score": 10,
+          "ai_score": 7,
+          "ai_summary": "AI/ML internship aligns with his AI focus and builds portfolio.",
+          "action_plan": [
+            "Tailor CV to highlight TaskFlow/Nova (0.5d)",
+            "Submit application (0.5d)",
+            "Prepare brief project summary (1d)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 5,
+            "skill": 7,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "💰 ₹15,000/month\n🏠 remote",
+          "facts": {
+            "pay_min": 12000,
+            "pay_max": 15000,
+            "remote": true,
+            "company": "Kukbit SL",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "12d2ab32341a"
+        }
+      ]
     }
   ]
 }
