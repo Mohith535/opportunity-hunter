@@ -187869,6 +187869,121 @@
           "key": "6a27a1c03376"
         }
       ]
+    },
+    {
+      "date": "2026-11-20",
+      "items": [
+        {
+          "title": "Microsoft — Research Intern - AI Serving Systems and Hardware",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393557076203",
+          "source": "internships",
+          "description": "internship | Microsoft | Vancouver, BC, Canada | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "e0dd6ddb-be26-46c8-90bf-1131ea814357",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Microsoft research aligns with AI agents/LLMs, elite signal, hard to replace.",
+          "action_plan": [
+            "Gather research papers & projects (3h)",
+            "Tailor CV for research focus (2h)",
+            "Submit application (1h)",
+            "Prepare system design interview (5h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 10,
+            "deadline": 3,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Microsoft\n📍 Vancouver, Bc, Canada",
+          "facts": {
+            "company": "Microsoft",
+            "location": "Vancouver, BC, Canada"
+          },
+          "key": "ac34afaa9e6c"
+        },
+        {
+          "title": "LinkedIn — AI/ML Engineer Intern",
+          "url": "https://jobs.smartrecruiters.com/LinkedIn3/744000162628808",
+          "source": "internships",
+          "description": "internship | LinkedIn | Mountain View, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "c267ac77-cf36-46c9-8ade-0c7e564d152e",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "LinkedIn AI/ML internship offers good experience, decent prestige.",
+          "action_plan": [
+            "Highlight ML projects on resume (2h)",
+            "Submit application (1h)",
+            "Practice coding interview (4h)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 7,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Mountain View, Ca",
+          "facts": {
+            "company": "LinkedIn",
+            "location": "Mountain View, CA"
+          },
+          "key": "af4ec818e0e4"
+        },
+        {
+          "title": "LinkedIn — AI/ML Engineer Intern - Generative AI",
+          "url": "https://jobs.smartrecruiters.com/LinkedIn3/744000162623639",
+          "source": "internships",
+          "description": "internship | LinkedIn | Mountain View, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "ae87e9d7-6095-4858-ad45-3e454d66d799",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Generative AI focus matches top interests, solid resume boost.",
+          "action_plan": [
+            "Curate generative AI demos (3h)",
+            "Update CV with relevant work (2h)",
+            "Apply (1h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 8,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Mountain View, Ca",
+          "facts": {
+            "company": "LinkedIn",
+            "location": "Mountain View, CA"
+          },
+          "key": "20a37d6b868c"
+        }
+      ]
     }
   ]
 }
