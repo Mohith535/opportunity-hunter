@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-11-20T15:50:58Z",
+  "updated_at": "2026-11-21T01:50:48Z",
   "hunted_at": "2026-11-20T02:32:48Z",
   "items": [
     {
-      "key": "491055d54290",
-      "title": "Free Cyber Security with AI Workshop in Hyderabad | 11 November 2026",
+      "key": "4d77e84ed0f6",
+      "title": "Free Live Webinar on AI ML with Data Science | 12 November 2026",
       "company": "Quality Thought Info Systems",
-      "url": "https://unstop.com/workshops-webinars/free-cyber-security-with-ai-workshop-in-hyderabad-11-november-2026-quality-thought-info-systems-1799774",
+      "url": "https://unstop.com/workshops-webinars/free-live-webinar-on-ai-ml-with-data-science-12-november-2026-quality-thought-info-systems-1802130",
       "source": "unstop",
       "score": 10,
-      "deadline": "2026-11-11",
+      "deadline": "2026-11-12",
       "tags": [
         "workshop",
         "focus:off-topic"
@@ -33,21 +33,6 @@
       "action_plan": []
     },
     {
-      "key": "4d77e84ed0f6",
-      "title": "Free Live Webinar on AI ML with Data Science | 12 November 2026",
-      "company": "Quality Thought Info Systems",
-      "url": "https://unstop.com/workshops-webinars/free-live-webinar-on-ai-ml-with-data-science-12-november-2026-quality-thought-info-systems-1802130",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-12",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "3ee1be4035d8",
       "title": "Free Scholarship Test on Quantum Computing in Hyderabad | 15 November 2026",
       "company": "Quality Thought Info Systems",
@@ -57,6 +42,21 @@
       "deadline": "2026-11-13",
       "tags": [
         "scholarship",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "491055d54290",
+      "title": "Free Cyber Security with AI Workshop in Hyderabad | 11 November 2026",
+      "company": "Quality Thought Info Systems",
+      "url": "https://unstop.com/workshops-webinars/free-cyber-security-with-ai-workshop-in-hyderabad-11-november-2026-quality-thought-info-systems-1799774",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-11",
+      "tags": [
+        "workshop",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -966,87 +966,6 @@
       ]
     },
     {
-      "key": "6eb6f84add55",
-      "title": "Agentic AI in BFSI Hackathon",
-      "company": "Indian Institute of Technology (IIT), Bombay",
-      "url": "https://unstop.com/hackathons/agentic-ai-in-bfsi-hackathon-iit-bombay-1800857",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-25",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "Agentic AI hackathon at IIT‑Bombay, high prestige, strong AI agent focus, hard deadline",
-      "action_plan": [
-        "Form a 2‑person team (1d)",
-        "Define BFSI use‑case (2d)",
-        "Build prototype (2‑3w)",
-        "Submit before 25‑Nov"
-      ]
-    },
-    {
-      "key": "0a95c2e37c44",
-      "title": "Academic Counsellor Intern",
-      "company": "Quraaniq",
-      "url": "https://unstop.com/internships/sales-business-development-internship-quraaniq-1801480",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-21",
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "bd7e817814bb",
-      "title": "Beyond Truncation? Entailment-Licensed Elision and the Limits of Semantic Preservation in LLM Decoding",
-      "company": "",
-      "url": "https://arxiv.org/abs/2611.08975v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "9ccc0d01fa48",
-      "title": "Phantom Consensus: Measuring Social Reasoning in Multi-Agent LLM Decision-Making",
-      "company": "",
-      "url": "https://arxiv.org/abs/2611.08971v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "9978db1a906e",
-      "title": "Using an LLM to Tackle Difficult Cases in NER for Nepali Tweets",
-      "company": "",
-      "url": "https://arxiv.org/abs/2611.08967v1",
-      "source": "arxiv",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "research",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "f591f1a5a04f",
       "title": "Microsoft — Research Intern - Next-Generation AI Agents",
       "company": "Microsoft",
@@ -1593,6 +1512,86 @@
       "title": "Brex — Software Engineer Intern",
       "company": "Brex",
       "url": "https://www.brex.com/careers/8936403002?gh_jid=8936403002",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d90c7224a56f",
+      "title": "Formlabs — Manufacturing Test Software Intern - Manufacturing",
+      "company": "Formlabs",
+      "url": "https://careers.formlabs.com/job/8374598/apply/?gh_jid=8374598",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "45a029024150",
+      "title": "The Marzetti Company — AI Solutions Intern - Human Resources",
+      "company": "The Marzetti Company",
+      "url": "https://careers.marzetticompany.com/jobs/8128?icims=1&lang=en-us",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f7812dbfcd89",
+      "title": "SHOPLINE — AI Skill Developer Intern",
+      "company": "SHOPLINE",
+      "url": "https://shopline.applytojob.com/apply/Ujgi4rGMS1/AI-Skill-Agent-Skill-Builder-Intern",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "fa4cb2c80dfe",
+      "title": "TikTok — Machine Learning Engineer Intern",
+      "company": "TikTok",
+      "url": "https://lifeattiktok.com/search/7706693387932633397",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "50c34d949a35",
+      "title": "Tesla — Software Developer Intern - IT Apps",
+      "company": "Tesla",
+      "url": "https://www.tesla.com/careers/search/job/289683",
       "source": "internships",
       "score": 8,
       "deadline": null,
