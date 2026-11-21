@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-21T01:50:48Z",
-  "hunted_at": "2026-11-20T02:32:48Z",
+  "updated_at": "2026-11-21T02:32:10Z",
+  "hunted_at": "2026-11-21T02:32:10Z",
   "items": [
     {
       "key": "4d77e84ed0f6",
@@ -543,21 +543,6 @@
       "action_plan": []
     },
     {
-      "key": "52dd849b2fb7",
-      "title": "Live Webinar on GCP Data Engineer",
-      "company": "Quality Thought Info Systems",
-      "url": "https://unstop.com/workshops-webinars/live-webinar-on-gcp-data-engineer-quality-thought-info-systems-1812985",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-21",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "7248102a9eed",
       "title": "Capture The Flag (CTF)",
       "company": "GM University Davanagere",
@@ -678,21 +663,6 @@
       "action_plan": []
     },
     {
-      "key": "aadc944d9f82",
-      "title": "Full Stack Python with AI Engineering: Workshop in Hyderabad | Quality Thought",
-      "company": "Quality Thought",
-      "url": "https://unstop.com/workshops-webinars/full-stack-python-with-ai-engineering-workshop-in-hyderabad-quality-thought-quality-thought-1817411",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-21",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "22a2a61211bb",
       "title": "Dataverse",
       "company": "Indian Institute of Technology (IIT), Madras",
@@ -723,21 +693,6 @@
       "action_plan": []
     },
     {
-      "key": "e738b4955d84",
-      "title": "Embers'26 - Project Expo & Paper Presentation | National Level Technical Fest, P.A. College of Engineering",
-      "company": "P.A. College of Engineering, Mangalore, Karnataka",
-      "url": "https://unstop.com/competitions/embers26-project-expo-paper-presentation-national-level-technical-fest-pa-college-of-engineering-pa-college-1818387",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-24",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "2ab175f0a38f",
       "title": "Campus to Cloud Hackathon",
       "company": "Indian Institute of Technology (IIT), Bombay",
@@ -762,6 +717,21 @@
       "deadline": "2026-11-20",
       "tags": [
         "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b6ed098a2e67",
+      "title": "CodeWarriors India 2026 - National Hackathon",
+      "company": "BuildX",
+      "url": "https://unstop.com/hackathons/codewarriors-india-2026-national-hackathon-buildx-1817737",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-12-03",
+      "tags": [
+        "hackathon",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -964,6 +934,68 @@
         "Craft tailored cover letter (1h)",
         "Apply (1h)"
       ]
+    },
+    {
+      "key": "0e6e5b574543",
+      "title": "Cyber Security Internship",
+      "company": "Seemons Technologies",
+      "url": "https://unstop.com/internships/cyber-security-internship-seemons-technologies-1820709",
+      "source": "unstop",
+      "score": 9,
+      "deadline": "2026-12-20",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8a0632afa4c2",
+      "title": "Data Science and ML Internship",
+      "company": "Seemons Technologies",
+      "url": "https://unstop.com/internships/data-science-and-ml-internship-seemons-technologies-1820705",
+      "source": "unstop",
+      "score": 9,
+      "deadline": "2026-12-20",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "039dc4f58503",
+      "title": "AtCoder Beginner Contest 485 (atcoder.jp)",
+      "company": "",
+      "url": "https://atcoder.jp/contests/abc485",
+      "source": "clist",
+      "score": 9,
+      "deadline": "2026-11-21",
+      "tags": [
+        "contest",
+        "competitive programming",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "da62f9bb440c",
+      "title": "Biweekly Contest 196 (leetcode.com)",
+      "company": "",
+      "url": "https://leetcode.com/contest/biweekly-contest-196",
+      "source": "clist",
+      "score": 9,
+      "deadline": "2026-11-21",
+      "tags": [
+        "contest",
+        "competitive programming",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "f591f1a5a04f",
@@ -1560,38 +1592,6 @@
       "title": "SHOPLINE — AI Skill Developer Intern",
       "company": "SHOPLINE",
       "url": "https://shopline.applytojob.com/apply/Ujgi4rGMS1/AI-Skill-Agent-Skill-Builder-Intern",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "fa4cb2c80dfe",
-      "title": "TikTok — Machine Learning Engineer Intern",
-      "company": "TikTok",
-      "url": "https://lifeattiktok.com/search/7706693387932633397",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "50c34d949a35",
-      "title": "Tesla — Software Developer Intern - IT Apps",
-      "company": "Tesla",
-      "url": "https://www.tesla.com/careers/search/job/289683",
       "source": "internships",
       "score": 8,
       "deadline": null,
