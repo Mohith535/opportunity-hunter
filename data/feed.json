@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-21T11:50:49Z",
-  "hunted_at": "2026-11-21T02:32:10Z",
+  "updated_at": "2026-11-22T02:32:10Z",
+  "hunted_at": "2026-11-22T02:32:10Z",
   "items": [
     {
-      "key": "4d77e84ed0f6",
-      "title": "Free Live Webinar on AI ML with Data Science | 12 November 2026",
+      "key": "cc1b4de326b6",
+      "title": "Free Live Webinar on Data Analyst with AI",
       "company": "Quality Thought Info Systems",
-      "url": "https://unstop.com/workshops-webinars/free-live-webinar-on-ai-ml-with-data-science-12-november-2026-quality-thought-info-systems-1802130",
+      "url": "https://unstop.com/workshops-webinars/free-live-webinar-on-data-analyst-with-ai-quality-thought-info-systems-1803901",
       "source": "unstop",
       "score": 10,
       "deadline": "2026-11-12",
@@ -27,6 +27,66 @@
       "deadline": "2026-11-12",
       "tags": [
         "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d0c19a829037",
+      "title": "Poorvabhyas 8.0",
+      "company": "Shaheed Sukhdev College of Business Studies, University of Delhi",
+      "url": "https://unstop.com/competitions/poorvabhyas-80-shaheed-sukhdev-college-of-business-studies-sscbs-du-delhi-1804888",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-18",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4d77e84ed0f6",
+      "title": "Free Live Webinar on AI ML with Data Science | 12 November 2026",
+      "company": "Quality Thought Info Systems",
+      "url": "https://unstop.com/workshops-webinars/free-live-webinar-on-ai-ml-with-data-science-12-november-2026-quality-thought-info-systems-1802130",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-12",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e4221c39ae56",
+      "title": "The Forge",
+      "company": "Hoollow",
+      "url": "https://unstop.com/hackathons/the-forge-hoollow-1787722",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-28",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "78a693f715b5",
+      "title": "Google Gemini Game Creation using AI",
+      "company": "Mumbai University (MU), Mumbai",
+      "url": "https://unstop.com/competitions/game-creation-using-ai-mumbai-university-mu-mumbai-1804774",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-19",
+      "tags": [
+        "competition",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -72,66 +132,6 @@
       "deadline": "2026-11-13",
       "tags": [
         "scholarship",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "cc1b4de326b6",
-      "title": "Free Live Webinar on Data Analyst with AI",
-      "company": "Quality Thought Info Systems",
-      "url": "https://unstop.com/workshops-webinars/free-live-webinar-on-data-analyst-with-ai-quality-thought-info-systems-1803901",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-12",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d0c19a829037",
-      "title": "Poorvabhyas 8.0",
-      "company": "Shaheed Sukhdev College of Business Studies, University of Delhi",
-      "url": "https://unstop.com/competitions/poorvabhyas-80-shaheed-sukhdev-college-of-business-studies-sscbs-du-delhi-1804888",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-18",
-      "tags": [
-        "competition",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "e4221c39ae56",
-      "title": "The Forge",
-      "company": "Hoollow",
-      "url": "https://unstop.com/hackathons/the-forge-hoollow-1787722",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-28",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "78a693f715b5",
-      "title": "Google Gemini Game Creation using AI",
-      "company": "Mumbai University (MU), Mumbai",
-      "url": "https://unstop.com/competitions/game-creation-using-ai-mumbai-university-mu-mumbai-1804774",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-19",
-      "tags": [
-        "competition",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -693,6 +693,21 @@
       "action_plan": []
     },
     {
+      "key": "e738b4955d84",
+      "title": "Embers'26 - Project Expo & Paper Presentation | National Level Technical Fest, P.A. College of Engineering",
+      "company": "P.A. College of Engineering, Mangalore, Karnataka",
+      "url": "https://unstop.com/competitions/embers26-project-expo-paper-presentation-national-level-technical-fest-pa-college-of-engineering-pa-college-1818387",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-24",
+      "tags": [
+        "competition",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "2ab175f0a38f",
       "title": "Campus to Cloud Hackathon",
       "company": "Indian Institute of Technology (IIT), Bombay",
@@ -723,6 +738,21 @@
       "action_plan": []
     },
     {
+      "key": "a82381912296",
+      "title": "Rajasthan Police Hackathon 2026",
+      "company": "Rajasthan Police (राजस्थान पुलिस)",
+      "url": "https://unstop.com/hackathons/rajasthan-police-hackathon-2026-rajasthan-police-rajasathana-palsa-1818639",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-24",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "b6ed098a2e67",
       "title": "CodeWarriors India 2026 - National Hackathon",
       "company": "BuildX",
@@ -738,16 +768,60 @@
       "action_plan": []
     },
     {
-      "key": "b83b949d82f9",
-      "title": "Starters 264 (codechef.com)",
-      "company": "",
-      "url": "https://www.codechef.com/START264",
-      "source": "clist",
-      "score": 9,
-      "deadline": "2026-11-11",
+      "key": "aa456d4e7755",
+      "title": "AI-Powered Career Development Hackathon",
+      "company": "UnsaidTalks Education",
+      "url": "https://unstop.com/hackathons/ai-powered-career-development-hackathon-unsaidtalks-education-1821954",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-28",
       "tags": [
-        "contest",
-        "competitive programming",
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "331ca88e2162",
+      "title": "From College to Software Industry: Skills Every Engineer Should Build",
+      "company": "TechBairn",
+      "url": "https://unstop.com/workshops-webinars/from-college-to-software-industry-skills-every-engineer-should-build-techbairn-1807996",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-30",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1b3e0ad08902",
+      "title": "ThinCovation 2026",
+      "company": "Management Development Institute (MDI), Gurgaon",
+      "url": "https://unstop.com/hackathons/thincovation-2026-thincovation-2026-mdi-1821962",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-27",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "527d20ac7d26",
+      "title": "Artificial Intelligence's Role in Current Tech Infrastructure",
+      "company": "TechBairn",
+      "url": "https://unstop.com/workshops-webinars/artificial-intelligences-role-in-current-tech-infrastructure-techbairn-1807995",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-27",
+      "tags": [
+        "workshop",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -998,67 +1072,13 @@
       "action_plan": []
     },
     {
-      "key": "f591f1a5a04f",
-      "title": "Microsoft — Research Intern - Next-Generation AI Agents",
-      "company": "Microsoft",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393557070079",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Microsoft AI Agents research internship is elite, directly matches his top goals.",
-      "action_plan": [
-        "Finalize TaskFlow demo (2h)",
-        "Craft tailored cover letter (1h)",
-        "Apply to Microsoft (30m)",
-        "Prepare for deep‑learning interview (4h)"
-      ]
-    },
-    {
-      "key": "388ec232eb66",
-      "title": "Amazon applied science intern interview next week - EU based [D]",
-      "company": "",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1xrkiaw/amazon_applied_science_intern_interview_next_week/",
-      "source": "reddit",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "news",
-        "r/MachineLearning",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "15dac17805b0",
-      "title": "Law Campus Ambassador Internship",
-      "company": "MyCaptain",
-      "url": "https://unstop.com/internships/law-campus-ambassador-internship-mycaptain-1802578",
+      "key": "1792e22f72ca",
+      "title": "Data Analyst Internship",
+      "company": "Codeatrix",
+      "url": "https://unstop.com/internships/data-analyst-internship-codeatrix-1822315",
       "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-23",
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "db042004e1de",
-      "title": "Financial Analyst Internship",
-      "company": "Shewings Healthcare Private Limited",
-      "url": "https://unstop.com/internships/financial-analyst-internship-shewings-healthcare-private-limited-1802719",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-23",
+      "score": 9,
+      "deadline": "2026-12-22",
       "tags": [
         "internship",
         "focus:internship"
@@ -1067,168 +1087,20 @@
       "action_plan": []
     },
     {
-      "key": "d06b3e3bfd0c",
-      "title": "Software Engineer Internship",
-      "company": "Cairnloop Technologies",
-      "url": "https://unstop.com/internships/software-engineer-internship-cairnloop-technologies-1803128",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-18",
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4d2a7de04d28",
-      "title": "Telecaling Internship",
-      "company": "Carawin Technologies Pvt Ltd",
-      "url": "https://unstop.com/internships/telecaling-internship-carawin-technologies-pvt-ltd-1801556",
-      "source": "unstop",
-      "score": 8,
+      "key": "328c39ff2405",
+      "title": "Codeforces Round 1137 (Div. 2) (codeforces.com)",
+      "company": "",
+      "url": "https://codeforces.com/contests/2289",
+      "source": "clist",
+      "score": 9,
       "deadline": "2026-11-22",
       "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
+        "contest",
+        "competitive programming",
+        "focus:off-topic"
       ],
       "ai_summary": "",
       "action_plan": []
-    },
-    {
-      "key": "a6b73e2733df",
-      "title": "Web Designer Internship",
-      "company": "WavGPT",
-      "url": "https://unstop.com/internships/web-designer-internship-wavgpt-1802394",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-14",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "4e5b4d0cfcd2",
-      "title": "Boston Scientific — Urology R&D Software Engineering Co-op",
-      "company": "Boston Scientific",
-      "url": "https://bostonscientific.eightfold.ai/careers/job/563602813900562",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "ec9bee35147d",
-      "title": "CesiumAstro — Embedded Software Engineer Intern",
-      "company": "CesiumAstro",
-      "url": "https://jobs.lever.co/CesiumAstro/e3abc815-107d-4206-8a83-dd02932e2361/apply",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "e6bb1bae63f2",
-      "title": "Mettler Toledo — Embedded Software Engineering Intern",
-      "company": "Mettler Toledo",
-      "url": "https://mt.avature.net/en_US/careers/JobDetail/23080",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "3848e82bf447",
-      "title": "Haskell — AI Engineering Design Intern for Facility Design",
-      "company": "Haskell",
-      "url": "https://haskell.jibeapply.com/jobs/7415?icims=1&lang=en-us",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "593c1342cb0a",
-      "title": "Apache Industrial — AI Implementation Intern",
-      "company": "Apache Industrial",
-      "url": "https://apacheip.wd1.myworkdayjobs.com/apache_careers/job/Houston-Headquarters/AI-Implementation-Intern_R115510",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "479a78258635",
-      "title": "Software Engineer, Internship - 2027 — Brex",
-      "company": "Brex",
-      "url": "https://www.brex.com/careers/8935242002?gh_jid=8935242002",
-      "source": "ats",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "6c619884ac8a",
-      "title": "NVIDIA — AI Operations Intern - AI Clouds",
-      "company": "NVIDIA",
-      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/AI-Operations-Intern--AI-Clouds---Summer-2027_JR2029119-1",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "NVIDIA AI Ops at AI Cloud is elite, high‑impact, strong signal for future AI roles.",
-      "action_plan": [
-        "Study NVIDIA AI Cloud services (2h)",
-        "Tailor resume to AI Ops (2h)",
-        "Reach out to recruiter (1h)",
-        "Apply (1h)"
-      ]
     },
     {
       "key": "45abeb7c2b8c",
@@ -1602,6 +1474,122 @@
       ],
       "ai_summary": "",
       "action_plan": []
+    },
+    {
+      "key": "fa4cb2c80dfe",
+      "title": "TikTok — Machine Learning Engineer Intern",
+      "company": "TikTok",
+      "url": "https://lifeattiktok.com/search/7706693387932633397",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "50c34d949a35",
+      "title": "Tesla — Software Developer Intern - IT Apps",
+      "company": "Tesla",
+      "url": "https://www.tesla.com/careers/search/job/289683",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a91dc8d5ac34",
+      "title": "Bask Health — AI Product Intern",
+      "company": "Bask Health",
+      "url": "https://apply.workable.com/bask-health-1/j/9D7E69054E/apply",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "4fedbda56a95",
+      "title": "Rockwell Automation — Software Developer/Engineering Intern",
+      "company": "Rockwell Automation",
+      "url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation/job/Mequon-Wisconsin-United-States/Intern--Software-Developer-Engineering_R26-8666-2",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1b0d9c88bbdf",
+      "title": "Can we talk about the ML research coming from China? [D]",
+      "company": "",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1xteym8/can_we_talk_about_the_ml_research_coming_from/",
+      "source": "reddit",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "b999fff924e5",
+      "title": "I built an explorer of 2,100+ robotics papers covering 10 years of CoRL; with TLDRs, links to code, project pages, and research trends [P]",
+      "company": "",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1xtul3j/i_built_an_explorer_of_2100_robotics_papers/",
+      "source": "reddit",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "news",
+        "r/MachineLearning",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "d88fcc45ff99",
+      "title": "Meta — Research Scientist Intern",
+      "company": "Meta",
+      "url": "https://www.metacareers.com/jobs/2690374264750493",
+      "source": "internships",
+      "score": 8,
+      "deadline": null,
+      "tags": [
+        "internship",
+        "focus:internship",
+        "eligibility:verify"
+      ],
+      "ai_summary": "Meta research internship is elite signal and aligns with AI research goals.",
+      "action_plan": [
+        "Week 1: Gather research papers & metrics (4h).",
+        "Week 2: Write concise research‑focused resume (3h).",
+        "Week 3: Submit application & follow‑up email (2h)."
+      ]
     }
   ]
 }
