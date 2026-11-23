@@ -194123,6 +194123,47 @@
           "key": "5042fccd4cc8"
         }
       ]
+    },
+    {
+      "date": "2026-11-23",
+      "items": [
+        {
+          "title": "Artefact — AI Engineer Intern",
+          "url": "https://job-boards.greenhouse.io/artefactnoram/jobs/8958076002",
+          "source": "internships",
+          "description": "internship | Artefact | NYC | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "06755e86-0080-4e43-becc-80047057a75d",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Artefact AI role aligns with generative AI interests; good portfolio boost.",
+          "action_plan": [
+            "1. Tailor resume to AI engineer role (2 h).",
+            "2. Write brief project summary of TaskFlow/Nova (2 h).",
+            "3. Submit application and follow up (1 h)."
+          ],
+          "dimensions": {
+            "career": 6,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 2,
+            "skill": 8,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "📍 Nyc",
+          "facts": {
+            "company": "Artefact",
+            "location": "NYC"
+          },
+          "key": "898939f6995c"
+        }
+      ]
     }
   ]
 }
