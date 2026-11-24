@@ -194164,6 +194164,87 @@
           "key": "898939f6995c"
         }
       ]
+    },
+    {
+      "date": "2026-11-24",
+      "items": [
+        {
+          "title": "Amazon — Software Development Engineer Intern - Artificial General Intelligence",
+          "url": "https://amazon.jobs/en/jobs/10606968/software-development-engineer-intern-artificial-general-intelligence-summer-2027",
+          "source": "internships",
+          "description": "internship | Amazon | Boston, MA, Seattle, WA, Bellevue, WA, Sunnyvale, CA | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "a6e7484a-77b3-4267-ac3d-8200ef4a75c1",
+          "score": 8,
+          "ai_score": 9,
+          "ai_summary": "Amazon AGI SDE internship is elite, high‑impact, hard‑to‑replace.",
+          "action_plan": [
+            "Study Amazon AGI research papers (2d)",
+            "Build a relevant ML demo (3d)",
+            "Prepare STAR interview stories (1d)",
+            "Submit application (30m)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 7,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Amazon\n📍 Boston, Ma; Seattle, Wa; Bellevue, Wa; Sunnyvale, Ca",
+          "facts": {
+            "company": "Amazon",
+            "location": "Boston, MA; Seattle, WA; Bellevue, WA; Sunnyvale, CA"
+          },
+          "key": "e7f852100bc1"
+        },
+        {
+          "title": "Meta — Research Scientist Intern - Spatial-temporal Consistent 4D Generation",
+          "url": "https://www.metacareers.com/jobs/2357948038329505",
+          "source": "internships",
+          "description": "internship | Meta | Redmond, WA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "29b21ac0-b37f-4d26-b196-d238a0c90ce2",
+          "score": 8,
+          "ai_score": 9,
+          "ai_summary": "Meta research internship on cutting‑edge generative AI offers top‑tier signal.",
+          "action_plan": [
+            "Read recent Meta 4D generation papers (2d)",
+            "Create a mini project replicating key idea (3d)",
+            "Prepare research‑focused CV (1d)",
+            "Apply (30m)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 7,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Meta\n📍 Redmond, Wa",
+          "facts": {
+            "company": "Meta",
+            "location": "Redmond, WA"
+          },
+          "key": "6b61a9e4a438"
+        }
+      ]
     }
   ]
 }
