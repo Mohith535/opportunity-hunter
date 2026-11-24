@@ -196162,6 +196162,49 @@
           "key": "6614d74556e6"
         }
       ]
+    },
+    {
+      "date": "2026-11-24",
+      "items": [
+        {
+          "title": "AI Security Engineer Trainee — AccuKnox",
+          "url": "https://himalayas.app/companies/accuknox/jobs/ai-security-engineer-trainee?utm_source=api",
+          "source": "remote",
+          "description": "internship | AccuKnox | Remote — India | Intern | via Himalayas | This is a remote position. AI Security Engineer, New Grad (2025/2026 batch) AccuKnox | [Bengaluru / Chennai / NCR / Pune / Hybrid / Remote] | Full-time Why this role exists AI agents are getting access to production systems faster than anyone can secure them.",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "himalayas:accuknox:ai-security-engineer-trainee",
+          "score": 10,
+          "ai_score": 7,
+          "ai_summary": "Boosts AI‑security builder profile; aligns with AI agents interest.",
+          "action_plan": [
+            "1. Spend 1 h reading AccuKnox internship page.",
+            "2. Draft a 30‑min cover letter linking TaskFlow to security.",
+            "3. Update resume (2 h) highlighting AI‑agent projects.",
+            "4. Submit application within 2 days."
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 2,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "🏠 remote",
+          "facts": {
+            "remote": true,
+            "company": "AccuKnox",
+            "location": "Remote — India",
+            "platform": "Himalayas"
+          },
+          "key": "9be8cd34d551"
+        }
+      ]
     }
   ]
 }
