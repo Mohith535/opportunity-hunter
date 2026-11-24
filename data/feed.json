@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24T01:50:49Z",
-  "hunted_at": "2026-11-23T02:32:13Z",
+  "updated_at": "2026-11-24T02:32:08Z",
+  "hunted_at": "2026-11-24T02:32:08Z",
   "items": [
     {
       "key": "64c360c8d4c6",
@@ -162,21 +162,6 @@
       "deadline": "2026-11-15",
       "tags": [
         "scholarship",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "9f0c44aeb325",
-      "title": "Beyond Software Development: Exploring Higher Studies and Research in AI/ML",
-      "company": "TechBairn Research",
-      "url": "https://unstop.com/workshops-webinars/beyond-software-development-exploring-higher-studies-and-research-in-aiml-techbairn-research-1808042",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-27",
-      "tags": [
-        "workshop",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -633,21 +618,6 @@
       "action_plan": []
     },
     {
-      "key": "527d20ac7d26",
-      "title": "Artificial Intelligence's Role in Current Tech Infrastructure",
-      "company": "TechBairn",
-      "url": "https://unstop.com/workshops-webinars/artificial-intelligences-role-in-current-tech-infrastructure-techbairn-1807995",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-27",
-      "tags": [
-        "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "5b183a2ae281",
       "title": "CircuitX",
       "company": "BMS Institute of Technology and Management (BMSITM), Bangalore",
@@ -1016,6 +986,37 @@
         "Prepare research‑focused CV (1d)",
         "Apply (30m)"
       ]
+    },
+    {
+      "key": "6a20222648f1",
+      "title": "Topology Hub Optimal Transport: Eliminating Long Context Dilution at Flash Speed",
+      "company": "",
+      "url": "https://arxiv.org/abs/2611.27951v1",
+      "source": "arxiv",
+      "score": 9,
+      "deadline": null,
+      "tags": [
+        "research",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "a5f81da183f7",
+      "title": "Codeforces Round 1138 (Div. 3) (codeforces.com)",
+      "company": "",
+      "url": "https://codeforces.com/contests/2292",
+      "source": "clist",
+      "score": 9,
+      "deadline": "2026-11-27",
+      "tags": [
+        "contest",
+        "competitive programming",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "f44a7576af2c",
