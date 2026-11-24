@@ -196117,6 +196117,51 @@
           "key": "c6d188e0a451"
         }
       ]
+    },
+    {
+      "date": "2026-11-24",
+      "items": [
+        {
+          "title": "Robotics & Humanoid AI Research Associate",
+          "url": "https://unstop.com/internships/robotics-humanoid-ai-research-associate-world-trade-factory-1825540",
+          "source": "unstop",
+          "description": "internship | online | Remote/WFH | Eligibility: open to: students, fresher; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+5 more) | Team size: 1-1 | By World Trade Factory | About World Trade Factory World Trade Factory (SKXYWTF LLC, Phoenix, USA) builds AI-powered financial intelligence products and, through Devdoot and DEV 0.0, embodied AI for humanoid and small robots. Member of the NVIDIA Inception program. Fully remote team across the US and India. What you will do Own a scoped research module on our DEV 0.0 humanoid robotics stack (perception confidence, state estimation, grasping, locomotion or motion safety), from design note to tested code Build and run experiments in MuJoCo, Isaac Sim or Gazebo and report results honestly, including failure cases Write ROS 2 / Python components behind our common hardware interface so they run on any robot body Document",
+          "deadline": "2026-12-08",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1825540",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "Remote AI‑robotics research aligns with his AI‑agent focus and builds a strong portfolio.",
+          "action_plan": [
+            "Day 1: Visit the posting, note required docs (resume, brief research proposal).",
+            "Day 2‑3: Update resume to highlight TaskFlow, Nova, and robotics‑related coursework.",
+            "Day 4‑5: Draft a 1‑page research note on a perception or locomotion problem for DEV 0.0.",
+            "Day 6: Submit application before deadline.",
+            "Week 2: Prepare a short demo video of a MuJoCo/Isaac Sim experiment."
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 6,
+            "deadline": 7,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏠 remote",
+          "facts": {
+            "remote": true,
+            "company": "World Trade Factory",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "6614d74556e6"
+        }
+      ]
     }
   ]
 }
