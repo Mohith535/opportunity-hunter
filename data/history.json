@@ -196205,6 +196205,125 @@
           "key": "9be8cd34d551"
         }
       ]
+    },
+    {
+      "date": "2026-11-25",
+      "items": [
+        {
+          "title": "Microsoft — Research Intern - AI Systems Architecture - Efficient LLM Inference",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393557079428",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA | Summer 2026 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "8b4b2bce-20ad-45a0-bf4e-a27a396c5f72",
+          "score": 8,
+          "ai_score": 9,
+          "ai_summary": "Top‑tier Microsoft AI research, rare chance, strong signal · ⚠ verify eligibility: US location may need visa sponsorship",
+          "action_plan": [
+            "Check eligibility (visa) (30m)",
+            "Polish research CV (2h)",
+            "Submit application (1h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 10,
+            "deadline": 8,
+            "skill": 9,
+            "time": 7,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "US location may need visa sponsorship"
+          },
+          "pitch": "🏢 Microsoft\n📍 Redmond, Wa",
+          "facts": {
+            "company": "Microsoft",
+            "location": "Redmond, WA"
+          },
+          "key": "bc6c594026d1"
+        },
+        {
+          "title": "Meta — Research Scientist Intern - Machine Learning for Robust 3D Perception",
+          "url": "https://www.metacareers.com/jobs/1482835147112669",
+          "source": "internships",
+          "description": "internship | Meta | Redmond, WA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "347de250-7760-4abd-a7c2-f89f2b261f3c",
+          "score": 8,
+          "ai_score": 9,
+          "ai_summary": "Meta research intern, strong AI focus, high prestige, limited slots · ⚠ verify eligibility: US location may need visa sponsorship",
+          "action_plan": [
+            "Confirm eligibility (30m)",
+            "Update research portfolio (2h)",
+            "Submit app (1h)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 8,
+            "prestige": 10,
+            "deadline": 7,
+            "skill": 9,
+            "time": 8,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "US location may need visa sponsorship"
+          },
+          "pitch": "🏢 Meta\n📍 Redmond, Wa",
+          "facts": {
+            "company": "Meta",
+            "location": "Redmond, WA"
+          },
+          "key": "716d2904e886"
+        },
+        {
+          "title": "Samsung — LLM Inference Acceleration Architecture Intern - Moe & Attention-FFN Disaggregation",
+          "url": "https://job-boards.greenhouse.io/samsungsemiconductor/jobs/8216717003",
+          "source": "internships",
+          "description": "internship | Samsung | San Jose, CA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "0a1029c2-aaef-48e1-9dac-d3e082d6683e",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Samsung LLM acceleration, high relevance, elite industry brand · ⚠ verify eligibility: US location may need visa sponsorship",
+          "action_plan": [
+            "Verify visa needs (30m)",
+            "Prepare LLM project showcase (2h)",
+            "Apply (1h)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 9,
+            "deadline": 7,
+            "skill": 8,
+            "time": 7,
+            "regret": true,
+            "eligible": "unclear",
+            "elig_note": "US location may need visa sponsorship"
+          },
+          "pitch": "📍 San Jose, Ca",
+          "facts": {
+            "company": "Samsung",
+            "location": "San Jose, CA"
+          },
+          "key": "8dc20e1af354"
+        }
+      ]
     }
   ]
 }
