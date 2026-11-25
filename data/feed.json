@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25T01:50:58Z",
-  "hunted_at": "2026-11-24T02:32:08Z",
+  "updated_at": "2026-11-25T02:32:04Z",
+  "hunted_at": "2026-11-25T02:32:04Z",
   "items": [
     {
       "key": "a30a9b095fa3",
@@ -513,21 +513,6 @@
       "action_plan": []
     },
     {
-      "key": "aa456d4e7755",
-      "title": "AI-Powered Career Development Hackathon",
-      "company": "UnsaidTalks Education",
-      "url": "https://unstop.com/hackathons/ai-powered-career-development-hackathon-unsaidtalks-education-1821954",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-28",
-      "tags": [
-        "hackathon",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "331ca88e2162",
       "title": "From College to Software Industry: Skills Every Engineer Should Build",
       "company": "TechBairn",
@@ -537,21 +522,6 @@
       "deadline": "2026-11-30",
       "tags": [
         "workshop",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "1b3e0ad08902",
-      "title": "ThinCovation 2026",
-      "company": "Management Development Institute (MDI), Gurgaon",
-      "url": "https://unstop.com/hackathons/thincovation-2026-thincovation-2026-mdi-1821962",
-      "source": "unstop",
-      "score": 10,
-      "deadline": "2026-11-27",
-      "tags": [
-        "hackathon",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -977,6 +947,37 @@
         "Update research portfolio (2h)",
         "Submit app (1h)"
       ]
+    },
+    {
+      "key": "663485cffaec",
+      "title": "Data Mining Internship",
+      "company": "GAO Tech Inc.",
+      "url": "https://unstop.com/internships/data-mining-internship-gao-tech-inc-1826166",
+      "source": "unstop",
+      "score": 9,
+      "deadline": "2026-12-08",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "e6bdaeaf268f",
+      "title": "Weekly Contest 530 (leetcode.com)",
+      "company": "",
+      "url": "https://leetcode.com/contest/weekly-contest-530",
+      "source": "clist",
+      "score": 9,
+      "deadline": "2026-11-29",
+      "tags": [
+        "contest",
+        "competitive programming",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
     },
     {
       "key": "2986c18b6bf2",
