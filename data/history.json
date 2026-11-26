@@ -198250,6 +198250,134 @@
           "key": "2f88dd618a92"
         }
       ]
+    },
+    {
+      "date": "2026-11-26",
+      "items": [
+        {
+          "title": "Operations Internship",
+          "url": "https://unstop.com/internships/operations-internship-comemor-1828395",
+          "source": "unstop",
+          "description": "internship | online | Remote/WFH | Eligibility: open to: students, fresher; courses: mba1, mba2, bba, bSchoolOthers, bcom, mcom (+29 more) | Team size: 1-1 | By CoMemor | CoMemor is hiring for Operations Intern About the Company CoMemor is seeking an Operations Intern to support the coordination and execution of work in the software and artificial intelligence industry. This fully remote opportunity is designed for candidates interested in how operational planning, event delivery, and clear information systems help technology teams work effectively. No prior experience is required; curiosity, reliability, and a willingness to learn are important. The internship offers flexible timing, an official certificate, and letters of recommendation upon successful completion. Responsibilities Assist with planning and coordinating events, tracking timelines, tasks, and ",
+          "deadline": "2026-12-09",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1828395",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "🏠 remote",
+          "facts": {
+            "remote": true,
+            "company": "CoMemor",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "2024c9653fd1"
+        },
+        {
+          "title": "Full Stack Developer Internship",
+          "url": "https://unstop.com/internships/full-stack-developer-internship-aeromedia-1828400",
+          "source": "unstop",
+          "description": "internship | online | Remote/WFH | Eligibility: open to: students; passout: 2028, 2029, 2030, 2031, 2032, 2033; courses: btech, bca, mca, mca1 | Team size: 1-1 | By Aeromedia | Aeromedia is hiring for Full Stack Developer About the Company Aeromedia is seeking a Full Stack Developer Intern to contribute to technology initiatives in the Information Technology space. This remote internship offers college students an opportunity to apply their engineering and computer application studies to practical development work. The internship is unpaid, with performance-based compensation noted as a possibility. Fill out this form: https://forms.gle/9rBdRJXn1onW3HsA7 Responsibilities Assist with building and maintaining user-facing features and supporting application services. Work across front-end and back-end components, helping connect interfaces, application logic, and data",
+          "deadline": "2026-12-09",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1828400",
+          "score": 10,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "🏠 remote",
+          "facts": {
+            "remote": true,
+            "company": "Aeromedia",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "86fe66a20639"
+        },
+        {
+          "title": "Security Engineer Intern — Coinbase",
+          "url": "https://www.coinbase.com/careers/positions/8415869?gh_jid=8415869",
+          "source": "ats",
+          "description": "Coinbase | Hybrid - New York, NY | via Greenhouse",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "gh:coinbase:8415869",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Hybrid - New York, Ny",
+          "facts": {
+            "company": "Coinbase",
+            "location": "Hybrid - New York, NY",
+            "platform": "Greenhouse"
+          },
+          "key": "770cf3dd3c7b"
+        },
+        {
+          "title": "Microsoft — Research Intern - Machine Learning for Biology and Healthcare",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393557097217",
+          "source": "internships",
+          "description": "internship | Microsoft | Redmond, WA | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "18d68763-3c47-4ab5-b01f-6be06b7897f9",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "🏢 Microsoft\n📍 Redmond, Wa",
+          "facts": {
+            "company": "Microsoft",
+            "location": "Redmond, WA"
+          },
+          "key": "9cdec83cf54b"
+        },
+        {
+          "title": "Total Quality Logistics — Software Development Intern",
+          "url": "https://tql.avature.net/en_US/TQLexternalcareers/JobDetail/19763",
+          "source": "internships",
+          "description": "internship | Total Quality Logistics | Cincinnati, OH | Summer 2027 | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "f99113e1-f288-4983-b8bd-49e4b32664be",
+          "score": 8,
+          "ai_score": -1,
+          "ai_summary": "",
+          "action_plan": [],
+          "dimensions": {},
+          "pitch": "📍 Cincinnati, Oh",
+          "facts": {
+            "company": "Total Quality Logistics",
+            "location": "Cincinnati, OH"
+          },
+          "key": "042a0895b4d4"
+        }
+      ]
     }
   ]
 }
