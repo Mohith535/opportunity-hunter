@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-26T01:51:33Z",
-  "hunted_at": "2026-11-25T02:32:04Z",
+  "updated_at": "2026-11-26T02:34:20Z",
+  "hunted_at": "2026-11-26T02:34:20Z",
   "items": [
     {
       "key": "7fcb0a513b84",
@@ -498,6 +498,21 @@
       "action_plan": []
     },
     {
+      "key": "68f8fbcd2624",
+      "title": "Divergent Merch Design Challenge",
+      "company": "Divergent Classes",
+      "url": "https://unstop.com/hackathons/divergent-merch-design-challenge-divergent-classes-1814036",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-28",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "2024c9653fd1",
       "title": "Operations Internship",
       "company": "CoMemor",
@@ -523,6 +538,21 @@
       "tags": [
         "internship",
         "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "644ed4c78789",
+      "title": "Data Science & Advanced AI with Job Assistance program",
+      "company": "Sattix AI",
+      "url": "https://unstop.com/workshops-webinars/build-your-future-with-artificial-intelligence-sattix-ai-1819236",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-30",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
       ],
       "ai_summary": "",
       "action_plan": []
@@ -909,6 +939,36 @@
       "tags": [
         "contest",
         "competitive programming",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "92671a8a1978",
+      "title": "Human Resource Internship",
+      "company": "Aeromedia",
+      "url": "https://unstop.com/internships/human-resource-internship-aeromedia-1828062",
+      "source": "unstop",
+      "score": 9,
+      "deadline": "2026-12-09",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "7b5cc9ad421a",
+      "title": "FlashProve-Next: Verifiable Inference for Production LLM APIs",
+      "company": "",
+      "url": "https://arxiv.org/abs/2611.33741v1",
+      "source": "arxiv",
+      "score": 9,
+      "deadline": null,
+      "tags": [
+        "research",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -1511,77 +1571,6 @@
         "internship",
         "focus:internship",
         "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "25612ced0cc4",
-      "title": "Xradar — Software Engineer Co-op",
-      "company": "Xradar",
-      "url": "https://xradar.bamboohr.com/careers/203/",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "134c53557421",
-      "title": "Robert Bosch Venture Capital — AI Application Intern",
-      "company": "Robert Bosch Venture Capital",
-      "url": "https://jobs.smartrecruiters.com/BoschGroup/744000162076254",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "AI‑focused VC internship, strong signal, builds AI product experience.",
-      "action_plan": [
-        "Research Bosch VC portfolio & AI projects (1 day).",
-        "Tailor cover letter highlighting TaskFlow/Nova (1 day).",
-        "Apply and schedule interview prep (2 weeks)."
-      ]
-    },
-    {
-      "key": "3036c7819cd4",
-      "title": "Qualcomm — AI/Machine Learning Intern - Interim Engineering Intern - SW",
-      "company": "Qualcomm",
-      "url": "https://qualcomm.eightfold.ai/careers/job/446722176432",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "Qualcomm AI/ML internship at a top chip company, strong AI signal.",
-      "action_plan": [
-        "Gather project portfolio (2h)",
-        "Write tailored cover letter (2h)",
-        "Submit application (30m)"
-      ]
-    },
-    {
-      "key": "be7572d058b7",
-      "title": "Quantexa Developer — Matrix Global",
-      "company": "Matrix Global",
-      "url": "https://himalayas.app/companies/matrix-global/jobs/quantexa-developer?utm_source=api",
-      "source": "remote",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "job",
-        "focus:job"
       ],
       "ai_summary": "",
       "action_plan": []
