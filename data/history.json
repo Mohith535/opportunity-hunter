@@ -199943,6 +199943,49 @@
           "key": "b97220ace866"
         }
       ]
+    },
+    {
+      "date": "2026-11-27",
+      "items": [
+        {
+          "title": "Rust AI Engineer Internship",
+          "url": "https://unstop.com/internships/rust-ai-engineer-internship-amund-ai-1829641",
+          "source": "unstop",
+          "description": "internship | online | Remote/WFH | Eligibility: open to: students; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+9 more) | Team size: 1-1 | By Amund AI | Amund AI is hiring a Rust Developer Intern! About the Company: Amund AI is an early-stage technology organization developing tools that help teams test, release, and monitor AI agents in production. This remote internship gives students the opportunity to contribute to real product code with direct founder guidance and see their work shipped. The work focuses on artificial intelligence and production software. This is an unpaid internship lasting three months, with an approximately 20+ hour weekly commitment arranged around academic schedules. Interns receive a certificate upon completion, and strong contributors may be considered for future roles. Responsibilities : Build and improve perfor",
+          "deadline": "2026-12-10",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1829641",
+          "score": 10,
+          "ai_score": 8,
+          "ai_summary": "Rust AI agents align with his AI agent/build focus and elite signal.",
+          "action_plan": [
+            "Read Amund AI repo overview (2h)",
+            "Set up Rust dev env (1h)",
+            "Submit application with mini Rust AI demo (3d)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 7,
+            "deadline": 6,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏠 remote",
+          "facts": {
+            "remote": true,
+            "company": "Amund AI",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "59a92ac62691"
+        }
+      ]
     }
   ]
 }
