@@ -202024,6 +202024,52 @@
           "key": "0e0687933662"
         }
       ]
+    },
+    {
+      "date": "2026-11-27",
+      "items": [
+        {
+          "title": "Software Developer Internship",
+          "url": "https://unstop.com/internships/software-developer-internship-bhaiar-1829142",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 15,000/month | Location: Bangalore | Eligibility: open to: students, fresher; courses: btech, mtech | Team size: 1-1 | By Bhai.AR | Bhai.AR is hiring for Software Developer Intern About the Role You will build real products — not toy projects. From AI pipelines to AR systems, you will write production-ready code that goes into defence tech, consumer apps, and government deployments. What You'll Do Build and ship features across web, mobile, and backend systems Collaborate with designers, artists, and product managers to bring ideas to life Write clean, efficient, and scalable code Debug, optimize, and improve existing systems Work on AI/ML integrations, APIs, and cloud infrastructure Contribute to live products used by real users What We're Looking For Proficiency in at least one programming language (Python, JavaScript,",
+          "deadline": "2026-12-01",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1829142",
+          "score": 9,
+          "ai_score": 7,
+          "ai_summary": "Real product work, AI pipelines, decent prestige for resume",
+          "action_plan": [
+            "Study Bhai.AR projects (1h)",
+            "Tailor CV to AI/AR experience (1h)",
+            "Submit application (15m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 7,
+            "skill": 7,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "pitch": "💰 ₹15,000/month\n📍 Bangalore · ⏳ 4 days left",
+          "facts": {
+            "pay_min": 15000,
+            "pay_max": 15000,
+            "cities": [
+              "Bangalore"
+            ],
+            "company": "Bhai.AR",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "6357489709f9"
+        }
+      ]
     }
   ]
 }
