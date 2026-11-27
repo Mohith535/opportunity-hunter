@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-27T01:50:45Z",
-  "hunted_at": "2026-11-26T02:34:20Z",
+  "updated_at": "2026-11-27T02:32:13Z",
+  "hunted_at": "2026-11-27T02:32:13Z",
   "items": [
     {
       "key": "f47f9f4f88d2",
@@ -498,6 +498,51 @@
       "action_plan": []
     },
     {
+      "key": "2f289bf9949c",
+      "title": "AI for CRM: From Customer Data to Business Decisions",
+      "company": "Centre for Innovation and Entrepreneurship Development",
+      "url": "https://unstop.com/workshops-webinars/ai-for-crm-from-customer-data-to-business-decisions-innowave26-centre-for-innovation-and-entrepreneur-1825369",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-28",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "f9d337a79806",
+      "title": "Protocol Zero: Boot | Hack | CTF",
+      "company": "Centre for Cybersecurity, Trust and Reliability, IIT Madras (CyStar)",
+      "url": "https://unstop.com/hackathons/protocol-zero-boot-hack-ctf-centre-for-cybersecurity-trust-and-reliability-iit-madras-cystar-1798676",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-12-02",
+      "tags": [
+        "hackathon",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "1f10ec2f97a3",
+      "title": "Workshop: Build a Real-Time NLP App with Hugging Face Transformers in 90 Minutes",
+      "company": "RaiseTech",
+      "url": "https://unstop.com/workshops-webinars/workshop-build-a-real-time-nlp-app-with-hugging-face-transformers-in-90-minutes-raisetech-1828784",
+      "source": "unstop",
+      "score": 10,
+      "deadline": "2026-11-28",
+      "tags": [
+        "workshop",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
       "key": "46064ba9f91e",
       "title": "Sales & Marketing Internship – IT & Cloud Services",
       "company": "Host Graber",
@@ -725,22 +770,6 @@
       "action_plan": []
     },
     {
-      "key": "8620f5894f1b",
-      "title": "AtCoder Beginner Contest 486 (atcoder.jp)",
-      "company": "",
-      "url": "https://atcoder.jp/contests/abc486",
-      "source": "clist",
-      "score": 9,
-      "deadline": "2026-11-28",
-      "tags": [
-        "contest",
-        "competitive programming",
-        "focus:off-topic"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
       "key": "e7f852100bc1",
       "title": "Amazon — Software Development Engineer Intern - Artificial General Intelligence",
       "company": "Amazon",
@@ -909,6 +938,71 @@
       "deadline": null,
       "tags": [
         "research",
+        "focus:off-topic"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "2194016d99fa",
+      "title": "Content Creation / Writer",
+      "company": "Amaanitvam Foundation",
+      "url": "https://unstop.com/internships/content-creation-writer-amaanitvam-foundation-1829262",
+      "source": "unstop",
+      "score": 9,
+      "deadline": "2026-12-10",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "48de61a74e23",
+      "title": "Finance Internship",
+      "company": "Synkoc IT Services Private Limited",
+      "url": "https://unstop.com/internships/finance-internship-synkoc-it-services-private-limited-1829888",
+      "source": "unstop",
+      "score": 9,
+      "deadline": "2026-12-05",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "8a2b4d37d119",
+      "title": "Software Developer Internship",
+      "company": "AI Raccoon",
+      "url": "https://unstop.com/internships/software-developer-internship-ai-raccoon-1829943",
+      "source": "unstop",
+      "score": 9,
+      "deadline": "2026-12-10",
+      "tags": [
+        "internship",
+        "focus:internship"
+      ],
+      "ai_summary": "",
+      "action_plan": []
+    },
+    {
+      "key": "dd6e39aa72ea",
+      "title": "Chevening Scholarships",
+      "company": "",
+      "url": "https://www.chevening.org/",
+      "source": "programs",
+      "score": 9,
+      "deadline": "2026-11-30",
+      "tags": [
+        "scholarship",
+        "government",
+        "funded",
+        "uk",
+        "masters",
+        "in-season",
         "focus:off-topic"
       ],
       "ai_summary": "",
@@ -1489,100 +1583,6 @@
       "tags": [
         "job",
         "focus:job"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d3c3b0df1f92",
-      "title": "Growth / Lead Generation Internship",
-      "company": "Opterai",
-      "url": "https://unstop.com/internships/growth-lead-generation-intern-remote-opterai-1816712",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-12-01",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "195ddca1ae88",
-      "title": "Finance Internship",
-      "company": "Onex Solutions Pvt ltd.",
-      "url": "https://unstop.com/internships/finance-internship-onex-solutions-pvt-ltd-1814275",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-11-30",
-      "tags": [
-        "internship",
-        "focus:internship"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "6a18ea41bb7b",
-      "title": "Software Development and Technical Writing Internship",
-      "company": "TrutiAI",
-      "url": "https://unstop.com/internships/software-development-and-technical-writing-intern-trutiai-1815480",
-      "source": "unstop",
-      "score": 8,
-      "deadline": "2026-12-01",
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "d07e83b34bef",
-      "title": "Paccar — Data Scientist Intern",
-      "company": "Paccar",
-      "url": "https://jobs.paccar.com/job/Denton-2027-Summer-Internship-Data-Scientist-TX-76205-7864/1458178433/?ats=successfactors",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "3d905c00411c",
-      "title": "GEI Consultants — Web Developer Intern",
-      "company": "GEI Consultants",
-      "url": "https://jobs.jobvite.com/gei-consultants/job/ogR5zfwv?nl=1&nl=1&fr=false",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
-      ],
-      "ai_summary": "",
-      "action_plan": []
-    },
-    {
-      "key": "9cbfef7a03d1",
-      "title": "Raptor Maps — Software Engineer Intern",
-      "company": "Raptor Maps",
-      "url": "https://ats.rippling.com/raptor-maps-inc/jobs/be25d98e-262f-42a2-8276-dffbfbbf402a",
-      "source": "internships",
-      "score": 8,
-      "deadline": null,
-      "tags": [
-        "internship",
-        "focus:internship",
-        "eligibility:verify"
       ],
       "ai_summary": "",
       "action_plan": []
