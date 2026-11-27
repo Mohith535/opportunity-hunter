@@ -201977,6 +201977,53 @@
           "key": "a859b4c6f511"
         }
       ]
+    },
+    {
+      "date": "2026-11-27",
+      "items": [
+        {
+          "title": "AI Engineer Internship",
+          "url": "https://unstop.com/internships/ai-engineer-internship-vitrina-ai-1830654",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 7,000/month | Location: Mumbai | Eligibility: open to: fresher, students; courses: allEngineering, btech, mtech, integrated, engOthers, bca (+18 more) | Team size: 1-1 | By Vitrina A.I. | Vitrina A.I. is hiring for AI Engineer Intern! Experience: Freshers Welcome Internship Duration: 3 Months Location: Mumbai Work Mode: In-office Stipend: ₹7,000 per month Industry: Information Technology How to Apply: We're Looking for Curious Minds Who Are Passionate About Artificial Intelligence and Building Real-World Ai Solutions. We Want to Understand Your Technical Skills, Creativity and Willingness to Experiment with Ai Technologies. Follow These 3 Steps: Prepare Your Cv: share Your Updated Resume with Your Educational Background and Technical Skills. Showcase Your Projects: highlight Your Ai/ml Projects, Git Hub Repositories, Relevant Coursework or Practical Experience. Share Your Wor",
+          "deadline": "2026-12-11",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1830654",
+          "score": 10,
+          "ai_score": 7,
+          "ai_summary": "Fits his AI focus, builds portfolio, but limited prestige and short-term impact.",
+          "action_plan": [
+            "Day 1: Update resume with AI projects (2h).",
+            "Day 2: Draft cover letter highlighting building mindset (1h).",
+            "Day 3: Submit application before deadline (30m).",
+            "Week 1: Prepare for interview by reviewing Vitrina A.I. tech stack (4h)."
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 9,
+            "prestige": 5,
+            "deadline": 6,
+            "skill": 7,
+            "time": 6,
+            "eligible": "yes"
+          },
+          "pitch": "💰 ₹7,000/month\n📍 Mumbai",
+          "facts": {
+            "pay_min": 7000,
+            "pay_max": 7000,
+            "cities": [
+              "Mumbai"
+            ],
+            "company": "Vitrina A.I.",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "0e0687933662"
+        }
+      ]
     }
   ]
 }
