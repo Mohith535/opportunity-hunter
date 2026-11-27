@@ -201896,6 +201896,87 @@
           "key": "39d713238996"
         }
       ]
+    },
+    {
+      "date": "2026-11-27",
+      "items": [
+        {
+          "title": "Artificial Intelligence Internship",
+          "url": "https://unstop.com/internships/artificial-intelligence-internship-zenotalent-1830337",
+          "source": "unstop",
+          "description": "internship | online | Remote/WFH | Eligibility: open to: fresher, students; courses: allEngineering | Team size: 1-1 | By Zenotalent | Zenotalent is hiring for AI Intern About the Company Zenotalent is offering a remote internship in the Information Technology industry for candidates interested in artificial intelligence. This opportunity is open to freshers and college students, with no prior professional experience required. The internship lasts six months and provides a monthly stipend of ₹30,000. Responsibilities Support the team in exploring and developing AI-enabled solutions for practical use cases. Assist with preparing, reviewing, and organizing data used in AI workflows. Contribute to testing, documenting, and improving prototypes and related processes. Collaborate with teammates, share progress, and incorporate f",
+          "deadline": "2026-12-11",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1830337",
+          "score": 10,
+          "ai_score": 7,
+          "ai_summary": "Remote AI internship aligns with his builder mindset and AI focus.",
+          "action_plan": [
+            "Update resume (1h)",
+            "Apply via portal (30m)",
+            "Prepare brief project demo (2d)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 6,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "🏠 remote",
+          "facts": {
+            "remote": true,
+            "company": "Zenotalent",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "554ac384d660"
+        },
+        {
+          "title": "Software Development and AI Engineering Internship",
+          "url": "https://unstop.com/internships/software-development-and-ai-engineering-internship-curavolv-1830198",
+          "source": "unstop",
+          "description": "internship | online | Pay: Rs 10,000/month | Remote/WFH | Eligibility: open to: fresher, students | Team size: 1-1 | By Curavolv | Curavolv is hiring for Software Development and AI Engineering Intern About the Company https://www.linkedin.com/company/curavolv https://www.instagram.com/curavolv www.curavolv.com Curavolv is building practical tools that bring AI and decision intelligence to career guidance, student readiness, and pathway comparison. This internship offers hands-on involvement in developing useful systems and prototypes, with day-to-day guidance and review from the team. The work is intended for candidates who value clear reasoning, careful execution, and responsible handling of data. Responsibilities Translate consulting and career-guidance logic into structured frameworks, inputs, features, scoring rule",
+          "deadline": "2026-12-11",
+          "tags": [
+            "internship",
+            "focus:internship"
+          ],
+          "native_id": "1830198",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "AI engineering internship matches his interests and adds resume value.",
+          "action_plan": [
+            "Review Curavolv product (1h)",
+            "Tailor resume to AI focus (1h)",
+            "Apply (30m)"
+          ],
+          "dimensions": {
+            "career": 7,
+            "interest": 8,
+            "prestige": 5,
+            "deadline": 6,
+            "skill": 7,
+            "time": 5,
+            "eligible": "yes"
+          },
+          "pitch": "💰 ₹10,000/month\n🏠 remote",
+          "facts": {
+            "pay_min": 10000,
+            "pay_max": 10000,
+            "remote": true,
+            "company": "Curavolv",
+            "category": "internships",
+            "region": "online"
+          },
+          "key": "a859b4c6f511"
+        }
+      ]
     }
   ]
 }
