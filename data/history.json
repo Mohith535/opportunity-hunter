@@ -202070,6 +202070,86 @@
           "key": "6357489709f9"
         }
       ]
+    },
+    {
+      "date": "2026-11-28",
+      "items": [
+        {
+          "title": "Microsoft — Research Intern - Distributed AI systems for agentic workflows",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393557106762",
+          "source": "internships",
+          "description": "internship | Microsoft | Cambridge, UK | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "e473c3fe-63c0-4a4e-be41-a27e89b8f122",
+          "score": 8,
+          "ai_score": 8,
+          "ai_summary": "Microsoft research on agentic AI aligns perfectly with his goals and prestige.",
+          "action_plan": [
+            "Find exact application link (1h)",
+            "Tailor CV to research focus (1d)",
+            "Write a short research statement (2d)",
+            "Submit (30m)"
+          ],
+          "dimensions": {
+            "career": 9,
+            "interest": 9,
+            "prestige": 10,
+            "deadline": 3,
+            "skill": 9,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Microsoft\n📍 Cambridge, Uk",
+          "facts": {
+            "company": "Microsoft",
+            "location": "Cambridge, UK"
+          },
+          "key": "b1b4b9da73bd"
+        },
+        {
+          "title": "Apple — Software Engineer Interview Intern - Apple Services",
+          "url": "https://jobs.apple.com/en-us/details/200696753",
+          "source": "internships",
+          "description": "internship | Apple | London, UK | N/A | Other",
+          "deadline": null,
+          "tags": [
+            "internship",
+            "focus:internship",
+            "eligibility:verify"
+          ],
+          "native_id": "4817c149-ca7d-47b8-b5d6-7a36ddf722a3",
+          "score": 8,
+          "ai_score": 7,
+          "ai_summary": "Apple Services internship offers elite resume boost and solid engineering exposure.",
+          "action_plan": [
+            "Gather Apple‑style portfolio (2d)",
+            "Complete online application (2h)",
+            "Prepare system design interview (1w)"
+          ],
+          "dimensions": {
+            "career": 8,
+            "interest": 6,
+            "prestige": 9,
+            "deadline": 2,
+            "skill": 8,
+            "time": 6,
+            "regret": true,
+            "eligible": "yes"
+          },
+          "pitch": "🏢 Apple\n📍 London, Uk",
+          "facts": {
+            "company": "Apple",
+            "location": "London, UK"
+          },
+          "key": "c427d60ad44e"
+        }
+      ]
     }
   ]
 }
